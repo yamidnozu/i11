@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "sistemas abiertos",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Busca una entrada de energía desde el Sol."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Identifica materia que entra y materia que sale del lago."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Elige el modelo que representa ambos tipos de intercambio."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer flujos de materia y energía en un ecosistema abierto",
+      "que": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca.",
+      "pistas": [
+        "Busca una entrada de energía desde el Sol.",
+        "Identifica materia que entra y materia que sale del lago."
+      ],
+      "clave": "La opción C muestra entrada de energía solar, entrada de materia orgánica y salidas de materia del ecosistema.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Muestra entrada de energía solar, pero no intercambios de materia con el exterior."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Muestra entradas de energía y materia, pero no una salida de materia del lago."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Busca una entrada de energía desde el Sol."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica materia que entra y materia que sale del lago."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Elige el modelo que representa ambos tipos de intercambio."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «sistemas abiertos» señala la pista central.",
+          "a": "m:sistemas abiertos"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Muestra entrada de energía solar, pero no intercambios de materia con el exterior. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Muestra entradas de energía y materia, pero no una salida de materia del lago. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Elige el modelo que representa ambos tipos de intercambio.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Muestra entrada de energía solar, pero no intercambios de materia con el exterior. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Muestra entradas de energía y materia, pero no una salida de materia del lago. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los ecosistemas",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "no garantiza la protección contra el dengue",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Busca resultados que comparen especies y susceptibilidad para varias marcas."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Descarta datos que no midan resistencia ni eficacia."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Elegir evidencia para comunicar resistencia a insecticidas",
+      "que": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
+      "pistas": [
+        "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas.",
+        "Busca resultados que comparen especies y susceptibilidad para varias marcas."
+      ],
+      "clave": "La opción B presenta evidencia comparativa de resistencia y susceptibilidad en las especies de mosquitos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca resultados que comparen especies y susceptibilidad para varias marcas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Descarta datos que no midan resistencia ni eficacia."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «no garantiza la protección contra el dengue» señala la pista central.",
+          "a": "m:no garantiza la protección contra el dengue"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Descarta datos que no midan resistencia ni eficacia.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los habitantes",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
