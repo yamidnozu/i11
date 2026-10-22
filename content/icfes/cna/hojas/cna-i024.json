@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "beneficiaría el crecimiento de la planta",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Identifica qué grupo corresponde a cada tipo de línea."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Busca que ambos grupos puedan crecer bajo condiciones normales."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Comprueba que el peso del grupo con bacteria sea mayor."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Representar una hipótesis sobre crecimiento de plantas",
+      "que": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
+      "pistas": [
+        "Identifica qué grupo corresponde a cada tipo de línea.",
+        "Busca que ambos grupos puedan crecer bajo condiciones normales."
+      ],
+      "clave": "La gráfica B representa crecimiento en ambos grupos y un peso mayor para las plantas con bacteria.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué grupo corresponde a cada tipo de línea."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca que ambos grupos puedan crecer bajo condiciones normales."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que el peso del grupo con bacteria sea mayor."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «beneficiaría el crecimiento de la planta» señala la pista central.",
+          "a": "m:beneficiaría el crecimiento de la planta"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que el peso del grupo con bacteria sea mayor.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En un",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

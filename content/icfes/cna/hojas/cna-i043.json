@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "energía potencial de un vagón",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Relaciona mayor altura con mayor energía potencial."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Lee la secuencia de alturas en $t_1$, $t_2$, $t_3$ y $t_4$."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Compara esa secuencia con los mínimos y máximos de la gráfica."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar la energía potencial con la altura de una montaña rusa",
+      "que": "La energía potencial gravitacional aumenta con la altura. En el modelo D, el vagón está abajo en $t_1$, arriba en el aro en $t_2$, abajo otra vez en $t_3$ y a una altura intermedia en $t_4$. Ese orden coincide con la gráfica: baja, sube, baja y queda en un nivel intermedio.",
+      "pistas": [
+        "Relaciona mayor altura con mayor energía potencial.",
+        "Lee la secuencia de alturas en $t_1$, $t_2$, $t_3$ y $t_4$."
+      ],
+      "clave": "El recorrido de la opción D produce mínimos en $t_1$ y $t_3$, un máximo en $t_2$ y un nivel intermedio en $t_4$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Ubica el vagón alto en $t_1$ y bajo en $t_2$, en sentido opuesto a la gráfica."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Pone el vagón en alturas bajas para los primeros tiempos, aunque la gráfica inicia con energía alta en $t_0$ y alcanza un máximo en $t_2$."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La posición de $t_1$ no corresponde a la energía mínima y no representa el patrón de mínimos en $t_1$ y $t_3$."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona mayor altura con mayor energía potencial."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Lee la secuencia de alturas en $t_1$, $t_2$, $t_3$ y $t_4$."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Compara esa secuencia con los mínimos y máximos de la gráfica."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «energía potencial de un vagón» señala la pista central.",
+          "a": "m:energía potencial de un vagón"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La energía potencial gravitacional aumenta con la altura. En el modelo D, el vagón está abajo en $t_1$, arriba en el aro en $t_2$, abajo otra vez en $t_3$ y a una altura intermedia en $t_4$. Ese orden coincide con la gráfica: baja, sube, baja y queda en un nivel intermedio.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La energía potencial gravitacional aumenta con la altura. En el modelo D, el vagón está abajo en $t_1$, arriba en el aro en $t_2$, abajo otra vez en $t_3$ y a una altura intermedia en $t_4$. Ese orden coincide con la gráfica: baja, sube, baja y queda en un nivel intermedio.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Ubica el vagón alto en $t_1$ y bajo en $t_2$, en sentido opuesto a la gráfica. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Pone el vagón en alturas bajas para los primeros tiempos, aunque la gráfica inicia con energía alta en $t_0$ y alcanza un máximo en $t_2$. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La posición de $t_1$ no corresponde a la energía mínima y no representa el patrón de mínimos en $t_1$ y $t_3$. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La energía potencial gravitacional aumenta con la altura. En el modelo D, el vagón está abajo en $t_1$, arriba en el aro en $t_2$, abajo otra vez en $t_3$ y a una altura intermedia en $t_4$. Ese orden coincide con la gráfica: baja, sube, baja y queda en un nivel intermedio.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compara esa secuencia con los mínimos y máximos de la gráfica.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Ubica el vagón alto en $t_1$ y bajo en $t_2$, en sentido opuesto a la gráfica. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Pone el vagón en alturas bajas para los primeros tiempos, aunque la gráfica inicia con energía alta en $t_0$ y alcanza un máximo en $t_2$. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La posición de $t_1$ no corresponde a la energía mínima y no representa el patrón de mínimos en $t_1$ y $t_3$. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "lluvia cae de manera vertical",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Dibuja la velocidad de la lluvia hacia abajo respecto al suelo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Resta la velocidad del bus hacia la derecha para obtener la velocidad relativa de la lluvia."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Comprueba que el vector visto desde el bus apunte abajo y a la izquierda."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Representar la velocidad relativa de la lluvia desde un bus",
+      "que": "Para quienes están fuera, la lluvia se mueve verticalmente hacia abajo y el bus avanza hacia la derecha. Desde el bus, la velocidad de la lluvia es la velocidad respecto al suelo menos la velocidad del bus: el vector resultante apunta hacia abajo y hacia atrás, a la izquierda.",
+      "pistas": [
+        "Dibuja la velocidad de la lluvia hacia abajo respecto al suelo.",
+        "Resta la velocidad del bus hacia la derecha para obtener la velocidad relativa de la lluvia."
+      ],
+      "clave": "La velocidad de la lluvia respecto al bus apunta hacia abajo y hacia atrás, como en la opción B.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Suma la velocidad del bus y la de la lluvia como si la persona estuviera quieta respecto al suelo; el vector relativo debe apuntar hacia atrás."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Invierte la dirección del bus, que en la figura se mueve hacia la derecha."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Combina una velocidad del bus hacia la izquierda con la lluvia hacia abajo, aunque el bus avanza hacia la derecha."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Dibuja la velocidad de la lluvia hacia abajo respecto al suelo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Resta la velocidad del bus hacia la derecha para obtener la velocidad relativa de la lluvia."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que el vector visto desde el bus apunte abajo y a la izquierda."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «lluvia cae de manera vertical» señala la pista central.",
+          "a": "m:lluvia cae de manera vertical"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Para quienes están fuera, la lluvia se mueve verticalmente hacia abajo y el bus avanza hacia la derecha. Desde el bus, la velocidad de la lluvia es la velocidad respecto al suelo menos la velocidad del bus: el vector resultante apunta hacia abajo y hacia atrás, a la izquierda.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Para quienes están fuera, la lluvia se mueve verticalmente hacia abajo y el bus avanza hacia la derecha. Desde el bus, la velocidad de la lluvia es la velocidad respecto al suelo menos la velocidad del bus: el vector resultante apunta hacia abajo y hacia atrás, a la izquierda.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Suma la velocidad del bus y la de la lluvia como si la persona estuviera quieta respecto al suelo; el vector relativo debe apuntar hacia atrás. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Invierte la dirección del bus, que en la figura se mueve hacia la derecha. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Combina una velocidad del bus hacia la izquierda con la lluvia hacia abajo, aunque el bus avanza hacia la derecha. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Para quienes están fuera, la lluvia se mueve verticalmente hacia abajo y el bus avanza hacia la derecha. Desde el bus, la velocidad de la lluvia es la velocidad respecto al suelo menos la velocidad del bus: el vector resultante apunta hacia abajo y hacia atrás, a la izquierda.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que el vector visto desde el bus apunte abajo y a la izquierda.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Suma la velocidad del bus y la de la lluvia como si la persona estuviera quieta respecto al suelo; el vector relativo debe apuntar hacia atrás. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Invierte la dirección del bus, que en la figura se mueve hacia la derecha. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Combina una velocidad del bus hacia la izquierda con la lluvia hacia abajo, aunque el bus avanza hacia la derecha. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un bus",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

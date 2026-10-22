@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "resultados del experimento",
+        "rol": "pide",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué representa",
+        "texto": "Ubica la temperatura, que cambia, en el eje horizontal."
+      },
+      {
+        "k": "idea",
+        "titulo": "Lee las relaciones del modelo",
+        "texto": "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la opción",
+        "texto": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Elegir ejes correctos para graficar una tabla",
+      "que": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+      "pistas": [
+        "Ubica la temperatura, que cambia, en el eje horizontal.",
+        "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
+      ],
+      "clave": "La gráfica B asigna correctamente los ejes y conserva la tendencia creciente de la tabla.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Intercambia los ejes y además invierte el orden de los valores de velocidad."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica la temperatura, que cambia, en el eje horizontal."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «resultados del experimento» señala la pista central.",
+          "a": "m:resultados del experimento"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué representa el dibujo o los datos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
