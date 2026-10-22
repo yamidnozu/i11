@@ -49,6 +49,9 @@ Pestañas: Hoy, Aprender, Practicar, Progreso. Extra: `#/mapa` (10 casos "Quiero
 ## Importador ICFES
 `python3 tools/importar_icfes.py texto.txt --area matematicas --pref mat --prueba "Prueba Matemáticas" [--figuras figuras.json]` → `content/icfes/<pref>/preguntas.json`. Figuras sin archivo → `pendiente`. Lo dudoso → `revisar`. Solo entra al build con `VITE_ICFES=1` (plugin `icfes-gate` en `vite.config.ts`).
 
+## Pipeline documental (2026-10)
+`python tools/pipeline/run.py --doc 01_Matematicas_Saber11_2026_ICFES` ejecuta etapas reanudables y con caché en `work/`; configuración y plugins están en `tools/pipeline/`. El primer cuadernillo produjo 50 preguntas en `content/icfes/mat/preguntas.json`; sus 50 hojas son borradores que requieren solución pedagógica y cotejo docente. Vitest con ICFES pasó 244/244 y la reconstrucción produjo JSON idéntico. `pdftotext` no está instalado, y el cotejo de cinco páginas encontró errores de extracción todavía abiertos. Lee `tools/pipeline/README.md` e `informe_icfes.md` antes de procesar otros documentos. `docus/` y `work/` no se versionan.
+
 ## Licencia ICFES (importante)
 Los términos del cuadernillo permiten uso académico/investigativo y **prohíben transformar o usar con fines de lucro**. La plataforma cobra paletas (ingreso), así que publicar preguntas/imágenes literales del ICFES requiere **permiso escrito del ICFES**. Mientras no exista, `content/icfes/` queda fuera del build publicado. Alternativa segura: preguntas originales con el mismo formato.
 
