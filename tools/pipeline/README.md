@@ -32,7 +32,7 @@ No edites `content/icfes/<prefijo>/preguntas.json`: se vuelve a generar. Guarda 
 }
 ```
 
-Las correcciones de paquete van en `__paquete__`; `bloques_agregar` añade bloques compartidos de forma idempotente. El empaquetador rechaza IDs desconocidos, cambios de ID, clave fuera de rango, opciones ausentes y citas faltantes. Una clave documentada en el override puede resolver una pregunta pendiente; incluye en `fuente` la cita completa.
+Las correcciones de paquete van en `__paquete__`; `bloques_agregar` añade bloques compartidos de forma idempotente. El campo `nivel` (1–4) se estima por demanda de razonamiento, no se copia como supuesto desde el nivel oficial del evaluado; guarda la decisión por pregunta en el mismo override para que sobreviva a reconstrucciones. Mantén diferenciadas las competencias de desempeño y la dificultad pedagógica del ítem. El empaquetador rechaza IDs desconocidos, cambios de ID, clave fuera de rango, opciones ausentes y citas faltantes. Una clave documentada en el override puede resolver una pregunta pendiente; incluye en `fuente` la cita completa.
 
 Las hojas editables viven en `hojas/<id>.json`. Cada ejecución crea hasta `batch_size` (por defecto diez) hojas que faltan, en orden estable. Las hojas existentes, y en particular las `revisada`, nunca se reemplazan. Para continuar un lote ejecuta de nuevo con `--desde enriquecer`; para reconstruir una hoja borrador, respáldala y elimina solo ese archivo antes de reanudar. El estado `revisada` significa que una persona cotejó y aprobó el contenido pedagógico, no que el pipeline haya rellenado una plantilla.
 

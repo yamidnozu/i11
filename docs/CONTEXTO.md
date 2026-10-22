@@ -50,23 +50,21 @@ Pestañas: Hoy, Aprender, Practicar, Progreso. Extra: `#/mapa` (10 casos "Quiero
 `python3 tools/importar_icfes.py texto.txt --area matematicas --pref mat --prueba "Prueba Matemáticas" [--figuras figuras.json]` → `content/icfes/<pref>/preguntas.json`. Figuras sin archivo → `pendiente`. Lo dudoso → `revisar`. Solo entra al build con `VITE_ICFES=1` (plugin `icfes-gate` en `vite.config.ts`).
 
 ## Pipeline documental (2026-10)
-`python tools/pipeline/run.py` procesa los 38 PDFs de `docus/` en siete etapas reanudables; configuración, plugins y guía están en `tools/pipeline/`. Hay cinco cuadernillos estructurados: 248 preguntas con clave y cinco simulacros en revisión. Las 248 hojas están revisadas, sin borradores; mat-i038 conserva una salvedad porque la tabla no prueba que las categorías cubran a los 110 clientes. Matemáticas (50/50), Lectura Crítica (49/49), Sociales (49/49) y Ciencias (13/50 por edición) tienen referencias a competencia, afirmación y evidencia específicas. Los cinco PDFs de niveles se recopilaron en `content/icfes/niveles_desempeno.json`; los marcos de Ciencias, Lectura, Sociales e Inglés están en `content/icfes/marco.json`. Aún faltan estructurar pregunta por pregunta los documentos antiguos e Inglés; las licencias de dos documentos externos tampoco están acreditadas. Poppler usa `pdftotext -layout`; el pipeline crea hasta diez hojas faltantes por lote y preserva las existentes. Ver `informe_icfes.md`; el contenido oficial permanece bajo el gate de ICFES. `docus/` y `work/` no se versionan.
+`python tools/pipeline/run.py` procesa los 38 PDFs de `docus/` en siete etapas reanudables; configuración, plugins y guía están en `tools/pipeline/`. Hay cinco cuadernillos estructurados: 248 preguntas con clave y cinco simulacros en revisión. Las 248 hojas están revisadas, sin borradores; mat-i038 conserva una salvedad porque la tabla no prueba que las categorías cubran a los 110 clientes. Matemáticas (50/50), Lectura Crítica (49/49), Sociales (49/49) y Ciencias (50/50 por edición) tienen referencias a competencia, afirmación y evidencia específicas. Los cinco PDFs de niveles se recopilaron en `content/icfes/niveles_desempeno.json`; los marcos de las cinco áreas estructuradas están en `content/icfes/marco.json`. Los niveles de cada pregunta son estimaciones pedagógicas 1–4 guardadas en overrides. Aún faltan estructurar pregunta por pregunta los documentos antiguos e Inglés; las licencias de dos documentos externos tampoco están acreditadas. Poppler usa `pdftotext -layout`; el pipeline crea hasta diez hojas faltantes por lote y preserva las existentes. Ver `informe_icfes.md`; el contenido oficial permanece bajo el gate de ICFES. `docus/` y `work/` no se versionan.
 
 ## Licencia ICFES (importante)
 Los términos oficiales del ICFES para sus publicaciones permiten uso académico/investigativo y **prohíben transformar o usar con fines de lucro** ([cuadernillo oficial 2026, términos de uso](https://www.icfes.gov.co/wp-content/uploads/2026/03/16-feb-cuadernillo-de-preguntas-lectura-critica-saber-11-2026.pdf)). La plataforma cobra paletas (ingreso), así que publicar preguntas/imágenes literales del ICFES requiere **permiso escrito del ICFES**. Mientras no exista, `content/icfes/` queda fuera del build publicado. Alternativa segura: preguntas originales con el mismo formato.
 
 ## Documentos fuente disponibles
-`docus/` contiene 38 PDFs (cuadernillos, guías, marcos, niveles, infografías y materiales complementarios). El pipeline ya generó transcripción por página, raster completo e índice de candidatos vectoriales en `work/`; las asociaciones gráficas y lecturas semánticas siguen pendientes de revisión.
+`docus/` contiene 38 PDFs (cuadernillos, guías, marcos, niveles, infografías y materiales complementarios). El pipeline ya generó transcripción por página, raster completo e índice de candidatos vectoriales en `work/`; las asociaciones semánticas de los cinco cuadernillos están completas; algunos documentos antiguos y figuras candidatas siguen pendientes de revisión.
 
-## Pendientes
-1. Verificar las transcripciones y asociar figuras candidatas a sus preguntas/contextos.
-2. Cotejar las evidencias de marco pendientes y resolver la salvedad de mat-i038; Matemáticas tiene 49 revisadas y mat-i038 en borrador.
-3. `content/marco.json` desde los marcos de referencia (competencias, afirmaciones, evidencias).
-4. Banco propio: hoy ~43 preguntas; hacen falta ~254 para simulacros completos (preguntas originales, publicables).
-5. Probar la voz en un celular real (nunca probada en dispositivo).
-6. Migrar los 10 laboratorios que siguen en TS a JSON.
-7. Fecha del examen al empezar; panel para profesores.
-8. Fuera de alcance: Pagos, legal, PWA (no tocar).
+## Pendientes del pipeline documental
+1. Estructurar los cuadernillos antiguos y los de Inglés pregunta por pregunta; hoy permanecen como transcripciones por página.
+2. Revisar cinco simulacros generados, marcados “En revisión”.
+3. Conservar la salvedad de mat-i038: su resultado depende de asumir que las categorías de la tabla cubren a los 110 clientes.
+4. Acreditar las licencias de SED Cartagena y del libro de preparación 2017 antes de cualquier distribución.
+5. Hacer cotejo visual adicional de las figuras candidatas que aún no están enlazadas a preguntas.
 
+Otros pendientes del producto (voz en celular, banco propio y laboratorios) son independientes de este pipeline. Pagos, legal y PWA quedan fuera de alcance de esta tarea.
 ## Preferencias de trabajo del dueño
 Español informal ("tú"); mensajes finales concisos (enlace/archivo + un siguiente paso); ahorrar tokens; decir que la voz no se probó en dispositivo real; no guardar memoria sin preguntar.
