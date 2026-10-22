@@ -11,12 +11,13 @@
 - [x] Mantener `docus/` y `work/` fuera de Git y dejar el contenido derivado en `content/icfes/`, bajo el gate de build.
 - [x] Probar reconstrucción limpia de Matemáticas y caché: salida idéntica.
 - [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Completar soluciones y distractores razonados para las otras 133 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
+- [ ] Completar soluciones y distractores razonados para las otras 125 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
 - [x] Revisar ocho hojas de Ciencias (preguntas 2, 11, 12 y 17 en ambos cuadernillos) con solución y descarte individual de todas las alternativas incorrectas; el contenido coincide exactamente entre años.
 - [x] Revisar otras ocho hojas (preguntas 16, 19, 20 y 22 en ambos cuadernillos), cotejando la igualdad de enunciado, opciones y clave entre años.
 - [x] Revisar tres hojas más con opciones textuales y razonamiento claro (transcripción de proteínas, velocidad del sonido y presión atmosférica) en ambos cuadernillos.
 - [x] Revisar las hojas de solubilidad y análisis de fases y completar el lote de tablas/control experimental; conservar las que ya estaban aprobadas.
-- [x] Revisar cinco hojas de Ciencias (contaminantes, herencia, ondas, residuos y acidez) en ambas ediciones. La pregunta de ratones sigue en borrador hasta cotejar su gráfico fuente.
+- [x] Revisar cinco hojas de Ciencias (contaminantes, herencia, ondas, residuos y acidez) en ambas ediciones.
+- [x] Cotejar con las páginas fuente cuatro gráficas y diagramas: línea de tendencia, curva de calentamiento, electroforesis y trayectorias de ratones. Completar las hojas con la evidencia observada.
 - [x] Cotejar visualmente las 50 preguntas de Matemáticas y su clave oficial; corregir alternativas vacías, datos/tablas y contextos compartidos. Se revisaron 49 hojas; mat-i038 sigue borrador porque la tabla no determina las intersecciones necesarias.
 - [x] Restaurar las opciones textuales de las 14 preguntas de Sociales que habían quedado como placeholders; cotejar recortes de 29 preguntas por cada cuadernillo de Ciencias y asociar la infografía original de Lectura como bloque para 42–49.
 - [x] Comparar cinco renders con sus páginas fuente en `#/pregunta/<id>`: cie-i001, cie-i029, cie-i047, cie-i048 y lec-i046. Las figuras se ven en el recorte ampliado; las opciones que aún no están segmentadas individualmente siguen señaladas.
@@ -34,7 +35,7 @@
 - Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
 - Cinco cuadernillos estructurados: **248 preguntas con clave, cero pendientes** (50 Matemáticas, 49 Lectura Crítica, 50 Ciencias 2026, 50 Ciencias 2025 y 49 Sociales). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
 - **45 preguntas conservan avisos explícitos**: 26 enlaces a evidencia específica del marco (13 por cada prueba de Ciencias), 18 opciones gráficas (9 por prueba de Ciencias) y la ambigüedad documentada de mat-i038. No son avisos ocultos ni se marcan como aprobadas.
-- **115 hojas revisadas, 133 borradores**. Matemáticas 49/50 revisadas; Ciencias 33/50 por año; Lectura 0/49; Sociales 0/49. Las preguntas repetidas se cotejan entre versiones; i008 presenta diferencias menores de transcripción OCR (incluido «sustencia»), revisadas contra el mismo procedimiento, opciones y clave.
+- **123 hojas revisadas, 125 borradores**. Matemáticas 49/50 revisadas; Ciencias 37/50 por año; Lectura 0/49; Sociales 0/49. Las preguntas repetidas se cotejan entre versiones; i008 presenta diferencias menores de transcripción OCR (incluido «sustencia»), revisadas contra el mismo procedimiento, opciones y clave.
 - Cinco simulacros generados, todos marcados “En revisión”.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa de `content/icfes/` solo `preguntas.json`; las transcripciones completas `documento.json` no se incorporan al bundle.

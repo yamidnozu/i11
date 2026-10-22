@@ -49,6 +49,12 @@
 - Se mantuvo como borrador la pregunta sobre memoria espacial en ratones porque su justificación depende de cotejar la figura original.
 - Acumulado actualizado: 115 hojas revisadas y 133 borradores.
 
+
+## Pipeline documental — sexto lote pedagógico de Ciencias (2026-10-22)
+- Se cotejaron con el PDF original las gráficas de tendencia, calentamiento y electroforesis, y el esquema de trayectorias de los ratones.
+- Se completaron cuatro soluciones con lectura explícita de esos apoyos, sin depender de la transcripción plana.
+- Acumulado: 123 hojas revisadas y 125 borradores.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
