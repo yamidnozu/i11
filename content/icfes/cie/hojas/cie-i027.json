@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "presión de vapor del líquido iguala a la presión atmosférica",
+        "rol": "pide",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la relación",
+        "texto": "Identifica qué condición debe cumplirse para hervir."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Relaciona la altura con la presión atmosférica."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Deduce si hace falta más o menos temperatura para igualar la presión."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar presión atmosférica con punto de ebullición",
+      "que": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+      "pistas": [
+        "Usa la definición de ebullición incluida en el enunciado.",
+        "A mayor altura, la presión atmosférica disminuye."
+      ],
+      "clave": "El agua hierve a una temperatura menor porque la presión atmosférica es más baja.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La explicación reconoce que la presión disminuye, pero concluye que se requiere una temperatura mayor; con menor presión atmosférica, la ebullición ocurre a menor temperatura."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible al considerar solo un dato. Pero Una presión menor cambia la temperatura de ebullición; no impide que el agua hierva."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La baja presión no hace que el agua se congele; el enunciado relaciona ebullición con presión de vapor."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué condición debe cumplirse para hervir."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona la altura con la presión atmosférica."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Deduce si hace falta más o menos temperatura para igualar la presión."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «presión de vapor del líquido iguala a la presión atmosférica» da una pista sobre qué debemos observar.",
+          "a": "m:presión de vapor del líquido iguala a la presión atmosférica"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: La explicación reconoce que la presión disminuye, pero concluye que se requiere una temperatura mayor; con menor presión atmosférica, la ebullición ocurre a menor temperatura. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Una presión menor cambia la temperatura de ebullición; no impide que el agua hierva. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La baja presión no hace que el agua se congele; el enunciado relaciona ebullición con presión de vapor. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué relación científica explica la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Deduce si hace falta más o menos temperatura para igualar la presión.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: La explicación reconoce que la presión disminuye, pero concluye que se requiere una temperatura mayor; con menor presión atmosférica, la ebullición ocurre a menor temperatura. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Una presión menor cambia la temperatura de ebullición; no impide que el agua hierva. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La baja presión no hace que el agua se congele; el enunciado relaciona ebullición con presión de vapor. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El siguiente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
