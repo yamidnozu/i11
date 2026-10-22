@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "propuestas de solución al problema de la urbanización en América Latina",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes evaluar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la postura",
+        "texto": "Identifica qué problema intenta atender cada propuesta."
+      },
+      {
+        "k": "idea",
+        "titulo": "Contrasta las razones",
+        "texto": "Busca el objetivo común que puede reunir las tres medidas."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar varias medidas frente a un problema urbano",
+      "que": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
+      "pistas": [
+        "Identifica qué problema intenta atender cada propuesta.",
+        "Busca el objetivo común que puede reunir las tres medidas."
+      ],
+      "clave": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero No todas priorizan el desarrollo económico de los centros urbanos; también buscan reducir desigualdad y expansión."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La legalización de barrios y el transporte no se enfocan únicamente en recuperar zonas rurales."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Las medidas no priorizan solo a quienes vienen de zonas rurales; cubren varios efectos urbanos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué problema intenta atender cada propuesta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca el objetivo común que puede reunir las tres medidas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «propuestas de solución al problema de la urbanización en América Latina» orienta el análisis.",
+          "a": "m:propuestas de solución al problema de la urbanización en América Latina"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: No todas priorizan el desarrollo económico de los centros urbanos; también buscan reducir desigualdad y expansión. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La legalización de barrios y el transporte no se enfocan únicamente en recuperar zonas rurales. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Las medidas no priorizan solo a quienes vienen de zonas rurales; cubren varios efectos urbanos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué problema intenta atender cada propuesta.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca el objetivo común que puede reunir las tres medidas.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudio",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

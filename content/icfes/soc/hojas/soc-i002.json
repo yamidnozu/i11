@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "argumento válido en contra",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes evaluar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la postura",
+        "texto": "Separa la ubicación de los delitos de la identidad de quienes los cometen."
+      },
+      {
+        "k": "idea",
+        "titulo": "Contrasta las razones",
+        "texto": "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar si una correlación respalda una conclusión",
+      "que": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
+      "pistas": [
+        "Separa la ubicación de los delitos de la identidad de quienes los cometen.",
+        "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
+      ],
+      "clave": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Afirma sin evidencia que nunca hay delincuentes pobres y que todos son ricos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Generaliza sobre cómo actuarían todos los delincuentes si mejoraran sus condiciones."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Explica una posible causa, pero no refuta que los habitantes pobres sean quienes cometen los delitos observados."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Separa la ubicación de los delitos de la identidad de quienes los cometen."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «argumento válido en contra» orienta el análisis.",
+          "a": "m:argumento válido en contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: Afirma sin evidencia que nunca hay delincuentes pobres y que todos son ricos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Generaliza sobre cómo actuarían todos los delincuentes si mejoraran sus condiciones. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Explica una posible causa, pero no refuta que los habitantes pobres sean quienes cometen los delitos observados. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Separa la ubicación de los delitos de la identidad de quienes los cometen.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca una razón que muestre por qué la conclusión no se sigue de los datos.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los habitantes",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

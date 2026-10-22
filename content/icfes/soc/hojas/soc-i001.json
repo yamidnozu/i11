@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "relación entre las opiniones presentadas",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes evaluar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la postura",
+        "texto": "Identifica la razón que ofrece cada persona."
+      },
+      {
+        "k": "idea",
+        "titulo": "Contrasta las razones",
+        "texto": "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Distinguir razones distintas a favor de una postura",
+      "que": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
+      "pistas": [
+        "Identifica la razón que ofrece cada persona.",
+        "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
+      ],
+      "clave": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Ambas posturas rechazan consumir carne, aunque llegan a esa conclusión por razones distintas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Distingue correctamente entre una razón centrada en la salud humana y otra en el bienestar animal."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero También distingue correctamente el efecto del animal sobre la persona y el trato de la persona hacia el animal."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica la razón que ofrece cada persona."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «relación entre las opiniones presentadas» orienta el análisis.",
+          "a": "m:relación entre las opiniones presentadas"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Ambas posturas rechazan consumir carne, aunque llegan a esa conclusión por razones distintas. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Distingue correctamente entre una razón centrada en la salud humana y otra en el bienestar animal. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: También distingue correctamente el efecto del animal sobre la persona y el trato de la persona hacia el animal. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica la razón que ofrece cada persona.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Atiende a «NO»: busca la descripción que no corresponde a esas razones.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Como argumento",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

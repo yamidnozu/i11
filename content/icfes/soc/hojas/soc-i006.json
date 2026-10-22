@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "¿Esta solución se ajusta a los intereses de todos los vecinos?",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes evaluar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la postura",
+        "texto": "Identifica quiénes se benefician y quiénes soportan el ruido."
+      },
+      {
+        "k": "idea",
+        "titulo": "Contrasta las razones",
+        "texto": "Evalúa el efecto de la decisión sobre los propietarios del primer piso."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C explica que el ruido afecta más a quienes viven cerca del salón comunal."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar una decisión frente a intereses en conflicto",
+      "que": "La ampliación hasta la medianoche permite reuniones, pero el salón comunal está junto a los apartamentos del primer piso, cuyos residentes sufren más el ruido. Por eso la decisión no satisface por igual los intereses de todos.",
+      "pistas": [
+        "Identifica quiénes se benefician y quiénes soportan el ruido.",
+        "Evalúa el efecto de la decisión sobre los propietarios del primer piso."
+      ],
+      "clave": "La opción C explica que el ruido afecta más a quienes viven cerca del salón comunal.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Los propietarios de los pisos altos sí pueden usar el salón durante el horario aprobado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Una votación no convierte los intereses distintos de los vecinos en intereses iguales."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Aunque todos pudieron opinar y votar, eso no significa que la decisión satisfaga a todos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica quiénes se benefician y quiénes soportan el ruido."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Evalúa el efecto de la decisión sobre los propietarios del primer piso."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «¿Esta solución se ajusta a los intereses de todos los vecinos?» orienta el análisis.",
+          "a": "m:¿Esta solución se ajusta a los intereses de todos los vecinos?"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La ampliación hasta la medianoche permite reuniones, pero el salón comunal está junto a los apartamentos del primer piso, cuyos residentes sufren más el ruido. Por eso la decisión no satisface por igual los intereses de todos.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La ampliación hasta la medianoche permite reuniones, pero el salón comunal está junto a los apartamentos del primer piso, cuyos residentes sufren más el ruido. Por eso la decisión no satisface por igual los intereses de todos.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Los propietarios de los pisos altos sí pueden usar el salón durante el horario aprobado. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Una votación no convierte los intereses distintos de los vecinos en intereses iguales. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Aunque todos pudieron opinar y votar, eso no significa que la decisión satisfaga a todos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica quiénes se benefician y quiénes soportan el ruido.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Evalúa el efecto de la decisión sobre los propietarios del primer piso.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La ampliación hasta la medianoche permite reuniones, pero el salón comunal está junto a los apartamentos del primer piso, cuyos residentes sufren más el ruido. Por eso la decisión no satisface por igual los intereses de todos.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C explica que el ruido afecta más a quienes viven cerca del salón comunal.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La asamblea",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
