@@ -25,6 +25,12 @@
 - El total sube a 83 hojas revisadas y baja a 165 borradores; las alternativas gráficas, las evidencias del marco y otras hojas aún requieren trabajo.
 - Validación tras el lote: `npx tsc --noEmit` y `VITE_ICFES=1 npx vitest run` (442/442).
 
+
+## Pipeline documental — segundo lote pedagógico de Ciencias (2026-10-22)
+- Se revisaron preguntas de traducción del ARN, transferencia de electrones, sensibilidad a antibióticos y calor específico, con solución y descarte individual de distractores en ambos cuadernillos.
+- Se comprobó que enunciado, opciones y clave coinciden entre las ediciones 2025 y 2026 antes de reutilizar las hojas.
+- El acumulado queda en 91 hojas revisadas y 157 borradores; continúan pendientes las opciones gráficas, los enlaces a evidencias del marco y las hojas restantes.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
