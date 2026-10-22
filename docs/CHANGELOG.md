@@ -31,6 +31,12 @@
 - Se comprobó que enunciado, opciones y clave coinciden entre las ediciones 2025 y 2026 antes de reutilizar las hojas.
 - El acumulado queda en 91 hojas revisadas y 157 borradores; continúan pendientes las opciones gráficas, los enlaces a evidencias del marco y las hojas restantes.
 
+
+## Pipeline documental — tercer lote pedagógico de Ciencias (2026-10-22)
+- Se añadieron soluciones completas para la transcripción de proteínas y la velocidad del sonido en agua y aire.
+- Se verificaron las hojas existentes de configuración electrónica, fuerzas, presión atmosférica y mezclas; esas cuatro ya estaban revisadas y no se reemplazaron.
+- Acumulado actual: 97 hojas revisadas y 151 borradores.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
