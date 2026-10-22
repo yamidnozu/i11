@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "red trófica marina",
+        "rol": "pide",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la evidencia",
+        "texto": "Lee la dirección de las flechas: muestran quién sirve de alimento a quién."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta la relación",
+        "texto": "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Deduce el efecto en cadena sobre el pez loro."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir efectos en una red trófica",
+      "que": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
+      "pistas": [
+        "Lee la dirección de las flechas: muestran quién sirve de alimento a quién.",
+        "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
+      ],
+      "clave": "Al desaparecer el atún, puede aumentar el calamar y crecer la depredación del pez loro.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece razonable si se omite una pista del modelo. Pero El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece razonable si se omite una pista del modelo. Pero El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores."
+        },
+        {
+          "t": "Opción D",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la dirección de las flechas: muestran quién sirve de alimento a quién."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Deduce el efecto en cadena sobre el pez loro."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «red trófica marina» nos ayuda a ubicar la tarea.",
+          "a": "m:red trófica marina"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué evidencia o relación debo usar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Deduce el efecto en cadena sobre el pez loro.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El modelo",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

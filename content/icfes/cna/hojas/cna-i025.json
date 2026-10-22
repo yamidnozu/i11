@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "aceleración de la piedra",
+        "rol": "pide",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la evidencia",
+        "texto": "Compara las magnitudes de las dos fuerzas en el tercer instante."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta la relación",
+        "texto": "Calcula cualitativamente la fuerza neta."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Relaciona fuerza neta nula con aceleración nula."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar fuerzas con aceleración",
+      "que": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
+      "pistas": [
+        "Compara las magnitudes de las dos fuerzas en el tercer instante.",
+        "Calcula cualitativamente la fuerza neta."
+      ],
+      "clave": "El equilibrio entre peso y resistencia produce fuerza neta y aceleración nulas.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece razonable si se omite una pista del modelo. Pero Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece razonable si se omite una pista del modelo. Pero El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual."
+        },
+        {
+          "t": "Opción C",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara las magnitudes de las dos fuerzas en el tercer instante."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Calcula cualitativamente la fuerza neta."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Relaciona fuerza neta nula con aceleración nula."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «aceleración de la piedra» nos ayuda a ubicar la tarea.",
+          "a": "m:aceleración de la piedra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué evidencia o relación debo usar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Relaciona fuerza neta nula con aceleración nula.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En tres",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

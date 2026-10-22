@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "menor cantidad de corriente eléctrica",
+        "rol": "pide",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la evidencia",
+        "texto": "Relaciona corriente inversa con resistencia."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta la relación",
+        "texto": "Prolonga la tendencia de cada curva hasta la temperatura solicitada."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Elige la resistencia con mayor valor en esa temperatura."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Extrapolar una gráfica de resistencia eléctrica",
+      "que": "La corriente disminuye cuando aumenta la resistencia. La gráfica y la tendencia de $R_2$ indican que, al extenderse hasta $90\\,^{\\circ}\\mathrm{C}$, esta resistencia será mayor que las demás; por eso permite la menor corriente.",
+      "pistas": [
+        "Relaciona corriente inversa con resistencia.",
+        "Prolonga la tendencia de cada curva hasta la temperatura solicitada."
+      ],
+      "clave": "La tendencia de $R_2$ alcanza la mayor resistencia a $90\\,^{\\circ}\\mathrm{C}$ y por ello la corriente más baja.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La curva de $R_1$ no es la mayor en todo el intervalo y la pregunta pide la resistencia a $90\\,^{\\circ}\\mathrm{C}$."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece razonable si se omite una pista del modelo. Pero Aunque $R_3$ es baja en parte del intervalo dibujado, una resistencia menor produce más corriente, no menos; además, se pregunta por la temperatura indicada."
+        },
+        {
+          "t": "Opción D",
+          "p": "Parece razonable si se omite una pista del modelo. Pero $R_4$ se mantiene constante, pero la tendencia de $R_2$ la supera al extrapolar a $90\\,^{\\circ}\\mathrm{C}$. "
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona corriente inversa con resistencia."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Prolonga la tendencia de cada curva hasta la temperatura solicitada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Elige la resistencia con mayor valor en esa temperatura."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «menor cantidad de corriente eléctrica» nos ayuda a ubicar la tarea.",
+          "a": "m:menor cantidad de corriente eléctrica"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La corriente disminuye cuando aumenta la resistencia. La gráfica y la tendencia de $R_2$ indican que, al extenderse hasta $90\\,^{\\circ}\\mathrm{C}$, esta resistencia será mayor que las demás; por eso permite la menor corriente.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La corriente disminuye cuando aumenta la resistencia. La gráfica y la tendencia de $R_2$ indican que, al extenderse hasta $90\\,^{\\circ}\\mathrm{C}$, esta resistencia será mayor que las demás; por eso permite la menor corriente.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La curva de $R_1$ no es la mayor en todo el intervalo y la pregunta pide la resistencia a $90\\,^{\\circ}\\mathrm{C}$. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Aunque $R_3$ es baja en parte del intervalo dibujado, una resistencia menor produce más corriente, no menos; además, se pregunta por la temperatura indicada. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: $R_4$ se mantiene constante, pero la tendencia de $R_2$ la supera al extrapolar a $90\\,^{\\circ}\\mathrm{C}$.  La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué evidencia o relación debo usar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La corriente disminuye cuando aumenta la resistencia. La gráfica y la tendencia de $R_2$ indican que, al extenderse hasta $90\\,^{\\circ}\\mathrm{C}$, esta resistencia será mayor que las demás; por eso permite la menor corriente.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Elige la resistencia con mayor valor en esa temperatura.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La curva de $R_1$ no es la mayor en todo el intervalo y la pregunta pide la resistencia a $90\\,^{\\circ}\\mathrm{C}$. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Aunque $R_3$ es baja en parte del intervalo dibujado, una resistencia menor produce más corriente, no menos; además, se pregunta por la temperatura indicada. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: $R_4$ se mantiene constante, pero la tendencia de $R_2$ la supera al extrapolar a $90\\,^{\\circ}\\mathrm{C}$.  La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La siguiente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
