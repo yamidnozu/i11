@@ -1,5 +1,10 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — preguntas 11 a 13 (2026-10-22)
+- Se comprobó el bono sobre lotes completos en la pregunta 11, se recortaron las cuatro opciones gráficas de la pregunta 12 y se resolvió la inferencia de viajes mínimos en la pregunta 13.
+- Se corrigió el formato de los pasos numerados en las preguntas 10 y 11 para que la vista los conserve legibles. Las tres hojas quedaron revisadas y sus apoyos se verificaron en la vista previa.
+- El informe y el contexto quedan en 260 hojas revisadas y 86 borradores. TypeScript y Vitest pasan (540/540); los builds estándar y gated pasan.
+
 ## Revisión Matemáticas 2018 — preguntas 7 a 10 (2026-10-22)
 - Se corrigió la estatura de la pregunta 8 a $3/2$ m y se limpiaron las opciones que arrastraban texto de la página siguiente.
 - Se reconstruyeron los bloques compartidos: mapa y dos tablas de obesidad para las preguntas 7–8, y tabla de precios y costos para las preguntas 9–13.

@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "concepto",
+    "marcas": [
+      { "frag": "100 toneladas de mango y 50 de banano", "rol": "dato", "nota": "Suma la carga total para calcular la cantidad mínima de salidas.", "campo": "Carga del mes" },
+      { "frag": "es posible conocer", "rol": "pide", "nota": "Distingue qué se determina con los datos disponibles.", "campo": "Alcance de la información" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Usa la carga y la capacidad conjunta", "texto": "Se conoce cuántas toneladas se vendieron y la capacidad de los tres camiones; eso basta para hallar el mínimo de salidas." },
+      { "k": "calc", "titulo": "Calcula la carga y las salidas mínimas", "lineas": ["$100 + 50 = 150$ toneladas", "$3 × 5 = 15$ toneladas por salida", "$150 ÷ 15 = 10$ salidas"], "nota": "Si se cuenta cada camión por separado, son treinta viajes individuales." },
+      { "k": "check", "texto": "Se puede conocer el número mínimo de viajes; la respuesta es D." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir viajes mínimos por capacidad",
+      "que": "Suma las toneladas y divide por la capacidad de carga conjunta de los camiones para hallar el mínimo de salidas.",
+      "pistas": ["La información da la carga total vendida.", "La capacidad de cada camión y la cantidad de camiones son conocidas."],
+      "clave": "La carga suma $150$ toneladas. Los tres camiones pueden llevar $15$ toneladas por salida conjunta; se requieren como mínimo $10$ salidas.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "La ganancia depende de las ciudades en que se vendió cada producto. Pero esa distribución no aparece." },
+        { "t": "Opción B", "p": "El pago depende de la asignación de trabajadores a viajes y ventas. Pero esos detalles no están dados." },
+        { "t": "Opción C", "p": "Los costos dependen de las ciudades de destino y de los viajes. Pero la información no indica esa distribución." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Suma las toneladas de mango y banano.", "eq": ["$100 + 50 = 150$"] },
+        { "t": "Calcula la capacidad conjunta por salida de los tres camiones.", "eq": ["$3 × 5 = 15$"] },
+        { "t": "Divide la carga total entre esa capacidad y toma el mínimo de salidas.", "eq": ["$150 ÷ 15 = 10$"] }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Qué cantidades sí conocemos: las ciudades de venta o el total de toneladas?", "a": "m:100 toneladas de mango y 50 de banano" },
+        { "t": "La carga suma ciento cincuenta toneladas. Los tres camiones llevan quince por salida conjunta." },
+        { "t": "Se requieren como mínimo diez salidas. La respuesta es D.", "a": "o:D:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Suma la carga y compárala con la capacidad conjunta de la flota." },
+        { "t": "La carga es $100 + 50 = 150$ toneladas. Cada salida conjunta mueve $3 × 5 = 15$ toneladas, así que el mínimo es $150 ÷ 15 = 10$ salidas." },
+        { "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos.", "a": "o:B:no", "k": "err" },
+        { "t": "La opción C depende de destinos y costos de viaje que no se especifican.", "a": "o:C:no", "k": "err" },
+        { "t": "La capacidad y la carga sí permiten hallar las salidas mínimas. La respuesta es D.", "a": "o:D:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "La suma vendida es $100 + 50 = 150$ toneladas.", "a": "p:0", "k": "ana" },
+        { "t": "Tres camiones de cinco toneladas mueven $15$ toneladas por salida conjunta; $150 ÷ 15 = 10$ salidas. Contadas por vehículo, equivalen a treinta viajes de camión.", "a": "p:1" },
+        { "t": "La capacidad de carga determina ese mínimo, aunque no se conozcan las ciudades de destino.", "a": "p:2", "k": "contra" },
+        { "t": "A, B y C dependen de datos de venta, pagos o destinos que no se conocen.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
+        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Durante enero",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

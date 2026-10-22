@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "7 toneladas de fruta", "rol": "dato", "nota": "Esa carga requiere dos camiones por su capacidad máxima.", "campo": "Carga para W" },
+      { "frag": "relación de costos por ciudad", "rol": "pide", "nota": "Compara el gasto de transporte y los pagos a trabajadores en W y Z.", "campo": "Gráfica buscada" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Cuenta los camiones y trabajadores", "texto": "Tanto siete como diez toneladas necesitan dos camiones. Cada uno lleva dos trabajadores." },
+      { "k": "tabla", "titulo": "Calcula los cuatro costos", "cols": ["Ciudad", "Transporte", "Trabajadores"], "filas": [["W", "$300.000", "$720.000"], ["Z", "$360.000", "$800.000"]] },
+      { "k": "check", "texto": "La opción B muestra dos camiones y cuatro trabajadores por ciudad, con los costos correctos." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Gráficas de costos por ciudad",
+      "que": "Calcula transporte y salarios con la cantidad de camiones y trabajadores requeridos; compara esos valores con las barras.",
+      "pistas": ["La capacidad máxima es cinco toneladas por camión.", "Cada camión requiere dos trabajadores por viaje."],
+      "clave": "En W, transporte y salarios cuestan $300.000$ y $720.000$. En Z, cuestan $360.000$ y $800.000$; la gráfica correcta es B.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "Muestra el pago de trabajadores para un solo camión. Pero cada ciudad necesita dos camiones." },
+        { "t": "Opción C", "p": "Muestra el transporte de dos camiones, pero el pago de un solo camión. Pero se requieren dos equipos de trabajadores." },
+        { "t": "Opción D", "p": "Intercambia los costos de transporte y trabajadores entre las ciudades. Pero los valores mayores corresponden a Z." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Determina cuántos camiones se requieren en cada ciudad." },
+        { "t": "Multiplica camiones por transporte y por dos trabajadores.", "eq": ["$W: 2 × 150.000 = 300.000$", "$W: 2 × 2 × 180.000 = 720.000$", "$Z: 2 × 180.000 = 360.000$", "$Z: 2 × 2 × 200.000 = 800.000$"] },
+        { "t": "Busca la opción cuyas barras representan esos cuatro costos." }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Cuántos camiones hacen falta para siete toneladas si cada uno lleva máximo cinco?", "a": "m:7 toneladas de fruta" },
+        { "t": "Se necesitan dos en W y dos en Z. El transporte cuesta $300.000$ y $360.000$; los trabajadores, $720.000$ y $800.000$." },
+        { "t": "La gráfica B reúne esos valores.", "a": "o:B:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Calcula por separado el transporte y el pago de trabajadores en cada ciudad." },
+        { "t": "En W: $2 × 150.000 = 300.000$ y $2 × 2 × 180.000 = 720.000$. En Z: $2 × 180.000 = 360.000$ y $2 × 2 × 200.000 = 800.000$." },
+        { "t": "La opción A usa salarios para un camión, no dos.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción C combina transporte de dos camiones con salarios de uno.", "a": "o:C:no", "k": "err" },
+        { "t": "La opción D intercambia los costos por ciudad.", "a": "o:D:no", "k": "err" },
+        { "t": "La opción B muestra los cuatro costos calculados.", "a": "o:B:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Las dos cargas superan cinco toneladas y no exceden diez; por eso cada ciudad requiere dos camiones.", "a": "p:0", "k": "ana" },
+        { "t": "Para W, los gastos son $2 × 150.000 = 300.000$ de transporte y $4 × 180.000 = 720.000$ de salarios. Para Z, son $2 × 180.000 = 360.000$ y $4 × 200.000 = 800.000$.", "a": "p:1" },
+        { "t": "Solo B representa los valores calculados y conserva la categoría de cada gasto.", "a": "p:2", "k": "contra" },
+        { "t": "A y C subestiman los salarios; D intercambia los valores entre ciudades.", "a": "o:A:no|o:C:no|o:D:no", "k": "err" },
+        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Si se",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

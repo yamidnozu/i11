@@ -135,12 +135,60 @@
   "mth-i010": {
     "bloque": "mth-frutas-2018",
     "revisar": [],
+    "enunciado": "Los tres (3) camiones se cargan con 5 toneladas de banano cada uno para venderse en la ciudad W. El comerciante necesita conocer la ganancia al hacer este negocio, ejecutando el siguiente procedimiento: Paso 1: Halla el número de toneladas de banano que hay en los 3 camiones. Paso 2: Halla la diferencia entre el precio de venta de una tonelada de banano en la ciudad W y el precio de compra. Paso 3: Multiplica los valores hallados en los pasos 1 y 2. Paso 4: Encuentra los costos totales de transporte y súmale el pago total de los trabajadores en los tres viajes. Paso 5: Halla la diferencia entre el valor obtenido en el paso 3 y el paso 4. ¿Cuál es la ganancia que obtiene el comerciante?",
     "explicacion": "Los tres camiones transportan $3 × 5 = 15$ toneladas. El margen por tonelada de banano en W es $1.000.000 - 400.000 = 600.000$, así que el margen de venta es $15 × 600.000 = 9.000.000$. El transporte cuesta $3 × 150.000 = 450.000$ y los seis trabajadores reciben $6 × 180.000 = 1.080.000$. La ganancia es $9.000.000 - 450.000 - 1.080.000 = 7.470.000$. La respuesta es C.",
     "distractores": [
       "$5.670.000$ resta costos que no corresponden a los datos del procedimiento.",
       "$5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores.",
       "",
       "$8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
+    ]
+  },
+  "mth-i011": {
+    "bloque": "mth-frutas-2018",
+    "revisar": [],
+    "enunciado": "Para diciembre, el comerciante decidió que por cada 5 toneladas del producto transportado en camión y vendido en alguna de las ciudades, cada uno de los dos empleados necesarios por camión recibirá un bono de 0,3 % del dinero recibido en la venta de esas 5 toneladas. En ese mes, dos empleados transportaron y vendieron 47 toneladas de mango a la ciudad W. Para hallar el bono recibido por cada uno de ellos, se ejecutó el siguiente procedimiento: Paso 1: Se dividió el número de toneladas vendidas entre 5 y se halló su residuo. Paso 2: Se restó del número de toneladas vendidas el valor obtenido en el paso 1. Paso 3: Se multiplicó el valor obtenido en el paso 2 por el valor de venta de la tonelada del producto. Paso 4: Al valor obtenido en el paso 3 se le sacó el 0,3 %. El bono recibido por cada empleado fue, aproximadamente, de",
+    "explicacion": "Se cuentan solo grupos completos de cinco toneladas: $47 - 2 = 45$ toneladas. A $1.300.000$ por tonelada, esas ventas suman $45 × 1.300.000 = 58.500.000$. El bono de cada trabajador es $0,3\\% × 58.500.000 = 175.500$, aproximadamente $175.000$ pesos. La respuesta es B.",
+    "distractores": [
+      "$526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas.",
+      "",
+      "$148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles.",
+      "$87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
+    ]
+  },
+  "mth-i012": {
+    "bloque": "mth-frutas-2018",
+    "revisar": [],
+    "enunciado": "Si se transportan 7 toneladas de fruta a la ciudad W y 10 toneladas de fruta a la ciudad Z, la gráfica que muestra la relación de costos por ciudad es",
+    "opcionesFig": [
+      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-a.png", "alt": "Opción A: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [110, 348, 292, 462] } },
+      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-b.png", "alt": "Opción B: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [315, 348, 490, 462] } },
+      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-c.png", "alt": "Opción C: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [110, 480, 292, 594] } },
+      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-d.png", "alt": "Opción D: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [315, 480, 490, 594] } }
+    ],
+    "explicacion": "Para transportar 7 toneladas a W y 10 a Z se necesitan dos camiones en cada ciudad. El transporte cuesta $2 × 150.000 = 300.000$ en W y $2 × 180.000 = 360.000$ en Z. Los trabajadores cuestan $2 × 2 × 180.000 = 720.000$ en W y $2 × 2 × 200.000 = 800.000$ en Z. La gráfica que representa esos cuatro valores es B.",
+    "distractores": [
+      "La opción A muestra costos de trabajadores de un solo camión por ciudad, aunque en cada destino se necesitan dos.",
+      "",
+      "La opción C muestra transporte para dos camiones, pero pago de trabajadores como si se usara uno solo.",
+      "La opción D intercambia los costos de las ciudades y no corresponde a la tabla."
+    ]
+  },
+  "mth-i013": {
+    "bloque": "mth-frutas-2018",
+    "revisar": [],
+    "opciones": [
+      "la ganancia de los productores.",
+      "el pago que recibirá cada trabajador en enero.",
+      "los costos totales del comerciante.",
+      "el número mínimo de viajes que se realizaron desde el pueblo."
+    ],
+    "explicacion": "El comerciante vendió $100 + 50 = 150$ toneladas. Los tres camiones pueden llevar $3 × 5 = 15$ toneladas por salida conjunta; por tanto, se requieren como mínimo $150 ÷ 15 = 10$ salidas. Si se cuentan viajes individuales de camión, son 30. Los datos no bastan para conocer ganancia, pagos o costos totales sin saber cómo se distribuyeron las ventas por ciudad. La respuesta es D.",
+    "distractores": [
+      "No se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia.",
+      "No se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago.",
+      "Sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores.",
+      ""
     ]
   },
   "__paquete__": {
