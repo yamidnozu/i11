@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "75 kg", "rol": "dato", "nota": "Es el peso que se usa en el cálculo del IMC.", "campo": "Peso" },
+      { "frag": "forma parte del", "rol": "pide", "nota": "Hay que identificar la categoría y el porcentaje que le corresponden.", "campo": "Clasificación" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Calcula el IMC con la estatura completa", "texto": "La estatura es tres medios de metro. El índice divide el peso por el cuadrado de esa estatura." },
+      { "k": "calc", "titulo": "Ubica el resultado en la tabla", "lineas": ["$75 ÷ (3/2)^2 = 75 ÷ 2,25 = 33,3\\overline{3}$", "$30,0 < 33,3\\overline{3} < 34,9$"], "nota": "El resultado cae en obesidad leve. La fila de hombres de la tabla indica el porcentaje correspondiente." },
+      { "k": "check", "texto": "El IMC corresponde a obesidad leve y la tabla registra el trece por ciento para los hombres del grupo de edad. La respuesta es D." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Índice de masa corporal y clasificación",
+      "que": "Eleva la estatura al cuadrado, divide el peso por ese resultado y relaciona el índice con la categoría y el porcentaje de la tabla.",
+      "pistas": ["La estatura es tres medios de metro, no tres metros.", "Compara el IMC con los intervalos de la tabla de clasificación."],
+      "clave": "El IMC es $33,3\\overline{3}$; está en el intervalo de obesidad leve, cuyo porcentaje para hombres es trece por ciento.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "Un IMC de $33,3\\overline{3}$ no es inferior a $18,5$. Pero el bajo peso exige estar por debajo de ese límite." },
+        { "t": "Opción B", "p": "El IMC no está entre $25,0$ y $29,9$. Pero ese es el intervalo de sobrepeso." },
+        { "t": "Opción C", "p": "El IMC no alcanza $40,0$. Pero la obesidad alta empieza en ese valor." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Escribe la estatura en metros y elévala al cuadrado." },
+        { "t": "Divide el peso entre ese cuadrado.", "eq": ["$75 ÷ (3/2)^2 = 33,3\\overline{3}$"] },
+        { "t": "Busca el intervalo que contiene el resultado y lee la fila de hombres." }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "La estatura es tres medios de metro. ¿Qué operación define el IMC?", "a": "m:75 kg" },
+        { "t": "Dividimos el peso por el cuadrado de la estatura: el resultado es aproximadamente $33,3$." },
+        { "t": "Ese valor está en obesidad leve; la respuesta es D.", "a": "o:D:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Eleva tres medios al cuadrado y divide el peso entre ese resultado." },
+        { "t": "El IMC es $75 ÷ (3/2)^2 = 33,3\\overline{3}$. Está entre $30,0$ y $34,9$; para hombres, la tabla señala trece por ciento." },
+        { "t": "La opción A usa bajo peso, pero el IMC supera $18,5$.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción B usa sobrepeso, pero el IMC supera $29,9$.", "a": "o:B:no", "k": "err" },
+        { "t": "La opción C usa obesidad alta, pero el IMC es menor que $40,0$.", "a": "o:C:no", "k": "err" },
+        { "t": "La clasificación es obesidad leve y corresponde al trece por ciento. La respuesta es D.", "a": "o:D:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Primero interpreto la estatura como $3/2$ metros y calculo el cuadrado: $(3/2)^2 = 2,25$.", "a": "p:0", "k": "ana" },
+        { "t": "El índice es $75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre $30,0$ y $34,9$, intervalo de obesidad leve.", "a": "p:1" },
+        { "t": "La tabla para hombres de ese rango de edad asocia a la categoría el trece por ciento.", "a": "p:2", "k": "contra" },
+        { "t": "A y B corresponden a intervalos menores; C requiere un índice de al menos $40,0$.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
+        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El IMC",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

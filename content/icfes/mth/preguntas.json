@@ -2,6 +2,136 @@
   "bloques": [
     {
       "area": "matematicas",
+      "encabezado": "Responde las preguntas siete y ocho de acuerdo con la siguiente información",
+      "figuras": [
+        {
+          "alt": "Mapa de cuatro países con muertes anuales por obesidad y su porcentaje del total",
+          "recorteFuente": {
+            "pagina": 7,
+            "rect": [
+              135,
+              328,
+              300,
+              431
+            ]
+          },
+          "src": "/icfes/mth/imagenes/mth-obesidad-2018.png",
+          "tipo": "img"
+        },
+        {
+          "alt": "Clasificación del estado nutricional según el índice de masa corporal",
+          "cols": [
+            "Clasificación",
+            "IMC (kg/m²)"
+          ],
+          "filas": [
+            [
+              "Bajo peso",
+              "< 18,5"
+            ],
+            [
+              "Normal",
+              "18,5–24,9"
+            ],
+            [
+              "Sobrepeso",
+              "25,0–29,9"
+            ],
+            [
+              "Obesidad",
+              "≥ 30,0"
+            ],
+            [
+              "Obesidad leve",
+              "30,0–34,9"
+            ],
+            [
+              "Obesidad media",
+              "35,0–39,9"
+            ],
+            [
+              "Obesidad alta",
+              "≥ 40,0"
+            ]
+          ],
+          "tipo": "tabla"
+        },
+        {
+          "alt": "Porcentaje de hombres y mujeres de 26 a 60 años por rango de IMC en P2",
+          "cols": [
+            "IMC (kg/m²)",
+            "< 18,5",
+            "18,5–24,9",
+            "25,0–29,9",
+            "30,0–34,9",
+            "35,0–39,9",
+            "≥ 40,0"
+          ],
+          "filas": [
+            [
+              "Mujeres (%)",
+              "1",
+              "50",
+              "30",
+              "13",
+              "5",
+              "1"
+            ],
+            [
+              "Hombres (%)",
+              "1",
+              "34",
+              "50",
+              "13",
+              "1",
+              "1"
+            ]
+          ],
+          "tipo": "tabla"
+        }
+      ],
+      "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 7 y 8.",
+      "id": "mth-obesidad-2018",
+      "texto": "El gráfico presenta las muertes por obesidad y el porcentaje que representan del total anual en cuatro países. Las tablas muestran la clasificación del IMC y porcentajes de hombres y mujeres de 26 a 60 años en P2. Datos de las tablas tomados y adaptados de searteriosclerosis.org."
+    },
+    {
+      "area": "matematicas",
+      "encabezado": "Responde las preguntas nueve a trece de acuerdo con la siguiente información",
+      "figuras": [
+        {
+          "alt": "Precios de venta, transporte por camión y pago por trabajador en las ciudades W y Z",
+          "cols": [
+            "Ciudad",
+            "Venta por tonelada de banano",
+            "Venta por tonelada de mango",
+            "Transporte por camión",
+            "Pago por trabajador y viaje"
+          ],
+          "filas": [
+            [
+              "W",
+              "$1.000.000",
+              "$1.300.000",
+              "$150.000",
+              "$180.000"
+            ],
+            [
+              "Z",
+              "$1.200.000",
+              "$1.350.000",
+              "$180.000",
+              "$200.000"
+            ]
+          ],
+          "tipo": "tabla"
+        }
+      ],
+      "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 9 a 13.",
+      "id": "mth-frutas-2018",
+      "texto": "El comerciante compra el banano a $400.000 por tonelada y el mango a $500.000. Usa camiones con capacidad de 5 toneladas y contrata dos trabajadores por camión en cada viaje."
+    },
+    {
+      "area": "matematicas",
       "encabezado": "Responde las preguntas cuatro a seis de acuerdo con la siguiente información",
       "figuras": [
         {
@@ -1127,110 +1257,139 @@
     },
     {
       "area": "matematicas",
+      "bloque": "mth-obesidad-2018",
       "correcta": 1,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
+        "Sumar las muertes por obesidad de los cuatro países no da el total de muertes de P3.",
         "",
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente."
+        "La figura sí permite obtener el total de muertes en P3 al relacionar 28.000 con el 7 % que representan.",
+        "La figura informa las muertes por obesidad y su porcentaje; esa relación permite inferir el total de muertes en P3."
       ],
       "enunciado": "Se necesita comparar la información sobre la obesidad, con la información sobre muertes causa- das por otra enfermedad en P3. Se sabe que en P3 el número de muertes por esa enfermedad al año es 1.700. Tomando este valor, multiplicándolo por cien y dividiéndolo entre el número total de muertes en P3, se obtiene el porcentaje de fallecimientos que causa esta enfermedad. Usan- do la información, ¿es posible determinar qué porcentaje de muertes en P3 ocurre debido a esta otra enfermedad?",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "La figura indica que en P3 hubo 28.000 muertes por obesidad, equivalentes al 7 % del total. Entonces el total de muertes en P3 es $28.000 ÷ 0,07 = 400.000$. Con ese denominador se puede calcular el porcentaje de 1.700 muertes por la otra enfermedad: $1.700 × 100 ÷ 400.000 = 0,425\\%$. La respuesta es B.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 7.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "En P tres, $28.000$ muertes por obesidad representan el $7\\%$; por eso el total anual es $400.000$ y las $1.700$ muertes equivalen al $0,425\\%$.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Sumar muertes por obesidad de países distintos no da el total anual de P tres. Pero el dato de ese país basta para hallar su total.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Afirma que falta el total de muertes de cada país. Pero en P tres se obtiene a partir de $28.000$ y el $7\\%$.",
               "t": "Opción C"
+            },
+            {
+              "p": "Confunde el dato de obesidad con el total. Pero el $7\\%$ permite inferir el total de muertes en P tres.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Localiza en la figura el dato del tercer país y el porcentaje asociado.",
+            "Usa el total hallado como denominador del porcentaje pedido."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "t": "Identifica la cantidad que representa un porcentaje conocido."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$28.000 ÷ 0,07 = 400.000$"
+              ],
+              "t": "Calcula el total anual de muertes en P tres."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "eq": [
+                "$1.700 × 100 ÷ 400.000 = 0,425\\%$"
+              ],
+              "t": "Calcula el porcentaje que representan las muertes por la otra enfermedad."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Usa una cantidad y el porcentaje que representa para recuperar el total; luego calcula qué porcentaje representa otra cantidad.",
+          "tema": "Porcentajes de un total inferido"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:1.700",
+              "t": "¿Qué relación muestra la figura entre las muertes por obesidad en P tres y el total?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Las $28.000$ muertes por obesidad son el siete por ciento del total."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Con ese total se calcula el porcentaje de la otra enfermedad. La respuesta es B."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:qué porcentaje de muertes en P3",
+              "t": "Primero despeja el total a partir de $28.000$ y el siete por ciento; después úsalo para el cálculo solicitado."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "El total es $28.000 ÷ 0,07 = 400.000$. Entonces $1.700 × 100 ÷ 400.000 = 0,425\\%$."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A suma datos de países distintos, no el total de P tres."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C dice que falta el total; la figura permite obtenerlo con el porcentaje de P tres."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D confunde las muertes por obesidad con el total; el siete por ciento permite inferirlo."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Sí se puede determinar el porcentaje. La respuesta es B."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "Las $28.000$ muertes por obesidad en P tres corresponden al siete por ciento del total; por tanto, el total es $28.000 ÷ 0,07 = 400.000$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "Divido las $1.700$ muertes por la otra enfermedad entre ese total y multiplico por cien: $1.700 × 100 ÷ 400.000 = 0,425\\%$."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "La figura da información suficiente para el denominador y la operación produce el porcentaje pedido."
+            },
+            {
+              "a": "o:A:no|o:C:no|o:D:no",
+              "k": "err",
+              "t": "La opción A suma países distintos; la C afirma que falta un total que sí puede inferirse; la D toma las muertes por obesidad como si fueran el total."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es B."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "Se necesita",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Muertes por otra enfermedad",
+            "frag": "1.700",
+            "nota": "Es la cantidad anual de muertes por la otra enfermedad en P tres.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Porcentaje solicitado",
+            "frag": "qué porcentaje de muertes en P3",
+            "nota": "Se necesita conocer el total de muertes anuales en P tres.",
             "rol": "pide"
           }
         ],
@@ -1238,11 +1397,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "La figura indica que $28.000$ muertes por obesidad representan el $7\\%$ del total en P tres.",
+            "titulo": "Recupera el total anual de muertes en P tres"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$28.000 ÷ 0,07 = 400.000$",
+              "$1.700 × 100 ÷ 400.000 = 0,425\\%$"
+            ],
+            "nota": "El dato de obesidad permite hallar el total de muertes; con ese total se calcula el porcentaje de la otra enfermedad.",
+            "titulo": "Calcula el total y el porcentaje solicitado"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "La información sí permite calcular el porcentaje solicitado. La respuesta es B."
           }
         ]
       },
@@ -1252,120 +1421,143 @@
         "Sí, porque adicionando el número de muertes de los países se obtiene el total de muertes que permite calcular el porcentaje pedido.",
         "Sí, porque solamente falta conocer el número total de muertes en P3, que se obtiene con la información de la figura.",
         "No, porque en la figura faltan los datos sobre el número total de muertes en cada país.",
-        "No, porque los datos de P3 son información sobre las muertes por obesidad.\n\n\n\n\n Prueba de 7 Matemáticas"
+        "No, porque los datos de P3 son información sobre las muertes por obesidad."
       ],
       "origen": "icfes",
       "parte": "Pregunta 7",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
+      "bloque": "mth-obesidad-2018",
       "correcta": 3,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
+        "Un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso.",
+        "Un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso.",
+        "Un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta.",
         ""
       ],
-      "enunciado": "El IMC de una persona se calcula dividiendo su peso (en kg) entre su estatura (en m) elevada al cuadrado. De un hombre de P2 que tiene 30 años de edad, pesa 75 kg y tiene una estatura de 3 m, puede afirmarse que forma parte del 2",
-      "estadoHoja": "borrador",
+      "enunciado": "El IMC de una persona se calcula dividiendo su peso (en kg) entre su estatura (en m) elevada al cuadrado. De un hombre de P2 que tiene 30 años de edad, pesa 75 kg y tiene una estatura de $\\frac{3}{2}$ m, puede afirmarse que forma parte del",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "La estatura es $\\frac{3}{2}$ m, así que el IMC es $75 ÷ (\\frac{3}{2})^2 = 75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre 30,0 y 34,9; corresponde a obesidad leve. La tabla indica que el 13 % de los hombres de ese rango de edad está en esa categoría. La respuesta es D.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 8.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "El IMC es $33,3\\overline{3}$; está en el intervalo de obesidad leve, cuyo porcentaje para hombres es trece por ciento.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Un IMC de $33,3\\overline{3}$ no es inferior a $18,5$. Pero el bajo peso exige estar por debajo de ese límite.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "El IMC no está entre $25,0$ y $29,9$. Pero ese es el intervalo de sobrepeso.",
               "t": "Opción B"
+            },
+            {
+              "p": "El IMC no alcanza $40,0$. Pero la obesidad alta empieza en ese valor.",
+              "t": "Opción C"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "La estatura es tres medios de metro, no tres metros.",
+            "Compara el IMC con los intervalos de la tabla de clasificación."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "t": "Escribe la estatura en metros y elévala al cuadrado."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$75 ÷ (3/2)^2 = 33,3\\overline{3}$"
+              ],
+              "t": "Divide el peso entre ese cuadrado."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Busca el intervalo que contiene el resultado y lee la fila de hombres."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Eleva la estatura al cuadrado, divide el peso por ese resultado y relaciona el índice con la categoría y el porcentaje de la tabla.",
+          "tema": "Índice de masa corporal y clasificación"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:75 kg",
+              "t": "La estatura es tres medios de metro. ¿Qué operación define el IMC?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Dividimos el peso por el cuadrado de la estatura: el resultado es aproximadamente $33,3$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Ese valor está en obesidad leve; la respuesta es D."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "Eleva tres medios al cuadrado y divide el peso entre ese resultado."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "El IMC es $75 ÷ (3/2)^2 = 33,3\\overline{3}$. Está entre $30,0$ y $34,9$; para hombres, la tabla señala trece por ciento."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A usa bajo peso, pero el IMC supera $18,5$."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B usa sobrepeso, pero el IMC supera $29,9$."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C usa obesidad alta, pero el IMC es menor que $40,0$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La clasificación es obesidad leve y corresponde al trece por ciento. La respuesta es D."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "Primero interpreto la estatura como $3/2$ metros y calculo el cuadrado: $(3/2)^2 = 2,25$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "El índice es $75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre $30,0$ y $34,9$, intervalo de obesidad leve."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "La tabla para hombres de ese rango de edad asocia a la categoría el trece por ciento."
+            },
+            {
+              "a": "o:A:no|o:B:no|o:C:no",
+              "k": "err",
+              "t": "A y B corresponden a intervalos menores; C requiere un índice de al menos $40,0$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es D."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "El IMC",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Peso",
+            "frag": "75 kg",
+            "nota": "Es el peso que se usa en el cálculo del IMC.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Clasificación",
+            "frag": "forma parte del",
+            "nota": "Hay que identificar la categoría y el porcentaje que le corresponden.",
             "rol": "pide"
           }
         ],
@@ -1373,11 +1565,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "La estatura es tres medios de metro. El índice divide el peso por el cuadrado de esa estatura.",
+            "titulo": "Calcula el IMC con la estatura completa"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$75 ÷ (3/2)^2 = 75 ÷ 2,25 = 33,3\\overline{3}$",
+              "$30,0 < 33,3\\overline{3} < 34,9$"
+            ],
+            "nota": "El resultado cae en obesidad leve. La fila de hombres de la tabla indica el porcentaje correspondiente.",
+            "titulo": "Ubica el resultado en la tabla"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "El IMC corresponde a obesidad leve y la tabla registra el trece por ciento para los hombres del grupo de edad. La respuesta es D."
           }
         ]
       },
@@ -1387,120 +1589,146 @@
         "1 % de hombres entre 26 y 60 años de edad con bajo peso.",
         "50 % de hombres entre 26 y 60 años de edad con sobrepeso.",
         "1 % de hombres entre 26 y 60 años de edad con obesidad alta.",
-        "13 % de hombres entre 26 y 60 años de edad con obesidad leve.\n RESPONDA LAS PREGUNTAS 9 A 13 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN\n Para transportar mango y banano desde un pueblo cercano a dos ciudades, W y Z, un comerciante utiliza tres (3) camiones con capacidad de 5 toneladas cada uno; por cada camión contrata dos tra- bajadores en cada viaje. El comerciante compra a $400.000 la tonelada de banano y a $500.000, la de mango. En la tabla se muestra el precio de venta por tonelada de cada producto y los gastos de transporte y de trabajadores para cada ciudad. Precio de venta Precio de venta Costo Pago por Ciudad tonelada de tonelada de transporte por trabajador banano mango camión por viaje W $1.000.000 $1.300.000 $150.000 $180.000\n Z $1.200.000 $1.350.000 $180.000 $200.000 Tabla"
+        "13 % de hombres entre 26 y 60 años de edad con obesidad leve."
       ],
       "origen": "icfes",
       "parte": "Pregunta 8",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
+      "bloque": "mth-frutas-2018",
       "correcta": 2,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
+        "El ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos.",
+        "La diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones.",
         "",
-        "Pendiente de análisis; no inferido automáticamente."
+        "Los gastos de transporte y trabajadores son mayores en Z, no en W."
       ],
       "enunciado": "Una persona afirma que para el comerciante es más rentable vender 6 toneladas de mango en la ciudad Z que en la ciudad W. La afirmación de esta persona es correcta, porque",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "Vender seis toneladas de mango deja $300.000$ más de ingreso en Z que en W: la diferencia de $50.000$ por tonelada se multiplica por seis. Para transportar seis toneladas se necesitan dos camiones. El transporte y los dos trabajadores por camión cuestan $1.020.000$ en W y $1.160.000$ en Z; la diferencia de gastos es $140.000$. El aumento en ventas supera el aumento en gastos, así que la afirmación es correcta. La respuesta es C.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 9.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "La venta genera $300.000$ adicionales en Z; los gastos aumentan $140.000$. La diferencia favorece la rentabilidad en Z.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Compara solo el ingreso de venta. Pero la rentabilidad también descuenta transporte y pago de trabajadores.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Compara el aumento por tonelada con el costo de un camión. Pero hay que multiplicar por seis toneladas y considerar dos camiones.",
               "t": "Opción B"
+            },
+            {
+              "p": "Afirma que W tiene mayores gastos. Pero el transporte y el pago por trabajador son mayores en Z.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Seis toneladas superan la capacidad de un camión.",
+            "En cada camión viajan dos trabajadores y se paga por trabajador y viaje."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "eq": [
+                "$6 × 50.000 = 300.000$"
+              ],
+              "t": "Calcula el aumento de los ingresos de venta por seis toneladas."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$2 × (30.000 + 2 × 20.000) = 140.000$"
+              ],
+              "t": "Calcula el gasto adicional en los dos camiones y sus trabajadores."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Compara las dos diferencias para decidir si la ganancia aumenta."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Calcula la diferencia de ingresos por seis toneladas y compárala con los gastos de los dos camiones que se necesitan.",
+          "tema": "Comparar rentabilidad entre ciudades"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:6 toneladas de mango",
+              "t": "¿Cuántos camiones se necesitan para llevar seis toneladas?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Se necesitan dos. La venta deja $300.000$ más en Z y los gastos aumentan $140.000$."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "El ingreso adicional supera el gasto adicional. La respuesta es C."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "Compara las diferencias de ingresos y gastos para las seis toneladas."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "El ingreso aumenta $6 × 50.000 = 300.000$. Dos camiones generan $140.000$ más de transporte y salarios en Z."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A solo compara ventas; no resta los gastos."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B compara valores unitarios sin multiplicar por la carga ni considerar ambos camiones."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D invierte el sentido: los gastos son mayores en Z."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Como el aumento de ingresos supera los gastos adicionales, la respuesta es C."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "La diferencia de venta por tonelada es $1.350.000 - 1.300.000 = 50.000$; para seis toneladas son $300.000$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "Para cada camión, Z aumenta $30.000$ en transporte y $40.000$ en salarios. Dos camiones cuestan $140.000$ adicionales."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "La ganancia comparativa favorece Z en $160.000$; por eso la afirmación es correcta."
+            },
+            {
+              "a": "o:A:no|o:B:no|o:D:no",
+              "k": "err",
+              "t": "A omite los gastos; B compara unidades distintas; D afirma que W cuesta más cuando los datos muestran lo contrario."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es C."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "Una persona",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Cantidad transportada",
+            "frag": "6 toneladas de mango",
+            "nota": "Compara los ingresos y gastos para esta cantidad, que requiere dos camiones.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Criterio de comparación",
+            "frag": "más rentable",
+            "nota": "La rentabilidad compara el ingreso adicional con los gastos adicionales.",
             "rol": "pide"
           }
         ],
@@ -1508,11 +1736,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "El precio de venta por tonelada aumenta al viajar a Z. También aumentan los costos de transporte y de los trabajadores para los dos camiones necesarios.",
+            "titulo": "Compara el cambio en ingresos y gastos"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$6 × (1.350.000 - 1.300.000) = 300.000$",
+              "$2 × (180.000 + 2 × 200.000) - 2 × (150.000 + 2 × 180.000) = 140.000$"
+            ],
+            "nota": "El aumento de ingresos supera el aumento de gastos en $160.000$. El costo de compra del mango es igual en ambas ciudades y se cancela al compararlas.",
+            "titulo": "Calcula las diferencias"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "La ganancia aumenta más en Z que los gastos de transporte y trabajadores. La afirmación es correcta; la respuesta es C."
           }
         ]
       },
@@ -1526,116 +1764,143 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 9",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
+      "bloque": "mth-frutas-2018",
       "correcta": 2,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
+        "$5.670.000$ resta costos que no corresponden a los datos del procedimiento.",
+        "$5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores.",
         "",
-        "Pendiente de análisis; no inferido automáticamente."
+        "$8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
       ],
       "enunciado": "Los tres (3) camiones se cargan con 5 toneladas de banano cada uno para venderse en la ciudad W. El comerciante necesita conocer la ganancia al hacer este negocio, ejecutando el siguiente pro- cedimiento: Paso 1. Halla el número de toneladas de banano que hay en los 3 camiones. Paso 2. Halla la diferencia entre el precio de venta de una tonelada de banano en la ciudad W y el precio de compra. Paso 3. Multiplica los valores hallados en los pasos 1 y 2. Paso 4. Encuentra los costos totales de transporte y le suma el pago total de los trabajadores en los tres viajes. Paso 5. Halla la diferencia entre el valor obtenido en el paso 3 y el paso 4. ¿Cuál es la ganancia que obtiene el comerciante?",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "Los tres camiones transportan $3 × 5 = 15$ toneladas. El margen por tonelada de banano en W es $1.000.000 - 400.000 = 600.000$, así que el margen de venta es $15 × 600.000 = 9.000.000$. El transporte cuesta $3 × 150.000 = 450.000$ y los seis trabajadores reciben $6 × 180.000 = 1.080.000$. La ganancia es $9.000.000 - 450.000 - 1.080.000 = 7.470.000$. La respuesta es C.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 10.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "El margen de venta es $9.000.000$ y los gastos de operación suman $1.530.000$; la ganancia es $7.470.000$.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "El valor no resulta de restar al margen todos los gastos indicados. Pero deben descontarse transporte y salarios.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "El valor deja por fuera parte de los costos del negocio. Pero hay que incluir los tres transportes y los seis pagos.",
               "t": "Opción B"
+            },
+            {
+              "p": "El valor supera el margen después de costos. Pero la ganancia debe ser menor que los $9.000.000$ de margen.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Calcula primero la cantidad total de toneladas.",
+            "Cuenta dos trabajadores por camión y un viaje por cada uno."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "eq": [
+                "$3 × 5 = 15$"
+              ],
+              "t": "Calcula las toneladas de los tres camiones."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$15 × (1.000.000 - 400.000) = 9.000.000$",
+                "$450.000 + 1.080.000 = 1.530.000$"
+              ],
+              "t": "Calcula el margen de venta y suma transporte y salarios."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Resta los gastos al margen para obtener la ganancia."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Halla el margen de venta para toda la carga y descuenta el costo de compra, el transporte y los pagos de los trabajadores.",
+          "tema": "Ganancia con costos de transporte y personal"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:5 toneladas de banano",
+              "t": "¿Cuántas toneladas llevan los tres camiones?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Son quince toneladas. El margen es $9.000.000$ y los gastos suman $1.530.000$."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La ganancia es $7.470.000$. La respuesta es C."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "Separa el margen de venta de los costos que debes restar."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "La carga total es $3 × 5 = 15$ toneladas y el margen es $15 × 600.000 = 9.000.000$. Transporte y salarios suman $1.530.000$."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A no corresponde a restar los costos completos."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B omite parte de transporte o salarios."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D supera la ganancia después de los gastos."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Al restar queda $7.470.000$. La respuesta es C."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "El volumen total es $3 × 5 = 15$ toneladas y el margen unitario es $1.000.000 - 400.000 = 600.000$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "El margen completo da $9.000.000$. Los gastos son $3 × 150.000 + 6 × 180.000 = 1.530.000$."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "La ganancia neta es $9.000.000 - 1.530.000 = 7.470.000$."
+            },
+            {
+              "a": "o:A:no|o:B:no|o:D:no",
+              "k": "err",
+              "t": "A y B no descuentan todos los gastos; D es mayor que el margen neto obtenido."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es C."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "Los tres",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Carga por camión",
+            "frag": "5 toneladas de banano",
+            "nota": "Es la carga de cada uno de los tres camiones.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Ganancia",
+            "frag": "¿Cuál es la ganancia",
+            "nota": "Resta del margen de venta los costos de transporte y de los trabajadores.",
             "rol": "pide"
           }
         ],
@@ -1643,11 +1908,23 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "Cada camión lleva cinco toneladas y se pagan dos trabajadores por viaje. Compara el precio de venta con el precio de compra del banano.",
+            "titulo": "Calcula el margen de venta y los gastos"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$3 × 5 = 15$ toneladas",
+              "$15 × (1.000.000 - 400.000) = 9.000.000$",
+              "$3 × 150.000 + 3 × 2 × 180.000 = 1.530.000$",
+              "$9.000.000 - 1.530.000 = 7.470.000$"
+            ],
+            "nota": "El tercer renglón suma transporte de los tres camiones y pagos de los seis trabajadores.",
+            "titulo": "Resta todos los costos"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "La ganancia es $7.470.000$. La respuesta es C."
           }
         ]
       },
@@ -1661,9 +1938,7 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 10",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",

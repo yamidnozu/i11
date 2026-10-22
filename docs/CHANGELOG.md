@@ -1,5 +1,10 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — preguntas 7 a 10 (2026-10-22)
+- Se corrigió la estatura de la pregunta 8 a $3/2$ m y se limpiaron las opciones que arrastraban texto de la página siguiente.
+- Se reconstruyeron los bloques compartidos: mapa y dos tablas de obesidad para las preguntas 7–8, y tabla de precios y costos para las preguntas 9–13.
+- Se completaron las cuatro hojas con cálculos y descarte de alternativas. El recorte del mapa y las tablas se verificaron en `#/pregunta/`; informe y contexto quedan en 257 hojas revisadas y 89 borradores.
+
 ## Revisión Matemáticas 2018 — preguntas 4 a 6 (2026-10-22)
 - Se cotejó la tabla de capacitación y se añadió como bloque compartido por las tres preguntas; se documentaron capacidades, horas y costos en overrides.
 - Se corrigió y verificó la relación entre cantidad de cursos, cupos y pago total en las preguntas 4, 5 y 6. Sus hojas pedagógicas quedaron revisadas.

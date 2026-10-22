@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "5 toneladas de banano", "rol": "dato", "nota": "Es la carga de cada uno de los tres camiones.", "campo": "Carga por camión" },
+      { "frag": "¿Cuál es la ganancia", "rol": "pide", "nota": "Resta del margen de venta los costos de transporte y de los trabajadores.", "campo": "Ganancia" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Calcula el margen de venta y los gastos", "texto": "Cada camión lleva cinco toneladas y se pagan dos trabajadores por viaje. Compara el precio de venta con el precio de compra del banano." },
+      { "k": "calc", "titulo": "Resta todos los costos", "lineas": ["$3 × 5 = 15$ toneladas", "$15 × (1.000.000 - 400.000) = 9.000.000$", "$3 × 150.000 + 3 × 2 × 180.000 = 1.530.000$", "$9.000.000 - 1.530.000 = 7.470.000$"], "nota": "El tercer renglón suma transporte de los tres camiones y pagos de los seis trabajadores." },
+      { "k": "check", "texto": "La ganancia es $7.470.000$. La respuesta es C." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ganancia con costos de transporte y personal",
+      "que": "Halla el margen de venta para toda la carga y descuenta el costo de compra, el transporte y los pagos de los trabajadores.",
+      "pistas": ["Calcula primero la cantidad total de toneladas.", "Cuenta dos trabajadores por camión y un viaje por cada uno."],
+      "clave": "El margen de venta es $9.000.000$ y los gastos de operación suman $1.530.000$; la ganancia es $7.470.000$.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "El valor no resulta de restar al margen todos los gastos indicados. Pero deben descontarse transporte y salarios." },
+        { "t": "Opción B", "p": "El valor deja por fuera parte de los costos del negocio. Pero hay que incluir los tres transportes y los seis pagos." },
+        { "t": "Opción D", "p": "El valor supera el margen después de costos. Pero la ganancia debe ser menor que los $9.000.000$ de margen." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Calcula las toneladas de los tres camiones.", "eq": ["$3 × 5 = 15$"] },
+        { "t": "Calcula el margen de venta y suma transporte y salarios.", "eq": ["$15 × (1.000.000 - 400.000) = 9.000.000$", "$450.000 + 1.080.000 = 1.530.000$"] },
+        { "t": "Resta los gastos al margen para obtener la ganancia." }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Cuántas toneladas llevan los tres camiones?", "a": "m:5 toneladas de banano" },
+        { "t": "Son quince toneladas. El margen es $9.000.000$ y los gastos suman $1.530.000$." },
+        { "t": "La ganancia es $7.470.000$. La respuesta es C.", "a": "o:C:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Separa el margen de venta de los costos que debes restar." },
+        { "t": "La carga total es $3 × 5 = 15$ toneladas y el margen es $15 × 600.000 = 9.000.000$. Transporte y salarios suman $1.530.000$." },
+        { "t": "La opción A no corresponde a restar los costos completos.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción B omite parte de transporte o salarios.", "a": "o:B:no", "k": "err" },
+        { "t": "La opción D supera la ganancia después de los gastos.", "a": "o:D:no", "k": "err" },
+        { "t": "Al restar queda $7.470.000$. La respuesta es C.", "a": "o:C:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "El volumen total es $3 × 5 = 15$ toneladas y el margen unitario es $1.000.000 - 400.000 = 600.000$.", "a": "p:0", "k": "ana" },
+        { "t": "El margen completo da $9.000.000$. Los gastos son $3 × 150.000 + 6 × 180.000 = 1.530.000$.", "a": "p:1" },
+        { "t": "La ganancia neta es $9.000.000 - 1.530.000 = 7.470.000$.", "a": "p:2", "k": "contra" },
+        { "t": "A y B no descuentan todos los gastos; D es mayor que el margen neto obtenido.", "a": "o:A:no|o:B:no|o:D:no", "k": "err" },
+        { "t": "La respuesta correcta es C.", "a": "o:C:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los tres",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

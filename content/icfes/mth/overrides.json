@@ -86,8 +86,87 @@
       ""
     ]
   },
+  "mth-i007": {
+    "bloque": "mth-obesidad-2018",
+    "revisar": [],
+    "opciones": [
+      "Sí, porque adicionando el número de muertes de los países se obtiene el total de muertes que permite calcular el porcentaje pedido.",
+      "Sí, porque solamente falta conocer el número total de muertes en P3, que se obtiene con la información de la figura.",
+      "No, porque en la figura faltan los datos sobre el número total de muertes en cada país.",
+      "No, porque los datos de P3 son información sobre las muertes por obesidad."
+    ],
+    "explicacion": "La figura indica que en P3 hubo 28.000 muertes por obesidad, equivalentes al 7 % del total. Entonces el total de muertes en P3 es $28.000 ÷ 0,07 = 400.000$. Con ese denominador se puede calcular el porcentaje de 1.700 muertes por la otra enfermedad: $1.700 × 100 ÷ 400.000 = 0,425\\%$. La respuesta es B.",
+    "distractores": [
+      "Sumar las muertes por obesidad de los cuatro países no da el total de muertes de P3.",
+      "",
+      "La figura sí permite obtener el total de muertes en P3 al relacionar 28.000 con el 7 % que representan.",
+      "La figura informa las muertes por obesidad y su porcentaje; esa relación permite inferir el total de muertes en P3."
+    ]
+  },
+  "mth-i008": {
+    "bloque": "mth-obesidad-2018",
+    "revisar": [],
+    "enunciado": "El IMC de una persona se calcula dividiendo su peso (en kg) entre su estatura (en m) elevada al cuadrado. De un hombre de P2 que tiene 30 años de edad, pesa 75 kg y tiene una estatura de $\\frac{3}{2}$ m, puede afirmarse que forma parte del",
+    "opciones": [
+      "1 % de hombres entre 26 y 60 años de edad con bajo peso.",
+      "50 % de hombres entre 26 y 60 años de edad con sobrepeso.",
+      "1 % de hombres entre 26 y 60 años de edad con obesidad alta.",
+      "13 % de hombres entre 26 y 60 años de edad con obesidad leve."
+    ],
+    "explicacion": "La estatura es $\\frac{3}{2}$ m, así que el IMC es $75 ÷ (\\frac{3}{2})^2 = 75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre 30,0 y 34,9; corresponde a obesidad leve. La tabla indica que el 13 % de los hombres de ese rango de edad está en esa categoría. La respuesta es D.",
+    "distractores": [
+      "Un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso.",
+      "Un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso.",
+      "Un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta.",
+      ""
+    ]
+  },
+  "mth-i009": {
+    "bloque": "mth-frutas-2018",
+    "revisar": [],
+    "explicacion": "Vender seis toneladas de mango deja $300.000$ más de ingreso en Z que en W: la diferencia de $50.000$ por tonelada se multiplica por seis. Para transportar seis toneladas se necesitan dos camiones. El transporte y los dos trabajadores por camión cuestan $1.020.000$ en W y $1.160.000$ en Z; la diferencia de gastos es $140.000$. El aumento en ventas supera el aumento en gastos, así que la afirmación es correcta. La respuesta es C.",
+    "distractores": [
+      "El ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos.",
+      "La diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones.",
+      "",
+      "Los gastos de transporte y trabajadores son mayores en Z, no en W."
+    ]
+  },
+  "mth-i010": {
+    "bloque": "mth-frutas-2018",
+    "revisar": [],
+    "explicacion": "Los tres camiones transportan $3 × 5 = 15$ toneladas. El margen por tonelada de banano en W es $1.000.000 - 400.000 = 600.000$, así que el margen de venta es $15 × 600.000 = 9.000.000$. El transporte cuesta $3 × 150.000 = 450.000$ y los seis trabajadores reciben $6 × 180.000 = 1.080.000$. La ganancia es $9.000.000 - 450.000 - 1.080.000 = 7.470.000$. La respuesta es C.",
+    "distractores": [
+      "$5.670.000$ resta costos que no corresponden a los datos del procedimiento.",
+      "$5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores.",
+      "",
+      "$8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
+    ]
+  },
   "__paquete__": {
     "bloques_agregar": [
+      {
+        "id": "mth-obesidad-2018",
+        "area": "matematicas",
+        "encabezado": "Responde las preguntas siete y ocho de acuerdo con la siguiente información",
+        "texto": "El gráfico presenta las muertes por obesidad y el porcentaje que representan del total anual en cuatro países. Las tablas muestran la clasificación del IMC y porcentajes de hombres y mujeres de 26 a 60 años en P2. Datos de las tablas tomados y adaptados de searteriosclerosis.org.",
+        "figuras": [
+          { "tipo": "img", "src": "/icfes/mth/imagenes/mth-obesidad-2018.png", "alt": "Mapa de cuatro países con muertes anuales por obesidad y su porcentaje del total", "recorteFuente": { "pagina": 7, "rect": [135, 328, 300, 431] } },
+          { "tipo": "tabla", "alt": "Clasificación del estado nutricional según el índice de masa corporal", "cols": ["Clasificación", "IMC (kg/m²)"], "filas": [["Bajo peso", "< 18,5"], ["Normal", "18,5–24,9"], ["Sobrepeso", "25,0–29,9"], ["Obesidad", "≥ 30,0"], ["Obesidad leve", "30,0–34,9"], ["Obesidad media", "35,0–39,9"], ["Obesidad alta", "≥ 40,0"]] },
+          { "tipo": "tabla", "alt": "Porcentaje de hombres y mujeres de 26 a 60 años por rango de IMC en P2", "cols": ["IMC (kg/m²)", "< 18,5", "18,5–24,9", "25,0–29,9", "30,0–34,9", "35,0–39,9", "≥ 40,0"], "filas": [["Mujeres (%)", "1", "50", "30", "13", "5", "1"], ["Hombres (%)", "1", "34", "50", "13", "1", "1"]] }
+        ],
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 7 y 8."
+      },
+      {
+        "id": "mth-frutas-2018",
+        "area": "matematicas",
+        "encabezado": "Responde las preguntas nueve a trece de acuerdo con la siguiente información",
+        "texto": "El comerciante compra el banano a $400.000 por tonelada y el mango a $500.000. Usa camiones con capacidad de 5 toneladas y contrata dos trabajadores por camión en cada viaje.",
+        "figuras": [
+          { "tipo": "tabla", "alt": "Precios de venta, transporte por camión y pago por trabajador en las ciudades W y Z", "cols": ["Ciudad", "Venta por tonelada de banano", "Venta por tonelada de mango", "Transporte por camión", "Pago por trabajador y viaje"], "filas": [["W", "$1.000.000", "$1.300.000", "$150.000", "$180.000"], ["Z", "$1.200.000", "$1.350.000", "$180.000", "$200.000"]] }
+        ],
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 9 a 13."
+      },
       {
         "id": "mth-capacitacion-2018",
         "area": "matematicas",

@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "1.700", "rol": "dato", "nota": "Es la cantidad anual de muertes por la otra enfermedad en P tres.", "campo": "Muertes por otra enfermedad" },
+      { "frag": "qué porcentaje de muertes en P3", "rol": "pide", "nota": "Se necesita conocer el total de muertes anuales en P tres.", "campo": "Porcentaje solicitado" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Recupera el total anual de muertes en P tres", "texto": "La figura indica que $28.000$ muertes por obesidad representan el $7\\%$ del total en P tres." },
+      { "k": "calc", "titulo": "Calcula el total y el porcentaje solicitado", "lineas": ["$28.000 ÷ 0,07 = 400.000$", "$1.700 × 100 ÷ 400.000 = 0,425\\%$"], "nota": "El dato de obesidad permite hallar el total de muertes; con ese total se calcula el porcentaje de la otra enfermedad." },
+      { "k": "check", "texto": "La información sí permite calcular el porcentaje solicitado. La respuesta es B." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Porcentajes de un total inferido",
+      "que": "Usa una cantidad y el porcentaje que representa para recuperar el total; luego calcula qué porcentaje representa otra cantidad.",
+      "pistas": ["Localiza en la figura el dato del tercer país y el porcentaje asociado.", "Usa el total hallado como denominador del porcentaje pedido."],
+      "clave": "En P tres, $28.000$ muertes por obesidad representan el $7\\%$; por eso el total anual es $400.000$ y las $1.700$ muertes equivalen al $0,425\\%$.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "Sumar muertes por obesidad de países distintos no da el total anual de P tres. Pero el dato de ese país basta para hallar su total." },
+        { "t": "Opción C", "p": "Afirma que falta el total de muertes de cada país. Pero en P tres se obtiene a partir de $28.000$ y el $7\\%$." },
+        { "t": "Opción D", "p": "Confunde el dato de obesidad con el total. Pero el $7\\%$ permite inferir el total de muertes en P tres." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Identifica la cantidad que representa un porcentaje conocido." },
+        { "t": "Calcula el total anual de muertes en P tres.", "eq": ["$28.000 ÷ 0,07 = 400.000$"] },
+        { "t": "Calcula el porcentaje que representan las muertes por la otra enfermedad.", "eq": ["$1.700 × 100 ÷ 400.000 = 0,425\\%$"] }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Qué relación muestra la figura entre las muertes por obesidad en P tres y el total?", "a": "m:1.700" },
+        { "t": "Las $28.000$ muertes por obesidad son el siete por ciento del total." },
+        { "t": "Con ese total se calcula el porcentaje de la otra enfermedad. La respuesta es B.", "a": "o:B:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Primero despeja el total a partir de $28.000$ y el siete por ciento; después úsalo para el cálculo solicitado.", "a": "m:qué porcentaje de muertes en P3" },
+        { "t": "El total es $28.000 ÷ 0,07 = 400.000$. Entonces $1.700 × 100 ÷ 400.000 = 0,425\\%$." },
+        { "t": "La opción A suma datos de países distintos, no el total de P tres.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción C dice que falta el total; la figura permite obtenerlo con el porcentaje de P tres.", "a": "o:C:no", "k": "err" },
+        { "t": "La opción D confunde las muertes por obesidad con el total; el siete por ciento permite inferirlo.", "a": "o:D:no", "k": "err" },
+        { "t": "Sí se puede determinar el porcentaje. La respuesta es B.", "a": "o:B:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Las $28.000$ muertes por obesidad en P tres corresponden al siete por ciento del total; por tanto, el total es $28.000 ÷ 0,07 = 400.000$.", "a": "p:0", "k": "ana" },
+        { "t": "Divido las $1.700$ muertes por la otra enfermedad entre ese total y multiplico por cien: $1.700 × 100 ÷ 400.000 = 0,425\\%$.", "a": "p:1" },
+        { "t": "La figura da información suficiente para el denominador y la operación produce el porcentaje pedido.", "a": "p:2", "k": "contra" },
+        { "t": "La opción A suma países distintos; la C afirma que falta un total que sí puede inferirse; la D toma las muertes por obesidad como si fueran el total.", "a": "o:A:no|o:C:no|o:D:no", "k": "err" },
+        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Se necesita",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
