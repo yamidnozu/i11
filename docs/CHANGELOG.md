@@ -127,3 +127,9 @@
 - mat-i038 se resuelve por inclusión y exclusión bajo la suposición de que todos los clientes están cubiertos por las categorías de la tabla; se mantiene el aviso porque el enunciado no lo explicita.
 - Los cinco cuadernillos estructurados quedan con 248/248 hojas y cero borradores.
 - Validación de contenido: `VITE_ICFES=1 npx vitest run`, 442/442 pruebas.
+
+## Pipeline documental — cuadernillos antiguos de 2018 (2026-10-22)
+- El plugin de cuadernillos reconoce claves con los encabezados antiguos y extrae reactivos numerados `n.` con marcas explícitas de revisión.
+- Se estructuraron 49 preguntas para Sociales 2018 y 49 para Matemáticas 2018; las 98 están bajo `content/icfes/`, citan la fuente y tienen clave. Se generaron 49 hojas borrador por documento, reanudando lotes de diez.
+- Las 98 preguntas requieren cotejo de transcripción, opciones, figuras y vínculo al marco antes de aprobarse; Matemáticas 2018 pregunta 48 conserva el aviso de enunciado no delimitado.
+- Se actualizaron el informe, el contexto y la guía del pipeline. `npx tsc --noEmit` pasó; `VITE_ICFES=1 npx vitest run`: 501/501; builds normal y con gate pasaron (se conserva el aviso de tamaño de chunk).
