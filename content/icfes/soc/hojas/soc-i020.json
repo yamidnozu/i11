@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "¿Con cuál de los siguientes modelos",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué propone hacer con las normas y las trabas económicas."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Compara el rol del Estado descrito con cada modelo."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar una propuesta económica con un modelo",
+      "que": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
+      "pistas": [
+        "Identifica qué propone hacer con las normas y las trabas económicas.",
+        "Compara el rol del Estado descrito con cada modelo."
+      ],
+      "clave": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El texto no propone que el Estado controle toda la economía."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No concentra las decisiones económicas en un monarca ni describe una monarquía."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Invitar a sectores a impulsar productividad no equivale a que todos decidan democráticamente la economía."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué propone hacer con las normas y las trabas económicas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara el rol del Estado descrito con cada modelo."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «¿Con cuál de los siguientes modelos» orienta el análisis.",
+          "a": "m:¿Con cuál de los siguientes modelos"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El texto no propone que el Estado controle toda la economía. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No concentra las decisiones económicas en un monarca ni describe una monarquía. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Invitar a sectores a impulsar productividad no equivale a que todos decidan democráticamente la economía. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué propone hacer con las normas y las trabas económicas.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compara el rol del Estado descrito con cada modelo.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Considere el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
