@@ -30,6 +30,7 @@
 - [x] Estructurar semánticamente los marcos disponibles de Matemáticas, Ciencias, Lectura Crítica, Sociales e Inglés en `content/icfes/marco.json`; asociar IDs de competencia/afirmación/evidencia a las 248 preguntas: Matemáticas (50/50), Lectura (49/49), Sociales (49/49) y Ciencias (50/50 por edición).
 - [x] Extraer y ordenar los niveles de desempeño de los cinco PDFs en `content/icfes/niveles_desempeno.json`; el ICFES no publica una matriz que asigne directamente un nivel a cada pregunta.
 - [ ] Estructurar preguntas de los documentos antiguos y el cuadernillo de Inglés que no contienen marcadores reconocidos; hoy se preservan sus páginas como transcripción.
+- [x] Auditar claves y formato de numeración de los cuadernillos antiguos restantes. Se hallaron claves explícitas en Sociales 2018, Matemáticas 2018 y el cuadernillo general de 2014; estos usan numeración `1.` dentro del texto en vez de encabezados `Pregunta n`, y el de 2014 mezcla varias áreas. Se amplió el reconocimiento de encabezados de clave, pero no se extrajeron reactivos porque el parser actual no delimita con seguridad esos formatos.
 - [x] Cotejar portada, metadatos y créditos editoriales de los dos documentos externos y completar las citas disponibles.
 - [x] Recuperar las claves oficiales de 13 preguntas de Ciencias por cuadernillo mediante overrides citados; verificar las 13 hojas de 2026 contra el cuadernillo de 2025 antes de reutilizarlas.
 - [ ] Confirmar derechos/licencias de SED Cartagena y del libro de preparación de 2017; los PDF no incluyen permiso de reutilización y ambos continúan bajo gate.
@@ -43,6 +44,7 @@
 - **248/248 preguntas tienen referencias a competencia, afirmación y evidencia validadas contra los marcos.** Los niveles 1–4 son estimaciones pedagógicas asignadas por demanda de razonamiento; no son niveles oficiales ICFES por ítem. mat-i038 conserva una salvedad, aunque su hoja está revisada. Las 72 opciones gráficas ya están recortadas individualmente.
 - **248 hojas revisadas, 0 borradores**. Matemáticas 50/50 (mat-i038 explicada bajo supuesto explícito); Ciencias 50/50 por año; Lectura 49/49; Sociales 49/49. Las preguntas repetidas se cotejan entre versiones; i008 presenta diferencias menores de transcripción OCR (incluido «sustencia»), revisadas contra el mismo procedimiento, opciones y clave.
 - Cinco simulacros generados, todos marcados “En revisión”.
+- La auditoría confirmó que hay material adicional con clave, pero aún no se puede convertir a preguntas sin un extractor que distinga números de reactivo de listas y datos dentro del enunciado. Inglés 2024 y 2021 sí tienen claves por examen, aunque tampoco usan los marcadores de pregunta que el extractor actual requiere.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa preguntas, marcos y niveles oficiales solo detrás de `VITE_ICFES=1`; las transcripciones completas `documento.json` no se incorporan al bundle.
 

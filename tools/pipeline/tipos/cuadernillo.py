@@ -4,7 +4,7 @@ import fitz
 
 def detectar(ctx):
     d=fitz.open(ctx['source']); text='\n'.join(p.get_text(sort=True) for p in d)
-    return {'pages':len(d),'title':d.metadata.get('title'),'text_markers':len(re.findall(r'(?im)^\s*(?:Pregunta|Question)\s+\d+\s*$',text)),'has_answer_key':bool(re.search(r'(?i)(?:Tabla de respuestas correctas|answer key)',text))}
+    return {'pages':len(d),'title':d.metadata.get('title'),'text_markers':len(re.findall(r'(?im)^\s*(?:Pregunta|Question)\s+\d+\s*$',text)),'has_answer_key':bool(re.search(r'(?i)(?:Tabla de respuestas(?: correctas)?|TABLA DE RESPUESTAS|answer key)',text))}
 
 def extraer(ctx):
     target=ctx['dirs']['texto']/'documento.txt'; cmd=shutil.which('pdftotext')
@@ -28,7 +28,11 @@ def estructurar(ctx):
             if re.fullmatch(r'\s*\d{1,2}\s*',lines[i]): lines[i]=''
         pages.append('\n'.join(lines))
     text='\f'.join(pages)
-    cuts=re.split(r'Tabla de respuestas correctas',text,flags=re.I); key={int(n):L for n,L in re.findall(r'(?<!\d)(\d{1,3})\s+([A-H])(?=\s|$)',cuts[1])} if len(cuts)>1 else {}
+    # ICFES ha usado varios encabezados para la misma tabla de claves.
+    # Mantener las variantes en el plugin evita tratar documentos antiguos
+    # como si no tuvieran clave y dejar preguntas válidas fuera del paquete.
+    cuts=re.split(r'(?:Tabla de respuestas(?: correctas)?|TABLA DE RESPUESTAS)',text,flags=re.I)
+    key={int(n):L for n,L in re.findall(r'(?<!\d)(\d{1,3})\s+([A-H])(?=\s|$)',cuts[1])} if len(cuts)>1 else {}
     body=cuts[0]; chunks=re.split(r'(?im)^\s*(?:Pregunta|Question)\s+(\d+)\s*$',body)
     qs=[]; blocks=[]; pending=None
     def clean(s): return re.sub(r'[ \t]+',' ',re.sub(r'\n(?!\n)',' ',s.strip())).strip()
