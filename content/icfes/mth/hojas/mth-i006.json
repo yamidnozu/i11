@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "$900.000 por la capacitación", "rol": "dato", "nota": "Es el costo conjunto para los funcionarios.", "campo": "Pago total" },
+      { "frag": "corresponde al módulo", "rol": "pide", "nota": "Compara el costo de dos cursos de cada módulo.", "campo": "Identificación del módulo" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Considera los dos cursos necesarios", "texto": "Cuarenta funcionarios no caben en un curso con máximo treinta personas; se requieren dos cursos del mismo módulo." },
+      { "k": "tabla", "titulo": "Compara el costo de cada módulo", "cols": ["Módulo", "Costo de dos cursos"], "filas": [["I", "$2.800.000"], ["II", "$1.800.000"], ["III", "$3.200.000"], ["IV", "$900.000"]] },
+      { "k": "check", "texto": "El pago coincide con dos cursos del módulo IV. La respuesta es D." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comparación de costos por módulo",
+      "que": "Calcula el costo de dos cursos para cada módulo, porque los cuarenta funcionarios superan el máximo permitido en un curso.",
+      "pistas": ["Usa intensidad horaria y valor por hora de la tabla compartida.", "Compara el costo de dos cursos con el pago informado."],
+      "clave": "El módulo IV cuesta $450.000$ por curso y $900.000$ por dos cursos.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "Dos cursos del módulo I cuestan $2.800.000$. Pero el pago informado fue $900.000$." },
+        { "t": "Opción B", "p": "Dos cursos del módulo II cuestan $1.800.000$. Pero el pago informado fue $900.000$." },
+        { "t": "Opción C", "p": "Dos cursos del módulo III cuestan $3.200.000$. Pero el pago informado fue $900.000$." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Confirma cuántos cursos se requieren para cuarenta personas." },
+        { "t": "Multiplica las horas por el valor por hora de cada módulo y luego por dos." },
+        { "t": "Selecciona el módulo cuyo costo coincide con el pago informado." }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Cuántos cursos se necesitan para cuarenta funcionarios si caben máximo treinta en cada uno?" },
+        { "t": "Se necesitan dos. El módulo IV cuesta $10 × 45.000 = 450.000$ por curso; los dos cuestan $900.000$." },
+        { "t": "La respuesta es D.", "a": "o:D:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Calcula el costo por hora de cada módulo y recuerda que hay que pagar dos cursos." },
+        { "t": "Para el módulo IV, dos cursos cuestan $2 × 10 × 45.000 = 900.000$, que coincide con el pago." },
+        { "t": "La opción A implicaría un pago de $2.800.000$.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción B implicaría un pago de $1.800.000$.", "a": "o:B:no", "k": "err" },
+        { "t": "La opción C implicaría un pago de $3.200.000$.", "a": "o:C:no", "k": "err" },
+        { "t": "Solo el módulo IV coincide con $900.000$. La respuesta es D.", "a": "o:D:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Por el límite de treinta personas por curso, los cuarenta funcionarios requieren dos cursos.", "a": "p:0", "k": "ana" },
+        { "t": "Calculo el costo total para cada opción: I, $2.800.000$; II, $1.800.000$; III, $3.200.000$; IV, $900.000$.", "a": "p:1" },
+        { "t": "El valor informado solo coincide con el módulo IV.", "a": "p:2", "k": "contra" },
+        { "t": "Las opciones A, B y C dan costos distintos de $900.000$.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
+        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La empresa",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

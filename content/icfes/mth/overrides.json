@@ -52,5 +52,63 @@
       "Incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable.",
       "Que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
     ]
+  },
+  "mth-i004": {
+    "bloque": "mth-capacitacion-2018",
+    "revisar": [],
+    "explicacion": "El módulo I cuesta $40 × $35.000 = $1.400.000 por curso. Con dos cursos se atienden hasta 60 personas y se pagarían $2.800.000; para pagar $4.200.000 se necesitan tres cursos. Cada uno admite entre 20 y 30 trabajadores, así que la dependencia debe tener entre 61 y 90. La respuesta es C.",
+    "distractores": [
+      "Un curso no puede atender más de 30 personas y costaría $1.400.000.",
+      "Dos cursos cuestan $2.800.000, no $4.200.000.",
+      "",
+      "Cuatro cursos costarían $5.600.000, más de lo pagado."
+    ]
+  },
+  "mth-i005": {
+    "bloque": "mth-capacitacion-2018",
+    "revisar": [],
+    "explicacion": "El módulo II cuesta $30 × $30.000 = $900.000 por curso. Como el grupo tiene 50 trabajadores y cada curso admite máximo 30, se requieren dos cursos: $1.800.000 en total. Al dividir ese valor entre 50, cada persona paga $36.000. La respuesta es B.",
+    "distractores": [
+      "$18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos.",
+      "",
+      "$450.000 es la mitad del costo de un curso y no cubre dos grupos.",
+      "$900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
+    ]
+  },
+  "mth-i006": {
+    "bloque": "mth-capacitacion-2018",
+    "revisar": [],
+    "explicacion": "Con 40 funcionarios se necesitan dos cursos, pues cada uno admite máximo 30. El módulo IV cuesta $10 × $45.000 = $450.000 por curso; dos cursos cuestan $900.000. Por tanto, corresponde al módulo IV y la respuesta es D.",
+    "distractores": [
+      "Dos cursos del módulo I cuestan $2.800.000.",
+      "Dos cursos del módulo II cuestan $1.800.000.",
+      "Dos cursos del módulo III cuestan $3.200.000.",
+      ""
+    ]
+  },
+  "__paquete__": {
+    "bloques_agregar": [
+      {
+        "id": "mth-capacitacion-2018",
+        "area": "matematicas",
+        "encabezado": "Responde las preguntas cuatro a seis de acuerdo con la siguiente información",
+        "titulo": "Capacitación en informática básica",
+        "texto": "Cada módulo tiene una intensidad horaria y un valor por hora. Cada curso debe tener mínimo 20 y máximo 30 personas de la misma dependencia.",
+        "figuras": [
+          {
+            "tipo": "tabla",
+            "alt": "Intensidad horaria y valor por hora de cada módulo de capacitación",
+            "cols": ["Módulo", "Nombre del módulo", "Intensidad horaria", "Valor por hora"],
+            "filas": [
+              ["I", "Fundamentación", "40 h", "$35.000"],
+              ["II", "Procesador de texto", "30 h", "$30.000"],
+              ["III", "Hoja de cálculo", "40 h", "$40.000"],
+              ["IV", "Presentación con diapositivas", "10 h", "$45.000"]
+            ]
+          }
+        ],
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 4 a 6."
+      }
+    ]
   }
 }

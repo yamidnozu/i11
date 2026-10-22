@@ -1,5 +1,10 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — preguntas 4 a 6 (2026-10-22)
+- Se cotejó la tabla de capacitación y se añadió como bloque compartido por las tres preguntas; se documentaron capacidades, horas y costos en overrides.
+- Se corrigió y verificó la relación entre cantidad de cursos, cupos y pago total en las preguntas 4, 5 y 6. Sus hojas pedagógicas quedaron revisadas.
+- El informe y el contexto quedan en 253 hojas revisadas y 93 borradores. TypeScript y Vitest pasan (540/540).
+
 ## Revisión Matemáticas 2018 — pregunta 3 (2026-10-22)
 - Se cotejó la página fuente, se reconstruyó la tabla de cupos y precios en `overrides.json`, y se corrigió la opción D contaminada por la extracción del contenido siguiente.
 - Se completaron explicación, distractores y hoja de tres niveles; la alternativa B se verificó con dos combinaciones viables de 140 estudiantes y costos de $5.950.000 y $5.650.000.

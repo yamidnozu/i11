@@ -1,110 +1,53 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      { "frag": "50 trabajadores", "rol": "dato", "nota": "La cantidad obliga a dividir el grupo en más de un curso.", "campo": "Tamaño del grupo" },
+      { "frag": "cuánto debería pagar cada uno", "rol": "pide", "nota": "Se busca el costo individual, no el total de la capacitación.", "campo": "Pregunta" }
+    ],
+    "pasos": [
+      { "k": "idea", "titulo": "Calcula el valor total de los cursos", "texto": "El módulo II tiene treinta horas. Cada curso acepta máximo treinta personas, así que cincuenta trabajadores necesitan dos cursos." },
+      { "k": "calc", "titulo": "Divide el costo entre el grupo", "lineas": ["$30 × 30.000 = 900.000$", "$2 × 900.000 = 1.800.000$", "$1.800.000 ÷ 50 = 36.000$"], "nota": "El valor total corresponde a los dos cursos; se reparte por igual entre las cincuenta personas." },
+      { "k": "check", "texto": "Cada trabajador paga $36.000$. La respuesta es B." }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reparto de costos de capacitación",
+      "que": "Calcula el costo por curso, determina cuántos cursos necesita el grupo y reparte el costo total entre sus integrantes.",
+      "pistas": ["Compara el tamaño del grupo con el máximo de personas por curso.", "Divide el costo total de los cursos entre todos los trabajadores."],
+      "clave": "Se requieren dos cursos del módulo II. El total de $1.800.000$ dividido entre cincuenta trabajadores da $36.000$ por persona.",
       "no": [
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
-        },
-        {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
-        }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        { "t": "Opción A", "p": "Divide el costo de un curso entre las cincuenta personas. Pero se requieren dos cursos." },
+        { "t": "Opción C", "p": "Toma la mitad del costo de un curso como pago individual. Pero primero hay que sumar el costo de ambos y dividir entre las personas." },
+        { "t": "Opción D", "p": "Es el precio de un solo curso. Pero se pregunta por el valor individual de los cursos necesarios." }
       ],
       "plan": [
-        {
-          "t": "Leer el enunciado y reconocer qué pide."
-        },
-        {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
-        }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+        { "t": "Calcula el precio de un curso del módulo II.", "eq": ["$30 × 30.000 = 900.000$"] },
+        { "t": "Determina cuántos cursos se requieren para cincuenta personas." },
+        { "t": "Divide el costo total entre el grupo.", "eq": ["$1.800.000 ÷ 50 = 36.000$"] }
+      ]
     },
     "guion": {
       "1": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Primero revisemos qué pide la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "¿Caben cincuenta trabajadores en un solo curso si el máximo es treinta?", "a": "m:50 trabajadores" },
+        { "t": "Se necesitan dos cursos. Cada uno cuesta $900.000$, así que el grupo paga $1.800.000$." },
+        { "t": "Al repartirlo entre cincuenta, cada quien paga $36.000$. La respuesta es B.", "a": "o:B:ok" }
       ],
       "2": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "Busca el costo por persona, no el costo de un curso completo.", "a": "m:cuánto debería pagar cada uno" },
+        { "t": "Se necesitan dos cursos de $900.000$: en total, $1.800.000$. Al dividir entre cincuenta personas, da $36.000$ cada una." },
+        { "t": "La opción A usa solo el costo de un curso; hace falta pagar dos.", "a": "o:A:no", "k": "err" },
+        { "t": "La opción C no corresponde al costo total dividido entre las cincuenta personas.", "a": "o:C:no", "k": "err" },
+        { "t": "La opción D es el precio de un curso, no el pago individual.", "a": "o:D:no", "k": "err" },
+        { "t": "El pago individual es $36.000$. La respuesta es B.", "a": "o:B:ok" }
       ],
       "3": [
-        {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
-        },
-        {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
-        }
+        { "t": "El módulo II cuesta $30 × 30.000 = 900.000$ por curso.", "a": "p:0", "k": "ana" },
+        { "t": "Como el máximo por curso es treinta, se necesitan dos. El costo conjunto es $2 × 900.000 = 1.800.000$.", "a": "p:1" },
+        { "t": "Reparto el total en partes iguales: $1.800.000 ÷ 50 = 36.000$ por trabajador.", "a": "p:2", "k": "contra" },
+        { "t": "La opción A omite un curso; la C no es el cociente correcto; la D expresa el valor de un curso completo.", "a": "o:A:no|o:C:no|o:D:no", "k": "err" },
+        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Si se",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

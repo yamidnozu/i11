@@ -1,5 +1,52 @@
 {
-  "bloques": [],
+  "bloques": [
+    {
+      "area": "matematicas",
+      "encabezado": "Responde las preguntas cuatro a seis de acuerdo con la siguiente información",
+      "figuras": [
+        {
+          "alt": "Intensidad horaria y valor por hora de cada módulo de capacitación",
+          "cols": [
+            "Módulo",
+            "Nombre del módulo",
+            "Intensidad horaria",
+            "Valor por hora"
+          ],
+          "filas": [
+            [
+              "I",
+              "Fundamentación",
+              "40 h",
+              "$35.000"
+            ],
+            [
+              "II",
+              "Procesador de texto",
+              "30 h",
+              "$30.000"
+            ],
+            [
+              "III",
+              "Hoja de cálculo",
+              "40 h",
+              "$40.000"
+            ],
+            [
+              "IV",
+              "Presentación con diapositivas",
+              "10 h",
+              "$45.000"
+            ]
+          ],
+          "tipo": "tabla"
+        }
+      ],
+      "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 4 a 6.",
+      "id": "mth-capacitacion-2018",
+      "texto": "Cada módulo tiene una intensidad horaria y un valor por hora. Cada curso debe tener mínimo 20 y máximo 30 personas de la misma dependencia.",
+      "titulo": "Capacitación en informática básica"
+    }
+  ],
   "id": "icfes-mth",
   "nombre": "11 Matematicas Saber11 2018",
   "pendientes_clave": [],
@@ -556,110 +603,137 @@
     },
     {
       "area": "matematicas",
+      "bloque": "mth-capacitacion-2018",
       "correcta": 2,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
+        "Un curso no puede atender más de 30 personas y costaría $1.400.000.",
+        "Dos cursos cuestan $2.800.000, no $4.200.000.",
         "",
-        "Pendiente de análisis; no inferido automáticamente."
+        "Cuatro cursos costarían $5.600.000, más de lo pagado."
       ],
       "enunciado": "La empresa pagará $4.200.000 por capacitar a los trabajadores de la dependencia “Insumos” en el módulo I; esto quiere decir que la dependencia tiene entre",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "El módulo I cuesta $40 × $35.000 = $1.400.000 por curso. Con dos cursos se atienden hasta 60 personas y se pagarían $2.800.000; para pagar $4.200.000 se necesitan tres cursos. Cada uno admite entre 20 y 30 trabajadores, así que la dependencia debe tener entre 61 y 90. La respuesta es C.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 4.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "El módulo I cuesta $1.400.000$ por curso. El total pagado cubre tres cursos, para un grupo de entre sesenta y una y noventa personas.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Supone que basta un curso. Pero el grupo máximo por curso es de treinta personas y el costo de uno es $1.400.000$.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Corresponde a dos cursos, cuyo costo sería $2.800.000$. Pero la empresa pagó para tres cursos.",
               "t": "Opción B"
+            },
+            {
+              "p": "Supone cuatro cursos, que costarían $5.600.000$. Pero la empresa pagó menos que ese valor.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Multiplica las horas del módulo por el valor de cada hora.",
+            "Recuerda el mínimo y el máximo de personas por curso."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "eq": [
+                "$40 × 35.000 = 1.400.000$"
+              ],
+              "t": "Calcula el costo de un curso del módulo I."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$4.200.000 ÷ 1.400.000 = 3$"
+              ],
+              "t": "Divide el total pagado entre el costo de un curso."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Convierte la cantidad de cursos en un intervalo de personas usando los límites por grupo."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Obtén el precio de un curso con la intensidad y el valor por hora; usa el costo total para inferir cuántos cursos se realizaron.",
+          "tema": "Costos por cursos y capacidad máxima"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "¿Cuánto vale un curso del módulo I? Usa las horas y el valor por hora."
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Cada curso cuesta $1.400.000$. El pago cubre tres cursos, es decir, entre sesenta y una y noventa personas."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta es C."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "Calcula primero el precio de un curso y después cuántos cursos cubre el pago."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "El curso cuesta $40 × 35.000 = 1.400.000$. El pago de $4.200.000$ alcanza para tres cursos."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A propone entre veinte y treinta personas, que caben en un solo curso de $1.400.000$."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B corresponde a dos cursos, que cuestan $2.800.000$."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D corresponde a cuatro cursos, que cuestan $5.600.000$."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Tres cursos de hasta treinta personas cubren de sesenta y una a noventa personas. La respuesta es C."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "Cada curso del módulo I cuesta $40 × 35.000 = 1.400.000$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "El pago permite $4.200.000 ÷ 1.400.000 = 3$ cursos. Dos cursos atienden hasta sesenta personas; para requerir tres, debe haber más de sesenta y como máximo noventa."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "Ese intervalo coincide con la opción C."
+            },
+            {
+              "a": "o:A:no|o:B:no|o:D:no",
+              "k": "err",
+              "t": "La opción A requiere un curso; la B, dos; la D, cuatro, cuyo costo excede el total pagado."
             },
             {
               "a": "o:C:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es C."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "La empresa",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Costo total",
+            "frag": "$4.200.000 por capacitar",
+            "nota": "Es el costo total que pagó la empresa.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Cantidad de trabajadores",
+            "frag": "tiene entre",
+            "nota": "Busca el intervalo de trabajadores que corresponde a ese costo.",
             "rol": "pide"
           }
         ],
@@ -667,11 +741,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "Usa la intensidad y el valor por hora del módulo I. Luego determina cuántos cursos se pagaron.",
+            "titulo": "Calcula el costo de cada curso"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$40 × 35.000 = 1.400.000$",
+              "$4.200.000 ÷ 1.400.000 = 3$"
+            ],
+            "nota": "Cada curso admite entre veinte y treinta personas; tres cursos cubren entre sesenta y una y noventa personas, porque con sesenta bastarían dos cursos.",
+            "titulo": "Relaciona cursos y trabajadores"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "Tres cursos cuestan $4.200.000$ y corresponden a una dependencia de entre sesenta y una y noventa personas. La respuesta es C."
           }
         ]
       },
@@ -685,116 +769,143 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 4",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
+      "bloque": "mth-capacitacion-2018",
       "correcta": 1,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
+        "$18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos.",
         "",
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente."
+        "$450.000 es la mitad del costo de un curso y no cubre dos grupos.",
+        "$900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
       ],
       "enunciado": "Si se les cobrara a los 50 trabajadores de la dependencia “Recursos Humanos” la capacita- ción del módulo II, y todos pagaran el mismo valor, ¿cuánto debería pagar cada uno por esa capacitación?",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "El módulo II cuesta $30 × $30.000 = $900.000 por curso. Como el grupo tiene 50 trabajadores y cada curso admite máximo 30, se requieren dos cursos: $1.800.000 en total. Al dividir ese valor entre 50, cada persona paga $36.000. La respuesta es B.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 5.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "Se requieren dos cursos del módulo II. El total de $1.800.000$ dividido entre cincuenta trabajadores da $36.000$ por persona.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Divide el costo de un curso entre las cincuenta personas. Pero se requieren dos cursos.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Toma la mitad del costo de un curso como pago individual. Pero primero hay que sumar el costo de ambos y dividir entre las personas.",
               "t": "Opción C"
+            },
+            {
+              "p": "Es el precio de un solo curso. Pero se pregunta por el valor individual de los cursos necesarios.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Compara el tamaño del grupo con el máximo de personas por curso.",
+            "Divide el costo total de los cursos entre todos los trabajadores."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "eq": [
+                "$30 × 30.000 = 900.000$"
+              ],
+              "t": "Calcula el precio de un curso del módulo II."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "t": "Determina cuántos cursos se requieren para cincuenta personas."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "eq": [
+                "$1.800.000 ÷ 50 = 36.000$"
+              ],
+              "t": "Divide el costo total entre el grupo."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Calcula el costo por curso, determina cuántos cursos necesita el grupo y reparte el costo total entre sus integrantes.",
+          "tema": "Reparto de costos de capacitación"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:50 trabajadores",
+              "t": "¿Caben cincuenta trabajadores en un solo curso si el máximo es treinta?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Se necesitan dos cursos. Cada uno cuesta $900.000$, así que el grupo paga $1.800.000$."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Al repartirlo entre cincuenta, cada quien paga $36.000$. La respuesta es B."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:cuánto debería pagar cada uno",
+              "t": "Busca el costo por persona, no el costo de un curso completo."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "Se necesitan dos cursos de $900.000$: en total, $1.800.000$. Al dividir entre cincuenta personas, da $36.000$ cada una."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A usa solo el costo de un curso; hace falta pagar dos."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C no corresponde al costo total dividido entre las cincuenta personas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D es el precio de un curso, no el pago individual."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "El pago individual es $36.000$. La respuesta es B."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "El módulo II cuesta $30 × 30.000 = 900.000$ por curso."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "Como el máximo por curso es treinta, se necesitan dos. El costo conjunto es $2 × 900.000 = 1.800.000$."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "Reparto el total en partes iguales: $1.800.000 ÷ 50 = 36.000$ por trabajador."
+            },
+            {
+              "a": "o:A:no|o:C:no|o:D:no",
+              "k": "err",
+              "t": "La opción A omite un curso; la C no es el cociente correcto; la D expresa el valor de un curso completo."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es B."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "Si se",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Tamaño del grupo",
+            "frag": "50 trabajadores",
+            "nota": "La cantidad obliga a dividir el grupo en más de un curso.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Pregunta",
+            "frag": "cuánto debería pagar cada uno",
+            "nota": "Se busca el costo individual, no el total de la capacitación.",
             "rol": "pide"
           }
         ],
@@ -802,11 +913,22 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "El módulo II tiene treinta horas. Cada curso acepta máximo treinta personas, así que cincuenta trabajadores necesitan dos cursos.",
+            "titulo": "Calcula el valor total de los cursos"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$30 × 30.000 = 900.000$",
+              "$2 × 900.000 = 1.800.000$",
+              "$1.800.000 ÷ 50 = 36.000$"
+            ],
+            "nota": "El valor total corresponde a los dos cursos; se reparte por igual entre las cincuenta personas.",
+            "titulo": "Divide el costo entre el grupo"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "Cada trabajador paga $36.000$. La respuesta es B."
           }
         ]
       },
@@ -820,116 +942,135 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 5",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
+      "bloque": "mth-capacitacion-2018",
       "correcta": 3,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente.",
+        "Dos cursos del módulo I cuestan $2.800.000.",
+        "Dos cursos del módulo II cuestan $1.800.000.",
+        "Dos cursos del módulo III cuestan $3.200.000.",
         ""
       ],
       "enunciado": "La empresa paga $900.000 por la capacitación de los 40 funcionarios de la dependencia “Im- portaciones”.\n De acuerdo con el valor pagado, la capacitación corresponde al módulo",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "Con 40 funcionarios se necesitan dos cursos, pues cada uno admite máximo 30. El módulo IV cuesta $10 × $45.000 = $450.000 por curso; dos cursos cuestan $900.000. Por tanto, corresponde al módulo IV y la respuesta es D.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 6.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "El módulo IV cuesta $450.000$ por curso y $900.000$ por dos cursos.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Dos cursos del módulo I cuestan $2.800.000$. Pero el pago informado fue $900.000$.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Dos cursos del módulo II cuestan $1.800.000$. Pero el pago informado fue $900.000$.",
               "t": "Opción B"
+            },
+            {
+              "p": "Dos cursos del módulo III cuestan $3.200.000$. Pero el pago informado fue $900.000$.",
+              "t": "Opción C"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Usa intensidad horaria y valor por hora de la tabla compartida.",
+            "Compara el costo de dos cursos con el pago informado."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "t": "Confirma cuántos cursos se requieren para cuarenta personas."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "t": "Multiplica las horas por el valor por hora de cada módulo y luego por dos."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Selecciona el módulo cuyo costo coincide con el pago informado."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Calcula el costo de dos cursos para cada módulo, porque los cuarenta funcionarios superan el máximo permitido en un curso.",
+          "tema": "Comparación de costos por módulo"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "¿Cuántos cursos se necesitan para cuarenta funcionarios si caben máximo treinta en cada uno?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Se necesitan dos. El módulo IV cuesta $10 × 45.000 = 450.000$ por curso; los dos cuestan $900.000$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta es D."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "t": "Calcula el costo por hora de cada módulo y recuerda que hay que pagar dos cursos."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "Para el módulo IV, dos cursos cuestan $2 × 10 × 45.000 = 900.000$, que coincide con el pago."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A implicaría un pago de $2.800.000$."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B implicaría un pago de $1.800.000$."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C implicaría un pago de $3.200.000$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Solo el módulo IV coincide con $900.000$. La respuesta es D."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "Por el límite de treinta personas por curso, los cuarenta funcionarios requieren dos cursos."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "Calculo el costo total para cada opción: I, $2.800.000$; II, $1.800.000$; III, $3.200.000$; IV, $900.000$."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "El valor informado solo coincide con el módulo IV."
+            },
+            {
+              "a": "o:A:no|o:B:no|o:C:no",
+              "k": "err",
+              "t": "Las opciones A, B y C dan costos distintos de $900.000$."
             },
             {
               "a": "o:D:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es D."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "La empresa",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Pago total",
+            "frag": "$900.000 por la capacitación",
+            "nota": "Es el costo conjunto para los funcionarios.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Identificación del módulo",
+            "frag": "corresponde al módulo",
+            "nota": "Compara el costo de dos cursos de cada módulo.",
             "rol": "pide"
           }
         ],
@@ -937,11 +1078,38 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "Cuarenta funcionarios no caben en un curso con máximo treinta personas; se requieren dos cursos del mismo módulo.",
+            "titulo": "Considera los dos cursos necesarios"
+          },
+          {
+            "cols": [
+              "Módulo",
+              "Costo de dos cursos"
+            ],
+            "filas": [
+              [
+                "I",
+                "$2.800.000"
+              ],
+              [
+                "II",
+                "$1.800.000"
+              ],
+              [
+                "III",
+                "$3.200.000"
+              ],
+              [
+                "IV",
+                "$900.000"
+              ]
+            ],
+            "k": "tabla",
+            "titulo": "Compara el costo de cada módulo"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "El pago coincide con dos cursos del módulo IV. La respuesta es D."
           }
         ]
       },
@@ -955,9 +1123,7 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 6",
-      "revisar": [
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",
