@@ -18,17 +18,28 @@ def extraer(ctx):
 
 def estructurar(ctx):
     text=(ctx['dirs']['texto']/'documento.txt').read_text(encoding='utf-8'); cfg=ctx['spec']; pref=cfg['prefijo']
+    # Quita solo numeración aislada al borde de cada página; los números dentro
+    # del procedimiento pueden quedar solos en su línea y deben conservarse.
+    pages=[]
+    for page in text.split('\f'):
+        lines=page.splitlines()
+        nonblank=[i for i,line in enumerate(lines) if line.strip()]
+        for i in reversed(nonblank[-1:] + nonblank[:1]):
+            if re.fullmatch(r'\s*\d{1,2}\s*',lines[i]): lines[i]=''
+        pages.append('\n'.join(lines))
+    text='\f'.join(pages)
     cuts=re.split(r'Tabla de respuestas correctas',text); key={int(n):L for n,L in re.findall(r'(?m)^\s*(\d{1,3})\s+([A-H])\s*$',cuts[1])} if len(cuts)>1 else {}
-    body=re.sub(r'(?m)^\s*\d{1,2}\s*$','',cuts[0]); chunks=re.split(r'(?m)^\s*Pregunta\s+(\d+)\s*$',body)
+    body=cuts[0]; chunks=re.split(r'(?m)^\s*Pregunta\s+(\d+)\s*$',body)
     qs=[]; blocks=[]; pending=None
     def clean(s): return re.sub(r'[ \t]+',' ',re.sub(r'\n(?!\n)',' ',s.strip())).strip()
     for i in range(1,len(chunks),2):
         n=int(chunks[i]); raw=chunks[i+1]; ctxm=re.search(r'RESPONDE LAS PREGUNTAS\s+(\d+)\s+A\s+(\d+)\s+(DE ACUERDO CON[^\n]*)\n(.*)$',raw,re.I|re.S)
         new=None
         if ctxm: raw=raw[:ctxm.start()]; new=(int(ctxm[1]),int(ctxm[2]),ctxm[3].strip(),ctxm[4])
-        opt=re.search(r'(?m)^\s*A\.\s',raw); stem=clean(raw[:opt.start()] if opt else raw); choices=[]
+        opt=re.search(r'(?m)^[ \t]*A\.[ \t]+',raw); stem=clean(raw[:opt.start()] if opt else raw); choices=[]
         if opt:
-            choices=[clean(x) for x in re.findall(r'(?ms)^\s*[A-H]\.\s*(.*?)(?=^\s*[A-H]\.\s|\Z)',raw[opt.start():])]
+            options_text=raw[opt.start():].split('Cuadernillo de preguntas',1)[0]
+            choices=[clean(x) for x in re.findall(r'(?ms)^[ \t]*[A-H]\.[ \t]*(.*?)(?=^[ \t]*[A-H]\.[ \t]+|\Z)',options_text)]
         rev=[]
         answer_index='ABCDEFGH'.index(key[n]) if n in key else -1
         bad_choices=(len(choices)!=4 or len(set(choices))!=len(choices) or any(not x.strip() or 'Cuadernillo de preguntas' in x for x in choices) or (answer_index>=len(choices)))
