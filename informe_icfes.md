@@ -11,10 +11,10 @@
 - [x] Mantener `docus/` y `work/` fuera de Git y dejar el contenido derivado en `content/icfes/`, bajo el gate de build.
 - [x] Probar reconstrucción limpia de Matemáticas y caché: salida idéntica.
 - [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Completar soluciones y distractores razonados para las otras 151 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
+- [ ] Completar soluciones y distractores razonados para las otras 149 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
 - [x] Revisar ocho hojas de Ciencias (preguntas 2, 11, 12 y 17 en ambos cuadernillos) con solución y descarte individual de todas las alternativas incorrectas; el contenido coincide exactamente entre años.
 - [x] Revisar otras ocho hojas (preguntas 16, 19, 20 y 22 en ambos cuadernillos), cotejando la igualdad de enunciado, opciones y clave entre años.
-- [x] Revisar dos hojas más con opciones textuales y razonamiento claro (transcripción de proteínas y velocidad del sonido) en ambos cuadernillos.
+- [x] Revisar tres hojas más con opciones textuales y razonamiento claro (transcripción de proteínas, velocidad del sonido y presión atmosférica) en ambos cuadernillos.
 - [x] Cotejar visualmente las 50 preguntas de Matemáticas y su clave oficial; corregir alternativas vacías, datos/tablas y contextos compartidos. Se revisaron 49 hojas; mat-i038 sigue borrador porque la tabla no determina las intersecciones necesarias.
 - [x] Restaurar las opciones textuales de las 14 preguntas de Sociales que habían quedado como placeholders; cotejar recortes de 29 preguntas por cada cuadernillo de Ciencias y asociar la infografía original de Lectura como bloque para 42–49.
 - [x] Comparar cinco renders con sus páginas fuente en `#/pregunta/<id>`: cie-i001, cie-i029, cie-i047, cie-i048 y lec-i046. Las figuras se ven en el recorte ampliado; las opciones que aún no están segmentadas individualmente siguen señaladas.
@@ -32,7 +32,7 @@
 - Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
 - Cinco cuadernillos estructurados: **248 preguntas con clave, cero pendientes** (50 Matemáticas, 49 Lectura Crítica, 50 Ciencias 2026, 50 Ciencias 2025 y 49 Sociales). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
 - **45 preguntas conservan avisos explícitos**: 26 enlaces a evidencia específica del marco (13 por cada prueba de Ciencias), 18 opciones gráficas (9 por prueba de Ciencias) y la ambigüedad documentada de mat-i038. No son avisos ocultos ni se marcan como aprobadas.
-- **97 hojas revisadas, 151 borradores**. Matemáticas 49/50 revisadas; Ciencias 24/50 por año; Lectura 0/49; Sociales 0/49. Las hojas de Ciencias comunes entre años solo se copiaron tras verificar igualdad exacta de enunciado, opciones y clave.
+- **99 hojas revisadas, 149 borradores**. Matemáticas 49/50 revisadas; Ciencias 25/50 por año; Lectura 0/49; Sociales 0/49. Las hojas de Ciencias comunes entre años solo se copiaron tras verificar igualdad exacta de enunciado, opciones y clave.
 - Cinco simulacros generados, todos marcados “En revisión”.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa de `content/icfes/` solo `preguntas.json`; las transcripciones completas `documento.json` no se incorporan al bundle.

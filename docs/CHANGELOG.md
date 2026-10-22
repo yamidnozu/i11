@@ -33,9 +33,9 @@
 
 
 ## Pipeline documental — tercer lote pedagógico de Ciencias (2026-10-22)
-- Se añadieron soluciones completas para la transcripción de proteínas y la velocidad del sonido en agua y aire.
+- Se añadieron soluciones completas para la transcripción de proteínas, la velocidad del sonido en agua y aire y la presión atmosférica en altura.
 - Se verificaron las hojas existentes de configuración electrónica, fuerzas, presión atmosférica y mezclas; esas cuatro ya estaban revisadas y no se reemplazaron.
-- Acumulado actual: 97 hojas revisadas y 151 borradores.
+- Acumulado actual: 99 hojas revisadas y 149 borradores.
 
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
