@@ -38,6 +38,11 @@ def main():
             code_hash=''.join(sha(p) for p in implementation if p.exists())
             text_tool=shutil.which('pdftotext') if stage=='texto' else ''
             signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash+(text_tool or 'pymupdf-fallback')).encode()).hexdigest()
+            if stage=='empaquetar':
+                outdir=ROOT/'content'/'icfes'/spec['prefijo']
+                manual=[outdir/'overrides.json',*sorted((outdir/'hojas').glob('*.json'))]
+                manual_hash=''.join(f'{p.name}:{sha(p)}' for p in manual if p.exists())
+                signature=hashlib.sha256((signature+manual_hash).encode()).hexdigest()
             cached=meta['etapas'].get(stage,{}).get('estado')=='completa' and meta['etapas'].get(stage,{}).get('firma')==signature and out.exists()
             if cached and not args.forzar: print(doc_id,stage,'cache'); continue
             try:
@@ -94,7 +99,9 @@ def enrich(c):
     for q in pkg['preguntas']:
         if q.get('correcta') is None: continue
         p=dest/(q['id']+'.json')
-        if p.exists() and read(p).get('estado')=='revisada': continue
+        # Una hoja existente puede contener corrección humana aunque siga en
+        # borrador. Solo crearla cuando falta; nunca borrar trabajo al reanudar.
+        if p.exists(): continue
         wrong=[chr(65+i) for i in range(len(q['opciones'])) if i!=q['correcta']]
         blank=''.join(ch for ch in q['enunciado'][:40].split()[:5] if ch.isalpha())
         marca=[]
@@ -142,7 +149,9 @@ def package(c):
     overrides=out/'overrides.json'; ov=read(overrides) if overrides.exists() else {}
     if not isinstance(ov,dict): raise SystemExit('overrides.json debe ser un objeto por id')
     by_id={q['id']:q for q in src['preguntas']}
-    unknown=set(ov)-set(by_id)
+    package_override=ov.get('__paquete__',{})
+    if not isinstance(package_override,dict): raise SystemExit('Override __paquete__ debe ser un objeto')
+    unknown=set(ov)-set(by_id)-{'__paquete__'}
     if unknown: raise SystemExit('Overrides para IDs inexistentes: '+', '.join(sorted(unknown)))
     for q in src['preguntas']:
         changes=ov.get(q['id'],{})
@@ -151,6 +160,10 @@ def package(c):
         for key,val in changes.items(): q[key]=val
         sheet=out/'hojas'/(q['id']+'.json')
         if sheet.exists(): q['hoja']=read(sheet)['hoja']; q['estadoHoja']=read(sheet)['estado']
+    for key,val in package_override.items():
+        if key not in ('bloques','unidades','simulacros','nombre','version'):
+            raise SystemExit(f'Campo de paquete no permitido en override: {key}')
+        src[key]=val
     for q in src['preguntas']:
         if q.get('origen') in ('icfes','licenciado') and not q.get('fuente'): raise SystemExit(q['id']+':sin fuente tras override')
         if not q.get('opciones') or not 0 <= q.get('correcta',-1) < len(q['opciones']): raise SystemExit(q['id']+':opciones/clave inválida tras override')
