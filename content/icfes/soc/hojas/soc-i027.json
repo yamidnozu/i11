@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "La principal causa de este fenómeno se atribuye",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica quiénes se trasladan y hacia dónde."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir una causa de migración urbana",
+      "que": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
+      "pistas": [
+        "Identifica quiénes se trasladan y hacia dónde.",
+        "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
+      ],
+      "clave": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El crecimiento industrial central no explica que las familias dejen esas zonas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El texto no dice que el centro carezca de servicios."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La oferta barata podría influir, pero el enunciado destaca una búsqueda de calidad de vida."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica quiénes se trasladan y hacia dónde."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «La principal causa de este fenómeno se atribuye» orienta el análisis.",
+          "a": "m:La principal causa de este fenómeno se atribuye"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El crecimiento industrial central no explica que las familias dejen esas zonas. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El texto no dice que el centro carezca de servicios. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La oferta barata podría influir, pero el enunciado destaca una búsqueda de calidad de vida. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica quiénes se trasladan y hacia dónde.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En las",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

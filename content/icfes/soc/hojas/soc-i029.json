@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "una de las consecuencias de esta revolución",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Relaciona el paso de talleres y tierra a grandes fábricas."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca el cambio de residencia y de posición laboral asociado a ese proceso."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción A vincula la migración del campo a la ciudad con la formación del proletariado urbano."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar un cambio productivo con sus consecuencias sociales",
+      "que": "La producción mecanizada y concentrada en fábricas atrajo trabajadores desde el campo hacia las ciudades. Ese proceso de urbanización contribuyó al surgimiento de un proletariado urbano que dependía de vender su trabajo.",
+      "pistas": [
+        "Relaciona el paso de talleres y tierra a grandes fábricas.",
+        "Busca el cambio de residencia y de posición laboral asociado a ese proceso."
+      ],
+      "clave": "La opción A vincula la migración del campo a la ciudad con la formación del proletariado urbano.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La revolución desplazó trabajadores hacia las ciudades, no aumentó la proporción rural frente a la urbana."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El texto habla de concentración del capital industrial, no del nacimiento de una élite terrateniente."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No se describe un modelo para proteger al proletariado; se explican cambios en la producción y la población."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona el paso de talleres y tierra a grandes fábricas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca el cambio de residencia y de posición laboral asociado a ese proceso."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «una de las consecuencias de esta revolución» orienta el análisis.",
+          "a": "m:una de las consecuencias de esta revolución"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La producción mecanizada y concentrada en fábricas atrajo trabajadores desde el campo hacia las ciudades. Ese proceso de urbanización contribuyó al surgimiento de un proletariado urbano que dependía de vender su trabajo.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La producción mecanizada y concentrada en fábricas atrajo trabajadores desde el campo hacia las ciudades. Ese proceso de urbanización contribuyó al surgimiento de un proletariado urbano que dependía de vender su trabajo.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: La revolución desplazó trabajadores hacia las ciudades, no aumentó la proporción rural frente a la urbana. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El texto habla de concentración del capital industrial, no del nacimiento de una élite terrateniente. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No se describe un modelo para proteger al proletariado; se explican cambios en la producción y la población. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Relaciona el paso de talleres y tierra a grandes fábricas.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca el cambio de residencia y de posición laboral asociado a ese proceso.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La producción mecanizada y concentrada en fábricas atrajo trabajadores desde el campo hacia las ciudades. Ese proceso de urbanización contribuyó al surgimiento de un proletariado urbano que dependía de vender su trabajo.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción A vincula la migración del campo a la ciudad con la formación del proletariado urbano.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La Revolución",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

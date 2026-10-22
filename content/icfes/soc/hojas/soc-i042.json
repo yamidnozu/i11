@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "¿qué deberían revisar los ciudadanos principalmente?",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "No tomes el titular como evidencia suficiente."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca datos que permitan comparar la situación antes y durante la gestión."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar el desempeño de un gobierno con datos comparables",
+      "que": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
+      "pistas": [
+        "No tomes el titular como evidencia suficiente.",
+        "Busca datos que permitan comparar la situación antes y durante la gestión."
+      ],
+      "clave": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El plan muestra propuestas, pero no si la criminalidad mejoró o empeoró durante el periodo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Comparar con otras ciudades no responde directamente a cómo cambió la seguridad bajo este alcalde."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Las declaraciones del alcalde son interesadas y no sustituyen los datos sobre criminalidad."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "No tomes el titular como evidencia suficiente."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca datos que permitan comparar la situación antes y durante la gestión."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «¿qué deberían revisar los ciudadanos principalmente?» orienta el análisis.",
+          "a": "m:¿qué deberían revisar los ciudadanos principalmente?"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El plan muestra propuestas, pero no si la criminalidad mejoró o empeoró durante el periodo. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Comparar con otras ciudades no responde directamente a cómo cambió la seguridad bajo este alcalde. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Las declaraciones del alcalde son interesadas y no sustituyen los datos sobre criminalidad. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "No tomes el titular como evidencia suficiente.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca datos que permitan comparar la situación antes y durante la gestión.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
+          "a": "p:2"
+        },
+        {
+          "t": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En un",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

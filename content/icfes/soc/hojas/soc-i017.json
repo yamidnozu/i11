@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "pertenece al periodo del Frente Nacional en Colombia",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Ubica qué problema político intenta evitar el acuerdo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Relaciona la propuesta de los dos partidos con el contexto de violencia bipartidista."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C conecta el acuerdo de los partidos tradicionales con la salida a la crisis de violencia y sectarismo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar una fuente política con su contexto histórico",
+      "que": "El fragmento propone un acuerdo entre liberales y conservadores para impedir que vuelva una hegemonía partidista y una crisis como las anteriores. Esa propuesta coincide con la salida bipartidista impulsada tras la violencia y el sectarismo de los años cincuenta.",
+      "pistas": [
+        "Ubica qué problema político intenta evitar el acuerdo.",
+        "Relaciona la propuesta de los dos partidos con el contexto de violencia bipartidista."
+      ],
+      "clave": "La opción C conecta el acuerdo de los partidos tradicionales con la salida a la crisis de violencia y sectarismo.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El fragmento no menciona la amenaza del fascismo ni de otros totalitarismos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No describe la voluntad de paz durante el gobierno militar; propone el acuerdo que daría paso al gobierno civil posterior."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El autor presenta el acuerdo bipartidista como solución, no como advertencia contra el sistema de dos partidos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica qué problema político intenta evitar el acuerdo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona la propuesta de los dos partidos con el contexto de violencia bipartidista."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «pertenece al periodo del Frente Nacional en Colombia» orienta el análisis.",
+          "a": "m:pertenece al periodo del Frente Nacional en Colombia"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El fragmento propone un acuerdo entre liberales y conservadores para impedir que vuelva una hegemonía partidista y una crisis como las anteriores. Esa propuesta coincide con la salida bipartidista impulsada tras la violencia y el sectarismo de los años cincuenta.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El fragmento propone un acuerdo entre liberales y conservadores para impedir que vuelva una hegemonía partidista y una crisis como las anteriores. Esa propuesta coincide con la salida bipartidista impulsada tras la violencia y el sectarismo de los años cincuenta.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El fragmento no menciona la amenaza del fascismo ni de otros totalitarismos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No describe la voluntad de paz durante el gobierno militar; propone el acuerdo que daría paso al gobierno civil posterior. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El autor presenta el acuerdo bipartidista como solución, no como advertencia contra el sistema de dos partidos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica qué problema político intenta evitar el acuerdo.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Relaciona la propuesta de los dos partidos con el contexto de violencia bipartidista.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El fragmento propone un acuerdo entre liberales y conservadores para impedir que vuelva una hegemonía partidista y una crisis como las anteriores. Esa propuesta coincide con la salida bipartidista impulsada tras la violencia y el sectarismo de los años cincuenta.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C conecta el acuerdo de los partidos tradicionales con la salida a la crisis de violencia y sectarismo.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Lea atentamente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

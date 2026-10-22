@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "se alteraría la distribución del poder público",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Distingue las facultades excepcionales de las ordinarias."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Identifica qué autoridad ordena normalmente una privación de la libertad."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer un cambio en el equilibrio de poderes",
+      "que": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
+      "pistas": [
+        "Distingue las facultades excepcionales de las ordinarias.",
+        "Identifica qué autoridad ordena normalmente una privación de la libertad."
+      ],
+      "clave": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El texto afirma que el presidente puede modificar el presupuesto durante la excepción."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La Rama Ejecutiva no es la única que restringe manifestaciones; las medidas de excepción mantienen controles y límites."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El presidente puede dictar decretos con fuerza de ley durante la excepción, pero la clave de esta pregunta apunta al cambio sobre las aprehensiones y el control judicial."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue las facultades excepcionales de las ordinarias."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué autoridad ordena normalmente una privación de la libertad."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «se alteraría la distribución del poder público» orienta el análisis.",
+          "a": "m:se alteraría la distribución del poder público"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El texto afirma que el presidente puede modificar el presupuesto durante la excepción. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La Rama Ejecutiva no es la única que restringe manifestaciones; las medidas de excepción mantienen controles y límites. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El presidente puede dictar decretos con fuerza de ley durante la excepción, pero la clave de esta pregunta apunta al cambio sobre las aprehensiones y el control judicial. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue las facultades excepcionales de las ordinarias.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Identifica qué autoridad ordena normalmente una privación de la libertad.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El estado",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

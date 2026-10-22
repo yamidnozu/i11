@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "se puede afirmar que",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué busca cada organización."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Compara el apoyo a los campesinos con la protección del humedal."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C describe intereses diferentes: proteger el ecosistema o ayudar a los campesinos aunque se afecte."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comparar intereses en un conflicto socioambiental",
+      "que": "La organización estatal busca apoyar a campesinos desplazados con proyectos agrícolas, aunque los terrenos sean un humedal. La organización ambientalista prioriza proteger ese ecosistema. Sus intereses son distintos y pueden entrar en conflicto.",
+      "pistas": [
+        "Identifica qué busca cada organización.",
+        "Compara el apoyo a los campesinos con la protección del humedal."
+      ],
+      "clave": "La opción C describe intereses diferentes: proteger el ecosistema o ayudar a los campesinos aunque se afecte.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La organización ambientalista no busca aprovechar económicamente el humedal."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Las dos organizaciones no comparten la defensa del humedal; una propone usar esos terrenos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La propuesta no dice que los campesinos deban asentarse en otra región."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué busca cada organización."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara el apoyo a los campesinos con la protección del humedal."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «se puede afirmar que» orienta el análisis.",
+          "a": "m:se puede afirmar que"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La organización estatal busca apoyar a campesinos desplazados con proyectos agrícolas, aunque los terrenos sean un humedal. La organización ambientalista prioriza proteger ese ecosistema. Sus intereses son distintos y pueden entrar en conflicto.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La organización estatal busca apoyar a campesinos desplazados con proyectos agrícolas, aunque los terrenos sean un humedal. La organización ambientalista prioriza proteger ese ecosistema. Sus intereses son distintos y pueden entrar en conflicto.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La organización ambientalista no busca aprovechar económicamente el humedal. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Las dos organizaciones no comparten la defensa del humedal; una propone usar esos terrenos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La propuesta no dice que los campesinos deban asentarse en otra región. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué busca cada organización.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compara el apoyo a los campesinos con la protección del humedal.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La organización estatal busca apoyar a campesinos desplazados con proyectos agrícolas, aunque los terrenos sean un humedal. La organización ambientalista prioriza proteger ese ecosistema. Sus intereses son distintos y pueden entrar en conflicto.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C describe intereses diferentes: proteger el ecosistema o ayudar a los campesinos aunque se afecte.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

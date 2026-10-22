@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "Este planteamiento fue realizado probablemente por",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Identifica quién tendría interés en justificar su participación en el conflicto."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir la perspectiva de quien formula una afirmación",
+      "que": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
+      "pistas": [
+        "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo.",
+        "Identifica quién tendría interés en justificar su participación en el conflicto."
+      ],
+      "clave": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Aunque menciona efectos económicos, el fragmento no habla desde el interés de un empresario."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No discute una propuesta legislativa ni un marco jurídico para la paz."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El autor no se presenta como observador neutral: habla de una respuesta de su organización."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica quién tendría interés en justificar su participación en el conflicto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «Este planteamiento fue realizado probablemente por» orienta el análisis.",
+          "a": "m:Este planteamiento fue realizado probablemente por"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Aunque menciona efectos económicos, el fragmento no habla desde el interés de un empresario. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No discute una propuesta legislativa ni un marco jurídico para la paz. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El autor no se presenta como observador neutral: habla de una respuesta de su organización. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Identifica quién tendría interés en justificar su participación en el conflicto.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Lea atentamente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

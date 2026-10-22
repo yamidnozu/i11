@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "sustitución de importaciones",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Relaciona la caída de las importaciones con la respuesta de los países."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca una medida que reemplace productos comprados afuera por producción local."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C describe producir localmente los bienes que antes se importaban."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Explicar una política económica ante una crisis",
+      "que": "Al caer las exportaciones y las importaciones durante la crisis, los países buscaron producir dentro del territorio los bienes que antes compraban en el exterior. Esa estrategia se llama sustitución de importaciones.",
+      "pistas": [
+        "Relaciona la caída de las importaciones con la respuesta de los países.",
+        "Busca una medida que reemplace productos comprados afuera por producción local."
+      ],
+      "clave": "La opción C describe producir localmente los bienes que antes se importaban.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La sustitución no exige prohibir todos los productos extranjeros."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La opción propone libertad total, no reemplazar importaciones con producción propia."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Dejar actuar sin intervención a la oferta y la demanda no describe la política señalada."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona la caída de las importaciones con la respuesta de los países."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca una medida que reemplace productos comprados afuera por producción local."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «sustitución de importaciones» orienta el análisis.",
+          "a": "m:sustitución de importaciones"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al caer las exportaciones y las importaciones durante la crisis, los países buscaron producir dentro del territorio los bienes que antes compraban en el exterior. Esa estrategia se llama sustitución de importaciones.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al caer las exportaciones y las importaciones durante la crisis, los países buscaron producir dentro del territorio los bienes que antes compraban en el exterior. Esa estrategia se llama sustitución de importaciones.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La sustitución no exige prohibir todos los productos extranjeros. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La opción propone libertad total, no reemplazar importaciones con producción propia. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Dejar actuar sin intervención a la oferta y la demanda no describe la política señalada. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Relaciona la caída de las importaciones con la respuesta de los países.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca una medida que reemplace productos comprados afuera por producción local.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al caer las exportaciones y las importaciones durante la crisis, los países buscaron producir dentro del territorio los bienes que antes compraban en el exterior. Esa estrategia se llama sustitución de importaciones.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C describe producir localmente los bienes que antes se importaban.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La crisis",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

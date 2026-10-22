@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "no resulte pertinente porque en ellas",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Compara la propuesta uniforme con las diferencias entre ciudades."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Identifica qué información local hace falta antes de replicar el proyecto."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C señala que la demanda y las necesidades de la población pueden ser distintas en cada ciudad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar si una política puede copiarse entre ciudades",
+      "que": "Bogotá, Riohacha, Leticia, Arauca y Florencia tienen contextos y necesidades distintas. Replicar en todas la misma distribución de restaurantes, salones, tiendas, librerías y escuelas de baile podría no responder a lo que cada población demanda.",
+      "pistas": [
+        "Compara la propuesta uniforme con las diferencias entre ciudades.",
+        "Identifica qué información local hace falta antes de replicar el proyecto."
+      ],
+      "clave": "La opción C señala que la demanda y las necesidades de la población pueden ser distintas en cada ciudad.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El caso no permite afirmar que los jóvenes de esas ciudades no quieran emprender."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La duración del programa en Bogotá no explica por qué el modelo sería inadecuado en otras ciudades."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El enunciado no dice que los jóvenes de esas ciudades no dominen inglés."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara la propuesta uniforme con las diferencias entre ciudades."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué información local hace falta antes de replicar el proyecto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «no resulte pertinente porque en ellas» orienta el análisis.",
+          "a": "m:no resulte pertinente porque en ellas"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Bogotá, Riohacha, Leticia, Arauca y Florencia tienen contextos y necesidades distintas. Replicar en todas la misma distribución de restaurantes, salones, tiendas, librerías y escuelas de baile podría no responder a lo que cada población demanda.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Bogotá, Riohacha, Leticia, Arauca y Florencia tienen contextos y necesidades distintas. Replicar en todas la misma distribución de restaurantes, salones, tiendas, librerías y escuelas de baile podría no responder a lo que cada población demanda.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El caso no permite afirmar que los jóvenes de esas ciudades no quieran emprender. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La duración del programa en Bogotá no explica por qué el modelo sería inadecuado en otras ciudades. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El enunciado no dice que los jóvenes de esas ciudades no dominen inglés. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara la propuesta uniforme con las diferencias entre ciudades.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Identifica qué información local hace falta antes de replicar el proyecto.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Bogotá, Riohacha, Leticia, Arauca y Florencia tienen contextos y necesidades distintas. Replicar en todas la misma distribución de restaurantes, salones, tiendas, librerías y escuelas de baile podría no responder a lo que cada población demanda.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C señala que la demanda y las necesidades de la población pueden ser distintas en cada ciudad.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un programa",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "El procedimiento realizado por el ciudadano es",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar requisitos de una iniciativa popular legislativa",
+      "que": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
+      "pistas": [
+        "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida.",
+        "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
+      ],
+      "clave": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La ciudadanía sí puede promover iniciativas legislativas; no está impedida por ser una sola persona promotora."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No basta con la propuesta de una persona; se exige un número de apoyos ciudadanos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El requisito no es un porcentaje de congresistas, sino firmas de ciudadanos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «El procedimiento realizado por el ciudadano es» orienta el análisis.",
+          "a": "m:El procedimiento realizado por el ciudadano es"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La ciudadanía sí puede promover iniciativas legislativas; no está impedida por ser una sola persona promotora. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No basta con la propuesta de una persona; se exige un número de apoyos ciudadanos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El requisito no es un porcentaje de congresistas, sino firmas de ciudadanos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un ciudadano",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

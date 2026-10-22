@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "mecanismos de participación directa",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica que se pretende cambiar una norma de la Constitución."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Elige el mecanismo de participación que permite votar una reforma normativa."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "El referendo permite que la ciudadanía decida sobre una reforma constitucional."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Elegir un mecanismo para reformar una norma constitucional",
+      "que": "La propuesta busca que la ciudadanía decida si se elimina una norma de la Constitución. El mecanismo adecuado para votar una reforma constitucional es el referendo; el plebiscito consulta una decisión política del Ejecutivo, la consulta popular plantea una pregunta general y el cabildo abierto es deliberativo.",
+      "pistas": [
+        "Identifica que se pretende cambiar una norma de la Constitución.",
+        "Elige el mecanismo de participación que permite votar una reforma normativa."
+      ],
+      "clave": "El referendo permite que la ciudadanía decida sobre una reforma constitucional.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El plebiscito consulta una decisión política del Ejecutivo, no deroga por sí mismo una norma constitucional."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La consulta popular plantea una pregunta de carácter general, pero no es el mecanismo de reforma que describe el caso."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El cabildo abierto permite deliberar sobre asuntos locales, no reformar la Constitución."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica que se pretende cambiar una norma de la Constitución."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Elige el mecanismo de participación que permite votar una reforma normativa."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «mecanismos de participación directa» orienta el análisis.",
+          "a": "m:mecanismos de participación directa"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La propuesta busca que la ciudadanía decida si se elimina una norma de la Constitución. El mecanismo adecuado para votar una reforma constitucional es el referendo; el plebiscito consulta una decisión política del Ejecutivo, la consulta popular plantea una pregunta general y el cabildo abierto es deliberativo.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La propuesta busca que la ciudadanía decida si se elimina una norma de la Constitución. El mecanismo adecuado para votar una reforma constitucional es el referendo; el plebiscito consulta una decisión política del Ejecutivo, la consulta popular plantea una pregunta general y el cabildo abierto es deliberativo.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El plebiscito consulta una decisión política del Ejecutivo, no deroga por sí mismo una norma constitucional. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La consulta popular plantea una pregunta de carácter general, pero no es el mecanismo de reforma que describe el caso. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El cabildo abierto permite deliberar sobre asuntos locales, no reformar la Constitución. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica que se pretende cambiar una norma de la Constitución.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Elige el mecanismo de participación que permite votar una reforma normativa.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La propuesta busca que la ciudadanía decida si se elimina una norma de la Constitución. El mecanismo adecuado para votar una reforma constitucional es el referendo; el plebiscito consulta una decisión política del Ejecutivo, la consulta popular plantea una pregunta general y el cabildo abierto es deliberativo.",
+          "a": "p:2"
+        },
+        {
+          "t": "El referendo permite que la ciudadanía decida sobre una reforma constitucional.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

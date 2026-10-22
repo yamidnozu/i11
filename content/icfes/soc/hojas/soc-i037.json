@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "no se reconoce como un Estado propiamente dicho",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Busca qué condición política impide reconocer un Estado en las opciones."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Distingue reconocimiento y fronteras de datos sobre población."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción B alude a la falta de reconocimiento internacional y de fronteras perfectamente definidas, tal como plantea este ítem."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar una afirmación dentro de su contexto histórico",
+      "que": "Según la explicación esperada en este ítem, el problema radica en la falta de reconocimiento internacional de un territorio con fronteras claramente definidas. La respuesta se refiere a la condición política descrita por el cuadernillo; no hace falta inferirla de la cantidad de refugiados o colonos.",
+      "pistas": [
+        "Busca qué condición política impide reconocer un Estado en las opciones.",
+        "Distingue reconocimiento y fronteras de datos sobre población."
+      ],
+      "clave": "La opción B alude a la falta de reconocimiento internacional y de fronteras perfectamente definidas, tal como plantea este ítem.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Tener voz y no voto en la ONU no basta para explicar por sí solo el reconocimiento como Estado que pregunta el ítem."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La cantidad de colonos no define por sí sola la condición estatal descrita."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La población refugiada no determina por sí misma el reconocimiento de un Estado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Busca qué condición política impide reconocer un Estado en las opciones."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue reconocimiento y fronteras de datos sobre población."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «no se reconoce como un Estado propiamente dicho» orienta el análisis.",
+          "a": "m:no se reconoce como un Estado propiamente dicho"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Según la explicación esperada en este ítem, el problema radica en la falta de reconocimiento internacional de un territorio con fronteras claramente definidas. La respuesta se refiere a la condición política descrita por el cuadernillo; no hace falta inferirla de la cantidad de refugiados o colonos.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Según la explicación esperada en este ítem, el problema radica en la falta de reconocimiento internacional de un territorio con fronteras claramente definidas. La respuesta se refiere a la condición política descrita por el cuadernillo; no hace falta inferirla de la cantidad de refugiados o colonos.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Tener voz y no voto en la ONU no basta para explicar por sí solo el reconocimiento como Estado que pregunta el ítem. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La cantidad de colonos no define por sí sola la condición estatal descrita. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La población refugiada no determina por sí misma el reconocimiento de un Estado. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Busca qué condición política impide reconocer un Estado en las opciones.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue reconocimiento y fronteras de datos sobre población.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Según la explicación esperada en este ítem, el problema radica en la falta de reconocimiento internacional de un territorio con fronteras claramente definidas. La respuesta se refiere a la condición política descrita por el cuadernillo; no hace falta inferirla de la cantidad de refugiados o colonos.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B alude a la falta de reconocimiento internacional y de fronteras perfectamente definidas, tal como plantea este ítem.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En 1994",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

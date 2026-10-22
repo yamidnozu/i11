@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "permite comprender características propias del conflicto armado",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Relaciona el desplazamiento con las disputas por territorios."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca qué interés de los actores se hace visible a través del fenómeno."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "El desplazamiento pone en evidencia los intereses económicos y territoriales de los actores en conflicto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar un fenómeno con los intereses de actores armados",
+      "que": "La definición vincula el desplazamiento con disputas de actores armados por territorios estratégicos. Al obligar a comunidades a salir, el fenómeno deja ver indirectamente los intereses de control territorial y económico presentes en el conflicto.",
+      "pistas": [
+        "Relaciona el desplazamiento con las disputas por territorios.",
+        "Busca qué interés de los actores se hace visible a través del fenómeno."
+      ],
+      "clave": "El desplazamiento pone en evidencia los intereses económicos y territoriales de los actores en conflicto.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El desplazamiento ocurre en otros países; la definición no lo presenta como exclusivo de Colombia."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El texto habla de población desplazada sin limitarla a zonas urbanas."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La disputa puede incluir varios actores; no identifica zonas controladas históricamente por uno solo."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona el desplazamiento con las disputas por territorios."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca qué interés de los actores se hace visible a través del fenómeno."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «permite comprender características propias del conflicto armado» orienta el análisis.",
+          "a": "m:permite comprender características propias del conflicto armado"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La definición vincula el desplazamiento con disputas de actores armados por territorios estratégicos. Al obligar a comunidades a salir, el fenómeno deja ver indirectamente los intereses de control territorial y económico presentes en el conflicto.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La definición vincula el desplazamiento con disputas de actores armados por territorios estratégicos. Al obligar a comunidades a salir, el fenómeno deja ver indirectamente los intereses de control territorial y económico presentes en el conflicto.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El desplazamiento ocurre en otros países; la definición no lo presenta como exclusivo de Colombia. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El texto habla de población desplazada sin limitarla a zonas urbanas. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La disputa puede incluir varios actores; no identifica zonas controladas históricamente por uno solo. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Relaciona el desplazamiento con las disputas por territorios.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca qué interés de los actores se hace visible a través del fenómeno.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La definición vincula el desplazamiento con disputas de actores armados por territorios estratégicos. Al obligar a comunidades a salir, el fenómeno deja ver indirectamente los intereses de control territorial y económico presentes en el conflicto.",
+          "a": "p:2"
+        },
+        {
+          "t": "El desplazamiento pone en evidencia los intereses económicos y territoriales de los actores en conflicto.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El Centro",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

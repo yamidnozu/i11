@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "la posición del funcionario podría tener como consecuencia",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Observa cómo responde el funcionario a los datos de violencia."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Piensa qué efecto tiene desacreditar el estudio sin ofrecer una alternativa."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C señala que esa postura puede impedir que se reconozca la gravedad de la violencia."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Analizar el efecto de minimizar un problema social",
+      "que": "Las organizaciones presentan un estudio sobre violencia contra las mujeres y piden actuar. Si un funcionario descarta el estudio y exige justificar los hechos, puede restar importancia a las agresiones y dificultar que se reconozca su gravedad.",
+      "pistas": [
+        "Observa cómo responde el funcionario a los datos de violencia.",
+        "Piensa qué efecto tiene desacreditar el estudio sin ofrecer una alternativa."
+      ],
+      "clave": "La opción C señala que esa postura puede impedir que se reconozca la gravedad de la violencia.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El funcionario cuestiona el estudio, pero la consecuencia social más directa es minimizar la violencia, no evaluar a sus investigadores."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No propone estrategias de prevención; rechaza el estudio que fundamenta una solicitud."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El texto no indica que las organizaciones retirarían sus peticiones."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Observa cómo responde el funcionario a los datos de violencia."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Piensa qué efecto tiene desacreditar el estudio sin ofrecer una alternativa."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «la posición del funcionario podría tener como consecuencia» orienta el análisis.",
+          "a": "m:la posición del funcionario podría tener como consecuencia"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las organizaciones presentan un estudio sobre violencia contra las mujeres y piden actuar. Si un funcionario descarta el estudio y exige justificar los hechos, puede restar importancia a las agresiones y dificultar que se reconozca su gravedad.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Las organizaciones presentan un estudio sobre violencia contra las mujeres y piden actuar. Si un funcionario descarta el estudio y exige justificar los hechos, puede restar importancia a las agresiones y dificultar que se reconozca su gravedad.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El funcionario cuestiona el estudio, pero la consecuencia social más directa es minimizar la violencia, no evaluar a sus investigadores. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No propone estrategias de prevención; rechaza el estudio que fundamenta una solicitud. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El texto no indica que las organizaciones retirarían sus peticiones. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Observa cómo responde el funcionario a los datos de violencia.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Piensa qué efecto tiene desacreditar el estudio sin ofrecer una alternativa.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las organizaciones presentan un estudio sobre violencia contra las mujeres y piden actuar. Si un funcionario descarta el estudio y exige justificar los hechos, puede restar importancia a las agresiones y dificultar que se reconozca su gravedad.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C señala que esa postura puede impedir que se reconozca la gravedad de la violencia.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudio",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "dimensiones están en conflicto",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué actividad genera el problema ambiental."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La situación enfrenta las dimensiones económica y ambiental."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar dimensiones en una situación ambiental",
+      "que": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
+      "pistas": [
+        "Identifica qué actividad genera el problema ambiental.",
+        "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
+      ],
+      "clave": "La situación enfrenta las dimensiones económica y ambiental.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Las restricciones escolares son una consecuencia, pero no la tensión principal que explica el texto."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No se describe un conflicto cultural."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El texto no enfrenta prácticas culturales con la producción económica."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué actividad genera el problema ambiental."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «dimensiones están en conflicto» orienta el análisis.",
+          "a": "m:dimensiones están en conflicto"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Las restricciones escolares son una consecuencia, pero no la tensión principal que explica el texto. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No se describe un conflicto cultural. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El texto no enfrenta prácticas culturales con la producción económica. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué actividad genera el problema ambiental.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Relaciona el peso económico de las industrias con la propuesta de reducirlas.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
+          "a": "p:2"
+        },
+        {
+          "t": "La situación enfrenta las dimensiones económica y ambiental.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Pekín y",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

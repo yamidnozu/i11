@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "acciones es coherente con este fallo",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué práctica prohíbe la convicción religiosa del soldado."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Descarta las opciones que mantienen su participación en la institución militar."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Aplicar la libertad de conciencia a una decisión",
+      "que": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
+      "pistas": [
+        "Identifica qué práctica prohíbe la convicción religiosa del soldado.",
+        "Descarta las opciones que mantienen su participación en la institución militar."
+      ],
+      "clave": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Obligarlo a cumplir todas las tareas contradice la libertad de conciencia que protege el fallo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Los entrenamientos siguen siendo una práctica militar que el soldado objeta."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Participar en paradas y portar la dotación tampoco respeta su objeción."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué práctica prohíbe la convicción religiosa del soldado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Descarta las opciones que mantienen su participación en la institución militar."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «acciones es coherente con este fallo» orienta el análisis.",
+          "a": "m:acciones es coherente con este fallo"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: Obligarlo a cumplir todas las tareas contradice la libertad de conciencia que protege el fallo. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Los entrenamientos siguen siendo una práctica militar que el soldado objeta. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Participar en paradas y portar la dotación tampoco respeta su objeción. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué práctica prohíbe la convicción religiosa del soldado.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Descarta las opciones que mantienen su participación en la institución militar.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La Corte",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

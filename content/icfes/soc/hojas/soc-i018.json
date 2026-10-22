@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "orden cronológico",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Ubica el inicio aproximado de cada revolución."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Organiza los hechos desde el más antiguo hasta el más reciente."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La secuencia es mexicana, rusa, cubana y nicaragüense."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ordenar procesos históricos por fecha",
+      "que": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
+      "pistas": [
+        "Ubica el inicio aproximado de cada revolución.",
+        "Organiza los hechos desde el más antiguo hasta el más reciente."
+      ],
+      "clave": "La secuencia es mexicana, rusa, cubana y nicaragüense.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Empieza con la revolución nicaragüense, que es la más reciente de la lista."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La Revolución rusa no ocurrió antes que la mexicana."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La Revolución cubana es posterior a las revoluciones mexicana y rusa."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica el inicio aproximado de cada revolución."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Organiza los hechos desde el más antiguo hasta el más reciente."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «orden cronológico» orienta el análisis.",
+          "a": "m:orden cronológico"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Empieza con la revolución nicaragüense, que es la más reciente de la lista. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La Revolución rusa no ocurrió antes que la mexicana. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La Revolución cubana es posterior a las revoluciones mexicana y rusa. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica el inicio aproximado de cada revolución.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Organiza los hechos desde el más antiguo hasta el más reciente.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
+          "a": "p:2"
+        },
+        {
+          "t": "La secuencia es mexicana, rusa, cubana y nicaragüense.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Las revoluciones",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

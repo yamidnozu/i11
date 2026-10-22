@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "La razón que mejor sustenta esta decisión",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué valor expresa la comunidad sobre su territorio."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Relaciona esa postura con la protección constitucional correspondiente."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción C se basa en proteger la diversidad étnica y cultural de la comunidad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer la protección de la diversidad cultural",
+      "que": "La comunidad indígena considera que la extracción vulnera su relación espiritual con el territorio. La Constitución protege la diversidad étnica y cultural; por eso el Estado puede negar un permiso que afecte esa forma de vida.",
+      "pistas": [
+        "Identifica qué valor expresa la comunidad sobre su territorio.",
+        "Relaciona esa postura con la protección constitucional correspondiente."
+      ],
+      "clave": "La opción C se basa en proteger la diversidad étnica y cultural de la comunidad.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El caso no compara a personas en condiciones de igualdad; plantea una diferencia cultural y colectiva."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La libre asociación no es el derecho en conflicto con la explotación del yacimiento."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El enunciado no presenta un daño ambiental como razón principal de la comunidad; destaca su cosmovisión."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué valor expresa la comunidad sobre su territorio."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona esa postura con la protección constitucional correspondiente."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «La razón que mejor sustenta esta decisión» orienta el análisis.",
+          "a": "m:La razón que mejor sustenta esta decisión"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La comunidad indígena considera que la extracción vulnera su relación espiritual con el territorio. La Constitución protege la diversidad étnica y cultural; por eso el Estado puede negar un permiso que afecte esa forma de vida.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La comunidad indígena considera que la extracción vulnera su relación espiritual con el territorio. La Constitución protege la diversidad étnica y cultural; por eso el Estado puede negar un permiso que afecte esa forma de vida.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El caso no compara a personas en condiciones de igualdad; plantea una diferencia cultural y colectiva. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La libre asociación no es el derecho en conflicto con la explotación del yacimiento. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El enunciado no presenta un daño ambiental como razón principal de la comunidad; destaca su cosmovisión. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué valor expresa la comunidad sobre su territorio.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Relaciona esa postura con la protección constitucional correspondiente.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La comunidad indígena considera que la extracción vulnera su relación espiritual con el territorio. La Constitución protege la diversidad étnica y cultural; por eso el Estado puede negar un permiso que afecte esa forma de vida.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción C se basa en proteger la diversidad étnica y cultural de la comunidad.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una compañía",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

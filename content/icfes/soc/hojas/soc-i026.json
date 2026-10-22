@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "se puede presentar ante un juez cuando",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Identifica qué derecho se afecta en cada caso."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca una vulneración de un derecho fundamental que requiera protección inmediata."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción A describe una amenaza al derecho a la salud ligada al riesgo para la vida."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer cuándo se protege un derecho fundamental",
+      "que": "La tutela permite pedir protección inmediata cuando un derecho fundamental está vulnerado o amenazado. La opción A describe una afectación al derecho a la salud que pone en riesgo la vida, por lo que corresponde a ese mecanismo.",
+      "pistas": [
+        "Identifica qué derecho se afecta en cada caso.",
+        "Busca una vulneración de un derecho fundamental que requiera protección inmediata."
+      ],
+      "clave": "La opción A describe una amenaza al derecho a la salud ligada al riesgo para la vida.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La expulsión de una agremiación no basta, por sí sola, para identificar la vulneración de un derecho fundamental en este caso."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La protección de derechos colectivos requiere otros mecanismos, no la tutela individual descrita."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La opción habla de legislar, no de una vulneración concreta que una persona lleve ante un juez."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué derecho se afecta en cada caso."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca una vulneración de un derecho fundamental que requiera protección inmediata."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «se puede presentar ante un juez cuando» orienta el análisis.",
+          "a": "m:se puede presentar ante un juez cuando"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La tutela permite pedir protección inmediata cuando un derecho fundamental está vulnerado o amenazado. La opción A describe una afectación al derecho a la salud que pone en riesgo la vida, por lo que corresponde a ese mecanismo.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La tutela permite pedir protección inmediata cuando un derecho fundamental está vulnerado o amenazado. La opción A describe una afectación al derecho a la salud que pone en riesgo la vida, por lo que corresponde a ese mecanismo.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: La expulsión de una agremiación no basta, por sí sola, para identificar la vulneración de un derecho fundamental en este caso. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La protección de derechos colectivos requiere otros mecanismos, no la tutela individual descrita. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La opción habla de legislar, no de una vulneración concreta que una persona lleve ante un juez. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué derecho se afecta en cada caso.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca una vulneración de un derecho fundamental que requiera protección inmediata.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La tutela permite pedir protección inmediata cuando un derecho fundamental está vulnerado o amenazado. La opción A describe una afectación al derecho a la salud que pone en riesgo la vida, por lo que corresponde a ese mecanismo.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción A describe una amenaza al derecho a la salud ligada al riesgo para la vida.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La acción",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "causas del conflicto agrario en Colombia",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Distingue los factores sociales y políticos de los que no explican el conflicto agrario."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca la opción que combina la disputa política con la desigualdad en la tierra."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Los problemas dos y cuatro corresponden a la pertenencia a partidos contrarios y la distribución desigual de la tierra."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar causas estructurales de un conflicto agrario",
+      "que": "La pertenencia a partidos contrarios puede alimentar divisiones políticas, y la distribución desigual de la tierra es una causa estructural del conflicto agrario. La combinación que reúne esos dos problemas es la opción C.",
+      "pistas": [
+        "Distingue los factores sociales y políticos de los que no explican el conflicto agrario.",
+        "Busca la opción que combina la disputa política con la desigualdad en la tierra."
+      ],
+      "clave": "Los problemas dos y cuatro corresponden a la pertenencia a partidos contrarios y la distribución desigual de la tierra.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La escasez de recursos no renovables y el crecimiento rural no forman la combinación señalada en el contexto agrario colombiano."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Incluye la desigualdad de la tierra, pero la escasez de recursos no renovables no es el otro factor que pide la pregunta."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La escasez de recursos y la pertenencia a partidos no reúnen la distribución desigual de la propiedad rural."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue los factores sociales y políticos de los que no explican el conflicto agrario."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca la opción que combina la disputa política con la desigualdad en la tierra."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «causas del conflicto agrario en Colombia» orienta el análisis.",
+          "a": "m:causas del conflicto agrario en Colombia"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La pertenencia a partidos contrarios puede alimentar divisiones políticas, y la distribución desigual de la tierra es una causa estructural del conflicto agrario. La combinación que reúne esos dos problemas es la opción C.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La pertenencia a partidos contrarios puede alimentar divisiones políticas, y la distribución desigual de la tierra es una causa estructural del conflicto agrario. La combinación que reúne esos dos problemas es la opción C.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La escasez de recursos no renovables y el crecimiento rural no forman la combinación señalada en el contexto agrario colombiano. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Incluye la desigualdad de la tierra, pero la escasez de recursos no renovables no es el otro factor que pide la pregunta. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La escasez de recursos y la pertenencia a partidos no reúnen la distribución desigual de la propiedad rural. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue los factores sociales y políticos de los que no explican el conflicto agrario.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca la opción que combina la disputa política con la desigualdad en la tierra.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La pertenencia a partidos contrarios puede alimentar divisiones políticas, y la distribución desigual de la tierra es una causa estructural del conflicto agrario. La combinación que reúne esos dos problemas es la opción C.",
+          "a": "p:2"
+        },
+        {
+          "t": "Los problemas dos y cuatro corresponden a la pertenencia a partidos contrarios y la distribución desigual de la tierra.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Lea la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

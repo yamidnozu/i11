@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "argumento más afín con la propuesta de legalización",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Busca una evaluación de los efectos de la prohibición."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar una razón que respalda una política",
+      "que": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
+      "pistas": [
+        "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites.",
+        "Busca una evaluación de los efectos de la prohibición."
+      ],
+      "clave": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La propuesta no exige que el comercio quede sin ningún control."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Culpar exclusivamente a los países consumidores no es un argumento a favor de legalizar."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Plantea tratar a consumidores con atención médica, pero no explica por qué se debe legalizar."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca una evaluación de los efectos de la prohibición."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «argumento más afín con la propuesta de legalización» orienta el análisis.",
+          "a": "m:argumento más afín con la propuesta de legalización"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La propuesta no exige que el comercio quede sin ningún control. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Culpar exclusivamente a los países consumidores no es un argumento a favor de legalizar. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Plantea tratar a consumidores con atención médica, pero no explica por qué se debe legalizar. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca una evaluación de los efectos de la prohibición.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El problema",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

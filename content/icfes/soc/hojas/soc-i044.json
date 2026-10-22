@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "historia",
+    "marcas": [
+      {
+        "frag": "¿Qué intereses está favoreciendo esta declaración?",
+        "rol": "pide",
+        "nota": "Este fragmento indica qué debes analizar.",
+        "campo": "Pista de análisis"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica el contexto",
+        "texto": "Observa a quién atribuye la causa del acoso la declaración."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar a quién beneficia una justificación de violencia",
+      "que": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
+      "pistas": [
+        "Observa a quién atribuye la causa del acoso la declaración.",
+        "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
+      ],
+      "clave": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La recomendación restringe la libertad de las mujeres y desplaza hacia ellas la responsabilidad."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No se refiere a las funciones de la policía ni a su carga de trabajo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No analiza la imagen de seguridad de la ciudad; se centra en cómo deben vestir las mujeres."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Observa a quién atribuye la causa del acoso la declaración."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos qué pide y ubiquemos la información clave.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «¿Qué intereses está favoreciendo esta declaración?» orienta el análisis.",
+          "a": "m:¿Qué intereses está favoreciendo esta declaración?"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con las ideas del texto.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La recomendación restringe la libertad de las mujeres y desplaza hacia ellas la responsabilidad. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No se refiere a las funciones de la policía ni a su carga de trabajo. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No analiza la imagen de seguridad de la ciudad; se centra en cómo deben vestir las mujeres. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Observa a quién atribuye la causa del acoso la declaración.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
+          "a": "p:2"
+        },
+        {
+          "t": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La violencia",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
