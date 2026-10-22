@@ -1,110 +1,150 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "área aproximada",
+        "rol": "pide",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Qué hay que averiguar",
+        "texto": "La pista «área aproximada» indica qué información usar y qué resultado comparar."
+      },
+      {
+        "k": "calc",
+        "titulo": "Resolvemos con los datos",
+        "lineas": [
+          "9(3)/10=2,7"
+        ],
+        "nota": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Matemáticas: área aproximada",
+      "que": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+      "pistas": [
+        "Fíjate en «área aproximada».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
+      ],
+      "clave": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Selecciono los datos y hago la operación necesaria.",
+          "eq": [
+            "9(3)/10=2,7"
+          ]
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «área aproximada» orienta la estrategia.",
+          "a": "m:área aproximada"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta con calma.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+          "a": "p:1"
         },
         {
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué pide: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En un",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

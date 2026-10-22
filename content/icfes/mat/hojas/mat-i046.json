@@ -1,110 +1,150 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "permiten hallar la probabilidad",
+        "rol": "pide",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Qué hay que averiguar",
+        "texto": "La pista «permiten hallar la probabilidad» indica qué información usar y qué resultado comparar."
+      },
+      {
+        "k": "calc",
+        "titulo": "Resolvemos con los datos",
+        "lineas": [
+          "1/2\\cdot1/6=1/12"
+        ],
+        "nota": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Matemáticas: permiten hallar la probabilidad",
+      "que": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+      "pistas": [
+        "Fíjate en «permiten hallar la probabilidad».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
+      ],
+      "clave": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Selecciono los datos y hago la operación necesaria.",
+          "eq": [
+            "1/2\\cdot1/6=1/12"
+          ]
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «permiten hallar la probabilidad» orienta la estrategia.",
+          "a": "m:permiten hallar la probabilidad"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta con calma.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+          "a": "p:1"
         },
         {
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué pide: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

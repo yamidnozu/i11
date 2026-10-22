@@ -1,110 +1,150 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "otro valor",
+        "rol": "pide",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Qué hay que averiguar",
+        "texto": "La pista «otro valor» indica qué información usar y qué resultado comparar."
+      },
+      {
+        "k": "calc",
+        "titulo": "Resolvemos con los datos",
+        "lineas": [
+          "45/75=3/5"
+        ],
+        "nota": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Matemáticas: otro valor",
+      "que": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+      "pistas": [
+        "Fíjate en «otro valor».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
+      ],
+      "clave": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Selecciono los datos y hago la operación necesaria.",
+          "eq": [
+            "45/75=3/5"
+          ]
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «otro valor» orienta la estrategia.",
+          "a": "m:otro valor"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta con calma.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+          "a": "p:1"
         },
         {
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué pide: La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

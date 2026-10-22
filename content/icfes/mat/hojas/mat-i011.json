@@ -1,110 +1,150 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "bono recibido",
+        "rol": "pide",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Qué hay que averiguar",
+        "texto": "La pista «bono recibido» indica qué información usar y qué resultado comparar."
+      },
+      {
+        "k": "calc",
+        "titulo": "Resolvemos con los datos",
+        "lineas": [
+          "45(1.300.000)(0,003)=175.500"
+        ],
+        "nota": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Matemáticas: bono recibido",
+      "que": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+      "pistas": [
+        "Fíjate en «bono recibido».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
+      ],
+      "clave": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Selecciono los datos y hago la operación necesaria.",
+          "eq": [
+            "45(1.300.000)(0,003)=175.500"
+          ]
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «bono recibido» orienta la estrategia.",
+          "a": "m:bono recibido"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta con calma.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+          "a": "p:1"
         },
         {
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué pide: De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Para diciembre",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

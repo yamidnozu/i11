@@ -1,110 +1,150 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "Durante",
+        "rol": "pide",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Qué hay que averiguar",
+        "texto": "La pista «qué se puede determinar» indica qué información usar y qué resultado comparar."
+      },
+      {
+        "k": "calc",
+        "titulo": "Resolvemos con los datos",
+        "lineas": [
+          "150/15=10"
+        ],
+        "nota": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Matemáticas: qué se puede determinar",
+      "que": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+      "pistas": [
+        "Fíjate en «qué se puede determinar».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
+      ],
+      "clave": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Selecciono los datos y hago la operación necesaria.",
+          "eq": [
+            "150/15=10"
+          ]
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «qué se puede determinar» orienta la estrategia.",
+          "a": "m:Durante"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta con calma.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+          "a": "p:1"
         },
         {
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué pide: La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Durante enero",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
