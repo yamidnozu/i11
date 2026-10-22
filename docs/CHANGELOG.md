@@ -61,6 +61,12 @@
 - Se completaron cinco hojas por edición con explicaciones ligadas a esas evidencias.
 - Acumulado: 133 hojas revisadas y 115 borradores.
 
+
+## Pipeline documental — octavo lote pedagógico de Ciencias (2026-10-22)
+- Se revisaron visualmente las opciones gráficas pendientes de las ocho preguntas que aún conservaban hojas genéricas, y se escribieron soluciones y descartes a partir de los cuadernillos.
+- Los dos cuadernillos de Ciencias quedan con 50/50 hojas pedagógicas revisadas cada uno. Las imágenes de opciones siguen señaladas para segmentación individual en el contenido.
+- Total: 149 hojas revisadas y 99 borradores en los cinco paquetes.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
