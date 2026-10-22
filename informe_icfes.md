@@ -3,38 +3,38 @@
 ## Checklist de trabajo
 
 - [x] Leer `docs/CONTEXTO.md`, `docs/CHANGELOG.md`, `content/README.md`, `src/content/schema.ts`, scripts de importación/hojas y ejemplos `mat-101`, `mat-104`, `ing-101`.
-- [x] Inspeccionar solo el cuadernillo de Matemáticas configurado; no se procesaron los demás PDFs.
+- [x] Configurar y procesar exclusivamente el cuadernillo de Matemáticas (35 páginas; 50 preguntas).
 - [x] Implementar runner con siete etapas persistidas, manifiesto, CLI, caché, configuración y plugin de cuadernillo.
-- [x] Invalidar la caché cuando cambian runner/plugin/configuración.
-- [x] Reanudar generación de 50 hojas borrador, preservando hojas revisadas y overrides.
+- [x] Invalidar caché cuando cambian runner/plugin/configuración y registrar herramienta de extracción elegida.
 - [x] Añadir validación de overrides e incorporar `propio` y `licenciado` al esquema de procedencias.
-- [x] Ejecutar reconstrucción limpia de Matemáticas y comprobar salida determinista.
-- [x] Revisar cinco páginas rasterizadas y sus rutas renderizadas: `mat-i001`, `mat-i010`, `mat-i020`, `mat-i035`, `mat-i050`.
-- [x] `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Conseguir texto fiel con `pdftotext -layout`; no está instalado en este entorno y el respaldo actual pierde símbolos/dígitos.
-- [ ] Corregir la extracción estructural y asociar figuras/opciones con preguntas, verificando cada recorte contra el PDF.
-- [ ] Elaborar soluciones, explicaciones y descartes reales para las 50 hojas. No inventar razonamientos: siguen en borrador hasta resolver y revisar cada pregunta.
-- [ ] Implementar extractores semánticos funcionales para marcos, guías, lecturas con imágenes y simulacros; hoy son adaptadores provisionales.
-- [ ] Generar afirmaciones/competencias desde un marco válido y asignar nivel sustentado.
-- [ ] Hacer commits separados por etapa y por el documento procesado.
-- [ ] Procesar otros documentos solo después del visto bueno previsto en el encargo original.
+- [x] Instalar Poppler y extraer texto con `pdftotext -layout`.
+- [x] Ejecutar reconstrucción limpia preservando overrides/hojas revisadas; comparar el JSON con corrida de caché.
+- [x] Cotejar cinco rutas renderizadas (#/pregunta/mat-i001, i010, i020, i035, i050) y páginas rasterizadas.
+- [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
+- [ ] Corregir números y fórmulas perdidos por el PDF/extracción y asociar figuras/opciones de forma fiel.
+- [ ] Escribir explicaciones, distractores y hojas pedagógicas reales para las 50 preguntas; no son publicables como enseñanza mientras sean plantillas.
+- [ ] Implementar parsers semánticos completos para marco, guía, lectura con imágenes y simulacro; actualmente son adaptadores temporales.
+- [ ] Obtener afirmaciones/competencias desde un marco válido y asignar nivel con fundamento.
+- [ ] Crear commits separados por etapa y por documento; hasta ahora hay commits agrupados del pipeline, Matemáticas y documentación.
+- [ ] Procesar los demás documentos solo después del visto bueno establecido en el encargo original.
 
 ## Resultado actual
 
-- Documento: `docus/01_Matematicas_Saber11_2026_ICFES.pdf`, 35 páginas, hash registrado en `docus/manifest.json`.
-- Preguntas estructuradas: 50 (`mat-i001`–`mat-i050`); 50 claves detectadas.
-- Marcadas para revisión: 28; errores detectados visualmente en fórmulas, dígitos y clasificación de algunas opciones. Las candidatas vectoriales todavía no están asociadas con seguridad a cada pregunta.
-- Hojas: 50 borradores, 0 revisadas. Explicaciones y descartes docentes siguen pendientes.
-- Contenido ICFES en `content/icfes/mat/preguntas.json`; el plugin `icfes-gate` conserva el gate de build. Páginas completas y trazos están bajo `work/`.
+- 50 preguntas estructuradas, IDs `mat-i001`–`mat-i050`; clave detectada para las 50.
+- 80 candidatos vectoriales en 35 páginas rasterizadas. La detección geométrica aún no equivale a figuras asociadas a preguntas.
+- 37 preguntas marcadas con `revisar`; 13 no dispararon heurísticas, pero aún no se consideran validadas por persona.
+- Hojas: 50 borradores, 0 revisadas. Explicaciones y descartes docentes no están completos.
+- Contenido en `content/icfes/mat/preguntas.json`, aún detrás de `icfes-gate`; archivos de trabajo bajo `work/`.
 
 ## Validación y reconstrucción
 
-`npx tsc --noEmit`: pasó. `VITE_ICFES=1 npx vitest run`: 15 archivos, 244 pruebas aprobadas, sin fallos. `npm run build`: pasó; Vite avisa que el chunk JS principal (904.39 kB sin comprimir) supera 300 kB.
+- `npx tsc --noEmit`: pasó.
+- `VITE_ICFES=1 npx vitest run`: 15 archivos, 244/244 pruebas, sin fallos.
+- `npm run build`: pasó; advertencia Vite por chunk principal de 902.56 kB sin comprimir (>300 kB).
+- Se eliminó `work/<doc>` y la salida generada de `content/icfes/mat`, preservando overrides/hojas revisadas; se regeneraron las siete etapas con Poppler. SHA-256: `03c8136c7a9fb3553b7001a9b63d8b1d21cd5d643c51b46a0c986d8d2d22f498`. La corrida inmediata en caché conservó el mismo hash.
 
-Se borraron `work/<doc>` y archivos generados en `content/icfes/mat`, conservando overrides y hojas revisadas; la regeneración completa dio SHA-256 `f21f70b9f0baea6161a0404b91fdea0c2f653224121f05fb9ba4e94af9b5415b`. Una ejecución inmediata en caché mantuvo el mismo SHA-256.
-
-El cotejo visual encontró que el resultado no está listo para publicarse ni para usarse como banco de estudio: en `mat-i010`, `mat-i035` y `mat-i050` se perdieron o alteraron datos del enunciado; en `mat-i035`/`mat-i050` las opciones están marcadas como gráficas sin reconstrucción fiel. Por eso siguen pendientes corrección contra fuente y autoría pedagógica, aunque el validador de forma y la suite pasen.
+El cotejo de la UI confirma mejoras con Poppler, pero no exactitud total: `mat-i010` y `mat-i035` perdieron dígitos de los pasos; `mat-i050` mezcla caracteres de la figura en el enunciado y deja las cuatro opciones como huecos. Las opciones gráficas todavía no se reconstruyen. Por tanto, el material sigue como borrador y las pruebas verdes validan estructura/formato, no fidelidad ni corrección pedagógica.
 
 ## Pendientes y límites
 
-`pdftotext` no está en el PATH. El extractor usa PyMuPDF, no la extracción literal solicitada. Los plugins de marco/guía/lectura/simulacro no son parsers completos. Las hojas generadas son esqueletos, no soluciones. No procesé otros PDFs. No se ha hecho todavía ningún commit de esta entrega.
+Los plugins `marco`, `guia`, `lectura_imagenes` y `simulacro_armado` aún reutilizan el parser de cuadernillo y no cumplen semánticamente el objetivo. Las hojas son esqueletos. No se procesaron otros PDFs. El código y los datos generados quedaron en cuatro commits locales; `saber11-repo.tar.gz` sigue sin rastrear y no se incluyó. No se hizo push.
