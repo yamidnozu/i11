@@ -16,7 +16,7 @@
 - [ ] Convertir marcos y niveles a `content/marco.json` semántico y enlazar competencia/afirmación/evidencia a cada pregunta. Hoy se conserva el texto por página, sin interpretación automática.
 - [ ] Estructurar preguntas de los documentos antiguos y el cuadernillo de Inglés que no contienen marcadores reconocidos; hoy se preservan sus páginas como transcripción.
 - [ ] Verificar cita editorial/licencia de los documentos externos (SED Cartagena y libro de preparación de 2017).
-- [ ] Hacer commits uno por uno por etapa y documento. Los cambios de esta tanda aún están sin commit.
+- [x] Crear commits locales individuales por cada uno de los 38 documentos. La implementación del pipeline/configuración y la actualización documental quedaron agrupadas en dos commits, no en commits separados por cada etapa interna.
 
 ## Resumen
 
@@ -75,10 +75,10 @@
 
 - TypeScript: `npx tsc --noEmit` pasó.
 - Vitest con `VITE_ICFES=1`: **416/416 pruebas** pasaron, sin avisos de contenido.
-- Build estándar (sin VITE_ICFES): pasó; el chunk principal mide 599.22 kB y supera el umbral de 300 kB. Con VITE_ICFES=1 el bundle aumenta a 1,468.55 kB; ese modo se usa para validar contenido oficial, no para publicar.
+- Build estándar (sin VITE_ICFES): pasó; el chunk principal mide 599.22 kB y supera el umbral de 300 kB. El build con VITE_ICFES=1 también pasó, con un bundle de 1,468.55 kB; ese modo se usa para validar contenido oficial, no para publicar.
 - Reconstrucción Math: SHA-256 `b94db04dc685f3c25c456cad77b0d7b45bb7093340922fc77ad964b58ce14159`; coincide con la corrida de caché.
 - Caché global: **266/266 etapas** en caché; los hashes de salida no cambiaron. Reconstrucción repetida con caché tras el test limpio: salida idéntica.
 
 ## Límites que siguen abiertos
 
-El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, 29 marcadas y 11 con opciones gráficas pendientes; las cinco rutas renderizadas (`mat-i001`, `i010`, `i020`, `i035`, `i050`) muestran que `i010` conserva pasos numéricos y `i035` recupera sus opciones, pero `i050` aún mezcla trazos de la figura con el enunciado. El contenido oficial permanece bajo `content/icfes/` y detrás del gate. No se hizo push.
+El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, 29 marcadas y 11 con opciones gráficas pendientes; las cinco rutas renderizadas (`mat-i001`, `i010`, `i020`, `i035`, `i050`) muestran que `i010` conserva pasos numéricos y `i035` recupera sus opciones, pero `i050` aún mezcla trazos de la figura con el enunciado. El contenido oficial permanece bajo `content/icfes/` y detrás del gate. Commits locales: `aca0408` (pipeline), `18f8e8a` (documentación) y 38 commits `content: process …`, uno por documento. No se hizo push; el archivo no relacionado `saber11-repo.tar.gz` quedó sin agregar.
