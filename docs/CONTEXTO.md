@@ -50,16 +50,16 @@ Pestañas: Hoy, Aprender, Practicar, Progreso. Extra: `#/mapa` (10 casos "Quiero
 `python3 tools/importar_icfes.py texto.txt --area matematicas --pref mat --prueba "Prueba Matemáticas" [--figuras figuras.json]` → `content/icfes/<pref>/preguntas.json`. Figuras sin archivo → `pendiente`. Lo dudoso → `revisar`. Solo entra al build con `VITE_ICFES=1` (plugin `icfes-gate` en `vite.config.ts`).
 
 ## Pipeline documental (2026-10)
-`python tools/pipeline/run.py --doc 01_Matematicas_Saber11_2026_ICFES` ejecuta etapas reanudables y con caché en `work/`; configuración y plugins están en `tools/pipeline/`. El cuadernillo produjo 50 preguntas en `content/icfes/mat/preguntas.json`; 28 requieren revisión y las 50 hojas siguen en borrador. Poppler está instalado con Winget y `pdftotext -layout` mejoró la extracción, pero el cotejo de cinco preguntas renderizadas aún encuentra datos y figuras incompletos. Vitest con ICFES pasó 244/244 y la reconstrucción produjo JSON idéntico. Lee `tools/pipeline/README.md` e `informe_icfes.md` antes de procesar otros documentos. `docus/` y `work/` no se versionan.
+`python tools/pipeline/run.py` procesa los 38 PDFs de `docus/` en siete etapas reanudables; config, plugins y guía están en `tools/pipeline/`. Los cinco cuadernillos con marcadores reconocidos produjeron 222 preguntas con clave y 26 pendientes de clave; el resto quedó como transcripción paginada con candidatos gráficos. En total: 1.209 páginas y 4.201 candidatos vectoriales. Matemáticas tiene 50 preguntas, 29 marcadas y 11 con opciones gráficas aún sin imagen asociada; sus 50 hojas son borradores. No están completadas las soluciones pedagógicas ni el `content/marco.json` semántico. Poppler usa `pdftotext -layout`. Ver `informe_icfes.md` antes de usar o publicar el material; todo sigue bajo el gate de ICFES. `docus/` y `work/` no se versionan.
 
 ## Licencia ICFES (importante)
 Los términos del cuadernillo permiten uso académico/investigativo y **prohíben transformar o usar con fines de lucro**. La plataforma cobra paletas (ingreso), así que publicar preguntas/imágenes literales del ICFES requiere **permiso escrito del ICFES**. Mientras no exista, `content/icfes/` queda fuera del build publicado. Alternativa segura: preguntas originales con el mismo formato.
 
-## Estado de los 39 PDFs de Drive
-Cuadernillos de 5 pruebas + marcos de referencia (Lectura, Sociales, Ciencias, Inglés; falta el de Matemáticas). Las figuras son **vectoriales** (no imágenes incrustadas): extraer con PyMuPDF (`get_drawings` + `get_pixmap(clip=…, dpi=250)`) o `pdftocairo -svg`. El conector de Drive solo entrega texto; el servidor no puede descargar de Drive (403). Falta adjuntar los PDFs al chat o correr la extracción en otra máquina.
+## Documentos fuente disponibles
+`docus/` contiene 38 PDFs (cuadernillos, guías, marcos, niveles, infografías y materiales complementarios). El pipeline ya generó transcripción por página, raster completo e índice de candidatos vectoriales en `work/`; las asociaciones gráficas y lecturas semánticas siguen pendientes de revisión.
 
 ## Pendientes
-1. Cargar los PDFs reales con el importador; resolver figuras pendientes.
+1. Verificar las transcripciones y asociar figuras candidatas a sus preguntas/contextos.
 2. Generar hojas (3 narraciones del profe) para las preguntas importadas.
 3. `content/marco.json` desde los marcos de referencia (competencias, afirmaciones, evidencias).
 4. Banco propio: hoy ~43 preguntas; hacen falta ~254 para simulacros completos (preguntas originales, publicables).

@@ -1,11 +1,11 @@
 # Changelog
 
 ## Pipeline documental inicial (2026-10)
-- Añadido `tools/pipeline/` con siete etapas persistidas, manifiesto y caché que se invalida al cambiar el código/configuración; reconstrucción de Matemáticas determinista.
-- Primera estructuración de 50 preguntas del cuadernillo Matemáticas 2026 bajo `content/icfes/mat/`; 28 requieren cotejo y las 50 hojas siguen en borrador.
-- Procedencias `propio` y `licenciado` en el esquema; validación de IDs/campos y comprobación posterior de overrides.
-- Vitest con ICFES: 244/244; `tsc --noEmit` y build pasan. Build avisa que el chunk principal supera 300 kB.
-- Poppler quedó instalado con Winget y la extracción se regeneró con `pdftotext -layout`. El cotejo en cinco preguntas renderizadas encontró errores de extracción/asociación visual pendientes. Ver `informe_icfes.md`.
+- Añadido `tools/pipeline/` con siete etapas persistidas, caché por hash/código/configuración y plugins para cuadernillos, marcos, guías, infografías y simulacros.
+- Procesados los 38 PDFs disponibles: 1.209 páginas, 4.201 candidatos vectoriales, 222 preguntas con clave y 26 en pendientes de clave. Las transcripciones no semánticas se guardan por página en `documento.json`.
+- Matemáticas: 50 preguntas; 29 marcadas, 11 con opciones gráficas sin asociar; 50 hojas borrador.
+- Esquema ampliado con procedencias `propio` y `licenciado`; validación de overrides y exclusión de transcripciones completas del glob de preguntas de la app.
+- Poppler usa `pdftotext -layout`. Vitest con ICFES: 416/416; `tsc --noEmit` y build pasan. Vite advierte que el chunk principal supera 300 kB. Ver `informe_icfes.md`.
 
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
