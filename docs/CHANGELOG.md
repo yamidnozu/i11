@@ -3,7 +3,7 @@
 ## Pipeline documental inicial (2026-10)
 - Añadido `tools/pipeline/` con siete etapas persistidas, caché por hash/código/configuración y plugins para cuadernillos, marcos, guías, infografías y simulacros.
 - Procesados los 38 PDFs disponibles: 1.209 páginas, 4.201 candidatos vectoriales, 222 preguntas con clave y 26 en pendientes de clave. Las transcripciones no semánticas se guardan por página en `documento.json`.
-- Matemáticas: 50 preguntas; 29 marcadas, 11 con opciones gráficas sin asociar; 50 hojas borrador.
+- Matemáticas: 50 preguntas; una pregunta marcada por una ambigüedad de datos; alternativas recuperadas; 49 hojas revisadas y una en borrador (mat-i038 sigue en revisión por ambigüedad de la tabla).
 - Esquema ampliado con procedencias `propio` y `licenciado`; validación de overrides y exclusión de transcripciones completas del glob de preguntas de la app.
 - Poppler usa `pdftotext -layout`. Vitest con ICFES: 416/416; `tsc --noEmit` y build pasan. Vite advierte que el chunk principal supera 300 kB. Ver `informe_icfes.md`.
 

@@ -11,11 +11,13 @@
 - [x] Mantener `docus/` y `work/` fuera de Git y dejar el contenido derivado en `content/icfes/`, bajo el gate de build.
 - [x] Probar reconstrucción limpia de Matemáticas y caché: salida idéntica.
 - [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Completar soluciones, distractores razonados y hojas del profesor: todas las hojas actuales son borradores de plantilla.
-- [ ] Revisar las 100 preguntas con `revisar`, asociar figuras/opciones y comprobar transcripciones. El muestreo de cinco preguntas de Matemáticas ya reveló errores pendientes.
+- [ ] Completar soluciones y distractores razonados para las otras 172 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
+- [x] Cotejar visualmente las 50 preguntas de Matemáticas y su clave oficial; corregir alternativas vacías, datos/tablas y contextos compartidos. Se revisaron 49 hojas; mat-i038 sigue borrador porque la tabla no determina las intersecciones necesarias.
+- [ ] Cotejar las 71 preguntas restantes marcadas en Ciencias, Lectura y Sociales, asociar 30 opciones gráficas y comprobar sus transcripciones.
 - [ ] Convertir marcos y niveles a `content/marco.json` semántico y enlazar competencia/afirmación/evidencia a cada pregunta. Hoy se conserva el texto por página, sin interpretación automática.
 - [ ] Estructurar preguntas de los documentos antiguos y el cuadernillo de Inglés que no contienen marcadores reconocidos; hoy se preservan sus páginas como transcripción.
-- [ ] Verificar cita editorial/licencia de los documentos externos (SED Cartagena y libro de preparación de 2017).
+- [x] Cotejar portada, metadatos y créditos editoriales de los dos documentos externos y completar las citas disponibles.
+- [ ] Confirmar derechos/licencias de SED Cartagena y del libro de preparación de 2017; los PDF no incluyen permiso de reutilización y ambos continúan bajo gate.
 - [x] Crear commits locales individuales por cada uno de los 38 documentos. La implementación del pipeline/configuración y la actualización documental quedaron agrupadas en dos commits, no en commits separados por cada etapa interna.
 
 ## Resumen
@@ -23,8 +25,8 @@
 - Documentos procesados: **38/38**, con sus siete etapas completas en `docus/manifest.json`.
 - Páginas: **1209**. Candidatos vectoriales: **4201**. Son recortes de trabajo; no equivalen a figuras asociadas y verificadas en cada pregunta.
 - Preguntas con clave detectada y empaquetadas: **222**. Preguntas apartadas por clave no detectada: **26**.
-- Preguntas con marcas de revisión: **100**. Preguntas con opciones gráficas pendientes: **41**.
-- Hojas generadas: **222**, todas en estado `borrador`; ninguna revisada.
+- Preguntas con marcas de revisión: **72** (71 de otros cuadernillos y la pregunta mat-i038). Opciones gráficas aún pendientes de reconstrucción: **30**.
+- Hojas: **222**. En Matemáticas, 49 están `revisada` y una `borrador`; las otras 172 siguen en `borrador`.
 - Simulacros generados: uno por cada uno de los cinco cuadernillos que se estructuraron como preguntas. Contienen solo IDs con clave detectada y se etiquetan “En revisión”.
 - La app importa de `content/icfes/` solo `preguntas.json`; las transcripciones completas `documento.json` no se incorporan al bundle.
 
@@ -75,10 +77,10 @@
 
 - TypeScript: `npx tsc --noEmit` pasó.
 - Vitest con `VITE_ICFES=1`: **416/416 pruebas** pasaron, sin avisos de contenido.
-- Build estándar (sin VITE_ICFES): pasó; el chunk principal mide 599.22 kB y supera el umbral de 300 kB. El build con VITE_ICFES=1 también pasó, con un bundle de 1,468.55 kB; ese modo se usa para validar contenido oficial, no para publicar.
-- Reconstrucción Math: SHA-256 `b94db04dc685f3c25c456cad77b0d7b45bb7093340922fc77ad964b58ce14159`; coincide con la corrida de caché.
+- Build estándar: pasó; bundle JavaScript **599.22 kB** (gzip 203.34 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **1,556.41 kB** (gzip 297.04 kB). Ambos avisan que el chunk supera 300 kB.
+- Reconstrucción de Matemáticas: SHA-256 `5a1b51d971fb5341f1518e9fe06030b7c0692fccff49d23a56a22a46b10d1d90`; las hojas manuales quedaron idénticas antes y después de regenerar.
 - Caché global: **266/266 etapas** en caché; los hashes de salida no cambiaron. Reconstrucción repetida con caché tras el test limpio: salida idéntica.
 
 ## Límites que siguen abiertos
 
-El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, 29 marcadas y 11 con opciones gráficas pendientes; las cinco rutas renderizadas (`mat-i001`, `i010`, `i020`, `i035`, `i050`) muestran que `i010` conserva pasos numéricos y `i035` recupera sus opciones, pero `i050` aún mezcla trazos de la figura con el enunciado. El contenido oficial permanece bajo `content/icfes/` y detrás del gate. Commits locales: `aca0408` (pipeline), `18f8e8a` (documentación) y 38 commits `content: process …`, uno por documento. No se hizo push; el archivo no relacionado `saber11-repo.tar.gz` quedó sin agregar.
+El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, claves cotejadas con la tabla oficial del PDF; se corrigieron alternativas vacías, se añadieron bloques compartidos para 4–6 y 9–13. Queda mat-i038 en revisión por ambigüedad de datos. El contenido oficial permanece bajo `content/icfes/` y detrás del gate. Commits locales: `aca0408` (pipeline), `18f8e8a` (documentación) y 38 commits `content: process …`, uno por documento. No se hizo push; el archivo no relacionado `saber11-repo.tar.gz` quedó sin agregar.
