@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "velocidad de formación de Z",
+        "rol": "pide",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la evidencia",
+        "texto": "Compara qué reactivo varía en cada ensayo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta la relación",
+        "texto": "Lee cómo cambia la velocidad en cada gráfica."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Distingue el reactivo cuya concentración sí modifica la velocidad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar dos gráficas de velocidad de reacción",
+      "que": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
+      "pistas": [
+        "Compara qué reactivo varía en cada ensayo.",
+        "Lee cómo cambia la velocidad en cada gráfica."
+      ],
+      "clave": "La velocidad de formación de $Z$ depende de la concentración de $X$, pero no cambia al variar $Y$ en el ensayo.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Parece razonable si se omite una pista del modelo. Pero La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara qué reactivo varía en cada ensayo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Lee cómo cambia la velocidad en cada gráfica."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Distingue el reactivo cuya concentración sí modifica la velocidad."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La pregunta se centra en la «velocidad de formación de Z».",
+          "a": "m:velocidad de formación de Z"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué evidencia o relación debo usar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Distingue el reactivo cuya concentración sí modifica la velocidad.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
