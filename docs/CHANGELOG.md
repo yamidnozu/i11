@@ -67,6 +67,12 @@
 - Los dos cuadernillos de Ciencias quedan con 50/50 hojas pedagógicas revisadas cada uno. Las imágenes de opciones siguen señaladas para segmentación individual en el contenido.
 - Total: 149 hojas revisadas y 99 borradores en los cinco paquetes.
 
+
+## Pipeline documental — opciones gráficas de Ciencias (2026-10-22)
+- Añadidas 72 recetas deterministas `recorteFuente`: cuatro alternativas por cada una de nueve preguntas en ambos cuadernillos.
+- Los PNG se reconstruyen desde las páginas fuente y se referencian en `opcionesFig`; las imágenes solo pasan al build con `VITE_ICFES=1`.
+- Verificación visual de los recortes terminada. Avisos restantes: 26 enlaces de evidencia de marco y la ambigüedad de mat-i038.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
