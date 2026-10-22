@@ -32,6 +32,7 @@
 - [ ] Completar la estructuración y cotejo de documentos antiguos e Inglés; 2018 Sociales y Matemáticas ya tienen estructura preliminar y hojas borrador, mientras otros documentos siguen como transcripciones por página.
 - [x] Auditar claves y formato de numeración de los cuadernillos antiguos restantes. Se hallaron claves explícitas en Sociales 2018, Matemáticas 2018 y el cuadernillo general de 2014; usan numeración `1.` en vez de encabezados `Pregunta n`, y el de 2014 mezcla áreas. Se añadió un modo numerado con revisión obligatoria para los dos cuadernillos de 2018.
 - [x] Añadir extracción numerada con revisión explícita y procesar Sociales y Matemáticas 2018: 49 preguntas por documento, 49 claves oficiales por documento y 49 hojas borrador por prueba. Las 98 preguntas quedan marcadas para cotejo de transcripción/figuras; una pregunta de Matemáticas tiene enunciado no delimitado y conserva un marcador de revisión en vez de contenido supuesto.
+- [x] Cotejar visualmente Matemáticas 2018, pregunta 1, asociar el recorte vectorial de la figura y completar su hoja de tres niveles con clave y descartes verificados; queda una hoja revisada y 97 borradores en las pruebas de 2018.
 - [x] Cotejar portada, metadatos y créditos editoriales de los dos documentos externos y completar las citas disponibles.
 - [x] Recuperar las claves oficiales de 13 preguntas de Ciencias por cuadernillo mediante overrides citados; verificar las 13 hojas de 2026 contra el cuadernillo de 2025 antes de reutilizarlas.
 - [ ] Confirmar derechos/licencias de SED Cartagena y del libro de preparación de 2017; los PDF no incluyen permiso de reutilización y ambos continúan bajo gate.
@@ -43,9 +44,9 @@
 - Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
 - Siete cuadernillos estructurados: **346 preguntas con clave, cero pendientes** (50 Matemáticas 2026, 49 Lectura 2026, 50 Ciencias por edición 2025/2026, 49 Sociales 2021, 49 Sociales 2018 y 49 Matemáticas 2018). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
 - **248/248 preguntas tienen referencias a competencia, afirmación y evidencia validadas contra los marcos.** Los niveles 1–4 son estimaciones pedagógicas asignadas por demanda de razonamiento; no son niveles oficiales ICFES por ítem. mat-i038 conserva una salvedad, aunque su hoja está revisada. Las 72 opciones gráficas ya están recortadas individualmente.
-- **248 hojas revisadas y 98 borradores**. Las 248 preguntas de las cinco pruebas iniciales conservan sus hojas revisadas. Las pruebas de Sociales y Matemáticas 2018 tienen 49 hojas borrador cada una; requieren cotejar enunciados, opciones y apoyos gráficos contra el PDF antes de aprobarlas. Matemáticas 2018 pregunta 48 conserva un aviso por enunciado no delimitado.
+- **249 hojas revisadas y 97 borradores**. Las 248 preguntas de las cinco pruebas iniciales conservan sus hojas revisadas. En Sociales 2018 hay 49 borradores; en Matemáticas 2018 hay 48 borradores y una hoja revisada para la pregunta 1. Las demás requieren cotejar enunciados, opciones y apoyos gráficos contra el PDF. Matemáticas 2018 pregunta 48 conserva un aviso por enunciado no delimitado.
 - Siete simulacros generados, todos marcados “En revisión”.
-- La auditoría confirmó claves adicionales en 2014, 2018, Inglés 2021 y 2024. Inglés y el cuadernillo mixto de 2014 todavía requieren extractores específicos; no se importaron porque la numeración se repite por examen o por área.
+- La auditoría confirmó claves adicionales en 2014, 2018, Inglés 2021 y 2024. Inglés y el cuadernillo mixto de 2014 todavía requieren extractores específicos. Inglés repite posiciones por examen y comparte bancos de opciones; el OCR también duplica/desplaza algunos números, así que falta cotejo por página antes de mapear claves. La búsqueda en fuentes oficiales de Cartagena y del editor/autor del libro 2017 no localizó una licencia escrita; la ausencia de un resultado público no sustituye autorización del titular.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa preguntas, marcos y niveles oficiales solo detrás de `VITE_ICFES=1`; las transcripciones completas `documento.json` no se incorporan al bundle.
 
@@ -62,7 +63,7 @@
 | `08_Ingles_Saber11_2021` | cuadernillo | 24 | 0 | 0 | 136 | 1 pág. guardadas |
 | `09_Lectura_Critica_Saber11_2018` | cuadernillo | 33 | 0 | 0 | 132 | 1 pág. guardadas |
 | `10_Sociales_y_Ciudadanas_Saber11_2018` | cuadernillo | 21 | 49 | 0 | 94 | 1 simulacro; hojas borrador, revisar transcripción |
-| `11_Matematicas_Saber11_2018` | cuadernillo | 28 | 49 | 0 | 108 | 1 simulacro; hojas borrador, revisar transcripción |
+| `11_Matematicas_Saber11_2018` | cuadernillo | 28 | 49 | 0 | 108 | 1 simulacro; pregunta 1 revisada y con figura, 48 hojas borrador |
 | `14_Ingles_Saber11_2018` | cuadernillo | 21 | 0 | 0 | 74 | 1 pág. guardadas |
 | `15_Cuadernillo_Saber11_2014` | cuadernillo | 40 | 0 | 0 | 44 | 1 pág. guardadas |
 | `16_Guia_Orientacion_Saber11_2026_2_CalA` | guia | 73 | 0 | 0 | 450 | 1 pág. guardadas |
@@ -95,11 +96,11 @@
 ## Validaciones
 
 - TypeScript: `npx tsc --noEmit` pasó.
-- Vitest con `VITE_ICFES=1`: pasó **501/501 pruebas**, sin avisos de contenido.
-- Build estándar: pasó; bundle JavaScript **599.50 kB** (gzip 203.43 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **2,306.56 kB** (gzip 430.37 kB), incluyendo marcos y niveles oficiales. El build normal deja los JSON oficiales vacíos mediante el gate y no crea `dist/icfes/`; el build gated contiene las imágenes oficiales. Ambos avisan que el chunk supera 300 kB.
+- Vitest con `VITE_ICFES=1`: **540/540 pruebas**; `npx tsc --noEmit` pasó.
+- Build estándar: pasó; bundle JavaScript **599.50 kB** (gzip 203.43 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **2,400.14 kB** (gzip 432.78 kB), incluyendo marcos, niveles oficiales y las preguntas agregadas. El build normal excluye el material ICFES; el build gated contiene sus JSON e imágenes. Ambos avisan que el chunk supera 300 kB.
 - Reconstrucción de Matemáticas tras borrar `work/01_Matematicas...` y el paquete generado: SHA-256 `90601de71edec55d67752ba6170c316b6e5823dce17ac68eb906e6717552a33f`; paquete y 50 archivos de hojas idénticos. Se preservaron overrides y 50 hojas revisadas, incluida la hoja de mat-i038 con su salvedad documentada; la reconstrucción tras completar los enlaces volvió a dar el mismo hash.
 - Idempotencia: el recálculo reciente de Matemáticas ejecutó 7/7 etapas; la segunda ejecución omitió las **7/7** por caché, sin errores. Tras regenerar los cinco cuadernillos se verificó que ninguna opción terminara en folio; la respuesta numérica `cie-i016` D conservó el valor `10`.
 
 ## Límites que siguen abiertos
 
-El pipeline procesa los documentos, pero las hojas borrador y simulacros todavía requieren revisión editorial/pedagógica. Las 248 preguntas de las cinco pruebas iniciales tienen marcos y hojas revisadas; las 98 de Sociales y Matemáticas 2018 están estructuradas, con hoja borrador y marcadas para cotejo. Una pregunta de Matemáticas 2018 conserva un enunciado no delimitado. Quedan la salvedad de mat-i038, extractores para Inglés y el cuadernillo mixto de 2014, siete simulacros en revisión y dos licencias externas sin autorización comprobada. Dos guías largas provocan avisos de estructura del PDF en PyMuPDF, aunque sus siete etapas terminan; no se reportaron fallos de etapa. El contenido ICFES permanece bajo `content/icfes/` y detrás del gate. No se hizo push; `saber11-repo.tar.gz` sigue sin agregar.
+El pipeline procesa los documentos, pero las hojas borrador y simulacros todavía requieren revisión editorial/pedagógica. Las 248 preguntas de las cinco pruebas iniciales tienen marcos y hojas revisadas; de las 98 de Sociales y Matemáticas 2018, una hoja está revisada y 97 siguen en borrador. Una pregunta de Matemáticas 2018 conserva un enunciado no delimitado. Quedan la salvedad de mat-i038, extractores para Inglés y el cuadernillo mixto de 2014, siete simulacros en revisión y dos licencias externas sin autorización comprobada. Dos guías largas provocan avisos de estructura del PDF en PyMuPDF, aunque sus siete etapas terminan; no se reportaron fallos de etapa. El contenido ICFES permanece bajo `content/icfes/` y detrás del gate. No se hizo push; `saber11-repo.tar.gz` sigue sin agregar.

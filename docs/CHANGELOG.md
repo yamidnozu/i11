@@ -133,3 +133,5 @@
 - Se estructuraron 49 preguntas para Sociales 2018 y 49 para Matemáticas 2018; las 98 están bajo `content/icfes/`, citan la fuente y tienen clave. Se generaron 49 hojas borrador por documento, reanudando lotes de diez.
 - Las 98 preguntas requieren cotejo de transcripción, opciones, figuras y vínculo al marco antes de aprobarse; Matemáticas 2018 pregunta 48 conserva el aviso de enunciado no delimitado.
 - Se actualizaron el informe, el contexto y la guía del pipeline. `npx tsc --noEmit` pasó; `VITE_ICFES=1 npx vitest run`: 501/501; builds normal y con gate pasaron (se conserva el aviso de tamaño de chunk).
+- La pregunta `mth-i001` se cotejó visualmente contra la página fuente y el render; se asoció el recorte vectorial de las rutas y se sustituyó su hoja genérica por una solución revisada de tres niveles. Quedan 97 hojas borrador entre ambas pruebas de 2018.
+- Validación final de este lote: TypeScript pasó, Vitest gated **540/540**, y los builds estándar y gated compilaron; persiste la advertencia de chunk superior a 300 kB.
