@@ -1,20 +1,391 @@
 {
-  "docus": "docus",
-  "work": "work",
-  "output": "content/icfes",
-  "publicFigures": "public/icfes",
-  "dpi": 250,
-  "stroke_grouping_pt": 12,
   "batch_size": 10,
   "documents": {
     "01_Matematicas_Saber11_2026_ICFES": {
-      "file": "01_Matematicas_Saber11_2026_ICFES.pdf",
-      "tipo": "cuadernillo",
-      "prefijo": "mat",
-      "area": "matematicas",
       "anio": "2026",
-      "prueba": "Prueba Matemáticas Saber 11.º 2026",
-      "origen": "icfes"
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). 01 Matematicas Saber11 2026 ICFES. Bogotá, D. C.: Icfes.",
+      "file": "01_Matematicas_Saber11_2026_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "mat",
+      "prueba": "01 Matematicas Saber11 2026 ICFES",
+      "tipo": "cuadernillo"
+    },
+    "02_Lectura_Critica_Saber11_2026_ICFES": {
+      "anio": "2026",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). 02 Lectura Critica Saber11 2026 ICFES. Bogotá, D. C.: Icfes.",
+      "file": "02_Lectura_Critica_Saber11_2026_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "lec",
+      "prueba": "02 Lectura Critica Saber11 2026 ICFES",
+      "tipo": "cuadernillo"
+    },
+    "03_Ciencias_Naturales_Saber11_2026_ICFES": {
+      "anio": "2026",
+      "area": "ciencias",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). 03 Ciencias Naturales Saber11 2026 ICFES. Bogotá, D. C.: Icfes.",
+      "file": "03_Ciencias_Naturales_Saber11_2026_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "cie",
+      "prueba": "03 Ciencias Naturales Saber11 2026 ICFES",
+      "tipo": "cuadernillo"
+    },
+    "04_Ciencias_Naturales_Saber11_2025_ICFES": {
+      "anio": "2025",
+      "area": "ciencias",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 04 Ciencias Naturales Saber11 2025 ICFES. Bogotá, D. C.: Icfes.",
+      "file": "04_Ciencias_Naturales_Saber11_2025_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "cna",
+      "prueba": "04 Ciencias Naturales Saber11 2025 ICFES",
+      "tipo": "cuadernillo"
+    },
+    "05_Ingles_Saber11_2024_ICFES": {
+      "anio": "2024",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2024). 05 Ingles Saber11 2024 ICFES. Bogotá, D. C.: Icfes.",
+      "file": "05_Ingles_Saber11_2024_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "ing",
+      "prueba": "05 Ingles Saber11 2024 ICFES",
+      "tipo": "cuadernillo"
+    },
+    "07_Sociales_y_Ciudadanas_Saber11_2021": {
+      "anio": "2021",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2021). 07 Sociales y Ciudadanas Saber11 2021. Bogotá, D. C.: Icfes.",
+      "file": "07_Sociales_y_Ciudadanas_Saber11_2021.pdf",
+      "origen": "icfes",
+      "prefijo": "soc",
+      "prueba": "07 Sociales y Ciudadanas Saber11 2021",
+      "tipo": "cuadernillo"
+    },
+    "08_Ingles_Saber11_2021": {
+      "anio": "2021",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2021). 08 Ingles Saber11 2021. Bogotá, D. C.: Icfes.",
+      "file": "08_Ingles_Saber11_2021.pdf",
+      "origen": "icfes",
+      "prefijo": "ena",
+      "prueba": "08 Ingles Saber11 2021",
+      "tipo": "cuadernillo"
+    },
+    "09_Lectura_Critica_Saber11_2018": {
+      "anio": "2018",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2018). 09 Lectura Critica Saber11 2018. Bogotá, D. C.: Icfes.",
+      "file": "09_Lectura_Critica_Saber11_2018.pdf",
+      "origen": "icfes",
+      "prefijo": "lcr",
+      "prueba": "09 Lectura Critica Saber11 2018",
+      "tipo": "cuadernillo"
+    },
+    "10_Sociales_y_Ciudadanas_Saber11_2018": {
+      "anio": "2018",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2018). 10 Sociales y Ciudadanas Saber11 2018. Bogotá, D. C.: Icfes.",
+      "file": "10_Sociales_y_Ciudadanas_Saber11_2018.pdf",
+      "origen": "icfes",
+      "prefijo": "scc",
+      "prueba": "10 Sociales y Ciudadanas Saber11 2018",
+      "tipo": "cuadernillo"
+    },
+    "11_Matematicas_Saber11_2018": {
+      "anio": "2018",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2018). 11 Matematicas Saber11 2018. Bogotá, D. C.: Icfes.",
+      "file": "11_Matematicas_Saber11_2018.pdf",
+      "origen": "icfes",
+      "prefijo": "m18",
+      "prueba": "11 Matematicas Saber11 2018",
+      "tipo": "cuadernillo"
+    },
+    "14_Ingles_Saber11_2018": {
+      "anio": "2018",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2018). 14 Ingles Saber11 2018. Bogotá, D. C.: Icfes.",
+      "file": "14_Ingles_Saber11_2018.pdf",
+      "origen": "icfes",
+      "prefijo": "eng",
+      "prueba": "14 Ingles Saber11 2018",
+      "tipo": "cuadernillo"
+    },
+    "15_Cuadernillo_Saber11_2014": {
+      "anio": "2014",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2014). 15 Cuadernillo Saber11 2014. Bogotá, D. C.: Icfes.",
+      "file": "15_Cuadernillo_Saber11_2014.pdf",
+      "origen": "icfes",
+      "prefijo": "c14",
+      "prueba": "15 Cuadernillo Saber11 2014",
+      "tipo": "cuadernillo"
+    },
+    "16_Guia_Orientacion_Saber11_2026_2_CalA": {
+      "anio": "2026",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). 16 Guia Orientacion Saber11 2026 2 CalA. Bogotá, D. C.: Icfes.",
+      "file": "16_Guia_Orientacion_Saber11_2026_2_CalA.pdf",
+      "origen": "icfes",
+      "prefijo": "daa",
+      "prueba": "16 Guia Orientacion Saber11 2026 2 CalA",
+      "tipo": "guia"
+    },
+    "17_Guia_Orientacion_Saber11_2026_1_CalB": {
+      "anio": "2026",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2026). 17 Guia Orientacion Saber11 2026 1 CalB. Bogotá, D. C.: Icfes.",
+      "file": "17_Guia_Orientacion_Saber11_2026_1_CalB.pdf",
+      "origen": "icfes",
+      "prefijo": "dab",
+      "prueba": "17 Guia Orientacion Saber11 2026 1 CalB",
+      "tipo": "guia"
+    },
+    "18_Guia_Orientacion_Saber11_2025_2": {
+      "anio": "2025",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 18 Guia Orientacion Saber11 2025 2. Bogotá, D. C.: Icfes.",
+      "file": "18_Guia_Orientacion_Saber11_2025_2.pdf",
+      "origen": "icfes",
+      "prefijo": "dac",
+      "prueba": "18 Guia Orientacion Saber11 2025 2",
+      "tipo": "guia"
+    },
+    "19_Guia_Orientacion_Saber11_2025_1_Nov2024": {
+      "anio": "2025",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 19 Guia Orientacion Saber11 2025 1 Nov2024. Bogotá, D. C.: Icfes.",
+      "file": "19_Guia_Orientacion_Saber11_2025_1_Nov2024.pdf",
+      "origen": "icfes",
+      "prefijo": "dad",
+      "prueba": "19 Guia Orientacion Saber11 2025 1 Nov2024",
+      "tipo": "guia"
+    },
+    "21_Guia_Orientacion_Saber11_2022_1": {
+      "anio": "2022",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2022). 21 Guia Orientacion Saber11 2022 1. Bogotá, D. C.: Icfes.",
+      "file": "21_Guia_Orientacion_Saber11_2022_1.pdf",
+      "origen": "icfes",
+      "prefijo": "dae",
+      "prueba": "21 Guia Orientacion Saber11 2022 1",
+      "tipo": "guia"
+    },
+    "22_Guia_Orientacion_Saber11_2017_2": {
+      "anio": "2017",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2017). 22 Guia Orientacion Saber11 2017 2. Bogotá, D. C.: Icfes.",
+      "file": "22_Guia_Orientacion_Saber11_2017_2.pdf",
+      "origen": "icfes",
+      "prefijo": "daf",
+      "prueba": "22 Guia Orientacion Saber11 2017 2",
+      "tipo": "guia"
+    },
+    "28_Marco_Referencia_Lectura_Critica_ICFES": {
+      "anio": "s.f.",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (s.f.). 28 Marco Referencia Lectura Critica ICFES. Bogotá, D. C.: Icfes.",
+      "file": "28_Marco_Referencia_Lectura_Critica_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "dag",
+      "prueba": "28 Marco Referencia Lectura Critica ICFES",
+      "tipo": "marco"
+    },
+    "30_Marco_Referencia_Sociales_ICFES": {
+      "anio": "s.f.",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (s.f.). 30 Marco Referencia Sociales ICFES. Bogotá, D. C.: Icfes.",
+      "file": "30_Marco_Referencia_Sociales_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "dah",
+      "prueba": "30 Marco Referencia Sociales ICFES",
+      "tipo": "marco"
+    },
+    "31_Marco_Referencia_Ciencias_Naturales_ICFES": {
+      "anio": "s.f.",
+      "area": "ciencias",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (s.f.). 31 Marco Referencia Ciencias Naturales ICFES. Bogotá, D. C.: Icfes.",
+      "file": "31_Marco_Referencia_Ciencias_Naturales_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "dai",
+      "prueba": "31 Marco Referencia Ciencias Naturales ICFES",
+      "tipo": "marco"
+    },
+    "32_Marco_Referencia_Ingles_ICFES": {
+      "anio": "s.f.",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (s.f.). 32 Marco Referencia Ingles ICFES. Bogotá, D. C.: Icfes.",
+      "file": "32_Marco_Referencia_Ingles_ICFES.pdf",
+      "origen": "icfes",
+      "prefijo": "daj",
+      "prueba": "32 Marco Referencia Ingles ICFES",
+      "tipo": "marco"
+    },
+    "33_Niveles_Desempeno_Lectura_Critica_2025": {
+      "anio": "2025",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 33 Niveles Desempeno Lectura Critica 2025. Bogotá, D. C.: Icfes.",
+      "file": "33_Niveles_Desempeno_Lectura_Critica_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dak",
+      "prueba": "33 Niveles Desempeno Lectura Critica 2025",
+      "tipo": "marco"
+    },
+    "34_Niveles_Desempeno_Matematicas_2025": {
+      "anio": "2025",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 34 Niveles Desempeno Matematicas 2025. Bogotá, D. C.: Icfes.",
+      "file": "34_Niveles_Desempeno_Matematicas_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dal",
+      "prueba": "34 Niveles Desempeno Matematicas 2025",
+      "tipo": "marco"
+    },
+    "35_Niveles_Desempeno_Sociales_2025": {
+      "anio": "2025",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 35 Niveles Desempeno Sociales 2025. Bogotá, D. C.: Icfes.",
+      "file": "35_Niveles_Desempeno_Sociales_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dam",
+      "prueba": "35 Niveles Desempeno Sociales 2025",
+      "tipo": "marco"
+    },
+    "36_Niveles_Desempeno_Ciencias_Naturales": {
+      "anio": "s.f.",
+      "area": "ciencias",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (s.f.). 36 Niveles Desempeno Ciencias Naturales. Bogotá, D. C.: Icfes.",
+      "file": "36_Niveles_Desempeno_Ciencias_Naturales.pdf",
+      "origen": "icfes",
+      "prefijo": "dan",
+      "prueba": "36 Niveles Desempeno Ciencias Naturales",
+      "tipo": "marco"
+    },
+    "37_Niveles_Desempeno_Ingles_2025": {
+      "anio": "2025",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 37 Niveles Desempeno Ingles 2025. Bogotá, D. C.: Icfes.",
+      "file": "37_Niveles_Desempeno_Ingles_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dao",
+      "prueba": "37 Niveles Desempeno Ingles 2025",
+      "tipo": "marco"
+    },
+    "38_Infografia_Generalidades_Saber11_2025": {
+      "anio": "2025",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 38 Infografia Generalidades Saber11 2025. Bogotá, D. C.: Icfes.",
+      "file": "38_Infografia_Generalidades_Saber11_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dap",
+      "prueba": "38 Infografia Generalidades Saber11 2025",
+      "tipo": "lectura_imagenes"
+    },
+    "39_Infografia_Matematicas_2025": {
+      "anio": "2025",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 39 Infografia Matematicas 2025. Bogotá, D. C.: Icfes.",
+      "file": "39_Infografia_Matematicas_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "daq",
+      "prueba": "39 Infografia Matematicas 2025",
+      "tipo": "lectura_imagenes"
+    },
+    "40_Infografia_Lectura_Critica_Sept2025": {
+      "anio": "2025",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 40 Infografia Lectura Critica Sept2025. Bogotá, D. C.: Icfes.",
+      "file": "40_Infografia_Lectura_Critica_Sept2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dar",
+      "prueba": "40 Infografia Lectura Critica Sept2025",
+      "tipo": "lectura_imagenes"
+    },
+    "41_Infografia_Lectura_Critica_Mar2025": {
+      "anio": "2025",
+      "area": "lectura_critica",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 41 Infografia Lectura Critica Mar2025. Bogotá, D. C.: Icfes.",
+      "file": "41_Infografia_Lectura_Critica_Mar2025.pdf",
+      "origen": "icfes",
+      "prefijo": "das",
+      "prueba": "41 Infografia Lectura Critica Mar2025",
+      "tipo": "lectura_imagenes"
+    },
+    "42_Infografia_Sociales_Sept2025": {
+      "anio": "2025",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 42 Infografia Sociales Sept2025. Bogotá, D. C.: Icfes.",
+      "file": "42_Infografia_Sociales_Sept2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dat",
+      "prueba": "42 Infografia Sociales Sept2025",
+      "tipo": "lectura_imagenes"
+    },
+    "43_Infografia_Sociales_Ago2025": {
+      "anio": "2025",
+      "area": "sociales",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 43 Infografia Sociales Ago2025. Bogotá, D. C.: Icfes.",
+      "file": "43_Infografia_Sociales_Ago2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dau",
+      "prueba": "43 Infografia Sociales Ago2025",
+      "tipo": "lectura_imagenes"
+    },
+    "44_Infografia_Ciencias_Naturales_2025": {
+      "anio": "2025",
+      "area": "ciencias",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 44 Infografia Ciencias Naturales 2025. Bogotá, D. C.: Icfes.",
+      "file": "44_Infografia_Ciencias_Naturales_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "dav",
+      "prueba": "44 Infografia Ciencias Naturales 2025",
+      "tipo": "lectura_imagenes"
+    },
+    "45_Infografia_Ingles_2025": {
+      "anio": "2025",
+      "area": "ingles",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2025). 45 Infografia Ingles 2025. Bogotá, D. C.: Icfes.",
+      "file": "45_Infografia_Ingles_2025.pdf",
+      "origen": "icfes",
+      "prefijo": "daw",
+      "prueba": "45 Infografia Ingles 2025",
+      "tipo": "lectura_imagenes"
+    },
+    "46_Manual_PLEXI_Online_PreSaber11A": {
+      "anio": "s.f.",
+      "area": "matematicas",
+      "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2021). Manual PLEXI: modalidad online, ejecución examen Pre-Saber 11 A. Dirección de Tecnología, Subdirección de Desarrollo de Aplicaciones, Prueba Electrónica.",
+      "file": "46_Manual_PLEXI_Online_PreSaber11A.pdf",
+      "origen": "icfes",
+      "prefijo": "dax",
+      "prueba": "46 Manual PLEXI Online PreSaber11A",
+      "tipo": "guia"
+    },
+    "47_Guia_Preparacion_SED_Cartagena": {
+      "anio": "s.f.",
+      "area": "matematicas",
+      "cita": "Secretaría de Educación Distrital de Cartagena, Dirección de Calidad Educativa. (s. f.). Guía de preparación: Prueba ICFES Saber 11, estrategia Aprendiendo en Casa.",
+      "file": "47_Guia_Preparacion_SED_Cartagena.pdf",
+      "origen": "licenciado",
+      "prefijo": "day",
+      "prueba": "47 Guia Preparacion SED Cartagena",
+      "tipo": "guia"
+    },
+    "48_Libro_Pre_ICFES_Completo_6_Cuestionarios": {
+      "anio": "s.f.",
+      "area": "matematicas",
+      "cita": "Autoría por identificar. (2017). Cuadernillo de preparación para la prueba de Estado Saber 11: seis cuestionarios. Documento PDF provisto en docus/; verificar portada editorial.",
+      "file": "48_Libro_Pre_ICFES_Completo_6_Cuestionarios.pdf",
+      "origen": "licenciado",
+      "prefijo": "daz",
+      "prueba": "48 Libro Pre ICFES Completo 6 Cuestionarios",
+      "tipo": "cuadernillo"
     }
-  }
+  },
+  "docus": "docus",
+  "dpi": 250,
+  "output": "content/icfes",
+  "publicFigures": "public/icfes",
+  "stroke_grouping_pt": 12,
+  "work": "work"
 }

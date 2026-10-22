@@ -31,24 +31,32 @@ def main():
         meta={'sha256':digest,'tipo':spec['tipo'],'prefijo':spec['prefijo'],'area':spec['area'],'archivo':spec['file'],'etapas':old.get('etapas',{})}
         start=STAGES.index(args.solo or args.desde or STAGES[0]); end=STAGES.index(args.solo) if args.solo else len(STAGES)-1
         if args.solo and start and not all((dirs[s]/'result.json').exists() for s in STAGES[:start]): raise SystemExit(f"--solo {args.solo} requiere etapas previas en disco")
+        failed=False
         for i in range(start,end+1):
             stage=STAGES[i]; out=dirs[stage]/'result.json'; upstream=[sha(dirs[s]/'result.json') for s in STAGES[:i] if (dirs[s]/'result.json').exists()]
-            implementation=[ROOT/'tools/pipeline/run.py',ROOT/'tools/pipeline/tipos'/f'{spec["tipo"]}.py']
+            implementation=[ROOT/'tools/pipeline/run.py',ROOT/'tools/pipeline/tipos'/f'{spec["tipo"]}.py',ROOT/'tools/pipeline/tipos/documento.py']
             code_hash=''.join(sha(p) for p in implementation if p.exists())
             text_tool=shutil.which('pdftotext') if stage=='texto' else ''
             signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash+(text_tool or 'pymupdf-fallback')).encode()).hexdigest()
-            cached=meta['etapas'].get(stage,{}).get('firma')==signature and out.exists()
+            cached=meta['etapas'].get(stage,{}).get('estado')=='completa' and meta['etapas'].get(stage,{}).get('firma')==signature and out.exists()
             if cached and not args.forzar: print(doc_id,stage,'cache'); continue
-            if stage=='detectar': result=plugin.detectar(ctx)
-            elif stage=='texto': result=plugin.extraer(ctx)
-            elif stage=='figuras': result=extract_figures(ctx)
-            elif stage=='estructurar': result=plugin.estructurar(ctx)
-            elif stage=='enriquecer': result=enrich(ctx)
-            elif stage=='validar': result=validate(ctx)
-            else: result=package(ctx)
+            try:
+                if stage=='detectar': result=plugin.detectar(ctx)
+                elif stage=='texto': result=plugin.extraer(ctx)
+                elif stage=='figuras': result=extract_figures(ctx)
+                elif stage=='estructurar': result=plugin.estructurar(ctx)
+                elif stage=='enriquecer': result=enrich(ctx)
+                elif stage=='validar': result=validate(ctx)
+                else: result=package(ctx)
+            except (Exception,SystemExit) as exc:
+                meta['etapas'][stage]={'estado':'error','fecha':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'firma':signature,'error':str(exc)}
+                manifest['documents'][doc_id]=meta; write(mpath,manifest)
+                print(doc_id,stage,'ERROR',str(exc),file=sys.stderr)
+                failed=True; break
             write(out,result); meta['etapas'][stage]={'estado':'completa','fecha':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'firma':signature,'salida_sha256':sha(out)}
             for later in STAGES[i+1:]: meta['etapas'].pop(later,None)
             manifest['documents'][doc_id]=meta; write(mpath,manifest); print(doc_id,stage,'ok')
+        if failed: continue
         manifest['documents'][doc_id]=meta; write(mpath,manifest)
 def extract_figures(c):
     import fitz
@@ -78,8 +86,13 @@ def extract_figures(c):
             items.append({'pagina':pi,'id':path.name,'bbox':[round(x,1) for x in r],'archivo':str(path.relative_to(c['root'])),'etiquetas':labels})
     write(dest/'figuras.json',{'candidatas':items,'nota':'Asociación a pregunta pendiente de revisión visual.'}); return {'paginas':len(d),'figuras_candidatas':len(items),'indice':'figuras.json'}
 def enrich(c):
-    pkg=read(c['dirs']['estructurar']/'result.json'); dest=c['root']/'content/icfes'/c['spec']['prefijo']/'hojas'; dest.mkdir(parents=True,exist_ok=True)
+    pkg=read(c['dirs']['estructurar']/'result.json')
+    if 'preguntas' not in pkg:
+        write(c['dirs']['enriquecer']/'package.json',pkg)
+        return {'preguntas':0,'documento_tipo':pkg.get('tipo')}
+    dest=c['root']/'content/icfes'/c['spec']['prefijo']/'hojas'; dest.mkdir(parents=True,exist_ok=True)
     for q in pkg['preguntas']:
+        if q.get('correcta') is None: continue
         p=dest/(q['id']+'.json')
         if p.exists() and read(p).get('estado')=='revisada': continue
         wrong=[chr(65+i) for i in range(len(q['opciones'])) if i!=q['correcta']]
@@ -97,14 +110,35 @@ def enrich(c):
     write(c['dirs']['enriquecer']/'package.json',pkg); return {'preguntas':len(pkg['preguntas']),'hojas_borrador':sum(1 for q in pkg['preguntas'] if q.get('estadoHoja')=='borrador')}
 def validate(c):
     p=read(c['dirs']['enriquecer']/'package.json'); errors=[]
+    if 'preguntas' not in p:
+        write(c['dirs']['validar']/'validated.json',p)
+        return {'preguntas':0,'errores':0,'tipo':p.get('tipo'),'paginas':len(p.get('paginas',[]))}
+    pending=[]
     for q in p['preguntas']:
+        if q.get('correcta') is None:
+            pending.append(q)
+            continue
         if q.get('origen') in ('icfes','licenciado') and not q.get('fuente'): errors.append(q['id']+':sin fuente')
         if not q.get('opciones') or len(q['opciones'])<2: errors.append(q['id']+':opciones')
         if q.get('correcta') is None: errors.append(q['id']+':clave ausente')
     if errors: raise SystemExit('\n'.join(errors))
-    write(c['dirs']['validar']/'validated.json',p); return {'preguntas':len(p['preguntas']),'errores':0,'por_revisar':sum(bool(q.get('revisar')) for q in p['preguntas'])}
+    p['pendientes_clave']=pending
+    p['preguntas']=[q for q in p['preguntas'] if q.get('correcta') is not None]
+    write(c['dirs']['validar']/'validated.json',p); return {'preguntas':len(p['preguntas']),'pendientes_clave':len(pending),'errores':0,'por_revisar':sum(bool(q.get('revisar')) for q in p['preguntas'])}
 def package(c):
     src=read(c['dirs']['validar']/'validated.json'); out=c['root']/'content/icfes'/c['spec']['prefijo']; out.mkdir(parents=True,exist_ok=True)
+    if 'preguntas' not in src:
+        write(out/'documento.json',src)
+        for stale in (out/'preguntas.json',out/'pendientes_clave.json'):
+            if stale.exists(): stale.unlink()
+        return {'archivo':str((out/'documento.json').relative_to(c['root'])),'preguntas':0,'paginas':len(src.get('paginas',[]))}
+    stale_document=out/'documento.json'
+    if stale_document.exists(): stale_document.unlink()
+    pending=src.get('pendientes_clave',[])
+    if pending: write(out/'pendientes_clave.json',{'preguntas':pending})
+    else:
+        stale_pending=out/'pendientes_clave.json'
+        if stale_pending.exists(): stale_pending.unlink()
     overrides=out/'overrides.json'; ov=read(overrides) if overrides.exists() else {}
     if not isinstance(ov,dict): raise SystemExit('overrides.json debe ser un objeto por id')
     by_id={q['id']:q for q in src['preguntas']}

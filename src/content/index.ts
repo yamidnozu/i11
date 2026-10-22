@@ -6,7 +6,7 @@ import enfoques from '../../content/enfoques.json';
 import unidadesBase from '../../content/unidades.json';
 const qm = import.meta.glob('../../content/questions/*.json', { eager: true, import: 'default' }) as Record<string, Question[]>;
 const lm = import.meta.glob('../../content/lessons/*.json', { eager: true, import: 'default' }) as Record<string, Lesson>;
-const pm = { ...import.meta.glob('../../content/packs/**/*.json', { eager: true, import: 'default' }), ...import.meta.glob('../../content/icfes/**/*.json', { eager: true, import: 'default' }) } as Record<string, Pack | Pack[]>;
+const pm = { ...import.meta.glob('../../content/packs/**/*.json', { eager: true, import: 'default' }), ...import.meta.glob('../../content/icfes/**/preguntas.json', { eager: true, import: 'default' }) } as Record<string, Pack | Pack[]>;
 const sm = import.meta.glob('../../content/simulacros/*.json', { eager: true, import: 'default' }) as Record<string, SimulacroDef | SimulacroDef[]>;
 const bm = import.meta.glob('../../content/bloques/*.json', { eager: true, import: 'default' }) as Record<string, Bloque | Bloque[]>;
 const H = hojas as unknown as Record<string, Hoja>;
