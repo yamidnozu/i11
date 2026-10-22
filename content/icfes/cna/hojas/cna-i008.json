@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "mezclas homogéneas son uniformes en todas sus partes",
+        "rol": "pide",
+        "nota": "Expresión del enunciado que orienta la tarea.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica los datos",
+        "texto": "Revisa cuántas fases presenta cada sustancia."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el criterio",
+        "texto": "Clasifica la primera a partir de su uniformidad."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Clasifica la segunda según la separación visible de fases."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Distinguir mezclas homogéneas y heterogéneas",
+      "que": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
+      "pistas": [
+        "Una fase uniforme corresponde a una mezcla homogénea.",
+        "Dos fases observables indican heterogeneidad."
+      ],
+      "clave": "La sustancia uno es homogénea y la sustancia dos es heterogénea.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite una condición. Pero Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite una condición. Pero La sustancia dos no es homogénea porque se distinguen dos fases."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite una condición. Pero La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Revisa cuántas fases presenta cada sustancia."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Clasifica la primera a partir de su uniformidad."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Clasifica la segunda según la separación visible de fases."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «mezclas homogéneas son uniformes en todas sus partes» orienta la lectura.",
+          "a": "m:mezclas homogéneas son uniformes en todas sus partes"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué condición o relación pide la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Clasifica la segunda según la separación visible de fases.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
