@@ -1,0 +1,118 @@
+{
+  "estado": "revisada",
+  "hoja": {
+    "enfoque": {
+      "clave": "La comparación correcta es entre porcentajes, no entre volúmenes aislados.",
+      "no": [
+        {
+          "p": "Pero el volumen aislado de ácido no permite comparar sin relacionarlo con el volumen total.",
+          "t": "Opción A"
+        },
+        {
+          "p": "Pero 112 de 200 equivalen a 56 %, menos que 78 %.",
+          "t": "Opción C"
+        },
+        {
+          "p": "Pero comparar solo volúmenes no indica cuál solución está más concentrada.",
+          "t": "Opción D"
+        }
+      ],
+      "pistas": [
+        "Compara las partes de ácido con el volumen total de solución.",
+        "Expresa ambas concentraciones como porcentaje y elige la mayor."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Compara las partes de ácido con el volumen total de solución."
+        },
+        {
+          "t": "Verifica por qué la opción B resuelve la tarea."
+        }
+      ],
+      "que": "Explica explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
+      "tema": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico."
+    },
+    "guion": {
+      "1": [
+        {
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
+        },
+        {
+          "t": "El ácido nítrico contiene 112 mL de ácido en 200 mL de solución: eso equivale a 56 %. El ácido sulfúrico tiene 78 %, así que es el más concentrado."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
+        }
+      ],
+      "2": [
+        {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "El ácido nítrico contiene 112 mL de ácido en 200 mL de solución: eso equivale a 56 %. El ácido sulfúrico tiene 78 %, así que es el más concentrado."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A el volumen aislado de ácido no permite comparar sin relacionarlo con el volumen total. La descartamos."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C 112 de 200 equivalen a 56 %, menos que 78 %. La descartamos."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D comparar solo volúmenes no indica cuál solución está más concentrada. La descartamos."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La opción B es la respuesta."
+        }
+      ],
+      "3": [
+        {
+          "t": "Compara las partes de ácido con el volumen total de solución."
+        },
+        {
+          "t": "Expresa ambas concentraciones como porcentaje y elige la mayor."
+        },
+        {
+          "t": "La comparación correcta es entre porcentajes, no entre volúmenes aislados."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
+        }
+      ]
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "extracción",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El ácido nítrico contiene 112 mL de ácido en 200 mL de solución: eso equivale a 56 %. El ácido sulfúrico tiene 78 %, así que es el más concentrado.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  }
+}

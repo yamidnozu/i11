@@ -1,0 +1,118 @@
+{
+  "estado": "revisada",
+  "hoja": {
+    "enfoque": {
+      "clave": "La diferencia de tres electrones entre el átomo y el ion explica la carga positiva del ion.",
+      "no": [
+        {
+          "p": "Pero el último nivel ocupado no determina por sí solo la carga del ion.",
+          "t": "Opción A"
+        },
+        {
+          "p": "Pero el ion tiene menos electrones que el átomo neutro; esa diferencia es la clave.",
+          "t": "Opción C"
+        },
+        {
+          "p": "Pero el ion conserva diez electrones, no solo tres.",
+          "t": "Opción D"
+        }
+      ],
+      "pistas": [
+        "Compara cuántos electrones tiene cada configuración.",
+        "Recuerda que perder electrones deja una carga positiva."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Compara cuántos electrones tiene cada configuración."
+        },
+        {
+          "t": "Verifica por qué la opción B resuelve la tarea."
+        }
+      ],
+      "que": "Explica explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
+      "tema": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico."
+    },
+    "guion": {
+      "1": [
+        {
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
+        },
+        {
+          "t": "El átomo neutro tiene trece electrones y el ion mostrado tiene diez. Perdió tres electrones y por eso su carga es 3+."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
+        }
+      ],
+      "2": [
+        {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "El átomo neutro tiene trece electrones y el ion mostrado tiene diez. Perdió tres electrones y por eso su carga es 3+."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A el último nivel ocupado no determina por sí solo la carga del ion. La descartamos."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C el ion tiene menos electrones que el átomo neutro; esa diferencia es la clave. La descartamos."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D el ion conserva diez electrones, no solo tres. La descartamos."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La opción B es la respuesta."
+        }
+      ],
+      "3": [
+        {
+          "t": "Compara cuántos electrones tiene cada configuración."
+        },
+        {
+          "t": "Recuerda que perder electrones deja una carga positiva."
+        },
+        {
+          "t": "La diferencia de tres electrones entre el átomo y el ion explica la carga positiva del ion."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
+        }
+      ]
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "configuración",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El átomo neutro tiene trece electrones y el ion mostrado tiene diez. Perdió tres electrones y por eso su carga es 3+.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  }
+}
