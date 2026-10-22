@@ -49,7 +49,7 @@ export interface Question {
   id: string; area: AreaId; evidencia: string; nivel: 1 | 2 | 3 | 4;
   enunciado: string; opciones: string[]; correcta: number; explicacion: string; distractores: string[];
   bloque?: string; figuras?: Figura[]; opcionesFig?: (Figura | null)[]; afirmacion?: string; competencia?: string; parte?: string;
-  hoja?: Hoja; lectura?: { id: string; titulo: string; texto: string }; origen: 'original' | 'icfes'; fuente?: string; revisar?: string[]; tipo?: 'mc' | 'reto'; sim?: { id: string; challengeId?: string };
+  hoja?: Hoja; lectura?: { id: string; titulo: string; texto: string }; origen: 'original' | 'icfes' | 'propio' | 'licenciado'; fuente?: string; revisar?: string[]; tipo?: 'mc' | 'reto'; sim?: { id: string; challengeId?: string };
 }
 export interface Lesson { id: string; titulo: string; area: AreaId; evidencias: string[]; sim?: { id: string }; ejemplos: { angulo: string; titulo: string; texto: string }[]; truco: string }
 
@@ -61,8 +61,8 @@ export function validateQuestion(q: Question): string[] {
   if (!AREA_IDS.includes(q.area)) e.push('área');
   if (![1, 2, 3, 4].includes(q.nivel)) e.push('nivel');
   if (!q.enunciado || !q.explicacion) e.push('texto');
-  if (q.origen !== 'original' && q.origen !== 'icfes') e.push('origen');
-  if (q.origen === 'icfes' && !q.fuente) e.push('contenido icfes sin fuente (cita obligatoria)');
+  if (!['original', 'icfes', 'propio', 'licenciado'].includes(q.origen)) e.push('origen');
+  if ((q.origen === 'icfes' || q.origen === 'licenciado') && !q.fuente) e.push('contenido sin fuente (cita obligatoria)');
   if (q.tipo === 'reto') { if (!q.sim?.challengeId) e.push('reto sin challengeId'); return e.map((m) => `${q.id}: ${m}`); }
   if (q.opciones.length < 2 || q.opciones.length > 8) e.push('entre 2 y 8 opciones');
   if (q.opcionesFig && q.opcionesFig.length !== q.opciones.length) e.push('opcionesFig debe tener una entrada por opción (null si no hay figura)');
