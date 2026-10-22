@@ -112,3 +112,10 @@
 - Se verificaron visualmente las páginas fuente de las caricaturas de las preguntas 13, 14, 21 y 25, y la infografía asociada a las preguntas 42–49.
 - Se revisaron las primeras diez hojas de Sociales; el acumulado sube a 208 revisadas y baja a 40 borradores.
 - El paquete se reconstruyó con `python tools/pipeline/run.py --doc 02_Lectura_Critica_Saber11_2026_ICFES --desde empaquetar` y el de Sociales con su documento correspondiente. Vitest con `VITE_ICFES=1`: 442/442.
+
+
+## Pipeline documental — hojas pedagógicas completas (2026-10-22)
+- Se completaron las 49 hojas de Sociales y la hoja de mat-i038 con razonamiento y descarte de todas las opciones.
+- mat-i038 se resuelve por inclusión y exclusión bajo la suposición de que todos los clientes están cubiertos por las categorías de la tabla; se mantiene el aviso porque el enunciado no lo explicita.
+- Los cinco cuadernillos estructurados quedan con 248/248 hojas y cero borradores.
+- Validación de contenido: `VITE_ICFES=1 npx vitest run`, 442/442 pruebas.

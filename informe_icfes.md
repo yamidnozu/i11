@@ -11,7 +11,7 @@
 - [x] Mantener `docus/` y `work/` fuera de Git y dejar el contenido derivado en `content/icfes/`, bajo el gate de build.
 - [x] Probar reconstrucción limpia de Matemáticas y caché: salida idéntica.
 - [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Completar soluciones y distractores razonados para las otras 40 preguntas: 39 de Sociales y mat-i038. Lectura ya tiene sus 49 hojas revisadas.
+- [ ] Todas las hojas de los cinco cuadernillos tienen guion y descarte; mat-i038 conserva una salvedad porque la tabla no explicita que las categorías cubran a los 110 clientes.
 - [x] Revisar ocho hojas de Ciencias (preguntas 2, 11, 12 y 17 en ambos cuadernillos) con solución y descarte individual de todas las alternativas incorrectas; el contenido coincide exactamente entre años.
 - [x] Revisar otras ocho hojas (preguntas 16, 19, 20 y 22 en ambos cuadernillos), cotejando la igualdad de enunciado, opciones y clave entre años.
 - [x] Revisar tres hojas más con opciones textuales y razonamiento claro (transcripción de proteínas, velocidad del sonido y presión atmosférica) en ambos cuadernillos.
@@ -25,7 +25,8 @@
 - [x] Comparar cinco renders con sus páginas fuente en `#/pregunta/<id>`: cie-i001, cie-i029, cie-i047, cie-i048 y lec-i046. Las figuras se ven en el recorte ampliado; las opciones que aún no están segmentadas individualmente siguen señaladas.
 - [x] Extraer y enlazar individualmente las opciones gráficas de 9 preguntas por cuadernillo de Ciencias: 36 recortes por PDF, 72 PNG en total. Cada `opcionesFig` contiene su receta `recorteFuente` para reconstruir la opción directamente del PDF.
 - [x] Revisar las 49 hojas pedagógicas de Lectura Crítica con argumentos, descarte de opciones, marcas y guion de tres niveles. Cotejadas visualmente las caricaturas de las preguntas 13, 14, 21 y 25, y la infografía compartida de las preguntas 42–49.
-- [x] Revisar las primeras 10 hojas pedagógicas de Sociales, con análisis de argumentos, participación ciudadana, política pública y conflicto de intereses.
+- [x] Revisar las 49 hojas pedagógicas de Sociales, con análisis de argumentos, participación ciudadana, política pública y conflicto de intereses.
+- [x] Revisar mat-i038 con cálculo condicional de inclusión y exclusión; mantener un aviso porque el enunciado no explicita que todos los clientes eligieron pizza o alguna bebida registrada.
 - [ ] Convertir marcos y niveles a `content/marco.json` semántico y enlazar competencia/afirmación/evidencia a cada pregunta. Hoy se conserva el texto por página, sin interpretación automática.
 - [ ] Estructurar preguntas de los documentos antiguos y el cuadernillo de Inglés que no contienen marcadores reconocidos; hoy se preservan sus páginas como transcripción.
 - [x] Cotejar portada, metadatos y créditos editoriales de los dos documentos externos y completar las citas disponibles.
@@ -39,7 +40,7 @@
 - Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
 - Cinco cuadernillos estructurados: **248 preguntas con clave, cero pendientes** (50 Matemáticas, 49 Lectura Crítica, 50 Ciencias 2026, 50 Ciencias 2025 y 49 Sociales). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
 - **27 preguntas conservan avisos explícitos**: 26 enlaces a evidencia específica del marco (13 por cada prueba de Ciencias) y la ambigüedad documentada de mat-i038. Las 72 opciones gráficas ya están recortadas individualmente. No son avisos ocultos ni se marcan como aprobadas.
-- **208 hojas revisadas, 40 borradores**. Matemáticas 49/50 revisadas; Ciencias 50/50 por año; Lectura 49/49; Sociales 10/49. Las preguntas repetidas se cotejan entre versiones; i008 presenta diferencias menores de transcripción OCR (incluido «sustencia»), revisadas contra el mismo procedimiento, opciones y clave.
+- **248 hojas revisadas, 0 borradores**. Matemáticas 50/50 (mat-i038 explicada bajo supuesto explícito); Ciencias 50/50 por año; Lectura 49/49; Sociales 49/49. Las preguntas repetidas se cotejan entre versiones; i008 presenta diferencias menores de transcripción OCR (incluido «sustencia»), revisadas contra el mismo procedimiento, opciones y clave.
 - Cinco simulacros generados, todos marcados “En revisión”.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa de `content/icfes/` solo `preguntas.json`; las transcripciones completas `documento.json` no se incorporan al bundle.
@@ -97,4 +98,4 @@
 
 ## Límites que siguen abiertos
 
-El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, claves cotejadas; se corrigieron alternativas vacías, se añadieron bloques compartidos para 4–6 y 9–13. Queda mat-i038 en revisión por ambigüedad de datos. Persisten **40 hojas borrador** (39 de Sociales y mat-i038), 26 enlaces de evidencia sin cotejar contra el marco y 2 licencias de materiales externos sin autorización comprobada. Los documentos antiguos y el cuadernillo de Inglés permanecen como transcripción, sin banco de preguntas estructurado. Dos guías largas provocan avisos de estructura del PDF en PyMuPDF, aunque sus siete etapas terminan; no se reportaron fallos de etapa. El contenido ICFES permanece bajo `content/icfes/` y detrás del gate. No se hizo push; `saber11-repo.tar.gz` sigue sin agregar.
+El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, claves cotejadas; se corrigieron alternativas vacías, se añadieron bloques compartidos para 4–6 y 9–13. Queda mat-i038 en revisión por ambigüedad de datos. Persisten 26 enlaces de evidencia sin cotejar contra el marco, el aviso de ambigüedad de mat-i038 y 2 licencias de materiales externos sin autorización comprobada. Los documentos antiguos y el cuadernillo de Inglés permanecen como transcripción, sin banco de preguntas estructurado. Dos guías largas provocan avisos de estructura del PDF en PyMuPDF, aunque sus siete etapas terminan; no se reportaron fallos de etapa. El contenido ICFES permanece bajo `content/icfes/` y detrás del gate. No se hizo push; `saber11-repo.tar.gz` sigue sin agregar.
