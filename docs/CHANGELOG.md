@@ -105,3 +105,10 @@
 - Aviso falso de "se acabó el tiempo" (intervalos duplicados).
 - Corte de niveles fuera por uno (ahora por rango).
 - Paleta insertada en lugar equivocado en `main.ts`.
+
+
+## Pipeline documental — Lectura completa y primer lote de Sociales (2026-10-22)
+- Se completaron y cotejaron las 49 hojas de Lectura Crítica, incluidos los argumentos sobre textos, caricaturas e infografía.
+- Se verificaron visualmente las páginas fuente de las caricaturas de las preguntas 13, 14, 21 y 25, y la infografía asociada a las preguntas 42–49.
+- Se revisaron las primeras diez hojas de Sociales; el acumulado sube a 208 revisadas y baja a 40 borradores.
+- El paquete se reconstruyó con `python tools/pipeline/run.py --doc 02_Lectura_Critica_Saber11_2026_ICFES --desde empaquetar` y el de Sociales con su documento correspondiente. Vitest con `VITE_ICFES=1`: 442/442.
