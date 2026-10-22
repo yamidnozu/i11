@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "síntesis de proteínas",
+        "rol": "pide",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la relación",
+        "texto": "Ubica el error en la transcripción del ADN al ARN mensajero."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Relaciona la secuencia del mensaje con los codones y los aminoácidos."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Comprueba qué consecuencia afecta la secuencia de la proteína."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Cómo un error de transcripción afecta la síntesis de proteínas",
+      "que": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
+      "pistas": [
+        "Sigue el recorrido de la información desde el ADN hasta la proteína.",
+        "Un error en el mensaje puede cambiar los codones que se traducen."
+      ],
+      "clave": "Una copia alterada puede hacer que se unan aminoácidos que no corresponden a la secuencia original.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible al considerar solo un dato. Pero El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible al considerar solo un dato. Pero Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica el error en la transcripción del ADN al ARN mensajero."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona la secuencia del mensaje con los codones y los aminoácidos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba qué consecuencia afecta la secuencia de la proteína."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «síntesis de proteínas» da una pista sobre qué debemos observar.",
+          "a": "m:síntesis de proteínas"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué relación científica explica la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba qué consecuencia afecta la secuencia de la proteína.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

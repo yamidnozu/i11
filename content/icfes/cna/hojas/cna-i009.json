@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "detector de sonido",
+        "rol": "pide",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la relación",
+        "texto": "Identifica qué variable depende del medio de propagación."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Compara el agua con el aire."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer cómo el medio afecta la velocidad del sonido",
+      "que": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
+      "pistas": [
+        "Compara las propiedades que dependen de la fuente con las que dependen del medio.",
+        "La velocidad de propagación varía entre agua y aire."
+      ],
+      "clave": "El cambio de velocidad de propagación permite distinguir el sonido en aire del sonido en agua.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible al considerar solo un dato. Pero La forma de onda no es la variable que el detector usa para identificar el medio de propagación."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué variable depende del medio de propagación."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara el agua con el aire."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «detector de sonido» da una pista sobre qué debemos observar.",
+          "a": "m:detector de sonido"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué relación científica explica la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un investigador",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
