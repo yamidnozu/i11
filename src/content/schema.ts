@@ -37,7 +37,7 @@ export interface Hoja {
 export interface EscenaDef { ancho: number; alto: number; marco?: { izq?: number; der?: number; arriba?: number; abajo?: number; x: [string | number, string | number]; y: [string | number, string | number]; escalaIgual?: boolean }; capas: { t: string; si?: string; [k: string]: unknown }[]; vars?: Record<string, string | number>; anim?: { dur: number; bucle?: boolean } }
 /** Una imagen del examen: archivo (img), SVG en línea, dibujo declarativo (escena) o tabla de datos. Siempre con texto alternativo. */
 export type Figura =
-  | { tipo: 'img'; src: string; alt: string; ancho?: number; pie?: string }
+  | { tipo: 'img'; src: string; alt: string; ancho?: number; pie?: string; recorteFuente?: { pagina: number; rect: [number, number, number, number] } }
   | { tipo: 'svg'; svg: string; alt: string; ancho?: number; pie?: string }
   | ({ tipo: 'escena'; alt: string; pie?: string } & EscenaDef)
   | { tipo: 'tabla'; cols: string[]; filas: string[][]; alt?: string; pie?: string }

@@ -11,6 +11,12 @@ def write(p,obj):
     p.parent.mkdir(parents=True,exist_ok=True); data=json.dumps(obj,ensure_ascii=False,indent=2,sort_keys=True)+'\n'
     if not p.exists() or p.read_text(encoding='utf-8')!=data: p.write_text(data,encoding='utf-8',newline='\n')
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def image_refs(obj):
+    if isinstance(obj,dict):
+        if obj.get('tipo')=='img' and isinstance(obj.get('src'),str): yield obj['src']
+        for value in obj.values(): yield from image_refs(value)
+    elif isinstance(obj,list):
+        for value in obj: yield from image_refs(value)
 def load_plugin(name):
     f=ROOT/'tools'/'pipeline'/'tipos'/f'{name}.py'
     sys.path.insert(0,str(f.parent))
@@ -38,9 +44,15 @@ def main():
             code_hash=''.join(sha(p) for p in implementation if p.exists())
             text_tool=shutil.which('pdftotext') if stage=='texto' else ''
             signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash+(text_tool or 'pymupdf-fallback')).encode()).hexdigest()
-            if stage=='empaquetar':
+            if stage == 'figuras' or stage in STAGES[4:]:
                 outdir=ROOT/'content'/'icfes'/spec['prefijo']
-                manual=[outdir/'overrides.json',*sorted((outdir/'hojas').glob('*.json'))]
+                manual=[outdir/'overrides.json']
+                if stage=='figuras' and (outdir/'overrides.json').exists():
+                    for src_ref in image_refs(read(outdir/'overrides.json')):
+                        if src_ref.startswith(f"/icfes/{spec['prefijo']}/"):
+                            asset=outdir/'imagenes'/Path(src_ref).name
+                            if asset.exists(): manual.append(asset)
+                if stage in STAGES[4:]: manual += sorted((outdir/'hojas').glob('*.json'))
                 manual_hash=''.join(f'{p.name}:{sha(p)}' for p in manual if p.exists())
                 signature=hashlib.sha256((signature+manual_hash).encode()).hexdigest()
             cached=meta['etapas'].get(stage,{}).get('estado')=='completa' and meta['etapas'].get(stage,{}).get('firma')==signature and out.exists()
@@ -89,19 +101,60 @@ def extract_figures(c):
                 br=fitz.Rect(b['bbox']); expanded=fitz.Rect(r);expanded.x0-=threshold;expanded.y0-=threshold;expanded.x1+=threshold;expanded.y1+=threshold
                 if expanded.intersects(br): labels += [s['text'] for line in b['lines'] for s in line['spans']]
             items.append({'pagina':pi,'id':path.name,'bbox':[round(x,1) for x in r],'archivo':str(path.relative_to(c['root'])),'etiquetas':labels})
-    write(dest/'figuras.json',{'candidatas':items,'nota':'Asociación a pregunta pendiente de revisión visual.'}); return {'paginas':len(d),'figuras_candidatas':len(items),'indice':'figuras.json'}
+    # Recortes asociados manualmente: el ID estable determina la pregunta y
+    # la posición del encabezado en la fuente. Se guardan bajo content/icfes
+    # y Vite solo los copia al build cuando VITE_ICFES=1.
+    pref=c['spec']['prefijo']; content=c['root']/'content'/'icfes'/pref
+    ov_path=content/'overrides.json'; overrides=read(ov_path) if ov_path.exists() else {}
+    image_dir=content/'imagenes'; image_dir.mkdir(parents=True,exist_ok=True); linked=[]
+    figures=[(qid,fig) for qid,changes in sorted(overrides.items()) if qid!='__paquete__' and isinstance(changes,dict) for fig in (list(changes.get('figuras',[]))+[f for f in (changes.get('opcionesFig') or []) if isinstance(f,dict)])]
+    figures += [('__paquete__',fig) for block in overrides.get('__paquete__',{}).get('bloques_agregar',[]) for fig in block.get('figuras',[])]
+    for qid,fig in figures:
+        if not isinstance(fig,dict) or fig.get('tipo')!='img': continue
+        src=str(fig.get('src',''))
+        if not src.startswith(f'/icfes/{pref}/'): continue
+        name=Path(src).name; recorte=fig.get('recorteFuente')
+        if recorte:
+            pi=int(recorte['pagina'])
+            if pi<1 or pi>len(d): raise SystemExit(f'Página de recorte fuente inválida: {src}')
+            rect=fitz.Rect(*recorte['rect']) & d[pi-1].rect
+            if rect.is_empty: raise SystemExit(f'Recorte fuente inválido: {src}')
+            d[pi-1].get_pixmap(matrix=fitz.Matrix(dpi/72,dpi/72),clip=rect,alpha=False).save(image_dir/name)
+            linked.append({'pregunta_o_bloque':qid,'pagina':pi,'archivo':str((image_dir/name).relative_to(c['root'])),'src':src,'bbox':[round(v,1) for v in rect]}); continue
+        num_match=re.search(r'(\d{3,4})$',qid)
+        if not num_match: continue
+        number=int(num_match.group(1)); found=False
+        for pi,page in enumerate(d,1):
+            hits=page.search_for(f'Pregunta {number}')
+            if not hits: continue
+            title=hits[0]; below=[]
+            for other in range(1,61):
+                if other==number: continue
+                below.extend(r for r in page.search_for(f'Pregunta {other}') if r.y0>title.y0)
+            end=min((r.y0 for r in below),default=page.rect.height-24)
+            clip=fitz.Rect(28,title.y0-4,page.rect.width-28,max(title.y1+8,end-5)) & page.rect
+            if clip.height<30: continue
+            page.get_pixmap(matrix=fitz.Matrix(dpi/72,dpi/72),clip=clip,alpha=False).save(image_dir/name)
+            linked.append({'pregunta_o_bloque':qid,'pagina':pi,'archivo':str((image_dir/name).relative_to(c['root'])),'src':src,'bbox':[round(v,1) for v in clip]}); found=True; break
+        if not found: raise SystemExit(f'No se encontró encabezado de fuente para {qid} al generar {name}')
+    write(dest/'figuras.json',{'candidatas':items,'recortes_asociados':linked,'nota':'Candidatos vectoriales y recortes solicitados explícitamente por overrides.json.'}); return {'paginas':len(d),'figuras_candidatas':len(items),'recortes_asociados':len(linked),'indice':'figuras.json'}
 def enrich(c):
     pkg=read(c['dirs']['estructurar']/'result.json')
     if 'preguntas' not in pkg:
         write(c['dirs']['enriquecer']/'package.json',pkg)
         return {'preguntas':0,'documento_tipo':pkg.get('tipo')}
+    ov_path=c['root']/'content/icfes'/c['spec']['prefijo']/'overrides.json'
+    overrides=read(ov_path) if ov_path.exists() else {}
     dest=c['root']/'content/icfes'/c['spec']['prefijo']/'hojas'; dest.mkdir(parents=True,exist_ok=True)
+    batch_size=max(1,int(c['config'].get('batch_size',10))); created_sheets=0
     for q in pkg['preguntas']:
+        for key,val in overrides.get(q['id'],{}).items(): q[key]=val
         if q.get('correcta') is None: continue
         p=dest/(q['id']+'.json')
         # Una hoja existente puede contener corrección humana aunque siga en
         # borrador. Solo crearla cuando falta; nunca borrar trabajo al reanudar.
         if p.exists(): continue
+        if created_sheets >= batch_size: continue
         wrong=[chr(65+i) for i in range(len(q['opciones'])) if i!=q['correcta']]
         blank=''.join(ch for ch in q['enunciado'][:40].split()[:5] if ch.isalpha())
         marca=[]
@@ -113,24 +166,37 @@ def enrich(c):
         intro={'t':'Este guion es una plantilla de revisión; todavía no explica la solución.'}
         cierre={'t':'La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo.','a':f"o:{chr(65+q['correcta'])}:ok"}
         sheet={'estado':'borrador','hoja':{'modo':'calculo','marcas':marca,'pasos':[{'k':'idea','texto':'Revisa el enunciado, los datos y los apoyos gráficos en la página fuente.'},{'k':'check','texto':'Confirma la respuesta y el procedimiento contra el cuadernillo original.'}],'enfoque':{'tema':'Lectura del cuadernillo pendiente de revisión','que':'Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.','pistas':['leer el enunciado completo','contrastar los apoyos gráficos con la página'],'clave':'La clave oficial orienta la revisión, pero no reemplaza una solución razonada.','no':[{'t':f'Opción {l}','p':'Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.'} for l in wrong[:2]],'plan':[{'t':'Leer el enunciado y reconocer qué pide.'},{'t':'Revisar datos, opciones y figuras en la página original.'},{'t':'Escribir una solución comprobable y justificar cada descarte.'}]},'guion':{'1':[intro,{'t':'Primero revisemos qué pide la pregunta.'},cierre],'2':[intro,{'t':'Cotejemos los datos y las figuras con el cuadernillo.'},*descartes(),cierre],'3':[intro,{'t':'La explicación debe mostrar el procedimiento y las pistas relevantes.'},{'t':'Revisemos la clave y confirmemos el razonamiento antes de aprobarla.'},cierre]}}}
-        write(p,sheet); q['hoja']=sheet['hoja']; q['estadoHoja']=sheet['estado']
-    write(c['dirs']['enriquecer']/'package.json',pkg); return {'preguntas':len(pkg['preguntas']),'hojas_borrador':sum(1 for q in pkg['preguntas'] if q.get('estadoHoja')=='borrador')}
+        write(p,sheet); created_sheets+=1; q['hoja']=sheet['hoja']; q['estadoHoja']=sheet['estado']
+    write(c['dirs']['enriquecer']/'package.json',pkg); return {'preguntas':len(pkg['preguntas']),'hojas_creadas':created_sheets,'hojas_borrador':sum(1 for q in pkg['preguntas'] if q.get('estadoHoja')=='borrador')}
 def validate(c):
     p=read(c['dirs']['enriquecer']/'package.json'); errors=[]
     if 'preguntas' not in p:
         write(c['dirs']['validar']/'validated.json',p)
         return {'preguntas':0,'errores':0,'tipo':p.get('tipo'),'paginas':len(p.get('paginas',[]))}
+    ov_path=c['root']/'content/icfes'/c['spec']['prefijo']/'overrides.json'
+    overrides=read(ov_path) if ov_path.exists() else {}
+    for q in p['preguntas']:
+        for key,val in overrides.get(q['id'],{}).items(): q[key]=val
     pending=[]
     for q in p['preguntas']:
         if q.get('correcta') is None:
             pending.append(q)
             continue
+        if not isinstance(q.get('correcta'),int) or not 0 <= q['correcta'] < len(q.get('opciones',[])):
+            errors.append(q['id']+':clave fuera de rango'); continue
         if q.get('origen') in ('icfes','licenciado') and not q.get('fuente'): errors.append(q['id']+':sin fuente')
         if not q.get('opciones') or len(q['opciones'])<2: errors.append(q['id']+':opciones')
-        if q.get('correcta') is None: errors.append(q['id']+':clave ausente')
+        if len(q.get('distractores',[])) != len(q['opciones']): errors.append(q['id']+':distractores')
+        elif any((i == q['correcta']) != (d == '') for i,d in enumerate(q['distractores'])): errors.append(q['id']+':distractor correcto/inactivo')
     if errors: raise SystemExit('\n'.join(errors))
     p['pendientes_clave']=pending
     p['preguntas']=[q for q in p['preguntas'] if q.get('correcta') is not None]
+    # Una clave manual documentada en overrides.json también completa las
+    # listas del simulacro y de la unidad, que se construyeron en estructurar.
+    resolved_ids=[q['id'] for q in p['preguntas']]
+    for unit in p.get('unidades',[]): unit['preguntas']=resolved_ids
+    for sim in p.get('simulacros',[]):
+        for section in sim.get('secciones',[]): section['preguntas']=resolved_ids
     write(c['dirs']['validar']/'validated.json',p); return {'preguntas':len(p['preguntas']),'pendientes_clave':len(pending),'errores':0,'por_revisar':sum(bool(q.get('revisar')) for q in p['preguntas'])}
 def package(c):
     src=read(c['dirs']['validar']/'validated.json'); out=c['root']/'content/icfes'/c['spec']['prefijo']; out.mkdir(parents=True,exist_ok=True)
@@ -161,6 +227,11 @@ def package(c):
         sheet=out/'hojas'/(q['id']+'.json')
         if sheet.exists(): q['hoja']=read(sheet)['hoja']; q['estadoHoja']=read(sheet)['estado']
     for key,val in package_override.items():
+        if key == 'bloques_agregar':
+            if not isinstance(val,list): raise SystemExit('bloques_agregar debe ser una lista')
+            current=src.setdefault('bloques',[])
+            current.extend(b for b in val if b.get('id') not in {x.get('id') for x in current})
+            continue
         if key not in ('bloques','unidades','simulacros','nombre','version'):
             raise SystemExit(f'Campo de paquete no permitido en override: {key}')
         src[key]=val

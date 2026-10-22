@@ -39,7 +39,13 @@ def estructurar(ctx):
         opt=re.search(r'(?m)^[ \t]*A\.[ \t]+',raw); stem=clean(raw[:opt.start()] if opt else raw); choices=[]
         if opt:
             options_text=raw[opt.start():].split('Cuadernillo de preguntas',1)[0]
-            choices=[clean(x) for x in re.findall(r'(?ms)^[ \t]*[A-H]\.[ \t]*(.*?)(?=^[ \t]*[A-H]\.[ \t]+|\Z)',options_text)]
+            raw_choices=re.findall(r'(?ms)^[ \t]*[A-H]\.[ \t]*(.*?)(?=^[ \t]*[A-H]\.[ \t]+|\Z)',options_text)
+            if raw_choices:
+                # Poppler includes the printed page footer after the final
+                # option. Remove only a standalone number on the last lines;
+                # a numeric answer such as "10" on its own is preserved.
+                raw_choices[-1]=re.sub(r'\n(?:[ \t]*\n)*[ \t]*\d{1,2}[ \t]*(?:\n[ \t]*)*$', '', raw_choices[-1])
+            choices=[clean(x) for x in raw_choices]
         rev=[]
         answer_index='ABCDEFGH'.index(key[n]) if n in key else -1
         bad_choices=(len(choices)!=4 or len(set(choices))!=len(choices) or any(not x.strip() or 'Cuadernillo de preguntas' in x for x in choices) or (answer_index>=len(choices)))
@@ -49,7 +55,9 @@ def estructurar(ctx):
             choices=list('ABCD')
         if n not in key: rev.append('No se detectó clave de respuesta; pregunta apartada para evitar inventar una opción correcta.')
         if re.search(r'figura|gráfica|grafica|tabla|imagen|diagrama|mapa|esquema',stem,re.I): rev.append('Referencia visual: asociar figura extraída tras cotejo visual.')
-        if re.search(r'[=√∑]|\b(sen|cos|tan)\b',raw,re.I): rev.append('Fórmulas/símbolos: cotejar transcripción con PDF.')
+        # Do not flag ordinary Spanish words such as "tan"/"tanto"; these
+        # function names count only as notation when followed by an argument.
+        if re.search(r'[=√∑]|\b(?:sen|cos|tan)\s*(?:\(|[a-z]\s*(?=[=+*/-]))',raw,re.I): rev.append('Fórmulas/símbolos: cotejar transcripción con PDF.')
         if not stem: stem=f'(Pregunta {n}: enunciado en figura)'; rev.append('Enunciado posiblemente gráfico; cotejar PDF.')
         correct=answer_index
         citation=cfg.get('cita') if cfg['origen']!='icfes' else f"Icfes ({cfg['anio']}). {cfg['prueba']}, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta {n}."
