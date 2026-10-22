@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "Temperatura de",
+        "rol": "pide",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la información",
+        "texto": "Lee las mesetas de la curva, que indican cambios de estado."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta el apoyo",
+        "texto": "Compara ambas temperaturas con las filas de la tabla."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "Usa fusión y ebullición para confirmar la identificación."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar una sustancia por sus temperaturas de cambio de estado",
+      "que": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+      "pistas": [
+        "Lee las mesetas de la curva, que indican cambios de estado.",
+        "Compara ambas temperaturas con las filas de la tabla."
+      ],
+      "clave": "Las temperaturas de cambio de estado de la curva corresponden a las del agua.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee las mesetas de la curva, que indican cambios de estado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara ambas temperaturas con las filas de la tabla."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Usa fusión y ebullición para confirmar la identificación."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «Temperatura de» introduce los puntos de cambio de estado que debemos comparar.",
+          "a": "m:Temperatura de"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué dato o tendencia debo leer.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Usa fusión y ebullición para confirmar la identificación.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En un",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

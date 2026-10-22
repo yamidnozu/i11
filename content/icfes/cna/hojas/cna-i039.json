@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "cada pico representa una proteína diferente",
+        "rol": "pide",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la información",
+        "texto": "Ubica el pico con la masa molecular indicada."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta el apoyo",
+        "texto": "Lee su posición en el eje del tiempo."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "Selecciona el intervalo que contiene ese tiempo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Leer el tiempo de detección de una proteína en una gráfica",
+      "que": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+      "pistas": [
+        "Ubica el pico con la masa molecular indicada.",
+        "Lee su posición en el eje del tiempo."
+      ],
+      "clave": "El pico de $120\\,\\mathrm{kDa}$ se ubica entre veinticinco y treinta y cinco minutos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede sonar razonable si se ignora una pista. Pero Este intervalo ocurre después del pico señalado en la gráfica."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede sonar razonable si se ignora una pista. Pero La proteína se detecta antes de los cuarenta y cinco minutos, no después."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica el pico con la masa molecular indicada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Lee su posición en el eje del tiempo."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Selecciona el intervalo que contiene ese tiempo."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «cada pico representa una proteína diferente» orienta lo que debemos observar.",
+          "a": "m:cada pico representa una proteína diferente"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué dato o tendencia debo leer.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Selecciona el intervalo que contiene ese tiempo.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

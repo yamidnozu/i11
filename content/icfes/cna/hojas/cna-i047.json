@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "trayectoria que recorre cada ratón",
+        "rol": "pide",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la información",
+        "texto": "Compara la condición previa de los dos grupos."
+      },
+      {
+        "k": "idea",
+        "titulo": "Interpreta el apoyo",
+        "texto": "Observa qué trayectoria llega al recipiente señalado."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "Limita la conclusión a la diferencia de desempeño observada."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar el desempeño en una tarea de memoria espacial",
+      "que": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
+      "pistas": [
+        "Compara la condición previa de los dos grupos.",
+        "Observa qué trayectoria llega al recipiente señalado."
+      ],
+      "clave": "La trayectoria del grupo con ejercicio es consistente con un mejor recuerdo espacial bajo las condiciones del experimento.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede sonar razonable si se ignora una pista. Pero El tiempo en el tanque y las sesiones fueron iguales para ambos grupos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara la condición previa de los dos grupos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Observa qué trayectoria llega al recipiente señalado."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Limita la conclusión a la diferencia de desempeño observada."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «trayectoria que recorre cada ratón» orienta lo que debemos observar.",
+          "a": "m:trayectoria que recorre cada ratón"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué dato o tendencia debo leer.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Limita la conclusión a la diferencia de desempeño observada.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un investigador",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
