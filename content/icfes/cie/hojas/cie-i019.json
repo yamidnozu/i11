@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "las dos esferas quedan con cargas iguales",
+        "rol": "pide",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la información",
+        "texto": "Compara el estado inicial de las dos esferas."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Determina qué carga puede moverse dentro del metal."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba",
+        "texto": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Transferencia de electrones al poner esferas en contacto",
+      "que": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
+      "pistas": [
+        "En un metal, las cargas que se desplazan son electrones.",
+        "La esfera positiva tiene déficit de electrones y la neutra puede cederlos."
+      ],
+      "clave": "Los electrones se desplazan desde la esfera neutra hacia la esfera positiva.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara el estado inicial de las dos esferas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Determina qué carga puede moverse dentro del metal."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «las dos esferas quedan con cargas iguales» indica qué información tomar en cuenta.",
+          "a": "m:las dos esferas quedan con cargas iguales"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En un",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
