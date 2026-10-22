@@ -11,23 +11,27 @@
 - [x] Mantener `docus/` y `work/` fuera de Git y dejar el contenido derivado en `content/icfes/`, bajo el gate de build.
 - [x] Probar reconstrucción limpia de Matemáticas y caché: salida idéntica.
 - [x] Ejecutar `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` y `npm run build`.
-- [ ] Completar soluciones y distractores razonados para las otras 172 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
+- [ ] Completar soluciones y distractores razonados para las otras 173 preguntas; sus hojas siguen como borradores, no como material pedagógico aprobado.
 - [x] Cotejar visualmente las 50 preguntas de Matemáticas y su clave oficial; corregir alternativas vacías, datos/tablas y contextos compartidos. Se revisaron 49 hojas; mat-i038 sigue borrador porque la tabla no determina las intersecciones necesarias.
-- [ ] Cotejar las 71 preguntas restantes marcadas en Ciencias, Lectura y Sociales, asociar 30 opciones gráficas y comprobar sus transcripciones.
+- [x] Restaurar las opciones textuales de las 14 preguntas de Sociales que habían quedado como placeholders; cotejar recortes de 29 preguntas por cada cuadernillo de Ciencias y asociar la infografía original de Lectura como bloque para 42–49.
+- [x] Comparar cinco renders con sus páginas fuente en `#/pregunta/<id>`: cie-i001, cie-i029, cie-i047, cie-i048 y lec-i046. Las figuras se ven en el recorte ampliado; las opciones que aún no están segmentadas individualmente siguen señaladas.
+- [ ] Extraer y enlazar individualmente las opciones gráficas de 9 preguntas de Ciencias por cuadernillo; los recortes de pregunta están asociados, pero no reemplazan cada figura de opción.
 - [ ] Convertir marcos y niveles a `content/marco.json` semántico y enlazar competencia/afirmación/evidencia a cada pregunta. Hoy se conserva el texto por página, sin interpretación automática.
 - [ ] Estructurar preguntas de los documentos antiguos y el cuadernillo de Inglés que no contienen marcadores reconocidos; hoy se preservan sus páginas como transcripción.
 - [x] Cotejar portada, metadatos y créditos editoriales de los dos documentos externos y completar las citas disponibles.
+- [x] Recuperar las claves oficiales de 13 preguntas de Ciencias por cuadernillo mediante overrides citados; verificar las 13 hojas de 2026 contra el cuadernillo de 2025 antes de reutilizarlas.
 - [ ] Confirmar derechos/licencias de SED Cartagena y del libro de preparación de 2017; los PDF no incluyen permiso de reutilización y ambos continúan bajo gate.
 - [x] Crear commits locales individuales por cada uno de los 38 documentos. La implementación del pipeline/configuración y la actualización documental quedaron agrupadas en dos commits, no en commits separados por cada etapa interna.
 
 ## Resumen
 
-- Documentos procesados: **38/38**, con sus siete etapas completas en `docus/manifest.json`.
-- Páginas: **1209**. Candidatos vectoriales: **4201**. Son recortes de trabajo; no equivalen a figuras asociadas y verificadas en cada pregunta.
-- Preguntas con clave detectada y empaquetadas: **222**. Preguntas apartadas por clave no detectada: **26**.
-- Preguntas con marcas de revisión: **72** (71 de otros cuadernillos y la pregunta mat-i038). Opciones gráficas aún pendientes de reconstrucción: **30**.
-- Hojas: **222**. En Matemáticas, 49 están `revisada` y una `borrador`; las otras 172 siguen en `borrador`.
-- Simulacros generados: uno por cada uno de los cinco cuadernillos que se estructuraron como preguntas. Contienen solo IDs con clave detectada y se etiquetan “En revisión”.
+- Documentos procesados: **38/38**, con sus siete etapas registradas en `docus/manifest.json`.
+- Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
+- Cinco cuadernillos estructurados: **248 preguntas con clave, cero pendientes** (50 Matemáticas, 49 Lectura Crítica, 50 Ciencias 2026, 50 Ciencias 2025 y 49 Sociales). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
+- **45 preguntas conservan avisos explícitos**: 26 enlaces a evidencia específica del marco (13 por cada prueba de Ciencias), 18 opciones gráficas (9 por prueba de Ciencias) y la ambigüedad documentada de mat-i038. No son avisos ocultos ni se marcan como aprobadas.
+- **75 hojas revisadas, 173 borradores**. Matemáticas 49/50 revisadas; Ciencias 13/50 por año; Lectura 0/49; Sociales 0/49. Reutilizamos las 13 hojas de Ciencias entre años únicamente tras verificar que enunciado, opciones y clave fueran idénticos.
+- Cinco simulacros generados, todos marcados “En revisión”.
+- Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
 - La app importa de `content/icfes/` solo `preguntas.json`; las transcripciones completas `documento.json` no se incorporan al bundle.
 
 ## Resultados por documento
@@ -35,11 +39,11 @@
 | Documento | Plugin | Páginas PDF | Preguntas válidas | Sin clave | Candidatos figura | Salida |
 |---|---:|---:|---:|---:|---:|---|
 | `01_Matematicas_Saber11_2026_ICFES` | cuadernillo | 35 | 50 | 0 | 80 | 1 simulacro |
-| `02_Lectura_Critica_Saber11_2026_ICFES` | cuadernillo | 44 | 49 | 0 | 53 | 1 simulacro |
-| `03_Ciencias_Naturales_Saber11_2026_ICFES` | cuadernillo | 42 | 37 | 13 | 148 | 1 simulacro |
-| `04_Ciencias_Naturales_Saber11_2025_ICFES` | cuadernillo | 42 | 37 | 13 | 148 | 1 simulacro |
+| `02_Lectura_Critica_Saber11_2026_ICFES` | cuadernillo | 44 | 49 | 0 | 53 | 1 simulacro; infografía compartida en preguntas 42–49 |
+| `03_Ciencias_Naturales_Saber11_2026_ICFES` | cuadernillo | 42 | 50 | 0 | 148 | 1 simulacro; 13 claves por override citado |
+| `04_Ciencias_Naturales_Saber11_2025_ICFES` | cuadernillo | 42 | 50 | 0 | 148 | 1 simulacro; 13 claves por override citado |
 | `05_Ingles_Saber11_2024_ICFES` | cuadernillo | 25 | 0 | 0 | 61 | 1 pág. guardadas |
-| `07_Sociales_y_Ciudadanas_Saber11_2021` | cuadernillo | 30 | 49 | 0 | 143 | 1 simulacro |
+| `07_Sociales_y_Ciudadanas_Saber11_2021` | cuadernillo | 30 | 49 | 0 | 143 | 1 simulacro; 14 opciones restauradas desde PDF |
 | `08_Ingles_Saber11_2021` | cuadernillo | 24 | 0 | 0 | 136 | 1 pág. guardadas |
 | `09_Lectura_Critica_Saber11_2018` | cuadernillo | 33 | 0 | 0 | 132 | 1 pág. guardadas |
 | `10_Sociales_y_Ciudadanas_Saber11_2018` | cuadernillo | 21 | 0 | 0 | 94 | 1 pág. guardadas |
@@ -76,11 +80,11 @@
 ## Validaciones
 
 - TypeScript: `npx tsc --noEmit` pasó.
-- Vitest con `VITE_ICFES=1`: **416/416 pruebas** pasaron, sin avisos de contenido.
-- Build estándar: pasó; bundle JavaScript **599.22 kB** (gzip 203.34 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **1,556.41 kB** (gzip 297.04 kB). Ambos avisan que el chunk supera 300 kB.
-- Reconstrucción de Matemáticas: SHA-256 `5a1b51d971fb5341f1518e9fe06030b7c0692fccff49d23a56a22a46b10d1d90`; las hojas manuales quedaron idénticas antes y después de regenerar.
-- Caché global: **266/266 etapas** en caché; los hashes de salida no cambiaron. Reconstrucción repetida con caché tras el test limpio: salida idéntica.
+- Vitest con `VITE_ICFES=1`: la última ejecución pasó **442/442 pruebas**, sin avisos de contenido.
+- Build estándar: pasó; bundle JavaScript **599.22 kB** (gzip 203.34 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **1,640.92 kB** (gzip 309.68 kB). El gate se comprobó en disco: build normal no crea `dist/icfes/`; build gated sí incluye `dist/icfes/lec/infografia-transito.png`. Ambos avisan que el chunk supera 300 kB.
+- Reconstrucción de Matemáticas tras borrar `work/01_Matematicas...` y el paquete generado: SHA-256 `0b558683429201827e426eba779fd9c39e49e3111bc85cdbf20d510da65fc596`; paquete y 50 archivos de hojas idénticos. Se preservaron overrides y hojas, incluida la hoja borrador mat-i038.
+- Idempotencia: el recálculo terminó 266/266 etapas; la segunda ejecución omitió las **266/266** por caché, sin errores. Tras regenerar los cinco cuadernillos se verificó que ninguna opción terminara en folio; la respuesta numérica `cie-i016` D conservó el valor `10`.
 
 ## Límites que siguen abiertos
 
-El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, claves cotejadas con la tabla oficial del PDF; se corrigieron alternativas vacías, se añadieron bloques compartidos para 4–6 y 9–13. Queda mat-i038 en revisión por ambigüedad de datos. El contenido oficial permanece bajo `content/icfes/` y detrás del gate. Commits locales: `aca0408` (pipeline), `18f8e8a` (documentación) y 38 commits `content: process …`, uno por documento. No se hizo push; el archivo no relacionado `saber11-repo.tar.gz` quedó sin agregar.
+El pipeline procesa los documentos y conserva el material por pregunta o por página, pero no termina la revisión editorial/pedagógica. Para Matemáticas: 50 preguntas, claves cotejadas; se corrigieron alternativas vacías, se añadieron bloques compartidos para 4–6 y 9–13. Queda mat-i038 en revisión por ambigüedad de datos. Persisten **173 hojas borrador**, 18 alternativas gráficas sin recorte individual, 26 enlaces de evidencia sin cotejar contra el marco y 2 licencias de materiales externos sin autorización comprobada. Los documentos antiguos y el cuadernillo de Inglés permanecen como transcripción, sin banco de preguntas estructurado. Dos guías largas provocan avisos de estructura del PDF en PyMuPDF, aunque sus siete etapas terminan; no se reportaron fallos de etapa. El contenido ICFES permanece bajo `content/icfes/` y detrás del gate. No se hizo push; `saber11-repo.tar.gz` sigue sin agregar.

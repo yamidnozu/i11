@@ -7,6 +7,17 @@
 - Esquema ampliado con procedencias `propio` y `licenciado`; validación de overrides y exclusión de transcripciones completas del glob de preguntas de la app.
 - Poppler usa `pdftotext -layout`. Vitest con ICFES: 416/416; `tsc --noEmit` y build pasan. Vite advierte que el chunk principal supera 300 kB. Ver `informe_icfes.md`.
 
+## Pipeline documental — revisión de Sociales, Lectura y Ciencias (2026-10-22)
+- Recuperadas por override las claves oficiales de 13 preguntas en cada cuadernillo de Ciencias 2025 y 2026; quedan 50 preguntas por cuadernillo, sin claves pendientes.
+- Las 13 hojas revisadas de Ciencias 2026 se reutilizaron para 2025 solo después de comprobar igualdad exacta de enunciado, opciones y clave. Cada copia conserva su estado y contenido revisado.
+- Cotejados visualmente los recortes de pregunta en ambas pruebas de Ciencias; se limpiaron avisos de figura ya asociada. Se mantienen pendientes las opciones gráficas que aún necesitan recorte individual y enlaces específicos al marco.
+- Recuperadas literalmente las opciones de 14 preguntas de Sociales que se habían confundido con imágenes; se eliminaron sus falsos placeholders gráficos.
+- Asociada la infografía de tránsito de la página 36 de Lectura Crítica a un único bloque compartido por las preguntas 42–49; corregidos números de página capturados como parte de opciones.
+- El detector de símbolos ya no marca usos ordinarios de “tan”. `enriquecer` crea como máximo diez hojas por lote y reanuda sin reemplazar hojas existentes.
+- El parser de cuadernillos elimina los números de página pegados al final de la última opción, preservando opciones que sí son números (verificado, por ejemplo, en `cie-i016`).
+- Los recortes compartidos pueden declararse con página y rectángulo en `recorteFuente`; la etapa `figuras` reconstruye PNG desde el PDF y registra la salida, de modo que borrar `work/` y el PNG no elimina la receta.
+- Validación: `npx tsc --noEmit` y `VITE_ICFES=1 npx vitest run` (442/442) pasan. El informe separa lo terminado de las revisiones pedagógicas, gráficas y de licencias aún abiertas.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
