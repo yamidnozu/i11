@@ -644,14 +644,14 @@
   },
   "mat-i038": {
     "distractores": [
-      "No coincide con la resolución: 100;20;40;0;110.",
-      "No coincide con la resolución: 100;20;40;0;110.",
+      "No coincide con la resolución: $P\\cap H$ no se determina por separado.",
+      "No coincide con la resolución: $P\\cup H$ requiere conocer $P\\cap H$.",
       "",
-      "No coincide con la resolución: 100;20;40;0;110."
+      "No coincide con la resolución: $F\\setminus P$ requiere conocer $P\\cap F$."
     ],
-    "explicacion": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial.",
+    "explicacion": "Bajo la lectura de que los 110 clientes eligieron pizza o alguna bebida registrada, la unión de las categorías incluye a todos. Como nadie eligió ambas bebidas, la inclusión y exclusión da $110=100+20+40-x$, así que el solapamiento entre pizza y bebidas es $x=50$. Entonces $100-50=50$ eligieron solo pizza; opción C. El enunciado no explicita que las categorías cubran a todos, por lo que se conserva el aviso de revisión.",
     "revisar": [
-      "La tabla no determina las intersecciones entre clientes que eligieron pizza y bebidas; la clave oficial indica C, pero hace falta aclaración del marco del ítem antes de aprobar una explicación."
+      "La clave C se puede justificar si los 110 clientes pertenecen a pizza o a alguna bebida registrada; el enunciado no explicita que esas categorías cubran a todos."
     ]
   },
   "mat-i039": {

@@ -6611,160 +6611,166 @@
       "area": "matematicas",
       "correcta": 2,
       "distractores": [
-        "No coincide con la resolución: 100;20;40;0;110.",
-        "No coincide con la resolución: 100;20;40;0;110.",
+        "No coincide con la resolución: $P\\cap H$ no se determina por separado.",
+        "No coincide con la resolución: $P\\cup H$ requiere conocer $P\\cap H$.",
         "",
-        "No coincide con la resolución: 100;20;40;0;110."
+        "No coincide con la resolución: $F\\setminus P$ requiere conocer $P\\cap F$."
       ],
       "enunciado": "Carolina administra una pizzería y, registró en una tabla la información correspondiente a los pedidos realizados por los 110 clientes que entraron a la pizzería el domingo.\n Clientes que eligieron bebida caliente 20 Clientes que eligieron bebida fría 40 Clientes que eligieron pizza 100 Clientes que eligieron bebida caliente y bebida fría 0 Con la información de la tabla, ¿cuáles de los siguientes datos se pueden calcular?",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial.",
+      "explicacion": "Bajo la lectura de que los 110 clientes eligieron pizza o alguna bebida registrada, la unión de las categorías incluye a todos. Como nadie eligió ambas bebidas, la inclusión y exclusión da $110=100+20+40-x$, así que el solapamiento entre pizza y bebidas es $x=50$. Entonces $100-50=50$ eligieron solo pizza; opción C. El enunciado no explicita que las categorías cubran a todos, por lo que se conserva el aviso de revisión.",
       "fuente": "Icfes (2026). 01 Matematicas Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 38.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial.",
+          "clave": "Bajo esa suposición, se puede calcular que 50 clientes eligieron solo pizza; por eso la clave oficial es C.",
           "no": [
             {
-              "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta.",
+              "p": "Puede parecer posible. Pero la tabla no separa cuántos clientes que eligieron pizza pidieron bebida caliente.",
               "t": "Opción A"
             },
             {
-              "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta.",
+              "p": "Puede parecer posible. Pero para sumar pizza o bebida caliente hace falta conocer cuántas personas eligieron ambas.",
               "t": "Opción B"
+            },
+            {
+              "p": "Puede parecer posible. Pero para saber quién eligió solo bebida fría hace falta conocer cuántos de ellos también eligieron pizza.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "Fíjate en «cuáles de los siguientes datos».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Comprueba qué categorías cubren a los 110 clientes.",
+            "Usa que nadie eligió bebida caliente y fría a la vez."
           ],
           "plan": [
             {
-              "t": "Identifico qué pide el enunciado."
+              "t": "Establece si las categorías registradas cubren a todos los clientes."
             },
             {
-              "eq": [
-                "100;20;40;0;110"
-              ],
-              "t": "Selecciono los datos y hago la operación necesaria."
+              "t": "Calcula el solapamiento total entre pizza y las bebidas."
             },
             {
-              "t": "Comparo el resultado con las opciones y verifico su sentido."
+              "t": "Resta ese solapamiento del total de clientes que eligieron pizza y revisa la suposición inicial."
             }
           ],
-          "que": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial.",
-          "tema": "Matemáticas: cuáles de los siguientes datos"
+          "que": "Si se asume que los 110 clientes eligieron pizza o alguna de las dos bebidas, la unión de las categorías reúne a todos. Las bebidas caliente y fría no se intersectan. La inclusión y exclusión permite hallar cuántos clientes eligieron pizza y bebida; al restarlos del total de pizza, se obtiene cuántos eligieron solo pizza.",
+          "tema": "Contar una categoría exclusiva con inclusión y exclusión"
         },
         "guion": {
           "1": [
             {
               "a": "leer",
-              "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
+              "t": "Leamos qué cantidad pregunta el enunciado."
             },
             {
-              "a": "m:cuáles de los siguientes datos",
-              "t": "La frase «cuáles de los siguientes datos» orienta la estrategia."
+              "a": "m:¿cuáles de los siguientes datos se pueden calcular?",
+              "t": "La frase «¿cuáles de los siguientes datos se pueden calcular?» señala que debemos buscar una cantidad determinada."
             },
             {
-              "a": "p:1",
-              "t": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial."
+              "a": "p:0",
+              "t": "Si todos los clientes eligieron pizza o una de las bebidas, se puede hallar el solapamiento total y restarlo de quienes eligieron pizza."
             },
             {
               "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "t": "La clave oficial es la opción C, bajo esa lectura."
             }
           ],
           "2": [
             {
               "a": "leer",
-              "t": "Leamos la pregunta con calma."
+              "t": "Primero revisemos si los datos permiten separar las categorías."
             },
             {
-              "a": "p:1",
-              "t": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial."
+              "a": "p:0",
+              "t": "Si la tabla abarca a los 110 clientes, pizza y bebidas reúnen a todos. Como nadie eligió las dos bebidas, el total de personas que eligieron pizza y bebida es 50; quedan 50 que eligieron solo pizza."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "Opción A: no conocemos por separado cuántos clientes eligieron pizza y bebida caliente. La descartamos."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "Opción B: la unión de pizza y bebida caliente depende de cuántos eligieron ambas. La descartamos."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "Opción D: la cantidad que eligió solo bebida fría depende de cuántos de esos clientes eligieron pizza. La descartamos."
             },
             {
               "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "t": "La respuesta es la opción C, con la suposición indicada."
             }
           ],
           "3": [
             {
               "a": "p:0",
               "k": "ana",
-              "t": "Primero identifico qué pide: La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial."
+              "t": "Primero identifico qué cantidades están registradas y qué intersección falta."
             },
             {
               "a": "p:1",
-              "t": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial."
+              "t": "La tabla dice que las bebidas caliente y fría no se eligieron juntas."
             },
             {
               "a": "p:2",
-              "k": "contra",
-              "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
+              "t": "Con el total de clientes como unión, la intersección de pizza con bebidas suma 50."
             },
             {
-              "a": "o:A:no",
-              "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "a": "p:2",
+              "t": "Resto ese solapamiento de los 100 clientes que eligieron pizza: quedan 50 que solo eligieron pizza."
             },
             {
-              "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
-            },
-            {
-              "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
-            },
-            {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "p:3",
+              "t": "La respuesta es C si los 110 clientes están cubiertos por las categorías de la tabla; como esto no está explícito, la pregunta conserva un aviso de revisión."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Tarea de la pregunta",
-            "frag": "cuáles de los siguientes datos",
-            "nota": "Indica qué relación o resultado hay que determinar.",
+            "campo": "Qué se pide",
+            "frag": "¿cuáles de los siguientes datos se pueden calcular?",
+            "nota": "La pregunta pide identificar una cantidad determinada por los datos.",
             "rol": "pide"
           }
         ],
-        "modo": "lectura",
+        "modo": "calculo",
         "pasos": [
           {
             "k": "idea",
-            "texto": "La pista «cuáles de los siguientes datos» indica qué información usar y qué resultado comparar.",
-            "titulo": "Qué hay que averiguar"
+            "texto": "Bajo la lectura de que los 110 clientes eligieron pizza o alguna de las dos bebidas, todos quedan incluidos en la unión de esas categorías.",
+            "titulo": "Establece el conjunto de clientes"
           },
           {
+            "eq": [
+              "$110=100+20+40-x$",
+              "$x=50$"
+            ],
             "k": "calc",
             "lineas": [
-              "100;20;40;0;110"
+              "$110=100+20+40-x$",
+              "$x=50$"
             ],
-            "nota": "La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial.",
-            "titulo": "Resolvemos con los datos"
+            "nota": "Como nadie eligió las dos bebidas, x representa a quienes eligieron pizza y alguna bebida.",
+            "titulo": "Halla el solapamiento"
+          },
+          {
+            "eq": [
+              "$100-50=50$"
+            ],
+            "k": "calc",
+            "lineas": [
+              "$100-50=50$"
+            ],
+            "nota": "Resta del total de pizza quienes eligieron pizza y alguna bebida.",
+            "titulo": "Cuenta quienes eligieron solo pizza"
           },
           {
             "k": "check",
-            "texto": "Comprueba el resultado: La clave oficial indica que se puede hallar el número de clientes que solo eligieron pizza, pero la tabla no da directamente las intersecciones entre pizza y bebidas. La información visible no determina ese valor de forma única; marco la respuesta como pendiente de verificación editorial."
+            "texto": "La opción C se obtiene bajo esta lectura de la tabla. La respuesta depende de asumir que los 110 clientes eligieron al menos una de las categorías registradas; el enunciado no lo dice de forma explícita.",
+            "titulo": "Comprueba la respuesta"
           }
         ]
       },
@@ -6779,7 +6785,7 @@
       "origen": "icfes",
       "parte": "Pregunta 38",
       "revisar": [
-        "La tabla no determina las intersecciones entre clientes que eligieron pizza y bebidas; la clave oficial indica C, pero hace falta aclaración del marco del ítem antes de aprobar una explicación."
+        "La clave C se puede justificar si los 110 clientes pertenecen a pizza o a alguna bebida registrada; el enunciado no explicita que esas categorías cubran a todos."
       ]
     },
     {
