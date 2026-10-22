@@ -2,7 +2,7 @@
 
 ## Pipeline documental inicial (2026-10)
 - Añadido `tools/pipeline/` con siete etapas persistidas, manifiesto y caché que se invalida al cambiar el código/configuración; reconstrucción de Matemáticas determinista.
-- Primera estructuración de 50 preguntas del cuadernillo Matemáticas 2026 bajo `content/icfes/mat/`; 37 requieren cotejo y las 50 hojas siguen en borrador.
+- Primera estructuración de 50 preguntas del cuadernillo Matemáticas 2026 bajo `content/icfes/mat/`; 28 requieren cotejo y las 50 hojas siguen en borrador.
 - Procedencias `propio` y `licenciado` en el esquema; validación de IDs/campos y comprobación posterior de overrides.
 - Vitest con ICFES: 244/244; `tsc --noEmit` y build pasan. Build avisa que el chunk principal supera 300 kB.
 - Poppler quedó instalado con Winget y la extracción se regeneró con `pdftotext -layout`. El cotejo en cinco preguntas renderizadas encontró errores de extracción/asociación visual pendientes. Ver `informe_icfes.md`.
