@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "reactivos de la anterior reacción",
+        "rol": "pide",
+        "nota": "Señala la tarea o pista que organiza el razonamiento.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Reconoce la situación",
+        "texto": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica la relación",
+        "texto": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Verifica que la opción elegida responda lo que pregunta el enunciado y concuerde con los datos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar los reactivos en una ecuación química",
+      "que": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
+      "pistas": [
+        "Identifica qué relación o fenómeno describe la pregunta.",
+        "Contrasta la alternativa con los datos y el concepto científico."
+      ],
+      "clave": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero La fórmula $H_4$ duplica por error el subíndice; el coeficiente no forma parte de la fórmula."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero Presenta dos fórmulas incorrectas: el hidrógeno es $H_2$ y el oxígeno es $O_2$."
+        },
+        {
+          "t": "Opción D",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero El hidrógeno está bien escrito, pero el oxígeno es $O_2$, no $O_4$."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona los datos con el concepto necesario."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la alternativa corresponda con el sentido del proceso."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «reactivos de la anterior reacción» orienta la estrategia.",
+          "a": "m:reactivos de la anterior reacción"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La fórmula $H_4$ duplica por error el subíndice; el coeficiente no forma parte de la fórmula. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Presenta dos fórmulas incorrectas: el hidrógeno es $H_2$ y el oxígeno es $O_2$. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El hidrógeno está bien escrito, pero el oxígeno es $O_2$, no $O_4$. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide: Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Separa las sustancias que están antes de la flecha: en la formación del agua son $H_2$ y $O_2$. El coeficiente $2$ cuenta moléculas y no cambia la fórmula.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compruebo que la explicación concuerde con el proceso descrito.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La fórmula $H_4$ duplica por error el subíndice; el coeficiente no forma parte de la fórmula. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Presenta dos fórmulas incorrectas: el hidrógeno es $H_2$ y el oxígeno es $O_2$. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El hidrógeno está bien escrito, pero el oxígeno es $O_2$, no $O_4$. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La siguiente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

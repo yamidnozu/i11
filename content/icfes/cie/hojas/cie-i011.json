@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "hipótesis del estudiante",
+        "rol": "pide",
+        "nota": "Señala la tarea o pista que organiza el razonamiento.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Reconoce la situación",
+        "texto": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica la relación",
+        "texto": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Verifica que la opción elegida responda lo que pregunta el enunciado y concuerde con los datos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar una afirmación sobre resistencia a insecticidas",
+      "que": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
+      "pistas": [
+        "Identifica qué relación o fenómeno describe la pregunta.",
+        "Contrasta la alternativa con los datos y el concepto científico."
+      ],
+      "clave": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero Reducir la frecuencia no hace que los mosquitos resistentes pierdan necesariamente el rasgo; la resistencia puede heredarse."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero Que haya pocos resistentes no garantiza protección total: algunos pueden sobrevivir y reproducirse."
+        },
+        {
+          "t": "Opción C",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero La explicación habla de huevos y larvas de otros insectos, no del efecto de la resistencia de los mosquitos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona los datos con el concepto necesario."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la alternativa corresponda con el sentido del proceso."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «debe mantenerse» orienta la estrategia.",
+          "a": "m:debe mantenerse"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Reducir la frecuencia no hace que los mosquitos resistentes pierdan necesariamente el rasgo; la resistencia puede heredarse. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Que haya pocos resistentes no garantiza protección total: algunos pueden sobrevivir y reproducirse. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La explicación habla de huevos y larvas de otros insectos, no del efecto de la resistencia de los mosquitos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide: La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La resistencia implica que algunos mosquitos sobreviven al insecticida. Aumentar la dosis no garantiza eliminarlos; por eso no se puede afirmar que haya protección total.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compruebo que la explicación concuerde con el proceso descrito.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Reducir la frecuencia no hace que los mosquitos resistentes pierdan necesariamente el rasgo; la resistencia puede heredarse. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Que haya pocos resistentes no garantiza protección total: algunos pueden sobrevivir y reproducirse. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La explicación habla de huevos y larvas de otros insectos, no del efecto de la resistencia de los mosquitos. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Al observar",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

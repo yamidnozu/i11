@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "reducir el número de lugares donde el agua se estanca",
+        "rol": "pide",
+        "nota": "Señala la tarea o pista que organiza el razonamiento.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Reconoce la situación",
+        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica la relación",
+        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Verifica que la opción elegida responda lo que pregunta el enunciado y concuerde con los datos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar los criaderos del mosquito con la prevención del dengue",
+      "que": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+      "pistas": [
+        "Identifica qué relación o fenómeno describe la pregunta.",
+        "Contrasta la alternativa con los datos y el concepto científico."
+      ],
+      "clave": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero El dengue se transmite por la picadura del mosquito, no por beber agua estancada."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción."
+        },
+        {
+          "t": "Opción D",
+          "p": "Parece posible si se mira solo una parte de la situación. Pero El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona los datos con el concepto necesario."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la alternativa corresponda con el sentido del proceso."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «reducir el número de lugares donde el agua se estanca» orienta la estrategia.",
+          "a": "m:reducir el número de lugares donde el agua se estanca"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide: El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compruebo que la explicación concuerde con el proceso descrito.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Teniendo en",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
