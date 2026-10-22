@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "contaminantes X y W",
+        "rol": "pide",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué se compara",
+        "texto": "Mide primero el X original."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Convierte el W en X y vuelve a medir."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Compara las dos mediciones para separar el aporte original del convertido."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Medir contaminantes por separado tras una reacción",
+      "que": "Primero mide cuánto contaminante X hay en la muestra. Luego convierte todo el contaminante W en X y vuelve a medir. El aumento de la medición corresponde al W que se convirtió, de modo que puedes obtener ambos contenidos por separado.",
+      "pistas": [
+        "Mide primero el X original.",
+        "Convierte el W en X y vuelve a medir."
+      ],
+      "clave": "El incremento entre la primera y la segunda medición permite estimar el contaminante W; la primera medición corresponde al X original.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite un dato. Pero Convierte W en X antes de medir; el resultado mezcla el X original y el W convertido, así que no permite separarlos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite un dato. Pero Convierte X en W y mide W; la medición no recupera por separado la cantidad inicial de cada contaminante."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite un dato. Pero El método disponible mide X, no W. Además, propone convertir X en W, que no es la reacción indicada."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Mide primero el X original."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Convierte el W en X y vuelve a medir."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Compara las dos mediciones para separar el aporte original del convertido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «contaminantes X y W» orienta lo que debemos observar.",
+          "a": "m:contaminantes X y W"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Primero mide cuánto contaminante X hay en la muestra. Luego convierte todo el contaminante W en X y vuelve a medir. El aumento de la medición corresponde al W que se convirtió, de modo que puedes obtener ambos contenidos por separado.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Primero mide cuánto contaminante X hay en la muestra. Luego convierte todo el contaminante W en X y vuelve a medir. El aumento de la medición corresponde al W que se convirtió, de modo que puedes obtener ambos contenidos por separado.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Convierte W en X antes de medir; el resultado mezcla el X original y el W convertido, así que no permite separarlos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Convierte X en W y mide W; la medición no recupera por separado la cantidad inicial de cada contaminante. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El método disponible mide X, no W. Además, propone convertir X en W, que no es la reacción indicada. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Primero mide cuánto contaminante X hay en la muestra. Luego convierte todo el contaminante W en X y vuelve a medir. El aumento de la medición corresponde al W que se convirtió, de modo que puedes obtener ambos contenidos por separado.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compara las dos mediciones para separar el aporte original del convertido.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Convierte W en X antes de medir; el resultado mezcla el X original y el W convertido, así que no permite separarlos. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Convierte X en W y mide W; la medición no recupera por separado la cantidad inicial de cada contaminante. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El método disponible mide X, no W. Además, propone convertir X en W, que no es la reacción indicada. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Unos investigadores",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "onda longitudinal",
+        "rol": "pide",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué se compara",
+        "texto": "Identifica la dirección en que avanza la perturbación por la fila."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Elige un movimiento paralelo a la fila."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Representar el movimiento de una onda longitudinal",
+      "que": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento.",
+      "pistas": [
+        "Identifica la dirección en que avanza la perturbación por la fila.",
+        "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección."
+      ],
+      "clave": "Las personas deben moverse hacia adelante y atrás, en la dirección de propagación.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite un dato. Pero Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite un dato. Pero Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite un dato. Pero Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica la dirección en que avanza la perturbación por la fila."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Elige un movimiento paralelo a la fila."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «onda longitudinal» orienta lo que debemos observar.",
+          "a": "m:onda longitudinal"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Elige un movimiento paralelo a la fila.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Al agitar",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "metales tóxicos",
+        "rol": "pide",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué se compara",
+        "texto": "Identifica de dónde provienen los metales del río."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Relaciona el aislamiento de las pilas con evitar filtraciones."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Comprueba que la justificación responda al riesgo identificado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Prevenir contaminación por metales de pilas desechadas",
+      "que": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua.",
+      "pistas": [
+        "Identifica de dónde provienen los metales del río.",
+        "Relaciona el aislamiento de las pilas con evitar filtraciones."
+      ],
+      "clave": "Separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al agua.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite un dato. Pero Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite un dato. Pero La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite un dato. Pero Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica de dónde provienen los metales del río."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona el aislamiento de las pilas con evitar filtraciones."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la justificación responda al riesgo identificado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «metales tóxicos» orienta lo que debemos observar.",
+          "a": "m:metales tóxicos"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la justificación responda al riesgo identificado.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Unos estudiantes",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
