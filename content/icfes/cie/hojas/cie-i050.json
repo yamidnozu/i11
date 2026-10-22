@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "menor acidez",
+        "rol": "pide",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué se compara",
+        "texto": "Clasifica cada estructura como primaria, secundaria o terciaria."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Usa el orden de acidez presentado en la tabla."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Elige la estructura que pertenece al grupo de menor acidez."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ordenar alcoholes según acidez y estructura",
+      "que": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
+      "pistas": [
+        "Clasifica cada estructura como primaria, secundaria o terciaria.",
+        "Usa el orden de acidez presentado en la tabla."
+      ],
+      "clave": "El dos-metil-dos-propanol es terciario y, según la tabla, es el de menor acidez.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite un dato. Pero El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite un dato. Pero El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite un dato. Pero El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Clasifica cada estructura como primaria, secundaria o terciaria."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa el orden de acidez presentado en la tabla."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Elige la estructura que pertenece al grupo de menor acidez."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «menor acidez» orienta lo que debemos observar.",
+          "a": "m:menor acidez"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Elige la estructura que pertenece al grupo de menor acidez.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En clase",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

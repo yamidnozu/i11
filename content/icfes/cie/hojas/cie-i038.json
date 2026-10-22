@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "individuos con cuello largo",
+        "rol": "pide",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica qué se compara",
+        "texto": "Relaciona el rasgo corto con el alelo recesivo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir genotipos a partir de una proporción heredada",
+      "que": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+      "pistas": [
+        "Relaciona el rasgo corto con el alelo recesivo.",
+        "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
+      ],
+      "clave": "La descendencia con cuello corto requiere que cada padre heterocigoto haya aportado el alelo recesivo.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite un dato. Pero Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite un dato. Pero Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite un dato. Pero Dos padres homocigotos dominantes no tendrían descendencia de cuello corto."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona el rasgo corto con el alelo recesivo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «individuos con cuello largo» orienta lo que debemos observar.",
+          "a": "m:individuos con cuello largo"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
