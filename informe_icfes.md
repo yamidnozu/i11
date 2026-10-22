@@ -5,7 +5,7 @@
 - [x] Leer `docs/CONTEXTO.md`, `docs/CHANGELOG.md`, `content/README.md`, `src/content/schema.ts`, scripts de importación/hojas y ejemplos `mat-101`, `mat-104`, `ing-101`.
 - [x] Configurar y procesar exclusivamente el cuadernillo de Matemáticas (35 páginas; 50 preguntas).
 - [x] Implementar runner con siete etapas persistidas, manifiesto, CLI, caché, configuración y plugin de cuadernillo.
-- [x] Invalidar caché cuando cambian runner/plugin/configuración y registrar herramienta de extracción elegida.
+- [x] Invalidar caché cuando cambian runner/plugin/configuración o herramienta de extracción.
 - [x] Añadir validación de overrides e incorporar `propio` y `licenciado` al esquema de procedencias.
 - [x] Instalar Poppler y extraer texto con `pdftotext -layout`.
 - [x] Ejecutar reconstrucción limpia preservando overrides/hojas revisadas; comparar el JSON con corrida de caché.
@@ -20,9 +20,9 @@
 
 ## Resultado actual
 
-- 50 preguntas estructuradas, IDs `mat-i001`–`mat-i050`; clave detectada para las 50.
+- 50 preguntas estructuradas, IDs `mat-i001`–`mat-i050`; clave detectada para las 50. El parser conserva dígitos aislados que pueden pertenecer a pasos y recorta pie/encabezado de página sin tragarse las opciones.
 - 80 candidatos vectoriales en 35 páginas rasterizadas. La detección geométrica aún no equivale a figuras asociadas a preguntas.
-- 37 preguntas marcadas con `revisar`; 13 no dispararon heurísticas, pero aún no se consideran validadas por persona.
+- 28 preguntas marcadas con `revisar`; 22 no dispararon heurísticas, pero aún no se consideran validadas por persona. Quedan 7 preguntas con opciones gráficas representadas como huecos pendientes.
 - Hojas: 50 borradores, 0 revisadas. Explicaciones y descartes docentes no están completos.
 - Contenido en `content/icfes/mat/preguntas.json`, aún detrás de `icfes-gate`; archivos de trabajo bajo `work/`.
 
@@ -31,9 +31,9 @@
 - `npx tsc --noEmit`: pasó.
 - `VITE_ICFES=1 npx vitest run`: 15 archivos, 244/244 pruebas, sin fallos.
 - `npm run build`: pasó; advertencia Vite por chunk principal de 902.56 kB sin comprimir (>300 kB).
-- Se eliminó `work/<doc>` y la salida generada de `content/icfes/mat`, preservando overrides/hojas revisadas; se regeneraron las siete etapas con Poppler. SHA-256: `03c8136c7a9fb3553b7001a9b63d8b1d21cd5d643c51b46a0c986d8d2d22f498`. La corrida inmediata en caché conservó el mismo hash.
+- Se eliminó `work/<doc>` y la salida generada de `content/icfes/mat`, preservando overrides/hojas revisadas; se regeneraron las siete etapas con Poppler. SHA-256: `24a777642d65c7e6f14c44d3cd3fcbd9cd88833b13b5f4f97cadddece4f605f6`. La corrida inmediata en caché conservó el mismo hash.
 
-El cotejo de la UI confirma mejoras con Poppler, pero no exactitud total: `mat-i010` y `mat-i035` perdieron dígitos de los pasos; `mat-i050` mezcla caracteres de la figura en el enunciado y deja las cuatro opciones como huecos. Las opciones gráficas todavía no se reconstruyen. Por tanto, el material sigue como borrador y las pruebas verdes validan estructura/formato, no fidelidad ni corrección pedagógica.
+El cotejo de la UI confirma mejoras con Poppler, pero no exactitud total: `mat-i010` conserva los números de paso tras corregir el limpiado y `mat-i035`/`mat-i050` ya muestran opciones textuales correctas. `mat-i050` todavía mezcla trazos de figura en el enunciado; siete reactivos mantienen opciones gráficas sin figura asociada. Las opciones gráficas todavía no se reconstruyen. Por tanto, el material sigue como borrador y las pruebas verdes validan estructura/formato, no fidelidad ni corrección pedagógica.
 
 ## Pendientes y límites
 
