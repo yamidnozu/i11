@@ -37,6 +37,12 @@
 - Se verificaron las hojas existentes de configuración electrónica, fuerzas, presión atmosférica y mezclas; esas cuatro ya estaban revisadas y no se reemplazaron.
 - Acumulado actual: 99 hojas revisadas y 149 borradores.
 
+
+## Pipeline documental — cuarto lote pedagógico de Ciencias (2026-10-22)
+- Se añadieron hojas razonadas para solubilidad, clasificación de fases y controles experimentales, sin reemplazar las hojas que ya estaban revisadas.
+- Se cotejaron las diferencias menores de OCR entre los cuadernillos de ambos años; la pregunta de clasificación conserva la misma observación, alternativas y clave.
+- Acumulado actualizado: 105 hojas revisadas y 143 borradores.
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
