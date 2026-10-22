@@ -18,6 +18,13 @@
 - Los recortes compartidos pueden declararse con página y rectángulo en `recorteFuente`; la etapa `figuras` reconstruye PNG desde el PDF y registra la salida, de modo que borrar `work/` y el PNG no elimina la receta.
 - Validación: `npx tsc --noEmit` y `VITE_ICFES=1 npx vitest run` (442/442) pasan. El informe separa lo terminado de las revisiones pedagógicas, gráficas y de licencias aún abiertas.
 
+
+## Pipeline documental — lote pedagógico de Ciencias (2026-10-22)
+- Se revisaron ocho hojas (preguntas 2, 11, 12 y 17 de los cuadernillos 2025 y 2026), con razonamiento, descarte individual de distractores y comprobación del contexto.
+- Para el salto bungee se cotejó la longitud natural de la banda con la distancia de caída; como aún no se estira, la transformación corresponde a energía gravitacional a cinética.
+- El total sube a 83 hojas revisadas y baja a 165 borradores; las alternativas gráficas, las evidencias del marco y otras hojas aún requieren trabajo.
+- Validación tras el lote: `npx tsc --noEmit` y `VITE_ICFES=1 npx vitest run` (442/442).
+
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".
 - Migas de pan en pantallas internas; ocultas en las pestañas principales y en modo foco.
