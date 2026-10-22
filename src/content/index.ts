@@ -1,4 +1,4 @@
-import type { Question, Lesson, Hoja, Guion, Enfoque, Pack, Unidad, SimulacroDef, Bloque } from './schema';
+import type { Question, Lesson, Hoja, Guion, Enfoque, Pack, Unidad, SimulacroDef, Bloque, MarcoReferencia, NivelesDesempeno } from './schema';
 import { validateQuestion, validateLesson, validateBloque } from './schema';
 import hojas from '../../content/hojas.json';
 import guiones from '../../content/guiones.json';
@@ -7,6 +7,8 @@ import unidadesBase from '../../content/unidades.json';
 const qm = import.meta.glob('../../content/questions/*.json', { eager: true, import: 'default' }) as Record<string, Question[]>;
 const lm = import.meta.glob('../../content/lessons/*.json', { eager: true, import: 'default' }) as Record<string, Lesson>;
 const pm = { ...import.meta.glob('../../content/packs/**/*.json', { eager: true, import: 'default' }), ...import.meta.glob('../../content/icfes/**/preguntas.json', { eager: true, import: 'default' }) } as Record<string, Pack | Pack[]>;
+const mr = import.meta.glob('../../content/icfes/marco.json', { eager: true, import: 'default' }) as Record<string, MarcoReferencia>;
+const nd = import.meta.glob('../../content/icfes/niveles_desempeno.json', { eager: true, import: 'default' }) as Record<string, NivelesDesempeno>;
 const sm = import.meta.glob('../../content/simulacros/*.json', { eager: true, import: 'default' }) as Record<string, SimulacroDef | SimulacroDef[]>;
 const bm = import.meta.glob('../../content/bloques/*.json', { eager: true, import: 'default' }) as Record<string, Bloque | Bloque[]>;
 const H = hojas as unknown as Record<string, Hoja>;
@@ -19,6 +21,9 @@ const aviso = (m: string) => { CONTENT_WARNINGS.push(m); if (typeof console !== 
 const arr = <T>(x: T | T[] | undefined): T[] => (x === undefined ? [] : Array.isArray(x) ? x : [x]);
 
 const packs: Pack[] = Object.values(pm).flatMap((x) => arr(x));
+/** Referentes oficiales disponibles solo cuando VITE_ICFES=1. */
+export const ICFES_MARCO: MarcoReferencia | null = Object.values(mr)[0] ?? null;
+export const ICFES_NIVELES: NivelesDesempeno | null = Object.values(nd)[0] ?? null;
 const base: Question[] = Object.values(qm).flat();
 const vistos = new Set<string>();
 function admitir(q: Question, origen: string): Question | null {

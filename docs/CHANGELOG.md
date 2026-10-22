@@ -1,5 +1,12 @@
 # Changelog
 
+## Pipeline documental — asociación de marcos y niveles (2026-10-22)
+- Se enlazaron competencia, afirmación y evidencia para las 49 preguntas de Lectura Crítica y 49 de Sociales; los paquetes se regeneraron desde sus overrides.
+- Se completó el marco semántico de esas áreas y se incorporó el modelo de lectura/uso del lenguaje de Inglés en `content/icfes/marco.json`.
+- Se estructuraron los descriptores por nivel de los cinco documentos oficiales en `content/icfes/niveles_desempeno.json`, bajo el gate ICFES; `src/content/index.ts` exporta estos datos y el marco cuando `VITE_ICFES=1`.
+- La guía de orientación 2026 proporciona el marco de Matemáticas; Ciencias conserva 13 preguntas enlazadas por edición y 74 asociaciones siguen pendientes de cotejo.
+- El informe y el contexto reflejan el avance comprobado y los pendientes documentales/licencias.
+
 ## Pipeline documental inicial (2026-10)
 - Añadido `tools/pipeline/` con siete etapas persistidas, caché por hash/código/configuración y plugins para cuadernillos, marcos, guías, infografías y simulacros.
 - Procesados los 38 PDFs disponibles: 1.209 páginas, 4.201 candidatos vectoriales, 222 preguntas con clave y 26 en pendientes de clave. Las transcripciones no semánticas se guardan por página en `documento.json`.
@@ -71,7 +78,7 @@
 ## Pipeline documental — opciones gráficas de Ciencias (2026-10-22)
 - Añadidas 72 recetas deterministas `recorteFuente`: cuatro alternativas por cada una de nueve preguntas en ambos cuadernillos.
 - Los PNG se reconstruyen desde las páginas fuente y se referencian en `opcionesFig`; las imágenes solo pasan al build con `VITE_ICFES=1`.
-- Verificación visual de los recortes terminada. Avisos restantes: 26 enlaces de evidencia de marco y la ambigüedad de mat-i038.
+- Verificación visual de los recortes terminada. Pendientes actuales: 74 enlaces de evidencia de Ciencias y la salvedad de mat-i038; Matemáticas, Lectura y Sociales ya están enlazadas al marco.
 
 ## v49 — Mapa y orientación
 - `#/mapa`: lista "Quiero…" con 10 casos a un toque y ruta completa (Empieza, Aprende, Practica, Mide, Biblioteca) con conteos reales y "Estás aquí".

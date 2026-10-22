@@ -45,10 +45,32 @@ export type Figura =
   | { tipo: 'pendiente'; pagina?: number; alt: string; pie?: string };
 /** Contexto compartido por varias preguntas («Responde las preguntas X a Y de acuerdo con la siguiente información»). */
 export interface Bloque { id: string; area: AreaId; encabezado?: string; titulo?: string; texto?: string; figuras?: Figura[]; fuente?: string }
+export interface MarcoReferencia {
+  version: number;
+  origen: 'icfes' | 'propio' | 'licenciado';
+  areas: Record<string, {
+    nombre: string;
+    fuentes?: string[];
+    competencias: Array<{
+      id: string;
+      nombre: string;
+      descripcion?: string;
+      afirmaciones: Array<{ id: string; texto: string; evidencias: Array<{ id: string; texto: string }> }>;
+    }>;
+  }>;
+}
+export interface NivelesDesempeno {
+  version: number;
+  origen: 'icfes' | 'propio' | 'licenciado';
+  areas: Record<string, { documento: string; fuente: string; niveles: Array<{ nivel: string; descriptores: string[]; revisar?: string }> }>;
+}
+
 export interface Question {
   id: string; area: AreaId; evidencia: string; nivel: 1 | 2 | 3 | 4;
   enunciado: string; opciones: string[]; correcta: number; explicacion: string; distractores: string[];
   bloque?: string; figuras?: Figura[]; opcionesFig?: (Figura | null)[]; afirmacion?: string; competencia?: string; parte?: string;
+  /** Referencias estables a content/icfes/marco.json; solo se publican detrás del gate ICFES. */
+  competenciaId?: string; afirmacionId?: string; evidenciaId?: string;
   hoja?: Hoja; lectura?: { id: string; titulo: string; texto: string }; origen: 'original' | 'icfes' | 'propio' | 'licenciado'; fuente?: string; revisar?: string[]; tipo?: 'mc' | 'reto'; sim?: { id: string; challengeId?: string };
 }
 export interface Lesson { id: string; titulo: string; area: AreaId; evidencias: string[]; sim?: { id: string }; ejemplos: { angulo: string; titulo: string; texto: string }[]; truco: string }
