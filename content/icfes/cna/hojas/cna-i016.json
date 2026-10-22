@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "A partir de las cadenas de ARN mensajero",
+        "rol": "pide",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la información",
+        "texto": "Separa el ARN en tripletes desde $AUG$."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba",
+        "texto": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Contar aminoácidos a partir de una secuencia de ARN",
+      "que": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+      "pistas": [
+        "Divide la secuencia en grupos de tres nucleótidos.",
+        "Detén el conteo al encontrar el codón $UAG$."
+      ],
+      "clave": "Antes del codón de terminación hay seis tripletes que codifican aminoácidos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Separa el ARN en tripletes desde $AUG$."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «A partir de las cadenas de ARN mensajero» indica el proceso que debemos seguir.",
+          "a": "m:A partir de las cadenas de ARN mensajero"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "A partir",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

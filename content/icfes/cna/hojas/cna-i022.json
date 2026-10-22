@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "en la misma estufa durante un minuto",
+        "rol": "pide",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la información",
+        "texto": "Calcula el aumento de temperatura del primer caso: $17-15=2\\,^{\\circ}\\mathrm{C}$."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Con el doble de agua, el aumento es la mitad: $1\\,^{\\circ}\\mathrm{C}$."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba",
+        "texto": "Suma el aumento a la temperatura inicial: $15+1=16\\,^{\\circ}\\mathrm{C}$."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relacionar cantidad de agua y cambio de temperatura",
+      "que": "La misma estufa entrega la misma energía durante el mismo tiempo. Al calentar el doble de agua, el aumento de temperatura se reduce a la mitad: pasa de $2\\,^{\\circ}\\mathrm{C}$ a $1\\,^{\\circ}\\mathrm{C}$. Desde $15\\,^{\\circ}\\mathrm{C}$, el agua termina a $16\\,^{\\circ}\\mathrm{C}$.",
+      "pistas": [
+        "La estufa y el tiempo de calentamiento se mantienen iguales.",
+        "Al duplicarse la cantidad de agua, se reduce a la mitad el aumento de temperatura."
+      ],
+      "clave": "La temperatura final es $16\\,^{\\circ}\\mathrm{C}$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Supone que el doble de agua aumenta más su temperatura, aunque recibe la misma energía; la variación debe ser menor."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Repite el aumento de temperatura del primer caso, pero ahora la cantidad de agua se duplicó y el calentamiento fue igual."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero Ignora que la estufa transfiere energía al agua durante el calentamiento."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Calcula el aumento de temperatura del primer caso: $17-15=2\\,^{\\circ}\\mathrm{C}$."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Con el doble de agua, el aumento es la mitad: $1\\,^{\\circ}\\mathrm{C}$."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Suma el aumento a la temperatura inicial: $15+1=16\\,^{\\circ}\\mathrm{C}$."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «en la misma estufa durante un minuto» indica qué información tomar en cuenta.",
+          "a": "m:en la misma estufa durante un minuto"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La misma estufa entrega la misma energía durante el mismo tiempo. Al calentar el doble de agua, el aumento de temperatura se reduce a la mitad: pasa de $2\\,^{\\circ}\\mathrm{C}$ a $1\\,^{\\circ}\\mathrm{C}$. Desde $15\\,^{\\circ}\\mathrm{C}$, el agua termina a $16\\,^{\\circ}\\mathrm{C}$.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La misma estufa entrega la misma energía durante el mismo tiempo. Al calentar el doble de agua, el aumento de temperatura se reduce a la mitad: pasa de $2\\,^{\\circ}\\mathrm{C}$ a $1\\,^{\\circ}\\mathrm{C}$. Desde $15\\,^{\\circ}\\mathrm{C}$, el agua termina a $16\\,^{\\circ}\\mathrm{C}$.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Supone que el doble de agua aumenta más su temperatura, aunque recibe la misma energía; la variación debe ser menor. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Repite el aumento de temperatura del primer caso, pero ahora la cantidad de agua se duplicó y el calentamiento fue igual. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Ignora que la estufa transfiere energía al agua durante el calentamiento. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La misma estufa entrega la misma energía durante el mismo tiempo. Al calentar el doble de agua, el aumento de temperatura se reduce a la mitad: pasa de $2\\,^{\\circ}\\mathrm{C}$ a $1\\,^{\\circ}\\mathrm{C}$. Desde $15\\,^{\\circ}\\mathrm{C}$, el agua termina a $16\\,^{\\circ}\\mathrm{C}$.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Suma el aumento a la temperatura inicial: $15+1=16\\,^{\\circ}\\mathrm{C}$.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Supone que el doble de agua aumenta más su temperatura, aunque recibe la misma energía; la variación debe ser menor. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Repite el aumento de temperatura del primer caso, pero ahora la cantidad de agua se duplicó y el calentamiento fue igual. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Ignora que la estufa transfiere energía al agua durante el calentamiento. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

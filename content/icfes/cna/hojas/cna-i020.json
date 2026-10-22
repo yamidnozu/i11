@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "porcentaje de supervivencia de las cepas",
+        "rol": "pide",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "campo": "Pista central"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la información",
+        "texto": "Ubica qué variable midieron los investigadores."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el concepto",
+        "texto": "Compara la supervivencia con cada antibiótico."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba",
+        "texto": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar supervivencia bacteriana ante antibióticos",
+      "que": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
+      "pistas": [
+        "Compara todos los porcentajes de supervivencia.",
+        "Menor supervivencia bajo un antibiótico indica mayor sensibilidad en este experimento."
+      ],
+      "clave": "El antibiótico cuatro se relaciona con la mayor sensibilidad observada en la prueba.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se pasa por alto una condición. Pero El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Ubica qué variable midieron los investigadores."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara la supervivencia con cada antibiótico."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «porcentaje de supervivencia de las cepas» indica qué información tomar en cuenta.",
+          "a": "m:porcentaje de supervivencia de las cepas"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un grupo",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
