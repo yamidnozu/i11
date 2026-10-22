@@ -35,7 +35,8 @@ def main():
             stage=STAGES[i]; out=dirs[stage]/'result.json'; upstream=[sha(dirs[s]/'result.json') for s in STAGES[:i] if (dirs[s]/'result.json').exists()]
             implementation=[ROOT/'tools/pipeline/run.py',ROOT/'tools/pipeline/tipos'/f'{spec["tipo"]}.py']
             code_hash=''.join(sha(p) for p in implementation if p.exists())
-            signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash).encode()).hexdigest()
+            text_tool=shutil.which('pdftotext') if stage=='texto' else ''
+            signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash+(text_tool or 'pymupdf-fallback')).encode()).hexdigest()
             cached=meta['etapas'].get(stage,{}).get('firma')==signature and out.exists()
             if cached and not args.forzar: print(doc_id,stage,'cache'); continue
             if stage=='detectar': result=plugin.detectar(ctx)
