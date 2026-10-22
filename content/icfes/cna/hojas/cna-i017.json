@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "El salto bungee",
+        "rol": "pide",
+        "nota": "Presenta la situación física que se debe analizar.",
+        "campo": "Contexto del problema"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara las distancias",
+        "texto": "El deportista cae $20$ metros y la banda mide $30$ metros sin estirarse."
+      },
+      {
+        "k": "idea",
+        "titulo": "Identifica la transformación",
+        "texto": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba",
+        "texto": "Como $20 < 30$, la banda aún no se estira; la energía gravitacional se convierte en cinética."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Transformación de energía durante la caída",
+      "que": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+      "pistas": [
+        "Compara cuánto ha descendido el deportista con la longitud natural de la banda.",
+        "Solo hay energía potencial elástica cuando la banda se estira."
+      ],
+      "clave": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Parece posible si se ignora cuánto ha descendido. Pero La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Parece posible si se ignora cuánto ha descendido. Pero La energía potencial gravitacional no aumenta mientras el deportista desciende."
+        },
+        {
+          "t": "Opción C",
+          "p": "Parece posible si se ignora cuánto ha descendido. Pero La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara el descenso con la longitud natural de la banda."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Decide si la banda ya se está estirando."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Relaciona el movimiento con las formas de energía."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «se lanzará desde un puente» ubica el inicio a cierta altura.",
+          "a": "m:El salto bungee"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero comparo la distancia de caída con la longitud sin estirar de la banda.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compruebo que la banda no se estire antes de que el descenso supere su longitud natural.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El salto",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
