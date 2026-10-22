@@ -1,5 +1,10 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — pregunta 3 (2026-10-22)
+- Se cotejó la página fuente, se reconstruyó la tabla de cupos y precios en `overrides.json`, y se corrigió la opción D contaminada por la extracción del contenido siguiente.
+- Se completaron explicación, distractores y hoja de tres niveles; la alternativa B se verificó con dos combinaciones viables de 140 estudiantes y costos de $5.950.000 y $5.650.000.
+- El informe y el contexto quedan en 250 hojas revisadas y 96 borradores. TypeScript y Vitest pasan (540/540).
+
 ## Pipeline documental — asociación de marcos y niveles (2026-10-22)
 - Se enlazaron competencia, afirmación y evidencia para las 248 preguntas de Matemáticas, Lectura Crítica, Sociales y Ciencias; los paquetes se regeneraron desde sus overrides.
 - Se completó el marco semántico de esas áreas y se incorporó el modelo de lectura/uso del lenguaje de Inglés en `content/icfes/marco.json`.

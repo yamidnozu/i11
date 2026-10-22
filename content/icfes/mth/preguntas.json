@@ -339,108 +339,184 @@
       "area": "matematicas",
       "correcta": 1,
       "distractores": [
-        "Pendiente de análisis; no inferido automáticamente.",
+        "La suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo.",
         "",
-        "Pendiente de análisis; no inferido automáticamente.",
-        "Pendiente de análisis; no inferido automáticamente."
+        "Incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable.",
+        "Que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
       ],
       "enunciado": "Las directivas de un colegio tienen que organizar un viaje a un museo con 140 estudiantes, quie- nes deben dividirse en 3 grupos. Cada grupo irá en una franja diferente, pero el costo total de las entradas se asumirá equitativamente por los estudiantes. En la tabla se muestran los horarios disponibles, la máxima cantidad de estudiantes y los precios respectivos de cada horario. Cantidad máxima Precio entrada Franja Horario de estudiantes por estudiante 1 8 h - 10 h 50 $35.000 2 10 h - 12 h 40 $40.000 3 12 h - 14 h 30 $50.000 4 14 h - 16 h 60 $45.000 Tabla\n Con el fin de que todos los estudiantes asistan y paguen el menor precio, las directivas eligieron las franjas 1, 3 y 4. ¿Esta elección garantiza que asistan todos los estudiantes al menor precio posible?",
-      "estadoHoja": "borrador",
+      "estadoHoja": "revisada",
       "evidencia": "Pendiente de marco de referencia",
-      "explicacion": "Pendiente de solución verificada.",
+      "explicacion": "La combinación de las franjas 1, 3 y 4 cuesta $5.950.000: 50 × $35.000 + 30 × $50.000 + 60 × $45.000. Al usar las franjas 1, 2 y 4, se pueden acomodar 140 estudiantes y el costo es $5.650.000: 50 × $35.000 + 40 × $40.000 + 50 × $45.000. Por eso, la elección inicial no garantiza el menor precio y la respuesta es B.",
+      "figuras": [
+        {
+          "alt": "Franjas horarias, cupos máximos y precios por estudiante para la visita al museo",
+          "cols": [
+            "Franja",
+            "Horario",
+            "Cantidad máxima de estudiantes",
+            "Precio por estudiante"
+          ],
+          "filas": [
+            [
+              "1",
+              "8 h - 10 h",
+              "50",
+              "$35.000"
+            ],
+            [
+              "2",
+              "10 h - 12 h",
+              "40",
+              "$40.000"
+            ],
+            [
+              "3",
+              "12 h - 14 h",
+              "30",
+              "$50.000"
+            ],
+            [
+              "4",
+              "14 h - 16 h",
+              "60",
+              "$45.000"
+            ]
+          ],
+          "tipo": "tabla"
+        }
+      ],
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 3.",
       "hoja": {
         "enfoque": {
-          "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+          "clave": "Las franjas uno, tres y cuatro cuestan $5.950.000. Con las franjas uno, dos y cuatro caben todos y el costo baja a $5.650.000.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Suma los cupos y confirma que alcanzan. Pero esa suma no compara el precio con otra combinación viable.",
               "t": "Opción A"
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+              "p": "Observa que la franja uno es la más económica. Pero el grupo también necesita otras franjas y debe compararse el costo total.",
               "t": "Opción C"
+            },
+            {
+              "p": "Se fija en que la franja tres es más costosa. Pero hay que mostrar una combinación alternativa que admita al grupo; las franjas uno, dos y cuatro sí lo hacen.",
+              "t": "Opción D"
             }
           ],
           "pistas": [
-            "leer el enunciado completo",
-            "contrastar los apoyos gráficos con la página"
+            "Revisa los cupos y precios de cada franja en la tabla.",
+            "Comprueba el costo total de una combinación alternativa viable."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "t": "Verifica que la combinación elegida tenga cupos suficientes."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "eq": [
+                "$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$"
+              ],
+              "t": "Calcula el costo total de esa combinación."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "eq": [
+                "$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"
+              ],
+              "t": "Prueba otra combinación viable y compara los totales."
             }
           ],
-          "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-          "tema": "Lectura del cuadernillo pendiente de revisión"
+          "que": "Compara el costo total de dos combinaciones que permiten ubicar a todo el grupo; tener cupos suficientes no garantiza pagar lo mínimo.",
+          "tema": "Optimización con cupos y precios"
         },
         "guion": {
           "1": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:140 estudiantes",
+              "t": "¿Qué debe cumplir una combinación de franjas para que el grupo pueda asistir?"
             },
             {
-              "t": "Primero revisemos qué pide la pregunta."
+              "t": "Además de tener cupos suficientes, comparemos cuánto cuesta cada combinación."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Las franjas uno, dos y cuatro admiten al grupo y cuestan menos. La respuesta es B."
             }
           ],
           "2": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "m:menor precio posible",
+              "t": "Primero verifica los cupos y después compara el costo total."
             },
             {
-              "t": "Cotejemos los datos y las figuras con el cuadernillo."
+              "t": "Las franjas uno, tres y cuatro cuestan $5.950.000. Al usar las franjas uno, dos y cuatro, los cupos permiten ubicar a todo el grupo y el costo baja a $5.650.000."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A solo comprueba la cantidad de cupos; no demuestra que el precio sea mínimo."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C menciona la franja más económica, pero no compara el costo total de combinaciones viables."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D señala el precio de una franja, pero no compara una combinación completa; las franjas uno, dos y cuatro sí admiten al grupo y cuestan menos."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "Por eso la respuesta es B: cambiar la franja tres por la dos permite pagar menos."
             }
           ],
           "3": [
             {
-              "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+              "a": "p:0",
+              "k": "ana",
+              "t": "Compruebo que la combinación alternativa tenga cupos para el grupo: $50 + 40 + 50 = 140$."
             },
             {
-              "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+              "a": "p:1",
+              "t": "Calculo el costo de la elección inicial: $50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$. Para la alternativa, asigno cincuenta personas a la franja uno, cuarenta a la dos y cincuenta a la cuatro: $50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$."
             },
             {
-              "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+              "a": "p:2",
+              "k": "contra",
+              "t": "La alternativa cumple los cupos y reduce el total en $300.000$. Entonces la elección inicial no garantiza el menor precio."
+            },
+            {
+              "a": "o:A:no",
+              "k": "err",
+              "t": "La opción A confunde cupos suficientes con costo mínimo."
+            },
+            {
+              "a": "o:C:no",
+              "k": "err",
+              "t": "La opción C no compara una combinación completa."
+            },
+            {
+              "a": "o:D:no",
+              "k": "err",
+              "t": "La opción D señala un precio alto, pero la prueba decisiva es comparar una alternativa que sí cumpla los cupos."
             },
             {
               "a": "o:B:ok",
-              "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+              "t": "La respuesta correcta es B."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "Las directivas",
-            "nota": "Fragmento automático; revisar su función.",
+            "campo": "Cantidad de estudiantes",
+            "frag": "140 estudiantes",
+            "nota": "Es la cantidad total que debe poder asistir.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Criterio de elección",
+            "frag": "menor precio posible",
+            "nota": "Hay que comparar el costo total de combinaciones que admitan a todos.",
             "rol": "pide"
           }
         ],
@@ -448,11 +524,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+            "texto": "Las franjas elegidas tienen cupos suficientes, pero eso no demuestra que su costo total sea el menor.",
+            "titulo": "Compara combinaciones que sí admitan al grupo"
+          },
+          {
+            "k": "calc",
+            "lineas": [
+              "$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$",
+              "$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"
+            ],
+            "nota": "La segunda combinación usa las franjas uno, dos y cuatro. Sus cupos permiten ubicar a todo el grupo y el total es menor.",
+            "titulo": "Calcula y compara el costo"
           },
           {
             "k": "check",
-            "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+            "texto": "La respuesta es B: reemplazar la franja tres por la dos reduce el costo total y todavía permite asistir a todos."
           }
         ]
       },
@@ -462,14 +548,11 @@
         "Sí, porque esas franjas suman exactamente 140 estudiantes.",
         "No, porque es posible obtener un precio menor eligiendo la franja 2 en lugar de la franja 3.",
         "Sí, porque se incluyó la franja 1 que es la de menor precio por estudiante.",
-        "No, porque los estudiantes que van en la franja 3 pagan más.\n RESPONDA LAS PREGUNTAS 4 A 6 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN\n Para capacitar en informática básica a los trabajadores de algunas dependencias de una empresa, se contrata una institución que ofrece un plan educativo de 4 módulos (ver tabla).\n Capacitación en informática básica Intensidad Valor por Módulo Nombre del módulo horaria hora I Fundamentación 40 h $35.000 II Procesador de texto 30 h $30.000 III Hoja de cálculo 40 h $40.000 IV Presentación con diapositivas 10 h $45.000 La capacitación de cada módulo se hace con cursos de mínimo 20 Tabla y máximo 30 personas, de la misma dependencia."
+        "No, porque los estudiantes que van en la franja 3 pagan más."
       ],
       "origen": "icfes",
       "parte": "Pregunta 3",
-      "revisar": [
-        "Referencia visual: asociar figura extraída tras cotejo visual.",
-        "Formato numerado antiguo: cotejar enunciado, opciones, figuras y contexto compartido en PDF."
-      ]
+      "revisar": []
     },
     {
       "area": "matematicas",

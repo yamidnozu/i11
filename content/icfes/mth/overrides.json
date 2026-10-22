@@ -23,5 +23,34 @@
       "Acepta el conteo de 10 tramos, pero hay 9.",
       "Marca la parada intermedia, que sí suma 30 segundos."
     ]
+  },
+  "mth-i003": {
+    "revisar": [],
+    "figuras": [
+      {
+        "tipo": "tabla",
+        "alt": "Franjas horarias, cupos máximos y precios por estudiante para la visita al museo",
+        "cols": ["Franja", "Horario", "Cantidad máxima de estudiantes", "Precio por estudiante"],
+        "filas": [
+          ["1", "8 h - 10 h", "50", "$35.000"],
+          ["2", "10 h - 12 h", "40", "$40.000"],
+          ["3", "12 h - 14 h", "30", "$50.000"],
+          ["4", "14 h - 16 h", "60", "$45.000"]
+        ]
+      }
+    ],
+    "opciones": [
+      "Sí, porque esas franjas suman exactamente 140 estudiantes.",
+      "No, porque es posible obtener un precio menor eligiendo la franja 2 en lugar de la franja 3.",
+      "Sí, porque se incluyó la franja 1 que es la de menor precio por estudiante.",
+      "No, porque los estudiantes que van en la franja 3 pagan más."
+    ],
+    "explicacion": "La combinación de las franjas 1, 3 y 4 cuesta $5.950.000: 50 × $35.000 + 30 × $50.000 + 60 × $45.000. Al usar las franjas 1, 2 y 4, se pueden acomodar 140 estudiantes y el costo es $5.650.000: 50 × $35.000 + 40 × $40.000 + 50 × $45.000. Por eso, la elección inicial no garantiza el menor precio y la respuesta es B.",
+    "distractores": [
+      "La suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo.",
+      "",
+      "Incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable.",
+      "Que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
+    ]
   }
 }
