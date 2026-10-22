@@ -1,0 +1,463 @@
+{
+ "lec-004": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "idea principal",
+    "rol": "pide",
+    "nota": "la idea que sostiene todo el texto, no un detalle suelto",
+    "campo": "Idea que sostiene todo el texto",
+    "w": "Pregunta"
+   },
+   {
+    "frag": "del texto",
+    "rol": "clave",
+    "nota": "la respuesta sale del texto, no de lo que tú opinas",
+    "campo": "Se responde con el texto",
+    "w": "Dónde buscar"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en la tienda de la esquina",
+    "texto": "Todos tenemos una tienda de barrio donde la libra de arroz cuesta un poquito más que en el supermercado. Aun así, la gente va: la tendera pregunta por tu mamá, te fía hasta el viernes y te cuenta quién se mudó. Nadie va por el precio; van por la **relación**. Eso mismo pasa con el mercado del texto: ahí está la idea principal."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué hace cada parte del texto",
+    "cols": [
+     "Parte del texto",
+     "Qué hace"
+    ],
+    "filas": [
+     [
+      "«Cada sábado, la plaza de mi barrio se llena de puestos.»",
+      "Presenta el lugar"
+     ],
+     [
+      "«Doña Rosa vende verduras… Don Camilo, queso…»",
+      "Ejemplos concretos: gente real detrás de los puestos"
+     ],
+     [
+      "«Los supermercados ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana.»",
+      "Compara: el precio no es la diferencia"
+     ],
+     [
+      "«Por eso, aunque el mercado no sea lo más barato, muchos vecinos siguen yendo…»",
+      "Da la razón: conversan, se enteran, pertenecen"
+     ],
+     [
+      "«Si el mercado desapareciera… perdería lo que la hace una comunidad.»",
+      "Cierra: el mercado es lo que crea la comunidad"
+     ]
+    ]
+   },
+   {
+    "k": "flujo",
+    "titulo": "De los detalles a la idea principal",
+    "nodos": [
+     {
+      "v": "Detalles",
+      "l": "Doña Rosa, Don Camilo, los puestos"
+     },
+     {
+      "v": "Comparación",
+      "l": "Los supermercados cobran parecido, pero no te preguntan nada"
+     },
+     {
+      "v": "Razón",
+      "l": "Los vecinos conversan, se enteran y pertenecen"
+     },
+     {
+      "v": "Idea principal",
+      "l": "El mercado vale por la comunidad, no solo por el precio"
+     }
+    ],
+    "saltos": [
+     "\\text{se comparan con algo}",
+     "\\text{se explica por qué van}",
+     "\\text{todo se resume en una idea}"
+    ],
+    "nota": "La idea principal es la que **todas** las partes apoyan. Los ejemplos son para probarla, no son la idea."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Las pistas exactas del texto",
+    "filas": [
+     {
+      "dice": "aunque el mercado no sea lo más barato, muchos vecinos siguen yendo",
+      "escribo": "\\text{el precio no es la razón principal}",
+      "rol": "clave"
+     },
+     {
+      "dice": "compran comida, pero también conversan, se enteran de lo que pasa y sienten que pertenecen a un lugar",
+      "escribo": "\\text{van por la comunidad}",
+      "rol": "dato"
+     },
+     {
+      "dice": "perdería lo que la hace una comunidad",
+      "escribo": "\\text{el mercado es lo que crea la comunidad}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "Fíjate en «aunque… siguen yendo»: el autor admite que no es lo más barato y aun así defiende al mercado. Ahí está su postura."
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Idea principal vs. detalle",
+    "si": [
+     "El mercado vale por la comunidad que forma, no solo por el precio (cubre todo el texto)"
+    ],
+    "no": [
+     "El mercado es la opción más barata (el texto dice lo contrario)",
+     "Los supermercados deben cerrar (nadie lo propone)",
+     "La plaza necesita más puestos (nada del texto lo pide)"
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta C: el mercado vale por la comunidad que forma, no solo por el precio. Es la única que resume todo el texto sin inventar nada."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Encuentra la idea principal",
+    "items": [
+     {
+      "p": "¿Para qué sirven Doña Rosa y Don Camilo en el texto?",
+      "op": [
+       "Para dar ejemplos concretos de gente del mercado",
+       "Para decir que venden barato",
+       "Para criticar a los supermercados"
+      ],
+      "ok": 0,
+      "why": "Son ejemplos: ponen cara humana al mercado, pero no son la idea central."
+     },
+     {
+      "p": "«aunque el mercado no sea lo más barato, muchos vecinos siguen yendo» quiere decir que…",
+      "op": [
+       "El precio no es el motivo principal",
+       "Todos van por lo barato",
+       "Nadie va al mercado"
+      ],
+      "ok": 0,
+      "why": "«Aunque» admite algo (no es barato) y aun así dice que van: el motivo es otro."
+     },
+     {
+      "p": "¿Qué idea cubre TODAS las partes del texto?",
+      "op": [
+       "El mercado vale por la comunidad que forma",
+       "El mercado es lo más barato",
+       "Hay que cerrar los supermercados"
+      ],
+      "ok": 0,
+      "why": "Los ejemplos, la comparación, la razón y el cierre apoyan esa misma idea."
+     },
+     {
+      "p": "Una opción que dice «los supermercados deben cerrar» es…",
+      "op": [
+       "Inventada: el texto no propone eso",
+       "Correcta, porque los critica",
+       "La idea principal"
+      ],
+      "ok": 0,
+      "why": "El texto solo dice que allí nadie te pregunta cómo estuvo la semana; no pide cerrarlos."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-005": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Por eso",
+    "rol": "clave",
+    "nota": "conector: mira qué hay antes y qué viene después",
+    "campo": "Conector de consecuencia",
+    "w": "Palabra clave"
+   },
+   {
+    "frag": "¿Qué función cumple",
+    "rol": "pide",
+    "nota": "no pregunta qué dice la frase, sino para qué sirve en el texto",
+    "campo": "Para qué sirve, no qué dice",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un día de lluvia",
+    "texto": "«Estaba lloviendo a cántaros. **Por eso** me quedé en casa.» Lo primero es la causa; lo segundo, lo que pasó como resultado. «Por eso» es la bisagra que une una cosa con la otra: lo de antes explica lo de después. No agrega un ejemplo, no cambia de tema ni lleva la contraria."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Qué une «Por eso» en el texto",
+    "nodos": [
+     {
+      "v": "Antes (causa)",
+      "l": "«allí nadie te pregunta cómo estuvo la semana»"
+     },
+     {
+      "v": "Por eso",
+      "l": "el conector"
+     },
+     {
+      "v": "Después (consecuencia)",
+      "l": "«muchos vecinos siguen yendo»"
+     }
+    ],
+    "saltos": [
+     "\\text{explica}",
+     "\\text{lleva a}"
+    ],
+    "nota": "Si lees la frase de antes y la de después, la segunda es el **resultado** de la primera."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué relación marca cada conector",
+    "cols": [
+     "Conector",
+     "Relación",
+     "Ejemplo corto"
+    ],
+    "filas": [
+     [
+      "*Por eso",
+      "*Consecuencia",
+      "Llovió; por eso me quedé"
+     ],
+     [
+      "Por ejemplo",
+      "Ejemplo",
+      "Frutas, por ejemplo, mango"
+     ],
+     [
+      "Sin embargo",
+      "Contradice",
+      "Llovió; sin embargo salí"
+     ],
+     [
+      "Por otro lado",
+      "Cambia de punto de vista",
+      "Es rico; por otro lado, caro"
+     ]
+    ]
+   },
+   {
+    "k": "traducir",
+    "titulo": "Léelo con las palabras del texto",
+    "filas": [
+     {
+      "dice": "Los supermercados ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana.",
+      "escribo": "\\text{causa: allí falta el trato humano}",
+      "rol": "dato"
+     },
+     {
+      "dice": "Por eso",
+      "escribo": "\\text{por esa razón, entonces}",
+      "rol": "clave"
+     },
+     {
+      "dice": "aunque el mercado no sea lo más barato, muchos vecinos siguen yendo",
+      "escribo": "\\text{consecuencia: siguen yendo}",
+      "rol": "dato"
+     }
+    ],
+    "nota": "Truco: cambia «Por eso» por «por esa razón». Si la frase sigue teniendo sentido, es una consecuencia."
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta B: «Por eso» introduce la consecuencia de lo anterior (nadie te pregunta cómo estuvo la semana → siguen yendo)."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza el conector",
+    "items": [
+     {
+      "p": "Lo que va ANTES de «Por eso» es…",
+      "op": [
+       "Una causa o razón",
+       "Un ejemplo",
+       "Una contradicción"
+      ],
+      "ok": 0,
+      "why": "Dice que en el supermercado nadie te pregunta cómo estuvo la semana: es la razón."
+     },
+     {
+      "p": "Lo que va DESPUÉS de «Por eso» es…",
+      "op": [
+       "Una consecuencia: siguen yendo",
+       "Un tema nuevo",
+       "Una burla"
+      ],
+      "ok": 0,
+      "why": "Los vecinos siguen yendo al mercado como resultado de lo anterior."
+     },
+     {
+      "p": "¿Cuál conector se parece más a «Por eso»?",
+      "op": [
+       "Por lo tanto",
+       "Sin embargo",
+       "Por ejemplo"
+      ],
+      "ok": 0,
+      "why": "«Por lo tanto» también marca consecuencia."
+     },
+     {
+      "p": "Si fuera «Sin embargo», la frase…",
+      "op": [
+       "Contradiría lo anterior",
+       "Seguiría igual",
+       "Daría un ejemplo"
+      ],
+      "ok": 0,
+      "why": "«Sin embargo» marca oposición, y aquí no hay ninguna."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-006": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Según el texto",
+    "rol": "clave",
+    "nota": "solo vale lo que el texto dice, aunque tú pienses otra cosa",
+    "campo": "Solo vale lo que dice el texto",
+    "w": "Dónde buscar"
+   },
+   {
+    "frag": "si el mercado desapareciera",
+    "rol": "dato",
+    "nota": "es una situación imaginada: busca la frase que empieza con «Si»",
+    "campo": "Situación imaginada",
+    "w": "Condición"
+   },
+   {
+    "frag": "la plaza",
+    "rol": "pide",
+    "nota": "lo que le pasaría a la plaza, no al mercado",
+    "campo": "Qué le pasa a la plaza",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en tu cancha del barrio",
+    "texto": "Imagina que quitan las porterías de la cancha. La cancha **sigue ahí**: el cemento, las líneas, el espacio. Pero ya no se juega, ya no se junta la gente, ya no es «la cancha del barrio». Se queda el lugar, se pierde lo que lo hacía especial. Es lo que el texto dice de la plaza sin su mercado."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué se queda y qué se pierde",
+    "cols": [
+     "Si el mercado desapareciera…",
+     "Qué dice el texto"
+    ],
+    "filas": [
+     [
+      "Lo que se queda",
+      "«la plaza seguiría existiendo»"
+     ],
+     [
+      "Lo que se pierde",
+      "«perdería lo que la hace una comunidad»"
+     ]
+    ]
+   },
+   {
+    "k": "traducir",
+    "titulo": "La frase final, pieza por pieza",
+    "filas": [
+     {
+      "dice": "Si el mercado desapareciera",
+      "escribo": "\\text{situación imaginada, todavía no pasa}",
+      "rol": "dato"
+     },
+     {
+      "dice": "la plaza seguiría existiendo",
+      "escribo": "\\text{el espacio se mantiene}",
+      "rol": "clave"
+     },
+     {
+      "dice": "pero perdería lo que la hace una comunidad",
+      "escribo": "\\text{pierde el sentido de comunidad}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "El «pero» divide la frase en dos: primero lo que se conserva y luego lo que se pierde. La respuesta correcta tiene que decir las dos cosas."
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Qué cabe y qué no cabe en la última frase",
+    "si": [
+     "Seguiría como espacio pero perdería su sentido de comunidad (dice ambas cosas)"
+    ],
+    "no": [
+     "Dejaría de existir (el texto dice que seguiría)",
+     "Tendría precios más bajos (no se habla de precios futuros)",
+     "Se llenaría de supermercados (nunca se menciona)"
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta B: la plaza seguiría existiendo como espacio, pero perdería su sentido de comunidad."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Lee la última frase con calma",
+    "items": [
+     {
+      "p": "«Si el mercado desapareciera» es…",
+      "op": [
+       "Una situación imaginada",
+       "Algo que ya pasó",
+       "Una orden"
+      ],
+      "ok": 0,
+      "why": "El verbo en «desapareciera» indica una hipótesis, no un hecho."
+     },
+     {
+      "p": "¿Qué pasa con la plaza como lugar?",
+      "op": [
+       "Seguiría existiendo",
+       "Desaparecería",
+       "Se vendería"
+      ],
+      "ok": 0,
+      "why": "El texto dice «la plaza seguiría existiendo»."
+     },
+     {
+      "p": "¿Qué perdería la plaza?",
+      "op": [
+       "Lo que la hace una comunidad",
+       "Sus precios",
+       "Sus calles"
+      ],
+      "ok": 0,
+      "why": "Después del «pero» está lo que se pierde."
+     },
+     {
+      "p": "Una opción que habla de precios futuros es…",
+      "op": [
+       "Información que el texto no da",
+       "Correcta, porque habla de precios",
+       "La respuesta del texto"
+      ],
+      "ok": 0,
+      "why": "El texto solo menciona precios para decir que el mercado no es lo más barato; no predice nada."
+     }
+    ]
+   }
+  ]
+ }
+}

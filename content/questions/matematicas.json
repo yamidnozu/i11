@@ -1,0 +1,157 @@
+[
+  {
+    "id": "mat-001",
+    "area": "matematicas",
+    "evidencia": "MAT_E1.1",
+    "nivel": 1,
+    "enunciado": "En Bogotá, un taxi cobra $4.000 de arranque más $1.000 por cada kilómetro. ¿Cuánto cuesta un recorrido de 7 km?",
+    "opciones": [
+      "$7.000",
+      "$11.000",
+      "$28.000",
+      "$12.000"
+    ],
+    "correcta": 1,
+    "explicacion": "El costo es $C=4.000+1.000\\cdot7=11.000$. Es una función lineal: parte fija + parte variable.",
+    "distractores": [
+      "Solo contó los kilómetros y olvidó el arranque.",
+      "",
+      "Multiplicó el arranque por los kilómetros.",
+      "Contó 8 km en vez de 7 (error de lectura)."
+    ],
+    "origen": "original"
+  },
+  {
+    "id": "mat-002",
+    "area": "matematicas",
+    "evidencia": "MAT_E1.2",
+    "nivel": 2,
+    "enunciado": "La función $f(x)=x^2-4x+3$ corta el eje $x$ en los puntos:",
+    "opciones": [
+      "$x=-1$ y $x=-3$",
+      "$x=1$ y $x=3$",
+      "$x=0$ y $x=3$",
+      "$x=2$ y $x=4$"
+    ],
+    "correcta": 1,
+    "explicacion": "$x^2-4x+3=(x-1)(x-3)=0$, así que $x=1$ y $x=3$.",
+    "distractores": [
+      "Cambió el signo de las raíces al factorizar.",
+      "",
+      "x = 0 es donde corta el eje y (f(0)=3), no el eje x.",
+      "Confundió con el vértice (x = 2)."
+    ],
+    "origen": "original"
+  },
+  {
+    "id": "mat-003",
+    "area": "matematicas",
+    "evidencia": "MAT_E3.1",
+    "nivel": 2,
+    "enunciado": "Una bolsa tiene 3 fichas rojas y 5 azules. Si se saca una al azar, la probabilidad de que sea roja es:",
+    "opciones": [
+      "3/5",
+      "3/8",
+      "5/8",
+      "1/3"
+    ],
+    "correcta": 1,
+    "explicacion": "Las que sirven (las rojas) son 3 y en total hay $3+5=8$ fichas, entonces $\\frac{3}{8}$.",
+    "distractores": [
+      "Comparó rojas con azules (razón), no con el total.",
+      "",
+      "Es la probabilidad de azul.",
+      "Dividió entre el número de colores (2 ó 3), no entre fichas."
+    ],
+    "origen": "original"
+  },
+  {
+    "id": "mat-004",
+    "area": "matematicas",
+    "evidencia": "MAT_E3.2",
+    "nivel": 3,
+    "enunciado": "El conjunto de datos 2, 3, 3, 4, 8 tiene media 4 y mediana 3. Si se elimina el dato 8, ¿qué ocurre?",
+    "opciones": [
+      "La media baja a 3 y la mediana no cambia",
+      "La media y la mediana no cambian",
+      "La media no cambia y la mediana sube",
+      "La media y la mediana bajan a 2"
+    ],
+    "correcta": 0,
+    "explicacion": "Con 2, 3, 3, 4: media $\\bar{x}=\\frac{12}{4}=3$ y mediana $\\text{Me}=\\frac{3+3}{2}=3$. La media es sensible al valor extremo; la mediana no.",
+    "distractores": [
+      "",
+      "Olvidó que el 8 aportaba a la suma.",
+      "Invirtió el efecto de la media y la mediana.",
+      "Calculó mal ambas medidas."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "mat.estadistica"
+    }
+  },
+  {
+    "id": "mat-005",
+    "area": "matematicas",
+    "evidencia": "MAT_E3.1",
+    "nivel": 3,
+    "enunciado": "Se lanzan dos dados corrientes. ¿Cuál es la probabilidad de que la suma sea 7?",
+    "opciones": [
+      "1/12",
+      "1/6",
+      "7/36",
+      "1/7"
+    ],
+    "correcta": 1,
+    "explicacion": "Hay 6 parejas que suman 7 de 36 posibles: $\\frac{6}{36}=\\frac{1}{6}$.",
+    "distractores": [
+      "Contó solo 3 parejas (no distinguió el orden).",
+      "",
+      "Confundió el valor de la suma con el número de casos.",
+      "Dividió entre el valor de la suma."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "mat.probabilidad"
+    }
+  },
+  {
+    "id": "mat-006",
+    "area": "matematicas",
+    "evidencia": "MAT_E2.3",
+    "nivel": 4,
+    "enunciado": "Un artículo cuesta $100.000, sube 20 % y luego baja 20 %. El precio final es:",
+    "opciones": [
+      "$100.000",
+      "$96.000",
+      "$104.000",
+      "$98.000"
+    ],
+    "correcta": 1,
+    "explicacion": "$100.000\\cdot1{,}2=120.000$; $120.000\\cdot0{,}8=96.000$. Los porcentajes se aplican sobre bases distintas.",
+    "distractores": [
+      "Supuso que +20 % y −20 % se cancelan.",
+      "",
+      "Sumó los cambios en vez de componerlos.",
+      "Restó 2 % de forma intuitiva sin calcular."
+    ],
+    "origen": "original"
+  },
+  {
+    "id": "mat-007",
+    "area": "matematicas",
+    "evidencia": "MAT_E1.2",
+    "nivel": 3,
+    "enunciado": "Usa el graficador: elige a, b y c de una cuadrática para que su vértice sea (2, −3).",
+    "opciones": [],
+    "correcta": 0,
+    "explicacion": "Con vértice (2, −3): f(x) = a(x−2)² − 3. Por ejemplo a=1, b=−4, c=1.",
+    "distractores": [],
+    "origen": "original",
+    "tipo": "reto",
+    "sim": {
+      "id": "mat.funciones",
+      "challengeId": "ch1"
+    }
+  }
+]

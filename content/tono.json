@@ -1,0 +1,2471 @@
+{
+ "cie-001": {
+  "1": [
+   {
+    "t": "Listo, vamos a leer el enunciado completo antes de hacer cualquier cosa.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate en lo que nos dan: la rapidez inicial, $20\\ \\text{m/s}$, y el ángulo de lanzamiento, $30°$.",
+    "a": "m:20 m/s|m:30°"
+   },
+   {
+    "t": "Y lo que nos preguntan es el alcance horizontal, es decir, qué tan lejos cae la pelota.",
+    "a": "m:alcance horizontal"
+   },
+   {
+    "t": "Mira las barras: con $30°$ la pelota llega menos lejos que con $45°$, que es el ángulo del máximo, $40$ m.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ahora usamos la fórmula del alcance: la rapidez al cuadrado por el seno del doble del ángulo, todo dividido entre $g$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Reemplazamos: $400\\cdot0{,}866$ entre $10$ da $34{,}6$ m.",
+    "a": "p:5"
+   },
+   {
+    "t": "Reemplazamos y nos da $34{,}6\\ \\text{m}$. Esa es la opción B, la correcta.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos paso a paso. Primero leo todo el enunciado, sin afán, para no perder ningún detalle.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate en el primer dato: la rapidez con que sale la pelota, $20\\ \\text{m/s}$. La anotamos porque es la $v_0$ de la fórmula.",
+    "a": "m:20 m/s"
+   },
+   {
+    "t": "Luego viene el ángulo, $30°$. Es importante porque el alcance depende de $\\sin 2\\theta$.",
+    "a": "m:30°"
+   },
+   {
+    "t": "También tenemos $g=10\\ \\text{m/s}^2$. Como el problema lo da así, usamos ese valor y no $9{,}8$.",
+    "a": "m:g = 10 m/s²"
+   },
+   {
+    "t": "Ojo con esto: «sin aire» significa que nada frena la pelota, y por eso podemos usar la fórmula sencilla.",
+    "a": "m:sin aire"
+   },
+   {
+    "t": "Ahora, ¿qué nos preguntan? El alcance horizontal, o sea qué tan lejos cae la pelota, no qué tan alto sube.",
+    "a": "m:alcance horizontal"
+   },
+   {
+    "t": "Imagina que pateas un balón: sube y luego baja. Lo que nos piden es qué tan lejos cae.",
+    "a": "p:0"
+   },
+   {
+    "t": "Esa distancia se mide sobre el suelo, entre el punto de salida y el punto donde cae.",
+    "a": "p:1"
+   },
+   {
+    "t": "Si cambia el ángulo, cambia el alcance. El máximo se da con $45°$ y es de $40$ m; con $30°$ tiene que salir menos.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ahora pasamos los datos a símbolos: $v_0=20$, el ángulo es $30°$ y $g=10$.",
+    "a": "p:3"
+   },
+   {
+    "t": "La fórmula del alcance es $v_0^2\\sin(2\\theta)/g$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Entonces el doble del ángulo es $60°$ y su seno es $0{,}866$. Luego $20^2=400$, y $400\\cdot0{,}866=346{,}4$. Dividido entre $10$ da $34{,}6$ m.",
+    "a": "p:5"
+   },
+   {
+    "t": "No es la A, $40\\ \\text{m}$: ese valor sale de usar $45°$, que da el alcance máximo, y aquí el ángulo es $30°$.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "Tampoco es la C, $20$: ahí se confunde el alcance con la rapidez y solo se copia el número del enunciado.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $17{,}3$, tienta, pero sale de olvidar elevar la rapidez al cuadrado y dividir entre $g$.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso nos queda la B, $34{,}6\\ \\text{m}$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como cuando le pegas al balón en la cancha del barrio: si lo pateas muy hacia arriba cae cerca, y si lo pateas muy plano también. A medio camino llega más lejos.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, $15°$ y $75°$ dan el mismo alcance, porque suman $90°$.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error típico: elegir $40$ m, el máximo, sin notar que el ángulo no es $45°$.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-006": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Tenemos una lente convergente con $f=10\\ \\text{cm}$, y el objeto está a $15\\ \\text{cm}$.",
+    "a": "m:lente convergente|m:f = 10 cm|m:15 cm"
+   },
+   {
+    "t": "Los datos son el foco, $10$, y el objeto a $15$ cm. Eso deja al objeto entre $f$ y $2f$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Con eso hacemos una predicción: la imagen será real, invertida y lejos. Mira las barras.",
+    "a": "p:3"
+   },
+   {
+    "t": "Usamos la ecuación de lentes y restamos fracciones: $1/10-1/15=1/30$, o sea que $d_i=30$ cm.",
+    "a": "p:5|p:6"
+   },
+   {
+    "t": "Como el resultado es positivo, la imagen es real, y como el aumento es negativo, está invertida. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Una lente convergente junta los rayos de luz, y por eso su foco es positivo.",
+    "a": "m:lente convergente"
+   },
+   {
+    "t": "La distancia focal es de $10\\ \\text{cm}$.",
+    "a": "m:f = 10 cm"
+   },
+   {
+    "t": "El objeto está a $15\\ \\text{cm}$, o sea más lejos que el foco. Por eso ya sabemos que la imagen será real e invertida.",
+    "a": "m:15 cm",
+    "k": "por"
+   },
+   {
+    "t": "Y nos preguntan cómo es la imagen: de qué tipo es, cómo está orientada y a qué distancia queda.",
+    "a": "m:La imagen es"
+   },
+   {
+    "t": "Piensa en una lupa: una lente convergente funciona de forma parecida.",
+    "a": "p:0"
+   },
+   {
+    "t": "Ahora pasamos los datos a símbolos: $f=10$ cm y $d_o=15$ cm.",
+    "a": "p:1"
+   },
+   {
+    "t": "Antes de calcular, hagamos una predicción. El objeto está entre $f$ y $2f$, así que la imagen será real, invertida y más lejos que $2f$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Mira las barras: la imagen debería quedar más allá de $20$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Usamos la ecuación de lentes: uno sobre $f$ es igual a uno sobre $d_o$ más uno sobre $d_i$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Despejamos: $1/10-1/15$. Para restar buscamos un denominador común, $30$, y queda $3/30-2/30=1/30$. Entonces $d_i=30$.",
+    "a": "p:5"
+   },
+   {
+    "t": "El aumento es $-30/15=-2$. Que sea negativo indica que la imagen está invertida, y es dos veces más grande.",
+    "a": "p:6"
+   },
+   {
+    "t": "La C, $6\\ \\text{cm}$, tienta, pero suma las inversas, $\\tfrac1{10}+\\tfrac1{15}$, en vez de restarlas.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "Las opciones A y D dicen «virtual». Eso solo pasaría si el objeto estuviera más cerca que el foco, y aquí no es así.",
+    "a": "o:A:no|o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como proyectar con una lupa la ventana de tu cuarto sobre la pared: la imagen aparece al revés.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, si el objeto está justo en $2f$, la imagen queda también en $2f$ y del mismo tamaño.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: elegir «virtual y derecha», que ocurre cuando el objeto está más cerca que el foco, no más lejos.",
+    "k": "err"
+   }
+  ]
+ },
+ "ing-003": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el aviso.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice {{Open Monday–Friday, 8 a.m.–6 p.m.}}, que significa abierto de lunes a viernes, de $8$ de la mañana a $6$ de la tarde. Y {{Closed on holidays}}: cerrado en festivos.",
+    "a": "m:Monday–Friday|m:8 a.m.–6 p.m.|m:Closed on holidays"
+   },
+   {
+    "t": "La pregunta es si se puede ir el domingo, {{Sunday}}.",
+    "a": "m:Sunday"
+   },
+   {
+    "t": "Fíjate: el cartel dice {{Open Monday–Friday}}, es decir, abierto de lunes a viernes.",
+    "a": "p:1"
+   },
+   {
+    "t": "Además, {{Closed on holidays}} quiere decir que cierra en los festivos.",
+    "a": "p:2"
+   },
+   {
+    "t": "{{Sunday}} es domingo y no aparece en la lista, así que ese día no abre.",
+    "a": "p:3"
+   },
+   {
+    "t": "Escucha la respuesta: {{!No, it is not open on Sunday.}} Es la opción C.",
+    "a": "p:4"
+   },
+   {
+    "t": "El domingo no está entre lunes y viernes, por eso no abre. La respuesta es la opción C.",
+    "a": "o:C:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el aviso.",
+    "a": "leer"
+   },
+   {
+    "t": "{{Monday–Friday}} quiere decir de lunes a viernes.",
+    "a": "m:Monday–Friday"
+   },
+   {
+    "t": "El horario es {{8 a.m.–6 p.m.}}, o sea de $8$ de la mañana a $6$ de la tarde.",
+    "a": "m:8 a.m.–6 p.m."
+   },
+   {
+    "t": "{{Closed on holidays}} significa cerrado en festivos.",
+    "a": "m:Closed on holidays"
+   },
+   {
+    "t": "Y la pregunta es por el domingo, {{Sunday}}.",
+    "a": "m:Sunday"
+   },
+   {
+    "t": "Lo mejor es leer el cartel como si fuera el horario de una tienda.",
+    "a": "p:0"
+   },
+   {
+    "t": "Vamos parte por parte: {{open}}, abierto; {{Monday–Friday}}, de lunes a viernes; {{8 a.m.–6 p.m.}}, de ocho de la mañana a seis de la tarde.",
+    "a": "p:1"
+   },
+   {
+    "t": "Y al final, {{closed on holidays}}: cerrado en los festivos.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ahora miro la semana completa. Sábado y domingo no aparecen, entonces esos días no abre.",
+    "a": "p:3"
+   },
+   {
+    "t": "Escucha la pregunta y la respuesta: {{!Can you go on Sunday?}} {{!No, it is not open on Sunday.}}",
+    "a": "p:4"
+   },
+   {
+    "t": "Las opciones A y B dicen {{Yes}}, con horas del horario. Tientan porque esas horas sí son reales, pero valen solo de lunes a viernes.",
+    "a": "o:A:no|o:B:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice {{Only on holidays}}, que es justo al revés: en festivos el lugar está cerrado.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la correcta es la C: {{No, it is not open on Sunday}}.",
+    "a": "o:C:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como el menú de un restaurante: si un plato no está escrito, es porque no lo tienen.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, {{Open Mon–Sat}} significa que el domingo está cerrado.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: pensar que, si no dice {{closed}}, entonces está abierto.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-001": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Hay un cobro fijo de 4.000 pesos y 1.000 pesos por cada kilómetro, y el viaje es de $7\\ \\text{km}$.",
+    "a": "m:$4.000 de arranque|m:$1.000 por cada kilómetro|m:7 km"
+   },
+   {
+    "t": "Mira las barras: la parte azul es el arranque, que se paga una sola vez. La verde crece mil pesos por cada kilómetro.",
+    "a": "p:1"
+   },
+   {
+    "t": "Pasamos cada frase a matemáticas: el arranque es $4.000$, y cada kilómetro es $1.000\\cdot k$.",
+    "a": "p:2"
+   },
+   {
+    "t": "La función del costo es el arranque más mil por kilómetro. Con $7$ km tenemos $4.000+7.000=11.000$.",
+    "a": "p:3|p:4"
+   },
+   {
+    "t": "Entonces el viaje cuesta 11.000 pesos. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "El arranque se paga una sola vez, aunque el viaje sea cortico.",
+    "a": "m:$4.000 de arranque"
+   },
+   {
+    "t": "Cada kilómetro cuesta lo mismo, así que la tarifa crece de forma lineal.",
+    "a": "m:$1.000 por cada kilómetro"
+   },
+   {
+    "t": "El viaje es de $7\\ \\text{km}$.",
+    "a": "m:7 km"
+   },
+   {
+    "t": "Y lo que nos piden es el costo total.",
+    "a": "m:¿Cuánto cuesta"
+   },
+   {
+    "t": "Imagina que te subes a un taxi: el taxímetro ya marca $4.000$ antes de que arranques.",
+    "a": "p:0"
+   },
+   {
+    "t": "Con cada kilómetro suma mil más. Mira cómo crece la parte de color, mientras que la azul no cambia.",
+    "a": "p:1"
+   },
+   {
+    "t": "Traducimos así: lo que se paga una sola vez es el arranque, $4.000$. Y lo que dice «por cada» se multiplica por la cantidad de kilómetros.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces el costo es $C=4.000+1.000\\cdot k$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Con $k=7$ tenemos $1.000\\cdot7=7.000$, y al sumar el arranque $4.000$ da $11.000$.",
+    "a": "p:4"
+   },
+   {
+    "t": "La A, $7.000$, tienta, pero se le olvidó sumar el arranque.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $28.000$, multiplica el arranque por los kilómetros, y el arranque se paga una sola vez.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $12.000$, sale de contar $8\\ \\text{km}$ en vez de los kilómetros reales.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, 11.000 pesos.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como ir al cine: la entrada se paga una sola vez, y cada paquete de crispetas o de dulces va sumando.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, un plan de celular con cargo fijo de $20.000$ y $500$ por cada minuto extra. El cargo fijo no depende de los minutos.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: multiplicar todo por $7$, o sea $(4.000+1.000)\\cdot7=35.000$. El arranque se paga una vez, no por kilómetro.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-006": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Tenemos un precio de 100.000 pesos que sube $20\\%$ y luego baja $20\\%$.",
+    "a": "m:$100.000|m:sube 20 %|m:baja 20 %"
+   },
+   {
+    "t": "Mira la barra: parte de $100.000$, sube a $120.000$ y luego baja a $96.000$. No vuelve al valor inicial.",
+    "a": "p:1"
+   },
+   {
+    "t": "Para calcularlo, subir $20\\%$ es multiplicar por $1{,}2$, y bajar $20\\%$ es multiplicar por $0{,}8$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces $100.000$ por $1{,}2$ da $120.000$, y por $0{,}8$ da $96.000$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Fíjate que baja el $20\\%$ de $120.000$, o sea $24.000$, y queda $96.000$. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "El precio de partida es de 100.000 pesos.",
+    "a": "m:$100.000"
+   },
+   {
+    "t": "Primero el precio sube $20\\%$.",
+    "a": "m:sube 20 %"
+   },
+   {
+    "t": "Después baja $20\\%$, pero ojo: del precio nuevo, no del original.",
+    "a": "m:baja 20 %",
+    "k": "por"
+   },
+   {
+    "t": "Y nos piden el precio final.",
+    "a": "m:El precio final"
+   },
+   {
+    "t": "Pensemos en una camiseta de $100.000$. Sube y luego se rebaja el mismo porcentaje. ¿Será que queda igual?",
+    "a": "p:0"
+   },
+   {
+    "t": "Veámoslo con barras. Al subir $20\\%$ se agregan $20.000$, y la barra llega a $120.000$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Ahora baja $20\\%$, pero del precio nuevo: el $20\\%$ de $120.000$ es $24.000$. Por eso se quita más de lo que se había agregado.",
+    "a": "p:1",
+    "k": "por"
+   },
+   {
+    "t": "Para no dibujar la barra cada vez, usamos multiplicaciones. Subir $20\\%$ es quedarse con el $120\\%$, o sea multiplicar por $1{,}2$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Y bajar $20\\%$ es quedarse con el $80\\%$, o sea multiplicar por $0{,}8$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces $100.000$ por $1{,}2$ es $120.000$, y por $0{,}8$ es $96.000$.",
+    "a": "p:3"
+   },
+   {
+    "t": "La A, $100.000$, tienta porque supone que subir y bajar el mismo porcentaje se cancela, pero no es así.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $104.000$, sale de sumar en vez de restar.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $98.000$, no sale de ningún cálculo razonable.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, 96.000 pesos.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como una escalera: subes $20$ peldaños de una escalera de $100$, y ahora estás en el $120$.",
+    "k": "ana"
+   },
+   {
+    "t": "Si bajas el $20\\%$ desde donde estás ahora, bajas $24$ peldaños, no $20$. Terminas más abajo de donde empezaste.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo extremo: si sube $100\\%$ pasa de $100$ a $200$, y si baja $50\\%$ vuelve a $100$. Aquí sí vuelve, pero no porque $100$ y $50$ se cancelen.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: restar los porcentajes, $20-20=0$. Eso solo sirve cuando se calculan sobre el mismo precio.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-002": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el problema con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate: el carro parte del reposo y acelera $3\\ \\text{m/s}^2$ durante $4\\ \\text{s}$.",
+    "a": "m:parte del reposo|m:aceleración constante de 3 m/s²|m:4 s"
+   },
+   {
+    "t": "Entonces tenemos tres datos: parte del reposo, la aceleración es $3$ y el tiempo es $4$ segundos.",
+    "a": "p:1"
+   },
+   {
+    "t": "Mira las barras: en cada segundo el carro recorre más distancia, y al cuarto segundo ya lleva $24$ metros.",
+    "a": "p:2"
+   },
+   {
+    "t": "Como arranca del reposo, $v_0=0$, y la fórmula queda como un medio de $a$ por $t$ al cuadrado: $\\frac{1}{2}\\cdot3\\cdot16=24$ m.",
+    "a": "p:3|p:4"
+   },
+   {
+    "t": "Así que la distancia es $d=\\tfrac12\\cdot 3\\cdot 4^2=24\\ \\text{m}$, y esa es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "\"Parte del reposo\" quiere decir que la velocidad inicial es cero. Eso nos ayuda, porque en la fórmula desaparece el término $v_0 t$.",
+    "a": "m:parte del reposo"
+   },
+   {
+    "t": "Luego dice aceleración constante de $3\\ \\text{m/s}^2$. Por eso podemos usar las fórmulas del movimiento uniformemente acelerado.",
+    "a": "m:aceleración constante de 3 m/s²"
+   },
+   {
+    "t": "Ahora el tiempo: son $4\\ \\text{s}$.",
+    "a": "m:4 s"
+   },
+   {
+    "t": "Ojo con lo que piden: es la distancia, no la velocidad final. Ahí está la trampa, porque las dos se parecen.",
+    "a": "m:¿Qué distancia recorre"
+   },
+   {
+    "t": "Imagina un carro que arranca desde el reposo y va ganando velocidad poco a poco.",
+    "a": "p:0"
+   },
+   {
+    "t": "Pasemos los datos a símbolos: $v_0=0$, $a=3$ y $t=4$. Lo que buscamos es la distancia $x$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Veamos segundo a segundo: la velocidad sube $3$ cada vez, y la distancia acumulada va en $1{,}5$, $6$, $13{,}5$ y $24$ metros.",
+    "a": "p:2"
+   },
+   {
+    "t": "Toda esa regla se resume en una fórmula. Como parte del reposo, $v_0=0$ y nos queda $x=\\frac{1}{2}at^2$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Reemplazamos: $4^2=16$, multiplicado por $3$ da $48$, y la mitad de $48$ es $24$ metros.",
+    "a": "p:4"
+   },
+   {
+    "t": "Comprobemos de otra forma: la velocidad final es $12$ y la media es $6$. Seis por cuatro segundos también dan $24$ metros.",
+    "a": "p:5"
+   },
+   {
+    "t": "La A, $12$, tienta porque es $v=at$, pero eso es la velocidad final, no la distancia.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $48$, tienta porque se le olvidó el $\\tfrac12$: eso sería $at^2$ completo.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $6$, sale de hacer $a\\cdot t/2$, que mezcla las fórmulas.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, $24\\ \\text{m}$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como un bus que arranca del paradero mientras el conductor pisa el acelerador cada vez más: al principio avanza poquito, y al final se come las cuadras.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, en $2$ segundos recorre $\\frac{1}{2}\\cdot3\\cdot4=6$ m, y en $4$ segundos $24$ m. El doble de tiempo, cuatro veces la distancia.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: calcular $a\\cdot t=12$ m. Eso es la velocidad final, no la distancia.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-008": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Tenemos $2\\ \\text{mol}$ de gas a $273{,}15\\ \\text{K}$ y $1\\ \\text{atm}$ de presión.",
+    "a": "m:2 mol|m:273,15 K|m:1 atm"
+   },
+   {
+    "t": "Entonces los datos son: $n=2$, $T=273{,}15$, $P=1$ y $R=0{,}082$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Despejamos $V$ en $PV=nRT$ y nos queda $V=nRT/P$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Al calcular $2\\cdot0{,}082\\cdot273{,}15$ obtenemos $44{,}8$ litros.",
+    "a": "p:3|p:4"
+   },
+   {
+    "t": "El volumen es $44{,}8\\ \\text{L}$, así que la respuesta es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Dos moles es la cantidad de gas que tenemos, y se representa con $n$.",
+    "a": "m:2 mol"
+   },
+   {
+    "t": "Fíjate en $273{,}15\\ \\text{K}$: equivale a $0\\ °\\text{C}$, y la temperatura siempre debe ir en kelvin.",
+    "a": "m:273,15 K"
+   },
+   {
+    "t": "Ahora la presión: $1\\ \\text{atm}$. A estas condiciones se les llama condiciones normales.",
+    "a": "m:1 atm"
+   },
+   {
+    "t": "También tenemos la constante $R$, con unidades que coinciden con atmósferas y litros, y eso nos conviene.",
+    "a": "m:R = 0,082 atm·L/mol·K"
+   },
+   {
+    "t": "Y lo que nos piden es el volumen que ocupa el gas.",
+    "a": "m:ocupan"
+   },
+   {
+    "t": "Piensa que un gas se expande y llena todo el espacio que le des.",
+    "a": "p:0"
+   },
+   {
+    "t": "Pasamos los datos a símbolos: $n=2$ moles, $T=273{,}15$ kelvin y $P=1$ atmósfera.",
+    "a": "p:1"
+   },
+   {
+    "t": "La ley del gas ideal es $PV=nRT$. Para dejar $V$ sola, dividimos ambos lados entre $P$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Multiplicamos paso a paso: $2\\cdot0{,}082=0{,}164$, y luego $0{,}164\\cdot273{,}15$ da $44{,}8$ litros.",
+    "a": "p:3"
+   },
+   {
+    "t": "Para comprobar: con $273{,}15$ K y $1$ atm, un mol ocupa $22{,}4$ L, así que dos moles ocupan $44{,}8$ L.",
+    "a": "p:4"
+   },
+   {
+    "t": "La A, $22{,}4$, tienta porque es el volumen de un solo mol, y aquí tenemos dos.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $11{,}2$, corresponde a medio mol, así que se queda corta.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $5{,}6$, sería un cuarto de mol, y eso no corresponde a $2\\ \\text{mol}$.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B, $44{,}8\\ \\text{L}$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como guardar empanadas en una caja: si tienes el doble de empanadas, necesitas el doble de espacio. Con los moles de gas pasa igual.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, con $3$ mol en las mismas condiciones ocuparían $3\\cdot22{,}4=67{,}2$ L.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: usar grados Celsius en vez de kelvin. En esta fórmula siempre se usa kelvin.",
+    "k": "err"
+   }
+  ]
+ },
+ "ing-004": {
+  "1": [
+   {
+    "t": "Empecemos leyendo la frase con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice {{You can ___ books from the library for two weeks}}, es decir, puedes sacar libros de la biblioteca por dos semanas.",
+    "a": "m:from the library|m:for two weeks"
+   },
+   {
+    "t": "Fíjate que la frase habla de pedir prestados unos libros por dos semanas.",
+    "a": "p:1"
+   },
+   {
+    "t": "La biblioteca presta y tú recibes el libro. Esa acción de recibir prestado se dice {{borrow}}.",
+    "a": "p:2|p:3"
+   },
+   {
+    "t": "Escucha la frase completa: {{!You can borrow books for two weeks.}} Entonces nos sirve la A.",
+    "a": "p:4"
+   },
+   {
+    "t": "La respuesta es la opción A.",
+    "a": "o:A:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo la frase con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "{{From the library}} indica que tomas algo de la biblioteca. Quien recibe es el usuario, o sea tú.",
+    "a": "m:from the library",
+    "k": "por"
+   },
+   {
+    "t": "Luego {{for two weeks}} marca un tiempo limitado, porque pasadas las dos semanas hay que devolver los libros.",
+    "a": "m:for two weeks"
+   },
+   {
+    "t": "Recuerda que los libros pertenecen a la biblioteca, no a ti.",
+    "a": "p:0"
+   },
+   {
+    "t": "Vamos palabra por palabra: {{you can borrow}} es tú puedes pedir prestado; {{books}}, libros; y {{for two weeks}}, por dos semanas.",
+    "a": "p:1"
+   },
+   {
+    "t": "Fíjate en la diferencia: ella presta, {{lend}}, y tú recibes prestado, {{borrow}}.",
+    "a": "p:2"
+   },
+   {
+    "t": "Mira la tabla: {{borrow}} lo hace quien recibe el objeto.",
+    "a": "p:3"
+   },
+   {
+    "t": "Ahora escucha y repite: {{!You can borrow books for two weeks.}}",
+    "a": "p:4"
+   },
+   {
+    "t": "La B, {{lend to}}, tienta, pero {{lend}} es prestar, o sea dar, y eso lo hace la biblioteca, no tú. Además no lleva {{to}} antes del objeto.",
+    "a": "o:B:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, {{buy to}}, no existe así, y además en una biblioteca no se compra nada.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, {{sell}}, es vender, y tampoco se vende nada en una biblioteca.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la A, {{borrow}}.",
+    "a": "o:A:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como pedirle prestada la pelota al vecino para jugar fútbol: tú la pides, {{borrow}}, y el dueño te la presta, {{lend}}.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, en el colegio puedes decir: {{Can I borrow your pen?}}",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: {{buy}} y {{sell}} tienen que ver con plata, y aquí no se paga nada.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-002": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "La función es $f(x)=x^2-4x+3$ y nos piden saber dónde corta el eje $x$.",
+    "a": "m:$f(x)=x^2-4x+3$|m:corta el eje $x$"
+   },
+   {
+    "t": "Cortar el eje $x$ es tocar la línea horizontal. Por ahora no sabemos cuánto vale $x$ en esos dos puntos.",
+    "a": "p:0"
+   },
+   {
+    "t": "En esos puntos la altura es cero. Entonces igualamos la función a cero: $x^2-4x+3=0$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Esta ecuación sale de multiplicar dos paréntesis. Si multiplicamos $(x+m)(x+n)$, queda $x^2+(m+n)x+m\\cdot n$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Comparemos con la nuestra: lo que acompaña a la $x$ es $-4$, así que $m+n=-4$. El número solo es $3$, así que $m\\cdot n=3$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Ahora buscamos dos números que multipliquen $3$ y sumen $-4$. Probemos con $1$ y $3$: suman $4$, no sirve. Con $-1$ y $-3$: multiplican $3$ y suman $-4$. Estos sí sirven.",
+    "a": "p:4"
+   },
+   {
+    "t": "Con $-1$ y $-3$ armamos los paréntesis: $(x-1)(x-3)=0$.",
+    "a": "p:5"
+   },
+   {
+    "t": "Y como un producto da cero solo si uno de los factores es cero, entonces $x=1$ o $x=3$.",
+    "a": "p:6"
+   },
+   {
+    "t": "Lo confirmamos en la gráfica: la curva toca el eje en $1$ y en $3$. Es la opción B.",
+    "a": "p:7|o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate que hay una $x^2$, así que la gráfica es una curva en forma de U, es decir, una parábola.",
+    "a": "m:$f(x)=x^2-4x+3$"
+   },
+   {
+    "t": "Cortar el eje $x$ significa estar a altura cero, o sea $f(x)=0$.",
+    "a": "m:corta el eje $x$"
+   },
+   {
+    "t": "Cortar el eje $x$ es tocar la línea horizontal. Por ahora no sabemos cuánto vale $x$ en esos dos puntos.",
+    "a": "p:0"
+   },
+   {
+    "t": "En esos puntos la altura es cero. Entonces igualamos la función a cero: $x^2-4x+3=0$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Esta ecuación sale de multiplicar dos paréntesis. Si multiplicamos $(x+m)(x+n)$, queda $x^2+(m+n)x+m\\cdot n$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Comparemos con la nuestra: lo que acompaña a la $x$ es $-4$, así que $m+n=-4$. El número solo es $3$, así que $m\\cdot n=3$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Ahora buscamos dos números que multipliquen $3$ y sumen $-4$. Probemos con $1$ y $3$: suman $4$, no sirve. Con $-1$ y $-3$: multiplican $3$ y suman $-4$. Estos sí sirven.",
+    "a": "p:4"
+   },
+   {
+    "t": "Con $-1$ y $-3$ armamos los paréntesis: $(x-1)(x-3)=0$.",
+    "a": "p:5"
+   },
+   {
+    "t": "Y como un producto da cero solo si uno de los factores es cero, entonces $x=1$ o $x=3$.",
+    "a": "p:6"
+   },
+   {
+    "t": "Lo confirmamos en la gráfica: la curva toca el eje en $1$ y en $3$.",
+    "a": "p:7"
+   },
+   {
+    "t": "Y verificamos: $f(1)=1-4+3=0$ y $f(3)=9-12+3=0$.",
+    "a": "p:8"
+   },
+   {
+    "t": "La A, $x=-1,-3$, tienta, pero es un error de signos: son los números del paréntesis, no las raíces.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $x=0,3$, tienta porque el $3$ sí es raíz, pero el $0$ es donde la curva corta el eje $y$, no el $x$.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $x=2,4$, tienta porque el $2$ parece importante, pero es el vértice, no un corte con el eje.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Imagina la parábola como el arco de un puente: las raíces son los dos puntos donde el arco toca el suelo.",
+    "k": "ana"
+   },
+   {
+    "t": "El vértice queda justo en el medio, en $x=2$, entre $1$ y $3$. Por eso la D es un señuelo.",
+    "k": "contra"
+   },
+   {
+    "t": "Un atajo: la suma de las raíces es $4$ y el producto es $3$. Solo $1$ y $3$ cumplen las dos cosas.",
+    "a": "p:9",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: escribir $(x+1)(x+3)$ por no mirar el signo del término del medio.",
+    "k": "err"
+   }
+  ]
+ },
+ "soc-001": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "La tutela nace con la Constitución de $1991$ y sirve para proteger derechos.",
+    "a": "m:tutela|m:Constitución de 1991|m:sirve para"
+   },
+   {
+    "t": "Antes de 1991 no había un camino directo para reclamar un derecho. Fue la Constitución de 1991 la que creó la tutela.",
+    "a": "p:1"
+   },
+   {
+    "t": "Fíjate que sirve para pedir protección inmediata de los derechos fundamentales.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces la respuesta es la opción B: pide protección inmediata de derechos fundamentales.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Primero, la tutela es un mecanismo jurídico, una herramienta que la ley le da a las personas.",
+    "a": "m:tutela"
+   },
+   {
+    "t": "Ahora, nace con la Constitución de $1991$.",
+    "a": "m:Constitución de 1991"
+   },
+   {
+    "t": "Y lo que nos preguntan es para qué sirve.",
+    "a": "m:sirve para"
+   },
+   {
+    "t": "Piensa que un derecho urgente no puede esperar meses a que lo resuelvan.",
+    "a": "p:0"
+   },
+   {
+    "t": "En 1886 no existía un mecanismo directo; en 1991 se crea la tutela.",
+    "a": "p:1"
+   },
+   {
+    "t": "Cualquier persona puede pedirle al juez protección, y él debe decidir en máximo $10$ días.",
+    "a": "p:1"
+   },
+   {
+    "t": "Entonces sirve para derechos vulnerados, no para cambiar leyes ni para elegir presidente.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A, cambiar las leyes del Congreso, tienta, pero eso lo hace el Congreso, no la tutela.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, elegir al presidente, se hace con el voto de los ciudadanos.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, declarar la guerra, no tiene nada que ver con la tutela.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como llamar a urgencias cuando te duele algo fuerte: no esperas una cita para dentro de un mes, pides ayuda ya.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, si un colegio te niega el cupo sin razón, puedes presentar una tutela.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: confundirla con cambiar leyes, que le toca al Congreso.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-003": {
+  "1": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate: tenemos una resistencia de $6\\ \\Omega$ y una batería de $12\\ \\text{V}$.",
+    "a": "m:6 Ω|m:12 V"
+   },
+   {
+    "t": "Y lo que nos piden calcular es la corriente.",
+    "a": "m:La corriente"
+   },
+   {
+    "t": "Entonces anotamos lo que sabemos: $R=6$, $V=12$, y lo que buscamos es la corriente $I$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Mira las barras: a más resistencia, pasa menos corriente. Por eso aquí vamos a dividir.",
+    "a": "p:2"
+   },
+   {
+    "t": "La ley de Ohm despejada es $I=V/R$. Entonces $12$ entre $6$ nos da $2$ amperios.",
+    "a": "p:3|p:4"
+   },
+   {
+    "t": "Así que $I=12/6=2\\ \\text{A}$, y la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "La resistencia, de $6\\ \\Omega$, es lo que se opone al paso de la corriente.",
+    "a": "m:6 Ω"
+   },
+   {
+    "t": "El voltaje, de $12\\ \\text{V}$, es el empujón que le da la batería a la corriente.",
+    "a": "m:12 V"
+   },
+   {
+    "t": "Lo que nos piden es la corriente, y esa se mide en amperios.",
+    "a": "m:La corriente"
+   },
+   {
+    "t": "Imagínate una manguera: la presión del agua, qué tan angosta es y cuánta agua termina saliendo.",
+    "a": "p:0"
+   },
+   {
+    "t": "Ahora pasamos los datos a símbolos: $R=6$, $V=12$, y la incógnita es la corriente $I$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Con la misma batería, si la resistencia crece, la corriente baja. Eso ya nos adelanta que vamos a dividir.",
+    "a": "p:2"
+   },
+   {
+    "t": "La ley de Ohm dice $V=I\\cdot R$. Para dejar sola la $I$, dividimos ambos lados entre $R$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Reemplazamos: $12$ voltios entre $6$ ohmios nos da $2$ amperios.",
+    "a": "p:4"
+   },
+   {
+    "t": "Ojo con la A, que dice $72$: sale de multiplicar $V\\cdot R$, y aquí eso no tiene sentido físico.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, con $0{,}5$, tienta porque invierte la división y calcula $R/V$ en lugar de dividir el voltaje entre la resistencia.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, que dice $6$, solo copia el valor de la resistencia sin hacer ningún cálculo.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B, $2\\ \\text{A}$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Piensa en la fila de la puerta del colegio: más voltaje es más empujón, más resistencia es una puerta más angosta, y la corriente son los estudiantes que logran pasar.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, con $12$ V y $12\\ \\Omega$ pasa solo $1$ A, la mitad de lo que pasaba antes.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: multiplicar $12\\cdot6=72$. Si la resistencia sube, la corriente baja, no crece.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-009": {
+  "1": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "Nos preguntan qué le pasa a las presas cuando aumenta la mortalidad de los depredadores.",
+    "a": "m:mortalidad de los depredadores (γ)"
+   },
+   {
+    "t": "Fíjate: el equilibrio de las presas es $\\gamma/\\delta$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Probemos con números: si $\\gamma=0{,}5$ sale $25$, y si $\\gamma=1$ sale $50$. O sea, sube.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces las presas aumentan, y la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "El parámetro $\\gamma$ es la mortalidad de los depredadores. Si sube, significa que mueren más.",
+    "a": "m:mortalidad de los depredadores (γ)"
+   },
+   {
+    "t": "Y el cociente $\\gamma/\\delta$ es el que nos da el equilibrio de las presas.",
+    "a": "m:γ/δ"
+   },
+   {
+    "t": "Piensa en un bosque con zorros y conejos, donde unos se alimentan de los otros.",
+    "a": "p:0"
+   },
+   {
+    "t": "Entonces el equilibrio de las presas se escribe $x^*=\\gamma/\\delta$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Con $\\delta=0{,}02$, si $\\gamma=0{,}5$ da $25$, y si $\\gamma=1$ da $50$. Fíjate que el valor aumentó.",
+    "a": "p:2"
+   },
+   {
+    "t": "Tiene sentido: si los depredadores mueren más, se necesitan más presas para poder sostenerlos.",
+    "a": "p:3"
+   },
+   {
+    "t": "La A, que dice \"disminuye\", tienta porque parece lo lógico, pero plantea lo contrario de lo que pasa en este equilibrio.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, \"no cambia\", ignora que los depredadores dependen de las presas para alimentarse.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, \"se vuelve cero\", es un extremo exagerado, y no hay ninguna razón para pensarlo.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como una panadería donde los clientes se van rápido: para mantener la tienda llena, necesitas que lleguen más y más.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, si $\\gamma$ se triplica, $x^*$ también se triplica.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: pensar que si los depredadores mueren más, las presas también bajan. En este equilibrio ocurre al revés.",
+    "k": "err"
+   }
+  ]
+ },
+ "lec-001": {
+  "1": [
+   {
+    "t": "Vamos a leer el texto con calma, para entender de qué trata.",
+    "a": "leer"
+   },
+   {
+    "t": "Primero, fíjate en que las bibliotecas hacen más que prestar libros.",
+    "a": "m:no solo prestan libros"
+   },
+   {
+    "t": "Después aparece \"por eso\", que anuncia la conclusión del autor.",
+    "a": "m:Por eso"
+   },
+   {
+    "t": "Y su tesis es que medir el valor de las bibliotecas solo por los préstamos resulta engañoso.",
+    "a": "m:medir su valor solo por el número de préstamos resulta engañoso"
+   },
+   {
+    "t": "Entonces lo que el autor cuestiona es medir el valor solo por préstamos, y la respuesta es la B.",
+    "a": "m:¿Qué cuestiona el autor?|o:B:ok"
+   },
+   {
+    "t": "Recuerda que el texto da razones: las bibliotecas sirven para mucho más que prestar libros.",
+    "a": "p:1"
+   },
+   {
+    "t": "Luego \"por eso\" nos lleva a la conclusión: medir solo por préstamos es engañoso.",
+    "a": "p:2"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el texto completo, para ver de qué trata y qué defiende el autor.",
+    "a": "leer"
+   },
+   {
+    "t": "Empecemos por lo que dice: las bibliotecas no solo prestan libros; también sirven para estudiar, hacer trámites y encontrarse. Ese es el punto de partida.",
+    "a": "m:no solo prestan libros"
+   },
+   {
+    "t": "Ahora, \"por eso\" es un conector de consecuencia: lo que viene después es la conclusión.",
+    "a": "m:Por eso",
+    "k": "por"
+   },
+   {
+    "t": "Y la conclusión es que medir su valor solo por el número de préstamos resulta engañoso. Esa es la tesis.",
+    "a": "m:medir su valor solo por el número de préstamos resulta engañoso"
+   },
+   {
+    "t": "Pasemos a la pregunta: qué cuestiona el autor, es decir, con qué no está de acuerdo.",
+    "a": "m:¿Qué cuestiona el autor?"
+   },
+   {
+    "t": "Una idea sencilla que ayuda: algo valioso no se puede medir con un solo número.",
+    "a": "p:0"
+   },
+   {
+    "t": "El texto arranca con razones: la biblioteca como refugio, para trámites y para encontrarse.",
+    "a": "p:1"
+   },
+   {
+    "t": "Entonces \"por eso\" nos avisa que ya viene la conclusión.",
+    "a": "p:1",
+    "k": "por"
+   },
+   {
+    "t": "Y esa conclusión critica medir el valor solo por préstamos. La palabra \"engañoso\" es la pista de que lo cuestiona.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A dice que prestan pocos libros, y tienta porque habla de préstamos. Pero el autor nunca dice eso; solo dice que prestar no lo es todo.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C habla de trámites digitales, pero el autor los menciona como algo bueno, no como algo que cuestione.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D habla de pocas bibliotecas en los barrios, pero el texto nunca toca ese tema.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la B es la correcta: recoge justo la tesis del autor.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como medir a una persona solo por su nota de matemáticas: se pierde todo lo demás que sabe y que es.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, a un parque no lo medimos solo por cuánta gente entra, sino por lo que la gente hace ahí, como jugar un partido o echarse una siesta.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: elegir la opción que repite palabras del texto, como \"trámites digitales\", sin preguntarse qué es lo que el autor realmente cuestiona.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-003": {
+  "1": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate: en la bolsa hay $3$ fichas rojas y $5$ azules, y nos piden que salga una roja.",
+    "a": "m:3 fichas rojas|m:5 azules|m:sea roja"
+   },
+   {
+    "t": "Dibuja la bolsa con $3$ rojas y $5$ azules. En total hay $8$ fichas.",
+    "a": "p:1"
+   },
+   {
+    "t": "La probabilidad es las fichas que quiero sobre todas las que hay, o sea, $3$ sobre $8$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces la respuesta es $\\tfrac38$, que es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "Hay tres fichas rojas, y esas son las que nos sirven, las que queremos que salgan.",
+    "a": "m:3 fichas rojas"
+   },
+   {
+    "t": "Hay cinco azules, que junto con las rojas completan el total de $8$ fichas.",
+    "a": "m:5 azules"
+   },
+   {
+    "t": "Lo que nos piden es que la ficha que salga sea roja.",
+    "a": "m:sea roja"
+   },
+   {
+    "t": "Imagina una bolsa con fichas, de donde sacas una sin mirar.",
+    "a": "p:0"
+   },
+   {
+    "t": "Contemos: rojas, que son las que quiero, tres; azules, cinco. Entonces el total de fichas es ocho.",
+    "a": "p:1"
+   },
+   {
+    "t": "La regla es: las que quiero, sobre todas las que hay. Es decir, $3$ sobre $8$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ojo: abajo van las ocho fichas, no solo las cinco azules. Por eso $3/5$ está mal.",
+    "a": "p:3",
+    "k": "err"
+   },
+   {
+    "t": "La A, $\\tfrac35$, tienta porque compara las rojas con las azules, en lugar de compararlas con el total.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $\\tfrac58$, es la probabilidad de sacar una azul, no una roja.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $\\tfrac13$, no sale de ningún cálculo con estos números.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B, $\\tfrac38$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como una rifa con $8$ boletas: si compraste $3$, tienes $3$ de $8$ posibilidades de ganarte la nevera.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, en un salón de $30$ estudiantes hay $10$ que usan gafas. Si eliges a uno al azar, la probabilidad de que use gafas es $10/30$.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: comparar $3$ rojas contra $5$ azules. La probabilidad siempre se compara contra el total.",
+    "k": "err"
+   }
+  ]
+ },
+ "soc-002": {
+  "1": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate que nos piden la rama del poder público que hace las leyes.",
+    "a": "m:hace las leyes|m:la rama del poder público"
+   },
+   {
+    "t": "Son tres ramas, y la que hace las leyes es la legislativa, es decir, el Congreso.",
+    "a": "p:1"
+   },
+   {
+    "t": "Así que la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+    "a": "leer"
+   },
+   {
+    "t": "La palabra clave aquí es \"hace las leyes\".",
+    "a": "m:hace las leyes"
+   },
+   {
+    "t": "Y lo que nos piden es una de las ramas del poder público.",
+    "a": "m:la rama del poder público"
+   },
+   {
+    "t": "Recordemos que son tres: una escribe las reglas, otra las ejecuta y otra juzga.",
+    "a": "p:1"
+   },
+   {
+    "t": "Legislativa viene de legislar, que significa hacer leyes.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ojo con la electoral: no es una de las tres ramas, sino un organismo que organiza las elecciones.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A, Ejecutiva, tienta porque suena a quien manda, pero esa rama aplica las leyes y gobierna.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, Judicial, resuelve conflictos y decide si alguien cumplió o no la ley.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, Electoral, se encarga de organizar las elecciones.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la B, Legislativa.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como un partido de fútbol: unos escriben el reglamento, otros dirigen el juego en la cancha y el árbitro decide cuando alguien comete una falta.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, el Congreso aprueba una ley, el presidente la aplica y un juez resuelve si alguien la incumple.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error común: elegir \"Ejecutiva\" solo porque suena a quien manda.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-004": {
+  "1": [
+   {
+    "t": "Empecemos leyendo la reacción con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate: es la combustión del propano, $\\text{C}_3\\text{H}_8+\\text{O}_2\\to\\text{CO}_2+\\text{H}_2\\text{O}$.",
+    "a": "m:C₃H₈ + O₂ → CO₂ + H₂O"
+   },
+   {
+    "t": "Primero el carbono: el propano trae $3$, así que necesitamos $3$ $\\text{CO}_2$. Luego el hidrógeno: son $8$, entonces salen $4$ $\\text{H}_2\\text{O}$.",
+    "a": "p:2|p:3"
+   },
+   {
+    "t": "Ahora el oxígeno: del lado derecho hay $6+4=10$ átomos, y como cada $\\text{O}_2$ trae dos, necesitamos $5$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Revisemos en la tabla que todo coincida: de ambos lados quedan las mismas cantidades.",
+    "a": "p:5"
+   },
+   {
+    "t": "Por eso, los oxígenos de la derecha suman $6+4=10$, o sea $5\\ \\text{O}_2$. Es la opción C.",
+    "a": "o:C:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer la reacción con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Ojo con lo que preguntan: el coeficiente del $\\text{O}_2$, no el de otro compuesto.",
+    "a": "m:coeficiente del O₂"
+   },
+   {
+    "t": "Piensa en la reacción como una receta: los átomos que entran tienen que ser los mismos que salen.",
+    "a": "p:0"
+   },
+   {
+    "t": "Entonces vamos en orden: carbono, hidrógeno y al final el oxígeno, porque ese aparece en los dos productos.",
+    "a": "p:1"
+   },
+   {
+    "t": "Empezamos por el carbono: el propano tiene $3$ átomos de C, así que necesitamos $3$ $\\text{CO}_2$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ahora el hidrógeno: son $8$ átomos, y como cada agua usa $2$, hacen falta $4$ $\\text{H}_2\\text{O}$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Por último el oxígeno: $3\\cdot2=6$ más $4\\cdot1=4$ da $10$ átomos. Cada $\\text{O}_2$ aporta $2$, entonces necesitamos $5$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Para verificar, contamos a cada lado: C $3$ y $3$, H $8$ y $8$, O $10$ y $10$. Todo cuadra.",
+    "a": "p:5"
+   },
+   {
+    "t": "La A, $3$, tienta porque es el coeficiente del $\\text{CO}_2$, pero esa es otra sustancia.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La B, $4$, es el número del agua, no el del oxígeno.",
+    "a": "o:B:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $10$, cuenta átomos de oxígeno, pero la pregunta es por moléculas de $\\text{O}_2$.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la respuesta es la C, $5$.",
+    "a": "o:C:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como preparar arepas con queso: si cada arepa lleva $2$ tajadas y quieres $5$ arepas, necesitas $10$ tajadas.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo sencillo: $\\text{H}_2+\\text{O}_2\\to\\text{H}_2\\text{O}$ queda $2\\text{H}_2+\\text{O}_2\\to2\\text{H}_2\\text{O}$.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error: cambiar los números pequeños de abajo, como el $2$ de $\\text{O}_2$. Eso no se toca; solo se cambian los coeficientes de adelante.",
+    "k": "err"
+   }
+  ]
+ },
+ "ing-001": {
+  "1": [
+   {
+    "t": "Empecemos leyendo la frase con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice {{She ___ to school every day}}, es decir, ella va al colegio todos los días.",
+    "a": "m:She|m:every day"
+   },
+   {
+    "t": "Primero entendamos la frase completa: {{She goes to school every day}}. Ella va a la escuela todos los días.",
+    "a": "p:1"
+   },
+   {
+    "t": "Fíjate: con {{she}}, el verbo lleva una letra extra, y {{go}} se vuelve {{goes}}.",
+    "a": "p:2|p:3"
+   },
+   {
+    "t": "Ahora escúchala: {{!She goes to school every day.}}",
+    "a": "p:4"
+   },
+   {
+    "t": "Repítela tú en voz alta, así se te queda el sonido. Va con la opción B.",
+    "a": "p:4"
+   },
+   {
+    "t": "Entonces la respuesta es {{goes}}, la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer la frase con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Mira, {{She}} es tercera persona del singular: una sola persona, ella.",
+    "a": "m:She",
+    "k": "por"
+   },
+   {
+    "t": "{{Every day}} significa todos los días. Eso nos habla de una rutina, y las rutinas se expresan en presente simple.",
+    "a": "m:every day"
+   },
+   {
+    "t": "Aquí va un truco: con he, she e it, el verbo lleva -s o -es. Con I, you, we y they, no.",
+    "a": "p:0"
+   },
+   {
+    "t": "Entendamos la frase palabra por palabra: {{she}}, ella; {{goes}}, va; {{to school}}, a la escuela; {{every day}}, todos los días.",
+    "a": "p:1"
+   },
+   {
+    "t": "Ahora busquemos las pistas: {{she}} es una sola persona, y {{every day}} marca una rutina.",
+    "a": "p:2"
+   },
+   {
+    "t": "Fíjate en la tabla: con {{I}}, {{you}}, {{we}} y {{they}} se usa {{go}}. Con {{he}}, {{she}} e {{it}} se usa {{goes}}.",
+    "a": "p:3"
+   },
+   {
+    "t": "Escucha cómo suena y luego repítela: {{!She goes to school every day.}}",
+    "a": "p:4"
+   },
+   {
+    "t": "La A, {{Go}}, tienta porque está bien para I, you, we o they, pero no sirve con {{she}}.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, {{Going}}, necesita un auxiliar, como en {{is going}}, y hablaría de algo que pasa ahora mismo.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, {{Gone}}, es el participio de {{go}} y pide {{has}} antes, como en {{has gone}}.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, {{goes}}.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como la camiseta del equipo: solo {{he}}, {{she}} e {{it}} llevan el parche de la -s.",
+    "k": "ana"
+   },
+   {
+    "t": "Mira estos ejemplos: {{He plays}}, {{she watches}}, {{it rains}}.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error: decir {{She go}}. Suena natural porque en español el verbo no cambia así, pero en inglés sí.",
+    "k": "err"
+   }
+  ]
+ },
+ "lec-002": {
+  "1": [
+   {
+    "t": "Empecemos leyendo la frase con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Llovió toda la noche, y aun así el partido se jugó. Hay que llenar el espacio con el conector correcto.",
+    "a": "m:Llovió toda la noche|m:el partido se jugó|m:___"
+   },
+   {
+    "t": "Fíjate: las dos ideas chocan, porque llovió, pero el partido se jugó igual.",
+    "a": "p:1"
+   },
+   {
+    "t": "Cuando las ideas se oponen, sirve un conector de contraste como «sin embargo».",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces va «sin embargo», la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el texto con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "La primera idea es que llovió toda la noche. Uno esperaría que el partido se cancelara.",
+    "a": "m:Llovió toda la noche"
+   },
+   {
+    "t": "La segunda idea es que el partido se jugó, o sea, pasó lo contrario de lo esperado.",
+    "a": "m:el partido se jugó"
+   },
+   {
+    "t": "Entonces el espacio tiene que unir dos ideas que se oponen.",
+    "a": "m:___"
+   },
+   {
+    "t": "Pensemos primero qué esperábamos: si llueve mucho, normalmente no se juega.",
+    "a": "p:0"
+   },
+   {
+    "t": "Pero se jugó. Eso va contra lo esperado, así que hay una oposición.",
+    "a": "p:1"
+   },
+   {
+    "t": "Los conectores de oposición son «sin embargo», «pero» y «aunque». Los otros sirven para consecuencia, suma o causa.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A, «por lo tanto», tienta, pero indica consecuencia: diría que llover causó que se jugara, y eso no tiene lógica.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, «además», suma una idea en el mismo sentido, y aquí las ideas van en sentido contrario.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, «porque», daría una causa, y con ella la frase queda mal armada.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, «sin embargo».",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como cuando dices: «hacía frío, sin embargo salimos a jugar fútbol»; la segunda parte contradice lo que esperabas.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: «Estudió mucho; sin embargo, no aprobó».",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error: elegir «por lo tanto», que une una causa con su resultado esperado.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-004": {
+  "1": [
+   {
+    "t": "Vamos a leer el problema con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Los datos son $2,3,3,4,8$, con media $4$ y mediana $3$. Se elimina el $8$.",
+    "a": "m:2, 3, 3, 4, 8|m:media 4 y mediana 3|m:se elimina el dato 8"
+   },
+   {
+    "t": "Fíjate en el $8$: es el valor más grande y por eso tira la media hacia arriba.",
+    "a": "p:1"
+   },
+   {
+    "t": "Comparemos antes y después de quitarlo: la media baja de $4$ a $3$ y la mediana sigue en $3$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Entonces la mediana no cambia. Es la opción A.",
+    "a": "o:A:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el problema con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Tenemos los datos ordenados, con media $4$ y mediana $3$.",
+    "a": "m:2, 3, 3, 4, 8|m:media 4 y mediana 3"
+   },
+   {
+    "t": "Se quita el $8$, un dato muy grande, es decir, un valor extremo.",
+    "a": "m:se elimina el dato 8"
+   },
+   {
+    "t": "Lo que nos preguntan es qué pasa con la media y con la mediana.",
+    "a": "m:qué ocurre"
+   },
+   {
+    "t": "Primero recordemos qué es cada una. La media reparte todo en partes iguales; la mediana es el dato que queda en el medio.",
+    "a": "p:0"
+   },
+   {
+    "t": "Mira los datos en barras: el $8$ es el que se sale de lo normal.",
+    "a": "p:1"
+   },
+   {
+    "t": "Con el $8$, la suma es $20$ entre $5$ datos, y la media es $4$. Sin el $8$, la suma es $12$ entre $4$ datos, y la media es $3$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ahora la mediana: ordenamos y tomamos el centro. Con cuatro datos hay dos del medio, $3$ y $3$, y su promedio es $3$. No cambió.",
+    "a": "p:2"
+   },
+   {
+    "t": "La B dice que la media no cambia, pero acabamos de ver que bajó de $4$ a $3$.",
+    "a": "o:B:no",
+    "k": "err"
+   },
+   {
+    "t": "La C afirma que la media no cambia y la mediana sube, y las dos cosas son falsas.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice que ambas bajan a $2$, pero la media baja a $3$ y la mediana se queda en $3$.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la correcta es la A.",
+    "a": "o:A:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Piensa en los sueldos de una tienda de barrio: todos ganan parecido, pero el dueño gana muchísimo. Él sube la media, pero la mediana no se mueve.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: en $1, 2, 3$ la media y la mediana son $2$. Si cambias el $3$ por $30$, la media sube a $11$ y la mediana sigue en $2$.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error: creer que si un dato desaparece, todo cambia. La mediana puede quedarse quieta.",
+    "k": "err"
+   }
+  ]
+ },
+ "soc-003": {
+  "1": [
+   {
+    "t": "Vamos a leer el problema con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Se trata de una carta de $1810$ escrita por un testigo de los hechos.",
+    "a": "m:1810|m:un testigo de los hechos"
+   },
+   {
+    "t": "Fíjate: una carta de 1810 escrita por un testigo es de la misma época, así que es una fuente primaria.",
+    "a": "p:1"
+   },
+   {
+    "t": "Por eso la respuesta es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "El año es $1810$, y eso nos ubica en el tiempo de los hechos.",
+    "a": "m:1810"
+   },
+   {
+    "t": "El testigo escribe sobre lo que vio con sus propios ojos.",
+    "a": "m:un testigo de los hechos"
+   },
+   {
+    "t": "La pregunta está planteada desde el punto de vista del historiador de hoy.",
+    "a": "m:para un historiador de hoy"
+   },
+   {
+    "t": "Entonces, un testigo cuenta lo que vivió, sin que nadie se lo haya contado.",
+    "a": "p:0"
+   },
+   {
+    "t": "Mira el esquema: las fuentes de la izquierda son de la época, y las de la derecha se escribieron después.",
+    "a": "p:1"
+   },
+   {
+    "t": "La carta de 1810 pertenece al momento de los hechos, y el historiador de hoy la usa como evidencia.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A, secundaria, tienta, pero esa es la que analiza los hechos tiempo después, como un libro actual.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, «opinión sin valor», no es cierta: para un historiador una carta así vale muchísimo.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, «mapa», es otro tipo de documento y no encaja con una carta.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, fuente primaria.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como ver la grabación de la cámara en el estadio, frente a un comentarista que cuenta el partido al día siguiente.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: un diario de 1810 es fuente primaria, y un libro de texto de hoy es secundaria.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con este error: pensar que una opinión no sirve. Sirve como fuente aunque sea parcial.",
+    "k": "err"
+   }
+  ]
+ },
+ "cie-005": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Cruzamos dos plantas $Aa$, y nos piden la probabilidad de que el hijo sea recesivo, es decir, $aa$.",
+    "a": "m:Aa|m:Dos plantas heterocigotas|m:recesivo (aa)"
+   },
+   {
+    "t": "Fíjate que cada padre entrega $A$ o $a$, con la misma probabilidad.",
+    "a": "p:1"
+   },
+   {
+    "t": "Entonces cruzamos las dos monedas en un cuadro, y salen $4$ casillas posibles.",
+    "a": "p:3"
+   },
+   {
+    "t": "De esas casillas, solo una es $aa$, así que la probabilidad es $1/4$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Por eso, una de cuatro es $aa$: $\\tfrac14$. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Heterocigota quiere decir que lleva dos letras distintas: una mayúscula, que manda, y una minúscula, que se esconde. Por eso se escribe $Aa$.",
+    "a": "m:Dos plantas heterocigotas"
+   },
+   {
+    "t": "Nos piden el recesivo $aa$, que solo aparece cuando el hijo recibe la $a$ de ambos padres.",
+    "a": "m:recesivo (aa)"
+   },
+   {
+    "t": "Ahora mira que cada planta tiene dos letras: $A$ y $a$.",
+    "a": "p:0"
+   },
+   {
+    "t": "Al formar una semilla, la planta aporta una de las dos, y cada una tiene probabilidad $1/2$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Armamos entonces un cuadro con las letras del padre en las columnas y las de la madre en las filas.",
+    "a": "p:2"
+   },
+   {
+    "t": "Salen $AA$, $Aa$, $Aa$ y $aa$: cuatro casillas con la misma probabilidad.",
+    "a": "p:3"
+   },
+   {
+    "t": "De ellas, solo una es $aa$, el recesivo. Es decir, $1$ de $4$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Ojo con esto: $Aa$ se ve igual que $AA$ porque $A$ domina, así que no cuenta como recesivo.",
+    "a": "p:4",
+    "k": "por"
+   },
+   {
+    "t": "La A, $\\tfrac12$, tienta porque sale de cruzar $Aa\\times aa$, pero aquí cruzamos dos heterocigotas.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $\\tfrac34$, es la probabilidad de que el hijo muestre la característica que manda, la dominante, y no el recesivo.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $0$, olvida que el recesivo \"escondido\" sí aparece cuando llegan las dos letras minúsculas.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la respuesta es la B, $\\tfrac14$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Piénsalo como lanzar dos monedas: sacar dos caras tiene probabilidad $1/4$, igual que recibir la letra recesiva de los dos padres.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, si siembras $100$ semillas, se esperan unas $25$ recesivas y unas $75$ con la característica dominante.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: elegir $1/2$ porque hay dos letras. Eso sería acertar una sola letra, y aquí necesitas las dos.",
+    "k": "err"
+   }
+  ]
+ },
+ "ing-002": {
+  "1": [
+   {
+    "t": "Empecemos leyendo la frase.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice {{If it rains tomorrow, we ___ at home}}, que significa: si llueve mañana, nos quedamos en casa.",
+    "a": "m:If it rains tomorrow|m:we"
+   },
+   {
+    "t": "Completa quedaría {{If it rains tomorrow, we will stay at home}}. Es decir, si llueve mañana, nos quedamos en casa.",
+    "a": "p:1"
+   },
+   {
+    "t": "Fíjate: la condición va en presente, {{it rains}}, y el resultado se arma con {{will}} más el verbo.",
+    "a": "p:2|p:3"
+   },
+   {
+    "t": "Ahora escúchala completa: {{!If it rains tomorrow, we will stay at home.}}",
+    "a": "p:5"
+   },
+   {
+    "t": "Por eso la que encaja es {{will stay}}.",
+    "a": "p:5"
+   },
+   {
+    "t": "Entonces la respuesta es {{will stay}}, la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo la frase.",
+    "a": "leer"
+   },
+   {
+    "t": "{{If it rains tomorrow}} plantea una condición posible, algo que de verdad puede pasar.",
+    "a": "m:If it rains tomorrow"
+   },
+   {
+    "t": "Fíjate que después de {{if}} el verbo va en presente, {{rains}}, aunque se hable de mañana.",
+    "a": "m:If it rains tomorrow",
+    "k": "por"
+   },
+   {
+    "t": "Entonces el espacio queda así: {{we will stay at home}}.",
+    "a": "m:___"
+   },
+   {
+    "t": "Es un plan posible: lo que haríamos si mañana llueve.",
+    "a": "p:0"
+   },
+   {
+    "t": "Vamos palabra por palabra: {{if}} es si; {{it rains}}, llueve; {{tomorrow}}, mañana; y {{will stay}}, nos quedaremos.",
+    "a": "p:1"
+   },
+   {
+    "t": "Ahora mira las partes: la condición va en presente, {{it rains}}, y {{Tomorrow}} nos dice que es futuro.",
+    "a": "p:2"
+   },
+   {
+    "t": "El resultado se arma con {{will}} más el verbo base.",
+    "a": "p:3"
+   },
+   {
+    "t": "Compara cómo suena bien y cómo suena mal: después de {{if}} no se usa {{will}}.",
+    "a": "p:4"
+   },
+   {
+    "t": "Ahora escucha y repite: {{!If it rains tomorrow, we will stay at home.}}",
+    "a": "p:5"
+   },
+   {
+    "t": "La A, {{Stayed}}, tienta, pero es pasado, y {{tomorrow}} habla del futuro.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, {{Staying}}, no tiene auxiliar, así que no forma una oración completa.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, {{Would stayed}}, está mal armada: después de {{would}} va el verbo base, {{would stay}}. Además, {{would}} sirve para cosas imaginarias.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la respuesta es la B, {{will stay}}.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como cuando dices «si llueve, no salimos al parque»: primero va la condición y luego el resultado.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo: {{If I see her, I will say hi.}} O sea, si la veo, la saludo.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: poner {{will}} también después de {{if}}. La condición se queda en presente.",
+    "k": "err"
+   }
+  ]
+ },
+ "lec-003": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el razonamiento con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Nos dicen que todos los que entregaron el proyecto aprobaron, y que Camila no aprobó.",
+    "a": "m:Todos los estudiantes que entregaron el proyecto aprobaron|m:Camila no aprobó"
+   },
+   {
+    "t": "Piénsalo como una flecha: entregar lleva a aprobar. Y Camila no aprobó.",
+    "a": "p:1"
+   },
+   {
+    "t": "Probemos: si hubiera entregado, habría aprobado, y eso no cuadra. Entonces no entregó.",
+    "a": "p:2"
+   },
+   {
+    "t": "Por eso la respuesta es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "La regla general es esta: entregar el proyecto implica aprobar.",
+    "a": "m:Todos los estudiantes que entregaron el proyecto aprobaron"
+   },
+   {
+    "t": "Además, sabemos que Camila no aprobó.",
+    "a": "m:Camila no aprobó"
+   },
+   {
+    "t": "Lo que nos piden es lo que se puede concluir con total certeza.",
+    "a": "m:Se puede concluir"
+   },
+   {
+    "t": "Fíjate en la regla: entregar lleva a aprobar, nada más.",
+    "a": "p:1"
+   },
+   {
+    "t": "Como Camila no aprobó, probemos las dos posibilidades.",
+    "a": "p:2"
+   },
+   {
+    "t": "Primero, si entregó, entonces habría aprobado, pero no aprobó. Eso es imposible.",
+    "a": "p:2"
+   },
+   {
+    "t": "Segundo, si no entregó, no hay ninguna contradicción. Esa es la única posibilidad que cuadra.",
+    "a": "p:2"
+   },
+   {
+    "t": "Es el mismo patrón de «si llueve, la calle se moja; la calle está seca, entonces no llovió».",
+    "a": "p:3"
+   },
+   {
+    "t": "La A dice que entregó, pero choca con la regla, porque entonces habría aprobado.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C dice que perdió por mala nota. Tienta, pero el texto no habla de notas, y sería inventar.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice que nadie aprobó, pero la regla afirma que los que entregaron sí aprobaron.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la respuesta es la B: no entregó el proyecto.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como un detective: si el culpable tuviera llaves, habría entrado a la casa. No entró, así que no tenía llaves.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo: «todos los peces nadan; esto no nada, entonces no es un pez».",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: ir al revés, «aprobó, entonces entregó». La regla no dice eso.",
+    "k": "err"
+   }
+  ]
+ },
+ "mat-005": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Se lanzan dos dados y queremos que la suma sea $7$.",
+    "a": "m:dos dados|m:suma sea 7"
+   },
+   {
+    "t": "En la tabla ves los $36$ casos posibles. Los marcados suman $7$, y son $6$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Recuerda que la probabilidad son los casos que quiero sobre todos los casos: $6$ sobre $36$, que es $1/6$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Entonces, el $7$ sale en $6$ casos: $\\tfrac{6}{36}=\\tfrac16$. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Fíjate: cada dado tiene $6$ caras, así que con los dos hay $6\\cdot6=36$ parejas posibles.",
+    "a": "m:dos dados"
+   },
+   {
+    "t": "Lo que buscamos es que la suma sea $7$.",
+    "a": "m:suma sea 7"
+   },
+   {
+    "t": "Con dos dados hay $6\\cdot6=36$ casos distintos.",
+    "a": "p:0"
+   },
+   {
+    "t": "Ahora los organizo en una tabla: un dado en las filas, el otro en las columnas, y dentro de cada casilla, la suma.",
+    "a": "p:1"
+   },
+   {
+    "t": "Marco los que dan $7$. Son $6$ parejas: $(1,6)$, $(2,5)$, $(3,4)$, $(4,3)$, $(5,2)$ y $(6,1)$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Ojo con esto: $(1,6)$ y $(6,1)$ cuentan por separado, porque son dos dados distintos.",
+    "a": "p:2",
+    "k": "por"
+   },
+   {
+    "t": "Entonces la probabilidad es casos que quiero sobre casos totales: $6/36$, que simplificado es $1/6$.",
+    "a": "p:3"
+   },
+   {
+    "t": "La A, $\\tfrac1{12}$, tienta, pero cuenta solo $3$ parejas y olvida que el orden importa.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C, $\\tfrac7{36}$, confunde el $7$ de la suma con la cantidad de casos.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D, $\\tfrac17$, divide entre las $7$ sumas posibles, pero esas sumas no tienen la misma probabilidad.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la respuesta es la B, $\\tfrac16$.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Imagina una bolsa con $36$ boletas de una rifa del barrio, y que solo $6$ son premiadas.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, para sumar $12$ solo sirve $(6,6)$. Es $1$ de $36$, mucho más difícil que sacar $7$.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: pensar que hay $11$ sumas posibles, de $2$ a $12$, y que todas tienen la misma probabilidad. No es así: unas se repiten más que otras.",
+    "k": "err"
+   }
+  ]
+ },
+ "soc-004": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Nos piden elegir la secuencia que esté en orden cronológico.",
+    "a": "m:orden cronológico"
+   },
+   {
+    "t": "Entonces ordenamos por año: $1810$, $1886$, el Frente Nacional y $1991$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Es decir, el Grito de $1810$, la Constitución de $1886$, el Frente Nacional y la Constitución de $1991$. Es la opción B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Cronológico quiere decir ordenado del más antiguo al más reciente.",
+    "a": "m:orden cronológico"
+   },
+   {
+    "t": "Aquí solo importa el orden de los años, nada más.",
+    "a": "p:0"
+   },
+   {
+    "t": "En la línea del tiempo queda así: $1810$, $1886$, de $1958$ a $1974$, y $1991$.",
+    "a": "p:1"
+   },
+   {
+    "t": "Un truco: primero van los años de $1800$ y después los de $1900$.",
+    "a": "p:2"
+   },
+   {
+    "t": "La A empieza en $1991$, el más reciente, y termina en $1810$. Está al revés.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C pone $1886$ antes de $1810$, y eso no puede ser.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D pone primero el Frente Nacional, pero ese fue después de $1886$.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Entonces la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como los capítulos de una serie: cada uno pasa después del anterior, y no puedes ver el final primero.",
+    "k": "ana"
+   },
+   {
+    "t": "Por ejemplo, $1810$ va antes que $1991$, aunque a veces suene al revés.",
+    "k": "ej"
+   },
+   {
+    "t": "Ojo con el error común: dejarse llevar por la opción que empieza con la Constitución de $1991$, solo porque suena conocida.",
+    "k": "err"
+   }
+  ]
+ }
+}

@@ -1,0 +1,838 @@
+{
+ "id": "fis.proyectil",
+ "titulo": "Lanzamiento de proyectiles",
+ "area": "ciencias",
+ "subarea": "fisica",
+ "competencia": "uso_comprensivo_del_conocimiento_cientifico",
+ "evidencias": [
+  "CIE_E2.5",
+  "CIE_E4.2",
+  "CIE_E5.3"
+ ],
+ "nivel": 2,
+ "tiempoMin": 8,
+ "modo": "dinamico",
+ "params": [
+  {
+   "key": "v0",
+   "label": "Velocidad inicial",
+   "tipo": "slider",
+   "min": 1,
+   "max": 50,
+   "paso": 0.5,
+   "def": 20,
+   "unidad": "m/s",
+   "hint": "Rapidez con la que sale el proyectil. Si la duplicas, el alcance se cuadruplica."
+  },
+  {
+   "key": "theta",
+   "label": "Ángulo",
+   "tipo": "slider",
+   "min": 0,
+   "max": 90,
+   "paso": 1,
+   "def": 45,
+   "unidad": "°",
+   "hint": "Ángulo sobre el piso: 0° es horizontal y 90° es vertical."
+  },
+  {
+   "key": "g",
+   "label": "Gravedad",
+   "tipo": "select",
+   "opciones": [
+    {
+     "v": 9.8,
+     "l": "Tierra (9,8)"
+    },
+    {
+     "v": 10,
+     "l": "Modo examen ICFES (10)"
+    },
+    {
+     "v": 1.62,
+     "l": "Luna (1,62)"
+    }
+   ],
+   "def": 9.8,
+   "hint": "Aceleración hacia abajo que impone la gravedad. Elige otro lugar y mira qué cambia."
+  },
+  {
+   "key": "drag",
+   "label": "Resistencia del aire",
+   "tipo": "toggle",
+   "def": false,
+   "hint": "Añade una fuerza del aire que se opone al movimiento y crece con el cuadrado de la rapidez."
+  }
+ ],
+ "derivadas": {
+  "k": "si(drag, 0.02, 0)",
+  "vx0": "v0*cos(rad(theta))",
+  "vy0": "v0*sin(rad(theta))",
+  "Tsub": "vy0/g",
+  "Tv": "2*vy0/g",
+  "Hm": "vy0*vy0/(2*g)",
+  "Ralc": "vx0*Tv"
+ },
+ "fisica": {
+  "integracion": "rk4",
+  "estado": {
+   "x": 0,
+   "y": 0,
+   "vx": "vx0",
+   "vy": "vy0"
+  },
+  "ecuaciones": {
+   "x": "vx",
+   "y": "vy",
+   "vx": "-k*hypot(vx,vy)*vx",
+   "vy": "-g-k*hypot(vx,vy)*vy"
+  },
+  "evento": "y<0",
+  "ajustar": {
+   "y": 0
+  },
+  "muestras": [
+   "t",
+   "x",
+   "y",
+   "vy",
+   "vx"
+  ],
+  "medidas": {
+   "alcance": "collast('x')",
+   "altura_max": "colmax('y')",
+   "t_vuelo": "collast('t')"
+  }
+ },
+ "graficas": [
+  {
+   "id": "xt",
+   "x": "t",
+   "y": "x",
+   "titulo": "x (m) vs t (s)"
+  },
+  {
+   "id": "yt",
+   "x": "t",
+   "y": "y",
+   "titulo": "y (m) vs t (s)"
+  },
+  {
+   "id": "vt",
+   "x": "t",
+   "y": "vy",
+   "titulo": "vy (m/s) vs t (s)"
+  }
+ ],
+ "etiquetasMedidas": {
+  "alcance": "Alcance (m)",
+  "altura_max": "Altura máxima (m)",
+  "t_vuelo": "Tiempo de vuelo (s)"
+ },
+ "lectura": [
+  "alcance",
+  "altura_max",
+  "t_vuelo"
+ ],
+ "descripcion": "Alcance #{m.alcance|1} m, altura máxima #{m.altura_max|1} m, tiempo de vuelo #{m.t_vuelo|2} s",
+ "retos": [
+  {
+   "id": "ch1",
+   "texto": "Con v₀ = 20 m/s y g = 9,8 m/s², ajusta el ángulo para que el proyectil llegue a 40 m (±0,5).",
+   "fijos": {
+    "v0": 20,
+    "g": 9.8,
+    "drag": false
+   },
+   "criterios": [
+    {
+     "medida": "alcance",
+     "objetivo": 40,
+     "tol": 0.5
+    }
+   ],
+   "pista": "Hay dos ángulos posibles: complementarios."
+  },
+  {
+   "id": "ch2",
+   "texto": "Con v₀ = 20 m/s y g = 9,8, encuentra el ángulo de máximo alcance.",
+   "fijos": {
+    "v0": 20,
+    "g": 9.8,
+    "drag": false
+   },
+   "criterios": [
+    {
+     "medida": "alcance",
+     "objetivo": 40.82,
+     "tol": 0.1
+    }
+   ],
+   "pista": "Piensa en sen(2θ)."
+  }
+ ],
+ "escena": {
+  "ancho": 800,
+  "alto": 420,
+  "marco": {
+   "izq": 66,
+   "der": 30,
+   "arriba": 50,
+   "abajo": 96,
+   "x": [
+    0,
+    "v0*v0/g*1.06+1"
+   ],
+   "y": [
+    0,
+    "v0*v0/(2*g)*1.1+0.5"
+   ],
+   "escalaIgual": true
+  },
+  "capas": [
+   {
+    "t": "cuadricula",
+    "paso": 20
+   },
+   {
+    "t": "suelo"
+   },
+   {
+    "t": "ejes",
+    "xl": "x (m)",
+    "yl": "y (m)"
+   },
+   {
+    "t": "funcion",
+    "x": "vx0*u",
+    "y": "vy0*u-0.5*g*u*u",
+    "var": "u",
+    "desde": 0,
+    "hasta": "Tv",
+    "n": 120,
+    "color": "rgba(234,243,255,.4)",
+    "grosor": 1.5,
+    "guion": [
+     6,
+     6
+    ]
+   },
+   {
+    "t": "arco",
+    "x": 0,
+    "y": 0,
+    "r": 40,
+    "a0": 0,
+    "a1": "theta",
+    "color": "suave"
+   },
+   {
+    "t": "linea",
+    "px": true,
+    "x0": "X(0)",
+    "y0": "Y(0)",
+    "x1": "X(0)+78*cos(rad(theta))",
+    "y1": "Y(0)-78*sin(rad(theta))",
+    "color": "suave",
+    "guion": [
+     4,
+     4
+    ],
+    "grosor": 1.2
+   },
+   {
+    "t": "texto",
+    "px": true,
+    "x": "X(0)+48",
+    "y": "Y(0)-8",
+    "txt": "θ = #{theta|0}°",
+    "fuente": "mono",
+    "tam": 12
+   },
+   {
+    "t": "curva",
+    "x": "x",
+    "y": "y",
+    "color": 0,
+    "grosor": 3
+   },
+   {
+    "t": "marcas",
+    "cada": 0.25,
+    "clave": "t",
+    "x": "x",
+    "y": "y",
+    "etiqueta": "#{k*0.25|1} s",
+    "etiquetaCada": 2
+   },
+   {
+    "t": "linea",
+    "si": "(vy<=0||done)&&colmax('y')>0.01",
+    "x0": "atmax('x','y')",
+    "y0": "colmax('y')",
+    "x1": "atmax('x','y')",
+    "y1": 0,
+    "color": "rgba(234,243,255,.35)",
+    "guion": [
+     3,
+     4
+    ],
+    "grosor": 1
+   },
+   {
+    "t": "cota",
+    "si": "(vy<=0||done)&&colmax('y')>0.01",
+    "x0": "atmax('x','y')",
+    "y0": 0,
+    "x1": "atmax('x','y')",
+    "y1": "colmax('y')",
+    "txt": "H = #{colmax('y')} m",
+    "off": -30,
+    "color": 4
+   },
+   {
+    "t": "llamada",
+    "si": "(vy<=0||done)&&colmax('y')>0.01",
+    "x": "atmax('x','y')",
+    "y": "colmax('y')",
+    "dx": 20,
+    "dy": 26,
+    "txt": "aquí vy = 0",
+    "color": "pluma"
+   },
+   {
+    "t": "cota",
+    "si": "done",
+    "x0": 0,
+    "y0": 0,
+    "x1": "x",
+    "y1": 0,
+    "txt": "R = #{x} m",
+    "off": 50,
+    "color": 2
+   },
+   {
+    "t": "llamada",
+    "si": "done",
+    "x": "x",
+    "y": 0,
+    "dx": -14,
+    "dy": 40,
+    "txt": "impacto",
+    "color": "pluma"
+   },
+   {
+    "t": "linea",
+    "si": "!done&&t>0",
+    "x0": "x",
+    "y0": "y",
+    "x1": "x",
+    "y1": 0,
+    "color": "rgba(234,243,255,.3)",
+    "guion": [
+     2,
+     4
+    ],
+    "grosor": 1
+   },
+   {
+    "t": "texto",
+    "si": "!done&&t>0",
+    "px": true,
+    "x": "X(x)",
+    "y": "gy+36",
+    "txt": "x = #{x|1}",
+    "fuente": "mono",
+    "tam": 11,
+    "align": "center"
+   },
+   {
+    "t": "flecha",
+    "si": "!done",
+    "x": "x",
+    "y": "y",
+    "dx": "vx*2.4",
+    "dy": 0,
+    "color": 2
+   },
+   {
+    "t": "flecha",
+    "si": "!done",
+    "x": "x",
+    "y": "y",
+    "dx": 0,
+    "dy": "vy*2.4",
+    "color": 3
+   },
+   {
+    "t": "flecha",
+    "si": "!done",
+    "x": "x",
+    "y": "y",
+    "dx": "vx*2.4",
+    "dy": "vy*2.4",
+    "color": "pluma",
+    "grosor": 2.6
+   },
+   {
+    "t": "texto",
+    "si": "!done",
+    "px": true,
+    "x": "X(x)+vx*2.4+6",
+    "y": "Y(y)+14",
+    "txt": "vx #{vx|1}",
+    "fuente": "mono",
+    "tam": 11,
+    "color": 2
+   },
+   {
+    "t": "texto",
+    "si": "!done",
+    "px": true,
+    "x": "X(x)+8",
+    "y": "Y(y)-vy*2.4-2",
+    "txt": "vy #{vy|1}",
+    "fuente": "mono",
+    "tam": 11,
+    "color": 3
+   },
+   {
+    "t": "circulo",
+    "x": "x",
+    "y": "y",
+    "r": 7,
+    "relleno": "pluma",
+    "grosor": 2
+   },
+   {
+    "t": "flecha",
+    "px": true,
+    "x": "w-214",
+    "y": 24,
+    "dx": 24,
+    "dy": 0,
+    "color": 2,
+    "grosor": 2,
+    "cabeza": 6
+   },
+   {
+    "t": "texto",
+    "px": true,
+    "x": "w-184",
+    "y": 28,
+    "txt": "vx: horizontal, constante",
+    "tam": 11
+   },
+   {
+    "t": "flecha",
+    "px": true,
+    "x": "w-214",
+    "y": 42,
+    "dx": 24,
+    "dy": 0,
+    "color": 3,
+    "grosor": 2,
+    "cabeza": 6
+   },
+   {
+    "t": "texto",
+    "px": true,
+    "x": "w-184",
+    "y": 46,
+    "txt": "vy: vertical, cambia",
+    "tam": 11
+   },
+   {
+    "t": "flecha",
+    "px": true,
+    "x": "w-214",
+    "y": 60,
+    "dx": 24,
+    "dy": 0,
+    "color": "pluma",
+    "grosor": 2,
+    "cabeza": 6
+   },
+   {
+    "t": "texto",
+    "px": true,
+    "x": "w-184",
+    "y": 64,
+    "txt": "v: velocidad total",
+    "tam": 11
+   },
+   {
+    "t": "texto",
+    "px": true,
+    "x": "izq+8",
+    "y": "arriba+14",
+    "txt": "t = #{t} s",
+    "fuente": "mono",
+    "tam": 14
+   }
+  ]
+ },
+ "aprende": {
+  "resumen": "Un balón, una piedra o un chorro de agua siguen la misma curva. Mueve el ángulo y la rapidez, y mira por qué la trayectoria es una parábola.",
+  "objetivos": [
+   "Separar cualquier lanzamiento en un movimiento horizontal y otro vertical.",
+   "Predecir alcance, altura máxima y tiempo de vuelo con las fórmulas.",
+   "Explicar por qué dos ángulos distintos pueden llegar al mismo punto."
+  ],
+  "idea": [
+   "Un proyectil lanzado con rapidez $v_0$ y ángulo $\\theta$ vive dos movimientos a la vez. En horizontal no hay fuerza (sin aire): la velocidad $v_x$ **no cambia**. En vertical actúa la gravedad: $v_y$ disminuye $g$ cada segundo, llega a cero en el punto más alto y luego se hace negativa.",
+   "Las dos «películas» comparten el mismo reloj. El tiempo de vuelo lo decide la parte vertical; el alcance es lo que avanza la parte horizontal en ese tiempo: $R = v_x\\,t_v$."
+  ],
+  "analogia": "Es como patear un balón dentro de un bus que avanza a velocidad constante: para ti el balón sube y baja recto; para alguien en la calle, dibuja una curva.",
+  "formulas": [
+   {
+    "tex": "v_x=v_0\\cos\\theta\\qquad v_{y0}=v_0\\sin\\theta",
+    "nombre": "Componentes de la velocidad inicial",
+    "vars": [
+     [
+      "v_0",
+      "rapidez de salida (m/s)"
+     ],
+     [
+      "\\theta",
+      "ángulo sobre la horizontal"
+     ],
+     [
+      "v_x",
+      "componente horizontal, constante"
+     ],
+     [
+      "v_{y0}",
+      "componente vertical inicial"
+     ]
+    ]
+   },
+   {
+    "tex": "y=v_{y0}\\,t-\\frac{1}{2}\\,g\\,t^2",
+    "nombre": "Altura en cada instante",
+    "vars": [
+     [
+      "y",
+      "altura (m)"
+     ],
+     [
+      "t",
+      "tiempo desde el lanzamiento (s)"
+     ],
+     [
+      "g",
+      "gravedad, 9,8 m/s² en la Tierra"
+     ]
+    ]
+   },
+   {
+    "tex": "t_v=\\frac{2\\,v_0\\sin\\theta}{g}\\qquad H=\\frac{v_0^2\\sin^2\\theta}{2g}",
+    "nombre": "Tiempo de vuelo y altura máxima",
+    "vars": [
+     [
+      "t_v",
+      "tiempo hasta volver al piso (s)"
+     ],
+     [
+      "H",
+      "altura máxima (m)"
+     ]
+    ]
+   },
+   {
+    "tex": "R=\\frac{v_0^2\\,\\sin 2\\theta}{g}",
+    "nombre": "Alcance horizontal (sin aire)",
+    "vars": [
+     [
+      "R",
+      "distancia horizontal recorrida (m)"
+     ],
+     [
+      "\\sin 2\\theta",
+      "máximo (=1) cuando θ = 45°"
+     ]
+    ]
+   }
+  ],
+  "ejemplos": [
+   {
+    "titulo": "Un balón con g = 10 m/s²",
+    "texto": "Un balón sale a $20\\,\\text{m/s}$ con $30°$. ¿Dónde cae y qué tan alto llega?",
+    "pasos": [
+     "Componentes: $v_x=20\\cos30°=17{,}3$ m/s y $v_{y0}=20\\sin30°=10$ m/s.",
+     "Sube hasta que $v_y=0$: $t_{sub}=10/10=1$ s, así que el vuelo dura $t_v=2$ s.",
+     "Alcance: $R=v_x\\,t_v=17{,}3\\cdot2=34{,}6$ m.",
+     "Altura máxima: $H=10^2/(2\\cdot10)=5$ m."
+    ]
+   },
+   {
+    "titulo": "Dos ángulos, un mismo punto",
+    "texto": "Con $v_0=20$ m/s y $g=9{,}8$ m/s², ¿con qué ángulos se llega a 40 m?",
+    "pasos": [
+     "De $R=\\frac{v_0^2\\sin2\\theta}{g}$ sale $\\sin2\\theta=\\frac{R\\,g}{v_0^2}=\\frac{40\\cdot9{,}8}{400}=0{,}98$.",
+     "$2\\theta\\approx78{,}5°$ o $2\\theta\\approx101{,}5°$.",
+     "$\\theta\\approx39{,}3°$ o $\\theta\\approx50{,}7°$: suman 90°, son complementarios."
+    ]
+   }
+  ],
+  "errores": [
+   {
+    "mito": "«A 90° llega más lejos porque sube más».",
+    "realidad": "A 90° solo sube y baja en el mismo lugar: $R=0$. Sin aire, el máximo está en 45°."
+   },
+   {
+    "mito": "«La velocidad horizontal va disminuyendo mientras vuela».",
+    "realidad": "Sin aire, $v_x$ es constante: nada la frena. Solo cambia $v_y$."
+   },
+   {
+    "mito": "«En el punto más alto el proyectil está quieto».",
+    "realidad": "Ahí $v_y=0$, pero $v_x$ sigue igual. La rapidez no es cero."
+   }
+  ],
+  "saber11": "Si el enunciado dice «g = 10 m/s²», úsala tal cual aunque la real sea 9,8. Si piden «la misma distancia», piensa en ángulos complementarios. Y recuerda: en el punto más alto solo $v_y$ vale cero."
+ },
+ "presets": [
+  {
+   "id": "tirolibre",
+   "label": "Tiro libre de fútbol",
+   "desc": "Un balón pateado desde el piso a $25\\,\\text{m/s}$ y $20°$ cae a unos 41 m si no hubiera aire. Activa la resistencia y compara.",
+   "params": {
+    "v0": 25,
+    "theta": 20,
+    "g": 9.8,
+    "drag": false
+   }
+  },
+  {
+   "id": "examen",
+   "label": "Con g = 10 (examen)",
+   "desc": "Números cómodos como los de una prueba: $v_0=20\\,\\text{m/s}$, $30°$ y $g=10$. Salen $R=34{,}6$ m, $H=5$ m y $t_v=2$ s.",
+   "params": {
+    "v0": 20,
+    "theta": 30,
+    "g": 10,
+    "drag": false
+   }
+  },
+  {
+   "id": "luna",
+   "label": "En la Luna",
+   "desc": "Sin atmósfera y con gravedad seis veces menor, el mismo lanzamiento llega seis veces más lejos.",
+   "params": {
+    "v0": 20,
+    "theta": 45,
+    "g": 1.62,
+    "drag": false
+   }
+  },
+  {
+   "id": "aire",
+   "label": "Con aire",
+   "desc": "A $40\\,\\text{m/s}$ la resistencia del aire pesa mucho: la parábola ideal (línea punteada) queda muy por encima de la trayectoria real.",
+   "params": {
+    "v0": 40,
+    "theta": 45,
+    "g": 9.8,
+    "drag": true
+   }
+  },
+  {
+   "id": "salto",
+   "label": "Salto de longitud",
+   "desc": "Un saltador despega a unos $9\\,\\text{m/s}$ con unos $20°$. El modelo da 5,3 m; las marcas reales son mayores porque el cuerpo sale y cae a alturas distintas. Es un buen ejemplo de los límites de un modelo.",
+   "params": {
+    "v0": 9,
+    "theta": 20,
+    "g": 9.8,
+    "drag": false
+   }
+  }
+ ],
+ "experimentos": [
+  {
+   "id": "e45",
+   "titulo": "¿Siempre gana 45°?",
+   "setup": {
+    "v0": 20,
+    "theta": 45,
+    "g": 9.8,
+    "drag": false
+   },
+   "cambio": {
+    "theta": 60
+   },
+   "pregunta": "Con $45°$ el proyectil llega a 40,8 m. Si subes el ángulo a $60°$ (sube más), ¿qué pasa con el alcance?",
+   "opciones": [
+    "Aumenta, porque sube más",
+    "Disminuye",
+    "Se queda igual"
+   ],
+   "correcta": 1,
+   "explicacion": "Disminuye a 35,4 m. Con $60°$ sube más pero avanza menos. Lo que cuenta es $\\sin2\\theta$, y $\\sin120°<\\sin90°$.",
+   "verifica": "despues.alcance < antes.alcance && cerca(despues.alcance, 35.35, 0.3)"
+  },
+  {
+   "id": "compl",
+   "titulo": "Ángulos complementarios",
+   "setup": {
+    "v0": 20,
+    "theta": 30,
+    "g": 9.8,
+    "drag": false
+   },
+   "cambio": {
+    "theta": 60
+   },
+   "pregunta": "Con $30°$ el proyectil cae a 35,4 m. ¿Qué ocurre si lanzas a $60°$ con la misma rapidez?",
+   "opciones": [
+    "Cae en el mismo punto, pero tarda más",
+    "Cae más lejos",
+    "Cae más cerca"
+   ],
+   "correcta": 0,
+   "explicacion": "$\\theta$ y $90°-\\theta$ tienen el mismo $\\sin2\\theta$, así que el alcance coincide. A $60°$ el vuelo es más alto y dura más: 3,5 s frente a 2,0 s.",
+   "verifica": "cerca(despues.alcance, antes.alcance, 0.2) && despues.t_vuelo > antes.t_vuelo"
+  },
+  {
+   "id": "luna",
+   "titulo": "Llevarlo a la Luna",
+   "setup": {
+    "v0": 20,
+    "theta": 45,
+    "g": 9.8,
+    "drag": false
+   },
+   "cambio": {
+    "g": 1.62
+   },
+   "pregunta": "El mismo lanzamiento (20 m/s, 45°) llega a 40,8 m en la Tierra. En la Luna ($g=1{,}62$), el alcance será aproximadamente...",
+   "opciones": [
+    "El doble",
+    "Seis veces mayor",
+    "Igual",
+    "36 veces mayor"
+   ],
+   "correcta": 1,
+   "explicacion": "El alcance es inversamente proporcional a $g$: $9{,}8/1{,}62\\approx6$. Llega a unos 247 m.",
+   "verifica": "cerca(despues.alcance / antes.alcance, 6.05, 0.1)"
+  },
+  {
+   "id": "v2",
+   "titulo": "Doblar la rapidez",
+   "setup": {
+    "v0": 10,
+    "theta": 45,
+    "g": 9.8,
+    "drag": false
+   },
+   "cambio": {
+    "v0": 20
+   },
+   "pregunta": "Pasas de $10$ a $20\\,\\text{m/s}$ con el mismo ángulo. El alcance se multiplica por...",
+   "opciones": [
+    "2",
+    "3",
+    "4",
+    "8"
+   ],
+   "correcta": 2,
+   "explicacion": "El alcance depende de $v_0^2$: al duplicar $v_0$ se cuadruplica (10,2 → 40,8 m). El tiempo de vuelo, en cambio, solo se duplica.",
+   "verifica": "cerca(despues.alcance / antes.alcance, 4, 0.05) && cerca(despues.t_vuelo / antes.t_vuelo, 2, 0.05)"
+  },
+  {
+   "id": "aire",
+   "titulo": "Entra el aire",
+   "setup": {
+    "v0": 30,
+    "theta": 45,
+    "g": 9.8,
+    "drag": false
+   },
+   "cambio": {
+    "drag": true
+   },
+   "pregunta": "Activas la resistencia del aire en un lanzamiento de $30\\,\\text{m/s}$ a $45°$. El alcance...",
+   "opciones": [
+    "Aumenta",
+    "Disminuye mucho",
+    "Casi no cambia"
+   ],
+   "correcta": 1,
+   "explicacion": "Disminuye mucho. La fuerza del aire se opone al movimiento y crece con $v^2$. La trayectoria deja de ser simétrica: baja más inclinada de lo que sube.",
+   "verifica": "despues.alcance < 0.8 * antes.alcance"
+  }
+ ],
+ "solucion": [
+  {
+   "t": "Descompón la velocidad inicial",
+   "tex": "v_x=v_0\\cos\\theta=#{v0}\\cdot\\cos #{theta|0}°=#{vx0}\\;\\text{m/s}\\qquad v_{y0}=v_0\\sin\\theta=#{v0}\\cdot\\sin #{theta|0}°=#{vy0}\\;\\text{m/s}",
+   "nota": "Horizontal y vertical se calculan por separado. $v_x$ no cambiará durante el vuelo."
+  },
+  {
+   "t": "Tiempo de subida y de vuelo",
+   "tex": "t_{sub}=\\frac{v_{y0}}{g}=\\frac{#{vy0}}{#{g}}=#{Tsub}\\;\\text{s}\\qquad t_v=2\\,t_{sub}=#{Tv}\\;\\text{s}",
+   "nota": "Sube hasta que $v_y=0$. Bajar toma el mismo tiempo que subir, por eso se duplica."
+  },
+  {
+   "t": "Altura máxima",
+   "tex": "H=\\frac{v_{y0}^2}{2g}=\\frac{#{vy0}^2}{2\\cdot#{g}}=#{Hm}\\;\\text{m}"
+  },
+  {
+   "t": "Alcance",
+   "tex": "R=v_x\\cdot t_v=#{vx0}\\cdot#{Tv}=#{Ralc}\\;\\text{m}",
+   "nota": "Lo que avanza en horizontal durante todo el vuelo."
+  },
+  {
+   "t": "Comprueba con la fórmula directa",
+   "tex": "R=\\frac{v_0^2\\sin2\\theta}{g}=\\frac{#{v0}^2\\cdot\\sin #{2*theta|0}°}{#{g}}=#{Ralc}\\;\\text{m}",
+   "nota": "#{si(drag, 'Estos valores son del modelo **sin aire**. Con la resistencia activada, la simulación da menos a propósito.', 'Las dos vías coinciden: buena señal.')}"
+  }
+ ],
+ "comparar": [
+  {
+   "label": "Alcance (m)",
+   "teoria": "Ralc",
+   "sim": "m.alcance",
+   "nota": {
+    "si": "drag",
+    "txt": "Con aire activado la simulación difiere de la teoría ideal: es lo esperado."
+   }
+  },
+  {
+   "label": "Altura máxima (m)",
+   "teoria": "Hm",
+   "sim": "m.altura_max"
+  },
+  {
+   "label": "Tiempo de vuelo (s)",
+   "teoria": "Tv",
+   "sim": "m.t_vuelo"
+  }
+ ],
+ "insight": [
+  [
+   {
+    "si": "theta>=89",
+    "txt": "A $90°$ el proyectil solo sube y baja: no avanza nada."
+   },
+   {
+    "si": "theta<=1",
+    "txt": "A $0°$ sale horizontal desde el piso: no alcanza a subir."
+   },
+   {
+    "si": "cerca(theta,45,1)",
+    "txt": "Con $\\theta\\approx45°$ el alcance es el máximo posible para esta rapidez: #{v0*v0/g} m."
+   },
+   {
+    "si": "verdadero",
+    "txt": "Con $#{theta|0}°$ llega a #{Ralc} m. Con $#{90-theta|0}°$ (su complementario) llegaría al mismo punto."
+   }
+  ],
+  [
+   {
+    "si": "drag",
+    "txt": "El aire hace que la trayectoria real quede por debajo de la ideal (línea punteada)."
+   }
+  ]
+ ]
+}

@@ -1,0 +1,14 @@
+import json
+H=json.load(open('content/hojas.json'))
+def m(frag,rol,nota,campo,w): return {'frag':frag,'rol':rol,'nota':nota,'campo':campo,'w':w}
+def A(t,*items): return {'k':'asignar','titulo':t,'items':[{'p':p,'op':op,'ok':ok,'why':why} for p,op,ok,why in items]}
+H['ing-001']={'modo':'lectura','marcas':[m('She','clave','tercera persona del singular','Sujeto: she','Who'),m('every day','dato','rutina: presente simple','Todos los días: rutina','When'),m('___','pide','falta el verbo','Falta el verbo','Falta')],
+ 'pasos':[{'k':'tabla','titulo':'Presente simple','cols':['Sujeto','Verbo'],'filas':[['I, you, we, they','go'],['he, she, it','goes (-es)']]},{'k':'check','texto':'She va con goes: es tercera persona del singular y una rutina.'}],
+ 'guia':[A('Analiza la frase',('¿Qué tipo de acción es "every day"?',['Una rutina','Algo que pasa ahora','Algo del pasado'],0,'Todos los días indica hábito: presente simple.'),('¿Qué persona es "She"?',['Tercera del singular','Primera del plural','Segunda'],0,'She = ella.'),('¿Qué terminación lleva el verbo?',['-es','Ninguna','-ing'],0,'Con he, she, it se agrega -s o -es.'))]}
+H['ing-002']={'modo':'lectura','marcas':[m('If it rains tomorrow','clave','condición posible: if + presente','Condición posible en el futuro','If'),m('we','dato','sujeto del resultado','Sujeto: we','Who'),m('___','pide','falta will + verbo','Falta el resultado: will + verbo','Falta')],
+ 'pasos':[{'k':'tabla','titulo':'Primer condicional','cols':['Parte','Forma'],'filas':[['If …','presente simple (rains)'],['Resultado','will + verbo (will stay)']]},{'k':'check','texto':'Condición posible en futuro: if + presente, will + verbo. Respuesta: will stay.'}],
+ 'guia':[A('Analiza la frase',('¿Es una condición posible o imaginaria?',['Posible','Imaginaria'],0,'Mañana puede llover de verdad.'),('¿Cómo va el verbo después de if?',['Presente','Pasado','Will'],0,'If it rains.'),('¿Y en el resultado?',['will + verbo','would + verbo','verbo en pasado'],0,'Will stay.'))]}
+H['ing-004']={'modo':'lectura','marcas':[m('from the library','clave','tomas algo de un lugar','Se recibe de la biblioteca','Where'),m('for two weeks','dato','tiempo limitado: hay que devolver','Por un tiempo: se devuelve','How long'),m('___','pide','verbo con sentido de recibir prestado','Falta: recibir prestado','Falta')],
+ 'pasos':[{'k':'tabla','titulo':'Quién da y quién recibe','cols':['Verbo','Quién recibe'],'filas':[['borrow','tú: pides prestado'],['lend','el otro: te presta']]},{'k':'check','texto':'Tú recibes los libros de la biblioteca: borrow.'}],
+ 'guia':[A('Analiza la frase',('¿Quién recibe los libros?',['La persona (you)','La biblioteca'],0,'You can ___ books from the library.'),('¿Por cuánto tiempo?',['Temporal, dos semanas','Para siempre'],0,'Se devuelven.'),('¿Qué verbo es recibir prestado?',['borrow','lend','sell'],0,'Borrow = pedir prestado.'))]}
+json.dump(H,open('content/hojas.json','w'),ensure_ascii=False,indent=1)

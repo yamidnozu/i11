@@ -1,0 +1,4900 @@
+{
+ "cie-001": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "20 m/s",
+    "rol": "dato",
+    "nota": "v₀ = 20 m/s",
+    "campo": "$v_0=20\\ \\text{m/s}$"
+   },
+   {
+    "frag": "30°",
+    "rol": "dato",
+    "nota": "θ = 30°",
+    "campo": "$\\theta=30^\\circ$"
+   },
+   {
+    "frag": "g = 10 m/s²",
+    "rol": "dato",
+    "nota": "usa 10, no 9,8",
+    "campo": "$g=10\\ \\text{m/s}^2$"
+   },
+   {
+    "frag": "sin aire",
+    "rol": "clave",
+    "nota": "sin rozamiento: vale la fórmula ideal",
+    "campo": "Sin rozamiento: $v_x$ constante",
+    "w": "Condición"
+   },
+   {
+    "frag": "alcance horizontal",
+    "rol": "pide",
+    "nota": "R = distancia en x hasta volver al suelo",
+    "campo": "$R=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en patear un balón",
+    "texto": "Cuando pateas un balón, sube, llega a lo más alto y baja. Lo lejos que cae es el alcance. Depende de dos cosas: con qué fuerza lo pateas y qué tan inclinado. Con 45° llega lo más lejos posible."
+   },
+   {
+    "k": "escena",
+    "titulo": "Mira cómo vuela el balón",
+    "ancho": 720,
+    "alto": 300,
+    "anim": {
+     "dur": 4,
+     "bucle": true
+    },
+    "vars": {
+     "v0": 20,
+     "th": 30,
+     "g": 10,
+     "Tv": "2*v0*sin(rad(th))/g",
+     "tt": "u*Tv",
+     "vx": "v0*cos(rad(th))",
+     "vy": "v0*sin(rad(th))-g*tt",
+     "bx": "vx*tt",
+     "by": "v0*sin(rad(th))*tt-0.5*g*tt*tt"
+    },
+    "marco": {
+     "izq": 50,
+     "der": 20,
+     "arriba": 30,
+     "abajo": 50,
+     "x": [
+      0,
+      38
+     ],
+     "y": [
+      0,
+      6.5
+     ]
+    },
+    "capas": [
+     {
+      "t": "suelo"
+     },
+     {
+      "t": "ejes",
+      "xl": "distancia (m)",
+      "yl": "altura (m)"
+     },
+     {
+      "t": "funcion",
+      "x": "vx*s",
+      "y": "v0*sin(rad(th))*s-0.5*g*s*s",
+      "var": "s",
+      "desde": 0,
+      "hasta": "Tv",
+      "color": "rgba(234,243,255,.4)",
+      "guion": [
+       6,
+       6
+      ],
+      "grosor": 1.5
+     },
+     {
+      "t": "linea",
+      "x0": "bx",
+      "y0": "by",
+      "x1": "bx",
+      "y1": 0,
+      "color": "rgba(234,243,255,.3)",
+      "guion": [
+       2,
+       4
+      ],
+      "grosor": 1
+     },
+     {
+      "t": "flecha",
+      "x": "bx",
+      "y": "by",
+      "dx": "vx*2.2",
+      "dy": 0,
+      "color": 2
+     },
+     {
+      "t": "flecha",
+      "x": "bx",
+      "y": "by",
+      "dx": 0,
+      "dy": "vy*2.2",
+      "color": 3
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "X(bx)+vx*2.2+6",
+      "y": "Y(by)+14",
+      "txt": "vx = #{vx|1} (no cambia)",
+      "fuente": "mono",
+      "tam": 11,
+      "color": 2
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "X(bx)+8",
+      "y": "Y(by)-vy*2.2-4",
+      "txt": "vy = #{vy|1}",
+      "fuente": "mono",
+      "tam": 11,
+      "color": 3
+     },
+     {
+      "t": "circulo",
+      "x": "bx",
+      "y": "by",
+      "r": 8,
+      "relleno": "pluma",
+      "grosor": 2
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "w-110",
+      "y": "arriba+8",
+      "txt": "t = #{tt|1} s",
+      "fuente": "mono",
+      "tam": 13
+     }
+    ],
+    "nota": "La flecha verde (horizontal) siempre mide lo mismo; la rosada (vertical) se achica al subir, es cero arriba y crece al bajar."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     -0.0166667,
+     0.57735,
+     0
+    ],
+    "x": [
+     -2,
+     38
+    ],
+    "puntos": [
+     {
+      "x": 0,
+      "y": 0,
+      "l": "sale"
+     },
+     {
+      "x": 34.64,
+      "y": 0,
+      "l": "R = ?"
+     }
+    ],
+    "nota": "El alcance es qué tan lejos cae la pelota, medido sobre el suelo desde donde se patea."
+   },
+   {
+    "k": "barras",
+    "titulo": "Cuánto avanza según la inclinación",
+    "barras": [
+     {
+      "l": "15°",
+      "e": "20 m",
+      "segs": [
+       {
+        "v": 20,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "30° (tu caso)",
+      "e": "34,6 m",
+      "segs": [
+       {
+        "v": 34.6,
+        "c": "oro"
+       }
+      ]
+     },
+     {
+      "l": "45°",
+      "e": "40 m",
+      "segs": [
+       {
+        "v": 40,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "60°",
+      "e": "34,6 m",
+      "segs": [
+       {
+        "v": 34.6,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "75°",
+      "e": "20 m",
+      "segs": [
+       {
+        "v": 20,
+        "c": "azul"
+       }
+      ]
+     }
+    ],
+    "nota": "Con 45° llega más lejos. Con 30° y con 60° llega lo mismo, 34,6 m. Así que 30° tiene que dar menos de 40."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "rapidez inicial de $20\\ \\text{m/s}$",
+      "escribo": "v_0=20\\ \\text{m/s}",
+      "rol": "dato"
+     },
+     {
+      "dice": "ángulo de $30°$",
+      "escribo": "\\theta=30^\\circ",
+      "rol": "dato"
+     },
+     {
+      "dice": "$g=10\\ \\text{m/s}^2$",
+      "escribo": "g=10\\ \\text{m/s}^2",
+      "rol": "dato"
+     },
+     {
+      "dice": "su alcance horizontal",
+      "escribo": "R=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "v₀ se lee «v cero»: la rapidez con que sale la pelota. θ es la letra griega theta, el ángulo."
+   },
+   {
+    "k": "calc",
+    "titulo": "Fórmula del alcance",
+    "lineas": [
+     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+    ],
+    "nota": "Esta fórmula ya junta todo: sube y baja con la gravedad, y avanza a rapidez constante. Solo hay que reemplazar."
+   },
+   {
+    "k": "calc",
+    "titulo": "Reemplaza",
+    "lineas": [
+     "2\\theta=2\\cdot30^\\circ=60^\\circ",
+     "\\sin 60^\\circ\\approx0{,}866",
+     "R=\\frac{20^2\\cdot0{,}866}{10}",
+     "R=\\frac{400\\cdot0{,}866}{10}=\\frac{346{,}4}{10}=34{,}6\\ \\text{m}"
+    ],
+    "nota": "Primero el ángulo doble (60°), luego el seno (con calculadora), luego 20² = 400 y al final se divide entre g."
+   },
+   {
+    "k": "check",
+    "texto": "Con 45° saldrían 40 m, el máximo. 30° queda por debajo: 34,6 m es coherente."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "20 m/s",
+      "op": [
+       "Rapidez inicial $v_0$",
+       "Aceleración",
+       "Alcance $R$"
+      ],
+      "ok": 0,
+      "why": "Es la rapidez con la que sale el balón; en la fórmula va al cuadrado."
+     },
+     {
+      "p": "30°",
+      "op": [
+       "Ángulo de lanzamiento $\\theta$",
+       "Ángulo con que llega",
+       "Altura máxima"
+      ],
+      "ok": 0,
+      "why": "El ángulo medido sobre el piso."
+     },
+     {
+      "p": "g = 10 m/s²",
+      "op": [
+       "Gravedad",
+       "Aceleración del balón en x",
+       "Rapidez final"
+      ],
+      "ok": 0,
+      "why": "Solo actúa hacia abajo: en horizontal no hay aceleración."
+     }
+    ]
+   },
+   {
+    "k": "asignar",
+    "titulo": "¿Qué piden y con qué concepto se relaciona?",
+    "items": [
+     {
+      "p": "Alcance horizontal",
+      "op": [
+       "Movimiento parabólico (tiro oblicuo)",
+       "MRUA en línea recta",
+       "Caída libre vertical"
+      ],
+      "ok": 0,
+      "why": "Sale con ángulo y vuelve al piso: describe una parábola."
+     },
+     {
+      "p": "sin aire",
+      "op": [
+       "No hay fuerza horizontal: $v_x$ constante",
+       "El balón se frena",
+       "La gravedad vale cero"
+      ],
+      "ok": 0,
+      "why": "Sin rozamiento, la fórmula ideal del alcance es válida."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula el alcance",
+    "antes": "R=\\frac{20^2\\cdot\\sin 60^\\circ}{10}\\approx",
+    "resp": 34.6,
+    "unidad": "m",
+    "tol": 0.1,
+    "pista": "$\\sin 60^\\circ\\approx0{,}866$ y $20^2=400$.",
+    "why": "$400\\cdot0{,}866\\div10=34{,}6$."
+   }
+  ]
+ },
+ "cie-002": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "parte del reposo",
+    "rol": "dato",
+    "nota": "v₀ = 0",
+    "campo": "$v_0=0$"
+   },
+   {
+    "frag": "aceleración constante de 3 m/s²",
+    "rol": "dato",
+    "nota": "a = 3 m/s²: movimiento uniformemente acelerado",
+    "campo": "$a=3\\ \\text{m/s}^2$"
+   },
+   {
+    "frag": "4 s",
+    "rol": "dato",
+    "nota": "t = 4 s",
+    "campo": "$t=4\\ \\text{s}$"
+   },
+   {
+    "frag": "¿Qué distancia recorre",
+    "rol": "pide",
+    "nota": "x, no la velocidad",
+    "campo": "$x=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un carro que arranca",
+    "texto": "Un carro parte quieto y va acelerando: cada segundo va más rápido que el anterior. Por eso cada segundo recorre más metros que el anterior, y la distancia no es simplemente velocidad por tiempo."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "parte del reposo",
+      "escribo": "v_0=0",
+      "rol": "dato"
+     },
+     {
+      "dice": "aceleración constante de $3\\ \\text{m/s}^2$",
+      "escribo": "a=3\\ \\text{m/s}^2",
+      "rol": "dato"
+     },
+     {
+      "dice": "$4\\ \\text{s}$",
+      "escribo": "t=4\\ \\text{s}",
+      "rol": "dato"
+     },
+     {
+      "dice": "¿qué distancia recorre?",
+      "escribo": "x=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "«Parte del reposo» quiere decir que al inicio está quieto: velocidad inicial 0."
+   },
+   {
+    "k": "barras",
+    "titulo": "Distancia acumulada, segundo a segundo",
+    "barras": [
+     {
+      "l": "Segundo 1 (va a 3 m/s)",
+      "e": "1,5 m",
+      "segs": [
+       {
+        "v": 1.5,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Segundo 2 (va a 6 m/s)",
+      "e": "6 m",
+      "segs": [
+       {
+        "v": 6,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Segundo 3 (va a 9 m/s)",
+      "e": "13,5 m",
+      "segs": [
+       {
+        "v": 13.5,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Segundo 4 (va a 12 m/s)",
+      "e": "24 m",
+      "segs": [
+       {
+        "v": 24,
+        "c": "oro"
+       }
+      ]
+     }
+    ],
+    "nota": "La velocidad sube 3 m/s cada segundo, y la distancia crece cada vez más rápido."
+   },
+   {
+    "k": "calc",
+    "titulo": "Fórmula (v₀ = 0)",
+    "lineas": [
+     "x=x_0+v_0t+\\frac{1}{2}at^2",
+     "x=\\frac{1}{2}at^2"
+    ],
+    "nota": "Como parte del reposo, v₀ = 0 y el término v₀·t desaparece."
+   },
+   {
+    "k": "calc",
+    "titulo": "Reemplaza",
+    "lineas": [
+     "x=\\frac{1}{2}\\cdot3\\cdot4^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}"
+    ],
+    "nota": "El tiempo va al cuadrado antes de multiplicar."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Compruébalo con la velocidad media",
+    "nodos": [
+     {
+      "v": "$12\\ \\text{m/s}$",
+      "l": "velocidad al final: 3 · 4"
+     },
+     {
+      "v": "$6\\ \\text{m/s}$",
+      "l": "velocidad media: (0 + 12) ÷ 2"
+     },
+     {
+      "v": "$24\\ \\text{m}$",
+      "l": "distancia: 6 · 4"
+     }
+    ],
+    "saltos": [
+     "\\text{promedio de la inicial y la final}",
+     "\\times4\\ \\text{s}"
+    ],
+    "nota": "Si hubiera ido siempre a 6 m/s, habría recorrido lo mismo: 24 m."
+   },
+   {
+    "k": "check",
+    "texto": "Sin aceleración (MRU) serían 0 m; con 3 m/s² durante 4 s, 24 m es razonable: velocidad media 6 m/s × 4 s."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "parte del reposo",
+      "op": [
+       "$v_0=0$",
+       "$v_0=3$ m/s",
+       "$a=0$"
+      ],
+      "ok": 0,
+      "why": "Reposo significa velocidad inicial cero: desaparece un término."
+     },
+     {
+      "p": "3 m/s²",
+      "op": [
+       "Aceleración constante",
+       "Velocidad constante",
+       "Distancia"
+      ],
+      "ok": 0,
+      "why": "Cada segundo la velocidad aumenta en 3 m/s."
+     }
+    ]
+   },
+   {
+    "k": "asignar",
+    "titulo": "¿Qué concepto?",
+    "items": [
+     {
+      "p": "Aceleración constante desde el reposo en línea recta",
+      "op": [
+       "MRUA",
+       "MRU",
+       "Movimiento parabólico"
+      ],
+      "ok": 0,
+      "why": "Movimiento rectilíneo uniformemente acelerado."
+     },
+     {
+      "p": "¿Qué distancia recorre?",
+      "op": [
+       "Se usa $x=\\frac{1}{2}at^2$",
+       "Se usa $v=at$",
+       "Se usa $x=vt$"
+      ],
+      "ok": 0,
+      "why": "La distancia crece con el cuadrado del tiempo; $v=at$ da la velocidad, no la distancia."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula la distancia",
+    "antes": "x=\\frac{1}{2}\\cdot3\\cdot4^2=",
+    "resp": 24,
+    "unidad": "m",
+    "tol": 1e-09,
+    "pista": "Primero $4^2=16$.",
+    "why": "$\\frac{1}{2}\\cdot3\\cdot16=24$."
+   }
+  ]
+ },
+ "cie-003": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "6 Ω",
+    "rol": "dato",
+    "nota": "R = 6 Ω",
+    "campo": "$R=6\\ \\Omega$"
+   },
+   {
+    "frag": "12 V",
+    "rol": "dato",
+    "nota": "V = 12 V",
+    "campo": "$V=12\\ \\text{V}$"
+   },
+   {
+    "frag": "La corriente",
+    "rol": "pide",
+    "nota": "I en amperios",
+    "campo": "$I=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en agua en una manguera",
+    "texto": "El voltaje es la presión del agua, la resistencia es qué tan angosta está la manguera y la corriente es cuánta agua sale. Más presión: sale más. Manguera más angosta: sale menos."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "resistencia de $6\\ \\Omega$",
+      "escribo": "R=6\\ \\Omega",
+      "rol": "dato"
+     },
+     {
+      "dice": "fuente de $12\\ \\text{V}$",
+      "escribo": "V=12\\ \\text{V}",
+      "rol": "dato"
+     },
+     {
+      "dice": "la corriente",
+      "escribo": "I=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "R es lo que frena, V es lo que empuja, I es lo que realmente pasa."
+   },
+   {
+    "k": "barras",
+    "titulo": "Con 12 V, ¿qué pasa si cambia la resistencia?",
+    "barras": [
+     {
+      "l": "R = 3 Ω (manguera ancha)",
+      "e": "4 A",
+      "segs": [
+       {
+        "v": 4,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "R = 6 Ω (tu caso)",
+      "e": "2 A",
+      "segs": [
+       {
+        "v": 2,
+        "c": "oro"
+       }
+      ]
+     },
+     {
+      "l": "R = 12 Ω (manguera angosta)",
+      "e": "1 A",
+      "segs": [
+       {
+        "v": 1,
+        "c": "azul"
+       }
+      ]
+     }
+    ],
+    "nota": "A más resistencia, menos corriente. Por eso, para hallar la corriente, se divide entre la resistencia."
+   },
+   {
+    "k": "calc",
+    "titulo": "Despeja la corriente",
+    "lineas": [
+     "V=I\\cdot R",
+     "\\frac{V}{R}=\\frac{I\\cdot R}{R}",
+     "I=\\frac{V}{R}"
+    ],
+    "nota": "La ley de Ohm: voltaje = corriente × resistencia. Para dejar I sola divido los dos lados entre R; a la derecha la R se cancela."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Reemplaza",
+    "nodos": [
+     {
+      "v": "$12\\ \\text{V}$",
+      "l": "voltaje"
+     },
+     {
+      "v": "$2\\ \\text{A}$",
+      "l": "corriente"
+     }
+    ],
+    "saltos": [
+     "\\div6\\ \\Omega\\ \\ (\\text{la resistencia})"
+    ],
+    "nota": "$I=\\frac{12\\ \\text{V}}{6\\ \\Omega}=2\\ \\text{A}$"
+   },
+   {
+    "k": "check",
+    "texto": "Unidades: V/Ω = A. Si te dio 72, multiplicaste: la corriente baja cuando la resistencia sube."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "6 Ω",
+      "op": [
+       "Resistencia $R$",
+       "Voltaje $V$",
+       "Corriente $I$"
+      ],
+      "ok": 0,
+      "why": "El ohmio (Ω) es la unidad de resistencia."
+     },
+     {
+      "p": "12 V",
+      "op": [
+       "Voltaje (diferencia de potencial)",
+       "Resistencia",
+       "Potencia"
+      ],
+      "ok": 0,
+      "why": "El voltio (V) mide el voltaje de la fuente."
+     }
+    ]
+   },
+   {
+    "k": "asignar",
+    "titulo": "¿Qué relación usa?",
+    "items": [
+     {
+      "p": "La corriente",
+      "op": [
+       "$V=I\\cdot R$ (ley de Ohm)",
+       "$P=V\\cdot I$",
+       "$V=\\frac{I}{R}$"
+      ],
+      "ok": 0,
+      "why": "Ohm relaciona voltaje, corriente y resistencia; de ahí se despeja $I$."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Despeja y calcula $I$",
+    "antes": "I=\\frac{V}{R}=\\frac{12}{6}=",
+    "resp": 2,
+    "unidad": "A",
+    "tol": 1e-09,
+    "pista": "Divide voltaje entre resistencia.",
+    "why": "$12\\div6=2$ amperios."
+   }
+  ]
+ },
+ "cie-004": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "C₃H₈ + O₂ → CO₂ + H₂O",
+    "rol": "dato",
+    "nota": "los átomos de cada elemento deben quedar iguales a ambos lados",
+    "campo": "Reacción sin balancear",
+    "w": "Reacción"
+   },
+   {
+    "frag": "coeficiente del O₂",
+    "rol": "pide",
+    "nota": "cuántas moléculas de O₂, no átomos",
+    "campo": "Coeficiente de $\\text{O}_2=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Balancear es como una receta",
+    "texto": "Una reacción reordena los átomos: los que entran son los mismos que salen, solo cambian de pareja. Balancear es ajustar cuántas moléculas hay de cada una para que no sobre ni falte ningún átomo."
+   },
+   {
+    "k": "idea",
+    "titulo": "Estrategia",
+    "texto": "Se balancea en orden: primero C, luego H y por último O (el oxígeno aparece en dos productos)."
+   },
+   {
+    "k": "calc",
+    "titulo": "Carbono",
+    "lineas": [
+     "\\text{C: }3\\ \\text{en C}_3\\text{H}_8\\ \\Rightarrow\\ 3\\,\\text{CO}_2"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "calc",
+    "titulo": "Hidrógeno",
+    "lineas": [
+     "\\text{H: }8\\ \\text{en C}_3\\text{H}_8\\ \\Rightarrow\\ 4\\,\\text{H}_2\\text{O}"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "calc",
+    "titulo": "Oxígeno",
+    "lineas": [
+     "3\\ \\text{CO}_2\\to3\\cdot2=6\\ \\text{O}",
+     "4\\ \\text{H}_2\\text{O}\\to4\\cdot1=4\\ \\text{O}",
+     "6+4=10\\ \\text{átomos de O}",
+     "\\text{cada O}_2\\ \\text{trae 2: }10\\div2=5"
+    ],
+    "nota": "El número de adelante multiplica cada átomo de la molécula. Cuento todos los O que hay en los productos, y reparto de a 2 en cada O₂."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Conteo final",
+    "cols": [
+     "Elemento",
+     "Reactivos",
+     "Productos"
+    ],
+    "filas": [
+     [
+      "C",
+      "3",
+      "3"
+     ],
+     [
+      "H",
+      "8",
+      "8"
+     ],
+     [
+      "O",
+      "5·2 = 10",
+      "3·2 + 4 = 10"
+     ]
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Átomos iguales a ambos lados: está balanceada."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Piensa antes de balancear",
+    "items": [
+     {
+      "p": "¿Qué se conserva en una reacción?",
+      "op": [
+       "Los átomos de cada elemento",
+       "El número de moléculas",
+       "Los coeficientes"
+      ],
+      "ok": 0,
+      "why": "Por eso los átomos deben ser iguales a ambos lados."
+     },
+     {
+      "p": "¿Con qué elemento empiezas?",
+      "op": [
+       "El carbono",
+       "El oxígeno",
+       "Cualquiera, al azar"
+      ],
+      "ok": 0,
+      "why": "C y H están en una sola sustancia por lado. El oxígeno va al final porque aparece en dos productos."
+     },
+     {
+      "p": "¿Qué piden?",
+      "op": [
+       "Cuántas moléculas de O₂ (coeficiente)",
+       "Cuántos átomos de O",
+       "Cuántos productos hay"
+      ],
+      "ok": 0,
+      "why": "El coeficiente multiplica toda la molécula."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Cuenta los átomos de oxígeno",
+    "antes": "\\text{O en productos: }3\\cdot2+4\\cdot1=",
+    "resp": 10,
+    "unidad": "átomos",
+    "tol": 1e-09,
+    "pista": "3 CO₂ tienen 2 O cada uno; 4 H₂O tienen 1 O cada una.",
+    "why": "Y cada O₂ trae 2 átomos: $10\\div2=5$ moléculas."
+   }
+  ]
+ },
+ "cie-005": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "Aa",
+    "rol": "dato",
+    "nota": "cada planta da gametos A o a, mitad y mitad",
+    "campo": "Padres $Aa$"
+   },
+   {
+    "frag": "Dos plantas heterocigotas",
+    "rol": "clave",
+    "nota": "ambas Aa",
+    "campo": "Cruce $Aa\\times Aa$"
+   },
+   {
+    "frag": "recesivo (aa)",
+    "rol": "pide",
+    "nota": "solo aa, no Aa",
+    "campo": "$P(aa)=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en dos monedas",
+    "texto": "Cada planta Aa tiene dos letras, y al formar una semilla entrega solo una, al azar, como lanzar una moneda. Dos plantas son dos monedas: hay cuatro combinaciones posibles, todas igual de probables."
+   },
+   {
+    "k": "puntos",
+    "titulo": "Qué da cada padre",
+    "grupos": [
+     {
+      "n": 1,
+      "l": "A (dominante)",
+      "c": "azul"
+     },
+     {
+      "n": 1,
+      "l": "a (recesivo)",
+      "c": "rojo"
+     }
+    ],
+    "lineas": [
+     "P(A)=\\frac{1}{2}",
+     "P(a)=\\frac{1}{2}"
+    ],
+    "nota": "Una planta Aa tiene dos letras. Al formar una semilla da una de las dos, al azar."
+   },
+   {
+    "k": "idea",
+    "titulo": "Cuadro de Punnett",
+    "texto": "Cada padre aporta un alelo con probabilidad 1/2. Arma el cuadro: padre en las columnas, madre en las filas."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Cuadro",
+    "cols": [
+     "",
+     "A",
+     "a"
+    ],
+    "filas": [
+     [
+      "A",
+      "AA",
+      "Aa"
+     ],
+     [
+      "a",
+      "Aa",
+      "*aa"
+     ]
+    ]
+   },
+   {
+    "k": "calc",
+    "titulo": "Cuenta",
+    "lineas": [
+     "P(aa)=\\frac{\\text{casillas aa}}{\\text{todas las casillas}}=\\frac{1}{4}"
+    ],
+    "nota": "Aa se ve igual que AA (dominante): no cuenta como recesivo."
+   },
+   {
+    "k": "check",
+    "texto": "Genotipos 1 : 2 : 1 y fenotipos 3 : 1. 1/4 es el recesivo."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Ubica los conceptos",
+    "items": [
+     {
+      "p": "Aa",
+      "op": [
+       "Heterocigoto",
+       "Homocigoto dominante",
+       "Homocigoto recesivo"
+      ],
+      "ok": 0,
+      "why": "Tiene un alelo dominante y uno recesivo."
+     },
+     {
+      "p": "¿Qué gametos produce cada planta Aa?",
+      "op": [
+       "A o a, mitad y mitad",
+       "Solo A",
+       "Solo a"
+      ],
+      "ok": 0,
+      "why": "Cada gameto lleva un alelo; la probabilidad es 1/2 para cada uno."
+     },
+     {
+      "p": "fenotipo recesivo (aa)",
+      "op": [
+       "Se expresa solo con dos alelos a",
+       "Se expresa con un alelo a",
+       "Nunca se expresa"
+      ],
+      "ok": 0,
+      "why": "Con una A, el dominante tapa al recesivo."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Cuenta en el cuadro de Punnett",
+    "antes": "\\text{casillas totales}=",
+    "resp": 4,
+    "unidad": "",
+    "tol": 1e-09,
+    "pista": "2 gametos de un padre por 2 de la otra.",
+    "why": "Solo 1 casilla es aa: probabilidad $\\frac{1}{4}$."
+   }
+  ]
+ },
+ "cie-006": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "lente convergente",
+    "rol": "dato",
+    "nota": "f positiva",
+    "campo": "Convergente: $f>0$"
+   },
+   {
+    "frag": "f = 10 cm",
+    "rol": "dato",
+    "nota": "f = +10 cm",
+    "campo": "$f=+10\\ \\text{cm}$"
+   },
+   {
+    "frag": "15 cm",
+    "rol": "dato",
+    "nota": "dₒ = 15 cm: está entre f y 2f",
+    "campo": "$d_o=15\\ \\text{cm}$"
+   },
+   {
+    "frag": "La imagen es",
+    "rol": "pide",
+    "nota": "tipo (real/virtual, derecha/invertida) y posición",
+    "campo": "$d_i=\\ ?$ y tipo de imagen"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en una lupa",
+    "texto": "Una lente convergente junta los rayos de luz, como una lupa. El foco es el punto donde se juntan los rayos que vienen paralelos. Según qué tan lejos pongas el objeto del foco, la imagen se forma en un lugar distinto."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "lente convergente de $f=10\\ \\text{cm}$",
+      "escribo": "f=10\\ \\text{cm}",
+      "rol": "dato"
+     },
+     {
+      "dice": "objeto a $15\\ \\text{cm}$",
+      "escribo": "d_o=15\\ \\text{cm}",
+      "rol": "dato"
+     },
+     {
+      "dice": "¿cómo es la imagen?",
+      "escribo": "d_i=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "f es el foco, dₒ la distancia al objeto y dᵢ la distancia a la imagen."
+   },
+   {
+    "k": "idea",
+    "titulo": "Predice primero",
+    "texto": "Objeto entre f y 2f en una lente convergente: la imagen será real, invertida y más lejos que 2f. Esa predicción ordena las opciones antes de calcular."
+   },
+   {
+    "k": "barras",
+    "titulo": "Dónde queda cada cosa (en cm)",
+    "barras": [
+     {
+      "l": "Foco f",
+      "e": "10",
+      "segs": [
+       {
+        "v": 10,
+        "c": "gris"
+       }
+      ]
+     },
+     {
+      "l": "Objeto dₒ",
+      "e": "15",
+      "segs": [
+       {
+        "v": 15,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Doble del foco, 2f",
+      "e": "20",
+      "segs": [
+       {
+        "v": 20,
+        "c": "gris"
+       }
+      ]
+     },
+     {
+      "l": "Imagen dᵢ (la que vamos a calcular)",
+      "e": "30",
+      "segs": [
+       {
+        "v": 30,
+        "c": "oro"
+       }
+      ]
+     }
+    ],
+    "nota": "El objeto está entre f y 2f, así que la imagen queda del otro lado, más lejos que 2f."
+   },
+   {
+    "k": "calc",
+    "titulo": "Ecuación de lentes",
+    "lineas": [
+     "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "calc",
+    "titulo": "Despeja dᵢ",
+    "lineas": [
+     "\\frac{1}{d_i}=\\frac{1}{f}-\\frac{1}{d_o}",
+     "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}",
+     "\\frac{1}{d_i}=\\frac{3}{30}-\\frac{2}{30}=\\frac{1}{30}",
+     "d_i=30\\ \\text{cm}"
+    ],
+    "nota": "Para restar fracciones busco un denominador común: 30 (10 y 15 caben en 30). Al final doy vuelta: si 1/dᵢ = 1/30, entonces dᵢ = 30."
+   },
+   {
+    "k": "calc",
+    "titulo": "Aumento",
+    "lineas": [
+     "M=-\\frac{d_i}{d_o}=-\\frac{30}{15}=-2"
+    ],
+    "nota": "M negativo: invertida. |M| = 2: del doble de tamaño."
+   },
+   {
+    "k": "check",
+    "texto": "dᵢ > 0 es real, M < 0 es invertida: real e invertida a 30 cm."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Ubica los datos",
+    "items": [
+     {
+      "p": "f = 10 cm",
+      "op": [
+       "Distancia focal",
+       "Distancia del objeto",
+       "Distancia de la imagen"
+      ],
+      "ok": 0,
+      "why": "Positiva porque la lente es convergente."
+     },
+     {
+      "p": "15 cm",
+      "op": [
+       "Distancia del objeto $d_o$",
+       "Distancia focal",
+       "Altura de la imagen"
+      ],
+      "ok": 0,
+      "why": "Es lo que hay entre el objeto y la lente."
+     },
+     {
+      "p": "¿Dónde está el objeto respecto a la lente?",
+      "op": [
+       "Entre f y 2f",
+       "Antes de f",
+       "Después de 2f"
+      ],
+      "ok": 0,
+      "why": "$10<15<20$: la imagen será real, invertida y más lejos que 2f."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Resuelve para $d_i$",
+    "antes": "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}\\ \\Rightarrow\\ d_i=",
+    "resp": 30,
+    "unidad": "cm",
+    "tol": 0.1,
+    "pista": "Denominador común 30: $\\frac{3}{30}-\\frac{2}{30}$.",
+    "why": "$\\frac{1}{d_i}=\\frac{1}{30}$, entonces $d_i=30$ cm."
+   }
+  ]
+ },
+ "cie-008": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "2 mol",
+    "rol": "dato",
+    "nota": "n = 2",
+    "campo": "$n=2\\ \\text{mol}$"
+   },
+   {
+    "frag": "273,15 K",
+    "rol": "dato",
+    "nota": "T = 273,15 K",
+    "campo": "$T=273{,}15\\ \\text{K}$"
+   },
+   {
+    "frag": "1 atm",
+    "rol": "dato",
+    "nota": "P = 1 atm",
+    "campo": "$P=1\\ \\text{atm}$"
+   },
+   {
+    "frag": "R = 0,082 atm·L/mol·K",
+    "rol": "dato",
+    "nota": "te da las unidades a usar",
+    "campo": "$R=0{,}082\\ \\text{atm·L/mol·K}$"
+   },
+   {
+    "frag": "ocupan",
+    "rol": "pide",
+    "nota": "volumen en litros",
+    "campo": "$V=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un globo",
+    "texto": "Un gas llena todo el espacio que le des. Cuánto espacio ocupa depende de cuántas partículas hay, qué tan caliente está y cuánto lo aprietan. Hay una fórmula que junta las tres cosas."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "$2\\ \\text{mol}$",
+      "escribo": "n=2\\ \\text{mol}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$273{,}15\\ \\text{K}$",
+      "escribo": "T=273{,}15\\ \\text{K}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$1\\ \\text{atm}$",
+      "escribo": "P=1\\ \\text{atm}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$R=0{,}082$",
+      "escribo": "R=0{,}082",
+      "rol": "dato"
+     },
+     {
+      "dice": "¿cuánto ocupan?",
+      "escribo": "V=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "n es la cantidad de gas (en moles), T la temperatura en kelvin, P la presión y V el volumen."
+   },
+   {
+    "k": "calc",
+    "titulo": "Gas ideal: despeja V",
+    "lineas": [
+     "P\\cdot V=n\\cdot R\\cdot T",
+     "\\frac{P\\cdot V}{P}=\\frac{n\\cdot R\\cdot T}{P}",
+     "V=\\frac{n\\cdot R\\cdot T}{P}"
+    ],
+    "nota": "Para dejar V sola divido los dos lados entre P."
+   },
+   {
+    "k": "calc",
+    "titulo": "Reemplaza",
+    "lineas": [
+     "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}",
+     "2\\cdot0{,}082=0{,}164",
+     "0{,}164\\cdot273{,}15\\approx44{,}8\\ \\text{L}"
+    ],
+    "nota": "Las unidades se cancelan y quedan litros."
+   },
+   {
+    "k": "barras",
+    "titulo": "Si 1 mol ocupa 22,4 L en estas condiciones",
+    "barras": [
+     {
+      "l": "1 mol",
+      "e": "22,4 L",
+      "segs": [
+       {
+        "v": 22.4,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "2 mol (tu caso)",
+      "e": "44,8 L",
+      "segs": [
+       {
+        "v": 22.4,
+        "c": "azul"
+       },
+       {
+        "v": 22.4,
+        "c": "oro"
+       }
+      ]
+     }
+    ],
+    "nota": "El doble de gas ocupa el doble de espacio."
+   },
+   {
+    "k": "check",
+    "texto": "273,15 K y 1 atm son condiciones normales: 1 mol ocupa 22,4 L, así que 2 mol ocupan 44,8 L."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "2 mol",
+      "op": [
+       "Cantidad de sustancia $n$",
+       "Volumen",
+       "Temperatura"
+      ],
+      "ok": 0,
+      "why": "El mol mide cantidad de sustancia."
+     },
+     {
+      "p": "273,15 K",
+      "op": [
+       "Temperatura absoluta $T$",
+       "Presión",
+       "Moles"
+      ],
+      "ok": 0,
+      "why": "Kelvin: siempre se usa temperatura absoluta."
+     },
+     {
+      "p": "$0{,}082\\ \\text{atm·L/mol·K}$",
+      "op": [
+       "Constante $R$ de los gases",
+       "Presión",
+       "Energía"
+      ],
+      "ok": 0,
+      "why": "Sus unidades te dicen en qué unidades trabajar."
+     }
+    ]
+   },
+   {
+    "k": "asignar",
+    "titulo": "¿Qué ecuación relaciona esos datos?",
+    "items": [
+     {
+      "p": "P, V, n y T a la vez",
+      "op": [
+       "$PV=nRT$",
+       "$P_1V_1=P_2V_2$",
+       "$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$"
+      ],
+      "ok": 0,
+      "why": "Las otras comparan dos estados; aquí hay uno solo."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula el volumen",
+    "antes": "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx",
+    "resp": 44.8,
+    "unidad": "L",
+    "tol": 0.1,
+    "pista": "Multiplica $2\\cdot0{,}082\\cdot273{,}15$.",
+    "why": "Da 44,8 L: el doble de 22,4 L."
+   }
+  ]
+ },
+ "cie-009": {
+  "modo": "concepto",
+  "marcas": [
+   {
+    "frag": "mortalidad de los depredadores (γ)",
+    "rol": "dato",
+    "nota": "el parámetro que cambia",
+    "campo": "$\\gamma$ sube"
+   },
+   {
+    "frag": "γ/δ",
+    "rol": "clave",
+    "nota": "la fórmula ya está en el enunciado",
+    "campo": "$x^*=\\frac{\\gamma}{\\delta}$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en zorros y conejos",
+    "texto": "Los zorros viven de los conejos. Si los zorros mueren más rápido, para que su población no se acabe hace falta que haya más conejos disponibles. Esa es la idea que dice la fórmula."
+   },
+   {
+    "k": "calc",
+    "titulo": "Equilibrio de presas",
+    "lineas": [
+     "x^*=\\frac{\\gamma}{\\delta}"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "barras",
+    "titulo": "Presas en equilibrio según la mortalidad γ",
+    "barras": [
+     {
+      "l": "γ = 0,5",
+      "e": "25 presas",
+      "segs": [
+       {
+        "v": 25,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "γ = 1 (se duplica)",
+      "e": "50 presas",
+      "segs": [
+       {
+        "v": 25,
+        "c": "azul"
+       },
+       {
+        "v": 25,
+        "c": "oro"
+       }
+      ]
+     }
+    ],
+    "nota": "Con δ = 0,02: si la mortalidad sube al doble, el equilibrio de presas sube al doble."
+   },
+   {
+    "k": "idea",
+    "titulo": "Por qué tiene sentido",
+    "texto": "Si los depredadores mueren más, cada uno sostiene menos. Para que la población de depredadores no caiga, se necesitan más presas."
+   },
+   {
+    "k": "check",
+    "texto": "La respuesta es: aumenta. γ está arriba en la fracción: si sube, el resultado sube."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Ubica los parámetros",
+    "items": [
+     {
+      "p": "γ",
+      "op": [
+       "Mortalidad de los depredadores",
+       "Crecimiento de las presas",
+       "Depredación"
+      ],
+      "ok": 0,
+      "why": "Es la tasa a la que mueren los depredadores sin presas."
+     },
+     {
+      "p": "γ/δ",
+      "op": [
+       "Equilibrio de las presas",
+       "Equilibrio de los depredadores",
+       "Periodo de oscilación"
+      ],
+      "ok": 0,
+      "why": "El equilibrio de presas es $x^*=\\frac{\\gamma}{\\delta}$."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Prueba con números ($\\delta=0{,}02$)",
+    "antes": "\\gamma=0{,}5\\Rightarrow x^*=25;\\quad\\gamma=1\\Rightarrow x^*=",
+    "resp": 50,
+    "unidad": "",
+    "tol": 1e-09,
+    "pista": "Divide $1\\div0{,}02$.",
+    "why": "γ está arriba en la fracción: si sube, $x^*$ sube."
+   }
+  ]
+ },
+ "mat-001": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "$4.000 de arranque",
+    "rol": "dato",
+    "nota": "parte fija: se paga una vez",
+    "campo": "Parte fija: 4.000 pesos"
+   },
+   {
+    "frag": "$1.000 por cada kilómetro",
+    "rol": "dato",
+    "nota": "parte variable: depende de los km",
+    "campo": "Variable: 1.000 pesos por km"
+   },
+   {
+    "frag": "7 km",
+    "rol": "dato",
+    "nota": "k = 7",
+    "campo": "$k=7\\ \\text{km}$"
+   },
+   {
+    "frag": "¿Cuánto cuesta",
+    "rol": "pide",
+    "nota": "costo total en pesos",
+    "campo": "$C(7)=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en el taxímetro",
+    "texto": "Te subes al taxi y el taxímetro ya marca 4.000 pesos, sin haber andado nada. Después, cada kilómetro suma 1.000 pesos más. Miremos eso con barras."
+   },
+   {
+    "k": "barras",
+    "titulo": "Cuánto marca según los kilómetros",
+    "barras": [
+     {
+      "l": "0 km (apenas te subes)",
+      "e": "$4.000",
+      "segs": [
+       {
+        "v": 4,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "1 km",
+      "e": "$5.000",
+      "segs": [
+       {
+        "v": 4,
+        "c": "azul"
+       },
+       {
+        "v": 1,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "2 km",
+      "e": "$6.000",
+      "segs": [
+       {
+        "v": 4,
+        "c": "azul"
+       },
+       {
+        "v": 2,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "7 km (tu recorrido)",
+      "e": "$11.000",
+      "segs": [
+       {
+        "v": 4,
+        "c": "azul"
+       },
+       {
+        "v": 7,
+        "c": "oro"
+       }
+      ]
+     }
+    ],
+    "nota": "Lo azul es el arranque: se paga una sola vez y nunca crece. Lo de color crece 1.000 por cada kilómetro."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa cada frase a matemáticas",
+    "filas": [
+     {
+      "dice": "$4.000 de arranque",
+      "escribo": "4.000",
+      "rol": "dato"
+     },
+     {
+      "dice": "$1.000 por cada kilómetro",
+      "escribo": "1.000\\cdot k",
+      "rol": "dato"
+     },
+     {
+      "dice": "recorrido de 7 km",
+      "escribo": "k=7",
+      "rol": "dato"
+     },
+     {
+      "dice": "¿Cuánto cuesta?",
+      "escribo": "C=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "Lo fijo se suma una sola vez. Lo que dice «por cada» se multiplica por la cantidad."
+   },
+   {
+    "k": "calc",
+    "titulo": "Arma la función",
+    "lineas": [
+     "C(k)=4.000+1.000\\cdot k"
+    ],
+    "nota": "Fija + variable·cantidad."
+   },
+   {
+    "k": "calc",
+    "titulo": "Reemplaza",
+    "lineas": [
+     "C(7)=4.000+1.000\\cdot7=4.000+7.000=11.000"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "check",
+    "texto": "Sin el arranque serían 7.000 pesos. Con el arranque, 11.000."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "$4.000 de arranque",
+      "op": [
+       "Parte fija (se paga una vez)",
+       "Parte variable",
+       "Total"
+      ],
+      "ok": 0,
+      "why": "No depende de los kilómetros."
+     },
+     {
+      "p": "$1.000 por cada kilómetro",
+      "op": [
+       "Parte variable (pendiente)",
+       "Parte fija",
+       "Distancia"
+      ],
+      "ok": 0,
+      "why": "Se multiplica por la cantidad de km."
+     }
+    ]
+   },
+   {
+    "k": "asignar",
+    "titulo": "¿Qué tipo de función es?",
+    "items": [
+     {
+      "p": "fijo + variable × cantidad",
+      "op": [
+       "Lineal: $C=4.000+1.000\\,k$",
+       "Cuadrática",
+       "Exponencial"
+      ],
+      "ok": 0,
+      "why": "La tasa por km es constante: línea recta."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula el costo",
+    "antes": "C(7)=4.000+1.000\\cdot7=",
+    "resp": 11000,
+    "unidad": "pesos",
+    "tol": 1e-09,
+    "pista": "Primero $1.000\\cdot7$.",
+    "why": "$4.000+7.000=11.000$."
+   }
+  ]
+ },
+ "mat-002": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "$f(x)=x^2-4x+3$",
+    "rol": "dato",
+    "nota": "cuadrática",
+    "campo": "$f(x)=x^2-4x+3$"
+   },
+   {
+    "frag": "corta el eje $x$",
+    "rol": "clave",
+    "nota": "cortar el eje x es f(x) = 0",
+    "campo": "$f(x)=0$",
+    "w": "Condición"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     1,
+     -4,
+     3
+    ],
+    "x": [
+     -0.5,
+     4.5
+    ],
+    "puntos": [
+     {
+      "x": 1,
+      "y": 0,
+      "l": "x = ?"
+     },
+     {
+      "x": 3,
+      "y": 0,
+      "l": "x = ?"
+     }
+    ],
+    "nota": "«Corta el eje x» es tocar la línea horizontal. En esos dos puntos la altura (y) vale 0. Buscamos los valores de x."
+   },
+   {
+    "k": "calc",
+    "titulo": "Altura cero: igualo a cero",
+    "lineas": [
+     "f(x)=0",
+     "x^2-4x+3=0"
+    ],
+    "nota": "Como en esos puntos la altura es 0, igualo la función a 0."
+   },
+   {
+    "k": "calc",
+    "titulo": "¿De dónde sale? De multiplicar dos paréntesis",
+    "lineas": [
+     "(x+m)(x+n)",
+     "=x^2+mx+nx+m\\cdot n",
+     "=x^2+(m+n)x+m\\cdot n"
+    ],
+    "nota": "m y n son dos números secretos. Multiplicar los paréntesis da esa forma; nosotros vamos al revés."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Compara con tu ecuación",
+    "filas": [
+     {
+      "dice": "el número que acompaña a $x$: $-4$",
+      "escribo": "m+n=-4",
+      "rol": "dato"
+     },
+     {
+      "dice": "el número solo: $3$",
+      "escribo": "m\\cdot n=3",
+      "rol": "dato"
+     }
+    ],
+    "nota": "Por eso se buscan dos números que sumen −4 y multipliquen 3."
+   },
+   {
+    "k": "tanteo",
+    "titulo": "Busca los dos números",
+    "busco": "Busco dos números que multipliquen 3 y sumen −4.",
+    "cols": [
+     "Pareja",
+     "Multiplican",
+     "Suman"
+    ],
+    "filas": [
+     {
+      "a": "$1$ y $3$",
+      "b": "$1\\cdot3=3$",
+      "c": "$1+3=4$",
+      "ok": false
+     },
+     {
+      "a": "$-1$ y $-3$",
+      "b": "$(-1)(-3)=3$",
+      "c": "$-1-3=-4$",
+      "ok": true
+     }
+    ],
+    "nota": "Primero listo las parejas que multiplican 3 (solo hay dos). De ésas, la que suma −4 es la que sirve."
+   },
+   {
+    "k": "calc",
+    "titulo": "Arma los paréntesis con esos números",
+    "lineas": [
+     "(x+m)(x+n)=0",
+     "(x+(-1))(x+(-3))=0",
+     "(x-1)(x-3)=0"
+    ],
+    "nota": "x + (−1) se escribe x − 1, y x + (−3) se escribe x − 3."
+   },
+   {
+    "k": "calc",
+    "titulo": "Un producto da 0 si uno de los dos es 0",
+    "lineas": [
+     "x-1=0\\ \\Rightarrow\\ x=1",
+     "x-3=0\\ \\Rightarrow\\ x=3"
+    ],
+    "nota": "¿Qué número menos 1 da 0? El 1. ¿Y menos 3? El 3."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Comprueba en la gráfica",
+    "coef": [
+     1,
+     -4,
+     3
+    ],
+    "x": [
+     -0.5,
+     4.5
+    ],
+    "puntos": [
+     {
+      "x": 1,
+      "y": 0,
+      "l": "x = 1"
+     },
+     {
+      "x": 3,
+      "y": 0,
+      "l": "x = 3"
+     }
+    ],
+    "nota": "La curva toca el eje justo en 1 y en 3."
+   },
+   {
+    "k": "calc",
+    "titulo": "Verifica reemplazando",
+    "lineas": [
+     "f(1)=1-4+3=0",
+     "f(3)=9-12+3=0"
+    ],
+    "nota": "Si al reemplazar da 0, es un punto donde corta."
+   },
+   {
+    "k": "check",
+    "texto": "Los cortes con el eje x son x = 1 y x = 3."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Piensa antes de resolver",
+    "items": [
+     {
+      "p": "cortar el eje $x$",
+      "op": [
+       "$f(x)=0$",
+       "$x=0$",
+       "$f(x)=x$"
+      ],
+      "ok": 0,
+      "why": "En el eje x la altura es 0."
+     },
+     {
+      "p": "¿Qué técnica sirve para $x^2-4x+3=0$?",
+      "op": [
+       "Factorizar",
+       "Derivar",
+       "Despejar $x$ directamente"
+      ],
+      "ok": 0,
+      "why": "Buscas dos números que multipliquen 3 y sumen −4."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Completa la factorización",
+    "antes": "x^2-4x+3=(x-1)(x-\\ ?\\ )",
+    "resp": 3,
+    "unidad": "",
+    "tol": 1e-09,
+    "pista": "Deben multiplicar 3 y sumar −4 (con −1 ya tienes uno).",
+    "why": "$-1$ y $-3$: producto 3, suma −4."
+   }
+  ]
+ },
+ "mat-003": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "3 fichas rojas",
+    "rol": "dato",
+    "nota": "las que me sirven",
+    "campo": "Favorables: $3$"
+   },
+   {
+    "frag": "5 azules",
+    "rol": "dato",
+    "nota": "suma al total",
+    "campo": "Otras: $5$"
+   },
+   {
+    "frag": "sea roja",
+    "rol": "pide",
+    "nota": "probabilidad de roja",
+    "campo": "$P(\\text{roja})=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Imagina que metes la mano sin mirar",
+    "texto": "Una bolsa con 3 fichas rojas y 5 azules. Metes la mano a ciegas y sacas una. ¿Qué tan fácil es que sea roja? Hay pocas rojas entre varias fichas, así que no es tan fácil. La probabilidad lo mide con una fracción."
+   },
+   {
+    "k": "puntos",
+    "titulo": "Dibuja la bolsa y cuenta",
+    "grupos": [
+     {
+      "n": 3,
+      "l": "rojas (las que quiero)",
+      "c": "rojo"
+     },
+     {
+      "n": 5,
+      "l": "azules",
+      "c": "azul"
+     }
+    ],
+    "lineas": [
+     "\\text{totales}=3+5=8",
+     "P(\\text{roja})=\\frac{3}{8}"
+    ],
+    "nota": "Abajo va el total de fichas (8), no solo las azules."
+   },
+   {
+    "k": "calc",
+    "titulo": "La regla de la probabilidad",
+    "lineas": [
+     "P=\\frac{\\text{las que quiero}}{\\text{todas las que hay}}",
+     "P(\\text{roja})=\\frac{3}{8}"
+    ],
+    "nota": "Arriba van las fichas que quiero (rojas). Abajo van todas las fichas, rojas y azules juntas."
+   },
+   {
+    "k": "check",
+    "texto": "$3/5$ compara rojas con azules: eso no es probabilidad, porque abajo faltan las rojas."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "3 fichas rojas",
+      "op": [
+       "Las que me sirven",
+       "Todas las posibles",
+       "Probabilidad"
+      ],
+      "ok": 0,
+      "why": "Lo que quieres que pase."
+     },
+     {
+      "p": "3 rojas y 5 azules",
+      "op": [
+       "Todas las posibles: se suman",
+       "Todas las posibles: solo las azules",
+       "Razón rojas : azules"
+      ],
+      "ok": 0,
+      "why": "El total incluye todas las fichas."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Escribe la probabilidad como decimal",
+    "antes": "P(\\text{roja})=\\frac{3}{3+5}=",
+    "resp": 0.375,
+    "unidad": "",
+    "tol": 0.001,
+    "pista": "Divide 3 entre 8.",
+    "why": "$\\frac{3}{8}=0{,}375$."
+   }
+  ]
+ },
+ "mat-004": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "2, 3, 3, 4, 8",
+    "rol": "dato",
+    "nota": "5 datos",
+    "campo": "$2,\\ 3,\\ 3,\\ 4,\\ 8$"
+   },
+   {
+    "frag": "media 4 y mediana 3",
+    "rol": "dato",
+    "nota": "estado inicial",
+    "campo": "$\\bar{x}=4,\\ \\text{Me}=3$"
+   },
+   {
+    "frag": "se elimina el dato 8",
+    "rol": "clave",
+    "nota": "el 8 es el extremo",
+    "campo": "Quitar el $8$"
+   },
+   {
+    "frag": "qué ocurre",
+    "rol": "pide",
+    "nota": "media y mediana",
+    "campo": "¿Qué pasa con $\\bar{x}$ y Me?"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Media y mediana, con un ejemplo",
+    "texto": "La media es como repartir parejo: juntas todo y lo repartes igual entre todos. La mediana es el que queda parado justo en el medio de la fila. Un dato enorme, como el 8, jala la media hacia arriba, pero a la mediana casi no le importa."
+   },
+   {
+    "k": "barras",
+    "titulo": "Los datos con barras",
+    "barras": [
+     {
+      "l": "Dato 1",
+      "e": "2",
+      "segs": [
+       {
+        "v": 2,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Dato 2",
+      "e": "3",
+      "segs": [
+       {
+        "v": 3,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Dato 3",
+      "e": "3",
+      "segs": [
+       {
+        "v": 3,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Dato 4",
+      "e": "4",
+      "segs": [
+       {
+        "v": 4,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Dato 5 (el que se elimina)",
+      "e": "8",
+      "segs": [
+       {
+        "v": 8,
+        "c": "rojo"
+       }
+      ]
+     }
+    ],
+    "ref": {
+     "v": 4,
+     "l": "media con el 8 = 4"
+    },
+    "nota": "La barra roja es la que estira la media. Sin ella, la media baja."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Compara antes y después",
+    "cols": [
+     "",
+     "Con el 8",
+     "Sin el 8"
+    ],
+    "filas": [
+     [
+      "Datos",
+      "2, 3, 3, 4, 8",
+      "2, 3, 3, 4"
+     ],
+     [
+      "Suma",
+      "2+3+3+4+8 = 20",
+      "2+3+3+4 = 12"
+     ],
+     [
+      "Media (suma ÷ cuántos)",
+      "20 ÷ 5 = 4",
+      "12 ÷ 4 = 3"
+     ],
+     [
+      "Mediana (dato del centro)",
+      "3",
+      "(3+3) ÷ 2 = 3"
+     ]
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "La media bajó de 4 a 3, porque el 8 la jalaba hacia arriba. La mediana sigue en 3, porque el del medio es el mismo."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Piensa en las medidas",
+    "items": [
+     {
+      "p": "¿Cuál es sensible a valores extremos?",
+      "op": [
+       "La media",
+       "La mediana",
+       "La moda"
+      ],
+      "ok": 0,
+      "why": "La media usa todos los valores; un extremo la jala."
+     },
+     {
+      "p": "Se elimina el 8: ¿quién cambia?",
+      "op": [
+       "La media baja",
+       "La mediana sube",
+       "Ninguna cambia"
+      ],
+      "ok": 0,
+      "why": "La mediana sigue siendo 3."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula la nueva media",
+    "antes": "\\bar{x}=\\frac{2+3+3+4}{4}=",
+    "resp": 3,
+    "unidad": "",
+    "tol": 1e-09,
+    "pista": "Suma 12 y divide entre 4.",
+    "why": "Baja de 4 a 3."
+   }
+  ]
+ },
+ "mat-005": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "dos dados",
+    "rol": "dato",
+    "nota": "6 × 6 = 36 resultados",
+    "campo": "Casos totales: $6\\cdot6=36$"
+   },
+   {
+    "frag": "suma sea 7",
+    "rol": "pide",
+    "nota": "cuántas parejas suman 7",
+    "campo": "$P(\\text{suma}=7)=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Un dado tiene 6 caras, dos dados tienen 36 casos",
+    "texto": "Con el primer dado puede salir cualquiera de 6 números. Y por cada uno de esos, el segundo dado también puede dar 6. Entonces hay 6 por 6, o sea 36 casos posibles. Los pones todos en una tabla y miras cuántos suman 7."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Todas las combinaciones",
+    "cols": [
+     "+",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "filas": [
+     [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "*7"
+     ],
+     [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "*7",
+      "8"
+     ],
+     [
+      "3",
+      "4",
+      "5",
+      "6",
+      "*7",
+      "8",
+      "9"
+     ],
+     [
+      "4",
+      "5",
+      "6",
+      "*7",
+      "8",
+      "9",
+      "10"
+     ],
+     [
+      "5",
+      "6",
+      "*7",
+      "8",
+      "9",
+      "10",
+      "11"
+     ],
+     [
+      "6",
+      "*7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ]
+    ]
+   },
+   {
+    "k": "tabla",
+    "titulo": "Parejas que suman 7",
+    "cols": [
+     "Dado 1",
+     "Dado 2",
+     "Suma"
+    ],
+    "filas": [
+     [
+      "1",
+      "6",
+      "7"
+     ],
+     [
+      "2",
+      "5",
+      "7"
+     ],
+     [
+      "3",
+      "4",
+      "7"
+     ],
+     [
+      "4",
+      "3",
+      "7"
+     ],
+     [
+      "5",
+      "2",
+      "7"
+     ],
+     [
+      "6",
+      "1",
+      "7"
+     ]
+    ]
+   },
+   {
+    "k": "calc",
+    "titulo": "Probabilidad",
+    "lineas": [
+     "P(7)=\\frac{6}{36}=\\frac{1}{6}"
+    ],
+    "nota": "(1,6) y (6,1) son distintas."
+   },
+   {
+    "k": "check",
+    "texto": "El $7$ es la suma que más veces se repite con dos dados: por eso es la más probable."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Cuenta los casos",
+    "items": [
+     {
+      "p": "Dos dados",
+      "op": [
+       "36 resultados posibles",
+       "12 resultados",
+       "6 resultados"
+      ],
+      "ok": 0,
+      "why": "$6\\cdot6=36$: cada dado da 6 opciones."
+     },
+     {
+      "p": "Suma 7",
+      "op": [
+       "6 parejas (1-6, 2-5, 3-4 y sus inversas)",
+       "3 parejas",
+       "7 parejas"
+      ],
+      "ok": 0,
+      "why": "(1,6) y (6,1) son resultados distintos."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula la probabilidad (decimal)",
+    "antes": "P(7)=\\frac{6}{36}\\approx",
+    "resp": 0.17,
+    "unidad": "",
+    "tol": 0.005,
+    "pista": "Divide 6 entre 36.",
+    "why": "$\\frac{1}{6}\\approx0{,}17$."
+   }
+  ]
+ },
+ "mat-006": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "$100.000",
+    "rol": "dato",
+    "nota": "base inicial",
+    "campo": "$P_0=100.000$"
+   },
+   {
+    "frag": "sube 20 %",
+    "rol": "clave",
+    "nota": "sobre 100.000",
+    "campo": "Sube: $\\times1{,}2$"
+   },
+   {
+    "frag": "baja 20 %",
+    "rol": "trampa",
+    "nota": "sobre el nuevo precio, 120.000, no sobre 100.000",
+    "campo": "Baja: $\\times0{,}8$ del nuevo"
+   },
+   {
+    "frag": "El precio final",
+    "rol": "pide",
+    "nota": "lo que hay que hallar",
+    "campo": "$P_f=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Imagínalo con una camiseta",
+    "texto": "Una camiseta cuesta 100.000 pesos. La tienda la sube $20\\%$ y, una semana después, la pone en oferta con $20\\%$ de descuento. ¿Queda otra vez en 100.000 pesos? Casi todos dicen que sí. Miremos qué pasa de verdad."
+   },
+   {
+    "k": "barras",
+    "titulo": "Míralo con barras",
+    "barras": [
+     {
+      "l": "Al inicio",
+      "e": "$100.000",
+      "segs": [
+       {
+        "v": 100,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "Sube $20\\%$: se agregan 20.000 pesos",
+      "e": "$120.000",
+      "segs": [
+       {
+        "v": 100,
+        "c": "azul"
+       },
+       {
+        "v": 20,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "Baja $20\\%$ de 120.000: se quitan 24.000 pesos",
+      "e": "$96.000",
+      "segs": [
+       {
+        "v": 96,
+        "c": "azul"
+       },
+       {
+        "v": 24,
+        "c": "rojo"
+       }
+      ]
+     }
+    ],
+    "ref": {
+     "v": 100,
+     "l": "precio inicial"
+    },
+    "nota": "Lo verde es lo que se agrega; lo rayado en rojo es lo que se quita. Se quita más de lo que se agregó, porque el $20\\%$ ahora se saca de una barra más larga."
+   },
+   {
+    "k": "traducir",
+    "titulo": "¿Por qué ×1,2 y ×0,8?",
+    "filas": [
+     {
+      "dice": "sube $20\\%$",
+      "escribo": "100\\%+20\\%=120\\%\\Rightarrow\\times1{,}2",
+      "rol": "dato"
+     },
+     {
+      "dice": "baja $20\\%$",
+      "escribo": "100\\%-20\\%=80\\%\\Rightarrow\\times0{,}8",
+      "rol": "dato"
+     }
+    ],
+    "nota": "El precio de ese momento siempre es el 100 %. Subir es quedarse con más de ese 100 %; bajar, con menos. Y 120 % es lo mismo que 1,2."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Hazlo paso a paso",
+    "nodos": [
+     {
+      "v": "$100.000",
+      "l": "precio inicial"
+     },
+     {
+      "v": "$120.000",
+      "l": "después de subir"
+     },
+     {
+      "v": "$96.000",
+      "l": "precio final"
+     }
+    ],
+    "saltos": [
+     "\\times1{,}2\\ \\ (\\text{sube }20\\%)",
+     "\\times0{,}8\\ \\ (\\text{baja }20\\%\\ \\text{del nuevo})"
+    ],
+    "nota": "$100.000\\cdot1{,}2=120.000$ y luego $120.000\\cdot0{,}8=96.000$."
+   },
+   {
+    "k": "check",
+    "texto": "Subir y bajar el mismo porcentaje no deja el precio igual: el segundo $20\\%$ se calcula sobre un precio más grande. Por eso la respuesta es $96.000$."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Sobre qué base se calcula?",
+    "items": [
+     {
+      "p": "sube 20 %",
+      "op": [
+       "Sobre $100.000",
+       "Sobre $120.000",
+       "Sobre $20.000"
+      ],
+      "ok": 0,
+      "why": "El primer cambio parte del precio original."
+     },
+     {
+      "p": "baja 20 %",
+      "op": [
+       "Sobre $120.000",
+       "Sobre $100.000",
+       "Sobre $20.000"
+      ],
+      "ok": 0,
+      "why": "La base cambió: ahora el precio es 120.000."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula el precio final",
+    "antes": "100.000\\cdot1{,}2\\cdot0{,}8=",
+    "resp": 96000,
+    "unidad": "pesos",
+    "tol": 1e-09,
+    "pista": "Sube 20 % es ×1,2 y baja 20 % es ×0,8.",
+    "why": "$1{,}2\\cdot0{,}8=0{,}96$."
+   }
+  ]
+ },
+ "lec-001": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "no solo prestan libros",
+    "rol": "dato",
+    "nota": "el autor da razones: refugio, trámites, encuentro",
+    "campo": "Refugio, trámites y encuentro",
+    "w": "Razones"
+   },
+   {
+    "frag": "Por eso",
+    "rol": "clave",
+    "nota": "conector de consecuencia: viene la conclusión",
+    "campo": "Viene la conclusión",
+    "w": "Conector"
+   },
+   {
+    "frag": "medir su valor solo por el número de préstamos resulta engañoso",
+    "rol": "clave",
+    "nota": "la tesis del autor",
+    "campo": "Medir por préstamos es engañoso",
+    "w": "Tesis"
+   },
+   {
+    "frag": "¿Qué cuestiona el autor?",
+    "rol": "pide",
+    "nota": "busca lo que el autor critica",
+    "campo": "Buscar lo que el autor critica",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en medir una escuela",
+    "texto": "Alguien dice: «esa escuela es mala porque casi nadie saca libros de su biblioteca». Pero la gente también va a estudiar, a usar internet y a reunirse. Medir con un solo número deja por fuera cosas valiosas. Esa es la idea del texto."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Cómo está armado el texto",
+    "cols": [
+     "Parte",
+     "Qué hace"
+    ],
+    "filas": [
+     [
+      "Las bibliotecas no solo prestan libros…",
+      "Da razones"
+     ],
+     [
+      "Por eso…",
+      "Avisa que viene la conclusión"
+     ],
+     [
+      "…medir solo por préstamos es engañoso",
+      "Lo que el autor cuestiona"
+     ]
+    ]
+   },
+   {
+    "k": "traducir",
+    "titulo": "Las pistas del texto",
+    "filas": [
+     {
+      "dice": "no solo prestan libros",
+      "escribo": "\\text{hacen más cosas que prestar}",
+      "rol": "dato"
+     },
+     {
+      "dice": "Por eso",
+      "escribo": "\\text{aquí viene la conclusión}",
+      "rol": "clave"
+     },
+     {
+      "dice": "engañoso",
+      "escribo": "\\text{el autor critica esa forma de medir}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "«Engañoso» es una palabra de crítica: avisa qué está cuestionando el autor."
+   },
+   {
+    "k": "check",
+    "texto": "Cuestiona la medida (solo por préstamos). No dice que haya pocos libros, ni pocas bibliotecas, ni que los trámites digitales sean malos."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Identifica el texto",
+    "items": [
+     {
+      "p": "¿De qué trata (tema)?",
+      "op": [
+       "El valor de las bibliotecas de barrio",
+       "La digitalización de trámites",
+       "La compra de libros"
+      ],
+      "ok": 0,
+      "why": "Todo el texto gira alrededor de qué vale una biblioteca."
+     },
+     {
+      "p": "¿Qué defiende el autor (tesis)?",
+      "op": [
+       "Medir solo por préstamos es engañoso",
+       "Hay pocas bibliotecas",
+       "Los libros digitales son mejores"
+      ],
+      "ok": 0,
+      "why": "Es la conclusión, después de «Por eso»."
+     },
+     {
+      "p": "¿Qué razones da?",
+      "op": [
+       "Refugio, trámites y punto de encuentro",
+       "Solo préstamos",
+       "Venta de libros"
+      ],
+      "ok": 0,
+      "why": "Son los usos que no se ven en los préstamos."
+     },
+     {
+      "p": "«Por eso» sirve para…",
+      "op": [
+       "Introducir la conclusión",
+       "Dar un ejemplo",
+       "Contrastar"
+      ],
+      "ok": 0,
+      "why": "Conector de consecuencia."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-002": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Llovió toda la noche",
+    "rol": "dato",
+    "nota": "lo esperable: no se juega",
+    "campo": "Lo esperable: no se juega",
+    "w": "Idea 1"
+   },
+   {
+    "frag": "el partido se jugó",
+    "rol": "dato",
+    "nota": "lo contrario a lo esperable",
+    "campo": "Lo contrario a lo esperado",
+    "w": "Idea 2"
+   },
+   {
+    "frag": "___",
+    "rol": "pide",
+    "nota": "falta un conector",
+    "campo": "Falta un conector de oposición",
+    "w": "Falta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "¿Llovió y se jugó?",
+    "texto": "Lo normal es que con lluvia el partido se cancele. Pero aquí se jugó: pasó lo contrario de lo esperado. Cuando dos ideas chocan así, se une con un conector de oposición."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué relación hay",
+    "cols": [
+     "Idea 1",
+     "Idea 2",
+     "Relación"
+    ],
+    "filas": [
+     [
+      "Llovió toda la noche",
+      "el partido se jugó",
+      "Oposición (lo esperado no ocurrió)"
+     ]
+    ]
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Conectores de oposición vs. otros",
+    "si": [
+     "sin embargo",
+     "pero",
+     "aunque"
+    ],
+    "no": [
+     "por lo tanto (consecuencia)",
+     "además (suma)",
+     "porque (causa)"
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Oposición pide «sin embargo»."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza las dos ideas",
+    "items": [
+     {
+      "p": "¿Qué esperarías después de «Llovió toda la noche»?",
+      "op": [
+       "Que no se jugara",
+       "Que se jugara",
+       "Que lloviera menos"
+      ],
+      "ok": 0,
+      "why": "Con lluvia, lo normal es suspender."
+     },
+     {
+      "p": "«el partido se jugó»",
+      "op": [
+       "Lo contrario de lo esperado",
+       "Lo mismo que lo esperado",
+       "Una causa"
+      ],
+      "ok": 0,
+      "why": "Rompe la expectativa."
+     },
+     {
+      "p": "Relación entre las ideas",
+      "op": [
+       "Oposición",
+       "Causa",
+       "Suma",
+       "Consecuencia"
+      ],
+      "ok": 0,
+      "why": "Oposición se expresa con «sin embargo»."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-003": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Todos los estudiantes que entregaron el proyecto aprobaron",
+    "rol": "clave",
+    "nota": "Entregar → aprobar",
+    "campo": "$\\text{entregar}\\rightarrow\\text{aprobar}$",
+    "w": "Premisa 1"
+   },
+   {
+    "frag": "Camila no aprobó",
+    "rol": "dato",
+    "nota": "no aprobó",
+    "campo": "Camila: no aprobó",
+    "w": "Premisa 2"
+   },
+   {
+    "frag": "Se puede concluir",
+    "rol": "pide",
+    "nota": "lo que obliga el texto, no lo que parece",
+    "campo": "Lo que obliga el texto",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en una regla del colegio",
+    "texto": "«Todos los que entregaron el proyecto aprobaron». Camila no aprobó. Si hubiera entregado, habría aprobado. Entonces no pudo haber entregado."
+   },
+   {
+    "k": "calc",
+    "titulo": "Escríbelo como flecha",
+    "lineas": [
+     "\\text{entregar}\\rightarrow\\text{aprobar}",
+     "\\text{Camila: }\\text{no aprobó}"
+    ],
+    "nota": ""
+   },
+   {
+    "k": "tabla",
+    "titulo": "Prueba las dos posibilidades",
+    "cols": [
+     "Si Camila…",
+     "Entonces…",
+     "¿Cuadra?"
+    ],
+    "filas": [
+     [
+      "entregó",
+      "aprobó",
+      "No: ella no aprobó"
+     ],
+     [
+      "*no entregó",
+      "no pasa nada",
+      "*Sí, es la única que cuadra"
+     ]
+    ]
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Mismo patrón",
+    "si": [
+     "Si llueve, la calle se moja. La calle está seca, entonces no llovió."
+    ],
+    "no": [
+     "La calle está mojada, entonces llovió (puede ser un camión de agua)."
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Camila no entregó el proyecto."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Traduce a lógica",
+    "items": [
+     {
+      "p": "«Todos los que entregaron aprobaron»",
+      "op": [
+       "Entregar → aprobar",
+       "Aprobar → entregar",
+       "Entregar ↔ aprobar"
+      ],
+      "ok": 0,
+      "why": "Entregar es suficiente para aprobar."
+     },
+     {
+      "p": "«Camila no aprobó»",
+      "op": [
+       "Niega la consecuencia",
+       "Niega la causa",
+       "No dice nada"
+      ],
+      "ok": 0,
+      "why": "Aprobar es la consecuencia."
+     },
+     {
+      "p": "Si A → B y no B, entonces…",
+      "op": [
+       "No A",
+       "A",
+       "B"
+      ],
+      "ok": 0,
+      "why": "Contrarrecíproco: si no hay consecuencia, no hubo causa."
+     }
+    ]
+   }
+  ]
+ },
+ "ing-003": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Monday–Friday",
+    "rol": "clave",
+    "nota": "solo lunes a viernes",
+    "campo": "Lunes a viernes",
+    "w": "When"
+   },
+   {
+    "frag": "8 a.m.–6 p.m.",
+    "rol": "dato",
+    "nota": "horario entre semana",
+    "campo": "Horario: 8–18 h",
+    "w": "Hours"
+   },
+   {
+    "frag": "Closed on holidays",
+    "rol": "dato",
+    "nota": "también cierra festivos",
+    "campo": "Festivos: cerrado",
+    "w": "Also"
+   },
+   {
+    "frag": "Sunday",
+    "rol": "pide",
+    "nota": "domingo no está en la lista",
+    "campo": "¿Domingo está en la lista?",
+    "w": "Question"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Un cartel es como un horario",
+    "texto": "Cuando lees un cartel, lo que no está escrito no cuenta como abierto. Solo vale lo que dice. No traduzcas todo: busca el día que te preguntan."
+   },
+   {
+    "k": "glosa",
+    "titulo": "El cartel, parte por parte",
+    "frase": [
+     {
+      "en": "Library",
+      "es": "biblioteca",
+      "pron": "láibrari"
+     },
+     {
+      "en": "Open",
+      "es": "abierto",
+      "pron": "óupen"
+     },
+     {
+      "en": "Monday–Friday",
+      "es": "de lunes a viernes",
+      "pron": "mándei fráidei"
+     },
+     {
+      "en": "8 a.m.–6 p.m.",
+      "es": "de 8 de la mañana a 6 de la tarde",
+      "pron": "éit ei-em tu sics pi-em"
+     }
+    ],
+    "dice": "Biblioteca. Abierto de lunes a viernes, de 8 de la mañana a 6 de la tarde."
+   },
+   {
+    "k": "glosa",
+    "titulo": "El final del cartel",
+    "frase": [
+     {
+      "en": "Closed",
+      "es": "cerrado",
+      "pron": "clóusd"
+     },
+     {
+      "en": "on",
+      "es": "en",
+      "pron": "on"
+     },
+     {
+      "en": "holidays",
+      "es": "festivos",
+      "pron": "jólideis"
+     }
+    ],
+    "dice": "Cerrado en festivos."
+   },
+   {
+    "k": "tabla",
+    "titulo": "La semana según el cartel",
+    "cols": [
+     "Día",
+     "¿Abre?"
+    ],
+    "filas": [
+     [
+      "{{Monday}}",
+      "Sí, 8 a.m.–6 p.m."
+     ],
+     [
+      "{{Tuesday}}",
+      "Sí, 8 a.m.–6 p.m."
+     ],
+     [
+      "{{Wednesday}}",
+      "Sí, 8 a.m.–6 p.m."
+     ],
+     [
+      "{{Thursday}}",
+      "Sí, 8 a.m.–6 p.m."
+     ],
+     [
+      "{{Friday}}",
+      "Sí, 8 a.m.–6 p.m."
+     ],
+     [
+      "{{Saturday}}",
+      "No aparece"
+     ],
+     [
+      "*{{Sunday}}",
+      "*No aparece: no abre"
+     ],
+     [
+      "{{Holidays}}",
+      "Cerrado"
+     ]
+    ]
+   },
+   {
+    "k": "escucha",
+    "titulo": "Escúchalas y repítelas en voz alta",
+    "frases": [
+     {
+      "en": "Can you go on Sunday?",
+      "es": "¿Puedes ir el domingo?",
+      "pron": "can yu gou on sándei"
+     },
+     {
+      "en": "No, it is not open on Sunday.",
+      "es": "No, no abre el domingo.",
+      "pron": "nou, it is not óupen on sándei"
+     }
+    ],
+    "nota": "Sunday suena «sándei», no «sunday» como se lee."
+   },
+   {
+    "k": "check",
+    "texto": "{{Sunday}} no está en el horario, así que no abre."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Lee el cartel",
+    "items": [
+     {
+      "p": "¿Qué es?",
+      "op": [
+       "Horario de una biblioteca",
+       "Un anuncio de venta",
+       "Un menú"
+      ],
+      "ok": 0,
+      "why": "{{Library}} es biblioteca y {{Open}} indica el horario."
+     },
+     {
+      "p": "¿Cuándo abre?",
+      "op": [
+       "De lunes a viernes, de 8 a 6",
+       "Todos los días",
+       "Solo en festivos"
+      ],
+      "ok": 0,
+      "why": "{{Monday–Friday}}: solo entre semana."
+     },
+     {
+      "p": "¿El domingo está en la lista?",
+      "op": [
+       "No",
+       "Sí"
+      ],
+      "ok": 0,
+      "why": "Si el día no está en el horario, está cerrado."
+     }
+    ]
+   }
+  ]
+ },
+ "soc-001": {
+  "modo": "historia",
+  "marcas": [
+   {
+    "frag": "tutela",
+    "rol": "clave",
+    "nota": "mecanismo de protección rápida",
+    "campo": "Mecanismo de protección rápida"
+   },
+   {
+    "frag": "Constitución de 1991",
+    "rol": "dato",
+    "nota": "de donde sale la tutela (art. 86)",
+    "campo": "Año 1991, art. 86"
+   },
+   {
+    "frag": "sirve para",
+    "rol": "pide",
+    "nota": "la función de la tutela",
+    "campo": "Función de la tutela"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Un derecho que no puede esperar",
+    "texto": "Imagina que te niegan una atención médica urgente. Esperar meses un juicio normal no sirve: necesitas ayuda ya. Para eso la Constitución de 1991 creó la tutela."
+   },
+   {
+    "k": "linea",
+    "titulo": "Antes y después",
+    "eventos": [
+     {
+      "anio": "1886",
+      "t": "Constitución de 1886",
+      "d": "No existía un mecanismo directo para pedir protección inmediata",
+      "rol": "antes"
+     },
+     {
+      "anio": "1991",
+      "t": "Constitución de 1991",
+      "d": "Crea la acción de tutela (art. 86)",
+      "rol": "hecho"
+     },
+     {
+      "anio": "Hoy",
+      "t": "Cualquier persona",
+      "d": "Pide ante un juez la protección inmediata de un derecho fundamental; el juez decide en máximo 10 días",
+      "rol": "despues"
+     }
+    ]
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "¿Cuándo sirve la tutela?",
+    "si": [
+     "Te niegan atención médica urgente.",
+     "Una autoridad vulnera tu derecho a la educación."
+    ],
+    "no": [
+     "Quieres cambiar una ley (eso es del Congreso).",
+     "Elegir presidente (eso es votar)."
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Protección inmediata de derechos fundamentales."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Contexto de la tutela",
+    "items": [
+     {
+      "p": "¿De dónde viene?",
+      "op": [
+       "Constitución de 1991, art. 86",
+       "Constitución de 1886",
+       "Una ley de 2010"
+      ],
+      "ok": 0,
+      "why": "La carta de 1991 la creó."
+     },
+     {
+      "p": "¿Para qué sirve?",
+      "op": [
+       "Proteger derechos fundamentales de forma inmediata",
+       "Cambiar leyes",
+       "Elegir gobernantes"
+      ],
+      "ok": 0,
+      "why": "Es un mecanismo rápido ante un juez."
+     },
+     {
+      "p": "¿Qué significa «inmediata»?",
+      "op": [
+       "El juez decide en máximo 10 días",
+       "Tarda un año",
+       "Solo la decide el Congreso"
+      ],
+      "ok": 0,
+      "why": "Rapidez: por eso existe."
+     }
+    ]
+   }
+  ]
+ },
+ "soc-002": {
+  "modo": "concepto",
+  "marcas": [
+   {
+    "frag": "hace las leyes",
+    "rol": "pide",
+    "nota": "función de crear leyes",
+    "campo": "Quien hace las leyes"
+   },
+   {
+    "frag": "la rama del poder público",
+    "rol": "clave",
+    "nota": "son tres ramas",
+    "campo": "Son tres ramas"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un colegio",
+    "texto": "Alguien escribe las reglas, otro las hace cumplir y otro decide cuando hay conflictos. En Colombia el poder está dividido igual, en tres ramas, para que nadie tenga todo."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Las tres ramas",
+    "cols": [
+     "Rama",
+     "Quién",
+     "Qué hace"
+    ],
+    "filas": [
+     [
+      "*Legislativa",
+      "*Congreso (Senado y Cámara)",
+      "*Hace las leyes"
+     ],
+     [
+      "Ejecutiva",
+      "Presidente y ministros",
+      "Ejecuta las leyes y gobierna"
+     ],
+     [
+      "Judicial",
+      "Jueces y cortes",
+      "Aplica las leyes y resuelve conflictos"
+     ]
+    ]
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Cómo recordarlo",
+    "si": [
+     "Legislativa → legislar (hacer leyes)"
+    ],
+    "no": [
+     "Electoral es un organismo que organiza elecciones; no es una de las tres ramas."
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Legislativa."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Une cada institución con su rama",
+    "items": [
+     {
+      "p": "Congreso (Senado y Cámara)",
+      "op": [
+       "Legislativa",
+       "Ejecutiva",
+       "Judicial"
+      ],
+      "ok": 0,
+      "why": "Legislar = hacer leyes."
+     },
+     {
+      "p": "Presidente y ministros",
+      "op": [
+       "Ejecutiva",
+       "Legislativa",
+       "Judicial"
+      ],
+      "ok": 0,
+      "why": "Ejecutan las leyes y gobiernan."
+     },
+     {
+      "p": "Jueces y cortes",
+      "op": [
+       "Judicial",
+       "Ejecutiva",
+       "Legislativa"
+      ],
+      "ok": 0,
+      "why": "Aplican las leyes y resuelven conflictos."
+     },
+     {
+      "p": "¿Por qué «Electoral» no es una de las tres ramas?",
+      "op": [
+       "Es un organismo autónomo",
+       "Es la cuarta rama",
+       "No existe"
+      ],
+      "ok": 0,
+      "why": "Organiza las elecciones pero no hace, ejecuta ni aplica leyes."
+     }
+    ]
+   }
+  ]
+ },
+ "soc-003": {
+  "modo": "historia",
+  "marcas": [
+   {
+    "frag": "1810",
+    "rol": "dato",
+    "nota": "época de los hechos",
+    "campo": "Año 1810"
+   },
+   {
+    "frag": "un testigo de los hechos",
+    "rol": "clave",
+    "nota": "vivió el evento",
+    "campo": "Vivió el hecho"
+   },
+   {
+    "frag": "para un historiador de hoy",
+    "rol": "trampa",
+    "nota": "la fuente se juzga por la época, no por quién la lee",
+    "campo": "Quien la lee hoy no cambia el tipo"
+   },
+   {
+    "frag": "es una fuente",
+    "rol": "pide",
+    "nota": "el tipo de fuente",
+    "campo": "¿Primaria o secundaria?"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un testigo",
+    "texto": "Quien estuvo ahí cuenta lo que vio: es una fuente primaria. Quien lo cuenta después, leyendo otras fuentes, es una fuente secundaria."
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Primaria vs. secundaria",
+    "si": [
+     "Carta de 1810 de un testigo",
+     "Diario o fotografía de la época",
+     "Ley o decreto original"
+    ],
+    "no": [
+     "Libro de texto actual",
+     "Artículo de un historiador de hoy",
+     "Documental sobre 1810"
+    ]
+   },
+   {
+    "k": "linea",
+    "titulo": "Dónde está cada fuente",
+    "eventos": [
+     {
+      "anio": "1810",
+      "t": "Carta del testigo",
+      "d": "Escrita en el momento de los hechos",
+      "rol": "hecho"
+     },
+     {
+      "anio": "Hoy",
+      "t": "Historiador",
+      "d": "La usa como evidencia para escribir su interpretación",
+      "rol": "despues"
+     }
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Primaria. Una opinión puede ser parcial, pero eso no le quita valor como fuente."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Clasifica la fuente",
+    "items": [
+     {
+      "p": "¿Quién la escribe?",
+      "op": [
+       "Un testigo de los hechos",
+       "Un historiador actual"
+      ],
+      "ok": 0,
+      "why": "Vivió el momento."
+     },
+     {
+      "p": "«Primaria» significa…",
+      "op": [
+       "Viene de la época o de quien vivió el hecho",
+       "Es la más importante",
+       "Es la más larga"
+      ],
+      "ok": 0,
+      "why": "Se define por su origen."
+     },
+     {
+      "p": "¿Importa que el lector sea de hoy?",
+      "op": [
+       "No: se clasifica por su origen, no por quién la lee",
+       "Sí: la vuelve secundaria"
+      ],
+      "ok": 0,
+      "why": "La fecha de la carta es 1810, no la de quien la consulta."
+     }
+    ]
+   }
+  ]
+ },
+ "soc-004": {
+  "modo": "historia",
+  "marcas": [
+   {
+    "frag": "orden cronológico",
+    "rol": "pide",
+    "nota": "de la fecha más antigua a la más reciente",
+    "campo": "Del más antiguo al más reciente"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Ordena como la historia de tu familia",
+    "texto": "Primero el abuelo, luego tu papá, luego tú. Aquí igual: se ordena por el año. Solo mira los números."
+   },
+   {
+    "k": "linea",
+    "titulo": "Ordena en la línea",
+    "eventos": [
+     {
+      "anio": "1810",
+      "t": "Grito de Independencia",
+      "d": "Inicio del proceso independentista",
+      "rol": "hecho"
+     },
+     {
+      "anio": "1886",
+      "t": "Constitución de 1886",
+      "d": "Centraliza el Estado; rige más de un siglo",
+      "rol": "hecho"
+     },
+     {
+      "anio": "1958–1974",
+      "t": "Frente Nacional",
+      "d": "Liberales y conservadores se alternan el poder",
+      "rol": "hecho"
+     },
+     {
+      "anio": "1991",
+      "t": "Constitución de 1991",
+      "d": "Estado social de derecho; crea la tutela",
+      "rol": "hecho"
+     }
+    ]
+   },
+   {
+    "k": "idea",
+    "titulo": "Cómo descartar rápido",
+    "texto": "Truco: ordena por siglos. 1800s: 1810 y 1886. 1900s: 1958 y 1991. Dentro de cada siglo ordena por año."
+   },
+   {
+    "k": "check",
+    "texto": "1810 → 1886 → Frente Nacional → 1991."
+   }
+  ],
+  "guia": [
+   {
+    "k": "ordenar",
+    "titulo": "Ordena los hechos del más antiguo al más reciente",
+    "items": [
+     "Grito de 1810",
+     "Constitución de 1886",
+     "Frente Nacional",
+     "Constitución de 1991"
+    ],
+    "why": "1810, 1886, 1958–1974 y 1991."
+   }
+  ]
+ },
+ "ing-001": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "She",
+    "rol": "clave",
+    "nota": "tercera persona del singular",
+    "campo": "Sujeto: she",
+    "w": "Who"
+   },
+   {
+    "frag": "every day",
+    "rol": "dato",
+    "nota": "rutina: presente simple",
+    "campo": "Todos los días: rutina",
+    "w": "When"
+   },
+   {
+    "frag": "___",
+    "rol": "pide",
+    "nota": "falta el verbo",
+    "campo": "Falta el verbo",
+    "w": "Falta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Un sticker para el verbo",
+    "texto": "En inglés, cuando hablas de la rutina de una sola persona (he, she, it), al verbo se le pega una -s o -es, como un sticker. Con I, you, we y they no se pega nada."
+   },
+   {
+    "k": "glosa",
+    "titulo": "Palabra por palabra",
+    "frase": [
+     {
+      "en": "She",
+      "es": "ella",
+      "pron": "shi"
+     },
+     {
+      "en": "goes",
+      "es": "va",
+      "pron": "gous"
+     },
+     {
+      "en": "to",
+      "es": "a",
+      "pron": "tu"
+     },
+     {
+      "en": "school",
+      "es": "escuela",
+      "pron": "scúl"
+     },
+     {
+      "en": "every day",
+      "es": "todos los días",
+      "pron": "évri dei"
+     }
+    ],
+    "dice": "Ella va a la escuela todos los días.",
+    "nota": "Toca cada palabra para oírla."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Las pistas de la frase",
+    "filas": [
+     {
+      "dice": "She",
+      "escribo": "\\text{una sola persona: he / she / it}",
+      "rol": "dato"
+     },
+     {
+      "dice": "every day",
+      "escribo": "\\text{rutina: presente simple}",
+      "rol": "dato"
+     },
+     {
+      "dice": "go",
+      "escribo": "\\text{con she: goes}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "En presente simple, a he, she e it se les agrega -s o -es al verbo."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Presente simple: quién lleva sticker",
+    "cols": [
+     "Sujeto",
+     "Verbo"
+    ],
+    "filas": [
+     [
+      "{{I}}, {{you}}, {{we}}, {{they}}",
+      "{{go}}"
+     ],
+     [
+      "*{{he}}, {{she}}, {{it}}",
+      "*{{goes}}  (-es)"
+     ]
+    ]
+   },
+   {
+    "k": "escucha",
+    "titulo": "Escúchalas y repítelas en voz alta",
+    "frases": [
+     {
+      "en": "She goes to school every day.",
+      "es": "Ella va a la escuela todos los días.",
+      "pron": "shi gous tu scúl évri dei"
+     },
+     {
+      "en": "He plays soccer.",
+      "es": "Él juega fútbol.",
+      "pron": "ji pleis sóquer"
+     },
+     {
+      "en": "It rains a lot.",
+      "es": "Llueve mucho.",
+      "pron": "it reins a lat"
+     }
+    ],
+    "nota": "Fíjate en cómo suena la -s del final: «gous», «pleis», «reins»."
+   },
+   {
+    "k": "check",
+    "texto": "{{She}} va con {{goes}}: es una sola persona y una rutina."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza la frase",
+    "items": [
+     {
+      "p": "¿Qué tipo de acción es {{every day}}?",
+      "op": [
+       "Una rutina",
+       "Algo que pasa ahora",
+       "Algo del pasado"
+      ],
+      "ok": 0,
+      "why": "Todos los días indica hábito: presente simple."
+     },
+     {
+      "p": "¿Qué persona es {{She}}?",
+      "op": [
+       "Tercera del singular",
+       "Primera del plural",
+       "Segunda"
+      ],
+      "ok": 0,
+      "why": "She = ella."
+     },
+     {
+      "p": "¿Qué terminación lleva el verbo?",
+      "op": [
+       "-es",
+       "Ninguna",
+       "-ing"
+      ],
+      "ok": 0,
+      "why": "Con he, she, it se agrega -s o -es."
+     }
+    ]
+   }
+  ]
+ },
+ "ing-002": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "If it rains tomorrow",
+    "rol": "clave",
+    "nota": "condición posible: if + presente",
+    "campo": "Condición posible en el futuro",
+    "w": "If"
+   },
+   {
+    "frag": "we",
+    "rol": "dato",
+    "nota": "sujeto del resultado",
+    "campo": "Sujeto: we",
+    "w": "Who"
+   },
+   {
+    "frag": "___",
+    "rol": "pide",
+    "nota": "falta will + verbo",
+    "campo": "Falta el resultado: will + verbo",
+    "w": "Falta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Un plan con condición",
+    "texto": "Si llueve mañana, ¿qué haces? Es un plan posible, no algo que ya pasó. En inglés se arma en dos partes: if más presente, y el resultado con will."
+   },
+   {
+    "k": "glosa",
+    "titulo": "Palabra por palabra",
+    "frase": [
+     {
+      "en": "If",
+      "es": "si",
+      "pron": "if"
+     },
+     {
+      "en": "it rains",
+      "es": "llueve",
+      "pron": "it reins"
+     },
+     {
+      "en": "tomorrow",
+      "es": "mañana",
+      "pron": "tumórrou"
+     },
+     {
+      "en": "we",
+      "es": "nosotros",
+      "pron": "uí"
+     },
+     {
+      "en": "will stay",
+      "es": "nos quedaremos",
+      "pron": "uíl stei"
+     },
+     {
+      "en": "at home",
+      "es": "en casa",
+      "pron": "at jóum"
+     }
+    ],
+    "dice": "Si llueve mañana, nos quedaremos en casa.",
+    "nota": "Toca cada parte para oírla."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Las partes de la frase",
+    "filas": [
+     {
+      "dice": "If it rains",
+      "escribo": "\\text{condición: if + presente}",
+      "rol": "dato"
+     },
+     {
+      "dice": "tomorrow",
+      "escribo": "\\text{es futuro}",
+      "rol": "dato"
+     },
+     {
+      "dice": "we ___ at home",
+      "escribo": "\\text{resultado: will + verbo}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "Es el primer condicional: algo posible en el futuro."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Primer condicional",
+    "cols": [
+     "Parte",
+     "Forma"
+    ],
+    "filas": [
+     [
+      "{{If}} …",
+      "presente simple: {{it rains}}"
+     ],
+     [
+      "*Resultado",
+      "*{{will}} + verbo: {{will stay}}"
+     ]
+    ]
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Cómo suena bien y mal",
+    "si": [
+     "{{If it rains, we will stay.}}",
+     "{{If you study, you will pass.}}"
+    ],
+    "no": [
+     "{{If it will rain, we stay.}} (después de if no va will)",
+     "{{If it rains, we stayed.}} (pasado: no es plan)"
+    ]
+   },
+   {
+    "k": "escucha",
+    "titulo": "Escúchalas y repítelas en voz alta",
+    "frases": [
+     {
+      "en": "If it rains tomorrow, we will stay at home.",
+      "es": "Si llueve mañana, nos quedamos en casa.",
+      "pron": "if it reins tumórrou, uí uíl stei at jóum"
+     },
+     {
+      "en": "If you study, you will pass.",
+      "es": "Si estudias, vas a aprobar.",
+      "pron": "if yu státi, yu uíl pas"
+     },
+     {
+      "en": "If she calls, I will answer.",
+      "es": "Si ella llama, yo contesto.",
+      "pron": "if shi cols, ai uíl ánser"
+     }
+    ],
+    "nota": "La palabra {{will}} suena «uíl»."
+   },
+   {
+    "k": "check",
+    "texto": "Condición posible en futuro: {{if}} + presente, y {{will}} + verbo. Respuesta: {{will stay}}."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza la frase",
+    "items": [
+     {
+      "p": "¿Es una condición posible o imaginaria?",
+      "op": [
+       "Posible",
+       "Imaginaria"
+      ],
+      "ok": 0,
+      "why": "Mañana puede llover de verdad."
+     },
+     {
+      "p": "¿Cómo va el verbo después de if?",
+      "op": [
+       "Presente",
+       "Pasado",
+       "Will"
+      ],
+      "ok": 0,
+      "why": "{{If it rains}}."
+     },
+     {
+      "p": "¿Y en el resultado?",
+      "op": [
+       "will + verbo",
+       "would + verbo",
+       "verbo en pasado"
+      ],
+      "ok": 0,
+      "why": "{{Will stay}}."
+     }
+    ]
+   }
+  ]
+ },
+ "ing-004": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "from the library",
+    "rol": "clave",
+    "nota": "tomas algo de un lugar",
+    "campo": "Se recibe de la biblioteca",
+    "w": "Where"
+   },
+   {
+    "frag": "for two weeks",
+    "rol": "dato",
+    "nota": "tiempo limitado: hay que devolver",
+    "campo": "Por un tiempo: se devuelve",
+    "w": "How long"
+   },
+   {
+    "frag": "___",
+    "rol": "pide",
+    "nota": "verbo con sentido de recibir prestado",
+    "campo": "Falta: recibir prestado",
+    "w": "Falta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "¿Te prestan o prestas?",
+    "texto": "Los libros son de la biblioteca. Ella te los presta por dos semanas y luego los devuelves. Tú los recibes prestados: eso es borrow. Lend es cuando tú le prestas algo a otro."
+   },
+   {
+    "k": "glosa",
+    "titulo": "Palabra por palabra",
+    "frase": [
+     {
+      "en": "You",
+      "es": "tú",
+      "pron": "yu"
+     },
+     {
+      "en": "can",
+      "es": "puedes",
+      "pron": "can"
+     },
+     {
+      "en": "borrow",
+      "es": "pedir prestado",
+      "pron": "bórrou"
+     },
+     {
+      "en": "books",
+      "es": "libros",
+      "pron": "buks"
+     },
+     {
+      "en": "from the library",
+      "es": "de la biblioteca",
+      "pron": "from de láibrari"
+     },
+     {
+      "en": "for two weeks",
+      "es": "por dos semanas",
+      "pron": "for tu uíks"
+     }
+    ],
+    "dice": "Puedes pedir prestados libros de la biblioteca por dos semanas."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Quién da y quién recibe",
+    "nodos": [
+     {
+      "v": "Biblioteca",
+      "l": "dueña del libro"
+     },
+     {
+      "v": "Tú",
+      "l": "recibes el libro"
+     }
+    ],
+    "saltos": [
+     "\\text{ella lo presta (lend)  ·  tú lo pides prestado (borrow)}"
+    ]
+   },
+   {
+    "k": "tabla",
+    "titulo": "Los dos verbos",
+    "cols": [
+     "Verbo",
+     "Quién lo hace"
+    ],
+    "filas": [
+     [
+      "*{{borrow}}",
+      "*tú: recibes prestado"
+     ],
+     [
+      "{{lend}}",
+      "el otro: te presta, da"
+     ]
+    ]
+   },
+   {
+    "k": "escucha",
+    "titulo": "Escúchalas y repítelas en voz alta",
+    "frases": [
+     {
+      "en": "You can borrow books for two weeks.",
+      "es": "Puedes pedir prestados libros por dos semanas.",
+      "pron": "yu can bórrou buks for tu uíks"
+     },
+     {
+      "en": "Can I borrow your pen?",
+      "es": "¿Me prestas tu lapicero?",
+      "pron": "can ai bórrou yor pen"
+     },
+     {
+      "en": "The library lends books.",
+      "es": "La biblioteca presta libros.",
+      "pron": "de láibrari lends buks"
+     }
+    ],
+    "nota": "{{Borrow}} suena «bórrou»."
+   },
+   {
+    "k": "check",
+    "texto": "Tú recibes los libros de la biblioteca: {{borrow}}."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza la frase",
+    "items": [
+     {
+      "p": "¿Quién recibe los libros?",
+      "op": [
+       "La persona (you)",
+       "La biblioteca"
+      ],
+      "ok": 0,
+      "why": "{{You can ___ books from the library.}}"
+     },
+     {
+      "p": "¿Por cuánto tiempo?",
+      "op": [
+       "Temporal, dos semanas",
+       "Para siempre"
+      ],
+      "ok": 0,
+      "why": "Se devuelven."
+     },
+     {
+      "p": "¿Qué verbo es recibir prestado?",
+      "op": [
+       "borrow",
+       "lend",
+       "sell"
+      ],
+      "ok": 0,
+      "why": "Borrow = pedir prestado."
+     }
+    ]
+   }
+  ]
+ },
+ "mat-007": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "graficador",
+    "rol": "clave",
+    "nota": "puedes probar valores y ver la curva",
+    "campo": "Prueba en el graficador"
+   },
+   {
+    "frag": "cuadrática",
+    "rol": "dato",
+    "nota": "función de la forma $ax^2+bx+c$",
+    "campo": "$f(x)=ax^2+bx+c$"
+   },
+   {
+    "frag": "vértice sea (2, −3)",
+    "rol": "pide",
+    "nota": "el punto más bajo (o más alto) debe quedar en x=2, y=−3",
+    "campo": "Vértice $V=(2,\\,-3)$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un balón que rebota en una cancha",
+    "texto": "Cuando lanzas un balón al aire, sube hasta un punto más alto y luego baja. Ese punto más alto es como el vértice de la curva. Aquí te piden lo contrario: tú decides en qué punto exacto quiere estar el vértice, y buscas los números a, b y c que hacen que la curva pase por ahí."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     1,
+     -4,
+     1
+    ],
+    "x": [
+     -1,
+     5
+    ],
+    "puntos": [
+     {
+      "x": 2,
+      "y": -3,
+      "l": "vértice (2, −3)"
+     },
+     {
+      "x": 0,
+      "y": 1,
+      "l": "corta el eje y"
+     }
+    ],
+    "nota": "Esta es una curva que cumple lo pedido. El vértice es el punto más bajo: está dos pasos a la derecha del eje y, y tres hacia abajo."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa lo que dicen a símbolos",
+    "filas": [
+     {
+      "dice": "una cuadrática",
+      "escribo": "f(x)=ax^2+bx+c",
+      "rol": "dato"
+     },
+     {
+      "dice": "vértice en $x=2$",
+      "escribo": "h=2",
+      "rol": "clave"
+     },
+     {
+      "dice": "vértice en $y=-3$",
+      "escribo": "k=-3",
+      "rol": "clave"
+     }
+    ],
+    "nota": "A las coordenadas del vértice se les llama $(h,k)$. Aquí $h=2$ y $k=-3$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Forma que ya trae el vértice",
+    "lineas": [
+     "f(x)=a(x-h)^2+k",
+     "f(x)=a(x-2)^2-3"
+    ],
+    "nota": "Esta forma es muy cómoda: el vértice se lee directo. Cuidado con el signo: dentro del paréntesis va $x-2$ (al revés de lo que se ve), y afuera va $-3$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Elige a = 1 y abre el cuadrado",
+    "lineas": [
+     "f(x)=1\\cdot(x-2)^2-3",
+     "(x-2)^2=x^2-4x+4",
+     "f(x)=x^2-4x+4-3",
+     "f(x)=x^2-4x+1"
+    ],
+    "nota": "Elegimos $a=1$ porque es lo más sencillo. Al final: $a=1$, $b=-4$, $c=1$."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Con otros valores de a también funciona",
+    "cols": [
+     "a",
+     "b",
+     "c",
+     "Vértice"
+    ],
+    "filas": [
+     [
+      "1",
+      "−4",
+      "1",
+      "(2, −3)"
+     ],
+     [
+      "2",
+      "−8",
+      "5",
+      "(2, −3)"
+     ],
+     [
+      "−1",
+      "4",
+      "−7",
+      "(2, −3)"
+     ]
+    ],
+    "nota": "Para cualquier $a$: $b=-4a$ y $c=4a-3$. Con $a$ positivo la curva abre hacia arriba; con $a$ negativo, hacia abajo, y el vértice sería el punto más alto."
+   },
+   {
+    "k": "calc",
+    "titulo": "Comprueba con la fórmula del vértice",
+    "lineas": [
+     "x_v=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot1}=2",
+     "f(2)=2^2-4\\cdot2+1=4-8+1=-3"
+    ],
+    "nota": "Sale $(2,-3)$, justo lo que pedían."
+   },
+   {
+    "k": "check",
+    "texto": "En el graficador pon $a=1$, $b=-4$, $c=1$: el vértice queda en $(2,-3)$. Cualquier terna con $b=-4a$ y $c=4a-3$ también sirve."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "vértice sea (2, −3)",
+      "op": [
+       "El punto más alto o más bajo de la curva",
+       "El punto donde corta al eje x",
+       "El valor de a"
+      ],
+      "ok": 0,
+      "why": "El vértice es el punto donde la curva cambia de bajar a subir (o al contrario)."
+     },
+     {
+      "p": "cuadrática",
+      "op": [
+       "Función con $x^2$",
+       "Función en línea recta",
+       "Función con raíz"
+      ],
+      "ok": 0,
+      "why": "Cuadrática significa que lleva $x^2$; su gráfica es una parábola."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Halla b cuando a = 1",
+    "antes": "b=-2\\cdot a\\cdot h=-2\\cdot1\\cdot2=",
+    "resp": -4,
+    "pista": "Sale de abrir $(x-2)^2$.",
+    "why": "Al abrir $(x-2)^2$ aparece $-4x$, así que $b=-4$."
+   }
+  ]
+ },
+ "cie-007": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "40 m",
+    "rol": "pide",
+    "nota": "el alcance que debe lograr",
+    "campo": "$R=40\\ \\text{m}$"
+   },
+   {
+    "frag": "v₀ = 20 m/s",
+    "rol": "dato",
+    "nota": "rapidez con que sale el proyectil",
+    "campo": "$v_0=20\\ \\text{m/s}$"
+   },
+   {
+    "frag": "g = 9,8 m/s²",
+    "rol": "dato",
+    "nota": "gravedad: usa 9,8",
+    "campo": "$g=9{,}8\\ \\text{m/s}^2$"
+   },
+   {
+    "frag": "ajusta el ángulo",
+    "rol": "clave",
+    "nota": "la incógnita es el ángulo $\\theta$",
+    "campo": "$\\theta=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un chorro de manguera",
+    "texto": "Si riegas el jardín con una manguera, el agua cae más lejos cuando inclinas la manguera a medio camino entre el piso y la vertical. Y algo curioso: puedes mojar el mismo punto apuntando más bajo o más alto. Con el proyectil pasa igual, y por eso hay dos ángulos que sirven."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     -0.02046,
+     0.817,
+     0
+    ],
+    "x": [
+     -2,
+     43
+    ],
+    "puntos": [
+     {
+      "x": 0,
+      "y": 0,
+      "l": "sale"
+     },
+     {
+      "x": 40,
+      "y": 0,
+      "l": "cae a 40 m"
+     }
+    ],
+    "nota": "Buscamos el ángulo con el que la trayectoria vuelve al suelo justo a 40 m de donde salió."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "llegar a $40\\ \\text{m}$",
+      "escribo": "R=40\\ \\text{m}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$v_0=20\\ \\text{m/s}$",
+      "escribo": "v_0=20\\ \\text{m/s}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$g=9{,}8\\ \\text{m/s}^2$",
+      "escribo": "g=9{,}8\\ \\text{m/s}^2",
+      "rol": "dato"
+     },
+     {
+      "dice": "el ángulo",
+      "escribo": "\\theta=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "$R$ es el alcance horizontal y $\\theta$ (theta) es el ángulo de lanzamiento."
+   },
+   {
+    "k": "calc",
+    "titulo": "Fórmula del alcance",
+    "lineas": [
+     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+    ],
+    "nota": "Aquí conocemos todo menos el ángulo, así que despejamos $\\sin(2\\theta)$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Despeja sen(2θ)",
+    "lineas": [
+     "\\sin(2\\theta)=\\frac{R\\cdot g}{v_0^2}",
+     "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=\\frac{392}{400}",
+     "\\sin(2\\theta)=0{,}98"
+    ],
+    "nota": "Recuerda que $20^2=400$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Busca el ángulo con la calculadora",
+    "lineas": [
+     "2\\theta=\\sin^{-1}(0{,}98)\\approx78{,}5^\\circ",
+     "\\theta\\approx39{,}3^\\circ"
+    ],
+    "nota": "Usa la tecla $\\sin^{-1}$ en modo grados. Este es el primer ángulo."
+   },
+   {
+    "k": "calc",
+    "titulo": "El segundo ángulo",
+    "lineas": [
+     "2\\theta=180^\\circ-78{,}5^\\circ=101{,}5^\\circ",
+     "\\theta\\approx50{,}7^\\circ"
+    ],
+    "nota": "El seno da lo mismo para un ángulo y para su suplemento (lo que le falta para 180°). Por eso aparece una segunda respuesta."
+   },
+   {
+    "k": "barras",
+    "titulo": "Alcance según el ángulo",
+    "barras": [
+     {
+      "l": "30°",
+      "e": "35,3 m",
+      "segs": [
+       {
+        "v": 35.3,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "39,3°",
+      "e": "40 m",
+      "segs": [
+       {
+        "v": 40,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "45° (máximo)",
+      "e": "40,8 m",
+      "segs": [
+       {
+        "v": 40.8,
+        "c": "oro"
+       }
+      ]
+     },
+     {
+      "l": "50,7°",
+      "e": "40 m",
+      "segs": [
+       {
+        "v": 40,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "60°",
+      "e": "35,3 m",
+      "segs": [
+       {
+        "v": 35.3,
+        "c": "azul"
+       }
+      ]
+     }
+    ],
+    "ref": {
+     "v": 40,
+     "l": "meta: 40 m"
+    },
+    "nota": "Los dos ángulos verdes llegan a 40 m. Están a la misma distancia de 45°: uno por debajo y otro por encima."
+   },
+   {
+    "k": "check",
+    "texto": "Los dos ángulos suman $39{,}3^\\circ+50{,}7^\\circ=90^\\circ$ (son complementarios) y ambos quedan cerca de $45^\\circ$. En el simulador funciona cualquiera de los dos."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "v₀ = 20 m/s",
+      "op": [
+       "Rapidez inicial",
+       "Alcance",
+       "Gravedad"
+      ],
+      "ok": 0,
+      "why": "Es la rapidez con que sale el proyectil; en la fórmula va al cuadrado."
+     },
+     {
+      "p": "40 m",
+      "op": [
+       "Alcance horizontal $R$",
+       "Altura máxima",
+       "Ángulo"
+      ],
+      "ok": 0,
+      "why": "Es la distancia sobre el suelo hasta donde cae."
+     },
+     {
+      "p": "ajusta el ángulo",
+      "op": [
+       "Es la incógnita $\\theta$",
+       "Es un dato",
+       "Es la gravedad"
+      ],
+      "ok": 0,
+      "why": "Lo que buscas es el ángulo."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula sen(2θ)",
+    "antes": "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=",
+    "resp": 0.98,
+    "tol": 0.001,
+    "pista": "40·9,8 = 392 y 20² = 400.",
+    "why": "$392/400=0{,}98$."
+   }
+  ]
+ },
+ "lec-004": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "idea principal",
+    "rol": "pide",
+    "nota": "la idea que sostiene todo el texto, no un detalle suelto",
+    "campo": "Idea que sostiene todo el texto",
+    "w": "Pregunta"
+   },
+   {
+    "frag": "del texto",
+    "rol": "clave",
+    "nota": "la respuesta sale del texto, no de lo que tú opinas",
+    "campo": "Se responde con el texto",
+    "w": "Dónde buscar"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en la tienda de la esquina",
+    "texto": "Todos tenemos una tienda de barrio donde la libra de arroz cuesta un poquito más que en el supermercado. Aun así, la gente va: la tendera pregunta por tu mamá, te fía hasta el viernes y te cuenta quién se mudó. Nadie va por el precio; van por la **relación**. Eso mismo pasa con el mercado del texto: ahí está la idea principal."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué hace cada parte del texto",
+    "cols": [
+     "Parte del texto",
+     "Qué hace"
+    ],
+    "filas": [
+     [
+      "«Cada sábado, la plaza de mi barrio se llena de puestos.»",
+      "Presenta el lugar"
+     ],
+     [
+      "«Doña Rosa vende verduras… Don Camilo, queso…»",
+      "Ejemplos concretos: gente real detrás de los puestos"
+     ],
+     [
+      "«Los supermercados ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana.»",
+      "Compara: el precio no es la diferencia"
+     ],
+     [
+      "«Por eso, aunque el mercado no sea lo más barato, muchos vecinos siguen yendo…»",
+      "Da la razón: conversan, se enteran, pertenecen"
+     ],
+     [
+      "«Si el mercado desapareciera… perdería lo que la hace una comunidad.»",
+      "Cierra: el mercado es lo que crea la comunidad"
+     ]
+    ]
+   },
+   {
+    "k": "flujo",
+    "titulo": "De los detalles a la idea principal",
+    "nodos": [
+     {
+      "v": "Detalles",
+      "l": "Doña Rosa, Don Camilo, los puestos"
+     },
+     {
+      "v": "Comparación",
+      "l": "Los supermercados cobran parecido, pero no te preguntan nada"
+     },
+     {
+      "v": "Razón",
+      "l": "Los vecinos conversan, se enteran y pertenecen"
+     },
+     {
+      "v": "Idea principal",
+      "l": "El mercado vale por la comunidad, no solo por el precio"
+     }
+    ],
+    "saltos": [
+     "\\text{se comparan con algo}",
+     "\\text{se explica por qué van}",
+     "\\text{todo se resume en una idea}"
+    ],
+    "nota": "La idea principal es la que **todas** las partes apoyan. Los ejemplos son para probarla, no son la idea."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Las pistas exactas del texto",
+    "filas": [
+     {
+      "dice": "aunque el mercado no sea lo más barato, muchos vecinos siguen yendo",
+      "escribo": "\\text{el precio no es la razón principal}",
+      "rol": "clave"
+     },
+     {
+      "dice": "compran comida, pero también conversan, se enteran de lo que pasa y sienten que pertenecen a un lugar",
+      "escribo": "\\text{van por la comunidad}",
+      "rol": "dato"
+     },
+     {
+      "dice": "perdería lo que la hace una comunidad",
+      "escribo": "\\text{el mercado es lo que crea la comunidad}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "Fíjate en «aunque… siguen yendo»: el autor admite que no es lo más barato y aun así defiende al mercado. Ahí está su postura."
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Idea principal vs. detalle",
+    "si": [
+     "El mercado vale por la comunidad que forma, no solo por el precio (cubre todo el texto)"
+    ],
+    "no": [
+     "El mercado es la opción más barata (el texto dice lo contrario)",
+     "Los supermercados deben cerrar (nadie lo propone)",
+     "La plaza necesita más puestos (nada del texto lo pide)"
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta C: el mercado vale por la comunidad que forma, no solo por el precio. Es la única que resume todo el texto sin inventar nada."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Encuentra la idea principal",
+    "items": [
+     {
+      "p": "¿Para qué sirven Doña Rosa y Don Camilo en el texto?",
+      "op": [
+       "Para dar ejemplos concretos de gente del mercado",
+       "Para decir que venden barato",
+       "Para criticar a los supermercados"
+      ],
+      "ok": 0,
+      "why": "Son ejemplos: ponen cara humana al mercado, pero no son la idea central."
+     },
+     {
+      "p": "«aunque el mercado no sea lo más barato, muchos vecinos siguen yendo» quiere decir que…",
+      "op": [
+       "El precio no es el motivo principal",
+       "Todos van por lo barato",
+       "Nadie va al mercado"
+      ],
+      "ok": 0,
+      "why": "«Aunque» admite algo (no es barato) y aun así dice que van: el motivo es otro."
+     },
+     {
+      "p": "¿Qué idea cubre TODAS las partes del texto?",
+      "op": [
+       "El mercado vale por la comunidad que forma",
+       "El mercado es lo más barato",
+       "Hay que cerrar los supermercados"
+      ],
+      "ok": 0,
+      "why": "Los ejemplos, la comparación, la razón y el cierre apoyan esa misma idea."
+     },
+     {
+      "p": "Una opción que dice «los supermercados deben cerrar» es…",
+      "op": [
+       "Inventada: el texto no propone eso",
+       "Correcta, porque los critica",
+       "La idea principal"
+      ],
+      "ok": 0,
+      "why": "El texto solo dice que allí nadie te pregunta cómo estuvo la semana; no pide cerrarlos."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-005": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Por eso",
+    "rol": "clave",
+    "nota": "conector: mira qué hay antes y qué viene después",
+    "campo": "Conector de consecuencia",
+    "w": "Palabra clave"
+   },
+   {
+    "frag": "¿Qué función cumple",
+    "rol": "pide",
+    "nota": "no pregunta qué dice la frase, sino para qué sirve en el texto",
+    "campo": "Para qué sirve, no qué dice",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un día de lluvia",
+    "texto": "«Estaba lloviendo a cántaros. **Por eso** me quedé en casa.» Lo primero es la causa; lo segundo, lo que pasó como resultado. «Por eso» es la bisagra que une una cosa con la otra: lo de antes explica lo de después. No agrega un ejemplo, no cambia de tema ni lleva la contraria."
+   },
+   {
+    "k": "flujo",
+    "titulo": "Qué une «Por eso» en el texto",
+    "nodos": [
+     {
+      "v": "Antes (causa)",
+      "l": "«allí nadie te pregunta cómo estuvo la semana»"
+     },
+     {
+      "v": "Por eso",
+      "l": "el conector"
+     },
+     {
+      "v": "Después (consecuencia)",
+      "l": "«muchos vecinos siguen yendo»"
+     }
+    ],
+    "saltos": [
+     "\\text{explica}",
+     "\\text{lleva a}"
+    ],
+    "nota": "Si lees la frase de antes y la de después, la segunda es el **resultado** de la primera."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué relación marca cada conector",
+    "cols": [
+     "Conector",
+     "Relación",
+     "Ejemplo corto"
+    ],
+    "filas": [
+     [
+      "*Por eso",
+      "*Consecuencia",
+      "Llovió; por eso me quedé"
+     ],
+     [
+      "Por ejemplo",
+      "Ejemplo",
+      "Frutas, por ejemplo, mango"
+     ],
+     [
+      "Sin embargo",
+      "Contradice",
+      "Llovió; sin embargo salí"
+     ],
+     [
+      "Por otro lado",
+      "Cambia de punto de vista",
+      "Es rico; por otro lado, caro"
+     ]
+    ]
+   },
+   {
+    "k": "traducir",
+    "titulo": "Léelo con las palabras del texto",
+    "filas": [
+     {
+      "dice": "Los supermercados ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana.",
+      "escribo": "\\text{causa: allí falta el trato humano}",
+      "rol": "dato"
+     },
+     {
+      "dice": "Por eso",
+      "escribo": "\\text{por esa razón, entonces}",
+      "rol": "clave"
+     },
+     {
+      "dice": "aunque el mercado no sea lo más barato, muchos vecinos siguen yendo",
+      "escribo": "\\text{consecuencia: siguen yendo}",
+      "rol": "dato"
+     }
+    ],
+    "nota": "Truco: cambia «Por eso» por «por esa razón». Si la frase sigue teniendo sentido, es una consecuencia."
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta B: «Por eso» introduce la consecuencia de lo anterior (nadie te pregunta cómo estuvo la semana → siguen yendo)."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Analiza el conector",
+    "items": [
+     {
+      "p": "Lo que va ANTES de «Por eso» es…",
+      "op": [
+       "Una causa o razón",
+       "Un ejemplo",
+       "Una contradicción"
+      ],
+      "ok": 0,
+      "why": "Dice que en el supermercado nadie te pregunta cómo estuvo la semana: es la razón."
+     },
+     {
+      "p": "Lo que va DESPUÉS de «Por eso» es…",
+      "op": [
+       "Una consecuencia: siguen yendo",
+       "Un tema nuevo",
+       "Una burla"
+      ],
+      "ok": 0,
+      "why": "Los vecinos siguen yendo al mercado como resultado de lo anterior."
+     },
+     {
+      "p": "¿Cuál conector se parece más a «Por eso»?",
+      "op": [
+       "Por lo tanto",
+       "Sin embargo",
+       "Por ejemplo"
+      ],
+      "ok": 0,
+      "why": "«Por lo tanto» también marca consecuencia."
+     },
+     {
+      "p": "Si fuera «Sin embargo», la frase…",
+      "op": [
+       "Contradiría lo anterior",
+       "Seguiría igual",
+       "Daría un ejemplo"
+      ],
+      "ok": 0,
+      "why": "«Sin embargo» marca oposición, y aquí no hay ninguna."
+     }
+    ]
+   }
+  ]
+ },
+ "lec-006": {
+  "modo": "lectura",
+  "marcas": [
+   {
+    "frag": "Según el texto",
+    "rol": "clave",
+    "nota": "solo vale lo que el texto dice, aunque tú pienses otra cosa",
+    "campo": "Solo vale lo que dice el texto",
+    "w": "Dónde buscar"
+   },
+   {
+    "frag": "si el mercado desapareciera",
+    "rol": "dato",
+    "nota": "es una situación imaginada: busca la frase que empieza con «Si»",
+    "campo": "Situación imaginada",
+    "w": "Condición"
+   },
+   {
+    "frag": "la plaza",
+    "rol": "pide",
+    "nota": "lo que le pasaría a la plaza, no al mercado",
+    "campo": "Qué le pasa a la plaza",
+    "w": "Pregunta"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en tu cancha del barrio",
+    "texto": "Imagina que quitan las porterías de la cancha. La cancha **sigue ahí**: el cemento, las líneas, el espacio. Pero ya no se juega, ya no se junta la gente, ya no es «la cancha del barrio». Se queda el lugar, se pierde lo que lo hacía especial. Es lo que el texto dice de la plaza sin su mercado."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Qué se queda y qué se pierde",
+    "cols": [
+     "Si el mercado desapareciera…",
+     "Qué dice el texto"
+    ],
+    "filas": [
+     [
+      "Lo que se queda",
+      "«la plaza seguiría existiendo»"
+     ],
+     [
+      "Lo que se pierde",
+      "«perdería lo que la hace una comunidad»"
+     ]
+    ]
+   },
+   {
+    "k": "traducir",
+    "titulo": "La frase final, pieza por pieza",
+    "filas": [
+     {
+      "dice": "Si el mercado desapareciera",
+      "escribo": "\\text{situación imaginada, todavía no pasa}",
+      "rol": "dato"
+     },
+     {
+      "dice": "la plaza seguiría existiendo",
+      "escribo": "\\text{el espacio se mantiene}",
+      "rol": "clave"
+     },
+     {
+      "dice": "pero perdería lo que la hace una comunidad",
+      "escribo": "\\text{pierde el sentido de comunidad}",
+      "rol": "clave"
+     }
+    ],
+    "nota": "El «pero» divide la frase en dos: primero lo que se conserva y luego lo que se pierde. La respuesta correcta tiene que decir las dos cosas."
+   },
+   {
+    "k": "ejemplo",
+    "titulo": "Qué cabe y qué no cabe en la última frase",
+    "si": [
+     "Seguiría como espacio pero perdería su sentido de comunidad (dice ambas cosas)"
+    ],
+    "no": [
+     "Dejaría de existir (el texto dice que seguiría)",
+     "Tendría precios más bajos (no se habla de precios futuros)",
+     "Se llenaría de supermercados (nunca se menciona)"
+    ]
+   },
+   {
+    "k": "check",
+    "texto": "Respuesta B: la plaza seguiría existiendo como espacio, pero perdería su sentido de comunidad."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "Lee la última frase con calma",
+    "items": [
+     {
+      "p": "«Si el mercado desapareciera» es…",
+      "op": [
+       "Una situación imaginada",
+       "Algo que ya pasó",
+       "Una orden"
+      ],
+      "ok": 0,
+      "why": "El verbo en «desapareciera» indica una hipótesis, no un hecho."
+     },
+     {
+      "p": "¿Qué pasa con la plaza como lugar?",
+      "op": [
+       "Seguiría existiendo",
+       "Desaparecería",
+       "Se vendería"
+      ],
+      "ok": 0,
+      "why": "El texto dice «la plaza seguiría existiendo»."
+     },
+     {
+      "p": "¿Qué perdería la plaza?",
+      "op": [
+       "Lo que la hace una comunidad",
+       "Sus precios",
+       "Sus calles"
+      ],
+      "ok": 0,
+      "why": "Después del «pero» está lo que se pierde."
+     },
+     {
+      "p": "Una opción que habla de precios futuros es…",
+      "op": [
+       "Información que el texto no da",
+       "Correcta, porque habla de precios",
+       "La respuesta del texto"
+      ],
+      "ok": 0,
+      "why": "El texto solo menciona precios para decir que el mercado no es lo más barato; no predice nada."
+     }
+    ]
+   }
+  ]
+ }
+}

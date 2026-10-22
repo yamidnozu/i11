@@ -1,0 +1,557 @@
+{
+ "mat-007": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Te piden elegir a, b y c de una cuadrática para que su vértice quede en el punto $(2,\\,-3)$.",
+    "a": "m:cuadrática|m:vértice sea (2, −3)"
+   },
+   {
+    "t": "Mira la gráfica: el vértice es el punto más bajo, dos pasos a la derecha y tres hacia abajo.",
+    "a": "p:1"
+   },
+   {
+    "t": "Lo traducimos así: el vértice es el punto $(h,k)$, con $h=2$ y $k=-3$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Usamos la forma $f(x)=a(x-2)^2-3$, que ya trae el vértice escrito.",
+    "a": "p:3"
+   },
+   {
+    "t": "Con $a=1$ y abriendo el cuadrado queda $x^2-4x+1$. O sea $a=1$, $b=-4$ y $c=1$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Pruébalo en el graficador: el vértice queda justo en $(2,\\,-3)$.",
+    "a": "m:graficador|p:7"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice cuadrática. Eso significa que la función lleva $x^2$ y su gráfica es una parábola, una curva en forma de U.",
+    "a": "m:cuadrática"
+   },
+   {
+    "t": "Piensa en un balón que sube, llega a su punto más alto y baja. Ese punto es como el vértice de la curva.",
+    "a": "p:0"
+   },
+   {
+    "t": "Aquí te piden que el vértice quede en $(2,\\,-3)$. Tú decides dónde está el vértice y buscas los números que lo logran.",
+    "a": "m:vértice sea (2, −3)"
+   },
+   {
+    "t": "Y el enunciado te deja usar el graficador, así que puedes probar valores y ver cómo se mueve la curva.",
+    "a": "m:graficador"
+   },
+   {
+    "t": "Mira la gráfica de ejemplo: el vértice está dos pasos a la derecha del eje y, y tres hacia abajo.",
+    "a": "p:1"
+   },
+   {
+    "t": "Pasamos lo que dicen a símbolos: el vértice es $(h,k)$, con $h=2$ y $k=-3$.",
+    "a": "p:2"
+   },
+   {
+    "t": "Usamos $f(x)=a(x-h)^2+k$ porque esa forma deja el vértice a la vista. Reemplazamos y queda $f(x)=a(x-2)^2-3$.",
+    "a": "p:3",
+    "k": "por"
+   },
+   {
+    "t": "Ojo con el signo: dentro del paréntesis va $x-2$, aunque el vértice sea $2$ positivo. Es el error más común.",
+    "a": "p:3",
+    "k": "err"
+   },
+   {
+    "t": "Elegimos $a=1$ porque es lo más sencillo. Al abrir $(x-2)^2$ sale $x^2-4x+4$, y restando $3$ queda $x^2-4x+1$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Si olvidaras el $-3$ de afuera, la curva tendría el vértice en $(2,\\,0)$, y no es lo que piden.",
+    "a": "p:4",
+    "k": "err"
+   },
+   {
+    "t": "Con otros valores de $a$ también funciona. Por ejemplo $a=2$, $b=-8$ y $c=5$ dan el mismo vértice. Hay muchas respuestas buenas.",
+    "a": "p:5"
+   },
+   {
+    "t": "Comprobamos con la fórmula del vértice: $x=-\\frac{b}{2a}=-\\frac{-4}{2}=2$. Y $f(2)=4-8+1=-3$.",
+    "a": "p:6",
+    "k": "por"
+   },
+   {
+    "t": "Por eso nuestra respuesta sirve: $a=1$, $b=-4$ y $c=1$ dan el vértice $(2,\\,-3)$.",
+    "a": "p:7"
+   }
+  ],
+  "3": [
+   {
+    "t": "Imagina el cable de un puente colgante: su punto más bajo es el vértice. Aquí tú escoges en qué lugar queda ese punto.",
+    "k": "ana"
+   },
+   {
+    "t": "La forma con vértice es como darle al taxista la dirección exacta: dos cuadras a la derecha y tres hacia abajo. Con eso llega directo.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo divertido: con $a=2$ la curva queda más cerrada, como un cono de helado; con $a=-1$ se voltea como una montaña. El vértice se queda quieto.",
+    "k": "ej"
+   },
+   {
+    "t": "Error común: escribir $(x+2)$ porque el vértice tiene un dos positivo. Dentro del paréntesis el signo va al revés, porque ahí buscamos qué valor de $x$ lo vuelve cero.",
+    "k": "err"
+   },
+   {
+    "t": "Truco rápido para verificar: calcula $f(2)$. Con $a=1$, $b=-4$ y $c=1$ da $4-8+1=-3$. Si te da otro número, algo falló.",
+    "k": "ej"
+   },
+   {
+    "t": "Y no te preocupes si tu compañero puso otros números: puede estar bien también. Es como dos rutas distintas para llegar al mismo parque.",
+    "k": "ana"
+   }
+  ]
+ },
+ "cie-007": {
+  "1": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "El proyectil debe llegar a $40$ m, saliendo con $20$ m/s y con gravedad de $9{,}8$.",
+    "a": "m:40 m|m:v₀ = 20 m/s|m:g = 9,8 m/s²"
+   },
+   {
+    "t": "Lo que no sabemos y debemos buscar es el ángulo.",
+    "a": "m:ajusta el ángulo"
+   },
+   {
+    "t": "Usamos la fórmula del alcance: $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$.",
+    "a": "p:3"
+   },
+   {
+    "t": "Dejamos solo el seno: $\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Con la calculadora, $2\\theta\\approx78{,}5^\\circ$, así que $\\theta\\approx39{,}3^\\circ$.",
+    "a": "p:5"
+   },
+   {
+    "t": "Hay un segundo ángulo que también sirve: $50{,}7^\\circ$. Cualquiera de los dos llega a los $40$ m.",
+    "a": "p:6"
+   }
+  ],
+  "2": [
+   {
+    "t": "Empecemos leyendo el enunciado con calma.",
+    "a": "leer"
+   },
+   {
+    "t": "Primero, la meta: el proyectil tiene que caer a $40$ m de donde salió. Ese es el alcance.",
+    "a": "m:40 m"
+   },
+   {
+    "t": "Luego, la rapidez con que sale: $20$ m/s. En la fórmula va elevada al cuadrado.",
+    "a": "m:v₀ = 20 m/s"
+   },
+   {
+    "t": "Y la gravedad, que el enunciado fija en $9{,}8$ m/s². Usamos ese valor y no $10$.",
+    "a": "m:g = 9,8 m/s²"
+   },
+   {
+    "t": "Lo que nos falta es el ángulo. Es la incógnita, lo único que podemos mover en el simulador.",
+    "a": "m:ajusta el ángulo"
+   },
+   {
+    "t": "Piensa en la manguera: el agua llega igual de lejos si la inclinas un poco más bajo o un poco más alto. Por eso habrá dos ángulos.",
+    "a": "p:0",
+    "k": "por"
+   },
+   {
+    "t": "Mira la gráfica: la trayectoria sale del origen y vuelve al suelo justo en cuarenta metros.",
+    "a": "p:1"
+   },
+   {
+    "t": "Pasamos los datos a símbolos: $R=40$, $v_0=20$, $g=9{,}8$, y $\\theta$ es lo que buscamos.",
+    "a": "p:2"
+   },
+   {
+    "t": "Usamos la fórmula del alcance porque relaciona justo estas cuatro cosas: $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$.",
+    "a": "p:3",
+    "k": "por"
+   },
+   {
+    "t": "Dejamos solo el seno: pasamos la gravedad a multiplicar y $v_0^2$ a dividir. Queda $\\sin(2\\theta)=\\frac{392}{400}=0{,}98$.",
+    "a": "p:4"
+   },
+   {
+    "t": "Con la tecla seno a la menos uno, en modo grados, sale $2\\theta\\approx78{,}5^\\circ$. Ojo: eso es el doble del ángulo, así que dividimos entre dos y da $39{,}3^\\circ$.",
+    "a": "p:5",
+    "k": "err"
+   },
+   {
+    "t": "El seno da lo mismo para un ángulo y para lo que le falta hasta ciento ochenta. Entonces $2\\theta=101{,}5^\\circ$ y $\\theta\\approx50{,}7^\\circ$.",
+    "a": "p:6",
+    "k": "por"
+   },
+   {
+    "t": "Mira las barras: treinta y sesenta grados llegan igual de lejos, y cuarenta y cinco es el máximo. Nuestros dos ángulos están a ambos lados de ese máximo.",
+    "a": "p:7"
+   },
+   {
+    "t": "Comprobamos: $39{,}3^\\circ+50{,}7^\\circ=90^\\circ$, son complementarios. En el simulador sirve cualquiera de los dos.",
+    "a": "p:8"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como lavar la moto con la manguera: apuntando más bajo o más alto puedes mojar el mismo punto del piso. Con el proyectil pasa igual.",
+    "k": "ana"
+   },
+   {
+    "t": "Imagina un tiro libre en la cancha del barrio. A cuarenta y cinco grados el balón llega más lejos que con cualquier otro ángulo.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: a treinta y a sesenta grados el balón cae en el mismo sitio, a unos treinta y cinco metros. Uno va rasante y el otro va a lo alto.",
+    "k": "ej"
+   },
+   {
+    "t": "Error común: pensar que mientras más inclinado, más lejos llega. Pasados cuarenta y cinco grados el alcance empieza a bajar.",
+    "k": "err"
+   },
+   {
+    "t": "Con esta rapidez el máximo posible es de unos cuarenta coma ocho metros. Por eso los cuarenta metros están casi en el tope y los dos ángulos quedan tan cerca de cuarenta y cinco.",
+    "k": "ej"
+   },
+   {
+    "t": "Otro tropiezo típico: dejar la calculadora en radianes. Si el resultado sale rarísimo, revisa que esté en grados.",
+    "k": "err"
+   }
+  ]
+ },
+ "lec-004": {
+  "1": [
+   {
+    "t": "Vamos a leer el texto con calma, para entender de qué trata.",
+    "a": "leer"
+   },
+   {
+    "t": "Piden la idea principal, o sea, la que sostiene todo el texto.",
+    "a": "m:idea principal"
+   },
+   {
+    "t": "Y la respuesta sale del texto, no de lo que tú opines.",
+    "a": "m:del texto"
+   },
+   {
+    "t": "Mira lo que hace cada parte: presenta la plaza, da ejemplos, compara con los supermercados, da la razón y cierra.",
+    "a": "p:2"
+   },
+   {
+    "t": "Todas esas partes apoyan lo mismo: la gente va al mercado por la comunidad, no solo por el precio.",
+    "a": "p:3"
+   },
+   {
+    "t": "La pista clave es «aunque el mercado no sea lo más barato, muchos vecinos siguen yendo».",
+    "a": "p:3"
+   },
+   {
+    "t": "Por eso la respuesta es la C: el mercado vale por la comunidad que forma, no solo por el precio.",
+    "a": "o:C:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el texto completo, para ver de qué trata y qué defiende el autor.",
+    "a": "leer"
+   },
+   {
+    "t": "La pregunta pide la idea principal. Eso quiere decir la idea que sostiene todo el texto, no un detalle suelto.",
+    "a": "m:idea principal"
+   },
+   {
+    "t": "Y debe salir del texto, no de tu opinión. Por eso hay que apoyarse en lo que realmente dice.",
+    "a": "m:del texto",
+    "k": "por"
+   },
+   {
+    "t": "Piensa en tu tienda de la esquina: la libra de arroz sale un poco más cara, pero la gente va por el trato. Nadie va solo por el precio.",
+    "a": "p:0"
+   },
+   {
+    "t": "Mira qué hace cada parte del texto. Doña Rosa y Don Camilo son ejemplos; los supermercados son la comparación; y «Por eso» trae la razón.",
+    "a": "p:1"
+   },
+   {
+    "t": "Los detalles van subiendo hasta la idea: se compara, se explica por qué van, y todo se resume en una sola idea.",
+    "a": "p:2"
+   },
+   {
+    "t": "La frase «aunque el mercado no sea lo más barato, muchos vecinos siguen yendo» muestra que el precio no es la razón principal.",
+    "a": "p:3",
+    "k": "por"
+   },
+   {
+    "t": "La A dice que el mercado es lo más barato, y tienta porque habla de precios. Pero el texto dice justo lo contrario.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La B dice que los supermercados deben cerrar. Es una opinión exagerada que nadie propone en el texto.",
+    "a": "o:B:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice que la plaza necesita más puestos. Los puestos aparecen como ejemplo, pero el texto no pide más.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la C es la correcta: es la única que resume todo el texto sin inventar nada.",
+    "a": "o:C:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "La idea principal es como el equipo entero y los ejemplos son los jugadores. Doña Rosa y Don Camilo juegan para el mismo equipo: la comunidad.",
+    "k": "ana"
+   },
+   {
+    "t": "Es como una final del barrio: lo importante no es quién vendió más empanadas, sino que todo el barrio se juntó. Eso es lo que cubre todo.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: si alguien resume una novela contando solo una escena, no dio la idea principal. Dio un detalle.",
+    "k": "ej"
+   },
+   {
+    "t": "Error común: escoger la opción que suena más fuerte, como «los supermercados deben cerrar». Suena dura, pero el texto nunca lo propone.",
+    "k": "err"
+   },
+   {
+    "t": "Prueba rápida: pregúntate si tu opción explica todas las partes del texto. Si deja alguna por fuera, es solo un detalle.",
+    "k": "ej"
+   }
+  ]
+ },
+ "lec-005": {
+  "1": [
+   {
+    "t": "Vamos a leer el texto con calma, para entender de qué trata.",
+    "a": "leer"
+   },
+   {
+    "t": "Nos preguntan qué función cumple «Por eso». O sea, para qué sirve en el texto, no qué dice.",
+    "a": "m:¿Qué función cumple"
+   },
+   {
+    "t": "Ubicamos el conector en la lectura: «Por eso», justo antes de que los vecinos sigan yendo al mercado.",
+    "a": "m:Por eso"
+   },
+   {
+    "t": "Mira el esquema: antes hay una causa, después hay una consecuencia, y «Por eso» es la bisagra.",
+    "a": "p:1"
+   },
+   {
+    "t": "Truco: cámbialo por «por esa razón». Si la frase tiene sentido, marca consecuencia.",
+    "a": "p:3"
+   },
+   {
+    "t": "La causa es que en el supermercado nadie te pregunta cómo estuvo la semana. La consecuencia es que los vecinos siguen yendo.",
+    "a": "p:3"
+   },
+   {
+    "t": "Entonces la respuesta es la B: introduce la consecuencia de lo anterior.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el texto completo, para ver cómo se conectan las ideas.",
+    "a": "leer"
+   },
+   {
+    "t": "La pregunta no es qué dice la frase, sino qué función cumple. Eso significa para qué sirve dentro del texto.",
+    "a": "m:¿Qué función cumple"
+   },
+   {
+    "t": "«Por eso» es un conector: una palabra que une una idea con otra. Por eso hay que mirar qué hay antes y qué viene después.",
+    "a": "m:Por eso",
+    "k": "por"
+   },
+   {
+    "t": "Piensa en un día de lluvia: «llovió a cántaros, por eso me quedé en casa». Lo primero es la causa y lo segundo, el resultado.",
+    "a": "p:0"
+   },
+   {
+    "t": "En el texto pasa igual. Antes está la causa y después, la consecuencia, y «Por eso» las une.",
+    "a": "p:1"
+   },
+   {
+    "t": "Compara con otros conectores: «por ejemplo» da un caso, «sin embargo» contradice, «por otro lado» cambia el punto de vista.",
+    "a": "p:2"
+   },
+   {
+    "t": "Léelo con las palabras del texto: en el supermercado falta el trato humano, y por esa razón los vecinos siguen yendo.",
+    "a": "p:3",
+    "k": "por"
+   },
+   {
+    "t": "La A dice que pone un ejemplo, y tienta porque el texto sí tiene ejemplos. Pero no los trae este conector, sino otras frases.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C dice que contradice lo anterior. Eso lo haría «sin embargo». Aquí lo de después sigue de lo de antes.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice que cambia de tema. Pero el texto sigue hablando del mismo mercado.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la B es la correcta: introduce la consecuencia de lo anterior.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como una bisagra en la puerta de la casa: une dos partes y deja que la una explique la otra.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo bien de barrio: «no había buseta, por eso llegué caminando». La falta de buseta es la causa, y llegar caminando, el resultado.",
+    "k": "ej"
+   },
+   {
+    "t": "Y con «sin embargo» cambia todo: «no había buseta, sin embargo llegué temprano». Ahí sí se lleva la contraria.",
+    "k": "ej"
+   },
+   {
+    "t": "Error común: pensar que como el texto tiene ejemplos, el conector es de ejemplo. Hay que fijarse en la palabra y no en el tema.",
+    "k": "err"
+   },
+   {
+    "t": "Prueba rápida: pregúntate si lo de después ocurre porque pasó lo de antes. Si sí, es consecuencia.",
+    "k": "ej"
+   }
+  ]
+ },
+ "lec-006": {
+  "1": [
+   {
+    "t": "Vamos a leer el texto con calma, para entender de qué trata.",
+    "a": "leer"
+   },
+   {
+    "t": "Dice según el texto: solo vale lo que el texto dice, aunque tú pienses otra cosa.",
+    "a": "m:Según el texto"
+   },
+   {
+    "t": "Plantean una situación imaginada: qué pasaría si el mercado desapareciera.",
+    "a": "m:si el mercado desapareciera"
+   },
+   {
+    "t": "Y preguntan por la plaza, no por el mercado.",
+    "a": "m:la plaza"
+   },
+   {
+    "t": "La última frase lo dice: la plaza seguiría existiendo, pero perdería lo que la hace una comunidad.",
+    "a": "p:2"
+   },
+   {
+    "t": "El «pero» separa lo que se queda, el espacio, de lo que se pierde, el sentido de comunidad.",
+    "a": "p:1"
+   },
+   {
+    "t": "Entonces la respuesta es la B.",
+    "a": "o:B:ok"
+   }
+  ],
+  "2": [
+   {
+    "t": "Vamos a leer el texto completo, y la última frase con mucha atención.",
+    "a": "leer"
+   },
+   {
+    "t": "Empieza con según el texto. Eso significa que solo vale lo que el texto dice, no lo que tú creas.",
+    "a": "m:Según el texto",
+    "k": "por"
+   },
+   {
+    "t": "Luego plantea una situación imaginada: si el mercado desapareciera. Todavía no ha pasado, pero el texto sí nos cuenta qué pasaría.",
+    "a": "m:si el mercado desapareciera"
+   },
+   {
+    "t": "Ojo con lo que preguntan: qué le pasaría a la plaza, no al mercado.",
+    "a": "m:la plaza"
+   },
+   {
+    "t": "Piensa en la cancha del barrio sin porterías: la cancha sigue ahí, pero ya nadie se junta a jugar.",
+    "a": "p:0"
+   },
+   {
+    "t": "Es lo que dice el texto. Mira la tabla: se queda la plaza, y se pierde lo que la hace una comunidad.",
+    "a": "p:1"
+   },
+   {
+    "t": "El «pero» divide la frase en dos: primero lo que se conserva y luego lo que se pierde. La respuesta debe decir las dos cosas.",
+    "a": "p:2",
+    "k": "por"
+   },
+   {
+    "t": "La A dice que la plaza dejaría de existir. Pero el texto dice claramente que seguiría existiendo.",
+    "a": "o:A:no",
+    "k": "err"
+   },
+   {
+    "t": "La C habla de precios más bajos. Pero el texto no predice nada sobre precios después de que se vaya el mercado.",
+    "a": "o:C:no",
+    "k": "err"
+   },
+   {
+    "t": "La D dice que se llenaría de supermercados. Pero el texto nunca menciona supermercados nuevos en la plaza.",
+    "a": "o:D:no",
+    "k": "err"
+   },
+   {
+    "t": "Por eso la B es la correcta: dice las dos cosas, que seguiría como espacio y que perdería su sentido de comunidad.",
+    "a": "o:B:ok"
+   }
+  ],
+  "3": [
+   {
+    "t": "Es como la cancha del barrio sin porterías: el cemento y las líneas siguen ahí, pero se pierde lo que hacía que la gente se juntara.",
+    "k": "ana"
+   },
+   {
+    "t": "O como una casa después de la mudanza: las paredes siguen en pie, pero ya no es el hogar de nadie.",
+    "k": "ana"
+   },
+   {
+    "t": "Un ejemplo: si quitan la fiesta del pueblo, la plaza sigue. Lo que se pierde es el encuentro de todos los vecinos.",
+    "k": "ej"
+   },
+   {
+    "t": "Error común: quedarse con la mitad de la frase. La A solo ve lo que se pierde y exagera, y no ve que la plaza seguiría existiendo.",
+    "k": "err"
+   },
+   {
+    "t": "Consejo: cuando preguntan según el texto, subraya la frase y compárala palabra por palabra con cada opción.",
+    "k": "ej"
+   }
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+[
+ {
+  "id": "completo-1",
+  "nombre": "Simulacro completo 1",
+  "descripcion": "Las cinco áreas del Saber 11 en orden, con tiempo por sección.",
+  "nivel": "Completo",
+  "barajar": true,
+  "secciones": [
+   {
+    "id": "lec",
+    "titulo": "Lectura crítica",
+    "area": "lectura_critica",
+    "minutos": 20,
+    "auto": {
+     "area": "lectura_critica",
+     "n": 6
+    }
+   },
+   {
+    "id": "mat",
+    "titulo": "Matemáticas",
+    "area": "matematicas",
+    "minutos": 25,
+    "auto": {
+     "area": "matematicas",
+     "n": 7
+    }
+   },
+   {
+    "id": "soc",
+    "titulo": "Sociales y ciudadanas",
+    "area": "sociales",
+    "minutos": 15,
+    "auto": {
+     "area": "sociales",
+     "n": 4
+    }
+   },
+   {
+    "id": "cie",
+    "titulo": "Ciencias naturales",
+    "area": "ciencias",
+    "minutos": 25,
+    "auto": {
+     "area": "ciencias",
+     "n": 8
+    }
+   },
+   {
+    "id": "ing",
+    "titulo": "Inglés",
+    "area": "ingles",
+    "minutos": 10,
+    "auto": {
+     "area": "ingles",
+     "n": 4
+    }
+   }
+  ]
+ },
+ {
+  "id": "matematicas-intensivo",
+  "nombre": "Matemáticas intensivo",
+  "descripcion": "Solo matemáticas: todas las preguntas disponibles, de menor a mayor dificultad.",
+  "nivel": "Por área",
+  "barajar": false,
+  "secciones": [
+   {
+    "id": "mat",
+    "titulo": "Matemáticas",
+    "area": "matematicas",
+    "minutos": 30,
+    "preguntas": [
+     "mat-001",
+     "mat-002",
+     "mat-003",
+     "mat-004",
+     "mat-005",
+     "mat-006"
+    ]
+   }
+  ]
+ }
+]

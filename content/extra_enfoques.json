@@ -1,0 +1,210 @@
+{
+ "mat-007": {
+  "tema": "Matemáticas: parábola y su vértice (función cuadrática)",
+  "que": "Es encontrar los números a, b y c de una curva en forma de U, la parábola, para que su punto más bajo o más alto quede justo donde tú quieres.",
+  "pistas": [
+   "dice que es una cuadrática: una función con $x^2$ cuya gráfica es una parábola",
+   "pide que el vértice sea $(2,\\,-3)$: el punto donde la curva cambia de bajar a subir",
+   "dice que uses el graficador: puedes probar valores y ver la curva"
+  ],
+  "clave": "Si te dan el vértice $(h,k)$ de una cuadrática, escribe $f(x)=a(x-h)^2+k$ y luego abre el cuadrado para sacar a, b y c.",
+  "no": [
+   {
+    "t": "Función lineal",
+    "p": "Se parece porque también es una función con letras que hay que elegir. Pero la recta no tiene vértice ni curva, y aquí hablan de un punto donde la curva cambia de dirección."
+   },
+   {
+    "t": "Hallar las raíces de la cuadrática",
+    "p": "Se parece porque también aparece $x^2$. Pero ahí buscan dónde la curva corta el eje x, y aquí te dan el vértice."
+   },
+   {
+    "t": "Calcular el vértice de una función dada",
+    "p": "Se parece porque también sale el vértice. Pero ahí te dan a, b y c y calculas el vértice; aquí es al revés: te dan el vértice y construyes a, b y c."
+   }
+  ],
+  "plan": [
+   {
+    "t": "Anoto lo que me piden: el vértice está en $x=2$ y en $y=-3$.",
+    "eq": [
+     "h=2,\\ k=-3"
+    ]
+   },
+   {
+    "t": "Uso la forma que ya trae el vértice escrito, dejando $a$ libre.",
+    "eq": [
+     "f(x)=a(x-2)^2-3"
+    ]
+   },
+   {
+    "t": "Elijo $a=1$ porque es lo más sencillo y abro el cuadrado.",
+    "eq": [
+     "f(x)=(x-2)^2-3=x^2-4x+1"
+    ]
+   },
+   {
+    "t": "Leo los números: $a=1$, $b=-4$ y $c=1$. Los pruebo en el graficador y el vértice queda donde pedían."
+   }
+  ]
+ },
+ "cie-007": {
+  "tema": "Física: lanzamiento en parábola, hallar el ángulo",
+  "que": "Es un proyectil que sale inclinado y cae lejos. Aquí ya sabes qué tan lejos debe llegar y buscas con qué ángulo lanzarlo.",
+  "pistas": [
+   "dice que debe llegar a $40$ m: ese es el alcance",
+   "dan la rapidez con que sale, $v_0=20$ m/s, y la gravedad, $g=9{,}8$ m/s²",
+   "pide que ajustes el ángulo: el ángulo es lo que no sabes"
+  ],
+  "clave": "Si conoces el alcance y la rapidez, y te piden el ángulo, usa $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$, deja solo el seno y recuerda que sirven dos ángulos.",
+  "no": [
+   {
+    "t": "Caída libre",
+    "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta, y aquí hay un alcance horizontal."
+   },
+   {
+    "t": "Altura máxima",
+    "p": "Se parece porque es el mismo tipo de lanzamiento. Pero ahí preguntan qué tan alto sube, y aquí piden el ángulo para llegar a cierta distancia."
+   },
+   {
+    "t": "Movimiento a velocidad constante",
+    "p": "Se parece porque el objeto avanza hacia adelante. Pero si la velocidad fuera constante no habría curva ni ángulo que ajustar."
+   }
+  ],
+  "plan": [
+   {
+    "t": "Anoto los datos: alcance $40$ m, rapidez $20$ m/s y gravedad $9{,}8$.",
+    "eq": [
+     "R=40,\\ v_0=20,\\ g=9{,}8"
+    ]
+   },
+   {
+    "t": "Escribo la fórmula del alcance, que sirve para este lanzamiento.",
+    "eq": [
+     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+    ]
+   },
+   {
+    "t": "Dejo solo el seno y hago la cuenta.",
+    "eq": [
+     "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98"
+    ]
+   },
+   {
+    "t": "Con la calculadora saco $\\theta\\approx39{,}3^\\circ$, y el segundo ángulo es $50{,}7^\\circ$."
+   }
+  ]
+ },
+ "lec-004": {
+  "tema": "Lectura: encontrar la idea principal",
+  "que": "Es descubrir la idea que sostiene todo el texto, la que apoyan todas sus partes, y no quedarse con un detalle suelto.",
+  "pistas": [
+   "la pregunta dice idea principal: piden lo que cubre todo el texto, no un dato",
+   "la lectura compara el mercado con los supermercados: «ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana»",
+   "la razón viene después de «Por eso»: los vecinos conversan, se enteran y sienten que pertenecen"
+  ],
+  "clave": "La idea principal es la que todas las partes del texto apoyan. Los ejemplos y los detalles sirven para probarla, pero no son la idea.",
+  "no": [
+   {
+    "t": "Hacer un resumen",
+    "p": "Se parece porque hay que entender todo el texto. Pero no piden contar todo lo que dice, sino la idea que lo sostiene."
+   },
+   {
+    "t": "Buscar un dato puntual",
+    "p": "Se parece porque la respuesta está en el texto. Pero un dato, como el queso de Don Camilo, es un detalle y no cubre todo el texto."
+   },
+   {
+    "t": "Función de un conector",
+    "p": "Se parece porque también se mira una palabra del texto. Pero aquí nadie pregunta para qué sirve «Por eso», sino qué defiende el autor."
+   }
+  ],
+  "plan": [
+   {
+    "t": "Leo el texto completo una vez, sin afán."
+   },
+   {
+    "t": "Veo qué hace cada parte: presenta la plaza, da ejemplos, compara con el supermercado, da una razón y cierra."
+   },
+   {
+    "t": "Busco la idea que todas esas partes apoyan: el mercado vale por la comunidad, no solo por el precio."
+   },
+   {
+    "t": "Elijo la opción que dice eso y descarto las que hablan de otra cosa o inventan."
+   }
+  ]
+ },
+ "lec-005": {
+  "tema": "Lectura: función de un conector",
+  "que": "Es explicar para qué sirve una palabra de enlace dentro del texto: si une una causa con su consecuencia, si da un ejemplo, si contradice o si cambia de tema.",
+  "pistas": [
+   "la pregunta dice «¿Qué función cumple»: no pregunta qué dice la frase, sino para qué sirve",
+   "la palabra entre comillas es «Por eso», un conector que une dos ideas",
+   "antes dice que en el supermercado nadie te pregunta cómo estuvo la semana, y después que los vecinos siguen yendo"
+  ],
+  "clave": "Cambia el conector por «por esa razón». Si la frase sigue teniendo sentido, marca una consecuencia: lo de antes explica lo de después.",
+  "no": [
+   {
+    "t": "Idea principal",
+    "p": "Se parece porque también se lee todo el texto. Pero aquí no preguntan qué defiende el autor, sino para qué sirve una palabra."
+   },
+   {
+    "t": "Significado de una palabra",
+    "p": "Se parece porque se mira una palabra concreta. Pero no piden qué significa, sino qué relación crea entre dos frases."
+   },
+   {
+    "t": "Identificar un ejemplo",
+    "p": "Se parece porque también se señala una parte del texto. Pero un ejemplo suele venir con «por ejemplo», y «Por eso» no agrega ningún caso nuevo."
+   }
+  ],
+  "plan": [
+   {
+    "t": "Ubico el conector en el texto: «Por eso»."
+   },
+   {
+    "t": "Leo la frase de antes: en el supermercado nadie te pregunta cómo estuvo la semana."
+   },
+   {
+    "t": "Leo la frase de después: aunque no sea lo más barato, los vecinos siguen yendo."
+   },
+   {
+    "t": "Cambio «Por eso» por «por esa razón»; como tiene sentido, la función es introducir la consecuencia."
+   }
+  ]
+ },
+ "lec-006": {
+  "tema": "Lectura: información que el texto dice de forma explícita",
+  "que": "Es encontrar en el texto la frase exacta que responde la pregunta y quedarse solo con lo que ella dice, sin agregar opiniones ni inventos.",
+  "pistas": [
+   "empieza con «Según el texto»: solo vale lo que el texto dice",
+   "habla de una situación imaginada: «si el mercado desapareciera»",
+   "pregunta por «la plaza», no por el mercado"
+  ],
+  "clave": "Cuando dice «según el texto», busca la frase exacta y quédate solo con ella. Aquí es la última, y su «pero» separa lo que se queda de lo que se pierde.",
+  "no": [
+   {
+    "t": "Hacer una inferencia",
+    "p": "Se parece porque la situación es imaginada. Pero no hay que adivinar nada: el texto ya lo dice con todas las letras."
+   },
+   {
+    "t": "Idea principal",
+    "p": "Se parece porque se lee todo el texto. Pero aquí preguntan por una frase concreta, no por lo que defiende el autor."
+   },
+   {
+    "t": "Dar tu opinión",
+    "p": "Se parece porque preguntan sobre un posible futuro. Pero lo que cuenta es lo que dice el texto, no lo que tú creas."
+   }
+  ],
+  "plan": [
+   {
+    "t": "Leo la pregunta: qué le pasaría a la plaza si el mercado desapareciera."
+   },
+   {
+    "t": "Busco en el texto la frase que habla de eso: la última."
+   },
+   {
+    "t": "Separo la frase en dos con el «pero»: la plaza seguiría existiendo, pero perdería lo que la hace una comunidad."
+   },
+   {
+    "t": "Elijo la opción que dice las dos cosas y descarto las que cambian o inventan algo."
+   }
+  ]
+ }
+}

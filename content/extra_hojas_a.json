@@ -1,0 +1,417 @@
+{
+ "mat-007": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "graficador",
+    "rol": "clave",
+    "nota": "puedes probar valores y ver la curva",
+    "campo": "Prueba en el graficador"
+   },
+   {
+    "frag": "cuadrática",
+    "rol": "dato",
+    "nota": "función de la forma $ax^2+bx+c$",
+    "campo": "$f(x)=ax^2+bx+c$"
+   },
+   {
+    "frag": "vértice sea (2, −3)",
+    "rol": "pide",
+    "nota": "el punto más bajo (o más alto) debe quedar en x=2, y=−3",
+    "campo": "Vértice $V=(2,\\,-3)$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un balón que rebota en una cancha",
+    "texto": "Cuando lanzas un balón al aire, sube hasta un punto más alto y luego baja. Ese punto más alto es como el vértice de la curva. Aquí te piden lo contrario: tú decides en qué punto exacto quiere estar el vértice, y buscas los números a, b y c que hacen que la curva pase por ahí."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     1,
+     -4,
+     1
+    ],
+    "x": [
+     -1,
+     5
+    ],
+    "puntos": [
+     {
+      "x": 2,
+      "y": -3,
+      "l": "vértice (2, −3)"
+     },
+     {
+      "x": 0,
+      "y": 1,
+      "l": "corta el eje y"
+     }
+    ],
+    "nota": "Esta es una curva que cumple lo pedido. El vértice es el punto más bajo: está dos pasos a la derecha del eje y, y tres hacia abajo."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa lo que dicen a símbolos",
+    "filas": [
+     {
+      "dice": "una cuadrática",
+      "escribo": "f(x)=ax^2+bx+c",
+      "rol": "dato"
+     },
+     {
+      "dice": "vértice en $x=2$",
+      "escribo": "h=2",
+      "rol": "clave"
+     },
+     {
+      "dice": "vértice en $y=-3$",
+      "escribo": "k=-3",
+      "rol": "clave"
+     }
+    ],
+    "nota": "A las coordenadas del vértice se les llama $(h,k)$. Aquí $h=2$ y $k=-3$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Forma que ya trae el vértice",
+    "lineas": [
+     "f(x)=a(x-h)^2+k",
+     "f(x)=a(x-2)^2-3"
+    ],
+    "nota": "Esta forma es muy cómoda: el vértice se lee directo. Cuidado con el signo: dentro del paréntesis va $x-2$ (al revés de lo que se ve), y afuera va $-3$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Elige a = 1 y abre el cuadrado",
+    "lineas": [
+     "f(x)=1\\cdot(x-2)^2-3",
+     "(x-2)^2=x^2-4x+4",
+     "f(x)=x^2-4x+4-3",
+     "f(x)=x^2-4x+1"
+    ],
+    "nota": "Elegimos $a=1$ porque es lo más sencillo. Al final: $a=1$, $b=-4$, $c=1$."
+   },
+   {
+    "k": "tabla",
+    "titulo": "Con otros valores de a también funciona",
+    "cols": [
+     "a",
+     "b",
+     "c",
+     "Vértice"
+    ],
+    "filas": [
+     [
+      "1",
+      "−4",
+      "1",
+      "(2, −3)"
+     ],
+     [
+      "2",
+      "−8",
+      "5",
+      "(2, −3)"
+     ],
+     [
+      "−1",
+      "4",
+      "−7",
+      "(2, −3)"
+     ]
+    ],
+    "nota": "Para cualquier $a$: $b=-4a$ y $c=4a-3$. Con $a$ positivo la curva abre hacia arriba; con $a$ negativo, hacia abajo, y el vértice sería el punto más alto."
+   },
+   {
+    "k": "calc",
+    "titulo": "Comprueba con la fórmula del vértice",
+    "lineas": [
+     "x_v=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot1}=2",
+     "f(2)=2^2-4\\cdot2+1=4-8+1=-3"
+    ],
+    "nota": "Sale $(2,-3)$, justo lo que pedían."
+   },
+   {
+    "k": "check",
+    "texto": "En el graficador pon $a=1$, $b=-4$, $c=1$: el vértice queda en $(2,-3)$. Cualquier terna con $b=-4a$ y $c=4a-3$ también sirve."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "vértice sea (2, −3)",
+      "op": [
+       "El punto más alto o más bajo de la curva",
+       "El punto donde corta al eje x",
+       "El valor de a"
+      ],
+      "ok": 0,
+      "why": "El vértice es el punto donde la curva cambia de bajar a subir (o al contrario)."
+     },
+     {
+      "p": "cuadrática",
+      "op": [
+       "Función con $x^2$",
+       "Función en línea recta",
+       "Función con raíz"
+      ],
+      "ok": 0,
+      "why": "Cuadrática significa que lleva $x^2$; su gráfica es una parábola."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Halla b cuando a = 1",
+    "antes": "b=-2\\cdot a\\cdot h=-2\\cdot1\\cdot2=",
+    "resp": -4,
+    "pista": "Sale de abrir $(x-2)^2$.",
+    "why": "Al abrir $(x-2)^2$ aparece $-4x$, así que $b=-4$."
+   }
+  ]
+ },
+ "cie-007": {
+  "modo": "calculo",
+  "marcas": [
+   {
+    "frag": "40 m",
+    "rol": "pide",
+    "nota": "el alcance que debe lograr",
+    "campo": "$R=40\\ \\text{m}$"
+   },
+   {
+    "frag": "v₀ = 20 m/s",
+    "rol": "dato",
+    "nota": "rapidez con que sale el proyectil",
+    "campo": "$v_0=20\\ \\text{m/s}$"
+   },
+   {
+    "frag": "g = 9,8 m/s²",
+    "rol": "dato",
+    "nota": "gravedad: usa 9,8",
+    "campo": "$g=9{,}8\\ \\text{m/s}^2$"
+   },
+   {
+    "frag": "ajusta el ángulo",
+    "rol": "clave",
+    "nota": "la incógnita es el ángulo $\\theta$",
+    "campo": "$\\theta=\\ ?$"
+   }
+  ],
+  "pasos": [
+   {
+    "k": "vida",
+    "titulo": "Piensa en un chorro de manguera",
+    "texto": "Si riegas el jardín con una manguera, el agua cae más lejos cuando inclinas la manguera a medio camino entre el piso y la vertical. Y algo curioso: puedes mojar el mismo punto apuntando más bajo o más alto. Con el proyectil pasa igual, y por eso hay dos ángulos que sirven."
+   },
+   {
+    "k": "grafica",
+    "titulo": "Mira qué te piden",
+    "coef": [
+     -0.02046,
+     0.817,
+     0
+    ],
+    "x": [
+     -2,
+     43
+    ],
+    "puntos": [
+     {
+      "x": 0,
+      "y": 0,
+      "l": "sale"
+     },
+     {
+      "x": 40,
+      "y": 0,
+      "l": "cae a 40 m"
+     }
+    ],
+    "nota": "Buscamos el ángulo con el que la trayectoria vuelve al suelo justo a 40 m de donde salió."
+   },
+   {
+    "k": "traducir",
+    "titulo": "Pasa los datos a símbolos",
+    "filas": [
+     {
+      "dice": "llegar a $40\\ \\text{m}$",
+      "escribo": "R=40\\ \\text{m}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$v_0=20\\ \\text{m/s}$",
+      "escribo": "v_0=20\\ \\text{m/s}",
+      "rol": "dato"
+     },
+     {
+      "dice": "$g=9{,}8\\ \\text{m/s}^2$",
+      "escribo": "g=9{,}8\\ \\text{m/s}^2",
+      "rol": "dato"
+     },
+     {
+      "dice": "el ángulo",
+      "escribo": "\\theta=\\ ?",
+      "rol": "pide"
+     }
+    ],
+    "nota": "$R$ es el alcance horizontal y $\\theta$ (theta) es el ángulo de lanzamiento."
+   },
+   {
+    "k": "calc",
+    "titulo": "Fórmula del alcance",
+    "lineas": [
+     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+    ],
+    "nota": "Aquí conocemos todo menos el ángulo, así que despejamos $\\sin(2\\theta)$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Despeja sen(2θ)",
+    "lineas": [
+     "\\sin(2\\theta)=\\frac{R\\cdot g}{v_0^2}",
+     "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=\\frac{392}{400}",
+     "\\sin(2\\theta)=0{,}98"
+    ],
+    "nota": "Recuerda que $20^2=400$."
+   },
+   {
+    "k": "calc",
+    "titulo": "Busca el ángulo con la calculadora",
+    "lineas": [
+     "2\\theta=\\sin^{-1}(0{,}98)\\approx78{,}5^\\circ",
+     "\\theta\\approx39{,}3^\\circ"
+    ],
+    "nota": "Usa la tecla $\\sin^{-1}$ en modo grados. Este es el primer ángulo."
+   },
+   {
+    "k": "calc",
+    "titulo": "El segundo ángulo",
+    "lineas": [
+     "2\\theta=180^\\circ-78{,}5^\\circ=101{,}5^\\circ",
+     "\\theta\\approx50{,}7^\\circ"
+    ],
+    "nota": "El seno da lo mismo para un ángulo y para su suplemento (lo que le falta para 180°). Por eso aparece una segunda respuesta."
+   },
+   {
+    "k": "barras",
+    "titulo": "Alcance según el ángulo",
+    "barras": [
+     {
+      "l": "30°",
+      "e": "35,3 m",
+      "segs": [
+       {
+        "v": 35.3,
+        "c": "azul"
+       }
+      ]
+     },
+     {
+      "l": "39,3°",
+      "e": "40 m",
+      "segs": [
+       {
+        "v": 40,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "45° (máximo)",
+      "e": "40,8 m",
+      "segs": [
+       {
+        "v": 40.8,
+        "c": "oro"
+       }
+      ]
+     },
+     {
+      "l": "50,7°",
+      "e": "40 m",
+      "segs": [
+       {
+        "v": 40,
+        "c": "verde"
+       }
+      ]
+     },
+     {
+      "l": "60°",
+      "e": "35,3 m",
+      "segs": [
+       {
+        "v": 35.3,
+        "c": "azul"
+       }
+      ]
+     }
+    ],
+    "ref": {
+     "v": 40,
+     "l": "meta: 40 m"
+    },
+    "nota": "Los dos ángulos verdes llegan a 40 m. Están a la misma distancia de 45°: uno por debajo y otro por encima."
+   },
+   {
+    "k": "check",
+    "texto": "Los dos ángulos suman $39{,}3^\\circ+50{,}7^\\circ=90^\\circ$ (son complementarios) y ambos quedan cerca de $45^\\circ$. En el simulador funciona cualquiera de los dos."
+   }
+  ],
+  "guia": [
+   {
+    "k": "asignar",
+    "titulo": "¿Qué es cada dato?",
+    "items": [
+     {
+      "p": "v₀ = 20 m/s",
+      "op": [
+       "Rapidez inicial",
+       "Alcance",
+       "Gravedad"
+      ],
+      "ok": 0,
+      "why": "Es la rapidez con que sale el proyectil; en la fórmula va al cuadrado."
+     },
+     {
+      "p": "40 m",
+      "op": [
+       "Alcance horizontal $R$",
+       "Altura máxima",
+       "Ángulo"
+      ],
+      "ok": 0,
+      "why": "Es la distancia sobre el suelo hasta donde cae."
+     },
+     {
+      "p": "ajusta el ángulo",
+      "op": [
+       "Es la incógnita $\\theta$",
+       "Es un dato",
+       "Es la gravedad"
+      ],
+      "ok": 0,
+      "why": "Lo que buscas es el ángulo."
+     }
+    ]
+   },
+   {
+    "k": "llenar",
+    "titulo": "Calcula sen(2θ)",
+    "antes": "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=",
+    "resp": 0.98,
+    "tol": 0.001,
+    "pista": "40·9,8 = 392 y 20² = 400.",
+    "why": "$392/400=0{,}98$."
+   }
+  ]
+ }
+}

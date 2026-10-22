@@ -1,0 +1,133 @@
+{
+ "cie-001": [
+  {
+   "despues": 0,
+   "paso": {
+    "k": "escena",
+    "titulo": "Mira cómo vuela el balón",
+    "ancho": 720,
+    "alto": 300,
+    "anim": {
+     "dur": 4,
+     "bucle": true
+    },
+    "vars": {
+     "v0": 20,
+     "th": 30,
+     "g": 10,
+     "Tv": "2*v0*sin(rad(th))/g",
+     "tt": "u*Tv",
+     "vx": "v0*cos(rad(th))",
+     "vy": "v0*sin(rad(th))-g*tt",
+     "bx": "vx*tt",
+     "by": "v0*sin(rad(th))*tt-0.5*g*tt*tt"
+    },
+    "marco": {
+     "izq": 50,
+     "der": 20,
+     "arriba": 30,
+     "abajo": 50,
+     "x": [
+      0,
+      38
+     ],
+     "y": [
+      0,
+      6.5
+     ]
+    },
+    "capas": [
+     {
+      "t": "suelo"
+     },
+     {
+      "t": "ejes",
+      "xl": "distancia (m)",
+      "yl": "altura (m)"
+     },
+     {
+      "t": "funcion",
+      "x": "vx*s",
+      "y": "v0*sin(rad(th))*s-0.5*g*s*s",
+      "var": "s",
+      "desde": 0,
+      "hasta": "Tv",
+      "color": "rgba(234,243,255,.4)",
+      "guion": [
+       6,
+       6
+      ],
+      "grosor": 1.5
+     },
+     {
+      "t": "linea",
+      "x0": "bx",
+      "y0": "by",
+      "x1": "bx",
+      "y1": 0,
+      "color": "rgba(234,243,255,.3)",
+      "guion": [
+       2,
+       4
+      ],
+      "grosor": 1
+     },
+     {
+      "t": "flecha",
+      "x": "bx",
+      "y": "by",
+      "dx": "vx*2.2",
+      "dy": 0,
+      "color": 2
+     },
+     {
+      "t": "flecha",
+      "x": "bx",
+      "y": "by",
+      "dx": 0,
+      "dy": "vy*2.2",
+      "color": 3
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "X(bx)+vx*2.2+6",
+      "y": "Y(by)+14",
+      "txt": "vx = #{vx|1} (no cambia)",
+      "fuente": "mono",
+      "tam": 11,
+      "color": 2
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "X(bx)+8",
+      "y": "Y(by)-vy*2.2-4",
+      "txt": "vy = #{vy|1}",
+      "fuente": "mono",
+      "tam": 11,
+      "color": 3
+     },
+     {
+      "t": "circulo",
+      "x": "bx",
+      "y": "by",
+      "r": 8,
+      "relleno": "pluma",
+      "grosor": 2
+     },
+     {
+      "t": "texto",
+      "px": true,
+      "x": "w-110",
+      "y": "arriba+8",
+      "txt": "t = #{tt|1} s",
+      "fuente": "mono",
+      "tam": 13
+     }
+    ],
+    "nota": "La flecha verde (horizontal) siempre mide lo mismo; la rosada (vertical) se achica al subir, es cero arriba y crece al bajar."
+   }
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "cie-001",
+    "area": "ciencias",
+    "evidencia": "CIE_E2.1",
+    "nivel": 2,
+    "enunciado": "Un balón se patea con rapidez inicial de 20 m/s y ángulo de 30° (g = 10 m/s², sin aire). Su alcance horizontal es aproximadamente:",
+    "opciones": [
+      "40 m",
+      "34,6 m",
+      "20 m",
+      "17,3 m"
+    ],
+    "correcta": 1,
+    "explicacion": "$R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}=\\frac{400\\cdot\\sin 60^\\circ}{10}\\approx34{,}64\\ \\text{m}$.",
+    "distractores": [
+      "Usó 45° (alcance máximo, 40 m).",
+      "",
+      "Confundió alcance con rapidez.",
+      "Multiplicó v₀·sen60° sin elevar al cuadrado ni dividir entre g."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "fis.proyectil"
+    }
+  },
+  {
+    "id": "cie-002",
+    "area": "ciencias",
+    "evidencia": "CIE_E2.1",
+    "nivel": 2,
+    "enunciado": "Un móvil parte del reposo con aceleración constante de 3 m/s². ¿Qué distancia recorre en 4 s?",
+    "opciones": [
+      "12 m",
+      "24 m",
+      "48 m",
+      "6 m"
+    ],
+    "correcta": 1,
+    "explicacion": "$x=\\frac{1}{2}at^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}$.",
+    "distractores": [
+      "Calculó la velocidad final (v = at = 12 m/s).",
+      "",
+      "Omitió el factor ½.",
+      "Calculó a·t / 2."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "fis.mrua"
+    }
+  },
+  {
+    "id": "cie-003",
+    "area": "ciencias",
+    "evidencia": "CIE_E2.1",
+    "nivel": 2,
+    "enunciado": "Una resistencia de 6 Ω se conecta a una fuente de 12 V. La corriente es:",
+    "opciones": [
+      "72 A",
+      "2 A",
+      "0,5 A",
+      "6 A"
+    ],
+    "correcta": 1,
+    "explicacion": "$I=\\frac{V}{R}=\\frac{12}{6}=2\\ \\text{A}$ (ley de Ohm).",
+    "distractores": [
+      "Multiplicó V·R.",
+      "",
+      "Dividió R/V.",
+      "Tomó el valor de la resistencia."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "fis.ohm"
+    }
+  },
+  {
+    "id": "cie-004",
+    "area": "ciencias",
+    "evidencia": "CIE_E4.6",
+    "nivel": 3,
+    "enunciado": "En la combustión del propano, C₃H₈ + O₂ → CO₂ + H₂O, el coeficiente del O₂ al balancear es:",
+    "opciones": [
+      "3",
+      "4",
+      "5",
+      "10"
+    ],
+    "correcta": 2,
+    "explicacion": "1 C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Oxígeno: 3·2 + 4 = 10 átomos = 5 O₂.",
+    "distractores": [
+      "Es el coeficiente del CO₂.",
+      "Es el coeficiente del H₂O.",
+      "",
+      "Contó átomos de O, no moléculas de O₂."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "qui.balanceo"
+    }
+  },
+  {
+    "id": "cie-005",
+    "area": "ciencias",
+    "evidencia": "CIE_E3.3",
+    "nivel": 3,
+    "enunciado": "Dos plantas heterocigotas (Aa) se cruzan. ¿Qué probabilidad hay de que un descendiente tenga fenotipo recesivo (aa)?",
+    "opciones": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "0"
+    ],
+    "correcta": 1,
+    "explicacion": "Aa × Aa → AA, Aa, Aa, aa. Solo 1 de 4 es aa.",
+    "distractores": [
+      "Confundió con el cruce Aa × aa.",
+      "",
+      "Es la probabilidad de fenotipo dominante.",
+      "Pensó que lo recesivo desaparece."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "bio.punnett"
+    }
+  },
+  {
+    "id": "cie-006",
+    "area": "ciencias",
+    "evidencia": "CIE_E2.1",
+    "nivel": 3,
+    "enunciado": "Una lente convergente de f = 10 cm forma la imagen de un objeto ubicado a 15 cm. La imagen es:",
+    "opciones": [
+      "Virtual y derecha, a 30 cm",
+      "Real e invertida, a 30 cm",
+      "Real e invertida, a 6 cm",
+      "Virtual y derecha, a 6 cm"
+    ],
+    "correcta": 1,
+    "explicacion": "$\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}=\\frac{1}{30}$, entonces $d_i=30\\ \\text{cm}$. Positiva: real e invertida ($M=-2$).",
+    "distractores": [
+      "La imagen virtual solo ocurre con el objeto entre la lente y f.",
+      "",
+      "Sumó las inversas en lugar de restarlas.",
+      "Combinó ambos errores."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "fis.lentes"
+    }
+  },
+  {
+    "id": "cie-007",
+    "area": "ciencias",
+    "evidencia": "CIE_E2.1",
+    "nivel": 2,
+    "enunciado": "Reto: ajusta el ángulo en el simulador de proyectiles para llegar a 40 m con v₀ = 20 m/s y g = 9,8 m/s².",
+    "opciones": [],
+    "correcta": 0,
+    "explicacion": "Hay dos ángulos complementarios (≈ 39,3° y 50,7°: sen2θ = 40·9,8/400 = 0,98).",
+    "distractores": [],
+    "origen": "original",
+    "tipo": "reto",
+    "sim": {
+      "id": "fis.proyectil",
+      "challengeId": "ch1"
+    }
+  },
+  {
+    "id": "cie-008",
+    "area": "ciencias",
+    "evidencia": "CIE_E5.4",
+    "nivel": 3,
+    "enunciado": "En un gas ideal, 2 mol a 273,15 K y 1 atm ocupan (R = 0,082 atm·L/mol·K):",
+    "opciones": [
+      "22,4 L",
+      "44,8 L",
+      "11,2 L",
+      "5,6 L"
+    ],
+    "correcta": 1,
+    "explicacion": "$V=\\frac{nRT}{P}=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx44{,}8\\ \\text{L}$.",
+    "distractores": [
+      "Es el volumen de 1 mol.",
+      "",
+      "Es el volumen de 0,5 mol.",
+      "Dividió entre 4 sin sentido físico."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "qui.gases"
+    }
+  },
+  {
+    "id": "cie-009",
+    "area": "ciencias",
+    "evidencia": "CIE_E3.3",
+    "nivel": 4,
+    "enunciado": "En el modelo depredador-presa, si aumenta la mortalidad de los depredadores (γ), el punto de equilibrio de las presas (γ/δ):",
+    "opciones": [
+      "Disminuye",
+      "Aumenta",
+      "No cambia",
+      "Se vuelve cero"
+    ],
+    "correcta": 1,
+    "explicacion": "Presas en equilibrio $x^*=\\frac{\\gamma}{\\delta}$: si $\\gamma$ crece, $x^*$ crece. Hacen falta más presas para sostener a los depredadores.",
+    "distractores": [
+      "Pensó que menos depredadores significa menos presas.",
+      "",
+      "El equilibrio sí depende de γ.",
+      "Confundió equilibrio con extinción."
+    ],
+    "origen": "original",
+    "sim": {
+      "id": "bio.lotka"
+    }
+  }
+]
