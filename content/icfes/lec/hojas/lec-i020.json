@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "otro título podría ajustarse al texto",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Identifica qué problema analiza el texto más allá de la cita histórica."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Elige un título que incluya al autor y la representación construida del indígena."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Proponer un título que abarque la tesis del texto",
+      "que": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
+      "pistas": [
+        "Identifica qué problema analiza el texto más allá de la cita histórica.",
+        "Elige un título que incluya al autor y la representación construida del indígena."
+      ],
+      "clave": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué problema analiza el texto más allá de la cita histórica."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Elige un título que incluya al autor y la representación construida del indígena."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «otro título podría ajustarse al texto» orienta la lectura.",
+          "a": "m:otro título podría ajustarse al texto"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica qué problema analiza el texto más allá de la cita histórica.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Elige un título que incluya al autor y la representación construida del indígena.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "De acuerdo",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "lo narra",
+        "rol": "pide",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Observa si quien cuenta habla desde dentro de la historia."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "Busca qué relación revela entre la narradora y Johnny."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La narradora conoce a Johnny y relata experiencias compartidas con él."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Identificar la voz que cuenta una historia",
+      "que": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
+      "pistas": [
+        "Observa si quien cuenta habla desde dentro de la historia.",
+        "Busca qué relación revela entre la narradora y Johnny."
+      ],
+      "clave": "La narradora conoce a Johnny y relata experiencias compartidas con él.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero No es una testigo distante: cuenta situaciones vividas junto a Johnny."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La narradora habla de lo que vivió, no de algo que le contaron sobre Johnny."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Observa si quien cuenta habla desde dentro de la historia."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca qué relación revela entre la narradora y Johnny."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «lo narra» orienta la lectura.",
+          "a": "m:lo narra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: No es una testigo distante: cuenta situaciones vividas junto a Johnny. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La narradora habla de lo que vivió, no de algo que le contaron sobre Johnny. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Observa si quien cuenta habla desde dentro de la historia.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca qué relación revela entre la narradora y Johnny.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
+          "a": "p:2"
+        },
+        {
+          "t": "La narradora conoce a Johnny y relata experiencias compartidas con él.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El fragmento",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

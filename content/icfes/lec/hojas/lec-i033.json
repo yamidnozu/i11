@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "propósito general tiene el autor",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Elige la opción que conecte el ejemplo con esa conclusión."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer la función de un relato en un argumento",
+      "que": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+      "pistas": [
+        "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+        "Elige la opción que conecte el ejemplo con esa conclusión."
+      ],
+      "clave": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Elige la opción que conecte el ejemplo con esa conclusión."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «propósito general tiene el autor» orienta la lectura.",
+          "a": "m:propósito general tiene el autor"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Elige la opción que conecte el ejemplo con esa conclusión.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Dada la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

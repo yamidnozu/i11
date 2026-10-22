@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "tema principal del texto",
+        "rol": "pide",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Resume el texto completo, no un detalle aislado."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Sintetizar el tema de un texto expositivo",
+      "que": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
+      "pistas": [
+        "Resume el texto completo, no un detalle aislado.",
+        "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
+      ],
+      "clave": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La crianza y las precauciones no resumen el propósito del texto."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Resume el texto completo, no un detalle aislado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «tema principal del texto» orienta la lectura.",
+          "a": "m:tema principal del texto"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: Los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La crianza y las precauciones no resumen el propósito del texto. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Resume el texto completo, no un detalle aislado.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "resumen se puede describir como inadecuado",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Identifica si el resumen conserva el alcance de la afirmación original."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar la fidelidad de un resumen",
+      "que": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
+      "pistas": [
+        "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
+        "Identifica si el resumen conserva el alcance de la afirmación original."
+      ],
+      "clave": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica si el resumen conserva el alcance de la afirmación original."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «resumen se puede describir como inadecuado» orienta la lectura.",
+          "a": "m:resumen se puede describir como inadecuado"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Identifica si el resumen conserva el alcance de la afirmación original.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Considere el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

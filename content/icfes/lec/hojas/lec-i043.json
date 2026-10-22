@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "descripción es insatisfactoria",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Compara cada afirmación de la descripción con lo que realmente muestra la infografía."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona los datos",
+        "texto": "Busca el elemento que no aparece representado."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La descripción incluye información sobre la frecuencia de los accidentes, que la infografía no presenta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evaluar si una descripción se ajusta a una infografía",
+      "que": "La descripción enumera datos sobre muertes por género, ingresos, modo de desplazamiento y región, pero también dice que la infografía presenta la frecuencia de los accidentes. La infografía muestra muertes y tasas de mortalidad, no la frecuencia de los accidentes.",
+      "pistas": [
+        "Compara cada afirmación de la descripción con lo que realmente muestra la infografía.",
+        "Busca el elemento que no aparece representado."
+      ],
+      "clave": "La descripción incluye información sobre la frecuencia de los accidentes, que la infografía no presenta.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La descripción sí menciona los principales temas incluidos en la infografía."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero El problema no es el orden en que presenta la información."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La pregunta señala un dato añadido, no la falta de evidencia para los datos que sí están."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara cada afirmación de la descripción con lo que realmente muestra la infografía."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca el elemento que no aparece representado."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «descripción es insatisfactoria» orienta la lectura.",
+          "a": "m:descripción es insatisfactoria"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La descripción enumera datos sobre muertes por género, ingresos, modo de desplazamiento y región, pero también dice que la infografía presenta la frecuencia de los accidentes. La infografía muestra muertes y tasas de mortalidad, no la frecuencia de los accidentes.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La descripción enumera datos sobre muertes por género, ingresos, modo de desplazamiento y región, pero también dice que la infografía presenta la frecuencia de los accidentes. La infografía muestra muertes y tasas de mortalidad, no la frecuencia de los accidentes.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La descripción sí menciona los principales temas incluidos en la infografía. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El problema no es el orden en que presenta la información. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La pregunta señala un dato añadido, no la falta de evidencia para los datos que sí están. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara cada afirmación de la descripción con lo que realmente muestra la infografía.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Busca el elemento que no aparece representado.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La descripción enumera datos sobre muertes por género, ingresos, modo de desplazamiento y región, pero también dice que la infografía presenta la frecuencia de los accidentes. La infografía muestra muertes y tasas de mortalidad, no la frecuencia de los accidentes.",
+          "a": "p:2"
+        },
+        {
+          "t": "La descripción incluye información sobre la frecuencia de los accidentes, que la infografía no presenta.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Si alguien",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

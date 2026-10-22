@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "función cumple la conjunción",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Compara las dos cifras que conecta la expresión."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona los datos",
+        "texto": "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar una relación de contraste entre datos",
+      "que": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
+      "pistas": [
+        "Compara las dos cifras que conecta la expresión.",
+        "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
+      ],
+      "clave": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La infografía opone pocos vehículos con muchas muertes; no lo contrario."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La frase no atribuye las muertes al número de autos ni demuestra una relación causal."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara las dos cifras que conecta la expresión."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «función cumple la conjunción» orienta la lectura.",
+          "a": "m:función cumple la conjunción"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: La infografía opone pocos vehículos con muchas muertes; no lo contrario. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La frase no atribuye las muertes al número de autos ni demuestra una relación causal. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara las dos cifras que conecta la expresión.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Identifica qué relación establece entre la proporción de vehículos y la de muertes.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
+          "a": "p:2"
+        },
+        {
+          "t": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Según la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

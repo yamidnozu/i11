@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "comparada con la población de los países de ingresos medios",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Compara la proporción de vehículos con las tasas de mortalidad por ingreso."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona los datos",
+        "texto": "Distingue el dato visible de la explicación sugerida por las opciones."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La clave señala una mayor educación vial en los países de ingresos altos como explicación de la menor mortalidad; esa causa es una inferencia, no una variable medida por la infografía."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar la relación entre vehículos y mortalidad",
+      "que": "La infografía contrasta la cantidad de vehículos con las tasas de muertes: los países de ingresos medios tienen una proporción alta de vehículos y de muertes, mientras los de ingresos altos registran una tasa menor. La opción de la clave atribuye esa diferencia a mayor educación vial, aunque el gráfico no mide directamente la educación ni demuestra causalidad.",
+      "pistas": [
+        "Compara la proporción de vehículos con las tasas de mortalidad por ingreso.",
+        "Distingue el dato visible de la explicación sugerida por las opciones."
+      ],
+      "clave": "La clave señala una mayor educación vial en los países de ingresos altos como explicación de la menor mortalidad; esa causa es una inferencia, no una variable medida por la infografía.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La infografía no permite comparar vehículos por persona porque no presenta el tamaño de población asociado a cada grupo de ingresos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No informa cuánto se usa el vehículo particular."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No presenta datos sobre multas ni sobre exposición a sanciones."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara la proporción de vehículos con las tasas de mortalidad por ingreso."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue el dato visible de la explicación sugerida por las opciones."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «comparada con la población de los países de ingresos medios» orienta la lectura.",
+          "a": "m:comparada con la población de los países de ingresos medios"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La infografía contrasta la cantidad de vehículos con las tasas de muertes: los países de ingresos medios tienen una proporción alta de vehículos y de muertes, mientras los de ingresos altos registran una tasa menor. La opción de la clave atribuye esa diferencia a mayor educación vial, aunque el gráfico no mide directamente la educación ni demuestra causalidad.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La infografía contrasta la cantidad de vehículos con las tasas de muertes: los países de ingresos medios tienen una proporción alta de vehículos y de muertes, mientras los de ingresos altos registran una tasa menor. La opción de la clave atribuye esa diferencia a mayor educación vial, aunque el gráfico no mide directamente la educación ni demuestra causalidad.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La infografía no permite comparar vehículos por persona porque no presenta el tamaño de población asociado a cada grupo de ingresos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No informa cuánto se usa el vehículo particular. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No presenta datos sobre multas ni sobre exposición a sanciones. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara la proporción de vehículos con las tasas de mortalidad por ingreso.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue el dato visible de la explicación sugerida por las opciones.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La infografía contrasta la cantidad de vehículos con las tasas de muertes: los países de ingresos medios tienen una proporción alta de vehículos y de muertes, mientras los de ingresos altos registran una tasa menor. La opción de la clave atribuye esa diferencia a mayor educación vial, aunque el gráfico no mide directamente la educación ni demuestra causalidad.",
+          "a": "p:2"
+        },
+        {
+          "t": "La clave señala una mayor educación vial en los países de ingresos altos como explicación de la menor mortalidad; esa causa es una inferencia, no una variable medida por la infografía.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "A partir",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

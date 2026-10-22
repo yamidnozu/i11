@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "figuras que acompañan el texto",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Compara el número y el tipo de figuras con la afirmación escrita."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona los datos",
+        "texto": "Distingue ilustrar el dato de añadir una explicación nueva."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "Las figuras representan visualmente la proporción de hombres y mujeres que presenta el texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer cómo una imagen representa un dato",
+      "que": "El dato dice que tres de cada cuatro personas fallecidas son hombres, y a su lado aparecen tres figuras masculinas y una femenina. Las figuras repiten visualmente la misma proporción; la ilustran.",
+      "pistas": [
+        "Compara el número y el tipo de figuras con la afirmación escrita.",
+        "Distingue ilustrar el dato de añadir una explicación nueva."
+      ],
+      "clave": "Las figuras representan visualmente la proporción de hombres y mujeres que presenta el texto.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero Las figuras no amplían la explicación ni aportan causas de la diferencia."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero No añaden datos distintos al porcentaje que ya aparece."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No muestran ejemplos individuales de accidentes; representan una proporción."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara el número y el tipo de figuras con la afirmación escrita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue ilustrar el dato de añadir una explicación nueva."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «figuras que acompañan el texto» orienta la lectura.",
+          "a": "m:figuras que acompañan el texto"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El dato dice que tres de cada cuatro personas fallecidas son hombres, y a su lado aparecen tres figuras masculinas y una femenina. Las figuras repiten visualmente la misma proporción; la ilustran.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El dato dice que tres de cada cuatro personas fallecidas son hombres, y a su lado aparecen tres figuras masculinas y una femenina. Las figuras repiten visualmente la misma proporción; la ilustran.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: Las figuras no amplían la explicación ni aportan causas de la diferencia. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: No añaden datos distintos al porcentaje que ya aparece. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No muestran ejemplos individuales de accidentes; representan una proporción. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara el número y el tipo de figuras con la afirmación escrita.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue ilustrar el dato de añadir una explicación nueva.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El dato dice que tres de cada cuatro personas fallecidas son hombres, y a su lado aparecen tres figuras masculinas y una femenina. Las figuras repiten visualmente la misma proporción; la ilustran.",
+          "a": "p:2"
+        },
+        {
+          "t": "Las figuras representan visualmente la proporción de hombres y mujeres que presenta el texto.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "A propósito",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

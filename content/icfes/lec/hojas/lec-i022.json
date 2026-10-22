@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "ejemplo que menciona el autor",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Busca el ejemplo que el autor introduce como testigo de su argumento."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Separa el caso mencionado de las críticas generales a las mayorías y al ejército."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La guerra con México es el ejemplo explícito que el autor menciona."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Localizar un ejemplo usado como evidencia",
+      "que": "Thoreau menciona la guerra con México como una decisión apoyada por unos pocos mediante el gobierno, que el pueblo no habría aprobado. Ese caso ilustra su crítica al gobierno y al uso de su poder.",
+      "pistas": [
+        "Busca el ejemplo que el autor introduce como testigo de su argumento.",
+        "Separa el caso mencionado de las críticas generales a las mayorías y al ejército."
+      ],
+      "clave": "La guerra con México es el ejemplo explícito que el autor menciona.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero El ejército aparece en el argumento como brazo del gobierno, pero no es el ejemplo concreto citado en ese párrafo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La tiranía de la mayoría se discute después como un problema de legitimidad, no como el ejemplo pedido."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La debilidad de las minorías no aparece como ejemplo de apoyo a su posición."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Busca el ejemplo que el autor introduce como testigo de su argumento."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Separa el caso mencionado de las críticas generales a las mayorías y al ejército."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «ejemplo que menciona el autor» orienta la lectura.",
+          "a": "m:ejemplo que menciona el autor"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Thoreau menciona la guerra con México como una decisión apoyada por unos pocos mediante el gobierno, que el pueblo no habría aprobado. Ese caso ilustra su crítica al gobierno y al uso de su poder.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Thoreau menciona la guerra con México como una decisión apoyada por unos pocos mediante el gobierno, que el pueblo no habría aprobado. Ese caso ilustra su crítica al gobierno y al uso de su poder.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: El ejército aparece en el argumento como brazo del gobierno, pero no es el ejemplo concreto citado en ese párrafo. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La tiranía de la mayoría se discute después como un problema de legitimidad, no como el ejemplo pedido. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La debilidad de las minorías no aparece como ejemplo de apoyo a su posición. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Busca el ejemplo que el autor introduce como testigo de su argumento.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Separa el caso mencionado de las críticas generales a las mayorías y al ejército.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Thoreau menciona la guerra con México como una decisión apoyada por unos pocos mediante el gobierno, que el pueblo no habría aprobado. Ese caso ilustra su crítica al gobierno y al uso de su poder.",
+          "a": "p:2"
+        },
+        {
+          "t": "La guerra con México es el ejemplo explícito que el autor menciona.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

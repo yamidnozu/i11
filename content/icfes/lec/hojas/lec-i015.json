@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "compatible con las políticas del Partido",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Busca qué afectos y lealtades quedan permitidos."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Distingue el poder colectivo del control absoluto sobre cada persona."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción B recoge que el régimen suprime la identidad y la autonomía individuales."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir una política a partir de un texto distópico",
+      "que": "El texto dice que no habrá fidelidad, amor ni lealtad fuera de los dirigidos al Partido y al Gran Hermano. Eso implica borrar los vínculos y decisiones personales que compiten con la autoridad del Partido: eliminar la individualidad.",
+      "pistas": [
+        "Busca qué afectos y lealtades quedan permitidos.",
+        "Distingue el poder colectivo del control absoluto sobre cada persona."
+      ],
+      "clave": "La opción B recoge que el régimen suprime la identidad y la autonomía individuales.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El Partido no promueve la unión libre del pueblo; exige lealtad exclusiva a sí mismo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Ser fiel a uno mismo contradice la obediencia total que exige el régimen."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero El texto no dice que la ignorancia haga poderoso al pueblo; describe el poder del Partido."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Busca qué afectos y lealtades quedan permitidos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue el poder colectivo del control absoluto sobre cada persona."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «compatible con las políticas del Partido» orienta la lectura.",
+          "a": "m:compatible con las políticas del Partido"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto dice que no habrá fidelidad, amor ni lealtad fuera de los dirigidos al Partido y al Gran Hermano. Eso implica borrar los vínculos y decisiones personales que compiten con la autoridad del Partido: eliminar la individualidad.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El texto dice que no habrá fidelidad, amor ni lealtad fuera de los dirigidos al Partido y al Gran Hermano. Eso implica borrar los vínculos y decisiones personales que compiten con la autoridad del Partido: eliminar la individualidad.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El Partido no promueve la unión libre del pueblo; exige lealtad exclusiva a sí mismo. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Ser fiel a uno mismo contradice la obediencia total que exige el régimen. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: El texto no dice que la ignorancia haga poderoso al pueblo; describe el poder del Partido. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Busca qué afectos y lealtades quedan permitidos.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue el poder colectivo del control absoluto sobre cada persona.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El texto dice que no habrá fidelidad, amor ni lealtad fuera de los dirigidos al Partido y al Gran Hermano. Eso implica borrar los vínculos y decisiones personales que compiten con la autoridad del Partido: eliminar la individualidad.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción B recoge que el régimen suprime la identidad y la autonomía individuales.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Teniendo en",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

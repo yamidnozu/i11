@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "bota aplastando un rostro humano",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Relaciona la imagen con la frase sobre dominar a un enemigo indefenso."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Pregunta qué condición vivirán las personas bajo el régimen."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La opción D interpreta la frase como una ilustración de las condiciones de los ciudadanos bajo el régimen."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretar una imagen verbal como síntesis de una postura",
+      "que": "La imagen de una bota que aplasta un rostro representa la condición de una persona indefensa bajo el dominio del régimen. Resume el futuro de opresión que el defensor del orden describe.",
+      "pistas": [
+        "Relaciona la imagen con la frase sobre dominar a un enemigo indefenso.",
+        "Pregunta qué condición vivirán las personas bajo el régimen."
+      ],
+      "clave": "La opción D interpreta la frase como una ilustración de las condiciones de los ciudadanos bajo el régimen.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero La frase no enumera planes concretos para el futuro; representa las condiciones de opresión que se mantendrían."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No se describe una idea que el Partido comunique al pueblo, sino la imagen del sometimiento."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La imagen se relaciona con el poder, pero la opción D precisa su función: ilustrar cómo serán tratados los ciudadanos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona la imagen con la frase sobre dominar a un enemigo indefenso."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Pregunta qué condición vivirán las personas bajo el régimen."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «bota aplastando un rostro humano» orienta la lectura.",
+          "a": "m:bota aplastando un rostro humano"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La imagen de una bota que aplasta un rostro representa la condición de una persona indefensa bajo el dominio del régimen. Resume el futuro de opresión que el defensor del orden describe.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La imagen de una bota que aplasta un rostro representa la condición de una persona indefensa bajo el dominio del régimen. Resume el futuro de opresión que el defensor del orden describe.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: La frase no enumera planes concretos para el futuro; representa las condiciones de opresión que se mantendrían. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: No se describe una idea que el Partido comunique al pueblo, sino la imagen del sometimiento. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La imagen se relaciona con el poder, pero la opción D precisa su función: ilustrar cómo serán tratados los ciudadanos. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Relaciona la imagen con la frase sobre dominar a un enemigo indefenso.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Pregunta qué condición vivirán las personas bajo el régimen.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La imagen de una bota que aplasta un rostro representa la condición de una persona indefensa bajo el dominio del régimen. Resume el futuro de opresión que el defensor del orden describe.",
+          "a": "p:2"
+        },
+        {
+          "t": "La opción D interpreta la frase como una ilustración de las condiciones de los ciudadanos bajo el régimen.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

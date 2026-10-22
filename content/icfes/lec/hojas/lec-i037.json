@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "función cumple el tercer párrafo",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Identifica la idea general que el texto desarrolla antes del ejemplo."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Relaciona el caso de China con esa idea."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "El ejemplo de China demuestra que unir amor y matrimonio no es una asociación universal ni atemporal."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer la función de un ejemplo dentro de un texto",
+      "que": "El tercer párrafo presenta la China tradicional como ejemplo de una cultura donde el amor entre esposos podía considerarse incompatible con el matrimonio. Así muestra que la asociación entre amor y matrimonio no ha sido igual en todas las épocas y culturas.",
+      "pistas": [
+        "Identifica la idea general que el texto desarrolla antes del ejemplo.",
+        "Relaciona el caso de China con esa idea."
+      ],
+      "clave": "El ejemplo de China demuestra que unir amor y matrimonio no es una asociación universal ni atemporal.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero El párrafo menciona la China tradicional, pero no establece un paralelo desarrollado con Occidente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero La amenaza al respeto y la solidaridad se ofrece como razón particular, no como demostración de toda la función del párrafo."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero El texto no sintetiza varias culturas en ese párrafo; presenta un ejemplo específico."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica la idea general que el texto desarrolla antes del ejemplo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona el caso de China con esa idea."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «función cumple el tercer párrafo» orienta la lectura.",
+          "a": "m:función cumple el tercer párrafo"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El tercer párrafo presenta la China tradicional como ejemplo de una cultura donde el amor entre esposos podía considerarse incompatible con el matrimonio. Así muestra que la asociación entre amor y matrimonio no ha sido igual en todas las épocas y culturas.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El tercer párrafo presenta la China tradicional como ejemplo de una cultura donde el amor entre esposos podía considerarse incompatible con el matrimonio. Así muestra que la asociación entre amor y matrimonio no ha sido igual en todas las épocas y culturas.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: El párrafo menciona la China tradicional, pero no establece un paralelo desarrollado con Occidente. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: La amenaza al respeto y la solidaridad se ofrece como razón particular, no como demostración de toda la función del párrafo. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: El texto no sintetiza varias culturas en ese párrafo; presenta un ejemplo específico. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Identifica la idea general que el texto desarrolla antes del ejemplo.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Relaciona el caso de China con esa idea.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El tercer párrafo presenta la China tradicional como ejemplo de una cultura donde el amor entre esposos podía considerarse incompatible con el matrimonio. Así muestra que la asociación entre amor y matrimonio no ha sido igual en todas las épocas y culturas.",
+          "a": "p:2"
+        },
+        {
+          "t": "El ejemplo de China demuestra que unir amor y matrimonio no es una asociación universal ni atemporal.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

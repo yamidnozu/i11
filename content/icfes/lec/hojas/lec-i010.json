@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "finge enojarse",
+        "rol": "pide",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Distingue el gusto personal de la obligación social."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inferir la postura de una narradora ante un rol social",
+      "que": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
+      "pistas": [
+        "Distingue el gusto personal de la obligación social.",
+        "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
+      ],
+      "clave": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible. Pero No se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero No expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue el gusto personal de la obligación social."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «finge enojarse» orienta la lectura.",
+          "a": "m:finge enojarse"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
+          "a": "p:0"
         },
         {
+          "t": "Opción B: No se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: No expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue el gusto personal de la obligación social.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
+          "a": "p:2"
+        },
+        {
+          "t": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

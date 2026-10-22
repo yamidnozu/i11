@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "expresa un juicio de valor",
+        "rol": "pide",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Busca una expresión que valore algo como bueno, bello o deseable."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las ideas",
+        "texto": "Distingue una valoración de una descripción verificable."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Distinguir un juicio de valor de un dato",
+      "que": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor.",
+      "pistas": [
+        "Busca una expresión que valore algo como bueno, bello o deseable.",
+        "Distingue una valoración de una descripción verificable."
+      ],
+      "clave": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Contrasta los temas de dos pintores, sin valorarlos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Busca una expresión que valore algo como bueno, bello o deseable."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue una valoración de una descripción verificable."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «expresa un juicio de valor» orienta la lectura.",
+          "a": "m:expresa un juicio de valor"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Contrasta los temas de dos pintores, sin valorarlos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Busca una expresión que valore algo como bueno, bello o deseable.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue una valoración de una descripción verificable.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor.",
+          "a": "p:2"
+        },
+        {
+          "t": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

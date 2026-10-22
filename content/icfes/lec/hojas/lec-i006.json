@@ -1,110 +1,137 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "reanimación cardíaca",
+        "rol": "pide",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "campo": "Pista de lectura"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Ubica la pista",
+        "texto": "Sigue las flechas y condiciones de la infografía."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "Distingue la falta de respiración de la falta de pulso."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la respuesta",
+        "texto": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Seguir una condición en una infografía de primeros auxilios",
+      "que": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
+      "pistas": [
+        "Sigue las flechas y condiciones de la infografía.",
+        "Distingue la falta de respiración de la falta de pulso."
+      ],
+      "clave": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible. Pero Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible. Pero La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible. Pero La posición de recuperación corresponde a una víctima que sí reacciona."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Sigue las flechas y condiciones de la infografía."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Distingue la falta de respiración de la falta de pulso."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos con cuidado qué pide la pregunta.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La expresión «reanimación cardíaca» orienta la lectura.",
+          "a": "m:reanimación cardíaca"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
+          "a": "p:0"
+        },
+        {
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
+          "a": "p:0"
         },
         {
+          "t": "Opción A: Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: La posición de recuperación corresponde a una víctima que sí reacciona. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifico qué información debo localizar o interpretar.",
+          "a": "leer",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Sigue las flechas y condiciones de la infografía.",
+          "a": "p:0"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Distingue la falta de respiración de la falta de pulso.",
+          "a": "p:1"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
+          "a": "p:2"
+        },
+        {
+          "t": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "De acuerdo",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
