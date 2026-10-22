@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "detección de almidón en la papa",
+        "rol": "pide",
+        "nota": "Expresión del enunciado que orienta la tarea.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica los datos",
+        "texto": "Identifica qué sustancias tiene el experimento cuatro."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el criterio",
+        "texto": "Reconoce que contiene lugol y almidón conocido."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Relaciona el resultado con el color esperado en una detección positiva."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Reconocer un control positivo en una prueba con lugol",
+      "que": "El experimento cuatro contiene lugol y una solución que sí tiene almidón, aunque no contiene papa. Sirve como control positivo: muestra el color que debe aparecer cuando el lugol detecta almidón.",
+      "pistas": [
+        "Compara qué contiene cada experimento.",
+        "Un control positivo incluye la sustancia que se busca detectar y el reactivo."
+      ],
+      "clave": "El experimento cuatro permite establecer el color positivo esperado para detectar almidón.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite una condición. Pero La solución de almidón se usa como referencia para detectar la sustancia; el experimento no busca hacerla soluble."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite una condición. Pero El experimento dos contiene lugol sin papa ni almidón y permite observar el color del reactivo, no el resultado positivo."
+        },
+        {
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite una condición. Pero La tabla especifica una solución de almidón al $10\\%$; el papel del experimento es establecer la respuesta esperada, no comparar cantidades con la papa."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué sustancias tiene el experimento cuatro."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Reconoce que contiene lugol y almidón conocido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Relaciona el resultado con el color esperado en una detección positiva."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «detección de almidón en la papa» orienta la lectura.",
+          "a": "m:detección de almidón en la papa"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El experimento cuatro contiene lugol y una solución que sí tiene almidón, aunque no contiene papa. Sirve como control positivo: muestra el color que debe aparecer cuando el lugol detecta almidón.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El experimento cuatro contiene lugol y una solución que sí tiene almidón, aunque no contiene papa. Sirve como control positivo: muestra el color que debe aparecer cuando el lugol detecta almidón.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: La solución de almidón se usa como referencia para detectar la sustancia; el experimento no busca hacerla soluble. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: El experimento dos contiene lugol sin papa ni almidón y permite observar el color del reactivo, no el resultado positivo. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: La tabla especifica una solución de almidón al $10\\%$; el papel del experimento es establecer la respuesta esperada, no comparar cantidades con la papa. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué condición o relación pide la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El experimento cuatro contiene lugol y una solución que sí tiene almidón, aunque no contiene papa. Sirve como control positivo: muestra el color que debe aparecer cuando el lugol detecta almidón.",
+          "a": "p:1"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Relaciona el resultado con el color esperado en una detección positiva.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: La solución de almidón se usa como referencia para detectar la sustancia; el experimento no busca hacerla soluble. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: El experimento dos contiene lugol sin papa ni almidón y permite observar el color del reactivo, no el resultado positivo. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: La tabla especifica una solución de almidón al $10\\%$; el papel del experimento es establecer la respuesta esperada, no comparar cantidades con la papa. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El objetivo",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

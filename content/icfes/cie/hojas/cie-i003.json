@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "50 gramos de la sal de sodio en 40 gramos de agua",
+        "rol": "pide",
+        "nota": "Expresión del enunciado que orienta la tarea.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica los datos",
+        "texto": "Identifica una fila de la tabla con la misma proporción de sal y agua."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el criterio",
+        "texto": "Duplica ambas masas para llevarlas a las cantidades del caso."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Compara la temperatura de esa fila con la temperatura propuesta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Usar una proporción para interpretar solubilidad",
+      "que": "En los datos, a $65\\,^{\\circ}\\mathrm{C}$ se disuelven $25$ gramos de sal en $20$ gramos de agua. Al duplicar ambas cantidades se conserva la proporción: en $40$ gramos de agua pueden disolverse $50$ gramos de sal desde esa temperatura. A $83\\,^{\\circ}\\mathrm{C}$ se disolverán completamente.",
+      "pistas": [
+        "Compara la razón entre masa de sal y masa de agua.",
+        "Busca en la tabla cuándo se disuelven $25$ gramos en $20$ gramos de agua."
+      ],
+      "clave": "La suposición es incorrecta: los datos muestran que a $65\\,^{\\circ}\\mathrm{C}$ ya se disuelven esas proporciones y el caso ocurre a $83\\,^{\\circ}\\mathrm{C}$. ",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Puede parecer posible si se omite una condición. Pero Duplicar la cantidad de agua y de sal no exige duplicar la temperatura; esa relación no aparece en los datos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite una condición. Pero Tampoco se deduce que la temperatura se reduzca a la mitad al duplicar el agua. La proporción de sal y agua es la misma."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite una condición. Pero Compara la masa de sal con los datos sin ajustar la cantidad de agua; con el doble de agua, la proporción equivalente es la de $25$ gramos en $20$ gramos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica una fila de la tabla con la misma proporción de sal y agua."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Duplica ambas masas para llevarlas a las cantidades del caso."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Compara la temperatura de esa fila con la temperatura propuesta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «50 gramos de la sal de sodio en 40 gramos de agua» orienta la lectura.",
+          "a": "m:50 gramos de la sal de sodio en 40 gramos de agua"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En los datos, a $65\\,^{\\circ}\\mathrm{C}$ se disuelven $25$ gramos de sal en $20$ gramos de agua. Al duplicar ambas cantidades se conserva la proporción: en $40$ gramos de agua pueden disolverse $50$ gramos de sal desde esa temperatura. A $83\\,^{\\circ}\\mathrm{C}$ se disolverán completamente.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "En los datos, a $65\\,^{\\circ}\\mathrm{C}$ se disuelven $25$ gramos de sal en $20$ gramos de agua. Al duplicar ambas cantidades se conserva la proporción: en $40$ gramos de agua pueden disolverse $50$ gramos de sal desde esa temperatura. A $83\\,^{\\circ}\\mathrm{C}$ se disolverán completamente.",
+          "a": "p:1"
         },
         {
+          "t": "Opción A: Duplicar la cantidad de agua y de sal no exige duplicar la temperatura; esa relación no aparece en los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción B: Tampoco se deduce que la temperatura se reduzca a la mitad al duplicar el agua. La proporción de sal y agua es la misma. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Compara la masa de sal con los datos sin ajustar la cantidad de agua; con el doble de agua, la proporción equivalente es la de $25$ gramos en $20$ gramos. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué condición o relación pide la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En los datos, a $65\\,^{\\circ}\\mathrm{C}$ se disuelven $25$ gramos de sal en $20$ gramos de agua. Al duplicar ambas cantidades se conserva la proporción: en $40$ gramos de agua pueden disolverse $50$ gramos de sal desde esa temperatura. A $83\\,^{\\circ}\\mathrm{C}$ se disolverán completamente.",
+          "a": "p:1"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Compara la temperatura de esa fila con la temperatura propuesta.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción A: Duplicar la cantidad de agua y de sal no exige duplicar la temperatura; esa relación no aparece en los datos. La descarto.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción B: Tampoco se deduce que la temperatura se reduzca a la mitad al duplicar el agua. La proporción de sal y agua es la misma. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Compara la masa de sal con los datos sin ajustar la cantidad de agua; con el doble de agua, la proporción equivalente es la de $25$ gramos en $20$ gramos. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

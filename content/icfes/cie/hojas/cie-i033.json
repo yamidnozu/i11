@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "comparar los valores de las densidades de tres líquidos",
+        "rol": "pide",
+        "nota": "Expresión del enunciado que orienta la tarea.",
+        "campo": "Tarea de la pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica los datos",
+        "texto": "Compara las temperaturas usadas para cada líquido."
+      },
+      {
+        "k": "idea",
+        "titulo": "Aplica el criterio",
+        "texto": "Decide si el tipo de líquido es la única variable que cambia."
+      },
+      {
+        "k": "check",
+        "titulo": "Comprueba la conclusión",
+        "texto": "Propón mantener la temperatura constante para una comparación válida."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Diseñar una comparación justa de densidades",
+      "que": "La densidad depende de las condiciones, incluida la temperatura. Como las mediciones de agua, etanol y aceite se hicieron a temperaturas distintas, no se puede atribuir la diferencia observada solo al tipo de líquido. Para compararlos, habría que controlar la temperatura.",
+      "pistas": [
+        "Identifica qué condición debería mantenerse igual al comparar los líquidos.",
+        "La temperatura cambia entre las columnas de la tabla."
+      ],
+      "clave": "Las temperaturas distintas impiden una comparación justa de las densidades entre líquidos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Puede parecer posible si se omite una condición. Pero La tabla ya presenta densidades; cambiar el volumen no corrige la diferencia de temperaturas entre líquidos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Puede parecer posible si se omite una condición. Pero Añadir mediciones a temperaturas más altas no resuelve que las mediciones actuales se hicieron en condiciones distintas."
+        },
+        {
+          "t": "Opción D",
+          "p": "Puede parecer posible si se omite una condición. Pero Que los líquidos tengan propiedades diferentes no impide comparar sus densidades si se controlan las condiciones del experimento."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara las temperaturas usadas para cada líquido."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Decide si el tipo de líquido es la única variable que cambia."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Propón mantener la temperatura constante para una comparación válida."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La frase «comparar los valores de las densidades de tres líquidos» orienta la lectura.",
+          "a": "m:comparar los valores de las densidades de tres líquidos"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La densidad depende de las condiciones, incluida la temperatura. Como las mediciones de agua, etanol y aceite se hicieron a temperaturas distintas, no se puede atribuir la diferencia observada solo al tipo de líquido. Para compararlos, habría que controlar la temperatura.",
+          "a": "p:1"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La densidad depende de las condiciones, incluida la temperatura. Como las mediciones de agua, etanol y aceite se hicieron a temperaturas distintas, no se puede atribuir la diferencia observada solo al tipo de líquido. Para compararlos, habría que controlar la temperatura.",
+          "a": "p:1"
         },
         {
+          "t": "Opción B: La tabla ya presenta densidades; cambiar el volumen no corrige la diferencia de temperaturas entre líquidos. La descartamos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C: Añadir mediciones a temperaturas más altas no resuelve que las mediciones actuales se hicieron en condiciones distintas. La descartamos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción D: Que los líquidos tengan propiedades diferentes no impide comparar sus densidades si se controlan las condiciones del experimento. La descartamos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
+          "a": "leer"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Primero identifico qué condición o relación pide la pregunta.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La densidad depende de las condiciones, incluida la temperatura. Como las mediciones de agua, etanol y aceite se hicieron a temperaturas distintas, no se puede atribuir la diferencia observada solo al tipo de líquido. Para compararlos, habría que controlar la temperatura.",
+          "a": "p:1"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Propón mantener la temperatura constante para una comparación válida.",
+          "a": "p:2",
+          "k": "contra"
+        },
+        {
+          "t": "Opción B: La tabla ya presenta densidades; cambiar el volumen no corrige la diferencia de temperaturas entre líquidos. La descarto.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción C: Añadir mediciones a temperaturas más altas no resuelve que las mediciones actuales se hicieron en condiciones distintas. La descarto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "Opción D: Que los líquidos tengan propiedades diferentes no impide comparar sus densidades si se controlan las condiciones del experimento. La descarto.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta es la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
