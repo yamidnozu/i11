@@ -193,3 +193,11 @@
 - La duración visible es una estimación de práctica de un minuto por pregunta, no tiempo oficial.
 - Se comprobó que cada unidad conserva sus preguntas completas sin marcar el simulacro como `unidad.sim` (ese campo reserva el enlace para laboratorios).
 - Se forzó la reconstrucción de mpaquetar para los siete cuadernillos; cada salida conservó su SHA-256.
+
+
+## Pipeline documental — Inglés y cuadernillo mixto (2026-10-22)
+- Añadidos los plugins `ingles` y `mixto2014`, configurados para los tres cuadernillos de Inglés y el cuadernillo de 2014.
+- Inglés: 150 posiciones con clave, numeración correlativa única y dos secciones de 25 por documento. Cuadernillo 2014: 121 preguntas con clave en cinco áreas; cuatro posiciones `N/A` quedan excluidas de la selección múltiple.
+- Se generaron 271 hojas borrador mediante lotes reanudables de diez. Todas esas preguntas conservan `revisar`; no se presentan como aprobadas.
+- Asociadas las 98 preguntas de Matemáticas y Sociales 2018 con competencia, afirmación y evidencia del marco mediante overrides persistentes.
+- La validación preserva paquetes multisección y las transcripciones `documento.json` existentes. Vitest gated: 811/811; TypeScript y builds normal/gated pasan.
