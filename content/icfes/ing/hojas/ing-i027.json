@@ -1,130 +1,186 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "People pay to take this public transport by road.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee y observa",
+        "texto": "Fíjate en {{People pay to take this public transport by road.}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las pistas",
+        "texto": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inglés: lectura y uso del lenguaje",
+      "que": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
+      "clave": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
+      "pistas": [
+        "Fíjate en {{People pay to take this public transport by road.}}.",
+        "Contrasta el sentido con el pasaje, la descripción o el aviso."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero, {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero, {{bike}} se monta y pedalea, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "t": "Opción E",
+          "p": "Pero, {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "t": "Opción F",
+          "p": "Pero, {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "t": "Opción G",
+          "p": "Pero, {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué información pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Contrasta las pistas con el pasaje, la descripción o la imagen."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos la información disponible."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:People pay to take this public transport by road.",
+          "t": "Fíjate en {{People pay to take this public transport by road.}}."
+        },
+        {
+          "a": "p:1",
+          "t": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la pista que permite responder."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no encaja: {{bike}} se monta y pedalea, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:E:no",
           "k": "err",
-          "t": "La opción E queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción E no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:F:no",
           "k": "err",
-          "t": "La opción F queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción F no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:G:no",
           "k": "err",
-          "t": "La opción G queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:H:no",
-          "k": "err",
-          "t": "La opción H queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica qué pista del contexto respalda la respuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: {{bike}} se monta y pedalea, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "a": "o:E:no",
+          "k": "err",
+          "t": "La opción E no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "a": "o:F:no",
+          "k": "err",
+          "t": "La opción F no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+        },
+        {
+          "a": "o:G:no",
+          "k": "err",
+          "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "People pay",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

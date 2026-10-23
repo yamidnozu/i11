@@ -1,92 +1,111 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "clave": "La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero no se menciona una disponibilidad en museos.",
           "t": "Opción A"
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero no se menciona una cafetería.",
           "t": "Opción B"
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Fíjate en {{can be found}}.",
+        "Vuelve al pasaje y distingue la información explícita de una alternativa que solo comparte una palabra."
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué información busca el reactivo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Localiza en el pasaje la frase que responde y conserva su sentido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta cada alternativa con esa evidencia y descarta las que cambian el dato."
         }
       ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      "que": "La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería.",
+      "tema": "Inglés: comprensión del texto y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos qué información pide la pregunta."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:can be found",
+          "t": "Fíjate en {{can be found}} y busca esa pista en el pasaje."
+        },
+        {
+          "a": "p:1",
+          "t": "La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Ubica la frase del pasaje que responde la pregunta."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no coincide: No se menciona una disponibilidad en museos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no coincide: No se menciona una cafetería."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero decide qué evidencia responde {{can be found}}."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Ahora explica por qué esa evidencia coincide con la alternativa elegida."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no coincide: No se menciona una disponibilidad en museos."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no coincide: No se menciona una cafetería."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C; vuelve a comprobarla en el pasaje."
         }
       ]
     },
     "marcas": [
       {
-        "campo": "Fragmento por revisar",
-        "frag": "The Last",
-        "nota": "Fragmento automático; revisar su función.",
+        "campo": "Pista de lectura",
+        "frag": "can be found",
+        "nota": "Esta expresión acota la información que hay que localizar en el pasaje.",
         "rol": "pide"
       }
     ],
@@ -94,11 +113,17 @@
     "pasos": [
       {
         "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+        "texto": "La expresión {{can be found}} indica qué dato debes comprobar en el pasaje.",
+        "titulo": "Localiza la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería.",
+        "titulo": "Comprueba el sentido"
       },
       {
         "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+        "texto": "Comprueba la respuesta: La última oración informa que {{The Last Book}} está disponible en tiendas en línea. Por eso la alternativa C, {{on the web}}, coincide con el texto; no se menciona un museo ni una cafetería."
       }
     ]
   }

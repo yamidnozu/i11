@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Stopping painting was",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{Stopping painting was}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+      "clave": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+      "pistas": [
+        "Localiza {{Stopping painting was}} en el pasaje.",
+        "Relaciona esa pista con la información que el autor presenta."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, El texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:Stopping painting was",
+          "t": "Fíjate en {{Stopping painting was}}."
+        },
+        {
+          "a": "p:1",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{her mother's order.}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no corresponde: El texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corresponde: La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{her mother's order.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El texto no dice que el pintor decidiera que ella dejara de pintar."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La evidencia respalda {{her mother's order.}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Stopping painting",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

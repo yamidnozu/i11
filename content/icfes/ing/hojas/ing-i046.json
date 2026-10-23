@@ -1,110 +1,144 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What can a reader find out from this text?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{What can a reader find out from this text?}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+      "clave": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+      "pistas": [
+        "Localiza {{What can a reader find out from this text?}} en el pasaje.",
+        "Relaciona esa pista con la información que el autor presenta."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción A",
+          "p": "Pero, El artículo no explica cómo cultivar café."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción B",
+          "p": "Pero, No se indica cuál es la mejor época para visitar la finca."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero, El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:What can a reader find out from this text?",
+          "t": "Fíjate en {{What can a reader find out from this text?}}."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "a": "p:1",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta es {{what the accommodation price includes.}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no corresponde: El artículo no explica cómo cultivar café."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no corresponde: No se indica cuál es la mejor época para visitar la finca."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción D no corresponde: El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "a": "o:C:ok",
+          "t": "{{what the accommodation price includes.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El artículo no explica cómo cultivar café."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: No se indica cuál es la mejor época para visitar la finca."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no encaja: El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La evidencia respalda {{what the accommodation price includes.}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "What can",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,117 +1,111 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "clave": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, Pregunta si se desea algo más, no indica el precio.",
           "t": "Opción A"
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, Menciona que solo se paga en efectivo, pero no responde cuánto cuesta.",
           "t": "Opción C"
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Fíjate en {{How much}}.",
+        "Lee la oración completa dentro del bloque compartido antes de elegir."
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué parte de la conversación o de la oración está incompleta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa el contexto cercano para decidir qué respuesta o forma encaja."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta las opciones y confirma que solo una conserva el sentido y la gramática."
         }
       ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      "que": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos el enunciado y la oración completa."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:How much",
+          "t": "Fíjate en {{How much}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la pista en la respuesta o en el bloque compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: Pregunta si se desea algo más, no indica el precio."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:E:no",
-          "k": "err",
-          "t": "La opción E queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:F:no",
-          "k": "err",
-          "t": "La opción F queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:G:no",
-          "k": "err",
-          "t": "La opción G queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:H:no",
-          "k": "err",
-          "t": "La opción H queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no encaja: Menciona que solo se paga en efectivo, pero no responde cuánto cuesta."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica por qué {{How much}} orienta la respuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba la forma y el sentido de la frase completa."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: Pregunta si se desea algo más, no indica el precio."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: Menciona que solo se paga en efectivo, pero no responde cuánto cuesta."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B; vuelve a comprobarla en el contexto."
         }
       ]
     },
     "marcas": [
       {
-        "campo": "Fragmento por revisar",
-        "frag": "(Enunciado de",
-        "nota": "Fragmento automático; revisar su función.",
+        "campo": "Pista de lectura",
+        "frag": "How much",
+        "nota": "Esta frase indica qué sentido o forma gramatical debes comprobar.",
         "rol": "pide"
       }
     ],
@@ -119,11 +113,17 @@
     "pasos": [
       {
         "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+        "texto": "Fíjate en {{How much}} y lee la oración completa para reconocer la relación que falta.",
+        "titulo": "Lee el contexto"
+      },
+      {
+        "k": "idea",
+        "texto": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago.",
+        "titulo": "Compara las opciones"
       },
       {
         "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+        "texto": "Comprueba tu elección: La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago."
       }
     ]
   }

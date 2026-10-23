@@ -1,110 +1,144 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What is the writer trying to do in this article?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{What is the writer trying to do in this article?}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la evidencia",
+        "texto": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+      "clave": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+      "pistas": [
+        "Localiza {{What is the writer trying to do in this article?}} en el pasaje.",
+        "Relaciona esa pista con la información que el autor presenta."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero, El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero, El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:What is the writer trying to do in this article?",
+          "t": "Fíjate en {{What is the writer trying to do in this article?}}."
+        },
+        {
+          "a": "p:1",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{encouraging tourists to visit Colombia.}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no corresponde: El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corresponde: El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción D no corresponde: El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{encouraging tourists to visit Colombia.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no encaja: El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La evidencia respalda {{encouraging tourists to visit Colombia.}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "What is",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

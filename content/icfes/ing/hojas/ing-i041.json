@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "She was mostly excited by the",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{She was mostly excited by the}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
+      "clave": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
+      "pistas": [
+        "Localiza {{She was mostly excited by the}} en la información fuente.",
+        "Relaciona la pista con una evidencia explícita del texto."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero, El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:She was mostly excited by the",
+          "t": "Fíjate en {{She was mostly excited by the}}."
+        },
+        {
+          "a": "p:1",
+          "t": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta correcta es {{painter's ability.}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no corresponde: El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corresponde: El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción {{painter's ability.}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La evidencia respalda {{painter's ability.}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "She was",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

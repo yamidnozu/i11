@@ -1,130 +1,186 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "You wear this when you go to bed.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la descripción",
+        "texto": "Fíjate en {{You wear this when you go to bed.}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la palabra",
+        "texto": "{{pajamas}} significa pijama y coincide con la descripción: esta pista indica la ropa para dormir."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{pajamas}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inglés: lectura y uso del lenguaje",
+      "que": "{{pajamas}} significa pijama y coincide con la descripción: esta pista indica la ropa para dormir.",
+      "clave": "{{pajamas}} significa pijama y coincide con la descripción: esta pista indica la ropa para dormir.",
+      "pistas": [
+        "Fíjate en {{You wear this when you go to bed.}}.",
+        "Compara la característica con el significado de cada palabra."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, {{glasses}} significa gafas; esa palabra no corresponde a la ropa para dormir."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero, {{handbags}} significa bolsos; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero, {{hat}} significa sombrero; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "t": "Opción E",
+          "p": "Pero, {{scarf}} significa bufanda; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "t": "Opción F",
+          "p": "Pero, {{skirt}} significa falda; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "t": "Opción G",
+          "p": "Pero, {{socks}} significa medias; esa palabra no corresponde a la ropa para dormir."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica la característica descrita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona esa característica con el significado de las palabras."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos la descripción completa."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:You wear this when you go to bed.",
+          "t": "Fíjate en {{You wear this when you go to bed.}}."
+        },
+        {
+          "a": "p:1",
+          "t": "{{pajamas}} significa pijama y coincide con la descripción: esta pista indica la ropa para dormir."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{pajamas}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la característica que describe el enunciado."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "{{pajamas}} significa pijama y coincide con la descripción: esta pista indica la ropa para dormir."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción c no encaja: {{hat}} significa sombrero; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:E:no",
           "k": "err",
-          "t": "La opción E queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción e no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:F:no",
           "k": "err",
-          "t": "La opción F queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción f no encaja: {{skirt}} significa falda; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:G:no",
           "k": "err",
-          "t": "La opción G queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:H:no",
-          "k": "err",
-          "t": "La opción H queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción g no encaja: {{socks}} significa medias; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{pajamas}}."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica por qué {{You wear this when you go to bed.}} aporta la característica decisiva."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba el significado de la palabra elegida en el contexto."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción c no encaja: {{hat}} significa sombrero; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "a": "o:E:no",
+          "k": "err",
+          "t": "La opción e no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "a": "o:F:no",
+          "k": "err",
+          "t": "La opción f no encaja: {{skirt}} significa falda; esa palabra no corresponde a la ropa para dormir."
+        },
+        {
+          "a": "o:G:no",
+          "k": "err",
+          "t": "La opción g no encaja: {{socks}} significa medias; esa palabra no corresponde a la ropa para dormir."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{pajamas}}; vuelve a comprobarla con la descripción."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "You wear",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
