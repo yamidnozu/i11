@@ -1,110 +1,140 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "ingresos entre $0$ y $1$ SMMLV",
+        "rol": "dato",
+        "nota": "A ese intervalo le corresponden veintidós SMMLV de subsidio.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "subsidio equivalente a",
+        "rol": "pide",
+        "nota": "Encuentra la razón respecto a otro rango.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee el subsidio de cada rango que aparece en las alternativas.",
+        "texto": "Lee el subsidio de cada rango que aparece en las alternativas."
+      },
+      {
+        "k": "calc",
+        "titulo": "Divide veintidós entre el subsidio de cada intervalo.",
+        "lineas": [
+          "$22/4=5,5$"
+        ],
+        "nota": "Divide veintidós entre el subsidio de cada intervalo."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El rango de tres coma cinco a cuatro recibe cuatro; la razón es cinco coma cinco. Respuesta D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Razón entre subsidios de dos rangos",
+      "que": "Compara el subsidio del rango más bajo con los valores de los otros intervalos.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Veintidós dividido entre cuatro es cinco coma cinco.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "El subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "El segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós."
+        },
+        {
+          "t": "Opción C",
+          "p": "El subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee el subsidio de cada rango que aparece en las alternativas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Divide veintidós entre el subsidio de cada intervalo."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El rango de tres coma cinco a cuatro recibe cuatro; la razón es cinco coma cinco. Respuesta D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuánto recibe la familia del rango de cero a un SMMLV?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Veintidós. El rango de tres coma cinco a cuatro recibe cuatro."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Veintidós dividido entre cuatro es cinco coma cinco; D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Busca en la tabla el valor del subsidio para cada rango de las opciones."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Solo el valor cuatro produce la razón $22/4=5,5$."
         },
         {
+          "t": "La opción A: El subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: El segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: El subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no coinciden con los valores de sus intervalos. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La primera familia recibe veintidós SMMLV.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El rango de tres coma cinco a cuatro recibe cuatro SMMLV.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La razón entre los subsidios es $22/4=5,5$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C proponen razones distintas a las calculadas con la tabla.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una familia",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

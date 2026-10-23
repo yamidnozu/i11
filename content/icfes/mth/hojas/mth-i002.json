@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "tasa de cambio del dólar respecto al peso colombiano se mantendrá constante",
+        "rol": "dato",
+        "nota": "La conversión usa el mismo factor durante el periodo.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "$3\\%$ en el mismo periodo",
+        "rol": "dato",
+        "nota": "Es la proporción de crecimiento en dólares.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "en pesos sus ganancias también serán del $3\\%$",
+        "rol": "pide",
+        "nota": "Evalúa si la proporción se conserva al convertir la inversión.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia.",
+        "texto": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia."
+      },
+      {
+        "k": "calc",
+        "titulo": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor.",
+        "lineas": [
+          "$P_{COP}=2.000P_{USD}$",
+          "$1,03P_{COP}=2.000(1,03P_{USD})$"
+        ],
+        "nota": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La proporción sigue siendo tres por ciento en pesos; la respuesta es C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Porcentajes y tasa de cambio constante",
+      "que": "Decide si el porcentaje de crecimiento se conserva al expresar la inversión en otra moneda.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Una conversión con tasa fija multiplica por la misma constante el capital y su ganancia.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante."
+        },
+        {
+          "t": "Opción D",
+          "p": "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La proporción sigue siendo tres por ciento en pesos; la respuesta es C."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Si cada dólar siempre vale dos mil pesos, ¿la conversión cambia el porcentaje de aumento?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "No; multiplica tanto el capital como la ganancia por el mismo factor."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La ganancia en pesos conserva el tres por ciento. La respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Llama $P$ al capital inicial en dólares y multiplícalo por uno coma cero tres para incluir la ganancia."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al convertir ambos valores a pesos, se multiplican por dos mil y su proporción de aumento sigue igual."
         },
         {
+          "t": "La opción A: La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A ignora la condición de tasa fija; B pide un monto innecesario; D confunde valor absoluto con porcentaje. La respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Con una tasa constante, convertir dólares a pesos equivale a multiplicar por una constante.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Esa constante afecta al capital y al monto con ganancia por igual, así que el cociente entre ambos sigue reflejando un aumento de tres por ciento.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La afirmación del amigo es correcta bajo la condición indicada.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y D no consideran que el factor de cambio permanece fijo.",
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una persona",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

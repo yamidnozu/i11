@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "más los ahorros con los que cuente el grupo familiar",
+        "rol": "dato",
+        "nota": "Los ahorros aportan al pago de la vivienda.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "el crédito que obtenga de una entidad financiera",
+        "rol": "dato",
+        "nota": "El crédito cubre el saldo pendiente.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "valor del crédito que debe solicitarse al banco",
+        "rol": "pide",
+        "nota": "Despeja el valor faltante del precio de la vivienda.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Escribe el precio como suma de los tres aportes.",
+        "texto": "Escribe el precio como suma de los tres aportes."
+      },
+      {
+        "k": "calc",
+        "titulo": "Despeja el crédito de la igualdad.",
+        "lineas": [
+          "$vivienda=ahorros+subsidio+crédito$",
+          "$crédito=vivienda-ahorros-subsidio$"
+        ],
+        "nota": "Despeja el crédito de la igualdad."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Se restan del precio los otros dos aportes; corresponde a B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ecuación de presupuesto para una vivienda",
+      "que": "Despeja el crédito requerido a partir del precio, los ahorros y el subsidio.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Crédito = precio de la vivienda − ahorros − subsidio.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio."
+        },
+        {
+          "t": "Opción D",
+          "p": "Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Escribe el precio como suma de los tres aportes."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Despeja el crédito de la igualdad."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Se restan del precio los otros dos aportes; corresponde a B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué recursos se suman para completar el precio de la vivienda?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Los ahorros, el subsidio y el crédito. El crédito cubre lo que falta."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Resta ahorros y subsidio al precio. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representa el precio como la suma de los tres aportes disponibles."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al despejar el crédito, resta del precio los ahorros y el subsidio."
         },
         {
+          "t": "La opción A: Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A suma recursos al precio; C incorpora ingresos; D suma el subsidio en vez de restarlo. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El precio de la vivienda se cubre con ahorros, subsidio y crédito.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Al aislar el crédito, queda el precio menos los ahorros y menos el subsidio.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La expresión corresponde a la opción B.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no despejan el aporte faltante.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Con el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

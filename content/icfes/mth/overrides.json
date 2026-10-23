@@ -22,7 +22,8 @@
       "También marca la multiplicación, aunque la operación indicada es válida para el dato recibido.",
       "Acepta el conteo de 10 tramos, pero hay 9.",
       "Marca la parada intermedia, que sí suma 30 segundos."
-    ]
+    ],
+    "revisar": []
   },
   "mth-i003": {
     "revisar": [],
@@ -543,6 +544,91 @@
           }
         ],
         "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39."
+      },
+      {
+        "id": "mth-sfv-2018",
+        "area": "matematicas",
+        "encabezado": "RESPONDA LAS PREGUNTAS 43 A 45 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN",
+        "texto": "El subsidio familiar de vivienda (SFV) es un aporte que entrega el Estado y que constituye un complemento del ahorro, para facilitarle la adquisición, construcción o mejoramiento de una solución de vivienda de interés social al ciudadano. La tabla presenta los ingresos en salarios mínimos mensuales legales vigentes (SMMLV) y el subsidio al que se tiene derecho, para cierto año. Con el SFV más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda.",
+        "figuras": [
+          {
+            "tipo": "tabla",
+            "alt": "Ingresos por rangos y valor del subsidio familiar de vivienda",
+            "cols": [
+              "Ingreso desde (SMMLV)",
+              "Ingreso hasta (SMMLV)",
+              "Valor SFV desde (pesos)",
+              "Valor SFV hasta (pesos)",
+              "Subsidio (SMMLV)"
+            ],
+            "filas": [
+              [
+                "0",
+                "1",
+                "0",
+                "535.600",
+                "22"
+              ],
+              [
+                "1",
+                "1,5",
+                "535.601",
+                "803.400",
+                "21,5"
+              ],
+              [
+                "1,5",
+                "2",
+                "803.401",
+                "1.071.200",
+                "21"
+              ],
+              [
+                "2",
+                "2,25",
+                "1.071.201",
+                "1.205.100",
+                "19"
+              ],
+              [
+                "2,25",
+                "2,5",
+                "1.205.101",
+                "1.339.000",
+                "17"
+              ],
+              [
+                "2,5",
+                "2,75",
+                "1.339.001",
+                "1.472.900",
+                "15"
+              ],
+              [
+                "2,75",
+                "3",
+                "1.472.901",
+                "1.606.800",
+                "13"
+              ],
+              [
+                "3",
+                "3,5",
+                "1.606.801",
+                "1.874.600",
+                "9"
+              ],
+              [
+                "3,5",
+                "4",
+                "1.874.601",
+                "2.142.400",
+                "4"
+              ]
+            ]
+          }
+        ],
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
       }
     ]
   },
@@ -1463,5 +1549,256 @@
     ],
     "revisar": [],
     "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 41."
+  },
+  "mth-i002": {
+    "enunciado": "Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo $1$ dólar equivalente a $2.000$ pesos colombianos y que su inversión, en dólares, le dará ganancias del $3\\%$ en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del $3\\%$. La afirmación de su amigo es",
+    "opciones": [
+      "correcta, pues, sin importar las variaciones en la tasa de cambio, la proporción en que aumenta la inversión en dólares es la misma que en pesos.",
+      "incorrecta, pues debería conocerse el valor exacto de la inversión para poder calcular la cantidad de dinero que ganará.",
+      "correcta, pues el $3\\%$ representa una proporción fija en cualquiera de las dos monedas, puesto que la tasa de cambio permanecerá constante.",
+      "incorrecta, pues el $3\\%$ representa un incremento, que será mayor en pesos colombianos, pues en esta moneda cada dólar representa un valor $2.000$ veces mayor."
+    ],
+    "explicacion": "Como la tasa de cambio permanece constante, convertir a pesos tanto el valor inicial como la ganancia conserva la misma proporción. Si el monto en dólares aumenta en tres por ciento, su equivalente en pesos también aumenta en tres por ciento. La respuesta es C.",
+    "distractores": [
+      "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
+      "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
+      "",
+      "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
+    ],
+    "revisar": []
+  },
+  "mth-i042": {
+    "enunciado": "El área de los rectángulos que se pueden construir a partir del origen, los ejes y un punto que pertenece a la gráfica de la función $f(x)=5/x$, donde $x>0$, se describe con la expresión $A_x=x f(x)$. ¿Cuál de las siguientes gráficas corresponde a $A_x$?",
+    "opciones": [
+      "Gráfica lineal creciente que parte del origen.",
+      "Recta horizontal con valor $5$.",
+      "Curva creciente que parte del origen.",
+      "Curva decreciente que parte de $5$."
+    ],
+    "explicacion": "Al sustituir $f(x)=5/x$ en $A_x=x f(x)$, se obtiene $A_x=x(5/x)=5$ para todo $x>0$. Por tanto, la gráfica es una recta horizontal en $y=5$, la opción B.",
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i042-figura.png",
+        "alt": "Gráfica de f(x)=5/x y rectángulo construido con el origen, los ejes y un punto de la curva",
+        "recorteFuente": {
+          "pagina": 23,
+          "rect": [
+            230,
+            165,
+            380,
+            285
+          ]
+        }
+      }
+    ],
+    "opcionesFig": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-a.png",
+        "alt": "Opción A: recta creciente que parte del origen",
+        "recorteFuente": {
+          "pagina": 23,
+          "rect": [
+            145,
+            322,
+            260,
+            395
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-b.png",
+        "alt": "Opción B: recta horizontal en y=5",
+        "recorteFuente": {
+          "pagina": 23,
+          "rect": [
+            145,
+            400,
+            260,
+            482
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-c.png",
+        "alt": "Opción C: curva creciente desde el origen",
+        "recorteFuente": {
+          "pagina": 23,
+          "rect": [
+            145,
+            488,
+            260,
+            578
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-d.png",
+        "alt": "Opción D: curva decreciente que parte de y=5",
+        "recorteFuente": {
+          "pagina": 23,
+          "rect": [
+            145,
+            582,
+            260,
+            690
+          ]
+        }
+      }
+    ],
+    "distractores": [
+      "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
+      "",
+      "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
+      "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
+    ],
+    "revisar": [],
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 42."
+  },
+  "mth-i043": {
+    "enunciado": "Con el subsidio familiar de vivienda (SFV), más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda. Por tanto, el procedimiento correcto para estimar el valor del crédito que debe solicitarse al banco es:",
+    "opciones": [
+      "Valor del crédito = ingresos + ahorros + subsidio + valor de la vivienda.",
+      "Valor del crédito = valor de la vivienda − ahorros − subsidio.",
+      "Valor del crédito = ingresos + ahorros − subsidio + valor de la vivienda.",
+      "Valor del crédito = valor de la vivienda + subsidio − ahorros."
+    ],
+    "explicacion": "El costo de la vivienda se cubre con los ahorros, el subsidio y el crédito. Al despejar el crédito, se resta del valor de la vivienda tanto el ahorro como el subsidio. La respuesta es B.",
+    "distractores": [
+      "Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario.",
+      "",
+      "Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio.",
+      "Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
+    ],
+    "revisar": [],
+    "bloque": "mth-sfv-2018",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+  },
+  "mth-i044": {
+    "enunciado": "Una persona que observa la información de la tabla elabora la gráfica que se presenta a continuación. La gráfica presenta una inconsistencia porque",
+    "opciones": [
+      "los ingresos y el subsidio correspondientes se dan en miles de pesos, y no en SMMLV.",
+      "la correspondencia entre ingresos y subsidios es inversa, pero no disminuye de manera constante y continua.",
+      "faltan algunos valores de los subsidios presentados en la tabla.",
+      "los valores del subsidio deben ser ascendentes, pues a menores ingresos, mayor es el subsidio."
+    ],
+    "explicacion": "La tabla asigna un subsidio fijo a cada intervalo de ingresos; los valores cambian por tramos y no de manera continua. La gráfica une esos valores con una recta decreciente, así que representa una variación constante que la tabla no indica. La respuesta es B.",
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i044-grafica.png",
+        "alt": "Gráfica continua decreciente de ingresos y subsidio en SMMLV",
+        "recorteFuente": {
+          "pagina": 24,
+          "rect": [
+            175,
+            495,
+            380,
+            610
+          ]
+        }
+      }
+    ],
+    "distractores": [
+      "La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla.",
+      "",
+      "La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo.",
+      "El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
+    ],
+    "revisar": [],
+    "bloque": "mth-sfv-2018",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+  },
+  "mth-i045": {
+    "enunciado": "Una familia con ingresos entre $0$ y $1$ SMMLV recibe un subsidio equivalente a",
+    "opciones": [
+      "$1,4$ veces el subsidio de una familia de ingresos entre $2$ y $2,25$ SMMLV.",
+      "$1,8$ veces el subsidio de una familia de ingresos entre $2,5$ y $2,75$ SMMLV.",
+      "$3,5$ veces el subsidio de una familia de ingresos entre $3$ y $3,5$ SMMLV.",
+      "$5,5$ veces el subsidio de una familia de ingresos entre $3,5$ y $4$ SMMLV."
+    ],
+    "explicacion": "El subsidio del primer rango es de $22$ SMMLV. Para ingresos entre $3,5$ y $4$ SMMLV, el subsidio es de $4$ SMMLV, y $22/4=5,5$. La respuesta es D.",
+    "distractores": [
+      "El subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios.",
+      "El segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós.",
+      "El subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla.",
+      ""
+    ],
+    "revisar": [],
+    "bloque": "mth-sfv-2018",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+  },
+  "mth-i046": {
+    "enunciado": "Un colegio necesita enviar $5$ estudiantes como representantes a un foro sobre la contaminación del medio ambiente. Se decidió que $2$ estudiantes sean de grado décimo y $3$ de grado undécimo. En décimo hay $5$ estudiantes preparados para el foro y en undécimo hay $4$. ¿Cuántos grupos diferentes pueden formarse para enviar al foro?",
+    "opciones": [
+      "$9$",
+      "$14$",
+      "$20$",
+      "$40$"
+    ],
+    "explicacion": "Se eligen dos de los cinco estudiantes de décimo, lo que da $\binom{5}{2}=10$ posibilidades, y tres de los cuatro de undécimo, lo que da $\binom{4}{3}=4$. Cada elección de un grupo se combina con cada elección del otro: $10×4=40$. La respuesta es D.",
+    "distractores": [
+      "Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo.",
+      "No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo.",
+      "Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan.",
+      ""
+    ],
+    "revisar": []
+  },
+  "mth-i047": {
+    "enunciado": "Entre los $16$ estudiantes de un salón de clases se va a rifar una boleta para ingresar a un parque de diversiones. Cada estudiante escoge un número del $3$ al $18$. Se depositan seis balotas numeradas del $1$ al $6$ en una urna; se extrae una balota, se mira el número y se vuelve a depositar. El experimento se repite dos veces más. La suma de los tres puntajes determina el número ganador. Si en la primera extracción se obtuvo $2$, es más probable que gane quien escogió el número $10$ que quien escogió el número $7$, porque",
+    "opciones": [
+      "al ser mayor el número escogido, es mayor la probabilidad de ganar.",
+      "el primer estudiante tiene una posibilidad más de ganar que el segundo.",
+      "es más probable seguir obteniendo números pares.",
+      "es mayor la diferencia entre $10$ y $18$ que entre $2$ y $7$."
+    ],
+    "explicacion": "Después de obtener dos, para llegar a diez los dos puntajes restantes deben sumar ocho. Hay cinco pares ordenados posibles: $(2,6)$, $(3,5)$, $(4,4)$, $(5,3)$ y $(6,2)$. Para llegar a siete deben sumar cinco; hay cuatro pares. Por eso el diez tiene una posibilidad más. La respuesta es B.",
+    "distractores": [
+      "El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas.",
+      "",
+      "No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma.",
+      "La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
+    ],
+    "revisar": []
+  },
+  "mth-i048": {
+    "enunciado": "La expresión $10^3=I/I_0$ relaciona la sonoridad de un sonido de $30$ decibeles con su intensidad $I$ y la menor intensidad $I_0$ que percibe el oído humano. ¿Cuántas veces es el valor de $I$ respecto a $I_0$?",
+    "opciones": [
+      "Una milésima.",
+      "Un tercio.",
+      "Tres veces.",
+      "Mil veces."
+    ],
+    "explicacion": "La igualdad indica que el cociente $I/I_0$ es $10^3$, es decir, mil. Por tanto, la intensidad $I$ equivale a mil veces la intensidad mínima $I_0$. La respuesta es D.",
+    "distractores": [
+      "Una milésima sería $10^{-3}$, el recíproco de la razón indicada. Pero la expresión da mil.",
+      "Un tercio no se obtiene de la potencia de diez que aparece en la igualdad. Pero la razón es $10^3$.",
+      "Tres es el exponente, no el resultado de elevar diez a esa potencia. Pero $10^3$ vale mil.",
+      ""
+    ],
+    "revisar": []
+  },
+  "mth-i049": {
+    "enunciado": "En determinada zona de una ciudad se construyen edificios de apartamentos en los que cada metro cuadrado tiene un costo de $800.000$, y se asegura a los compradores que en esta zona anualmente, el metro cuadrado se valoriza un $5\\%$ respecto al costo del año anterior. ¿Con cuál de las siguientes expresiones se representa el costo de un metro cuadrado en esa zona, transcurridos $n$ años?",
+    "opciones": [
+      "$800.000+5n$",
+      "$800.000(5n)$",
+      "$800.000(5/100)^n$",
+      "$800.000(1+5/100)^n$"
+    ],
+    "explicacion": "Cada año el costo se multiplica por $1+5/100=1,05$. Después de $n$ años, ese factor se aplica $n$ veces al costo inicial: $800.000(1+5/100)^n$. La respuesta es D.",
+    "distractores": [
+      "Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta.",
+      "Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco.",
+      "Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa.",
+      ""
+    ],
+    "revisar": [],
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 49."
   }
 }

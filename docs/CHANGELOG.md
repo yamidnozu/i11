@@ -173,3 +173,9 @@
 - Se actualizaron el informe, el contexto y la guía del pipeline. `npx tsc --noEmit` pasó; `VITE_ICFES=1 npx vitest run`: 501/501; builds normal y con gate pasaron (se conserva el aviso de tamaño de chunk).
 - La pregunta `mth-i001` se cotejó visualmente contra la página fuente y el render; se asoció el recorte vectorial de las rutas y se sustituyó su hoja genérica por una solución revisada de tres niveles. Quedan 97 hojas borrador entre ambas pruebas de 2018.
 - Validación final de este lote: TypeScript pasó, Vitest gated **540/540**, y los builds estándar y gated compilaron; persiste la advertencia de chunk superior a 300 kB.
+
+
+## Pipeline documental — cierre de Matemáticas 2018 (2026-10-22)
+- Se completaron las hojas de las preguntas 2 y 42–49, con tabla compartida de subsidios (43–45) y figuras verificadas para 42 y 44.
+- Matemáticas 2018 queda con 49/49 hojas revisadas y sin marcas `revisar`; el saldo real pasa a 49 hojas borrador, todas de Sociales 2018.
+- Verificación: `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` (540/540), build normal y gated, y reconstrucción forzada con hash idéntico `76f949eeff538a2b73122645954483e2a88d5f212b50e3cf1107c109f05fe229`.

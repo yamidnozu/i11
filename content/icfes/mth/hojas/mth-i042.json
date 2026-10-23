@@ -1,110 +1,146 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "gráfica de la función $f(x)=5/x$",
+        "rol": "dato",
+        "nota": "La altura del rectángulo corresponde a esta función.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "expresión $A_x=x f(x)$",
+        "rol": "dato",
+        "nota": "El área es el producto de la base y la altura.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "gráficas corresponde a $A_x$",
+        "rol": "pide",
+        "nota": "Busca la gráfica de una función constante.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Sustituye la función que da la altura en la fórmula del área.",
+        "texto": "Sustituye la función que da la altura en la fórmula del área."
+      },
+      {
+        "k": "calc",
+        "titulo": "Cancela los factores $x$ y $1/x$.",
+        "lineas": [
+          "$A_x=x(5/x)=5$"
+        ],
+        "nota": "Cancela los factores $x$ y $1/x$."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Producto de funciones y gráfica de área",
+      "que": "Determina cómo varía el área del rectángulo al cambiar la abscisa del punto.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El producto $x(5/x)$ es constante e igual a cinco.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
+        },
+        {
+          "t": "Opción D",
+          "p": "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Sustituye la función que da la altura en la fórmula del área."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Cancela los factores $x$ y $1/x$."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué ocurre con el producto de la base $x$ y la altura $5/x$?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La $x$ se cancela con el denominador; queda cinco."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La gráfica es horizontal en cinco. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Sustituye $f(x)=5/x$ en la expresión del área."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El resultado es $A_x=5$ para todo valor positivo de $x$."
         },
         {
+          "t": "La opción A: La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C crecen; D decrece. La opción B conserva el área.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La base del rectángulo es $x$ y su altura es $5/x$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Su producto es $x(5/x)=5$, independiente de la posición del punto.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Una función constante se representa con una recta horizontal en $y=5$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C aumentan y D disminuye; no representan el área constante.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El área",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "la información de la tabla",
+        "rol": "dato",
+        "nota": "El subsidio se asigna según intervalos de ingresos.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "gráfica que se presenta a continuación",
+        "rol": "dato",
+        "nota": "La representación une los valores con una línea continua.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "presenta una inconsistencia porque",
+        "rol": "pide",
+        "nota": "Identifica qué característica gráfica contradice la tabla.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada.",
+        "texto": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada."
+      },
+      {
+        "k": "calc",
+        "titulo": "La tabla usa rangos y valores fijos por rango.",
+        "lineas": [
+          "El subsidio cambia por intervalos",
+          "La gráfica propone una disminución continua"
+        ],
+        "nota": "La tabla usa rangos y valores fijos por rango."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La inconsistencia es la continuidad de la recta; corresponde a B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relación por intervalos y representación gráfica",
+      "que": "Reconoce qué aspecto de la gráfica no concuerda con una tabla de subsidios por rangos.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El subsidio permanece fijo en cada intervalo y cambia entre tramos; no forma una recta continua.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo."
+        },
+        {
+          "t": "Opción D",
+          "p": "El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "La tabla usa rangos y valores fijos por rango."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La inconsistencia es la continuidad de la recta; corresponde a B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿El subsidio cambia continuamente o por rangos de ingreso?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La tabla fija un valor para cada intervalo. La gráfica dibuja una recta continua."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Ese es el problema de la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Observa que cada rango de ingreso tiene un valor fijo de subsidio."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Una línea recta sugiere que el subsidio baja de manera constante entre todos los ingresos."
         },
         {
+          "t": "La opción A: La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A confunde unidades; C no identifica la forma; D coincide con la tendencia, pero no con los tramos. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La tabla organiza los ingresos en intervalos y asigna un valor de subsidio a cada uno.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La gráfica conecta los extremos con una recta continua, aunque la tabla solo respalda cambios por tramos.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La inconsistencia está en asumir una disminución constante y continua.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no describen esa diferencia entre tabla y gráfica.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una persona",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

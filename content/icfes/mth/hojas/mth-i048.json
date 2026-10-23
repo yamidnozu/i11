@@ -1,110 +1,140 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "expresión $10^3=I/I_0$",
+        "rol": "dato",
+        "nota": "La igualdad da directamente la razón de intensidades.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "¿Cuántas veces es el valor de $I$ respecto a $I_0$?",
+        "rol": "pide",
+        "nota": "Evalúa la potencia de diez.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Aísla el cociente que compara las intensidades.",
+        "texto": "Aísla el cociente que compara las intensidades."
+      },
+      {
+        "k": "calc",
+        "titulo": "Evalúa la potencia.",
+        "lineas": [
+          "$I/I_0=10^3=1.000$"
+        ],
+        "nota": "Evalúa la potencia."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La intensidad es mil veces la mínima; la respuesta es D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Potencias de diez y razón de intensidades",
+      "que": "Interpreta la razón entre una intensidad y la mínima intensidad audible.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "$I/I_0=10^3=1.000$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Una milésima sería $10^{-3}$, el recíproco de la razón indicada. Pero la expresión da mil."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Un tercio no se obtiene de la potencia de diez que aparece en la igualdad. Pero la razón es $10^3$."
+        },
+        {
+          "t": "Opción C",
+          "p": "Tres es el exponente, no el resultado de elevar diez a esa potencia. Pero $10^3$ vale mil."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Aísla el cociente que compara las intensidades."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Evalúa la potencia."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La intensidad es mil veces la mínima; la respuesta es D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué número representa diez elevado a la tercera potencia?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Diez por diez por diez da mil."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La intensidad es mil veces la mínima. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La expresión ya presenta el cociente entre las dos intensidades."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Evalúa $10^3$: el resultado es mil."
         },
         {
+          "t": "La opción A: Una milésima sería $10^{-3}$, el recíproco de la razón indicada. Pero la expresión da mil.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Un tercio no se obtiene de la potencia de diez que aparece en la igualdad. Pero la razón es $10^3$.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Tres es el exponente, no el resultado de elevar diez a esa potencia. Pero $10^3$ vale mil.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A usa el recíproco; B no corresponde; C confunde exponente con potencia. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La razón buscada es $I/I_0$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La igualdad indica que vale $10^3$, que es mil.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por eso $I$ es mil veces $I_0$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no evalúan correctamente la razón.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 48",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

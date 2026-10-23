@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "se vuelve a depositar",
+        "rol": "dato",
+        "nota": "Cada extracción mantiene las mismas seis opciones.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "en la primera extracción se obtuvo $2$",
+        "rol": "dato",
+        "nota": "Quedan dos puntajes por sumar.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "es más probable que gane quien escogió el número $10$ que quien escogió el número $7$, porque",
+        "rol": "pide",
+        "nota": "Compara las parejas de resultados que completan cada total.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto.",
+        "texto": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto."
+      },
+      {
+        "k": "calc",
+        "titulo": "Compara las sumas restantes.",
+        "lineas": [
+          "Para $10$: $8$; hay $5$ parejas ordenadas",
+          "Para $7$: $5$; hay $4$ parejas ordenadas"
+        ],
+        "nota": "Compara las sumas restantes."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El diez tiene una pareja posible más; corresponde a B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Probabilidad al sumar extracciones con reposición",
+      "que": "Compara las formas de completar dos sumas después de la primera extracción.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Para llegar a diez hay cinco parejas ordenadas; para llegar a siete hay cuatro.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma."
+        },
+        {
+          "t": "Opción D",
+          "p": "La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Compara las sumas restantes."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El diez tiene una pareja posible más; corresponde a B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Después de sacar dos, ¿qué suma necesitan las dos balotas restantes para obtener diez y para obtener siete?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Necesitan ocho para diez y cinco para siete. La suma ocho tiene cinco parejas ordenadas; la suma cinco tiene cuatro."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El diez es más probable. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Cuenta las parejas ordenadas de balotas que suman ocho y las que suman cinco."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Hay cinco para ocho y cuatro para cinco."
         },
         {
+          "t": "La opción A: El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C no cuentan resultados; D compara distancias que no determinan el sorteo. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Con la primera balota igual a dos, el diez requiere que las otras sumen ocho; el siete requiere que sumen cinco.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ocho tiene cinco parejas posibles y cinco tiene cuatro, con reposición y orden de extracción.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por eso el diez tiene una posibilidad adicional.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no comparan los resultados posibles de las dos extracciones.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Entre los",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

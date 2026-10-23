@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "cada metro cuadrado tiene un costo de $800.000$",
+        "rol": "dato",
+        "nota": "Es el costo inicial.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "anualmente",
+        "rol": "dato",
+        "nota": "El aumento se aplica en cada periodo.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "se valoriza un $5\\%$ respecto al costo del año anterior",
+        "rol": "dato",
+        "nota": "El porcentaje se calcula sobre el valor actualizado.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "transcurridos $n$ años",
+        "rol": "pide",
+        "nota": "Aplica el factor anual $n$ veces.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Convierte el aumento porcentual en un factor multiplicativo.",
+        "texto": "Convierte el aumento porcentual en un factor multiplicativo."
+      },
+      {
+        "k": "calc",
+        "titulo": "Aplica el factor anual al costo inicial durante $n$ periodos.",
+        "lineas": [
+          "$1+5/100=1,05$",
+          "$C_n=800.000(1+5/100)^n$"
+        ],
+        "nota": "Aplica el factor anual al costo inicial durante $n$ periodos."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La expresión compuesta corresponde a D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Crecimiento porcentual compuesto",
+      "que": "Expresa el costo futuro cuando cada año aumenta cinco por ciento sobre el año anterior.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El factor anual es $1,05$ y se repite durante $n$ años.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco."
+        },
+        {
+          "t": "Opción C",
+          "p": "Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Convierte el aumento porcentual en un factor multiplicativo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Aplica el factor anual al costo inicial durante $n$ periodos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La expresión compuesta corresponde a D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿El cinco por ciento se calcula sobre el costo inicial o sobre el del año anterior?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Sobre el del año anterior; cada año se multiplica por uno coma cero cinco."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Ese factor elevado a $n$ aparece en D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representa el aumento anual como el factor $1+5/100$."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Repite la multiplicación durante $n$ años desde el costo de ochocientos mil."
         },
         {
+          "t": "La opción A: Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A suma un valor fijo; B y C no usan el factor completo de crecimiento. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El costo inicial es ochocientos mil pesos por metro cuadrado.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Cada año se multiplica por $1,05$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Tras $n$ años, el costo es $800.000(1,05)^n$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A no compone; B usa un factor incorrecto; C omite sumar uno a la tasa.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En determinada",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
