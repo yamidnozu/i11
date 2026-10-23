@@ -201,3 +201,4 @@
 - Se generaron 271 hojas borrador mediante lotes reanudables de diez. Todas esas preguntas conservan `revisar`; no se presentan como aprobadas.
 - Asociadas las 98 preguntas de Matemáticas y Sociales 2018 con competencia, afirmación y evidencia del marco mediante overrides persistentes.
 - La validación preserva paquetes multisección y las transcripciones `documento.json` existentes. Vitest gated: 811/811; TypeScript y builds normal/gated pasan.
+- Reconstrucción completa desde los PDFs, tras apartar artefactos `work/<doc>` y paquetes generados; las seis salidas de Inglés, 2014, Matemáticas 2018 y Sociales 2018 conservaron sus SHA-256.

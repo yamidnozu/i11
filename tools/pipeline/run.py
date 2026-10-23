@@ -40,7 +40,10 @@ def main():
         failed=False
         for i in range(start,end+1):
             stage=STAGES[i]; out=dirs[stage]/'result.json'; upstream=[sha(dirs[s]/'result.json') for s in STAGES[:i] if (dirs[s]/'result.json').exists()]
-            implementation=[ROOT/'tools/pipeline/run.py',ROOT/'tools/pipeline/tipos'/f'{spec["tipo"]}.py',ROOT/'tools/pipeline/tipos/documento.py']
+            # A plugin may import a helper from another type (e.g. the English
+            # and mixed-booklet plugins reuse the cuadernillo extractor).
+            # Hash every type so dependency edits invalidate the stage cache.
+            implementation=[ROOT/'tools/pipeline/run.py',*sorted((ROOT/'tools/pipeline/tipos').glob('*.py'))]
             code_hash=''.join(sha(p) for p in implementation if p.exists())
             text_tool=shutil.which('pdftotext') if stage=='texto' else ''
             signature=hashlib.sha256((digest+json.dumps(upstream)+json.dumps(cfg,sort_keys=True)+stage+code_hash+(text_tool or 'pymupdf-fallback')).encode()).hexdigest()
