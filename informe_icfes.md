@@ -130,3 +130,4 @@ Los 346 reactivos estructurados de los siete cuadernillos tienen clave y hoja re
 - Se revisaron los siete paquetes, comprobando área, IDs únicos y cobertura completa e igual entre el simulacro y la unidad del cuadernillo.
 - Se corrigieron los paquetes de Ciencias 2025 y 2026: las 13 claves resueltas por override ya entran en simulacro y unidad; ambos pasan de 37 a 50 preguntas.
 - La duración se deja como estimación de práctica de un minuto por reactivo, no como tiempo oficial del examen.
+- Reconstrucción forzada de la etapa mpaquetar en los siete documentos: los siete SHA-256 de preguntas.json permanecieron idénticos; los hashes están reflejados en los artefactos y los overrides por paquete.

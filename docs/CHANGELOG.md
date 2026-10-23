@@ -192,3 +192,4 @@
 - Se restauraron las 13 preguntas con clave por override que faltaban en cada simulacro de Ciencias; ambos ahora cubren 50 preguntas.
 - La duración visible es una estimación de práctica de un minuto por pregunta, no tiempo oficial.
 - Se comprobó que cada unidad conserva sus preguntas completas sin marcar el simulacro como `unidad.sim` (ese campo reserva el enlace para laboratorios).
+- Se forzó la reconstrucción de mpaquetar para los siete cuadernillos; cada salida conservó su SHA-256.
