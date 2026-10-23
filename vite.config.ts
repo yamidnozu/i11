@@ -23,6 +23,12 @@ function gateIcfesAssets(include: boolean) {
         mkdirSync(target, { recursive: true });
         for (const file of readdirSync(imageDir, { withFileTypes: true }).filter(x => x.isFile())) {
           copyFileSync(resolve(imageDir, file.name), resolve(target, file.name));
+          // Older manual overrides use /icfes/<prefix>/imagenes/<file>,
+          // while pipeline-generated figures use /icfes/<prefix>/<file>.
+          // Publish both URLs behind the same ICFES gate.
+          const nestedTarget = resolve(target, 'imagenes');
+          mkdirSync(nestedTarget, { recursive: true });
+          copyFileSync(resolve(imageDir, file.name), resolve(nestedTarget, file.name));
         }
       }
     },

@@ -117,6 +117,15 @@ def extract_figures(c):
         src=str(fig.get('src',''))
         if not src.startswith(f'/icfes/{pref}/'): continue
         name=Path(src).name; recorte=fig.get('recorteFuente')
+        # Las figuras seleccionadas o recortadas manualmente también son una
+        # entrada persistente del pipeline. Si no tienen receta geométrica,
+        # conservar el PNG versionado en `imagenes/` en vez de intentar
+        # reconstruirlo buscando un encabezado (que no existe en todos los
+        # formatos, por ejemplo en el cuadernillo mixto numerado `n.`).
+        manual_asset=image_dir/name
+        if not recorte and manual_asset.is_file():
+            linked.append({'pregunta_o_bloque':qid,'archivo':str(manual_asset.relative_to(c['root'])),'src':src,'reutilizado':True})
+            continue
         if recorte:
             pi=int(recorte['pagina'])
             if pi<1 or pi>len(d): raise SystemExit(f'Página de recorte fuente inválida: {src}')
