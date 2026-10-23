@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "She could not get oil paints because she",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{She could not get oil paints because she}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+      "clave": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+      "pistas": [
+        "Localiza {{She could not get oil paints because she}} en la información fuente.",
+        "Relaciona la pista con una evidencia explícita del texto."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:She could not get oil paints because she",
+          "t": "Fíjate en {{She could not get oil paints because she}}."
+        },
+        {
+          "a": "p:1",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta correcta es {{was too young.}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no corresponde: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corresponde: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción {{was too young.}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La evidencia respalda {{was too young.}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "She could",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

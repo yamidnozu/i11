@@ -1,105 +1,126 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "¿Dónde puede ver estos avisos?",
+        "nota": "La pregunta pide ubicar el aviso mostrado.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Observa el aviso",
+        "texto": "Lee la instrucción que aparece en la imagen."
+      },
+      {
+        "k": "idea",
+        "titulo": "Reconoce el contexto",
+        "texto": "Es una actividad que se completa sobre una hoja y se colorea."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida corresponde al lugar donde se puede hacer esa actividad."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inglés: lectura y uso del lenguaje",
+      "que": "El aviso da una instrucción para completar y colorear una actividad. Entre las opciones, una hoja de prueba es el lugar que corresponde a ese ejercicio; la respuesta es «{{on a test}}».",
+      "clave": "El aviso da una instrucción para completar y colorear una actividad. Entre las opciones, una hoja de prueba es el lugar que corresponde a ese ejercicio; la respuesta es «{{on a test}}».",
+      "pistas": [
+        "Observa la instrucción del aviso.",
+        "Relaciona la actividad escrita con uno de los lugares propuestos."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, Un tapete no es el soporte donde se responde una actividad escrita."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, Una estantería no es una superficie para completar y colorear el ejercicio."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Observa la imagen y lee el aviso."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué actividad propone."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Compara los lugares y confirma cuál permite realizarla."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos la pregunta y observemos el aviso."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "p:1",
+          "t": "El aviso propone completar y colorear un ejercicio."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{on a test}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca qué tarea pide el aviso."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "Es una actividad escrita que se completa y colorea."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: Un tapete no es el soporte donde se responde una actividad escrita."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no encaja: Una estantería no es una superficie para completar y colorear el ejercicio."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{on a test}}."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica qué elemento del aviso muestra que se trata de una actividad para hacer en una hoja."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba que el lugar permita completar y colorear la actividad."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: Un tapete no es el soporte donde se responde una actividad escrita."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: Una estantería no es una superficie para completar y colorear el ejercicio."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{on a test}}; compruébala con la imagen."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Enunciado de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

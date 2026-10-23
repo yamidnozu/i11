@@ -1,92 +1,111 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "clave": "La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, No responde a la oferta de ayuda; expresa que la persona no tiene miedo.",
           "t": "Opción A"
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, Pregunta qué sucede y no acepta ni rechaza la ayuda.",
           "t": "Opción B"
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Fíjate en {{hold those bags}}.",
+        "Lee la oración completa dentro del bloque compartido antes de elegir."
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué parte de la conversación o de la oración está incompleta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa el contexto cercano para decidir qué respuesta o forma encaja."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta las opciones y confirma que solo una conserva el sentido y la gramática."
         }
       ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      "que": "La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos el enunciado y la oración completa."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:hold those bags",
+          "t": "Fíjate en {{hold those bags}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la pista en la respuesta o en el bloque compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: No responde a la oferta de ayuda; expresa que la persona no tiene miedo."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no encaja: Pregunta qué sucede y no acepta ni rechaza la ayuda."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica por qué {{hold those bags}} orienta la respuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba la forma y el sentido de la frase completa."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: No responde a la oferta de ayuda; expresa que la persona no tiene miedo."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: Pregunta qué sucede y no acepta ni rechaza la ayuda."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C; vuelve a comprobarla en el contexto."
         }
       ]
     },
     "marcas": [
       {
-        "campo": "Fragmento por revisar",
-        "frag": "Grandma, shall",
-        "nota": "Fragmento automático; revisar su función.",
+        "campo": "Pista de lectura",
+        "frag": "hold those bags",
+        "nota": "Esta frase indica qué sentido o forma gramatical debes comprobar.",
         "rol": "pide"
       }
     ],
@@ -94,11 +113,17 @@
     "pasos": [
       {
         "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+        "texto": "Fíjate en {{hold those bags}} y lee la oración completa para reconocer la relación que falta.",
+        "titulo": "Lee el contexto"
+      },
+      {
+        "k": "idea",
+        "texto": "La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede.",
+        "titulo": "Compara las opciones"
       },
       {
         "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+        "texto": "Comprueba tu elección: La respuesta de la abuela acepta la oferta de ayuda. «{{That’s fine.}}» encaja con la propuesta de sostener las bolsas; las otras respuestas expresan miedo o preguntan qué sucede."
       }
     ]
   }

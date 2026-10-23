@@ -1,104 +1,129 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "clave": "La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, Se refiere al transcurso de un periodo, no al inicio desde el que algo se conoce.",
           "t": "Opción A"
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero, Indica un límite final; la oración necesita un punto de inicio.",
           "t": "Opción B"
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Fíjate en {{well-known}}.",
+        "Lee la oración completa dentro del bloque compartido antes de elegir."
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué parte de la conversación o de la oración está incompleta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa el contexto cercano para decidir qué respuesta o forma encaja."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta las opciones y confirma que solo una conserva el sentido y la gramática."
         }
       ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      "que": "La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos el enunciado y la oración completa."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:well-known",
+          "t": "Fíjate en {{well-known}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la pista en la respuesta o en el bloque compartido."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: Se refiere al transcurso de un periodo, no al inicio desde el que algo se conoce."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B no encaja: Indica un límite final; la oración necesita un punto de inicio."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica por qué {{well-known}} orienta la respuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba la forma y el sentido de la frase completa."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: Se refiere al transcurso de un periodo, no al inicio desde el que algo se conoce."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: Indica un límite final; la oración necesita un punto de inicio."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C; vuelve a comprobarla en el contexto."
         }
       ]
     },
     "marcas": [
       {
-        "campo": "Fragmento por revisar",
-        "frag": "(Enunciado de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
+        "campo": "Pista de lectura",
+        "frag": "well-known",
+        "nota": "Esta frase indica qué sentido o forma gramatical debes comprobar.",
+        "rol": "dato"
       }
     ],
     "modo": "lectura",
     "pasos": [
       {
         "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+        "texto": "Fíjate en {{well-known}} y lee la oración completa para reconocer la relación que falta.",
+        "titulo": "Lee el contexto"
+      },
+      {
+        "k": "idea",
+        "texto": "La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración.",
+        "titulo": "Compara las opciones"
       },
       {
         "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+        "texto": "Comprueba tu elección: La construcción {{since the beginning}} marca el punto desde el cual algo se conoce. {{During}} indica un periodo en curso y {{until}} marca un límite final, así que no completan esta oración."
       }
     ]
   }

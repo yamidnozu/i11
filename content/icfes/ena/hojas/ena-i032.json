@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "I can’t eat a cold sandwich. It is horrible!",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee y observa",
+        "texto": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona las pistas",
+        "texto": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inglés: lectura y uso del lenguaje",
+      "que": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+      "clave": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+      "pistas": [
+        "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}.",
+        "Contrasta el sentido con el pasaje, la descripción o el aviso."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, No responde a la opinión; expresa esperanza."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, No concuerda con la opinión ni responde de forma natural a lo dicho."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué información pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Contrasta las pistas con el pasaje, la descripción o la imagen."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos la información disponible."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:I can’t eat a cold sandwich. It is horrible!",
+          "t": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la pista que permite responder."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no encaja: No responde a la opinión; expresa esperanza."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no encaja: No concuerda con la opinión ni responde de forma natural a lo dicho."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica qué pista del contexto respalda la respuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: No responde a la opinión; expresa esperanza."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: No concuerda con la opinión ni responde de forma natural a lo dicho."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "I can’t",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

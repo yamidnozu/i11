@@ -1,92 +1,111 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "clave": "El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero la pregunta pide el ámbito de esos momentos, no un oficio distinto.",
           "t": "Opción A"
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
+          "p": "Pero una ciudad es el lugar de un episodio, no el trabajo al que alude la pregunta.",
           "t": "Opción C"
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Fíjate en {{nice and difficult times}}.",
+        "Vuelve al pasaje y distingue la información explícita de una alternativa que solo comparte una palabra."
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica qué información busca el reactivo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Localiza en el pasaje la frase que responde y conserva su sentido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta cada alternativa con esa evidencia y descarta las que cambian el dato."
         }
       ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      "que": "El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral.",
+      "tema": "Inglés: comprensión del texto y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos qué información pide la pregunta."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:nice and difficult times",
+          "t": "Fíjate en {{nice and difficult times}} y busca esa pista en el pasaje."
+        },
+        {
+          "a": "p:1",
+          "t": "El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Ubica la frase del pasaje que responde la pregunta."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no coincide: La pregunta pide el ámbito de esos momentos, no un oficio distinto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no coincide: Una ciudad es el lugar de un episodio, no el trabajo al que alude la pregunta."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero decide qué evidencia responde {{nice and difficult times}}."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Ahora explica por qué esa evidencia coincide con la alternativa elegida."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no coincide: La pregunta pide el ámbito de esos momentos, no un oficio distinto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no coincide: Una ciudad es el lugar de un episodio, no el trabajo al que alude la pregunta."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B; vuelve a comprobarla en el pasaje."
         }
       ]
     },
     "marcas": [
       {
-        "campo": "Fragmento por revisar",
-        "frag": "Salter had",
-        "nota": "Fragmento automático; revisar su función.",
+        "campo": "Pista de lectura",
+        "frag": "nice and difficult times",
+        "nota": "Esta expresión acota la información que hay que localizar en el pasaje.",
         "rol": "pide"
       }
     ],
@@ -94,11 +113,17 @@
     "pasos": [
       {
         "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
+        "texto": "La expresión {{nice and difficult times}} indica qué dato debes comprobar en el pasaje.",
+        "titulo": "Localiza la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral.",
+        "titulo": "Comprueba el sentido"
       },
       {
         "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
+        "texto": "Comprueba la respuesta: El texto dice que la etapa de Salter en el mundo del cine tuvo aspectos buenos y malos. La opción B completa la idea con el trabajo de hacer películas; ser actor y estar en una ciudad distinta no expresan ese campo laboral."
       }
     ]
   }
