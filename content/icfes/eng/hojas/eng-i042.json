@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "How often did she watch the show?",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee la pista",
+        "texto": "Fíjate en {{How often did she watch the show?}}."
+      },
+      {
+        "k": "idea",
+        "titulo": "Relaciona la información",
+        "texto": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprensión de lectura en inglés",
+      "que": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+      "clave": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+      "pistas": [
+        "Localiza {{How often did she watch the show?}} en la información fuente.",
+        "Relaciona la pista con una evidencia explícita del texto."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero, La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:How often did she watch the show?",
+          "t": "Fíjate en {{How often did she watch the show?}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta correcta es {{once a week}}."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción A no corresponde: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corresponde: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción {{once a week}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La evidencia respalda {{once a week}}."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "How often",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

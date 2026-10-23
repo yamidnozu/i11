@@ -1,105 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "many people believe coffee is bad",
+        "nota": "Esta frase aporta la relación de sentido que debe expresar el conector.",
+        "rol": "dato"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee las dos ideas",
+        "texto": "Fíjate en {{many people believe coffee is bad}} y en lo que muestran los estudios."
+      },
+      {
+        "k": "idea",
+        "titulo": "Reconoce la relación",
+        "texto": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que el conector expresa contraste entre las dos ideas, no condición, excepción ni causa."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Inglés: lectura y uso del lenguaje",
+      "que": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
+      "clave": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
+      "pistas": [
+        "Fíjate en {{many people believe coffee is bad}}.",
+        "Lee la oración completa dentro del bloque compartido antes de elegir."
+      ],
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero, Introduce una condición, no el contraste entre la creencia y el resultado de los estudios."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero, Expresa una causa; la oración contrapone la creencia con el resultado de los estudios."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica la relación entre las dos ideas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Usa el contexto completo para reconocer el conector."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Contrasta las opciones y confirma cuál conserva el sentido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Leamos las dos ideas completas."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "a": "m:many people believe coffee is bad",
+          "t": "Fíjate en {{many people believe coffee is bad}}."
+        },
+        {
+          "a": "p:1",
+          "t": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "leer",
+          "t": "Busca la relación entre la creencia y los resultados."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "a": "p:1",
+          "t": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración."
         },
         {
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios.",
+          "k": "err"
         },
         {
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios.",
+          "k": "err"
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Explica por qué {{many people believe coffee is bad}} se contrapone a los resultados."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "a": "p:1",
+          "k": "por",
+          "t": "Comprueba que el conector mantiene el contraste en la oración completa."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "a": "o:B:no",
+          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios.",
+          "k": "err"
+        },
+        {
+          "a": "o:C:no",
+          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios.",
+          "k": "err"
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A; vuelve a comprobarla en el contexto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Enunciado de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
