@@ -1,285 +1,11 @@
 {
-  "mth-i001": {
-    "figuras": [
-      {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i001-figura-01.png",
-        "alt": "Rutas de buses y paradas entre las estaciones E1 y E10",
-        "recorteFuente": {
-          "pagina": 5,
-          "rect": [
-            196,
-            197,
-            392,
-            284
-          ]
-        }
-      }
-    ],
-    "explicacion": "El primer paso cuenta 10 tramos, pero entre E1 y E10 hay 9. La multiplicación del paso II y la suma de una parada intermedia en E6 son operaciones válidas, así que la respuesta es A.",
-    "distractores": [
-      "",
-      "También marca la multiplicación, aunque la operación indicada es válida para el dato recibido.",
-      "Acepta el conteo de 10 tramos, pero hay 9.",
-      "Marca la parada intermedia, que sí suma 30 segundos."
-    ],
-    "revisar": []
-  },
-  "mth-i003": {
-    "revisar": [],
-    "figuras": [
-      {
-        "tipo": "tabla",
-        "alt": "Franjas horarias, cupos máximos y precios por estudiante para la visita al museo",
-        "cols": [
-          "Franja",
-          "Horario",
-          "Cantidad máxima de estudiantes",
-          "Precio por estudiante"
-        ],
-        "filas": [
-          [
-            "1",
-            "8 h - 10 h",
-            "50",
-            "$35.000"
-          ],
-          [
-            "2",
-            "10 h - 12 h",
-            "40",
-            "$40.000"
-          ],
-          [
-            "3",
-            "12 h - 14 h",
-            "30",
-            "$50.000"
-          ],
-          [
-            "4",
-            "14 h - 16 h",
-            "60",
-            "$45.000"
-          ]
-        ]
-      }
-    ],
-    "opciones": [
-      "Sí, porque esas franjas suman exactamente 140 estudiantes.",
-      "No, porque es posible obtener un precio menor eligiendo la franja 2 en lugar de la franja 3.",
-      "Sí, porque se incluyó la franja 1 que es la de menor precio por estudiante.",
-      "No, porque los estudiantes que van en la franja 3 pagan más."
-    ],
-    "explicacion": "La combinación de las franjas 1, 3 y 4 cuesta $5.950.000: 50 × $35.000 + 30 × $50.000 + 60 × $45.000. Al usar las franjas 1, 2 y 4, se pueden acomodar 140 estudiantes y el costo es $5.650.000: 50 × $35.000 + 40 × $40.000 + 50 × $45.000. Por eso, la elección inicial no garantiza el menor precio y la respuesta es B.",
-    "distractores": [
-      "La suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo.",
-      "",
-      "Incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable.",
-      "Que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
-    ]
-  },
-  "mth-i004": {
-    "bloque": "mth-capacitacion-2018",
-    "revisar": [],
-    "explicacion": "El módulo I cuesta $40 × $35.000 = $1.400.000 por curso. Con dos cursos se atienden hasta 60 personas y se pagarían $2.800.000; para pagar $4.200.000 se necesitan tres cursos. Cada uno admite entre 20 y 30 trabajadores, así que la dependencia debe tener entre 61 y 90. La respuesta es C.",
-    "distractores": [
-      "Un curso no puede atender más de 30 personas y costaría $1.400.000.",
-      "Dos cursos cuestan $2.800.000, no $4.200.000.",
-      "",
-      "Cuatro cursos costarían $5.600.000, más de lo pagado."
-    ]
-  },
-  "mth-i005": {
-    "bloque": "mth-capacitacion-2018",
-    "revisar": [],
-    "explicacion": "El módulo II cuesta $30 × $30.000 = $900.000 por curso. Como el grupo tiene 50 trabajadores y cada curso admite máximo 30, se requieren dos cursos: $1.800.000 en total. Al dividir ese valor entre 50, cada persona paga $36.000. La respuesta es B.",
-    "distractores": [
-      "$18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos.",
-      "",
-      "$450.000 es la mitad del costo de un curso y no cubre dos grupos.",
-      "$900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
-    ]
-  },
-  "mth-i006": {
-    "bloque": "mth-capacitacion-2018",
-    "revisar": [],
-    "explicacion": "Con 40 funcionarios se necesitan dos cursos, pues cada uno admite máximo 30. El módulo IV cuesta $10 × $45.000 = $450.000 por curso; dos cursos cuestan $900.000. Por tanto, corresponde al módulo IV y la respuesta es D.",
-    "distractores": [
-      "Dos cursos del módulo I cuestan $2.800.000.",
-      "Dos cursos del módulo II cuestan $1.800.000.",
-      "Dos cursos del módulo III cuestan $3.200.000.",
-      ""
-    ]
-  },
-  "mth-i007": {
-    "bloque": "mth-obesidad-2018",
-    "revisar": [],
-    "opciones": [
-      "Sí, porque adicionando el número de muertes de los países se obtiene el total de muertes que permite calcular el porcentaje pedido.",
-      "Sí, porque solamente falta conocer el número total de muertes en P3, que se obtiene con la información de la figura.",
-      "No, porque en la figura faltan los datos sobre el número total de muertes en cada país.",
-      "No, porque los datos de P3 son información sobre las muertes por obesidad."
-    ],
-    "explicacion": "La figura indica que en P3 hubo 28.000 muertes por obesidad, equivalentes al 7 % del total. Entonces el total de muertes en P3 es $28.000 ÷ 0,07 = 400.000$. Con ese denominador se puede calcular el porcentaje de 1.700 muertes por la otra enfermedad: $1.700 × 100 ÷ 400.000 = 0,425\\%$. La respuesta es B.",
-    "distractores": [
-      "Sumar las muertes por obesidad de los cuatro países no da el total de muertes de P3.",
-      "",
-      "La figura sí permite obtener el total de muertes en P3 al relacionar 28.000 con el 7 % que representan.",
-      "La figura informa las muertes por obesidad y su porcentaje; esa relación permite inferir el total de muertes en P3."
-    ]
-  },
-  "mth-i008": {
-    "bloque": "mth-obesidad-2018",
-    "revisar": [],
-    "enunciado": "El IMC de una persona se calcula dividiendo su peso (en kg) entre su estatura (en m) elevada al cuadrado. De un hombre de P2 que tiene 30 años de edad, pesa 75 kg y tiene una estatura de $\\frac{3}{2}$ m, puede afirmarse que forma parte del",
-    "opciones": [
-      "1 % de hombres entre 26 y 60 años de edad con bajo peso.",
-      "50 % de hombres entre 26 y 60 años de edad con sobrepeso.",
-      "1 % de hombres entre 26 y 60 años de edad con obesidad alta.",
-      "13 % de hombres entre 26 y 60 años de edad con obesidad leve."
-    ],
-    "explicacion": "La estatura es $\\frac{3}{2}$ m, así que el IMC es $75 ÷ (\\frac{3}{2})^2 = 75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre 30,0 y 34,9; corresponde a obesidad leve. La tabla indica que el 13 % de los hombres de ese rango de edad está en esa categoría. La respuesta es D.",
-    "distractores": [
-      "Un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso.",
-      "Un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso.",
-      "Un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta.",
-      ""
-    ]
-  },
-  "mth-i009": {
-    "bloque": "mth-frutas-2018",
-    "revisar": [],
-    "explicacion": "Vender seis toneladas de mango deja $300.000$ más de ingreso en Z que en W: la diferencia de $50.000$ por tonelada se multiplica por seis. Para transportar seis toneladas se necesitan dos camiones. El transporte y los dos trabajadores por camión cuestan $1.020.000$ en W y $1.160.000$ en Z; la diferencia de gastos es $140.000$. El aumento en ventas supera el aumento en gastos, así que la afirmación es correcta. La respuesta es C.",
-    "distractores": [
-      "El ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos.",
-      "La diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones.",
-      "",
-      "Los gastos de transporte y trabajadores son mayores en Z, no en W."
-    ]
-  },
-  "mth-i010": {
-    "bloque": "mth-frutas-2018",
-    "revisar": [],
-    "enunciado": "Los tres (3) camiones se cargan con 5 toneladas de banano cada uno para venderse en la ciudad W. El comerciante necesita conocer la ganancia al hacer este negocio, ejecutando el siguiente procedimiento: Paso 1: Halla el número de toneladas de banano que hay en los 3 camiones. Paso 2: Halla la diferencia entre el precio de venta de una tonelada de banano en la ciudad W y el precio de compra. Paso 3: Multiplica los valores hallados en los pasos 1 y 2. Paso 4: Encuentra los costos totales de transporte y súmale el pago total de los trabajadores en los tres viajes. Paso 5: Halla la diferencia entre el valor obtenido en el paso 3 y el paso 4. ¿Cuál es la ganancia que obtiene el comerciante?",
-    "explicacion": "Los tres camiones transportan $3 × 5 = 15$ toneladas. El margen por tonelada de banano en W es $1.000.000 - 400.000 = 600.000$, así que el margen de venta es $15 × 600.000 = 9.000.000$. El transporte cuesta $3 × 150.000 = 450.000$ y los seis trabajadores reciben $6 × 180.000 = 1.080.000$. La ganancia es $9.000.000 - 450.000 - 1.080.000 = 7.470.000$. La respuesta es C.",
-    "distractores": [
-      "$5.670.000$ resta costos que no corresponden a los datos del procedimiento.",
-      "$5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores.",
-      "",
-      "$8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
-    ]
-  },
-  "mth-i011": {
-    "bloque": "mth-frutas-2018",
-    "revisar": [],
-    "enunciado": "Para diciembre, el comerciante decidió que por cada 5 toneladas del producto transportado en camión y vendido en alguna de las ciudades, cada uno de los dos empleados necesarios por camión recibirá un bono de 0,3 % del dinero recibido en la venta de esas 5 toneladas. En ese mes, dos empleados transportaron y vendieron 47 toneladas de mango a la ciudad W. Para hallar el bono recibido por cada uno de ellos, se ejecutó el siguiente procedimiento: Paso 1: Se dividió el número de toneladas vendidas entre 5 y se halló su residuo. Paso 2: Se restó del número de toneladas vendidas el valor obtenido en el paso 1. Paso 3: Se multiplicó el valor obtenido en el paso 2 por el valor de venta de la tonelada del producto. Paso 4: Al valor obtenido en el paso 3 se le sacó el 0,3 %. El bono recibido por cada empleado fue, aproximadamente, de",
-    "explicacion": "Se cuentan solo grupos completos de cinco toneladas: $47 - 2 = 45$ toneladas. A $1.300.000$ por tonelada, esas ventas suman $45 × 1.300.000 = 58.500.000$. El bono de cada trabajador es $0,3\\% × 58.500.000 = 175.500$, aproximadamente $175.000$ pesos. La respuesta es B.",
-    "distractores": [
-      "$526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas.",
-      "",
-      "$148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles.",
-      "$87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
-    ]
-  },
-  "mth-i012": {
-    "bloque": "mth-frutas-2018",
-    "revisar": [],
-    "enunciado": "Si se transportan 7 toneladas de fruta a la ciudad W y 10 toneladas de fruta a la ciudad Z, la gráfica que muestra la relación de costos por ciudad es",
-    "opcionesFig": [
-      {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i012-opcion-a.png",
-        "alt": "Opción A: costos de transporte y trabajadores por ciudad",
-        "recorteFuente": {
-          "pagina": 9,
-          "rect": [
-            110,
-            348,
-            292,
-            462
-          ]
-        }
-      },
-      {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i012-opcion-b.png",
-        "alt": "Opción B: costos de transporte y trabajadores por ciudad",
-        "recorteFuente": {
-          "pagina": 9,
-          "rect": [
-            315,
-            348,
-            490,
-            462
-          ]
-        }
-      },
-      {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i012-opcion-c.png",
-        "alt": "Opción C: costos de transporte y trabajadores por ciudad",
-        "recorteFuente": {
-          "pagina": 9,
-          "rect": [
-            110,
-            480,
-            292,
-            594
-          ]
-        }
-      },
-      {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i012-opcion-d.png",
-        "alt": "Opción D: costos de transporte y trabajadores por ciudad",
-        "recorteFuente": {
-          "pagina": 9,
-          "rect": [
-            315,
-            480,
-            490,
-            594
-          ]
-        }
-      }
-    ],
-    "explicacion": "Para transportar 7 toneladas a W y 10 a Z se necesitan dos camiones en cada ciudad. El transporte cuesta $2 × 150.000 = 300.000$ en W y $2 × 180.000 = 360.000$ en Z. Los trabajadores cuestan $2 × 2 × 180.000 = 720.000$ en W y $2 × 2 × 200.000 = 800.000$ en Z. La gráfica que representa esos cuatro valores es B.",
-    "distractores": [
-      "La opción A muestra costos de trabajadores de un solo camión por ciudad, aunque en cada destino se necesitan dos.",
-      "",
-      "La opción C muestra transporte para dos camiones, pero pago de trabajadores como si se usara uno solo.",
-      "La opción D intercambia los costos de las ciudades y no corresponde a la tabla."
-    ]
-  },
-  "mth-i013": {
-    "bloque": "mth-frutas-2018",
-    "revisar": [],
-    "opciones": [
-      "la ganancia de los productores.",
-      "el pago que recibirá cada trabajador en enero.",
-      "los costos totales del comerciante.",
-      "el número mínimo de viajes que se realizaron desde el pueblo."
-    ],
-    "explicacion": "El comerciante vendió $100 + 50 = 150$ toneladas. Los tres camiones pueden llevar $3 × 5 = 15$ toneladas por salida conjunta; por tanto, se requieren como mínimo $150 ÷ 15 = 10$ salidas. Si se cuentan viajes individuales de camión, son 30. Los datos no bastan para conocer ganancia, pagos o costos totales sin saber cómo se distribuyeron las ventas por ciudad. La respuesta es D.",
-    "distractores": [
-      "No se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia.",
-      "No se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago.",
-      "Sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores.",
-      ""
-    ]
-  },
   "__paquete__": {
     "bloques_agregar": [
       {
-        "id": "mth-obesidad-2018",
         "area": "matematicas",
         "encabezado": "Responde las preguntas siete y ocho de acuerdo con la siguiente información",
-        "texto": "El gráfico presenta las muertes por obesidad y el porcentaje que representan del total anual en cuatro países. Las tablas muestran la clasificación del IMC y porcentajes de hombres y mujeres de 26 a 60 años en P2. Datos de las tablas tomados y adaptados de searteriosclerosis.org.",
         "figuras": [
           {
-            "tipo": "img",
-            "src": "/icfes/mth/imagenes/mth-obesidad-2018.png",
             "alt": "Mapa de cuatro países con muertes anuales por obesidad y su porcentaje del total",
             "recorteFuente": {
               "pagina": 7,
@@ -289,10 +15,11 @@
                 300,
                 431
               ]
-            }
+            },
+            "src": "/icfes/mth/imagenes/mth-obesidad-2018.png",
+            "tipo": "img"
           },
           {
-            "tipo": "tabla",
             "alt": "Clasificación del estado nutricional según el índice de masa corporal",
             "cols": [
               "Clasificación",
@@ -327,10 +54,10 @@
                 "Obesidad alta",
                 "≥ 40,0"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           },
           {
-            "tipo": "tabla",
             "alt": "Porcentaje de hombres y mujeres de 26 a 60 años por rango de IMC en P2",
             "cols": [
               "IMC (kg/m²)",
@@ -360,19 +87,19 @@
                 "1",
                 "1"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 7 y 8."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 7 y 8.",
+        "id": "mth-obesidad-2018",
+        "texto": "El gráfico presenta las muertes por obesidad y el porcentaje que representan del total anual en cuatro países. Las tablas muestran la clasificación del IMC y porcentajes de hombres y mujeres de 26 a 60 años en P2. Datos de las tablas tomados y adaptados de searteriosclerosis.org."
       },
       {
-        "id": "mth-frutas-2018",
         "area": "matematicas",
         "encabezado": "Responde las preguntas nueve a trece de acuerdo con la siguiente información",
-        "texto": "El comerciante compra el banano a $400.000 por tonelada y el mango a $500.000. Usa camiones con capacidad de 5 toneladas y contrata dos trabajadores por camión en cada viaje.",
         "figuras": [
           {
-            "tipo": "tabla",
             "alt": "Precios de venta, transporte por camión y pago por trabajador en las ciudades W y Z",
             "cols": [
               "Ciudad",
@@ -396,20 +123,19 @@
                 "$180.000",
                 "$200.000"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 9 a 13."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 9 a 13.",
+        "id": "mth-frutas-2018",
+        "texto": "El comerciante compra el banano a $400.000 por tonelada y el mango a $500.000. Usa camiones con capacidad de 5 toneladas y contrata dos trabajadores por camión en cada viaje."
       },
       {
-        "id": "mth-capacitacion-2018",
         "area": "matematicas",
         "encabezado": "Responde las preguntas cuatro a seis de acuerdo con la siguiente información",
-        "titulo": "Capacitación en informática básica",
-        "texto": "Cada módulo tiene una intensidad horaria y un valor por hora. Cada curso debe tener mínimo 20 y máximo 30 personas de la misma dependencia.",
         "figuras": [
           {
-            "tipo": "tabla",
             "alt": "Intensidad horaria y valor por hora de cada módulo de capacitación",
             "cols": [
               "Módulo",
@@ -442,19 +168,20 @@
                 "10 h",
                 "$45.000"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 4 a 6."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 4 a 6.",
+        "id": "mth-capacitacion-2018",
+        "texto": "Cada módulo tiene una intensidad horaria y un valor por hora. Cada curso debe tener mínimo 20 y máximo 30 personas de la misma dependencia.",
+        "titulo": "Capacitación en informática básica"
       },
       {
-        "id": "mth-creditos-2018",
         "area": "matematicas",
         "encabezado": "RESPONDA LAS PREGUNTAS 34 Y 35 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN",
-        "texto": "Para adquirir un crédito por $6.000.000, Ángela solicita en una entidad financiera información sobre las modalidades de pago para crédito. Un asesor le da la siguiente información. En cualquier modalidad, el saldo del crédito cada mes será igual a la diferencia entre el saldo del crédito del mes anterior y el abono al crédito realizado en el mes.",
         "figuras": [
           {
-            "tipo": "tabla",
             "alt": "Modalidades de pago para el crédito de Ángela",
             "cols": [
               "Modalidad",
@@ -475,20 +202,19 @@
                 "Valor crédito más 20% del valor del crédito, dividido entre 12",
                 "Valor cuota fija"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35.",
+        "id": "mth-creditos-2018",
+        "texto": "Para adquirir un crédito por $6.000.000, Ángela solicita en una entidad financiera información sobre las modalidades de pago para crédito. Un asesor le da la siguiente información. En cualquier modalidad, el saldo del crédito cada mes será igual a la diferencia entre el saldo del crédito del mes anterior y el abono al crédito realizado en el mes."
       },
       {
-        "id": "mth-grand-slam-2018",
         "area": "matematicas",
         "encabezado": "RESPONDA LAS PREGUNTAS 38 Y 39 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN",
-        "texto": "En la gráfica se muestran los resultados de cinco jugadores de tenis. En Australia y Estados Unidos se juega en cancha dura, el Roland Garros en arcilla y el Wimbledon en césped. Cada uno de ellos se juega una vez al año y otorga 2.000 puntos al vencedor, mientras que otros torneos solo entregan como máximo 1.000 puntos al vencedor.",
         "figuras": [
           {
-            "tipo": "img",
-            "src": "/icfes/mth/imagenes/mth-i038-39-grafica.png",
             "alt": "Gráfica de títulos de Grand Slam y finales por jugador, torneo y edad",
             "recorteFuente": {
               "pagina": 20,
@@ -498,10 +224,11 @@
                 510,
                 465
               ]
-            }
+            },
+            "src": "/icfes/mth/imagenes/mth-i038-39-grafica.png",
+            "tipo": "img"
           },
           {
-            "tipo": "tabla",
             "alt": "Títulos en los dos torneos de cancha dura, contados en la gráfica",
             "cols": [
               "Jugador",
@@ -540,19 +267,19 @@
                 "0",
                 "0"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39.",
+        "id": "mth-grand-slam-2018",
+        "texto": "En la gráfica se muestran los resultados de cinco jugadores de tenis. En Australia y Estados Unidos se juega en cancha dura, el Roland Garros en arcilla y el Wimbledon en césped. Cada uno de ellos se juega una vez al año y otorga 2.000 puntos al vencedor, mientras que otros torneos solo entregan como máximo 1.000 puntos al vencedor."
       },
       {
-        "id": "mth-sfv-2018",
         "area": "matematicas",
         "encabezado": "RESPONDA LAS PREGUNTAS 43 A 45 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN",
-        "texto": "El subsidio familiar de vivienda (SFV) es un aporte que entrega el Estado y que constituye un complemento del ahorro, para facilitarle la adquisición, construcción o mejoramiento de una solución de vivienda de interés social al ciudadano. La tabla presenta los ingresos en salarios mínimos mensuales legales vigentes (SMMLV) y el subsidio al que se tiene derecho, para cierto año. Con el SFV más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda.",
         "figuras": [
           {
-            "tipo": "tabla",
             "alt": "Ingresos por rangos y valor del subsidio familiar de vivienda",
             "cols": [
               "Ingreso desde (SMMLV)",
@@ -625,10 +352,13 @@
                 "2.142.400",
                 "4"
               ]
-            ]
+            ],
+            "tipo": "tabla"
           }
         ],
-        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45.",
+        "id": "mth-sfv-2018",
+        "texto": "El subsidio familiar de vivienda (SFV) es un aporte que entrega el Estado y que constituye un complemento del ahorro, para facilitarle la adquisición, construcción o mejoramiento de una solución de vivienda de interés social al ciudadano. La tabla presenta los ingresos en salarios mínimos mensuales legales vigentes (SMMLV) y el subsidio al que se tiene derecho, para cierto año. Con el SFV más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda."
       }
     ],
     "simulacros": [
@@ -641,7 +371,6 @@
         "nombre": "Simulacro: 11 Matematicas Saber11 2018",
         "secciones": [
           {
-            "titulo": "11 Matematicas Saber11 2018",
             "area": "matematicas",
             "minutos": 49,
             "preguntas": [
@@ -694,17 +423,18 @@
               "mth-i047",
               "mth-i048",
               "mth-i049"
-            ]
+            ],
+            "titulo": "11 Matematicas Saber11 2018"
           }
         ]
       }
     ],
     "unidades": [
       {
-        "id": "u-icfes-mth",
         "area": "matematicas",
-        "titulo": "11 Matematicas Saber11 2018",
-        "resumen": "Prueba completa con 49 preguntas y simulacro asociado. Conserva las salvedades específicas de cada pregunta.",
+        "id": "u-icfes-mth",
+        "leccion": null,
+        "min": 49,
         "preguntas": [
           "mth-i001",
           "mth-i002",
@@ -756,36 +486,411 @@
           "mth-i048",
           "mth-i049"
         ],
+        "resumen": "Prueba completa con 49 preguntas y simulacro asociado. Conserva las salvedades específicas de cada pregunta.",
         "sim": null,
-        "leccion": null,
-        "min": 49
+        "titulo": "11 Matematicas Saber11 2018"
       }
     ]
   },
+  "mth-i001": {
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
+    "distractores": [
+      "",
+      "También marca la multiplicación, aunque la operación indicada es válida para el dato recibido.",
+      "Acepta el conteo de 10 tramos, pero hay 9.",
+      "Marca la parada intermedia, que sí suma 30 segundos."
+    ],
+    "evidencia": "Argumenta a favor o en contra de un procedimiento para resolver un problema a la luz de criterios presentados o establecidos.",
+    "evidenciaId": "3.2",
+    "explicacion": "El primer paso cuenta 10 tramos, pero entre E1 y E10 hay 9. La multiplicación del paso II y la suma de una parada intermedia en E6 son operaciones válidas, así que la respuesta es A.",
+    "figuras": [
+      {
+        "alt": "Rutas de buses y paradas entre las estaciones E1 y E10",
+        "recorteFuente": {
+          "pagina": 5,
+          "rect": [
+            196,
+            197,
+            392,
+            284
+          ]
+        },
+        "src": "/icfes/mth/imagenes/mth-i001-figura-01.png",
+        "tipo": "img"
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i002": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
+      "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
+      "",
+      "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
+    ],
+    "enunciado": "Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo $1$ dólar equivalente a $2.000$ pesos colombianos y que su inversión, en dólares, le dará ganancias del $3\\%$ en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del $3\\%$. La afirmación de su amigo es",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Como la tasa de cambio permanece constante, convertir a pesos tanto el valor inicial como la ganancia conserva la misma proporción. Si el monto en dólares aumenta en tres por ciento, su equivalente en pesos también aumenta en tres por ciento. La respuesta es C.",
+    "opciones": [
+      "correcta, pues, sin importar las variaciones en la tasa de cambio, la proporción en que aumenta la inversión en dólares es la misma que en pesos.",
+      "incorrecta, pues debería conocerse el valor exacto de la inversión para poder calcular la cantidad de dinero que ganará.",
+      "correcta, pues el $3\\%$ representa una proporción fija en cualquiera de las dos monedas, puesto que la tasa de cambio permanecerá constante.",
+      "incorrecta, pues el $3\\%$ representa un incremento, que será mayor en pesos colombianos, pues en esta moneda cada dólar representa un valor $2.000$ veces mayor."
+    ],
+    "revisar": []
+  },
+  "mth-i003": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "La suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo.",
+      "",
+      "Incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable.",
+      "Que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
+    ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "La combinación de las franjas 1, 3 y 4 cuesta $5.950.000: 50 × $35.000 + 30 × $50.000 + 60 × $45.000. Al usar las franjas 1, 2 y 4, se pueden acomodar 140 estudiantes y el costo es $5.650.000: 50 × $35.000 + 40 × $40.000 + 50 × $45.000. Por eso, la elección inicial no garantiza el menor precio y la respuesta es B.",
+    "figuras": [
+      {
+        "alt": "Franjas horarias, cupos máximos y precios por estudiante para la visita al museo",
+        "cols": [
+          "Franja",
+          "Horario",
+          "Cantidad máxima de estudiantes",
+          "Precio por estudiante"
+        ],
+        "filas": [
+          [
+            "1",
+            "8 h - 10 h",
+            "50",
+            "$35.000"
+          ],
+          [
+            "2",
+            "10 h - 12 h",
+            "40",
+            "$40.000"
+          ],
+          [
+            "3",
+            "12 h - 14 h",
+            "30",
+            "$50.000"
+          ],
+          [
+            "4",
+            "14 h - 16 h",
+            "60",
+            "$45.000"
+          ]
+        ],
+        "tipo": "tabla"
+      }
+    ],
+    "opciones": [
+      "Sí, porque esas franjas suman exactamente 140 estudiantes.",
+      "No, porque es posible obtener un precio menor eligiendo la franja 2 en lugar de la franja 3.",
+      "Sí, porque se incluyó la franja 1 que es la de menor precio por estudiante.",
+      "No, porque los estudiantes que van en la franja 3 pagan más."
+    ],
+    "revisar": []
+  },
+  "mth-i004": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-capacitacion-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Un curso no puede atender más de 30 personas y costaría $1.400.000.",
+      "Dos cursos cuestan $2.800.000, no $4.200.000.",
+      "",
+      "Cuatro cursos costarían $5.600.000, más de lo pagado."
+    ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "El módulo I cuesta $40 × $35.000 = $1.400.000 por curso. Con dos cursos se atienden hasta 60 personas y se pagarían $2.800.000; para pagar $4.200.000 se necesitan tres cursos. Cada uno admite entre 20 y 30 trabajadores, así que la dependencia debe tener entre 61 y 90. La respuesta es C.",
+    "revisar": []
+  },
+  "mth-i005": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-capacitacion-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "$18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos.",
+      "",
+      "$450.000 es la mitad del costo de un curso y no cubre dos grupos.",
+      "$900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
+    ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "El módulo II cuesta $30 × $30.000 = $900.000 por curso. Como el grupo tiene 50 trabajadores y cada curso admite máximo 30, se requieren dos cursos: $1.800.000 en total. Al dividir ese valor entre 50, cada persona paga $36.000. La respuesta es B.",
+    "revisar": []
+  },
+  "mth-i006": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-capacitacion-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Dos cursos del módulo I cuestan $2.800.000.",
+      "Dos cursos del módulo II cuestan $1.800.000.",
+      "Dos cursos del módulo III cuestan $3.200.000.",
+      ""
+    ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Con 40 funcionarios se necesitan dos cursos, pues cada uno admite máximo 30. El módulo IV cuesta $10 × $45.000 = $450.000 por curso; dos cursos cuestan $900.000. Por tanto, corresponde al módulo IV y la respuesta es D.",
+    "revisar": []
+  },
+  "mth-i007": {
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-obesidad-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "Sumar las muertes por obesidad de los cuatro países no da el total de muertes de P3.",
+      "",
+      "La figura sí permite obtener el total de muertes en P3 al relacionar 28.000 con el 7 % que representan.",
+      "La figura informa las muertes por obesidad y su porcentaje; esa relación permite inferir el total de muertes en P3."
+    ],
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "La figura indica que en P3 hubo 28.000 muertes por obesidad, equivalentes al 7 % del total. Entonces el total de muertes en P3 es $28.000 ÷ 0,07 = 400.000$. Con ese denominador se puede calcular el porcentaje de 1.700 muertes por la otra enfermedad: $1.700 × 100 ÷ 400.000 = 0,425\\%$. La respuesta es B.",
+    "opciones": [
+      "Sí, porque adicionando el número de muertes de los países se obtiene el total de muertes que permite calcular el porcentaje pedido.",
+      "Sí, porque solamente falta conocer el número total de muertes en P3, que se obtiene con la información de la figura.",
+      "No, porque en la figura faltan los datos sobre el número total de muertes en cada país.",
+      "No, porque los datos de P3 son información sobre las muertes por obesidad."
+    ],
+    "revisar": []
+  },
+  "mth-i008": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-obesidad-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso.",
+      "Un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso.",
+      "Un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta.",
+      ""
+    ],
+    "enunciado": "El IMC de una persona se calcula dividiendo su peso (en kg) entre su estatura (en m) elevada al cuadrado. De un hombre de P2 que tiene 30 años de edad, pesa 75 kg y tiene una estatura de $\\frac{3}{2}$ m, puede afirmarse que forma parte del",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "La estatura es $\\frac{3}{2}$ m, así que el IMC es $75 ÷ (\\frac{3}{2})^2 = 75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre 30,0 y 34,9; corresponde a obesidad leve. La tabla indica que el 13 % de los hombres de ese rango de edad está en esa categoría. La respuesta es D.",
+    "opciones": [
+      "1 % de hombres entre 26 y 60 años de edad con bajo peso.",
+      "50 % de hombres entre 26 y 60 años de edad con sobrepeso.",
+      "1 % de hombres entre 26 y 60 años de edad con obesidad alta.",
+      "13 % de hombres entre 26 y 60 años de edad con obesidad leve."
+    ],
+    "revisar": []
+  },
+  "mth-i009": {
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "bloque": "mth-frutas-2018",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
+    "distractores": [
+      "El ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos.",
+      "La diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones.",
+      "",
+      "Los gastos de transporte y trabajadores son mayores en Z, no en W."
+    ],
+    "evidencia": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible en el marco de la solución de un problema.",
+    "evidenciaId": "3.1",
+    "explicacion": "Vender seis toneladas de mango deja $300.000$ más de ingreso en Z que en W: la diferencia de $50.000$ por tonelada se multiplica por seis. Para transportar seis toneladas se necesitan dos camiones. El transporte y los dos trabajadores por camión cuestan $1.020.000$ en W y $1.160.000$ en Z; la diferencia de gastos es $140.000$. El aumento en ventas supera el aumento en gastos, así que la afirmación es correcta. La respuesta es C.",
+    "revisar": []
+  },
+  "mth-i010": {
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "bloque": "mth-frutas-2018",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
+    "distractores": [
+      "$5.670.000$ resta costos que no corresponden a los datos del procedimiento.",
+      "$5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores.",
+      "",
+      "$8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
+    ],
+    "enunciado": "Los tres (3) camiones se cargan con 5 toneladas de banano cada uno para venderse en la ciudad W. El comerciante necesita conocer la ganancia al hacer este negocio, ejecutando el siguiente procedimiento: Paso 1: Halla el número de toneladas de banano que hay en los 3 camiones. Paso 2: Halla la diferencia entre el precio de venta de una tonelada de banano en la ciudad W y el precio de compra. Paso 3: Multiplica los valores hallados en los pasos 1 y 2. Paso 4: Encuentra los costos totales de transporte y súmale el pago total de los trabajadores en los tres viajes. Paso 5: Halla la diferencia entre el valor obtenido en el paso 3 y el paso 4. ¿Cuál es la ganancia que obtiene el comerciante?",
+    "evidencia": "Argumenta a favor o en contra de un procedimiento para resolver un problema a la luz de criterios presentados o establecidos.",
+    "evidenciaId": "3.2",
+    "explicacion": "Los tres camiones transportan $3 × 5 = 15$ toneladas. El margen por tonelada de banano en W es $1.000.000 - 400.000 = 600.000$, así que el margen de venta es $15 × 600.000 = 9.000.000$. El transporte cuesta $3 × 150.000 = 450.000$ y los seis trabajadores reciben $6 × 180.000 = 1.080.000$. La ganancia es $9.000.000 - 450.000 - 1.080.000 = 7.470.000$. La respuesta es C.",
+    "revisar": []
+  },
+  "mth-i011": {
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-frutas-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "$526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas.",
+      "",
+      "$148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles.",
+      "$87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
+    ],
+    "enunciado": "Para diciembre, el comerciante decidió que por cada 5 toneladas del producto transportado en camión y vendido en alguna de las ciudades, cada uno de los dos empleados necesarios por camión recibirá un bono de 0,3 % del dinero recibido en la venta de esas 5 toneladas. En ese mes, dos empleados transportaron y vendieron 47 toneladas de mango a la ciudad W. Para hallar el bono recibido por cada uno de ellos, se ejecutó el siguiente procedimiento: Paso 1: Se dividió el número de toneladas vendidas entre 5 y se halló su residuo. Paso 2: Se restó del número de toneladas vendidas el valor obtenido en el paso 1. Paso 3: Se multiplicó el valor obtenido en el paso 2 por el valor de venta de la tonelada del producto. Paso 4: Al valor obtenido en el paso 3 se le sacó el 0,3 %. El bono recibido por cada empleado fue, aproximadamente, de",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Se cuentan solo grupos completos de cinco toneladas: $47 - 2 = 45$ toneladas. A $1.300.000$ por tonelada, esas ventas suman $45 × 1.300.000 = 58.500.000$. El bono de cada trabajador es $0,3\\% × 58.500.000 = 175.500$, aproximadamente $175.000$ pesos. La respuesta es B.",
+    "revisar": []
+  },
+  "mth-i012": {
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-frutas-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "La opción A muestra costos de trabajadores de un solo camión por ciudad, aunque en cada destino se necesitan dos.",
+      "",
+      "La opción C muestra transporte para dos camiones, pero pago de trabajadores como si se usara uno solo.",
+      "La opción D intercambia los costos de las ciudades y no corresponde a la tabla."
+    ],
+    "enunciado": "Si se transportan 7 toneladas de fruta a la ciudad W y 10 toneladas de fruta a la ciudad Z, la gráfica que muestra la relación de costos por ciudad es",
+    "evidencia": "Transforma la representación de una o más piezas de información.",
+    "evidenciaId": "1.2",
+    "explicacion": "Para transportar 7 toneladas a W y 10 a Z se necesitan dos camiones en cada ciudad. El transporte cuesta $2 × 150.000 = 300.000$ en W y $2 × 180.000 = 360.000$ en Z. Los trabajadores cuestan $2 × 2 × 180.000 = 720.000$ en W y $2 × 2 × 200.000 = 800.000$ en Z. La gráfica que representa esos cuatro valores es B.",
+    "opcionesFig": [
+      {
+        "alt": "Opción A: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            110,
+            348,
+            292,
+            462
+          ]
+        },
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-a.png",
+        "tipo": "img"
+      },
+      {
+        "alt": "Opción B: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            315,
+            348,
+            490,
+            462
+          ]
+        },
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-b.png",
+        "tipo": "img"
+      },
+      {
+        "alt": "Opción C: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            110,
+            480,
+            292,
+            594
+          ]
+        },
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-c.png",
+        "tipo": "img"
+      },
+      {
+        "alt": "Opción D: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            315,
+            480,
+            490,
+            594
+          ]
+        },
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-d.png",
+        "tipo": "img"
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i013": {
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-frutas-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "No se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia.",
+      "No se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago.",
+      "Sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores.",
+      ""
+    ],
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "El comerciante vendió $100 + 50 = 150$ toneladas. Los tres camiones pueden llevar $3 × 5 = 15$ toneladas por salida conjunta; por tanto, se requieren como mínimo $150 ÷ 15 = 10$ salidas. Si se cuentan viajes individuales de camión, son 30. Los datos no bastan para conocer ganancia, pagos o costos totales sin saber cómo se distribuyeron las ventas por ciudad. La respuesta es D.",
+    "opciones": [
+      "la ganancia de los productores.",
+      "el pago que recibirá cada trabajador en enero.",
+      "los costos totales del comerciante.",
+      "el número mínimo de viajes que se realizaron desde el pueblo."
+    ],
+    "revisar": []
+  },
   "mth-i014": {
-    "enunciado": "Si en un rectángulo se aumenta la longitud de uno de sus lados en 100 %, su área",
-    "explicacion": "Si los lados miden $a$ y $b$, el área inicial es $ab$. Al duplicar uno de ellos, el área pasa a $2ab$, que es el doble de la inicial. La respuesta es B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Aumentar un lado al doble no aumenta el área solo en la mitad; el otro lado conserva su longitud.",
       "",
       "El área sí cambia porque uno de los factores se duplica.",
       "El porcentaje modifica una longitud relativa, no agrega cien unidades de área."
     ],
+    "enunciado": "Si en un rectángulo se aumenta la longitud de uno de sus lados en 100 %, su área",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Si los lados miden $a$ y $b$, el área inicial es $ab$. Al duplicar uno de ellos, el área pasa a $2ab$, que es el doble de la inicial. La respuesta es B.",
     "revisar": []
   },
   "mth-i015": {
-    "enunciado": "Un estudio de mercadeo relaciona la cantidad de marcas competidoras con las unidades vendidas de un producto. La gráfica muestra los resultados para una tienda durante un mes. Suponiendo un comportamiento análogo para una tienda que vende 1.250 unidades cuando el producto no tiene competencia, ¿cuántas unidades se venderán aproximadamente si compite contra 3 marcas?",
-    "explicacion": "En la gráfica, las ventas pasan de 500 unidades sin competencia a 200 cuando hay tres marcas competidoras. La proporción es $200/500=0,4$. Para una base de $1.250$ unidades, la estimación es $1.250×0,4=500$. La respuesta es A.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "",
       "$700$ supone una proporción cercana a $0,56$, que no corresponde a la relación observada.",
       "$755$ tampoco conserva la proporción entre las ventas con y sin competencia.",
       "$950$ deja casi intactas las ventas pese a la competencia; la gráfica muestra una reducción mayor."
     ],
+    "enunciado": "Un estudio de mercadeo relaciona la cantidad de marcas competidoras con las unidades vendidas de un producto. La gráfica muestra los resultados para una tienda durante un mes. Suponiendo un comportamiento análogo para una tienda que vende 1.250 unidades cuando el producto no tiene competencia, ¿cuántas unidades se venderán aproximadamente si compite contra 3 marcas?",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "En la gráfica, las ventas pasan de 500 unidades sin competencia a 200 cuando hay tres marcas competidoras. La proporción es $200/500=0,4$. Para una base de $1.250$ unidades, la estimación es $1.250×0,4=500$. La respuesta es A.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i015-grafica.png",
         "alt": "Gráfica de ventas según el número de marcas competidoras",
         "recorteFuente": {
           "pagina": 10,
@@ -795,40 +900,46 @@
             390,
             350
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i015-grafica.png",
+        "tipo": "img"
       }
     ],
     "revisar": []
   },
   "mth-i016": {
-    "explicacion": "El promedio resume la suma de las estaturas, pero no indica cuántas personas quedan a cada lado de $1,80$ m. Muchas distribuciones pueden tener promedio $1,70$ m y cantidades distintas en cada piscina. Por eso la afirmación no se deduce del promedio. La respuesta es D.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "El promedio no permite afirmar que todas las personas estén por debajo de $1,80$ m ni que deban aceptarse exactamente otras dieciséis.",
       "Aunque el promedio no determina los grupos, no es necesario reemplazarlo por el máximo o el mínimo: se requiere conocer cada estatura.",
       "Agregar estudiantes de $1,80$ m no garantiza igualar los grupos; además, esa estatura pertenece a la piscina profunda.",
       ""
     ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "El promedio resume la suma de las estaturas, pero no indica cuántas personas quedan a cada lado de $1,80$ m. Muchas distribuciones pueden tener promedio $1,70$ m y cantidades distintas en cada piscina. Por eso la afirmación no se deduce del promedio. La respuesta es D.",
     "revisar": []
   },
   "mth-i017": {
-    "enunciado": "Observa la figura. La figura se compone de un cuadrado de lado $k$ y un semicírculo cuyo diámetro mide $k$. Para calcular el área total se sigue un procedimiento con el área del cuadrado y la del semicírculo. El procedimiento es",
-    "opciones": [
-      "Incorrecto, porque $A_s=k²π/2$.",
-      "Correcto, pues el radio equivale a $k/2$.",
-      "Correcto, ya que se ha sumado $A_c$ y $A_s/4$.",
-      "Incorrecto, pues $A_s=k²π/4$."
-    ],
-    "explicacion": "El diámetro del semicírculo es $k$, así que su radio es $k/2$. Su área es la mitad del área de un círculo de ese radio: $A_s=π(k/2)^2/2=πk^2/8$. El área total es $k^2+πk^2/8$. El procedimiento es correcto y la justificación de B identifica el radio. La respuesta es B.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "El área del semicírculo lleva el factor de mitad y el cuadrado del radio; no es $πk^2/2$.",
       "",
       "La fórmula final suma el área completa del semicírculo, no una cuarta parte de ella.",
       "La expresión $πk^2/4$ es el área del círculo de radio $k/2$, antes de tomar la mitad."
     ],
+    "enunciado": "Observa la figura. La figura se compone de un cuadrado de lado $k$ y un semicírculo cuyo diámetro mide $k$. Para calcular el área total se sigue un procedimiento con el área del cuadrado y la del semicírculo. El procedimiento es",
+    "evidencia": "Argumenta a favor o en contra de un procedimiento para resolver un problema a la luz de criterios presentados o establecidos.",
+    "evidenciaId": "3.2",
+    "explicacion": "El diámetro del semicírculo es $k$, así que su radio es $k/2$. Su área es la mitad del área de un círculo de ese radio: $A_s=π(k/2)^2/2=πk^2/8$. El área total es $k^2+πk^2/8$. El procedimiento es correcto y la justificación de B identifica el radio. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i017-figura.png",
         "alt": "Figura formada por un cuadrado y un semicírculo",
         "recorteFuente": {
           "pagina": 11,
@@ -838,56 +949,81 @@
             280,
             165
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i017-figura.png",
+        "tipo": "img"
       }
+    ],
+    "opciones": [
+      "Incorrecto, porque $A_s=k²π/2$.",
+      "Correcto, pues el radio equivale a $k/2$.",
+      "Correcto, ya que se ha sumado $A_c$ y $A_s/4$.",
+      "Incorrecto, pues $A_s=k²π/4$."
     ],
     "revisar": []
   },
   "mth-i018": {
-    "enunciado": "En un juego, el animador elige tres números positivos $X$, $Z$ y $W$. Suministra como pistas los valores $R=XZ$, $S=XW$ y $T=ZW$. Para hallar primero $X$, ¿qué expresión debe resolver?",
-    "opciones": [
-      "$R+S$",
-      "√(RST)",
-      "(R+S-T)/2",
-      "√(RS/T)"
-    ],
-    "explicacion": "Al multiplicar $R$ y $S$ se obtiene $RS=X^2ZW$. Como $T=ZW$, entonces $RS/T=X^2$. Los números son positivos, por lo que $X=\\sqrt{RS/T}$. La respuesta es D.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "La suma de $R$ y $S$ no elimina los factores $Z$ y $W$ ni despeja $X$.",
       "El producto $RST$ introduce potencias adicionales de $Z$ y $W$ en vez de cancelarlas.",
       "La combinación lineal no se deduce de las tres relaciones multiplicativas.",
       ""
     ],
+    "enunciado": "En un juego, el animador elige tres números positivos $X$, $Z$ y $W$. Suministra como pistas los valores $R=XZ$, $S=XW$ y $T=ZW$. Para hallar primero $X$, ¿qué expresión debe resolver?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Al multiplicar $R$ y $S$ se obtiene $RS=X^2ZW$. Como $T=ZW$, entonces $RS/T=X^2$. Los números son positivos, por lo que $X=\\sqrt{RS/T}$. La respuesta es D.",
+    "opciones": [
+      "$R+S$",
+      "√(RST)",
+      "(R+S-T)/2",
+      "√(RS/T)"
+    ],
     "revisar": []
   },
   "mth-i019": {
-    "opciones": [
-      "3x/2=0. Donde x es la cantidad de puntos que anotará P.",
-      "7+x=3x/2+2. Donde x es la cantidad de puntos que anotará P.",
-      "7+3x=2+2y. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q.",
-      "x+y=7+2. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q."
-    ],
-    "explicacion": "P lleva siete puntos y Q lleva dos. Si P anota $x$ puntos más, por cada dos de P, Q anota tres: Q suma $3x/2$. La igualdad se expresa como $7+x=2+3x/2$, equivalente a la opción B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "No iguala los puntajes iniciales y omite el marcador de ambos jugadores.",
       "",
       "Usa $3x$ y $2y$ en lugar de la relación correcta entre los puntos adicionales; además introduce dos incógnitas.",
       "Suma los puntos iniciales sin representar la proporción entre los puntos que anota cada robot."
     ],
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "P lleva siete puntos y Q lleva dos. Si P anota $x$ puntos más, por cada dos de P, Q anota tres: Q suma $3x/2$. La igualdad se expresa como $7+x=2+3x/2$, equivalente a la opción B.",
+    "opciones": [
+      "3x/2=0. Donde x es la cantidad de puntos que anotará P.",
+      "7+x=3x/2+2. Donde x es la cantidad de puntos que anotará P.",
+      "7+3x=2+2y. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q.",
+      "x+y=7+2. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q."
+    ],
     "revisar": []
   },
   "mth-i020": {
-    "enunciado": "La tabla presenta el gasto en publicidad y las ganancias de una empresa durante los años 2000 a 2002. La función que representa la ganancia obtenida $G$, en millones de pesos, en función del gasto en publicidad $p$, es",
-    "explicacion": "Con los pares $(p,G)=(200,8.000)$ y $(280,10.400)$, la ganancia aumenta $2.400$ cuando la publicidad aumenta $80$, es decir, $30$ por cada unidad de $p$. El intercepto es $8.000-30×200=2.000$. Así, $G(p)=30p+2.000$, y también verifica el dato $(250,9.500)$. La respuesta es A.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "",
       "$G(p)=10p$ no produce las ganancias de la tabla.",
       "$G(p)=40p$ daría $8.000$ para $p=200$, pero no coincide con los otros pares.",
       "$G(p)=40p-800$ tampoco reproduce los tres registros."
     ],
+    "enunciado": "La tabla presenta el gasto en publicidad y las ganancias de una empresa durante los años 2000 a 2002. La función que representa la ganancia obtenida $G$, en millones de pesos, en función del gasto en publicidad $p$, es",
+    "evidencia": "Transforma la representación de una o más piezas de información.",
+    "evidenciaId": "1.2",
+    "explicacion": "Con los pares $(p,G)=(200,8.000)$ y $(280,10.400)$, la ganancia aumenta $2.400$ cuando la publicidad aumenta $80$, es decir, $30$ por cada unidad de $p$. El intercepto es $8.000-30×200=2.000$. Así, $G(p)=30p+2.000$, y también verifica el dato $(250,9.500)$. La respuesta es A.",
     "figuras": [
       {
-        "tipo": "tabla",
         "alt": "Gasto en publicidad y ganancia obtenida entre 2000 y 2002",
         "cols": [
           "Año",
@@ -911,29 +1047,29 @@
             "9.500"
           ]
         ],
-        "nota": "*Datos en millones de pesos."
+        "nota": "*Datos en millones de pesos.",
+        "tipo": "tabla"
       }
     ],
     "revisar": []
   },
   "mth-i021": {
-    "enunciado": "Los organizadores de un campeonato internacional de patinaje entregan la medallería solo a los países que hayan ocupado los tres primeros puestos. La tabla muestra el número de formas posibles en que se pueden ocupar esos puestos, según el número de países participantes. Una forma de generalizar la relación entre los datos anteriores es",
-    "opciones": [
-      "$f=n!/((n-3)!3!)$",
-      "$f=3(3^(n-2)-1)$",
-      "$f=n!/(n-3)!$",
-      "$f=n(n-1)(n-2)^2$"
-    ],
-    "explicacion": "Los tres puestos son distintos, así que importa el orden. Para el primero hay $n$ países posibles; para el segundo, $n-1$; y para el tercero, $n-2$. Por tanto, $f=n(n-1)(n-2)=n!/(n-3)!$. La respuesta es C.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Divide por $3!$ y cuenta combinaciones sin distinguir el orden de los tres puestos.",
       "La expresión exponencial no representa la elección sucesiva de medallistas.",
       "",
       "Eleva al cuadrado el último factor, aunque para el tercer puesto queda una elección de $n-2$ países."
     ],
+    "enunciado": "Los organizadores de un campeonato internacional de patinaje entregan la medallería solo a los países que hayan ocupado los tres primeros puestos. La tabla muestra el número de formas posibles en que se pueden ocupar esos puestos, según el número de países participantes. Una forma de generalizar la relación entre los datos anteriores es",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Los tres puestos son distintos, así que importa el orden. Para el primero hay $n$ países posibles; para el segundo, $n-1$; y para el tercero, $n-2$. Por tanto, $f=n(n-1)(n-2)=n!/(n-3)!$. La respuesta es C.",
     "figuras": [
       {
-        "tipo": "tabla",
         "alt": "Número de podios posibles según la cantidad de países participantes",
         "cols": [
           "Países participantes (n)",
@@ -960,30 +1096,35 @@
             "…",
             "…"
           ]
-        ]
+        ],
+        "tipo": "tabla"
       }
+    ],
+    "opciones": [
+      "$f=n!/((n-3)!3!)$",
+      "$f=3(3^(n-2)-1)$",
+      "$f=n!/(n-3)!$",
+      "$f=n(n-1)(n-2)^2$"
     ],
     "revisar": []
   },
   "mth-i022": {
-    "enunciado": "La línea punteada en la figura muestra un corte realizado a un triángulo. El corte es paralelo a la base y pasa por la mitad de la altura perpendicular a esa base. Para realizar el corte, se determinó la altura usando sen(45°)=h/120; luego se dividió h entre dos. Teniendo en cuenta que sen(45°)=√2/2≈0,71, la distancia desde la base hasta el corte es, aproximadamente,",
-    "opciones": [
-      "85 cm.",
-      "60 cm.",
-      "42 cm.",
-      "30 cm."
-    ],
-    "explicacion": "La altura del triángulo es $120×0,71≈85,2$ cm. El corte queda a la mitad de esa altura: $85,2/2≈42,6$ cm, que se aproxima a $42$ cm según las opciones. La respuesta es C.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Es aproximadamente la altura completa y no la mitad donde está el corte.",
       "Es la mitad del lado de $120$ cm, no la mitad de la altura perpendicular.",
       "",
       "Aproxima la mitad de una altura incorrectamente calculada; la altura es cerca de $85$ cm."
     ],
+    "enunciado": "La línea punteada en la figura muestra un corte realizado a un triángulo. El corte es paralelo a la base y pasa por la mitad de la altura perpendicular a esa base. Para realizar el corte, se determinó la altura usando sen(45°)=h/120; luego se dividió h entre dos. Teniendo en cuenta que sen(45°)=√2/2≈0,71, la distancia desde la base hasta el corte es, aproximadamente,",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "La altura del triángulo es $120×0,71≈85,2$ cm. El corte queda a la mitad de esa altura: $85,2/2≈42,6$ cm, que se aproxima a $42$ cm según las opciones. La respuesta es C.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i022-figura.png",
         "alt": "Triángulo de lado 120 cm, ángulo de 45 grados y corte a media altura",
         "recorteFuente": {
           "pagina": 13,
@@ -993,30 +1134,36 @@
             380,
             220
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i022-figura.png",
+        "tipo": "img"
       }
+    ],
+    "opciones": [
+      "85 cm.",
+      "60 cm.",
+      "42 cm.",
+      "30 cm."
     ],
     "revisar": []
   },
   "mth-i023": {
-    "enunciado": "Un cartabón es una plantilla de dibujo técnico con forma de triángulo rectángulo escaleno, cuya hipotenusa mide el doble del cateto de menor longitud. Si el cateto más largo mide 32 centímetros, como muestra la figura, ¿cuál medida corresponde a su cateto menor?",
-    "opciones": [
-      "16 cm.",
-      "$32/√3$ cm.",
-      "27 cm.",
-      "$64/√3$ cm."
-    ],
-    "explicacion": "En un triángulo de 30°, 60° y 90°, el cateto mayor mide √3 veces el cateto menor. Si el mayor mide $32$ cm, el menor es $32/√3$ cm. La respuesta es B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Es la mitad del cateto mayor, pero la hipotenusa —no el cateto mayor— duplica al menor.",
       "",
       "No satisface la razón √3 entre los dos catetos.",
       "Multiplica por una razón que corresponde a un cateto mayor que el dado, no al menor."
     ],
+    "enunciado": "Un cartabón es una plantilla de dibujo técnico con forma de triángulo rectángulo escaleno, cuya hipotenusa mide el doble del cateto de menor longitud. Si el cateto más largo mide 32 centímetros, como muestra la figura, ¿cuál medida corresponde a su cateto menor?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "En un triángulo de 30°, 60° y 90°, el cateto mayor mide √3 veces el cateto menor. Si el mayor mide $32$ cm, el menor es $32/√3$ cm. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i023-figura.png",
         "alt": "Cartabón triangular con ángulo de 60 grados y cateto mayor de 32 cm",
         "recorteFuente": {
           "pagina": 13,
@@ -1026,52 +1173,70 @@
             495,
             450
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i023-figura.png",
+        "tipo": "img"
       }
+    ],
+    "opciones": [
+      "16 cm.",
+      "$32/√3$ cm.",
+      "27 cm.",
+      "$64/√3$ cm."
     ],
     "revisar": []
   },
   "mth-i024": {
-    "enunciado": "A partir de un conjunto de números S, cuyo promedio es 9 y su desviación estándar es 3, se construye un nuevo conjunto T sumando 4 unidades a cada elemento de S. Por ejemplo, si 8 es un elemento de S, entonces 8+4=12 es un elemento de T. ¿Cuál es el promedio y la desviación estándar del conjunto T, respectivamente?",
-    "explicacion": "Sumar cuatro a cada dato desplaza el promedio en cuatro unidades: $9+4=13$. La desviación estándar mide la dispersión respecto del promedio; al sumar la misma constante a todos los datos, las diferencias entre ellos no cambian. Por tanto, permanece en $3$. La respuesta es C.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "El promedio no permanece en nueve porque cada dato aumenta cuatro unidades.",
       "No cambia la desviación estándar: sumar la misma cantidad no multiplica la dispersión.",
       "",
       "El promedio aumenta, pero la desviación estándar no se suma con cuatro."
     ],
+    "enunciado": "A partir de un conjunto de números S, cuyo promedio es 9 y su desviación estándar es 3, se construye un nuevo conjunto T sumando 4 unidades a cada elemento de S. Por ejemplo, si 8 es un elemento de S, entonces 8+4=12 es un elemento de T. ¿Cuál es el promedio y la desviación estándar del conjunto T, respectivamente?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Sumar cuatro a cada dato desplaza el promedio en cuatro unidades: $9+4=13$. La desviación estándar mide la dispersión respecto del promedio; al sumar la misma constante a todos los datos, las diferencias entre ellos no cambian. Por tanto, permanece en $3$. La respuesta es C.",
     "revisar": []
   },
   "mth-i025": {
-    "enunciado": "El sistema de comunicaciones de un hotel utiliza los dígitos 2, 3, 4 y 5 para asignar a cada habitación un número de extensión telefónica de 4 dígitos diferentes. ¿Cuántas habitaciones pueden tener extensión telefónica?",
-    "explicacion": "Los cuatro dígitos deben ocupar cuatro posiciones sin repetirse. Hay cuatro opciones para la primera posición, tres para la segunda, dos para la tercera y una para la última: $4×3×2×1=24$. La respuesta es A.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "",
       "56 no es el producto de las opciones disponibles al ordenar los cuatro dígitos sin repetir.",
       "120 excede el número de permutaciones de cuatro dígitos distintos.",
       "256 cuenta cadenas con repetición, aunque las extensiones deben usar dígitos diferentes."
     ],
+    "enunciado": "El sistema de comunicaciones de un hotel utiliza los dígitos 2, 3, 4 y 5 para asignar a cada habitación un número de extensión telefónica de 4 dígitos diferentes. ¿Cuántas habitaciones pueden tener extensión telefónica?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Los cuatro dígitos deben ocupar cuatro posiciones sin repetirse. Hay cuatro opciones para la primera posición, tres para la segunda, dos para la tercera y una para la última: $4×3×2×1=24$. La respuesta es A.",
     "revisar": []
   },
   "mth-i026": {
-    "enunciado": "A continuación se muestran los resultados de una encuesta sobre el parque automotor del transporte intermunicipal en Colombia. Según la información anterior, es correcto afirmar que",
-    "opciones": [
-      "La mayor parte del parque automotor son automóviles, camionetas y camperos.",
-      "La mitad del parque automotor corresponde a automóviles, camionetas y camperos.",
-      "La mayor parte del parque automotor son buses, microbuses y busetas.",
-      "La mitad del parque automotor corresponde a buses, microbuses y busetas."
-    ],
-    "explicacion": "En el gráfico, los buses representan $24\\%$, los microbuses $23\\%$ y las busetas $18\\%$. En conjunto suman $65\\%$, más de la mitad del parque automotor. La respuesta es C.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "Automóviles, camionetas y camperos suman menos de la mitad según sus sectores.",
       "Ese grupo no llega al cincuenta por ciento del gráfico.",
       "",
       "Los buses, microbuses y busetas sí son mayoría, no exactamente la mitad."
     ],
+    "enunciado": "A continuación se muestran los resultados de una encuesta sobre el parque automotor del transporte intermunicipal en Colombia. Según la información anterior, es correcto afirmar que",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "En el gráfico, los buses representan $24\\%$, los microbuses $23\\%$ y las busetas $18\\%$. En conjunto suman $65\\%$, más de la mitad del parque automotor. La respuesta es C.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i026-grafica.png",
         "alt": "Gráfico circular del transporte intermunicipal de pasajeros y leyenda",
         "recorteFuente": {
           "pagina": 14,
@@ -1081,40 +1246,59 @@
             430,
             425
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i026-grafica.png",
+        "tipo": "img"
       }
+    ],
+    "opciones": [
+      "La mayor parte del parque automotor son automóviles, camionetas y camperos.",
+      "La mitad del parque automotor corresponde a automóviles, camionetas y camperos.",
+      "La mayor parte del parque automotor son buses, microbuses y busetas.",
+      "La mitad del parque automotor corresponde a buses, microbuses y busetas."
     ],
     "revisar": []
   },
   "mth-i027": {
-    "enunciado": "Una prueba atlética tiene un récord mundial de 10,49 segundos y un récord olímpico de 10,50 segundos. ¿Es posible que un atleta registre un tiempo, en el mismo tipo de prueba, que rompa el récord olímpico pero no el mundial?",
-    "opciones": [
-      "Sí, porque puede registrar, por ejemplo, 10,497 segundos, que está entre los dos tiempos récord.",
-      "Sí, porque puede registrar un tiempo menor que 10,4 segundos y marcaría un nuevo récord.",
-      "No, porque no existe un registro posible entre los dos tiempos récord.",
-      "No, porque cualquier registro menor que el récord olímpico también será menor que el récord mundial."
-    ],
-    "explicacion": "En una carrera, un tiempo menor es mejor. El registro $10,497$ s es menor que el olímpico de $10,50$ s, pero mayor que el mundial de $10,49$ s. Así rompe el récord olímpico sin romper el mundial. La respuesta es A.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "",
       "Un tiempo menor que $10,4$ también sería menor que el récord mundial, por lo que rompería ambos.",
       "Sí hay tiempos entre $10,49$ y $10,50$, como $10,497$.",
       "El intervalo entre ambos récords permite mejorar el olímpico sin mejorar el mundial."
     ],
+    "enunciado": "Una prueba atlética tiene un récord mundial de 10,49 segundos y un récord olímpico de 10,50 segundos. ¿Es posible que un atleta registre un tiempo, en el mismo tipo de prueba, que rompa el récord olímpico pero no el mundial?",
+    "evidencia": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible en el marco de la solución de un problema.",
+    "evidenciaId": "3.1",
+    "explicacion": "En una carrera, un tiempo menor es mejor. El registro $10,497$ s es menor que el olímpico de $10,50$ s, pero mayor que el mundial de $10,49$ s. Así rompe el récord olímpico sin romper el mundial. La respuesta es A.",
+    "opciones": [
+      "Sí, porque puede registrar, por ejemplo, 10,497 segundos, que está entre los dos tiempos récord.",
+      "Sí, porque puede registrar un tiempo menor que 10,4 segundos y marcaría un nuevo récord.",
+      "No, porque no existe un registro posible entre los dos tiempos récord.",
+      "No, porque cualquier registro menor que el récord olímpico también será menor que el récord mundial."
+    ],
     "revisar": []
   },
   "mth-i028": {
-    "enunciado": "En una institución educativa hay dos cursos en grado undécimo. El número de hombres y mujeres de cada curso se relaciona en la tabla. La probabilidad de escoger un estudiante de grado undécimo, de esta institución, que sea mujer es $3/5$. Este valor corresponde a la razón entre el número total de mujeres y",
-    "opciones": [
-      "el número total de estudiantes de grado undécimo.",
-      "el número total de hombres de grado undécimo.",
-      "el número total de mujeres del curso 11B.",
-      "el número total de hombres del curso 11A."
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "",
+      "Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer.",
+      "Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos.",
+      "Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
     ],
+    "enunciado": "En una institución educativa hay dos cursos en grado undécimo. El número de hombres y mujeres de cada curso se relaciona en la tabla. La probabilidad de escoger un estudiante de grado undécimo, de esta institución, que sea mujer es $3/5$. Este valor corresponde a la razón entre el número total de mujeres y",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
     "explicacion": "La tabla registra $45$ mujeres y $75$ estudiantes en total. La probabilidad es $45/75=3/5$, así que el denominador representa a todos los estudiantes de grado undécimo. La respuesta es A.",
     "figuras": [
       {
-        "tipo": "tabla",
         "alt": "Cantidad de mujeres y hombres en los cursos 11A y 11B",
         "cols": [
           "",
@@ -1141,30 +1325,35 @@
             "35",
             "75"
           ]
-        ]
+        ],
+        "tipo": "tabla"
       }
     ],
-    "distractores": [
-      "",
-      "Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer.",
-      "Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos.",
-      "Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
+    "opciones": [
+      "el número total de estudiantes de grado undécimo.",
+      "el número total de hombres de grado undécimo.",
+      "el número total de mujeres del curso 11B.",
+      "el número total de hombres del curso 11A."
     ],
     "revisar": []
   },
   "mth-i029": {
-    "enunciado": "Para fijar un aviso publicitario se coloca sobre un muro una escalera a $12$ metros del suelo (ver figura 1). Las figuras, además, muestran la situación y algunas de las medidas involucradas. ¿Cuál es el coseno del ángulo $θ$ que forman el suelo y la escalera?",
-    "opciones": [
-      "$12/13$",
-      "$12/5$",
-      "$5/13$",
-      "$13/5$"
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado.",
+      "Doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado.",
+      "",
+      "Trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
     ],
+    "enunciado": "Para fijar un aviso publicitario se coloca sobre un muro una escalera a $12$ metros del suelo (ver figura 1). Las figuras, además, muestran la situación y algunas de las medidas involucradas. ¿Cuál es el coseno del ángulo $θ$ que forman el suelo y la escalera?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
     "explicacion": "El ángulo está entre el suelo y la escalera. El cateto adyacente mide $5$ metros y la hipotenusa mide $13$ metros. Por tanto, el coseno es $5/13$. La respuesta es C.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i029-figura.png",
         "alt": "Dos diagramas de una escalera apoyada en un muro; el triángulo muestra lados 5, 12 y 13 metros",
         "recorteFuente": {
           "pagina": 15,
@@ -1174,29 +1363,36 @@
             390,
             500
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i029-figura.png",
+        "tipo": "img"
       }
     ],
-    "distractores": [
-      "Doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado.",
-      "Doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado.",
-      "",
-      "Trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
+    "opciones": [
+      "$12/13$",
+      "$12/5$",
+      "$5/13$",
+      "$13/5$"
     ],
     "revisar": []
   },
   "mth-i030": {
-    "enunciado": "En la tabla se presentan las cartas que conforman una baraja de póquer. Si la probabilidad de escoger una carta que cumpla dos características determinadas es cero, estas características podrían ser:",
-    "opciones": [
-      "Ser una carta negra y ser un número par.",
-      "Ser una carta roja y ser de picas.",
-      "Ser una carta de corazones y ser un número impar.",
-      "Ser una carta roja K y ser de diamantes."
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
+      "",
+      "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
+      "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
     ],
+    "enunciado": "En la tabla se presentan las cartas que conforman una baraja de póquer. Si la probabilidad de escoger una carta que cumpla dos características determinadas es cero, estas características podrían ser:",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
     "explicacion": "Picas es un palo negro. Por eso no existe una carta que sea a la vez roja y de picas: el evento es imposible y su probabilidad es cero. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "tabla",
         "alt": "Rangos de las cartas de cada palo de la baraja de póquer",
         "cols": [
           "Número",
@@ -1297,30 +1493,35 @@
             "K",
             "K"
           ]
-        ]
+        ],
+        "tipo": "tabla"
       }
     ],
-    "distractores": [
-      "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
-      "",
-      "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
-      "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
+    "opciones": [
+      "Ser una carta negra y ser un número par.",
+      "Ser una carta roja y ser de picas.",
+      "Ser una carta de corazones y ser un número impar.",
+      "Ser una carta roja K y ser de diamantes."
     ],
     "revisar": []
   },
   "mth-i031": {
-    "enunciado": "Un octágono regular tiene ocho lados y ocho ángulos internos congruentes. La figura muestra un octágono regular inscrito en una circunferencia de radio $2$. Con la expresión $x=2·sen(45°)/sen(67,5°)$ se puede calcular en el octágono de la figura la medida del",
-    "opciones": [
-      "ángulo $OPQ$.",
-      "segmento $PQ$.",
-      "ángulo $QOP$.",
-      "segmento $OQ$."
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado.",
+      "",
+      "El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado.",
+      "$OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
     ],
+    "enunciado": "Un octágono regular tiene ocho lados y ocho ángulos internos congruentes. La figura muestra un octágono regular inscrito en una circunferencia de radio $2$. Con la expresión $x=2·sen(45°)/sen(67,5°)$ se puede calcular en el octágono de la figura la medida del",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
     "explicacion": "El triángulo $OPQ$ tiene un ángulo de $45°$ en el centro y un ángulo de $67,5°$ en $P$. Por la ley de senos, $x/sen(45°)=2/sen(67,5°)$; por tanto, $x$ representa el lado $PQ$. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i031-figura.png",
         "alt": "Octágono regular inscrito con radio 2 y triángulo OPQ marcado",
         "recorteFuente": {
           "pagina": 16,
@@ -1330,30 +1531,42 @@
             360,
             610
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i031-figura.png",
+        "tipo": "img"
       }
     ],
-    "distractores": [
-      "La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado.",
-      "",
-      "El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado.",
-      "$OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
+    "opciones": [
+      "ángulo $OPQ$.",
+      "segmento $PQ$.",
+      "ángulo $QOP$.",
+      "segmento $OQ$."
     ],
     "revisar": []
   },
   "mth-i032": {
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado.",
+      "Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado.",
+      "Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado.",
+      ""
+    ],
     "enunciado": "En una fábrica se aplica una encuesta a los empleados para saber el medio de transporte que usan para llegar al trabajo, y luego decidir si se implementa un servicio de ruta. Los resultados mostraron, entre otras, estas tres conclusiones sobre un grupo de $100$ empleados que viven cerca de la fábrica y que se desplazan únicamente en bus o a pie: el $60\\%$ del grupo son mujeres; el $20\\%$ de las mujeres se desplazan en bus; el $40\\%$ de los hombres se desplazan caminando. ¿Cuál de las siguientes tablas representa correctamente la información obtenida de ese grupo?",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "Hay $60$ mujeres y $40$ hombres. En bus van $20\\%$ de las mujeres, es decir, $12$; las otras $48$ caminan. Caminan $40\\%$ de los hombres, es decir, $16$, así que los otros $24$ van en bus. La respuesta es D.",
     "opciones": [
       "Tabla A: bus, 40 hombres y 60 mujeres; caminando, 60 hombres y 40 mujeres.",
       "Tabla B: bus, 34 hombres y 12 mujeres; caminando, 16 hombres y 38 mujeres.",
       "Tabla C: bus, 0 hombres y 20 mujeres; caminando, 40 hombres y 40 mujeres.",
       "Tabla D: bus, 24 hombres y 12 mujeres; caminando, 16 hombres y 48 mujeres."
     ],
-    "explicacion": "Hay $60$ mujeres y $40$ hombres. En bus van $20\\%$ de las mujeres, es decir, $12$; las otras $48$ caminan. Caminan $40\\%$ de los hombres, es decir, $16$, así que los otros $24$ van en bus. La respuesta es D.",
     "opcionesFig": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i032-opcion-a.png",
         "alt": "Opción A: tabla de transporte por género con conteos 40, 60, 60 y 40",
         "recorteFuente": {
           "pagina": 17,
@@ -1363,11 +1576,11 @@
             300,
             306
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-a.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i032-opcion-b.png",
         "alt": "Opción B: tabla de transporte por género con conteos 34, 12, 16 y 38",
         "recorteFuente": {
           "pagina": 17,
@@ -1377,11 +1590,11 @@
             300,
             359
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-b.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i032-opcion-c.png",
         "alt": "Opción C: tabla de transporte por género con conteos 0, 20, 40 y 40",
         "recorteFuente": {
           "pagina": 17,
@@ -1391,11 +1604,11 @@
             300,
             408
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-c.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i032-opcion-d.png",
         "alt": "Opción D: tabla de transporte por género con conteos 24, 12, 16 y 48",
         "recorteFuente": {
           "pagina": 17,
@@ -1405,84 +1618,103 @@
             300,
             459
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-d.png",
+        "tipo": "img"
       }
-    ],
-    "distractores": [
-      "Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado.",
-      "Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado.",
-      "Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado.",
-      ""
     ],
     "revisar": []
   },
   "mth-i033": {
-    "enunciado": "Un trapecio isósceles es un cuadrilátero que tiene un solo par de lados paralelos y los otros dos, de igual medida. En un plano cartesiano se dibuja un trapecio isósceles de modo que el eje $Y$ divide al trapecio en dos figuras iguales. Si las coordenadas de dos de los vértices del trapecio son $(-4,2)$ y $(-2,8)$, ¿cuáles son las coordenadas de los otros dos vértices?",
-    "opciones": [
-      "$(8,2)$ y $(2,4)$.",
-      "$(2,8)$ y $(4,2)$.",
-      "$(-2,-4)$ y $(-8,-2)$.",
-      "$(-4,-2)$ y $(-2,-8)$."
-    ],
-    "explicacion": "Reflejar una figura respecto al eje $Y$ cambia el signo de la coordenada $x$ y conserva la coordenada $y$. Por tanto, los puntos reflejados son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "No son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado.",
       "",
       "Cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado.",
       "Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado."
     ],
+    "enunciado": "Un trapecio isósceles es un cuadrilátero que tiene un solo par de lados paralelos y los otros dos, de igual medida. En un plano cartesiano se dibuja un trapecio isósceles de modo que el eje $Y$ divide al trapecio en dos figuras iguales. Si las coordenadas de dos de los vértices del trapecio son $(-4,2)$ y $(-2,8)$, ¿cuáles son las coordenadas de los otros dos vértices?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Reflejar una figura respecto al eje $Y$ cambia el signo de la coordenada $x$ y conserva la coordenada $y$. Por tanto, los puntos reflejados son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+    "opciones": [
+      "$(8,2)$ y $(2,4)$.",
+      "$(2,8)$ y $(4,2)$.",
+      "$(-2,-4)$ y $(-8,-2)$.",
+      "$(-4,-2)$ y $(-2,-8)$."
+    ],
     "revisar": []
   },
   "mth-i034": {
-    "enunciado": "Después de analizar la información, Ángela afirma: “Con la modalidad I, el valor de la cuota disminuirá $50.000$ en cada mes”. La afirmación es correcta porque",
-    "opciones": [
-      "el interés total del crédito será $300.000$ y cada mes disminuirá $50.000$.",
-      "cada mes se abonará al crédito $1.000.000$ y el interés disminuirá en $50.000$.",
-      "cada mes aumentará el abono al crédito en $50.000$, de manera que el interés disminuirá.",
-      "el abono al crédito disminuirá $50.000$ cada mes, al igual que el interés."
-    ],
-    "explicacion": "El abono mensual al capital es $6.000.000/6=$1.000.000$. Al bajar el saldo en un millón cada mes, el interés del siguiente mes disminuye en $5\\%×1.000.000=$50.000$. Como el abono al capital es fijo, la cuota total también disminuye en esa cantidad. La respuesta es B.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "bloque": "mth-creditos-2018",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "El interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado.",
       "",
       "El abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado.",
       "El abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado."
     ],
-    "revisar": [],
-    "bloque": "mth-creditos-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35."
+    "enunciado": "Después de analizar la información, Ángela afirma: “Con la modalidad I, el valor de la cuota disminuirá $50.000$ en cada mes”. La afirmación es correcta porque",
+    "evidencia": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible en el marco de la solución de un problema.",
+    "evidenciaId": "3.1",
+    "explicacion": "El abono mensual al capital es $6.000.000/6=$1.000.000$. Al bajar el saldo en un millón cada mes, el interés del siguiente mes disminuye en $5\\%×1.000.000=$50.000$. Como el abono al capital es fijo, la cuota total también disminuye en esa cantidad. La respuesta es B.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35.",
+    "opciones": [
+      "el interés total del crédito será $300.000$ y cada mes disminuirá $50.000$.",
+      "cada mes se abonará al crédito $1.000.000$ y el interés disminuirá en $50.000$.",
+      "cada mes aumentará el abono al crédito en $50.000$, de manera que el interés disminuirá.",
+      "el abono al crédito disminuirá $50.000$ cada mes, al igual que el interés."
+    ],
+    "revisar": []
   },
   "mth-i035": {
-    "enunciado": "El interés total de un crédito es la cantidad de dinero que se paga adicional al valor del mismo. ¿Cuál(es) de los siguientes procesos podría utilizar la entidad para calcular el interés total del crédito de Ángela, si se pagara con la modalidad II? Proceso 1. Calcular el $20\\%$ de $6.000.000$. Proceso 2. Calcular el $20\\%$ de $6.000.000$ y multiplicarlo por $12$. Proceso 3. Calcular el valor de la cuota, multiplicarlo por $12$ y al resultado restarle $6.000.000$.",
-    "opciones": [
-      "1 solamente.",
-      "2 solamente.",
-      "1 y 3 solamente.",
-      "2 y 3 solamente."
-    ],
-    "explicacion": "En la modalidad II, las doce cuotas suman el capital más el $20\\%$ adicional. El proceso 1 calcula directamente ese interés; el proceso 3 resta el capital al total pagado y también lo obtiene. El proceso 2 multiplica el interés total por doce y lo cuenta varias veces. La respuesta es C.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "bloque": "mth-creditos-2018",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas.",
       "Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas.",
       "",
       "El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
     ],
-    "revisar": [],
-    "bloque": "mth-creditos-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35."
+    "enunciado": "El interés total de un crédito es la cantidad de dinero que se paga adicional al valor del mismo. ¿Cuál(es) de los siguientes procesos podría utilizar la entidad para calcular el interés total del crédito de Ángela, si se pagara con la modalidad II? Proceso 1. Calcular el $20\\%$ de $6.000.000$. Proceso 2. Calcular el $20\\%$ de $6.000.000$ y multiplicarlo por $12$. Proceso 3. Calcular el valor de la cuota, multiplicarlo por $12$ y al resultado restarle $6.000.000$.",
+    "evidencia": "Argumenta a favor o en contra de un procedimiento para resolver un problema a la luz de criterios presentados o establecidos.",
+    "evidenciaId": "3.2",
+    "explicacion": "En la modalidad II, las doce cuotas suman el capital más el $20\\%$ adicional. El proceso 1 calcula directamente ese interés; el proceso 3 resta el capital al total pagado y también lo obtiene. El proceso 2 multiplica el interés total por doce y lo cuenta varias veces. La respuesta es C.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35.",
+    "opciones": [
+      "1 solamente.",
+      "2 solamente.",
+      "1 y 3 solamente.",
+      "2 y 3 solamente."
+    ],
+    "revisar": []
   },
   "mth-i036": {
-    "enunciado": "Una fábrica de lápices que realiza el control de calidad de sus productos, selecciona una muestra de $100$ lápices. En la siguiente tabla se registra la longitud de los mismos. Con base en la información presentada en la anterior tabla y teniendo en cuenta que el margen de error del control de calidad es del $3\\%$, el porcentaje correspondiente a los lápices producidos que miden $150$ mm está entre",
-    "opciones": [
-      "el $8\\%$ y el $16\\%$.",
-      "el $13\\%$ y el $19\\%$.",
-      "el $15\\%$ y el $18\\%$.",
-      "el $16\\%$ y el $65\\%$."
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
+    "distractores": [
+      "El intervalo no está centrado en dieciséis por ciento y no aplica el margen de tres puntos. Pero la muestra registra dieciséis por ciento.",
+      "",
+      "Su intervalo no incluye todos los valores dentro de tres puntos de dieciséis. Pero el límite inferior es trece por ciento.",
+      "Mezcla el porcentaje observado con el conteo de lápices de longitud ciento cincuenta y uno. Pero solo se pide la longitud de ciento cincuenta milímetros."
     ],
+    "enunciado": "Una fábrica de lápices que realiza el control de calidad de sus productos, selecciona una muestra de $100$ lápices. En la siguiente tabla se registra la longitud de los mismos. Con base en la información presentada en la anterior tabla y teniendo en cuenta que el margen de error del control de calidad es del $3\\%$, el porcentaje correspondiente a los lápices producidos que miden $150$ mm está entre",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
     "explicacion": "En la muestra, $16$ de cada $100$ lápices miden $150$ mm, es decir, el $16\\%$. Con un margen de error de tres puntos porcentuales, el porcentaje de producción está entre $16\\%-3\\%=13\\%$ y $16\\%+3\\%=19\\%$. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "tabla",
         "alt": "Cantidad de lápices por longitud",
         "cols": [
           "Cantidad de lápices",
@@ -1505,102 +1737,131 @@
             "11",
             "152"
           ]
-        ]
+        ],
+        "tipo": "tabla"
       }
     ],
-    "distractores": [
-      "El intervalo no está centrado en dieciséis por ciento y no aplica el margen de tres puntos. Pero la muestra registra dieciséis por ciento.",
-      "",
-      "Su intervalo no incluye todos los valores dentro de tres puntos de dieciséis. Pero el límite inferior es trece por ciento.",
-      "Mezcla el porcentaje observado con el conteo de lápices de longitud ciento cincuenta y uno. Pero solo se pide la longitud de ciento cincuenta milímetros."
+    "opciones": [
+      "el $8\\%$ y el $16\\%$.",
+      "el $13\\%$ y el $19\\%$.",
+      "el $15\\%$ y el $18\\%$.",
+      "el $16\\%$ y el $65\\%$."
     ],
     "revisar": []
   },
   "mth-i037": {
-    "enunciado": "Sobre una circunferencia de centro $O$ se localizan dos puntos $P$ y $P′$ diferentes. De las siguientes, ¿cuál figura NO puede resultar al unir entre sí los tres puntos $P$, $P′$ y $O$?",
-    "opciones": [
-      "Un triángulo isósceles.",
-      "Un radio de la circunferencia.",
-      "Un triángulo equilátero.",
-      "Un diámetro de la circunferencia."
-    ],
-    "explicacion": "Al unir los tres puntos, si no están alineados se forma un triángulo: puede ser isósceles o equilátero porque $OP$ y $OP′$ son radios iguales. Si están alineados, $PP′$ es un diámetro. No se forma un solo radio al unir los tres puntos. La respuesta es B.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "Los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero.",
       "",
       "Si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir.",
       "Si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado."
     ],
+    "enunciado": "Sobre una circunferencia de centro $O$ se localizan dos puntos $P$ y $P′$ diferentes. De las siguientes, ¿cuál figura NO puede resultar al unir entre sí los tres puntos $P$, $P′$ y $O$?",
+    "evidencia": "Establece la validez o pertinencia de una solución propuesta a un problema dado.",
+    "evidenciaId": "3.3",
+    "explicacion": "Al unir los tres puntos, si no están alineados se forma un triángulo: puede ser isósceles o equilátero porque $OP$ y $OP′$ son radios iguales. Si están alineados, $PP′$ es un diámetro. No se forma un solo radio al unir los tres puntos. La respuesta es B.",
+    "opciones": [
+      "Un triángulo isósceles.",
+      "Un radio de la circunferencia.",
+      "Un triángulo equilátero.",
+      "Un diámetro de la circunferencia."
+    ],
     "revisar": []
   },
   "mth-i038": {
-    "enunciado": "Se desea saber cuál de los jugadores que aparecen en la gráfica consiguió un mayor porcentaje de victorias en las finales del Grand Slam y se concluyó que fue el jugador C. Está conclusión es incorrecta porque",
-    "opciones": [
-      "el jugador C no ganó Roland Garros antes de los $24$ años.",
-      "el más efectivo es el jugador A con $100\\%$ de torneos ganados antes de los $24$ años.",
-      "el más efectivo es el jugador D con $77,8\\%$ de efectividad en finales.",
-      "no supera los torneos ganados en cancha dura del jugador A."
-    ],
-    "explicacion": "Compara títulos ganados con finales disputadas: A obtuvo $5/7≈71,4\\%$, B $10/15≈66,7\\%$, C $16/23≈69,6\\%$, D $14/18≈77,8\\%$ y E $11/16≈68,8\\%$. El porcentaje mayor corresponde a D, no a C. La respuesta es C.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-grand-slam-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "El dato sobre Roland Garros no compara la efectividad total en finales. Pero la pregunta pide la mayor proporción de victorias.",
       "El jugador A ganó cinco de siete finales antes de los veinticuatro, no todas. Pero su porcentaje no es cien.",
       "",
       "La cantidad en cancha dura no mide la proporción de finales ganadas en los cuatro torneos. Pero la afirmación trata de efectividad global."
     ],
-    "revisar": [],
-    "bloque": "mth-grand-slam-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39."
+    "enunciado": "Se desea saber cuál de los jugadores que aparecen en la gráfica consiguió un mayor porcentaje de victorias en las finales del Grand Slam y se concluyó que fue el jugador C. Está conclusión es incorrecta porque",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "Compara títulos ganados con finales disputadas: A obtuvo $5/7≈71,4\\%$, B $10/15≈66,7\\%$, C $16/23≈69,6\\%$, D $14/18≈77,8\\%$ y E $11/16≈68,8\\%$. El porcentaje mayor corresponde a D, no a C. La respuesta es C.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39.",
+    "opciones": [
+      "el jugador C no ganó Roland Garros antes de los $24$ años.",
+      "el más efectivo es el jugador A con $100\\%$ de torneos ganados antes de los $24$ años.",
+      "el más efectivo es el jugador D con $77,8\\%$ de efectividad en finales.",
+      "no supera los torneos ganados en cancha dura del jugador A."
+    ],
+    "revisar": []
   },
   "mth-i039": {
-    "enunciado": "Considerando solamente los torneos jugados en cancha dura, ¿cuál es el promedio de torneos ganados por los cinco jugadores?",
-    "opciones": [
-      "$1,2$",
-      "$2,0$",
-      "$2,6$",
-      "$4,4$"
-    ],
-    "explicacion": "Australia y Estados Unidos se juegan en cancha dura. Al contar en la gráfica esos títulos por jugador se obtienen $4$, $2$, $9$, $7$ y $0$; suman $22$. El promedio es $22/5=4,4$. La respuesta es D.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "bloque": "mth-grand-slam-2018",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro.",
       "Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco.",
       "Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura.",
       ""
     ],
-    "revisar": [],
-    "bloque": "mth-grand-slam-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39."
+    "enunciado": "Considerando solamente los torneos jugados en cancha dura, ¿cuál es el promedio de torneos ganados por los cinco jugadores?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Australia y Estados Unidos se juegan en cancha dura. Al contar en la gráfica esos títulos por jugador se obtienen $4$, $2$, $9$, $7$ y $0$; suman $22$. El promedio es $22/5=4,4$. La respuesta es D.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 38 y 39.",
+    "opciones": [
+      "$1,2$",
+      "$2,0$",
+      "$2,6$",
+      "$4,4$"
+    ],
+    "revisar": []
   },
   "mth-i040": {
-    "enunciado": "Se puede encontrar números racionales mayores que un número entero $k$, de manera que sean cada vez más cercanos a él, calculando $k+1/j$ (con $j$ entero positivo). Cuanto más grande sea $j$, más cercano a $k$ será el racional construido. ¿Cuántos números racionales se pueden construir cercanos a $k$ y menores que $k+1/11$?",
-    "opciones": [
-      "$10$, que es la cantidad de racionales menores que $11$.",
-      "Una cantidad infinita, pues existen infinitos números enteros mayores que $11$.",
-      "$11$, que es el número que equivale en este caso a $j$.",
-      "Uno, pues el racional más cercano a $k$ se halla con $j=10$, es decir, con $k+0,1$."
-    ],
-    "explicacion": "Para que $k+1/j$ sea menor que $k+1/11$, debe cumplirse $1/j<1/11$, es decir, $j>11$. Hay infinitos enteros positivos mayores que once, así que se pueden construir infinitos racionales. La respuesta es B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once.",
       "",
       "Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan.",
       "El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
     ],
+    "enunciado": "Se puede encontrar números racionales mayores que un número entero $k$, de manera que sean cada vez más cercanos a él, calculando $k+1/j$ (con $j$ entero positivo). Cuanto más grande sea $j$, más cercano a $k$ será el racional construido. ¿Cuántos números racionales se pueden construir cercanos a $k$ y menores que $k+1/11$?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Para que $k+1/j$ sea menor que $k+1/11$, debe cumplirse $1/j<1/11$, es decir, $j>11$. Hay infinitos enteros positivos mayores que once, así que se pueden construir infinitos racionales. La respuesta es B.",
+    "opciones": [
+      "$10$, que es la cantidad de racionales menores que $11$.",
+      "Una cantidad infinita, pues existen infinitos números enteros mayores que $11$.",
+      "$11$, que es el número que equivale en este caso a $j$.",
+      "Uno, pues el racional más cercano a $k$ se halla con $j=10$, es decir, con $k+0,1$."
+    ],
     "revisar": []
   },
   "mth-i041": {
-    "enunciado": "En la figura se representa una cancha de fútbol con las medidas de sus lados. Un arquitecto realiza una maqueta del diseño de la cancha, con medida de los lados cien veces menor que las medidas originales. El diseño de la maqueta medirá",
-    "opciones": [
-      "Lado corto: $6×10^{-2}$ metros; lado largo: $1×10^{-2}$ metros.",
-      "Lado corto: $6×10^{-2}$ centímetros; lado largo: $1×10^{-2}$ centímetros.",
-      "Lado corto: $6×10^1$ metros; lado largo: $1×10^2$ metros.",
-      "Lado corto: $6×10^1$ centímetros; lado largo: $1×10^2$ centímetros."
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro.",
+      "La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros.",
+      "Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña.",
+      ""
     ],
+    "enunciado": "En la figura se representa una cancha de fútbol con las medidas de sus lados. Un arquitecto realiza una maqueta del diseño de la cancha, con medida de los lados cien veces menor que las medidas originales. El diseño de la maqueta medirá",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
     "explicacion": "Al reducir cada lado cien veces, $60$ metros pasan a $0,6$ metros y $100$ metros a $1$ metro. En centímetros, esas longitudes son $60$ y $100$, es decir, $6×10^1$ cm y $1×10^2$ cm. La respuesta es D.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i041-cancha.png",
         "alt": "Cancha de fútbol de 60 por 100 metros",
         "recorteFuente": {
           "pagina": 22,
@@ -1610,13 +1871,20 @@
             385,
             230
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i041-cancha.png",
+        "tipo": "img"
       }
+    ],
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 41.",
+    "opciones": [
+      "Lado corto: $6×10^{-2}$ metros; lado largo: $1×10^{-2}$ metros.",
+      "Lado corto: $6×10^{-2}$ centímetros; lado largo: $1×10^{-2}$ centímetros.",
+      "Lado corto: $6×10^1$ metros; lado largo: $1×10^2$ metros.",
+      "Lado corto: $6×10^1$ centímetros; lado largo: $1×10^2$ centímetros."
     ],
     "opcionesFig": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i041-opcion-a.png",
         "alt": "Opción A: maqueta con medidas en metros y potencias negativas",
         "recorteFuente": {
           "pagina": 22,
@@ -1626,11 +1894,11 @@
             330,
             365
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i041-opcion-a.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i041-opcion-b.png",
         "alt": "Opción B: maqueta con medidas en centímetros y potencias negativas",
         "recorteFuente": {
           "pagina": 22,
@@ -1640,11 +1908,11 @@
             330,
             470
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i041-opcion-b.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i041-opcion-c.png",
         "alt": "Opción C: maqueta con las dimensiones originales en metros",
         "recorteFuente": {
           "pagina": 22,
@@ -1654,11 +1922,11 @@
             330,
             565
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i041-opcion-c.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i041-opcion-d.png",
         "alt": "Opción D: maqueta de 60 por 100 centímetros",
         "recorteFuente": {
           "pagina": 22,
@@ -1668,48 +1936,30 @@
             330,
             685
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i041-opcion-d.png",
+        "tipo": "img"
       }
-    ],
-    "distractores": [
-      "Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro.",
-      "La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros.",
-      "Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña.",
-      ""
-    ],
-    "revisar": [],
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 41."
-  },
-  "mth-i002": {
-    "enunciado": "Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo $1$ dólar equivalente a $2.000$ pesos colombianos y que su inversión, en dólares, le dará ganancias del $3\\%$ en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del $3\\%$. La afirmación de su amigo es",
-    "opciones": [
-      "correcta, pues, sin importar las variaciones en la tasa de cambio, la proporción en que aumenta la inversión en dólares es la misma que en pesos.",
-      "incorrecta, pues debería conocerse el valor exacto de la inversión para poder calcular la cantidad de dinero que ganará.",
-      "correcta, pues el $3\\%$ representa una proporción fija en cualquiera de las dos monedas, puesto que la tasa de cambio permanecerá constante.",
-      "incorrecta, pues el $3\\%$ representa un incremento, que será mayor en pesos colombianos, pues en esta moneda cada dólar representa un valor $2.000$ veces mayor."
-    ],
-    "explicacion": "Como la tasa de cambio permanece constante, convertir a pesos tanto el valor inicial como la ganancia conserva la misma proporción. Si el monto en dólares aumenta en tres por ciento, su equivalente en pesos también aumenta en tres por ciento. La respuesta es C.",
-    "distractores": [
-      "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
-      "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
-      "",
-      "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
     ],
     "revisar": []
   },
   "mth-i042": {
-    "enunciado": "El área de los rectángulos que se pueden construir a partir del origen, los ejes y un punto que pertenece a la gráfica de la función $f(x)=5/x$, donde $x>0$, se describe con la expresión $A_x=x f(x)$. ¿Cuál de las siguientes gráficas corresponde a $A_x$?",
-    "opciones": [
-      "Gráfica lineal creciente que parte del origen.",
-      "Recta horizontal con valor $5$.",
-      "Curva creciente que parte del origen.",
-      "Curva decreciente que parte de $5$."
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
+    "distractores": [
+      "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
+      "",
+      "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
+      "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
     ],
+    "enunciado": "El área de los rectángulos que se pueden construir a partir del origen, los ejes y un punto que pertenece a la gráfica de la función $f(x)=5/x$, donde $x>0$, se describe con la expresión $A_x=x f(x)$. ¿Cuál de las siguientes gráficas corresponde a $A_x$?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
     "explicacion": "Al sustituir $f(x)=5/x$ en $A_x=x f(x)$, se obtiene $A_x=x(5/x)=5$ para todo $x>0$. Por tanto, la gráfica es una recta horizontal en $y=5$, la opción B.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i042-figura.png",
         "alt": "Gráfica de f(x)=5/x y rectángulo construido con el origen, los ejes y un punto de la curva",
         "recorteFuente": {
           "pagina": 23,
@@ -1719,13 +1969,20 @@
             380,
             285
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i042-figura.png",
+        "tipo": "img"
       }
+    ],
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 42.",
+    "opciones": [
+      "Gráfica lineal creciente que parte del origen.",
+      "Recta horizontal con valor $5$.",
+      "Curva creciente que parte del origen.",
+      "Curva decreciente que parte de $5$."
     ],
     "opcionesFig": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i042-opcion-a.png",
         "alt": "Opción A: recta creciente que parte del origen",
         "recorteFuente": {
           "pagina": 23,
@@ -1735,11 +1992,11 @@
             260,
             395
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-a.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i042-opcion-b.png",
         "alt": "Opción B: recta horizontal en y=5",
         "recorteFuente": {
           "pagina": 23,
@@ -1749,11 +2006,11 @@
             260,
             482
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-b.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i042-opcion-c.png",
         "alt": "Opción C: curva creciente desde el origen",
         "recorteFuente": {
           "pagina": 23,
@@ -1763,11 +2020,11 @@
             260,
             578
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-c.png",
+        "tipo": "img"
       },
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i042-opcion-d.png",
         "alt": "Opción D: curva decreciente que parte de y=5",
         "recorteFuente": {
           "pagina": 23,
@@ -1777,50 +2034,56 @@
             260,
             690
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i042-opcion-d.png",
+        "tipo": "img"
       }
     ],
-    "distractores": [
-      "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
-      "",
-      "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
-      "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
-    ],
-    "revisar": [],
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 42."
+    "revisar": []
   },
   "mth-i043": {
-    "enunciado": "Con el subsidio familiar de vivienda (SFV), más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda. Por tanto, el procedimiento correcto para estimar el valor del crédito que debe solicitarse al banco es:",
-    "opciones": [
-      "Valor del crédito = ingresos + ahorros + subsidio + valor de la vivienda.",
-      "Valor del crédito = valor de la vivienda − ahorros − subsidio.",
-      "Valor del crédito = ingresos + ahorros − subsidio + valor de la vivienda.",
-      "Valor del crédito = valor de la vivienda + subsidio − ahorros."
-    ],
-    "explicacion": "El costo de la vivienda se cubre con los ahorros, el subsidio y el crédito. Al despejar el crédito, se resta del valor de la vivienda tanto el ahorro como el subsidio. La respuesta es B.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-sfv-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario.",
       "",
       "Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio.",
       "Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
     ],
-    "revisar": [],
-    "bloque": "mth-sfv-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+    "enunciado": "Con el subsidio familiar de vivienda (SFV), más los ahorros con los que cuente el grupo familiar y el crédito que obtenga de una entidad financiera, se puede comprar la vivienda. Por tanto, el procedimiento correcto para estimar el valor del crédito que debe solicitarse al banco es:",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "El costo de la vivienda se cubre con los ahorros, el subsidio y el crédito. Al despejar el crédito, se resta del valor de la vivienda tanto el ahorro como el subsidio. La respuesta es B.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45.",
+    "opciones": [
+      "Valor del crédito = ingresos + ahorros + subsidio + valor de la vivienda.",
+      "Valor del crédito = valor de la vivienda − ahorros − subsidio.",
+      "Valor del crédito = ingresos + ahorros − subsidio + valor de la vivienda.",
+      "Valor del crédito = valor de la vivienda + subsidio − ahorros."
+    ],
+    "revisar": []
   },
   "mth-i044": {
-    "enunciado": "Una persona que observa la información de la tabla elabora la gráfica que se presenta a continuación. La gráfica presenta una inconsistencia porque",
-    "opciones": [
-      "los ingresos y el subsidio correspondientes se dan en miles de pesos, y no en SMMLV.",
-      "la correspondencia entre ingresos y subsidios es inversa, pero no disminuye de manera constante y continua.",
-      "faltan algunos valores de los subsidios presentados en la tabla.",
-      "los valores del subsidio deben ser ascendentes, pues a menores ingresos, mayor es el subsidio."
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "bloque": "mth-sfv-2018",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
+    "distractores": [
+      "La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla.",
+      "",
+      "La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo.",
+      "El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
     ],
+    "enunciado": "Una persona que observa la información de la tabla elabora la gráfica que se presenta a continuación. La gráfica presenta una inconsistencia porque",
+    "evidencia": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible en el marco de la solución de un problema.",
+    "evidenciaId": "3.1",
     "explicacion": "La tabla asigna un subsidio fijo a cada intervalo de ingresos; los valores cambian por tramos y no de manera continua. La gráfica une esos valores con una recta decreciente, así que representa una variación constante que la tabla no indica. La respuesta es B.",
     "figuras": [
       {
-        "tipo": "img",
-        "src": "/icfes/mth/imagenes/mth-i044-grafica.png",
         "alt": "Gráfica continua decreciente de ingresos y subsidio en SMMLV",
         "recorteFuente": {
           "pagina": 24,
@@ -1830,105 +2093,136 @@
             380,
             610
           ]
-        }
+        },
+        "src": "/icfes/mth/imagenes/mth-i044-grafica.png",
+        "tipo": "img"
       }
     ],
-    "distractores": [
-      "La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla.",
-      "",
-      "La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo.",
-      "El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45.",
+    "opciones": [
+      "los ingresos y el subsidio correspondientes se dan en miles de pesos, y no en SMMLV.",
+      "la correspondencia entre ingresos y subsidios es inversa, pero no disminuye de manera constante y continua.",
+      "faltan algunos valores de los subsidios presentados en la tabla.",
+      "los valores del subsidio deben ser ascendentes, pues a menores ingresos, mayor es el subsidio."
     ],
-    "revisar": [],
-    "bloque": "mth-sfv-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+    "revisar": []
   },
   "mth-i045": {
-    "enunciado": "Una familia con ingresos entre $0$ y $1$ SMMLV recibe un subsidio equivalente a",
-    "opciones": [
-      "$1,4$ veces el subsidio de una familia de ingresos entre $2$ y $2,25$ SMMLV.",
-      "$1,8$ veces el subsidio de una familia de ingresos entre $2,5$ y $2,75$ SMMLV.",
-      "$3,5$ veces el subsidio de una familia de ingresos entre $3$ y $3,5$ SMMLV.",
-      "$5,5$ veces el subsidio de una familia de ingresos entre $3,5$ y $4$ SMMLV."
-    ],
-    "explicacion": "El subsidio del primer rango es de $22$ SMMLV. Para ingresos entre $3,5$ y $4$ SMMLV, el subsidio es de $4$ SMMLV, y $22/4=5,5$. La respuesta es D.",
+    "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "afirmacionId": "1",
+    "bloque": "mth-sfv-2018",
+    "competencia": "Interpretación y representación",
+    "competenciaId": "interpretacion_representacion",
     "distractores": [
       "El subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios.",
       "El segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós.",
       "El subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla.",
       ""
     ],
-    "revisar": [],
-    "bloque": "mth-sfv-2018",
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45."
+    "enunciado": "Una familia con ingresos entre $0$ y $1$ SMMLV recibe un subsidio equivalente a",
+    "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
+    "evidenciaId": "1.1",
+    "explicacion": "El subsidio del primer rango es de $22$ SMMLV. Para ingresos entre $3,5$ y $4$ SMMLV, el subsidio es de $4$ SMMLV, y $22/4=5,5$. La respuesta es D.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 43 a 45.",
+    "opciones": [
+      "$1,4$ veces el subsidio de una familia de ingresos entre $2$ y $2,25$ SMMLV.",
+      "$1,8$ veces el subsidio de una familia de ingresos entre $2,5$ y $2,75$ SMMLV.",
+      "$3,5$ veces el subsidio de una familia de ingresos entre $3$ y $3,5$ SMMLV.",
+      "$5,5$ veces el subsidio de una familia de ingresos entre $3,5$ y $4$ SMMLV."
+    ],
+    "revisar": []
   },
   "mth-i046": {
-    "enunciado": "Un colegio necesita enviar $5$ estudiantes como representantes a un foro sobre la contaminación del medio ambiente. Se decidió que $2$ estudiantes sean de grado décimo y $3$ de grado undécimo. En décimo hay $5$ estudiantes preparados para el foro y en undécimo hay $4$. ¿Cuántos grupos diferentes pueden formarse para enviar al foro?",
-    "opciones": [
-      "$9$",
-      "$14$",
-      "$20$",
-      "$40$"
-    ],
-    "explicacion": "Se eligen dos de los cinco estudiantes de décimo, lo que da $\binom{5}{2}=10$ posibilidades, y tres de los cuatro de undécimo, lo que da $\binom{4}{3}=4$. Cada elección de un grupo se combina con cada elección del otro: $10×4=40$. La respuesta es D.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo.",
       "No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo.",
       "Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan.",
       ""
     ],
+    "enunciado": "Un colegio necesita enviar $5$ estudiantes como representantes a un foro sobre la contaminación del medio ambiente. Se decidió que $2$ estudiantes sean de grado décimo y $3$ de grado undécimo. En décimo hay $5$ estudiantes preparados para el foro y en undécimo hay $4$. ¿Cuántos grupos diferentes pueden formarse para enviar al foro?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Se eligen dos de los cinco estudiantes de décimo, lo que da $\binom{5}{2}=10$ posibilidades, y tres de los cuatro de undécimo, lo que da $\binom{4}{3}=4$. Cada elección de un grupo se combina con cada elección del otro: $10×4=40$. La respuesta es D.",
+    "opciones": [
+      "$9$",
+      "$14$",
+      "$20$",
+      "$40$"
+    ],
     "revisar": []
   },
   "mth-i047": {
-    "enunciado": "Entre los $16$ estudiantes de un salón de clases se va a rifar una boleta para ingresar a un parque de diversiones. Cada estudiante escoge un número del $3$ al $18$. Se depositan seis balotas numeradas del $1$ al $6$ en una urna; se extrae una balota, se mira el número y se vuelve a depositar. El experimento se repite dos veces más. La suma de los tres puntajes determina el número ganador. Si en la primera extracción se obtuvo $2$, es más probable que gane quien escogió el número $10$ que quien escogió el número $7$, porque",
-    "opciones": [
-      "al ser mayor el número escogido, es mayor la probabilidad de ganar.",
-      "el primer estudiante tiene una posibilidad más de ganar que el segundo.",
-      "es más probable seguir obteniendo números pares.",
-      "es mayor la diferencia entre $10$ y $18$ que entre $2$ y $7$."
-    ],
-    "explicacion": "Después de obtener dos, para llegar a diez los dos puntajes restantes deben sumar ocho. Hay cinco pares ordenados posibles: $(2,6)$, $(3,5)$, $(4,4)$, $(5,3)$ y $(6,2)$. Para llegar a siete deben sumar cinco; hay cuatro pares. Por eso el diez tiene una posibilidad más. La respuesta es B.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas.",
       "",
       "No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma.",
       "La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
     ],
+    "enunciado": "Entre los $16$ estudiantes de un salón de clases se va a rifar una boleta para ingresar a un parque de diversiones. Cada estudiante escoge un número del $3$ al $18$. Se depositan seis balotas numeradas del $1$ al $6$ en una urna; se extrae una balota, se mira el número y se vuelve a depositar. El experimento se repite dos veces más. La suma de los tres puntajes determina el número ganador. Si en la primera extracción se obtuvo $2$, es más probable que gane quien escogió el número $10$ que quien escogió el número $7$, porque",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "Después de obtener dos, para llegar a diez los dos puntajes restantes deben sumar ocho. Hay cinco pares ordenados posibles: $(2,6)$, $(3,5)$, $(4,4)$, $(5,3)$ y $(6,2)$. Para llegar a siete deben sumar cinco; hay cuatro pares. Por eso el diez tiene una posibilidad más. La respuesta es B.",
+    "opciones": [
+      "al ser mayor el número escogido, es mayor la probabilidad de ganar.",
+      "el primer estudiante tiene una posibilidad más de ganar que el segundo.",
+      "es más probable seguir obteniendo números pares.",
+      "es mayor la diferencia entre $10$ y $18$ que entre $2$ y $7$."
+    ],
     "revisar": []
   },
   "mth-i048": {
-    "enunciado": "La expresión $10^3=I/I_0$ relaciona la sonoridad de un sonido de $30$ decibeles con su intensidad $I$ y la menor intensidad $I_0$ que percibe el oído humano. ¿Cuántas veces es el valor de $I$ respecto a $I_0$?",
-    "opciones": [
-      "Una milésima.",
-      "Un tercio.",
-      "Tres veces.",
-      "Mil veces."
-    ],
-    "explicacion": "La igualdad indica que el cociente $I/I_0$ es $10^3$, es decir, mil. Por tanto, la intensidad $I$ equivale a mil veces la intensidad mínima $I_0$. La respuesta es D.",
+    "afirmacion": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "afirmacionId": "2",
+    "competencia": "Formulación y ejecución",
+    "competenciaId": "formulacion_ejecucion",
     "distractores": [
       "Una milésima sería $10^{-3}$, el recíproco de la razón indicada. Pero la expresión da mil.",
       "Un tercio no se obtiene de la potencia de diez que aparece en la igualdad. Pero la razón es $10^3$.",
       "Tres es el exponente, no el resultado de elevar diez a esa potencia. Pero $10^3$ vale mil.",
       ""
     ],
+    "enunciado": "La expresión $10^3=I/I_0$ relaciona la sonoridad de un sonido de $30$ decibeles con su intensidad $I$ y la menor intensidad $I_0$ que percibe el oído humano. ¿Cuántas veces es el valor de $I$ respecto a $I_0$?",
+    "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "evidenciaId": "2.3",
+    "explicacion": "La igualdad indica que el cociente $I/I_0$ es $10^3$, es decir, mil. Por tanto, la intensidad $I$ equivale a mil veces la intensidad mínima $I_0$. La respuesta es D.",
+    "opciones": [
+      "Una milésima.",
+      "Un tercio.",
+      "Tres veces.",
+      "Mil veces."
+    ],
     "revisar": []
   },
   "mth-i049": {
-    "enunciado": "En determinada zona de una ciudad se construyen edificios de apartamentos en los que cada metro cuadrado tiene un costo de $800.000$, y se asegura a los compradores que en esta zona anualmente, el metro cuadrado se valoriza un $5\\%$ respecto al costo del año anterior. ¿Con cuál de las siguientes expresiones se representa el costo de un metro cuadrado en esa zona, transcurridos $n$ años?",
-    "opciones": [
-      "$800.000+5n$",
-      "$800.000(5n)$",
-      "$800.000(5/100)^n$",
-      "$800.000(1+5/100)^n$"
-    ],
-    "explicacion": "Cada año el costo se multiplica por $1+5/100=1,05$. Después de $n$ años, ese factor se aplica $n$ veces al costo inicial: $800.000(1+5/100)^n$. La respuesta es D.",
+    "afirmacion": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas.",
+    "afirmacionId": "3",
+    "competencia": "Argumentación",
+    "competenciaId": "argumentacion",
     "distractores": [
       "Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta.",
       "Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco.",
       "Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa.",
       ""
     ],
-    "revisar": [],
-    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 49."
+    "enunciado": "En determinada zona de una ciudad se construyen edificios de apartamentos en los que cada metro cuadrado tiene un costo de $800.000$, y se asegura a los compradores que en esta zona anualmente, el metro cuadrado se valoriza un $5\\%$ respecto al costo del año anterior. ¿Con cuál de las siguientes expresiones se representa el costo de un metro cuadrado en esa zona, transcurridos $n$ años?",
+    "evidencia": "Establece la validez o pertinencia de una solución propuesta a un problema dado.",
+    "evidenciaId": "3.3",
+    "explicacion": "Cada año el costo se multiplica por $1+5/100=1,05$. Después de $n$ años, ese factor se aplica $n$ veces al costo inicial: $800.000(1+5/100)^n$. La respuesta es D.",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 49.",
+    "opciones": [
+      "$800.000+5n$",
+      "$800.000(5n)$",
+      "$800.000(5/100)^n$",
+      "$800.000(1+5/100)^n$"
+    ],
+    "revisar": []
   }
 }
