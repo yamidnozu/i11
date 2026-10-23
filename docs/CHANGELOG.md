@@ -1,5 +1,12 @@
 # Changelog
 
+## Cierre de revisión masiva ICFES y reconstrucción limpia (2026-10-23)
+- Inglés: 149/150 hojas revisadas; los tres paquetes pasaron validar y empaquetar. `eng-i018` queda en borrador porque el pasaje no identifica el formato de *Passionate Falsehoods*. Se corrigieron marcas de `i014` y pasajes compartidos; las 150 preguntas conservan el único vínculo de competencia respaldado por el marco.
+- Cuadernillo mixto 2014: 119/121 hojas revisadas y claves cotejadas; `cfi-i101` (vehículo del aviso) y `cfi-i105` (*bike* o *motorbike*) conservan clave y motivo de revisión. Se completaron descartes de nivel 2, bloques, referencias de simulacro/unidad y marcas literales.
+- Matemáticas 2026: auditadas las 50 preguntas y 33 rutas de imagen únicas; se asociaron tablas, figuras y opciones gráficas faltantes. Se corrigió en override la fracción aplanada de `mat-i007` y se confirmó su render; también se recortó correctamente la figura manual `cfi-i004`.
+- Total: 614/617 hojas revisadas; tres borradores justificados. TypeScript pasó, Vitest gated 811/811 y builds estándar/gated pasaron.
+- La etapa de figuras ahora reutiliza PNG manuales sin receta geométrica; `tools/pipeline/README.md` documenta preservar `imagenes/` durante reconstrucción. Se borraron `work/<doc>` y los paquetes generados de cinco documentos, se reconstruyeron sus siete etapas desde los PDF y los cinco hashes de prefijo quedaron idénticos. Matemáticas y 2014 también se reconstruyeron dos veces después de sus últimos overrides y assets, con resultados idénticos.
+
 ## Revisión Matemáticas 2018 — preguntas 35 a 41 (2026-10-22)
 
 - Se verificaron el interés total del crédito, el margen de error de longitudes, la geometría de radios, los porcentajes de finales y el promedio de triunfos en cancha dura.
@@ -202,3 +209,21 @@
 - Asociadas las 98 preguntas de Matemáticas y Sociales 2018 con competencia, afirmación y evidencia del marco mediante overrides persistentes.
 - La validación preserva paquetes multisección y las transcripciones `documento.json` existentes. Vitest gated: 811/811; TypeScript y builds normal/gated pasan.
 - Reconstrucción completa desde los PDFs, tras apartar artefactos `work/<doc>` y paquetes generados; las seis salidas de Inglés, 2014, Matemáticas 2018 y Sociales 2018 conservaron sus SHA-256.
+
+
+## Fix — rutas de figuras ICFES bajo el gate (2026-10-22)
+- El build con `VITE_ICFES=1` publica los assets de figuras en las rutas planas y anidadas usadas por los paquetes. Corrige 28 referencias antiguas de Matemáticas 2018 y Sociales 2018 que podían devolver 404.
+- Comprobación: build gated exitoso; las 28 rutas anidadas existen en `dist/`.
+
+
+## Revisión de reactivos de Inglés (2026-10-22)
+- Se cotejaron visualmente los pasajes, preguntas y claves de los tres cuadernillos en las páginas indicadas en `informe_icfes.md`. Se completaron 20 hojas del primer pasaje compartido, con opciones y claves exactas, razonamiento, descarte y guion de tres niveles.
+- Se asociaron los 150 reactivos con la competencia general de Inglés; el marco fuente no contiene afirmaciones ni evidencias, así que esos vínculos se dejaron sin asignar.
+- Los 130 reactivos restantes siguen en borrador y conservan `revisar`; también quedó sin aprobar Inglés 2018, pregunta 18, por ambigüedad en el pasaje.
+
+
+## Cotejo adicional de Inglés y 2014 (2026-10-22)
+- Cotejadas y completadas 20 hojas de Inglés y 16 del cuadernillo 2014; 235 hojas nuevas siguen en borrador y marcadas para revisión.
+- Transcritas las secciones de vehículos, diálogos, lobo etíope y experiencia artística de 2014 (págs. impresas 35–37), con bloques compartidos, fuentes completas y tres recortes de ilustración.
+- Se mantuvo cfi-i105 en borrador porque la frase puede describir bicicleta o motocicleta. Inglés se vincula solo a la competencia general que documenta su marco; no se inventan afirmaciones/evidencias.
+- Corregidas plantillas de marcas que no coincidían con el enunciado y se excluyen de los simulacros las preguntas abiertas N/A. Vitest gated: 811/811; TypeScript pasa.
