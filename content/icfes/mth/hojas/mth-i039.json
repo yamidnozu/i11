@@ -1,110 +1,141 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "solamente los torneos jugados en cancha dura",
+        "rol": "dato",
+        "nota": "Australia y Estados Unidos son las dos superficies duras.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "promedio de torneos ganados",
+        "rol": "pide",
+        "nota": "Suma los títulos de esos torneos para los cinco jugadores y divide entre cinco.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica en la leyenda los torneos de cancha dura.",
+        "texto": "Identifica en la leyenda los torneos de cancha dura."
+      },
+      {
+        "k": "calc",
+        "titulo": "Suma los títulos de Australia y Estados Unidos para cada jugador.",
+        "lineas": [
+          "$4+2+9+7+0=22$",
+          "$22/5=4,4$"
+        ],
+        "nota": "Suma los títulos de Australia y Estados Unidos para cada jugador."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El promedio es cuatro coma cuatro títulos; corresponde a D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Promedio a partir de una gráfica por categorías",
+      "que": "Promedia los títulos de los cinco jugadores en los dos torneos de cancha dura.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Los conteos son cuatro, dos, nueve, siete y cero; su suma es veintidós y el promedio es $4,4$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco."
+        },
+        {
+          "t": "Opción C",
+          "p": "Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica en la leyenda los torneos de cancha dura."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Suma los títulos de Australia y Estados Unidos para cada jugador."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El promedio es cuatro coma cuatro títulos; corresponde a D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué torneos de la leyenda se juegan en cancha dura?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Australia y Estados Unidos. Suma sus títulos para cada jugador y luego promedia."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El resultado es cuatro coma cuatro, opción D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Cuenta solo los cuadros llenos de Australia y Estados Unidos en cada columna de jugador."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Los conteos son cuatro, dos, nueve, siete y cero; en total, veintidós."
         },
         {
+          "t": "La opción A: Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al dividir entre cinco jugadores da cuatro coma cuatro; A, B y C quedan por debajo. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La leyenda identifica Australia y Estados Unidos como torneos de cancha dura.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La gráfica da cuatro, dos, nueve, siete y cero títulos en esos torneos; la suma es veintidós.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El promedio es $22/5=4,4$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no corresponden a la media de los cinco conteos.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Considerando solamente",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

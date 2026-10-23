@@ -1,110 +1,146 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "circunferencia de centro $O$",
+        "rol": "dato",
+        "nota": "Los segmentos desde el centro hasta $P$ y $P′$ son radios.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "dos puntos $P$ y $P′$ diferentes",
+        "rol": "dato",
+        "nota": "Ambos están sobre la circunferencia.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "NO puede resultar",
+        "rol": "pide",
+        "nota": "Busca una figura incompatible con unir los tres puntos.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Considera si los puntos de la circunferencia están alineados con el centro.",
+        "texto": "Considera si los puntos de la circunferencia están alineados con el centro."
+      },
+      {
+        "k": "calc",
+        "titulo": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro.",
+        "lineas": [
+          "$OP=OP′$ por ser radios"
+        ],
+        "nota": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Un solo radio no une los tres puntos; la respuesta es B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Radios, cuerdas y triángulos inscritos",
+      "que": "Determina qué figura no puede formarse al unir el centro con dos puntos distintos de una circunferencia.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Los tres puntos forman un triángulo o un diámetro; nunca queda solo un radio.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir."
+        },
+        {
+          "t": "Opción D",
+          "p": "Si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Considera si los puntos de la circunferencia están alineados con el centro."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Un solo radio no une los tres puntos; la respuesta es B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué figuras forman los tres puntos si están alineados o si no lo están?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Alineados forman un diámetro; si no, forman un triángulo con dos lados iguales."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Un solo radio no puede resultar. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Los segmentos desde $O$ hasta cada punto de la circunferencia tienen la misma longitud."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Con los tres lados se forma un triángulo; si los puntos quedan alineados, el tramo entre ellos es un diámetro."
         },
         {
+          "t": "La opción A: Los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D sí pueden ocurrir; B deja sin unir uno de los puntos. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Los puntos $P$ y $P′$ están en la circunferencia, así que $OP$ y $OP′$ son radios iguales.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Si los tres puntos no están alineados, los segmentos forman un triángulo isósceles; una ubicación particular produce uno equilátero.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Si quedan alineados, $PP′$ es un diámetro.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B no une los tres puntos y no puede ser la figura resultante.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Sobre una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

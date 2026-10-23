@@ -1,5 +1,11 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — preguntas 35 a 41 (2026-10-22)
+
+- Se verificaron el interés total del crédito, el margen de error de longitudes, la geometría de radios, los porcentajes de finales y el promedio de triunfos en cancha dura.
+- Se añadió el bloque compartido de Grand Slam para las preguntas 38–39 y se asociaron la gráfica y las cuatro opciones gráficas de la maqueta de fútbol en la pregunta 41.
+- Quedan 288 hojas revisadas y 58 borradores. TypeScript y Vitest pasan (540/540); builds normal y gated pasan.
+
 ## Revisión Matemáticas 2018 — preguntas 28 a 34 (2026-10-22)
 
 - Se cotejaron las preguntas 28–34 con las páginas 15–18 del cuadernillo: tabla de cursos, triángulo de la escalera, baraja como tabla estructurada, octágono, simetría en el plano y modalidades de crédito.

@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "medidas de sus lados",
+        "rol": "dato",
+        "nota": "La cancha mide sesenta por cien metros.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "cien veces menor que las medidas originales",
+        "rol": "dato",
+        "nota": "Cada dimensión se divide entre cien.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "diseño de la maqueta medirá",
+        "rol": "pide",
+        "nota": "Expresa las dos dimensiones después de aplicar la escala.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Aplica la misma escala a cada lado de la cancha.",
+        "texto": "Aplica la misma escala a cada lado de la cancha."
+      },
+      {
+        "k": "calc",
+        "titulo": "Divide entre cien y expresa las medidas en centímetros.",
+        "lineas": [
+          "$60/100=0,6$ m, que son $60$ cm",
+          "$100/100=1$ m, que son $100$ cm"
+        ],
+        "nota": "Divide entre cien y expresa las medidas en centímetros."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Sesenta por cien centímetros corresponde a la opción D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Escala y conversión de unidades",
+      "que": "Reduce las medidas de la cancha en una razón de cien a uno y expresa el resultado en centímetros.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "La maqueta mide $0,6$ m por $1$ m, equivalentes a $60$ cm por $100$ cm.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
+        },
+        {
+          "t": "Opción C",
+          "p": "Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Aplica la misma escala a cada lado de la cancha."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Divide entre cien y expresa las medidas en centímetros."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Sesenta por cien centímetros corresponde a la opción D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuáles son las dos medidas originales de la cancha?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Sesenta y cien metros; al reducirlas cien veces quedan cero coma seis y un metro."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En centímetros son sesenta por cien; la respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Divide sesenta y cien metros entre cien."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Obtienes cero coma seis y un metro; conviértelos en sesenta y cien centímetros."
         },
         {
+          "t": "La opción A: Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y B usan potencias negativas; C conserva la medida original. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La escala divide por cien los lados de sesenta y cien metros.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La maqueta mide cero coma seis metros por un metro.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En centímetros equivale a sesenta por cien centímetros, como indica D.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y B cambian el exponente; C no aplica la escala.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

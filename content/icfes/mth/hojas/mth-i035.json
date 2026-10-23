@@ -1,110 +1,153 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "El interés total de un crédito",
+        "rol": "dato",
+        "nota": "Es el valor pagado adicional al capital.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Proceso 1.",
+        "rol": "dato",
+        "nota": "Calcula directamente el veinte por ciento del capital.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Proceso 3.",
+        "rol": "dato",
+        "nota": "Resta el capital de la suma de las cuotas.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Cuál(es) de los siguientes procesos",
+        "rol": "pide",
+        "nota": "Selecciona todos los procedimientos válidos.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara cada proceso con la definición de interés total.",
+        "texto": "Compara cada proceso con la definición de interés total."
+      },
+      {
+        "k": "calc",
+        "titulo": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas.",
+        "lineas": [
+          "Interés total: $0,20×6.000.000$",
+          "Total pagado menos capital: $12×cuota-6.000.000$"
+        ],
+        "nota": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Los procesos uno y tres son válidos; la respuesta es C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interés total a partir de cuotas",
+      "que": "Identifica los procesos que calculan el valor pagado por encima del capital.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El interés es el veinte por ciento del capital; también se obtiene restando el capital a la suma de las doce cuotas.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
+        },
+        {
+          "t": "Opción D",
+          "p": "El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara cada proceso con la definición de interés total."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Los procesos uno y tres son válidos; la respuesta es C."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué cantidad se paga por encima de los seis millones?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La modalidad II agrega el veinte por ciento del capital. También se puede restar el capital al total de las cuotas."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Son los procesos uno y tres; la respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El veinte por ciento de seis millones es el interés total, no el interés de cada cuota."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al sumar las doce cuotas y restar el capital también queda ese interés."
         },
         {
+          "t": "La opción A: El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El proceso dos lo multiplica por doce otra vez; A y B omiten un proceso correcto. La respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La modalidad II suma al capital un veinte por ciento y divide el total en doce cuotas iguales.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El proceso uno calcula directamente el excedente; el proceso tres lo recupera desde el pago total.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Ambos procesos dan el mismo interés total.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El proceso dos multiplica un interés global por doce y por eso no es válido.",
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El interés",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

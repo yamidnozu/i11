@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "número entero $k$",
+        "rol": "dato",
+        "nota": "Es el extremo al que se acercan los racionales.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "$j$ entero positivo",
+        "rol": "dato",
+        "nota": "Cada entero positivo define un racional de la forma indicada.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "menores que $k+1/11$",
+        "rol": "pide",
+        "nota": "Determina qué valores de $j$ quedan dentro del intervalo.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara los recíprocos porque el término $k$ aparece en ambos límites.",
+        "texto": "Compara los recíprocos porque el término $k$ aparece en ambos límites."
+      },
+      {
+        "k": "calc",
+        "titulo": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once.",
+        "lineas": [
+          "$1/j<1/11$",
+          "$j>11$"
+        ],
+        "nota": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Hay infinitos enteros positivos mayores que once; la respuesta es B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comparación de fracciones unitarias y conjuntos infinitos",
+      "que": "Cuenta los valores de $j$ que producen racionales entre $k$ y $k+1/11$.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Cualquier entero positivo $j>11$ sirve; existen infinitos valores de $j$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan."
+        },
+        {
+          "t": "Opción D",
+          "p": "El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara los recíprocos porque el término $k$ aparece en ambos límites."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Hay infinitos enteros positivos mayores que once; la respuesta es B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué debe ocurrir con $j$ para que $1/j$ sea menor que $1/11$?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Debe ser mayor que once. No hay un mayor entero final."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Hay una cantidad infinita de valores; la respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Resta $k$ en la comparación y queda $1/j<1/11$."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al ser fracciones unitarias, la desigualdad se cumple para todo entero $j$ mayor que once."
         },
         {
+          "t": "La opción A: No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C suponen una cantidad finita; D usa diez, que no supera once. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La condición equivale a $1/j<1/11$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Para enteros positivos esto requiere $j>11$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Todos los enteros desde doce en adelante generan un racional válido.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no cuentan todos los valores posibles.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Se puede",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
