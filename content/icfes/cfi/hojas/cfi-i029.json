@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "contradice las ideas que presenta el autor",
+        "rol": "pide",
+        "nota": "Debes encontrar la afirmación opuesta a la tesis del texto.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "de las siguientes afirmaciones",
+        "rol": "dato",
+        "nota": "Debes contrastar cada afirmación con la tesis del pasaje.",
+        "campo": "Alternativas"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume la tesis del autor sobre cómo actuarían las personas si no temieran consecuencias."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara cada afirmación con esa tesis y busca una incompatibilidad directa."
+      },
+      {
+        "k": "check",
+        "texto": "Confirma que la opción elegida realmente contradiga la idea del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Tesis sobre justicia e impunidad",
+      "que": "Identificar una afirmación que contradice la tesis presentada en el pasaje.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Ubica la idea central sobre justicia bajo impunidad."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Contrasta esa idea con las cuatro afirmaciones."
+        },
+        {
+          "t": "Elige la única que sostenga lo contrario."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El relato de Giges muestra el uso del poder para actuar sin castigo.",
+        "El texto afirma que la persona justa también elegiría la injusticia en esas condiciones."
       ],
-      "plan": [
+      "clave": "La opción A contradice la tesis porque afirma que algunas personas conservarían la justicia pese a poder actuar injustamente.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, Es compatible con la idea de que las personas actuarían injustamente si pudieran hacerlo sin consecuencias."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Coincide con la afirmación del texto de que la injusticia ofrece más ventajas individuales."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Se ajusta al argumento de que la injusticia se elige cuando se puede obtener impunidad."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El autor sostiene que el poder de actuar sin castigo haría que incluso una persona justa eligiera la injusticia."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La opción A afirma lo contrario: algunas personas seguirían actuando justamente."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Por eso, A contradice el texto."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B coincide con la tesis de que quien puede actuar sin consecuencias tendería a hacerlo injustamente; por eso no la contradice."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C es compatible con la idea de que la injusticia puede ofrecer ventajas individuales."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D apoya la explicación del texto sobre la impunidad y no expresa la postura contraria."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A sí contradice la tesis: afirma que alguien conservaría la justicia aun pudiendo actuar injustamente."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Distingue entre repetir la tesis y contradecirla."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El relato de Giges sirve para argumentar que la impunidad altera la conducta de quien parece justo."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción A niega esa conclusión y, por tanto, es la respuesta."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras opciones apoyan o son compatibles con la tesis."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

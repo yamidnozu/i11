@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "escalera a 12 metros del suelo",
+        "rol": "dato",
+        "nota": "El triángulo muestra una altura de doce metros.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "coseno del ángulo θ",
+        "rol": "pide",
+        "nota": "Se solicita la razón trigonométrica junto al suelo.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el ángulo θ donde la escalera toca el suelo."
+      },
+      {
+        "k": "idea",
+        "texto": "El cateto adyacente mide $5$ y la hipotenusa mide $13$."
+      },
+      {
+        "k": "check",
+        "texto": "Calcula $\\cos\theta=5/13$ y verifica la opción C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Coseno en un triángulo rectángulo",
+      "que": "Relaciona el coseno de un ángulo con el cateto adyacente y la hipotenusa.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica el ángulo θ donde la escalera toca el suelo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "El cateto adyacente mide $5$ y la hipotenusa mide $13$."
+        },
+        {
+          "t": "Calcula $\\cos\theta=5/13$ y verifica la opción C."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El triángulo rectángulo tiene lados $5$, $12$ y $13$.",
+        "Para el ángulo junto al suelo, el cateto adyacente es $5$."
       ],
-      "plan": [
+      "clave": "En el triángulo rectángulo, el lado adyacente al ángulo con el suelo mide $5$ metros y la escalera, hipotenusa, mide $13$ metros. Entonces $\\cos\theta=5/13$.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Usa el cateto opuesto sobre la hipotenusa; ese cociente es el seno."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Divide los catetos y no incluye la hipotenusa."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Invierte la hipotenusa y el cateto adyacente."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Ubica el ángulo θ donde la escalera toca el suelo."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El cateto adyacente mide $5$ y la hipotenusa mide $13$."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C: En el triángulo rectángulo, el lado adyacente al ángulo con el suelo mide $5$ metros y la escalera, hipotenusa, mide $13$ metros. Entonces $\\cos\theta=5/13$."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Usa el cateto opuesto sobre la hipotenusa; ese cociente es el seno."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Divide los catetos y no incluye la hipotenusa."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Invierte la hipotenusa y el cateto adyacente."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En el triángulo rectángulo, el lado adyacente al ángulo con el suelo mide $5$ metros y la escalera, hipotenusa, mide $13$ metros. Entonces $\\cos\theta=5/13$."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Ubica el ángulo θ donde la escalera toca el suelo."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El cateto adyacente mide $5$ y la hipotenusa mide $13$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Calcula $\\cos\theta=5/13$ y verifica la opción C."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 4",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

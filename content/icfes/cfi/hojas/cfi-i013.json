@@ -1,110 +1,123 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "mayor porcentaje de victorias en las finales del Grand Slam",
+        "rol": "dato",
+        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "Esta conclusión es incorrecta porque",
+        "rol": "pide",
+        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Identifica qué pide la pregunta y qué datos o puntos participan."
+      },
+      {
+        "k": "idea",
+        "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
+      },
+      {
+        "k": "check",
+        "t": "Verifica que la opción C responde a la pregunta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comparar porcentajes de victorias",
+      "que": "Compara los títulos ganados con el número de finales disputadas.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica los puntos o las cantidades que debes comparar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
+        },
+        {
+          "t": "Contrasta la conclusión con la opción C."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Compara los títulos ganados con el total de finales.",
+        "Verifica la opción elegida con la figura o los datos de la fuente."
       ],
-      "plan": [
+      "clave": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El número de títulos en un torneo no determina por sí solo el porcentaje de victorias en todas las finales."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, El porcentaje de títulos obtenidos antes de los veinticuatro años no es el porcentaje de victorias en finales."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, La cantidad de títulos en cancha dura no basta para comparar el porcentaje de victorias en todas las finales."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Lee qué figura o comparación pide la pregunta."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "k": "idea",
+          "t": "Aplica la propiedad geométrica o calcula cada razón."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El número de títulos en un torneo no determina por sí solo el porcentaje de victorias en todas las finales."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El porcentaje de títulos obtenidos antes de los veinticuatro años no es el porcentaje de victorias en finales."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La cantidad de títulos en cancha dura no basta para comparar el porcentaje de victorias en todas las finales."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Organiza las condiciones o los datos necesarios."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "k": "idea",
+          "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "k": "idea",
+          "t": "Comprueba el resultado y descarta las opciones incompatibles."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Se desea",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

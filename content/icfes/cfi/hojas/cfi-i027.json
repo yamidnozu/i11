@@ -1,110 +1,112 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "expresa un juicio de valor",
+        "rol": "pide",
+        "nota": "La pregunta pide reconocer una valoración.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue entre describir hechos y calificar una obra o sus personajes."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B responde al texto completo y descarta las demás."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje.",
+      "que": "Distingue entre describir hechos y calificar una obra o sus personajes.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Distingue entre describir hechos y calificar una obra o sus personajes."
+        },
+        {
+          "t": "Elige la opción B y verifica que se sostenga con el pasaje."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "¿Cuál de los siguientes enunciados expresa un juicio de valor presente en el texto?",
+        "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
       ],
-      "plan": [
+      "clave": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, La alternativa describe los temas de dos artistas, sin valorarlos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, La alternativa informa sobre el orgullo y la intención atribuidos a Rubens; no formula un juicio estético."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, El autor cuestiona que la belleza de un cuadro dependa de la belleza de su tema."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B responde a la pregunta."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La alternativa describe los temas de dos artistas, sin valorarlos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La alternativa informa sobre el orgullo y la intención atribuidos a Rubens; no formula un juicio estético."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El autor cuestiona que la belleza de un cuadro dependa de la belleza de su tema."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Distingue entre describir hechos y calificar una obra o sus personajes."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

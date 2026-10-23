@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "causa grandes pérdidas económicas a los apicultores de todo el mundo",
+        "rol": "dato",
+        "nota": "El enunciado ofrece el contexto científico para resolver el ítem.",
+        "campo": "Contexto"
+      },
+      {
+        "frag": "puede resolverse mediante una investigación en el campo de las ciencias naturales?",
+        "rol": "pide",
+        "nota": "La pregunta señala qué debes seleccionar o concluir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distinguir preguntas de ciencias naturales de preguntas económicas."
+      },
+      {
+        "k": "idea",
+        "texto": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción A cumpla el criterio científico planteado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Distinguir preguntas de ciencias naturales de preguntas económicas.",
+      "que": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
+        },
+        {
+          "t": "Selecciona la opción A y comprueba que responda al criterio."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "causa grandes pérdidas económicas a los apicultores de todo el mundo",
+        "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
       ],
-      "plan": [
+      "clave": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, B pregunta por efectos económicos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C se centra en la morfología de las abejas y no en el daño de la polilla."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D pregunta por el gasto de los apicultores."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A se ajusta al criterio."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B pregunta por efectos económicos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C se centra en la morfología de las abejas y no en el daño de la polilla."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D pregunta por el gasto de los apicultores."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La conclusión queda respaldada por la información."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La polilla",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,128 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "calcular el interés total del crédito de Ángela",
+        "rol": "pide",
+        "nota": "Se identifica qué procesos obtienen el costo adicional total.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "si se pagara con la modalidad II",
+        "rol": "dato",
+        "nota": "La modalidad fija doce cuotas con un recargo total del veinte por ciento.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
+      },
+      {
+        "k": "idea",
+        "texto": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
+      },
+      {
+        "k": "idea",
+        "texto": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
+      },
+      {
+        "k": "check",
+        "texto": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Calcular el interés total de un crédito",
+      "que": "Determina qué procedimientos calculan el pago adicional total de una modalidad de crédito.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
+        },
+        {
+          "t": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
+        },
+        {
+          "t": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El recargo total de la modalidad dos es el veinte por ciento del capital.",
+        "El interés total también se calcula restando el capital al total de cuotas."
       ],
-      "plan": [
+      "clave": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, el proceso uno sí calcula el recargo total, y también lo obtiene el proceso tres."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, el proceso dos multiplica por doce el recargo total en vez de sumarlo una sola vez."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, incluye el proceso dos, que repite el recargo total doce veces; el proceso uno sí es válido."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, "
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El proceso dos multiplica el recargo por doce, aunque ese veinte por ciento ya corresponde al total de intereses."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El proceso dos cuenta doce veces el recargo; el proceso tres sí calcula el interés total."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
+        },
+        {
+          "t": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El interés",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

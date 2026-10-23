@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "cien veces menor que las medidas originales",
+        "rol": "dato",
+        "nota": "Establece el factor de escala entre la cancha y la maqueta.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "El diseño de la maqueta medirá",
+        "rol": "pide",
+        "nota": "Se buscan las medidas de los lados a escala.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Divide cada medida de la cancha entre cien, porque la maqueta tiene lados cien veces menores."
+      },
+      {
+        "k": "idea",
+        "texto": "Sesenta metros se convierten en sesenta centímetros, y cien metros se convierten en cien centímetros."
+      },
+      {
+        "k": "check",
+        "texto": "Las medidas coinciden con la opción D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Escala y conversión de unidades",
+      "que": "Aplica una reducción a escala y expresa las longitudes en unidades coherentes.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Divide cada medida de la cancha entre cien, porque la maqueta tiene lados cien veces menores."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Sesenta metros se convierten en sesenta centímetros, y cien metros se convierten en cien centímetros."
+        },
+        {
+          "t": "Las medidas coinciden con la opción D."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La maqueta reduce cada lado cien veces.",
+        "Un metro contiene cien centímetros."
       ],
-      "plan": [
+      "clave": "Al reducir cada medida cien veces, los sesenta metros de ancho se convierten en sesenta centímetros y los cien metros de largo en cien centímetros. La opción D expresa ambas medidas en centímetros.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, sus medidas son cien veces menores que las correctas; el factor de escala se aplicó una vez de más."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, aunque convierte la escala, expresa las medidas en centésimas de centímetro; las correctas son sesenta y cien centímetros."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, conserva las medidas originales; la maqueta debe ser cien veces menor."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Divide cada medida de la cancha entre cien, porque la maqueta tiene lados cien veces menores."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Sesenta metros se convierten en sesenta centímetros, y cien metros se convierten en cien centímetros."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D: Al reducir cada medida cien veces, los sesenta metros de ancho se convierten en sesenta centímetros y los cien metros de largo en cien centímetros. La opción D expresa ambas medidas en centímetros."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, sus medidas son cien veces menores que las correctas; el factor de escala se aplicó una vez de más."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, aunque convierte la escala, expresa las medidas en centésimas de centímetro; las correctas son sesenta y cien centímetros."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, conserva las medidas originales; la maqueta debe ser cien veces menor."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al reducir cada medida cien veces, los sesenta metros de ancho se convierten en sesenta centímetros y los cien metros de largo en cien centímetros. La opción D expresa ambas medidas en centímetros."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Divide cada medida de la cancha entre cien, porque la maqueta tiene lados cien veces menores."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Sesenta metros se convierten en sesenta centímetros, y cien metros se convierten en cien centímetros."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las medidas coinciden con la opción D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al reducir cada medida cien veces, los sesenta metros de ancho se convierten en sesenta centímetros y los cien metros de largo en cien centímetros. La opción D expresa ambas medidas en centímetros."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

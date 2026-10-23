@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "por cada tres nucleótidos consecutivos de ARN mensajero se codifica un aminoácido",
+        "rol": "dato",
+        "nota": "El enunciado presenta la información necesaria para razonar.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "¿cuántos aminoácidos conformarán la proteína?",
+        "rol": "pide",
+        "nota": "La pregunta solicita valorar la propuesta o contar el resultado.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
+      },
+      {
+        "k": "idea",
+        "texto": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción C responda con evidencia al problema planteado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación.",
+      "que": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
+        },
+        {
+          "t": "Elige la opción C y comprueba que se desprenda del enunciado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "por cada tres nucleótidos consecutivos de ARN mensajero se codifica un aminoácido",
+        "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
       ],
-      "plan": [
+      "clave": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A cuenta más tripletes de los que hay entre las señales indicadas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, B no corresponde al número de tripletes traducidos entre inicio y terminación."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D incluye tripletes que aparecen después de UAG, que no se traducen."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C responde a la pregunta."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A cuenta más tripletes de los que hay entre las señales indicadas."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B no corresponde al número de tripletes traducidos entre inicio y terminación."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D incluye tripletes que aparecen después de UAG, que no se traducen."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por la información disponible."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "A partir",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

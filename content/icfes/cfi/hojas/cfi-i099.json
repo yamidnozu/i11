@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "altos niveles de cadmio y plomo, que son metales tóxicos",
+        "rol": "dato",
+        "nota": "El enunciado presenta la información necesaria para razonar.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "la propuesta de los estudiantes es",
+        "rol": "pide",
+        "nota": "La pregunta solicita valorar la propuesta o contar el resultado.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
+      },
+      {
+        "k": "idea",
+        "texto": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción B responda con evidencia al problema planteado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua.",
+      "que": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
+        },
+        {
+          "t": "Elige la opción B y comprueba que se desprenda del enunciado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "altos niveles de cadmio y plomo, que son metales tóxicos",
+        "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
       ],
-      "plan": [
+      "clave": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A desarmar las pilas no evita que sus componentes tóxicos lleguen al ambiente."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C la reutilización no aborda por sí sola la filtración que contaminó el río."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D quemar pilas puede liberar sustancias tóxicas y no es una solución segura."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B responde a la pregunta."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A desarmar las pilas no evita que sus componentes tóxicos lleguen al ambiente."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C la reutilización no aborda por sí sola la filtración que contaminó el río."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D quemar pilas puede liberar sustancias tóxicas y no es una solución segura."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por la información disponible."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Unos estudiantes",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

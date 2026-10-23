@@ -1,110 +1,123 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "cantidad relativa de muertes por accidentes de tránsito en función de la región",
+        "rol": "dato",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "se puede inferir",
+        "rol": "pide",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
+      },
+      {
+        "k": "idea",
+        "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Interpretar la infografía de seguridad vial",
+      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
+        },
+        {
+          "t": "Comprueba la opción C con el dato citado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Distingue las tasas y proporciones mostradas.",
+        "Revisa si la afirmación está respaldada por la infografía."
       ],
-      "plan": [
+      "clave": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Lee qué relación o dato pide el enunciado."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "k": "idea",
+          "t": "Busca esa información en la infografía."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C: El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C concuerda con la información de la infografía."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Identifica la comparación que presenta la infografía."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "k": "idea",
+          "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "k": "idea",
+          "t": "Descarta las opciones que añaden datos que no están representados."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 45",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

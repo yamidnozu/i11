@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "Algunos proponen que, para defender el bien común, se debe legalizar las drogas.",
+        "rol": "dato",
+        "nota": "El enunciado expone la postura que debes respaldar.",
+        "campo": "Propuesta"
+      },
+      {
+        "frag": "¿Cuál de los siguientes es el argumento más afín con la propuesta de legalización?",
+        "rol": "pide",
+        "nota": "Busca el argumento que justifica mejor la propuesta.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica la propuesta y el criterio que debe justificarla: defender el bien común."
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue entre libertad individual, atribución de responsabilidades, atención médica y consecuencias sociales de la prohibición."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D respalda la legalización con consecuencias sociales descritas para los países productores."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Argumentos a favor de la legalización de drogas",
+      "que": "Reconocer el argumento que relaciona la legalización con el bien común en países productores.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica la propuesta que se quiere sustentar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Compara qué razón aporta cada alternativa."
+        },
+        {
+          "t": "Elige la opción D, que presenta consecuencias sociales de la prohibición."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "para defender el bien común",
+        "En los países productores la prohibición ha generado problemas sociales más graves"
       ],
-      "plan": [
+      "clave": "La opción D sostiene que la prohibición generó problemas sociales más graves que los que se buscaba evitar, una razón a favor de legalizar.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A plantea que la comercialización no debería tener ningún control; el argumento es más amplio que el respaldo por consecuencias sociales."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, B niega responsabilidades de los países productores y no presenta una razón para legalizar."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, C propone atención médica para quienes consumen, pero no fundamenta la legalización en sus efectos sociales."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La propuesta es legalizar para defender el bien común."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La opción D relaciona la prohibición con daños sociales que superan los que se pretendían evitar."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Por eso, D es el argumento más afín."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A va más allá de la propuesta al afirmar que no debe haber ningún control."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B niega responsabilidades, pero no ofrece el argumento solicitado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C habla de atención médica, no de por qué legalizar sería mejor para el bien común."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "D apoya la propuesta con las consecuencias sociales de la prohibición."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Compara la razón que cada opción ofrece para respaldar la legalización."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La opción D propone que la prohibición produjo daños sociales mayores que los que buscaba evitar."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Esa razón conecta la legalización con la defensa del bien común."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por el argumento de la opción D."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 68",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

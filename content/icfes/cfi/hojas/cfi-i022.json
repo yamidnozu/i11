@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "Si en la primera extracción del sorteo se obtuvo 2",
+        "rol": "dato",
+        "nota": "El primer resultado ya está fijado; solo cuentan las dos extracciones que faltan.",
+        "campo": "Condición"
+      },
+      {
+        "frag": "es más probable que el estudiante que escogió el número 10 gane la rifa a que la gane el estudiante con el número 7",
+        "rol": "pide",
+        "nota": "Debes comparar cuántos resultados ordenados completan cada suma.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resta el resultado ya obtenido de cada número que se quiere formar."
+      },
+      {
+        "k": "idea",
+        "texto": "Cuenta los pares ordenados posibles para las dos extracciones restantes."
+      },
+      {
+        "k": "check",
+        "texto": "Compara los conteos: el total de resultados posibles es el mismo para ambas sumas."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Conteo de resultados en un experimento aleatorio",
+      "que": "Comparar la probabilidad de dos sumas después de fijar el resultado de una extracción.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Determina cuánto deben sumar las dos extracciones restantes para cada número."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Enumera los pares posibles teniendo en cuenta que importa el orden."
+        },
+        {
+          "t": "Compara cuántos pares producen cada suma."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La primera extracción fue $2$.",
+        "La urna se repone después de cada extracción."
       ],
-      "plan": [
+      "clave": "Para obtener $10$, los dos resultados restantes deben sumar $8$; esto ocurre en cinco pares ordenados. Para obtener $7$, deben sumar $5$; esto ocurre en cuatro pares. La opción B indica que el primer estudiante tiene una posibilidad más.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Que el número sea mayor no aumenta por sí solo su probabilidad; importa cuántos pares completan la suma."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, No se sabe que sea más probable obtener números pares, y la paridad no determina el conteo requerido."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, La comparación de distancias no da la probabilidad; hay que contar los pares de resultados."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La primera balota ya dio $2$, así que calculamos qué deben sumar las dos que faltan."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Para llegar a $10$ necesitan sumar $8$; para llegar a $7$ necesitan sumar $5$."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La primera suma tiene cinco pares ordenados y la segunda cuatro."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Que el número sea mayor no aumenta por sí solo su probabilidad; importa cuántos pares completan la suma."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No se sabe que sea más probable obtener números pares, y la paridad no determina el conteo requerido."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La comparación de distancias no da la probabilidad; hay que contar los pares de resultados."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Para obtener $10$, los dos resultados restantes deben sumar $8$; esto ocurre en cinco pares ordenados. Para obtener $7$, deben sumar $5$; esto ocurre en cuatro pares. La opción B indica que el primer estudiante tiene una posibilidad más."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Enumera los pares de resultados posibles después de la primera extracción."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La suma $8$ tiene más combinaciones ordenadas que la suma $5$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Como cada par tiene la misma probabilidad, la suma que tiene más pares es más probable."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B expresa esa diferencia de una posibilidad."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Entre los",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

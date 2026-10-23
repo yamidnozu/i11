@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "lo mejor sería que las mujeres",
+        "rol": "dato",
+        "nota": "La autoridad les atribuye a las mujeres la responsabilidad de evitar el acoso cambiando cómo se visten.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿Qué intereses está favoreciendo esta declaración?",
+        "rol": "pide",
+        "nota": "Debes identificar a quién beneficia el mensaje descrito.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica a quién responsabiliza el jefe de policía por evitar la violencia."
+      },
+      {
+        "k": "idea",
+        "texto": "Piensa si ese mensaje exige cambios a las posibles víctimas o cuestiona a quienes agreden."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba qué grupo recibe una excusa para su conducta a partir de la declaración."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Responsabilidad frente a la violencia sexual",
+      "que": "Reconocer a quién favorece una declaración que traslada a las mujeres la responsabilidad de evitar el acoso.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica el consejo que da el jefe de policía."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Observa que el consejo pide a las mujeres cambiar su vestimenta y sus salidas."
+        },
+        {
+          "t": "Determina quién queda excusado cuando se presenta esa conducta como prevención."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La declaración no se centra en detener a los agresores.",
+        "Presenta la ropa de las mujeres como causa que deben corregir."
       ],
-      "plan": [
+      "clave": "La opción C es correcta porque la declaración puede usarse como justificación para los agresores y desplaza hacia las mujeres la carga de prevenir la violencia.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El consejo no elimina la responsabilidad de los agresores ni protege el derecho de las mujeres a transitar libremente."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, La declaración no se refiere a las funciones laborales de los policías."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, La pregunta apunta a quién favorece el mensaje, no a la percepción de seguridad de la ciudad."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El jefe de policía propone que las mujeres cambien su forma de vestir y salir."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Ese mensaje no se concentra en responsabilizar a quienes ejercen la violencia."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C señala que los agresores reciben una justificación."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El consejo no elimina la responsabilidad de los agresores ni protege el derecho de las mujeres a transitar libremente."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La declaración no se refiere a las funciones laborales de los policías."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La pregunta apunta a quién favorece el mensaje, no a la percepción de seguridad de la ciudad."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C es correcta porque la declaración puede usarse como justificación para los agresores y desplaza hacia las mujeres la carga de prevenir la violencia."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Analiza el efecto social de atribuir la prevención de la violencia a la ropa de las mujeres."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Al hacerlo, el mensaje desplaza la responsabilidad y puede legitimar la conducta de los agresores."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Así se identifica a los agresores como el grupo favorecido; la respuesta es C."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras alternativas no describen ese desplazamiento de responsabilidad."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La violencia",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

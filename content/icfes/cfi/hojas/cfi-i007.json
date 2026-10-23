@@ -1,110 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "grupo de 100 empleados",
+        "rol": "dato",
+        "nota": "El total permite convertir porcentajes en cantidades.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "El 60% del grupo son mujeres",
+        "rol": "dato",
+        "nota": "De cada cien empleados, sesenta son mujeres.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "El 20% de las mujeres se desplazan en bus",
+        "rol": "dato",
+        "nota": "Este porcentaje se aplica al grupo de mujeres.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿Cuál de las siguientes tablas representa correctamente",
+        "rol": "pide",
+        "nota": "Se contrastan los conteos de cada tabla.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
+      },
+      {
+        "k": "idea",
+        "texto": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
+      },
+      {
+        "k": "check",
+        "texto": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Convertir porcentajes en frecuencias de una tabla",
+      "que": "Aplica porcentajes a subgrupos distintos y comprueba que los conteos sumen el total indicado.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
+        },
+        {
+          "t": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El grupo tiene $60$ mujeres y $40$ hombres.",
+        "Los porcentajes se aplican a mujeres y hombres por separado."
       ],
-      "plan": [
+      "clave": "Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Las cantidades no respetan los totales de mujeres y hombres."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Al restar los $16$ hombres que caminan, deben quedar $24$ hombres en bus."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, La tabla no respeta que haya $60$ mujeres ni que $12$ vayan en bus."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D: Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Las cantidades no respetan los totales de mujeres y hombres."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Al restar los $16$ hombres que caminan, deben quedar $24$ hombres en bus."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La tabla no respeta que haya $60$ mujeres ni que $12$ vayan en bus."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 7",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

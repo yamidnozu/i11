@@ -1,110 +1,124 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "promueve proyectos de agricultura para la reintegración de campesinos desplazados",
+        "rol": "dato",
+        "nota": "Este es el propósito de la organización estatal.",
+        "campo": "Objetivo estatal"
+      },
+      {
+        "frag": "rechaza esta decisión porque afectará este ecosistema",
+        "rol": "dato",
+        "nota": "Este es el propósito de la organización ambientalista.",
+        "campo": "Objetivo ambiental"
+      },
+      {
+        "frag": "se puede afirmar que",
+        "rol": "pide",
+        "nota": "Debes comparar lo que busca cada organización.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el objetivo de reintegrar a los campesinos del objetivo de conservar el humedal."
+      },
+      {
+        "k": "idea",
+        "texto": "Revisa si la opción describe esos dos objetivos y el conflicto entre ellos."
+      },
+      {
+        "k": "check",
+        "texto": "Confirma que no atribuyas a una organización un propósito que el enunciado asigna a la otra."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Conflicto entre reintegración social y conservación ambiental",
+      "que": "Distinguir los objetivos de una organización estatal y una ambientalista ante el uso de un humedal.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica que la organización estatal busca reintegrar a campesinos desplazados mediante agricultura."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Identifica que la organización ambientalista busca evitar el daño al humedal."
+        },
+        {
+          "t": "Compara esos objetivos con cada alternativa y verifica cómo se reparte la defensa de cada interés."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Una organización quiere utilizar terrenos del humedal.",
+        "La otra rechaza esa decisión por el impacto ambiental."
       ],
-      "plan": [
+      "clave": "La opción C distingue los fines: la ambientalista protege el ecosistema aunque no se entreguen esos terrenos, mientras la estatal busca ayudar a los campesinos aun con el riesgo ambiental descrito.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, No comparten un objetivo de aprovechamiento económico del humedal; la organización ambientalista rechaza su uso."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, No buscan ambas conservar las riquezas naturales; la organización estatal plantea usar el humedal para agricultura."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, El enunciado no dice que la organización estatal quiera trasladar a los campesinos a otra región."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La organización estatal quiere apoyar a campesinos desplazados con proyectos agrícolas."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La organización ambientalista rechaza usar el humedal porque busca protegerlo."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C presenta esos objetivos diferentes."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No comparten un objetivo de aprovechamiento económico del humedal; la organización ambientalista rechaza su uso."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No buscan ambas conservar las riquezas naturales; la organización estatal plantea usar el humedal para agricultura."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El enunciado no dice que la organización estatal quiera trasladar a los campesinos a otra región."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C distingue los fines: la ambientalista protege el ecosistema aunque no se entreguen esos terrenos, mientras la estatal busca ayudar a los campesinos aun con el riesgo ambiental descrito."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Compara los propósitos explícitos, sin añadir planes que el texto no menciona."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El proyecto agrícola puede apoyar la reintegración, pero afectaría el ecosistema del humedal."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La organización ambientalista prioriza evitar ese daño; la estatal, apoyar a los campesinos mediante el proyecto."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C representa ese conflicto de objetivos."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

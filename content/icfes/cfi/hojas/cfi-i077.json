@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "El acero es un material que contiene los elementos hierro y carbono.",
+        "rol": "dato",
+        "nota": "El enunciado aporta la situación experimental y el apoyo que debes interpretar.",
+        "campo": "Datos"
+      },
+      {
+        "frag": "¿cómo clasificaría al acero?",
+        "rol": "pide",
+        "nota": "La pregunta indica qué debes concluir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Clasificar materiales según uniformidad y variación de su composición."
+      },
+      {
+        "k": "idea",
+        "texto": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción A concuerde con los datos del enunciado y el apoyo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Clasificar materiales según uniformidad y variación de su composición.",
+      "que": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Clasificar materiales según uniformidad y variación de su composición."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
+        },
+        {
+          "t": "Selecciona la opción A y comprueba que los datos la respalden."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El acero es un material que contiene los elementos hierro y carbono.",
+        "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
       ],
-      "plan": [
+      "clave": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, B lo clasifica como sustancia pura aunque contiene distintos elementos en proporciones variables."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C confunde la presencia de varios elementos con una mezcla no uniforme."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D trata la variación entre muestras como señal de sustancia pura, justo lo contrario del diagrama."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Clasificar materiales según uniformidad y variación de su composición."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A coincide con los datos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B lo clasifica como sustancia pura aunque contiene distintos elementos en proporciones variables."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C confunde la presencia de varios elementos con una mezcla no uniforme."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D trata la variación entre muestras como señal de sustancia pura, justo lo contrario del diagrama."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Clasificar materiales según uniformidad y variación de su composición."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por el apoyo del ítem."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La materia",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

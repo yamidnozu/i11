@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "sustitución de importaciones",
+        "rol": "dato",
+        "nota": "El enunciado nombra la medida económica que debes definir.",
+        "campo": "Concepto"
+      },
+      {
+        "frag": "que consistió en",
+        "rol": "pide",
+        "nota": "Debes identificar en qué consiste la sustitución de importaciones.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona la reducción de importaciones con la respuesta económica de los países latinoamericanos."
+      },
+      {
+        "k": "idea",
+        "texto": "Busca la opción que propone fabricar localmente los productos que antes se traían de otros países."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la alternativa describa reemplazar importaciones y no prohibir todo comercio exterior."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Sustitución de importaciones",
+      "que": "Reconocer una política económica adoptada para responder a la caída del comercio exterior.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica el problema: se redujeron exportaciones e importaciones."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Recuerda que sustituir importaciones implica producir internamente bienes antes importados."
+        },
+        {
+          "t": "Compara esa definición con las opciones."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La pregunta menciona que disminuyeron las importaciones.",
+        "La palabra sustituir indica producir un bien en reemplazo del que se compraba fuera."
       ],
-      "plan": [
+      "clave": "La opción C define la sustitución de importaciones como producir los bienes que tradicionalmente se traían del exterior.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, La medida no consistía en prohibir todos los productos extranjeros."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, La libertad total de producción y consumo no reemplaza los bienes importados por producción nacional."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Dejar actuar libremente la oferta y la demanda no describe la producción local de bienes importados."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La crisis redujo las compras de productos al exterior."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Sustituir importaciones significa producir esos bienes dentro del país."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C presenta esa definición."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La medida no consistía en prohibir todos los productos extranjeros."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La libertad total de producción y consumo no reemplaza los bienes importados por producción nacional."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Dejar actuar libremente la oferta y la demanda no describe la producción local de bienes importados."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C define la sustitución de importaciones como producir los bienes que tradicionalmente se traían del exterior."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Vincula la caída de importaciones con la respuesta de los gobiernos."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La política buscaba que el país produjera los bienes que antes compraba afuera."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por eso, la respuesta es C."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las demás alternativas no expresan la sustitución descrita."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 58",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

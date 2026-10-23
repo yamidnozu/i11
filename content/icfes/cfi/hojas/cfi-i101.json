@@ -1,110 +1,109 @@
 {
   "estado": "borrador",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "How do I drive? Phone: 0152067",
+        "rol": "dato",
+        "nota": "El aviso pregunta por conducir y ofrece un teléfono.",
+        "campo": "Aviso"
+      },
+      {
+        "frag": "¿Dónde puede ver este aviso?",
+        "rol": "pide",
+        "nota": "La pregunta solicita ubicar el aviso.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee el aviso y revisa las tres ubicaciones posibles."
+      },
+      {
+        "k": "idea",
+        "texto": "La clave oficial señala la opción B, pero el texto no permite explicar por qué se trataría de un bus."
+      },
+      {
+        "k": "check",
+        "texto": "Se conserva en borrador hasta contar con una pista inequívoca del contexto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Ubicar avisos breves en inglés",
+      "que": "Relaciona el contenido del aviso con el lugar donde podría aparecer.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Lee el aviso."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Compara su contenido con las ubicaciones propuestas."
+        },
+        {
+          "t": "Mantén la respuesta en revisión si la relación no es inequívoca."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "{{How do I drive?}} pregunta por conducir.",
+        "La clave oficial señala la opción B, aunque el aviso no nombra de manera inequívoca el lugar."
       ],
-      "plan": [
+      "clave": "La clave oficial es B, pero no hay evidencia contextual suficiente para justificarla.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
-        },
-        {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El aviso dice {{How do I drive?}} y ofrece un teléfono."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La clave oficial señala la opción B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La relación con un bus no queda justificada por una pista explícita; se mantiene en borrador."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No hay evidencia suficiente en el aviso para descartar esta ubicación con seguridad."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No hay evidencia suficiente en el aviso para descartar esta ubicación con seguridad."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La clave oficial señala B, pero falta justificarla a partir del aviso."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Revisa el contenido y el contexto del aviso."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La respuesta oficial es B, aunque el anuncio no indica explícitamente el lugar."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La hoja queda en borrador hasta aclarar esa relación."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "No se completa una explicación concluyente."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 101",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

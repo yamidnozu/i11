@@ -1,110 +1,122 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "Cuanto más grande sea $j$, más cercano a $k$ será el racional construido",
+        "rol": "dato",
+        "nota": "Al aumentar el denominador, la fracción se hace más pequeña y el racional se acerca a $k$.",
+        "campo": "Relación"
+      },
+      {
+        "frag": "¿Cuántos números racionales se pueden construir",
+        "rol": "pide",
+        "nota": "Debes contar los valores de $j$ que producen un racional menor que el límite indicado.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara $k + 1/j$ con el límite $k + 1/11$."
+      },
+      {
+        "k": "calc",
+        "texto": "Al restar $k$, queda $1/j < 1/11$, así que $j > 11$."
+      },
+      {
+        "k": "idea",
+        "texto": "Cuenta cuántos enteros positivos cumplen esa condición."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica si hay una cantidad finita o infinita de enteros mayores que $11$."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Desigualdades con racionales",
+      "que": "Contar los racionales de la forma indicada que quedan por debajo de un límite cercano a $k$.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Plantea la desigualdad entre el racional y el límite."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Simplifica cancelando $k$ en ambos lados."
+        },
+        {
+          "t": "Determina los valores enteros positivos de $j$ que la satisfacen."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El denominador $j$ es un entero positivo.",
+        "Un denominador mayor hace menor la fracción positiva."
       ],
-      "plan": [
+      "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, $j=11$ produce el límite y no un racional menor que él."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Para que el racional quede debajo del límite, el denominador debe ser mayor que $11$."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Hay infinitos enteros positivos mayores que $11$."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Por eso se pueden construir infinitos racionales; la respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "$j=11$ produce el límite y no un racional menor que él."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Escribe la desigualdad que compara el racional con el límite."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Al cancelar $k$ y comparar fracciones positivas, obtén $j > 11$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Como hay infinitos enteros positivos que cumplen esa desigualdad, hay infinitos racionales."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B expresa el resultado."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 15",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

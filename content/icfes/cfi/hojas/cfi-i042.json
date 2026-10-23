@@ -1,110 +1,123 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "a pesar de eso",
+        "rol": "dato",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "cumple la función de",
+        "rol": "pide",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
+      },
+      {
+        "k": "idea",
+        "t": "La expresión «a pesar de eso» introduce un contraste: los países de ingresos medios tienen la mitad de los vehículos, pero concentran el ochenta por ciento de las muertes. La opción A destaca ese porcentaje elevado frente a la proporción de vehículos."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción A responde al enunciado y que las demás no lo hacen."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Interpretar la infografía de seguridad vial",
+      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "La expresión «a pesar de eso» introduce un contraste: los países de ingresos medios tienen la mitad de los vehículos, pero concentran el ochenta por ciento de las muertes. La opción A destaca ese porcentaje elevado frente a la proporción de vehículos."
+        },
+        {
+          "t": "Comprueba la opción A con el dato citado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Distingue las tasas y proporciones mostradas.",
+        "Revisa si la afirmación está respaldada por la infografía."
       ],
-      "plan": [
+      "clave": "La expresión «a pesar de eso» introduce un contraste: los países de ingresos medios tienen la mitad de los vehículos, pero concentran el ochenta por ciento de las muertes. La opción A destaca ese porcentaje elevado frente a la proporción de vehículos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, La opción B invierte el dato: el porcentaje de muertes es alto, no bajo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, La infografía no establece una relación causal directa con el número de autos; la expresión introduce contraste."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, La frase no afirma que las cifras oficiales subestimen las muertes."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Lee qué relación o dato pide el enunciado."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "k": "idea",
+          "t": "Busca esa información en la infografía."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A: La expresión «a pesar de eso» introduce un contraste: los países de ingresos medios tienen la mitad de los vehículos, pero concentran el ochenta por ciento de las muertes. La opción A destaca ese porcentaje elevado frente a la proporción de vehículos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La opción B invierte el dato: el porcentaje de muertes es alto, no bajo."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La infografía no establece una relación causal directa con el número de autos; la expresión introduce contraste."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La frase no afirma que las cifras oficiales subestimen las muertes."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A concuerda con la información de la infografía."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Identifica la comparación que presenta la infografía."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "k": "idea",
+          "t": "La expresión «a pesar de eso» introduce un contraste: los países de ingresos medios tienen la mitad de los vehículos, pero concentran el ochenta por ciento de las muertes. La opción A destaca ese porcentaje elevado frente a la proporción de vehículos."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "k": "idea",
+          "t": "Descarta las opciones que añaden datos que no están representados."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción A."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Según la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

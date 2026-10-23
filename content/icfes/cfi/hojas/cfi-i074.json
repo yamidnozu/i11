@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "logró la expulsión de los vendedores ambulantes del sector",
+        "rol": "dato",
+        "nota": "Esta es la medida cuyo efecto se debe anticipar.",
+        "campo": "Decisión"
+      },
+      {
+        "frag": "¿cuál sería un efecto de la expulsión de los vendedores?",
+        "rol": "pide",
+        "nota": "Debes identificar una consecuencia probable de retirar a los vendedores.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el problema inicial de intoxicación de la medida tomada por el colegio."
+      },
+      {
+        "k": "idea",
+        "texto": "Piensa quiénes dependían de vender en ese sector y cómo les afecta la expulsión."
+      },
+      {
+        "k": "check",
+        "texto": "Escoge una consecuencia directa de retirar a los vendedores, no una afirmación que contradiga esa medida."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Efectos de una decisión escolar",
+      "que": "Predecir una consecuencia social de expulsar a vendedores ambulantes del entorno del colegio.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica la decisión: sacar a los vendedores del sector."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Reconoce que algunas familias obtenían ingresos de esas ventas."
+        },
+        {
+          "t": "Relaciona la expulsión con la pérdida de esa fuente de ingreso."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La medida retira a los vendedores del lugar.",
+        "El enunciado menciona familias que dependían de las ventas."
       ],
-      "plan": [
+      "clave": "La opción D es una consecuencia directa: las familias que dependían de esas ventas tendrían menos ingresos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El enunciado no relaciona la presencia de vendedores con la seguridad del sector."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, La medida saca los puestos del entorno; no implica por sí sola que aumenten intoxicaciones en el colegio."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, El apoyo de la comunidad podría variar, pero no es la consecuencia directa indicada por la dependencia económica de las familias."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El colegio retiró a los vendedores del sector."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Algunas familias dependían de las ventas para obtener ingresos."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D describe la pérdida de esos ingresos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El enunciado no relaciona la presencia de vendedores con la seguridad del sector."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La medida saca los puestos del entorno; no implica por sí sola que aumenten intoxicaciones en el colegio."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El apoyo de la comunidad podría variar, pero no es la consecuencia directa indicada por la dependencia económica de las familias."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D es una consecuencia directa: las familias que dependían de esas ventas tendrían menos ingresos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Para predecir un efecto, parte de la acción tomada y de las personas afectadas."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La expulsión elimina el lugar de venta para familias que dependían de esa actividad."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La consecuencia coherente es que disminuyan sus ingresos; corresponde la opción D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras opciones no se desprenden directamente de la información del caso."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

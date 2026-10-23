@@ -1,110 +1,119 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "___ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.",
+        "rol": "pide",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "campo": "Fragmento"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee el fragmento",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba la forma",
+        "texto": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica en contexto",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Completar una lectura en inglés con la forma adecuada",
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "pistas": [
+        "Lee la oración completa alrededor del espacio.",
+        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
+      ],
+      "clave": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero This acompaña a un referente singular, no a Ethiopian wolves."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero That también es singular y no concuerda con el sustantivo plural."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee el fragmento con el espacio.",
+          "eq": [
+            "{{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}"
+          ]
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué clase de palabra exige la estructura."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee la oración completa y detente en el espacio."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Fíjate en {{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}} y en las palabras que lo rodean."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción correcta es {{These}}.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
+          "t": "La opción A no encaja: This acompaña a un referente singular, no a Ethiopian wolves.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B no encaja: That también es singular y no concuerda con el sustantivo plural.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C no encaja: La clave la confirma en el pasaje.",
+          "a": "p:0",
+          "k": "por"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Analiza la estructura que acompaña el espacio: {{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these.",
+          "a": "p:1",
+          "k": "por"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la opción C deja la oración completa y coherente.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 112",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,128 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "el valor de la cuota disminuirá $50.000 en cada mes",
+        "rol": "afirmación",
+        "nota": "Se verifica el cambio mensual de la cuota.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "La afirmación es correcta porque",
+        "rol": "pide",
+        "nota": "Hay que justificar el cambio usando la modalidad uno.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
+      },
+      {
+        "k": "idea",
+        "texto": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
+      },
+      {
+        "k": "idea",
+        "texto": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
+      },
+      {
+        "k": "check",
+        "texto": "La explicación corresponde a la opción B y a la afirmación del enunciado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Cambio de cuota con abonos e intereses",
+      "que": "Explica por qué disminuye el valor de una cuota cuando el abono al capital es fijo y el interés depende del saldo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
+        },
+        {
+          "t": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
+        },
+        {
+          "t": "La explicación corresponde a la opción B y a la afirmación del enunciado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El abono mensual al capital se obtiene al dividir el crédito entre seis.",
+        "El interés mensual corresponde al cinco por ciento del saldo."
       ],
-      "plan": [
+      "clave": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, el interés baja cincuenta mil cada mes; ese cambio no hace que el interés total sea trescientos mil ni explica por sí solo el cambio mensual de la cuota."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, el abono al capital se mantiene en un millón; no aumenta cincuenta mil."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, el abono al capital es fijo, pero el interés baja; la cuota no disminuye por ambos componentes."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el interés baja cincuenta mil cada mes; ese cambio no hace que el interés total sea trescientos mil ni explica por sí solo el cambio mensual de la cuota."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el abono al capital se mantiene en un millón; no aumenta cincuenta mil."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el abono al capital es fijo, pero el interés baja; la cuota no disminuye por ambos componentes."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
+        },
+        {
+          "t": "La explicación corresponde a la opción B y a la afirmación del enunciado."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Después de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

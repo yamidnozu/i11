@@ -1,110 +1,122 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "anualmente, el metro cuadrado se valoriza un 5% respecto al costo del año anterior",
+        "rol": "dato",
+        "nota": "Cada año el costo se multiplica por un factor que incluye la valorización.",
+        "campo": "Regla"
+      },
+      {
+        "frag": "¿Con cuál de las siguientes expresiones se representa el costo de un metro cuadrado",
+        "rol": "pide",
+        "nota": "Debes modelar el costo después de varios años de crecimiento porcentual.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Convierte el aumento porcentual en un factor multiplicativo anual."
+      },
+      {
+        "k": "calc",
+        "texto": "El factor de crecimiento es $1 + 5/100$."
+      },
+      {
+        "k": "idea",
+        "texto": "Aplica ese factor una vez por cada año transcurrido."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la expresión empiece con el costo inicial y eleve el factor anual al número de años."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Crecimiento porcentual compuesto",
+      "que": "Representar una valorización porcentual que se repite cada año.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica el valor inicial del metro cuadrado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Expresa el aumento anual como un factor de crecimiento."
+        },
+        {
+          "t": "Eleva ese factor a la cantidad de años y multiplícalo por el valor inicial."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La valorización ocurre cada año.",
+        "El costo de cada año se calcula respecto al costo del año anterior."
       ],
-      "plan": [
+      "clave": "La opción D representa el valor inicial multiplicado por el factor anual $1 + 5/100$, repetido durante $n$ años.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Suma un término lineal y no aplica una valorización porcentual sobre el costo actualizado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Multiplica por $5n$, que no representa el factor de aumento anual."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, Usa solo la tasa como factor y omite el valor base y la unidad inicial del costo."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Cada año el metro cuadrado se valoriza sobre el precio del año anterior."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Eso se modela multiplicando por $1 + 5/100$ cada año."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Después de $n$ años, ese factor queda elevado a $n$ y multiplica el costo inicial."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Suma un término lineal y no aplica una valorización porcentual sobre el costo actualizado."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Multiplica por $5n$, que no representa el factor de aumento anual."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Usa solo la tasa como factor y omite el valor base y la unidad inicial del costo."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D representa el valor inicial multiplicado por el factor anual $1 + 5/100$, repetido durante $n$ años."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Un aumento porcentual sobre el año anterior se aplica de manera compuesta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El factor de un año es $1 + 5/100$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Tras $n$ años, el costo es el inicial por ese factor elevado a $n$; corresponde D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las demás expresiones no modelan ese crecimiento compuesto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 24",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

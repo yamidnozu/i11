@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "de sus hijos 3/4 son de cuello largo y 1/4 son de cuello corto",
+        "rol": "dato",
+        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "De los genotipos de los padres puede afirmarse que",
+        "rol": "pide",
+        "nota": "La pregunta señala qué debes explicar o inferir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Inferir genotipos a partir de una proporción de descendencia."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción A explique la evidencia y no solo repita un dato."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Inferir genotipos a partir de una proporción de descendencia.",
+      "que": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Inferir genotipos a partir de una proporción de descendencia."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
+        },
+        {
+          "t": "Elige la opción A y comprueba que se derive de los datos."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La descendencia muestra el rasgo recesivo en una parte de los hijos.",
+        "Un patrón de tres a uno puede surgir de un cruce entre progenitores heterocigotos."
       ],
-      "plan": [
+      "clave": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, Un progenitor homocigoto recesivo produciría una proporción distinta de descendientes de cuello corto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Un progenitor homocigoto dominante no produciría la proporción recesiva observada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Dos progenitores homocigotos dominantes no tendrían hijos de cuello corto."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Inferir genotipos a partir de una proporción de descendencia."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A explica la evidencia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Un progenitor homocigoto recesivo produciría una proporción distinta de descendientes de cuello corto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Un progenitor homocigoto dominante no produciría la proporción recesiva observada."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Dos progenitores homocigotos dominantes no tendrían hijos de cuello corto."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Inferir genotipos a partir de una proporción de descendencia."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda respaldada por el resultado descrito."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

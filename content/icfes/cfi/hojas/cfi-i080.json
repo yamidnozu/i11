@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "Una proteína con peso molecular de 120 kDa podrá separarse en un tiempo",
+        "rol": "dato",
+        "nota": "El enunciado presenta la variable o el dato que debes interpretar.",
+        "campo": "Datos"
+      },
+      {
+        "frag": "cada pico representa una proteína diferente",
+        "rol": "pide",
+        "nota": "La frase indica la conclusión solicitada.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
+      },
+      {
+        "k": "idea",
+        "texto": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A se ajuste a las gráficas descritas y a la pregunta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica.",
+      "que": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
+        },
+        {
+          "t": "Selecciona la opción A y confirma que corresponde a la evidencia gráfica."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La pregunta pide estimar el intervalo de separación según el peso molecular.",
+        "La gráfica asigna tiempos a picos con pesos moleculares distintos."
       ],
-      "plan": [
+      "clave": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, B no cubre el intervalo entre los picos que encierran el peso solicitado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C corresponde a un tiempo posterior a esos picos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D ubica la separación después del último pico representado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A concuerda con la evidencia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B no cubre el intervalo entre los picos que encierran el peso solicitado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C corresponde a un tiempo posterior a esos picos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D ubica la separación después del último pico representado."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La conclusión queda respaldada por las gráficas."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

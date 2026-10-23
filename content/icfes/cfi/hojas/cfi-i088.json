@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "La pelota sube aceleradamente por el tubo.",
+        "rol": "dato",
+        "nota": "El enunciado establece la situación física que debes interpretar.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "Esto ocurre porque",
+        "rol": "pide",
+        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D sea coherente con el movimiento y las fuerzas descritas."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota.",
+      "que": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo."
+        },
+        {
+          "t": "Selecciona la opción D y contrástala con el enunciado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La pelota sube aceleradamente por el tubo.",
+        "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
       ],
-      "plan": [
+      "clave": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El peso no cambia cuando se sopla aire por el tubo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Si la fuerza del aire igualara al peso, la fuerza neta sería cero."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, Si el peso superara la fuerza del aire, la aceleración sería hacia abajo."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D responde al fenómeno descrito."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El peso no cambia cuando se sopla aire por el tubo."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Si la fuerza del aire igualara al peso, la fuerza neta sería cero."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Si el peso superara la fuerza del aire, la aceleración sería hacia abajo."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta se sostiene con el principio físico aplicado."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

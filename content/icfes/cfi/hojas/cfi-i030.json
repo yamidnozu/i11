@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "presenta un supuesto subyacente",
+        "rol": "pide",
+        "nota": "Debes identificar una idea que la afirmación da por sentada.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "la injusticia le brinda más ventajas individuales que la justicia",
+        "rol": "dato",
+        "nota": "La comparación implica que ambas conductas se evalúan por sus ventajas individuales.",
+        "campo": "Afirmación"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la afirmación explícita de lo que debe suponerse para comparar las dos conductas."
+      },
+      {
+        "k": "idea",
+        "texto": "Busca una opción que acepte que tanto la justicia como la injusticia pueden brindar ventajas, aunque en distinta medida."
+      },
+      {
+        "k": "check",
+        "texto": "Evita elegir una alternativa que contradiga la comparación o agregue una conclusión absoluta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Supuestos de una comparación argumentativa",
+      "que": "Reconocer la premisa implícita en una afirmación que compara las ventajas individuales de dos conductas.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica qué se compara: las ventajas individuales de la justicia y la injusticia."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Considera qué tendría que admitirse para que exista esa comparación."
+        },
+        {
+          "t": "Elige la opción que preserve la idea de que ambas pueden brindar ventajas."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La frase compara una conducta con la otra.",
+        "El autor sostiene que la injusticia brinda más ventajas."
       ],
-      "plan": [
+      "clave": "La opción B supone que la justicia también brinda ventajas individuales, aunque menos que la injusticia.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Afirma que las ventajas son iguales, lo que contradice la comparación de que la injusticia brinda más."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Reduce las ventajas de la injusticia, cuando la afirmación sostiene que son mayores."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Añade que la justicia no brinda ninguna ventaja; la afirmación solo compara cantidades y no establece ese extremo."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La frase compara las ventajas de la justicia y la injusticia."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Para compararlas, se supone que ambas pueden ofrecer alguna ventaja, aunque una ofrezca más."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B expresa ese supuesto."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Afirma que las ventajas son iguales, lo que contradice la comparación de que la injusticia brinda más."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Reduce las ventajas de la injusticia, cuando la afirmación sostiene que son mayores."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Añade que la justicia no brinda ninguna ventaja; la afirmación solo compara cantidades y no establece ese extremo."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B supone que la justicia también brinda ventajas individuales, aunque menos que la injusticia."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Un supuesto es una idea que la comparación necesita, aunque no la formule como conclusión aparte."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La frase no dice que la justicia carezca de todo beneficio; dice que la injusticia brinda más."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por ello, se supone que ambas pueden brindar ventajas individuales, como dice B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las demás opciones igualan, minimizan o absolutizan la comparación."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "De los",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

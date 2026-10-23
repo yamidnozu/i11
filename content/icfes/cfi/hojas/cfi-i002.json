@@ -1,110 +1,139 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "récord mundial de 10,49 segundos",
+        "rol": "dato",
+        "nota": "Es el tiempo que se debe superar para lograr el récord mundial.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "récord olímpico de 10,50 segundos",
+        "rol": "dato",
+        "nota": "El tiempo olímpico es ligeramente mayor que el mundial.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "rompa el récord olímpico pero no el mundial",
+        "rol": "pide",
+        "nota": "Busca un tiempo que cumpla la condición olímpica y no la mundial.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara los tiempos de los dos récords.",
+        "texto": "En una carrera, un tiempo menor representa una llegada más rápida."
+      },
+      {
+        "k": "calc",
+        "titulo": "Busca un tiempo estrictamente entre ambos récords.",
+        "lineas": [
+          "$10,49<t<10,50$",
+          "$10,497$ cumple porque $10,49<10,497<10,50$."
+        ],
+        "nota": "El tiempo elegido es menor que el récord olímpico y mayor que el mundial."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica las dos condiciones.",
+        "texto": "$10,497$ supera el récord olímpico, pero no supera el mundial. La respuesta es A."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comparación de decimales y récords de tiempo",
+      "que": "Encuentra un tiempo que quede entre los dos récords y comprueba cuál de ellos supera.",
+      "pistas": [
+        "En una carrera, menos segundos significan un mejor tiempo.",
+        "Compara las centésimas y milésimas con cuidado."
+      ],
+      "clave": "Un valor entre $10,49$ y $10,50$ supera el récord olímpico, pero sigue por encima del récord mundial.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero un tiempo menor que $10,4$ también queda por debajo de $10,49$, así que superaría el récord mundial."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero sí existe un valor entre los récords; $10,497$ es un ejemplo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero $10,497$ es menor que $10,50$, pero mayor que $10,49$; por eso no rompe el récord mundial."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara cuál de los dos récords exige menos segundos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Elige un decimal entre $10,49$ y $10,50$."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que el valor elegido supera solo el récord olímpico."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Fíjate en que, en una carrera, el menor tiempo es el más rápido."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El récord mundial es de $10,49$ segundos y el olímpico es de $10,50$ segundos."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "$10,497$ queda entre los dos tiempos: supera el récord olímpico y no el mundial. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Buscamos un tiempo menor que $10,50$ y que no sea menor que $10,49$."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
+          "t": "La opción B usa un tiempo menor que $10,4$, que también bajaría del récord mundial.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C niega que exista un tiempo intermedio, pero $10,497$ sí está entre los récords.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D afirma que cualquier tiempo menor que $10,50$ sería menor que $10,49$; $10,497$ muestra que eso no es cierto.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A presenta un valor entre ambos récords y satisface lo que se pide.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representa los tiempos con una variable $t$. Para superar el récord olímpico, $t$ debe ser menor que $10,50$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Para no superar el récord mundial, $t$ debe ser mayor o igual que $10,49$. Un valor interior como $10,497$ cumple ambas condiciones.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción A da un ejemplo válido. Las opciones B, C y D contradicen la comparación de los decimales.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta correcta es A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una prueba",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

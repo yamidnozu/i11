@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "La gráfica representa los datos obtenidos por el estudiante.",
+        "rol": "dato",
+        "nota": "El texto o la figura aporta la evidencia necesaria.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "¿cuál explica la gráfica obtenida por el estudiante?",
+        "rol": "pide",
+        "nota": "La pregunta indica la conclusión que debes seleccionar.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D respete la evidencia y el principio científico del enunciado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar la energía potencial con la altura del vagón en distintos momentos.",
+      "que": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo."
+        },
+        {
+          "t": "Selecciona la opción D y comprueba la relación descrita."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La gráfica representa los datos obtenidos por el estudiante.",
+        "La gráfica indica una posición baja en el primer instante, una altura alta en el segundo instante, otra posición baja en el tercer instante y una altura intermedia en el cuarto instante. El modelo D reproduce esa secuencia."
       ],
-      "plan": [
+      "clave": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A invierte las alturas relativas de primer instante y segundo instante."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, B no presenta la altura máxima en segundo instante."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, C no termina en una posición intermedia como indica la gráfica."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D concuerda con la evidencia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A invierte las alturas relativas de primer instante y segundo instante."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B no presenta la altura máxima en segundo instante."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C no termina en una posición intermedia como indica la gráfica."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada en los datos del problema."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 85",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

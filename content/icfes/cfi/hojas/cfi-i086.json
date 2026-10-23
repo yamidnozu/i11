@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "La temperatura final del agua fue 17 °C",
+        "rol": "dato",
+        "nota": "El texto o la figura aporta la evidencia necesaria.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "la temperatura final de los dos litros de agua sea",
+        "rol": "pide",
+        "nota": "La pregunta indica la conclusión que debes seleccionar.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
+      },
+      {
+        "k": "idea",
+        "texto": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C respete la evidencia y el principio científico del enunciado."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar la cantidad de agua calentada con el aumento de temperatura.",
+      "que": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua."
+        },
+        {
+          "t": "Selecciona la opción C y comprueba la relación descrita."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La temperatura inicial y el tiempo de calentamiento se mantienen iguales.",
+        "Al duplicar la cantidad de agua, el aumento de temperatura se reduce a la mitad."
       ],
-      "plan": [
+      "clave": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A duplica el aumento de temperatura, aunque también se duplicó la cantidad de agua."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, B mantiene el aumento de dos grados observado para la mitad de agua."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D supone que la temperatura no cambia pese al calentamiento."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C concuerda con la evidencia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A duplica el aumento de temperatura, aunque también se duplicó la cantidad de agua."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B mantiene el aumento de dos grados observado para la mitad de agua."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D supone que la temperatura no cambia pese al calentamiento."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada en los datos del problema."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

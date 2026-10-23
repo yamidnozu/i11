@@ -1,110 +1,115 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "It rained a lot last night!",
+        "rol": "dato",
+        "nota": "Es la intervención a la que debe responderse.",
+        "campo": "Contexto"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Reconoce la situación",
+        "texto": "Identifica qué comunica la persona y qué reacción tendría sentido."
+      },
+      {
+        "k": "idea",
+        "titulo": "Elige una respuesta pertinente",
+        "texto": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica el intercambio",
+        "texto": "Lee las dos intervenciones seguidas y confirma que la conversación suena coherente."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Responder de forma pertinente en una conversación",
+      "que": "Elige la intervención que responde con sentido a lo que acaba de decir la otra persona.",
+      "pistas": [
+        "Reconoce si la persona comparte una opinión, cuenta una noticia o relata un hecho.",
+        "Descarta respuestas que cambian el tema o quedan incompletas."
+      ],
+      "clave": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero {{Did you accept}} no se refiere a la lluvia ni a sus efectos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero {{Did you understand}} no pregunta por la experiencia durante la noche."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la intervención inicial."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Reconoce qué respuesta espera el contexto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Comprueba que la alternativa elegida mantiene la conversación."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee lo que dice la primera persona."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Piensa qué respuesta encaja con la situación."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción correcta es {{Did you sleep?}}.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identifica la intención de la intervención."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
+          "t": "La opción A no responde bien: {{Did you accept}} no se refiere a la lluvia ni a sus efectos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B no responde bien: {{Did you understand}} no pregunta por la experiencia durante la noche.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C mantiene una conversación coherente.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Interpreta la intención de quien habla.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche.",
+          "a": "p:1",
+          "k": "por"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las otras alternativas cambian el tema o no completan una respuesta natural.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la opción C responde a la intervención inicial.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "It rained",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

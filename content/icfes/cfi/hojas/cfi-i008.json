@@ -1,110 +1,124 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "eje Y divide al trapecio en dos figuras iguales",
+        "rol": "dato",
+        "nota": "La simetría respecto del eje Y determina los vértices faltantes.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "coordenadas de dos de los vértices",
+        "rol": "dato",
+        "nota": "Se dan los puntos de un lado del eje.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿cuáles son las coordenadas de los otros dos vértices?",
+        "rol": "pide",
+        "nota": "Se buscan los puntos simétricos.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La simetría respecto del eje Y conserva la coordenada y."
+      },
+      {
+        "k": "idea",
+        "texto": "Cambia el signo de la coordenada x en cada punto: $(-4,2)\to(4,2)$ y $(-2,8)\to(2,8)$."
+      },
+      {
+        "k": "check",
+        "texto": "Selecciona la opción B, que contiene ambos reflejos."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Reflejar puntos respecto del eje Y",
+      "que": "Aplica la simetría axial para encontrar las coordenadas de los vértices correspondientes.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "La simetría respecto del eje Y conserva la coordenada y."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Cambia el signo de la coordenada x en cada punto: $(-4,2)\to(4,2)$ y $(-2,8)\to(2,8)$."
+        },
+        {
+          "t": "Selecciona la opción B, que contiene ambos reflejos."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La reflexión respecto del eje Y conserva la coordenada vertical.",
+        "Cada coordenada horizontal cambia de signo."
       ],
-      "plan": [
+      "clave": "Si el eje Y divide el trapecio en dos figuras iguales, cada vértice de la izquierda se refleja cambiando el signo de su coordenada x. Así, $(-4,2)$ pasa a $(4,2)$ y $(-2,8)$ pasa a $(2,8)$, como indica la opción B.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, No conserva las mismas alturas ni refleja los valores de x."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Cambia signos de y, en vez de reflejar los puntos respecto del eje Y."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Refleja los puntos respecto del eje X, no del eje Y."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La simetría respecto del eje Y conserva la coordenada y."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Cambia el signo de la coordenada x en cada punto: $(-4,2)\to(4,2)$ y $(-2,8)\to(2,8)$."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: Si el eje Y divide el trapecio en dos figuras iguales, cada vértice de la izquierda se refleja cambiando el signo de su coordenada x. Así, $(-4,2)$ pasa a $(4,2)$ y $(-2,8)$ pasa a $(2,8)$, como indica la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, No conserva las mismas alturas ni refleja los valores de x."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Cambia signos de y, en vez de reflejar los puntos respecto del eje Y."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Refleja los puntos respecto del eje X, no del eje Y."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Si el eje Y divide el trapecio en dos figuras iguales, cada vértice de la izquierda se refleja cambiando el signo de su coordenada x. Así, $(-4,2)$ pasa a $(4,2)$ y $(-2,8)$ pasa a $(2,8)$, como indica la opción B."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La simetría respecto del eje Y conserva la coordenada y."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Cambia el signo de la coordenada x en cada punto: $(-4,2)\to(4,2)$ y $(-2,8)\to(2,8)$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Selecciona la opción B, que contiene ambos reflejos."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un trapecio",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

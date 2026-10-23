@@ -1,110 +1,112 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "What can a reader find out from this text?",
+        "rol": "dato",
+        "nota": "El cierre comunica el efecto que el autor espera en quienes leen.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{What can a reader find out from this text?}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C complete la idea o estructura del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comprensión de un texto en inglés",
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Lee la pregunta y ubica la pista pertinente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+        },
+        {
+          "t": "Elige la opción C y verifica la concordancia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "{{What can a reader find out from this text?}}",
+        "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
       ],
-      "plan": [
+      "clave": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "{{which activities tourists prefer to do at the farm}}",
+          "p": "Pero, {{which activities tourists prefer to do at the farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "{{when the best time is to visit the farm}}",
+          "p": "Pero, {{when the best time is to visit the farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "{{how to grow coffee on the farm}}",
+          "p": "Pero, {{how to grow coffee on the farm}} no corresponde con la información o construcción gramatical del texto."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{What can a reader find out from this text?}}"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{which activities tourists prefer to do at the farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{when the best time is to visit the farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{how to grow coffee on the farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{What can a reader find out from this text?}}"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 121",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

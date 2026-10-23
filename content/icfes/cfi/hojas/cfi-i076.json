@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "Un estudiante desea comparar los valores de las densidades de tres líquidos",
+        "rol": "dato",
+        "nota": "El enunciado aporta la situación experimental y el apoyo que debes interpretar.",
+        "campo": "Datos"
+      },
+      {
+        "frag": "el experimento del estudiante está mal planteado, porque",
+        "rol": "pide",
+        "nota": "La pregunta indica qué debes concluir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Comparar densidades requiere controlar las condiciones de medición."
+      },
+      {
+        "k": "idea",
+        "texto": "Busca por qué las mediciones de la tabla no permiten comparar adecuadamente los tres líquidos."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción A concuerde con los datos del enunciado y el apoyo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comparar densidades requiere controlar las condiciones de medición.",
+      "que": "Busca por qué las mediciones de la tabla no permiten comparar adecuadamente los tres líquidos.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Comparar densidades requiere controlar las condiciones de medición."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Busca por qué las mediciones de la tabla no permiten comparar adecuadamente los tres líquidos."
+        },
+        {
+          "t": "Selecciona la opción A y comprueba que los datos la respalden."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Un estudiante desea comparar los valores de las densidades de tres líquidos",
+        "Las mediciones se hicieron a temperaturas distintas. Para comparar densidades, las temperaturas deben coincidir."
       ],
-      "plan": [
+      "clave": "Las mediciones se hicieron a temperaturas distintas. Para comparar densidades, las temperaturas deben coincidir.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, La opción B cambia la medición necesaria y no atiende la diferencia de temperaturas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, La opción C no corrige la falta de una temperatura común."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, La opción D afirma que no se pueden comparar, aunque sí es posible controlar la temperatura."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Comparar densidades requiere controlar las condiciones de medición."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Las mediciones se hicieron a temperaturas distintas. Para comparar densidades, las temperaturas deben coincidir."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A coincide con los datos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción B cambia la medición necesaria y no atiende la diferencia de temperaturas."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción C no corrige la falta de una temperatura común."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "La opción D afirma que no se pueden comparar, aunque sí es posible controlar la temperatura."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las mediciones se hicieron a temperaturas distintas. Para comparar densidades, las temperaturas deben coincidir."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Comparar densidades requiere controlar las condiciones de medición."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Busca por qué las mediciones de la tabla no permiten comparar adecuadamente los tres líquidos."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las mediciones se hicieron a temperaturas distintas. Para comparar densidades, las temperaturas deben coincidir."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por el apoyo del ítem."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,123 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "razonamiento",
+    "marcas": [
+      {
+        "frag": "dos puntos P y P′ diferentes",
+        "rol": "dato",
+        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "NO puede resultar al unir entre sí los puntos P, P′ y O",
+        "rol": "pide",
+        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Identifica qué pide la pregunta y qué datos o puntos participan."
+      },
+      {
+        "k": "idea",
+        "t": "Al unir entre sí los tres puntos se trazan segmentos entre cada pareja. Si P y P′ no están en una misma línea con O, se forma un triángulo; como OP y OP′ son radios, puede ser isósceles o, con una separación adecuada, equilátero. Si P y P′ son extremos de un diámetro, al unirlos con O se obtiene el diámetro. La figura resultante no puede ser solo un radio, porque habría que unir también los otros dos puntos."
+      },
+      {
+        "k": "check",
+        "t": "Verifica que la opción B responde a la pregunta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Analizar figuras geométricas",
+      "que": "Relaciona la condición del enunciado con la figura posible.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica los puntos o las cantidades que debes comparar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Al unir entre sí los tres puntos se trazan segmentos entre cada pareja. Si P y P′ no están en una misma línea con O, se forma un triángulo; como OP y OP′ son radios, puede ser isósceles o, con una separación adecuada, equilátero. Si P y P′ son extremos de un diámetro, al unirlos con O se obtiene el diámetro. La figura resultante no puede ser solo un radio, porque habría que unir también los otros dos puntos."
+        },
+        {
+          "t": "Contrasta la conclusión con la opción B."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Usa la definición de radio, diámetro y triángulo.",
+        "Verifica la opción elegida con la figura o los datos de la fuente."
       ],
-      "plan": [
+      "clave": "Al unir entre sí los tres puntos se trazan segmentos entre cada pareja. Si P y P′ no están en una misma línea con O, se forma un triángulo; como OP y OP′ son radios, puede ser isósceles o, con una separación adecuada, equilátero. Si P y P′ son extremos de un diámetro, al unirlos con O se obtiene el diámetro. La figura resultante no puede ser solo un radio, porque habría que unir también los otros dos puntos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Los segmentos OP y OP′ tienen igual longitud porque ambos son radios; así puede formarse un triángulo isósceles."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Si el ángulo central entre OP y OP′ es de sesenta grados, los tres lados tienen igual longitud."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Si P y P′ son extremos de un diámetro, los tres puntos quedan alineados y el segmento PP′ es un diámetro."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Lee qué figura o comparación pide la pregunta."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "k": "idea",
+          "t": "Aplica la propiedad geométrica o calcula cada razón."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Los segmentos OP y OP′ tienen igual longitud porque ambos son radios; así puede formarse un triángulo isósceles."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Si el ángulo central entre OP y OP′ es de sesenta grados, los tres lados tienen igual longitud."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Si P y P′ son extremos de un diámetro, los tres puntos quedan alineados y el segmento PP′ es un diámetro."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Organiza las condiciones o los datos necesarios."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "k": "idea",
+          "t": "Al unir entre sí los tres puntos se trazan segmentos entre cada pareja. Si P y P′ no están en una misma línea con O, se forma un triángulo; como OP y OP′ son radios, puede ser isósceles o, con una separación adecuada, equilátero. Si P y P′ son extremos de un diámetro, al unirlos con O se obtiene el diámetro. La figura resultante no puede ser solo un radio, porque habría que unir también los otros dos puntos."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "k": "idea",
+          "t": "Comprueba el resultado y descarta las opciones incompatibles."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 12",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,130 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "muestra de 100 lápices",
+        "rol": "dato",
+        "nota": "La frecuencia observada se convierte en porcentaje sobre cien.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "longitud de los mismos",
+        "rol": "dato",
+        "nota": "La tabla organiza las frecuencias por longitud.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "margen de error del control de calidad es del 3%",
+        "rol": "dato",
+        "nota": "El margen se suma y se resta a la estimación de la muestra.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "porcentaje correspondiente a los lápices producidos que miden 150 mm",
+        "rol": "pide",
+        "nota": "Se solicita el intervalo compatible con la muestra.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
+      },
+      {
+        "k": "idea",
+        "texto": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
+      },
+      {
+        "k": "check",
+        "texto": "El intervalo es $13\\%$ a $19\\%$, opción B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Interpretar un margen de error",
+      "que": "Convierte una frecuencia muestral en porcentaje y construye el intervalo sumando y restando el margen de error.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
+        },
+        {
+          "t": "El intervalo es $13\\%$ a $19\\%$, opción B."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La muestra contiene $16$ lápices de $150$ mm entre $100$.",
+        "El margen de error es de $3$ puntos porcentuales."
       ],
-      "plan": [
+      "clave": "La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Los extremos no están a tres puntos del porcentaje estimado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, La opción no representa el intervalo completo de $16\\%\\pm3$ puntos porcentuales."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Los extremos no se centran en $16\\%$ ni aplican el margen indicado."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Los extremos no están a tres puntos del porcentaje estimado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La opción no representa el intervalo completo de $16\\%\\pm3$ puntos porcentuales."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Los extremos no se centran en $16\\%$ ni aplican el margen indicado."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El intervalo es $13\\%$ a $19\\%$, opción B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 11",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

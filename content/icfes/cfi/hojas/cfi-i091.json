@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "a diferentes temperaturas",
+        "rol": "dato",
+        "nota": "El enunciado presenta la situación o variable que debes analizar.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "¿Cuál de las siguientes gráficas muestra los resultados del experimento?",
+        "rol": "pide",
+        "nota": "La pregunta indica qué debes concluir o representar.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
+      },
+      {
+        "k": "idea",
+        "texto": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción B respete el comportamiento descrito y las variables del problema."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido.",
+      "que": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
+        },
+        {
+          "t": "Selecciona la opción B y contrástala con la evidencia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "a diferentes temperaturas",
+        "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
       ],
-      "plan": [
+      "clave": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A intercambia las variables de los ejes."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C pone las variables en los ejes equivocados y representa los valores en orden inverso."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D usa los ejes correctos, pero muestra la velocidad en orden decreciente."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B concuerda con los datos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A intercambia las variables de los ejes."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C pone las variables en los ejes equivocados y representa los valores en orden inverso."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D usa los ejes correctos, pero muestra la velocidad en orden decreciente."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La conclusión queda sustentada por la evidencia."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una estudiante",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

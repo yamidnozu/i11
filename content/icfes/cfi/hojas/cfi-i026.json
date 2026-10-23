@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "hace referencia a Rubens",
+        "rol": "dato",
+        "nota": "El pasaje introduce un ejemplo del argumento.",
+        "campo": "Ejemplo"
+      },
+      {
+        "frag": "para mostrar que",
+        "rol": "pide",
+        "nota": "La pregunta pide interpretar la función del ejemplo.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
+      },
+      {
+        "k": "idea",
+        "texto": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C responde al texto completo y descarta las demás."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas.",
+      "que": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos."
+        },
+        {
+          "t": "Elige la opción C y verifica que se sostenga con el pasaje."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "En el texto, el autor hace referencia a Rubens para mostrar que",
+        "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
       ],
-      "plan": [
+      "clave": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A expresa una idea general sobre lo bello, pero no precisa lo que ilustra el ejemplo de Rubens."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, B afirma una exigencia del público que el texto no plantea."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D confunde el posible rechazo de ciertos temas con el gusto de los artistas por temas atractivos."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C responde a la pregunta."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A expresa una idea general sobre lo bello, pero no precisa lo que ilustra el ejemplo de Rubens."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B afirma una exigencia del público que el texto no plantea."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D confunde el posible rechazo de ciertos temas con el gusto de los artistas por temas atractivos."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En el",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

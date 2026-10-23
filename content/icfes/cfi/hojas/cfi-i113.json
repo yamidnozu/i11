@@ -1,110 +1,119 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "The ___ group of Ethiopian wolves exists in the Bale Mountains National Park.",
+        "rol": "pide",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "campo": "Fragmento"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Lee el fragmento",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
+      },
+      {
+        "k": "idea",
+        "titulo": "Comprueba la forma",
+        "texto": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica en contexto",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Completar una lectura en inglés con la forma adecuada",
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "pistas": [
+        "Lee la oración completa alrededor del espacio.",
+        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
+      ],
+      "clave": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero Larger es comparativo y normalmente necesita indicar con qué se compara."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero Large no expresa que se trate del grupo de mayor tamaño."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee el fragmento con el espacio.",
+          "eq": [
+            "{{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}}"
+          ]
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Identifica qué clase de palabra exige la estructura."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee la oración completa y detente en el espacio."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Fíjate en {{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}} y en las palabras que lo rodean."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción correcta es {{largest}}.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
+          "t": "La opción A no encaja: Larger es comparativo y normalmente necesita indicar con qué se compara.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B no encaja: La clave la confirma en el pasaje.",
+          "a": "p:0",
+          "k": "por"
+        },
+        {
+          "t": "La opción C no encaja: Large no expresa que se trate del grupo de mayor tamaño.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "k": "err"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Analiza la estructura que acompaña el espacio: {{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}}.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación.",
+          "a": "p:1",
+          "k": "por"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Comprueba que la opción B deja la oración completa y coherente.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 113",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

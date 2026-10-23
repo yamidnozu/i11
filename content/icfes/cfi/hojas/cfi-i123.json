@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "One of the (123) ________ says",
+        "rol": "dato",
+        "nota": "El espacio requiere un sustantivo plural que introduzca un relato.",
+        "campo": "Bloque"
+      },
+      {
+        "frag": "One of the (123) ________ says that the original Valentine was a priest.",
+        "rol": "pide",
+        "nota": "La pregunta señala la información que se debe identificar en el texto.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{One of the (123) ________ says that the original Valentine was a priest.}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comprensión de un texto en inglés",
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Lee la pregunta y ubica la pista pertinente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+        },
+        {
+          "t": "Elige la opción B y verifica la concordancia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "{{One of the (123) ________ says that the original Valentine was a priest.}}",
+        "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
       ],
-      "plan": [
+      "clave": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "{{essays}}",
+          "p": "Pero, {{essays}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "{{reports}}",
+          "p": "Pero, {{reports}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "{{letters}}",
+          "p": "Pero, {{letters}} no corresponde con la información o construcción gramatical del texto."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{One of the (123) ________ says that the original Valentine was a priest.}}"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{essays}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{reports}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{letters}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{One of the (123) ________ says that the original Valentine was a priest.}}"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 123",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,112 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "sintetiza adecuadamente las ideas contenidas en el primer párrafo",
+        "rol": "pide",
+        "nota": "Debes elegir el resumen que conserve la idea principal del párrafo.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume el argumento del párrafo sobre la conducta bajo impunidad."
+      },
+      {
+        "k": "idea",
+        "texto": "Contrasta ese resumen con las alternativas y descarta las que presentan un deber moral voluntario o una conclusión absoluta."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la opción que exprese que la justicia depende de restricciones y exigencias de la ley."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Síntesis de un argumento",
+      "que": "Resumir la idea central de un párrafo argumentativo sobre justicia y restricciones.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica qué ocurriría si las personas pudieran actuar sin castigo."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Relaciona esa hipótesis con la necesidad de restricciones y ley."
+        },
+        {
+          "t": "Elige el resumen que recoja esa relación sin exagerarla."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El autor compara la conducta de una persona justa y una injusta.",
+        "Ambas actuarían igual bajo impunidad."
       ],
-      "plan": [
+      "clave": "La opción B resume que la justicia resulta de restricciones y exigencias legales que contienen la búsqueda de los propios deseos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, El párrafo no atribuye la justicia a una conciencia moral que siempre guíe a las personas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Llama ilusión a la justicia, una conclusión más fuerte que la argumentada."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Afirma que la justicia es inalcanzable, aunque el texto dice que la ley puede obligar a actuar justamente."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El autor imagina qué pasaría si una persona justa pudiera actuar sin castigo."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Dice que buscaría satisfacer sus deseos y cometería injusticias."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B resume que la ley y sus restricciones imponen la justicia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El párrafo no atribuye la justicia a una conciencia moral que siempre guíe a las personas."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Llama ilusión a la justicia, una conclusión más fuerte que la argumentada."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Afirma que la justicia es inalcanzable, aunque el texto dice que la ley puede obligar a actuar justamente."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B resume que la justicia resulta de restricciones y exigencias legales que contienen la búsqueda de los propios deseos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Para sintetizar, conserva la relación entre impunidad, deseos y justicia obligatoria."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El autor no dice que nadie pueda ser justo; dice que sin restricciones la persona elegiría la injusticia."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción B representa esa idea central sin convertirla en una afirmación absoluta."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Por eso, B es el resumen adecuado."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Cuál de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

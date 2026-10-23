@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "La función del conector",
+        "rol": "pide",
+        "nota": "Debes explicar la relación que el conector establece entre ideas.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "sin embargo",
+        "rol": "dato",
+        "nota": "Este conector introduce un contraste en el párrafo.",
+        "campo": "Conector"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la idea antes del conector y la idea que aparece después."
+      },
+      {
+        "k": "idea",
+        "texto": "Observa que el autor dice que el matrimonio no se basaba en el amor, pero aclara que las personas sí se enamoraban."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la función que exprese contraste y no eliminación de la idea anterior."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Conectores de contraste",
+      "que": "Interpretar la función de un conector dentro del argumento de un párrafo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica la afirmación que aparece antes del conector."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Lee la afirmación posterior y compara su relación con la primera."
+        },
+        {
+          "t": "Elige la función que mantenga ambas ideas y señale su contraste."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El autor niega que el matrimonio se basara en el amor.",
+        "Luego aclara que eso no significa que las personas no se enamoraran."
       ],
-      "plan": [
+      "clave": "La opción D es correcta: el conector contrapone las ideas sin invalidar lo dicho antes.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, No introduce un tema nuevo; relaciona dos ideas del mismo tema."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, No borra ni niega la información previa; la matiza con un contraste."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, No añade un detalle equivalente, sino que contrapone las dos ideas."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Antes del conector, el autor dice que el matrimonio no se basaba en el amor."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Después aclara que las personas sí podían enamorarse."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D expresa el contraste sin borrar la primera idea."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No introduce un tema nuevo; relaciona dos ideas del mismo tema."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No borra ni niega la información previa; la matiza con un contraste."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No añade un detalle equivalente, sino que contrapone las dos ideas."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D es correcta: el conector contrapone las ideas sin invalidar lo dicho antes."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee el conector junto con las dos ideas que enlaza, no de forma aislada."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La aclaración posterior limita una posible interpretación de la afirmación anterior."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Así, el conector introduce un contraste que no elimina lo ya dicho; corresponde D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras opciones no representan esta relación."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La función",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

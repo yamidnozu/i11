@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "un espejo de plata y coloración morada con almidón",
+        "rol": "dato",
+        "nota": "El enunciado aporta datos que permiten reconocer los productos o comparar las soluciones.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "se haya formado una mezcla de",
+        "rol": "pide",
+        "nota": "La frase señala qué conclusión debes elegir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar las pruebas químicas con los grupos funcionales formados al oxidar un alcohol."
+      },
+      {
+        "k": "idea",
+        "texto": "Usa el espejo de plata y la coloración con almidón para identificar los productos y verifica que correspondan al alcohol inicial."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción B responda al enunciado y a las pruebas descritas."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Relacionar las pruebas químicas con los grupos funcionales formados al oxidar un alcohol.",
+      "que": "Usa el espejo de plata y la coloración con almidón para identificar los productos y verifica que correspondan al alcohol inicial.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Relacionar las pruebas químicas con los grupos funcionales formados al oxidar un alcohol."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Usa el espejo de plata y la coloración con almidón para identificar los productos y verifica que correspondan al alcohol inicial."
+        },
+        {
+          "t": "Elige la opción B y confirma que se desprenda de los datos."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "un espejo de plata y coloración morada con almidón",
+        "El espejo de plata reconoce aldehídos y la coloración morada reconoce ácidos. La oxidación de un alcohol primario puede producir un aldehído y el ácido carboxílico correspondiente."
       ],
-      "plan": [
+      "clave": "El espejo de plata reconoce aldehídos y la coloración morada reconoce ácidos. La oxidación de un alcohol primario puede producir un aldehído y el ácido carboxílico correspondiente.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A propone una cetona, pero la prueba con almidón identifica un ácido."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C incluye un alcohol que no se ha oxidado."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D propone una cetona y un alcohol, en lugar de los grupos que identifican las pruebas."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar las pruebas químicas con los grupos funcionales formados al oxidar un alcohol."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El espejo de plata reconoce aldehídos y la coloración morada reconoce ácidos. La oxidación de un alcohol primario puede producir un aldehído y el ácido carboxílico correspondiente."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B concuerda con la evidencia."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A propone una cetona, pero la prueba con almidón identifica un ácido."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C incluye un alcohol que no se ha oxidado."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D propone una cetona y un alcohol, en lugar de los grupos que identifican las pruebas."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El espejo de plata reconoce aldehídos y la coloración morada reconoce ácidos. La oxidación de un alcohol primario puede producir un aldehído y el ácido carboxílico correspondiente."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Relacionar las pruebas químicas con los grupos funcionales formados al oxidar un alcohol."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Usa el espejo de plata y la coloración con almidón para identificar los productos y verifica que correspondan al alcohol inicial."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "El espejo de plata reconoce aldehídos y la coloración morada reconoce ácidos. La oxidación de un alcohol primario puede producir un aldehído y el ácido carboxílico correspondiente."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La conclusión queda justificada con los datos del reactivo."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los alcoholes",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

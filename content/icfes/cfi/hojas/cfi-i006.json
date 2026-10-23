@@ -1,110 +1,124 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "radio 2",
+        "rol": "dato",
+        "nota": "El radio de la circunferencia se da como longitud conocida.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "expresión $x=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$",
+        "rol": "dato",
+        "nota": "La expresión usa la ley de senos en el triángulo OPQ.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "medida del",
+        "rol": "pide",
+        "nota": "Se pregunta qué elemento geométrico representa el resultado.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa el triángulo formado por el centro O y los vértices P y Q."
+      },
+      {
+        "k": "idea",
+        "texto": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
+      },
+      {
+        "k": "check",
+        "texto": "La expresión calcula el segmento PQ, opción B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Aplicar la ley de senos en un polígono regular",
+      "que": "Interpreta una expresión trigonométrica para identificar la longitud que calcula dentro de un triángulo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Observa el triángulo formado por el centro O y los vértices P y Q."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
+        },
+        {
+          "t": "La expresión calcula el segmento PQ, opción B."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El radio mide $2$ y los vértices P y Q son contiguos.",
+        "La expresión da una longitud opuesta al ángulo central de $45°$."
       ],
-      "plan": [
+      "clave": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, La expresión calcula una longitud, no una medida angular."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, El radio ya mide $2$; la expresión calcula la cuerda PQ."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Observa el triángulo formado por el centro O y los vértices P y Q."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, La expresión calcula una longitud, no una medida angular."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El radio ya mide $2$; la expresión calcula la cuerda PQ."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Observa el triángulo formado por el centro O y los vértices P y Q."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La expresión calcula el segmento PQ, opción B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 6",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

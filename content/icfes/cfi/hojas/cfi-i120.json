@@ -1,110 +1,112 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "What is the writer trying to do in this article?",
+        "rol": "dato",
+        "nota": "El cierre comunica el efecto que el autor espera en quienes leen.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{What is the writer trying to do in this article?}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D complete la idea o estructura del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comprensión de un texto en inglés",
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Lee la pregunta y ubica la pista pertinente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+        },
+        {
+          "t": "Elige la opción D y verifica la concordancia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "{{What is the writer trying to do in this article?}}",
+        "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
       ],
-      "plan": [
+      "clave": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "{{describe a tourism-leading Colombian coffee farm}}",
+          "p": "Pero, {{describe a tourism-leading Colombian coffee farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "{{tell readers to run a coffee business in Colombia}}",
+          "p": "Pero, {{tell readers to run a coffee business in Colombia}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "{{invite tourists to write about places they visit in Colombia}}",
+          "p": "Pero, {{invite tourists to write about places they visit in Colombia}} no corresponde con la información o construcción gramatical del texto."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{What is the writer trying to do in this article?}}"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{describe a tourism-leading Colombian coffee farm}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{tell readers to run a coffee business in Colombia}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{invite tourists to write about places they visit in Colombia}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{What is the writer trying to do in this article?}}"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "What is",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

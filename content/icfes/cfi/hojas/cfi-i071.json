@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "derecho a la objeción de conciencia",
+        "rol": "dato",
+        "nota": "El enunciado presenta el derecho y las circunstancias que deben considerarse.",
+        "campo": "Contexto"
+      },
+      {
+        "frag": "¿Cuál de las siguientes acciones es coherente con este fallo?",
+        "rol": "pide",
+        "nota": "La pregunta solicita evaluar una acción frente a la situación descrita.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
+      },
+      {
+        "k": "idea",
+        "texto": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción A sea coherente con el derecho mencionado y descarta las demás."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar.",
+      "que": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
+        },
+        {
+          "t": "Selecciona la opción A y contrástala con el derecho del enunciado."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "¿Cuál de las siguientes acciones es coherente con este fallo?",
+        "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
       ],
-      "plan": [
+      "clave": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción B",
+          "p": "Pero, B obliga a cumplir el servicio militar, en contra de la objeción descrita."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C mantiene la participación en entrenamientos militares."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D también exige participar en actividades militares."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A coincide con lo que pide el ítem."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "B obliga a cumplir el servicio militar, en contra de la objeción descrita."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C mantiene la participación en entrenamientos militares."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D también exige participar en actividades militares."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
         },
         {
           "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A se sostiene con los hechos descritos."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 71",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

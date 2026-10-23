@@ -1,110 +1,123 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "contenido de la información presentada",
+        "rol": "dato",
+        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "se adecuaría mejor la infografía",
+        "rol": "pide",
+        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Identifica qué información aporta la infografía y qué pide la pregunta."
+      },
+      {
+        "k": "idea",
+        "t": "La infografía informa sobre muertes ocasionadas por accidentes de tránsito y sus factores asociados. En ese contexto, resulta pertinente para una campaña de seguros de vida, que se relaciona con la protección ante riesgos de muerte."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción C se apoya en el contenido y descarta las demás."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Interpretar el propósito de una infografía",
+      "que": "Relaciona los datos visuales con la afirmación o el contexto que propone la pregunta.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica qué información aporta la infografía."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Relaciona esos datos con la pregunta."
+        },
+        {
+          "t": "Verifica la opción C y descarta las alternativas que exceden la evidencia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La infografía trata de muertes en accidentes de tránsito.",
+        "Distingue el contenido explícito de las inferencias sobre su propósito."
       ],
-      "plan": [
+      "clave": "La infografía informa sobre muertes ocasionadas por accidentes de tránsito y sus factores asociados. En ese contexto, resulta pertinente para una campaña de seguros de vida, que se relaciona con la protección ante riesgos de muerte.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, No aborda el impacto ambiental de los vehículos ni propone una protesta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, No compara medios de transporte ni promueve el transporte público."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Aunque desglosa datos por género y nivel socioeconómico, trata muertes por accidentes, no asesinatos."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Lee la pregunta y reconoce si pide función, propósito o contexto."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "k": "idea",
+          "t": "Contrasta las opciones con los datos de la infografía."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, No aborda el impacto ambiental de los vehículos ni propone una protesta."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, No compara medios de transporte ni promueve el transporte público."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Aunque desglosa datos por género y nivel socioeconómico, trata muertes por accidentes, no asesinatos."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C concuerda con el contenido de la infografía."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "k": "idea",
+          "t": "Ubica el dato o la función visual señalada en la pregunta."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "k": "idea",
+          "t": "La infografía informa sobre muertes ocasionadas por accidentes de tránsito y sus factores asociados. En ese contexto, resulta pertinente para una campaña de seguros de vida, que se relaciona con la protección ante riesgos de muerte."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "k": "idea",
+          "t": "Descarta las opciones que atribuyen a la infografía información o recomendaciones que no presenta."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción C."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 49",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

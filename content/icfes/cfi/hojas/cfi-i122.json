@@ -1,110 +1,112 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "(122) ________ do we do this?",
+        "rol": "dato",
+        "nota": "La estructura de la pregunta pide una razón.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{(122) ________ do we do this?}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Comprensión de un texto en inglés",
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Lee la pregunta y ubica la pista pertinente."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+        },
+        {
+          "t": "Elige la opción B y verifica la concordancia."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "{{(122) ________ do we do this?}}",
+        "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
       ],
-      "plan": [
+      "clave": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "{{where}}",
+          "p": "Pero, {{where}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "{{when}}",
+          "p": "Pero, {{when}} no corresponde con la información o construcción gramatical del texto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "{{what}}",
+          "p": "Pero, {{what}} no corresponde con la información o construcción gramatical del texto."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{(122) ________ do we do this?}}"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{where}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{when}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "{{what}} no corresponde con la información o construcción gramatical del texto."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "{{(122) ________ do we do this?}}"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por el texto."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 122",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

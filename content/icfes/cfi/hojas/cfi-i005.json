@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "probabilidad de escoger una de ellas",
+        "rol": "pide",
+        "nota": "Se evalúa si existe una carta que cumpla ambas condiciones.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "es cero",
+        "rol": "dato",
+        "nota": "La probabilidad cero significa que no hay cartas con esa combinación.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Revisa los palos y su color en la tabla."
+      },
+      {
+        "k": "idea",
+        "texto": "Picas son negras; por eso no puede existir una carta roja de picas."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la opción B y comprueba que esa combinación es imposible."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Probabilidad cero e intersección de condiciones",
+      "que": "Reconoce cuándo dos características no pueden cumplirse al mismo tiempo en ningún elemento del conjunto.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Revisa los palos y su color en la tabla."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
+        },
+        {
+          "t": "Elige la opción B y comprueba que esa combinación es imposible."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Picas y tréboles aparecen como palos negros.",
+        "Corazones y diamantes aparecen como palos rojos."
       ],
-      "plan": [
+      "clave": "Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Sí hay cartas negras con número par."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, Hay cartas de corazones con número impar."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, El rey de diamantes es una carta roja de diamantes."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Revisa los palos y su color en la tabla."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Sí hay cartas negras con número par."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, Hay cartas de corazones con número impar."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, El rey de diamantes es una carta roja de diamantes."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Revisa los palos y su color en la tabla."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Elige la opción B y comprueba que esa combinación es imposible."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B queda respaldada por los datos y el procedimiento."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

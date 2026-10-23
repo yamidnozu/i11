@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "cobrar más impuestos a la parte de la población que posee más recursos",
+        "rol": "dato",
+        "nota": "La tendencia descrita diferencia la carga tributaria según los recursos de cada persona.",
+        "campo": "Principio"
+      },
+      {
+        "frag": "¿Cuál de las siguientes situaciones está de acuerdo con lo anterior?",
+        "rol": "pide",
+        "nota": "Debes escoger una medida que haga pagar más a quienes tienen mayor capacidad económica.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica que la regla asigna mayores impuestos a quienes poseen más recursos."
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue entre un impuesto relacionado con el patrimonio y medidas que afectan por igual el consumo o los servicios."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la opción que vincule el cobro con la capacidad económica de las personas."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Impuestos progresivos",
+      "que": "Relacionar una propuesta tributaria con la distribución de impuestos según los recursos de cada persona.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Resume la regla: mayores recursos implican una carga tributaria mayor."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Busca impuestos asociados con propiedad o ingresos."
+        },
+        {
+          "t": "Descarta medidas que no diferencian la carga según la capacidad económica."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El texto menciona recursos de la población.",
+        "La opción D aumenta impuestos de patrimonio y renta."
       ],
-      "plan": [
+      "clave": "La opción D aumenta los impuestos de patrimonio y renta, medidas que pueden concentrar una mayor carga en quienes poseen más recursos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Una tasa promedio fija sobre salarios no establece que quienes poseen más paguen más."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, El impuesto al consumo no distingue por sí mismo la cantidad de recursos de quien compra."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, Quitar subsidios a los servicios no equivale a cobrar más impuestos a quienes poseen mayor patrimonio o renta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La propuesta asigna una carga mayor a la población con más recursos."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Los impuestos de patrimonio y renta se relacionan directamente con recursos e ingresos."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D se ajusta a esa propuesta."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Una tasa promedio fija sobre salarios no establece que quienes poseen más paguen más."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El impuesto al consumo no distingue por sí mismo la cantidad de recursos de quien compra."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Quitar subsidios a los servicios no equivale a cobrar más impuestos a quienes poseen mayor patrimonio o renta."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción D aumenta los impuestos de patrimonio y renta, medidas que pueden concentrar una mayor carga en quienes poseen más recursos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Usa la capacidad económica como criterio para comparar las medidas."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Patrimonio y renta permiten relacionar el impuesto con los recursos de una persona."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción D es la que mejor representa la propuesta progresiva."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las demás alternativas no diferencian claramente según esos recursos."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 59",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

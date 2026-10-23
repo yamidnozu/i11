@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "La palabra “dote”",
+        "rol": "pide",
+        "nota": "Se pregunta por un reemplazo que conserve el sentido de la palabra en contexto.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "puede remplazarse",
+        "rol": "dato",
+        "nota": "Debes buscar una expresión equivalente en el contexto del párrafo.",
+        "campo": "Instrucción"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee cómo describe el texto lo que aportaba la mujer al casarse."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la palabra con dinero, bienes o tierras que se incorporaban a la unión familiar."
+      },
+      {
+        "k": "check",
+        "texto": "Elige el sinónimo que mantenga la idea de aporte económico o de bienes."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Vocabulario en contexto",
+      "que": "Inferir el sentido de una palabra a partir de los ejemplos que la acompañan.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Ubica la palabra en el párrafo sobre los arreglos matrimoniales."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Revisa qué elementos podían formar la dote."
+        },
+        {
+          "t": "Compara las alternativas con esa descripción."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "El texto menciona dinero, bienes o tierras.",
+        "Se refiere a lo que la mujer aportaba al casarse."
       ],
-      "plan": [
+      "clave": "La opción C, “aporte patrimonial”, conserva el sentido de la dote como aporte de bienes o recursos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Limita la dote a ahorros y excluye bienes o tierras."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, El texto no dice que el aporte proviniera específicamente de los familiares."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La dote aparece en un párrafo que habla de riqueza y recursos."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El texto la explica mediante dinero, bienes o tierras."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C resume ese aporte patrimonial."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Limita la dote a ahorros y excluye bienes o tierras."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "El texto no dice que el aporte proviniera específicamente de los familiares."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C, “aporte patrimonial”, conserva el sentido de la dote como aporte de bienes o recursos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Usa la explicación del párrafo en lugar de elegir un significado aislado."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La dote podía incluir dinero, bienes o tierras y constituía un aporte al matrimonio."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La expresión equivalente es aporte patrimonial; corresponde C."
         },
         {
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras opciones restringen o cambian el sentido."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "La palabra",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

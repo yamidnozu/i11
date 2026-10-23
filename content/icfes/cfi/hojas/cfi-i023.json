@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "sonoridad de un sonido de 30 decibeles",
+        "rol": "dato",
+        "nota": "La expresión asociada con esta sonoridad relaciona las dos intensidades.",
+        "campo": "Dato"
+      },
+      {
+        "frag": "¿Cuántas veces es el valor de I respecto a I_0?",
+        "rol": "pide",
+        "nota": "Debes despejar la razón entre la intensidad y la intensidad mínima perceptible.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la razón que aparece en la expresión."
+      },
+      {
+        "k": "calc",
+        "texto": "La expresión da $I/I_0 = 10^3 = 1.000$."
+      },
+      {
+        "k": "check",
+        "texto": "Expresa la razón como un múltiplo de la intensidad mínima."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Potencias de diez y razones",
+      "que": "Interpretar una igualdad entre la razón de dos intensidades y una potencia de diez.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica cuál cociente representa la intensidad buscada respecto a la mínima."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Evalúa la potencia de diez."
+        },
+        {
+          "t": "Relaciona el resultado con las opciones en forma verbal."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La ecuación muestra $I/I_0 = 10^3$.",
+        "La pregunta solicita cuántas veces una intensidad es la otra."
       ],
-      "plan": [
+      "clave": "Como $10^3 = 1.000$, la razón $I/I_0$ es mil. La opción D es correcta.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Una milésima es menor que la unidad y no equivale a la potencia indicada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, Un tercio no corresponde a la razón que indica la ecuación."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, Tres veces confunde el exponente con el valor de la potencia de diez."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La razón buscada aparece directamente en la ecuación."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La potencia de diez vale mil."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La intensidad es mil veces la intensidad mínima."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Una milésima es menor que la unidad y no equivale a la potencia indicada."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Un tercio no corresponde a la razón que indica la ecuación."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Tres veces confunde el exponente con el valor de la potencia de diez."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Como $10^3 = 1.000$, la razón $I/I_0$ es mil. La opción D es correcta."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Interpreta el cociente como una comparación multiplicativa."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Evalúa $10^3$ y obtén $1.000$."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por tanto, $I$ es mil veces $I_0$; corresponde la opción D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las otras opciones no representan el valor de la razón."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 23",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

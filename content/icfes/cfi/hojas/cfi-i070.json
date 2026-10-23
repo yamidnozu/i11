@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "A la hora de evaluar la propuesta",
+        "rol": "dato",
+        "nota": "El cerramiento restringiría el paso de personas a sectores con espacios públicos.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿qué intereses en conflicto deben ser tenidos en cuenta?",
+        "rol": "pide",
+        "nota": "La pregunta pide identificar dos intereses que chocan en la propuesta.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué buscan proteger los residentes."
+      },
+      {
+        "k": "idea",
+        "texto": "Considera qué perderían otros habitantes si se restringe el acceso a las vías y espacios públicos."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la opción que presenta ambos intereses reales sin confundirlos con los intereses de ladrones o empresas."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Seguridad y uso de espacios públicos",
+      "que": "Reconocer intereses ciudadanos en tensión ante una propuesta de cerramiento residencial.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Nombra el interés de quienes viven en los sectores afectados."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Identifica el efecto sobre quienes transitan por vías y espacios públicos."
+        },
+        {
+          "t": "Compara las alternativas y conserva la que incluye los dos grupos involucrados."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Los residentes buscan seguridad ante robos.",
+        "El cerramiento limitaría el acceso de otros habitantes."
       ],
-      "plan": [
+      "clave": "La opción B contrapone la seguridad de los residentes con el acceso de los demás habitantes a vías y espacios públicos.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, Los ladrones no tienen un interés legítimo que deba orientar la evaluación pública de la propuesta."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, No presenta el impacto sobre el acceso a espacios y vías públicas, que es central en el cerramiento."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, Contrapone dos instituciones de seguridad y deja por fuera a los demás habitantes afectados."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Los residentes quieren reducir los robos y sentirse seguros."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El cerramiento también puede impedir que otros habitantes usen vías y espacios públicos."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B reúne esos dos intereses."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Los ladrones no tienen un interés legítimo que deba orientar la evaluación pública de la propuesta."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "No presenta el impacto sobre el acceso a espacios y vías públicas, que es central en el cerramiento."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Contrapone dos instituciones de seguridad y deja por fuera a los demás habitantes afectados."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B contrapone la seguridad de los residentes con el acceso de los demás habitantes a vías y espacios públicos."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La decisión pública debe considerar tanto la seguridad de los residentes como los derechos de circulación y uso público."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La propuesta restringe el acceso de personas que no viven allí."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por eso, el conflicto relevante es el que presenta la opción B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las demás alternativas omiten a uno de los grupos afectados o presentan un interés improcedente."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Ante los",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

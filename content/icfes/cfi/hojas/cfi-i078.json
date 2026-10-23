@@ -1,110 +1,118 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "se calienta y se mide su temperatura cada minuto hasta que se evapora",
+        "rol": "dato",
+        "nota": "El enunciado aporta la situación experimental y el apoyo que debes interpretar.",
+        "campo": "Datos"
+      },
+      {
+        "frag": "¿A qué sustancia corresponde el sólido inicial?",
+        "rol": "pide",
+        "nota": "La pregunta indica qué debes concluir.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara las mesetas de la curva con los valores de la tabla."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción B concuerde con los datos del enunciado y el apoyo."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición.",
+      "que": "Compara las mesetas de la curva con los valores de la tabla.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Compara las mesetas de la curva con los valores de la tabla."
+        },
+        {
+          "t": "Selecciona la opción B y comprueba que los datos la respalden."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "se calienta y se mide su temperatura cada minuto hasta que se evapora",
+        "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
       ],
-      "plan": [
+      "clave": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, A tiene temperaturas de fusión y ebullición diferentes a las mesetas de la curva."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, C tiene temperaturas de cambio distintas a las observadas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, D no coincide con la meseta de fusión indicada por la gráfica."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B coincide con los datos."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "A tiene temperaturas de fusión y ebullición diferentes a las mesetas de la curva."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "C tiene temperaturas de cambio distintas a las observadas."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "D no coincide con la meseta de fusión indicada por la gráfica."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Compara las mesetas de la curva con los valores de la tabla."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta queda sustentada por el apoyo del ítem."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 78",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "concepto",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

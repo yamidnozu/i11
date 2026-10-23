@@ -1,110 +1,115 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "She was mostly excited by the",
+        "rol": "pide",
+        "nota": "La pregunta delimita el dato que debe localizarse en el relato.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Localiza el dato",
+        "texto": "Encuentra en el pasaje la oración que se refiere directamente a la pregunta."
+      },
+      {
+        "k": "idea",
+        "titulo": "Contrasta las opciones",
+        "texto": "La narradora dice que el pintor hacía árboles y ríos con facilidad y que ella creyó poder imitarlo. Eso se refiere a su habilidad."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica en el relato",
+        "texto": "Comprueba que la respuesta elegida aparece en el pasaje y que las otras alternativas se refieren a detalles diferentes."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Comprender detalles explícitos de un relato",
+      "que": "Ubica en el relato la información que responde la pregunta y separa ese dato de los detalles cercanos.",
+      "pistas": [
+        "Busca la oración que contiene el dato solicitado.",
+        "Comprueba quién realiza cada acción y a quién se refiere el detalle."
+      ],
+      "clave": "La narradora dice que el pintor hacía árboles y ríos con facilidad y que ella creyó poder imitarlo. Eso se refiere a su habilidad.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Pero La voz tranquila se menciona, pero no es lo que la motivó a pintar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero El programa le permitió conocer al pintor, pero su admiración se centra en lo que él podía hacer."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee la pregunta y reconoce qué dato busca."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Ubica la información correspondiente en el relato."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Compara cada alternativa con el pasaje y elige la que coincide."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee qué dato busca la pregunta."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Busca en el relato la oración que habla de ese detalle."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es {{painter’s ability.}}.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Ubica la información explícita que responde la pregunta."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
+          "t": "Opción B no coincide: La voz tranquila se menciona, pero no es lo que la motivó a pintar.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "Opción C no coincide: El programa le permitió conocer al pintor, pero su admiración se centra en lo que él podía hacer.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
-        },
-        {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción A coincide con el relato.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identifica el detalle preciso que pregunta el ejercicio.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La narradora dice que el pintor hacía árboles y ríos con facilidad y que ella creyó poder imitarlo. Eso se refiere a su habilidad.",
+          "a": "p:1",
+          "k": "por"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Descarta las opciones que mezclan ese detalle con información distinta del relato.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Vuelve al texto y confirma la opción A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "She was",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "lectura",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

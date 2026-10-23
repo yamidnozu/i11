@@ -1,110 +1,128 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "solamente los torneos jugados en cancha dura",
+        "rol": "condición",
+        "nota": "Solo se cuentan Australia y Estados Unidos, según la descripción.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿cuál es el promedio de torneos ganados por los cinco jugadores?",
+        "rol": "pide",
+        "nota": "Se calcula la media de los conteos de los cinco jugadores.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica los dos torneos de cancha dura en la leyenda: el Abierto de Australia y el Abierto de Estados Unidos."
+      },
+      {
+        "k": "idea",
+        "texto": "Cuenta sus marcas para cada jugador: A tiene cuatro, B dos, C nueve, D siete y E ninguno."
+      },
+      {
+        "k": "idea",
+        "texto": "Suma los títulos de cancha dura: cuatro más dos más nueve más siete son veintidós; divide entre los cinco jugadores y obtén cuatro coma cuatro."
+      },
+      {
+        "k": "check",
+        "texto": "El promedio coincide con la opción D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Promedio a partir de una gráfica de categorías",
+      "que": "Calcula el promedio de títulos ganados en cancha dura leyendo las dos categorías correspondientes en la gráfica.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Identifica los dos torneos de cancha dura en la leyenda: el Abierto de Australia y el Abierto de Estados Unidos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Cuenta sus marcas para cada jugador: A tiene cuatro, B dos, C nueve, D siete y E ninguno."
+        },
+        {
+          "t": "Suma los títulos de cancha dura: cuatro más dos más nueve más siete son veintidós; divide entre los cinco jugadores y obtén cuatro coma cuatro."
+        },
+        {
+          "t": "El promedio coincide con la opción D."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "Australia y Estados Unidos se juegan en cancha dura.",
+        "La gráfica separa los títulos de cada jugador por torneo."
       ],
-      "plan": [
+      "clave": "En la gráfica, cuenta los títulos de cancha dura de cada jugador: cuatro para A, dos para B, nueve para C, siete para D y ninguno para E. En total son veintidós títulos entre cinco jugadores; el promedio es cuatro coma cuatro.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, el total de títulos de cancha dura dividido entre los cinco jugadores no da uno coma dos."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción B",
+          "p": "Pero, dos es el conteo de cancha dura del jugador B, no el promedio de los cinco."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción C",
+          "p": "Pero, dos coma seis no corresponde a la suma de veintidós títulos dividida entre cinco."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identifica los dos torneos de cancha dura en la leyenda: el Abierto de Australia y el Abierto de Estados Unidos."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Cuenta sus marcas para cada jugador: A tiene cuatro, B dos, C nueve, D siete y E ninguno."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción D: En la gráfica, cuenta los títulos de cancha dura de cada jugador: cuatro para A, dos para B, nueve para C, siete para D y ninguno para E. En total son veintidós títulos entre cinco jugadores; el promedio es cuatro coma cuatro."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el total de títulos de cancha dura dividido entre los cinco jugadores no da uno coma dos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, dos es el conteo de cancha dura del jugador B, no el promedio de los cinco."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, dos coma seis no corresponde a la suma de veintidós títulos dividida entre cinco."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la gráfica, cuenta los títulos de cancha dura de cada jugador: cuatro para A, dos para B, nueve para C, siete para D y ninguno para E. En total son veintidós títulos entre cinco jugadores; el promedio es cuatro coma cuatro."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Identifica los dos torneos de cancha dura en la leyenda: el Abierto de Australia y el Abierto de Estados Unidos."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Cuenta sus marcas para cada jugador: A tiene cuatro, B dos, C nueve, D siete y E ninguno."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Suma los títulos de cancha dura: cuatro más dos más nueve más siete son veintidós; divide entre los cinco jugadores y obtén cuatro coma cuatro."
+        },
+        {
+          "t": "El promedio coincide con la opción D."
         },
         {
           "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "En la gráfica, cuenta los títulos de cancha dura de cada jugador: cuatro para A, dos para B, nueve para C, siete para D y ninguno para E. En total son veintidós títulos entre cinco jugadores; el promedio es cuatro coma cuatro."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 14",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

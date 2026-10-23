@@ -1,110 +1,124 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "f(x)=\\frac{5}{x}",
+        "rol": "dato",
+        "nota": "Define la función evaluada en un valor positivo de x.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "A_x=x f(x)",
+        "rol": "dato",
+        "nota": "El área se obtiene multiplicando x por su imagen.",
+        "campo": "Pregunta"
+      },
+      {
+        "frag": "¿Cuál de las siguientes gráficas corresponde a $A_x$?",
+        "rol": "pide",
+        "nota": "Se identifica la gráfica de la función área.",
+        "campo": "Pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
+      },
+      {
+        "k": "idea",
+        "texto": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
+      },
+      {
+        "k": "check",
+        "texto": "La gráfica horizontal en y igual a cinco es la opción B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
-      "no": [
+      "tema": "Producto de una variable por una función inversa",
+      "que": "Simplifica el producto que representa el área y reconoce su gráfica para valores positivos.",
+      "plan": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
+        },
+        {
+          "t": "La gráfica horizontal en y igual a cinco es la opción B."
         }
       ],
       "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
+        "La función asigna a x el valor cinco dividido entre x.",
+        "El rectángulo tiene base x y altura f(x)."
       ],
-      "plan": [
+      "clave": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x.",
+      "no": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Opción A",
+          "p": "Pero, el área no crece con x; el producto x por cinco dividido entre x es constante."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Opción C",
+          "p": "Pero, una curva creciente no representa el valor constante del producto."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Opción D",
+          "p": "Pero, el área no disminuye con x; el producto permanece constante."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es la opción B: Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
-        },
-        {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
-        },
-        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el área no crece con x; el producto x por cinco dividido entre x es constante."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, una curva creciente no representa el valor constante del producto."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "t": "Pero, el área no disminuye con x; el producto permanece constante."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La gráfica horizontal en y igual a cinco es la opción B."
         },
         {
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "(Pregunta 17",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
