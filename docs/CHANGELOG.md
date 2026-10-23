@@ -185,3 +185,10 @@
 - Se cotejaron y revisaron las 49 preguntas y sus hojas pedagógicas de tres niveles; cada una tiene explicación, enfoque, descarte de todas las opciones incorrectas y cita completa.
 - Se reparó el mapeo de la pregunta 4 y se reconstruyó la lista de la 25; se recortaron y asociaron las caricaturas originales de la 16.
 - Los siete cuadernillos estructurados quedan con 346 hojas revisadas y cero borradores. Validación: TypeScript, Vitest gated 540/540, builds estándar y gated; reconstrucción forzada idéntica (`a813698cbce1e152fa011fdc4362cd93edd26a99a63f6cd6caa9b0d0039fe92`).
+
+
+## Pipeline documental — auditoría de simulacros (2026-10-22)
+- Los siete simulacros y unidades quedaron vinculados a todas las preguntas de cada cuadernillo, con IDs únicos y área coincidente.
+- Se restauraron las 13 preguntas con clave por override que faltaban en cada simulacro de Ciencias; ambos ahora cubren 50 preguntas.
+- La duración visible es una estimación de práctica de un minuto por pregunta, no tiempo oficial.
+- Se comprobó que cada unidad conserva sus preguntas completas sin marcar el simulacro como `unidad.sim` (ese campo reserva el enlace para laboratorios).
