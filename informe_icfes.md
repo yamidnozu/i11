@@ -31,7 +31,7 @@
 - [x] Extraer y ordenar los niveles de desempeño de los cinco PDFs en `content/icfes/niveles_desempeno.json`; el ICFES no publica una matriz que asigne directamente un nivel a cada pregunta.
 - [ ] Completar la estructuración y cotejo de documentos antiguos e Inglés; las 49 hojas de Matemáticas 2018 ya están revisadas. Sociales 2018 conserva 49 borradores; otros documentos siguen como transcripciones por página.
 - [x] Auditar claves y formato de numeración de los cuadernillos antiguos restantes. Se hallaron claves explícitas en Sociales 2018, Matemáticas 2018 y el cuadernillo general de 2014; usan numeración `1.` en vez de encabezados `Pregunta n`, y el de 2014 mezcla áreas. Se añadió un modo numerado con revisión obligatoria para los dos cuadernillos de 2018.
-- [x] Añadir extracción numerada con revisión explícita y procesar Sociales y Matemáticas 2018: 49 preguntas por documento, 49 claves oficiales por documento y 49 hojas borrador por prueba. Las 98 preguntas quedaron marcadas para cotejo de transcripción/figuras; la revisión posterior está avanzando por overrides y hojas preservables.
+- [x] Añadir extracción numerada con revisión explícita y procesar Sociales y Matemáticas 2018: 49 preguntas por documento, 49 claves oficiales por documento y 49 hojas borrador por prueba. La revisión posterior completó ambas pruebas: cada hoja conserva sus cambios pedagógicos separados del contenido base en archivos de hoja y overrides.
 - [x] Cotejar visualmente Matemáticas 2018, pregunta 1, asociar el recorte vectorial de la figura y completar su hoja de tres niveles con clave y descartes verificados.
 - [x] Cotejar visualmente Matemáticas 2018, pregunta 3; reconstruir su tabla como figura desde la página fuente, corregir el texto de la opción D contaminado por la página siguiente y documentar la comparación de costos en override y hoja revisada. Quedan 96 borradores de 2018.
 - [x] Cotejar las páginas fuente de Matemáticas 2018, preguntas 4 a 6; reconstruir la tabla de capacitación como contexto compartido, comprobar costos/capacidades y completar las tres hojas de solución.
@@ -52,7 +52,7 @@
 - Páginas: **1.209**. Candidatos vectoriales: **4.201**; son candidatos de trabajo, no todas figuras asociadas.
 - Siete cuadernillos estructurados: **346 preguntas con clave, cero pendientes** (50 Matemáticas 2026, 49 Lectura 2026, 50 Ciencias por edición 2025/2026, 49 Sociales 2021, 49 Sociales 2018 y 49 Matemáticas 2018). Las 26 claves inicialmente pendientes de Ciencias se resolvieron con overrides y cita al cuadernillo oficial.
 - **248/248 preguntas tienen referencias a competencia, afirmación y evidencia validadas contra los marcos.** Los niveles 1–4 son estimaciones pedagógicas asignadas por demanda de razonamiento; no son niveles oficiales ICFES por ítem. mat-i038 conserva una salvedad, aunque su hoja está revisada. Las 72 opciones gráficas ya están recortadas individualmente.
-- **297 hojas revisadas y 49 borradores**. Las 248 preguntas iniciales y las 49 de Matemáticas 2018 tienen hoja revisada. Las 49 hojas pendientes corresponden a Sociales 2018 y requieren cotejo y desarrollo individual.
+- **346 hojas revisadas y cero borradores** para los siete cuadernillos estructurados. Se cotejaron las 49 preguntas de Sociales 2018; se corrigieron las transcripciones incompletas de las preguntas 4 y 25 y se asoció la figura de la 16. Cada hoja incluye explicación, enfoque y descarte de todas las opciones incorrectas.
 - Siete simulacros generados, todos marcados “En revisión”.
 - La auditoría confirmó claves adicionales en 2014, 2018, Inglés 2021 y 2024. Inglés y el cuadernillo mixto de 2014 todavía requieren extractores específicos. Inglés repite posiciones por examen y comparte bancos de opciones; el OCR también duplica/desplaza algunos números, así que falta cotejo por página antes de mapear claves. La búsqueda en fuentes oficiales de Cartagena y del editor/autor del libro 2017 no localizó una licencia escrita; la ausencia de un resultado público no sustituye autorización del titular.
 - Figuras verificadas y asociadas: 29 recortes de pregunta en cada cuadernillo de Ciencias, más la infografía compartida de Lectura Crítica para las preguntas 42–49. Las imágenes oficiales solo entran al build con `VITE_ICFES=1`.
@@ -70,7 +70,7 @@
 | `07_Sociales_y_Ciudadanas_Saber11_2021` | cuadernillo | 30 | 49 | 0 | 143 | 1 simulacro; 14 opciones restauradas desde PDF |
 | `08_Ingles_Saber11_2021` | cuadernillo | 24 | 0 | 0 | 136 | 1 pág. guardadas |
 | `09_Lectura_Critica_Saber11_2018` | cuadernillo | 33 | 0 | 0 | 132 | 1 pág. guardadas |
-| `10_Sociales_y_Ciudadanas_Saber11_2018` | cuadernillo | 21 | 49 | 0 | 94 | 1 simulacro; 49 hojas borrador por revisar |
+| `10_Sociales_y_Ciudadanas_Saber11_2018` | cuadernillo | 21 | 49 | 0 | 94 | 1 simulacro; 49 hojas revisadas; preguntas 4, 16 y 25 corregidas/asociadas |
 | `11_Matematicas_Saber11_2018` | cuadernillo | 28 | 49 | 0 | 108 | 1 simulacro; 49 hojas revisadas |
 | `14_Ingles_Saber11_2018` | cuadernillo | 21 | 0 | 0 | 74 | 1 pág. guardadas |
 | `15_Cuadernillo_Saber11_2014` | cuadernillo | 40 | 0 | 0 | 44 | 1 pág. guardadas |
@@ -105,7 +105,7 @@
 
 - TypeScript: `npx tsc --noEmit` pasó.
 - Vitest con `VITE_ICFES=1`: **540/540 pruebas**; `npx tsc --noEmit` pasó.
-- Build estándar: pasó; bundle JavaScript **599.50 kB** (gzip 203.43 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **2,450.46 kB** (gzip 461.93 kB), incluyendo marcos, niveles oficiales y las preguntas agregadas. El build normal excluye el material ICFES; el build gated contiene sus JSON e imágenes. Ambos avisan que el chunk supera 300 kB.
+- Build estándar: pasó; bundle JavaScript **599.50 kB** (gzip 203.43 kB). Build con `VITE_ICFES=1`: pasó; bundle JavaScript **2,595.57 kB** (gzip 475.99 kB), incluyendo marcos, niveles oficiales y las preguntas agregadas. El build normal excluye el material ICFES; el build gated contiene sus JSON e imágenes. Ambos avisan que el chunk supera 300 kB.
 - Reconstrucción forzada de Matemáticas 2018: SHA-256 de `content/icfes/mth/preguntas.json` antes y después idéntico: `76f949eeff538a2b73122645954483e2a88d5f212b50e3cf1107c109f05fe229` (reconstrucción forzada 2026-10-22).
 - Reconstrucción de Matemáticas tras borrar `work/01_Matematicas...` y el paquete generado: SHA-256 `90601de71edec55d67752ba6170c316b6e5823dce17ac68eb906e6717552a33f`; paquete y 50 archivos de hojas idénticos. Se preservaron overrides y 50 hojas revisadas, incluida la hoja de mat-i038 con su salvedad documentada; la reconstrucción tras completar los enlaces volvió a dar el mismo hash.
 - Idempotencia: el recálculo reciente de Matemáticas ejecutó 7/7 etapas; la segunda ejecución omitió las **7/7** por caché, sin errores. Tras regenerar los cinco cuadernillos se verificó que ninguna opción terminara en folio; la respuesta numérica `cie-i016` D conservó el valor `10`.
@@ -119,3 +119,9 @@ El pipeline procesa los documentos, pero las hojas borrador y simulacros todaví
 - Se completaron las hojas revisadas de las preguntas 2 y 42 a 49; se incorporaron los apoyos gráficos de 42 y 44 y la tabla compartida de subsidios para 43–45.
 - Se limpió la última marca obsoleta de cotejo en la pregunta 1 tras confirmar la figura ya asociada. Matemáticas 2018 queda en 49/49 hojas revisadas y cero preguntas con `revisar`.
 - Recortes de 42 y 44 cotejados visualmente contra el PDF. Reconstrucción forzada determinista; TypeScript, Vitest gated 540/540 y builds estándar/gated pasan.
+
+## Revisión adicional — Sociales 2018 (preguntas 1–49)
+- Se cotejaron las páginas fuente que contienen las 49 preguntas y su tabla oficial de respuestas.
+- Se corrigieron las preguntas 4 y 25, que la extracción había separado/mapeado de forma incorrecta; la 16 ahora incluye las dos caricaturas recortadas desde la página original.
+- Las 49 hojas incluyen tres niveles, enfoque y descarte de las tres alternativas incorrectas. Se registró la fuente completa por pregunta y `revisar` queda vacío tras cotejo.
+- Reconstrucción forzada idempotente: SHA-256 antes y después `a813698cbce1e152fa011fdc4362cd93edd26a99a63f6cd6caa9b0d0039fe92`. TypeScript pasó y Vitest gated: 540/540.

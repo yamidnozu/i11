@@ -1,110 +1,135 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "El alcalde de un municipio, su abogado aseso",
+        "rol": "dato",
+        "nota": "Contexto que orienta la interpretación."
+      },
+      {
+        "frag": "De acuerdo con el texto anterior, los señalamientos en contra del alcalde obedecen a que los denunciantes",
+        "rol": "pide",
+        "nota": "Criterio que se debe resolver."
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la pregunta",
+        "texto": "Separa la información del caso de la decisión que te piden tomar."
+      },
+      {
+        "k": "vida",
+        "titulo": "Contrasta las alternativas",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretación de argumentos y contexto social",
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
+      ],
+      "clave": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
+        },
+        {
+          "t": "Opción D",
+          "p": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
+          "t": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción C es la que sí responde a la pregunta.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "k": "contra"
+        },
+        {
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El alcalde",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

@@ -1,110 +1,135 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "lectura",
+    "marcas": [
+      {
+        "frag": "Se ha generado un conflicto entre una empres",
+        "rol": "dato",
+        "nota": "Contexto que orienta la interpretación."
+      },
+      {
+        "frag": "¿Cómo se ajusta esta solución a los intereses de la constructora y de los ambientalistas?",
+        "rol": "pide",
+        "nota": "Criterio que se debe resolver."
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica la pregunta",
+        "texto": "Separa la información del caso de la decisión que te piden tomar."
+      },
+      {
+        "k": "vida",
+        "titulo": "Contrasta las alternativas",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Interpretación de argumentos y contexto social",
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
+      ],
+      "clave": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La opción A plantea «La solución beneficia a ambas partes, pues busca reducir…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "La opción C plantea «La solución beneficia a los ambientalistas, pues defiende sus…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
+        },
+        {
+          "t": "Opción D",
+          "p": "La opción D plantea «La solución no beneficia a ninguna de las partes, porque el…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
+          "t": "La opción A plantea «La solución beneficia a ambas partes, pues busca reducir…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C plantea «La solución beneficia a los ambientalistas, pues defiende sus…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D plantea «La solución no beneficia a ninguna de las partes, porque el…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La opción B es la que sí responde a la pregunta.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
-        },
-        {
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado.",
           "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "k": "contra"
+        },
+        {
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Se ha",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

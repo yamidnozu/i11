@@ -179,3 +179,9 @@
 - Se completaron las hojas de las preguntas 2 y 42–49, con tabla compartida de subsidios (43–45) y figuras verificadas para 42 y 44.
 - Matemáticas 2018 queda con 49/49 hojas revisadas y sin marcas `revisar`; el saldo real pasa a 49 hojas borrador, todas de Sociales 2018.
 - Verificación: `npx tsc --noEmit`, `VITE_ICFES=1 npx vitest run` (540/540), build normal y gated, y reconstrucción forzada con hash idéntico `76f949eeff538a2b73122645954483e2a88d5f212b50e3cf1107c109f05fe229`.
+
+
+## Pipeline documental — cierre de Sociales 2018 (2026-10-22)
+- Se cotejaron y revisaron las 49 preguntas y sus hojas pedagógicas de tres niveles; cada una tiene explicación, enfoque, descarte de todas las opciones incorrectas y cita completa.
+- Se reparó el mapeo de la pregunta 4 y se reconstruyó la lista de la 25; se recortaron y asociaron las caricaturas originales de la 16.
+- Los siete cuadernillos estructurados quedan con 346 hojas revisadas y cero borradores. Validación: TypeScript, Vitest gated 540/540, builds estándar y gated; reconstrucción forzada idéntica (`a813698cbce1e152fa011fdc4362cd93edd26a99a63f6cd6caa9b0d0039fe92`).
