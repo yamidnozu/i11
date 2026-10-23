@@ -165,7 +165,9 @@ def enrich(c):
             return [{'t':f'La opción {l} queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta.', 'a':f'o:{l}:no','k':'err'} for l in wrong]
         intro={'t':'Este guion es una plantilla de revisión; todavía no explica la solución.'}
         cierre={'t':'La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo.','a':f"o:{chr(65+q['correcta'])}:ok"}
-        sheet={'estado':'borrador','hoja':{'modo':'calculo','marcas':marca,'pasos':[{'k':'idea','texto':'Revisa el enunciado, los datos y los apoyos gráficos en la página fuente.'},{'k':'check','texto':'Confirma la respuesta y el procedimiento contra el cuadernillo original.'}],'enfoque':{'tema':'Lectura del cuadernillo pendiente de revisión','que':'Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.','pistas':['leer el enunciado completo','contrastar los apoyos gráficos con la página'],'clave':'La clave oficial orienta la revisión, pero no reemplaza una solución razonada.','no':[{'t':f'Opción {l}','p':'Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.'} for l in wrong[:2]],'plan':[{'t':'Leer el enunciado y reconocer qué pide.'},{'t':'Revisar datos, opciones y figuras en la página original.'},{'t':'Escribir una solución comprobable y justificar cada descarte.'}]},'guion':{'1':[intro,{'t':'Primero revisemos qué pide la pregunta.'},cierre],'2':[intro,{'t':'Cotejemos los datos y las figuras con el cuadernillo.'},*descartes(),cierre],'3':[intro,{'t':'La explicación debe mostrar el procedimiento y las pistas relevantes.'},{'t':'Revisemos la clave y confirmemos el razonamiento antes de aprobarla.'},cierre]}}}
+        area=q.get('area')
+        modo='calculo' if area=='matematicas' else 'concepto' if area=='ciencias' else 'lectura'
+        sheet={'estado':'borrador','hoja':{'modo':modo,'marcas':marca,'pasos':[{'k':'idea','texto':'Revisa el enunciado, los datos y los apoyos gráficos en la página fuente.'},{'k':'check','texto':'Confirma la respuesta y el procedimiento contra el cuadernillo original.'}],'enfoque':{'tema':'Lectura del cuadernillo pendiente de revisión','que':'Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.','pistas':['leer el enunciado completo','contrastar los apoyos gráficos con la página'],'clave':'La clave oficial orienta la revisión, pero no reemplaza una solución razonada.','no':[{'t':f'Opción {l}','p':'Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.'} for l in wrong[:2]],'plan':[{'t':'Leer el enunciado y reconocer qué pide.'},{'t':'Revisar datos, opciones y figuras en la página original.'},{'t':'Escribir una solución comprobable y justificar cada descarte.'}]},'guion':{'1':[intro,{'t':'Primero revisemos qué pide la pregunta.'},cierre],'2':[intro,{'t':'Cotejemos los datos y las figuras con el cuadernillo.'},*descartes(),cierre],'3':[intro,{'t':'La explicación debe mostrar el procedimiento y las pistas relevantes.'},{'t':'Revisemos la clave y confirmemos el razonamiento antes de aprobarla.'},cierre]}}}
         write(p,sheet); created_sheets+=1; q['hoja']=sheet['hoja']; q['estadoHoja']=sheet['estado']
     write(c['dirs']['enriquecer']/'package.json',pkg); return {'preguntas':len(pkg['preguntas']),'hojas_creadas':created_sheets,'hojas_borrador':sum(1 for q in pkg['preguntas'] if q.get('estadoHoja')=='borrador')}
 def validate(c):
@@ -194,9 +196,37 @@ def validate(c):
     # Una clave manual documentada en overrides.json también completa las
     # listas del simulacro y de la unidad, que se construyeron en estructurar.
     resolved_ids=[q['id'] for q in p['preguntas']]
-    for unit in p.get('unidades',[]): unit['preguntas']=resolved_ids
+    units=p.get('unidades',[])
+    for unit in units:
+        if len(units)<=1:
+            unit['preguntas']=resolved_ids
+        else:
+            area=unit.get('area')
+            scoped=[q['id'] for q in p['preguntas'] if q.get('area')==area]
+            if scoped: unit['preguntas']=scoped
     for sim in p.get('simulacros',[]):
-        for section in sim.get('secciones',[]): section['preguntas']=resolved_ids
+        sections=sim.get('secciones',[])
+        if len(sections)<=1:
+            for section in sections: section['preguntas']=resolved_ids
+        else:
+            # Mantener la partición editorial (p. ej. Examen 1 / Examen 2).
+            # Solo completar IDs aprobados cuyo `parte` corresponde al título.
+            assigned=set()
+            for section in sections:
+                title=str(section.get('titulo','')).strip()
+                scoped=[q['id'] for q in p['preguntas'] if q.get('parte','').startswith(title+',')]
+                if scoped:
+                    section['preguntas']=scoped
+                else:
+                    section['preguntas']=[qid for qid in section.get('preguntas',[]) if qid in resolved_ids]
+                assigned.update(section['preguntas'])
+            # Completar claves por override sin aplanar secciones. El área
+            # identifica el destino cuando solo hay una sección de esa área.
+            missing=[q for q in p['preguntas'] if q['id'] not in assigned]
+            for q in missing:
+                candidates=[s for s in sections if s.get('area')==q.get('area')]
+                if len(candidates)==1:
+                    candidates[0].setdefault('preguntas',[]).append(q['id'])
     write(c['dirs']['validar']/'validated.json',p); return {'preguntas':len(p['preguntas']),'pendientes_clave':len(pending),'errores':0,'por_revisar':sum(bool(q.get('revisar')) for q in p['preguntas'])}
 def package(c):
     src=read(c['dirs']['validar']/'validated.json'); out=c['root']/'content/icfes'/c['spec']['prefijo']; out.mkdir(parents=True,exist_ok=True)
@@ -205,8 +235,8 @@ def package(c):
         for stale in (out/'preguntas.json',out/'pendientes_clave.json'):
             if stale.exists(): stale.unlink()
         return {'archivo':str((out/'documento.json').relative_to(c['root'])),'preguntas':0,'paginas':len(src.get('paginas',[]))}
-    stale_document=out/'documento.json'
-    if stale_document.exists(): stale_document.unlink()
+    # Conservar la transcripción íntegra ya generada como artefacto de trabajo;
+    # el build gateado importa el paquete de preguntas, no este sidecar.
     pending=src.get('pendientes_clave',[])
     if pending: write(out/'pendientes_clave.json',{'preguntas':pending})
     else:

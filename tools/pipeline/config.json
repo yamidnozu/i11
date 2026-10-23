@@ -49,7 +49,7 @@
       "origen": "icfes",
       "prefijo": "ing",
       "prueba": "05 Ingles Saber11 2024 ICFES",
-      "tipo": "cuadernillo"
+      "tipo": "ingles"
     },
     "07_Sociales_y_Ciudadanas_Saber11_2021": {
       "anio": "2021",
@@ -69,7 +69,7 @@
       "origen": "icfes",
       "prefijo": "ena",
       "prueba": "08 Ingles Saber11 2021",
-      "tipo": "cuadernillo"
+      "tipo": "ingles"
     },
     "09_Lectura_Critica_Saber11_2018": {
       "anio": "2018",
@@ -109,7 +109,7 @@
       "origen": "icfes",
       "prefijo": "eng",
       "prueba": "14 Ingles Saber11 2018",
-      "tipo": "cuadernillo"
+      "tipo": "ingles"
     },
     "15_Cuadernillo_Saber11_2014": {
       "anio": "2014",
@@ -117,9 +117,41 @@
       "cita": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2014). 15 Cuadernillo Saber11 2014. Bogotá, D. C.: Icfes.",
       "file": "15_Cuadernillo_Saber11_2014.pdf",
       "origen": "icfes",
-      "prefijo": "c14",
+      "prefijo": "cfi",
       "prueba": "15 Cuadernillo Saber11 2014",
-      "tipo": "cuadernillo"
+      "rangos_area": [
+        {
+          "area": "matematicas",
+          "desde": 1,
+          "hasta": 25,
+          "nombre": "Matemáticas"
+        },
+        {
+          "area": "lectura_critica",
+          "desde": 26,
+          "hasta": 49,
+          "nombre": "Lectura Crítica"
+        },
+        {
+          "area": "sociales",
+          "desde": 50,
+          "hasta": 75,
+          "nombre": "Sociales y Ciudadanas"
+        },
+        {
+          "area": "ciencias",
+          "desde": 76,
+          "hasta": 100,
+          "nombre": "Ciencias Naturales"
+        },
+        {
+          "area": "ingles",
+          "desde": 101,
+          "hasta": 125,
+          "nombre": "Inglés"
+        }
+      ],
+      "tipo": "mixto2014"
     },
     "16_Guia_Orientacion_Saber11_2026_2_CalA": {
       "anio": "2026",
@@ -366,28 +398,28 @@
       "area": "matematicas",
       "cita": "Secretaría de Educación Distrital de Cartagena, Dirección de Calidad Educativa. (s. f.; metadato de creación del PDF: 6 de mayo de 2020). Guía de preparación: Prueba ICFES Saber 11, estrategia Aprendiendo en Casa. Equipo de diseño y compilación: Cecilia Morales Urshela, Livis Barrios Bustamante y Laury Meza Gutiérrez. Cartagena de Indias, Colombia.",
       "file": "47_Guia_Preparacion_SED_Cartagena.pdf",
+      "licencia": "No se encontró licencia de reutilización en el PDF ni en las referencias que contiene; mantener como licenciado y bajo gate.",
       "origen": "licenciado",
       "prefijo": "day",
       "prueba": "47 Guia Preparacion SED Cartagena",
-      "tipo": "guia",
-      "licencia": "No se encontró licencia de reutilización en el PDF ni en las referencias que contiene; mantener como licenciado y bajo gate."
+      "tipo": "guia"
     },
     "48_Libro_Pre_ICFES_Completo_6_Cuestionarios": {
       "anio": "s.f.",
       "area": "matematicas",
       "cita": "Autor no identificado en portada [metadato PDF: “Juanso”]. (2017). Cuadernillo de preparación para la Prueba de Estado Saber 11. PDF de 142 páginas; editorial y lugar de publicación no consignados.",
       "file": "48_Libro_Pre_ICFES_Completo_6_Cuestionarios.pdf",
+      "licencia": "No se encontró licencia de reutilización en el PDF; mantener como licenciado y bajo gate.",
       "origen": "licenciado",
       "prefijo": "daz",
       "prueba": "48 Libro Pre ICFES Completo 6 Cuestionarios",
-      "tipo": "cuadernillo",
-      "licencia": "No se encontró licencia de reutilización en el PDF; mantener como licenciado y bajo gate."
+      "tipo": "cuadernillo"
     }
   },
   "docus": "docus",
   "dpi": 250,
-  "output": "content/icfes",
   "figureSource": "content/icfes",
+  "output": "content/icfes",
   "stroke_grouping_pt": 12,
   "work": "work"
 }
