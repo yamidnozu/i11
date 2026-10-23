@@ -1,110 +1,140 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "uno de sus lados en 100 %",
+        "rol": "dato",
+        "nota": "Ese lado queda con el doble de su longitud.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "su área",
+        "rol": "pide",
+        "nota": "Compara el área nueva con la inicial.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Expresa el área inicial como el producto de sus dos lados."
+      },
+      {
+        "k": "calc",
+        "titulo": "Duplica uno de los factores y compara los productos.",
+        "lineas": [
+          "$A=ab$",
+          "$A_{nueva}=2a·b=2ab$"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El área nueva es dos veces la inicial; corresponde a la opción B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Efecto de una escala lineal sobre el área",
+      "que": "Relaciona el cambio en un lado del rectángulo con el cambio de su área.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Al duplicar un lado y conservar el otro, el producto que representa el área también se duplica.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia."
+        },
+        {
+          "t": "Opción D",
+          "p": "Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Expresa el área inicial como el producto de sus dos lados."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Duplica uno de los factores y compara los productos."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El área nueva es dos veces la inicial; corresponde a la opción B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué operación representa el área del rectángulo antes del cambio?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Al duplicar uno de los factores, el producto queda duplicado."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La respuesta es B: el área se duplica.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representa los lados con letras y escribe el producto inicial."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al sustituir un lado por su doble, queda $2ab$, el doble de $ab$."
         },
         {
+          "t": "La opción A: Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A no es un aumento de cincuenta por ciento; C ignora el cambio; D confunde porcentaje con unidades. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El área inicial es $ab$ y la nueva es $2a·b=2ab$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El cociente entre áreas es $2ab/ab=2$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La nueva área equivale al doble de la original.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no describen ese cociente.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Si en",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

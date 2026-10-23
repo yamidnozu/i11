@@ -1,110 +1,139 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "promedio de estatura de las 16 personas es 1,70 m",
+        "rol": "dato",
+        "nota": "El promedio no muestra la distribución individual.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "igualar la cantidad de personas en las dos piscinas",
+        "rol": "pide",
+        "nota": "Evalúa si el promedio basta para garantizar grupos iguales.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Distingue el promedio del conteo de estudiantes a cada lado del umbral."
+      },
+      {
+        "k": "calc",
+        "titulo": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m.",
+        "lineas": [
+          "Un promedio de $1,70$ m puede surgir con distintos conteos"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Límite de la información que aporta un promedio",
+      "que": "Explica por qué el promedio de estaturas no determina cuántas personas quedan en cada piscina.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Un mismo promedio puede corresponder a distribuciones distintas alrededor del umbral de $1,80$ m.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente."
+        },
+        {
+          "t": "Opción C",
+          "p": "Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Distingue el promedio del conteo de estudiantes a cada lado del umbral."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿El promedio dice cuántas estaturas individuales superan el umbral?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "No; solo resume la suma dividida por el número de estudiantes."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Por eso no permite asegurar que las piscinas tengan cantidades distintas. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El umbral clasifica a cada persona; el promedio no reemplaza esa clasificación."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Distintas listas de estaturas pueden tener el mismo promedio y diferentes conteos por grupo."
         },
         {
+          "t": "La opción A: El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C afirman conteos sin datos; B propone una medida que no basta. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El promedio $1,70$ m fija una suma total, pero no cada estatura.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Sin las estaturas individuales, no se conoce cuántas están por debajo o desde $1,80$ m.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Así, la conclusión del director no se sigue del promedio.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no resuelven esa falta de información.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Una escuela",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

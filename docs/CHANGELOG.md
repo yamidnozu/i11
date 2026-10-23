@@ -1,5 +1,17 @@
 # Changelog
 
+## Revisión Matemáticas 2018 — preguntas 28 a 34 (2026-10-22)
+
+- Se cotejaron las preguntas 28–34 con las páginas 15–18 del cuadernillo: tabla de cursos, triángulo de la escalera, baraja como tabla estructurada, octágono, simetría en el plano y modalidades de crédito.
+- Se restauraron las opciones de razón trigonométrica y las cuatro tablas gráficas de la pregunta 32. Se añadió como bloque compartido el contexto y la tabla de modalidades de crédito de las preguntas 34–35.
+- Se completaron siete hojas revisadas, con descartes y guiones de tres niveles. Total actualizado: 281 hojas revisadas y 65 borradores. TypeScript y Vitest pasan (540/540); builds normal y gated pasan.
+
+## Revisión Matemáticas 2018 — preguntas 14 a 27 (2026-10-22)
+
+- Se cotejaron las preguntas 14–27 contra las páginas 10–16 del cuadernillo y la clave oficial; se completaron explicaciones, distractores y guiones de tres niveles.
+- Se asociaron gráficas/figuras en las preguntas 15, 17, 22, 23 y 26, y se reconstruyeron como tablas las preguntas 20 y 21.
+- El informe y el contexto quedan en 274 hojas revisadas y 72 borradores. TypeScript y Vitest pasan (540/540); los builds normal y gated pasan.
+
 ## Revisión Matemáticas 2018 — preguntas 11 a 13 (2026-10-22)
 - Se comprobó el bono sobre lotes completos en la pregunta 11, se recortaron las cuatro opciones gráficas de la pregunta 12 y se resolvió la inferencia de viajes mínimos en la pregunta 13.
 - Se corrigió el formato de los pasos numerados en las preguntas 10 y 11 para que la vista los conserve legibles. Las tres hojas quedaron revisadas y sus apoyos se verificaron en la vista previa.

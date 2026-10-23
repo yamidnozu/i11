@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "marcador se encuentra 7 a 2",
+        "rol": "dato",
+        "nota": "Son los puntajes al iniciar el cambio.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "por cada 2 puntos que anota el robot P, el robot Q anota 3",
+        "rol": "dato",
+        "nota": "Relaciona los incrementos de ambos puntajes.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "cuándo igualará en puntos",
+        "rol": "pide",
+        "nota": "Iguala los puntajes finales.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Define $x$ como los puntos adicionales de P y expresa los de Q con la razón indicada."
+      },
+      {
+        "k": "calc",
+        "titulo": "Iguala los puntajes finales.",
+        "lineas": [
+          "P: $7+x$",
+          "$Q: 2+3x/2$",
+          "$7+x=2+3x/2$"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La ecuación coincide con la opción B y busca el instante en que ambos puntajes son iguales."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ecuación de igualdad con razón de cambio",
+      "que": "Representa el momento en que los puntajes de los dos robots se igualan.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Si P suma $x$, Q suma $3x/2$; los puntajes se igualan con $7+x=2+3x/2$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P."
+        },
+        {
+          "t": "Opción D",
+          "p": "No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Define $x$ como los puntos adicionales de P y expresa los de Q con la razón indicada."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Iguala los puntajes finales."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La ecuación coincide con la opción B y busca el instante en que ambos puntajes son iguales."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuáles son los puntajes iniciales de P y Q?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Son siete y dos. Si P suma dos, Q suma tres; por eso Q suma tres medios de lo que suma P."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La igualdad es $7+x=2+3x/2$. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Representa los nuevos puntajes como $7+x$ para P y $2+3x/2$ para Q."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Iguala ambas expresiones para encontrar cuándo empatan."
         },
         {
+          "t": "La opción A: Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A omite el marcador; C altera la razón; D no la representa. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La razón de incrementos da $Q_{nuevo}=2+3x/2$ cuando $P_{nuevo}=7+x$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Al igualar: $7+x=2+3x/2$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La opción B representa exactamente los dos puntajes finales.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D omiten o distorsionan los datos del juego.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

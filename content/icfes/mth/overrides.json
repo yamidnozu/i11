@@ -30,12 +30,37 @@
       {
         "tipo": "tabla",
         "alt": "Franjas horarias, cupos máximos y precios por estudiante para la visita al museo",
-        "cols": ["Franja", "Horario", "Cantidad máxima de estudiantes", "Precio por estudiante"],
+        "cols": [
+          "Franja",
+          "Horario",
+          "Cantidad máxima de estudiantes",
+          "Precio por estudiante"
+        ],
         "filas": [
-          ["1", "8 h - 10 h", "50", "$35.000"],
-          ["2", "10 h - 12 h", "40", "$40.000"],
-          ["3", "12 h - 14 h", "30", "$50.000"],
-          ["4", "14 h - 16 h", "60", "$45.000"]
+          [
+            "1",
+            "8 h - 10 h",
+            "50",
+            "$35.000"
+          ],
+          [
+            "2",
+            "10 h - 12 h",
+            "40",
+            "$40.000"
+          ],
+          [
+            "3",
+            "12 h - 14 h",
+            "30",
+            "$50.000"
+          ],
+          [
+            "4",
+            "14 h - 16 h",
+            "60",
+            "$45.000"
+          ]
         ]
       }
     ],
@@ -161,10 +186,62 @@
     "revisar": [],
     "enunciado": "Si se transportan 7 toneladas de fruta a la ciudad W y 10 toneladas de fruta a la ciudad Z, la gráfica que muestra la relación de costos por ciudad es",
     "opcionesFig": [
-      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-a.png", "alt": "Opción A: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [110, 348, 292, 462] } },
-      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-b.png", "alt": "Opción B: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [315, 348, 490, 462] } },
-      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-c.png", "alt": "Opción C: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [110, 480, 292, 594] } },
-      { "tipo": "img", "src": "/icfes/mth/imagenes/mth-i012-opcion-d.png", "alt": "Opción D: costos de transporte y trabajadores por ciudad", "recorteFuente": { "pagina": 9, "rect": [315, 480, 490, 594] } }
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-a.png",
+        "alt": "Opción A: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            110,
+            348,
+            292,
+            462
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-b.png",
+        "alt": "Opción B: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            315,
+            348,
+            490,
+            462
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-c.png",
+        "alt": "Opción C: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            110,
+            480,
+            292,
+            594
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i012-opcion-d.png",
+        "alt": "Opción D: costos de transporte y trabajadores por ciudad",
+        "recorteFuente": {
+          "pagina": 9,
+          "rect": [
+            315,
+            480,
+            490,
+            594
+          ]
+        }
+      }
     ],
     "explicacion": "Para transportar 7 toneladas a W y 10 a Z se necesitan dos camiones en cada ciudad. El transporte cuesta $2 × 150.000 = 300.000$ en W y $2 × 180.000 = 360.000$ en Z. Los trabajadores cuestan $2 × 2 × 180.000 = 720.000$ en W y $2 × 2 × 200.000 = 800.000$ en Z. La gráfica que representa esos cuatro valores es B.",
     "distractores": [
@@ -199,9 +276,91 @@
         "encabezado": "Responde las preguntas siete y ocho de acuerdo con la siguiente información",
         "texto": "El gráfico presenta las muertes por obesidad y el porcentaje que representan del total anual en cuatro países. Las tablas muestran la clasificación del IMC y porcentajes de hombres y mujeres de 26 a 60 años en P2. Datos de las tablas tomados y adaptados de searteriosclerosis.org.",
         "figuras": [
-          { "tipo": "img", "src": "/icfes/mth/imagenes/mth-obesidad-2018.png", "alt": "Mapa de cuatro países con muertes anuales por obesidad y su porcentaje del total", "recorteFuente": { "pagina": 7, "rect": [135, 328, 300, 431] } },
-          { "tipo": "tabla", "alt": "Clasificación del estado nutricional según el índice de masa corporal", "cols": ["Clasificación", "IMC (kg/m²)"], "filas": [["Bajo peso", "< 18,5"], ["Normal", "18,5–24,9"], ["Sobrepeso", "25,0–29,9"], ["Obesidad", "≥ 30,0"], ["Obesidad leve", "30,0–34,9"], ["Obesidad media", "35,0–39,9"], ["Obesidad alta", "≥ 40,0"]] },
-          { "tipo": "tabla", "alt": "Porcentaje de hombres y mujeres de 26 a 60 años por rango de IMC en P2", "cols": ["IMC (kg/m²)", "< 18,5", "18,5–24,9", "25,0–29,9", "30,0–34,9", "35,0–39,9", "≥ 40,0"], "filas": [["Mujeres (%)", "1", "50", "30", "13", "5", "1"], ["Hombres (%)", "1", "34", "50", "13", "1", "1"]] }
+          {
+            "tipo": "img",
+            "src": "/icfes/mth/imagenes/mth-obesidad-2018.png",
+            "alt": "Mapa de cuatro países con muertes anuales por obesidad y su porcentaje del total",
+            "recorteFuente": {
+              "pagina": 7,
+              "rect": [
+                135,
+                328,
+                300,
+                431
+              ]
+            }
+          },
+          {
+            "tipo": "tabla",
+            "alt": "Clasificación del estado nutricional según el índice de masa corporal",
+            "cols": [
+              "Clasificación",
+              "IMC (kg/m²)"
+            ],
+            "filas": [
+              [
+                "Bajo peso",
+                "< 18,5"
+              ],
+              [
+                "Normal",
+                "18,5–24,9"
+              ],
+              [
+                "Sobrepeso",
+                "25,0–29,9"
+              ],
+              [
+                "Obesidad",
+                "≥ 30,0"
+              ],
+              [
+                "Obesidad leve",
+                "30,0–34,9"
+              ],
+              [
+                "Obesidad media",
+                "35,0–39,9"
+              ],
+              [
+                "Obesidad alta",
+                "≥ 40,0"
+              ]
+            ]
+          },
+          {
+            "tipo": "tabla",
+            "alt": "Porcentaje de hombres y mujeres de 26 a 60 años por rango de IMC en P2",
+            "cols": [
+              "IMC (kg/m²)",
+              "< 18,5",
+              "18,5–24,9",
+              "25,0–29,9",
+              "30,0–34,9",
+              "35,0–39,9",
+              "≥ 40,0"
+            ],
+            "filas": [
+              [
+                "Mujeres (%)",
+                "1",
+                "50",
+                "30",
+                "13",
+                "5",
+                "1"
+              ],
+              [
+                "Hombres (%)",
+                "1",
+                "34",
+                "50",
+                "13",
+                "1",
+                "1"
+              ]
+            ]
+          }
         ],
         "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 7 y 8."
       },
@@ -211,7 +370,33 @@
         "encabezado": "Responde las preguntas nueve a trece de acuerdo con la siguiente información",
         "texto": "El comerciante compra el banano a $400.000 por tonelada y el mango a $500.000. Usa camiones con capacidad de 5 toneladas y contrata dos trabajadores por camión en cada viaje.",
         "figuras": [
-          { "tipo": "tabla", "alt": "Precios de venta, transporte por camión y pago por trabajador en las ciudades W y Z", "cols": ["Ciudad", "Venta por tonelada de banano", "Venta por tonelada de mango", "Transporte por camión", "Pago por trabajador y viaje"], "filas": [["W", "$1.000.000", "$1.300.000", "$150.000", "$180.000"], ["Z", "$1.200.000", "$1.350.000", "$180.000", "$200.000"]] }
+          {
+            "tipo": "tabla",
+            "alt": "Precios de venta, transporte por camión y pago por trabajador en las ciudades W y Z",
+            "cols": [
+              "Ciudad",
+              "Venta por tonelada de banano",
+              "Venta por tonelada de mango",
+              "Transporte por camión",
+              "Pago por trabajador y viaje"
+            ],
+            "filas": [
+              [
+                "W",
+                "$1.000.000",
+                "$1.300.000",
+                "$150.000",
+                "$180.000"
+              ],
+              [
+                "Z",
+                "$1.200.000",
+                "$1.350.000",
+                "$180.000",
+                "$200.000"
+              ]
+            ]
+          }
         ],
         "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 9 a 13."
       },
@@ -225,17 +410,765 @@
           {
             "tipo": "tabla",
             "alt": "Intensidad horaria y valor por hora de cada módulo de capacitación",
-            "cols": ["Módulo", "Nombre del módulo", "Intensidad horaria", "Valor por hora"],
+            "cols": [
+              "Módulo",
+              "Nombre del módulo",
+              "Intensidad horaria",
+              "Valor por hora"
+            ],
             "filas": [
-              ["I", "Fundamentación", "40 h", "$35.000"],
-              ["II", "Procesador de texto", "30 h", "$30.000"],
-              ["III", "Hoja de cálculo", "40 h", "$40.000"],
-              ["IV", "Presentación con diapositivas", "10 h", "$45.000"]
+              [
+                "I",
+                "Fundamentación",
+                "40 h",
+                "$35.000"
+              ],
+              [
+                "II",
+                "Procesador de texto",
+                "30 h",
+                "$30.000"
+              ],
+              [
+                "III",
+                "Hoja de cálculo",
+                "40 h",
+                "$40.000"
+              ],
+              [
+                "IV",
+                "Presentación con diapositivas",
+                "10 h",
+                "$45.000"
+              ]
             ]
           }
         ],
         "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 4 a 6."
+      },
+      {
+        "id": "mth-creditos-2018",
+        "area": "matematicas",
+        "encabezado": "RESPONDA LAS PREGUNTAS 34 Y 35 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN",
+        "texto": "Para adquirir un crédito por $6.000.000, Ángela solicita en una entidad financiera información sobre las modalidades de pago para crédito. Un asesor le da la siguiente información. En cualquier modalidad, el saldo del crédito cada mes será igual a la diferencia entre el saldo del crédito del mes anterior y el abono al crédito realizado en el mes.",
+        "figuras": [
+          {
+            "tipo": "tabla",
+            "alt": "Modalidades de pago para el crédito de Ángela",
+            "cols": [
+              "Modalidad",
+              "Número de cuotas por pagar",
+              "Abono al crédito",
+              "Valor cuota"
+            ],
+            "filas": [
+              [
+                "I",
+                "6",
+                "Valor crédito dividido entre 6",
+                "Abono al crédito más interés del 5% del saldo del crédito"
+              ],
+              [
+                "II",
+                "12",
+                "Valor crédito más 20% del valor del crédito, dividido entre 12",
+                "Valor cuota fija"
+              ]
+            ]
+          }
+        ],
+        "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35."
       }
     ]
+  },
+  "mth-i014": {
+    "enunciado": "Si en un rectángulo se aumenta la longitud de uno de sus lados en 100 %, su área",
+    "explicacion": "Si los lados miden $a$ y $b$, el área inicial es $ab$. Al duplicar uno de ellos, el área pasa a $2ab$, que es el doble de la inicial. La respuesta es B.",
+    "distractores": [
+      "Aumentar un lado al doble no aumenta el área solo en la mitad; el otro lado conserva su longitud.",
+      "",
+      "El área sí cambia porque uno de los factores se duplica.",
+      "El porcentaje modifica una longitud relativa, no agrega cien unidades de área."
+    ],
+    "revisar": []
+  },
+  "mth-i015": {
+    "enunciado": "Un estudio de mercadeo relaciona la cantidad de marcas competidoras con las unidades vendidas de un producto. La gráfica muestra los resultados para una tienda durante un mes. Suponiendo un comportamiento análogo para una tienda que vende 1.250 unidades cuando el producto no tiene competencia, ¿cuántas unidades se venderán aproximadamente si compite contra 3 marcas?",
+    "explicacion": "En la gráfica, las ventas pasan de 500 unidades sin competencia a 200 cuando hay tres marcas competidoras. La proporción es $200/500=0,4$. Para una base de $1.250$ unidades, la estimación es $1.250×0,4=500$. La respuesta es A.",
+    "distractores": [
+      "",
+      "$700$ supone una proporción cercana a $0,56$, que no corresponde a la relación observada.",
+      "$755$ tampoco conserva la proporción entre las ventas con y sin competencia.",
+      "$950$ deja casi intactas las ventas pese a la competencia; la gráfica muestra una reducción mayor."
+    ],
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i015-grafica.png",
+        "alt": "Gráfica de ventas según el número de marcas competidoras",
+        "recorteFuente": {
+          "pagina": 10,
+          "rect": [
+            220,
+            245,
+            390,
+            350
+          ]
+        }
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i016": {
+    "explicacion": "El promedio resume la suma de las estaturas, pero no indica cuántas personas quedan a cada lado de $1,80$ m. Muchas distribuciones pueden tener promedio $1,70$ m y cantidades distintas en cada piscina. Por eso la afirmación no se deduce del promedio. La respuesta es D.",
+    "distractores": [
+      "El promedio no permite afirmar que todas las personas estén por debajo de $1,80$ m ni que deban aceptarse exactamente otras dieciséis.",
+      "Aunque el promedio no determina los grupos, no es necesario reemplazarlo por el máximo o el mínimo: se requiere conocer cada estatura.",
+      "Agregar estudiantes de $1,80$ m no garantiza igualar los grupos; además, esa estatura pertenece a la piscina profunda.",
+      ""
+    ],
+    "revisar": []
+  },
+  "mth-i017": {
+    "enunciado": "Observa la figura. La figura se compone de un cuadrado de lado $k$ y un semicírculo cuyo diámetro mide $k$. Para calcular el área total se sigue un procedimiento con el área del cuadrado y la del semicírculo. El procedimiento es",
+    "opciones": [
+      "Incorrecto, porque $A_s=k²π/2$.",
+      "Correcto, pues el radio equivale a $k/2$.",
+      "Correcto, ya que se ha sumado $A_c$ y $A_s/4$.",
+      "Incorrecto, pues $A_s=k²π/4$."
+    ],
+    "explicacion": "El diámetro del semicírculo es $k$, así que su radio es $k/2$. Su área es la mitad del área de un círculo de ese radio: $A_s=π(k/2)^2/2=πk^2/8$. El área total es $k^2+πk^2/8$. El procedimiento es correcto y la justificación de B identifica el radio. La respuesta es B.",
+    "distractores": [
+      "El área del semicírculo lleva el factor de mitad y el cuadrado del radio; no es $πk^2/2$.",
+      "",
+      "La fórmula final suma el área completa del semicírculo, no una cuarta parte de ella.",
+      "La expresión $πk^2/4$ es el área del círculo de radio $k/2$, antes de tomar la mitad."
+    ],
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i017-figura.png",
+        "alt": "Figura formada por un cuadrado y un semicírculo",
+        "recorteFuente": {
+          "pagina": 11,
+          "rect": [
+            190,
+            100,
+            280,
+            165
+          ]
+        }
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i018": {
+    "enunciado": "En un juego, el animador elige tres números positivos $X$, $Z$ y $W$. Suministra como pistas los valores $R=XZ$, $S=XW$ y $T=ZW$. Para hallar primero $X$, ¿qué expresión debe resolver?",
+    "opciones": [
+      "$R+S$",
+      "√(RST)",
+      "(R+S-T)/2",
+      "√(RS/T)"
+    ],
+    "explicacion": "Al multiplicar $R$ y $S$ se obtiene $RS=X^2ZW$. Como $T=ZW$, entonces $RS/T=X^2$. Los números son positivos, por lo que $X=\\sqrt{RS/T}$. La respuesta es D.",
+    "distractores": [
+      "La suma de $R$ y $S$ no elimina los factores $Z$ y $W$ ni despeja $X$.",
+      "El producto $RST$ introduce potencias adicionales de $Z$ y $W$ en vez de cancelarlas.",
+      "La combinación lineal no se deduce de las tres relaciones multiplicativas.",
+      ""
+    ],
+    "revisar": []
+  },
+  "mth-i019": {
+    "opciones": [
+      "3x/2=0. Donde x es la cantidad de puntos que anotará P.",
+      "7+x=3x/2+2. Donde x es la cantidad de puntos que anotará P.",
+      "7+3x=2+2y. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q.",
+      "x+y=7+2. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q."
+    ],
+    "explicacion": "P lleva siete puntos y Q lleva dos. Si P anota $x$ puntos más, por cada dos de P, Q anota tres: Q suma $3x/2$. La igualdad se expresa como $7+x=2+3x/2$, equivalente a la opción B.",
+    "distractores": [
+      "No iguala los puntajes iniciales y omite el marcador de ambos jugadores.",
+      "",
+      "Usa $3x$ y $2y$ en lugar de la relación correcta entre los puntos adicionales; además introduce dos incógnitas.",
+      "Suma los puntos iniciales sin representar la proporción entre los puntos que anota cada robot."
+    ],
+    "revisar": []
+  },
+  "mth-i020": {
+    "enunciado": "La tabla presenta el gasto en publicidad y las ganancias de una empresa durante los años 2000 a 2002. La función que representa la ganancia obtenida $G$, en millones de pesos, en función del gasto en publicidad $p$, es",
+    "explicacion": "Con los pares $(p,G)=(200,8.000)$ y $(280,10.400)$, la ganancia aumenta $2.400$ cuando la publicidad aumenta $80$, es decir, $30$ por cada unidad de $p$. El intercepto es $8.000-30×200=2.000$. Así, $G(p)=30p+2.000$, y también verifica el dato $(250,9.500)$. La respuesta es A.",
+    "distractores": [
+      "",
+      "$G(p)=10p$ no produce las ganancias de la tabla.",
+      "$G(p)=40p$ daría $8.000$ para $p=200$, pero no coincide con los otros pares.",
+      "$G(p)=40p-800$ tampoco reproduce los tres registros."
+    ],
+    "figuras": [
+      {
+        "tipo": "tabla",
+        "alt": "Gasto en publicidad y ganancia obtenida entre 2000 y 2002",
+        "cols": [
+          "Año",
+          "Gasto en publicidad*",
+          "Ganancia obtenida*"
+        ],
+        "filas": [
+          [
+            "2000",
+            "200",
+            "8.000"
+          ],
+          [
+            "2001",
+            "280",
+            "10.400"
+          ],
+          [
+            "2002",
+            "250",
+            "9.500"
+          ]
+        ],
+        "nota": "*Datos en millones de pesos."
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i021": {
+    "enunciado": "Los organizadores de un campeonato internacional de patinaje entregan la medallería solo a los países que hayan ocupado los tres primeros puestos. La tabla muestra el número de formas posibles en que se pueden ocupar esos puestos, según el número de países participantes. Una forma de generalizar la relación entre los datos anteriores es",
+    "opciones": [
+      "$f=n!/((n-3)!3!)$",
+      "$f=3(3^(n-2)-1)$",
+      "$f=n!/(n-3)!$",
+      "$f=n(n-1)(n-2)^2$"
+    ],
+    "explicacion": "Los tres puestos son distintos, así que importa el orden. Para el primero hay $n$ países posibles; para el segundo, $n-1$; y para el tercero, $n-2$. Por tanto, $f=n(n-1)(n-2)=n!/(n-3)!$. La respuesta es C.",
+    "distractores": [
+      "Divide por $3!$ y cuenta combinaciones sin distinguir el orden de los tres puestos.",
+      "La expresión exponencial no representa la elección sucesiva de medallistas.",
+      "",
+      "Eleva al cuadrado el último factor, aunque para el tercer puesto queda una elección de $n-2$ países."
+    ],
+    "figuras": [
+      {
+        "tipo": "tabla",
+        "alt": "Número de podios posibles según la cantidad de países participantes",
+        "cols": [
+          "Países participantes (n)",
+          "Formas de ocupar los tres primeros puestos (f)"
+        ],
+        "filas": [
+          [
+            "3",
+            "6"
+          ],
+          [
+            "4",
+            "24"
+          ],
+          [
+            "5",
+            "60"
+          ],
+          [
+            "6",
+            "120"
+          ],
+          [
+            "…",
+            "…"
+          ]
+        ]
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i022": {
+    "enunciado": "La línea punteada en la figura muestra un corte realizado a un triángulo. El corte es paralelo a la base y pasa por la mitad de la altura perpendicular a esa base. Para realizar el corte, se determinó la altura usando sen(45°)=h/120; luego se dividió h entre dos. Teniendo en cuenta que sen(45°)=√2/2≈0,71, la distancia desde la base hasta el corte es, aproximadamente,",
+    "opciones": [
+      "85 cm.",
+      "60 cm.",
+      "42 cm.",
+      "30 cm."
+    ],
+    "explicacion": "La altura del triángulo es $120×0,71≈85,2$ cm. El corte queda a la mitad de esa altura: $85,2/2≈42,6$ cm, que se aproxima a $42$ cm según las opciones. La respuesta es C.",
+    "distractores": [
+      "Es aproximadamente la altura completa y no la mitad donde está el corte.",
+      "Es la mitad del lado de $120$ cm, no la mitad de la altura perpendicular.",
+      "",
+      "Aproxima la mitad de una altura incorrectamente calculada; la altura es cerca de $85$ cm."
+    ],
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i022-figura.png",
+        "alt": "Triángulo de lado 120 cm, ángulo de 45 grados y corte a media altura",
+        "recorteFuente": {
+          "pagina": 13,
+          "rect": [
+            245,
+            155,
+            380,
+            220
+          ]
+        }
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i023": {
+    "enunciado": "Un cartabón es una plantilla de dibujo técnico con forma de triángulo rectángulo escaleno, cuya hipotenusa mide el doble del cateto de menor longitud. Si el cateto más largo mide 32 centímetros, como muestra la figura, ¿cuál medida corresponde a su cateto menor?",
+    "opciones": [
+      "16 cm.",
+      "$32/√3$ cm.",
+      "27 cm.",
+      "$64/√3$ cm."
+    ],
+    "explicacion": "En un triángulo de 30°, 60° y 90°, el cateto mayor mide √3 veces el cateto menor. Si el mayor mide $32$ cm, el menor es $32/√3$ cm. La respuesta es B.",
+    "distractores": [
+      "Es la mitad del cateto mayor, pero la hipotenusa —no el cateto mayor— duplica al menor.",
+      "",
+      "No satisface la razón √3 entre los dos catetos.",
+      "Multiplica por una razón que corresponde a un cateto mayor que el dado, no al menor."
+    ],
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i023-figura.png",
+        "alt": "Cartabón triangular con ángulo de 60 grados y cateto mayor de 32 cm",
+        "recorteFuente": {
+          "pagina": 13,
+          "rect": [
+            340,
+            310,
+            495,
+            450
+          ]
+        }
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i024": {
+    "enunciado": "A partir de un conjunto de números S, cuyo promedio es 9 y su desviación estándar es 3, se construye un nuevo conjunto T sumando 4 unidades a cada elemento de S. Por ejemplo, si 8 es un elemento de S, entonces 8+4=12 es un elemento de T. ¿Cuál es el promedio y la desviación estándar del conjunto T, respectivamente?",
+    "explicacion": "Sumar cuatro a cada dato desplaza el promedio en cuatro unidades: $9+4=13$. La desviación estándar mide la dispersión respecto del promedio; al sumar la misma constante a todos los datos, las diferencias entre ellos no cambian. Por tanto, permanece en $3$. La respuesta es C.",
+    "distractores": [
+      "El promedio no permanece en nueve porque cada dato aumenta cuatro unidades.",
+      "No cambia la desviación estándar: sumar la misma cantidad no multiplica la dispersión.",
+      "",
+      "El promedio aumenta, pero la desviación estándar no se suma con cuatro."
+    ],
+    "revisar": []
+  },
+  "mth-i025": {
+    "enunciado": "El sistema de comunicaciones de un hotel utiliza los dígitos 2, 3, 4 y 5 para asignar a cada habitación un número de extensión telefónica de 4 dígitos diferentes. ¿Cuántas habitaciones pueden tener extensión telefónica?",
+    "explicacion": "Los cuatro dígitos deben ocupar cuatro posiciones sin repetirse. Hay cuatro opciones para la primera posición, tres para la segunda, dos para la tercera y una para la última: $4×3×2×1=24$. La respuesta es A.",
+    "distractores": [
+      "",
+      "56 no es el producto de las opciones disponibles al ordenar los cuatro dígitos sin repetir.",
+      "120 excede el número de permutaciones de cuatro dígitos distintos.",
+      "256 cuenta cadenas con repetición, aunque las extensiones deben usar dígitos diferentes."
+    ],
+    "revisar": []
+  },
+  "mth-i026": {
+    "enunciado": "A continuación se muestran los resultados de una encuesta sobre el parque automotor del transporte intermunicipal en Colombia. Según la información anterior, es correcto afirmar que",
+    "opciones": [
+      "La mayor parte del parque automotor son automóviles, camionetas y camperos.",
+      "La mitad del parque automotor corresponde a automóviles, camionetas y camperos.",
+      "La mayor parte del parque automotor son buses, microbuses y busetas.",
+      "La mitad del parque automotor corresponde a buses, microbuses y busetas."
+    ],
+    "explicacion": "En el gráfico, los buses representan $24\\%$, los microbuses $23\\%$ y las busetas $18\\%$. En conjunto suman $65\\%$, más de la mitad del parque automotor. La respuesta es C.",
+    "distractores": [
+      "Automóviles, camionetas y camperos suman menos de la mitad según sus sectores.",
+      "Ese grupo no llega al cincuenta por ciento del gráfico.",
+      "",
+      "Los buses, microbuses y busetas sí son mayoría, no exactamente la mitad."
+    ],
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i026-grafica.png",
+        "alt": "Gráfico circular del transporte intermunicipal de pasajeros y leyenda",
+        "recorteFuente": {
+          "pagina": 14,
+          "rect": [
+            120,
+            270,
+            430,
+            425
+          ]
+        }
+      }
+    ],
+    "revisar": []
+  },
+  "mth-i027": {
+    "enunciado": "Una prueba atlética tiene un récord mundial de 10,49 segundos y un récord olímpico de 10,50 segundos. ¿Es posible que un atleta registre un tiempo, en el mismo tipo de prueba, que rompa el récord olímpico pero no el mundial?",
+    "opciones": [
+      "Sí, porque puede registrar, por ejemplo, 10,497 segundos, que está entre los dos tiempos récord.",
+      "Sí, porque puede registrar un tiempo menor que 10,4 segundos y marcaría un nuevo récord.",
+      "No, porque no existe un registro posible entre los dos tiempos récord.",
+      "No, porque cualquier registro menor que el récord olímpico también será menor que el récord mundial."
+    ],
+    "explicacion": "En una carrera, un tiempo menor es mejor. El registro $10,497$ s es menor que el olímpico de $10,50$ s, pero mayor que el mundial de $10,49$ s. Así rompe el récord olímpico sin romper el mundial. La respuesta es A.",
+    "distractores": [
+      "",
+      "Un tiempo menor que $10,4$ también sería menor que el récord mundial, por lo que rompería ambos.",
+      "Sí hay tiempos entre $10,49$ y $10,50$, como $10,497$.",
+      "El intervalo entre ambos récords permite mejorar el olímpico sin mejorar el mundial."
+    ],
+    "revisar": []
+  },
+  "mth-i028": {
+    "enunciado": "En una institución educativa hay dos cursos en grado undécimo. El número de hombres y mujeres de cada curso se relaciona en la tabla. La probabilidad de escoger un estudiante de grado undécimo, de esta institución, que sea mujer es $3/5$. Este valor corresponde a la razón entre el número total de mujeres y",
+    "opciones": [
+      "el número total de estudiantes de grado undécimo.",
+      "el número total de hombres de grado undécimo.",
+      "el número total de mujeres del curso 11B.",
+      "el número total de hombres del curso 11A."
+    ],
+    "explicacion": "La tabla registra $45$ mujeres y $75$ estudiantes en total. La probabilidad es $45/75=3/5$, así que el denominador representa a todos los estudiantes de grado undécimo. La respuesta es A.",
+    "figuras": [
+      {
+        "tipo": "tabla",
+        "alt": "Cantidad de mujeres y hombres en los cursos 11A y 11B",
+        "cols": [
+          "",
+          "Curso 11A",
+          "Curso 11B",
+          "Total"
+        ],
+        "filas": [
+          [
+            "Número de mujeres",
+            "22",
+            "23",
+            "45"
+          ],
+          [
+            "Número de hombres",
+            "18",
+            "12",
+            "30"
+          ],
+          [
+            "Total",
+            "40",
+            "35",
+            "75"
+          ]
+        ]
+      }
+    ],
+    "distractores": [
+      "",
+      "Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer.",
+      "Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos.",
+      "Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
+    ],
+    "revisar": []
+  },
+  "mth-i029": {
+    "enunciado": "Para fijar un aviso publicitario se coloca sobre un muro una escalera a $12$ metros del suelo (ver figura 1). Las figuras, además, muestran la situación y algunas de las medidas involucradas. ¿Cuál es el coseno del ángulo $θ$ que forman el suelo y la escalera?",
+    "opciones": [
+      "$12/13$",
+      "$12/5$",
+      "$5/13$",
+      "$13/5$"
+    ],
+    "explicacion": "El ángulo está entre el suelo y la escalera. El cateto adyacente mide $5$ metros y la hipotenusa mide $13$ metros. Por tanto, el coseno es $5/13$. La respuesta es C.",
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i029-figura.png",
+        "alt": "Dos diagramas de una escalera apoyada en un muro; el triángulo muestra lados 5, 12 y 13 metros",
+        "recorteFuente": {
+          "pagina": 15,
+          "rect": [
+            210,
+            390,
+            390,
+            500
+          ]
+        }
+      }
+    ],
+    "distractores": [
+      "Doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado.",
+      "Doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado.",
+      "",
+      "Trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
+    ],
+    "revisar": []
+  },
+  "mth-i030": {
+    "enunciado": "En la tabla se presentan las cartas que conforman una baraja de póquer. Si la probabilidad de escoger una carta que cumpla dos características determinadas es cero, estas características podrían ser:",
+    "opciones": [
+      "Ser una carta negra y ser un número par.",
+      "Ser una carta roja y ser de picas.",
+      "Ser una carta de corazones y ser un número impar.",
+      "Ser una carta roja K y ser de diamantes."
+    ],
+    "explicacion": "Picas es un palo negro. Por eso no existe una carta que sea a la vez roja y de picas: el evento es imposible y su probabilidad es cero. La respuesta es B.",
+    "figuras": [
+      {
+        "tipo": "tabla",
+        "alt": "Rangos de las cartas de cada palo de la baraja de póquer",
+        "cols": [
+          "Número",
+          "Picas (negra)",
+          "Tréboles (negra)",
+          "Corazones (roja)",
+          "Diamantes (roja)"
+        ],
+        "filas": [
+          [
+            "1",
+            "A",
+            "A",
+            "A",
+            "A"
+          ],
+          [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "3",
+            "3",
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "5",
+            "5",
+            "5",
+            "5"
+          ],
+          [
+            "6",
+            "6",
+            "6",
+            "6",
+            "6"
+          ],
+          [
+            "7",
+            "7",
+            "7",
+            "7",
+            "7"
+          ],
+          [
+            "8",
+            "8",
+            "8",
+            "8",
+            "8"
+          ],
+          [
+            "9",
+            "9",
+            "9",
+            "9",
+            "9"
+          ],
+          [
+            "10",
+            "10",
+            "10",
+            "10",
+            "10"
+          ],
+          [
+            "11",
+            "J",
+            "J",
+            "J",
+            "J"
+          ],
+          [
+            "12",
+            "Q",
+            "Q",
+            "Q",
+            "Q"
+          ],
+          [
+            "13",
+            "K",
+            "K",
+            "K",
+            "K"
+          ]
+        ]
+      }
+    ],
+    "distractores": [
+      "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
+      "",
+      "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
+      "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
+    ],
+    "revisar": []
+  },
+  "mth-i031": {
+    "enunciado": "Un octágono regular tiene ocho lados y ocho ángulos internos congruentes. La figura muestra un octágono regular inscrito en una circunferencia de radio $2$. Con la expresión $x=2·sen(45°)/sen(67,5°)$ se puede calcular en el octágono de la figura la medida del",
+    "opciones": [
+      "ángulo $OPQ$.",
+      "segmento $PQ$.",
+      "ángulo $QOP$.",
+      "segmento $OQ$."
+    ],
+    "explicacion": "El triángulo $OPQ$ tiene un ángulo de $45°$ en el centro y un ángulo de $67,5°$ en $P$. Por la ley de senos, $x/sen(45°)=2/sen(67,5°)$; por tanto, $x$ representa el lado $PQ$. La respuesta es B.",
+    "figuras": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i031-figura.png",
+        "alt": "Octágono regular inscrito con radio 2 y triángulo OPQ marcado",
+        "recorteFuente": {
+          "pagina": 16,
+          "rect": [
+            240,
+            490,
+            360,
+            610
+          ]
+        }
+      }
+    ],
+    "distractores": [
+      "La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado.",
+      "",
+      "El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado.",
+      "$OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
+    ],
+    "revisar": []
+  },
+  "mth-i032": {
+    "enunciado": "En una fábrica se aplica una encuesta a los empleados para saber el medio de transporte que usan para llegar al trabajo, y luego decidir si se implementa un servicio de ruta. Los resultados mostraron, entre otras, estas tres conclusiones sobre un grupo de $100$ empleados que viven cerca de la fábrica y que se desplazan únicamente en bus o a pie: el $60\\%$ del grupo son mujeres; el $20\\%$ de las mujeres se desplazan en bus; el $40\\%$ de los hombres se desplazan caminando. ¿Cuál de las siguientes tablas representa correctamente la información obtenida de ese grupo?",
+    "opciones": [
+      "Tabla A: bus, 40 hombres y 60 mujeres; caminando, 60 hombres y 40 mujeres.",
+      "Tabla B: bus, 34 hombres y 12 mujeres; caminando, 16 hombres y 38 mujeres.",
+      "Tabla C: bus, 0 hombres y 20 mujeres; caminando, 40 hombres y 40 mujeres.",
+      "Tabla D: bus, 24 hombres y 12 mujeres; caminando, 16 hombres y 48 mujeres."
+    ],
+    "explicacion": "Hay $60$ mujeres y $40$ hombres. En bus van $20\\%$ de las mujeres, es decir, $12$; las otras $48$ caminan. Caminan $40\\%$ de los hombres, es decir, $16$, así que los otros $24$ van en bus. La respuesta es D.",
+    "opcionesFig": [
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-a.png",
+        "alt": "Opción A: tabla de transporte por género con conteos 40, 60, 60 y 40",
+        "recorteFuente": {
+          "pagina": 17,
+          "rect": [
+            125,
+            263,
+            300,
+            306
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-b.png",
+        "alt": "Opción B: tabla de transporte por género con conteos 34, 12, 16 y 38",
+        "recorteFuente": {
+          "pagina": 17,
+          "rect": [
+            125,
+            313,
+            300,
+            359
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-c.png",
+        "alt": "Opción C: tabla de transporte por género con conteos 0, 20, 40 y 40",
+        "recorteFuente": {
+          "pagina": 17,
+          "rect": [
+            125,
+            363,
+            300,
+            408
+          ]
+        }
+      },
+      {
+        "tipo": "img",
+        "src": "/icfes/mth/imagenes/mth-i032-opcion-d.png",
+        "alt": "Opción D: tabla de transporte por género con conteos 24, 12, 16 y 48",
+        "recorteFuente": {
+          "pagina": 17,
+          "rect": [
+            125,
+            413,
+            300,
+            459
+          ]
+        }
+      }
+    ],
+    "distractores": [
+      "Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado.",
+      "Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado.",
+      "Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado.",
+      ""
+    ],
+    "revisar": []
+  },
+  "mth-i033": {
+    "enunciado": "Un trapecio isósceles es un cuadrilátero que tiene un solo par de lados paralelos y los otros dos, de igual medida. En un plano cartesiano se dibuja un trapecio isósceles de modo que el eje $Y$ divide al trapecio en dos figuras iguales. Si las coordenadas de dos de los vértices del trapecio son $(-4,2)$ y $(-2,8)$, ¿cuáles son las coordenadas de los otros dos vértices?",
+    "opciones": [
+      "$(8,2)$ y $(2,4)$.",
+      "$(2,8)$ y $(4,2)$.",
+      "$(-2,-4)$ y $(-8,-2)$.",
+      "$(-4,-2)$ y $(-2,-8)$."
+    ],
+    "explicacion": "Reflejar una figura respecto al eje $Y$ cambia el signo de la coordenada $x$ y conserva la coordenada $y$. Por tanto, los puntos reflejados son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+    "distractores": [
+      "No son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado.",
+      "",
+      "Cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado.",
+      "Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado."
+    ],
+    "revisar": []
+  },
+  "mth-i034": {
+    "enunciado": "Después de analizar la información, Ángela afirma: “Con la modalidad I, el valor de la cuota disminuirá $50.000$ en cada mes”. La afirmación es correcta porque",
+    "opciones": [
+      "el interés total del crédito será $300.000$ y cada mes disminuirá $50.000$.",
+      "cada mes se abonará al crédito $1.000.000$ y el interés disminuirá en $50.000$.",
+      "cada mes aumentará el abono al crédito en $50.000$, de manera que el interés disminuirá.",
+      "el abono al crédito disminuirá $50.000$ cada mes, al igual que el interés."
+    ],
+    "explicacion": "El abono mensual al capital es $6.000.000/6=$1.000.000$. Al bajar el saldo en un millón cada mes, el interés del siguiente mes disminuye en $5\\%×1.000.000=$50.000$. Como el abono al capital es fijo, la cuota total también disminuye en esa cantidad. La respuesta es B.",
+    "distractores": [
+      "El interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado.",
+      "",
+      "El abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado.",
+      "El abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado."
+    ],
+    "revisar": [],
+    "bloque": "mth-creditos-2018",
+    "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Preguntas 34 y 35."
   }
 }

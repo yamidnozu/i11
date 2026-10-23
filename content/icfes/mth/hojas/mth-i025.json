@@ -1,110 +1,145 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "dígitos 2, 3, 4 y 5",
+        "rol": "dato",
+        "nota": "Son los cuatro símbolos disponibles.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "4 dígitos diferentes",
+        "rol": "dato",
+        "nota": "Cada uno se usa una vez.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Cuántas habitaciones",
+        "rol": "pide",
+        "nota": "Cuenta las extensiones posibles.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Cuenta cuántos dígitos quedan disponibles en cada posición."
+      },
+      {
+        "k": "calc",
+        "titulo": "Multiplica las elecciones sucesivas.",
+        "lineas": [
+          "$4×3×2×1=24$"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Se obtienen veinticuatro extensiones distintas; corresponde a A."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Permutaciones de dígitos distintos",
+      "que": "Cuenta las extensiones que se forman al ordenar los cuatro dígitos sin repetición.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Hay $4! = 24$ órdenes posibles para los cuatro dígitos.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "No corresponde al producto de las cuatro elecciones sucesivas. Pero no se pueden repetir dígitos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Excede las permutaciones posibles de cuatro elementos. Pero cada extensión ordena solo esos cuatro dígitos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Cuenta combinaciones con repetición. Pero el enunciado exige dígitos diferentes."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Cuenta cuántos dígitos quedan disponibles en cada posición."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Multiplica las elecciones sucesivas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Se obtienen veinticuatro extensiones distintas; corresponde a A."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuántas opciones quedan para cada posición?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Quedan cuatro, luego tres, luego dos y finalmente una."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El producto es veinticuatro. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Aplica el principio multiplicativo: cuatro opciones para el primer lugar, tres para el siguiente, dos y una."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El total es $4×3×2×1=24$."
         },
         {
+          "t": "La opción B: No corresponde al producto de las cuatro elecciones sucesivas. Pero no se pueden repetir dígitos.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Excede las permutaciones posibles de cuatro elementos. Pero cada extensión ordena solo esos cuatro dígitos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Cuenta combinaciones con repetición. Pero el enunciado exige dígitos diferentes.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "B y C no son ese producto; D permite repeticiones. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Las extensiones son permutaciones de los cuatro dígitos.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El conteo es $4!=4×3×2×1=24$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Cada orden usa todos los dígitos una sola vez.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "B y C no dan el total; D admite repeticiones prohibidas.",
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "El sistema",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

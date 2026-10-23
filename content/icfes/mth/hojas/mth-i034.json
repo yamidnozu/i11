@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "el valor de la cuota disminuirá $50.000$ en cada mes",
+        "rol": "dato",
+        "nota": "El cambio mensual de la cuota depende del interés sobre el saldo.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "modalidad I",
+        "rol": "dato",
+        "nota": "Se abona el capital en seis cuotas iguales y se cobra interés sobre el saldo.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "La afirmación es correcta porque",
+        "rol": "pide",
+        "nota": "Explica el cambio en el valor de la cuota.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Separa el abono fijo al capital del interés calculado sobre el saldo.",
+        "texto": "Separa el abono fijo al capital del interés calculado sobre el saldo."
+      },
+      {
+        "k": "calc",
+        "titulo": "Halla el abono mensual y el cambio del interés.",
+        "lineas": [
+          "$6.000.000/6=1.000.000$",
+          "$5\\%×1.000.000=50.000$"
+        ],
+        "nota": "Halla el abono mensual y el cambio del interés."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El abono es fijo y el interés cae cincuenta mil por mes; la cuota baja esa misma cantidad. La respuesta es B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Cuota de crédito con abonos constantes e interés sobre saldo",
+      "que": "Explica por qué el valor total de la cuota disminuye cincuenta mil pesos por mes.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El abono al capital es un millón por mes; el cinco por ciento de ese saldo reducido es cincuenta mil.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "El interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "El abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado."
+        },
+        {
+          "t": "Opción D",
+          "p": "El abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Separa el abono fijo al capital del interés calculado sobre el saldo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Halla el abono mensual y el cambio del interés."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El abono es fijo y el interés cae cincuenta mil por mes; la cuota baja esa misma cantidad. La respuesta es B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuánto capital se abona cada mes si seis pagos iguales cubren seis millones?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Un millón. El cinco por ciento de ese valor son cincuenta mil pesos."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El interés baja esa cantidad en cada periodo; por eso la cuota B disminuye así.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Divide los seis millones entre seis: cada mes se abona un millón al capital."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Al bajar el saldo en un millón, el interés, que es cinco por ciento del saldo, cae cincuenta mil."
         },
         {
+          "t": "La opción A: El interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: El abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A no calcula el cambio por periodo; C y D dicen que cambia el abono, que es fijo. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El capital se reduce en un millón con cada abono mensual.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "El interés del cinco por ciento sobre el saldo disminuye en cincuenta mil por cada millón que baja.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Como el abono al capital no cambia, la cuota total baja cincuenta mil.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D confunden el interés total o variable con el abono fijo.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Después de",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

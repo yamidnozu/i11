@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "baraja de póquer",
+        "rol": "dato",
+        "nota": "Contiene cartas de cuatro palos, dos negros y dos rojos.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "probabilidad de escoger una carta que cumpla dos características determinadas es cero",
+        "rol": "dato",
+        "nota": "La combinación debe ser imposible.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "estas características podrían ser",
+        "rol": "pide",
+        "nota": "Elige dos condiciones incompatibles.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Recuerda el color asociado a cada palo de la baraja.",
+        "texto": "Recuerda el color asociado a cada palo de la baraja."
+      },
+      {
+        "k": "calc",
+        "titulo": "Comprueba si existe una carta que cumpla ambas condiciones.",
+        "lineas": [
+          "Picas: negras",
+          "Corazones y diamantes: rojas"
+        ],
+        "nota": "Comprueba si existe una carta que cumpla ambas condiciones."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Evento imposible en una baraja",
+      "que": "Reconoce qué combinación de características no puede cumplirse simultáneamente.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Las cartas de picas son negras, así que ninguna puede ser roja.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado."
+        },
+        {
+          "t": "Opción D",
+          "p": "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Recuerda el color asociado a cada palo de la baraja."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Comprueba si existe una carta que cumpla ambas condiciones."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿De qué color son las cartas de picas?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Son negras; por eso no hay picas rojas."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La combinación imposible es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Separa las condiciones de cada opción y revisa los palos rojos y negros."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Picas y tréboles son negras; corazones y diamantes son rojas."
         },
         {
+          "t": "La opción A: Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D sí tienen cartas que cumplen ambas condiciones. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La baraja asigna un color fijo a cada palo.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Picas es un palo negro, así que ninguna carta de picas puede ser roja.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La intersección de esas dos características está vacía.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D describen cartas que sí están en la baraja.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En la",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

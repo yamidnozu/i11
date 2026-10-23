@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "dos cursos en grado undécimo",
+        "rol": "dato",
+        "nota": "El grupo posible reúne a los estudiantes de ambos cursos.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "3/5",
+        "rol": "dato",
+        "nota": "La probabilidad compara mujeres con el total de estudiantes.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "corresponde a la razón entre el número total de mujeres y",
+        "rol": "pide",
+        "nota": "Busca el denominador que convierte $45$ en $3/5$.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Compara los totales de mujeres y estudiantes que muestra la tabla.",
+        "texto": "Compara los totales de mujeres y estudiantes que muestra la tabla."
+      },
+      {
+        "k": "calc",
+        "titulo": "Verifica la razón y su denominador.",
+        "lineas": [
+          "$45/75=3/5$",
+          "El total de estudiantes es $75$."
+        ],
+        "nota": "Verifica la razón y su denominador."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Probabilidad como razón entre mujeres y total de estudiantes",
+      "que": "Identifica qué cantidad corresponde al denominador de la probabilidad.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Hay $45$ mujeres de $75$ estudiantes; el total posible es todo el grado undécimo.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Compara los totales de mujeres y estudiantes que muestra la tabla."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Verifica la razón y su denominador."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuántas mujeres hay y cuántos estudiantes hay en total?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Hay cuarenta y cinco mujeres entre setenta y cinco estudiantes."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "La razón es tres quintos; el denominador es todo el grado. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "En una probabilidad, divide los casos favorables entre todos los casos posibles."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La tabla da $45$ mujeres y $75$ estudiantes: $45/75=3/5$."
         },
         {
+          "t": "La opción B: Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "B, C y D son subconjuntos del grupo y no el total de casos posibles. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La cantidad de mujeres es cuarenta y cinco y el total de estudiantes es setenta y cinco.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Al simplificar $45/75$ se obtiene $3/5$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Por tanto, el denominador es el total de estudiantes de ambos cursos.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "B, C y D reemplazan el total por subconjuntos.",
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

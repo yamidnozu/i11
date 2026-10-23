@@ -1,110 +1,146 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "tres primeros puestos",
+        "rol": "dato",
+        "nota": "Los puestos son diferentes y su orden importa.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "número de países participantes",
+        "rol": "dato",
+        "nota": "Representa el total de opciones disponibles.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Una forma de generalizar la relación",
+        "rol": "pide",
+        "nota": "Busca la regla que genera los valores de la tabla.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Cuenta las opciones para cada puesto sin repetir país."
+      },
+      {
+        "k": "calc",
+        "titulo": "Multiplica las opciones sucesivas y expresa el resultado.",
+        "lineas": [
+          "$n×(n-1)×(n-2)$",
+          "$n!/(n-3)!$"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Para tres países se obtienen seis órdenes; la regla coincide con la opción C."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Permutaciones de tres puestos",
+      "que": "Generaliza la cantidad de podios posibles cuando compiten $n$ países.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Como los tres puestos son distintos, hay $n(n-1)(n-2)$ podios posibles.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Cuenta grupos de tres sin ordenar las medallas. Pero los puestos de campeón, subcampeón y tercer lugar son distintos."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Propone una potencia que no corresponde a las opciones sucesivas. Pero cada puesto reduce el total disponible en uno."
+        },
+        {
+          "t": "Opción D",
+          "p": "Cuadra el último factor. Pero para el tercer puesto quedan $n-2$ opciones."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Cuenta las opciones para cada puesto sin repetir país."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Multiplica las opciones sucesivas y expresa el resultado."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Para tres países se obtienen seis órdenes; la regla coincide con la opción C."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Importa quién ocupa cada uno de los tres puestos?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Sí. Hay n opciones para el primero, n menos uno para el segundo y n menos dos para el tercero."
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "El producto es $n(n-1)(n-2)$; corresponde a C.",
+          "a": "o:C:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Cuenta las opciones en orden: n, n menos uno y n menos dos."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "Multiplica las tres cantidades: $n(n-1)(n-2)=n!/(n-3)!$."
         },
         {
+          "t": "La opción A: Cuenta grupos de tres sin ordenar las medallas. Pero los puestos de campeón, subcampeón y tercer lugar son distintos.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Propone una potencia que no corresponde a las opciones sucesivas. Pero cada puesto reduce el total disponible en uno.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Cuadra el último factor. Pero para el tercer puesto quedan $n-2$ opciones.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A ignora el orden; B usa una potencia; D altera el último factor. La respuesta es C.",
+          "a": "o:C:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Los puestos son ordenados, por lo que se multiplican las opciones sucesivas.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La cantidad es $n(n-1)(n-2)$, equivalente a $n!/(n-3)!$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Los valores de la tabla confirman la regla para n igual a tres, cuatro, cinco y seis.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:C:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y D no cuentan las tres elecciones ordenadas correctamente.",
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es C.",
+          "a": "o:C:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Los organizadores",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

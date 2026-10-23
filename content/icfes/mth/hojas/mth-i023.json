@@ -1,110 +1,146 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "hipotenusa mide el doble del cateto de menor longitud",
+        "rol": "dato",
+        "nota": "Identifica la proporción del triángulo especial.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "mide 32 centímetros",
+        "rol": "dato",
+        "nota": "Es el lado que se relaciona con √3.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "cateto menor",
+        "rol": "pide",
+        "nota": "Despeja el lado corto.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Relaciona los catetos de un triángulo especial de treinta, sesenta y noventa grados."
+      },
+      {
+        "k": "calc",
+        "titulo": "Divide el cateto mayor entre √3.",
+        "lineas": [
+          "$cateto_{mayor}=cateto_{menor}×√3$",
+          "$cateto_{menor}=32/√3$ cm"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El resultado corresponde a la opción B y es menor que treinta y dos centímetros."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Relación entre catetos en un triángulo de 30°, 60° y 90°",
+      "que": "Encuentra el cateto menor a partir del cateto mayor de un cartabón.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "El cateto mayor es √3 veces el menor; por eso el menor mide $32/√3$ cm.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Toma la mitad del cateto mayor. Pero la hipotenusa, no ese cateto, es el doble del menor."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "No conserva la razón de √3 entre los catetos. Pero el ángulo de sesenta grados determina esa relación."
+        },
+        {
+          "t": "Opción D",
+          "p": "Usa una razón incompatible con que el cateto dado sea el mayor. Pero el lado buscado debe ser más corto."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Relaciona los catetos de un triángulo especial de treinta, sesenta y noventa grados."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Divide el cateto mayor entre √3."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El resultado corresponde a la opción B y es menor que treinta y dos centímetros."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Qué razón relaciona el cateto mayor y el menor en este triángulo?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "El cateto mayor equivale al menor multiplicado por raíz de tres."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Al dividir treinta y dos entre raíz de tres se obtiene B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La figura es un triángulo de treinta, sesenta y noventa grados."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El cateto mayor es raíz de tres veces el menor; despeja el menor como $32/√3$."
         },
         {
+          "t": "La opción A: Toma la mitad del cateto mayor. Pero la hipotenusa, no ese cateto, es el doble del menor.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: No conserva la razón de √3 entre los catetos. Pero el ángulo de sesenta grados determina esa relación.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: Usa una razón incompatible con que el cateto dado sea el mayor. Pero el lado buscado debe ser más corto.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A usa la relación de la hipotenusa; C y D no respetan la razón de los catetos. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El cateto mayor mide raíz de tres veces el cateto menor.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Así, el menor es $32/√3$ centímetros.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La magnitud resulta menor que treinta y dos centímetros, como debe ocurrir.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, C y D no satisfacen la proporción del triángulo.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un cartabón",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

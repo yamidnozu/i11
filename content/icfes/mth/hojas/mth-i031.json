@@ -1,110 +1,147 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "octágono regular inscrito",
+        "rol": "dato",
+        "nota": "Sus ocho ángulos centrales son iguales.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "circunferencia de radio $2$",
+        "rol": "dato",
+        "nota": "El lado $OQ$ mide dos.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "Con la expresión",
+        "rol": "pide",
+        "nota": "Determina qué elemento geométrico representa $x$.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo.",
+        "texto": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo."
+      },
+      {
+        "k": "calc",
+        "titulo": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados.",
+        "lineas": [
+          "$x/sen(45°)=2/sen(67,5°)$",
+          "$x=2·sen(45°)/sen(67,5°)$"
+        ],
+        "nota": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "El lado opuesto a $45°$ es $PQ$; corresponde a la opción B."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Ley de senos en un triángulo inscrito",
+      "que": "Interpreta qué lado representa una expresión obtenida con la ley de senos.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "La ley de senos iguala $x/sen(45°)$ con $2/sen(67,5°)$; $x$ es el lado $PQ$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado."
+        },
+        {
+          "t": "Opción D",
+          "p": "$OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "El lado opuesto a $45°$ es $PQ$; corresponde a la opción B."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿La expresión da un ángulo o una longitud?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Compara un lado de longitud dos con senos de ángulos; despeja otro lado."
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Ese lado es $PQ$. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "En el triángulo $OPQ$, el radio $OQ$ mide dos y queda opuesto al ángulo de $67,5°$."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La ley de senos da $x=2·sen(45°)/sen(67,5°)$ para el lado opuesto a $45°$."
         },
         {
+          "t": "La opción A: La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: $OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C son ángulos; D es el radio conocido. La respuesta es B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El triángulo formado por el centro y dos vértices tiene ángulos de cuarenta y cinco y sesenta y siete coma cinco grados.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "La ley de senos relaciona el radio de dos con el lado opuesto a cuarenta y cinco grados.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "Ese lado es el segmento $PQ$.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:B:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A y C son ángulos y D es el radio conocido.",
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es B.",
+          "a": "o:B:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un octágono",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

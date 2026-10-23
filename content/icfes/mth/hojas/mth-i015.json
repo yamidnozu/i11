@@ -1,110 +1,146 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "1.250 unidades",
+        "rol": "dato",
+        "nota": "Es la venta inicial de la nueva tienda.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "compite contra 3 marcas",
+        "rol": "dato",
+        "nota": "Busca el valor asociado a tres competidores en la gráfica.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "cuántas unidades se venderán aproximadamente",
+        "rol": "pide",
+        "nota": "Estima la venta conservando la proporción observada.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Verifica la respuesta",
+        "texto": "Lee en la gráfica las ventas para cero y para tres marcas."
+      },
+      {
+        "k": "calc",
+        "titulo": "Calcula la razón entre ambas cantidades y aplícala a la nueva base.",
+        "lineas": [
+          "$200/500=0,4$",
+          "$1.250×0,4=500$ unidades"
+        ]
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "La estimación es cercana a quinientas unidades; corresponde a A."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Proporcionalidad en una gráfica de barras",
+      "que": "Usa la relación observada entre ventas sin competencia y ventas con tres competidores.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "La gráfica indica una razón de $200/500=0,4$; aplicada a $1.250$ unidades da cerca de $500$.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "No conserva la razón de cuatro décimas que se observa entre las ventas con tres competidores y las ventas iniciales. Pero esa es la proporción que se debe aplicar."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "La cantidad propuesta resulta de aplicar una proporción mayor que la de la gráfica. Pero la barra final representa cuatro décimas de la inicial."
+        },
+        {
+          "t": "Opción D",
+          "p": "La gráfica muestra una disminución marcada cuando hay tres competidores, no una reducción pequeña. Pero D queda cerca del valor inicial."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Lee en la gráfica las ventas para cero y para tres marcas."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Calcula la razón entre ambas cantidades y aplícala a la nueva base."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "La estimación es cercana a quinientas unidades; corresponde a A."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuántas unidades muestra la gráfica con cero competidores y con tres?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "La gráfica muestra quinientas y doscientas; la segunda cantidad es cuatro décimas de la primera."
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Cuatro décimas de $1.250$ son $500$. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Compara las barras de cero y tres marcas: $500$ frente a $200$."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "La relación es $0,4$. Al mantenerla para $1.250$, se obtiene $500$."
         },
         {
+          "t": "La opción B: No conserva la razón de cuatro décimas que se observa entre las ventas con tres competidores y las ventas iniciales. Pero esa es la proporción que se debe aplicar.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: La cantidad propuesta resulta de aplicar una proporción mayor que la de la gráfica. Pero la barra final representa cuatro décimas de la inicial.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción D: La gráfica muestra una disminución marcada cuando hay tres competidores, no una reducción pequeña. Pero D queda cerca del valor inicial.",
           "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "B, C y D quedan por encima del valor proporcional. La respuesta es A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "La fracción de ventas que se conserva es $200/500=0,4$.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Aplicada a la nueva tienda: $1.250×0,4=500$.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La escala análoga da cerca de quinientas unidades.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:A:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Las opciones B, C y D no aplican la proporción observada.",
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es A.",
+          "a": "o:A:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "Un estudio",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }

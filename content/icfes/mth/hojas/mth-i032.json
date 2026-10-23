@@ -1,110 +1,160 @@
 {
-  "estado": "borrador",
+  "estado": "revisada",
   "hoja": {
+    "modo": "calculo",
+    "marcas": [
+      {
+        "frag": "grupo de $100$ empleados",
+        "rol": "dato",
+        "nota": "Es el total de personas encuestadas.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "$60\\%$ del grupo son mujeres",
+        "rol": "dato",
+        "nota": "Quedan sesenta mujeres y cuarenta hombres.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "$20\\%$ de las mujeres se desplazan en bus",
+        "rol": "dato",
+        "nota": "Calcula primero el veinte por ciento de sesenta.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "$40\\%$ de los hombres se desplazan caminando",
+        "rol": "dato",
+        "nota": "Calcula el cuarenta por ciento de cuarenta.",
+        "campo": "Dato relevante"
+      },
+      {
+        "frag": "tablas representa correctamente",
+        "rol": "pide",
+        "nota": "Verifica que los cuatro conteos respeten los datos.",
+        "campo": "Lo que se pregunta"
+      }
+    ],
+    "pasos": [
+      {
+        "k": "idea",
+        "titulo": "Separa el grupo por género y luego aplica cada porcentaje a su grupo.",
+        "texto": "Separa el grupo por género y luego aplica cada porcentaje a su grupo."
+      },
+      {
+        "k": "calc",
+        "titulo": "Calcula las cantidades que determinan las filas.",
+        "lineas": [
+          "$0,20×60=12$ mujeres en bus",
+          "$0,40×40=16$ hombres caminando",
+          "Completa: $48$ mujeres a pie y $24$ hombres en bus"
+        ],
+        "nota": "Calcula las cantidades que determinan las filas."
+      },
+      {
+        "k": "check",
+        "titulo": "Verifica la respuesta",
+        "texto": "Los cuatro valores suman cien y cumplen los porcentajes; la tabla D es correcta."
+      }
+    ],
     "enfoque": {
-      "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
+      "tema": "Porcentajes condicionados y tabla de doble entrada",
+      "que": "Completa los conteos por género y medio de transporte.",
+      "pistas": [
+        "Identifica los datos y la relación matemática que pide el enunciado.",
+        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+      ],
+      "clave": "Mujeres: $12$ en bus y $48$ a pie; hombres: $24$ en bus y $16$ a pie.",
       "no": [
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-          "t": "Opción B"
+          "t": "Opción B",
+          "p": "Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado."
+        },
+        {
+          "t": "Opción C",
+          "p": "Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado."
         }
-      ],
-      "pistas": [
-        "leer el enunciado completo",
-        "contrastar los apoyos gráficos con la página"
       ],
       "plan": [
         {
-          "t": "Leer el enunciado y reconocer qué pide."
+          "t": "Separa el grupo por género y luego aplica cada porcentaje a su grupo."
         },
         {
-          "t": "Revisar datos, opciones y figuras en la página original."
+          "t": "Calcula las cantidades que determinan las filas."
         },
         {
-          "t": "Escribir una solución comprobable y justificar cada descarte."
+          "t": "Los cuatro valores suman cien y cumplen los porcentajes; la tabla D es correcta."
         }
-      ],
-      "que": "Identificar qué pide el enunciado y cotejar cada dato con la página fuente antes de justificar una respuesta.",
-      "tema": "Lectura del cuadernillo pendiente de revisión"
+      ]
     },
     "guion": {
       "1": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "¿Cuántas mujeres y cuántos hombres hay?"
         },
         {
-          "t": "Primero revisemos qué pide la pregunta."
+          "t": "Hay sesenta mujeres y cuarenta hombres. Calcula cada porcentaje dentro de su grupo."
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "Doce mujeres van en bus y dieciséis hombres caminan; completa los faltantes y elige D.",
+          "a": "o:D:ok"
         }
       ],
       "2": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "Calcula el veinte por ciento de sesenta: doce mujeres van en bus, así que cuarenta y ocho caminan."
         },
         {
-          "t": "Cotejemos los datos y las figuras con el cuadernillo."
+          "t": "El cuarenta por ciento de cuarenta es dieciséis hombres caminando; los otros veinticuatro van en bus."
         },
         {
+          "t": "La opción A: Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción B: Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
+          "t": "La opción C: Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+          "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no respetan los porcentajes o no suman cien. La respuesta es D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
         {
-          "t": "Este guion es una plantilla de revisión; todavía no explica la solución."
+          "t": "El grupo contiene sesenta mujeres y cuarenta hombres.",
+          "a": "p:0",
+          "k": "ana"
         },
         {
-          "t": "La explicación debe mostrar el procedimiento y las pistas relevantes."
+          "t": "Doce mujeres van en bus y cuarenta y ocho caminan; dieciséis hombres caminan y veinticuatro van en bus.",
+          "a": "p:1"
         },
         {
-          "t": "Revisemos la clave y confirmemos el razonamiento antes de aprobarla."
+          "t": "La tabla D conserva los totales de género y transporte.",
+          "a": "p:2",
+          "k": "contra"
         },
         {
-          "a": "o:D:ok",
-          "t": "La clave indica una respuesta; falta comprobar el razonamiento en el cuadernillo."
+          "t": "A, B y C no cumplen los datos de la encuesta.",
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La respuesta correcta es D.",
+          "a": "o:D:ok"
         }
       ]
-    },
-    "marcas": [
-      {
-        "campo": "Fragmento por revisar",
-        "frag": "En una",
-        "nota": "Fragmento automático; revisar su función.",
-        "rol": "pide"
-      }
-    ],
-    "modo": "calculo",
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa el enunciado, los datos y los apoyos gráficos en la página fuente."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma la respuesta y el procedimiento contra el cuadernillo original."
-      }
-    ]
+    }
   }
 }
