@@ -2,10 +2,10 @@
 
 ## Cierre de revisión masiva ICFES y reconstrucción limpia (2026-10-23)
 - Inglés: 149/150 hojas revisadas; los tres paquetes pasaron validar y empaquetar. `eng-i018` queda en borrador porque el pasaje no identifica el formato de *Passionate Falsehoods*. Se corrigieron marcas de `i014` y pasajes compartidos; las 150 preguntas conservan el único vínculo de competencia respaldado por el marco.
-- Cuadernillo mixto 2014: 119/121 hojas revisadas y claves cotejadas; `cfi-i101` (vehículo del aviso) y `cfi-i105` (*bike* o *motorbike*) conservan clave y motivo de revisión. Se completaron descartes de nivel 2, bloques, referencias de simulacro/unidad y marcas literales.
+- Cuadernillo mixto 2014: 119/121 hojas revisadas y claves cotejadas; `cfi-i101` (vehículo del aviso) y `cfi-i105` (*bike* o *motorbike*) conservan clave y motivo de revisión. Se completaron descartes de nivel 2, bloques, referencias de simulacro/unidad y marcas literales; se corrigieron los enunciados y opciones mezclados por la lectura en columnas de `cfi-i069` e `i070`.
 - Matemáticas 2026: auditadas las 50 preguntas y 33 rutas de imagen únicas; se asociaron tablas, figuras y opciones gráficas faltantes. Se corrigió en override la fracción aplanada de `mat-i007` y se confirmó su render; también se recortó correctamente la figura manual `cfi-i004`.
 - Total: 614/617 hojas revisadas; tres borradores justificados. TypeScript pasó, Vitest gated 811/811 y builds estándar/gated pasaron.
-- La etapa de figuras ahora reutiliza PNG manuales sin receta geométrica; `tools/pipeline/README.md` documenta preservar `imagenes/` durante reconstrucción. Se borraron `work/<doc>` y los paquetes generados de cinco documentos, se reconstruyeron sus siete etapas desde los PDF y los cinco hashes de prefijo quedaron idénticos. Matemáticas y 2014 también se reconstruyeron dos veces después de sus últimos overrides y assets, con resultados idénticos.
+- Quedan cuatro motivos `revisar` y tres borradores justificados. La etapa de figuras ahora reutiliza PNG manuales sin receta geométrica; `tools/pipeline/README.md` documenta preservar `imagenes/` durante reconstrucción. Se borraron `work/<doc>` y los paquetes generados de cinco documentos, se reconstruyeron sus siete etapas desde los PDF y los cinco hashes de prefijo quedaron idénticos. Matemáticas y 2014 también se reconstruyeron dos veces después de sus últimos overrides y assets, con resultados idénticos.
 
 ## Revisión Matemáticas 2018 — preguntas 35 a 41 (2026-10-22)
 
