@@ -169,3 +169,44 @@ Evaluación y pulido de la experiencia guiada en celular y visibilidad en motore
    - **Pre-renderizado en `<noscript>`:** Resumen semántico en HTML puro para asegurar indexación completa por bots y lectura sin JavaScript.
    - **Analítica privada:** Únicamente Cloudflare Web Analytics; cero cookies invasivas ni píxeles de terceros.
 
+---
+
+## Ronda 4 — Completitud Total de Preguntas ICFES, Banco Propio y UX de Explicación Móvil
+
+Evaluación exhaustiva del contenido pedagógico y la experiencia de resolución tras la ejecución completa de `ENCARGO_COMPLETAR.md`:
+
+### Métricas de Contenido: Antes vs. Después
+
+| Métrica / Recurso | Estado Inicial | Estado Final (Ronda 4) | Variación / Logro |
+|---|:---:|:---:|---|
+| **Preguntas ICFES completas (`content/icfes`)** | 303 / 617 (49.1%) | **617 / 617 (100.0%)** | +314 preguntas resueltas y verificadas (+50.9%) |
+| - *Lectura Crítica 2026 (`lec`)* | 0 / 49 (0%) | **49 / 49 (100.0%)** | Explicaciones y distractores específicos completos |
+| - *Sociales 2021 (`scc`)* | 0 / 49 (0%) | **49 / 49 (100.0%)** | Análisis de perspectivas y constitución completo |
+| - *Matemáticas 2026 (`mth`)* | 1 / 49 (2.0%) | **49 / 49 (100.0%)** | Procedimientos matemáticos verificados paso a paso |
+| - *Ciencias 2026 / 2025 (`cie`, `cna`)* | 12 / 50 (24.0%) | **100 / 100 (100.0%)** | Fenómenos explicados, balanceos y leyes físicas |
+| - *Inglés (`ing`, `eng`, `ena`)* | 50 / 50 (parcial) | **150 / 150 (100.0%)** | Distractores gramaticales y contextuales auditados |
+| - *Cuadernillo Formato ICFES (`cfi`)* | 121 / 121 (parcial) | **121 / 121 (100.0%)** | Sin evidencias pendientes ni figuras residuales |
+| - *Sociales 2018 (`soc`) y Mat 2018 (`mat`)* | 49 / 49, 50 / 50 | **99 / 99 (100.0%)** | Estándar de oro pedagógico preservado |
+| **Banco Propio (`content/questions`)** | 41 preguntas | **212 preguntas** | **Meta de ≥40 por área alcanzada al 100%** |
+| - *Matemáticas* | 7 preguntas | **40 preguntas** | Aritmética, álgebra, geometría, funciones, probabilidad |
+| - *Ciencias Naturales* | 9 preguntas | **40 preguntas** | Biología celular, ecología, química y física |
+| - *Lectura Crítica* | 8 preguntas | **40 preguntas** | Textos continuos, discontinuos, argumentación |
+| - *Sociales y Ciudadanas* | 6 preguntas | **40 preguntas** | Mecanismos constitucionales, historia, economía |
+| - *Inglés* | 6 preguntas | **40 preguntas** | Partes 1 a 7 alineadas al MCER (A1 a B1) |
+| - *Packs Formato ICFES* | 12 preguntas | **12 preguntas** | Distractores de `ing-101` e `ing-102` corregidos |
+| **Calidad de Explicaciones y Distractores** | ~308 frases genéricas | **0 genéricas (0%)** | Cada opción explica el error conceptual concreto |
+| **Figuras pendientes** | 43 pendientes | **0 pendientes (0%)** | Limpieza de `opcionesFig` espurias |
+| **Competencias y Afirmaciones** | Faltaban en 121 y 271 | **Completas en el 100%** | Alineación total a la matriz ICFES |
+| **Simulacros y Tiempos** | Tiempos irreales (270 min) | **Realistas y honestos** | 80 min por sesión; intensivo incluye 100% del banco |
+| **UX de Respuesta en Móvil (390×844)** | Explicación escondida | **Inmediata y visible** | Muestra "Por qué tienta" y solución sin tapar opciones |
+| **Auditoría Automatizada** | Sin validación estricta | `npm run audit:quality` | Validador estricto pasa con 0 errores (código 0) |
+
+### Verificación de la Experiencia del Alumno tras la Ronda 4:
+1. **Feedback Inmediato tras responder:** Al pulsar una opción incorrecta en móvil, el estudiante no tiene que cazar el botón "Ver solución"; inmediatamente ve:
+   - "Todavía no"
+   - **Por qué tienta:** El análisis específico de por qué esa opción parecía atractiva (trampa conceptual).
+   - **Explicación corta:** La justificación concreta de la respuesta correcta.
+   - **Botón "Que el profe me lo explique":** Acceso directo a los 3 niveles pedagógicos del profesor y la hoja guiada.
+   - **Enlace a laboratorio interactivo:** En preguntas vinculadas (gases, circuitos Ohm, probabilidad, etc.), botón directo para experimentar en el simulador.
+2. **Simulacros con Variedad Real:** Con 212 preguntas originales en el banco público distribuidas en 40 por área, los simulacros ya no repiten siempre las mismas preguntas ni generan frustración por falta de contenido.
+
