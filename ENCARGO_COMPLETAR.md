@@ -1,0 +1,22 @@
+# Encargo de Yamid (24 oct 2026): completar TODO lo que falta en explicaciones
+
+Trabaja sin pedir aprobación, ronda tras ronda, hasta terminar. Reglas de siempre: solo rama antigravity/v1, `git pull --rebase` antes de cada push, tsc + vitest + build deben pasar, commits pequeños por bloque. Cada push se publica solo en https://icfes.edevcore.com (en modo público SIN VITE_ICFES; el contenido ICFES sigue oculto, NO lo actives en la publicación). No toques pagos, secretos ni main.
+
+## Diagnóstico actual (medido con script)
+- 617 preguntas ICFES en content/icfes: solo 303 completas de verdad.
+- 176 tienen la explicación general como "Pendiente de solución verificada" (en 175 de ellas la sección "Empezar" ya trae la idea correcta: aprovéchala).
+- ~212 tienen "Pendiente" en el por qué de cada opción incorrecta y ~308 repiten la misma frase genérica en todas ("No coincide con la resolución…"); las trampas también son genéricas ("Parece posible al mirar un dato aislado").
+- Peores cuadernillos: Lectura Crítica 2026 (0/49), Sociales 2021 (0/49), Matemáticas 2026 (1/50), Ciencias 2026 y 2025 (12/50). Mejores (úsalos como modelo de calidad): Sociales 2018, Matemáticas 2018 (p.ej. pregunta 10 del banano), cuadernillo 2014, Inglés.
+- 216 preguntas están repetidas entre cuadernillos (~401 distintas): cuando una copia está buena y otra mala, reutiliza la buena.
+- 7 preguntas con texto basura del PDF dentro de una opción (p.ej. Lectura 2026 pregunta 5). 4 marcadas "por revisar" por clave dudosa: verifícalas resolviéndolas tú.
+- 43 figuras pendientes. Competencia falta en 121 y afirmación en 271.
+- Ninguna ICFES tiene ejercicio guiado ("Hazlo tú" con borrador) ni gráficas/tablas en los pasos ni enlace a laboratorio. Las propias sí: úsalas como estándar.
+- Banco propio: 39 de 41 completas; completa las 2 que faltan. Además el banco propio es muy pequeño (Sociales 6, Inglés 6, Lectura 8): escribe preguntas ORIGINALES nuevas (no copias del ICFES) hasta al menos 40 por área, con el flujo completo, para que la versión pública tenga simulacros que varíen. Ajusta textos engañosos: "Saber 11 completo (2 sesiones)" no debe prometer 9 horas si no hay preguntas suficientes; "Matemáticas intensivo" debe usar todas las de matemáticas.
+
+## Qué hacer
+1. Para CADA pregunta ICFES incompleta: resuélvela de verdad y escribe explicación general real, por qué es incorrecta CADA opción mala (concreto, qué error comete el alumno), trampas específicas, paso a paso (con tabla/gráfica cuando ayude), los 3 niveles del profe, competencia/afirmación. Prohibido texto de relleno o "Pendiente". Si no puedes verificar la clave, márcala y explícalo en el informe en vez de inventar.
+2. Limpia el texto basura, verifica las 4 dudosas, resuelve las figuras pendientes (recórtalas del PDF o recréalas en SVG).
+3. Añade ejercicio guiado y, donde aplique, enlace a laboratorio en las ICFES (empieza por las de Matemáticas y Ciencias).
+4. UX celular (afecta a TODAS las preguntas): tras responder en 390x844 hoy solo aparece "¡Bien!" / "Todavía no" y la explicación queda escondida hasta "Ver la solución". Muestra de inmediato el "por qué tienta" de la opción elegida y la explicación corta, como en escritorio, sin que tape las opciones.
+5. Agrega un test/script de calidad que falle si hay "Pendiente", frases repetidas en distractores o campos vacíos, y úsalo para medir el avance.
+6. Anota avance y cifras en docs/EVALUACION_ALUMNO.md y al final en ANTIGRAVITY_REPORT.md (cuántas completas antes/después por cuadernillo).

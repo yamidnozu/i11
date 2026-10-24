@@ -688,9 +688,14 @@ html:has(body.foco){overflow:hidden;overflow:clip}
 .mesa-h .mhint{display:none}
 .mesa-h h3{margin-bottom:.4rem}
 @media (max-width:999px){
-  /* Tras responder: arriba solo el resultado; abajo, la ayuda con todo el espacio */
-  body.foco .qcard.resp .fb>:not(.hand){display:none}
-  body.foco .qcard.resp .fb{padding:.4rem .7rem;margin:.35rem 0 0}
+  /* Tras responder: muestra el resultado, por qué tienta y explicación corta inmediatamente */
+  body.foco .qcard.resp .fb{padding:.5rem .75rem;margin:.4rem 0 0;border-left:3px solid var(--line2);background:var(--panel2);border-radius:0 var(--r) var(--r) 0}
+  body.foco .qcard.resp .fb.bad{border-left-color:var(--bad)}
+  body.foco .qcard.resp .fb.ok{border-left-color:var(--ok)}
+  body.foco .qcard.resp .fb .hand{display:block;font-size:1.1rem;margin-bottom:2px}
+  body.foco .qcard.resp .fb p{margin:3px 0 0;font-size:.88rem;line-height:1.4}
+  body.foco .qcard.resp .fb p b{color:var(--ink);font-weight:600}
+  body.foco .qcard.resp .fb .btn{display:inline-flex;margin-top:6px;min-height:32px;font-size:.8rem;padding:3px 10px}
   body.foco .qcard.resp .qleft>.btn{display:none}
   body.foco .qcard.dos.resp .qleft{max-height:none;overflow:visible}
   body.foco .qcard.dos.resp{grid-template-rows:auto minmax(0,1fr)}
