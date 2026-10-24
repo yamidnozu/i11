@@ -7317,16 +7317,16 @@
       "competenciaId": "formulacion_ejecucion",
       "correcta": 2,
       "distractores": [
-        "La tabla no proporciona la intersección específica de quienes eligieron pizza y además bebida caliente.",
-        "Para calcular la unión de pizza o bebida caliente es necesario conocer cuántos eligieron ambas opciones a la vez.",
+        "Es incorrecta porque la tabla no discrimina cuántos de los 20 compradores de bebida caliente pidieron pizza y cuántos no.",
+        "Es incorrecta porque no se conoce la intersección exacta entre pizza y bebida caliente para aplicar la fórmula de unión de dos conjuntos.",
         "",
-        "No se puede aislar cuántos eligieron únicamente bebida fría sin conocer el solapamiento específico con pizza."
+        "Es incorrecta porque no es posible saber cuántos de los 40 clientes que tomaron bebida fría prescindieron por completo de la pizza."
       ],
       "enunciado": "Carolina administra una pizzería y, registró en una tabla la información correspondiente a los pedidos realizados por los 110 clientes que entraron a la pizzería el domingo.\n Clientes que eligieron bebida caliente 20 Clientes que eligieron bebida fría 40 Clientes que eligieron pizza 100 Clientes que eligieron bebida caliente y bebida fría 0 Con la información de la tabla, ¿cuáles de los siguientes datos se pueden calcular?",
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "Bajo la lectura de que los 110 clientes eligieron pizza o alguna bebida registrada, la unión de las categorías incluye a todos. Como nadie eligió ambas bebidas, la inclusión y exclusión da $110=100+20+40-x$, así que el solapamiento entre pizza y bebidas es $x=50$. Entonces $100-50=50$ eligieron solo pizza; opción C. El enunciado no explicita que las categorías cubran a todos, por lo que se conserva el aviso de revisión.",
+      "explicacion": "Cada uno de los 110 clientes realizó un pedido (la unión de pizza, bebida caliente y bebida fría es 110). Como las bebidas caliente ($) y fría ($) son mutuamente excluyentes ( \\cap F = \\emptyset$), la suma simple de pedidos es $|P| + |C| + |F| = 100 + 20 + 40 = 160$. El exceso sobre el total de clientes (60 - 110 = 50$) corresponde exactamente al número de clientes que combinaron pizza con alguna bebida: $|P \\cap (C \\cup F)| = 50$. Aunque no es posible determinar cuántos eligieron específicamente bebida caliente o fría, la suma de ambos solapamientos es 50. En consecuencia, el número de clientes que solo eligieron pizza es unívocamente $|P| - 50 = 100 - 50 = 50$ (opción C).",
       "figuras": [
         {
           "alt": "Cantidad de clientes que eligieron cada producto o bebida.",
