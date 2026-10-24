@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "validar": "vitest run tests/packs.test.ts tests/content.test.ts tests/lab.test.ts",
+    "audit:quality": "python3 tools/auditoria_calidad.py --strict",
     "typecheck": "tsc --noEmit",
     "gen": "tsx tools/generate/claude-gen.ts",
     "queue": "tsx tools/generate/queue.ts",
