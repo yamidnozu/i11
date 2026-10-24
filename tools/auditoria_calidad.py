@@ -3,7 +3,7 @@ Mide el estado de cada cuadernillo y banco propio según ENCARGO_COMPLETAR.md (e
 - Explicaciones reales (no vacías, no genéricas, no afirmaciones recicladas, sin contradicción con la clave)
 - Distractores específicos (no 'Pendiente', no repetidos, no templated con esqueleto idéntico, no repetición de la explicación)
 - Ausencia de muletillas ('Parece razonable si se omite...', 'La opción X plantea...', 'No corresponde al fenómeno...')
-- Detección de LaTeX roto y caracteres de control (\f, \b, \r, \t mal escapados, rac sin \)
+- Detección de LaTeX roto y caracteres de control (\\f, \\b, \\r, \\t mal escapados, rac sin \\)
 - Limpieza de palabras partidas por OCR / corte de línea ('ne- gocio', 'cen- tros', etc.)
 - Flujo pedagógico completo (hoja con enfoque: que/pistas/no, pasos, audio con 3 niveles del profe)
 - Detección de sesgos en banco propio (distribución de claves A/B/C/D y sesgo de opción más larga)
@@ -269,6 +269,10 @@ def audit_banco_propio():
     total_q = 0
     total_complete = 0
 
+    hojas_dict = json.load(open('content/hojas.json', 'r', encoding='utf-8')) if os.path.exists('content/hojas.json') else {}
+    guiones_dict = json.load(open('content/guiones.json', 'r', encoding='utf-8')) if os.path.exists('content/guiones.json') else {}
+    enfoques_dict = json.load(open('content/enfoques.json', 'r', encoding='utf-8')) if os.path.exists('content/enfoques.json') else {}
+
     for apath in areas:
         aname = os.path.basename(apath).replace('.json', '')
         preguntas = json.load(open(apath, 'r', encoding='utf-8'))
@@ -282,6 +286,18 @@ def audit_banco_propio():
         longest_key_count = 0
 
         for q in preguntas:
+            qid = q.get('id', '')
+            if 'hoja' not in q and qid in hojas_dict:
+                h = dict(hojas_dict[qid])
+                h['guion'] = guiones_dict.get(qid)
+                h['enfoque'] = enfoques_dict.get(qid)
+                q['hoja'] = h
+            elif 'hoja' in q and isinstance(q['hoja'], dict):
+                if 'guion' not in q['hoja'] and qid in guiones_dict:
+                    q['hoja']['guion'] = guiones_dict[qid]
+                if 'enfoque' not in q['hoja'] and qid in enfoques_dict:
+                    q['hoja']['enfoque'] = enfoques_dict[qid]
+
             complete, issues = audit_question(q, is_banco_propio=True)
             c = q.get('correcta')
             ops = q.get('opciones', [])

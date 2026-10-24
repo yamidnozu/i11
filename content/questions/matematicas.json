@@ -64,7 +64,7 @@
     "distractores": [
       "Comparó rojas con azules (razón), no con el total.",
       "",
-      "Es la probabilidad de azul.",
+      "Calcula la probabilidad de extraer una ficha azul (5/8) en lugar de una ficha roja.",
       "Dividió entre el número de colores (2 ó 3), no entre fichas."
     ],
     "origen": "original",
@@ -89,7 +89,7 @@
       "",
       "Olvidó que el 8 aportaba a la suma.",
       "Invirtió el efecto de la media y la mediana.",
-      "Calculó mal ambas medidas."
+      "Asume falsamente que al retirar un dato extremo las medidas de tendencia central aumentan."
     ],
     "origen": "original",
     "sim": {
@@ -449,8 +449,8 @@
     "distractores": [
       "Calcula con un presupuesto menor o resta incorrectamente obteniendo 28 personas.",
       "",
-      "Divide $800.000 / 18.000 \\approx 44$ personas olvidando descontar el costo fijo del salón.",
-      "Aplica una resta aritmética incorrecta asignando 34 personas al evento."
+      "Aplica una resta aritmética incorrecta asignando 34 personas al evento.",
+      "Divide $800.000 / 18.000 \\approx 44$ personas olvidando descontar el costo fijo del salón."
     ],
     "origen": "original",
     "competencia": "Formulación y ejecución",
@@ -951,9 +951,9 @@
     "correcta": 1,
     "explicacion": "Por el principio de inclusión-exclusión para dos conjuntos, el número de estudiantes que usan al menos una de las dos herramientas es: $|V \\cup S| = |V| + |S| - |V \\cap S| = 65 + 45 - 25 = 85$. Como el total de encuestados es 100, los que no usan ninguna son: $100 - 85 = 15$ estudiantes.",
     "distractores": [
-      "Resta 25 de 35 o comete un error aritmético al calcular la unión.",
-      "",
       "Suma 65 + 45 = 110 y resta 100 dando 10, confundiendo la intersección con el complemento.",
+      "",
+      "Resta 25 de 35 o comete un error aritmético al calcular la unión.",
       "Suma los que usan solo una herramienta olvidando restar del total de 100."
     ],
     "origen": "original",
