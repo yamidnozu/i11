@@ -21,7 +21,311 @@
     ],
     "origen": "original",
     "competencia": "Gramática y vocabulario",
-    "afirmacion": "Usa estructuras gramaticales de tiempo presente en situaciones cotidianas"
+    "afirmacion": "Usa estructuras gramaticales de tiempo presente en situaciones cotidianas",
+    "hoja": {
+      "modo": "lectura",
+      "marcas": [
+        {
+          "frag": "She",
+          "rol": "clave",
+          "nota": "tercera persona del singular",
+          "campo": "Sujeto: she",
+          "w": "Who"
+        },
+        {
+          "frag": "every day",
+          "rol": "dato",
+          "nota": "rutina: presente simple",
+          "campo": "Todos los días: rutina",
+          "w": "When"
+        },
+        {
+          "frag": "___",
+          "rol": "pide",
+          "nota": "falta el verbo",
+          "campo": "Falta el verbo",
+          "w": "Falta"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Un sticker para el verbo",
+          "texto": "En inglés, cuando hablas de la rutina de una sola persona (he, she, it), al verbo se le pega una -s o -es, como un sticker. Con I, you, we y they no se pega nada."
+        },
+        {
+          "k": "glosa",
+          "titulo": "Palabra por palabra",
+          "frase": [
+            {
+              "en": "She",
+              "es": "ella",
+              "pron": "shi"
+            },
+            {
+              "en": "goes",
+              "es": "va",
+              "pron": "gous"
+            },
+            {
+              "en": "to",
+              "es": "a",
+              "pron": "tu"
+            },
+            {
+              "en": "school",
+              "es": "escuela",
+              "pron": "scúl"
+            },
+            {
+              "en": "every day",
+              "es": "todos los días",
+              "pron": "évri dei"
+            }
+          ],
+          "dice": "Ella va a la escuela todos los días.",
+          "nota": "Toca cada palabra para oírla."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Las pistas de la frase",
+          "filas": [
+            {
+              "dice": "She",
+              "escribo": "\\text{una sola persona: he / she / it}",
+              "rol": "dato"
+            },
+            {
+              "dice": "every day",
+              "escribo": "\\text{rutina: presente simple}",
+              "rol": "dato"
+            },
+            {
+              "dice": "go",
+              "escribo": "\\text{con she: goes}",
+              "rol": "clave"
+            }
+          ],
+          "nota": "En presente simple, a he, she e it se les agrega -s o -es al verbo."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Presente simple: quién lleva sticker",
+          "cols": [
+            "Sujeto",
+            "Verbo"
+          ],
+          "filas": [
+            [
+              "{{I}}, {{you}}, {{we}}, {{they}}",
+              "{{go}}"
+            ],
+            [
+              "*{{he}}, {{she}}, {{it}}",
+              "*{{goes}}  (-es)"
+            ]
+          ]
+        },
+        {
+          "k": "escucha",
+          "titulo": "Escúchalas y repítelas en voz alta",
+          "frases": [
+            {
+              "en": "She goes to school every day.",
+              "es": "Ella va a la escuela todos los días.",
+              "pron": "shi gous tu scúl évri dei"
+            },
+            {
+              "en": "He plays soccer.",
+              "es": "Él juega fútbol.",
+              "pron": "ji pleis sóquer"
+            },
+            {
+              "en": "It rains a lot.",
+              "es": "Llueve mucho.",
+              "pron": "it reins a lat"
+            }
+          ],
+          "nota": "Fíjate en cómo suena la -s del final: «gous», «pleis», «reins»."
+        },
+        {
+          "k": "check",
+          "texto": "{{She}} va con {{goes}}: es una sola persona y una rutina."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Analiza la frase",
+          "items": [
+            {
+              "p": "¿Qué tipo de acción es {{every day}}?",
+              "op": [
+                "Una rutina",
+                "Algo que pasa ahora",
+                "Algo del pasado"
+              ],
+              "ok": 0,
+              "why": "Todos los días indica hábito: presente simple."
+            },
+            {
+              "p": "¿Qué persona es {{She}}?",
+              "op": [
+                "Tercera del singular",
+                "Primera del plural",
+                "Segunda"
+              ],
+              "ok": 0,
+              "why": "She = ella."
+            },
+            {
+              "p": "¿Qué terminación lleva el verbo?",
+              "op": [
+                "-es",
+                "Ninguna",
+                "-ing"
+              ],
+              "ok": 0,
+              "why": "Con he, she, it se agrega -s o -es."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo la frase con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Dice {{She ___ to school every day}}, es decir, ella va al colegio todos los días.",
+            "a": "m:She|m:every day"
+          },
+          {
+            "t": "Primero entendamos la frase completa: {{She goes to school every day}}. Ella va a la escuela todos los días.",
+            "a": "p:1"
+          },
+          {
+            "t": "Fíjate: con {{she}}, el verbo lleva una letra extra, y {{go}} se vuelve {{goes}}.",
+            "a": "p:2|p:3"
+          },
+          {
+            "t": "Ahora escúchala: {{!She goes to school every day.}}",
+            "a": "p:4"
+          },
+          {
+            "t": "Repítela tú en voz alta, así se te queda el sonido. Va con la opción B.",
+            "a": "p:4"
+          },
+          {
+            "t": "Entonces la respuesta es {{goes}}, la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer la frase con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Mira, {{She}} es tercera persona del singular: una sola persona, ella.",
+            "a": "m:She",
+            "k": "por"
+          },
+          {
+            "t": "{{Every day}} significa todos los días. Eso nos habla de una rutina, y las rutinas se expresan en presente simple.",
+            "a": "m:every day"
+          },
+          {
+            "t": "Aquí va un truco: con {{he}}, {{she}} e {{it}}, el verbo lleva -s o -es. Con {{I}}, {{you}}, {{we}} y {{they}}, no.",
+            "a": "p:0"
+          },
+          {
+            "t": "Entendamos la frase palabra por palabra: {{she}}, ella; {{goes}}, va; {{to school}}, a la escuela; {{every day}}, todos los días.",
+            "a": "p:1"
+          },
+          {
+            "t": "Ahora busquemos las pistas: {{she}} es una sola persona, y {{every day}} marca una rutina.",
+            "a": "p:2"
+          },
+          {
+            "t": "Fíjate en la tabla: con {{I}}, {{you}}, {{we}} y {{they}} se usa {{go}}. Con {{he}}, {{she}} e {{it}} se usa {{goes}}.",
+            "a": "p:3"
+          },
+          {
+            "t": "Escucha cómo suena y luego repítela: {{!She goes to school every day.}}",
+            "a": "p:4"
+          },
+          {
+            "t": "La A, {{Go}}, tienta porque está bien para I, you, we o they, pero no sirve con {{she}}.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, {{Going}}, necesita un auxiliar, como en {{is going}}, y hablaría de algo que pasa ahora mismo.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, {{Gone}}, es el participio de {{go}} y pide {{has}} antes, como en {{has gone}}.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, {{goes}}.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como la camiseta del equipo: solo {{he}}, {{she}} e {{it}} llevan el parche de la -s.",
+            "k": "ana"
+          },
+          {
+            "t": "Mira estos ejemplos: {{He plays}}, {{she watches}}, {{it rains}}.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error: decir {{She go}}. Suena natural porque en español el verbo no cambia así, pero en inglés sí.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Inglés: presente simple (cosas que haces siempre)",
+        "que": "El presente simple se usa para rutinas y hábitos. Con {{he}}, {{she}} o {{it}}, el verbo lleva una -s o -es al final.",
+        "pistas": [
+          "{{every day}} (todos los días) habla de una rutina",
+          "el sujeto es {{She}}: una sola persona, tercera persona",
+          "falta el verbo"
+        ],
+        "clave": "Mira el sujeto primero. Si es {{he}}, {{she}} o {{it}}, el verbo en presente lleva -s o -es.",
+        "no": [
+          {
+            "t": "Presente continuo",
+            "p": "Se parece porque también es presente. Pero el continuo habla de lo que pasa ahora mismo y lleva {{is}} y -ing; aquí hay una rutina."
+          },
+          {
+            "t": "Pasado o perfecto",
+            "p": "Se parece porque es un verbo. Pero nada en la frase indica que ya pasó."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Veo el sujeto: {{She}}, una sola persona."
+          },
+          {
+            "t": "Veo que es una rutina por {{every day}}."
+          },
+          {
+            "t": "Con {{she}}, el verbo lleva -s o -es: {{go}} se vuelve {{goes}}."
+          },
+          {
+            "t": "Leo la frase completa: {{She goes to school every day}}. Suena bien."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "ing-002",
@@ -45,7 +349,335 @@
     ],
     "origen": "original",
     "competencia": "Gramática y vocabulario",
-    "afirmacion": "Usa el primer condicional para expresar posibilidades futuras"
+    "afirmacion": "Usa el primer condicional para expresar posibilidades futuras",
+    "hoja": {
+      "modo": "lectura",
+      "marcas": [
+        {
+          "frag": "If it rains tomorrow",
+          "rol": "clave",
+          "nota": "condición posible: if + presente",
+          "campo": "Condición posible en el futuro",
+          "w": "If"
+        },
+        {
+          "frag": "we",
+          "rol": "dato",
+          "nota": "sujeto del resultado",
+          "campo": "Sujeto: we",
+          "w": "Who"
+        },
+        {
+          "frag": "___",
+          "rol": "pide",
+          "nota": "falta will + verbo",
+          "campo": "Falta el resultado: will + verbo",
+          "w": "Falta"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Un plan con condición",
+          "texto": "Si llueve mañana, ¿qué haces? Es un plan posible, no algo que ya pasó. En inglés se arma en dos partes: if más presente, y el resultado con will."
+        },
+        {
+          "k": "glosa",
+          "titulo": "Palabra por palabra",
+          "frase": [
+            {
+              "en": "If",
+              "es": "si",
+              "pron": "if"
+            },
+            {
+              "en": "it rains",
+              "es": "llueve",
+              "pron": "it reins"
+            },
+            {
+              "en": "tomorrow",
+              "es": "mañana",
+              "pron": "tumórrou"
+            },
+            {
+              "en": "we",
+              "es": "nosotros",
+              "pron": "uí"
+            },
+            {
+              "en": "will stay",
+              "es": "nos quedaremos",
+              "pron": "uíl stei"
+            },
+            {
+              "en": "at home",
+              "es": "en casa",
+              "pron": "at jóum"
+            }
+          ],
+          "dice": "Si llueve mañana, nos quedaremos en casa.",
+          "nota": "Toca cada parte para oírla."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Las partes de la frase",
+          "filas": [
+            {
+              "dice": "If it rains",
+              "escribo": "\\text{condición: if + presente}",
+              "rol": "dato"
+            },
+            {
+              "dice": "tomorrow",
+              "escribo": "\\text{es futuro}",
+              "rol": "dato"
+            },
+            {
+              "dice": "we ___ at home",
+              "escribo": "\\text{resultado: will + verbo}",
+              "rol": "clave"
+            }
+          ],
+          "nota": "Es el primer condicional: algo posible en el futuro."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Primer condicional",
+          "cols": [
+            "Parte",
+            "Forma"
+          ],
+          "filas": [
+            [
+              "{{If}} …",
+              "presente simple: {{it rains}}"
+            ],
+            [
+              "*Resultado",
+              "*{{will}} + verbo: {{will stay}}"
+            ]
+          ]
+        },
+        {
+          "k": "ejemplo",
+          "titulo": "Cómo suena bien y mal",
+          "si": [
+            "{{If it rains, we will stay.}}",
+            "{{If you study, you will pass.}}"
+          ],
+          "no": [
+            "{{If it will rain, we stay.}} (después de if no va will)",
+            "{{If it rains, we stayed.}} (pasado: no es plan)"
+          ]
+        },
+        {
+          "k": "escucha",
+          "titulo": "Escúchalas y repítelas en voz alta",
+          "frases": [
+            {
+              "en": "If it rains tomorrow, we will stay at home.",
+              "es": "Si llueve mañana, nos quedamos en casa.",
+              "pron": "if it reins tumórrou, uí uíl stei at jóum"
+            },
+            {
+              "en": "If you study, you will pass.",
+              "es": "Si estudias, vas a aprobar.",
+              "pron": "if yu státi, yu uíl pas"
+            },
+            {
+              "en": "If she calls, I will answer.",
+              "es": "Si ella llama, yo contesto.",
+              "pron": "if shi cols, ai uíl ánser"
+            }
+          ],
+          "nota": "La palabra {{will}} suena «uíl»."
+        },
+        {
+          "k": "check",
+          "texto": "Condición posible en futuro: {{if}} + presente, y {{will}} + verbo. Respuesta: {{will stay}}."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Analiza la frase",
+          "items": [
+            {
+              "p": "¿Es una condición posible o imaginaria?",
+              "op": [
+                "Posible",
+                "Imaginaria"
+              ],
+              "ok": 0,
+              "why": "Mañana puede llover de verdad."
+            },
+            {
+              "p": "¿Cómo va el verbo después de if?",
+              "op": [
+                "Presente",
+                "Pasado",
+                "Will"
+              ],
+              "ok": 0,
+              "why": "{{If it rains}}."
+            },
+            {
+              "p": "¿Y en el resultado?",
+              "op": [
+                "will + verbo",
+                "would + verbo",
+                "verbo en pasado"
+              ],
+              "ok": 0,
+              "why": "{{Will stay}}."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo la frase.",
+            "a": "leer"
+          },
+          {
+            "t": "Dice {{If it rains tomorrow, we ___ at home}}, que significa: si llueve mañana, nos quedamos en casa.",
+            "a": "m:If it rains tomorrow|m:we"
+          },
+          {
+            "t": "Completa quedaría {{If it rains tomorrow, we will stay at home}}. Es decir, si llueve mañana, nos quedamos en casa.",
+            "a": "p:1"
+          },
+          {
+            "t": "Fíjate: la condición va en presente, {{it rains}}, y el resultado se arma con {{will}} más el verbo.",
+            "a": "p:2|p:3"
+          },
+          {
+            "t": "Ahora escúchala completa: {{!If it rains tomorrow, we will stay at home.}}",
+            "a": "p:5"
+          },
+          {
+            "t": "Por eso la que encaja es {{will stay}}.",
+            "a": "p:5"
+          },
+          {
+            "t": "Entonces la respuesta es {{will stay}}, la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo la frase.",
+            "a": "leer"
+          },
+          {
+            "t": "{{If it rains tomorrow}} plantea una condición posible, algo que de verdad puede pasar.",
+            "a": "m:If it rains tomorrow"
+          },
+          {
+            "t": "Fíjate que después de {{if}} el verbo va en presente, {{rains}}, aunque se hable de mañana.",
+            "a": "m:If it rains tomorrow",
+            "k": "por"
+          },
+          {
+            "t": "Entonces el espacio queda así: {{we will stay at home}}.",
+            "a": "m:___"
+          },
+          {
+            "t": "Es un plan posible: lo que haríamos si mañana llueve.",
+            "a": "p:0"
+          },
+          {
+            "t": "Vamos palabra por palabra: {{if}} es si; {{it rains}}, llueve; {{tomorrow}}, mañana; y {{will stay}}, nos quedaremos.",
+            "a": "p:1"
+          },
+          {
+            "t": "Ahora mira las partes: la condición va en presente, {{it rains}}, y {{Tomorrow}} nos dice que es futuro.",
+            "a": "p:2"
+          },
+          {
+            "t": "El resultado se arma con {{will}} más el verbo base.",
+            "a": "p:3"
+          },
+          {
+            "t": "Compara cómo suena bien y cómo suena mal: después de {{if}} no se usa {{will}}.",
+            "a": "p:4"
+          },
+          {
+            "t": "Ahora escucha y repite: {{!If it rains tomorrow, we will stay at home.}}",
+            "a": "p:5"
+          },
+          {
+            "t": "La A, {{Stayed}}, tienta, pero es pasado, y {{tomorrow}} habla del futuro.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, {{Staying}}, no tiene auxiliar, así que no forma una oración completa.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, {{Would stayed}}, está mal armada: después de {{would}} va el verbo base, {{would stay}}. Además, {{would}} sirve para cosas imaginarias.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Entonces la respuesta es la B, {{will stay}}.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como cuando dices «si llueve, no salimos al parque»: primero va la condición y luego el resultado.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo: {{If I see her, I will say hi.}} O sea, si la veo, la saludo.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: poner {{will}} también después de {{if}}. La condición se queda en presente.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Inglés: primer condicional (algo que puede pasar)",
+        "que": "Se usa para decir qué pasará si ocurre algo posible. La parte con {{if}} va en presente y el resultado lleva {{will}}.",
+        "pistas": [
+          "empieza con {{If it rains tomorrow}} (algo posible en el futuro)",
+          "el espacio está en la segunda parte: el resultado",
+          "la palabra {{tomorrow}} indica futuro"
+        ],
+        "clave": "Si la frase empieza con {{If}} más presente, la otra parte lleva {{will}}. Es como decir: si pasa esto, entonces pasará esto otro.",
+        "no": [
+          {
+            "t": "Segundo condicional",
+            "p": "Se parece porque también lleva {{if}}. Pero ese es para cosas imaginarias o improbables y usa {{would}}; aquí llover es algo real y posible."
+          },
+          {
+            "t": "Tiempos pasados",
+            "p": "Se parece porque son verbos. Pero {{tomorrow}} es futuro, no puede ir en pasado."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Veo la parte con {{if}}: {{If it rains}} está en presente. Eso es lo normal."
+          },
+          {
+            "t": "Me fijo en que el resultado necesita {{will}} más el verbo."
+          },
+          {
+            "t": "Busco la opción con {{will}}: {{will stay}}."
+          },
+          {
+            "t": "Leo completo: {{If it rains tomorrow, we will stay at home}}. Perfecto."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "ing-003",
@@ -69,7 +701,336 @@
     ],
     "origen": "original",
     "competencia": "Comprensión lectora",
-    "afirmacion": "Identifica la idea central y horarios en avisos públicos"
+    "afirmacion": "Identifica la idea central y horarios en avisos públicos",
+    "hoja": {
+      "modo": "lectura",
+      "marcas": [
+        {
+          "frag": "Monday–Friday",
+          "rol": "clave",
+          "nota": "solo lunes a viernes",
+          "campo": "Lunes a viernes",
+          "w": "When"
+        },
+        {
+          "frag": "8 a.m.–6 p.m.",
+          "rol": "dato",
+          "nota": "horario entre semana",
+          "campo": "Horario: 8–18 h",
+          "w": "Hours"
+        },
+        {
+          "frag": "Closed on holidays",
+          "rol": "dato",
+          "nota": "también cierra festivos",
+          "campo": "Festivos: cerrado",
+          "w": "Also"
+        },
+        {
+          "frag": "Sunday",
+          "rol": "pide",
+          "nota": "domingo no está en la lista",
+          "campo": "¿Domingo está en la lista?",
+          "w": "Question"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Un cartel es como un horario",
+          "texto": "Cuando lees un cartel, lo que no está escrito no cuenta como abierto. Solo vale lo que dice. No traduzcas todo: busca el día que te preguntan."
+        },
+        {
+          "k": "glosa",
+          "titulo": "El cartel, parte por parte",
+          "frase": [
+            {
+              "en": "Library",
+              "es": "biblioteca",
+              "pron": "láibrari"
+            },
+            {
+              "en": "Open",
+              "es": "abierto",
+              "pron": "óupen"
+            },
+            {
+              "en": "Monday–Friday",
+              "es": "de lunes a viernes",
+              "pron": "mándei fráidei"
+            },
+            {
+              "en": "8 a.m.–6 p.m.",
+              "es": "de 8 de la mañana a 6 de la tarde",
+              "pron": "éit ei-em tu sics pi-em"
+            }
+          ],
+          "dice": "Biblioteca. Abierto de lunes a viernes, de 8 de la mañana a 6 de la tarde."
+        },
+        {
+          "k": "glosa",
+          "titulo": "El final del cartel",
+          "frase": [
+            {
+              "en": "Closed",
+              "es": "cerrado",
+              "pron": "clóusd"
+            },
+            {
+              "en": "on",
+              "es": "en",
+              "pron": "on"
+            },
+            {
+              "en": "holidays",
+              "es": "festivos",
+              "pron": "jólideis"
+            }
+          ],
+          "dice": "Cerrado en festivos."
+        },
+        {
+          "k": "tabla",
+          "titulo": "La semana según el cartel",
+          "cols": [
+            "Día",
+            "¿Abre?"
+          ],
+          "filas": [
+            [
+              "{{Monday}}",
+              "Sí, 8 a.m.–6 p.m."
+            ],
+            [
+              "{{Tuesday}}",
+              "Sí, 8 a.m.–6 p.m."
+            ],
+            [
+              "{{Wednesday}}",
+              "Sí, 8 a.m.–6 p.m."
+            ],
+            [
+              "{{Thursday}}",
+              "Sí, 8 a.m.–6 p.m."
+            ],
+            [
+              "{{Friday}}",
+              "Sí, 8 a.m.–6 p.m."
+            ],
+            [
+              "{{Saturday}}",
+              "No aparece"
+            ],
+            [
+              "*{{Sunday}}",
+              "*No aparece: no abre"
+            ],
+            [
+              "{{Holidays}}",
+              "Cerrado"
+            ]
+          ]
+        },
+        {
+          "k": "escucha",
+          "titulo": "Escúchalas y repítelas en voz alta",
+          "frases": [
+            {
+              "en": "Can you go on Sunday?",
+              "es": "¿Puedes ir el domingo?",
+              "pron": "can yu gou on sándei"
+            },
+            {
+              "en": "No, it is not open on Sunday.",
+              "es": "No, no abre el domingo.",
+              "pron": "nou, it is not óupen on sándei"
+            }
+          ],
+          "nota": "Sunday suena «sándei», no «sunday» como se lee."
+        },
+        {
+          "k": "check",
+          "texto": "{{Sunday}} no está en el horario, así que no abre."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Lee el cartel",
+          "items": [
+            {
+              "p": "¿Qué es?",
+              "op": [
+                "Horario de una biblioteca",
+                "Un anuncio de venta",
+                "Un menú"
+              ],
+              "ok": 0,
+              "why": "{{Library}} es biblioteca y {{Open}} indica el horario."
+            },
+            {
+              "p": "¿Cuándo abre?",
+              "op": [
+                "De lunes a viernes, de 8 a 6",
+                "Todos los días",
+                "Solo en festivos"
+              ],
+              "ok": 0,
+              "why": "{{Monday–Friday}}: solo entre semana."
+            },
+            {
+              "p": "¿El domingo está en la lista?",
+              "op": [
+                "No",
+                "Sí"
+              ],
+              "ok": 0,
+              "why": "Si el día no está en el horario, está cerrado."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el aviso.",
+            "a": "leer"
+          },
+          {
+            "t": "Dice {{Open Monday–Friday, 8 a.m.–6 p.m.}}, que significa abierto de lunes a viernes, de $8$ de la mañana a $6$ de la tarde. Y {{Closed on holidays}}: cerrado en festivos.",
+            "a": "m:Monday–Friday|m:8 a.m.–6 p.m.|m:Closed on holidays"
+          },
+          {
+            "t": "La pregunta es si se puede ir el domingo, {{Sunday}}.",
+            "a": "m:Sunday"
+          },
+          {
+            "t": "Fíjate: el cartel dice {{Open Monday–Friday}}, es decir, abierto de lunes a viernes.",
+            "a": "p:1"
+          },
+          {
+            "t": "Además, {{Closed on holidays}} quiere decir que cierra en los festivos.",
+            "a": "p:2"
+          },
+          {
+            "t": "{{Sunday}} es domingo y no aparece en la lista, así que ese día no abre.",
+            "a": "p:3"
+          },
+          {
+            "t": "Escucha la respuesta: {{!No, it is not open on Sunday.}} Es la opción C.",
+            "a": "p:4"
+          },
+          {
+            "t": "El domingo no está entre lunes y viernes, por eso no abre. La respuesta es la opción C.",
+            "a": "o:C:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el aviso.",
+            "a": "leer"
+          },
+          {
+            "t": "{{Monday–Friday}} quiere decir de lunes a viernes.",
+            "a": "m:Monday–Friday"
+          },
+          {
+            "t": "El horario es {{8 a.m.–6 p.m.}}, o sea de $8$ de la mañana a $6$ de la tarde.",
+            "a": "m:8 a.m.–6 p.m."
+          },
+          {
+            "t": "{{Closed on holidays}} significa cerrado en festivos.",
+            "a": "m:Closed on holidays"
+          },
+          {
+            "t": "Y la pregunta es por el domingo, {{Sunday}}.",
+            "a": "m:Sunday"
+          },
+          {
+            "t": "Lo mejor es leer el cartel como si fuera el horario de una tienda.",
+            "a": "p:0"
+          },
+          {
+            "t": "Vamos parte por parte: {{open}}, abierto; {{Monday–Friday}}, de lunes a viernes; {{8 a.m.–6 p.m.}}, de ocho de la mañana a seis de la tarde.",
+            "a": "p:1"
+          },
+          {
+            "t": "Y al final, {{closed on holidays}}: cerrado en los festivos.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ahora miro la semana completa. Sábado y domingo no aparecen, entonces esos días no abre.",
+            "a": "p:3"
+          },
+          {
+            "t": "Escucha la pregunta y la respuesta: {{!Can you go on Sunday?}} {{!No, it is not open on Sunday.}}",
+            "a": "p:4"
+          },
+          {
+            "t": "Las opciones A y B dicen {{Yes}}, con horas del horario. Tientan porque esas horas sí son reales, pero valen solo de lunes a viernes.",
+            "a": "o:A:no|o:B:no",
+            "k": "err"
+          },
+          {
+            "t": "La D dice {{Only on holidays}}, que es justo al revés: en festivos el lugar está cerrado.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Entonces la correcta es la C: {{No, it is not open on Sunday}}.",
+            "a": "o:C:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como el menú de un restaurante: si un plato no está escrito, es porque no lo tienen.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, {{Open Mon–Sat}} significa que el domingo está cerrado.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: pensar que, si no dice {{closed}}, entonces está abierto.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Inglés: entender un aviso",
+        "que": "Es leer un aviso corto, como un letrero, y encontrar el dato que responde la pregunta.",
+        "pistas": [
+          "hay un letrero con horarios ({{Monday–Friday}}, {{8 a.m.–6 p.m.}})",
+          "dice {{Closed on holidays}} (cerrado en festivos)",
+          "la pregunta es si puedes ir un domingo"
+        ],
+        "clave": "No traduzcas todo el aviso. Busca solo lo que te preguntan (el día, la hora, el precio) y compáralo con el aviso.",
+        "no": [
+          {
+            "t": "Gramática",
+            "p": "Se parece porque está en inglés. Pero nadie te pide completar frases."
+          },
+          {
+            "t": "Vocabulario suelto",
+            "p": "Se parece porque hay palabras nuevas. Pero hay que entender todo el aviso, no una sola palabra."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Leo el aviso y subrayo los días: {{Monday–Friday}} es de lunes a viernes."
+          },
+          {
+            "t": "Me pregunto: ¿el domingo ({{Sunday}}) está dentro de lunes a viernes? No."
+          },
+          {
+            "t": "Entonces el domingo está cerrado."
+          },
+          {
+            "t": "Elijo la opción que dice {{No, it is not open on Sunday}}."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "ing-004",
@@ -93,7 +1054,304 @@
     ],
     "origen": "original",
     "competencia": "Gramática y vocabulario",
-    "afirmacion": "Selecciona el verbo adecuado al contexto comunicativo"
+    "afirmacion": "Selecciona el verbo adecuado al contexto comunicativo",
+    "hoja": {
+      "modo": "lectura",
+      "marcas": [
+        {
+          "frag": "from the library",
+          "rol": "clave",
+          "nota": "tomas algo de un lugar",
+          "campo": "Se recibe de la biblioteca",
+          "w": "Where"
+        },
+        {
+          "frag": "for two weeks",
+          "rol": "dato",
+          "nota": "tiempo limitado: hay que devolver",
+          "campo": "Por un tiempo: se devuelve",
+          "w": "How long"
+        },
+        {
+          "frag": "___",
+          "rol": "pide",
+          "nota": "verbo con sentido de recibir prestado",
+          "campo": "Falta: recibir prestado",
+          "w": "Falta"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "¿Te prestan o prestas?",
+          "texto": "Los libros son de la biblioteca. Ella te los presta por dos semanas y luego los devuelves. Tú los recibes prestados: eso es borrow. Lend es cuando tú le prestas algo a otro."
+        },
+        {
+          "k": "glosa",
+          "titulo": "Palabra por palabra",
+          "frase": [
+            {
+              "en": "You",
+              "es": "tú",
+              "pron": "yu"
+            },
+            {
+              "en": "can",
+              "es": "puedes",
+              "pron": "can"
+            },
+            {
+              "en": "borrow",
+              "es": "pedir prestado",
+              "pron": "bórrou"
+            },
+            {
+              "en": "books",
+              "es": "libros",
+              "pron": "buks"
+            },
+            {
+              "en": "from the library",
+              "es": "de la biblioteca",
+              "pron": "from de láibrari"
+            },
+            {
+              "en": "for two weeks",
+              "es": "por dos semanas",
+              "pron": "for tu uíks"
+            }
+          ],
+          "dice": "Puedes pedir prestados libros de la biblioteca por dos semanas."
+        },
+        {
+          "k": "flujo",
+          "titulo": "Quién da y quién recibe",
+          "nodos": [
+            {
+              "v": "Biblioteca",
+              "l": "dueña del libro"
+            },
+            {
+              "v": "Tú",
+              "l": "recibes el libro"
+            }
+          ],
+          "saltos": [
+            "\\text{ella lo presta (lend)  ·  tú lo pides prestado (borrow)}"
+          ]
+        },
+        {
+          "k": "tabla",
+          "titulo": "Los dos verbos",
+          "cols": [
+            "Verbo",
+            "Quién lo hace"
+          ],
+          "filas": [
+            [
+              "*{{borrow}}",
+              "*tú: recibes prestado"
+            ],
+            [
+              "{{lend}}",
+              "el otro: te presta, da"
+            ]
+          ]
+        },
+        {
+          "k": "escucha",
+          "titulo": "Escúchalas y repítelas en voz alta",
+          "frases": [
+            {
+              "en": "You can borrow books for two weeks.",
+              "es": "Puedes pedir prestados libros por dos semanas.",
+              "pron": "yu can bórrou buks for tu uíks"
+            },
+            {
+              "en": "Can I borrow your pen?",
+              "es": "¿Me prestas tu lapicero?",
+              "pron": "can ai bórrou yor pen"
+            },
+            {
+              "en": "The library lends books.",
+              "es": "La biblioteca presta libros.",
+              "pron": "de láibrari lends buks"
+            }
+          ],
+          "nota": "{{Borrow}} suena «bórrou»."
+        },
+        {
+          "k": "check",
+          "texto": "Tú recibes los libros de la biblioteca: {{borrow}}."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Analiza la frase",
+          "items": [
+            {
+              "p": "¿Quién recibe los libros?",
+              "op": [
+                "La persona (you)",
+                "La biblioteca"
+              ],
+              "ok": 0,
+              "why": "{{You can ___ books from the library.}}"
+            },
+            {
+              "p": "¿Por cuánto tiempo?",
+              "op": [
+                "Temporal, dos semanas",
+                "Para siempre"
+              ],
+              "ok": 0,
+              "why": "Se devuelven."
+            },
+            {
+              "p": "¿Qué verbo es recibir prestado?",
+              "op": [
+                "borrow",
+                "lend",
+                "sell"
+              ],
+              "ok": 0,
+              "why": "Borrow = pedir prestado."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo la frase con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Dice {{You can ___ books from the library for two weeks}}, es decir, puedes sacar libros de la biblioteca por dos semanas.",
+            "a": "m:from the library|m:for two weeks"
+          },
+          {
+            "t": "Fíjate que la frase habla de pedir prestados unos libros por dos semanas.",
+            "a": "p:1"
+          },
+          {
+            "t": "La biblioteca presta y tú recibes el libro. Esa acción de recibir prestado se dice {{borrow}}.",
+            "a": "p:2|p:3"
+          },
+          {
+            "t": "Escucha la frase completa: {{!You can borrow books for two weeks.}} Entonces nos sirve la A.",
+            "a": "p:4"
+          },
+          {
+            "t": "La respuesta es la opción A.",
+            "a": "o:A:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo la frase con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "{{From the library}} indica que tomas algo de la biblioteca. Quien recibe es el usuario, o sea tú.",
+            "a": "m:from the library",
+            "k": "por"
+          },
+          {
+            "t": "Luego {{for two weeks}} marca un tiempo limitado, porque pasadas las dos semanas hay que devolver los libros.",
+            "a": "m:for two weeks"
+          },
+          {
+            "t": "Recuerda que los libros pertenecen a la biblioteca, no a ti.",
+            "a": "p:0"
+          },
+          {
+            "t": "Vamos palabra por palabra: {{you can borrow}} es tú puedes pedir prestado; {{books}}, libros; y {{for two weeks}}, por dos semanas.",
+            "a": "p:1"
+          },
+          {
+            "t": "Fíjate en la diferencia: ella presta, {{lend}}, y tú recibes prestado, {{borrow}}.",
+            "a": "p:2"
+          },
+          {
+            "t": "Mira la tabla: {{borrow}} lo hace quien recibe el objeto.",
+            "a": "p:3"
+          },
+          {
+            "t": "Ahora escucha y repite: {{!You can borrow books for two weeks.}}",
+            "a": "p:4"
+          },
+          {
+            "t": "La B, {{lend to}}, tienta, pero {{lend}} es prestar, o sea dar, y eso lo hace la biblioteca, no tú. Además no lleva {{to}} antes del objeto.",
+            "a": "o:B:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, {{buy to}}, no existe así, y además en una biblioteca no se compra nada.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, {{sell}}, es vender, y tampoco se vende nada en una biblioteca.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la A, {{borrow}}.",
+            "a": "o:A:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como pedirle prestada la pelota al vecino para jugar fútbol: tú la pides, {{borrow}}, y el dueño te la presta, {{lend}}.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, en el colegio puedes decir: {{Can I borrow your pen?}}",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: {{buy}} y {{sell}} tienen que ver con plata, y aquí no se paga nada.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Inglés: vocabulario según el contexto",
+        "que": "Es elegir la palabra que tiene sentido en la frase, aunque otras se parezcan.",
+        "pistas": [
+          "dice {{from the library}} (de la biblioteca)",
+          "dice {{for two weeks}} (por dos semanas): es temporal",
+          "las opciones son verbos con significados distintos"
+        ],
+        "clave": "Cuando las opciones se parecen, no traduzcas palabra por palabra: pregúntate quién hace la acción y si es temporal.",
+        "no": [
+          {
+            "t": "Gramática",
+            "p": "Se parece porque es una frase para completar. Pero las opciones no cambian la forma del verbo, cambian su significado."
+          },
+          {
+            "t": "Comprar o vender",
+            "p": "Se parece porque son verbos de dar y recibir. Pero una biblioteca no vende libros: los presta."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Me pregunto quién da y quién recibe: la biblioteca da, tú recibes."
+          },
+          {
+            "t": "Veo que es por dos semanas, o sea prestado."
+          },
+          {
+            "t": "Recuerdo que {{borrow}} es recibir prestado, y {{lend}} es dar prestado."
+          },
+          {
+            "t": "Elijo {{borrow}}."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "ing-005",

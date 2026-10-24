@@ -24,7 +24,541 @@
       "id": "fis.proyectil"
     },
     "competencia": "Uso comprensivo del conocimiento científico",
-    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico"
+    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "20 m/s",
+          "rol": "dato",
+          "nota": "v₀ = 20 m/s",
+          "campo": "$v_0=20\\ \\text{m/s}$"
+        },
+        {
+          "frag": "30°",
+          "rol": "dato",
+          "nota": "θ = 30°",
+          "campo": "$\\theta=30^\\circ$"
+        },
+        {
+          "frag": "g = 10 m/s²",
+          "rol": "dato",
+          "nota": "usa 10, no 9,8",
+          "campo": "$g=10\\ \\text{m/s}^2$"
+        },
+        {
+          "frag": "sin aire",
+          "rol": "clave",
+          "nota": "sin rozamiento: vale la fórmula ideal",
+          "campo": "Sin rozamiento: $v_x$ constante",
+          "w": "Condición"
+        },
+        {
+          "frag": "alcance horizontal",
+          "rol": "pide",
+          "nota": "R = distancia en x hasta volver al suelo",
+          "campo": "$R=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en patear un balón",
+          "texto": "Cuando pateas un balón, sube, llega a lo más alto y baja. Lo lejos que cae es el alcance. Depende de dos cosas: con qué fuerza lo pateas y qué tan inclinado. Con 45° llega lo más lejos posible."
+        },
+        {
+          "k": "escena",
+          "titulo": "Mira cómo vuela el balón",
+          "ancho": 720,
+          "alto": 300,
+          "anim": {
+            "dur": 4,
+            "bucle": true
+          },
+          "vars": {
+            "v0": 20,
+            "th": 30,
+            "g": 10,
+            "Tv": "2*v0*sin(rad(th))/g",
+            "tt": "u*Tv",
+            "vx": "v0*cos(rad(th))",
+            "vy": "v0*sin(rad(th))-g*tt",
+            "bx": "vx*tt",
+            "by": "v0*sin(rad(th))*tt-0.5*g*tt*tt"
+          },
+          "marco": {
+            "izq": 50,
+            "der": 20,
+            "arriba": 30,
+            "abajo": 50,
+            "x": [
+              0,
+              38
+            ],
+            "y": [
+              0,
+              6.5
+            ]
+          },
+          "capas": [
+            {
+              "t": "suelo"
+            },
+            {
+              "t": "ejes",
+              "xl": "distancia (m)",
+              "yl": "altura (m)"
+            },
+            {
+              "t": "funcion",
+              "x": "vx*s",
+              "y": "v0*sin(rad(th))*s-0.5*g*s*s",
+              "var": "s",
+              "desde": 0,
+              "hasta": "Tv",
+              "color": "rgba(234,243,255,.4)",
+              "guion": [
+                6,
+                6
+              ],
+              "grosor": 1.5
+            },
+            {
+              "t": "linea",
+              "x0": "bx",
+              "y0": "by",
+              "x1": "bx",
+              "y1": 0,
+              "color": "rgba(234,243,255,.3)",
+              "guion": [
+                2,
+                4
+              ],
+              "grosor": 1
+            },
+            {
+              "t": "flecha",
+              "x": "bx",
+              "y": "by",
+              "dx": "vx*2.2",
+              "dy": 0,
+              "color": 2
+            },
+            {
+              "t": "flecha",
+              "x": "bx",
+              "y": "by",
+              "dx": 0,
+              "dy": "vy*2.2",
+              "color": 3
+            },
+            {
+              "t": "texto",
+              "px": true,
+              "x": "X(bx)+vx*2.2+6",
+              "y": "Y(by)+14",
+              "txt": "vx = #{vx|1} (no cambia)",
+              "fuente": "mono",
+              "tam": 11,
+              "color": 2
+            },
+            {
+              "t": "texto",
+              "px": true,
+              "x": "X(bx)+8",
+              "y": "Y(by)-vy*2.2-4",
+              "txt": "vy = #{vy|1}",
+              "fuente": "mono",
+              "tam": 11,
+              "color": 3
+            },
+            {
+              "t": "circulo",
+              "x": "bx",
+              "y": "by",
+              "r": 8,
+              "relleno": "pluma",
+              "grosor": 2
+            },
+            {
+              "t": "texto",
+              "px": true,
+              "x": "w-110",
+              "y": "arriba+8",
+              "txt": "t = #{tt|1} s",
+              "fuente": "mono",
+              "tam": 13
+            }
+          ],
+          "nota": "La flecha verde (horizontal) siempre mide lo mismo; la rosada (vertical) se achica al subir, es cero arriba y crece al bajar."
+        },
+        {
+          "k": "grafica",
+          "titulo": "Mira qué te piden",
+          "coef": [
+            -0.0166667,
+            0.57735,
+            0
+          ],
+          "x": [
+            -2,
+            38
+          ],
+          "puntos": [
+            {
+              "x": 0,
+              "y": 0,
+              "l": "sale"
+            },
+            {
+              "x": 34.64,
+              "y": 0,
+              "l": "R = ?"
+            }
+          ],
+          "nota": "El alcance es qué tan lejos cae la pelota, medido sobre el suelo desde donde se patea."
+        },
+        {
+          "k": "barras",
+          "titulo": "Cuánto avanza según la inclinación",
+          "barras": [
+            {
+              "l": "15°",
+              "e": "20 m",
+              "segs": [
+                {
+                  "v": 20,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "30° (tu caso)",
+              "e": "34,6 m",
+              "segs": [
+                {
+                  "v": 34.6,
+                  "c": "oro"
+                }
+              ]
+            },
+            {
+              "l": "45°",
+              "e": "40 m",
+              "segs": [
+                {
+                  "v": 40,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "60°",
+              "e": "34,6 m",
+              "segs": [
+                {
+                  "v": 34.6,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "75°",
+              "e": "20 m",
+              "segs": [
+                {
+                  "v": 20,
+                  "c": "azul"
+                }
+              ]
+            }
+          ],
+          "nota": "Con 45° llega más lejos. Con 30° y con 60° llega lo mismo, 34,6 m. Así que 30° tiene que dar menos de 40."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "rapidez inicial de $20\\ \\text{m/s}$",
+              "escribo": "v_0=20\\ \\text{m/s}",
+              "rol": "dato"
+            },
+            {
+              "dice": "ángulo de $30°$",
+              "escribo": "\\theta=30^\\circ",
+              "rol": "dato"
+            },
+            {
+              "dice": "$g=10\\ \\text{m/s}^2$",
+              "escribo": "g=10\\ \\text{m/s}^2",
+              "rol": "dato"
+            },
+            {
+              "dice": "su alcance horizontal",
+              "escribo": "R=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "v₀ se lee «v cero»: la rapidez con que sale la pelota. θ es la letra griega theta, el ángulo."
+        },
+        {
+          "k": "calc",
+          "titulo": "Fórmula del alcance",
+          "lineas": [
+            "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+          ],
+          "nota": "Esta fórmula ya junta todo: sube y baja con la gravedad, y avanza a rapidez constante. Solo hay que reemplazar."
+        },
+        {
+          "k": "calc",
+          "titulo": "Reemplaza",
+          "lineas": [
+            "2\\theta=2\\cdot30^\\circ=60^\\circ",
+            "\\sin 60^\\circ\\approx0{,}866",
+            "R=\\frac{20^2\\cdot0{,}866}{10}",
+            "R=\\frac{400\\cdot0{,}866}{10}=\\frac{346{,}4}{10}=34{,}6\\ \\text{m}"
+          ],
+          "nota": "Primero el ángulo doble (60°), luego el seno (con calculadora), luego 20² = 400 y al final se divide entre g."
+        },
+        {
+          "k": "check",
+          "texto": "Con 45° saldrían 40 m, el máximo. 30° queda por debajo: 34,6 m es coherente."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "20 m/s",
+              "op": [
+                "Rapidez inicial $v_0$",
+                "Aceleración",
+                "Alcance $R$"
+              ],
+              "ok": 0,
+              "why": "Es la rapidez con la que sale el balón; en la fórmula va al cuadrado."
+            },
+            {
+              "p": "30°",
+              "op": [
+                "Ángulo de lanzamiento $\\theta$",
+                "Ángulo con que llega",
+                "Altura máxima"
+              ],
+              "ok": 0,
+              "why": "El ángulo medido sobre el piso."
+            },
+            {
+              "p": "g = 10 m/s²",
+              "op": [
+                "Gravedad",
+                "Aceleración del balón en x",
+                "Rapidez final"
+              ],
+              "ok": 0,
+              "why": "Solo actúa hacia abajo: en horizontal no hay aceleración."
+            }
+          ]
+        },
+        {
+          "k": "asignar",
+          "titulo": "¿Qué piden y con qué concepto se relaciona?",
+          "items": [
+            {
+              "p": "Alcance horizontal",
+              "op": [
+                "Movimiento parabólico (tiro oblicuo)",
+                "MRUA en línea recta",
+                "Caída libre vertical"
+              ],
+              "ok": 0,
+              "why": "Sale con ángulo y vuelve al piso: describe una parábola."
+            },
+            {
+              "p": "sin aire",
+              "op": [
+                "No hay fuerza horizontal: $v_x$ constante",
+                "El balón se frena",
+                "La gravedad vale cero"
+              ],
+              "ok": 0,
+              "why": "Sin rozamiento, la fórmula ideal del alcance es válida."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula el alcance",
+          "antes": "R=\\frac{20^2\\cdot\\sin 60^\\circ}{10}\\approx",
+          "resp": 34.6,
+          "unidad": "m",
+          "tol": 0.1,
+          "pista": "$\\sin 60^\\circ\\approx0{,}866$ y $20^2=400$.",
+          "why": "$400\\cdot0{,}866\\div10=34{,}6$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Listo, vamos a leer el enunciado completo antes de hacer cualquier cosa.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate en lo que nos dan: la rapidez inicial, $20\\ \\text{m/s}$, y el ángulo de lanzamiento, $30°$.",
+            "a": "m:20 m/s|m:30°"
+          },
+          {
+            "t": "Y lo que nos preguntan es el alcance horizontal, es decir, qué tan lejos cae la pelota.",
+            "a": "m:alcance horizontal"
+          },
+          {
+            "t": "Mira las barras: con $30°$ la pelota llega menos lejos que con $45°$, que es el ángulo del máximo, $40$ m.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ahora usamos la fórmula del alcance: la rapidez al cuadrado por el seno del doble del ángulo, todo dividido entre $g$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Reemplazamos: $400\\cdot0{,}866$ entre $10$ da $34{,}6$ m.",
+            "a": "p:5"
+          },
+          {
+            "t": "Reemplazamos y nos da $34{,}6\\ \\text{m}$. Esa es la opción B, la correcta.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos paso a paso. Primero leo todo el enunciado, sin afán, para no perder ningún detalle.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate en el primer dato: la rapidez con que sale la pelota, $20\\ \\text{m/s}$. La anotamos porque es la $v_0$ de la fórmula.",
+            "a": "m:20 m/s"
+          },
+          {
+            "t": "Luego viene el ángulo, $30°$. Es importante porque el alcance depende de $\\sin 2\\theta$.",
+            "a": "m:30°"
+          },
+          {
+            "t": "También tenemos $g=10\\ \\text{m/s}^2$. Como el problema lo da así, usamos ese valor y no $9{,}8$.",
+            "a": "m:g = 10 m/s²"
+          },
+          {
+            "t": "Ojo con esto: «sin aire» significa que nada frena la pelota, y por eso podemos usar la fórmula sencilla.",
+            "a": "m:sin aire"
+          },
+          {
+            "t": "Ahora, ¿qué nos preguntan? El alcance horizontal, o sea qué tan lejos cae la pelota, no qué tan alto sube.",
+            "a": "m:alcance horizontal"
+          },
+          {
+            "t": "Imagina que pateas un balón: sube y luego baja. Lo que nos piden es qué tan lejos cae.",
+            "a": "p:0"
+          },
+          {
+            "t": "Esa distancia se mide sobre el suelo, entre el punto de salida y el punto donde cae.",
+            "a": "p:1"
+          },
+          {
+            "t": "Si cambia el ángulo, cambia el alcance. El máximo se da con $45°$ y es de $40$ m; con $30°$ tiene que salir menos.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ahora pasamos los datos a símbolos: $v_0=20$, el ángulo es $30°$ y $g=10$.",
+            "a": "p:3"
+          },
+          {
+            "t": "La fórmula del alcance es $v_0^2\\sin(2\\theta)/g$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Entonces el doble del ángulo es $60°$ y su seno es $0{,}866$. Luego $20^2=400$, y $400\\cdot0{,}866=346{,}4$. Dividido entre $10$ da $34{,}6$ m.",
+            "a": "p:5"
+          },
+          {
+            "t": "No es la A, $40\\ \\text{m}$: ese valor sale de usar $45°$, que da el alcance máximo, y aquí el ángulo es $30°$.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "Tampoco es la C, $20$: ahí se confunde el alcance con la rapidez y solo se copia el número del enunciado.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $17{,}3$, tienta, pero sale de olvidar elevar la rapidez al cuadrado y dividir entre $g$.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso nos queda la B, $34{,}6\\ \\text{m}$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como cuando le pegas al balón en la cancha del barrio: si lo pateas muy hacia arriba cae cerca, y si lo pateas muy plano también. A medio camino llega más lejos.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, $15°$ y $75°$ dan el mismo alcance, porque suman $90°$.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error típico: elegir $40$ m, el máximo, sin notar que el ángulo no es $45°$.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Física: lanzamiento en parábola",
+        "que": "Es cuando algo sale disparado hacia arriba y hacia adelante, sube, se frena y cae dibujando una curva, como un balón pateado.",
+        "pistas": [
+          "dice que el balón se patea con un ángulo de $30°$ (sale inclinado, no recto)",
+          "dan la rapidez con que sale: $20$ m/s",
+          "piden el alcance: qué tan lejos cae, en horizontal"
+        ],
+        "clave": "Si el objeto sale inclinado y piden \"qué tan lejos cae\", es lanzamiento en parábola. Ángulo + distancia horizontal = alcance.",
+        "no": [
+          {
+            "t": "Caída libre",
+            "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta y aquí piden distancia hacia adelante."
+          },
+          {
+            "t": "Movimiento a velocidad constante",
+            "p": "Se parece porque el balón avanza hacia adelante. Pero si fuera constante no habría curva: aquí la gravedad lo va frenando hacia arriba y acelerando hacia abajo."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Anoto lo que me dan: rapidez $20$ m/s, ángulo $30°$ y gravedad $10$.",
+            "eq": [
+              "v_0=20\\ \\text{m/s},\\ \\theta=30^\\circ,\\ g=10\\ \\text{m/s}^2"
+            ]
+          },
+          {
+            "t": "Busco la fórmula del alcance, que sirve justo para este tipo de lanzamiento.",
+            "eq": [
+              "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+            ]
+          },
+          {
+            "t": "Reemplazo los números y hago la cuenta con calculadora.",
+            "eq": [
+              "R=\\frac{20^2\\cdot\\sin(60^\\circ)}{10}=\\frac{400\\cdot0{,}866}{10}=34{,}6\\ \\text{m}"
+            ]
+          },
+          {
+            "t": "Reviso que la respuesta esté en metros y que tenga sentido para un balón."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-002",
@@ -51,7 +585,375 @@
       "id": "fis.mrua"
     },
     "competencia": "Uso comprensivo del conocimiento científico",
-    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico"
+    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "parte del reposo",
+          "rol": "dato",
+          "nota": "v₀ = 0",
+          "campo": "$v_0=0$"
+        },
+        {
+          "frag": "aceleración constante de 3 m/s²",
+          "rol": "dato",
+          "nota": "a = 3 m/s²: movimiento uniformemente acelerado",
+          "campo": "$a=3\\ \\text{m/s}^2$"
+        },
+        {
+          "frag": "4 s",
+          "rol": "dato",
+          "nota": "t = 4 s",
+          "campo": "$t=4\\ \\text{s}$"
+        },
+        {
+          "frag": "¿Qué distancia recorre",
+          "rol": "pide",
+          "nota": "x, no la velocidad",
+          "campo": "$x=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un carro que arranca",
+          "texto": "Un carro parte quieto y va acelerando: cada segundo va más rápido que el anterior. Por eso cada segundo recorre más metros que el anterior, y la distancia no es simplemente velocidad por tiempo."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "parte del reposo",
+              "escribo": "v_0=0",
+              "rol": "dato"
+            },
+            {
+              "dice": "aceleración constante de $3\\ \\text{m/s}^2$",
+              "escribo": "a=3\\ \\text{m/s}^2",
+              "rol": "dato"
+            },
+            {
+              "dice": "$4\\ \\text{s}$",
+              "escribo": "t=4\\ \\text{s}",
+              "rol": "dato"
+            },
+            {
+              "dice": "¿qué distancia recorre?",
+              "escribo": "x=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "«Parte del reposo» quiere decir que al inicio está quieto: velocidad inicial 0."
+        },
+        {
+          "k": "barras",
+          "titulo": "Distancia acumulada, segundo a segundo",
+          "barras": [
+            {
+              "l": "Segundo 1 (va a 3 m/s)",
+              "e": "1,5 m",
+              "segs": [
+                {
+                  "v": 1.5,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Segundo 2 (va a 6 m/s)",
+              "e": "6 m",
+              "segs": [
+                {
+                  "v": 6,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Segundo 3 (va a 9 m/s)",
+              "e": "13,5 m",
+              "segs": [
+                {
+                  "v": 13.5,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Segundo 4 (va a 12 m/s)",
+              "e": "24 m",
+              "segs": [
+                {
+                  "v": 24,
+                  "c": "oro"
+                }
+              ]
+            }
+          ],
+          "nota": "La velocidad sube 3 m/s cada segundo, y la distancia crece cada vez más rápido."
+        },
+        {
+          "k": "calc",
+          "titulo": "Fórmula (v₀ = 0)",
+          "lineas": [
+            "x=x_0+v_0t+\\frac{1}{2}at^2",
+            "x=\\frac{1}{2}at^2"
+          ],
+          "nota": "Como parte del reposo, v₀ = 0 y el término v₀·t desaparece."
+        },
+        {
+          "k": "calc",
+          "titulo": "Reemplaza",
+          "lineas": [
+            "x=\\frac{1}{2}\\cdot3\\cdot4^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}"
+          ],
+          "nota": "El tiempo va al cuadrado antes de multiplicar."
+        },
+        {
+          "k": "flujo",
+          "titulo": "Compruébalo con la velocidad media",
+          "nodos": [
+            {
+              "v": "$12\\ \\text{m/s}$",
+              "l": "velocidad al final: 3 · 4"
+            },
+            {
+              "v": "$6\\ \\text{m/s}$",
+              "l": "velocidad media: (0 + 12) ÷ 2"
+            },
+            {
+              "v": "$24\\ \\text{m}$",
+              "l": "distancia: 6 · 4"
+            }
+          ],
+          "saltos": [
+            "\\text{promedio de la inicial y la final}",
+            "\\times4\\ \\text{s}"
+          ],
+          "nota": "Si hubiera ido siempre a 6 m/s, habría recorrido lo mismo: 24 m."
+        },
+        {
+          "k": "check",
+          "texto": "Sin aceleración (MRU) serían 0 m; con 3 m/s² durante 4 s, 24 m es razonable: velocidad media 6 m/s × 4 s."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "parte del reposo",
+              "op": [
+                "$v_0=0$",
+                "$v_0=3$ m/s",
+                "$a=0$"
+              ],
+              "ok": 0,
+              "why": "Reposo significa velocidad inicial cero: desaparece un término."
+            },
+            {
+              "p": "3 m/s²",
+              "op": [
+                "Aceleración constante",
+                "Velocidad constante",
+                "Distancia"
+              ],
+              "ok": 0,
+              "why": "Cada segundo la velocidad aumenta en 3 m/s."
+            }
+          ]
+        },
+        {
+          "k": "asignar",
+          "titulo": "¿Qué concepto?",
+          "items": [
+            {
+              "p": "Aceleración constante desde el reposo en línea recta",
+              "op": [
+                "MRUA",
+                "MRU",
+                "Movimiento parabólico"
+              ],
+              "ok": 0,
+              "why": "Movimiento rectilíneo uniformemente acelerado."
+            },
+            {
+              "p": "¿Qué distancia recorre?",
+              "op": [
+                "Se usa $x=\\frac{1}{2}at^2$",
+                "Se usa $v=at$",
+                "Se usa $x=vt$"
+              ],
+              "ok": 0,
+              "why": "La distancia crece con el cuadrado del tiempo; $v=at$ da la velocidad, no la distancia."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula la distancia",
+          "antes": "x=\\frac{1}{2}\\cdot3\\cdot4^2=",
+          "resp": 24,
+          "unidad": "m",
+          "tol": 1e-09,
+          "pista": "Primero $4^2=16$.",
+          "why": "$\\frac{1}{2}\\cdot3\\cdot16=24$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el problema con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate: el carro parte del reposo y acelera $3\\ \\text{m/s}^2$ durante $4\\ \\text{s}$.",
+            "a": "m:parte del reposo|m:aceleración constante de 3 m/s²|m:4 s"
+          },
+          {
+            "t": "Entonces tenemos tres datos: parte del reposo, la aceleración es $3$ y el tiempo es $4$ segundos.",
+            "a": "p:1"
+          },
+          {
+            "t": "Mira las barras: en cada segundo el carro recorre más distancia, y al cuarto segundo ya lleva $24$ metros.",
+            "a": "p:2"
+          },
+          {
+            "t": "Como arranca del reposo, $v_0=0$, y la fórmula queda como un medio de $a$ por $t$ al cuadrado: $\\frac{1}{2}\\cdot3\\cdot16=24$ m.",
+            "a": "p:3|p:4"
+          },
+          {
+            "t": "Así que la distancia es $d=\\tfrac12\\cdot 3\\cdot 4^2=24\\ \\text{m}$, y esa es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "\"Parte del reposo\" quiere decir que la velocidad inicial es cero. Eso nos ayuda, porque en la fórmula desaparece el término $v_0 t$.",
+            "a": "m:parte del reposo"
+          },
+          {
+            "t": "Luego dice aceleración constante de $3\\ \\text{m/s}^2$. Por eso podemos usar las fórmulas del movimiento uniformemente acelerado.",
+            "a": "m:aceleración constante de 3 m/s²"
+          },
+          {
+            "t": "Ahora el tiempo: son $4\\ \\text{s}$.",
+            "a": "m:4 s"
+          },
+          {
+            "t": "Ojo con lo que piden: es la distancia, no la velocidad final. Ahí está la trampa, porque las dos se parecen.",
+            "a": "m:¿Qué distancia recorre"
+          },
+          {
+            "t": "Imagina un carro que arranca desde el reposo y va ganando velocidad poco a poco.",
+            "a": "p:0"
+          },
+          {
+            "t": "Pasemos los datos a símbolos: $v_0=0$, $a=3$ y $t=4$. Lo que buscamos es la distancia $x$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Veamos segundo a segundo: la velocidad sube $3$ cada vez, y la distancia acumulada va en $1{,}5$, $6$, $13{,}5$ y $24$ metros.",
+            "a": "p:2"
+          },
+          {
+            "t": "Toda esa regla se resume en una fórmula. Como parte del reposo, $v_0=0$ y nos queda $x=\\frac{1}{2}at^2$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Reemplazamos: $4^2=16$, multiplicado por $3$ da $48$, y la mitad de $48$ es $24$ metros.",
+            "a": "p:4"
+          },
+          {
+            "t": "Comprobemos de otra forma: la velocidad final es $12$ y la media es $6$. Seis por cuatro segundos también dan $24$ metros.",
+            "a": "p:5"
+          },
+          {
+            "t": "La A, $12$, tienta porque es $v=at$, pero eso es la velocidad final, no la distancia.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $48$, tienta porque se le olvidó el $\\tfrac12$: eso sería $at^2$ completo.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $6$, sale de hacer $a\\cdot t/2$, que mezcla las fórmulas.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, $24\\ \\text{m}$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como un bus que arranca del paradero mientras el conductor pisa el acelerador cada vez más: al principio avanza poquito, y al final se come las cuadras.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, en $2$ segundos recorre $\\frac{1}{2}\\cdot3\\cdot4=6$ m, y en $4$ segundos $24$ m. El doble de tiempo, cuatro veces la distancia.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: calcular $a\\cdot t=12$ m. Eso es la velocidad final, no la distancia.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Física: movimiento que va ganando velocidad",
+        "que": "Es cuando algo arranca y va yendo cada vez más rápido, de forma pareja, como un carro que acelera suave.",
+        "pistas": [
+          "dice que parte del reposo (arranca quieto)",
+          "dan una aceleración de $3$ m/s²: cada segundo gana $3$ m/s más de velocidad",
+          "piden la distancia recorrida en $4$ s"
+        ],
+        "clave": "Si dicen \"parte del reposo\" y te dan una aceleración que no es la gravedad, piensa en movimiento que va ganando velocidad. Pregunta: ¿cambia la velocidad? Si sí, hay aceleración.",
+        "no": [
+          {
+            "t": "Movimiento a velocidad constante",
+            "p": "Se parece porque algo se mueve y piden distancia. Pero ahí la velocidad no cambia y la cuenta es velocidad por tiempo; aquí la velocidad va aumentando."
+          },
+          {
+            "t": "Caída libre",
+            "p": "Se parece porque también hay aceleración. Pero en caída libre acelera la gravedad ($10$ m/s²) y aquí la aceleración la da el enunciado: $3$ m/s²."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Anoto los datos: arranca quieto, aceleración $3$ y tiempo $4$ s.",
+            "eq": [
+              "v_0=0,\\ a=3\\ \\text{m/s}^2,\\ t=4\\ \\text{s}"
+            ]
+          },
+          {
+            "t": "Como arranca quieto, uso la fórmula de distancia con aceleración: la mitad de la aceleración por el tiempo al cuadrado.",
+            "eq": [
+              "d=\\frac{1}{2}\\,a\\,t^2"
+            ]
+          },
+          {
+            "t": "Reemplazo: la mitad de $3$ es $1,5$; el tiempo al cuadrado es $16$; multiplico.",
+            "eq": [
+              "d=\\frac{1}{2}\\cdot3\\cdot4^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}"
+            ]
+          },
+          {
+            "t": "Miro que el resultado esté en metros."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-003",
@@ -78,7 +980,328 @@
       "id": "fis.ohm"
     },
     "competencia": "Uso comprensivo del conocimiento científico",
-    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico"
+    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "6 Ω",
+          "rol": "dato",
+          "nota": "R = 6 Ω",
+          "campo": "$R=6\\ \\Omega$"
+        },
+        {
+          "frag": "12 V",
+          "rol": "dato",
+          "nota": "V = 12 V",
+          "campo": "$V=12\\ \\text{V}$"
+        },
+        {
+          "frag": "La corriente",
+          "rol": "pide",
+          "nota": "I en amperios",
+          "campo": "$I=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en agua en una manguera",
+          "texto": "El voltaje es la presión del agua, la resistencia es qué tan angosta está la manguera y la corriente es cuánta agua sale. Más presión: sale más. Manguera más angosta: sale menos."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "resistencia de $6\\ \\Omega$",
+              "escribo": "R=6\\ \\Omega",
+              "rol": "dato"
+            },
+            {
+              "dice": "fuente de $12\\ \\text{V}$",
+              "escribo": "V=12\\ \\text{V}",
+              "rol": "dato"
+            },
+            {
+              "dice": "la corriente",
+              "escribo": "I=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "R es lo que frena, V es lo que empuja, I es lo que realmente pasa."
+        },
+        {
+          "k": "barras",
+          "titulo": "Con 12 V, ¿qué pasa si cambia la resistencia?",
+          "barras": [
+            {
+              "l": "R = 3 Ω (manguera ancha)",
+              "e": "4 A",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "R = 6 Ω (tu caso)",
+              "e": "2 A",
+              "segs": [
+                {
+                  "v": 2,
+                  "c": "oro"
+                }
+              ]
+            },
+            {
+              "l": "R = 12 Ω (manguera angosta)",
+              "e": "1 A",
+              "segs": [
+                {
+                  "v": 1,
+                  "c": "azul"
+                }
+              ]
+            }
+          ],
+          "nota": "A más resistencia, menos corriente. Por eso, para hallar la corriente, se divide entre la resistencia."
+        },
+        {
+          "k": "calc",
+          "titulo": "Despeja la corriente",
+          "lineas": [
+            "V=I\\cdot R",
+            "\\frac{V}{R}=\\frac{I\\cdot R}{R}",
+            "I=\\frac{V}{R}"
+          ],
+          "nota": "La ley de Ohm: voltaje = corriente × resistencia. Para dejar I sola divido los dos lados entre R; a la derecha la R se cancela."
+        },
+        {
+          "k": "flujo",
+          "titulo": "Reemplaza",
+          "nodos": [
+            {
+              "v": "$12\\ \\text{V}$",
+              "l": "voltaje"
+            },
+            {
+              "v": "$2\\ \\text{A}$",
+              "l": "corriente"
+            }
+          ],
+          "saltos": [
+            "\\div6\\ \\Omega\\ \\ (\\text{la resistencia})"
+          ],
+          "nota": "$I=\\frac{12\\ \\text{V}}{6\\ \\Omega}=2\\ \\text{A}$"
+        },
+        {
+          "k": "check",
+          "texto": "Unidades: V/Ω = A. Si te dio 72, multiplicaste: la corriente baja cuando la resistencia sube."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "6 Ω",
+              "op": [
+                "Resistencia $R$",
+                "Voltaje $V$",
+                "Corriente $I$"
+              ],
+              "ok": 0,
+              "why": "El ohmio (Ω) es la unidad de resistencia."
+            },
+            {
+              "p": "12 V",
+              "op": [
+                "Voltaje (diferencia de potencial)",
+                "Resistencia",
+                "Potencia"
+              ],
+              "ok": 0,
+              "why": "El voltio (V) mide el voltaje de la fuente."
+            }
+          ]
+        },
+        {
+          "k": "asignar",
+          "titulo": "¿Qué relación usa?",
+          "items": [
+            {
+              "p": "La corriente",
+              "op": [
+                "$V=I\\cdot R$ (ley de Ohm)",
+                "$P=V\\cdot I$",
+                "$V=\\frac{I}{R}$"
+              ],
+              "ok": 0,
+              "why": "Ohm relaciona voltaje, corriente y resistencia; de ahí se despeja $I$."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Despeja y calcula $I$",
+          "antes": "I=\\frac{V}{R}=\\frac{12}{6}=",
+          "resp": 2,
+          "unidad": "A",
+          "tol": 1e-09,
+          "pista": "Divide voltaje entre resistencia.",
+          "why": "$12\\div6=2$ amperios."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate: tenemos una resistencia de $6\\ \\Omega$ y una batería de $12\\ \\text{V}$.",
+            "a": "m:6 Ω|m:12 V"
+          },
+          {
+            "t": "Y lo que nos piden calcular es la corriente.",
+            "a": "m:La corriente"
+          },
+          {
+            "t": "Entonces anotamos lo que sabemos: $R=6$, $V=12$, y lo que buscamos es la corriente $I$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Mira las barras: a más resistencia, pasa menos corriente. Por eso aquí vamos a dividir.",
+            "a": "p:2"
+          },
+          {
+            "t": "La ley de Ohm despejada es $I=V/R$. Entonces $12$ entre $6$ nos da $2$ amperios.",
+            "a": "p:3|p:4"
+          },
+          {
+            "t": "Así que $I=12/6=2\\ \\text{A}$, y la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "La resistencia, de $6\\ \\Omega$, es lo que se opone al paso de la corriente.",
+            "a": "m:6 Ω"
+          },
+          {
+            "t": "El voltaje, de $12\\ \\text{V}$, es el empujón que le da la batería a la corriente.",
+            "a": "m:12 V"
+          },
+          {
+            "t": "Lo que nos piden es la corriente, y esa se mide en amperios.",
+            "a": "m:La corriente"
+          },
+          {
+            "t": "Imagínate una manguera: la presión del agua, qué tan angosta es y cuánta agua termina saliendo.",
+            "a": "p:0"
+          },
+          {
+            "t": "Ahora pasamos los datos a símbolos: $R=6$, $V=12$, y la incógnita es la corriente $I$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Con la misma batería, si la resistencia crece, la corriente baja. Eso ya nos adelanta que vamos a dividir.",
+            "a": "p:2"
+          },
+          {
+            "t": "La ley de Ohm dice $V=I\\cdot R$. Para dejar sola la $I$, dividimos ambos lados entre $R$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Reemplazamos: $12$ voltios entre $6$ ohmios nos da $2$ amperios.",
+            "a": "p:4"
+          },
+          {
+            "t": "Ojo con la A, que dice $72$: sale de multiplicar $V\\cdot R$, y aquí eso no tiene sentido físico.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, con $0{,}5$, tienta porque invierte la división y calcula $R/V$ en lugar de dividir el voltaje entre la resistencia.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, que dice $6$, solo copia el valor de la resistencia sin hacer ningún cálculo.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B, $2\\ \\text{A}$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Piensa en la fila de la puerta del colegio: más voltaje es más empujón, más resistencia es una puerta más angosta, y la corriente son los estudiantes que logran pasar.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, con $12$ V y $12\\ \\Omega$ pasa solo $1$ A, la mitad de lo que pasaba antes.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: multiplicar $12\\cdot6=72$. Si la resistencia sube, la corriente baja, no crece.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Física: electricidad, ley de Ohm",
+        "que": "Es la regla que une tres cosas: el voltaje (la fuerza que empuja), la resistencia (lo que frena) y la corriente (lo que realmente pasa).",
+        "pistas": [
+          "dan una resistencia de $6$ Ω y un voltaje de $12$ V",
+          "piden la corriente (cuánta electricidad pasa)",
+          "hay una sola resistencia, sin más aparatos"
+        ],
+        "clave": "Voltios + ohmios + \"piden la corriente\" = Ohm. Mira la unidad que piden: amperios es corriente, vatios es potencia.",
+        "no": [
+          {
+            "t": "Potencia eléctrica",
+            "p": "Se parece porque también se usan voltios. Pero la potencia se mide en vatios (W) y aquí piden la corriente, que se mide en amperios (A)."
+          },
+          {
+            "t": "Circuitos con varias resistencias",
+            "p": "Se parece porque es un circuito. Pero ahí hay que combinar resistencias primero; aquí hay una sola, así que no hay nada que combinar."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Escribo la regla de Ohm: voltaje igual a corriente por resistencia.",
+            "eq": [
+              "V=I\\cdot R"
+            ]
+          },
+          {
+            "t": "Como piden la corriente, la dejo sola: corriente es voltaje dividido entre resistencia.",
+            "eq": [
+              "I=\\frac{V}{R}"
+            ]
+          },
+          {
+            "t": "Reemplazo: $12$ voltios dividido entre $6$ ohmios.",
+            "eq": [
+              "I=\\frac{12\\ \\text{V}}{6\\ \\Omega}=2\\ \\text{A}"
+            ]
+          },
+          {
+            "t": "Pongo la unidad: amperios (A)."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-004",
@@ -105,7 +1328,283 @@
       "id": "qui.balanceo"
     },
     "competencia": "Explicación de fenómenos",
-    "afirmacion": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones y conceptos científicos"
+    "afirmacion": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones y conceptos científicos",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "C₃H₈ + O₂ → CO₂ + H₂O",
+          "rol": "dato",
+          "nota": "los átomos de cada elemento deben quedar iguales a ambos lados",
+          "campo": "Reacción sin balancear",
+          "w": "Reacción"
+        },
+        {
+          "frag": "coeficiente del O₂",
+          "rol": "pide",
+          "nota": "cuántas moléculas de O₂, no átomos",
+          "campo": "Coeficiente de $\\text{O}_2=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Balancear es como una receta",
+          "texto": "Una reacción reordena los átomos: los que entran son los mismos que salen, solo cambian de pareja. Balancear es ajustar cuántas moléculas hay de cada una para que no sobre ni falte ningún átomo."
+        },
+        {
+          "k": "idea",
+          "titulo": "Estrategia",
+          "texto": "Se balancea en orden: primero C, luego H y por último O (el oxígeno aparece en dos productos)."
+        },
+        {
+          "k": "calc",
+          "titulo": "Carbono",
+          "lineas": [
+            "\\text{C: }3\\ \\text{en C}_3\\text{H}_8\\ \\Rightarrow\\ 3\\,\\text{CO}_2"
+          ],
+          "nota": ""
+        },
+        {
+          "k": "calc",
+          "titulo": "Hidrógeno",
+          "lineas": [
+            "\\text{H: }8\\ \\text{en C}_3\\text{H}_8\\ \\Rightarrow\\ 4\\,\\text{H}_2\\text{O}"
+          ],
+          "nota": ""
+        },
+        {
+          "k": "calc",
+          "titulo": "Oxígeno",
+          "lineas": [
+            "3\\ \\text{CO}_2\\to3\\cdot2=6\\ \\text{O}",
+            "4\\ \\text{H}_2\\text{O}\\to4\\cdot1=4\\ \\text{O}",
+            "6+4=10\\ \\text{átomos de O}",
+            "\\text{cada O}_2\\ \\text{trae 2: }10\\div2=5"
+          ],
+          "nota": "El número de adelante multiplica cada átomo de la molécula. Cuento todos los O que hay en los productos, y reparto de a 2 en cada O₂."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Conteo final",
+          "cols": [
+            "Elemento",
+            "Reactivos",
+            "Productos"
+          ],
+          "filas": [
+            [
+              "C",
+              "3",
+              "3"
+            ],
+            [
+              "H",
+              "8",
+              "8"
+            ],
+            [
+              "O",
+              "5·2 = 10",
+              "3·2 + 4 = 10"
+            ]
+          ]
+        },
+        {
+          "k": "check",
+          "texto": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Átomos iguales a ambos lados: está balanceada."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Piensa antes de balancear",
+          "items": [
+            {
+              "p": "¿Qué se conserva en una reacción?",
+              "op": [
+                "Los átomos de cada elemento",
+                "El número de moléculas",
+                "Los coeficientes"
+              ],
+              "ok": 0,
+              "why": "Por eso los átomos deben ser iguales a ambos lados."
+            },
+            {
+              "p": "¿Con qué elemento empiezas?",
+              "op": [
+                "El carbono",
+                "El oxígeno",
+                "Cualquiera, al azar"
+              ],
+              "ok": 0,
+              "why": "C y H están en una sola sustancia por lado. El oxígeno va al final porque aparece en dos productos."
+            },
+            {
+              "p": "¿Qué piden?",
+              "op": [
+                "Cuántas moléculas de O₂ (coeficiente)",
+                "Cuántos átomos de O",
+                "Cuántos productos hay"
+              ],
+              "ok": 0,
+              "why": "El coeficiente multiplica toda la molécula."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Cuenta los átomos de oxígeno",
+          "antes": "\\text{O en productos: }3\\cdot2+4\\cdot1=",
+          "resp": 10,
+          "unidad": "átomos",
+          "tol": 1e-09,
+          "pista": "3 CO₂ tienen 2 O cada uno; 4 H₂O tienen 1 O cada una.",
+          "why": "Y cada O₂ trae 2 átomos: $10\\div2=5$ moléculas."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo la reacción con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate: es la combustión del propano, $\\text{C}_3\\text{H}_8+\\text{O}_2\\to\\text{CO}_2+\\text{H}_2\\text{O}$.",
+            "a": "m:C₃H₈ + O₂ → CO₂ + H₂O"
+          },
+          {
+            "t": "Primero el carbono: el propano trae $3$, así que necesitamos $3$ $\\text{CO}_2$. Luego el hidrógeno: son $8$, entonces salen $4$ $\\text{H}_2\\text{O}$.",
+            "a": "p:2|p:3"
+          },
+          {
+            "t": "Ahora el oxígeno: del lado derecho hay $6+4=10$ átomos, y como cada $\\text{O}_2$ trae dos, necesitamos $5$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Revisemos en la tabla que todo coincida: de ambos lados quedan las mismas cantidades.",
+            "a": "p:5"
+          },
+          {
+            "t": "Por eso, los oxígenos de la derecha suman $6+4=10$, o sea $5\\ \\text{O}_2$. Es la opción C.",
+            "a": "o:C:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer la reacción con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Ojo con lo que preguntan: el coeficiente del $\\text{O}_2$, no el de otro compuesto.",
+            "a": "m:coeficiente del O₂"
+          },
+          {
+            "t": "Piensa en la reacción como una receta: los átomos que entran tienen que ser los mismos que salen.",
+            "a": "p:0"
+          },
+          {
+            "t": "Entonces vamos en orden: carbono, hidrógeno y al final el oxígeno, porque ese aparece en los dos productos.",
+            "a": "p:1"
+          },
+          {
+            "t": "Empezamos por el carbono: el propano tiene $3$ átomos de C, así que necesitamos $3$ $\\text{CO}_2$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ahora el hidrógeno: son $8$ átomos, y como cada agua usa $2$, hacen falta $4$ $\\text{H}_2\\text{O}$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Por último el oxígeno: $3\\cdot2=6$ más $4\\cdot1=4$ da $10$ átomos. Cada $\\text{O}_2$ aporta $2$, entonces necesitamos $5$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Para verificar, contamos a cada lado: C $3$ y $3$, H $8$ y $8$, O $10$ y $10$. Todo cuadra.",
+            "a": "p:5"
+          },
+          {
+            "t": "La A, $3$, tienta porque es el coeficiente del $\\text{CO}_2$, pero esa es otra sustancia.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La B, $4$, es el número del agua, no el del oxígeno.",
+            "a": "o:B:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $10$, cuenta átomos de oxígeno, pero la pregunta es por moléculas de $\\text{O}_2$.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Entonces la respuesta es la C, $5$.",
+            "a": "o:C:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como preparar arepas con queso: si cada arepa lleva $2$ tajadas y quieres $5$ arepas, necesitas $10$ tajadas.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo sencillo: $\\text{H}_2+\\text{O}_2\\to\\text{H}_2\\text{O}$ queda $2\\text{H}_2+\\text{O}_2\\to2\\text{H}_2\\text{O}$.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error: cambiar los números pequeños de abajo, como el $2$ de $\\text{O}_2$. Eso no se toca; solo se cambian los coeficientes de adelante.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Química: balancear una reacción",
+        "que": "Es lograr que en una reacción química haya los mismos átomos antes y después de la flecha, porque los átomos no se crean ni se destruyen.",
+        "pistas": [
+          "te dan una reacción escrita con fórmulas ($C_3H_8 + O_2 \\to CO_2 + H_2O$)",
+          "piden un coeficiente, el número que va delante de una fórmula",
+          "no dan gramos ni cantidades"
+        ],
+        "clave": "Si solo te dan la ecuación con flecha y no hay gramos ni moles, el trabajo es igualar átomos de un lado y del otro.",
+        "no": [
+          {
+            "t": "Cálculos con moles y gramos",
+            "p": "Se parece porque es química con números. Pero ahí te dan cantidades; aquí solo te dan la ecuación y piden equilibrarla."
+          },
+          {
+            "t": "Nombrar compuestos",
+            "p": "Se parece porque aparecen fórmulas. Pero nadie pregunta cómo se llama cada compuesto."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Cuento cuántos átomos de carbono (C) hay a la izquierda: $3$. Entonces el $CO_2$ lleva un $3$ delante.",
+            "eq": [
+              "\\text{C: }3\\ \\Rightarrow\\ 3\\,\\text{CO}_2"
+            ]
+          },
+          {
+            "t": "Cuento los hidrógenos (H): hay $8$. Entonces el agua ($H_2O$) lleva un $4$ delante.",
+            "eq": [
+              "\\text{H: }8\\ \\Rightarrow\\ 4\\,\\text{H}_2\\text{O}"
+            ]
+          },
+          {
+            "t": "Ahora cuento todo el oxígeno que quedó a la derecha: $6$ de los $CO_2$ y $4$ del agua, o sea $10$ átomos.",
+            "eq": [
+              "\\text{O: }3\\cdot2+4\\cdot1=6+4=10"
+            ]
+          },
+          {
+            "t": "Cada $O_2$ tiene $2$ átomos, así que $10$ entre $2$ da $5$ delante del $O_2$.",
+            "eq": [
+              "\\text{O}_2\\text{: }\\frac{10}{2}=5"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-005",
@@ -132,7 +1631,281 @@
       "id": "bio.punnett"
     },
     "competencia": "Explicación de fenómenos",
-    "afirmacion": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones y conceptos científicos"
+    "afirmacion": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones y conceptos científicos",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "Aa",
+          "rol": "dato",
+          "nota": "cada planta da gametos A o a, mitad y mitad",
+          "campo": "Padres $Aa$"
+        },
+        {
+          "frag": "Dos plantas heterocigotas",
+          "rol": "clave",
+          "nota": "ambas Aa",
+          "campo": "Cruce $Aa\\times Aa$"
+        },
+        {
+          "frag": "recesivo (aa)",
+          "rol": "pide",
+          "nota": "solo aa, no Aa",
+          "campo": "$P(aa)=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en dos monedas",
+          "texto": "Cada planta Aa tiene dos letras, y al formar una semilla entrega solo una, al azar, como lanzar una moneda. Dos plantas son dos monedas: hay cuatro combinaciones posibles, todas igual de probables."
+        },
+        {
+          "k": "puntos",
+          "titulo": "Qué da cada padre",
+          "grupos": [
+            {
+              "n": 1,
+              "l": "A (dominante)",
+              "c": "azul"
+            },
+            {
+              "n": 1,
+              "l": "a (recesivo)",
+              "c": "rojo"
+            }
+          ],
+          "lineas": [
+            "P(A)=\\frac{1}{2}",
+            "P(a)=\\frac{1}{2}"
+          ],
+          "nota": "Una planta Aa tiene dos letras. Al formar una semilla da una de las dos, al azar."
+        },
+        {
+          "k": "idea",
+          "titulo": "Cuadro de Punnett",
+          "texto": "Cada padre aporta un alelo con probabilidad 1/2. Arma el cuadro: padre en las columnas, madre en las filas."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Cuadro",
+          "cols": [
+            "",
+            "A",
+            "a"
+          ],
+          "filas": [
+            [
+              "A",
+              "AA",
+              "Aa"
+            ],
+            [
+              "a",
+              "Aa",
+              "*aa"
+            ]
+          ]
+        },
+        {
+          "k": "calc",
+          "titulo": "Cuenta",
+          "lineas": [
+            "P(aa)=\\frac{\\text{casillas aa}}{\\text{todas las casillas}}=\\frac{1}{4}"
+          ],
+          "nota": "Aa se ve igual que AA (dominante): no cuenta como recesivo."
+        },
+        {
+          "k": "check",
+          "texto": "Genotipos 1 : 2 : 1 y fenotipos 3 : 1. 1/4 es el recesivo."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Ubica los conceptos",
+          "items": [
+            {
+              "p": "Aa",
+              "op": [
+                "Heterocigoto",
+                "Homocigoto dominante",
+                "Homocigoto recesivo"
+              ],
+              "ok": 0,
+              "why": "Tiene un alelo dominante y uno recesivo."
+            },
+            {
+              "p": "¿Qué gametos produce cada planta Aa?",
+              "op": [
+                "A o a, mitad y mitad",
+                "Solo A",
+                "Solo a"
+              ],
+              "ok": 0,
+              "why": "Cada gameto lleva un alelo; la probabilidad es 1/2 para cada uno."
+            },
+            {
+              "p": "fenotipo recesivo (aa)",
+              "op": [
+                "Se expresa solo con dos alelos a",
+                "Se expresa con un alelo a",
+                "Nunca se expresa"
+              ],
+              "ok": 0,
+              "why": "Con una A, el dominante tapa al recesivo."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Cuenta en el cuadro de Punnett",
+          "antes": "\\text{casillas totales}=",
+          "resp": 4,
+          "unidad": "",
+          "tol": 1e-09,
+          "pista": "2 gametos de un padre por 2 de la otra.",
+          "why": "Solo 1 casilla es aa: probabilidad $\\frac{1}{4}$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Cruzamos dos plantas $Aa$, y nos piden la probabilidad de que el hijo sea recesivo, es decir, $aa$.",
+            "a": "m:Aa|m:Dos plantas heterocigotas|m:recesivo (aa)"
+          },
+          {
+            "t": "Fíjate que cada padre entrega $A$ o $a$, con la misma probabilidad.",
+            "a": "p:1"
+          },
+          {
+            "t": "Entonces cruzamos las dos monedas en un cuadro, y salen $4$ casillas posibles.",
+            "a": "p:3"
+          },
+          {
+            "t": "De esas casillas, solo una es $aa$, así que la probabilidad es $1/4$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Por eso, una de cuatro es $aa$: $\\tfrac14$. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Heterocigota quiere decir que lleva dos letras distintas: una mayúscula, que manda, y una minúscula, que se esconde. Por eso se escribe $Aa$.",
+            "a": "m:Dos plantas heterocigotas"
+          },
+          {
+            "t": "Nos piden el recesivo $aa$, que solo aparece cuando el hijo recibe la $a$ de ambos padres.",
+            "a": "m:recesivo (aa)"
+          },
+          {
+            "t": "Ahora mira que cada planta tiene dos letras: $A$ y $a$.",
+            "a": "p:0"
+          },
+          {
+            "t": "Al formar una semilla, la planta aporta una de las dos, y cada una tiene probabilidad $1/2$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Armamos entonces un cuadro con las letras del padre en las columnas y las de la madre en las filas.",
+            "a": "p:2"
+          },
+          {
+            "t": "Salen $AA$, $Aa$, $Aa$ y $aa$: cuatro casillas con la misma probabilidad.",
+            "a": "p:3"
+          },
+          {
+            "t": "De ellas, solo una es $aa$, el recesivo. Es decir, $1$ de $4$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Ojo con esto: $Aa$ se ve igual que $AA$ porque $A$ domina, así que no cuenta como recesivo.",
+            "a": "p:4",
+            "k": "por"
+          },
+          {
+            "t": "La A, $\\tfrac12$, tienta porque sale de cruzar $Aa\\times aa$, pero aquí cruzamos dos heterocigotas.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $\\tfrac34$, es la probabilidad de que el hijo muestre la característica que manda, la dominante, y no el recesivo.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $0$, olvida que el recesivo \"escondido\" sí aparece cuando llegan las dos letras minúsculas.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Entonces la respuesta es la B, $\\tfrac14$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Piénsalo como lanzar dos monedas: sacar dos caras tiene probabilidad $1/4$, igual que recibir la letra recesiva de los dos padres.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, si siembras $100$ semillas, se esperan unas $25$ recesivas y unas $75$ con la característica dominante.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: elegir $1/2$ porque hay dos letras. Eso sería acertar una sola letra, y aquí necesitas las dos.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Biología: herencia de padres a hijos (genética)",
+        "que": "Es calcular qué probabilidad hay de que los hijos hereden cierta característica, usando las letras que representan los genes de cada papá.",
+        "pistas": [
+          "aparecen letras como $Aa$: son los genes de cada planta",
+          "piden la probabilidad de que un hijo sea $aa$",
+          "se cruzan solo dos plantas, un solo cruce"
+        ],
+        "clave": "Letras como $Aa$ y \"probabilidad de los hijos\" siempre se resuelven con la cuadrícula de $2$ por $2$.",
+        "no": [
+          {
+            "t": "División de las células",
+            "p": "Se parece porque también es biología de genes. Pero aquí nadie pregunta cómo se divide la célula, sino qué se hereda."
+          },
+          {
+            "t": "Evolución",
+            "p": "Se parece porque habla de descendientes. Pero la evolución trata de poblaciones durante muchas generaciones; aquí es un solo cruce."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Escribo los genes de cada planta: una es $Aa$ y la otra también."
+          },
+          {
+            "t": "Dibujo una cuadrícula de $2$ por $2$ (cuadro de Punnett): arriba los genes de una, al lado los de la otra."
+          },
+          {
+            "t": "Lleno cada casilla combinando una letra de arriba con una de al lado: salen $AA$, $Aa$, $Aa$ y $aa$."
+          },
+          {
+            "t": "Cuento: de $4$ casillas, solo $1$ es $aa$. La probabilidad es $1$ de $4$.",
+            "eq": [
+              "P(aa)=\\frac{1}{4}"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-006",
@@ -159,7 +1932,349 @@
       "id": "fis.lentes"
     },
     "competencia": "Modelación de fenómenos",
-    "afirmacion": "Modelar fenómenos de la naturaleza con base en el análisis de variables y relaciones científicas"
+    "afirmacion": "Modelar fenómenos de la naturaleza con base en el análisis de variables y relaciones científicas",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "lente convergente",
+          "rol": "dato",
+          "nota": "f positiva",
+          "campo": "Convergente: $f>0$"
+        },
+        {
+          "frag": "f = 10 cm",
+          "rol": "dato",
+          "nota": "f = +10 cm",
+          "campo": "$f=+10\\ \\text{cm}$"
+        },
+        {
+          "frag": "15 cm",
+          "rol": "dato",
+          "nota": "dₒ = 15 cm: está entre f y 2f",
+          "campo": "$d_o=15\\ \\text{cm}$"
+        },
+        {
+          "frag": "La imagen es",
+          "rol": "pide",
+          "nota": "tipo (real/virtual, derecha/invertida) y posición",
+          "campo": "$d_i=\\ ?$ y tipo de imagen"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en una lupa",
+          "texto": "Una lente convergente junta los rayos de luz, como una lupa. El foco es el punto donde se juntan los rayos que vienen paralelos. Según qué tan lejos pongas el objeto del foco, la imagen se forma en un lugar distinto."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "lente convergente de $f=10\\ \\text{cm}$",
+              "escribo": "f=10\\ \\text{cm}",
+              "rol": "dato"
+            },
+            {
+              "dice": "objeto a $15\\ \\text{cm}$",
+              "escribo": "d_o=15\\ \\text{cm}",
+              "rol": "dato"
+            },
+            {
+              "dice": "¿cómo es la imagen?",
+              "escribo": "d_i=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "f es el foco, dₒ la distancia al objeto y dᵢ la distancia a la imagen."
+        },
+        {
+          "k": "idea",
+          "titulo": "Predice primero",
+          "texto": "Objeto entre f y 2f en una lente convergente: la imagen será real, invertida y más lejos que 2f. Esa predicción ordena las opciones antes de calcular."
+        },
+        {
+          "k": "barras",
+          "titulo": "Dónde queda cada cosa (en cm)",
+          "barras": [
+            {
+              "l": "Foco f",
+              "e": "10",
+              "segs": [
+                {
+                  "v": 10,
+                  "c": "gris"
+                }
+              ]
+            },
+            {
+              "l": "Objeto dₒ",
+              "e": "15",
+              "segs": [
+                {
+                  "v": 15,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Doble del foco, 2f",
+              "e": "20",
+              "segs": [
+                {
+                  "v": 20,
+                  "c": "gris"
+                }
+              ]
+            },
+            {
+              "l": "Imagen dᵢ (la que vamos a calcular)",
+              "e": "30",
+              "segs": [
+                {
+                  "v": 30,
+                  "c": "oro"
+                }
+              ]
+            }
+          ],
+          "nota": "El objeto está entre f y 2f, así que la imagen queda del otro lado, más lejos que 2f."
+        },
+        {
+          "k": "calc",
+          "titulo": "Ecuación de lentes",
+          "lineas": [
+            "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}"
+          ],
+          "nota": ""
+        },
+        {
+          "k": "calc",
+          "titulo": "Despeja dᵢ",
+          "lineas": [
+            "\\frac{1}{d_i}=\\frac{1}{f}-\\frac{1}{d_o}",
+            "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}",
+            "\\frac{1}{d_i}=\\frac{3}{30}-\\frac{2}{30}=\\frac{1}{30}",
+            "d_i=30\\ \\text{cm}"
+          ],
+          "nota": "Para restar fracciones busco un denominador común: 30 (10 y 15 caben en 30). Al final doy vuelta: si 1/dᵢ = 1/30, entonces dᵢ = 30."
+        },
+        {
+          "k": "calc",
+          "titulo": "Aumento",
+          "lineas": [
+            "M=-\\frac{d_i}{d_o}=-\\frac{30}{15}=-2"
+          ],
+          "nota": "M negativo: invertida. |M| = 2: del doble de tamaño."
+        },
+        {
+          "k": "check",
+          "texto": "dᵢ > 0 es real, M < 0 es invertida: real e invertida a 30 cm."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Ubica los datos",
+          "items": [
+            {
+              "p": "f = 10 cm",
+              "op": [
+                "Distancia focal",
+                "Distancia del objeto",
+                "Distancia de la imagen"
+              ],
+              "ok": 0,
+              "why": "Positiva porque la lente es convergente."
+            },
+            {
+              "p": "15 cm",
+              "op": [
+                "Distancia del objeto $d_o$",
+                "Distancia focal",
+                "Altura de la imagen"
+              ],
+              "ok": 0,
+              "why": "Es lo que hay entre el objeto y la lente."
+            },
+            {
+              "p": "¿Dónde está el objeto respecto a la lente?",
+              "op": [
+                "Entre f y 2f",
+                "Antes de f",
+                "Después de 2f"
+              ],
+              "ok": 0,
+              "why": "$10<15<20$: la imagen será real, invertida y más lejos que 2f."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Resuelve para $d_i$",
+          "antes": "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}\\ \\Rightarrow\\ d_i=",
+          "resp": 30,
+          "unidad": "cm",
+          "tol": 0.1,
+          "pista": "Denominador común 30: $\\frac{3}{30}-\\frac{2}{30}$.",
+          "why": "$\\frac{1}{d_i}=\\frac{1}{30}$, entonces $d_i=30$ cm."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Tenemos una lente convergente con $f=10\\ \\text{cm}$, y el objeto está a $15\\ \\text{cm}$.",
+            "a": "m:lente convergente|m:f = 10 cm|m:15 cm"
+          },
+          {
+            "t": "Los datos son el foco, $10$, y el objeto a $15$ cm. Eso deja al objeto entre $f$ y $2f$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Con eso hacemos una predicción: la imagen será real, invertida y lejos. Mira las barras.",
+            "a": "p:3"
+          },
+          {
+            "t": "Usamos la ecuación de lentes y restamos fracciones: $1/10-1/15=1/30$, o sea que $d_i=30$ cm.",
+            "a": "p:5|p:6"
+          },
+          {
+            "t": "Como el resultado es positivo, la imagen es real, y como el aumento es negativo, está invertida. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Una lente convergente junta los rayos de luz, y por eso su foco es positivo.",
+            "a": "m:lente convergente"
+          },
+          {
+            "t": "La distancia focal es de $10\\ \\text{cm}$.",
+            "a": "m:f = 10 cm"
+          },
+          {
+            "t": "El objeto está a $15\\ \\text{cm}$, o sea más lejos que el foco. Por eso ya sabemos que la imagen será real e invertida.",
+            "a": "m:15 cm",
+            "k": "por"
+          },
+          {
+            "t": "Y nos preguntan cómo es la imagen: de qué tipo es, cómo está orientada y a qué distancia queda.",
+            "a": "m:La imagen es"
+          },
+          {
+            "t": "Piensa en una lupa: una lente convergente funciona de forma parecida.",
+            "a": "p:0"
+          },
+          {
+            "t": "Ahora pasamos los datos a símbolos: $f=10$ cm y $d_o=15$ cm.",
+            "a": "p:1"
+          },
+          {
+            "t": "Antes de calcular, hagamos una predicción. El objeto está entre $f$ y $2f$, así que la imagen será real, invertida y más lejos que $2f$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Mira las barras: la imagen debería quedar más allá de $20$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Usamos la ecuación de lentes: uno sobre $f$ es igual a uno sobre $d_o$ más uno sobre $d_i$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Despejamos: $1/10-1/15$. Para restar buscamos un denominador común, $30$, y queda $3/30-2/30=1/30$. Entonces $d_i=30$.",
+            "a": "p:5"
+          },
+          {
+            "t": "El aumento es $-30/15=-2$. Que sea negativo indica que la imagen está invertida, y es dos veces más grande.",
+            "a": "p:6"
+          },
+          {
+            "t": "La C, $6\\ \\text{cm}$, tienta, pero suma las inversas, $\\tfrac1{10}+\\tfrac1{15}$, en vez de restarlas.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "Las opciones A y D dicen «virtual». Eso solo pasaría si el objeto estuviera más cerca que el foco, y aquí no es así.",
+            "a": "o:A:no|o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como proyectar con una lupa la ventana de tu cuarto sobre la pared: la imagen aparece al revés.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, si el objeto está justo en $2f$, la imagen queda también en $2f$ y del mismo tamaño.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: elegir «virtual y derecha», que ocurre cuando el objeto está más cerca que el foco, no más lejos.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Física: lentes (óptica)",
+        "que": "Es estudiar cómo un lente, como el de una lupa, junta la luz y forma una imagen de un objeto.",
+        "pistas": [
+          "dice lente convergente (el que junta la luz)",
+          "dan la distancia focal $f=10$ cm y el objeto a $15$ cm",
+          "piden cómo es la imagen: real o virtual, derecha o invertida"
+        ],
+        "clave": "Si dicen \"lente\" y dan una distancia focal, usa la ecuación del lente. Un lente deja pasar la luz; un espejo la devuelve.",
+        "no": [
+          {
+            "t": "Espejos",
+            "p": "Se parece porque también forman imágenes. Pero un espejo rebota la luz y un lente la deja pasar; aquí la luz atraviesa el lente."
+          },
+          {
+            "t": "Refracción con ángulos",
+            "p": "Se parece porque la luz cambia al pasar por el lente. Pero aquí no dan ángulos ni piden calcular cuánto se desvía."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Anoto: distancia focal $10$ cm y objeto a $15$ cm.",
+            "eq": [
+              "f=10\\ \\text{cm},\\ d_o=15\\ \\text{cm}"
+            ]
+          },
+          {
+            "t": "Uso la ecuación del lente para hallar a qué distancia se forma la imagen.",
+            "eq": [
+              "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}"
+            ]
+          },
+          {
+            "t": "Dejo sola la distancia de la imagen y reemplazo.",
+            "eq": [
+              "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}=\\frac{3-2}{30}=\\frac{1}{30}"
+            ]
+          },
+          {
+            "t": "Si $d_i$ sale positivo, la imagen es real e invertida. Elijo la opción que coincide.",
+            "eq": [
+              "d_i=30\\ \\text{cm}"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-007",
@@ -178,7 +2293,411 @@
       "challengeId": "ch1"
     },
     "competencia": "Modelación de fenómenos",
-    "afirmacion": "Modelar fenómenos de la naturaleza con base en el análisis de variables y relaciones científicas"
+    "afirmacion": "Modelar fenómenos de la naturaleza con base en el análisis de variables y relaciones científicas",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "40 m",
+          "rol": "pide",
+          "nota": "el alcance que debe lograr",
+          "campo": "$R=40\\ \\text{m}$"
+        },
+        {
+          "frag": "v₀ = 20 m/s",
+          "rol": "dato",
+          "nota": "rapidez con que sale el proyectil",
+          "campo": "$v_0=20\\ \\text{m/s}$"
+        },
+        {
+          "frag": "g = 9,8 m/s²",
+          "rol": "dato",
+          "nota": "gravedad: usa 9,8",
+          "campo": "$g=9{,}8\\ \\text{m/s}^2$"
+        },
+        {
+          "frag": "ajusta el ángulo",
+          "rol": "clave",
+          "nota": "la incógnita es el ángulo $\\theta$",
+          "campo": "$\\theta=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un chorro de manguera",
+          "texto": "Si riegas el jardín con una manguera, el agua cae más lejos cuando inclinas la manguera a medio camino entre el piso y la vertical. Y algo curioso: puedes mojar el mismo punto apuntando más bajo o más alto. Con el proyectil pasa igual, y por eso hay dos ángulos que sirven."
+        },
+        {
+          "k": "grafica",
+          "titulo": "Mira qué te piden",
+          "coef": [
+            -0.02046,
+            0.817,
+            0
+          ],
+          "x": [
+            -2,
+            43
+          ],
+          "puntos": [
+            {
+              "x": 0,
+              "y": 0,
+              "l": "sale"
+            },
+            {
+              "x": 40,
+              "y": 0,
+              "l": "cae a 40 m"
+            }
+          ],
+          "nota": "Buscamos el ángulo con el que la trayectoria vuelve al suelo justo a 40 m de donde salió."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "llegar a $40\\ \\text{m}$",
+              "escribo": "R=40\\ \\text{m}",
+              "rol": "dato"
+            },
+            {
+              "dice": "$v_0=20\\ \\text{m/s}$",
+              "escribo": "v_0=20\\ \\text{m/s}",
+              "rol": "dato"
+            },
+            {
+              "dice": "$g=9{,}8\\ \\text{m/s}^2$",
+              "escribo": "g=9{,}8\\ \\text{m/s}^2",
+              "rol": "dato"
+            },
+            {
+              "dice": "el ángulo",
+              "escribo": "\\theta=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "$R$ es el alcance horizontal y $\\theta$ (theta) es el ángulo de lanzamiento."
+        },
+        {
+          "k": "calc",
+          "titulo": "Fórmula del alcance",
+          "lineas": [
+            "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+          ],
+          "nota": "Aquí conocemos todo menos el ángulo, así que despejamos $\\sin(2\\theta)$."
+        },
+        {
+          "k": "calc",
+          "titulo": "Despeja sen(2θ)",
+          "lineas": [
+            "\\sin(2\\theta)=\\frac{R\\cdot g}{v_0^2}",
+            "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=\\frac{392}{400}",
+            "\\sin(2\\theta)=0{,}98"
+          ],
+          "nota": "Recuerda que $20^2=400$."
+        },
+        {
+          "k": "calc",
+          "titulo": "Busca el ángulo con la calculadora",
+          "lineas": [
+            "2\\theta=\\sin^{-1}(0{,}98)\\approx78{,}5^\\circ",
+            "\\theta\\approx39{,}3^\\circ"
+          ],
+          "nota": "Usa la tecla $\\sin^{-1}$ en modo grados. Este es el primer ángulo."
+        },
+        {
+          "k": "calc",
+          "titulo": "El segundo ángulo",
+          "lineas": [
+            "2\\theta=180^\\circ-78{,}5^\\circ=101{,}5^\\circ",
+            "\\theta\\approx50{,}7^\\circ"
+          ],
+          "nota": "El seno da lo mismo para un ángulo y para su suplemento (lo que le falta para 180°). Por eso aparece una segunda respuesta."
+        },
+        {
+          "k": "barras",
+          "titulo": "Alcance según el ángulo",
+          "barras": [
+            {
+              "l": "30°",
+              "e": "35,3 m",
+              "segs": [
+                {
+                  "v": 35.3,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "39,3°",
+              "e": "40 m",
+              "segs": [
+                {
+                  "v": 40,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "45° (máximo)",
+              "e": "40,8 m",
+              "segs": [
+                {
+                  "v": 40.8,
+                  "c": "oro"
+                }
+              ]
+            },
+            {
+              "l": "50,7°",
+              "e": "40 m",
+              "segs": [
+                {
+                  "v": 40,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "60°",
+              "e": "35,3 m",
+              "segs": [
+                {
+                  "v": 35.3,
+                  "c": "azul"
+                }
+              ]
+            }
+          ],
+          "ref": {
+            "v": 40,
+            "l": "meta: 40 m"
+          },
+          "nota": "Los dos ángulos verdes llegan a 40 m. Están a la misma distancia de 45°: uno por debajo y otro por encima."
+        },
+        {
+          "k": "check",
+          "texto": "Los dos ángulos suman $39{,}3^\\circ+50{,}7^\\circ=90^\\circ$ (son complementarios) y ambos quedan cerca de $45^\\circ$. En el simulador funciona cualquiera de los dos."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "v₀ = 20 m/s",
+              "op": [
+                "Rapidez inicial",
+                "Alcance",
+                "Gravedad"
+              ],
+              "ok": 0,
+              "why": "Es la rapidez con que sale el proyectil; en la fórmula va al cuadrado."
+            },
+            {
+              "p": "40 m",
+              "op": [
+                "Alcance horizontal $R$",
+                "Altura máxima",
+                "Ángulo"
+              ],
+              "ok": 0,
+              "why": "Es la distancia sobre el suelo hasta donde cae."
+            },
+            {
+              "p": "ajusta el ángulo",
+              "op": [
+                "Es la incógnita $\\theta$",
+                "Es un dato",
+                "Es la gravedad"
+              ],
+              "ok": 0,
+              "why": "Lo que buscas es el ángulo."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula sen(2θ)",
+          "antes": "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{20^2}=",
+          "resp": 0.98,
+          "tol": 0.001,
+          "pista": "40·9,8 = 392 y 20² = 400.",
+          "why": "$392/400=0{,}98$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "El proyectil debe llegar a $40$ m, saliendo con $20$ m/s y con gravedad de $9{,}8$.",
+            "a": "m:40 m|m:v₀ = 20 m/s|m:g = 9,8 m/s²"
+          },
+          {
+            "t": "Lo que no sabemos y debemos buscar es el ángulo.",
+            "a": "m:ajusta el ángulo"
+          },
+          {
+            "t": "Usamos la fórmula del alcance: $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Dejamos solo el seno: $\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Con la calculadora, $2\\theta\\approx78{,}5^\\circ$, así que $\\theta\\approx39{,}3^\\circ$.",
+            "a": "p:5"
+          },
+          {
+            "t": "Hay un segundo ángulo que también sirve: $50{,}7^\\circ$. Cualquiera de los dos llega a los $40$ m.",
+            "a": "p:6"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Primero, la meta: el proyectil tiene que caer a $40$ m de donde salió. Ese es el alcance.",
+            "a": "m:40 m"
+          },
+          {
+            "t": "Luego, la rapidez con que sale: $20$ m/s. En la fórmula va elevada al cuadrado.",
+            "a": "m:v₀ = 20 m/s"
+          },
+          {
+            "t": "Y la gravedad, que el enunciado fija en $9{,}8$ m/s². Usamos ese valor y no $10$.",
+            "a": "m:g = 9,8 m/s²"
+          },
+          {
+            "t": "Lo que nos falta es el ángulo. Es la incógnita, lo único que podemos mover en el simulador.",
+            "a": "m:ajusta el ángulo"
+          },
+          {
+            "t": "Piensa en la manguera: el agua llega igual de lejos si la inclinas un poco más bajo o un poco más alto. Por eso habrá dos ángulos.",
+            "a": "p:0",
+            "k": "por"
+          },
+          {
+            "t": "Mira la gráfica: la trayectoria sale del origen y vuelve al suelo justo en cuarenta metros.",
+            "a": "p:1"
+          },
+          {
+            "t": "Pasamos los datos a símbolos: $R=40$, $v_0=20$, $g=9{,}8$, y $\\theta$ es lo que buscamos.",
+            "a": "p:2"
+          },
+          {
+            "t": "Usamos la fórmula del alcance porque relaciona justo estas cuatro cosas: $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$.",
+            "a": "p:3",
+            "k": "por"
+          },
+          {
+            "t": "Dejamos solo el seno: pasamos la gravedad a multiplicar y $v_0^2$ a dividir. Queda $\\sin(2\\theta)=\\frac{392}{400}=0{,}98$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Con la tecla seno a la menos uno, en modo grados, sale $2\\theta\\approx78{,}5^\\circ$. Ojo: eso es el doble del ángulo, así que dividimos entre dos y da $39{,}3^\\circ$.",
+            "a": "p:5",
+            "k": "err"
+          },
+          {
+            "t": "El seno da lo mismo para un ángulo y para lo que le falta hasta ciento ochenta. Entonces $2\\theta=101{,}5^\\circ$ y $\\theta\\approx50{,}7^\\circ$.",
+            "a": "p:6",
+            "k": "por"
+          },
+          {
+            "t": "Mira las barras: treinta y sesenta grados llegan igual de lejos, y cuarenta y cinco es el máximo. Nuestros dos ángulos están a ambos lados de ese máximo.",
+            "a": "p:7"
+          },
+          {
+            "t": "Comprobamos: $39{,}3^\\circ+50{,}7^\\circ=90^\\circ$, son complementarios. En el simulador sirve cualquiera de los dos.",
+            "a": "p:8"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como lavar la moto con la manguera: apuntando más bajo o más alto puedes mojar el mismo punto del piso. Con el proyectil pasa igual.",
+            "k": "ana"
+          },
+          {
+            "t": "Imagina un tiro libre en la cancha del barrio. A cuarenta y cinco grados el balón llega más lejos que con cualquier otro ángulo.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo: a treinta y a sesenta grados el balón cae en el mismo sitio, a unos treinta y cinco metros. Uno va rasante y el otro va a lo alto.",
+            "k": "ej"
+          },
+          {
+            "t": "Error común: pensar que mientras más inclinado, más lejos llega. Pasados cuarenta y cinco grados el alcance empieza a bajar.",
+            "k": "err"
+          },
+          {
+            "t": "Con esta rapidez el máximo posible es de unos cuarenta coma ocho metros. Por eso los cuarenta metros están casi en el tope y los dos ángulos quedan tan cerca de cuarenta y cinco.",
+            "k": "ej"
+          },
+          {
+            "t": "Otro tropiezo típico: dejar la calculadora en radianes. Si el resultado sale rarísimo, revisa que esté en grados.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Física: lanzamiento en parábola, hallar el ángulo",
+        "que": "Es un proyectil que sale inclinado y cae lejos. Aquí ya sabes qué tan lejos debe llegar y buscas con qué ángulo lanzarlo.",
+        "pistas": [
+          "dice que debe llegar a $40$ m: ese es el alcance",
+          "dan la rapidez con que sale, $v_0=20$ m/s, y la gravedad, $g=9{,}8$ m/s²",
+          "pide que ajustes el ángulo: el ángulo es lo que no sabes"
+        ],
+        "clave": "Si conoces el alcance y la rapidez, y te piden el ángulo, usa $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$, deja solo el seno y recuerda que sirven dos ángulos.",
+        "no": [
+          {
+            "t": "Caída libre",
+            "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta, y aquí hay un alcance horizontal."
+          },
+          {
+            "t": "Altura máxima",
+            "p": "Se parece porque es el mismo tipo de lanzamiento. Pero ahí preguntan qué tan alto sube, y aquí piden el ángulo para llegar a cierta distancia."
+          },
+          {
+            "t": "Movimiento a velocidad constante",
+            "p": "Se parece porque el objeto avanza hacia adelante. Pero si la velocidad fuera constante no habría curva ni ángulo que ajustar."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Anoto los datos: alcance $40$ m, rapidez $20$ m/s y gravedad $9{,}8$.",
+            "eq": [
+              "R=40,\\ v_0=20,\\ g=9{,}8"
+            ]
+          },
+          {
+            "t": "Escribo la fórmula del alcance, que sirve para este lanzamiento.",
+            "eq": [
+              "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+            ]
+          },
+          {
+            "t": "Dejo solo el seno y hago la cuenta.",
+            "eq": [
+              "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98"
+            ]
+          },
+          {
+            "t": "Con la calculadora saco $\\theta\\approx39{,}3^\\circ$, y el segundo ángulo es $50{,}7^\\circ$."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-008",
@@ -205,7 +2724,350 @@
       "id": "qui.gases"
     },
     "competencia": "Uso comprensivo del conocimiento científico",
-    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico"
+    "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "2 mol",
+          "rol": "dato",
+          "nota": "n = 2",
+          "campo": "$n=2\\ \\text{mol}$"
+        },
+        {
+          "frag": "273,15 K",
+          "rol": "dato",
+          "nota": "T = 273,15 K",
+          "campo": "$T=273{,}15\\ \\text{K}$"
+        },
+        {
+          "frag": "1 atm",
+          "rol": "dato",
+          "nota": "P = 1 atm",
+          "campo": "$P=1\\ \\text{atm}$"
+        },
+        {
+          "frag": "R = 0,082 atm·L/mol·K",
+          "rol": "dato",
+          "nota": "te da las unidades a usar",
+          "campo": "$R=0{,}082\\ \\text{atm·L/mol·K}$"
+        },
+        {
+          "frag": "ocupan",
+          "rol": "pide",
+          "nota": "volumen en litros",
+          "campo": "$V=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un globo",
+          "texto": "Un gas llena todo el espacio que le des. Cuánto espacio ocupa depende de cuántas partículas hay, qué tan caliente está y cuánto lo aprietan. Hay una fórmula que junta las tres cosas."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa los datos a símbolos",
+          "filas": [
+            {
+              "dice": "$2\\ \\text{mol}$",
+              "escribo": "n=2\\ \\text{mol}",
+              "rol": "dato"
+            },
+            {
+              "dice": "$273{,}15\\ \\text{K}$",
+              "escribo": "T=273{,}15\\ \\text{K}",
+              "rol": "dato"
+            },
+            {
+              "dice": "$1\\ \\text{atm}$",
+              "escribo": "P=1\\ \\text{atm}",
+              "rol": "dato"
+            },
+            {
+              "dice": "$R=0{,}082$",
+              "escribo": "R=0{,}082",
+              "rol": "dato"
+            },
+            {
+              "dice": "¿cuánto ocupan?",
+              "escribo": "V=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "n es la cantidad de gas (en moles), T la temperatura en kelvin, P la presión y V el volumen."
+        },
+        {
+          "k": "calc",
+          "titulo": "Gas ideal: despeja V",
+          "lineas": [
+            "P\\cdot V=n\\cdot R\\cdot T",
+            "\\frac{P\\cdot V}{P}=\\frac{n\\cdot R\\cdot T}{P}",
+            "V=\\frac{n\\cdot R\\cdot T}{P}"
+          ],
+          "nota": "Para dejar V sola divido los dos lados entre P."
+        },
+        {
+          "k": "calc",
+          "titulo": "Reemplaza",
+          "lineas": [
+            "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}",
+            "2\\cdot0{,}082=0{,}164",
+            "0{,}164\\cdot273{,}15\\approx44{,}8\\ \\text{L}"
+          ],
+          "nota": "Las unidades se cancelan y quedan litros."
+        },
+        {
+          "k": "barras",
+          "titulo": "Si 1 mol ocupa 22,4 L en estas condiciones",
+          "barras": [
+            {
+              "l": "1 mol",
+              "e": "22,4 L",
+              "segs": [
+                {
+                  "v": 22.4,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "2 mol (tu caso)",
+              "e": "44,8 L",
+              "segs": [
+                {
+                  "v": 22.4,
+                  "c": "azul"
+                },
+                {
+                  "v": 22.4,
+                  "c": "oro"
+                }
+              ]
+            }
+          ],
+          "nota": "El doble de gas ocupa el doble de espacio."
+        },
+        {
+          "k": "check",
+          "texto": "273,15 K y 1 atm son condiciones normales: 1 mol ocupa 22,4 L, así que 2 mol ocupan 44,8 L."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "2 mol",
+              "op": [
+                "Cantidad de sustancia $n$",
+                "Volumen",
+                "Temperatura"
+              ],
+              "ok": 0,
+              "why": "El mol mide cantidad de sustancia."
+            },
+            {
+              "p": "273,15 K",
+              "op": [
+                "Temperatura absoluta $T$",
+                "Presión",
+                "Moles"
+              ],
+              "ok": 0,
+              "why": "Kelvin: siempre se usa temperatura absoluta."
+            },
+            {
+              "p": "$0{,}082\\ \\text{atm·L/mol·K}$",
+              "op": [
+                "Constante $R$ de los gases",
+                "Presión",
+                "Energía"
+              ],
+              "ok": 0,
+              "why": "Sus unidades te dicen en qué unidades trabajar."
+            }
+          ]
+        },
+        {
+          "k": "asignar",
+          "titulo": "¿Qué ecuación relaciona esos datos?",
+          "items": [
+            {
+              "p": "P, V, n y T a la vez",
+              "op": [
+                "$PV=nRT$",
+                "$P_1V_1=P_2V_2$",
+                "$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$"
+              ],
+              "ok": 0,
+              "why": "Las otras comparan dos estados; aquí hay uno solo."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula el volumen",
+          "antes": "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx",
+          "resp": 44.8,
+          "unidad": "L",
+          "tol": 0.1,
+          "pista": "Multiplica $2\\cdot0{,}082\\cdot273{,}15$.",
+          "why": "Da 44,8 L: el doble de 22,4 L."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Tenemos $2\\ \\text{mol}$ de gas a $273{,}15\\ \\text{K}$ y $1\\ \\text{atm}$ de presión.",
+            "a": "m:2 mol|m:273,15 K|m:1 atm"
+          },
+          {
+            "t": "Entonces los datos son: $n=2$, $T=273{,}15$, $P=1$ y $R=0{,}082$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Despejamos $V$ en $PV=nRT$ y nos queda $V=nRT/P$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Al calcular $2\\cdot0{,}082\\cdot273{,}15$ obtenemos $44{,}8$ litros.",
+            "a": "p:3|p:4"
+          },
+          {
+            "t": "El volumen es $44{,}8\\ \\text{L}$, así que la respuesta es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Dos moles es la cantidad de gas que tenemos, y se representa con $n$.",
+            "a": "m:2 mol"
+          },
+          {
+            "t": "Fíjate en $273{,}15\\ \\text{K}$: equivale a $0\\ °\\text{C}$, y la temperatura siempre debe ir en kelvin.",
+            "a": "m:273,15 K"
+          },
+          {
+            "t": "Ahora la presión: $1\\ \\text{atm}$. A estas condiciones se les llama condiciones normales.",
+            "a": "m:1 atm"
+          },
+          {
+            "t": "También tenemos la constante $R$, con unidades que coinciden con atmósferas y litros, y eso nos conviene.",
+            "a": "m:R = 0,082 atm·L/mol·K"
+          },
+          {
+            "t": "Y lo que nos piden es el volumen que ocupa el gas.",
+            "a": "m:ocupan"
+          },
+          {
+            "t": "Piensa que un gas se expande y llena todo el espacio que le des.",
+            "a": "p:0"
+          },
+          {
+            "t": "Pasamos los datos a símbolos: $n=2$ moles, $T=273{,}15$ kelvin y $P=1$ atmósfera.",
+            "a": "p:1"
+          },
+          {
+            "t": "La ley del gas ideal es $PV=nRT$. Para dejar $V$ sola, dividimos ambos lados entre $P$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Multiplicamos paso a paso: $2\\cdot0{,}082=0{,}164$, y luego $0{,}164\\cdot273{,}15$ da $44{,}8$ litros.",
+            "a": "p:3"
+          },
+          {
+            "t": "Para comprobar: con $273{,}15$ K y $1$ atm, un mol ocupa $22{,}4$ L, así que dos moles ocupan $44{,}8$ L.",
+            "a": "p:4"
+          },
+          {
+            "t": "La A, $22{,}4$, tienta porque es el volumen de un solo mol, y aquí tenemos dos.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $11{,}2$, corresponde a medio mol, así que se queda corta.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $5{,}6$, sería un cuarto de mol, y eso no corresponde a $2\\ \\text{mol}$.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B, $44{,}8\\ \\text{L}$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como guardar empanadas en una caja: si tienes el doble de empanadas, necesitas el doble de espacio. Con los moles de gas pasa igual.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, con $3$ mol en las mismas condiciones ocuparían $3\\cdot22{,}4=67{,}2$ L.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: usar grados Celsius en vez de kelvin. En esta fórmula siempre se usa kelvin.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Química: gases ideales",
+        "que": "Es la regla que relaciona cuatro cosas de un gas: presión, volumen, cantidad (moles) y temperatura.",
+        "pistas": [
+          "dan moles ($2$), temperatura ($273,15$ K) y presión ($1$ atm)",
+          "dan la constante $R$ en el enunciado",
+          "piden el volumen que ocupa el gas"
+        ],
+        "clave": "Si salen moles, temperatura, presión y la letra $R$ todos juntos, es gases ideales. Si faltara alguno, sería otra ley.",
+        "no": [
+          {
+            "t": "Cálculos de reacciones (estequiometría)",
+            "p": "Se parece porque usa moles. Pero aquí no hay ninguna reacción química, solo un gas quieto."
+          },
+          {
+            "t": "Leyes de Boyle o Charles",
+            "p": "Se parecen porque hablan de gases. Pero esas cambian solo dos cosas y dejan el resto fijo; aquí se usan las cuatro juntas, con la ecuación completa."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Escribo la ecuación: presión por volumen igual a moles por $R$ por temperatura.",
+            "eq": [
+              "PV=nRT"
+            ]
+          },
+          {
+            "t": "Como piden el volumen, lo dejo solo.",
+            "eq": [
+              "V=\\frac{nRT}{P}"
+            ]
+          },
+          {
+            "t": "Reemplazo con los datos y hago la cuenta con calculadora.",
+            "eq": [
+              "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx44{,}8\\ \\text{L}"
+            ]
+          },
+          {
+            "t": "Pongo la unidad: litros (L)."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-009",
@@ -232,7 +3094,245 @@
       "id": "bio.lotka"
     },
     "competencia": "Explicación de fenómenos",
-    "afirmacion": "Analizar aspectos de los ecosistemas y dar razón de cómo funcionan sus interrelaciones"
+    "afirmacion": "Analizar aspectos de los ecosistemas y dar razón de cómo funcionan sus interrelaciones",
+    "hoja": {
+      "modo": "concepto",
+      "marcas": [
+        {
+          "frag": "mortalidad de los depredadores (γ)",
+          "rol": "dato",
+          "nota": "el parámetro que cambia",
+          "campo": "$\\gamma$ sube"
+        },
+        {
+          "frag": "γ/δ",
+          "rol": "clave",
+          "nota": "la fórmula ya está en el enunciado",
+          "campo": "$x^*=\\frac{\\gamma}{\\delta}$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en zorros y conejos",
+          "texto": "Los zorros viven de los conejos. Si los zorros mueren más rápido, para que su población no se acabe hace falta que haya más conejos disponibles. Esa es la idea que dice la fórmula."
+        },
+        {
+          "k": "calc",
+          "titulo": "Equilibrio de presas",
+          "lineas": [
+            "x^*=\\frac{\\gamma}{\\delta}"
+          ],
+          "nota": ""
+        },
+        {
+          "k": "barras",
+          "titulo": "Presas en equilibrio según la mortalidad γ",
+          "barras": [
+            {
+              "l": "γ = 0,5",
+              "e": "25 presas",
+              "segs": [
+                {
+                  "v": 25,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "γ = 1 (se duplica)",
+              "e": "50 presas",
+              "segs": [
+                {
+                  "v": 25,
+                  "c": "azul"
+                },
+                {
+                  "v": 25,
+                  "c": "oro"
+                }
+              ]
+            }
+          ],
+          "nota": "Con δ = 0,02: si la mortalidad sube al doble, el equilibrio de presas sube al doble."
+        },
+        {
+          "k": "idea",
+          "titulo": "Por qué tiene sentido",
+          "texto": "Si los depredadores mueren más, cada uno sostiene menos. Para que la población de depredadores no caiga, se necesitan más presas."
+        },
+        {
+          "k": "check",
+          "texto": "La respuesta es: aumenta. γ está arriba en la fracción: si sube, el resultado sube."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Ubica los parámetros",
+          "items": [
+            {
+              "p": "γ",
+              "op": [
+                "Mortalidad de los depredadores",
+                "Crecimiento de las presas",
+                "Depredación"
+              ],
+              "ok": 0,
+              "why": "Es la tasa a la que mueren los depredadores sin presas."
+            },
+            {
+              "p": "γ/δ",
+              "op": [
+                "Equilibrio de las presas",
+                "Equilibrio de los depredadores",
+                "Periodo de oscilación"
+              ],
+              "ok": 0,
+              "why": "El equilibrio de presas es $x^*=\\frac{\\gamma}{\\delta}$."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Prueba con números ($\\delta=0{,}02$)",
+          "antes": "\\gamma=0{,}5\\Rightarrow x^*=25;\\quad\\gamma=1\\Rightarrow x^*=",
+          "resp": 50,
+          "unidad": "",
+          "tol": 1e-09,
+          "pista": "Divide $1\\div0{,}02$.",
+          "why": "γ está arriba en la fracción: si sube, $x^*$ sube."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "Nos preguntan qué le pasa a las presas cuando aumenta la mortalidad de los depredadores.",
+            "a": "m:mortalidad de los depredadores (γ)"
+          },
+          {
+            "t": "Fíjate: el equilibrio de las presas es $\\gamma/\\delta$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Probemos con números: si $\\gamma=0{,}5$ sale $25$, y si $\\gamma=1$ sale $50$. O sea, sube.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces las presas aumentan, y la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "El parámetro $\\gamma$ es la mortalidad de los depredadores. Si sube, significa que mueren más.",
+            "a": "m:mortalidad de los depredadores (γ)"
+          },
+          {
+            "t": "Y el cociente $\\gamma/\\delta$ es el que nos da el equilibrio de las presas.",
+            "a": "m:γ/δ"
+          },
+          {
+            "t": "Piensa en un bosque con zorros y conejos, donde unos se alimentan de los otros.",
+            "a": "p:0"
+          },
+          {
+            "t": "Entonces el equilibrio de las presas se escribe $x^*=\\gamma/\\delta$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Con $\\delta=0{,}02$, si $\\gamma=0{,}5$ da $25$, y si $\\gamma=1$ da $50$. Fíjate que el valor aumentó.",
+            "a": "p:2"
+          },
+          {
+            "t": "Tiene sentido: si los depredadores mueren más, se necesitan más presas para poder sostenerlos.",
+            "a": "p:3"
+          },
+          {
+            "t": "La A, que dice \"disminuye\", tienta porque parece lo lógico, pero plantea lo contrario de lo que pasa en este equilibrio.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, \"no cambia\", ignora que los depredadores dependen de las presas para alimentarse.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, \"se vuelve cero\", es un extremo exagerado, y no hay ninguna razón para pensarlo.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como una panadería donde los clientes se van rápido: para mantener la tienda llena, necesitas que lleguen más y más.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, si $\\gamma$ se triplica, $x^*$ también se triplica.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: pensar que si los depredadores mueren más, las presas también bajan. En este equilibrio ocurre al revés.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Ecología: depredadores y presas",
+        "que": "Es ver cómo dos poblaciones se afectan entre sí: los depredadores comen presas, y si cambia una, cambia la otra.",
+        "pistas": [
+          "hay dos poblaciones: depredadores y presas",
+          "piden qué pasa con las presas si los depredadores mueren más",
+          "es un modelo, o sea una explicación con letras ($\\gamma$, $\\delta$)"
+        ],
+        "clave": "Si hay dos poblaciones y una se come a la otra, piensa en cadena de causas: si cambia una, cambia la otra.",
+        "no": [
+          {
+            "t": "Crecimiento de una sola población",
+            "p": "Se parece porque también habla de cuántos individuos hay. Pero aquí son dos poblaciones que se afectan una a la otra."
+          },
+          {
+            "t": "Cadena alimenticia",
+            "p": "Se parece porque aparece quién se come a quién. Pero no piden dibujar la cadena, sino el efecto de un cambio."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Me pregunto qué significa que los depredadores mueran más: habrá menos depredadores."
+          },
+          {
+            "t": "Pienso qué les pasa a las presas con menos depredadores: se las comen menos."
+          },
+          {
+            "t": "Reviso la fórmula del equilibrio de las presas y veo qué pasa si $\\gamma$ aumenta.",
+            "eq": [
+              "x^*=\\frac{\\gamma}{\\delta}"
+            ]
+          },
+          {
+            "t": "Pruebo con números para confirmar: al subir $\\gamma$, sube el equilibrio.",
+            "eq": [
+              "\\gamma=0{,}5,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=25",
+              "\\gamma=1,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=50"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "cie-010",

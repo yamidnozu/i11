@@ -214,3 +214,42 @@ Se completó al 100% el encargo de creación de la nueva sección y banco de pre
 - **Vitest Suite (Modo ICFES completo):** `VITE_ICFES=1 npm test` -> **15/15 archivos de test, 1011/1011 pruebas aprobadas (100 %)**.
 - **TypeScript y Build de Producción:** `npm run build` -> **Compilación limpia sin errores en 1.52s**.
 
+---
+
+## 8. Culminación de la Ronda de Corrección — ENCARGO_COMPLETAR.md (24 oct 2026, sesión 3)
+
+Se reanudó y completó la ronda de corrección con scripts automatizados en bloque, sin solicitar aprobación y con verificación técnica estricta:
+
+### 8.1 Reescritura de Razones Formulaicas (465 Ítems)
+- **Problema previo:** 465 razones de distractores en `content/icfes/` iniciaban con la fórmula repetitiva `"Es incorrecta porque..."`, y en las hojas con `"Pero es incorrecta porque..."`.
+- **Acción ejecutada (`tools/rewrite_es_incorrecta.py`):**
+  - Se eliminó el prefijo formulaico en `distractores` y se capitalizó el resto de la frase, dejando una explicación conceptual directa (ej. "La Revolución Industrial provocó...", "Invierte el sentido experimental...", "Los habitantes no critican...").
+  - En `enfoque.no` se ajustó a `Pero [explicación]`, preservando el formato pedagógico.
+  - En `guion 2` se eliminó la redundancia `"La opción X es incorrecta: Es incorrecta porque..."`.
+- **Resultado medido:** **0 ocurrencias** de `"Es incorrecta porque"` en todo el proyecto.
+
+### 8.2 Des-plantillado de Inglés (`ena/eng/ing` i038 e i039)
+- **Problema previo:** Los distractores y guiones de las preguntas 38 (superlativo `largest`) y 39 (preposición `in`) estaban clonados textualmente entre los cuadernillos `ena`, `eng` e `ing`.
+- **Acción ejecutada (`tools/vary_english_38_39.py`):**
+  - Se redactaron explicaciones gramaticales y contextuales originales y diferenciadas para cada cuadernillo.
+  - Cada ítem cuenta con `distractores`, `enfoque` y `guion` únicos, cuidando llaves `{{ }}` en términos en inglés y eliminando caracteres especiales fuera de ellas.
+
+### 8.3 Ajuste Fino en `mth-i002` y `cfi-i105` (`tools/refine_mth002_cfi105.py`)
+- **`cfi-i105` (Inglés vocabulario transporte):**
+  - Homogeneización de formato para cada alternativa (`A {{bike}}`, `A {{boat}}`, `A {{bus}}`, `A {{helicopter}}`, `A {{plane}}`, `A {{truck}}`, `A {{train}}`).
+  - Nivel 2 del guion desglosado en pasos individuales con acción `o:X:no` para cada opción incorrecta descartada.
+- **`mth-i002` (Matemáticas tasa de cambio):**
+  - Verificación y sincronización de razones con cada alternativa.
+  - Conversión de cifras en los textos hablados a palabras (`dos mil`, `tres por ciento`) para asegurar total compatibilidad en los evaluadores de voz.
+
+### 8.4 Cobertura Total de Hojas en Banco Propio (`tools/embed_own_hojas.py`)
+- **Problema previo:** 30 preguntas de `content/questions/` (`cie-001..009`, `ing-001..004`, `lec-001..006`, `mat-001..007`, `soc-001..004`) tenían su hoja en `hojas.json` en vez de incrustada en el propio archivo JSON.
+- **Acción ejecutada:** Se incrustó la hoja completa (`modo`, `marcas`, `pasos` con `check`, `enfoque` con pistas/plan/trampas, y `guion` de 3 niveles) directamente en cada ítem.
+- **Resultado:** **230 de 230 preguntas propias (100.0%)** cuentan con hoja pedagógica completa embebida directamente.
+
+### 8.5 Auditoría de Pruebas y Build
+- **Vitest Modo Público:** `npm test` -> **15/15 archivos, 394/394 pruebas aprobadas (100 %)**.
+- **Vitest Modo ICFES:** `VITE_ICFES=1 npm test` -> **15/15 archivos, 1011/1011 pruebas aprobadas (100 %)**.
+- **Build de Producción:** `npm run build` -> **Compilación exitosa en 1.44s sin errores**.
+
+

@@ -21,7 +21,240 @@
     ],
     "origen": "original",
     "competencia": "Pensamiento social",
-    "afirmacion": "Reconoce los mecanismos constitucionales de protección de derechos fundamentales en Colombia"
+    "afirmacion": "Reconoce los mecanismos constitucionales de protección de derechos fundamentales en Colombia",
+    "hoja": {
+      "modo": "historia",
+      "marcas": [
+        {
+          "frag": "tutela",
+          "rol": "clave",
+          "nota": "mecanismo de protección rápida",
+          "campo": "Mecanismo de protección rápida"
+        },
+        {
+          "frag": "Constitución de 1991",
+          "rol": "dato",
+          "nota": "de donde sale la tutela (art. 86)",
+          "campo": "Año 1991, art. 86"
+        },
+        {
+          "frag": "sirve para",
+          "rol": "pide",
+          "nota": "la función de la tutela",
+          "campo": "Función de la tutela"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Un derecho que no puede esperar",
+          "texto": "Imagina que te niegan una atención médica urgente. Esperar meses un juicio normal no sirve: necesitas ayuda ya. Para eso la Constitución de 1991 creó la tutela."
+        },
+        {
+          "k": "linea",
+          "titulo": "Antes y después",
+          "eventos": [
+            {
+              "anio": "1886",
+              "t": "Constitución de 1886",
+              "d": "No existía un mecanismo directo para pedir protección inmediata",
+              "rol": "antes"
+            },
+            {
+              "anio": "1991",
+              "t": "Constitución de 1991",
+              "d": "Crea la acción de tutela (art. 86)",
+              "rol": "hecho"
+            },
+            {
+              "anio": "Hoy",
+              "t": "Cualquier persona",
+              "d": "Pide ante un juez la protección inmediata de un derecho fundamental; el juez decide en máximo 10 días",
+              "rol": "despues"
+            }
+          ]
+        },
+        {
+          "k": "ejemplo",
+          "titulo": "¿Cuándo sirve la tutela?",
+          "si": [
+            "Te niegan atención médica urgente.",
+            "Una autoridad vulnera tu derecho a la educación."
+          ],
+          "no": [
+            "Quieres cambiar una ley (eso es del Congreso).",
+            "Elegir presidente (eso es votar)."
+          ]
+        },
+        {
+          "k": "check",
+          "texto": "Protección inmediata de derechos fundamentales."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Contexto de la tutela",
+          "items": [
+            {
+              "p": "¿De dónde viene?",
+              "op": [
+                "Constitución de 1991, art. 86",
+                "Constitución de 1886",
+                "Una ley de 2010"
+              ],
+              "ok": 0,
+              "why": "La carta de 1991 la creó."
+            },
+            {
+              "p": "¿Para qué sirve?",
+              "op": [
+                "Proteger derechos fundamentales de forma inmediata",
+                "Cambiar leyes",
+                "Elegir gobernantes"
+              ],
+              "ok": 0,
+              "why": "Es un mecanismo rápido ante un juez."
+            },
+            {
+              "p": "¿Qué significa «inmediata»?",
+              "op": [
+                "El juez decide en máximo 10 días",
+                "Tarda un año",
+                "Solo la decide el Congreso"
+              ],
+              "ok": 0,
+              "why": "Rapidez: por eso existe."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "La tutela nace con la Constitución de $1991$ y sirve para proteger derechos.",
+            "a": "m:tutela|m:Constitución de 1991|m:sirve para"
+          },
+          {
+            "t": "Antes de 1991 no había un camino directo para reclamar un derecho. Fue la Constitución de 1991 la que creó la tutela.",
+            "a": "p:1"
+          },
+          {
+            "t": "Fíjate que sirve para pedir protección inmediata de los derechos fundamentales.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces la respuesta es la opción B: pide protección inmediata de derechos fundamentales.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Primero, la tutela es un mecanismo jurídico, una herramienta que la ley le da a las personas.",
+            "a": "m:tutela"
+          },
+          {
+            "t": "Ahora, nace con la Constitución de $1991$.",
+            "a": "m:Constitución de 1991"
+          },
+          {
+            "t": "Y lo que nos preguntan es para qué sirve.",
+            "a": "m:sirve para"
+          },
+          {
+            "t": "Piensa que un derecho urgente no puede esperar meses a que lo resuelvan.",
+            "a": "p:0"
+          },
+          {
+            "t": "En 1886 no existía un mecanismo directo; en 1991 se crea la tutela.",
+            "a": "p:1"
+          },
+          {
+            "t": "Cualquier persona puede pedirle al juez protección, y él debe decidir en máximo $10$ días.",
+            "a": "p:1"
+          },
+          {
+            "t": "Entonces sirve para derechos vulnerados, no para cambiar leyes ni para elegir presidente.",
+            "a": "p:2"
+          },
+          {
+            "t": "La A, cambiar las leyes del Congreso, tienta, pero eso lo hace el Congreso, no la tutela.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, elegir al presidente, se hace con el voto de los ciudadanos.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, declarar la guerra, no tiene nada que ver con la tutela.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como llamar a urgencias cuando te duele algo fuerte: no esperas una cita para dentro de un mes, pides ayuda ya.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, si un colegio te niega el cupo sin razón, puedes presentar una tutela.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: confundirla con cambiar leyes, que le toca al Congreso.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Sociales: la Constitución de 1991 y la tutela",
+        "que": "Es conocer para qué sirven las herramientas que la Constitución de 1991 le dio a las personas para defender sus derechos.",
+        "pistas": [
+          "nombran la acción de tutela",
+          "dicen que la creó la Constitución de 1991",
+          "preguntan para qué sirve"
+        ],
+        "clave": "Si nombran la tutela o una herramienta de la Constitución del 91, piensa: ¿qué problema resuelve? La tutela: derechos fundamentales en peligro, con respuesta rápida.",
+        "no": [
+          {
+            "t": "Ramas del poder",
+            "p": "Se parece porque es la misma Constitución. Pero nadie pregunta quién hace las leyes ni quién las aplica."
+          },
+          {
+            "t": "Elecciones",
+            "p": "Se parece porque es de derechos políticos. Pero la tutela no sirve para elegir a nadie."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Recuerdo qué es la tutela: un recurso rápido que cualquier persona puede usar."
+          },
+          {
+            "t": "Recuerdo para qué: para pedir que un juez proteja un derecho fundamental que está en peligro."
+          },
+          {
+            "t": "Reviso las opciones y descarto las que hablan de leyes, elecciones o guerra."
+          },
+          {
+            "t": "Elijo la que habla de proteger derechos de forma inmediata."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "soc-002",
@@ -45,7 +278,231 @@
     ],
     "origen": "original",
     "competencia": "Pensamiento social",
-    "afirmacion": "Identifica las funciones y ramas del poder público en Colombia"
+    "afirmacion": "Identifica las funciones y ramas del poder público en Colombia",
+    "hoja": {
+      "modo": "concepto",
+      "marcas": [
+        {
+          "frag": "hace las leyes",
+          "rol": "pide",
+          "nota": "función de crear leyes",
+          "campo": "Quien hace las leyes"
+        },
+        {
+          "frag": "la rama del poder público",
+          "rol": "clave",
+          "nota": "son tres ramas",
+          "campo": "Son tres ramas"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un colegio",
+          "texto": "Alguien escribe las reglas, otro las hace cumplir y otro decide cuando hay conflictos. En Colombia el poder está dividido igual, en tres ramas, para que nadie tenga todo."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Las tres ramas",
+          "cols": [
+            "Rama",
+            "Quién",
+            "Qué hace"
+          ],
+          "filas": [
+            [
+              "*Legislativa",
+              "*Congreso (Senado y Cámara)",
+              "*Hace las leyes"
+            ],
+            [
+              "Ejecutiva",
+              "Presidente y ministros",
+              "Ejecuta las leyes y gobierna"
+            ],
+            [
+              "Judicial",
+              "Jueces y cortes",
+              "Aplica las leyes y resuelve conflictos"
+            ]
+          ]
+        },
+        {
+          "k": "ejemplo",
+          "titulo": "Cómo recordarlo",
+          "si": [
+            "Legislativa → legislar (hacer leyes)"
+          ],
+          "no": [
+            "Electoral es un organismo que organiza elecciones; no es una de las tres ramas."
+          ]
+        },
+        {
+          "k": "check",
+          "texto": "Legislativa."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Une cada institución con su rama",
+          "items": [
+            {
+              "p": "Congreso (Senado y Cámara)",
+              "op": [
+                "Legislativa",
+                "Ejecutiva",
+                "Judicial"
+              ],
+              "ok": 0,
+              "why": "Legislar = hacer leyes."
+            },
+            {
+              "p": "Presidente y ministros",
+              "op": [
+                "Ejecutiva",
+                "Legislativa",
+                "Judicial"
+              ],
+              "ok": 0,
+              "why": "Ejecutan las leyes y gobiernan."
+            },
+            {
+              "p": "Jueces y cortes",
+              "op": [
+                "Judicial",
+                "Ejecutiva",
+                "Legislativa"
+              ],
+              "ok": 0,
+              "why": "Aplican las leyes y resuelven conflictos."
+            },
+            {
+              "p": "¿Por qué «Electoral» no es una de las tres ramas?",
+              "op": [
+                "Es un organismo autónomo",
+                "Es la cuarta rama",
+                "No existe"
+              ],
+              "ok": 0,
+              "why": "Organiza las elecciones pero no hace, ejecuta ni aplica leyes."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate que nos piden la rama del poder público que hace las leyes.",
+            "a": "m:hace las leyes|m:la rama del poder público"
+          },
+          {
+            "t": "Son tres ramas, y la que hace las leyes es la legislativa, es decir, el Congreso.",
+            "a": "p:1"
+          },
+          {
+            "t": "Así que la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "La palabra clave aquí es \"hace las leyes\".",
+            "a": "m:hace las leyes"
+          },
+          {
+            "t": "Y lo que nos piden es una de las ramas del poder público.",
+            "a": "m:la rama del poder público"
+          },
+          {
+            "t": "Recordemos que son tres: una escribe las reglas, otra las ejecuta y otra juzga.",
+            "a": "p:1"
+          },
+          {
+            "t": "Legislativa viene de legislar, que significa hacer leyes.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ojo con la electoral: no es una de las tres ramas, sino un organismo que organiza las elecciones.",
+            "a": "p:2"
+          },
+          {
+            "t": "La A, Ejecutiva, tienta porque suena a quien manda, pero esa rama aplica las leyes y gobierna.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, Judicial, resuelve conflictos y decide si alguien cumplió o no la ley.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, Electoral, se encarga de organizar las elecciones.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B, Legislativa.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como un partido de fútbol: unos escriben el reglamento, otros dirigen el juego en la cancha y el árbitro decide cuando alguien comete una falta.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, el Congreso aprueba una ley, el presidente la aplica y un juez resuelve si alguien la incumple.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: elegir \"Ejecutiva\" solo porque suena a quien manda.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Sociales: ramas del poder público",
+        "que": "Colombia divide el poder en tres ramas, y cada una tiene un trabajo distinto: hacer las leyes, aplicarlas y juzgar.",
+        "pistas": [
+          "preguntan por una \"rama del poder público\"",
+          "preguntan qué rama hace las leyes"
+        ],
+        "clave": "Asocia cada rama con un verbo: Legislativa hace las leyes, Ejecutiva las aplica y gobierna, Judicial juzga.",
+        "no": [
+          {
+            "t": "Mecanismos de participación",
+            "p": "Se parece porque es de la Constitución. Pero esos son herramientas de los ciudadanos, como el voto, y no se preguntan aquí."
+          },
+          {
+            "t": "Elecciones",
+            "p": "Se parece porque el Congreso se elige. Pero no preguntan cómo se elige, sino qué función tiene."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Recuerdo las tres ramas: Ejecutiva (gobierna), Legislativa (hace las leyes) y Judicial (juzga)."
+          },
+          {
+            "t": "Veo qué función piden: hacer las leyes."
+          },
+          {
+            "t": "La que hace las leyes es el Congreso, o sea la rama Legislativa."
+          },
+          {
+            "t": "Descarto Ejecutiva y Judicial, y compruebo que \"Electoral\" no es una de las tres ramas clásicas."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "soc-003",
@@ -69,7 +526,232 @@
     ],
     "origen": "original",
     "competencia": "Interpretación y análisis de perspectivas",
-    "afirmacion": "Evalúa fuentes primarias y secundarias en la investigación histórica"
+    "afirmacion": "Evalúa fuentes primarias y secundarias en la investigación histórica",
+    "hoja": {
+      "modo": "historia",
+      "marcas": [
+        {
+          "frag": "1810",
+          "rol": "dato",
+          "nota": "época de los hechos",
+          "campo": "Año 1810"
+        },
+        {
+          "frag": "un testigo de los hechos",
+          "rol": "clave",
+          "nota": "vivió el evento",
+          "campo": "Vivió el hecho"
+        },
+        {
+          "frag": "para un historiador de hoy",
+          "rol": "trampa",
+          "nota": "la fuente se juzga por la época, no por quién la lee",
+          "campo": "Quien la lee hoy no cambia el tipo"
+        },
+        {
+          "frag": "es una fuente",
+          "rol": "pide",
+          "nota": "el tipo de fuente",
+          "campo": "¿Primaria o secundaria?"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un testigo",
+          "texto": "Quien estuvo ahí cuenta lo que vio: es una fuente primaria. Quien lo cuenta después, leyendo otras fuentes, es una fuente secundaria."
+        },
+        {
+          "k": "ejemplo",
+          "titulo": "Primaria vs. secundaria",
+          "si": [
+            "Carta de 1810 de un testigo",
+            "Diario o fotografía de la época",
+            "Ley o decreto original"
+          ],
+          "no": [
+            "Libro de texto actual",
+            "Artículo de un historiador de hoy",
+            "Documental sobre 1810"
+          ]
+        },
+        {
+          "k": "linea",
+          "titulo": "Dónde está cada fuente",
+          "eventos": [
+            {
+              "anio": "1810",
+              "t": "Carta del testigo",
+              "d": "Escrita en el momento de los hechos",
+              "rol": "hecho"
+            },
+            {
+              "anio": "Hoy",
+              "t": "Historiador",
+              "d": "La usa como evidencia para escribir su interpretación",
+              "rol": "despues"
+            }
+          ]
+        },
+        {
+          "k": "check",
+          "texto": "Primaria. Una opinión puede ser parcial, pero eso no le quita valor como fuente."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Clasifica la fuente",
+          "items": [
+            {
+              "p": "¿Quién la escribe?",
+              "op": [
+                "Un testigo de los hechos",
+                "Un historiador actual"
+              ],
+              "ok": 0,
+              "why": "Vivió el momento."
+            },
+            {
+              "p": "«Primaria» significa…",
+              "op": [
+                "Viene de la época o de quien vivió el hecho",
+                "Es la más importante",
+                "Es la más larga"
+              ],
+              "ok": 0,
+              "why": "Se define por su origen."
+            },
+            {
+              "p": "¿Importa que el lector sea de hoy?",
+              "op": [
+                "No: se clasifica por su origen, no por quién la lee",
+                "Sí: la vuelve secundaria"
+              ],
+              "ok": 0,
+              "why": "La fecha de la carta es 1810, no la de quien la consulta."
+            }
+          ]
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el problema con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Se trata de una carta de $1810$ escrita por un testigo de los hechos.",
+            "a": "m:1810|m:un testigo de los hechos"
+          },
+          {
+            "t": "Fíjate: una carta de 1810 escrita por un testigo es de la misma época, así que es una fuente primaria.",
+            "a": "p:1"
+          },
+          {
+            "t": "Por eso la respuesta es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "El año es $1810$, y eso nos ubica en el tiempo de los hechos.",
+            "a": "m:1810"
+          },
+          {
+            "t": "El testigo escribe sobre lo que vio con sus propios ojos.",
+            "a": "m:un testigo de los hechos"
+          },
+          {
+            "t": "La pregunta está planteada desde el punto de vista del historiador de hoy.",
+            "a": "m:para un historiador de hoy"
+          },
+          {
+            "t": "Entonces, un testigo cuenta lo que vivió, sin que nadie se lo haya contado.",
+            "a": "p:0"
+          },
+          {
+            "t": "Mira el esquema: las fuentes de la izquierda son de la época, y las de la derecha se escribieron después.",
+            "a": "p:1"
+          },
+          {
+            "t": "La carta de 1810 pertenece al momento de los hechos, y el historiador de hoy la usa como evidencia.",
+            "a": "p:2"
+          },
+          {
+            "t": "La A, secundaria, tienta, pero esa es la que analiza los hechos tiempo después, como un libro actual.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, «opinión sin valor», no es cierta: para un historiador una carta así vale muchísimo.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, «mapa», es otro tipo de documento y no encaja con una carta.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, fuente primaria.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como ver la grabación de la cámara en el estadio, frente a un comentarista que cuenta el partido al día siguiente.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo: un diario de 1810 es fuente primaria, y un libro de texto de hoy es secundaria.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error: pensar que una opinión no sirve. Sirve como fuente aunque sea parcial.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Historia: tipos de fuentes",
+        "que": "Una fuente es todo lo que sirve para estudiar el pasado. Puede ser primaria (de la época) o secundaria (escrita después, sobre esa época).",
+        "pistas": [
+          "hablan de una carta escrita en 1810",
+          "dicen que la escribió un testigo de los hechos",
+          "piden qué tipo de fuente es"
+        ],
+        "clave": "Pregunta mágica: ¿esta persona vio los hechos o los contó después? Si estuvo ahí, es fuente primaria.",
+        "no": [
+          {
+            "t": "Ordenar hechos en el tiempo",
+            "p": "Se parece porque hay una fecha. Pero nadie pide poner hechos en orden."
+          },
+          {
+            "t": "Causas de la independencia",
+            "p": "Se parece porque es de la misma época. Pero el tema es qué clase de documento es, no lo que cuenta."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Me pregunto: ¿quién lo escribió y cuándo?"
+          },
+          {
+            "t": "Lo escribió alguien que estuvo ahí, en 1810, en el momento de los hechos."
+          },
+          {
+            "t": "Entonces es una fuente primaria: viene directo de la época."
+          },
+          {
+            "t": "Descarto \"secundaria\" (escrita después) y las opciones que no son fuentes."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "soc-004",
@@ -93,7 +775,185 @@
     ],
     "origen": "original",
     "competencia": "Pensamiento social",
-    "afirmacion": "Ubica eventos históricos relevantes en orden cronológico"
+    "afirmacion": "Ubica eventos históricos relevantes en orden cronológico",
+    "hoja": {
+      "modo": "historia",
+      "marcas": [
+        {
+          "frag": "orden cronológico",
+          "rol": "pide",
+          "nota": "de la fecha más antigua a la más reciente",
+          "campo": "Del más antiguo al más reciente"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Ordena como la historia de tu familia",
+          "texto": "Primero el abuelo, luego tu papá, luego tú. Aquí igual: se ordena por el año. Solo mira los números."
+        },
+        {
+          "k": "linea",
+          "titulo": "Ordena en la línea",
+          "eventos": [
+            {
+              "anio": "1810",
+              "t": "Grito de Independencia",
+              "d": "Inicio del proceso independentista",
+              "rol": "hecho"
+            },
+            {
+              "anio": "1886",
+              "t": "Constitución de 1886",
+              "d": "Centraliza el Estado; rige más de un siglo",
+              "rol": "hecho"
+            },
+            {
+              "anio": "1958–1974",
+              "t": "Frente Nacional",
+              "d": "Liberales y conservadores se alternan el poder",
+              "rol": "hecho"
+            },
+            {
+              "anio": "1991",
+              "t": "Constitución de 1991",
+              "d": "Estado social de derecho; crea la tutela",
+              "rol": "hecho"
+            }
+          ]
+        },
+        {
+          "k": "idea",
+          "titulo": "Cómo descartar rápido",
+          "texto": "Truco: ordena por siglos. 1800s: 1810 y 1886. 1900s: 1958 y 1991. Dentro de cada siglo ordena por año."
+        },
+        {
+          "k": "check",
+          "texto": "1810 → 1886 → Frente Nacional → 1991."
+        }
+      ],
+      "guia": [
+        {
+          "k": "ordenar",
+          "titulo": "Ordena los hechos del más antiguo al más reciente",
+          "items": [
+            "Grito de 1810",
+            "Constitución de 1886",
+            "Frente Nacional",
+            "Constitución de 1991"
+          ],
+          "why": "1810, 1886, 1958–1974 y 1991."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Nos piden elegir la secuencia que esté en orden cronológico.",
+            "a": "m:orden cronológico"
+          },
+          {
+            "t": "Entonces ordenamos por año: $1810$, $1886$, el Frente Nacional y $1991$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Es decir, el Grito de $1810$, la Constitución de $1886$, el Frente Nacional y la Constitución de $1991$. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Cronológico quiere decir ordenado del más antiguo al más reciente.",
+            "a": "m:orden cronológico"
+          },
+          {
+            "t": "Aquí solo importa el orden de los años, nada más.",
+            "a": "p:0"
+          },
+          {
+            "t": "En la línea del tiempo queda así: $1810$, $1886$, de $1958$ a $1974$, y $1991$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Un truco: primero van los años de $1800$ y después los de $1900$.",
+            "a": "p:2"
+          },
+          {
+            "t": "La A empieza en $1991$, el más reciente, y termina en $1810$. Está al revés.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C pone $1886$ antes de $1810$, y eso no puede ser.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D pone primero el Frente Nacional, pero ese fue después de $1886$.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Entonces la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como los capítulos de una serie: cada uno pasa después del anterior, y no puedes ver el final primero.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, $1810$ va antes que $1991$, aunque a veces suene al revés.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: dejarse llevar por la opción que empieza con la Constitución de $1991$, solo porque suena conocida.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Historia: ordenar hechos en el tiempo",
+        "que": "Es poner los hechos en una línea del tiempo, del más antiguo al más reciente.",
+        "pistas": [
+          "la pregunta dice \"orden cronológico\"",
+          "todas las opciones tienen los mismos cuatro hechos, solo cambian de lugar"
+        ],
+        "clave": "No leas las opciones completas: busca primero el hecho más antiguo (el Grito de $1810$) y descarta las que no empiezan por ahí.",
+        "no": [
+          {
+            "t": "Causas y consecuencias",
+            "p": "Se parece porque son hechos históricos. Pero no piden explicar por qué pasó cada uno, solo el orden."
+          },
+          {
+            "t": "Tipos de fuentes",
+            "p": "Se parece porque es historia. Pero no hablan de documentos."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Busco la fecha de cada hecho: Grito de Independencia, $1810$; Constitución, $1886$; Frente Nacional, $1958$–$1974$; nueva Constitución, $1991$."
+          },
+          {
+            "t": "Los ordeno de menor a mayor año."
+          },
+          {
+            "t": "Reviso cada opción y la comparo con mi lista."
+          },
+          {
+            "t": "Elijo la que coincide exactamente."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "soc-005",

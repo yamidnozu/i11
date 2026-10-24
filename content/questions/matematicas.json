@@ -21,7 +21,346 @@
     ],
     "origen": "original",
     "competencia": "Formulación y ejecución",
-    "afirmacion": "Modela situaciones cotidianas mediante funciones lineales y operaciones aritméticas"
+    "afirmacion": "Modela situaciones cotidianas mediante funciones lineales y operaciones aritméticas",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "$4.000 de arranque",
+          "rol": "dato",
+          "nota": "parte fija: se paga una vez",
+          "campo": "Parte fija: 4.000 pesos"
+        },
+        {
+          "frag": "$1.000 por cada kilómetro",
+          "rol": "dato",
+          "nota": "parte variable: depende de los km",
+          "campo": "Variable: 1.000 pesos por km"
+        },
+        {
+          "frag": "7 km",
+          "rol": "dato",
+          "nota": "k = 7",
+          "campo": "$k=7\\ \\text{km}$"
+        },
+        {
+          "frag": "¿Cuánto cuesta",
+          "rol": "pide",
+          "nota": "costo total en pesos",
+          "campo": "$C(7)=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en el taxímetro",
+          "texto": "Te subes al taxi y el taxímetro ya marca 4.000 pesos, sin haber andado nada. Después, cada kilómetro suma 1.000 pesos más. Miremos eso con barras."
+        },
+        {
+          "k": "barras",
+          "titulo": "Cuánto marca según los kilómetros",
+          "barras": [
+            {
+              "l": "0 km (apenas te subes)",
+              "e": "$4.000",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "1 km",
+              "e": "$5.000",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "azul"
+                },
+                {
+                  "v": 1,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "2 km",
+              "e": "$6.000",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "azul"
+                },
+                {
+                  "v": 2,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "7 km (tu recorrido)",
+              "e": "$11.000",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "azul"
+                },
+                {
+                  "v": 7,
+                  "c": "oro"
+                }
+              ]
+            }
+          ],
+          "nota": "Lo azul es el arranque: se paga una sola vez y nunca crece. Lo de color crece 1.000 por cada kilómetro."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa cada frase a matemáticas",
+          "filas": [
+            {
+              "dice": "$4.000 de arranque",
+              "escribo": "4.000",
+              "rol": "dato"
+            },
+            {
+              "dice": "$1.000 por cada kilómetro",
+              "escribo": "1.000\\cdot k",
+              "rol": "dato"
+            },
+            {
+              "dice": "recorrido de 7 km",
+              "escribo": "k=7",
+              "rol": "dato"
+            },
+            {
+              "dice": "¿Cuánto cuesta?",
+              "escribo": "C=\\ ?",
+              "rol": "pide"
+            }
+          ],
+          "nota": "Lo fijo se suma una sola vez. Lo que dice «por cada» se multiplica por la cantidad."
+        },
+        {
+          "k": "calc",
+          "titulo": "Arma la función",
+          "lineas": [
+            "C(k)=4.000+1.000\\cdot k"
+          ],
+          "nota": "Fija + variable·cantidad."
+        },
+        {
+          "k": "calc",
+          "titulo": "Reemplaza",
+          "lineas": [
+            "C(7)=4.000+1.000\\cdot7=4.000+7.000=11.000"
+          ],
+          "nota": ""
+        },
+        {
+          "k": "check",
+          "texto": "Sin el arranque serían 7.000 pesos. Con el arranque, 11.000."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "$4.000 de arranque",
+              "op": [
+                "Parte fija (se paga una vez)",
+                "Parte variable",
+                "Total"
+              ],
+              "ok": 0,
+              "why": "No depende de los kilómetros."
+            },
+            {
+              "p": "$1.000 por cada kilómetro",
+              "op": [
+                "Parte variable (pendiente)",
+                "Parte fija",
+                "Distancia"
+              ],
+              "ok": 0,
+              "why": "Se multiplica por la cantidad de km."
+            }
+          ]
+        },
+        {
+          "k": "asignar",
+          "titulo": "¿Qué tipo de función es?",
+          "items": [
+            {
+              "p": "fijo + variable × cantidad",
+              "op": [
+                "Lineal: $C=4.000+1.000\\,k$",
+                "Cuadrática",
+                "Exponencial"
+              ],
+              "ok": 0,
+              "why": "La tasa por km es constante: línea recta."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula el costo",
+          "antes": "C(7)=4.000+1.000\\cdot7=",
+          "resp": 11000,
+          "unidad": "pesos",
+          "tol": 1e-09,
+          "pista": "Primero $1.000\\cdot7$.",
+          "why": "$4.000+7.000=11.000$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Hay un cobro fijo de 4.000 pesos y 1.000 pesos por cada kilómetro, y el viaje es de $7\\ \\text{km}$.",
+            "a": "m:$4.000 de arranque|m:$1.000 por cada kilómetro|m:7 km"
+          },
+          {
+            "t": "Mira las barras: la parte azul es el arranque, que se paga una sola vez. La verde crece mil pesos por cada kilómetro.",
+            "a": "p:1"
+          },
+          {
+            "t": "Pasamos cada frase a matemáticas: el arranque es $4.000$, y cada kilómetro es $1.000\\cdot k$.",
+            "a": "p:2"
+          },
+          {
+            "t": "La función del costo es el arranque más mil por kilómetro. Con $7$ km tenemos $4.000+7.000=11.000$.",
+            "a": "p:3|p:4"
+          },
+          {
+            "t": "Entonces el viaje cuesta 11.000 pesos. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "El arranque se paga una sola vez, aunque el viaje sea cortico.",
+            "a": "m:$4.000 de arranque"
+          },
+          {
+            "t": "Cada kilómetro cuesta lo mismo, así que la tarifa crece de forma lineal.",
+            "a": "m:$1.000 por cada kilómetro"
+          },
+          {
+            "t": "El viaje es de $7\\ \\text{km}$.",
+            "a": "m:7 km"
+          },
+          {
+            "t": "Y lo que nos piden es el costo total.",
+            "a": "m:¿Cuánto cuesta"
+          },
+          {
+            "t": "Imagina que te subes a un taxi: el taxímetro ya marca $4.000$ antes de que arranques.",
+            "a": "p:0"
+          },
+          {
+            "t": "Con cada kilómetro suma mil más. Mira cómo crece la parte de color, mientras que la azul no cambia.",
+            "a": "p:1"
+          },
+          {
+            "t": "Traducimos así: lo que se paga una sola vez es el arranque, $4.000$. Y lo que dice «por cada» se multiplica por la cantidad de kilómetros.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces el costo es $C=4.000+1.000\\cdot k$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Con $k=7$ tenemos $1.000\\cdot7=7.000$, y al sumar el arranque $4.000$ da $11.000$.",
+            "a": "p:4"
+          },
+          {
+            "t": "La A, $7.000$, tienta, pero se le olvidó sumar el arranque.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $28.000$, multiplica el arranque por los kilómetros, y el arranque se paga una sola vez.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $12.000$, sale de contar $8\\ \\text{km}$ en vez de los kilómetros reales.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, 11.000 pesos.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como ir al cine: la entrada se paga una sola vez, y cada paquete de crispetas o de dulces va sumando.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, un plan de celular con cargo fijo de $20.000$ y $500$ por cada minuto extra. El cargo fijo no depende de los minutos.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: multiplicar todo por $7$, o sea $(4.000+1.000)\\cdot7=35.000$. El arranque se paga una vez, no por kilómetro.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: función lineal (un cobro fijo más un cobro por cada unidad)",
+        "que": "Es cuando algo se paga con dos partes: una cantidad que pagas siempre, y otra que va creciendo parejo, como un taxi.",
+        "pistas": [
+          "hay un cobro de arranque que se paga siempre: 4.000 pesos",
+          "hay un cobro por cada kilómetro: 1.000 pesos",
+          "piden el precio de un recorrido concreto: 7 km"
+        ],
+        "clave": "Pregúntate: ¿qué pasaría con cero? Si igual hay que pagar algo, hay una parte fija, y eso es función lineal. Si con cero se paga cero, es proporcional.",
+        "no": [
+          {
+            "t": "Proporcionalidad directa",
+            "p": "Se parece porque el precio sube con los kilómetros. Pero en la proporcional, con $0$ km pagarías $0$; aquí con $0$ km ya debes 4.000 por el arranque."
+          },
+          {
+            "t": "Porcentajes",
+            "p": "Se parece porque son cuentas de plata. Pero no hay ningún \"por ciento\" en el enunciado."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Separo lo que se paga una sola vez (arranque: 4.000) de lo que se paga por cada kilómetro (1.000).",
+            "eq": [
+              "C(k)=4.000+1.000\\cdot k"
+            ]
+          },
+          {
+            "t": "Multiplico los kilómetros por lo que cuesta cada uno, y le sumo el arranque.",
+            "eq": [
+              "C(7)=4.000+1.000\\cdot7=4.000+7.000=11.000"
+            ]
+          },
+          {
+            "t": "Compruebo con un caso fácil: con cero km pagaría el arranque, o sea 4.000. Tiene sentido.",
+            "eq": [
+              "C(0)=4.000+1.000\\cdot0=4.000"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-002",
@@ -45,7 +384,390 @@
     ],
     "origen": "original",
     "competencia": "Interpretación y representación",
-    "afirmacion": "Determina raíces e interceptos de funciones algebraicas polinomiales"
+    "afirmacion": "Determina raíces e interceptos de funciones algebraicas polinomiales",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "$f(x)=x^2-4x+3$",
+          "rol": "dato",
+          "nota": "cuadrática",
+          "campo": "$f(x)=x^2-4x+3$"
+        },
+        {
+          "frag": "corta el eje $x$",
+          "rol": "clave",
+          "nota": "cortar el eje x es f(x) = 0",
+          "campo": "$f(x)=0$",
+          "w": "Condición"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "grafica",
+          "titulo": "Mira qué te piden",
+          "coef": [
+            1,
+            -4,
+            3
+          ],
+          "x": [
+            -0.5,
+            4.5
+          ],
+          "puntos": [
+            {
+              "x": 1,
+              "y": 0,
+              "l": "x = ?"
+            },
+            {
+              "x": 3,
+              "y": 0,
+              "l": "x = ?"
+            }
+          ],
+          "nota": "«Corta el eje x» es tocar la línea horizontal. En esos dos puntos la altura (y) vale 0. Buscamos los valores de x."
+        },
+        {
+          "k": "calc",
+          "titulo": "Altura cero: igualo a cero",
+          "lineas": [
+            "f(x)=0",
+            "x^2-4x+3=0"
+          ],
+          "nota": "Como en esos puntos la altura es 0, igualo la función a 0."
+        },
+        {
+          "k": "calc",
+          "titulo": "¿De dónde sale? De multiplicar dos paréntesis",
+          "lineas": [
+            "(x+m)(x+n)",
+            "=x^2+mx+nx+m\\cdot n",
+            "=x^2+(m+n)x+m\\cdot n"
+          ],
+          "nota": "m y n son dos números secretos. Multiplicar los paréntesis da esa forma; nosotros vamos al revés."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Compara con tu ecuación",
+          "filas": [
+            {
+              "dice": "el número que acompaña a $x$: $-4$",
+              "escribo": "m+n=-4",
+              "rol": "dato"
+            },
+            {
+              "dice": "el número solo: $3$",
+              "escribo": "m\\cdot n=3",
+              "rol": "dato"
+            }
+          ],
+          "nota": "Por eso se buscan dos números que sumen −4 y multipliquen 3."
+        },
+        {
+          "k": "tanteo",
+          "titulo": "Busca los dos números",
+          "busco": "Busco dos números que multipliquen 3 y sumen −4.",
+          "cols": [
+            "Pareja",
+            "Multiplican",
+            "Suman"
+          ],
+          "filas": [
+            {
+              "a": "$1$ y $3$",
+              "b": "$1\\cdot3=3$",
+              "c": "$1+3=4$",
+              "ok": false
+            },
+            {
+              "a": "$-1$ y $-3$",
+              "b": "$(-1)(-3)=3$",
+              "c": "$-1-3=-4$",
+              "ok": true
+            }
+          ],
+          "nota": "Primero listo las parejas que multiplican 3 (solo hay dos). De ésas, la que suma −4 es la que sirve."
+        },
+        {
+          "k": "calc",
+          "titulo": "Arma los paréntesis con esos números",
+          "lineas": [
+            "(x+m)(x+n)=0",
+            "(x+(-1))(x+(-3))=0",
+            "(x-1)(x-3)=0"
+          ],
+          "nota": "x + (−1) se escribe x − 1, y x + (−3) se escribe x − 3."
+        },
+        {
+          "k": "calc",
+          "titulo": "Un producto da 0 si uno de los dos es 0",
+          "lineas": [
+            "x-1=0\\ \\Rightarrow\\ x=1",
+            "x-3=0\\ \\Rightarrow\\ x=3"
+          ],
+          "nota": "¿Qué número menos 1 da 0? El 1. ¿Y menos 3? El 3."
+        },
+        {
+          "k": "grafica",
+          "titulo": "Comprueba en la gráfica",
+          "coef": [
+            1,
+            -4,
+            3
+          ],
+          "x": [
+            -0.5,
+            4.5
+          ],
+          "puntos": [
+            {
+              "x": 1,
+              "y": 0,
+              "l": "x = 1"
+            },
+            {
+              "x": 3,
+              "y": 0,
+              "l": "x = 3"
+            }
+          ],
+          "nota": "La curva toca el eje justo en 1 y en 3."
+        },
+        {
+          "k": "calc",
+          "titulo": "Verifica reemplazando",
+          "lineas": [
+            "f(1)=1-4+3=0",
+            "f(3)=9-12+3=0"
+          ],
+          "nota": "Si al reemplazar da 0, es un punto donde corta."
+        },
+        {
+          "k": "check",
+          "texto": "Los cortes con el eje x son x = 1 y x = 3."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Piensa antes de resolver",
+          "items": [
+            {
+              "p": "cortar el eje $x$",
+              "op": [
+                "$f(x)=0$",
+                "$x=0$",
+                "$f(x)=x$"
+              ],
+              "ok": 0,
+              "why": "En el eje x la altura es 0."
+            },
+            {
+              "p": "¿Qué técnica sirve para $x^2-4x+3=0$?",
+              "op": [
+                "Factorizar",
+                "Derivar",
+                "Despejar $x$ directamente"
+              ],
+              "ok": 0,
+              "why": "Buscas dos números que multipliquen 3 y sumen −4."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Completa la factorización",
+          "antes": "x^2-4x+3=(x-1)(x-\\ ?\\ )",
+          "resp": 3,
+          "unidad": "",
+          "tol": 1e-09,
+          "pista": "Deben multiplicar 3 y sumar −4 (con −1 ya tienes uno).",
+          "why": "$-1$ y $-3$: producto 3, suma −4."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "La función es $f(x)=x^2-4x+3$ y nos piden saber dónde corta el eje $x$.",
+            "a": "m:$f(x)=x^2-4x+3$|m:corta el eje $x$"
+          },
+          {
+            "t": "Cortar el eje $x$ es tocar la línea horizontal. Por ahora no sabemos cuánto vale $x$ en esos dos puntos.",
+            "a": "p:0"
+          },
+          {
+            "t": "En esos puntos la altura es cero. Entonces igualamos la función a cero: $x^2-4x+3=0$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Esta ecuación sale de multiplicar dos paréntesis. Si multiplicamos $(x+m)(x+n)$, queda $x^2+(m+n)x+m\\cdot n$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Comparemos con la nuestra: lo que acompaña a la $x$ es $-4$, así que $m+n=-4$. El número solo es $3$, así que $m\\cdot n=3$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Ahora buscamos dos números que multipliquen $3$ y sumen $-4$. Probemos con $1$ y $3$: suman $4$, no sirve. Con $-1$ y $-3$: multiplican $3$ y suman $-4$. Estos sí sirven.",
+            "a": "p:4"
+          },
+          {
+            "t": "Con $-1$ y $-3$ armamos los paréntesis: $(x-1)(x-3)=0$.",
+            "a": "p:5"
+          },
+          {
+            "t": "Y como un producto da cero solo si uno de los factores es cero, entonces $x=1$ o $x=3$.",
+            "a": "p:6"
+          },
+          {
+            "t": "Lo confirmamos en la gráfica: la curva toca el eje en $1$ y en $3$. Es la opción B.",
+            "a": "p:7|o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate que hay una $x^2$, así que la gráfica es una curva en forma de U, es decir, una parábola.",
+            "a": "m:$f(x)=x^2-4x+3$"
+          },
+          {
+            "t": "Cortar el eje $x$ significa estar a altura cero, o sea $f(x)=0$.",
+            "a": "m:corta el eje $x$"
+          },
+          {
+            "t": "Cortar el eje $x$ es tocar la línea horizontal. Por ahora no sabemos cuánto vale $x$ en esos dos puntos.",
+            "a": "p:0"
+          },
+          {
+            "t": "En esos puntos la altura es cero. Entonces igualamos la función a cero: $x^2-4x+3=0$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Esta ecuación sale de multiplicar dos paréntesis. Si multiplicamos $(x+m)(x+n)$, queda $x^2+(m+n)x+m\\cdot n$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Comparemos con la nuestra: lo que acompaña a la $x$ es $-4$, así que $m+n=-4$. El número solo es $3$, así que $m\\cdot n=3$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Ahora buscamos dos números que multipliquen $3$ y sumen $-4$. Probemos con $1$ y $3$: suman $4$, no sirve. Con $-1$ y $-3$: multiplican $3$ y suman $-4$. Estos sí sirven.",
+            "a": "p:4"
+          },
+          {
+            "t": "Con $-1$ y $-3$ armamos los paréntesis: $(x-1)(x-3)=0$.",
+            "a": "p:5"
+          },
+          {
+            "t": "Y como un producto da cero solo si uno de los factores es cero, entonces $x=1$ o $x=3$.",
+            "a": "p:6"
+          },
+          {
+            "t": "Lo confirmamos en la gráfica: la curva toca el eje en $1$ y en $3$.",
+            "a": "p:7"
+          },
+          {
+            "t": "Y verificamos: $f(1)=1-4+3=0$ y $f(3)=9-12+3=0$.",
+            "a": "p:8"
+          },
+          {
+            "t": "La A, $x=-1,-3$, tienta, pero es un error de signos: son los números del paréntesis, no las raíces.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $x=0,3$, tienta porque el $3$ sí es raíz, pero el $0$ es donde la curva corta el eje $y$, no el $x$.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $x=2,4$, tienta porque el $2$ parece importante, pero es el vértice, no un corte con el eje.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Imagina la parábola como el arco de un puente: las raíces son los dos puntos donde el arco toca el suelo.",
+            "k": "ana"
+          },
+          {
+            "t": "El vértice queda justo en el medio, en $x=2$, entre $1$ y $3$. Por eso la D es un señuelo.",
+            "k": "contra"
+          },
+          {
+            "t": "Un atajo: la suma de las raíces es $4$ y el producto es $3$. Solo $1$ y $3$ cumplen las dos cosas.",
+            "a": "p:9",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: escribir $(x+1)(x+3)$ por no mirar el signo del término del medio.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: función cuadrática (puntos donde corta el eje x)",
+        "que": "Es una función con $x^2$ cuya gráfica es una curva en forma de U. Aquí piden dónde esa curva cruza la línea horizontal.",
+        "pistas": [
+          "la función tiene un $x^2$: eso la hace cuadrática",
+          "dice \"corta el eje $x$\": es donde la curva toca la línea horizontal",
+          "en esos puntos la altura es $0$"
+        ],
+        "clave": "Si ves $x^2$ y piden dónde corta el eje $x$, iguala la función a cero. Eso funciona siempre, porque en el eje $x$ la altura es cero.",
+        "no": [
+          {
+            "t": "Vértice",
+            "p": "Se parece porque es la misma curva. Pero el vértice es el punto más alto o más bajo, y no lo están pidiendo."
+          },
+          {
+            "t": "Corte con el eje y",
+            "p": "Se parece porque también es un corte. Pero ese se saca poniendo $x=0$; aquí piden el corte con el eje $x$."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Como en el corte la altura es cero, igualo la función a cero.",
+            "eq": [
+              "x^2-4x+3=0"
+            ]
+          },
+          {
+            "t": "Busco dos números que multiplicados den $3$ y sumados den $-4$: son $-1$ y $-3$.",
+            "eq": [
+              "(x-1)(x-3)=0"
+            ]
+          },
+          {
+            "t": "Cada paréntesis puede valer cero.",
+            "eq": [
+              "x-1=0\\ \\Rightarrow\\ x=1",
+              "x-3=0\\ \\Rightarrow\\ x=3"
+            ]
+          },
+          {
+            "t": "Compruebo reemplazando en la función.",
+            "eq": [
+              "f(1)=1-4+3=0",
+              "f(3)=9-12+3=0"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-003",
@@ -69,7 +791,241 @@
     ],
     "origen": "original",
     "competencia": "Formulación y ejecución",
-    "afirmacion": "Calcula probabilidades simples en espacios muestrales equiprobables"
+    "afirmacion": "Calcula probabilidades simples en espacios muestrales equiprobables",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "3 fichas rojas",
+          "rol": "dato",
+          "nota": "las que me sirven",
+          "campo": "Favorables: $3$"
+        },
+        {
+          "frag": "5 azules",
+          "rol": "dato",
+          "nota": "suma al total",
+          "campo": "Otras: $5$"
+        },
+        {
+          "frag": "sea roja",
+          "rol": "pide",
+          "nota": "probabilidad de roja",
+          "campo": "$P(\\text{roja})=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Imagina que metes la mano sin mirar",
+          "texto": "Una bolsa con 3 fichas rojas y 5 azules. Metes la mano a ciegas y sacas una. ¿Qué tan fácil es que sea roja? Hay pocas rojas entre varias fichas, así que no es tan fácil. La probabilidad lo mide con una fracción."
+        },
+        {
+          "k": "puntos",
+          "titulo": "Dibuja la bolsa y cuenta",
+          "grupos": [
+            {
+              "n": 3,
+              "l": "rojas (las que quiero)",
+              "c": "rojo"
+            },
+            {
+              "n": 5,
+              "l": "azules",
+              "c": "azul"
+            }
+          ],
+          "lineas": [
+            "\\text{totales}=3+5=8",
+            "P(\\text{roja})=\\frac{3}{8}"
+          ],
+          "nota": "Abajo va el total de fichas (8), no solo las azules."
+        },
+        {
+          "k": "calc",
+          "titulo": "La regla de la probabilidad",
+          "lineas": [
+            "P=\\frac{\\text{las que quiero}}{\\text{todas las que hay}}",
+            "P(\\text{roja})=\\frac{3}{8}"
+          ],
+          "nota": "Arriba van las fichas que quiero (rojas). Abajo van todas las fichas, rojas y azules juntas."
+        },
+        {
+          "k": "check",
+          "texto": "$3/5$ compara rojas con azules: eso no es probabilidad, porque abajo faltan las rojas."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "3 fichas rojas",
+              "op": [
+                "Las que me sirven",
+                "Todas las posibles",
+                "Probabilidad"
+              ],
+              "ok": 0,
+              "why": "Lo que quieres que pase."
+            },
+            {
+              "p": "3 rojas y 5 azules",
+              "op": [
+                "Todas las posibles: se suman",
+                "Todas las posibles: solo las azules",
+                "Razón rojas : azules"
+              ],
+              "ok": 0,
+              "why": "El total incluye todas las fichas."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Escribe la probabilidad como decimal",
+          "antes": "P(\\text{roja})=\\frac{3}{3+5}=",
+          "resp": 0.375,
+          "unidad": "",
+          "tol": 0.001,
+          "pista": "Divide 3 entre 8.",
+          "why": "$\\frac{3}{8}=0{,}375$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate: en la bolsa hay $3$ fichas rojas y $5$ azules, y nos piden que salga una roja.",
+            "a": "m:3 fichas rojas|m:5 azules|m:sea roja"
+          },
+          {
+            "t": "Dibuja la bolsa con $3$ rojas y $5$ azules. En total hay $8$ fichas.",
+            "a": "p:1"
+          },
+          {
+            "t": "La probabilidad es las fichas que quiero sobre todas las que hay, o sea, $3$ sobre $8$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces la respuesta es $\\tfrac38$, que es la B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer el enunciado con calma, para entender bien qué nos están contando.",
+            "a": "leer"
+          },
+          {
+            "t": "Hay tres fichas rojas, y esas son las que nos sirven, las que queremos que salgan.",
+            "a": "m:3 fichas rojas"
+          },
+          {
+            "t": "Hay cinco azules, que junto con las rojas completan el total de $8$ fichas.",
+            "a": "m:5 azules"
+          },
+          {
+            "t": "Lo que nos piden es que la ficha que salga sea roja.",
+            "a": "m:sea roja"
+          },
+          {
+            "t": "Imagina una bolsa con fichas, de donde sacas una sin mirar.",
+            "a": "p:0"
+          },
+          {
+            "t": "Contemos: rojas, que son las que quiero, tres; azules, cinco. Entonces el total de fichas es ocho.",
+            "a": "p:1"
+          },
+          {
+            "t": "La regla es: las que quiero, sobre todas las que hay. Es decir, $3$ sobre $8$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ojo: abajo van las ocho fichas, no solo las cinco azules. Por eso $3/5$ está mal.",
+            "a": "p:3",
+            "k": "err"
+          },
+          {
+            "t": "La A, $\\tfrac35$, tienta porque compara las rojas con las azules, en lugar de compararlas con el total.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $\\tfrac58$, es la probabilidad de sacar una azul, no una roja.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $\\tfrac13$, no sale de ningún cálculo con estos números.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la B, $\\tfrac38$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como una rifa con $8$ boletas: si compraste $3$, tienes $3$ de $8$ posibilidades de ganarte la nevera.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, en un salón de $30$ estudiantes hay $10$ que usan gafas. Si eliges a uno al azar, la probabilidad de que use gafas es $10/30$.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error común: comparar $3$ rojas contra $5$ azules. La probabilidad siempre se compara contra el total.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: probabilidad simple",
+        "que": "Es medir qué tan posible es que pase algo: se cuentan las formas en que puede salir lo que quiero y se comparan con todas las formas en que puede salir.",
+        "pistas": [
+          "hay una bolsa con fichas de colores",
+          "sacan una al azar (a la suerte)",
+          "piden la probabilidad de que sea roja"
+        ],
+        "clave": "En probabilidad simple siempre se arma una fracción: arriba las que me sirven, abajo todas las posibles.",
+        "no": [
+          {
+            "t": "Conteos y arreglos (combinatoria)",
+            "p": "Se parece porque también se cuenta. Pero aquí no piden de cuántas maneras se ordenan las fichas, solo la probabilidad de una."
+          },
+          {
+            "t": "Promedios (estadística)",
+            "p": "Se parece porque hay números. Pero aquí no hay lista de datos para promediar, hay azar."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Cuento cuántas fichas hay en total: $3$ rojas más $5$ azules.",
+            "eq": [
+              "\\text{totales}=3+5=8"
+            ]
+          },
+          {
+            "t": "Cuento las que me sirven, las rojas: $3$."
+          },
+          {
+            "t": "Pongo las que me sirven sobre el total.",
+            "eq": [
+              "P(\\text{roja})=\\frac{3}{8}"
+            ]
+          },
+          {
+            "t": "Reviso que sea menor que $1$ y que no haya contado de más."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-004",
@@ -96,7 +1052,308 @@
       "id": "mat.estadistica"
     },
     "competencia": "Interpretación y representación",
-    "afirmacion": "Interpreta y compara medidas de tendencia central (media y mediana)"
+    "afirmacion": "Interpreta y compara medidas de tendencia central (media y mediana)",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "2, 3, 3, 4, 8",
+          "rol": "dato",
+          "nota": "5 datos",
+          "campo": "$2,\\ 3,\\ 3,\\ 4,\\ 8$"
+        },
+        {
+          "frag": "media 4 y mediana 3",
+          "rol": "dato",
+          "nota": "estado inicial",
+          "campo": "$\\bar{x}=4,\\ \\text{Me}=3$"
+        },
+        {
+          "frag": "se elimina el dato 8",
+          "rol": "clave",
+          "nota": "el 8 es el extremo",
+          "campo": "Quitar el $8$"
+        },
+        {
+          "frag": "qué ocurre",
+          "rol": "pide",
+          "nota": "media y mediana",
+          "campo": "¿Qué pasa con $\\bar{x}$ y Me?"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Media y mediana, con un ejemplo",
+          "texto": "La media es como repartir parejo: juntas todo y lo repartes igual entre todos. La mediana es el que queda parado justo en el medio de la fila. Un dato enorme, como el 8, jala la media hacia arriba, pero a la mediana casi no le importa."
+        },
+        {
+          "k": "barras",
+          "titulo": "Los datos con barras",
+          "barras": [
+            {
+              "l": "Dato 1",
+              "e": "2",
+              "segs": [
+                {
+                  "v": 2,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Dato 2",
+              "e": "3",
+              "segs": [
+                {
+                  "v": 3,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Dato 3",
+              "e": "3",
+              "segs": [
+                {
+                  "v": 3,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Dato 4",
+              "e": "4",
+              "segs": [
+                {
+                  "v": 4,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Dato 5 (el que se elimina)",
+              "e": "8",
+              "segs": [
+                {
+                  "v": 8,
+                  "c": "rojo"
+                }
+              ]
+            }
+          ],
+          "ref": {
+            "v": 4,
+            "l": "media con el 8 = 4"
+          },
+          "nota": "La barra roja es la que estira la media. Sin ella, la media baja."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Compara antes y después",
+          "cols": [
+            "",
+            "Con el 8",
+            "Sin el 8"
+          ],
+          "filas": [
+            [
+              "Datos",
+              "2, 3, 3, 4, 8",
+              "2, 3, 3, 4"
+            ],
+            [
+              "Suma",
+              "2+3+3+4+8 = 20",
+              "2+3+3+4 = 12"
+            ],
+            [
+              "Media (suma ÷ cuántos)",
+              "20 ÷ 5 = 4",
+              "12 ÷ 4 = 3"
+            ],
+            [
+              "Mediana (dato del centro)",
+              "3",
+              "(3+3) ÷ 2 = 3"
+            ]
+          ]
+        },
+        {
+          "k": "check",
+          "texto": "La media bajó de 4 a 3, porque el 8 la jalaba hacia arriba. La mediana sigue en 3, porque el del medio es el mismo."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Piensa en las medidas",
+          "items": [
+            {
+              "p": "¿Cuál es sensible a valores extremos?",
+              "op": [
+                "La media",
+                "La mediana",
+                "La moda"
+              ],
+              "ok": 0,
+              "why": "La media usa todos los valores; un extremo la jala."
+            },
+            {
+              "p": "Se elimina el 8: ¿quién cambia?",
+              "op": [
+                "La media baja",
+                "La mediana sube",
+                "Ninguna cambia"
+              ],
+              "ok": 0,
+              "why": "La mediana sigue siendo 3."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula la nueva media",
+          "antes": "\\bar{x}=\\frac{2+3+3+4}{4}=",
+          "resp": 3,
+          "unidad": "",
+          "tol": 1e-09,
+          "pista": "Suma 12 y divide entre 4.",
+          "why": "Baja de 4 a 3."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Vamos a leer el problema con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Los datos son $2,3,3,4,8$, con media $4$ y mediana $3$. Se elimina el $8$.",
+            "a": "m:2, 3, 3, 4, 8|m:media 4 y mediana 3|m:se elimina el dato 8"
+          },
+          {
+            "t": "Fíjate en el $8$: es el valor más grande y por eso tira la media hacia arriba.",
+            "a": "p:1"
+          },
+          {
+            "t": "Comparemos antes y después de quitarlo: la media baja de $4$ a $3$ y la mediana sigue en $3$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces la mediana no cambia. Es la opción A.",
+            "a": "o:A:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Vamos a leer el problema con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Tenemos los datos ordenados, con media $4$ y mediana $3$.",
+            "a": "m:2, 3, 3, 4, 8|m:media 4 y mediana 3"
+          },
+          {
+            "t": "Se quita el $8$, un dato muy grande, es decir, un valor extremo.",
+            "a": "m:se elimina el dato 8"
+          },
+          {
+            "t": "Lo que nos preguntan es qué pasa con la media y con la mediana.",
+            "a": "m:qué ocurre"
+          },
+          {
+            "t": "Primero recordemos qué es cada una. La media reparte todo en partes iguales; la mediana es el dato que queda en el medio.",
+            "a": "p:0"
+          },
+          {
+            "t": "Mira los datos en barras: el $8$ es el que se sale de lo normal.",
+            "a": "p:1"
+          },
+          {
+            "t": "Con el $8$, la suma es $20$ entre $5$ datos, y la media es $4$. Sin el $8$, la suma es $12$ entre $4$ datos, y la media es $3$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ahora la mediana: ordenamos y tomamos el centro. Con cuatro datos hay dos del medio, $3$ y $3$, y su promedio es $3$. No cambió.",
+            "a": "p:2"
+          },
+          {
+            "t": "La B dice que la media no cambia, pero acabamos de ver que bajó de $4$ a $3$.",
+            "a": "o:B:no",
+            "k": "err"
+          },
+          {
+            "t": "La C afirma que la media no cambia y la mediana sube, y las dos cosas son falsas.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D dice que ambas bajan a $2$, pero la media baja a $3$ y la mediana se queda en $3$.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la correcta es la A.",
+            "a": "o:A:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Piensa en los sueldos de una tienda de barrio: todos ganan parecido, pero el dueño gana muchísimo. Él sube la media, pero la mediana no se mueve.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo: en $1, 2, 3$ la media y la mediana son $2$. Si cambias el $3$ por $30$, la media sube a $11$ y la mediana sigue en $2$.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con este error: creer que si un dato desaparece, todo cambia. La mediana puede quedarse quieta.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: estadística (media y mediana)",
+        "que": "Es resumir una lista de datos con un solo número: la media es el promedio y la mediana es el dato que queda en el medio cuando los pones en orden.",
+        "pistas": [
+          "hay una lista de datos: $2, 3, 3, 4, 8$",
+          "mencionan la media y la mediana",
+          "preguntan qué pasa con ellas al quitar un dato"
+        ],
+        "clave": "Si te dan una lista de datos, mira cuál medida piden. Media es sumar y dividir; mediana es ordenar y tomar el del medio.",
+        "no": [
+          {
+            "t": "Probabilidad",
+            "p": "Se parece porque hay números. Pero aquí no hay azar ni se saca nada a la suerte; solo se quita un dato de la lista."
+          },
+          {
+            "t": "Moda",
+            "p": "Se parece porque también resume datos. Pero la moda (el dato más repetido) no la mencionan."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Quito el $8$ y me queda la lista: $2$, $3$, $3$, $4$."
+          },
+          {
+            "t": "Media nueva: sumo todos y divido entre cuántos son. Bajó de $4$ a $3$.",
+            "eq": [
+              "\\bar{x}=\\frac{2+3+3+4}{4}=\\frac{12}{4}=3"
+            ]
+          },
+          {
+            "t": "Mediana nueva: con cuatro datos es el promedio de los dos del medio. No cambió.",
+            "eq": [
+              "\\text{Me}=\\frac{3+3}{2}=3"
+            ]
+          },
+          {
+            "t": "Elijo la opción que dice: la media baja a $3$ y la mediana no cambia."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-005",
@@ -123,7 +1380,329 @@
       "id": "mat.probabilidad"
     },
     "competencia": "Formulación y ejecución",
-    "afirmacion": "Calcula probabilidades compuestas en experimentos con dados"
+    "afirmacion": "Calcula probabilidades compuestas en experimentos con dados",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "dos dados",
+          "rol": "dato",
+          "nota": "6 × 6 = 36 resultados",
+          "campo": "Casos totales: $6\\cdot6=36$"
+        },
+        {
+          "frag": "suma sea 7",
+          "rol": "pide",
+          "nota": "cuántas parejas suman 7",
+          "campo": "$P(\\text{suma}=7)=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Un dado tiene 6 caras, dos dados tienen 36 casos",
+          "texto": "Con el primer dado puede salir cualquiera de 6 números. Y por cada uno de esos, el segundo dado también puede dar 6. Entonces hay 6 por 6, o sea 36 casos posibles. Los pones todos en una tabla y miras cuántos suman 7."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Todas las combinaciones",
+          "cols": [
+            "+",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "filas": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "*7"
+            ],
+            [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "*7",
+              "8"
+            ],
+            [
+              "3",
+              "4",
+              "5",
+              "6",
+              "*7",
+              "8",
+              "9"
+            ],
+            [
+              "4",
+              "5",
+              "6",
+              "*7",
+              "8",
+              "9",
+              "10"
+            ],
+            [
+              "5",
+              "6",
+              "*7",
+              "8",
+              "9",
+              "10",
+              "11"
+            ],
+            [
+              "6",
+              "*7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ]
+          ]
+        },
+        {
+          "k": "tabla",
+          "titulo": "Parejas que suman 7",
+          "cols": [
+            "Dado 1",
+            "Dado 2",
+            "Suma"
+          ],
+          "filas": [
+            [
+              "1",
+              "6",
+              "7"
+            ],
+            [
+              "2",
+              "5",
+              "7"
+            ],
+            [
+              "3",
+              "4",
+              "7"
+            ],
+            [
+              "4",
+              "3",
+              "7"
+            ],
+            [
+              "5",
+              "2",
+              "7"
+            ],
+            [
+              "6",
+              "1",
+              "7"
+            ]
+          ]
+        },
+        {
+          "k": "calc",
+          "titulo": "Probabilidad",
+          "lineas": [
+            "P(7)=\\frac{6}{36}=\\frac{1}{6}"
+          ],
+          "nota": "(1,6) y (6,1) son distintas."
+        },
+        {
+          "k": "check",
+          "texto": "El $7$ es la suma que más veces se repite con dos dados: por eso es la más probable."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "Cuenta los casos",
+          "items": [
+            {
+              "p": "Dos dados",
+              "op": [
+                "36 resultados posibles",
+                "12 resultados",
+                "6 resultados"
+              ],
+              "ok": 0,
+              "why": "$6\\cdot6=36$: cada dado da 6 opciones."
+            },
+            {
+              "p": "Suma 7",
+              "op": [
+                "6 parejas (1-6, 2-5, 3-4 y sus inversas)",
+                "3 parejas",
+                "7 parejas"
+              ],
+              "ok": 0,
+              "why": "(1,6) y (6,1) son resultados distintos."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula la probabilidad (decimal)",
+          "antes": "P(7)=\\frac{6}{36}\\approx",
+          "resp": 0.17,
+          "unidad": "",
+          "tol": 0.005,
+          "pista": "Divide 6 entre 36.",
+          "why": "$\\frac{1}{6}\\approx0{,}17$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Se lanzan dos dados y queremos que la suma sea $7$.",
+            "a": "m:dos dados|m:suma sea 7"
+          },
+          {
+            "t": "En la tabla ves los $36$ casos posibles. Los marcados suman $7$, y son $6$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Recuerda que la probabilidad son los casos que quiero sobre todos los casos: $6$ sobre $36$, que es $1/6$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Entonces, el $7$ sale en $6$ casos: $\\tfrac{6}{36}=\\tfrac16$. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Fíjate: cada dado tiene $6$ caras, así que con los dos hay $6\\cdot6=36$ parejas posibles.",
+            "a": "m:dos dados"
+          },
+          {
+            "t": "Lo que buscamos es que la suma sea $7$.",
+            "a": "m:suma sea 7"
+          },
+          {
+            "t": "Con dos dados hay $6\\cdot6=36$ casos distintos.",
+            "a": "p:0"
+          },
+          {
+            "t": "Ahora los organizo en una tabla: un dado en las filas, el otro en las columnas, y dentro de cada casilla, la suma.",
+            "a": "p:1"
+          },
+          {
+            "t": "Marco los que dan $7$. Son $6$ parejas: $(1,6)$, $(2,5)$, $(3,4)$, $(4,3)$, $(5,2)$ y $(6,1)$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Ojo con esto: $(1,6)$ y $(6,1)$ cuentan por separado, porque son dos dados distintos.",
+            "a": "p:2",
+            "k": "por"
+          },
+          {
+            "t": "Entonces la probabilidad es casos que quiero sobre casos totales: $6/36$, que simplificado es $1/6$.",
+            "a": "p:3"
+          },
+          {
+            "t": "La A, $\\tfrac1{12}$, tienta, pero cuenta solo $3$ parejas y olvida que el orden importa.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $\\tfrac7{36}$, confunde el $7$ de la suma con la cantidad de casos.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $\\tfrac17$, divide entre las $7$ sumas posibles, pero esas sumas no tienen la misma probabilidad.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, $\\tfrac16$.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Imagina una bolsa con $36$ boletas de una rifa del barrio, y que solo $6$ son premiadas.",
+            "k": "ana"
+          },
+          {
+            "t": "Por ejemplo, para sumar $12$ solo sirve $(6,6)$. Es $1$ de $36$, mucho más difícil que sacar $7$.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: pensar que hay $11$ sumas posibles, de $2$ a $12$, y que todas tienen la misma probabilidad. No es así: unas se repiten más que otras.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: probabilidad con dos dados",
+        "que": "Es lo mismo que la probabilidad simple, pero con dos dados: hay que contar todas las parejas posibles que pueden salir.",
+        "pistas": [
+          "se lanzan dos dados",
+          "piden que la suma sea $7$",
+          "hay que contar parejas, no solo números sueltos"
+        ],
+        "clave": "Con dos dados, no cuentes números sino parejas: siempre hay $36$. Haz una lista ordenada y no se te pierde ninguna.",
+        "no": [
+          {
+            "t": "Probabilidad con un solo dado",
+            "p": "Se parece porque son dados. Pero con uno hay $6$ resultados; con dos hay $6\\cdot6=36$ parejas."
+          },
+          {
+            "t": "Conteos y arreglos (combinatoria)",
+            "p": "Se parece porque se cuenta. Pero aquí basta con listar las parejas que suman $7$ y compararlas con el total."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Calculo cuántas parejas existen en total: seis por seis.",
+            "eq": [
+              "6\\cdot6=36"
+            ]
+          },
+          {
+            "t": "Escribo las que suman $7$: son $6$ parejas.",
+            "eq": [
+              "(1,6),\\ (2,5),\\ (3,4),\\ (4,3),\\ (5,2),\\ (6,1)"
+            ]
+          },
+          {
+            "t": "Pongo las que sirven sobre el total.",
+            "eq": [
+              "P(7)=\\frac{6}{36}"
+            ]
+          },
+          {
+            "t": "Simplifico dividiendo arriba y abajo entre $6$.",
+            "eq": [
+              "\\frac{6}{36}=\\frac{1}{6}"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-006",
@@ -147,7 +1726,327 @@
     ],
     "origen": "original",
     "competencia": "Formulación y ejecución",
-    "afirmacion": "Resuelve problemas financieros con aumentos y descuentos porcentuales sucesivos"
+    "afirmacion": "Resuelve problemas financieros con aumentos y descuentos porcentuales sucesivos",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "$100.000",
+          "rol": "dato",
+          "nota": "base inicial",
+          "campo": "$P_0=100.000$"
+        },
+        {
+          "frag": "sube 20 %",
+          "rol": "clave",
+          "nota": "sobre 100.000",
+          "campo": "Sube: $\\times1{,}2$"
+        },
+        {
+          "frag": "baja 20 %",
+          "rol": "trampa",
+          "nota": "sobre el nuevo precio, 120.000, no sobre 100.000",
+          "campo": "Baja: $\\times0{,}8$ del nuevo"
+        },
+        {
+          "frag": "El precio final",
+          "rol": "pide",
+          "nota": "lo que hay que hallar",
+          "campo": "$P_f=\\ ?$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Imagínalo con una camiseta",
+          "texto": "Una camiseta cuesta 100.000 pesos. La tienda la sube $20\\%$ y, una semana después, la pone en oferta con $20\\%$ de descuento. ¿Queda otra vez en 100.000 pesos? Casi todos dicen que sí. Miremos qué pasa de verdad."
+        },
+        {
+          "k": "barras",
+          "titulo": "Míralo con barras",
+          "barras": [
+            {
+              "l": "Al inicio",
+              "e": "$100.000",
+              "segs": [
+                {
+                  "v": 100,
+                  "c": "azul"
+                }
+              ]
+            },
+            {
+              "l": "Sube $20\\%$: se agregan 20.000 pesos",
+              "e": "$120.000",
+              "segs": [
+                {
+                  "v": 100,
+                  "c": "azul"
+                },
+                {
+                  "v": 20,
+                  "c": "verde"
+                }
+              ]
+            },
+            {
+              "l": "Baja $20\\%$ de 120.000: se quitan 24.000 pesos",
+              "e": "$96.000",
+              "segs": [
+                {
+                  "v": 96,
+                  "c": "azul"
+                },
+                {
+                  "v": 24,
+                  "c": "rojo"
+                }
+              ]
+            }
+          ],
+          "ref": {
+            "v": 100,
+            "l": "precio inicial"
+          },
+          "nota": "Lo verde es lo que se agrega; lo rayado en rojo es lo que se quita. Se quita más de lo que se agregó, porque el $20\\%$ ahora se saca de una barra más larga."
+        },
+        {
+          "k": "traducir",
+          "titulo": "¿Por qué ×1,2 y ×0,8?",
+          "filas": [
+            {
+              "dice": "sube $20\\%$",
+              "escribo": "100\\%+20\\%=120\\%\\Rightarrow\\times1{,}2",
+              "rol": "dato"
+            },
+            {
+              "dice": "baja $20\\%$",
+              "escribo": "100\\%-20\\%=80\\%\\Rightarrow\\times0{,}8",
+              "rol": "dato"
+            }
+          ],
+          "nota": "El precio de ese momento siempre es el 100 %. Subir es quedarse con más de ese 100 %; bajar, con menos. Y 120 % es lo mismo que 1,2."
+        },
+        {
+          "k": "flujo",
+          "titulo": "Hazlo paso a paso",
+          "nodos": [
+            {
+              "v": "$100.000",
+              "l": "precio inicial"
+            },
+            {
+              "v": "$120.000",
+              "l": "después de subir"
+            },
+            {
+              "v": "$96.000",
+              "l": "precio final"
+            }
+          ],
+          "saltos": [
+            "\\times1{,}2\\ \\ (\\text{sube }20\\%)",
+            "\\times0{,}8\\ \\ (\\text{baja }20\\%\\ \\text{del nuevo})"
+          ],
+          "nota": "$100.000\\cdot1{,}2=120.000$ y luego $120.000\\cdot0{,}8=96.000$."
+        },
+        {
+          "k": "check",
+          "texto": "Subir y bajar el mismo porcentaje no deja el precio igual: el segundo $20\\%$ se calcula sobre un precio más grande. Por eso la respuesta es $96.000$."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Sobre qué base se calcula?",
+          "items": [
+            {
+              "p": "sube 20 %",
+              "op": [
+                "Sobre $100.000",
+                "Sobre $120.000",
+                "Sobre $20.000"
+              ],
+              "ok": 0,
+              "why": "El primer cambio parte del precio original."
+            },
+            {
+              "p": "baja 20 %",
+              "op": [
+                "Sobre $120.000",
+                "Sobre $100.000",
+                "Sobre $20.000"
+              ],
+              "ok": 0,
+              "why": "La base cambió: ahora el precio es 120.000."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Calcula el precio final",
+          "antes": "100.000\\cdot1{,}2\\cdot0{,}8=",
+          "resp": 96000,
+          "unidad": "pesos",
+          "tol": 1e-09,
+          "pista": "Sube 20 % es ×1,2 y baja 20 % es ×0,8.",
+          "why": "$1{,}2\\cdot0{,}8=0{,}96$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Tenemos un precio de 100.000 pesos que sube $20\\%$ y luego baja $20\\%$.",
+            "a": "m:$100.000|m:sube 20 %|m:baja 20 %"
+          },
+          {
+            "t": "Mira la barra: parte de $100.000$, sube a $120.000$ y luego baja a $96.000$. No vuelve al valor inicial.",
+            "a": "p:1"
+          },
+          {
+            "t": "Para calcularlo, subir $20\\%$ es multiplicar por $1{,}2$, y bajar $20\\%$ es multiplicar por $0{,}8$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces $100.000$ por $1{,}2$ da $120.000$, y por $0{,}8$ da $96.000$.",
+            "a": "p:3"
+          },
+          {
+            "t": "Fíjate que baja el $20\\%$ de $120.000$, o sea $24.000$, y queda $96.000$. Es la opción B.",
+            "a": "o:B:ok"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "El precio de partida es de 100.000 pesos.",
+            "a": "m:$100.000"
+          },
+          {
+            "t": "Primero el precio sube $20\\%$.",
+            "a": "m:sube 20 %"
+          },
+          {
+            "t": "Después baja $20\\%$, pero ojo: del precio nuevo, no del original.",
+            "a": "m:baja 20 %",
+            "k": "por"
+          },
+          {
+            "t": "Y nos piden el precio final.",
+            "a": "m:El precio final"
+          },
+          {
+            "t": "Pensemos en una camiseta de $100.000$. Sube y luego se rebaja el mismo porcentaje. ¿Será que queda igual?",
+            "a": "p:0"
+          },
+          {
+            "t": "Veámoslo con barras. Al subir $20\\%$ se agregan $20.000$, y la barra llega a $120.000$.",
+            "a": "p:1"
+          },
+          {
+            "t": "Ahora baja $20\\%$, pero del precio nuevo: el $20\\%$ de $120.000$ es $24.000$. Por eso se quita más de lo que se había agregado.",
+            "a": "p:1",
+            "k": "por"
+          },
+          {
+            "t": "Para no dibujar la barra cada vez, usamos multiplicaciones. Subir $20\\%$ es quedarse con el $120\\%$, o sea multiplicar por $1{,}2$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Y bajar $20\\%$ es quedarse con el $80\\%$, o sea multiplicar por $0{,}8$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Entonces $100.000$ por $1{,}2$ es $120.000$, y por $0{,}8$ es $96.000$.",
+            "a": "p:3"
+          },
+          {
+            "t": "La A, $100.000$, tienta porque supone que subir y bajar el mismo porcentaje se cancela, pero no es así.",
+            "a": "o:A:no",
+            "k": "err"
+          },
+          {
+            "t": "La C, $104.000$, sale de sumar en vez de restar.",
+            "a": "o:C:no",
+            "k": "err"
+          },
+          {
+            "t": "La D, $98.000$, no sale de ningún cálculo razonable.",
+            "a": "o:D:no",
+            "k": "err"
+          },
+          {
+            "t": "Por eso la respuesta es la B, 96.000 pesos.",
+            "a": "o:B:ok"
+          }
+        ],
+        "3": [
+          {
+            "t": "Es como una escalera: subes $20$ peldaños de una escalera de $100$, y ahora estás en el $120$.",
+            "k": "ana"
+          },
+          {
+            "t": "Si bajas el $20\\%$ desde donde estás ahora, bajas $24$ peldaños, no $20$. Terminas más abajo de donde empezaste.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo extremo: si sube $100\\%$ pasa de $100$ a $200$, y si baja $50\\%$ vuelve a $100$. Aquí sí vuelve, pero no porque $100$ y $50$ se cancelen.",
+            "k": "ej"
+          },
+          {
+            "t": "Ojo con el error común: restar los porcentajes, $20-20=0$. Eso solo sirve cuando se calculan sobre el mismo precio.",
+            "k": "err"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: porcentajes seguidos (sube y luego baja)",
+        "que": "Es cuando un precio cambia varias veces seguidas en porcentaje. Cada cambio se calcula sobre el precio que había justo antes.",
+        "pistas": [
+          "el artículo cuesta 100.000 pesos",
+          "primero sube $20\\%$ y después baja $20\\%$",
+          "piden el precio final"
+        ],
+        "clave": "Cuando el porcentaje cambia dos veces, nunca sumes ni restes los porcentajes: calcula el primero, y con el resultado calcula el segundo.",
+        "no": [
+          {
+            "t": "Un aumento simple",
+            "p": "Se parece porque hay un porcentaje. Pero aquí son dos cambios, y el segundo se calcula sobre el precio nuevo, no sobre el original."
+          },
+          {
+            "t": "Regla de tres",
+            "p": "Se parece porque es de plata. Pero no se resuelve con una sola proporción, hay que hacer el cambio dos veces."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Calculo la subida: el $20\\%$ de 100.000 es 20.000, y el precio queda en 120.000.",
+            "eq": [
+              "100.000\\cdot1{,}2=120.000"
+            ]
+          },
+          {
+            "t": "Ahora la bajada es sobre 120.000: el $20\\%$ de 120.000 es 24.000.",
+            "eq": [
+              "120.000\\cdot0{,}8=96.000"
+            ]
+          },
+          {
+            "t": "Veo que no volvió a 100.000: subir y bajar el mismo porcentaje no se cancela.",
+            "eq": [
+              "100.000\\cdot1{,}2\\cdot0{,}8=100.000\\cdot0{,}96=96.000"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-007",
@@ -166,7 +2065,352 @@
       "challengeId": "ch1"
     },
     "competencia": "Interpretación y representación",
-    "afirmacion": "Relaciona los parámetros de una función cuadrática con su representación gráfica"
+    "afirmacion": "Relaciona los parámetros de una función cuadrática con su representación gráfica",
+    "hoja": {
+      "modo": "calculo",
+      "marcas": [
+        {
+          "frag": "graficador",
+          "rol": "clave",
+          "nota": "puedes probar valores y ver la curva",
+          "campo": "Prueba en el graficador"
+        },
+        {
+          "frag": "cuadrática",
+          "rol": "dato",
+          "nota": "función de la forma $ax^2+bx+c$",
+          "campo": "$f(x)=ax^2+bx+c$"
+        },
+        {
+          "frag": "vértice sea (2, −3)",
+          "rol": "pide",
+          "nota": "el punto más bajo (o más alto) debe quedar en x=2, y=−3",
+          "campo": "Vértice $V=(2,\\,-3)$"
+        }
+      ],
+      "pasos": [
+        {
+          "k": "vida",
+          "titulo": "Piensa en un balón que rebota en una cancha",
+          "texto": "Cuando lanzas un balón al aire, sube hasta un punto más alto y luego baja. Ese punto más alto es como el vértice de la curva. Aquí te piden lo contrario: tú decides en qué punto exacto quiere estar el vértice, y buscas los números a, b y c que hacen que la curva pase por ahí."
+        },
+        {
+          "k": "grafica",
+          "titulo": "Mira qué te piden",
+          "coef": [
+            1,
+            -4,
+            1
+          ],
+          "x": [
+            -1,
+            5
+          ],
+          "puntos": [
+            {
+              "x": 2,
+              "y": -3,
+              "l": "vértice (2, −3)"
+            },
+            {
+              "x": 0,
+              "y": 1,
+              "l": "corta el eje y"
+            }
+          ],
+          "nota": "Esta es una curva que cumple lo pedido. El vértice es el punto más bajo: está dos pasos a la derecha del eje y, y tres hacia abajo."
+        },
+        {
+          "k": "traducir",
+          "titulo": "Pasa lo que dicen a símbolos",
+          "filas": [
+            {
+              "dice": "una cuadrática",
+              "escribo": "f(x)=ax^2+bx+c",
+              "rol": "dato"
+            },
+            {
+              "dice": "vértice en $x=2$",
+              "escribo": "h=2",
+              "rol": "clave"
+            },
+            {
+              "dice": "vértice en $y=-3$",
+              "escribo": "k=-3",
+              "rol": "clave"
+            }
+          ],
+          "nota": "A las coordenadas del vértice se les llama $(h,k)$. Aquí $h=2$ y $k=-3$."
+        },
+        {
+          "k": "calc",
+          "titulo": "Forma que ya trae el vértice",
+          "lineas": [
+            "f(x)=a(x-h)^2+k",
+            "f(x)=a(x-2)^2-3"
+          ],
+          "nota": "Esta forma es muy cómoda: el vértice se lee directo. Cuidado con el signo: dentro del paréntesis va $x-2$ (al revés de lo que se ve), y afuera va $-3$."
+        },
+        {
+          "k": "calc",
+          "titulo": "Elige a = 1 y abre el cuadrado",
+          "lineas": [
+            "f(x)=1\\cdot(x-2)^2-3",
+            "(x-2)^2=x^2-4x+4",
+            "f(x)=x^2-4x+4-3",
+            "f(x)=x^2-4x+1"
+          ],
+          "nota": "Elegimos $a=1$ porque es lo más sencillo. Al final: $a=1$, $b=-4$, $c=1$."
+        },
+        {
+          "k": "tabla",
+          "titulo": "Con otros valores de a también funciona",
+          "cols": [
+            "a",
+            "b",
+            "c",
+            "Vértice"
+          ],
+          "filas": [
+            [
+              "1",
+              "−4",
+              "1",
+              "(2, −3)"
+            ],
+            [
+              "2",
+              "−8",
+              "5",
+              "(2, −3)"
+            ],
+            [
+              "−1",
+              "4",
+              "−7",
+              "(2, −3)"
+            ]
+          ],
+          "nota": "Para cualquier $a$: $b=-4a$ y $c=4a-3$. Con $a$ positivo la curva abre hacia arriba; con $a$ negativo, hacia abajo, y el vértice sería el punto más alto."
+        },
+        {
+          "k": "calc",
+          "titulo": "Comprueba con la fórmula del vértice",
+          "lineas": [
+            "x_v=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot1}=2",
+            "f(2)=2^2-4\\cdot2+1=4-8+1=-3"
+          ],
+          "nota": "Sale $(2,-3)$, justo lo que pedían."
+        },
+        {
+          "k": "check",
+          "texto": "En el graficador pon $a=1$, $b=-4$, $c=1$: el vértice queda en $(2,-3)$. Cualquier terna con $b=-4a$ y $c=4a-3$ también sirve."
+        }
+      ],
+      "guia": [
+        {
+          "k": "asignar",
+          "titulo": "¿Qué es cada dato?",
+          "items": [
+            {
+              "p": "vértice sea (2, −3)",
+              "op": [
+                "El punto más alto o más bajo de la curva",
+                "El punto donde corta al eje x",
+                "El valor de a"
+              ],
+              "ok": 0,
+              "why": "El vértice es el punto donde la curva cambia de bajar a subir (o al contrario)."
+            },
+            {
+              "p": "cuadrática",
+              "op": [
+                "Función con $x^2$",
+                "Función en línea recta",
+                "Función con raíz"
+              ],
+              "ok": 0,
+              "why": "Cuadrática significa que lleva $x^2$; su gráfica es una parábola."
+            }
+          ]
+        },
+        {
+          "k": "llenar",
+          "titulo": "Halla b cuando a = 1",
+          "antes": "b=-2\\cdot a\\cdot h=-2\\cdot1\\cdot2=",
+          "resp": -4,
+          "pista": "Sale de abrir $(x-2)^2$.",
+          "why": "Al abrir $(x-2)^2$ aparece $-4x$, así que $b=-4$."
+        }
+      ],
+      "guion": {
+        "1": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Te piden elegir a, b y c de una cuadrática para que su vértice quede en el punto $(2,\\,-3)$.",
+            "a": "m:cuadrática|m:vértice sea (2, −3)"
+          },
+          {
+            "t": "Mira la gráfica: el vértice es el punto más bajo, dos pasos a la derecha y tres hacia abajo.",
+            "a": "p:1"
+          },
+          {
+            "t": "Lo traducimos así: el vértice es el punto $(h,k)$, con $h=2$ y $k=-3$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Usamos la forma $f(x)=a(x-2)^2-3$, que ya trae el vértice escrito.",
+            "a": "p:3"
+          },
+          {
+            "t": "Con $a=1$ y abriendo el cuadrado queda $x^2-4x+1$. O sea $a=1$, $b=-4$ y $c=1$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Pruébalo en el graficador: el vértice queda justo en $(2,\\,-3)$.",
+            "a": "m:graficador|p:7"
+          }
+        ],
+        "2": [
+          {
+            "t": "Empecemos leyendo el enunciado con calma.",
+            "a": "leer"
+          },
+          {
+            "t": "Dice cuadrática. Eso significa que la función lleva $x^2$ y su gráfica es una parábola, una curva en forma de U.",
+            "a": "m:cuadrática"
+          },
+          {
+            "t": "Piensa en un balón que sube, llega a su punto más alto y baja. Ese punto es como el vértice de la curva.",
+            "a": "p:0"
+          },
+          {
+            "t": "Aquí te piden que el vértice quede en $(2,\\,-3)$. Tú decides dónde está el vértice y buscas los números que lo logran.",
+            "a": "m:vértice sea (2, −3)"
+          },
+          {
+            "t": "Y el enunciado te deja usar el graficador, así que puedes probar valores y ver cómo se mueve la curva.",
+            "a": "m:graficador"
+          },
+          {
+            "t": "Mira la gráfica de ejemplo: el vértice está dos pasos a la derecha del eje y, y tres hacia abajo.",
+            "a": "p:1"
+          },
+          {
+            "t": "Pasamos lo que dicen a símbolos: el vértice es $(h,k)$, con $h=2$ y $k=-3$.",
+            "a": "p:2"
+          },
+          {
+            "t": "Usamos $f(x)=a(x-h)^2+k$ porque esa forma deja el vértice a la vista. Reemplazamos y queda $f(x)=a(x-2)^2-3$.",
+            "a": "p:3",
+            "k": "por"
+          },
+          {
+            "t": "Ojo con el signo: dentro del paréntesis va $x-2$, aunque el vértice sea $2$ positivo. Es el error más común.",
+            "a": "p:3",
+            "k": "err"
+          },
+          {
+            "t": "Elegimos $a=1$ porque es lo más sencillo. Al abrir $(x-2)^2$ sale $x^2-4x+4$, y restando $3$ queda $x^2-4x+1$.",
+            "a": "p:4"
+          },
+          {
+            "t": "Si olvidaras el $-3$ de afuera, la curva tendría el vértice en $(2,\\,0)$, y no es lo que piden.",
+            "a": "p:4",
+            "k": "err"
+          },
+          {
+            "t": "Con otros valores de $a$ también funciona. Por ejemplo $a=2$, $b=-8$ y $c=5$ dan el mismo vértice. Hay muchas respuestas buenas.",
+            "a": "p:5"
+          },
+          {
+            "t": "Comprobamos con la fórmula del vértice: $x=-\\frac{b}{2a}=-\\frac{-4}{2}=2$. Y $f(2)=4-8+1=-3$.",
+            "a": "p:6",
+            "k": "por"
+          },
+          {
+            "t": "Por eso nuestra respuesta sirve: $a=1$, $b=-4$ y $c=1$ dan el vértice $(2,\\,-3)$.",
+            "a": "p:7"
+          }
+        ],
+        "3": [
+          {
+            "t": "Imagina el cable de un puente colgante: su punto más bajo es el vértice. Aquí tú escoges en qué lugar queda ese punto.",
+            "k": "ana"
+          },
+          {
+            "t": "La forma con vértice es como darle al taxista la dirección exacta: dos cuadras a la derecha y tres hacia abajo. Con eso llega directo.",
+            "k": "ana"
+          },
+          {
+            "t": "Un ejemplo divertido: con $a=2$ la curva queda más cerrada, como un cono de helado; con $a=-1$ se voltea como una montaña. El vértice se queda quieto.",
+            "k": "ej"
+          },
+          {
+            "t": "Error común: escribir $(x+2)$ porque el vértice tiene un dos positivo. Dentro del paréntesis el signo va al revés, porque ahí buscamos qué valor de $x$ lo vuelve cero.",
+            "k": "err"
+          },
+          {
+            "t": "Truco rápido para verificar: calcula $f(2)$. Con $a=1$, $b=-4$ y $c=1$ da $4-8+1=-3$. Si te da otro número, algo falló.",
+            "k": "ej"
+          },
+          {
+            "t": "Y no te preocupes si tu compañero puso otros números: puede estar bien también. Es como dos rutas distintas para llegar al mismo parque.",
+            "k": "ana"
+          }
+        ]
+      },
+      "enfoque": {
+        "tema": "Matemáticas: parábola y su vértice (función cuadrática)",
+        "que": "Es encontrar los números a, b y c de una curva en forma de U, la parábola, para que su punto más bajo o más alto quede justo donde tú quieres.",
+        "pistas": [
+          "dice que es una cuadrática: una función con $x^2$ cuya gráfica es una parábola",
+          "pide que el vértice sea $(2,\\,-3)$: el punto donde la curva cambia de bajar a subir",
+          "dice que uses el graficador: puedes probar valores y ver la curva"
+        ],
+        "clave": "Si te dan el vértice $(h,k)$ de una cuadrática, escribe $f(x)=a(x-h)^2+k$ y luego abre el cuadrado para sacar a, b y c.",
+        "no": [
+          {
+            "t": "Función lineal",
+            "p": "Se parece porque también es una función con letras que hay que elegir. Pero la recta no tiene vértice ni curva, y aquí hablan de un punto donde la curva cambia de dirección."
+          },
+          {
+            "t": "Hallar las raíces de la cuadrática",
+            "p": "Se parece porque también aparece $x^2$. Pero ahí buscan dónde la curva corta el eje x, y aquí te dan el vértice."
+          },
+          {
+            "t": "Calcular el vértice de una función dada",
+            "p": "Se parece porque también sale el vértice. Pero ahí te dan a, b y c y calculas el vértice; aquí es al revés: te dan el vértice y construyes a, b y c."
+          }
+        ],
+        "plan": [
+          {
+            "t": "Anoto lo que me piden: el vértice está en $x=2$ y en $y=-3$.",
+            "eq": [
+              "h=2,\\ k=-3"
+            ]
+          },
+          {
+            "t": "Uso la forma que ya trae el vértice escrito, dejando $a$ libre.",
+            "eq": [
+              "f(x)=a(x-2)^2-3"
+            ]
+          },
+          {
+            "t": "Elijo $a=1$ porque es lo más sencillo y abro el cuadrado.",
+            "eq": [
+              "f(x)=(x-2)^2-3=x^2-4x+1"
+            ]
+          },
+          {
+            "t": "Leo los números: $a=1$, $b=-4$ y $c=1$. Los pruebo en el graficador y el vértice queda donde pedían."
+          }
+        ]
+      }
+    }
   },
   {
     "id": "mat-008",
