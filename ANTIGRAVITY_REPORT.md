@@ -331,15 +331,23 @@ Se organizaron las 62 preguntas en 7 unidades temáticas coherentes:
 - `u-odo-bases` (6 preguntas: `odo-044` a `049`)
 - `u-odo-tratamientos` (10 preguntas: `odo-028`, `050` a `055`, `059`, `060`, `061`)
 
-### 9.6 Balanceo Estadístico y Eliminación de Sesgos
-- **Distribución de Claves:**
-  - **A:** 16 preguntas (25.8%)
-  - **B:** 16 preguntas (25.8%)
-  - **C:** 15 preguntas (24.2%)
-  - **D:** 15 preguntas (24.2%)
-  - Claves perfectamente distribuidas (~25% cada una), eliminando patrones predecibles.
+### 9.6 Balanceo Estadístico, Barajado Real y Eliminación de Sesgos
+- **Barajado Pseudoaleatorio Real (Semilla Determinista Fija):**
+  - Se eliminó el ciclo predecible previo (`0, 1, 2, 3...` desde `odo-015`) mediante un barajado determinista sin patrones periódicos.
+  - Secuencia de claves: `[1, 2, 0, 3, 0, 0, 2, 1, 1, 0, 2, 0, 2, 2, 1, 3, 0, 0, 3, 0, 1, 0, 2, 1, 1, 2, 1, 3, 3, 0, 3, 2, 0, 3, 2, 1, 2, 3, 2, 0, 3, 3, 2, 1, 0, 1, 1, 0, 1, 1, 3, 2, 3, 2, 1, 0, 3, 2, 3, 3, 1, 0]`.
+  - Máximo 2 claves iguales consecutivas (cero rachas de 3 o más; cero ciclos de 4).
+  - Distribución exacta:
+    - **A:** 16 preguntas (25.8%)
+    - **B:** 16 preguntas (25.8%)
+    - **C:** 15 preguntas (24.2%)
+    - **D:** 15 preguntas (24.2%)
+- **Eliminación Total de Referencias a Números de Líneas:**
+  - Se eliminaron las menciones artificiales a líneas de transcripción (`(líneas ...)` o `líneas ...`) en 39 enunciados y explicaciones (`odo-014, 016, 018, 021, 025, 027, 030 y 031 a 062`), dejándolas redactadas con naturalidad clínica (`según lo visto en clase`).
+  - Se sincronizaron las marcas y guiones de nivel 1 (`odo-016`, `odo-033`, `odo-034`, `odo-054`).
+- **Ajuste Fino de `odo-018` (Osteítis condensante):**
+  - Opción correcta y explicación alineadas con la clase y la evidencia clínica: zona radiopaca difusa (no circunscrita) periapical ante inflamación pulpar crónica; el hueso esclerótico reactivo puede persistir como cicatriz ósea o remitir lentamente tras el tratamiento endodóntico exitoso.
 - **Sesgo de Longitud:**
-  - Opción correcta más larga en **11 de 62 preguntas (17.7%)**, ampliamente por debajo del umbral del 50%.
+  - Opción correcta más larga en solo **12 de 62 preguntas (19.4%)**, ampliamente por debajo del umbral del 50%.
   - Problemas de sesgo en Banco Propio: **0**.
 
 ### 9.7 Estado Final de Auditoría y Verificación Técnica
@@ -354,7 +362,7 @@ Se organizaron las 62 preguntas en 7 unidades temáticas coherentes:
 - **Preguntas ICFES Oficiales (`content/icfes/`):** 611/617 completas (99.0%).
 - **Vitest Modo Público:** `npm test` -> **15/15 archivos, 426/426 pruebas aprobadas (100 %)**.
 - **Vitest Modo ICFES:** `VITE_ICFES=1 npm test` -> **15/15 archivos, 1043/1043 pruebas aprobadas (100 %)**.
-- **Build de Producción:** `npm run build` -> **Compilación exitosa en 1.46s sin errores**.
+- **Build de Producción:** `npm run build` -> **Compilación exitosa en 1.87s sin errores**.
 
 
 
