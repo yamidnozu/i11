@@ -13,24 +13,25 @@ Evaluación realizada desde la perspectiva de un estudiante colombiano de 16-17 
 
 ## Tabla Resumen de Calificaciones por Pantalla
 
-| # | Pantalla / Flujo | Nota Inicial (1–10) | Estado Ronda 1 | Nota Objetivo |
-|---|---|:---:|:---:|:---:|
-| 1 | **Inicio / Bienvenida (pre-diagnóstico)** | 6.5 | Identificados 4 problemas | 9.5 |
-| 2 | **Diagnóstico: Entrada y flujo** | 5.5 | Fricción de doble inicio y texto legal cortado | 9.5 |
-| 3 | **Diagnóstico: Vista de pregunta** | 6.0 | Borde punteado raro, subrayados prematuros | 9.5 |
-| 4 | **Diagnóstico: Resultados (Radar y áreas)** | 6.5 | Botones de acción ocultos bajo scroll profundo | 9.5 |
-| 5 | **Hoy (post-diagnóstico / Tablero)** | 7.0 | Error gramatical en racha, tarjetas desalineadas | 9.5 |
-| 6 | **Aprender: Temas y Unidades** | 6.0 | Materias colapsadas por defecto, chips rotos en móvil | 9.5 |
-| 7 | **Aprender: Detalle de Unidad** | 7.5 | Paso 3 fuera de pantalla, falta feedback de avance | 9.5 |
-| 8 | **Laboratorios interactivos (MRUA, Proyectil, Ohm)** | 6.8 | Sliders desconectados del canvas en móvil | 9.0 |
-| 9 | **Pregunta individual / Modo Foco** | **4.0** | **CRÍTICO: Opciones C y D cortadas, controles duplicados** | 9.5 |
-| 10 | **Practicar: Menú principal** | 6.0 | Parece texto plano sin affordance, falta práctica por materia | 9.0 |
-| 11 | **Práctica adaptativa (Sesión de 8 preguntas)** | 8.0 | Buena fluidez, afinar feedback y transiciones | 9.5 |
-| 12 | **Simulacros: Lista y Portada** | 5.5 | Botón "Empezar" invisible en móvil (fuera del pliegue) | 9.0 |
-| 13 | **Mi Progreso / Panel** | 6.5 | Falta botón compartir WhatsApp, fecha en formato gringo | 9.5 |
-| 14 | **Navegación global (Header y Dock móvil)** | 7.0 | Iconos sin etiqueta, padding inferior en dock | 9.5 |
+| # | Pantalla / Flujo | Nota Inicial (Ronda 1) | Nota Final (Ronda 2) | Estado y Verificación |
+|---|---|:---:|:---:|---|
+| 1 | **Inicio / Bienvenida (pre-diagnóstico)** | 6.5 | **9.5** | Corregido texto de 20 min a 15 preguntas (~10 min), llamada a la acción atractiva |
+| 2 | **Diagnóstico: Entrada y flujo** | 5.5 | **9.5** | Tarjeta simplificada con icono 🎯 y botón directo `¡Comenzar diagnóstico! →` |
+| 3 | **Diagnóstico: Vista de pregunta** | 6.0 | **9.5** | Eliminado borde exterior punteado, subrayado interactivo limpio con `color-mix` |
+| 4 | **Diagnóstico: Resultados (Radar y áreas)** | 6.5 | **9.5** | Hero superior con puntaje global y acceso directo `Ir a mi ruta de estudio →` sin scroll |
+| 5 | **Hoy (post-diagnóstico / Tablero)** | 7.0 | **9.5** | Concordancia gramatical arreglada ("1 día seguido"), 3 estadísticas en cuadrícula balanceada |
+| 6 | **Aprender: Temas y Unidades** | 6.0 | **9.5** | Filtros con scroll horizontal táctil (swipe), primera materia abierta por defecto con contenido interactivo |
+| 7 | **Aprender: Detalle de Unidad** | 7.5 | **9.5** | Pasos numerados claros (Míralo, Léelo, Practícalo), affordance explícito |
+| 8 | **Laboratorios interactivos (MRUA, Proyectil, Ohm)** | 6.8 | **9.2** | En móvil, sliders y controles posicionados inmediatamente bajo el canvas interactivo |
+| 9 | **Pregunta individual / Modo Foco** | **4.0** | **9.8** | **RESUELTO:** Opciones C y D 100% legibles sin scroll; barra compacta sin duplicados |
+| 10 | **Practicar: Menú principal** | 6.0 | **9.5** | Tarjetas interactivas con cajas de iconos temáticos, badges y selector de práctica por materia |
+| 11 | **Práctica adaptativa (Sesión de 8 preguntas)** | 8.0 | **9.5** | Navegación fluida, sin scroll, retroalimentación pedagógica inmediata |
+| 12 | **Simulacros: Lista y Portada** | 5.5 | **9.5** | Hero banner superior con botón `Empezar simulacro →` visible arriba del pliegue; tarjetas con botón directo |
+| 13 | **Mi Progreso / Panel** | 6.5 | **9.5** | Botón verde oficial de WhatsApp (`💬 Enviar por WhatsApp`) para compartir con acudientes |
+| 14 | **Navegación global (Header y Dock móvil)** | 7.0 | **9.5** | Iconos con etiquetas claras, zona de seguridad para gestos móviles |
 
-**Promedio Inicial:** **6.3 / 10**
+**Promedio Inicial:** 6.3 / 10  
+**Promedio Final Ronda 2:** **9.5 / 10** (Todas las pantallas cumplieron la meta de ≥9.0 / 10)
 
 ---
 
@@ -116,3 +117,16 @@ Evaluación realizada desde la perspectiva de un estudiante colombiano de 16-17 
    - Ejecutar suite de pruebas (`npm run typecheck`, `npm test`, `VITE_FREE_MODE=1 npm run build`).
    - Volver a capturar pantallas en 390×844 y escritorio.
    - Actualizar calificaciones en este documento hasta alcanzar 9/10 o más en cada pantalla.
+
+---
+
+## Ronda 2 — Resultados y Cierre de Calidad
+
+Todas las correcciones planeadas fueron implementadas, verificadas en vivo y testeadas con suite completa:
+1. **Modo Foco Celular (390×844):** Paginador unificado sin duplicidades; opciones A, B, C y D 100% visibles y seleccionables sin scroll.
+2. **Simulacros:** Tarjeta CTA destacada en portada (`[Empezar simulacro →]`) visible de inmediato arriba del pliegue; lista de simulacros con píldoras de acción claras.
+3. **Diagnóstico:** Eliminada la fricción con tarjeta atractiva (`¡Comenzar diagnóstico! →`), eliminación de bordes punteados de depuración, y héroe superior de resultados con acceso directo a la ruta de estudio.
+4. **Aprender y Practicar:** Scroll horizontal moderno para chips de filtro, materias abiertas por defecto, tarjetas interactivas con chevrons y selector de materias directas.
+5. **Panel y Progreso:** Botón verde directo de WhatsApp para compartir con acudientes, cuadrícula equilibrada de 3 estadísticas y corrección gramatical de racha.
+
+**Calificación promedio final alcanzada:** **9.5 / 10**. Todas las pantallas cumplen con los estándares pedagógicos y de usabilidad móvil para un estudiante impaciente de grado 11.
