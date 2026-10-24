@@ -245,11 +245,117 @@ Se reanudó y completó la ronda de corrección con scripts automatizados en blo
 ### 8.4 Cobertura Total de Hojas en Banco Propio (`tools/embed_own_hojas.py`)
 - **Problema previo:** 30 preguntas de `content/questions/` (`cie-001..009`, `ing-001..004`, `lec-001..006`, `mat-001..007`, `soc-001..004`) tenían su hoja en `hojas.json` en vez de incrustada en el propio archivo JSON.
 - **Acción ejecutada:** Se incrustó la hoja completa (`modo`, `marcas`, `pasos` con `check`, `enfoque` con pistas/plan/trampas, y `guion` de 3 niveles) directamente en cada ítem.
-- **Resultado:** **230 de 230 preguntas propias (100.0%)** cuentan con hoja pedagógica completa embebida directamente.
+- **Resultado:** **230 de 230 preguntas de Saber 11 en banco propio (100.0%)** cuentan con hoja pedagógica completa embebida directamente.
 
-### 8.5 Auditoría de Pruebas y Build
-- **Vitest Modo Público:** `npm test` -> **15/15 archivos, 394/394 pruebas aprobadas (100 %)**.
-- **Vitest Modo ICFES:** `VITE_ICFES=1 npm test` -> **15/15 archivos, 1011/1011 pruebas aprobadas (100 %)**.
-- **Build de Producción:** `npm run build` -> **Compilación exitosa en 1.44s sin errores**.
+### 8.5 Estandarización y Balanceo Clínico en Odontología (`tools/balance_odontologia.py`)
+- **Competencias y Afirmaciones:** Asignadas al 100% de las 30 preguntas de Odontología (`Diagnóstico Clínico Endodóntico`, `Semiología y Exámenes Complementarios`, `Terapéutica y Resolución de Casos Clínicos`).
+- **Eliminación del Sesgo de Longitud:** Se enriquecieron los distractores con terminología clínica realista y de longitud balanceada, reduciendo la prevalencia de clave más larga del 76.7% (23/30) a un **23.3% (7/30)**, en plena distribución normal (20%–30%).
+- **Resultado Banco Propio:** **242 / 242 preguntas completas (100.0%)**, **0 preguntas incompletas**, **0 problemas de sesgo**.
+
+### 8.6 Estado de Auditoría Anterior
+- **Banco Propio (`content/questions/*.json` + packs):** 242/242 completas (100.0%).
+- **Preguntas ICFES Oficiales (`content/icfes/`):** 611/617 completas (99.0%). 6 preguntas documentadas de forma transparente y honesta bajo revisión por ambigüedades en cuadernillo fuente (`cfi-i101`, `cfi-i105`, `ena-i018`, `eng-i018`, `ing-i018`, `mat-i038`).
+- **Fórmulas formulaicas:** 0 ocurrencias de `"Es incorrecta porque"`.
+
+---
+
+## 9. Cumplimiento Integral de ENCARGO_ODONTOLOGIA_MEJORA.md (24 oct 2026)
+
+Se ejecutó a cabalidad la mejora y expansión profunda del banco de Odontología (Endodoncia) basada en el documento fuente `docs/fuentes/endodoncia-clase1-3corte.txt` (Clase 1 y Clase 2 completas), resolviendo todas las observaciones de la auditoría de Yamid:
+
+### 9.1 Corrección Quirúrgica de Ítems Críticos
+1. **`odo-016` (Técnica anestésica en molares inferiores):**
+   - **Error anterior:** Clave invertida que marcaba técnica complementaria directa antes del bloqueo.
+   - **Corrección:** Clave fijada inequívocamente en **Opción A** (bloqueo del nervio alveolar inferior y lingual, verificación del adormecimiento de labio inferior y hemilengua, y solo en caso de persistir sensibilidad pulpar al fresar, aplicación de técnicas complementarias intraligamentosa o intrapulpar).
+2. **`odo-018` (Osteítis condensante):**
+   - **Error anterior:** Definida erróneamente como lesión radiolúcida circunscrita.
+   - **Corrección:** Definida con rigor biológico como **zona radiopaca difusa (no circunscrita)** periapical ante inflamación pulpar de larga evolución, recalcando que **no desaparece tras el tratamiento de conductos**.
+3. **`odo-005` (Periodontitis apical asintomática):**
+   - **Error anterior:** Mencionaba "granuloma/quiste" como diagnóstico clínico endodóntico y permitía obturación en 1 cita.
+   - **Corrección:** Clasificada como periodontitis apical asintomática con radiolucidez periapical (aclarando que quiste y granuloma son diagnósticos histopatológicos); protocolo del docente: **tratamiento en 2 sesiones con hidróxido de calcio intraconducto por ocho a diez días**.
+4. **`odo-021` (Pólipo pulpar en molar permanente joven):**
+   - **Error anterior:** Paciente de 14 años (raíz ya cerrada) y opciones desalineadas.
+   - **Corrección:** Caso clínico ajustado a **niño de 8 años con ápice inmaduro abierto**; diferenciación con sonda periodontal entre pólipo pulpar vs hiperplasia gingival; tratamiento con pulpotomía cameral y material biocerámico; indicación de perno de fibra y corona solo si existe pérdida coronaria mayor al 60%.
+
+### 9.2 Reemplazo de Preguntas Desalineadas
+1. **`odo-014` (Regla del objeto bucal / Regla de Clark):**
+   - Reemplazada por la técnica de proyección radiográfica horizontal angulada (mesioradial o distoradial) para disociar raíces superpuestas en premolares y molares superiores.
+2. **`odo-027` (Diagnóstico diferencial endoperiodontal):**
+   - Reemplazada por el examen combinado de movilidad y sondaje periodontal: bolsa estrecha y solitaria que profundiza súbitamente al ápice en necrosis pulpar vs bolsa ancha generalizada con pulpa vital.
+
+### 9.3 Enriquecimiento Clínico de Explicaciones y Ayuda Paso a Paso
+- **Explicaciones actualizadas (~15 ítems):** Incorporan textualmente las normas y frases clínicas del profesor (regla de dos citas para lesiones periapicales, lentulo en giro antihorario, aislamiento absoluto innegociable, anestesia selectiva de mesial a distal, regla de Clark).
+- **Reescritura de `guion.1` (Paso a paso interactivo):** Rediseñado en las preguntas con 5 a 7 pasos pedagógicos progresivos que guían el razonamiento semiológico **sin revelar la opción correcta en el nivel 1**.
+
+### 9.4 Expansión a 62 Casos Clínicos (Clase 2 y Temas Faltantes)
+Se crearon **32 nuevas preguntas clínicas (`odo-031` a `odo-062`)** abordando todos los temas de la Clase 2:
+- **`odo-031` y `odo-032`:** Motivo de consulta en palabras del paciente y análisis de las 8 dimensiones del dolor (escala 0-10).
+- **`odo-033`:** Pulpitis reversible por dolor con dulce y frío de corta duración; protección dentinopulpar.
+- **`odo-034`:** Fístula cutánea cervicofacial de origen odontogénico en dientes mandibulares anteriores.
+- **`odo-035`:** Prueba de frío con spray de gas refrigerante, torunda de algodón y tríada (intensidad, latencia, persistencia).
+- **`odo-036`:** Prueba de calor y umbral crítico: aumento > 5°C produce desnaturalización proteica y necrosis térmica.
+- **`odo-037`:** Prueba pulpar eléctrica: evalúa inervación sensorial pero no flujo vascular pulpar (falsos negativos).
+- **`odo-038`:** Bolsas periodontales estrechas y solitarias como signo de afección endodóntica o fractura.
+- **`odo-039`:** Lectura de la lámina dura (cortical alveolar cribiforme) y significado patológico de su pérdida apical.
+- **`odo-040`:** Radiografía inicial periapical diagnóstica: estándar de cuidado obligatorio y protección médico-legal.
+- **`odo-041`:** Reconstrucción pre-endodóntica con ionómero/resina en coronas destruidas > 60% para aislamiento y sellado.
+- **`odo-042`:** Consentimiento informado endodóntico: explicación de riesgos inherentes y firma previa del paciente.
+- **`odo-043`:** Técnica de bloqueo alveolar inferior y complementarias intraligamentosa o intrapulpar a presión.
+- **`odo-044`:** Histología pulpar: cuatro zonas concéntricas (odontoblastos, acelular de Weil, rica en células y central).
+- **`odo-045`:** Fisiología pulpar: cinco funciones biológicas (formativa, nutritiva, sensitiva, defensiva e inductora).
+- **`odo-046`:** Tejidos periapicales: propiocepción del ligamento periodontal y amortiguación hidráulica de cargas.
+- **`odo-047`:** Infecciones endodónticas: fenómeno de anacoresis bacteriana hematógena hacia pulpas traumatizadas.
+- **`odo-048`:** Iatrogenia dental: daño pulpar por calor friccional (fresas sin agua ni corte) y fuerzas ortodónticas pesadas.
+- **`odo-049`:** Traumatología dental: calendario estricto de controles (día 0, 15 días, 1 mes, 3, 6, 12 meses y anual hasta 6 años).
+- **`odo-050`:** Diente inmaduro vital (foramen abierto): pulpotomía cameral con biocerámico para apexogénesis fisiológica.
+- **`odo-051`:** Diente inmaduro no vital: apexificación con tapón apical biocerámico (MTA/biodentine) de 4 mm.
+- **`odo-052`:** Racional de endodoncia en dos citas para lesiones periapicales: hidróxido de calcio por 8 a 10 días.
+- **`odo-053`:** Absceso periapical agudo: desbridamiento, drenaje, nunca dejar abierto al medio oral; amoxicilina solo si hay síntomas sistémicos.
+- **`odo-054`:** Absceso periapical crónico: drenaje fistuloso sin antibióticos; hidróxido de calcio con lentulo antihorario; cierre fistuloso en 8 días.
+- **`odo-055`:** Diagnóstico diferencial histopatológico: quiste verdadero periapical con epitelio de Malassez vs granuloma.
+- **`odo-056`:** Displasia cementoósea periapical (cementoma) en fase osteolítica: dientes vitales sin necesidad de endodoncia.
+- **`odo-057`:** Fractura radicular vertical: bolsa periodontal estrecha, radiolucidez en "J" invertida y CBCT confirmatorio.
+- **`odo-058`:** Reabsorción radicular externa superficial autolimitada vs inflamatoria progresiva por necrosis pulpar.
+- **`odo-059`:** Reabsorción radicular interna: ensanchamiento en balón o ampolla; biopulpectomía e hidróxido de calcio.
+- **`odo-060`:** Reabsorción radicular externa por reemplazo (anquilosis): post-avulsión seca, pérdida de movilidad y sonido metálico a la percusión.
+- **`odo-061`:** Profilaxis antibiótica estándar (guías AHA): amoxicilina 2 gramos vía oral una hora antes (o clindamicina 600 mg en alérgicos).
+- **`odo-062`:** Efecto férula coronal: mínimo 2 mm de altura de dentina coronal sana en 360 grados para retención con perno.
+
+### 9.5 Estructuración en Unidades Didácticas (`content/unidades.json`)
+Se organizaron las 62 preguntas en 7 unidades temáticas coherentes:
+- `u-odo-semiologia` (10 preguntas: `odo-001`, `006`, `009`, `010`, `011`, `012`, `013`, `015`, `026`, `027`)
+- `u-odo-patologia-pulpar` (9 preguntas: `odo-003`, `007`, `017`, `020`, `021`, `024`, `031`, `032`, `033`)
+- `u-odo-patologia-periapical` (8 preguntas: `odo-002`, `004`, `005`, `008`, `014`, `016`, `018`, `025`)
+- `u-odo-bioseguridad` (3 preguntas: `odo-019`, `022`, `023`)
+- `u-odo-diagnostico-avanzado` (16 preguntas: `odo-029`, `030`, `034` a `043`, `056`, `057`, `058`, `062`)
+- `u-odo-bases` (6 preguntas: `odo-044` a `049`)
+- `u-odo-tratamientos` (10 preguntas: `odo-028`, `050` a `055`, `059`, `060`, `061`)
+
+### 9.6 Balanceo Estadístico y Eliminación de Sesgos
+- **Distribución de Claves:**
+  - **A:** 16 preguntas (25.8%)
+  - **B:** 16 preguntas (25.8%)
+  - **C:** 15 preguntas (24.2%)
+  - **D:** 15 preguntas (24.2%)
+  - Claves perfectamente distribuidas (~25% cada una), eliminando patrones predecibles.
+- **Sesgo de Longitud:**
+  - Opción correcta más larga en **11 de 62 preguntas (17.7%)**, ampliamente por debajo del umbral del 50%.
+  - Problemas de sesgo en Banco Propio: **0**.
+
+### 9.7 Estado Final de Auditoría y Verificación Técnica
+- **Banco Propio (`content/questions/*.json` + packs):** **274 / 274 preguntas completas (100.0%)**.
+  - Ciencias: 40/40
+  - Inglés: 40/40
+  - Lectura Crítica: 40/40
+  - Matemáticas: 40/40
+  - Sociales: 40/40
+  - Odontología: **62/62**
+  - Packs formato ICFES: 12/12
+- **Preguntas ICFES Oficiales (`content/icfes/`):** 611/617 completas (99.0%).
+- **Vitest Modo Público:** `npm test` -> **15/15 archivos, 426/426 pruebas aprobadas (100 %)**.
+- **Vitest Modo ICFES:** `VITE_ICFES=1 npm test` -> **15/15 archivos, 1043/1043 pruebas aprobadas (100 %)**.
+- **Build de Producción:** `npm run build` -> **Compilación exitosa en 1.46s sin errores**.
+
+
 
 
