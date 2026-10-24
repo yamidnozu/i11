@@ -1,1178 +1,2258 @@
 {
- "cie-001": {
-  "tema": "Física: lanzamiento en parábola",
-  "que": "Es cuando algo sale disparado hacia arriba y hacia adelante, sube, se frena y cae dibujando una curva, como un balón pateado.",
-  "pistas": [
-   "dice que el balón se patea con un ángulo de $30°$ (sale inclinado, no recto)",
-   "dan la rapidez con que sale: $20$ m/s",
-   "piden el alcance: qué tan lejos cae, en horizontal"
-  ],
-  "clave": "Si el objeto sale inclinado y piden \"qué tan lejos cae\", es lanzamiento en parábola. Ángulo + distancia horizontal = alcance.",
-  "no": [
-   {
-    "t": "Caída libre",
-    "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta y aquí piden distancia hacia adelante."
-   },
-   {
-    "t": "Movimiento a velocidad constante",
-    "p": "Se parece porque el balón avanza hacia adelante. Pero si fuera constante no habría curva: aquí la gravedad lo va frenando hacia arriba y acelerando hacia abajo."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Anoto lo que me dan: rapidez $20$ m/s, ángulo $30°$ y gravedad $10$.",
-    "eq": [
-     "v_0=20\\ \\text{m/s},\\ \\theta=30^\\circ,\\ g=10\\ \\text{m/s}^2"
+  "cie-001": {
+    "tema": "Física: lanzamiento en parábola",
+    "que": "Es cuando algo sale disparado hacia arriba y hacia adelante, sube, se frena y cae dibujando una curva, como un balón pateado.",
+    "pistas": [
+      "dice que el balón se patea con un ángulo de $30°$ (sale inclinado, no recto)",
+      "dan la rapidez con que sale: $20$ m/s",
+      "piden el alcance: qué tan lejos cae, en horizontal"
+    ],
+    "clave": "Si el objeto sale inclinado y piden \"qué tan lejos cae\", es lanzamiento en parábola. Ángulo + distancia horizontal = alcance.",
+    "no": [
+      {
+        "t": "Caída libre",
+        "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta y aquí piden distancia hacia adelante."
+      },
+      {
+        "t": "Movimiento a velocidad constante",
+        "p": "Se parece porque el balón avanza hacia adelante. Pero si fuera constante no habría curva: aquí la gravedad lo va frenando hacia arriba y acelerando hacia abajo."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Anoto lo que me dan: rapidez $20$ m/s, ángulo $30°$ y gravedad $10$.",
+        "eq": [
+          "v_0=20\\ \\text{m/s},\\ \\theta=30^\\circ,\\ g=10\\ \\text{m/s}^2"
+        ]
+      },
+      {
+        "t": "Busco la fórmula del alcance, que sirve justo para este tipo de lanzamiento.",
+        "eq": [
+          "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+        ]
+      },
+      {
+        "t": "Reemplazo los números y hago la cuenta con calculadora.",
+        "eq": [
+          "R=\\frac{20^2\\cdot\\sin(60^\\circ)}{10}=\\frac{400\\cdot0{,}866}{10}=34{,}6\\ \\text{m}"
+        ]
+      },
+      {
+        "t": "Reviso que la respuesta esté en metros y que tenga sentido para un balón."
+      }
     ]
-   },
-   {
-    "t": "Busco la fórmula del alcance, que sirve justo para este tipo de lanzamiento.",
-    "eq": [
-     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+  },
+  "cie-002": {
+    "tema": "Física: movimiento que va ganando velocidad",
+    "que": "Es cuando algo arranca y va yendo cada vez más rápido, de forma pareja, como un carro que acelera suave.",
+    "pistas": [
+      "dice que parte del reposo (arranca quieto)",
+      "dan una aceleración de $3$ m/s²: cada segundo gana $3$ m/s más de velocidad",
+      "piden la distancia recorrida en $4$ s"
+    ],
+    "clave": "Si dicen \"parte del reposo\" y te dan una aceleración que no es la gravedad, piensa en movimiento que va ganando velocidad. Pregunta: ¿cambia la velocidad? Si sí, hay aceleración.",
+    "no": [
+      {
+        "t": "Movimiento a velocidad constante",
+        "p": "Se parece porque algo se mueve y piden distancia. Pero ahí la velocidad no cambia y la cuenta es velocidad por tiempo; aquí la velocidad va aumentando."
+      },
+      {
+        "t": "Caída libre",
+        "p": "Se parece porque también hay aceleración. Pero en caída libre acelera la gravedad ($10$ m/s²) y aquí la aceleración la da el enunciado: $3$ m/s²."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Anoto los datos: arranca quieto, aceleración $3$ y tiempo $4$ s.",
+        "eq": [
+          "v_0=0,\\ a=3\\ \\text{m/s}^2,\\ t=4\\ \\text{s}"
+        ]
+      },
+      {
+        "t": "Como arranca quieto, uso la fórmula de distancia con aceleración: la mitad de la aceleración por el tiempo al cuadrado.",
+        "eq": [
+          "d=\\frac{1}{2}\\,a\\,t^2"
+        ]
+      },
+      {
+        "t": "Reemplazo: la mitad de $3$ es $1,5$; el tiempo al cuadrado es $16$; multiplico.",
+        "eq": [
+          "d=\\frac{1}{2}\\cdot3\\cdot4^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}"
+        ]
+      },
+      {
+        "t": "Miro que el resultado esté en metros."
+      }
     ]
-   },
-   {
-    "t": "Reemplazo los números y hago la cuenta con calculadora.",
-    "eq": [
-     "R=\\frac{20^2\\cdot\\sin(60^\\circ)}{10}=\\frac{400\\cdot0{,}866}{10}=34{,}6\\ \\text{m}"
+  },
+  "cie-003": {
+    "tema": "Física: electricidad, ley de Ohm",
+    "que": "Es la regla que une tres cosas: el voltaje (la fuerza que empuja), la resistencia (lo que frena) y la corriente (lo que realmente pasa).",
+    "pistas": [
+      "dan una resistencia de $6$ Ω y un voltaje de $12$ V",
+      "piden la corriente (cuánta electricidad pasa)",
+      "hay una sola resistencia, sin más aparatos"
+    ],
+    "clave": "Voltios + ohmios + \"piden la corriente\" = Ohm. Mira la unidad que piden: amperios es corriente, vatios es potencia.",
+    "no": [
+      {
+        "t": "Potencia eléctrica",
+        "p": "Se parece porque también se usan voltios. Pero la potencia se mide en vatios (W) y aquí piden la corriente, que se mide en amperios (A)."
+      },
+      {
+        "t": "Circuitos con varias resistencias",
+        "p": "Se parece porque es un circuito. Pero ahí hay que combinar resistencias primero; aquí hay una sola, así que no hay nada que combinar."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Escribo la regla de Ohm: voltaje igual a corriente por resistencia.",
+        "eq": [
+          "V=I\\cdot R"
+        ]
+      },
+      {
+        "t": "Como piden la corriente, la dejo sola: corriente es voltaje dividido entre resistencia.",
+        "eq": [
+          "I=\\frac{V}{R}"
+        ]
+      },
+      {
+        "t": "Reemplazo: $12$ voltios dividido entre $6$ ohmios.",
+        "eq": [
+          "I=\\frac{12\\ \\text{V}}{6\\ \\Omega}=2\\ \\text{A}"
+        ]
+      },
+      {
+        "t": "Pongo la unidad: amperios (A)."
+      }
     ]
-   },
-   {
-    "t": "Reviso que la respuesta esté en metros y que tenga sentido para un balón."
-   }
-  ]
- },
- "cie-002": {
-  "tema": "Física: movimiento que va ganando velocidad",
-  "que": "Es cuando algo arranca y va yendo cada vez más rápido, de forma pareja, como un carro que acelera suave.",
-  "pistas": [
-   "dice que parte del reposo (arranca quieto)",
-   "dan una aceleración de $3$ m/s²: cada segundo gana $3$ m/s más de velocidad",
-   "piden la distancia recorrida en $4$ s"
-  ],
-  "clave": "Si dicen \"parte del reposo\" y te dan una aceleración que no es la gravedad, piensa en movimiento que va ganando velocidad. Pregunta: ¿cambia la velocidad? Si sí, hay aceleración.",
-  "no": [
-   {
-    "t": "Movimiento a velocidad constante",
-    "p": "Se parece porque algo se mueve y piden distancia. Pero ahí la velocidad no cambia y la cuenta es velocidad por tiempo; aquí la velocidad va aumentando."
-   },
-   {
-    "t": "Caída libre",
-    "p": "Se parece porque también hay aceleración. Pero en caída libre acelera la gravedad ($10$ m/s²) y aquí la aceleración la da el enunciado: $3$ m/s²."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Anoto los datos: arranca quieto, aceleración $3$ y tiempo $4$ s.",
-    "eq": [
-     "v_0=0,\\ a=3\\ \\text{m/s}^2,\\ t=4\\ \\text{s}"
+  },
+  "cie-004": {
+    "tema": "Química: balancear una reacción",
+    "que": "Es lograr que en una reacción química haya los mismos átomos antes y después de la flecha, porque los átomos no se crean ni se destruyen.",
+    "pistas": [
+      "te dan una reacción escrita con fórmulas ($C_3H_8 + O_2 \\to CO_2 + H_2O$)",
+      "piden un coeficiente, el número que va delante de una fórmula",
+      "no dan gramos ni cantidades"
+    ],
+    "clave": "Si solo te dan la ecuación con flecha y no hay gramos ni moles, el trabajo es igualar átomos de un lado y del otro.",
+    "no": [
+      {
+        "t": "Cálculos con moles y gramos",
+        "p": "Se parece porque es química con números. Pero ahí te dan cantidades; aquí solo te dan la ecuación y piden equilibrarla."
+      },
+      {
+        "t": "Nombrar compuestos",
+        "p": "Se parece porque aparecen fórmulas. Pero nadie pregunta cómo se llama cada compuesto."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Cuento cuántos átomos de carbono (C) hay a la izquierda: $3$. Entonces el $CO_2$ lleva un $3$ delante.",
+        "eq": [
+          "\\text{C: }3\\ \\Rightarrow\\ 3\\,\\text{CO}_2"
+        ]
+      },
+      {
+        "t": "Cuento los hidrógenos (H): hay $8$. Entonces el agua ($H_2O$) lleva un $4$ delante.",
+        "eq": [
+          "\\text{H: }8\\ \\Rightarrow\\ 4\\,\\text{H}_2\\text{O}"
+        ]
+      },
+      {
+        "t": "Ahora cuento todo el oxígeno que quedó a la derecha: $6$ de los $CO_2$ y $4$ del agua, o sea $10$ átomos.",
+        "eq": [
+          "\\text{O: }3\\cdot2+4\\cdot1=6+4=10"
+        ]
+      },
+      {
+        "t": "Cada $O_2$ tiene $2$ átomos, así que $10$ entre $2$ da $5$ delante del $O_2$.",
+        "eq": [
+          "\\text{O}_2\\text{: }\\frac{10}{2}=5"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Como arranca quieto, uso la fórmula de distancia con aceleración: la mitad de la aceleración por el tiempo al cuadrado.",
-    "eq": [
-     "d=\\frac{1}{2}\\,a\\,t^2"
+  },
+  "cie-005": {
+    "tema": "Biología: herencia de padres a hijos (genética)",
+    "que": "Es calcular qué probabilidad hay de que los hijos hereden cierta característica, usando las letras que representan los genes de cada papá.",
+    "pistas": [
+      "aparecen letras como $Aa$: son los genes de cada planta",
+      "piden la probabilidad de que un hijo sea $aa$",
+      "se cruzan solo dos plantas, un solo cruce"
+    ],
+    "clave": "Letras como $Aa$ y \"probabilidad de los hijos\" siempre se resuelven con la cuadrícula de $2$ por $2$.",
+    "no": [
+      {
+        "t": "División de las células",
+        "p": "Se parece porque también es biología de genes. Pero aquí nadie pregunta cómo se divide la célula, sino qué se hereda."
+      },
+      {
+        "t": "Evolución",
+        "p": "Se parece porque habla de descendientes. Pero la evolución trata de poblaciones durante muchas generaciones; aquí es un solo cruce."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Escribo los genes de cada planta: una es $Aa$ y la otra también."
+      },
+      {
+        "t": "Dibujo una cuadrícula de $2$ por $2$ (cuadro de Punnett): arriba los genes de una, al lado los de la otra."
+      },
+      {
+        "t": "Lleno cada casilla combinando una letra de arriba con una de al lado: salen $AA$, $Aa$, $Aa$ y $aa$."
+      },
+      {
+        "t": "Cuento: de $4$ casillas, solo $1$ es $aa$. La probabilidad es $1$ de $4$.",
+        "eq": [
+          "P(aa)=\\frac{1}{4}"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Reemplazo: la mitad de $3$ es $1,5$; el tiempo al cuadrado es $16$; multiplico.",
-    "eq": [
-     "d=\\frac{1}{2}\\cdot3\\cdot4^2=\\frac{1}{2}\\cdot3\\cdot16=24\\ \\text{m}"
+  },
+  "cie-006": {
+    "tema": "Física: lentes (óptica)",
+    "que": "Es estudiar cómo un lente, como el de una lupa, junta la luz y forma una imagen de un objeto.",
+    "pistas": [
+      "dice lente convergente (el que junta la luz)",
+      "dan la distancia focal $f=10$ cm y el objeto a $15$ cm",
+      "piden cómo es la imagen: real o virtual, derecha o invertida"
+    ],
+    "clave": "Si dicen \"lente\" y dan una distancia focal, usa la ecuación del lente. Un lente deja pasar la luz; un espejo la devuelve.",
+    "no": [
+      {
+        "t": "Espejos",
+        "p": "Se parece porque también forman imágenes. Pero un espejo rebota la luz y un lente la deja pasar; aquí la luz atraviesa el lente."
+      },
+      {
+        "t": "Refracción con ángulos",
+        "p": "Se parece porque la luz cambia al pasar por el lente. Pero aquí no dan ángulos ni piden calcular cuánto se desvía."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Anoto: distancia focal $10$ cm y objeto a $15$ cm.",
+        "eq": [
+          "f=10\\ \\text{cm},\\ d_o=15\\ \\text{cm}"
+        ]
+      },
+      {
+        "t": "Uso la ecuación del lente para hallar a qué distancia se forma la imagen.",
+        "eq": [
+          "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}"
+        ]
+      },
+      {
+        "t": "Dejo sola la distancia de la imagen y reemplazo.",
+        "eq": [
+          "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}=\\frac{3-2}{30}=\\frac{1}{30}"
+        ]
+      },
+      {
+        "t": "Si $d_i$ sale positivo, la imagen es real e invertida. Elijo la opción que coincide.",
+        "eq": [
+          "d_i=30\\ \\text{cm}"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Miro que el resultado esté en metros."
-   }
-  ]
- },
- "cie-003": {
-  "tema": "Física: electricidad, ley de Ohm",
-  "que": "Es la regla que une tres cosas: el voltaje (la fuerza que empuja), la resistencia (lo que frena) y la corriente (lo que realmente pasa).",
-  "pistas": [
-   "dan una resistencia de $6$ Ω y un voltaje de $12$ V",
-   "piden la corriente (cuánta electricidad pasa)",
-   "hay una sola resistencia, sin más aparatos"
-  ],
-  "clave": "Voltios + ohmios + \"piden la corriente\" = Ohm. Mira la unidad que piden: amperios es corriente, vatios es potencia.",
-  "no": [
-   {
-    "t": "Potencia eléctrica",
-    "p": "Se parece porque también se usan voltios. Pero la potencia se mide en vatios (W) y aquí piden la corriente, que se mide en amperios (A)."
-   },
-   {
-    "t": "Circuitos con varias resistencias",
-    "p": "Se parece porque es un circuito. Pero ahí hay que combinar resistencias primero; aquí hay una sola, así que no hay nada que combinar."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Escribo la regla de Ohm: voltaje igual a corriente por resistencia.",
-    "eq": [
-     "V=I\\cdot R"
+  },
+  "cie-008": {
+    "tema": "Química: gases ideales",
+    "que": "Es la regla que relaciona cuatro cosas de un gas: presión, volumen, cantidad (moles) y temperatura.",
+    "pistas": [
+      "dan moles ($2$), temperatura ($273,15$ K) y presión ($1$ atm)",
+      "dan la constante $R$ en el enunciado",
+      "piden el volumen que ocupa el gas"
+    ],
+    "clave": "Si salen moles, temperatura, presión y la letra $R$ todos juntos, es gases ideales. Si faltara alguno, sería otra ley.",
+    "no": [
+      {
+        "t": "Cálculos de reacciones (estequiometría)",
+        "p": "Se parece porque usa moles. Pero aquí no hay ninguna reacción química, solo un gas quieto."
+      },
+      {
+        "t": "Leyes de Boyle o Charles",
+        "p": "Se parecen porque hablan de gases. Pero esas cambian solo dos cosas y dejan el resto fijo; aquí se usan las cuatro juntas, con la ecuación completa."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Escribo la ecuación: presión por volumen igual a moles por $R$ por temperatura.",
+        "eq": [
+          "PV=nRT"
+        ]
+      },
+      {
+        "t": "Como piden el volumen, lo dejo solo.",
+        "eq": [
+          "V=\\frac{nRT}{P}"
+        ]
+      },
+      {
+        "t": "Reemplazo con los datos y hago la cuenta con calculadora.",
+        "eq": [
+          "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx44{,}8\\ \\text{L}"
+        ]
+      },
+      {
+        "t": "Pongo la unidad: litros (L)."
+      }
     ]
-   },
-   {
-    "t": "Como piden la corriente, la dejo sola: corriente es voltaje dividido entre resistencia.",
-    "eq": [
-     "I=\\frac{V}{R}"
+  },
+  "cie-009": {
+    "tema": "Ecología: depredadores y presas",
+    "que": "Es ver cómo dos poblaciones se afectan entre sí: los depredadores comen presas, y si cambia una, cambia la otra.",
+    "pistas": [
+      "hay dos poblaciones: depredadores y presas",
+      "piden qué pasa con las presas si los depredadores mueren más",
+      "es un modelo, o sea una explicación con letras ($\\gamma$, $\\delta$)"
+    ],
+    "clave": "Si hay dos poblaciones y una se come a la otra, piensa en cadena de causas: si cambia una, cambia la otra.",
+    "no": [
+      {
+        "t": "Crecimiento de una sola población",
+        "p": "Se parece porque también habla de cuántos individuos hay. Pero aquí son dos poblaciones que se afectan una a la otra."
+      },
+      {
+        "t": "Cadena alimenticia",
+        "p": "Se parece porque aparece quién se come a quién. Pero no piden dibujar la cadena, sino el efecto de un cambio."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Me pregunto qué significa que los depredadores mueran más: habrá menos depredadores."
+      },
+      {
+        "t": "Pienso qué les pasa a las presas con menos depredadores: se las comen menos."
+      },
+      {
+        "t": "Reviso la fórmula del equilibrio de las presas y veo qué pasa si $\\gamma$ aumenta.",
+        "eq": [
+          "x^*=\\frac{\\gamma}{\\delta}"
+        ]
+      },
+      {
+        "t": "Pruebo con números para confirmar: al subir $\\gamma$, sube el equilibrio.",
+        "eq": [
+          "\\gamma=0{,}5,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=25",
+          "\\gamma=1,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=50"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Reemplazo: $12$ voltios dividido entre $6$ ohmios.",
-    "eq": [
-     "I=\\frac{12\\ \\text{V}}{6\\ \\Omega}=2\\ \\text{A}"
+  },
+  "mat-001": {
+    "tema": "Matemáticas: función lineal (un cobro fijo más un cobro por cada unidad)",
+    "que": "Es cuando algo se paga con dos partes: una cantidad que pagas siempre, y otra que va creciendo parejo, como un taxi.",
+    "pistas": [
+      "hay un cobro de arranque que se paga siempre: 4.000 pesos",
+      "hay un cobro por cada kilómetro: 1.000 pesos",
+      "piden el precio de un recorrido concreto: 7 km"
+    ],
+    "clave": "Pregúntate: ¿qué pasaría con cero? Si igual hay que pagar algo, hay una parte fija, y eso es función lineal. Si con cero se paga cero, es proporcional.",
+    "no": [
+      {
+        "t": "Proporcionalidad directa",
+        "p": "Se parece porque el precio sube con los kilómetros. Pero en la proporcional, con $0$ km pagarías $0$; aquí con $0$ km ya debes 4.000 por el arranque."
+      },
+      {
+        "t": "Porcentajes",
+        "p": "Se parece porque son cuentas de plata. Pero no hay ningún \"por ciento\" en el enunciado."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Separo lo que se paga una sola vez (arranque: 4.000) de lo que se paga por cada kilómetro (1.000).",
+        "eq": [
+          "C(k)=4.000+1.000\\cdot k"
+        ]
+      },
+      {
+        "t": "Multiplico los kilómetros por lo que cuesta cada uno, y le sumo el arranque.",
+        "eq": [
+          "C(7)=4.000+1.000\\cdot7=4.000+7.000=11.000"
+        ]
+      },
+      {
+        "t": "Compruebo con un caso fácil: con cero km pagaría el arranque, o sea 4.000. Tiene sentido.",
+        "eq": [
+          "C(0)=4.000+1.000\\cdot0=4.000"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Pongo la unidad: amperios (A)."
-   }
-  ]
- },
- "cie-004": {
-  "tema": "Química: balancear una reacción",
-  "que": "Es lograr que en una reacción química haya los mismos átomos antes y después de la flecha, porque los átomos no se crean ni se destruyen.",
-  "pistas": [
-   "te dan una reacción escrita con fórmulas ($C_3H_8 + O_2 \\to CO_2 + H_2O$)",
-   "piden un coeficiente, el número que va delante de una fórmula",
-   "no dan gramos ni cantidades"
-  ],
-  "clave": "Si solo te dan la ecuación con flecha y no hay gramos ni moles, el trabajo es igualar átomos de un lado y del otro.",
-  "no": [
-   {
-    "t": "Cálculos con moles y gramos",
-    "p": "Se parece porque es química con números. Pero ahí te dan cantidades; aquí solo te dan la ecuación y piden equilibrarla."
-   },
-   {
-    "t": "Nombrar compuestos",
-    "p": "Se parece porque aparecen fórmulas. Pero nadie pregunta cómo se llama cada compuesto."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Cuento cuántos átomos de carbono (C) hay a la izquierda: $3$. Entonces el $CO_2$ lleva un $3$ delante.",
-    "eq": [
-     "\\text{C: }3\\ \\Rightarrow\\ 3\\,\\text{CO}_2"
+  },
+  "mat-002": {
+    "tema": "Matemáticas: función cuadrática (puntos donde corta el eje x)",
+    "que": "Es una función con $x^2$ cuya gráfica es una curva en forma de U. Aquí piden dónde esa curva cruza la línea horizontal.",
+    "pistas": [
+      "la función tiene un $x^2$: eso la hace cuadrática",
+      "dice \"corta el eje $x$\": es donde la curva toca la línea horizontal",
+      "en esos puntos la altura es $0$"
+    ],
+    "clave": "Si ves $x^2$ y piden dónde corta el eje $x$, iguala la función a cero. Eso funciona siempre, porque en el eje $x$ la altura es cero.",
+    "no": [
+      {
+        "t": "Vértice",
+        "p": "Se parece porque es la misma curva. Pero el vértice es el punto más alto o más bajo, y no lo están pidiendo."
+      },
+      {
+        "t": "Corte con el eje y",
+        "p": "Se parece porque también es un corte. Pero ese se saca poniendo $x=0$; aquí piden el corte con el eje $x$."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Como en el corte la altura es cero, igualo la función a cero.",
+        "eq": [
+          "x^2-4x+3=0"
+        ]
+      },
+      {
+        "t": "Busco dos números que multiplicados den $3$ y sumados den $-4$: son $-1$ y $-3$.",
+        "eq": [
+          "(x-1)(x-3)=0"
+        ]
+      },
+      {
+        "t": "Cada paréntesis puede valer cero.",
+        "eq": [
+          "x-1=0\\ \\Rightarrow\\ x=1",
+          "x-3=0\\ \\Rightarrow\\ x=3"
+        ]
+      },
+      {
+        "t": "Compruebo reemplazando en la función.",
+        "eq": [
+          "f(1)=1-4+3=0",
+          "f(3)=9-12+3=0"
+        ]
+      }
     ]
-   },
-   {
-    "t": "Cuento los hidrógenos (H): hay $8$. Entonces el agua ($H_2O$) lleva un $4$ delante.",
-    "eq": [
-     "\\text{H: }8\\ \\Rightarrow\\ 4\\,\\text{H}_2\\text{O}"
+  },
+  "mat-003": {
+    "tema": "Matemáticas: probabilidad simple",
+    "que": "Es medir qué tan posible es que pase algo: se cuentan las formas en que puede salir lo que quiero y se comparan con todas las formas en que puede salir.",
+    "pistas": [
+      "hay una bolsa con fichas de colores",
+      "sacan una al azar (a la suerte)",
+      "piden la probabilidad de que sea roja"
+    ],
+    "clave": "En probabilidad simple siempre se arma una fracción: arriba las que me sirven, abajo todas las posibles.",
+    "no": [
+      {
+        "t": "Conteos y arreglos (combinatoria)",
+        "p": "Se parece porque también se cuenta. Pero aquí no piden de cuántas maneras se ordenan las fichas, solo la probabilidad de una."
+      },
+      {
+        "t": "Promedios (estadística)",
+        "p": "Se parece porque hay números. Pero aquí no hay lista de datos para promediar, hay azar."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Cuento cuántas fichas hay en total: $3$ rojas más $5$ azules.",
+        "eq": [
+          "\\text{totales}=3+5=8"
+        ]
+      },
+      {
+        "t": "Cuento las que me sirven, las rojas: $3$."
+      },
+      {
+        "t": "Pongo las que me sirven sobre el total.",
+        "eq": [
+          "P(\\text{roja})=\\frac{3}{8}"
+        ]
+      },
+      {
+        "t": "Reviso que sea menor que $1$ y que no haya contado de más."
+      }
     ]
-   },
-   {
-    "t": "Ahora cuento todo el oxígeno que quedó a la derecha: $6$ de los $CO_2$ y $4$ del agua, o sea $10$ átomos.",
-    "eq": [
-     "\\text{O: }3\\cdot2+4\\cdot1=6+4=10"
+  },
+  "mat-004": {
+    "tema": "Matemáticas: estadística (media y mediana)",
+    "que": "Es resumir una lista de datos con un solo número: la media es el promedio y la mediana es el dato que queda en el medio cuando los pones en orden.",
+    "pistas": [
+      "hay una lista de datos: $2, 3, 3, 4, 8$",
+      "mencionan la media y la mediana",
+      "preguntan qué pasa con ellas al quitar un dato"
+    ],
+    "clave": "Si te dan una lista de datos, mira cuál medida piden. Media es sumar y dividir; mediana es ordenar y tomar el del medio.",
+    "no": [
+      {
+        "t": "Probabilidad",
+        "p": "Se parece porque hay números. Pero aquí no hay azar ni se saca nada a la suerte; solo se quita un dato de la lista."
+      },
+      {
+        "t": "Moda",
+        "p": "Se parece porque también resume datos. Pero la moda (el dato más repetido) no la mencionan."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Quito el $8$ y me queda la lista: $2$, $3$, $3$, $4$."
+      },
+      {
+        "t": "Media nueva: sumo todos y divido entre cuántos son. Bajó de $4$ a $3$.",
+        "eq": [
+          "\\bar{x}=\\frac{2+3+3+4}{4}=\\frac{12}{4}=3"
+        ]
+      },
+      {
+        "t": "Mediana nueva: con cuatro datos es el promedio de los dos del medio. No cambió.",
+        "eq": [
+          "\\text{Me}=\\frac{3+3}{2}=3"
+        ]
+      },
+      {
+        "t": "Elijo la opción que dice: la media baja a $3$ y la mediana no cambia."
+      }
     ]
-   },
-   {
-    "t": "Cada $O_2$ tiene $2$ átomos, así que $10$ entre $2$ da $5$ delante del $O_2$.",
-    "eq": [
-     "\\text{O}_2\\text{: }\\frac{10}{2}=5"
+  },
+  "mat-005": {
+    "tema": "Matemáticas: probabilidad con dos dados",
+    "que": "Es lo mismo que la probabilidad simple, pero con dos dados: hay que contar todas las parejas posibles que pueden salir.",
+    "pistas": [
+      "se lanzan dos dados",
+      "piden que la suma sea $7$",
+      "hay que contar parejas, no solo números sueltos"
+    ],
+    "clave": "Con dos dados, no cuentes números sino parejas: siempre hay $36$. Haz una lista ordenada y no se te pierde ninguna.",
+    "no": [
+      {
+        "t": "Probabilidad con un solo dado",
+        "p": "Se parece porque son dados. Pero con uno hay $6$ resultados; con dos hay $6\\cdot6=36$ parejas."
+      },
+      {
+        "t": "Conteos y arreglos (combinatoria)",
+        "p": "Se parece porque se cuenta. Pero aquí basta con listar las parejas que suman $7$ y compararlas con el total."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Calculo cuántas parejas existen en total: seis por seis.",
+        "eq": [
+          "6\\cdot6=36"
+        ]
+      },
+      {
+        "t": "Escribo las que suman $7$: son $6$ parejas.",
+        "eq": [
+          "(1,6),\\ (2,5),\\ (3,4),\\ (4,3),\\ (5,2),\\ (6,1)"
+        ]
+      },
+      {
+        "t": "Pongo las que sirven sobre el total.",
+        "eq": [
+          "P(7)=\\frac{6}{36}"
+        ]
+      },
+      {
+        "t": "Simplifico dividiendo arriba y abajo entre $6$.",
+        "eq": [
+          "\\frac{6}{36}=\\frac{1}{6}"
+        ]
+      }
     ]
-   }
-  ]
- },
- "cie-005": {
-  "tema": "Biología: herencia de padres a hijos (genética)",
-  "que": "Es calcular qué probabilidad hay de que los hijos hereden cierta característica, usando las letras que representan los genes de cada papá.",
-  "pistas": [
-   "aparecen letras como $Aa$: son los genes de cada planta",
-   "piden la probabilidad de que un hijo sea $aa$",
-   "se cruzan solo dos plantas, un solo cruce"
-  ],
-  "clave": "Letras como $Aa$ y \"probabilidad de los hijos\" siempre se resuelven con la cuadrícula de $2$ por $2$.",
-  "no": [
-   {
-    "t": "División de las células",
-    "p": "Se parece porque también es biología de genes. Pero aquí nadie pregunta cómo se divide la célula, sino qué se hereda."
-   },
-   {
-    "t": "Evolución",
-    "p": "Se parece porque habla de descendientes. Pero la evolución trata de poblaciones durante muchas generaciones; aquí es un solo cruce."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Escribo los genes de cada planta: una es $Aa$ y la otra también."
-   },
-   {
-    "t": "Dibujo una cuadrícula de $2$ por $2$ (cuadro de Punnett): arriba los genes de una, al lado los de la otra."
-   },
-   {
-    "t": "Lleno cada casilla combinando una letra de arriba con una de al lado: salen $AA$, $Aa$, $Aa$ y $aa$."
-   },
-   {
-    "t": "Cuento: de $4$ casillas, solo $1$ es $aa$. La probabilidad es $1$ de $4$.",
-    "eq": [
-     "P(aa)=\\frac{1}{4}"
+  },
+  "mat-006": {
+    "tema": "Matemáticas: porcentajes seguidos (sube y luego baja)",
+    "que": "Es cuando un precio cambia varias veces seguidas en porcentaje. Cada cambio se calcula sobre el precio que había justo antes.",
+    "pistas": [
+      "el artículo cuesta 100.000 pesos",
+      "primero sube $20\\%$ y después baja $20\\%$",
+      "piden el precio final"
+    ],
+    "clave": "Cuando el porcentaje cambia dos veces, nunca sumes ni restes los porcentajes: calcula el primero, y con el resultado calcula el segundo.",
+    "no": [
+      {
+        "t": "Un aumento simple",
+        "p": "Se parece porque hay un porcentaje. Pero aquí son dos cambios, y el segundo se calcula sobre el precio nuevo, no sobre el original."
+      },
+      {
+        "t": "Regla de tres",
+        "p": "Se parece porque es de plata. Pero no se resuelve con una sola proporción, hay que hacer el cambio dos veces."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Calculo la subida: el $20\\%$ de 100.000 es 20.000, y el precio queda en 120.000.",
+        "eq": [
+          "100.000\\cdot1{,}2=120.000"
+        ]
+      },
+      {
+        "t": "Ahora la bajada es sobre 120.000: el $20\\%$ de 120.000 es 24.000.",
+        "eq": [
+          "120.000\\cdot0{,}8=96.000"
+        ]
+      },
+      {
+        "t": "Veo que no volvió a 100.000: subir y bajar el mismo porcentaje no se cancela.",
+        "eq": [
+          "100.000\\cdot1{,}2\\cdot0{,}8=100.000\\cdot0{,}96=96.000"
+        ]
+      }
     ]
-   }
-  ]
- },
- "cie-006": {
-  "tema": "Física: lentes (óptica)",
-  "que": "Es estudiar cómo un lente, como el de una lupa, junta la luz y forma una imagen de un objeto.",
-  "pistas": [
-   "dice lente convergente (el que junta la luz)",
-   "dan la distancia focal $f=10$ cm y el objeto a $15$ cm",
-   "piden cómo es la imagen: real o virtual, derecha o invertida"
-  ],
-  "clave": "Si dicen \"lente\" y dan una distancia focal, usa la ecuación del lente. Un lente deja pasar la luz; un espejo la devuelve.",
-  "no": [
-   {
-    "t": "Espejos",
-    "p": "Se parece porque también forman imágenes. Pero un espejo rebota la luz y un lente la deja pasar; aquí la luz atraviesa el lente."
-   },
-   {
-    "t": "Refracción con ángulos",
-    "p": "Se parece porque la luz cambia al pasar por el lente. Pero aquí no dan ángulos ni piden calcular cuánto se desvía."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Anoto: distancia focal $10$ cm y objeto a $15$ cm.",
-    "eq": [
-     "f=10\\ \\text{cm},\\ d_o=15\\ \\text{cm}"
+  },
+  "lec-001": {
+    "tema": "Lectura: encontrar la idea que defiende el autor",
+    "que": "Es descubrir qué quiere decir el autor con todo el texto, y qué opinión defiende o rechaza.",
+    "pistas": [
+      "la pregunta dice \"¿qué cuestiona el autor?\": quiere saber contra qué está",
+      "el texto tiene la palabra \"engañoso\": es una crítica",
+      "la idea importante viene después de \"Por eso\""
+    ],
+    "clave": "Busca la palabra que anuncia la idea importante (\"por eso\", \"en conclusión\", \"sin embargo\") y lee lo que viene justo después.",
+    "no": [
+      {
+        "t": "Hacer un resumen",
+        "p": "Se parece porque hay que entender el texto. Pero no piden contar todo lo que dice, sino la idea que el autor critica."
+      },
+      {
+        "t": "Significado de una palabra",
+        "p": "Se parece porque lees el texto. Pero nadie pregunta qué significa una palabra."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo el texto completo una vez, sin afán."
+      },
+      {
+        "t": "Busco la palabra que anuncia la conclusión: aquí es \"Por eso\"."
+      },
+      {
+        "t": "Leo lo que viene después: dice que medir las bibliotecas solo por préstamos es engañoso."
+      },
+      {
+        "t": "Elijo la opción que dice eso mismo con otras palabras, y descarto las que hablan de otra cosa."
+      }
     ]
-   },
-   {
-    "t": "Uso la ecuación del lente para hallar a qué distancia se forma la imagen.",
-    "eq": [
-     "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}"
+  },
+  "lec-002": {
+    "tema": "Lectura: conectores (palabras que unen ideas)",
+    "que": "Los conectores son palabras como \"por lo tanto\", \"sin embargo\" o \"además\", que dicen cómo se relacionan dos ideas.",
+    "pistas": [
+      "hay una frase con un espacio en blanco para completar",
+      "las opciones son conectores, no palabras normales",
+      "las dos ideas son: \"llovió toda la noche\" y \"el partido se jugó\""
+    ],
+    "clave": "Antes de mirar las opciones, pregúntate: ¿las dos ideas se oponen, se suman o una causa la otra? Con eso ya sabes qué tipo de conector buscar.",
+    "no": [
+      {
+        "t": "Ortografía",
+        "p": "Se parece porque hay que completar una frase. Pero todas las opciones están bien escritas; lo que cambia es el sentido."
+      },
+      {
+        "t": "Idea principal",
+        "p": "Se parece porque es lectura. Pero nadie pregunta de qué trata la frase, sino cómo se unen las dos partes."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo las dos ideas por separado: \"llovió toda la noche\" y \"el partido se jugó\"."
+      },
+      {
+        "t": "Me pregunto qué esperaría uno: si llueve, uno esperaría que el partido se cancele."
+      },
+      {
+        "t": "Pero se jugó igual. Entonces las dos ideas se oponen, una contradice lo que esperaba."
+      },
+      {
+        "t": "Para oposición sirve \"sin embargo\". Pruebo la frase completa y suena bien."
+      }
     ]
-   },
-   {
-    "t": "Dejo sola la distancia de la imagen y reemplazo.",
-    "eq": [
-     "\\frac{1}{d_i}=\\frac{1}{10}-\\frac{1}{15}=\\frac{3-2}{30}=\\frac{1}{30}"
+  },
+  "lec-003": {
+    "tema": "Razonamiento lógico: sacar una conclusión",
+    "que": "Es partir de una regla y un dato para deducir algo que el texto no dice, pero que obligatoriamente es cierto.",
+    "pistas": [
+      "hay una regla general: \"todos los que entregaron aprobaron\"",
+      "hay un dato: \"Camila no aprobó\"",
+      "piden qué se puede concluir"
+    ],
+    "clave": "Convierte la regla en una flecha ($A \\to B$). Si no pasó $B$, entonces tampoco pasó $A$.",
+    "no": [
+      {
+        "t": "Comprensión literal",
+        "p": "Se parece porque hay que leer con cuidado. Pero la respuesta no está escrita, hay que deducirla."
+      },
+      {
+        "t": "Dar una opinión",
+        "p": "Se parece porque preguntan por Camila. Pero no importa lo que tú creas de ella, solo lo que la regla obliga."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Escribo la regla así: entregó → aprobó."
+      },
+      {
+        "t": "Miro el dato: Camila no aprobó."
+      },
+      {
+        "t": "Pienso: si hubiera entregado, habría aprobado. Pero no aprobó, así que no entregó."
+      },
+      {
+        "t": "Elijo la opción que dice eso y descarto las que inventan cosas, como \"perdió por mala nota\"."
+      }
     ]
-   },
-   {
-    "t": "Si $d_i$ sale positivo, la imagen es real e invertida. Elijo la opción que coincide.",
-    "eq": [
-     "d_i=30\\ \\text{cm}"
+  },
+  "ing-003": {
+    "tema": "Inglés: entender un aviso",
+    "que": "Es leer un aviso corto, como un letrero, y encontrar el dato que responde la pregunta.",
+    "pistas": [
+      "hay un letrero con horarios ({{Monday–Friday}}, {{8 a.m.–6 p.m.}})",
+      "dice {{Closed on holidays}} (cerrado en festivos)",
+      "la pregunta es si puedes ir un domingo"
+    ],
+    "clave": "No traduzcas todo el aviso. Busca solo lo que te preguntan (el día, la hora, el precio) y compáralo con el aviso.",
+    "no": [
+      {
+        "t": "Gramática",
+        "p": "Se parece porque está en inglés. Pero nadie te pide completar frases."
+      },
+      {
+        "t": "Vocabulario suelto",
+        "p": "Se parece porque hay palabras nuevas. Pero hay que entender todo el aviso, no una sola palabra."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo el aviso y subrayo los días: {{Monday–Friday}} es de lunes a viernes."
+      },
+      {
+        "t": "Me pregunto: ¿el domingo ({{Sunday}}) está dentro de lunes a viernes? No."
+      },
+      {
+        "t": "Entonces el domingo está cerrado."
+      },
+      {
+        "t": "Elijo la opción que dice {{No, it is not open on Sunday}}."
+      }
     ]
-   }
-  ]
- },
- "cie-008": {
-  "tema": "Química: gases ideales",
-  "que": "Es la regla que relaciona cuatro cosas de un gas: presión, volumen, cantidad (moles) y temperatura.",
-  "pistas": [
-   "dan moles ($2$), temperatura ($273,15$ K) y presión ($1$ atm)",
-   "dan la constante $R$ en el enunciado",
-   "piden el volumen que ocupa el gas"
-  ],
-  "clave": "Si salen moles, temperatura, presión y la letra $R$ todos juntos, es gases ideales. Si faltara alguno, sería otra ley.",
-  "no": [
-   {
-    "t": "Cálculos de reacciones (estequiometría)",
-    "p": "Se parece porque usa moles. Pero aquí no hay ninguna reacción química, solo un gas quieto."
-   },
-   {
-    "t": "Leyes de Boyle o Charles",
-    "p": "Se parecen porque hablan de gases. Pero esas cambian solo dos cosas y dejan el resto fijo; aquí se usan las cuatro juntas, con la ecuación completa."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Escribo la ecuación: presión por volumen igual a moles por $R$ por temperatura.",
-    "eq": [
-     "PV=nRT"
+  },
+  "soc-001": {
+    "tema": "Sociales: la Constitución de 1991 y la tutela",
+    "que": "Es conocer para qué sirven las herramientas que la Constitución de 1991 le dio a las personas para defender sus derechos.",
+    "pistas": [
+      "nombran la acción de tutela",
+      "dicen que la creó la Constitución de 1991",
+      "preguntan para qué sirve"
+    ],
+    "clave": "Si nombran la tutela o una herramienta de la Constitución del 91, piensa: ¿qué problema resuelve? La tutela: derechos fundamentales en peligro, con respuesta rápida.",
+    "no": [
+      {
+        "t": "Ramas del poder",
+        "p": "Se parece porque es la misma Constitución. Pero nadie pregunta quién hace las leyes ni quién las aplica."
+      },
+      {
+        "t": "Elecciones",
+        "p": "Se parece porque es de derechos políticos. Pero la tutela no sirve para elegir a nadie."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Recuerdo qué es la tutela: un recurso rápido que cualquier persona puede usar."
+      },
+      {
+        "t": "Recuerdo para qué: para pedir que un juez proteja un derecho fundamental que está en peligro."
+      },
+      {
+        "t": "Reviso las opciones y descarto las que hablan de leyes, elecciones o guerra."
+      },
+      {
+        "t": "Elijo la que habla de proteger derechos de forma inmediata."
+      }
     ]
-   },
-   {
-    "t": "Como piden el volumen, lo dejo solo.",
-    "eq": [
-     "V=\\frac{nRT}{P}"
+  },
+  "soc-002": {
+    "tema": "Sociales: ramas del poder público",
+    "que": "Colombia divide el poder en tres ramas, y cada una tiene un trabajo distinto: hacer las leyes, aplicarlas y juzgar.",
+    "pistas": [
+      "preguntan por una \"rama del poder público\"",
+      "preguntan qué rama hace las leyes"
+    ],
+    "clave": "Asocia cada rama con un verbo: Legislativa hace las leyes, Ejecutiva las aplica y gobierna, Judicial juzga.",
+    "no": [
+      {
+        "t": "Mecanismos de participación",
+        "p": "Se parece porque es de la Constitución. Pero esos son herramientas de los ciudadanos, como el voto, y no se preguntan aquí."
+      },
+      {
+        "t": "Elecciones",
+        "p": "Se parece porque el Congreso se elige. Pero no preguntan cómo se elige, sino qué función tiene."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Recuerdo las tres ramas: Ejecutiva (gobierna), Legislativa (hace las leyes) y Judicial (juzga)."
+      },
+      {
+        "t": "Veo qué función piden: hacer las leyes."
+      },
+      {
+        "t": "La que hace las leyes es el Congreso, o sea la rama Legislativa."
+      },
+      {
+        "t": "Descarto Ejecutiva y Judicial, y compruebo que \"Electoral\" no es una de las tres ramas clásicas."
+      }
     ]
-   },
-   {
-    "t": "Reemplazo con los datos y hago la cuenta con calculadora.",
-    "eq": [
-     "V=\\frac{2\\cdot0{,}082\\cdot273{,}15}{1}\\approx44{,}8\\ \\text{L}"
+  },
+  "soc-003": {
+    "tema": "Historia: tipos de fuentes",
+    "que": "Una fuente es todo lo que sirve para estudiar el pasado. Puede ser primaria (de la época) o secundaria (escrita después, sobre esa época).",
+    "pistas": [
+      "hablan de una carta escrita en 1810",
+      "dicen que la escribió un testigo de los hechos",
+      "piden qué tipo de fuente es"
+    ],
+    "clave": "Pregunta mágica: ¿esta persona vio los hechos o los contó después? Si estuvo ahí, es fuente primaria.",
+    "no": [
+      {
+        "t": "Ordenar hechos en el tiempo",
+        "p": "Se parece porque hay una fecha. Pero nadie pide poner hechos en orden."
+      },
+      {
+        "t": "Causas de la independencia",
+        "p": "Se parece porque es de la misma época. Pero el tema es qué clase de documento es, no lo que cuenta."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Me pregunto: ¿quién lo escribió y cuándo?"
+      },
+      {
+        "t": "Lo escribió alguien que estuvo ahí, en 1810, en el momento de los hechos."
+      },
+      {
+        "t": "Entonces es una fuente primaria: viene directo de la época."
+      },
+      {
+        "t": "Descarto \"secundaria\" (escrita después) y las opciones que no son fuentes."
+      }
     ]
-   },
-   {
-    "t": "Pongo la unidad: litros (L)."
-   }
-  ]
- },
- "cie-009": {
-  "tema": "Ecología: depredadores y presas",
-  "que": "Es ver cómo dos poblaciones se afectan entre sí: los depredadores comen presas, y si cambia una, cambia la otra.",
-  "pistas": [
-   "hay dos poblaciones: depredadores y presas",
-   "piden qué pasa con las presas si los depredadores mueren más",
-   "es un modelo, o sea una explicación con letras ($\\gamma$, $\\delta$)"
-  ],
-  "clave": "Si hay dos poblaciones y una se come a la otra, piensa en cadena de causas: si cambia una, cambia la otra.",
-  "no": [
-   {
-    "t": "Crecimiento de una sola población",
-    "p": "Se parece porque también habla de cuántos individuos hay. Pero aquí son dos poblaciones que se afectan una a la otra."
-   },
-   {
-    "t": "Cadena alimenticia",
-    "p": "Se parece porque aparece quién se come a quién. Pero no piden dibujar la cadena, sino el efecto de un cambio."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Me pregunto qué significa que los depredadores mueran más: habrá menos depredadores."
-   },
-   {
-    "t": "Pienso qué les pasa a las presas con menos depredadores: se las comen menos."
-   },
-   {
-    "t": "Reviso la fórmula del equilibrio de las presas y veo qué pasa si $\\gamma$ aumenta.",
-    "eq": [
-     "x^*=\\frac{\\gamma}{\\delta}"
+  },
+  "soc-004": {
+    "tema": "Historia: ordenar hechos en el tiempo",
+    "que": "Es poner los hechos en una línea del tiempo, del más antiguo al más reciente.",
+    "pistas": [
+      "la pregunta dice \"orden cronológico\"",
+      "todas las opciones tienen los mismos cuatro hechos, solo cambian de lugar"
+    ],
+    "clave": "No leas las opciones completas: busca primero el hecho más antiguo (el Grito de $1810$) y descarta las que no empiezan por ahí.",
+    "no": [
+      {
+        "t": "Causas y consecuencias",
+        "p": "Se parece porque son hechos históricos. Pero no piden explicar por qué pasó cada uno, solo el orden."
+      },
+      {
+        "t": "Tipos de fuentes",
+        "p": "Se parece porque es historia. Pero no hablan de documentos."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Busco la fecha de cada hecho: Grito de Independencia, $1810$; Constitución, $1886$; Frente Nacional, $1958$–$1974$; nueva Constitución, $1991$."
+      },
+      {
+        "t": "Los ordeno de menor a mayor año."
+      },
+      {
+        "t": "Reviso cada opción y la comparo con mi lista."
+      },
+      {
+        "t": "Elijo la que coincide exactamente."
+      }
     ]
-   },
-   {
-    "t": "Pruebo con números para confirmar: al subir $\\gamma$, sube el equilibrio.",
-    "eq": [
-     "\\gamma=0{,}5,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=25",
-     "\\gamma=1,\\ \\delta=0{,}02\\ \\Rightarrow\\ x^*=50"
+  },
+  "ing-001": {
+    "tema": "Inglés: presente simple (cosas que haces siempre)",
+    "que": "El presente simple se usa para rutinas y hábitos. Con {{he}}, {{she}} o {{it}}, el verbo lleva una -s o -es al final.",
+    "pistas": [
+      "{{every day}} (todos los días) habla de una rutina",
+      "el sujeto es {{She}}: una sola persona, tercera persona",
+      "falta el verbo"
+    ],
+    "clave": "Mira el sujeto primero. Si es {{he}}, {{she}} o {{it}}, el verbo en presente lleva -s o -es.",
+    "no": [
+      {
+        "t": "Presente continuo",
+        "p": "Se parece porque también es presente. Pero el continuo habla de lo que pasa ahora mismo y lleva {{is}} y -ing; aquí hay una rutina."
+      },
+      {
+        "t": "Pasado o perfecto",
+        "p": "Se parece porque es un verbo. Pero nada en la frase indica que ya pasó."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Veo el sujeto: {{She}}, una sola persona."
+      },
+      {
+        "t": "Veo que es una rutina por {{every day}}."
+      },
+      {
+        "t": "Con {{she}}, el verbo lleva -s o -es: {{go}} se vuelve {{goes}}."
+      },
+      {
+        "t": "Leo la frase completa: {{She goes to school every day}}. Suena bien."
+      }
     ]
-   }
-  ]
- },
- "mat-001": {
-  "tema": "Matemáticas: función lineal (un cobro fijo más un cobro por cada unidad)",
-  "que": "Es cuando algo se paga con dos partes: una cantidad que pagas siempre, y otra que va creciendo parejo, como un taxi.",
-  "pistas": [
-   "hay un cobro de arranque que se paga siempre: 4.000 pesos",
-   "hay un cobro por cada kilómetro: 1.000 pesos",
-   "piden el precio de un recorrido concreto: 7 km"
-  ],
-  "clave": "Pregúntate: ¿qué pasaría con cero? Si igual hay que pagar algo, hay una parte fija, y eso es función lineal. Si con cero se paga cero, es proporcional.",
-  "no": [
-   {
-    "t": "Proporcionalidad directa",
-    "p": "Se parece porque el precio sube con los kilómetros. Pero en la proporcional, con $0$ km pagarías $0$; aquí con $0$ km ya debes 4.000 por el arranque."
-   },
-   {
-    "t": "Porcentajes",
-    "p": "Se parece porque son cuentas de plata. Pero no hay ningún \"por ciento\" en el enunciado."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Separo lo que se paga una sola vez (arranque: 4.000) de lo que se paga por cada kilómetro (1.000).",
-    "eq": [
-     "C(k)=4.000+1.000\\cdot k"
+  },
+  "ing-002": {
+    "tema": "Inglés: primer condicional (algo que puede pasar)",
+    "que": "Se usa para decir qué pasará si ocurre algo posible. La parte con {{if}} va en presente y el resultado lleva {{will}}.",
+    "pistas": [
+      "empieza con {{If it rains tomorrow}} (algo posible en el futuro)",
+      "el espacio está en la segunda parte: el resultado",
+      "la palabra {{tomorrow}} indica futuro"
+    ],
+    "clave": "Si la frase empieza con {{If}} más presente, la otra parte lleva {{will}}. Es como decir: si pasa esto, entonces pasará esto otro.",
+    "no": [
+      {
+        "t": "Segundo condicional",
+        "p": "Se parece porque también lleva {{if}}. Pero ese es para cosas imaginarias o improbables y usa {{would}}; aquí llover es algo real y posible."
+      },
+      {
+        "t": "Tiempos pasados",
+        "p": "Se parece porque son verbos. Pero {{tomorrow}} es futuro, no puede ir en pasado."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Veo la parte con {{if}}: {{If it rains}} está en presente. Eso es lo normal."
+      },
+      {
+        "t": "Me fijo en que el resultado necesita {{will}} más el verbo."
+      },
+      {
+        "t": "Busco la opción con {{will}}: {{will stay}}."
+      },
+      {
+        "t": "Leo completo: {{If it rains tomorrow, we will stay at home}}. Perfecto."
+      }
     ]
-   },
-   {
-    "t": "Multiplico los kilómetros por lo que cuesta cada uno, y le sumo el arranque.",
-    "eq": [
-     "C(7)=4.000+1.000\\cdot7=4.000+7.000=11.000"
+  },
+  "ing-004": {
+    "tema": "Inglés: vocabulario según el contexto",
+    "que": "Es elegir la palabra que tiene sentido en la frase, aunque otras se parezcan.",
+    "pistas": [
+      "dice {{from the library}} (de la biblioteca)",
+      "dice {{for two weeks}} (por dos semanas): es temporal",
+      "las opciones son verbos con significados distintos"
+    ],
+    "clave": "Cuando las opciones se parecen, no traduzcas palabra por palabra: pregúntate quién hace la acción y si es temporal.",
+    "no": [
+      {
+        "t": "Gramática",
+        "p": "Se parece porque es una frase para completar. Pero las opciones no cambian la forma del verbo, cambian su significado."
+      },
+      {
+        "t": "Comprar o vender",
+        "p": "Se parece porque son verbos de dar y recibir. Pero una biblioteca no vende libros: los presta."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Me pregunto quién da y quién recibe: la biblioteca da, tú recibes."
+      },
+      {
+        "t": "Veo que es por dos semanas, o sea prestado."
+      },
+      {
+        "t": "Recuerdo que {{borrow}} es recibir prestado, y {{lend}} es dar prestado."
+      },
+      {
+        "t": "Elijo {{borrow}}."
+      }
     ]
-   },
-   {
-    "t": "Compruebo con un caso fácil: con cero km pagaría el arranque, o sea 4.000. Tiene sentido.",
-    "eq": [
-     "C(0)=4.000+1.000\\cdot0=4.000"
+  },
+  "mat-007": {
+    "tema": "Matemáticas: parábola y su vértice (función cuadrática)",
+    "que": "Es encontrar los números a, b y c de una curva en forma de U, la parábola, para que su punto más bajo o más alto quede justo donde tú quieres.",
+    "pistas": [
+      "dice que es una cuadrática: una función con $x^2$ cuya gráfica es una parábola",
+      "pide que el vértice sea $(2,\\,-3)$: el punto donde la curva cambia de bajar a subir",
+      "dice que uses el graficador: puedes probar valores y ver la curva"
+    ],
+    "clave": "Si te dan el vértice $(h,k)$ de una cuadrática, escribe $f(x)=a(x-h)^2+k$ y luego abre el cuadrado para sacar a, b y c.",
+    "no": [
+      {
+        "t": "Función lineal",
+        "p": "Se parece porque también es una función con letras que hay que elegir. Pero la recta no tiene vértice ni curva, y aquí hablan de un punto donde la curva cambia de dirección."
+      },
+      {
+        "t": "Hallar las raíces de la cuadrática",
+        "p": "Se parece porque también aparece $x^2$. Pero ahí buscan dónde la curva corta el eje x, y aquí te dan el vértice."
+      },
+      {
+        "t": "Calcular el vértice de una función dada",
+        "p": "Se parece porque también sale el vértice. Pero ahí te dan a, b y c y calculas el vértice; aquí es al revés: te dan el vértice y construyes a, b y c."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Anoto lo que me piden: el vértice está en $x=2$ y en $y=-3$.",
+        "eq": [
+          "h=2,\\ k=-3"
+        ]
+      },
+      {
+        "t": "Uso la forma que ya trae el vértice escrito, dejando $a$ libre.",
+        "eq": [
+          "f(x)=a(x-2)^2-3"
+        ]
+      },
+      {
+        "t": "Elijo $a=1$ porque es lo más sencillo y abro el cuadrado.",
+        "eq": [
+          "f(x)=(x-2)^2-3=x^2-4x+1"
+        ]
+      },
+      {
+        "t": "Leo los números: $a=1$, $b=-4$ y $c=1$. Los pruebo en el graficador y el vértice queda donde pedían."
+      }
     ]
-   }
-  ]
- },
- "mat-002": {
-  "tema": "Matemáticas: función cuadrática (puntos donde corta el eje x)",
-  "que": "Es una función con $x^2$ cuya gráfica es una curva en forma de U. Aquí piden dónde esa curva cruza la línea horizontal.",
-  "pistas": [
-   "la función tiene un $x^2$: eso la hace cuadrática",
-   "dice \"corta el eje $x$\": es donde la curva toca la línea horizontal",
-   "en esos puntos la altura es $0$"
-  ],
-  "clave": "Si ves $x^2$ y piden dónde corta el eje $x$, iguala la función a cero. Eso funciona siempre, porque en el eje $x$ la altura es cero.",
-  "no": [
-   {
-    "t": "Vértice",
-    "p": "Se parece porque es la misma curva. Pero el vértice es el punto más alto o más bajo, y no lo están pidiendo."
-   },
-   {
-    "t": "Corte con el eje y",
-    "p": "Se parece porque también es un corte. Pero ese se saca poniendo $x=0$; aquí piden el corte con el eje $x$."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Como en el corte la altura es cero, igualo la función a cero.",
-    "eq": [
-     "x^2-4x+3=0"
+  },
+  "cie-007": {
+    "tema": "Física: lanzamiento en parábola, hallar el ángulo",
+    "que": "Es un proyectil que sale inclinado y cae lejos. Aquí ya sabes qué tan lejos debe llegar y buscas con qué ángulo lanzarlo.",
+    "pistas": [
+      "dice que debe llegar a $40$ m: ese es el alcance",
+      "dan la rapidez con que sale, $v_0=20$ m/s, y la gravedad, $g=9{,}8$ m/s²",
+      "pide que ajustes el ángulo: el ángulo es lo que no sabes"
+    ],
+    "clave": "Si conoces el alcance y la rapidez, y te piden el ángulo, usa $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$, deja solo el seno y recuerda que sirven dos ángulos.",
+    "no": [
+      {
+        "t": "Caída libre",
+        "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta, y aquí hay un alcance horizontal."
+      },
+      {
+        "t": "Altura máxima",
+        "p": "Se parece porque es el mismo tipo de lanzamiento. Pero ahí preguntan qué tan alto sube, y aquí piden el ángulo para llegar a cierta distancia."
+      },
+      {
+        "t": "Movimiento a velocidad constante",
+        "p": "Se parece porque el objeto avanza hacia adelante. Pero si la velocidad fuera constante no habría curva ni ángulo que ajustar."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Anoto los datos: alcance $40$ m, rapidez $20$ m/s y gravedad $9{,}8$.",
+        "eq": [
+          "R=40,\\ v_0=20,\\ g=9{,}8"
+        ]
+      },
+      {
+        "t": "Escribo la fórmula del alcance, que sirve para este lanzamiento.",
+        "eq": [
+          "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+        ]
+      },
+      {
+        "t": "Dejo solo el seno y hago la cuenta.",
+        "eq": [
+          "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98"
+        ]
+      },
+      {
+        "t": "Con la calculadora saco $\\theta\\approx39{,}3^\\circ$, y el segundo ángulo es $50{,}7^\\circ$."
+      }
     ]
-   },
-   {
-    "t": "Busco dos números que multiplicados den $3$ y sumados den $-4$: son $-1$ y $-3$.",
-    "eq": [
-     "(x-1)(x-3)=0"
+  },
+  "lec-004": {
+    "tema": "Lectura: encontrar la idea principal",
+    "que": "Es descubrir la idea que sostiene todo el texto, la que apoyan todas sus partes, y no quedarse con un detalle suelto.",
+    "pistas": [
+      "la pregunta dice idea principal: piden lo que cubre todo el texto, no un dato",
+      "la lectura compara el mercado con los supermercados: «ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana»",
+      "la razón viene después de «Por eso»: los vecinos conversan, se enteran y sienten que pertenecen"
+    ],
+    "clave": "La idea principal es la que todas las partes del texto apoyan. Los ejemplos y los detalles sirven para probarla, pero no son la idea.",
+    "no": [
+      {
+        "t": "Hacer un resumen",
+        "p": "Se parece porque hay que entender todo el texto. Pero no piden contar todo lo que dice, sino la idea que lo sostiene."
+      },
+      {
+        "t": "Buscar un dato puntual",
+        "p": "Se parece porque la respuesta está en el texto. Pero un dato, como el queso de Don Camilo, es un detalle y no cubre todo el texto."
+      },
+      {
+        "t": "Función de un conector",
+        "p": "Se parece porque también se mira una palabra del texto. Pero aquí nadie pregunta para qué sirve «Por eso», sino qué defiende el autor."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo el texto completo una vez, sin afán."
+      },
+      {
+        "t": "Veo qué hace cada parte: presenta la plaza, da ejemplos, compara con el supermercado, da una razón y cierra."
+      },
+      {
+        "t": "Busco la idea que todas esas partes apoyan: el mercado vale por la comunidad, no solo por el precio."
+      },
+      {
+        "t": "Elijo la opción que dice eso y descarto las que hablan de otra cosa o inventan."
+      }
     ]
-   },
-   {
-    "t": "Cada paréntesis puede valer cero.",
-    "eq": [
-     "x-1=0\\ \\Rightarrow\\ x=1",
-     "x-3=0\\ \\Rightarrow\\ x=3"
+  },
+  "lec-005": {
+    "tema": "Lectura: función de un conector",
+    "que": "Es explicar para qué sirve una palabra de enlace dentro del texto: si une una causa con su consecuencia, si da un ejemplo, si contradice o si cambia de tema.",
+    "pistas": [
+      "la pregunta dice «¿Qué función cumple»: no pregunta qué dice la frase, sino para qué sirve",
+      "la palabra entre comillas es «Por eso», un conector que une dos ideas",
+      "antes dice que en el supermercado nadie te pregunta cómo estuvo la semana, y después que los vecinos siguen yendo"
+    ],
+    "clave": "Cambia el conector por «por esa razón». Si la frase sigue teniendo sentido, marca una consecuencia: lo de antes explica lo de después.",
+    "no": [
+      {
+        "t": "Idea principal",
+        "p": "Se parece porque también se lee todo el texto. Pero aquí no preguntan qué defiende el autor, sino para qué sirve una palabra."
+      },
+      {
+        "t": "Significado de una palabra",
+        "p": "Se parece porque se mira una palabra concreta. Pero no piden qué significa, sino qué relación crea entre dos frases."
+      },
+      {
+        "t": "Identificar un ejemplo",
+        "p": "Se parece porque también se señala una parte del texto. Pero un ejemplo suele venir con «por ejemplo», y «Por eso» no agrega ningún caso nuevo."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Ubico el conector en el texto: «Por eso»."
+      },
+      {
+        "t": "Leo la frase de antes: en el supermercado nadie te pregunta cómo estuvo la semana."
+      },
+      {
+        "t": "Leo la frase de después: aunque no sea lo más barato, los vecinos siguen yendo."
+      },
+      {
+        "t": "Cambio «Por eso» por «por esa razón»; como tiene sentido, la función es introducir la consecuencia."
+      }
     ]
-   },
-   {
-    "t": "Compruebo reemplazando en la función.",
-    "eq": [
-     "f(1)=1-4+3=0",
-     "f(3)=9-12+3=0"
+  },
+  "lec-006": {
+    "tema": "Lectura: información que el texto dice de forma explícita",
+    "que": "Es encontrar en el texto la frase exacta que responde la pregunta y quedarse solo con lo que ella dice, sin agregar opiniones ni inventos.",
+    "pistas": [
+      "empieza con «Según el texto»: solo vale lo que el texto dice",
+      "habla de una situación imaginada: «si el mercado desapareciera»",
+      "pregunta por «la plaza», no por el mercado"
+    ],
+    "clave": "Cuando dice «según el texto», busca la frase exacta y quédate solo con ella. Aquí es la última, y su «pero» separa lo que se queda de lo que se pierde.",
+    "no": [
+      {
+        "t": "Hacer una inferencia",
+        "p": "Se parece porque la situación es imaginada. Pero no hay que adivinar nada: el texto ya lo dice con todas las letras."
+      },
+      {
+        "t": "Idea principal",
+        "p": "Se parece porque se lee todo el texto. Pero aquí preguntan por una frase concreta, no por lo que defiende el autor."
+      },
+      {
+        "t": "Dar tu opinión",
+        "p": "Se parece porque preguntan sobre un posible futuro. Pero lo que cuenta es lo que dice el texto, no lo que tú creas."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo la pregunta: qué le pasaría a la plaza si el mercado desapareciera."
+      },
+      {
+        "t": "Busco en el texto la frase que habla de eso: la última."
+      },
+      {
+        "t": "Separo la frase en dos con el «pero»: la plaza seguiría existiendo, pero perdería lo que la hace una comunidad."
+      },
+      {
+        "t": "Elijo la opción que dice las dos cosas y descarto las que cambian o inventan algo."
+      }
     ]
-   }
-  ]
- },
- "mat-003": {
-  "tema": "Matemáticas: probabilidad simple",
-  "que": "Es medir qué tan posible es que pase algo: se cuentan las formas en que puede salir lo que quiero y se comparan con todas las formas en que puede salir.",
-  "pistas": [
-   "hay una bolsa con fichas de colores",
-   "sacan una al azar (a la suerte)",
-   "piden la probabilidad de que sea roja"
-  ],
-  "clave": "En probabilidad simple siempre se arma una fracción: arriba las que me sirven, abajo todas las posibles.",
-  "no": [
-   {
-    "t": "Conteos y arreglos (combinatoria)",
-    "p": "Se parece porque también se cuenta. Pero aquí no piden de cuántas maneras se ordenan las fichas, solo la probabilidad de una."
-   },
-   {
-    "t": "Promedios (estadística)",
-    "p": "Se parece porque hay números. Pero aquí no hay lista de datos para promediar, hay azar."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Cuento cuántas fichas hay en total: $3$ rojas más $5$ azules.",
-    "eq": [
-     "\\text{totales}=3+5=8"
+  },
+  "soc-005": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce y aplica los mecanismos constitucionales de protección de derechos colectivos (acción popular). y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La acción popular (artículo 88 de la Constitución de mil novecientos noventa y uno) es el mecanismo judicial diseñado expresamente para la defensa y protección de derechos colectivos e intereses difusos, tales como el goce de un ambiente sano, el espacio público y la seguridad comunitaria, buscando evitar el daño contingente o restituir las cosas a su estado anterior.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque la tutela protege derechos colectivos, cuando su finalidad constitucional exclusiva es proteger derechos fundamentales individuales.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque la acción popular con el hábeas corpus, mecanismo que tutela la libertad personal frente a detenciones ilegales.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Cuento las que me sirven, las rojas: $3$."
-   },
-   {
-    "t": "Pongo las que me sirven sobre el total.",
-    "eq": [
-     "P(\\text{roja})=\\frac{3}{8}"
+  },
+  "soc-006": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre comprende la naturaleza y alcance del hábeas corpus como garantía de la libertad personal. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El hábeas corpus (artículo treinta de la Constitución Política) es el derecho y acción constitucional que protege la libertad personal frente a privaciones de libertad arbitrarias o prolongadas ilegalmente más allá de los términos legales (treinta y seis horas).",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el hábeas corpus con el hábeas data, el cual protege el derecho a conocer y rectificar información personal en bases de datos.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque una consulta previa, mecanismo de concertación con comunidades étnicas ante proyectos que afecten sus territorios.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Reviso que sea menor que $1$ y que no haya contado de más."
-   }
-  ]
- },
- "mat-004": {
-  "tema": "Matemáticas: estadística (media y mediana)",
-  "que": "Es resumir una lista de datos con un solo número: la media es el promedio y la mediana es el dato que queda en el medio cuando los pones en orden.",
-  "pistas": [
-   "hay una lista de datos: $2, 3, 3, 4, 8$",
-   "mencionan la media y la mediana",
-   "preguntan qué pasa con ellas al quitar un dato"
-  ],
-  "clave": "Si te dan una lista de datos, mira cuál medida piden. Media es sumar y dividir; mediana es ordenar y tomar el del medio.",
-  "no": [
-   {
-    "t": "Probabilidad",
-    "p": "Se parece porque hay números. Pero aquí no hay azar ni se saca nada a la suerte; solo se quita un dato de la lista."
-   },
-   {
-    "t": "Moda",
-    "p": "Se parece porque también resume datos. Pero la moda (el dato más repetido) no la mencionan."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Quito el $8$ y me queda la lista: $2$, $3$, $3$, $4$."
-   },
-   {
-    "t": "Media nueva: sumo todos y divido entre cuántos son. Bajó de $4$ a $3$.",
-    "eq": [
-     "\\bar{x}=\\frac{2+3+3+4}{4}=\\frac{12}{4}=3"
+  },
+  "soc-007": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre identifica los requisitos y términos legales del derecho de petición ante autoridades públicas. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El artículo 23 constitucional y la Ley Estatutaria 1755 de dos mil quince establecen que las peticiones de información y copias de documentos públicos deben ser resueltas dentro de los diez (diez) días hábiles siguientes a su recepción.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Asigna un plazo excesivamente corto de tres días que no corresponde a la norma legal de peticiones de información.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el plazo con el de consultas jurídicas ante autoridades (treinta días).."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Mediana nueva: con cuatro datos es el promedio de los dos del medio. No cambió.",
-    "eq": [
-     "\\text{Me}=\\frac{3+3}{2}=3"
+  },
+  "soc-008": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre diferencia los mecanismos de participación ciudadana en colombia según su origen y propósito constitucional. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El plebiscito (artículo 103 constitucional y Ley 134 de 1994) es el pronunciamiento del pueblo convocado por el Presidente de la República, mediante el cual apoya o rechaza una determinada decisión del Ejecutivo.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque la revocatoria del mandato, mecanismo para destituir alcaldes y gobernadores por incumplimiento de su programa.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el cabildo abierto, reunión pública de concejos distritales o asambleas para discutir asuntos comunitarios.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Elijo la opción que dice: la media baja a $3$ y la mediana no cambia."
-   }
-  ]
- },
- "mat-005": {
-  "tema": "Matemáticas: probabilidad con dos dados",
-  "que": "Es lo mismo que la probabilidad simple, pero con dos dados: hay que contar todas las parejas posibles que pueden salir.",
-  "pistas": [
-   "se lanzan dos dados",
-   "piden que la suma sea $7$",
-   "hay que contar parejas, no solo números sueltos"
-  ],
-  "clave": "Con dos dados, no cuentes números sino parejas: siempre hay $36$. Haz una lista ordenada y no se te pierde ninguna.",
-  "no": [
-   {
-    "t": "Probabilidad con un solo dado",
-    "p": "Se parece porque son dados. Pero con uno hay $6$ resultados; con dos hay $6\\cdot6=36$ parejas."
-   },
-   {
-    "t": "Conteos y arreglos (combinatoria)",
-    "p": "Se parece porque se cuenta. Pero aquí basta con listar las parejas que suman $7$ y compararlas con el total."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Calculo cuántas parejas existen en total: seis por seis.",
-    "eq": [
-     "6\\cdot6=36"
+  },
+  "soc-009": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre comprende los fundamentos filosóficos y normativos del estado social de derecho en colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "A diferencia del Estado de derecho liberal clásico (que se limita a la legalidad formal y la seguridad pública), el Estado Social de Derecho asume la responsabilidad activa de intervenir para corregir desigualdades, proteger a los sectores vulnerables y garantizar el goce efectivo de los derechos económicos, sociales y culturales indispensables para una vida digna.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque un Estado gendarme o liberal abstencionista del siglo XIX, contrario al modelo social adoptado en mil novecientos noventa y uno.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque la arbitrariedad gubernamental, lo que viola el principio de legalidad e imperio de la ley.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Escribo las que suman $7$: son $6$ parejas.",
-    "eq": [
-     "(1,6),\\ (2,5),\\ (3,4),\\ (4,3),\\ (5,2),\\ (6,1)"
+  },
+  "soc-010": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre explica el principio de separación de poderes y el sistema de frenos y contrapesos en el estado colombiano. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El principio de frenos y contrapesos (checks and balances) permite que las ramas del poder público se vigilen y limiten mutuamente.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque una inexistente subordinación a fuerzas militares que no tienen potestad en el control de constitucionalidad.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el poder se concentra en la Presidencia, cuando precisamente el control frena excesos del ejecutivo y legislativo.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Pongo las que sirven sobre el total.",
-    "eq": [
-     "P(7)=\\frac{6}{36}"
+  },
+  "soc-011": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre identifica las funciones de los órganos de control (contraloría, procuraduría y defensoría) en colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La Contraloría General de la República ejerce el control fiscal sobre la gestión y administración de los fondos o bienes públicos.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque con la Defensoría del Pueblo, cuya misión es divulgar y promover los derechos humanos sin funciones sancionatorias fiscales.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque con el Banco de la República, autoridad monetaria, crediticia y cambiaria de la nación.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Simplifico dividiendo arriba y abajo entre $6$.",
-    "eq": [
-     "\\frac{6}{36}=\\frac{1}{6}"
+  },
+  "soc-012": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre comprende el rol y la autonomía del banco central en la estabilidad macroeconómica y el control de la inflación. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La autonomía del Banco de la República busca evitar que los gobiernos recurran a la emisión inorgánica de dinero para financiar gastos electorales o déficits presupuestales, lo cual generaría hiperinflación y pérdida de poder adquisitivo para la población.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque precisamente lo contrario: que el ejecutivo imprima dinero sin límite, riesgo que la autonomía constitucional evita.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye al banco central la eliminación de la banca comercial privada.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   }
-  ]
- },
- "mat-006": {
-  "tema": "Matemáticas: porcentajes seguidos (sube y luego baja)",
-  "que": "Es cuando un precio cambia varias veces seguidas en porcentaje. Cada cambio se calcula sobre el precio que había justo antes.",
-  "pistas": [
-   "el artículo cuesta 100.000 pesos",
-   "primero sube $20\\%$ y después baja $20\\%$",
-   "piden el precio final"
-  ],
-  "clave": "Cuando el porcentaje cambia dos veces, nunca sumes ni restes los porcentajes: calcula el primero, y con el resultado calcula el segundo.",
-  "no": [
-   {
-    "t": "Un aumento simple",
-    "p": "Se parece porque hay un porcentaje. Pero aquí son dos cambios, y el segundo se calcula sobre el precio nuevo, no sobre el original."
-   },
-   {
-    "t": "Regla de tres",
-    "p": "Se parece porque es de plata. Pero no se resuelve con una sola proporción, hay que hacer el cambio dos veces."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Calculo la subida: el $20\\%$ de 100.000 es 20.000, y el precio queda en 120.000.",
-    "eq": [
-     "100.000\\cdot1{,}2=120.000"
+  },
+  "soc-013": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza las características, logros y consecuencias del frente nacional en la historia política de colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "Si bien el Frente Nacional pacificó la confrontación directa entre liberales y conservadores y alternó la presidencia cada cuatro años con paridad burocrática del cincuenta/cincuenta, clausuró la participación democrática a nuevas opciones políticas, sindicatos y sectores de izquierda.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma una falsa persecución a la Iglesia católica, institución que fue aliada clave del pacto del Frente Nacional.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que el Ejército fue disuelto, cuando en realidad se fortaleció en el marco de la Doctrina de Seguridad Nacional.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Ahora la bajada es sobre 120.000: el $20\\%$ de 120.000 es 24.000.",
-    "eq": [
-     "120.000\\cdot0{,}8=96.000"
+  },
+  "soc-014": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce los actores y procesos históricos que condujeron a la asamblea nacional constituyente de mil novecientos noventa y uno. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El movimiento estudiantil de la 'Séptima Papeleta' promovió que en las elecciones de marzo de mil novecientos noventa (donde se votaba por senado, cámara, asamblea, concejo, alcaldes y consulta liberal) los ciudadanos depositaran una papeleta adicional no oficial exigiendo una asamblea constituyente.",
+    "no": [
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque con movimientos cívicos tradicionales de oposición política previa.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque con la Marcha del Silencio de mil novecientos cuarenta y ocho convocada por Jorge Eliécer Gaitán.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción A satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Veo que no volvió a 100.000: subir y bajar el mismo porcentaje no se cancela.",
-    "eq": [
-     "100.000\\cdot1{,}2\\cdot0{,}8=100.000\\cdot0{,}96=96.000"
+  },
+  "soc-015": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre identifica el impacto de la economía cafetera en la configuración social y económica de colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La colonización antioqueña y la economía cafetera se basaron fundamentalmente en la pequeña y mediana propiedad campesina familiar.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque haciendas coloniales esclavistas, modelo totalmente ajeno a la colonización cafetera del siglo XX.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que no había comercio exterior, cuando el café fue el principal producto de exportación que conectó a Colombia con el mercado global.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   }
-  ]
- },
- "lec-001": {
-  "tema": "Lectura: encontrar la idea que defiende el autor",
-  "que": "Es descubrir qué quiere decir el autor con todo el texto, y qué opinión defiende o rechaza.",
-  "pistas": [
-   "la pregunta dice \"¿qué cuestiona el autor?\": quiere saber contra qué está",
-   "el texto tiene la palabra \"engañoso\": es una crítica",
-   "la idea importante viene después de \"Por eso\""
-  ],
-  "clave": "Busca la palabra que anuncia la idea importante (\"por eso\", \"en conclusión\", \"sin embargo\") y lee lo que viene justo después.",
-  "no": [
-   {
-    "t": "Hacer un resumen",
-    "p": "Se parece porque hay que entender el texto. Pero no piden contar todo lo que dice, sino la idea que el autor critica."
-   },
-   {
-    "t": "Significado de una palabra",
-    "p": "Se parece porque lees el texto. Pero nadie pregunta qué significa una palabra."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Leo el texto completo una vez, sin afán."
-   },
-   {
-    "t": "Busco la palabra que anuncia la conclusión: aquí es \"Por eso\"."
-   },
-   {
-    "t": "Leo lo que viene después: dice que medir las bibliotecas solo por préstamos es engañoso."
-   },
-   {
-    "t": "Elijo la opción que dice eso mismo con otras palabras, y descarto las que hablan de otra cosa."
-   }
-  ]
- },
- "lec-002": {
-  "tema": "Lectura: conectores (palabras que unen ideas)",
-  "que": "Los conectores son palabras como \"por lo tanto\", \"sin embargo\" o \"además\", que dicen cómo se relacionan dos ideas.",
-  "pistas": [
-   "hay una frase con un espacio en blanco para completar",
-   "las opciones son conectores, no palabras normales",
-   "las dos ideas son: \"llovió toda la noche\" y \"el partido se jugó\""
-  ],
-  "clave": "Antes de mirar las opciones, pregúntate: ¿las dos ideas se oponen, se suman o una causa la otra? Con eso ya sabes qué tipo de conector buscar.",
-  "no": [
-   {
-    "t": "Ortografía",
-    "p": "Se parece porque hay que completar una frase. Pero todas las opciones están bien escritas; lo que cambia es el sentido."
-   },
-   {
-    "t": "Idea principal",
-    "p": "Se parece porque es lectura. Pero nadie pregunta de qué trata la frase, sino cómo se unen las dos partes."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Leo las dos ideas por separado: \"llovió toda la noche\" y \"el partido se jugó\"."
-   },
-   {
-    "t": "Me pregunto qué esperaría uno: si llueve, uno esperaría que el partido se cancele."
-   },
-   {
-    "t": "Pero se jugó igual. Entonces las dos ideas se oponen, una contradice lo que esperaba."
-   },
-   {
-    "t": "Para oposición sirve \"sin embargo\". Pruebo la frase completa y suena bien."
-   }
-  ]
- },
- "lec-003": {
-  "tema": "Razonamiento lógico: sacar una conclusión",
-  "que": "Es partir de una regla y un dato para deducir algo que el texto no dice, pero que obligatoriamente es cierto.",
-  "pistas": [
-   "hay una regla general: \"todos los que entregaron aprobaron\"",
-   "hay un dato: \"Camila no aprobó\"",
-   "piden qué se puede concluir"
-  ],
-  "clave": "Convierte la regla en una flecha ($A \\to B$). Si no pasó $B$, entonces tampoco pasó $A$.",
-  "no": [
-   {
-    "t": "Comprensión literal",
-    "p": "Se parece porque hay que leer con cuidado. Pero la respuesta no está escrita, hay que deducirla."
-   },
-   {
-    "t": "Dar una opinión",
-    "p": "Se parece porque preguntan por Camila. Pero no importa lo que tú creas de ella, solo lo que la regla obliga."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Escribo la regla así: entregó → aprobó."
-   },
-   {
-    "t": "Miro el dato: Camila no aprobó."
-   },
-   {
-    "t": "Pienso: si hubiera entregado, habría aprobado. Pero no aprobó, así que no entregó."
-   },
-   {
-    "t": "Elijo la opción que dice eso y descarto las que inventan cosas, como \"perdió por mala nota\"."
-   }
-  ]
- },
- "ing-003": {
-  "tema": "Inglés: entender un aviso",
-  "que": "Es leer un aviso corto, como un letrero, y encontrar el dato que responde la pregunta.",
-  "pistas": [
-   "hay un letrero con horarios ({{Monday–Friday}}, {{8 a.m.–6 p.m.}})",
-   "dice {{Closed on holidays}} (cerrado en festivos)",
-   "la pregunta es si puedes ir un domingo"
-  ],
-  "clave": "No traduzcas todo el aviso. Busca solo lo que te preguntan (el día, la hora, el precio) y compáralo con el aviso.",
-  "no": [
-   {
-    "t": "Gramática",
-    "p": "Se parece porque está en inglés. Pero nadie te pide completar frases."
-   },
-   {
-    "t": "Vocabulario suelto",
-    "p": "Se parece porque hay palabras nuevas. Pero hay que entender todo el aviso, no una sola palabra."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Leo el aviso y subrayo los días: {{Monday–Friday}} es de lunes a viernes."
-   },
-   {
-    "t": "Me pregunto: ¿el domingo ({{Sunday}}) está dentro de lunes a viernes? No."
-   },
-   {
-    "t": "Entonces el domingo está cerrado."
-   },
-   {
-    "t": "Elijo la opción que dice {{No, it is not open on Sunday}}."
-   }
-  ]
- },
- "soc-001": {
-  "tema": "Sociales: la Constitución de 1991 y la tutela",
-  "que": "Es conocer para qué sirven las herramientas que la Constitución de 1991 le dio a las personas para defender sus derechos.",
-  "pistas": [
-   "nombran la acción de tutela",
-   "dicen que la creó la Constitución de 1991",
-   "preguntan para qué sirve"
-  ],
-  "clave": "Si nombran la tutela o una herramienta de la Constitución del 91, piensa: ¿qué problema resuelve? La tutela: derechos fundamentales en peligro, con respuesta rápida.",
-  "no": [
-   {
-    "t": "Ramas del poder",
-    "p": "Se parece porque es la misma Constitución. Pero nadie pregunta quién hace las leyes ni quién las aplica."
-   },
-   {
-    "t": "Elecciones",
-    "p": "Se parece porque es de derechos políticos. Pero la tutela no sirve para elegir a nadie."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Recuerdo qué es la tutela: un recurso rápido que cualquier persona puede usar."
-   },
-   {
-    "t": "Recuerdo para qué: para pedir que un juez proteja un derecho fundamental que está en peligro."
-   },
-   {
-    "t": "Reviso las opciones y descarto las que hablan de leyes, elecciones o guerra."
-   },
-   {
-    "t": "Elijo la que habla de proteger derechos de forma inmediata."
-   }
-  ]
- },
- "soc-002": {
-  "tema": "Sociales: ramas del poder público",
-  "que": "Colombia divide el poder en tres ramas, y cada una tiene un trabajo distinto: hacer las leyes, aplicarlas y juzgar.",
-  "pistas": [
-   "preguntan por una \"rama del poder público\"",
-   "preguntan qué rama hace las leyes"
-  ],
-  "clave": "Asocia cada rama con un verbo: Legislativa hace las leyes, Ejecutiva las aplica y gobierna, Judicial juzga.",
-  "no": [
-   {
-    "t": "Mecanismos de participación",
-    "p": "Se parece porque es de la Constitución. Pero esos son herramientas de los ciudadanos, como el voto, y no se preguntan aquí."
-   },
-   {
-    "t": "Elecciones",
-    "p": "Se parece porque el Congreso se elige. Pero no preguntan cómo se elige, sino qué función tiene."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Recuerdo las tres ramas: Ejecutiva (gobierna), Legislativa (hace las leyes) y Judicial (juzga)."
-   },
-   {
-    "t": "Veo qué función piden: hacer las leyes."
-   },
-   {
-    "t": "La que hace las leyes es el Congreso, o sea la rama Legislativa."
-   },
-   {
-    "t": "Descarto Ejecutiva y Judicial, y compruebo que \"Electoral\" no es una de las tres ramas clásicas."
-   }
-  ]
- },
- "soc-003": {
-  "tema": "Historia: tipos de fuentes",
-  "que": "Una fuente es todo lo que sirve para estudiar el pasado. Puede ser primaria (de la época) o secundaria (escrita después, sobre esa época).",
-  "pistas": [
-   "hablan de una carta escrita en 1810",
-   "dicen que la escribió un testigo de los hechos",
-   "piden qué tipo de fuente es"
-  ],
-  "clave": "Pregunta mágica: ¿esta persona vio los hechos o los contó después? Si estuvo ahí, es fuente primaria.",
-  "no": [
-   {
-    "t": "Ordenar hechos en el tiempo",
-    "p": "Se parece porque hay una fecha. Pero nadie pide poner hechos en orden."
-   },
-   {
-    "t": "Causas de la independencia",
-    "p": "Se parece porque es de la misma época. Pero el tema es qué clase de documento es, no lo que cuenta."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Me pregunto: ¿quién lo escribió y cuándo?"
-   },
-   {
-    "t": "Lo escribió alguien que estuvo ahí, en 1810, en el momento de los hechos."
-   },
-   {
-    "t": "Entonces es una fuente primaria: viene directo de la época."
-   },
-   {
-    "t": "Descarto \"secundaria\" (escrita después) y las opciones que no son fuentes."
-   }
-  ]
- },
- "soc-004": {
-  "tema": "Historia: ordenar hechos en el tiempo",
-  "que": "Es poner los hechos en una línea del tiempo, del más antiguo al más reciente.",
-  "pistas": [
-   "la pregunta dice \"orden cronológico\"",
-   "todas las opciones tienen los mismos cuatro hechos, solo cambian de lugar"
-  ],
-  "clave": "No leas las opciones completas: busca primero el hecho más antiguo (el Grito de $1810$) y descarta las que no empiezan por ahí.",
-  "no": [
-   {
-    "t": "Causas y consecuencias",
-    "p": "Se parece porque son hechos históricos. Pero no piden explicar por qué pasó cada uno, solo el orden."
-   },
-   {
-    "t": "Tipos de fuentes",
-    "p": "Se parece porque es historia. Pero no hablan de documentos."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Busco la fecha de cada hecho: Grito de Independencia, $1810$; Constitución, $1886$; Frente Nacional, $1958$–$1974$; nueva Constitución, $1991$."
-   },
-   {
-    "t": "Los ordeno de menor a mayor año."
-   },
-   {
-    "t": "Reviso cada opción y la comparo con mi lista."
-   },
-   {
-    "t": "Elijo la que coincide exactamente."
-   }
-  ]
- },
- "ing-001": {
-  "tema": "Inglés: presente simple (cosas que haces siempre)",
-  "que": "El presente simple se usa para rutinas y hábitos. Con {{he}}, {{she}} o {{it}}, el verbo lleva una -s o -es al final.",
-  "pistas": [
-   "{{every day}} (todos los días) habla de una rutina",
-   "el sujeto es {{She}}: una sola persona, tercera persona",
-   "falta el verbo"
-  ],
-  "clave": "Mira el sujeto primero. Si es {{he}}, {{she}} o {{it}}, el verbo en presente lleva -s o -es.",
-  "no": [
-   {
-    "t": "Presente continuo",
-    "p": "Se parece porque también es presente. Pero el continuo habla de lo que pasa ahora mismo y lleva {{is}} y -ing; aquí hay una rutina."
-   },
-   {
-    "t": "Pasado o perfecto",
-    "p": "Se parece porque es un verbo. Pero nada en la frase indica que ya pasó."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Veo el sujeto: {{She}}, una sola persona."
-   },
-   {
-    "t": "Veo que es una rutina por {{every day}}."
-   },
-   {
-    "t": "Con {{she}}, el verbo lleva -s o -es: {{go}} se vuelve {{goes}}."
-   },
-   {
-    "t": "Leo la frase completa: {{She goes to school every day}}. Suena bien."
-   }
-  ]
- },
- "ing-002": {
-  "tema": "Inglés: primer condicional (algo que puede pasar)",
-  "que": "Se usa para decir qué pasará si ocurre algo posible. La parte con {{if}} va en presente y el resultado lleva {{will}}.",
-  "pistas": [
-   "empieza con {{If it rains tomorrow}} (algo posible en el futuro)",
-   "el espacio está en la segunda parte: el resultado",
-   "la palabra {{tomorrow}} indica futuro"
-  ],
-  "clave": "Si la frase empieza con {{If}} más presente, la otra parte lleva {{will}}. Es como decir: si pasa esto, entonces pasará esto otro.",
-  "no": [
-   {
-    "t": "Segundo condicional",
-    "p": "Se parece porque también lleva {{if}}. Pero ese es para cosas imaginarias o improbables y usa {{would}}; aquí llover es algo real y posible."
-   },
-   {
-    "t": "Tiempos pasados",
-    "p": "Se parece porque son verbos. Pero {{tomorrow}} es futuro, no puede ir en pasado."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Veo la parte con {{if}}: {{If it rains}} está en presente. Eso es lo normal."
-   },
-   {
-    "t": "Me fijo en que el resultado necesita {{will}} más el verbo."
-   },
-   {
-    "t": "Busco la opción con {{will}}: {{will stay}}."
-   },
-   {
-    "t": "Leo completo: {{If it rains tomorrow, we will stay at home}}. Perfecto."
-   }
-  ]
- },
- "ing-004": {
-  "tema": "Inglés: vocabulario según el contexto",
-  "que": "Es elegir la palabra que tiene sentido en la frase, aunque otras se parezcan.",
-  "pistas": [
-   "dice {{from the library}} (de la biblioteca)",
-   "dice {{for two weeks}} (por dos semanas): es temporal",
-   "las opciones son verbos con significados distintos"
-  ],
-  "clave": "Cuando las opciones se parecen, no traduzcas palabra por palabra: pregúntate quién hace la acción y si es temporal.",
-  "no": [
-   {
-    "t": "Gramática",
-    "p": "Se parece porque es una frase para completar. Pero las opciones no cambian la forma del verbo, cambian su significado."
-   },
-   {
-    "t": "Comprar o vender",
-    "p": "Se parece porque son verbos de dar y recibir. Pero una biblioteca no vende libros: los presta."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Me pregunto quién da y quién recibe: la biblioteca da, tú recibes."
-   },
-   {
-    "t": "Veo que es por dos semanas, o sea prestado."
-   },
-   {
-    "t": "Recuerdo que {{borrow}} es recibir prestado, y {{lend}} es dar prestado."
-   },
-   {
-    "t": "Elijo {{borrow}}."
-   }
-  ]
- },
- "mat-007": {
-  "tema": "Matemáticas: parábola y su vértice (función cuadrática)",
-  "que": "Es encontrar los números a, b y c de una curva en forma de U, la parábola, para que su punto más bajo o más alto quede justo donde tú quieres.",
-  "pistas": [
-   "dice que es una cuadrática: una función con $x^2$ cuya gráfica es una parábola",
-   "pide que el vértice sea $(2,\\,-3)$: el punto donde la curva cambia de bajar a subir",
-   "dice que uses el graficador: puedes probar valores y ver la curva"
-  ],
-  "clave": "Si te dan el vértice $(h,k)$ de una cuadrática, escribe $f(x)=a(x-h)^2+k$ y luego abre el cuadrado para sacar a, b y c.",
-  "no": [
-   {
-    "t": "Función lineal",
-    "p": "Se parece porque también es una función con letras que hay que elegir. Pero la recta no tiene vértice ni curva, y aquí hablan de un punto donde la curva cambia de dirección."
-   },
-   {
-    "t": "Hallar las raíces de la cuadrática",
-    "p": "Se parece porque también aparece $x^2$. Pero ahí buscan dónde la curva corta el eje x, y aquí te dan el vértice."
-   },
-   {
-    "t": "Calcular el vértice de una función dada",
-    "p": "Se parece porque también sale el vértice. Pero ahí te dan a, b y c y calculas el vértice; aquí es al revés: te dan el vértice y construyes a, b y c."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Anoto lo que me piden: el vértice está en $x=2$ y en $y=-3$.",
-    "eq": [
-     "h=2,\\ k=-3"
+  },
+  "soc-016": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce las causas y consecuencias del bogotazo en el desarrollo de la violencia política en colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El magnicidio de Jorge Eliécer Gaitán generó el estallido social del Bogotazo y profundizó la época conocida como 'La Violencia' (mil novecientos cuarenta y ocho-mil novecientos cincuenta y ocho).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma un entendimiento pacífico, lo cual contradice frontalmente la sangrienta guerra civil no declarada que siguió.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Ubica la Constitución de mil novecientos noventa y uno como consecuencia inmediata de mil novecientos cuarenta y ocho, con más de cuarenta años de anacronismo.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Uso la forma que ya trae el vértice escrito, dejando $a$ libre.",
-    "eq": [
-     "f(x)=a(x-2)^2-3"
+  },
+  "soc-017": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre comprende la estructura de la descentralización fiscal y el papel del sgp en el bienestar social local. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El Sistema General de Participaciones (SGP, artículos 356 y 357 de la Constitución) transfiere recursos desde la bolsa central de la Nación hacia las entidades territoriales con destinación social específica e inembargable: el financiamiento y prestación de los servicios públicos de educación preescolar, básica y media, salud pública, agua potable y saneamiento básico.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque los recursos de descentralización territorial con el servicio de la deuda externa nacional.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque un uso ilegal de financiamiento electoral no permitido por la Constitución.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Elijo $a=1$ porque es lo más sencillo y abro el cuadrado.",
-    "eq": [
-     "f(x)=(x-2)^2-3=x^2-4x+1"
+  },
+  "soc-018": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce los derechos étnicos y territoriales colectivos consagrados en la ley setenta de mil novecientos noventa y tres. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "Las tierras colectivas de comunidades afrodescendientes e indígenas gozan de protección constitucional reforzada: son inalienables (no se pueden vender ni transferir comercialmente), imprescriptibles (no se pierden por el paso del tiempo) e inembargables (no pueden ser retenidas por deudas), asegurando la supervivencia física, cultural y ambiental de estos pueblos ancestrales.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque pueden ser embargadas por la banca, desconociendo la protección constitucional expresa de inembargabilidad.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Les asigna una duración precaria y temporal condicionada a pagos impositivos.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Leo los números: $a=1$, $b=-4$ y $c=1$. Los pruebo en el graficador y el vértice queda donde pedían."
-   }
-  ]
- },
- "cie-007": {
-  "tema": "Física: lanzamiento en parábola, hallar el ángulo",
-  "que": "Es un proyectil que sale inclinado y cae lejos. Aquí ya sabes qué tan lejos debe llegar y buscas con qué ángulo lanzarlo.",
-  "pistas": [
-   "dice que debe llegar a $40$ m: ese es el alcance",
-   "dan la rapidez con que sale, $v_0=20$ m/s, y la gravedad, $g=9{,}8$ m/s²",
-   "pide que ajustes el ángulo: el ángulo es lo que no sabes"
-  ],
-  "clave": "Si conoces el alcance y la rapidez, y te piden el ángulo, usa $R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}$, deja solo el seno y recuerda que sirven dos ángulos.",
-  "no": [
-   {
-    "t": "Caída libre",
-    "p": "Se parece porque también actúa la gravedad. Pero en caída libre el objeto solo sube o baja en línea recta, y aquí hay un alcance horizontal."
-   },
-   {
-    "t": "Altura máxima",
-    "p": "Se parece porque es el mismo tipo de lanzamiento. Pero ahí preguntan qué tan alto sube, y aquí piden el ángulo para llegar a cierta distancia."
-   },
-   {
-    "t": "Movimiento a velocidad constante",
-    "p": "Se parece porque el objeto avanza hacia adelante. Pero si la velocidad fuera constante no habría curva ni ángulo que ajustar."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Anoto los datos: alcance $40$ m, rapidez $20$ m/s y gravedad $9{,}8$.",
-    "eq": [
-     "R=40,\\ v_0=20,\\ g=9{,}8"
+  },
+  "soc-019": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza los alcances y límites constitucionales de la jurisdicción especial indígena en colombia. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La jurisprudencia de la Corte Constitucional ha establecido que la autonomía de la Jurisdicción Especial Indígena no es absoluta: encuentra su límite infranqueable en el 'núcleo duro' de los derechos humanos fundamentales reconocidos por la Constitución y tratados internacionales: derecho a la vida, prohibición de la tortura y penas crueles, prohibición de la esclavitud y respeto al debido proceso.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Exige coincidencia idéntica con el código penal ordinario, lo cual vaciaría de contenido la diversidad cultural y el pluralismo jurídico.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Reduce la jurisdicción especial a faltas menores desconociendo su competencia penal y civil en sus resguardos.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Escribo la fórmula del alcance, que sirve para este lanzamiento.",
-    "eq": [
-     "R=\\frac{v_0^2\\,\\sin(2\\theta)}{g}"
+  },
+  "soc-020": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre evalúa los efectos económicos y distributivos de los tratados de libre comercio en sectores vulnerables. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "Los pequeños productores agropecuarios señalan que potencias económicas como Estados Unidos o la Unión Europea otorgan subsidios multimillonarios directos a sus agricultores (por ejemplo, en maíz, leche y cereales).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma falsamente que los TLC prohíben la importación de tecnología, cuando usualmente reducen sus aranceles.."
+      },
+      {
+        "t": "Elegir la opción C",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que se impiden las exportaciones tradicionales colombianas, cuando los TLC buscan facilitar su acceso a mercados externos.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción B satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Dejo solo el seno y hago la cuenta.",
-    "eq": [
-     "\\sin(2\\theta)=\\frac{40\\cdot9{,}8}{400}=0{,}98"
+  },
+  "soc-021": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre identifica los intereses en conflicto en dilemas socioambientales y proyectos de desarrollo. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El dilema socioambiental enfrenta legítimos intereses contrapuestos: por un lado, el crecimiento económico a corto plazo, la inversión de capital, el empleo local y los ingresos fiscales (postura de la minera y sectores afines); y por el otro, la sostenibilidad ecológica a largo plazo, la conservación de ecosistemas frágiles de páramo y el derecho fundamental al agua potable de las comunidades aguas abajo.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Desvía el debate hacia tensiones religiosas y partidistas sin relación con el conflicto minero-hídrico.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque actores y derechos totalmente ajenos a la controversia socioambiental planteada.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
     ]
-   },
-   {
-    "t": "Con la calculadora saco $\\theta\\approx39{,}3^\\circ$, y el segundo ángulo es $50{,}7^\\circ$."
-   }
-  ]
- },
- "lec-004": {
-  "tema": "Lectura: encontrar la idea principal",
-  "que": "Es descubrir la idea que sostiene todo el texto, la que apoyan todas sus partes, y no quedarse con un detalle suelto.",
-  "pistas": [
-   "la pregunta dice idea principal: piden lo que cubre todo el texto, no un dato",
-   "la lectura compara el mercado con los supermercados: «ofrecen precios parecidos, pero allí nadie te pregunta cómo estuvo la semana»",
-   "la razón viene después de «Por eso»: los vecinos conversan, se enteran y sienten que pertenecen"
-  ],
-  "clave": "La idea principal es la que todas las partes del texto apoyan. Los ejemplos y los detalles sirven para probarla, pero no son la idea.",
-  "no": [
-   {
-    "t": "Hacer un resumen",
-    "p": "Se parece porque hay que entender todo el texto. Pero no piden contar todo lo que dice, sino la idea que lo sostiene."
-   },
-   {
-    "t": "Buscar un dato puntual",
-    "p": "Se parece porque la respuesta está en el texto. Pero un dato, como el queso de Don Camilo, es un detalle y no cubre todo el texto."
-   },
-   {
-    "t": "Función de un conector",
-    "p": "Se parece porque también se mira una palabra del texto. Pero aquí nadie pregunta para qué sirve «Por eso», sino qué defiende el autor."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Leo el texto completo una vez, sin afán."
-   },
-   {
-    "t": "Veo qué hace cada parte: presenta la plaza, da ejemplos, compara con el supermercado, da una razón y cierra."
-   },
-   {
-    "t": "Busco la idea que todas esas partes apoyan: el mercado vale por la comunidad, no solo por el precio."
-   },
-   {
-    "t": "Elijo la opción que dice eso y descarto las que hablan de otra cosa o inventan."
-   }
-  ]
- },
- "lec-005": {
-  "tema": "Lectura: función de un conector",
-  "que": "Es explicar para qué sirve una palabra de enlace dentro del texto: si une una causa con su consecuencia, si da un ejemplo, si contradice o si cambia de tema.",
-  "pistas": [
-   "la pregunta dice «¿Qué función cumple»: no pregunta qué dice la frase, sino para qué sirve",
-   "la palabra entre comillas es «Por eso», un conector que une dos ideas",
-   "antes dice que en el supermercado nadie te pregunta cómo estuvo la semana, y después que los vecinos siguen yendo"
-  ],
-  "clave": "Cambia el conector por «por esa razón». Si la frase sigue teniendo sentido, marca una consecuencia: lo de antes explica lo de después.",
-  "no": [
-   {
-    "t": "Idea principal",
-    "p": "Se parece porque también se lee todo el texto. Pero aquí no preguntan qué defiende el autor, sino para qué sirve una palabra."
-   },
-   {
-    "t": "Significado de una palabra",
-    "p": "Se parece porque se mira una palabra concreta. Pero no piden qué significa, sino qué relación crea entre dos frases."
-   },
-   {
-    "t": "Identificar un ejemplo",
-    "p": "Se parece porque también se señala una parte del texto. Pero un ejemplo suele venir con «por ejemplo», y «Por eso» no agrega ningún caso nuevo."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Ubico el conector en el texto: «Por eso»."
-   },
-   {
-    "t": "Leo la frase de antes: en el supermercado nadie te pregunta cómo estuvo la semana."
-   },
-   {
-    "t": "Leo la frase de después: aunque no sea lo más barato, los vecinos siguen yendo."
-   },
-   {
-    "t": "Cambio «Por eso» por «por esa razón»; como tiene sentido, la función es introducir la consecuencia."
-   }
-  ]
- },
- "lec-006": {
-  "tema": "Lectura: información que el texto dice de forma explícita",
-  "que": "Es encontrar en el texto la frase exacta que responde la pregunta y quedarse solo con lo que ella dice, sin agregar opiniones ni inventos.",
-  "pistas": [
-   "empieza con «Según el texto»: solo vale lo que el texto dice",
-   "habla de una situación imaginada: «si el mercado desapareciera»",
-   "pregunta por «la plaza», no por el mercado"
-  ],
-  "clave": "Cuando dice «según el texto», busca la frase exacta y quédate solo con ella. Aquí es la última, y su «pero» separa lo que se queda de lo que se pierde.",
-  "no": [
-   {
-    "t": "Hacer una inferencia",
-    "p": "Se parece porque la situación es imaginada. Pero no hay que adivinar nada: el texto ya lo dice con todas las letras."
-   },
-   {
-    "t": "Idea principal",
-    "p": "Se parece porque se lee todo el texto. Pero aquí preguntan por una frase concreta, no por lo que defiende el autor."
-   },
-   {
-    "t": "Dar tu opinión",
-    "p": "Se parece porque preguntan sobre un posible futuro. Pero lo que cuenta es lo que dice el texto, no lo que tú creas."
-   }
-  ],
-  "plan": [
-   {
-    "t": "Leo la pregunta: qué le pasaría a la plaza si el mercado desapareciera."
-   },
-   {
-    "t": "Busco en el texto la frase que habla de eso: la última."
-   },
-   {
-    "t": "Separo la frase en dos con el «pero»: la plaza seguiría existiendo, pero perdería lo que la hace una comunidad."
-   },
-   {
-    "t": "Elijo la opción que dice las dos cosas y descarto las que cambian o inventan algo."
-   }
-  ]
- }
+  },
+  "soc-022": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce los principios y condiciones jurídicas del derecho fundamental a la consulta previa. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La consulta previa es un derecho fundamental que exige al Estado consultar de buena fe a los pueblos étnicos de manera informada y oportuna, antes de autorizar cualquier proyecto, obra, concesión o medida legislativa o administrativa susceptible de causar un impacto directo sobre su territorio, su integridad cultural, social o ambiental.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Condiciona el derecho fundamental a una participación accionaria capitalista en la empresa privada.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Exige la renuncia a la propia identidad cultural, lo que viola frontalmente el principio de diversidad étnica.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-023": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza las tensiones socioeconómicas y espaciales derivadas del fenómeno de la gentrificación urbana. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La gentrificación es el proceso de transformación urbana mediante el cual un barrio popular o deteriorado experimenta una renovación arquitectónica y una llegada masiva de capital y población de mayor poder adquisitivo o turistas.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque la problemática urbana con la reforma agraria y la redistribución de tierras rurales.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el proceso sociourbano con la descentralización de competencias gubernamentales.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-024": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre compara posturas divergentes sobre políticas públicas de subsidios sociales e incentivos económicos. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El debate público sobre la política social enfrenta visiones sobre incentivos laborales y sostenibilidad fiscal (riesgo de que la ayuda desestimule la inserción laboral formal) frente a visiones fundamentadas en los derechos humanos y la ruptura de trampas intergeneracionales de pobreza (la transferencia condicionada a controles de salud y asistencia escolar evita la desnutrición infantil y promueve el capital humano futuro).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye falsamente un consenso punitivo entre dos posturas que difieren sustancialmente en sus enfoques.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Niega la existencia real de programas como Familias en Acción o Renta Ciudadana en Colombia.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-025": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre identifica los valores y principios contrapuestos en debates sobre política de drogas y salud pública. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La discrepancia surge de marcos de referencia y jerarquías de valores distintos: la perspectiva pragmática y de salud pública sostiene que la criminalización no reduce el consumo y fortalece a los carteles armados, proponiendo regulación estatal; la perspectiva conservadora y preventiva argumenta que flexibilizar el marco normativo envía un mensaje social de permisividad que eleva el riesgo para la juventud.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Reduce una discusión de política criminal y salud pública a un asunto técnico de moneda cambiaria.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma un consenso punitivo extremo de cárcel perpetua, ajeno al marco constitucional colombiano y al debate expuesto.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-026": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce los argumentos ecológicos y ecosistémicos en debates sobre uso del suelo y deforestación en la amazonía. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La postura científica destaca que la Amazonía cumple un rol vital como regulador del clima continental (mediante los 'ríos voladores' de humedad que alimentan los páramos andinos) y almacén de carbono.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque urbanización y carreteras masivas que acelerarían la deforestación de la Amazonía.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque incentivar la ganadería, postura que contradice frontalmente la advertencia ecológica del sector científico.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-027": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre pondera la libertad de expresión frente a los derechos al buen nombre, la intimidad y la honra. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La Corte Constitucional ha reiterado que ningún derecho constitucional es absoluto.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene erróneamente que la libertad de expresión es un derecho absoluto sin ningún límite frente a los demás.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Despoja de protección constitucional a los profesionales de la salud sin base jurídica.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-028": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza las implicaciones en términos de equidad social de las medidas económicas de regulación de la movilidad. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La crítica se fundamenta en el principio de justicia y equidad social: cuando una política pública de mitigación ambiental o vial permite eximirse mediante un pago dinerario, los ciudadanos con mayor capacidad de pago acceden al beneficio sin esfuerzo proporcional, mientras que las familias de ingresos medios y bajos deben asumir todo el costo de la restricción, profundizando la brecha social.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Cuestiona las competencias legales básicas del alcalde para ordenar la movilidad urbana en su municipio.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma de forma inverosímil que el transporte público es excesivamente rápido.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-029": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre armoniza la defensa del espacio público con los derechos fundamentales al trabajo y al mínimo vital. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La Corte Constitucional ha armonizado el deber del Estado de recuperar el espacio público (artículo 82 CP) con los derechos fundamentales al trabajo (art.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el caos total en la vía pública desconociendo el deber estatal de garantizar la libre circulación ciudadana.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Criminaliza la pobreza y la informalidad laboral mediante penas privativas de la libertad.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-030": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre diferencia los modelos de justicia transicional restaurativa y justicia penal retributiva ordinaria. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La justicia restaurativa y transicional busca sanar el tejido social roto por la violencia masiva.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma falsamente que el modelo busca la impunidad absoluta, ignorando las exigencias de verdad y sanciones restaurativas obligatorias.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque suspende los tratados de derechos humanos, cuando precisamente el Estatuto de Roma y el DIH fundamentan el sistema transicional.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción C satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-031": {
+    "tema": "Sociales: Interpretación y análisis de perspectivas",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre comprende el concepto y los desafíos socioeconómicos de una transición energética justa. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de interpretación y análisis de perspectivas",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El concepto internacional de 'transición justa' reconoce que la sustitución de energías fósiles no puede hacerse a costa de abandonar a las comunidades y trabajadores que históricamente han dependido de esas industrias.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque privatizaciones hídricas que no resuelven la reconversión de los empleos mineros en transición.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque una clausura abrupta que causaría una catástrofe social y económica en las comunidades mineras.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-032": {
+    "tema": "Sociales: Pensamiento social",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre reconoce la primacía de los derechos de los niños y la prohibición legal del trabajo infantil. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento social",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El artículo 44 de la Constitución colombiana establece expresamente que 'los derechos de los niños prevalecen sobre los derechos de los demás' y ordena su protección contra toda forma de explotación económica y trabajos riesgosos que obstaculicen su educación y desarrollo integral.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma una patria potestad absoluta que facultaría el trabajo infantil, lo cual es inconstitucional e ilegal.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Condiciona la ilegalidad únicamente a días festivos desconociendo la prohibición general del trabajo infantil por debajo de los quince años.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-033": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre explica los mecanismos de la política monetaria contractiva para controlar la inflación mediante tasas de interés. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El canal de transmisión de la política monetaria contractiva funciona encareciendo el costo de endeudarse con tarjetas de crédito y préstamos bancarios.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma un salto automático del 500 por ciento en el dólar, desconociendo que las subidas de tasas atraen capitales y suelen fortalecer la moneda local.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma una confiscación arbitraria de cuentas bancarias que no tiene relación con las tasas de interés del banco central.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-034": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre diferencia impuestos directos e indirectos y analiza la progresividad o regresividad de los tributos. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "Un impuesto regresivo es aquel que absorbe un porcentaje mayor del ingreso de quienes menos ganan.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque los impuestos indirectos violan el DIH, confundiendo el derecho tributario con el derecho de la guerra.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque solo los ricos pagan IVA, cuando el IVA afecta transversalmente a cualquier consumidor en supermercados y tiendas.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-035": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre explica el fenómeno de la demanda inducida y los límites del ensanche vial en la movilidad urbana sostenible. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La 'demanda inducida' (o postulado de Lewis-Mogridge) demuestra que aumentar la capacidad vial para vehículos particulares reduce temporalmente los tiempos de viaje, pero esa mejora aparente incentiva a que personas que usaban otros medios o no viajaban comiencen a usar carro propio.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye el tráfico a la restricción peatonal en puentes, ignorando la dinámica de atracción de vehículos particulares.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque una mutación física en las dimensiones de los automóviles que resulta absurda.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-036": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza las relaciones sistémicas entre nutrición en la primera infancia, capital humano y trampas de pobreza. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El desarrollo cognitivo en la primera infancia es el cimiento del capital humano de una sociedad.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que la desnutrición genera mayor longevidad, cuando en realidad eleva la mortalidad infantil y las enfermedades crónicas.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Relaciona la desnutrición interna con un aumento en las exportaciones agrícolas sin ningún vínculo causal.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-037": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre evalúa el impacto de la informalidad laboral en la cobertura del sistema pensional y la protección de la vejez. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El sistema pensional colombiano de prima media o ahorro individual exige un número mínimo de semanas cotizadas (uno.",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene un desempleo del cien por ciento, confundiendo la informalidad laboral con la inactividad económica absoluta.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el fondo pensional acumula excesos, cuando la falta de cotizantes formales genera un déficit fiscal en el sistema pensional.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-038": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza las cadenas causales entre tasa de cambio, importación de insumos agrícolas e inflación de alimentos. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La producción avícola, porcina y de panadería en Colombia depende fuertemente de insumos agrícolas importados (maíz amarillo duro y torta de soya para concentrado animal, y harina de trigo para panadería).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que los salarios rurales se pagan en dólares cuadruplicados, lo cual es totalmente ajeno a la realidad del campo colombiano.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Plantea una hipótesis absurda sobre animales consumiendo billetes de papel moneda.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-039": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre evalúa el impacto del trabajo de cuidado no remunerado en la brecha de género y la autonomía económica. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "La 'economía del cuidado no remunerada' sostiene la reproducción de la fuerza laboral y el bienestar de los hogares (representa cerca del veinte por ciento del PIB colombiano según el DANE).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque una sanción punitiva irreal contra los hombres ajena al debate de equidad de género.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Afirma falsamente que las mujeres acumulan el doble de riqueza, cuando la brecha patrimonial desfavorece históricamente a las mujeres.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  },
+  "soc-040": {
+    "tema": "Sociales: Pensamiento reflexivo y sistémico",
+    "que": "Consiste en analizar detalladamente la situación planteada sobre analiza los desastres socioambientales como procesos multicausales derivados de la interacción entre amenazas naturales y vulnerabilidad social. y determinar la alternativa correcta.",
+    "pistas": [
+      "El problema requiere aplicar con rigurosidad los principios de pensamiento reflexivo y sistémico",
+      "Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
+    ],
+    "clave": "El riesgo de desastre no es un fenómeno puramente 'natural', sino una construcción social ( pesos Riesgo = Amenaza times Vulnerabilidad pesos ).",
+    "no": [
+      {
+        "t": "Elegir la opción A",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Reduce la complejidad del riesgo a un evento puramente natural ('desastre natural'), ignorando la vulnerabilidad social.."
+      },
+      {
+        "t": "Elegir la opción B",
+        "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Culpabiliza individualmente a las víctimas asumiendo que eligen zonas de riesgo por capricho y no por exclusión económica.."
+      }
+    ],
+    "plan": [
+      {
+        "t": "Leo con detenimiento el enunciado e identifico los datos clave y lo que se pide resolver."
+      },
+      {
+        "t": "Examino cada alternativa de respuesta descartando aquellas con inconsistencias conceptuales."
+      },
+      {
+        "t": "Verifico que la opción D satisface de manera completa y rigurosa la exigencia formulada."
+      }
+    ]
+  }
 }
