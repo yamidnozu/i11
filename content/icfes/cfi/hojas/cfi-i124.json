@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "When the King found (124) ________",
-        "rol": "dato",
-        "nota": "El contexto alude a descubrir las bodas secretas.",
-        "campo": "Bloque"
-      },
-      {
-        "frag": "When the King found (124) ________, he ordered soldiers to kill Valentine!",
-        "rol": "pide",
-        "nota": "La pregunta señala la información que se debe identificar en el texto.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{When the King found (124) ________, he ordered soldiers to kill Valentine!}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción D complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "clave": "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}",
+      "no": [
+        {
+          "p": "{{off}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{off}}"
+        },
+        {
+          "p": "{{in}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{in}}"
+        },
+        {
+          "p": "{{at}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{at}}"
+        }
+      ],
+      "pistas": [
+        "{{When the King found (124) ________, he ordered soldiers to kill Valentine!}}",
+        "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}"
+      ],
       "plan": [
         {
           "t": "Lee la pregunta y ubica la pista pertinente."
@@ -44,25 +32,8 @@
           "t": "Elige la opción D y verifica la concordancia."
         }
       ],
-      "pistas": [
-        "{{When the King found (124) ________, he ordered soldiers to kill Valentine!}}",
-        "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}"
-      ],
-      "clave": "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}",
-      "no": [
-        {
-          "t": "{{off}}",
-          "p": "{{off}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{in}}",
-          "p": "{{in}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{at}}",
-          "p": "{{at}} no corresponde con la información o construcción gramatical del texto."
-        }
-      ]
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "tema": "Comprensión de un texto en inglés"
     },
     "guion": {
       "1": [
@@ -113,6 +84,35 @@
           "t": "La opción D queda respaldada por el texto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Bloque",
+        "frag": "When the King found (124) ________",
+        "nota": "El contexto alude a descubrir las bodas secretas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "When the King found (124) ________, he ordered soldiers to kill Valentine!",
+        "nota": "La pregunta señala la información que se debe identificar en el texto.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{When the King found (124) ________, he ordered soldiers to kill Valentine!}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D complete la idea o estructura del texto."
+      }
+    ]
   }
 }

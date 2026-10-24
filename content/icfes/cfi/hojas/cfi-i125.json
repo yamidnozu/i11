@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Women buy (125) ________ 90% of the cards",
-        "rol": "dato",
-        "nota": "El espacio expresa la proporción de tarjetas compradas.",
-        "campo": "Bloque"
-      },
-      {
-        "frag": "Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.",
-        "rol": "pide",
-        "nota": "La pregunta señala la información que se debe identificar en el texto.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción A complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "clave": "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}",
+      "no": [
+        {
+          "p": "{{only}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{only}}"
+        },
+        {
+          "p": "{{hardly}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{hardly}}"
+        },
+        {
+          "p": "{{just}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{just}}"
+        }
+      ],
+      "pistas": [
+        "{{Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.}}",
+        "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}"
+      ],
       "plan": [
         {
           "t": "Lee la pregunta y ubica la pista pertinente."
@@ -44,25 +32,8 @@
           "t": "Elige la opción A y verifica la concordancia."
         }
       ],
-      "pistas": [
-        "{{Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.}}",
-        "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}"
-      ],
-      "clave": "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}",
-      "no": [
-        {
-          "t": "{{only}}",
-          "p": "{{only}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{hardly}}",
-          "p": "{{hardly}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{just}}",
-          "p": "{{just}} no corresponde con la información o construcción gramatical del texto."
-        }
-      ]
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "tema": "Comprensión de un texto en inglés"
     },
     "guion": {
       "1": [
@@ -113,6 +84,35 @@
           "t": "La opción A queda respaldada por el texto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Bloque",
+        "frag": "Women buy (125) ________ 90% of the cards",
+        "nota": "El espacio expresa la proporción de tarjetas compradas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.",
+        "nota": "La pregunta señala la información que se debe identificar en el texto.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{Women buy (125) ________ 90% of the cards, but gentlemen still buy the most chocolates and flowers.}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A complete la idea o estructura del texto."
+      }
+    ]
   }
 }

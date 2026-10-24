@@ -1,137 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "se alteraría la distribución del poder público",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Distingue las facultades excepcionales de las ordinarias."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Identifica qué autoridad ordena normalmente una privación de la libertad."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer un cambio en el equilibrio de poderes",
-      "que": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
-      "pistas": [
-        "Distingue las facultades excepcionales de las ordinarias.",
-        "Identifica qué autoridad ordena normalmente una privación de la libertad."
-      ],
-      "clave": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial.",
+      "clave": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto afirma que el presidente puede modificar el presupuesto durante la excepción."
+          "p": "Pero, es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La Rama Ejecutiva no es la única que restringe manifestaciones; las medidas de excepción mantienen controles y límites."
+          "p": "Pero, es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas."
         },
         {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero El presidente puede dictar decretos con fuerza de ley durante la excepción, pero la clave de esta pregunta apunta al cambio sobre las aprehensiones y el control judicial."
+          "t": "Opción C",
+          "p": "Pero, es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Distingue las facultades excepcionales de las ordinarias."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Identifica qué autoridad ordena normalmente una privación de la libertad."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «se alteraría la distribución del poder público» orienta el análisis.",
-          "a": "m:se alteraría la distribución del poder público"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
-          "a": "p:0"
+          "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo."
         },
         {
-          "t": "Opción A: El texto afirma que el presidente puede modificar el presupuesto durante la excepción. La descartamos.",
+          "t": "La opción A no corresponde: Es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "Opción B: La Rama Ejecutiva no es la única que restringe manifestaciones; las medidas de excepción mantienen controles y límites. La descartamos.",
+          "t": "La opción B no corresponde: Es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "Opción D: El presidente puede dictar decretos con fuerza de ley durante la excepción, pero la clave de esta pregunta apunta al cambio sobre las aprehensiones y el control judicial. La descartamos.",
-          "a": "o:D:no",
+          "t": "La opción C no corresponde: Es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa.",
+          "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Distingue las facultades excepcionales de las ordinarias.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo."
         },
         {
-          "t": "Identifica qué autoridad ordena normalmente una privación de la libertad.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "En una situación ordinaria, ordenar la aprehensión de una persona corresponde a las autoridades judiciales y requiere control judicial. El estado de excepción permite al presidente ordenar aprehensiones preventivas, trasladando temporalmente una facultad de control sobre la libertad hacia la Rama Ejecutiva.",
-          "a": "p:2"
+          "t": "La opción A no encaja: Es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional.",
+          "a": "o:A:no",
+          "k": "err"
         },
         {
-          "t": "La opción C señala que durante la excepción el presidente puede ordenar aprehensiones que ordinariamente requieren intervención judicial.",
-          "a": "o:C:ok"
+          "t": "La opción B no encaja: Es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C no encaja: Es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "El estado de excepción es una medida tempora",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "A partir de la anterior definición, se puede afirmar que durante el estado de excepción en Colombia se alteraría la distribución del poder público, porque",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

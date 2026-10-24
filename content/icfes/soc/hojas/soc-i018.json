@@ -1,137 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "orden cronológico",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Ubica el inicio aproximado de cada revolución."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Organiza los hechos desde el más antiguo hasta el más reciente."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La secuencia es mexicana, rusa, cubana y nicaragüense."
-      }
-    ],
     "enfoque": {
-      "tema": "Ordenar procesos históricos por fecha",
-      "que": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
-      "pistas": [
-        "Ubica el inicio aproximado de cada revolución.",
-        "Organiza los hechos desde el más antiguo hasta el más reciente."
-      ],
-      "clave": "La secuencia es mexicana, rusa, cubana y nicaragüense.",
+      "clave": "La secuencia por fecha es Revolución mexicana, Revolución rusa, Revolución cubana y Revolución nicaragüense.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Empieza con la revolución nicaragüense, que es la más reciente de la lista."
+          "p": "Pero, es incorrecta porque no se enfoca en las pérdidas mercantiles de las empresas, sino en legitimar el uso de las armas al margen del Estado."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero, es incorrecta porque no propone una legislación de paz ni la intermediación del parlamento, sino una postura beligerante de justificación de autodefensa."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La Revolución rusa no ocurrió antes que la mexicana."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero La Revolución cubana es posterior a las revoluciones mexicana y rusa."
+          "p": "Pero, es incorrecta porque no adopta una perspectiva analítica neutral de un académico, sino un alegato testimonial directo de parte involucrada en las armas."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Ubica el inicio aproximado de cada revolución."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Organiza los hechos desde el más antiguo hasta el más reciente."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «orden cronológico» orienta el análisis.",
-          "a": "m:orden cronológico"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La secuencia por fecha es Revolución mexicana, Revolución rusa, Revolución cubana y Revolución nicaragüense. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
-          "a": "p:0"
+          "t": "La secuencia por fecha es Revolución mexicana, Revolución rusa, Revolución cubana y Revolución nicaragüense."
         },
         {
-          "t": "Opción A: Empieza con la revolución nicaragüense, que es la más reciente de la lista. La descartamos.",
+          "t": "La opción A no corresponde: Es incorrecta porque no se enfoca en las pérdidas mercantiles de las empresas, sino en legitimar el uso de las armas al margen del Estado.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "Opción C: La Revolución rusa no ocurrió antes que la mexicana. La descartamos.",
+          "t": "La opción B no corresponde: Es incorrecta porque no propone una legislación de paz ni la intermediación del parlamento, sino una postura beligerante de justificación de autodefensa.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C no corresponde: Es incorrecta porque no adopta una perspectiva analítica neutral de un académico, sino un alegato testimonial directo de parte involucrada en las armas.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "Opción D: La Revolución cubana es posterior a las revoluciones mexicana y rusa. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Ubica el inicio aproximado de cada revolución.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La secuencia por fecha es Revolución mexicana, Revolución rusa, Revolución cubana y Revolución nicaragüense."
         },
         {
-          "t": "Organiza los hechos desde el más antiguo hasta el más reciente.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La Revolución mexicana comenzó antes que la rusa; después ocurrió la Revolución cubana y, más tarde, la nicaragüense. Al ordenar de la más antigua a la más reciente, la secuencia corresponde a la opción B.",
-          "a": "p:2"
+          "t": "La opción A no encaja: Es incorrecta porque no se enfoca en las pérdidas mercantiles de las empresas, sino en legitimar el uso de las armas al margen del Estado.",
+          "a": "o:A:no",
+          "k": "err"
         },
         {
-          "t": "La secuencia es mexicana, rusa, cubana y nicaragüense.",
-          "a": "o:B:ok"
+          "t": "La opción B no encaja: Es incorrecta porque no propone una legislación de paz ni la intermediación del parlamento, sino una postura beligerante de justificación de autodefensa.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C no encaja: Es incorrecta porque no adopta una perspectiva analítica neutral de un académico, sino un alegato testimonial directo de parte involucrada en las armas.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "Las revoluciones sociales son transformacion",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "voluciones enunciadas es",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La secuencia por fecha es Revolución mexicana, Revolución rusa, Revolución cubana y Revolución nicaragüense. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

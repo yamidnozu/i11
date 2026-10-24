@@ -8810,7 +8810,7 @@
               "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
             },
             {
-              "a": "o:B:no|o:C:no|o:D:no",
+              "a": "o:A:no|o:C:no|o:D:no",
               "k": "err",
               "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
             },
@@ -16843,28 +16843,32 @@
           "clave": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
           "no": [
             {
-              "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero, a bike is pedaled by one person and cannot carry big freight."
             },
             {
-              "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero, a boat travels on water, not on a road."
             },
             {
-              "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero, a bus transports passengers, not big things or cargo."
             },
             {
-              "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero, a helicopter flies in the air, not on a road."
             },
             {
-              "p": "{{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción E"
+              "t": "Opción E",
+              "p": "Pero, a motorbike is a light vehicle for one or two people."
             },
             {
-              "p": "{{train}} circula por vías, pero esa característica no corresponde a llevar cosas.",
-              "t": "Opción G"
+              "t": "Opción F",
+              "p": "Pero, a plane flies in the sky, not on a road."
+            },
+            {
+              "t": "Opción H",
+              "p": "Pero, a train travels on rails, not on a road."
             }
           ],
           "pistas": [
@@ -16900,7 +16904,7 @@
               "t": "{{truck}} transporta cargas grandes y corresponde a la característica descrita."
             },
             {
-              "a": "o:F:ok",
+              "a": "o:G:ok",
               "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
             }
           ],
@@ -16914,37 +16918,42 @@
               "t": "{{truck}} transporta cargas grandes y corresponde a la característica descrita."
             },
             {
+              "t": "La opción A no corresponde: A bike is pedaled by one person and cannot carry big freight.",
               "a": "o:A:no",
-              "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción B no corresponde: A boat travels on water, not on a road.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción C no corresponde: A bus transports passengers, not big things or cargo.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción D no corresponde: A helicopter flies in the air, not on a road.",
               "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción E no corresponde: A motorbike is a light vehicle for one or two people.",
               "a": "o:E:no",
-              "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
-              "a": "o:G:no",
-              "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción F no corresponde: A plane flies in the sky, not on a road.",
+              "a": "o:F:no",
+              "k": "err"
             },
             {
-              "a": "o:F:ok",
+              "t": "La opción H no corresponde: A train travels on rails, not on a road.",
+              "a": "o:H:no",
+              "k": "err"
+            },
+            {
+              "a": "o:G:ok",
               "t": "La respuesta es la opción correcta."
             }
           ],
@@ -16960,37 +16969,42 @@
               "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
             },
             {
+              "t": "La opción A no encaja: A bike is pedaled by one person and cannot carry big freight.",
               "a": "o:A:no",
-              "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción B no encaja: A boat travels on water, not on a road.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción C no encaja: A bus transports passengers, not big things or cargo.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción D no encaja: A helicopter flies in the air, not on a road.",
               "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
+              "t": "La opción E no encaja: A motorbike is a light vehicle for one or two people.",
               "a": "o:E:no",
-              "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+              "k": "err"
             },
             {
-              "a": "o:G:no",
-              "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción F no encaja: A plane flies in the sky, not on a road.",
+              "a": "o:F:no",
+              "k": "err"
             },
             {
-              "a": "o:F:ok",
+              "t": "La opción H no encaja: A train travels on rails, not on a road.",
+              "a": "o:H:no",
+              "k": "err"
+            },
+            {
+              "a": "o:G:ok",
               "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
             }
           ]
@@ -17252,28 +17266,32 @@
           "clave": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
           "no": [
             {
-              "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero, a bike moves on the ground with pedals, it does not fly."
             },
             {
-              "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero, a boat navigates on water, it does not fly."
             },
             {
-              "p": "{{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero, a bus travels on roads on the ground, it does not fly."
             },
             {
-              "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero, a helicopter typically transports few people, whereas a plane carries many people to travel."
             },
             {
-              "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción E"
+              "t": "Opción E",
+              "p": "Pero, a motorbike drives on roads on the ground."
             },
             {
-              "p": "{{train}} circula por vías, pero esa característica no corresponde a viajar por el aire.",
-              "t": "Opción G"
+              "t": "Opción G",
+              "p": "Pero, a truck is a road freight vehicle on the ground."
+            },
+            {
+              "t": "Opción H",
+              "p": "Pero, a train runs on railway tracks on the ground."
             }
           ],
           "pistas": [
@@ -17323,34 +17341,39 @@
               "t": "{{plane}} vuela por el aire y corresponde a la característica descrita."
             },
             {
+              "t": "La opción A no corresponde: A bike moves on the ground with pedals, it does not fly.",
               "a": "o:A:no",
-              "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción B no corresponde: A boat navigates on water, it does not fly.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción C no corresponde: A bus travels on roads on the ground, it does not fly.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no encaja: {{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción D no corresponde: A helicopter typically transports few people, whereas a plane carries many people to travel.",
               "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción E no corresponde: A motorbike drives on roads on the ground.",
               "a": "o:E:no",
-              "k": "err",
-              "t": "La opción E no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción G no corresponde: A truck is a road freight vehicle on the ground.",
               "a": "o:G:no",
-              "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
+            },
+            {
+              "t": "La opción H no corresponde: A train runs on railway tracks on the ground.",
+              "a": "o:H:no",
+              "k": "err"
             },
             {
               "a": "o:F:ok",
@@ -17369,34 +17392,39 @@
               "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
             },
             {
+              "t": "La opción A no encaja: A bike moves on the ground with pedals, it does not fly.",
               "a": "o:A:no",
-              "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción B no encaja: A boat navigates on water, it does not fly.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción C no encaja: A bus travels on roads on the ground, it does not fly.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no encaja: {{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción D no encaja: A helicopter typically transports few people, whereas a plane carries many people to travel.",
               "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción E no encaja: A motorbike drives on roads on the ground.",
               "a": "o:E:no",
-              "k": "err",
-              "t": "La opción E no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
             },
             {
+              "t": "La opción G no encaja: A truck is a road freight vehicle on the ground.",
               "a": "o:G:no",
-              "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+              "k": "err"
+            },
+            {
+              "t": "La opción H no encaja: A train runs on railway tracks on the ground.",
+              "a": "o:H:no",
+              "k": "err"
             },
             {
               "a": "o:F:ok",
@@ -19449,16 +19477,16 @@
           "clave": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
           "no": [
             {
-              "p": "El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino.",
-              "t": "Opción B"
+              "t": "Opción A",
+              "p": "Pero, el texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia."
             },
             {
-              "p": "El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita.",
-              "t": "Opción C"
+              "t": "Opción B",
+              "p": "Pero, el artículo no busca enseñar cómo administrar un negocio cafetero."
             },
             {
-              "p": "El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia.",
-              "t": "Opción D"
+              "t": "Opción C",
+              "p": "Pero, el texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país."
             }
           ],
           "pistas": [
@@ -19494,7 +19522,7 @@
               "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
             },
             {
-              "a": "o:A:ok",
+              "a": "o:D:ok",
               "t": "La respuesta es {{encouraging tourists to visit Colombia.}}."
             }
           ],
@@ -19508,22 +19536,22 @@
               "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
             },
             {
+              "t": "La opción A no corresponde: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
+              "a": "o:A:no",
+              "k": "err"
+            },
+            {
+              "t": "La opción B no corresponde: El artículo no busca enseñar cómo administrar un negocio cafetero.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no corresponde: El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
+              "k": "err"
             },
             {
+              "t": "La opción C no corresponde: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no corresponde: El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+              "k": "err"
             },
             {
-              "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no corresponde: El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
-            },
-            {
-              "a": "o:A:ok",
+              "a": "o:D:ok",
               "t": "{{encouraging tourists to visit Colombia.}} responde a la pregunta."
             }
           ],
@@ -19539,22 +19567,22 @@
               "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
             },
             {
+              "t": "La opción A no encaja: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
+              "a": "o:A:no",
+              "k": "err"
+            },
+            {
+              "t": "La opción B no encaja: El artículo no busca enseñar cómo administrar un negocio cafetero.",
               "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B no encaja: El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
+              "k": "err"
             },
             {
+              "t": "La opción C no encaja: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
               "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C no encaja: El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+              "k": "err"
             },
             {
-              "a": "o:D:no",
-              "k": "err",
-              "t": "La opción D no encaja: El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
-            },
-            {
-              "a": "o:A:ok",
+              "a": "o:D:ok",
               "t": "La evidencia respalda {{encouraging tourists to visit Colombia.}}."
             }
           ]

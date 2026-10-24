@@ -1,140 +1,200 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Many people fly on it to go to a place.",
-        "rol": "pide",
-        "nota": "Este enunciado contiene las pistas que permiten elegir la opción.",
-        "campo": "Enunciado"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Encuentra las pistas",
-        "texto": "Subraya mentalmente las características que la oración menciona."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona descripción y opción",
-        "texto": "Un avión puede llevar a muchas personas por el aire hasta otro lugar."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Verifica que la opción elegida reúna todas las pistas de la oración."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprender una descripción breve en inglés",
-      "que": "Relaciona las pistas de la oración con el objeto o la idea que describe.",
-      "pistas": [
-        "Lee todas las palabras de la descripción.",
-        "Separa las pistas principales de las opciones que solo comparten un tema."
-      ],
-      "clave": "Un avión puede llevar a muchas personas por el aire hasta otro lugar.",
+      "clave": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero Una bicicleta se desplaza por tierra y lleva a una o dos personas."
+          "p": "Pero, a bike moves on the ground with pedals, it does not fly."
         },
         {
           "t": "Opción B",
-          "p": "Pero Un bote se desplaza por el agua."
+          "p": "Pero, a boat navigates on water, it does not fly."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero, a bus travels on roads on the ground, it does not fly."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero, a helicopter typically transports few people, whereas a plane carries many people to travel."
+        },
+        {
+          "t": "Opción E",
+          "p": "Pero, a motorbike drives on roads on the ground."
+        },
+        {
+          "t": "Opción G",
+          "p": "Pero, a truck is a road freight vehicle on the ground."
+        },
+        {
+          "t": "Opción H",
+          "p": "Pero, a train runs on railway tracks on the ground."
         }
+      ],
+      "pistas": [
+        "Fíjate en {{Many people fly on it to go to a place.}}.",
+        "Contrasta el sentido con el pasaje, la descripción o el aviso."
       ],
       "plan": [
         {
-          "t": "Identifica las pistas concretas de la oración."
+          "t": "Identifica qué información pide el enunciado."
         },
         {
-          "t": "Compara cada pista con las opciones."
+          "t": "Contrasta las pistas con el pasaje, la descripción o la imagen."
         },
         {
-          "t": "Confirma que la opción elegida explica la descripción completa."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee la descripción completa y busca las pistas principales."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos la información disponible."
         },
         {
-          "t": "Comprueba cuál opción coincide con esas pistas."
+          "a": "m:Many people fly on it to go to a place.",
+          "t": "Fíjate en {{Many people fly on it to go to a place.}}."
         },
         {
-          "t": "La respuesta es {{plane}}.",
-          "a": "o:F:ok"
+          "a": "p:1",
+          "t": "{{plane}} vuela por el aire y corresponde a la característica descrita."
+        },
+        {
+          "a": "o:F:ok",
+          "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
       "2": [
         {
-          "t": "Separa la información que da la oración de las ideas que agregan las alternativas."
+          "a": "leer",
+          "t": "Busca la pista que permite responder."
         },
         {
-          "t": "La opción A no coincide: Una bicicleta se desplaza por tierra y lleva a una o dos personas.",
+          "a": "p:1",
+          "t": "{{plane}} vuela por el aire y corresponde a la característica descrita."
+        },
+        {
+          "t": "La opción A no corresponde: A bike moves on the ground with pedals, it does not fly.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción B no coincide: Un bote se desplaza por el agua.",
+          "t": "La opción B no corresponde: A boat navigates on water, it does not fly.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no coincide: Un bus se desplaza por carretera.",
+          "t": "La opción C no corresponde: A bus travels on roads on the ground, it does not fly.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D no coincide: Un helicóptero vuela, pero no suele llevar a muchas personas.",
+          "t": "La opción D no corresponde: A helicopter typically transports few people, whereas a plane carries many people to travel.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La opción E no coincide: Una moto se desplaza por carretera y lleva a pocas personas.",
+          "t": "La opción E no corresponde: A motorbike drives on roads on the ground.",
           "a": "o:E:no",
           "k": "err"
         },
         {
-          "t": "La opción G no coincide: Un camión se desplaza por carretera y lleva carga.",
+          "t": "La opción G no corresponde: A truck is a road freight vehicle on the ground.",
           "a": "o:G:no",
           "k": "err"
         },
         {
-          "t": "La opción H no coincide: Un tren se desplaza por rieles.",
+          "t": "La opción H no corresponde: A train runs on railway tracks on the ground.",
           "a": "o:H:no",
           "k": "err"
         },
         {
-          "t": "La opción F sí coincide con la descripción.",
-          "a": "o:F:ok"
+          "a": "o:F:ok",
+          "t": "La respuesta es la opción correcta."
         }
       ],
       "3": [
         {
-          "t": "Interpreta las pistas de la oración una por una.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Explica qué pista del contexto respalda la respuesta."
         },
         {
-          "t": "Un avión puede llevar a muchas personas por el aire hasta otro lugar.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "Descarta las alternativas que contradicen una de esas pistas.",
-          "a": "p:2",
-          "k": "contra"
+          "t": "La opción A no encaja: A bike moves on the ground with pedals, it does not fly.",
+          "a": "o:A:no",
+          "k": "err"
         },
         {
-          "t": "Vuelve a leer la descripción y confirma la opción F.",
-          "a": "o:F:ok"
+          "t": "La opción B no encaja: A boat navigates on water, it does not fly.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C no encaja: A bus travels on roads on the ground, it does not fly.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no encaja: A helicopter typically transports few people, whereas a plane carries many people to travel.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción E no encaja: A motorbike drives on roads on the ground.",
+          "a": "o:E:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción G no encaja: A truck is a road freight vehicle on the ground.",
+          "a": "o:G:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción H no encaja: A train runs on railway tracks on the ground.",
+          "a": "o:H:no",
+          "k": "err"
+        },
+        {
+          "a": "o:F:ok",
+          "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Many people fly on it to go to a place.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Many people fly on it to go to a place.}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
   }
 }

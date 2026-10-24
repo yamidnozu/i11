@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "One of the (123) ________ says",
-        "rol": "dato",
-        "nota": "El espacio requiere un sustantivo plural que introduzca un relato.",
-        "campo": "Bloque"
-      },
-      {
-        "frag": "One of the (123) ________ says that the original Valentine was a priest.",
-        "rol": "pide",
-        "nota": "La pregunta señala la información que se debe identificar en el texto.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{One of the (123) ________ says that the original Valentine was a priest.}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "clave": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}",
+      "no": [
+        {
+          "p": "{{essays}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{essays}}"
+        },
+        {
+          "p": "{{reports}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{reports}}"
+        },
+        {
+          "p": "{{letters}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{letters}}"
+        }
+      ],
+      "pistas": [
+        "{{One of the (123) ________ says that the original Valentine was a priest.}}",
+        "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
+      ],
       "plan": [
         {
           "t": "Lee la pregunta y ubica la pista pertinente."
@@ -44,25 +32,8 @@
           "t": "Elige la opción B y verifica la concordancia."
         }
       ],
-      "pistas": [
-        "{{One of the (123) ________ says that the original Valentine was a priest.}}",
-        "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
-      ],
-      "clave": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}",
-      "no": [
-        {
-          "t": "{{essays}}",
-          "p": "{{essays}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{reports}}",
-          "p": "{{reports}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{letters}}",
-          "p": "{{letters}} no corresponde con la información o construcción gramatical del texto."
-        }
-      ]
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "tema": "Comprensión de un texto en inglés"
     },
     "guion": {
       "1": [
@@ -113,6 +84,35 @@
           "t": "La opción B queda respaldada por el texto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Bloque",
+        "frag": "One of the (123) ________ says",
+        "nota": "El espacio requiere un sustantivo plural que introduzca un relato.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "One of the (123) ________ says that the original Valentine was a priest.",
+        "nota": "La pregunta señala la información que se debe identificar en el texto.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{One of the (123) ________ says that the original Valentine was a priest.}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
+      }
+    ]
   }
 }

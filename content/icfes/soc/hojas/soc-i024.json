@@ -1,137 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "Este planteamiento fue realizado probablemente por",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Identifica quién tendría interés en justificar su participación en el conflicto."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir la perspectiva de quien formula una afirmación",
-      "que": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
-      "pistas": [
-        "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo.",
-        "Identifica quién tendría interés en justificar su participación en el conflicto."
-      ],
-      "clave": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto.",
+      "clave": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Aunque menciona efectos económicos, el fragmento no habla desde el interés de un empresario."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero No discute una propuesta legislativa ni un marco jurídico para la paz."
+          "p": "Pero, es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El autor no se presenta como observador neutral: habla de una respuesta de su organización."
+          "p": "Pero, es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero, es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Identifica quién tendría interés en justificar su participación en el conflicto."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «Este planteamiento fue realizado probablemente por» orienta el análisis.",
-          "a": "m:Este planteamiento fue realizado probablemente por"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:B:ok",
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
-          "a": "p:0"
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "Opción A: Aunque menciona efectos económicos, el fragmento no habla desde el interés de un empresario. La descartamos.",
+          "t": "La opción A no corresponde: Es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "Opción B: No discute una propuesta legislativa ni un marco jurídico para la paz. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "Opción C: El autor no se presenta como observador neutral: habla de una respuesta de su organización. La descartamos.",
+          "t": "La opción C no corresponde: Es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "t": "La opción D no corresponde: Es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Observa cómo caracteriza el autor a la guerrilla y a su propio grupo.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "Identifica quién tendría interés en justificar su participación en el conflicto.",
-          "a": "p:1"
+          "a": "o:B:ok",
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El autor presenta a la guerrilla como responsable de la guerra y afirma que esta obligó a su organización a responder. Esa postura de justificación del involucramiento armado es propia de un paramilitar, no de un observador externo.",
-          "a": "p:2"
+          "t": "La opción A no encaja: Es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX.",
+          "a": "o:A:no",
+          "k": "err"
         },
         {
-          "t": "La opción D corresponde a la perspectiva de un paramilitar que justifica su ingreso al conflicto.",
-          "a": "o:D:ok"
+          "t": "La opción C no encaja: Es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no encaja: Es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "Lea atentamente el siguiente planteamiento:",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "Este planteamiento fue realizado probablemente por",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

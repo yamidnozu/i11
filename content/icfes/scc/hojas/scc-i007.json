@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Se ha generado un conflicto entre una empres",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "¿Cómo se ajusta esta solución a los intereses de la constructora y de los ambientalistas?",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es B."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "La opción A plantea «La solución beneficia a ambas partes, pues busca reducir…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
+          "t": "Opción B",
+          "p": "Pero, es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación."
         },
         {
           "t": "Opción C",
-          "p": "La opción C plantea «La solución beneficia a los ambientalistas, pues defiende sus…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
+          "p": "Pero, es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «La solución no beneficia a ninguna de las partes, porque el…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
+          "p": "Pero, es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
@@ -61,9 +29,11 @@
           "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Concluye por qué la opción B satisface ese criterio."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es A."
         }
       ],
       "2": [
@@ -86,50 +56,90 @@
           "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
-          "t": "La opción A plantea «La solución beneficia a ambas partes, pues busca reducir…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
-          "a": "o:A:no",
+          "t": "La opción B no corresponde: Es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación.",
+          "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C plantea «La solución beneficia a los ambientalistas, pues defiende sus…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
+          "t": "La opción C no corresponde: Es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D plantea «La solución no beneficia a ninguna de las partes, porque el…», Pero no responde al criterio central: Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
+          "t": "La opción D no corresponde: Es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La opción B es la que sí responde a la pregunta.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
-          "t": "Por eso la opción B se sostiene con la evidencia del enunciado.",
-          "a": "o:B:ok",
-          "k": "contra"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
-          "a": "o:A:no|o:C:no|o:D:no",
+          "t": "La opción B no encaja: Es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación.",
+          "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "t": "La opción C no encaja: Es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no encaja: Es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "Se ha generado un conflicto entre una empres",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Cómo se ajusta esta solución a los intereses de la constructora y de los ambientalistas?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

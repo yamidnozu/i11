@@ -1,137 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "¿Cómo se ajusta esta solución a los intereses",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Recuerda que los ambientalistas se oponen a cualquier construcción."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Comprueba si la solución elimina o solo reduce el impacto del proyecto."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción B indica que la medida no protege por completo el humedal y favorece solo la continuidad del negocio."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar una solución frente a intereses en conflicto",
-      "que": "Los ambientalistas sostienen que cualquier construcción pone en riesgo todo el humedal. Aunque la constructora reduzca el impacto, el proyecto sigue adelante y el ecosistema continúa amenazado. La medida favorece el negocio de la constructora, pero no satisface el interés de proteger el humedal.",
-      "pistas": [
-        "Recuerda que los ambientalistas se oponen a cualquier construcción.",
-        "Comprueba si la solución elimina o solo reduce el impacto del proyecto."
-      ],
-      "clave": "La opción B indica que la medida no protege por completo el humedal y favorece solo la continuidad del negocio.",
+      "clave": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Reducir el daño no garantiza el interés ambientalista, que es evitar el riesgo para todo el ecosistema."
+          "t": "Opción B",
+          "p": "Pero, es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La constructora conserva el proyecto, así que no se perjudica su negocio."
+          "p": "Pero, es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La propuesta permite que la construcción continúe con cambios; no impide el proyecto."
+          "p": "Pero, es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Recuerda que los ambientalistas se oponen a cualquier construcción."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Comprueba si la solución elimina o solo reduce el impacto del proyecto."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «¿Cómo se ajusta esta solución a los intereses» orienta el análisis.",
-          "a": "m:¿Cómo se ajusta esta solución a los intereses"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Los ambientalistas sostienen que cualquier construcción pone en riesgo todo el humedal. Aunque la constructora reduzca el impacto, el proyecto sigue adelante y el ecosistema continúa amenazado. La medida favorece el negocio de la constructora, pero no satisface el interés de proteger el humedal.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Los ambientalistas sostienen que cualquier construcción pone en riesgo todo el humedal. Aunque la constructora reduzca el impacto, el proyecto sigue adelante y el ecosistema continúa amenazado. La medida favorece el negocio de la constructora, pero no satisface el interés de proteger el humedal.",
-          "a": "p:0"
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
-          "t": "Opción A: Reducir el daño no garantiza el interés ambientalista, que es evitar el riesgo para todo el ecosistema. La descartamos.",
-          "a": "o:A:no",
+          "t": "La opción B no corresponde: Es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación.",
+          "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "Opción C: La constructora conserva el proyecto, así que no se perjudica su negocio. La descartamos.",
+          "t": "La opción C no corresponde: Es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "Opción D: La propuesta permite que la construcción continúe con cambios; no impide el proyecto. La descartamos.",
+          "t": "La opción D no corresponde: Es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Recuerda que los ambientalistas se oponen a cualquier construcción.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes."
         },
         {
-          "t": "Comprueba si la solución elimina o solo reduce el impacto del proyecto.",
-          "a": "p:1"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Los ambientalistas sostienen que cualquier construcción pone en riesgo todo el humedal. Aunque la constructora reduzca el impacto, el proyecto sigue adelante y el ecosistema continúa amenazado. La medida favorece el negocio de la constructora, pero no satisface el interés de proteger el humedal.",
-          "a": "p:2"
+          "t": "La opción B no encaja: Es incorrecta porque la concertación no ignora a los ambientalistas ni destruye íntegramente el humedal, sino que adopta medidas de mitigación.",
+          "a": "o:B:no",
+          "k": "err"
         },
         {
-          "t": "La opción B indica que la medida no protege por completo el humedal y favorece solo la continuidad del negocio.",
-          "a": "o:B:ok"
+          "t": "La opción C no encaja: Es incorrecta porque no anula el negocio inmobiliario de la constructora, sino que ajusta el diseño para garantizar la coexistencia del proyecto.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no encaja: Es incorrecta porque la propuesta no anula el beneficio mutuo, sino que busca un punto intermedio entre desarrollo urbanístico y protección ecológica.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "Se ha generado un conflicto entre una empres",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Cómo se ajusta esta solución a los intereses de la constructora y de los ambientalistas?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Modificar el proyecto reduce el daño al humedal y permite que la constructora continúe su negocio, así que la propuesta intenta atender intereses de ambas partes. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

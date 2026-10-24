@@ -1,137 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "El procedimiento realizado por el ciudadano es",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar requisitos de una iniciativa popular legislativa",
-      "que": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
-      "pistas": [
-        "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida.",
-        "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
-      ],
-      "clave": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral.",
+      "clave": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero La ciudadanía sí puede promover iniciativas legislativas; no está impedida por ser una sola persona promotora."
+          "t": "Opción B",
+          "p": "Pero, es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo."
         },
         {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero No basta con la propuesta de una persona; se exige un número de apoyos ciudadanos."
+          "t": "Opción C",
+          "p": "Pero, es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El requisito no es un porcentaje de congresistas, sino firmas de ciudadanos."
+          "p": "Pero, es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana."
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «El procedimiento realizado por el ciudadano es» orienta el análisis.",
-          "a": "m:El procedimiento realizado por el ciudadano es"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
-          "a": "p:0"
+          "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito."
         },
         {
-          "t": "Opción A: La ciudadanía sí puede promover iniciativas legislativas; no está impedida por ser una sola persona promotora. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
-        },
-        {
-          "t": "Opción B: No basta con la propuesta de una persona; se exige un número de apoyos ciudadanos. La descartamos.",
+          "t": "La opción B no corresponde: Es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "Opción D: El requisito no es un porcentaje de congresistas, sino firmas de ciudadanos. La descartamos.",
+          "t": "La opción C no corresponde: Es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no corresponde: Es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Distingue el derecho a presentar una propuesta de los requisitos para que sea válida.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito."
         },
         {
-          "t": "Busca cuál es el apoyo mínimo ciudadano que exige el procedimiento.",
-          "a": "p:1"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La iniciativa popular permite presentar proyectos ante el Congreso, pero requiere respaldo ciudadano equivalente al porcentaje exigido del censo electoral. Como el caso no menciona ese apoyo, el procedimiento descrito no cumple el requisito.",
-          "a": "p:2"
+          "t": "La opción B no encaja: Es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo.",
+          "a": "o:B:no",
+          "k": "err"
         },
         {
-          "t": "La opción C señala que una iniciativa popular requiere el respaldo del porcentaje establecido del censo electoral.",
-          "a": "o:C:ok"
+          "t": "La opción C no encaja: Es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular.",
+          "a": "o:C:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción D no encaja: Es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana.",
+          "a": "o:D:no",
+          "k": "err"
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "Un ciudadano se encontraba inconforme con el",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "zado por el ciudadano es",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

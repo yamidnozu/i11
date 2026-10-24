@@ -1,32 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "(122) ________ do we do this?",
-        "rol": "dato",
-        "nota": "La estructura de la pregunta pide una razón.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{(122) ________ do we do this?}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "clave": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}",
+      "no": [
+        {
+          "p": "{{where}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{where}}"
+        },
+        {
+          "p": "{{when}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{when}}"
+        },
+        {
+          "p": "{{what}} no corresponde con la información o construcción gramatical del texto.",
+          "t": "{{what}}"
+        }
+      ],
+      "pistas": [
+        "{{(122) ________ do we do this?}}",
+        "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
+      ],
       "plan": [
         {
           "t": "Lee la pregunta y ubica la pista pertinente."
@@ -38,25 +32,8 @@
           "t": "Elige la opción B y verifica la concordancia."
         }
       ],
-      "pistas": [
-        "{{(122) ________ do we do this?}}",
-        "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
-      ],
-      "clave": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}",
-      "no": [
-        {
-          "t": "{{where}}",
-          "p": "{{where}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{when}}",
-          "p": "{{when}} no corresponde con la información o construcción gramatical del texto."
-        },
-        {
-          "t": "{{what}}",
-          "p": "{{what}} no corresponde con la información o construcción gramatical del texto."
-        }
-      ]
+      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
+      "tema": "Comprensión de un texto en inglés"
     },
     "guion": {
       "1": [
@@ -107,6 +84,29 @@
           "t": "La opción B queda respaldada por el texto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "(122) ________ do we do this?",
+        "nota": "La estructura de la pregunta pide una razón.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "{{(122) ________ do we do this?}}"
+      },
+      {
+        "k": "idea",
+        "texto": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B complete la idea o estructura del texto."
+      }
+    ]
   }
 }

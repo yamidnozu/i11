@@ -1,112 +1,144 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "What is the writer trying to do in this article?",
-        "rol": "dato",
-        "nota": "El cierre comunica el efecto que el autor espera en quienes leen.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{What is the writer trying to do in this article?}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción D complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
-      "plan": [
+      "clave": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+      "no": [
         {
-          "t": "Lee la pregunta y ubica la pista pertinente."
+          "t": "Opción A",
+          "p": "Pero, el texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia."
         },
         {
-          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+          "t": "Opción B",
+          "p": "Pero, el artículo no busca enseñar cómo administrar un negocio cafetero."
         },
         {
-          "t": "Elige la opción D y verifica la concordancia."
+          "t": "Opción C",
+          "p": "Pero, el texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país."
         }
       ],
       "pistas": [
-        "{{What is the writer trying to do in this article?}}",
-        "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
+        "Localiza {{What is the writer trying to do in this article?}} en el pasaje.",
+        "Relaciona esa pista con la información que el autor presenta."
       ],
-      "clave": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}",
-      "no": [
+      "plan": [
         {
-          "t": "{{describe a tourism-leading Colombian coffee farm}}",
-          "p": "{{describe a tourism-leading Colombian coffee farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "{{tell readers to run a coffee business in Colombia}}",
-          "p": "{{tell readers to run a coffee business in Colombia}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "{{invite tourists to write about places they visit in Colombia}}",
-          "p": "{{invite tourists to write about places they visit in Colombia}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "{{What is the writer trying to do in this article?}}"
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
+          "a": "m:What is the writer trying to do in this article?",
+          "t": "Fíjate en {{What is the writer trying to do in this article?}}."
+        },
+        {
+          "a": "p:1",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
           "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "t": "La respuesta es {{encouraging tourists to visit Colombia.}}."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
+        },
+        {
+          "a": "p:1",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
+        },
+        {
+          "t": "La opción A no corresponde: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
           "a": "o:A:no",
-          "k": "err",
-          "t": "{{describe a tourism-leading Colombian coffee farm}} no corresponde con la información o construcción gramatical del texto."
+          "k": "err"
         },
         {
+          "t": "La opción B no corresponde: El artículo no busca enseñar cómo administrar un negocio cafetero.",
           "a": "o:B:no",
-          "k": "err",
-          "t": "{{tell readers to run a coffee business in Colombia}} no corresponde con la información o construcción gramatical del texto."
+          "k": "err"
         },
         {
+          "t": "La opción C no corresponde: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
           "a": "o:C:no",
-          "k": "err",
-          "t": "{{invite tourists to write about places they visit in Colombia}} no corresponde con la información o construcción gramatical del texto."
+          "k": "err"
         },
         {
           "a": "o:D:ok",
-          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
+          "t": "{{encouraging tourists to visit Colombia.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "{{What is the writer trying to do in this article?}}"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
+          "a": "p:1",
+          "k": "por",
+          "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
-          "t": "{{The writer describes the farm and ends by saying readers may be stimulated to return to Colombia; the purpose is to encourage a visit.}}"
+          "t": "La opción A no encaja: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
+          "a": "o:A:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción B no encaja: El artículo no busca enseñar cómo administrar un negocio cafetero.",
+          "a": "o:B:no",
+          "k": "err"
+        },
+        {
+          "t": "La opción C no encaja: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
+          "a": "o:C:no",
+          "k": "err"
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D queda respaldada por el texto."
+          "t": "La evidencia respalda {{encouraging tourists to visit Colombia.}}."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What is the writer trying to do in this article?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{What is the writer trying to do in this article?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
   }
 }
