@@ -22,3 +22,14 @@ Llevar la plataforma Saber 11 (Pre-ICFES) a un estado listo para lanzar al públ
 
 ## Al terminar
 Escribe `ANTIGRAVITY_REPORT.md` en español sencillo: qué hiciste, cuántas preguntas nuevas por área, qué probaste, qué falta y capturas en `docs/capturas/`. Haz commit y push.
+
+---
+# CAMBIO DE PRIORIDAD (manda sobre lo anterior)
+La prioridad número 1 ahora es **evaluar el sitio con ojos de alumno de grado 11 (usuario final) y mejorarlo**.
+
+- El sitio ya corre en local en **http://127.0.0.1:5173/** (Vite en modo libre). No lo apagues; si se cae, vuelve a levantarlo con `VITE_FREE_MODE=1 npx vite --host 127.0.0.1 --port 5173`.
+- Úsalo de verdad en el navegador (tu herramienta de navegador; si no está disponible, Chrome headless en `/opt/google/chrome/chrome` o Playwright con capturas), en celular 390x844 y en escritorio. Haz los recorridos completos: primera visita, diagnóstico, práctica, aprender, laboratorios, simulacro y progreso.
+- Sé muy crítico, como un estudiante impaciente de 16 años: ¿entiendo qué hacer en 5 segundos? ¿algo se ve feo, roto, lento o confuso? ¿las explicaciones me ayudan? ¿me dan ganas de volver mañana? Califica cada pantalla de 1 a 10.
+- Escribe los hallazgos en `docs/EVALUACION_ALUMNO.md` (problema, gravedad, captura) y luego **arregla tú mismo** los problemas, del más grave al menos grave. Después de cada ronda de arreglos, vuelve a evaluar y actualiza las notas. Repite hasta que cada pantalla esté en 9/10 o más.
+- El banco propio de preguntas pasa a ser prioridad 2: solo si mejora la experiencia del alumno.
+- Siguen vigentes todas las reglas obligatorias (rama antigravity/v1, sin desplegar, sin secretos, sin tocar pagos, pruebas pasando antes de cada commit, push al final de cada ronda).
