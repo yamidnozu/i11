@@ -23,7 +23,7 @@ export function getCoachmarkScreen(path: string): string {
   if (name === 'diag') return 'diag';
   if (name === 'pregunta') return 'pregunta';
   if (name === 'aprender' || name === 'unidad' || name === 'leccion' || name === 'sims' || name === 'sim') return 'aprender';
-  if (name === 'practicar' || name === 'sesion' || name === 'practica' || name === 'extras' || name === 'contenido') return 'practicar';
+  if (name === 'practicar' || name === 'sesion' || name === 'practica' || name === 'extras' || name === 'contenido' || name === 'odontologia') return 'practicar';
   if (name === 'simulacro') return 'simulacro';
   if (name === 'panel' || name === 'pago') return 'panel';
   return '';
@@ -69,6 +69,10 @@ const PAGE_META: Record<string, { title: string; desc: string }> = {
   'contenido': {
     title: 'Banco de Preguntas Saber 11 · Todas las Materias',
     desc: 'Explora el banco completo de preguntas de práctica organizadas por componente, competencia y nivel de dificultad.'
+  },
+  'odontologia': {
+    title: 'Odontología (Endodoncia) · Casos Clínicos y Diagnóstico Pulpar',
+    desc: 'Entrena con casos clínicos de endodoncia: anamnesis del dolor, pruebas térmicas al frío, percusión, palpación y diagnóstico periapical.'
   }
 };
 
@@ -78,7 +82,7 @@ const NAV: [string, string, string, string][] = [
   ['/', 'Hoy', 'home', 'hoy'], ['/aprender', 'Aprender', 'book', 'aprender'], ['/practicar', 'Practicar', 'pencil', 'practicar'], ['/panel', 'Progreso', 'chart', 'panel'],
 ];
 const DESC: Record<string, string> = { '/': 'Tu siguiente paso', '/aprender': 'Estudia un tema', '/practicar': 'Preguntas y simulacros', '/panel': 'Cómo vas' };
-const TITLES: Record<string, string> = { aprender: 'Aprender', unidad: 'Tema', practicar: 'Practicar', sesion: 'Sesión', sims: 'Laboratorios', sim: 'Laboratorio', diag: 'Diagnóstico', lecciones: 'Lecciones', leccion: 'Lección', practica: 'Práctica', simulacro: 'Simulacro', contenido: 'Todo el contenido', mapa: 'Mapa', pregunta: 'Pregunta', panel: 'Mi progreso', extras: 'Actividades', pago: 'Acceso', faq: 'Preguntas Frecuentes' };
+const TITLES: Record<string, string> = { aprender: 'Aprender', unidad: 'Tema', practicar: 'Practicar', sesion: 'Sesión', odontologia: 'Odontología', sims: 'Laboratorios', sim: 'Laboratorio', diag: 'Diagnóstico', lecciones: 'Lecciones', leccion: 'Lección', practica: 'Práctica', simulacro: 'Simulacro', contenido: 'Todo el contenido', mapa: 'Mapa', pregunta: 'Pregunta', panel: 'Mi progreso', extras: 'Actividades', pago: 'Acceso', faq: 'Preguntas Frecuentes' };
 
 const theme = () => document.documentElement.dataset.theme === 'oscuro' ? 'oscuro' : 'claro';
 const themeBtn = h('button', { class: 'iconbtn', type: 'button', onclick: () => {
@@ -124,7 +128,7 @@ document.getElementById('dock')!.append(...dockLinks);
 
 function mark(path: string) {
   const base = '/' + (path.split('/')[1] ?? '');
-  const MAPA: Record<string, string> = { '/sim': '/aprender', '/sims': '/aprender', '/leccion': '/aprender', '/lecciones': '/aprender', '/unidad': '/aprender', '/diag': '/practicar', '/sesion': '/practicar', '/practica': '/practicar', '/simulacro': '/practicar', '/extras': '/practicar', '/contenido': '/practicar', '/pregunta': '/practicar', '/pago': '/panel', '/faq': '/panel' };
+  const MAPA: Record<string, string> = { '/sim': '/aprender', '/sims': '/aprender', '/leccion': '/aprender', '/lecciones': '/aprender', '/unidad': '/aprender', '/diag': '/practicar', '/sesion': '/practicar', '/practica': '/practicar', '/simulacro': '/practicar', '/extras': '/practicar', '/contenido': '/practicar', '/pregunta': '/practicar', '/odontologia': '/practicar', '/pago': '/panel', '/faq': '/panel' };
   const key = MAPA[base] ?? base;
   for (const a of [...links, ...dockLinks]) { if (a.getAttribute('data-r') === key) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); }
 }
@@ -144,6 +148,7 @@ function migas(name: string, rest: string[]): HTMLElement | null {
     case 'lecciones': t = [A, ['Lecciones']]; break;
     case 'leccion': t = [A, ['Lecciones', '#/lecciones'], ['Lección']]; break;
     case 'sesion': case 'practica': t = [P, [query().get('modo') === 'repaso' ? 'Repaso' : 'Sesión de práctica']]; break;
+    case 'odontologia': t = [P, ['Odontología (Endodoncia)']]; break;
     case 'diag': t = [P, ['Diagnóstico']]; break;
     case 'extras': t = [P, ['Actividades']]; break;
     case 'simulacro': t = id ? [P, ['Simulacros', '#/simulacro'], [SIMULACROS_ALL.find((x) => x.id === id)?.nombre ?? 'Simulacro']] : [P, ['Simulacros']]; break;
@@ -173,6 +178,7 @@ async function route() {
     case 'contenido': view = biblioteca(); break;
     case 'pregunta': view = preguntaSuelta(rest[0]); break;
     case 'practicar': view = R.practicar(); break;
+    case 'odontologia': view = R.sesion({ titulo: 'Práctica de Odontología (Endodoncia)', volver: '#/practicar', area: 'odontologia', total: 8 }); break;
     case 'sesion': view = R.sesionGeneral(query().get('modo') === 'repaso'); break;
     case 'practica': view = R.sesionGeneral(); break;
     case 'simulacro': view = rest[0] ? simulacroPagina(rest[0]) : simulacroLista(); break;

@@ -181,6 +181,7 @@ export function practicar(): HTMLElement {
   return h('div', {}, head('Practicar', 'Aquí pones a prueba lo aprendido: práctica según tu nivel, simulacros cronometrados o el diagnóstico. Si apenas empiezas, hazlo primero.'),
     h('div', { class: 'paths prac-paths' },
       op('#/sesion', 'pencil', 'Sesión de práctica adaptativa', '8 preguntas adaptadas a tu nivel (~15 min) con resumen final.', due ? `${due} repasos pendientes` : 'Recomendado'),
+      op('#/odontologia', 'tooth', 'Odontología (Endodoncia)', '30 casos clínicos con diagnóstico pulpar y periapical, pruebas térmicas y flujo de práctica completo.', 'Nuevo'),
       op('#/simulacro', 'clock', 'Simulacros tipo examen', 'Pruebas completas como el examen real: tiempo por sección, sin ayudas y con puntaje estimado.'),
       op('#/diag', 'target', 'Repetir el diagnóstico', '15 preguntas rápidas (~10 min) para actualizar tu nivel en cada área.'),
       op('#/contenido', 'book', 'Todo el contenido', 'Entra directo a cualquier simulacro, laboratorio, lección o pregunta, sin seguir la ruta.'),

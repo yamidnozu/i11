@@ -11,7 +11,7 @@ describe('banco de preguntas', () => {
     expect(qs.flatMap(validateQuestion)).toEqual([]);
     expect(new Set(qs.map((q) => q.id)).size).toBe(qs.length);
   });
-  it('las 5 áreas tienen preguntas', () => expect(new Set(qs.map((q) => q.area)).size).toBe(5));
+  it('las áreas tienen preguntas', () => expect(new Set(qs.map((q) => q.area)).size).toBeGreaterThanOrEqual(5));
   it('los simuladores y retos referenciados existen', () => {
     registerAll();
     for (const q of qs) if (q.sim) { const s = getSim(q.sim.id); expect(s, q.id).toBeTruthy(); if (q.sim.challengeId) expect(s!.challenges.some((c) => c.id === q.sim!.challengeId), q.id).toBe(true); }

@@ -16,6 +16,7 @@ export const QUIERO: { q: string; href: string; ic: string }[] = [
   { q: 'Tener 15 minutos y no saber qué hacer', href: '#/sesion', ic: 'pencil' },
   { q: 'Estudiar un tema que no entiendo', href: '#/aprender', ic: 'book' },
   { q: 'Practicar solo una materia', href: '#/practicar', ic: 'pencil' },
+  { q: 'Estudiar casos clínicos de Odontología (Endodoncia)', href: '#/odontologia', ic: 'tooth' },
   { q: 'Hacer un simulacro como el examen real', href: '#/simulacro', ic: 'clock' },
   { q: 'Ver un laboratorio (cambiar valores y ver qué pasa)', href: '#/sims', ic: 'flask' },
   { q: 'Repasar lo que ya fallé u olvidé', href: '#/sesion?modo=repaso', ic: 'reset' },
@@ -37,7 +38,7 @@ function estaciones(): Estacion[] {
 const donde = (desde: string): string => {
   if (/^\/(diag)/.test(desde)) return 'diag';
   if (/^\/(aprender|unidad|sims|sim|lecciones|leccion)/.test(desde)) return 'aprender';
-  if (/^\/(practicar|sesion|practica|extras)/.test(desde)) return 'practicar';
+  if (/^\/(practicar|sesion|practica|extras|odontologia)/.test(desde)) return 'practicar';
   if (/^\/(simulacro|panel)/.test(desde)) return 'medir';
   if (/^\/(contenido|pregunta)/.test(desde)) return 'contenido';
   return '';

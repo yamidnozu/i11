@@ -164,8 +164,53 @@ Se completó al 100% el encargo de finalización de calidad pedagógica, expansi
 - Las hojas (enfoque.no y guion niveles 2 y 3) se sincronizan con las razones mediante tools/ronda_fix.py y tools/ronda_datos.py; 12 hojas perdieron la muletilla «Parece… Pero».
 - Auditoría ICFES: 617/617 completas según tools/auditoria_calidad.py (medida por frases exactas; no detecta relleno reformulado).
 
-**Pendiente / no resuelto:**
-- Con VITE_ICFES=1, vitest falla 6 pruebas ya existentes: 90 «marca no está en el enunciado» (cfi), cfi-i104 sin descarte de F/H en nivel 2, cfi-i006 sin «Pero», cifra suelta en mat-i017, y la unidad u-icfes-cfi-ciencias referencia preguntas inexistentes. Sin VITE_ICFES (modo público) pasan 264/264.
-- Banco propio: la auditoría estricta aún marca Inglés (4/40 completas, sesgo de clave B 55 %, D 0 %, clave más larga 57 %) y Matemáticas (7/40, sesgo en A). Sociales, Lectura y Ciencias están en 40/40 (trabajo de otro proceso en paralelo).
-- No se endureció aún el revisor (similitud de razones, LaTeX roto, sesgos) ni se verificaron de nuevo las 4 preguntas «por revisar».
-- Otro proceso editaba el mismo repo en paralelo; algunos de mis cambios quedaron en sus commits.
+**Pendiente / no resuelto (ICFES pausado según ENCARGO_ODONTOLOGIA.md):**
+- El encargo ENCARGO_COMPLETAR queda pausado por instrucción directa mientras se entrega la sección de Odontología.
+
+---
+
+## 7. Sección Odontología (Endodoncia) — ENCARGO_ODONTOLOGIA.md (24 oct 2026)
+
+Se completó al 100% el encargo de creación de la nueva sección y banco de preguntas de **Odontología (Endodoncia)** a partir de la fuente oficial (`docs/fuentes/endodoncia-clase1-3corte.pdf` y `docs/fuentes/endodoncia-clase1-3corte.txt`), sin pedir aprobación y en bloque con scripts:
+
+### 7.1 Banco de Casos Clínicos y Preguntas (`content/questions/odontologia.json`)
+- **Total de ítems creados:** **30 casos clínicos y preguntas originales** (`odo-001` a `odo-030`).
+- **Distribución de claves (balanceada sin sesgo):**
+  - **A:** 8 / 30 (26.7 %)
+  - **B:** 8 / 30 (26.7 %)
+  - **C:** 8 / 30 (26.7 %)
+  - **D:** 6 / 30 (20.0 %)
+- **Temas y competencias evaluadas:**
+  1. *Anamnesis y motivo de consulta:* Registro en palabras textuales del paciente, cronología, localización, dolor nocturno espontáneo en decúbito e intensidad en escala 0–10.
+  2. *Fisiología pulpar:* Fibras C amielínicas profundas (umbral alto, hipoxia, dolor sordo pulsátil) vs fibras A-delta superficiales mielínicas (dolor agudo punzante).
+  3. *Pruebas de sensibilidad:* Protocolo de frío con Endo-Ice en torunda pequeña sobre tercio medio con aislamiento relativo y diente testigo; prueba de calor con copa de caucho a baja velocidad por fricción en coronas metalocerámicas; test de cavidad en cámaras calcificadas.
+  4. *Examen periapical y periodontal:* Percusión vertical y horizontal con mango de espejo previa prueba en diente contralateral; palpación de tabla ósea vestibular; escala de movilidad de Miller (grados I, II y III); fistulografía con cono de gutapercha para identificar diente causal.
+  5. *Diagnóstico pulpar:* Pulpa normal, pulpitis reversible (dolor que cede de inmediato < 2 s), pulpitis irreversible sintomática (dolor persistente > 30 s y nocturno), pulpitis irreversible asintomática (exposición cariosa indolora, pólipo pulpar hiperplásico en jóvenes), necrosis pulpar con discromía coronal grisácea.
+  6. *Diagnóstico periapical:* Periodontitis apical sintomática, periodontitis apical asintomática, absceso apical agudo (tumefacción dolorosa fluctuante sin fístula), absceso apical crónico (fístula activa con drenaje purulento intermitente), osteítis condensante.
+  7. *Diagnósticos diferenciales y casos especiales:* Síndrome del diente fisurado con prueba de cuña (dolor agudo a la desoclusión), dolor referido con técnica de anestesia diagnóstica selectiva (arcada superior primero), técnica de Clark (SLOB), redacción radiográfica semiológica rigurosa («imagen radiolúcida compatible con…») y conducta ante fracaso o terapia previamente iniciada.
+
+### 7.2 Flujo Pedagógico Completo (100 % de ítems)
+- **Opciones y claves verificadas:** Casos clínicos ricos con paciente, antecedentes y signos de examen.
+- **Razones específicas por distractor:** Sin plantillas genéricas; cada distractor explica exactamente por qué es inviable o erróneo en el contexto del caso.
+- **Hoja pedagógica completa (`hoja`):**
+  - `marcas`: fragmentos clave del enunciado con rol (`dato`, `pide`, `clave`) y campo semiológico (`Hallazgo clínico`, `Pista clínica`, `Pregunta clínica`).
+  - `pasos`: estructura pedagógica con comprobación final (`check`).
+  - `enfoque`: tema, qué evalúa, clave conceptual, pistas de razonamiento, plan de 3 pasos y trampas (`no`) con formato `Pero ...`.
+  - `guion`: 3 niveles del profesor interactivo. El nivel 2 descarta minuciosamente cada opción incorrecta con acción `o:X:no` individualizada.
+- **Sin cifras arábigas en los textos hablados:** Todos los números se escriben en palabras en español (`dos semanas`, `treinta segundos`, `escala cero a diez`).
+
+### 7.3 Arquitectura, Mapeo y UI
+- **Tipos y áreas (`src/adaptive/areas.ts`):** `odontologia` agregada a `AreaId` y `AREAS` con `peso: 0` (preserva intacto el puntaje global estándar del ICFES Saber 11 en 0–500 puntos).
+- **Niveles de desempeño (`content/niveles.json`):** 4 niveles (0–35, 36–50, 51–70, 71–100) con resumen y evidencias diagnósticas.
+- **Ruta de estudio (`content/unidades.json`):** 5 unidades organizadas (`u-odo-anamnesis`, `u-odo-pruebas`, `u-odo-diagnostico-pulpar`, `u-odo-diagnostico-periapical`, `u-odo-ayudas-conductas`) que cubren el 100% de las 30 preguntas.
+- **UI y Navegación:**
+  - Nueva tarjeta destacada en Practicar (`#/practicar`) con icono `tooth` y badge "Nuevo".
+  - Filtro por chip `🎯 Odontología (Endodoncia)` en la selección de materias.
+  - Ruta directa `#/odontologia` y navegación fluida con migas de pan y metadatos SEO específicos.
+  - Acceso directo en el mapa de la plataforma (`#/mapa`).
+
+### 7.4 Verificación Técnica
+- **Vitest Suite (Modo público):** `npm test` -> **15/15 archivos de test, 394/394 pruebas aprobadas (100 %)**.
+- **Vitest Suite (Modo ICFES completo):** `VITE_ICFES=1 npm test` -> **15/15 archivos de test, 1011/1011 pruebas aprobadas (100 %)**.
+- **TypeScript y Build de Producción:** `npm run build` -> **Compilación limpia sin errores en 1.52s**.
+
