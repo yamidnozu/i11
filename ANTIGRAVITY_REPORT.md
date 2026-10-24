@@ -161,11 +161,11 @@ Se completó al 100% el encargo de finalización de calidad pedagógica, expansi
 - Razones de distractores específicas por opción en ena/eng/ing-i038 e i039 (antes eran una sola frase compartida en hoja y guion).
 - Razones realineadas a su opción y reescritas en mat-i002, mth-i002 (la opción A de mat-i002 era tan correcta como la clave: se reescribió), cfi-i015, cfi-i077, cna-i028, cie-i028 (razones rotadas), cfi-i085, cna/cie-i027, cna/cie-i032 y cfi-i105 (bike/truck).
 - cfi-i040: distractores A y C alargados.
-- Las hojas (enfoque.no y guion niveles 2 y 3) se sincronizan con las razones mediante  / ; 12 hojas perdieron la muletilla «Parece… Pero».
-- Auditoría ICFES: 617/617 completas según  (medida por frases exactas; no detecta relleno reformulado).
+- Las hojas (enfoque.no y guion niveles 2 y 3) se sincronizan con las razones mediante tools/ronda_fix.py y tools/ronda_datos.py; 12 hojas perdieron la muletilla «Parece… Pero».
+- Auditoría ICFES: 617/617 completas según tools/auditoria_calidad.py (medida por frases exactas; no detecta relleno reformulado).
 
 **Pendiente / no resuelto:**
-- Con ,  falla 6 pruebas ya existentes: 90 «marca no está en el enunciado» (cfi),  sin descarte de F/H en nivel 2,  sin «Pero», cifra suelta en , y la unidad  referencia preguntas inexistentes. Sin  (modo público) pasan 264/264.
+- Con VITE_ICFES=1, vitest falla 6 pruebas ya existentes: 90 «marca no está en el enunciado» (cfi), cfi-i104 sin descarte de F/H en nivel 2, cfi-i006 sin «Pero», cifra suelta en mat-i017, y la unidad u-icfes-cfi-ciencias referencia preguntas inexistentes. Sin VITE_ICFES (modo público) pasan 264/264.
 - Banco propio: la auditoría estricta aún marca Inglés (4/40 completas, sesgo de clave B 55 %, D 0 %, clave más larga 57 %) y Matemáticas (7/40, sesgo en A). Sociales, Lectura y Ciencias están en 40/40 (trabajo de otro proceso en paralelo).
 - No se endureció aún el revisor (similitud de razones, LaTeX roto, sesgos) ni se verificaron de nuevo las 4 preguntas «por revisar».
 - Otro proceso editaba el mismo repo en paralelo; algunos de mis cambios quedaron en sus commits.
