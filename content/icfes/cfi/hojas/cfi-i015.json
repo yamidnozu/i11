@@ -56,15 +56,15 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$."
+          "p": "Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos."
         },
         {
           "t": "Opción C",
-          "p": "Pero, $j=11$ produce el límite y no un racional menor que él."
+          "p": "j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11."
         },
         {
           "t": "Opción D",
-          "p": "Pero, No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
+          "p": "j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
         }
       ]
     },
@@ -85,17 +85,17 @@
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$."
+          "t": "La opción A no corresponde: Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "$j=11$ produce el límite y no un racional menor que él."
+          "t": "La opción C no corresponde: j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
+          "t": "La opción D no corresponde: j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
         },
         {
           "a": "o:B:ok",

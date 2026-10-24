@@ -142,15 +142,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Cuenta solo la cantidad de cursos que subieron de puntaje (3 de 4), ignorando que la drástica caída de 16 puntos en el curso II hace disminuir el promedio global."
+              "p": "Cuenta solo la cantidad de cursos que subieron de puntaje (3 de 4), ignorando que la drástica caída de 16 puntos en el curso II hace disminuir el promedio global."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Se fija únicamente en el puntaje más alto aislado (65 en el curso I), confundiendo el valor máximo individual con el promedio general."
+              "p": "Se fija únicamente en el puntaje más alto aislado (65 en el curso I), confundiendo el valor máximo individual con el promedio general."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Afirma erróneamente que se requieren los datos individuales de los alumnos, cuando al tener igual número de estudiantes por curso el promedio total es simplemente la media de los cuatro promedios."
+              "p": "Afirma erróneamente que se requieren los datos individuales de los alumnos, cuando al tener igual número de estudiantes por curso el promedio total es simplemente la media de los cuatro promedios."
             }
           ],
           "pistas": [
@@ -310,10 +310,10 @@
       "competenciaId": "argumentacion",
       "correcta": 2,
       "distractores": [
-        "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
-        "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
+        "Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso.",
+        "No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio.",
         "",
-        "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
+        "El factor de 4.000 vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo 3 %."
       ],
       "enunciado": "Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo 1 dólar equivalente a 4.000 pesos colombianos y que su inversión, en dólares, le dará ganancias del 3 % en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del 3 %.\n ¿La afirmación de su amigo es correcta?",
       "estadoHoja": "revisada",
@@ -326,16 +326,16 @@
           "clave": "Una conversión con tasa fija multiplica por la misma constante el capital y su ganancia.",
           "no": [
             {
-              "p": "La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
             },
             {
-              "p": "El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
             },
             {
-              "p": "El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "El factor de 4.000 vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo 3 %."
             }
           ],
           "pistas": [
@@ -379,17 +379,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A: La afirmación solo se sostiene porque en este caso la tasa de cambio permanece fija. Pero la opción dice que no importan sus variaciones."
+              "t": "La opción A no corresponde: Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B: El monto inicial no cambia la proporción de aumento. Pero para verificarla basta con que la tasa se mantenga constante."
+              "t": "La opción B no corresponde: No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D: El factor de conversión cambia la cantidad expresada en pesos, no el porcentaje de crecimiento. Pero la tasa constante conserva la proporción."
+              "t": "La opción D no corresponde: El factor de 4.000 vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo 3 %."
             },
             {
               "a": "o:C:ok",
@@ -468,7 +468,7 @@
       "id": "mat-i002",
       "nivel": 2,
       "opciones": [
-        "Sí, porque una tasa de cambio constante conserva la proporción de aumento al convertir dólares a pesos.",
+        "Sí, porque, sin importar cómo varíe la tasa de cambio, el porcentaje de aumento en dólares es el mismo en pesos.",
         "No, porque hace falta conocer el valor exacto de la inversión para calcular cuánto dinero ganará.",
         "Sí, porque se aplica la misma tasa de cambio fija tanto a la inversión como a la ganancia.",
         "No, porque el incremento en pesos es mayor por el factor de conversión entre las monedas."
@@ -1281,15 +1281,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Supone erróneamente que usar el mismo caucho implica que las áreas de la base y la boca son iguales, a pesar de que el caucho se estira."
+              "p": "Supone erróneamente que usar el mismo caucho implica que las áreas de la base y la boca son iguales, a pesar de que el caucho se estira."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Confunde la proporcionalidad lineal de los perímetros con la de las áreas; en figuras semejantes, el área varía con el cuadrado de la razón lineal."
+              "p": "Confunde la proporcionalidad lineal de los perímetros con la de las áreas; en figuras semejantes, el área varía con el cuadrado de la razón lineal."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Afirma que todas las medidas varían en la misma razón lineal, ignorando que las áreas son magnitudes bidimensionales que se escalan con el factor al cuadrado."
+              "p": "Afirma que todas las medidas varían en la misma razón lineal, ignorando que las áreas son magnitudes bidimensionales que se escalan con el factor al cuadrado."
             }
           ],
           "pistas": [
@@ -1463,15 +1463,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
+              "p": "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
+              "p": "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
+              "p": "Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
             }
           ],
           "pistas": [
@@ -2790,15 +2790,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Divide el ángulo entre la longitud de los postes sin base trigonométrica."
+              "p": "Divide el ángulo entre la longitud de los postes sin base trigonométrica."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
+              "p": "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Confunde el ángulo de elevación con su complemento respecto a la vertical."
+              "p": "Confunde el ángulo de elevación con su complemento respecto a la vertical."
             }
           ],
           "pistas": [
@@ -3158,15 +3158,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero lah calcula el volumen del prisma rectangular, no la longitud de sus aristas."
+              "p": "Lah calcula el volumen del prisma rectangular, no la longitud de sus aristas."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero 4lah multiplica cuatro veces el volumen, lo cual no representa una medida de longitud."
+              "p": "4lah multiplica cuatro veces el volumen, lo cual no representa una medida de longitud."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero l+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo."
+              "p": "L+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo."
             }
           ],
           "pistas": [
@@ -3356,15 +3356,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Usa el ángulo de 45° que no pertenece al triángulo que relaciona directamente a x con el faro inferior."
+              "p": "Usa el ángulo de 45° que no pertenece al triángulo que relaciona directamente a x con el faro inferior."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Aplica una razón trigonométrica con medidas angulares no opuestas al lado buscado en la figura."
+              "p": "Aplica una razón trigonométrica con medidas angulares no opuestas al lado buscado en la figura."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Invierte los catetos y ángulos en la aplicación de la ley de senos."
+              "p": "Invierte los catetos y ángulos en la aplicación de la ley de senos."
             }
           ],
           "pistas": [
@@ -3741,15 +3741,15 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Plantea una relación de proporcionalidad directa simple sin término independiente que no se ajusta a la ganancia base."
+              "p": "Plantea una relación de proporcionalidad directa simple sin término independiente que no se ajusta a la ganancia base."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Asume una tasa constante de 40 que sobreestima el crecimiento a partir del segundo punto de la tabla."
+              "p": "Asume una tasa constante de 40 que sobreestima el crecimiento a partir del segundo punto de la tabla."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Usa una pendiente de 40 y un intercepto negativo que no coincide con las ganancias registradas para p = 200."
+              "p": "Usa una pendiente de 40 y un intercepto negativo que no coincide con las ganancias registradas para p = 200."
             }
           ],
           "pistas": [
@@ -3923,15 +3923,15 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero No nota que la ecuación m = 3s expresa que la cantidad de mesas es el triple de sillas, lo opuesto a lo indicado por el dueño."
+              "p": "No nota que la ecuación m = 3s expresa que la cantidad de mesas es el triple de sillas, lo opuesto a lo indicado por el dueño."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Afirma erróneamente que los precios deberían dividir a las variables, lo cual contradice el cálculo de ingresos."
+              "p": "Afirma erróneamente que los precios deberían dividir a las variables, lo cual contradice el cálculo de ingresos."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Justifica la validez solo porque la solución arroja números enteros, sin verificar si las ecuaciones modelan el enunciado."
+              "p": "Justifica la validez solo porque la solución arroja números enteros, sin verificar si las ecuaciones modelan el enunciado."
             }
           ],
           "pistas": [
@@ -4311,15 +4311,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
+              "p": "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°."
+              "p": "Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
+              "p": "Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
             }
           ],
           "pistas": [
@@ -4537,15 +4537,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Calcula el área como una novena parte asumiendo una cuadrícula regular de 3x3 que no corresponde a la inclinación de las líneas."
+              "p": "Calcula el área como una novena parte asumiendo una cuadrícula regular de 3x3 que no corresponde a la inclinación de las líneas."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Estima visualmente que el cuadrado sombreado es un octavo del área total."
+              "p": "Estima visualmente que el cuadrado sombreado es un octavo del área total."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales."
+              "p": "Asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales."
             }
           ],
           "pistas": [
@@ -4946,15 +4946,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece posible al sumar algunas categorías. Pero estos tres tipos suman 34%, menos de la mitad."
+              "p": "Estos tres tipos suman 34%, menos de la mitad."
             },
             {
               "t": "Opción B",
-              "p": "Parece posible al sumar algunas categorías. Pero suman exactamente 50%, no más de la mitad."
+              "p": "Suman exactamente 50%, no más de la mitad."
             },
             {
               "t": "Opción D",
-              "p": "Parece posible al sumar algunas categorías. Pero la suma de buses, microbuses y busetas es 65%."
+              "p": "La suma de buses, microbuses y busetas es 65%."
             }
           ],
           "pistas": [
@@ -6001,15 +6001,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
+              "p": "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática."
+              "p": "Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
+              "p": "Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
             }
           ],
           "pistas": [
@@ -6183,15 +6183,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
+              "p": "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x."
+              "p": "Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
+              "p": "Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
             }
           ],
           "pistas": [
@@ -6611,15 +6611,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
+              "p": "Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
+              "p": "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
+              "p": "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
             }
           ],
           "pistas": [
@@ -6793,15 +6793,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero El paso 1 calcula el 10% del precio original correctamente."
+              "p": "El paso 1 calcula el 10% del precio original correctamente."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero En el paso 2 la división entre 10 equivale al cálculo simplificado y no introduce un error en el valor numérico."
+              "p": "En el paso 2 la división entre 10 equivale al cálculo simplificado y no introduce un error en el valor numérico."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero El paso 4 no es redundante; el error ocurrió al multiplicar por 10 en lugar de descontar el porcentaje sobre el saldo."
+              "p": "El paso 4 no es redundante; el error ocurrió al multiplicar por 10 en lugar de descontar el porcentaje sobre el saldo."
             }
           ],
           "pistas": [
@@ -6975,15 +6975,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Ignora la definición clásica de probabilidad (casos favorables / casos totales), donde la cantidad de cada color es determinante."
+              "p": "Ignora la definición clásica de probabilidad (casos favorables / casos totales), donde la cantidad de cada color es determinante."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero El número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas."
+              "p": "El número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
+              "p": "Afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
             }
           ],
           "pistas": [
@@ -7362,15 +7362,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero La tabla no proporciona la intersección específica de quienes eligieron pizza y además bebida caliente."
+              "p": "La tabla no proporciona la intersección específica de quienes eligieron pizza y además bebida caliente."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Para calcular la unión de pizza o bebida caliente es necesario conocer cuántos eligieron ambas opciones a la vez."
+              "p": "Para calcular la unión de pizza o bebida caliente es necesario conocer cuántos eligieron ambas opciones a la vez."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero No se puede aislar cuántos eligieron únicamente bebida fría sin conocer el solapamiento específico con pizza."
+              "p": "No se puede aislar cuántos eligieron únicamente bebida fría sin conocer el solapamiento específico con pizza."
             }
           ],
           "pistas": [
@@ -7546,15 +7546,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Ubica a R1 (10^3 = 1.000) antes de R2 (10*9*8 = 720), ordenando de forma incorrecta los dos menores."
+              "p": "Ubica a R1 (10^3 = 1.000) antes de R2 (10*9*8 = 720), ordenando de forma incorrecta los dos menores."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Ordena R3 (26*26*10 = 6.760) antes de R4 (52*10*10 = 5.200), cuando 5.200 < 6.760."
+              "p": "Ordena R3 (26*26*10 = 6.760) antes de R4 (52*10*10 = 5.200), cuando 5.200 < 6.760."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Coloca a R3 antes de R1, cuando 6.760 es mayor que 1.000."
+              "p": "Coloca a R3 antes de R1, cuando 6.760 es mayor que 1.000."
             }
           ],
           "pistas": [
@@ -7903,15 +7903,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
+              "p": "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
+              "p": "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
+              "p": "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
             }
           ],
           "pistas": [
@@ -8598,15 +8598,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2)."
+              "p": "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2)."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Calcula el área del círculo completo sin dividir entre los 10 sectores iguales."
+              "p": "Calcula el área del círculo completo sin dividir entre los 10 sectores iguales."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
+              "p": "Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
             }
           ],
           "pistas": [
@@ -8962,15 +8962,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero El procedimiento 1 suma probabilidades, lo cual sobreestimaría la probabilidad de la intersección de dos eventos independientes."
+              "p": "El procedimiento 1 suma probabilidades, lo cual sobreestimaría la probabilidad de la intersección de dos eventos independientes."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Los procedimientos 1 y 4 son incorrectos; el procedimiento 4 ignora el caso en que se pierde en ambos juegos."
+              "p": "Los procedimientos 1 y 4 son incorrectos; el procedimiento 4 ignora el caso en que se pierde en ambos juegos."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero El procedimiento 4 resta únicamente la probabilidad de perder en exactamente un juego, omitiendo el evento de perder en ambos."
+              "p": "El procedimiento 4 resta únicamente la probabilidad de perder en exactamente un juego, omitiendo el evento de perder en ambos."
             }
           ],
           "pistas": [
@@ -9147,15 +9147,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece tentador a simple vista. Pero Una milésima representaría que I es menor que I_0, lo opuesto a la razón 10^3 = 1.000."
+              "p": "Una milésima representaría que I es menor que I_0, lo opuesto a la razón 10^3 = 1.000."
             },
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Un tercio confunde una potencia de diez con una fracción aritmética."
+              "p": "Un tercio confunde una potencia de diez con una fracción aritmética."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Tres veces confunde el exponente 3 con el valor de la potencia 10^3 = 1.000."
+              "p": "Tres veces confunde el exponente 3 con el valor de la potencia 10^3 = 1.000."
             }
           ],
           "pistas": [
@@ -9701,15 +9701,15 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Parece tentador a simple vista. Pero Afirma que el cilindro (4,5*pi) y la caja (4,5) tienen igual volumen, olvidando multiplicar por pi."
+              "p": "Afirma que el cilindro (4,5*pi) y la caja (4,5) tienen igual volumen, olvidando multiplicar por pi."
             },
             {
               "t": "Opción C",
-              "p": "Parece tentador a simple vista. Pero Sostiene que el volumen del cilindro es menor que el de la caja, cuando 4,5*pi > 4,5."
+              "p": "Sostiene que el volumen del cilindro es menor que el de la caja, cuando 4,5*pi > 4,5."
             },
             {
               "t": "Opción D",
-              "p": "Parece tentador a simple vista. Pero Afirma que la esfera tiene mayor volumen que el cilindro, cuando ambos volúmenes son exactamente iguales a 4,5*pi."
+              "p": "Afirma que la esfera tiene mayor volumen que el cilindro, cuando ambos volúmenes son exactamente iguales a 4,5*pi."
             }
           ],
           "pistas": [

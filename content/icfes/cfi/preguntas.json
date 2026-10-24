@@ -420,15 +420,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Parece posible al sumar algunas categorías. Pero estos tres tipos suman 34%, menos de la mitad."
+              "p": "Estos tres tipos suman 34%, menos de la mitad."
             },
             {
               "t": "Opción B",
-              "p": "Parece posible al sumar algunas categorías. Pero suman exactamente 50%, no más de la mitad."
+              "p": "Suman exactamente 50%, no más de la mitad."
             },
             {
               "t": "Opción D",
-              "p": "Parece posible al sumar algunas categorías. Pero la suma de buses, microbuses y busetas es 65%."
+              "p": "La suma de buses, microbuses y busetas es 65%."
             }
           ],
           "pistas": [
@@ -1460,15 +1460,15 @@
           "clave": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$.",
           "no": [
             {
-              "p": "Pero, La expresión calcula una longitud, no una medida angular.",
+              "p": "La expresión calcula una longitud, no una medida angular.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo.",
+              "p": "El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, El radio ya mide $2$; la expresión calcula la cuerda PQ.",
+              "p": "El radio ya mide $2$; la expresión calcula la cuerda PQ.",
               "t": "Opción D"
             }
           ],
@@ -3051,10 +3051,10 @@
       "area": "matematicas",
       "correcta": 1,
       "distractores": [
-        "No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$.",
+        "Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos.",
         "",
-        "$j=11$ produce el límite y no un racional menor que él.",
-        "No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
+        "j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11.",
+        "j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
       ],
       "enunciado": "Se puede encontrar números racionales mayores que $k$, de manera que sean cada vez más cercanos a él, calculando $k + \\frac{1}{j}$ (con $j$ entero positivo). Cuanto más grande sea $j$, más cercano a $k$ será el racional construido. ¿Cuántos números racionales se pueden construir cercanos a $k$ y menores que $k + \\frac{1}{11}$?",
       "estadoHoja": "revisada",
@@ -3066,16 +3066,16 @@
           "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos."
             },
             {
-              "p": "Parece tentador a simple vista. Pero $j=11$ produce el límite y no un racional menor que él.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11."
             },
             {
-              "p": "Parece tentador a simple vista. Pero No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
             }
           ],
           "pistas": [
@@ -3113,17 +3113,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "No hay solo diez racionales; existen infinitos denominadores enteros mayores que $11$."
+              "t": "La opción A no corresponde: Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "$j=11$ produce el límite y no un racional menor que él."
+              "t": "La opción C no corresponde: j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "No hay un racional más cercano único; cualquier entero suficientemente grande produce otro valor entre $k$ y el límite."
+              "t": "La opción D no corresponde: j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
             },
             {
               "a": "o:B:ok",
@@ -3641,15 +3641,15 @@
           "clave": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio.",
           "no": [
             {
-              "p": "Pero, los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
+              "p": "Los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo.",
+              "p": "Suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda.",
+              "p": "Sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda.",
               "t": "Opción D"
             }
           ],
@@ -4504,15 +4504,15 @@
           "clave": "Como $10^3 = 1.000$, la razón $I/I_0$ es mil. La opción D es correcta.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Una milésima es menor que la unidad y no equivale a la potencia indicada.",
+              "p": "Una milésima es menor que la unidad y no equivale a la potencia indicada.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Un tercio no corresponde a la razón que indica la ecuación.",
+              "p": "Un tercio no corresponde a la razón que indica la ecuación.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Tres veces confunde el exponente con el valor de la potencia de diez.",
+              "p": "Tres veces confunde el exponente con el valor de la potencia de diez.",
               "t": "Opción C"
             }
           ],
@@ -4831,15 +4831,15 @@
           "clave": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
           "no": [
             {
-              "p": "Pero, A expresa una idea general sobre lo bello, pero no precisa lo que ilustra el ejemplo de Rubens.",
+              "p": "A expresa una idea general sobre lo bello, pero no precisa lo que ilustra el ejemplo de Rubens.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, B afirma una exigencia del público que el texto no plantea.",
+              "p": "B afirma una exigencia del público que el texto no plantea.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, D confunde el posible rechazo de ciertos temas con el gusto de los artistas por temas atractivos.",
+              "p": "D confunde el posible rechazo de ciertos temas con el gusto de los artistas por temas atractivos.",
               "t": "Opción D"
             }
           ],
@@ -4977,15 +4977,15 @@
           "clave": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero Contrasta los temas de dos pintores, sin valorarlos.",
+              "p": "Contrasta los temas de dos pintores, sin valorarlos.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador.",
+              "p": "Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento.",
+              "p": "Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento.",
               "t": "Opción D"
             }
           ],
@@ -5143,15 +5143,15 @@
           "clave": "El pasaje sostiene que la belleza de una obra no depende únicamente de que su tema sea bello. La opción C resume esa reflexión.",
           "no": [
             {
-              "p": "Pero, El autor no defiende el mal gusto; explica que un tema desagradable también puede formar parte de una gran obra.",
+              "p": "El autor no defiende el mal gusto; explica que un tema desagradable también puede formar parte de una gran obra.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, El texto no presenta el arte como modelo de la realidad, sino que discute cómo valoramos sus temas.",
+              "p": "El texto no presenta el arte como modelo de la realidad, sino que discute cómo valoramos sus temas.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, La lista de artistas es secundaria y no resume la idea central.",
+              "p": "La lista de artistas es secundaria y no resume la idea central.",
               "t": "Opción D"
             }
           ],
@@ -5283,15 +5283,15 @@
           "clave": "La opción A contradice al autor: sostiene que algunas personas conservarían la justicia aunque pudieran actuar injustamente.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero El argumento presenta la inclinación a la injusticia como común cuando no hay coerción.",
+              "p": "El argumento presenta la inclinación a la injusticia como común cuando no hay coerción.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La afirmación coincide con la comparación de ventajas que el texto atribuye a la injusticia.",
+              "p": "La afirmación coincide con la comparación de ventajas que el texto atribuye a la injusticia.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La posibilidad de actuar injustamente sin castigo es el supuesto del relato y se presenta como una decisión voluntaria.",
+              "p": "La posibilidad de actuar injustamente sin castigo es el supuesto del relato y se presenta como una decisión voluntaria.",
               "t": "Opción D"
             }
           ],
@@ -5449,15 +5449,15 @@
           "clave": "La opción B supone que tanto la justicia como la injusticia pueden brindar ventajas individuales.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero La afirmación compara ventajas distintas; no supone que ambas conductas ofrezcan lo mismo.",
+              "p": "La afirmación compara ventajas distintas; no supone que ambas conductas ofrezcan lo mismo.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La frase no dice que la injusticia ofrezca pocas ventajas; dice que ofrece más que la justicia.",
+              "p": "La frase no dice que la injusticia ofrezca pocas ventajas; dice que ofrece más que la justicia.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La comparación no implica que la justicia carezca de toda ventaja, solo que brinda menos.",
+              "p": "La comparación no implica que la justicia carezca de toda ventaja, solo que brinda menos.",
               "t": "Opción D"
             }
           ],
@@ -5615,15 +5615,15 @@
           "clave": "La opción D sostiene que quien tiene libertad para cometer injusticias lo hará, tal como plantea el autor.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero Repite la idea de obligación, pero no explica por qué la persona actuaría injustamente si tuviera libertad.",
+              "p": "Repite la idea de obligación, pero no explica por qué la persona actuaría injustamente si tuviera libertad.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La igualdad ante la ley no aparece como garantía en este argumento.",
+              "p": "La igualdad ante la ley no aparece como garantía en este argumento.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero El autor sostiene que la injusticia ofrece más ventajas individuales, no las mismas.",
+              "p": "El autor sostiene que la injusticia ofrece más ventajas individuales, no las mismas.",
               "t": "Opción C"
             }
           ],
@@ -5781,15 +5781,15 @@
           "clave": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero El autor no fundamenta la justicia en una conciencia moral universal.",
+              "p": "El autor no fundamenta la justicia en una conciencia moral universal.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto.",
+              "p": "La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias.",
+              "p": "El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias.",
               "t": "Opción D"
             }
           ],
@@ -5947,15 +5947,15 @@
           "clave": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias.",
+              "p": "El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente.",
+              "p": "El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general.",
+              "p": "La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general.",
               "t": "Opción D"
             }
           ],
@@ -6113,15 +6113,15 @@
           "clave": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas.",
+              "p": "El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor.",
+              "p": "La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio.",
+              "p": "Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio.",
               "t": "Opción D"
             }
           ],
@@ -6279,15 +6279,15 @@
           "clave": "La opción D es correcta: el conector contrapone las ideas sin invalidar lo dicho antes.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero No introduce un tema nuevo; relaciona dos ideas del mismo tema.",
+              "p": "No introduce un tema nuevo; relaciona dos ideas del mismo tema.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero No borra ni niega la información previa; la matiza con un contraste.",
+              "p": "No borra ni niega la información previa; la matiza con un contraste.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero No añade un detalle equivalente, sino que contrapone las dos ideas.",
+              "p": "No añade un detalle equivalente, sino que contrapone las dos ideas.",
               "t": "Opción C"
             }
           ],
@@ -6425,15 +6425,15 @@
           "clave": "La opción C, “aporte patrimonial”, conserva el sentido de la dote como aporte de bienes o recursos.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Limita la dote a ahorros y excluye bienes o tierras.",
+              "p": "Limita la dote a ahorros y excluye bienes o tierras.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero El texto no dice que el aporte proviniera específicamente de los familiares.",
+              "p": "El texto no dice que el aporte proviniera específicamente de los familiares.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio.",
+              "p": "Una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio.",
               "t": "Opción D"
             }
           ],
@@ -6571,15 +6571,15 @@
           "clave": "La opción D presenta el párrafo como ejemplo de que la asociación entre amor y matrimonio varía entre tiempos y culturas.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero El párrafo no compara sistemáticamente China y Occidente.",
+              "p": "El párrafo no compara sistemáticamente China y Occidente.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La amenaza al respeto se menciona como una creencia cultural, no como una demostración sobre todos los esposos chinos.",
+              "p": "La amenaza al respeto se menciona como una creencia cultural, no como una demostración sobre todos los esposos chinos.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero El párrafo ofrece un ejemplo, pero no sintetiza todas las razones de incompatibilidad cultural.",
+              "p": "El párrafo ofrece un ejemplo, pero no sintetiza todas las razones de incompatibilidad cultural.",
               "t": "Opción C"
             }
           ],
@@ -6711,15 +6711,15 @@
           "clave": "La opción B afirma que la idea del amor como razón para casarse surgió con el movimiento romántico en el siglo XVIII; esto demuestra que no siempre fue la base del matrimonio.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Habla de los roles familiares en los años cincuenta, no de cuándo el amor pasó a ser la base del matrimonio.",
+              "p": "Habla de los roles familiares en los años cincuenta, no de cuándo el amor pasó a ser la base del matrimonio.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Describe cómo una pareja sostiene su relación, pero no aporta evidencia histórica.",
+              "p": "Describe cómo una pareja sostiene su relación, pero no aporta evidencia histórica.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Afirma que el matrimonio se consolidó como institucionalización del amor, lo cual no apoya que esa asociación sea reciente.",
+              "p": "Afirma que el matrimonio se consolidó como institucionalización del amor, lo cual no apoya que esa asociación sea reciente.",
               "t": "Opción D"
             }
           ],
@@ -6857,15 +6857,15 @@
           "clave": "La opción A es el ejemplo directo: la dote aportaba recursos y ayudaba a consolidar alianzas familiares.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Describe una concepción cultural del amor, no una función económica o política.",
+              "p": "Describe una concepción cultural del amor, no una función económica o política.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Se refiere a un cambio histórico en la idea del amor, no a un ejemplo de intercambio económico.",
+              "p": "Se refiere a un cambio histórico en la idea del amor, no a un ejemplo de intercambio económico.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Describe un cambio de vocabulario sobre el afecto conyugal, no una alianza de recursos.",
+              "p": "Describe un cambio de vocabulario sobre el afecto conyugal, no una alianza de recursos.",
               "t": "Opción D"
             }
           ],
@@ -6982,10 +6982,10 @@
       "bloque": "cfi-matrimonio-historia",
       "correcta": 1,
       "distractores": [
-        "Afirma que nunca hay amor entre esposos, aunque el texto incluye distintas actitudes.",
+        "Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse.",
         "",
-        "No se menciona temor a enamorarse.",
-        "El pasaje no dice que el amor de las mujeres quede sin correspondencia."
+        "El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo.",
+        "El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
       ],
       "enunciado": "¿Qué implicación sobre el matrimonio entre los fulbes africanos puede derivarse a partir de lo dicho por el autor?",
       "estadoHoja": "revisada",
@@ -6997,16 +6997,16 @@
           "clave": "La opción B permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Afirma que nunca hay amor entre esposos, aunque el texto incluye distintas actitudes.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
             },
             {
-              "p": "Parece tentador a simple vista. Pero No se menciona temor a enamorarse.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
             },
             {
-              "p": "Parece tentador a simple vista. Pero El pasaje no dice que el amor de las mujeres quede sin correspondencia.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
             }
           ],
           "pistas": [
@@ -7044,17 +7044,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "Afirma que nunca hay amor entre esposos, aunque el texto incluye distintas actitudes."
+              "t": "La opción A no corresponde: Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "No se menciona temor a enamorarse."
+              "t": "La opción C no corresponde: El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "El pasaje no dice que el amor de las mujeres quede sin correspondencia."
+              "t": "La opción D no corresponde: El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
             },
             {
               "a": "o:B:ok",
@@ -7110,9 +7110,9 @@
       "id": "cfi-i040",
       "nivel": 2,
       "opciones": [
-        "Que en esa comunidad no sucede que haya amor entre esposos.",
+        "Que en esa comunidad nunca llega a existir amor entre los esposos, ni antes ni después de casarse.",
         "Que en esa comunidad el amor no es una condición necesaria para el matrimonio.",
-        "Que las mujeres de esa comunidad sienten temor a enamorarse de sus esposos.",
+        "Que las mujeres de esa comunidad sienten temor a enamorarse de sus esposos y por eso lo ocultan.",
         "Que las mujeres de esa comunidad no ven su amor correspondido por sus esposos."
       ],
       "origen": "icfes",
@@ -7143,15 +7143,15 @@
           "clave": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero El texto explica que sus propósitos no han sido únicamente económicos y políticos.",
+              "p": "El texto explica que sus propósitos no han sido únicamente económicos y políticos.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera.",
+              "p": "No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero El texto presenta esa idea como una concepción reciente, no como una regla universal.",
+              "p": "El texto presenta esa idea como una concepción reciente, no como una regla universal.",
               "t": "Opción D"
             }
           ],
@@ -7309,15 +7309,15 @@
           "clave": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero La infografía opone pocos vehículos con muchas muertes; no lo contrario.",
+              "p": "La infografía opone pocos vehículos con muchas muertes; no lo contrario.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero La frase no atribuye las muertes al número de autos ni demuestra una relación causal.",
+              "p": "La frase no atribuye las muertes al número de autos ni demuestra una relación causal.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor.",
+              "p": "No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor.",
               "t": "Opción D"
             }
           ],
@@ -7475,15 +7475,15 @@
           "clave": "La infografía compara muertes por accidentes según distintos grupos y regiones, pero no presenta la frecuencia de los accidentes. Por eso la descripción incluye información ausente.",
           "no": [
             {
-              "p": "Pero, La descripción menciona varios de los ejes que sí aparecen; el problema es que agrega un dato inexistente.",
+              "p": "La descripción menciona varios de los ejes que sí aparecen; el problema es que agrega un dato inexistente.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, El orden de enumeración no cambia la validez de la descripción.",
+              "p": "El orden de enumeración no cambia la validez de la descripción.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, No se trata de que falten evidencias para datos que sí estén presentados.",
+              "p": "No se trata de que falten evidencias para datos que sí estén presentados.",
               "t": "Opción D"
             }
           ],
@@ -7626,15 +7626,15 @@
           "clave": "La infografía atribuye veintidós por ciento a peatones, cinco por ciento a ciclistas y veintitrés por ciento a motociclistas. En conjunto suman la mitad; la otra mitad corresponde a ocupantes de otros vehículos, más que cualquiera de esos grupos por separado.",
           "no": [
             {
-              "p": "Pero, La proporción de peatones es menor que la mitad correspondiente a otros vehículos.",
+              "p": "La proporción de peatones es menor que la mitad correspondiente a otros vehículos.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, La proporción de motociclistas es menor que la mitad de otros vehículos.",
+              "p": "La proporción de motociclistas es menor que la mitad de otros vehículos.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, La proporción de ciclistas es menor que la mitad de otros vehículos.",
+              "p": "La proporción de ciclistas es menor que la mitad de otros vehículos.",
               "t": "Opción C"
             }
           ],
@@ -7777,15 +7777,15 @@
           "clave": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región.",
           "no": [
             {
-              "p": "Pero, El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país.",
+              "p": "El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad.",
+              "p": "Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región.",
+              "p": "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región.",
               "t": "Opción D"
             }
           ],
@@ -7928,15 +7928,15 @@
           "clave": "La infografía muestra que los países de ingresos altos concentran una proporción mayor de vehículos y una proporción menor de muertes, mientras los de ingresos medios tienen menos vehículos y muchas más muertes. El contraste es consistente con mayor seguridad y educación vial en los países de ingresos altos.",
           "no": [
             {
-              "p": "Pero, El gráfico compara proporciones de vehículos y muertes, pero no ofrece población para calcular vehículos por persona.",
+              "p": "El gráfico compara proporciones de vehículos y muertes, pero no ofrece población para calcular vehículos por persona.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, No presenta datos sobre la frecuencia de uso de vehículos particulares.",
+              "p": "No presenta datos sobre la frecuencia de uso de vehículos particulares.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, No presenta información sobre multas.",
+              "p": "No presenta información sobre multas.",
               "t": "Opción D"
             }
           ],
@@ -8079,15 +8079,15 @@
           "clave": "Las figuras muestran de forma visual datos descritos en la infografía, como la proporción de fallecidos por sexo. Su función es ilustrar la información presentada.",
           "no": [
             {
-              "p": "Pero, Las figuras no amplían el análisis ni desarrollan nuevos datos; representan visualmente la información existente.",
+              "p": "Las figuras no amplían el análisis ni desarrollan nuevos datos; representan visualmente la información existente.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, No añaden un tema ajeno; se relacionan con los datos que ya se presentan.",
+              "p": "No añaden un tema ajeno; se relacionan con los datos que ya se presentan.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, No cuentan casos particulares como ejemplos, sino que representan datos generales.",
+              "p": "No cuentan casos particulares como ejemplos, sino que representan datos generales.",
               "t": "Opción D"
             }
           ],
@@ -8230,15 +8230,15 @@
           "clave": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero La infografía no recomienda una modalidad específica de transporte.",
+              "p": "La infografía no recomienda una modalidad específica de transporte.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar.",
+              "p": "No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia.",
+              "p": "No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia.",
               "t": "Opción D"
             }
           ],
@@ -8396,15 +8396,15 @@
           "clave": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo.",
           "no": [
             {
-              "p": "Parece tentador a primera vista. Pero La infografía no plantea una protesta contra los vehículos ni argumentos ecológicos.",
+              "p": "La infografía no plantea una protesta contra los vehículos ni argumentos ecológicos.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No compara opciones de transporte público o movilidad alterna.",
+              "p": "No compara opciones de transporte público o movilidad alterna.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a primera vista. Pero No estudia asesinatos; trata de muertes causadas por accidentes de tránsito.",
+              "p": "No estudia asesinatos; trata de muertes causadas por accidentes de tránsito.",
               "t": "Opción D"
             }
           ],
@@ -12148,15 +12148,15 @@
           "clave": "La opción C identifica el conflicto entre la dimensión económica, vinculada a las industrias y el producto interno bruto, y la ambiental, relacionada con la contaminación.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero La educación se menciona por la cancelación de actividades escolares, pero no es el conflicto central de la propuesta económica descrita.",
+              "p": "La educación se menciona por la cancelación de actividades escolares, pero no es el conflicto central de la propuesta económica descrita.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La cultura no aparece como una dimensión afectada en el argumento.",
+              "p": "La cultura no aparece como una dimensión afectada en el argumento.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero No se presenta un conflicto cultural; el pasaje relaciona producción industrial y contaminación.",
+              "p": "No se presenta un conflicto cultural; el pasaje relaciona producción industrial y contaminación.",
               "t": "Opción D"
             }
           ],
@@ -12451,15 +12451,15 @@
           "clave": "Las temperaturas distintas impiden una comparación justa de las densidades entre líquidos.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero La tabla ya presenta densidades; cambiar el volumen no corrige la diferencia de temperaturas entre líquidos.",
+              "p": "La tabla ya presenta densidades; cambiar el volumen no corrige la diferencia de temperaturas entre líquidos.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Añadir mediciones a temperaturas más altas no resuelve que las mediciones actuales se hicieron en condiciones distintas.",
+              "p": "Añadir mediciones a temperaturas más altas no resuelve que las mediciones actuales se hicieron en condiciones distintas.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Que los líquidos tengan propiedades diferentes no impide comparar sus densidades si se controlan las condiciones del experimento.",
+              "p": "Que los líquidos tengan propiedades diferentes no impide comparar sus densidades si se controlan las condiciones del experimento.",
               "t": "Opción D"
             }
           ],
@@ -12626,9 +12626,9 @@
       "correcta": 0,
       "distractores": [
         "",
-        "El acero puede tener composición variable, así que no es sustancia pura.",
-        "La uniformidad de una muestra no significa que sea un compuesto puro.",
-        "Una mezcla uniforme es homogénea, no heterogénea."
+        "Sustancia pura exige composición fija. El acero tiene cantidades distintas de hierro y carbono entre muestras, así que no es compuesto aunque se vea uniforme.",
+        "Heterogénea significa que se distinguen fases a simple vista; el acero es uniforme, por tanto homogénea. Tener varios elementos no basta para ser heterogénea.",
+        "Concluye «sustancia pura» a partir de un dato que dice lo contrario: que las muestras tengan composición diferente indica mezcla de composición variable."
       ],
       "enunciado": "La materia puede clasificarse analizando su composición como se muestra en el diagrama. El acero es un material que contiene los elementos hierro y carbono. Dos muestras distintas de acero tienen diferentes cantidades de estos elementos pero ambas muestras tienen composición uniforme. Usando el diagrama anterior, ¿cómo clasificaría al acero?",
       "estadoHoja": "revisada",
@@ -12640,16 +12640,16 @@
           "clave": "El acero combina varios elementos en proporciones variables y distribuidas uniformemente.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero El acero puede tener composición variable, así que no es sustancia pura.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Sustancia pura exige composición fija. El acero tiene cantidades distintas de hierro y carbono entre muestras, así que no es compuesto aunque se vea uniforme."
             },
             {
-              "p": "Parece tentador a simple vista. Pero La uniformidad de una muestra no significa que sea un compuesto puro.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Heterogénea significa que se distinguen fases a simple vista; el acero es uniforme, por tanto homogénea. Tener varios elementos no basta para ser heterogénea."
             },
             {
-              "p": "Parece tentador a simple vista. Pero Una mezcla uniforme es homogénea, no heterogénea.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Concluye «sustancia pura» a partir de un dato que dice lo contrario: que las muestras tengan composición diferente indica mezcla de composición variable."
             }
           ],
           "pistas": [
@@ -12693,17 +12693,17 @@
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B el acero puede tener composición variable, así que no es sustancia pura. La descartamos."
+              "t": "La opción B no corresponde: Sustancia pura exige composición fija. El acero tiene cantidades distintas de hierro y carbono entre muestras, así que no es compuesto aunque se vea uniforme."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C la uniformidad de una muestra no significa que sea un compuesto puro. La descartamos."
+              "t": "La opción C no corresponde: Heterogénea significa que se distinguen fases a simple vista; el acero es uniforme, por tanto homogénea. Tener varios elementos no basta para ser heterogénea."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D una mezcla uniforme es homogénea, no heterogénea. La descartamos."
+              "t": "La opción D no corresponde: Concluye «sustancia pura» a partir de un dato que dice lo contrario: que las muestras tengan composición diferente indica mezcla de composición variable."
             },
             {
               "a": "o:A:ok",
@@ -12794,15 +12794,15 @@
           "clave": "Las temperaturas de cambio de estado de la curva corresponden a las del agua.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada.",
               "t": "Opción D"
             }
           ],
@@ -12983,15 +12983,15 @@
           "clave": "La velocidad de formación de $Z$ depende de la concentración de $X$, pero no cambia al variar $Y$ en el ensayo.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$.",
               "t": "Opción D"
             }
           ],
@@ -13172,15 +13172,15 @@
           "clave": "El pico de $120\\,\\mathrm{kDa}$ se ubica entre veinticinco y treinta y cinco minutos.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero Este intervalo ocurre después del pico señalado en la gráfica.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero Este intervalo ocurre después del pico señalado en la gráfica.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Puede sonar razonable si se ignora una pista. Pero La proteína se detecta antes de los cuarenta y cinco minutos, no después.",
+              "p": "Puede sonar razonable si se ignora una pista. Pero La proteína se detecta antes de los cuarenta y cinco minutos, no después.",
               "t": "Opción D"
             }
           ],
@@ -13361,15 +13361,15 @@
           "clave": "La variable independiente es la concentración; la conductividad es la respuesta medida.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero El experimento no cambia la temperatura.",
+              "p": "El experimento no cambia la temperatura.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La conductividad se mide; no es la variable que se modifica para explicar la concentración.",
+              "p": "La conductividad se mide; no es la variable que se modifica para explicar la concentración.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero No se modifica la carga de los iones.",
+              "p": "No se modifica la carga de los iones.",
               "t": "Opción C"
             }
           ],
@@ -13508,15 +13508,15 @@
           "clave": "Los resultados indican una mezcla de aldehído y ácido carboxílico derivados del alcohol primario.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Parece razonable si se omite una pista del modelo. Pero Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido.",
+              "p": "Parece razonable si se omite una pista del modelo. Pero Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido.",
               "t": "Opción D"
             }
           ],
@@ -13696,15 +13696,15 @@
           "clave": "El ácido nítrico representa cincuenta y seis por ciento de la solución. El ácido sulfúrico está al setenta y ocho por ciento, por eso tiene la concentración mayor.",
           "no": [
             {
-              "p": "Pero, A compara volúmenes absolutos y no las proporciones de ácido en cada solución.",
+              "p": "A compara volúmenes absolutos y no las proporciones de ácido en cada solución.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, C confunde el volumen de ácido con la concentración porcentual.",
+              "p": "C confunde el volumen de ácido con la concentración porcentual.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, D infiere la concentración a partir del volumen total de solución, no de la proporción.",
+              "p": "D infiere la concentración a partir del volumen total de solución, no de la proporción.",
               "t": "Opción D"
             }
           ],
@@ -13842,15 +13842,15 @@
           "clave": "La fuerza de una carga positiva igual se aleja; la de una carga negativa opuesta apunta hacia ella.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero No corresponde al fenómeno físico o químico evaluado para la opción B.",
+              "p": "No corresponde al fenómeno físico o químico evaluado para la opción B.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La fuerza de la carga negativa debe dirigirse hacia ella, no alejarse.",
+              "p": "La fuerza de la carga negativa debe dirigirse hacia ella, no alejarse.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La atracción hacia la carga negativa apunta hacia abajo, no hacia arriba.",
+              "p": "La atracción hacia la carga negativa apunta hacia abajo, no hacia arriba.",
               "t": "Opción D"
             }
           ],
@@ -13981,9 +13981,9 @@
       "bloque": "cfi-energia-montana-rusa",
       "correcta": 3,
       "distractores": [
-        "A coloca el vagón alto en t1 y bajo en t2, contrario a la gráfica.",
-        "B no presenta el máximo de altura requerido en t2.",
-        "C ubica el vagón alto en t2, pero lo mantiene descendiendo en t4 en vez de dejarlo en una plataforma intermedia.",
+        "A pone el vagón alto en t1 y bajo en t2: invierte la secuencia; la gráfica muestra energía baja en t1 y la mayor altura en t2.",
+        "B mantiene el vagón abajo hasta t3 y solo sube en t4; la gráfica ya alcanza su valor máximo en t2, no al final.",
+        "C asciende hasta la cima en t2, pero luego sigue descendiendo en t3 y t4: no repite un nivel bajo en t3 ni termina en una plataforma intermedia en t4.",
         ""
       ],
       "enunciado": "Un estudiante midió la energía potencial de un vagón en una montaña rusa. La gráfica representa los datos obtenidos por el estudiante. De los siguientes modelos de montaña rusa, ¿cuál explica la gráfica obtenida por el estudiante?",
@@ -13996,16 +13996,16 @@
           "clave": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia.",
           "no": [
             {
-              "p": "Pero, A invierte las alturas relativas de primer instante y segundo instante.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "A pone el vagón alto en t1 y bajo en t2: invierte la secuencia; la gráfica muestra energía baja en t1 y la mayor altura en t2."
             },
             {
-              "p": "Pero, B no presenta la altura máxima en segundo instante.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "B mantiene el vagón abajo hasta t3 y solo sube en t4; la gráfica ya alcanza su valor máximo en t2, no al final."
             },
             {
-              "p": "Pero, C no termina en una posición intermedia como indica la gráfica.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "C asciende hasta la cima en t2, pero luego sigue descendiendo en t3 y t4: no repite un nivel bajo en t3 ni termina en una plataforma intermedia en t4."
             }
           ],
           "pistas": [
@@ -14043,17 +14043,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "A invierte las alturas relativas de primer instante y segundo instante."
+              "t": "La opción A no corresponde: A pone el vagón alto en t1 y bajo en t2: invierte la secuencia; la gráfica muestra energía baja en t1 y la mayor altura en t2."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "B no presenta la altura máxima en segundo instante."
+              "t": "La opción B no corresponde: B mantiene el vagón abajo hasta t3 y solo sube en t4; la gráfica ya alcanza su valor máximo en t2, no al final."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "C no termina en una posición intermedia como indica la gráfica."
+              "t": "La opción C no corresponde: C asciende hasta la cima en t2, pero luego sigue descendiendo en t3 y t4: no repite un nivel bajo en t3 ni termina en una plataforma intermedia en t4."
             },
             {
               "a": "o:D:ok",
@@ -14141,15 +14141,15 @@
           "clave": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius.",
           "no": [
             {
-              "p": "Pero, A duplica el aumento de temperatura, aunque también se duplicó la cantidad de agua.",
+              "p": "A duplica el aumento de temperatura, aunque también se duplicó la cantidad de agua.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, B mantiene el aumento de dos grados observado para la mitad de agua.",
+              "p": "B mantiene el aumento de dos grados observado para la mitad de agua.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, D supone que la temperatura no cambia pese al calentamiento.",
+              "p": "D supone que la temperatura no cambia pese al calentamiento.",
               "t": "Opción D"
             }
           ],
@@ -14287,15 +14287,15 @@
           "clave": "Las personas deben moverse hacia adelante y atrás, en la dirección de propagación.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal.",
+              "p": "Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal.",
+              "p": "Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila.",
+              "p": "Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila.",
               "t": "Opción C"
             }
           ],
@@ -14476,15 +14476,15 @@
           "clave": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso.",
           "no": [
             {
-              "p": "Pero, El peso no cambia cuando se sopla aire por el tubo.",
+              "p": "El peso no cambia cuando se sopla aire por el tubo.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, Si la fuerza del aire igualara al peso, la fuerza neta sería cero.",
+              "p": "Si la fuerza del aire igualara al peso, la fuerza neta sería cero.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, Si el peso superara la fuerza del aire, la aceleración sería hacia abajo.",
+              "p": "Si el peso superara la fuerza del aire, la aceleración sería hacia abajo.",
               "t": "Opción C"
             }
           ],
@@ -14622,15 +14622,15 @@
           "clave": "El objeto no aporta momento horizontal al caer. Después del choque, la misma cantidad de movimiento horizontal corresponde al carro y al objeto, así que la rapidez disminuye al aumentar la masa que se desplaza.",
           "no": [
             {
-              "p": "Pero, B atribuye al objeto una velocidad horizontal que el enunciado no indica.",
+              "p": "B atribuye al objeto una velocidad horizontal que el enunciado no indica.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, C supone un impulso horizontal adicional que no está presente.",
+              "p": "C supone un impulso horizontal adicional que no está presente.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, D ignora que el objeto queda dentro del carro y aumenta la masa en movimiento.",
+              "p": "D ignora que el objeto queda dentro del carro y aumenta la masa en movimiento.",
               "t": "Opción D"
             }
           ],
@@ -14768,15 +14768,15 @@
           "clave": "La refracción cambia la dirección de los rayos y desplaza la imagen aparente hacia arriba.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero La refracción desplaza la imagen aparente hacia arriba, no hacia abajo.",
+              "p": "La refracción desplaza la imagen aparente hacia arriba, no hacia abajo.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero El rayo sí cambia de dirección al entrar al agua.",
+              "p": "El rayo sí cambia de dirección al entrar al agua.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La imagen no se invierte; cambia su posición aparente.",
+              "p": "La imagen no se invierte; cambia su posición aparente.",
               "t": "Opción D"
             }
           ],
@@ -14922,15 +14922,15 @@
           "clave": "La gráfica B asigna correctamente los ejes y conserva la tendencia creciente de la tabla.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal.",
+              "p": "Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Intercambia los ejes y además invierte el orden de los valores de velocidad.",
+              "p": "Intercambia los ejes y además invierte el orden de los valores de velocidad.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical.",
+              "p": "Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical.",
               "t": "Opción D"
             }
           ],
@@ -15111,15 +15111,15 @@
           "clave": "Los grupos recibieron la misma tarea, pero el grupo que hizo ejercicio encontró el recipiente con un recorrido más directo. El resultado es compatible con una mejora de la memoria espacial.",
           "no": [
             {
-              "p": "Pero, A no explica la diferencia, porque ambos grupos podían usar el triángulo como señal.",
+              "p": "A no explica la diferencia, porque ambos grupos podían usar el triángulo como señal.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, B atribuye el resultado a la rapidez al nadar, aunque se evalúa recordar una ubicación.",
+              "p": "B atribuye el resultado a la rapidez al nadar, aunque se evalúa recordar una ubicación.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, C ambos grupos hicieron la misma búsqueda durante el mismo tiempo.",
+              "p": "C ambos grupos hicieron la misma búsqueda durante el mismo tiempo.",
               "t": "Opción C"
             }
           ],
@@ -15257,15 +15257,15 @@
           "clave": "El cuarto ensayo combina Lugol con una solución conocida de almidón y no contiene papa. Así permite observar el color esperado cuando hay almidón.",
           "no": [
             {
-              "p": "Pero, A el ensayo busca detectar almidón, no hacerlo soluble.",
+              "p": "A el ensayo busca detectar almidón, no hacerlo soluble.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, B el colorante está en otros ensayos; el control muestra cómo se ve la reacción positiva.",
+              "p": "B el colorante está en otros ensayos; el control muestra cómo se ve la reacción positiva.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, C la tabla no plantea comparar cantidades de almidón entre la papa y la solución.",
+              "p": "C la tabla no plantea comparar cantidades de almidón entre la papa y la solución.",
               "t": "Opción C"
             }
           ],
@@ -15403,15 +15403,15 @@
           "clave": "La descendencia con cuello corto requiere que cada padre heterocigoto haya aportado el alelo recesivo.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos.",
+              "p": "Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo.",
+              "p": "Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Dos padres homocigotos dominantes no tendrían descendencia de cuello corto.",
+              "p": "Dos padres homocigotos dominantes no tendrían descendencia de cuello corto.",
               "t": "Opción D"
             }
           ],
@@ -15585,15 +15585,15 @@
           "clave": "La investigación natural puede observar el ciclo de la polilla y su efecto sobre las larvas.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero No corresponde al fenómeno físico o químico evaluado para la opción B.",
+              "p": "No corresponde al fenómeno físico o químico evaluado para la opción B.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La economía de los apicultores corresponde a una pregunta económica.",
+              "p": "La economía de los apicultores corresponde a una pregunta económica.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La morfología de las abejas no identifica cuándo las afecta la polilla.",
+              "p": "La morfología de las abejas no identifica cuándo las afecta la polilla.",
               "t": "Opción D"
             }
           ],
@@ -15732,15 +15732,15 @@
           "clave": "La fotosíntesis sintetiza una molécula compleja; por eso es anabólica.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero No corresponde al fenómeno físico o químico evaluado para la opción B.",
+              "p": "No corresponde al fenómeno físico o químico evaluado para la opción B.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Necesitar energía no convierte la síntesis de glucosa en catabolismo.",
+              "p": "Necesitar energía no convierte la síntesis de glucosa en catabolismo.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La respiración descompone glucosa; no se clasifica como anabolismo por producir ATP.",
+              "p": "La respiración descompone glucosa; no se clasifica como anabolismo por producir ATP.",
               "t": "Opción D"
             }
           ],
@@ -15886,15 +15886,15 @@
           "clave": "La opción C muestra entrada de energía solar, entrada de materia orgánica y salidas de materia del ecosistema.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Muestra entrada de energía solar, pero no intercambios de materia con el exterior.",
+              "p": "Muestra entrada de energía solar, pero no intercambios de materia con el exterior.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Muestra entradas de energía y materia, pero no una salida de materia del lago.",
+              "p": "Muestra entradas de energía y materia, pero no una salida de materia del lago.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C.",
+              "p": "La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C.",
               "t": "Opción D"
             }
           ],
@@ -16074,15 +16074,15 @@
           "clave": "Antes del codón de terminación hay seis tripletes que codifican aminoácidos.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$.",
+              "p": "Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido.",
+              "p": "Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido.",
               "t": "Opción B"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal.",
+              "p": "Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal.",
               "t": "Opción D"
             }
           ],
@@ -16255,15 +16255,15 @@
           "clave": "Separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al agua.",
           "no": [
             {
-              "p": "Parece tentador a simple vista. Pero Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente.",
+              "p": "Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente.",
               "t": "Opción A"
             },
             {
-              "p": "Parece tentador a simple vista. Pero La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado.",
+              "p": "La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado.",
               "t": "Opción C"
             },
             {
-              "p": "Parece tentador a simple vista. Pero Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua.",
+              "p": "Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua.",
               "t": "Opción D"
             }
           ],
@@ -16435,11 +16435,11 @@
           "clave": "La clave oficial es B, pero no hay evidencia contextual suficiente para justificarla.",
           "no": [
             {
-              "p": "Pero, La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones.",
+              "p": "La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones.",
+              "p": "La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones.",
               "t": "Opción C"
             }
           ],
@@ -16569,11 +16569,11 @@
           "clave": "El aviso anuncia juguetes y enumera productos. Una tienda es el lugar que corresponde.",
           "no": [
             {
-              "p": "Pero, {{in a house}} puede ser un lugar donde se usan juguetes, pero el aviso anuncia productos.",
+              "p": "{{in a house}} puede ser un lugar donde se usan juguetes, pero el aviso anuncia productos.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, {{in a zoo}} no corresponde a una tienda de juguetes.",
+              "p": "{{in a zoo}} no corresponde a una tienda de juguetes.",
               "t": "Opción C"
             }
           ],
@@ -16703,11 +16703,11 @@
           "clave": "El aviso pide elegir algo para leer. Una estantería de libros corresponde a esa situación.",
           "no": [
             {
-              "p": "Pero, {{on a board}} puede mostrar instrucciones, pero no libros para elegir.",
+              "p": "{{on a board}} puede mostrar instrucciones, pero no libros para elegir.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, {{on a computer}} permite leer, pero el aviso invita a escoger un ejemplar.",
+              "p": "{{on a computer}} permite leer, pero el aviso invita a escoger un ejemplar.",
               "t": "Opción B"
             }
           ],
@@ -16843,27 +16843,27 @@
           "clave": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
           "no": [
             {
-              "p": "Pero, {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción D"
             },
             {
-              "p": "Pero, {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción E"
             },
             {
-              "p": "Pero, {{train}} circula por vías, pero esa característica no corresponde a llevar cosas.",
+              "p": "{{train}} circula por vías, pero esa característica no corresponde a llevar cosas.",
               "t": "Opción G"
             }
           ],
@@ -17047,14 +17047,14 @@
       "bloque": "cfi-vehicle-bank",
       "correcta": 4,
       "distractores": [
-        "A bike (bicicleta) está diseñada normalmente para un solo ciclista a pedales.",
+        "Una bicicleta va por carretera, pero la definición apunta a un vehículo motorizado para conductor y un acompañante; la bike es de pedales y normalmente de un solo ocupante.",
         "A boat navega sobre el agua, no por carretera (by road).",
         "A bus transporta a decenas de pasajeros, no solo a una o dos personas.",
         "A helicopter vuela por el aire, no se desplaza por carretera.",
         "",
         "Un avión es un medio de transporte aéreo para cientos de viajeros, no terrestre.",
-        "A truck es un vehículo pesado de carga.",
-        "A train circula por vías férreas, no por carretera."
+        "A truck sí va por carretera, pero es un vehículo pesado pensado para carga y no para uno o dos pasajeros de forma típica.",
+        "A train circula por vías férreas y lleva muchos pasajeros, no va por carretera."
       ],
       "enunciado": "This is for only one or two people to go by road.",
       "estadoHoja": "revisada",
@@ -17066,12 +17066,32 @@
           "clave": "La clave oficial orienta la revisión, pero no reemplaza una solución razonada.",
           "no": [
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Una bicicleta va por carretera, pero la definición apunta a un vehículo motorizado para conductor y un acompañante; la bike es de pedales y normalmente de un solo ocupante."
             },
             {
-              "p": "Parece una alternativa posible. Pero falta cotejarla con el original; no se debe concluir todavía.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "A boat navega sobre el agua, no por carretera (by road)."
+            },
+            {
+              "t": "Opción C",
+              "p": "A bus transporta a decenas de pasajeros, no solo a una o dos personas."
+            },
+            {
+              "t": "Opción D",
+              "p": "A helicopter vuela por el aire, no se desplaza por carretera."
+            },
+            {
+              "t": "Opción F",
+              "p": "Un avión es un medio de transporte aéreo para cientos de viajeros, no terrestre."
+            },
+            {
+              "t": "Opción G",
+              "p": "A truck sí va por carretera, pero es un vehículo pesado pensado para carga y no para uno o dos pasajeros de forma típica."
+            },
+            {
+              "t": "Opción H",
+              "p": "A train circula por vías férreas y lleva muchos pasajeros, no va por carretera."
             }
           ],
           "pistas": [
@@ -17115,37 +17135,37 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción A no corresponde: Una bicicleta va por carretera, pero la definición apunta a un vehículo motorizado para conductor y un acompañante; la bike es de pedales y normalmente de un solo ocupante."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción B no corresponde: A boat navega sobre el agua, no por carretera (by road)."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción C no corresponde: A bus transporta a decenas de pasajeros, no solo a una o dos personas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción D no corresponde: A helicopter vuela por el aire, no se desplaza por carretera."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción F no corresponde: Un avión es un medio de transporte aéreo para cientos de viajeros, no terrestre."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción G no corresponde: A truck sí va por carretera, pero es un vehículo pesado pensado para carga y no para uno o dos pasajeros de forma típica."
             },
             {
               "a": "o:H:no",
               "k": "err",
-              "t": "La opción H queda señalada por la clave, pero falta verificar en el original por qué no responde la pregunta."
+              "t": "La opción H no corresponde: A train circula por vías férreas y lleva muchos pasajeros, no va por carretera."
             },
             {
               "a": "o:E:ok",
@@ -17232,27 +17252,27 @@
           "clave": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
           "no": [
             {
-              "p": "Pero, {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, {{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción D"
             },
             {
-              "p": "Pero, {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción E"
             },
             {
-              "p": "Pero, {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire.",
+              "p": "{{train}} circula por vías, pero esa característica no corresponde a viajar por el aire.",
               "t": "Opción G"
             }
           ],
@@ -17449,11 +17469,11 @@
           "clave": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
           "no": [
             {
-              "p": "Pero, No responde a la opinión; expresa esperanza.",
+              "p": "No responde a la opinión; expresa esperanza.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, No concuerda con la opinión ni responde de forma natural a lo dicho.",
+              "p": "No concuerda con la opinión ni responde de forma natural a lo dicho.",
               "t": "Opción C"
             }
           ],
@@ -17605,11 +17625,11 @@
           "clave": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
           "no": [
             {
-              "p": "Pero, La natación no responde a la noticia del viaje.",
+              "p": "La natación no responde a la noticia del viaje.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, No tiene relación con el anuncio de las vacaciones.",
+              "p": "No tiene relación con el anuncio de las vacaciones.",
               "t": "Opción C"
             }
           ],
@@ -17761,11 +17781,11 @@
           "clave": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche.",
           "no": [
             {
-              "p": "Pero, {{Did you accept?}} pregunta si alguien aceptó algo; el enunciado no presenta una propuesta.",
+              "p": "{{Did you accept?}} pregunta si alguien aceptó algo; el enunciado no presenta una propuesta.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, {{Did you understand?}} pregunta si alguien entendió algo; no responde a la información sobre la lluvia.",
+              "p": "{{Did you understand?}} pregunta si alguien entendió algo; no responde a la información sobre la lluvia.",
               "t": "Opción B"
             }
           ],
@@ -18643,11 +18663,11 @@
           "clave": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa.",
           "no": [
             {
-              "p": "Pero, La pista del pasaje identifica al pintor como {{French}}.",
+              "p": "La pista del pasaje identifica al pintor como {{French}}.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, La pista del pasaje identifica al pintor como {{French}}.",
+              "p": "La pista del pasaje identifica al pintor como {{French}}.",
               "t": "Opción B"
             }
           ],
@@ -18800,11 +18820,11 @@
           "clave": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
           "no": [
             {
-              "p": "Pero, El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad.",
+              "p": "El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad.",
+              "p": "El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad.",
               "t": "Opción C"
             }
           ],
@@ -18957,11 +18977,11 @@
           "clave": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
           "no": [
             {
-              "p": "Pero, La frecuencia explícita es {{Every Sunday morning}}, una vez por semana.",
+              "p": "La frecuencia explícita es {{Every Sunday morning}}, una vez por semana.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, La frecuencia explícita es {{Every Sunday morning}}, una vez por semana.",
+              "p": "La frecuencia explícita es {{Every Sunday morning}}, una vez por semana.",
               "t": "Opción C"
             }
           ],
@@ -19114,11 +19134,11 @@
           "clave": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
           "no": [
             {
-              "p": "Pero, El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas.",
+              "p": "El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas.",
+              "p": "El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas.",
               "t": "Opción C"
             }
           ],
@@ -19271,11 +19291,11 @@
           "clave": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
           "no": [
             {
-              "p": "Pero, El texto no dice que el pintor decidiera que ella dejara de pintar.",
+              "p": "El texto no dice que el pintor decidiera que ella dejara de pintar.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar.",
+              "p": "La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar.",
               "t": "Opción C"
             }
           ],
@@ -19429,15 +19449,15 @@
           "clave": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
           "no": [
             {
-              "p": "Pero, El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino.",
+              "p": "El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita.",
+              "p": "El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita.",
               "t": "Opción C"
             },
             {
-              "p": "Pero, El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia.",
+              "p": "El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia.",
               "t": "Opción D"
             }
           ],
@@ -19602,15 +19622,15 @@
           "clave": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
           "no": [
             {
-              "p": "Pero, El artículo no explica cómo cultivar café.",
+              "p": "El artículo no explica cómo cultivar café.",
               "t": "Opción A"
             },
             {
-              "p": "Pero, No se indica cuál es la mejor época para visitar la finca.",
+              "p": "No se indica cuál es la mejor época para visitar la finca.",
               "t": "Opción B"
             },
             {
-              "p": "Pero, El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas.",
+              "p": "El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas.",
               "t": "Opción D"
             }
           ],
@@ -19775,15 +19795,15 @@
           "clave": "{{The sentence asks for the reason people exchange gifts and cards on Valentine’s Day, so “why” completes the question.}}",
           "no": [
             {
-              "p": "Pero, {{where}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{where}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{where}}"
             },
             {
-              "p": "Pero, {{when}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{when}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{when}}"
             },
             {
-              "p": "Pero, {{what}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{what}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{what}}"
             }
           ],
@@ -19915,15 +19935,15 @@
           "clave": "{{The text introduces a traditional account of Valentine’s origin; “stories” is the fitting noun.}}",
           "no": [
             {
-              "p": "Pero, {{essays}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{essays}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{essays}}"
             },
             {
-              "p": "Pero, {{reports}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{reports}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{reports}}"
             },
             {
-              "p": "Pero, {{letters}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{letters}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{letters}}"
             }
           ],
@@ -20061,15 +20081,15 @@
           "clave": "{{The phrasal verb is “find out,” meaning to discover the secret weddings.}}",
           "no": [
             {
-              "p": "Pero, {{off}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{off}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{off}}"
             },
             {
-              "p": "Pero, {{in}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{in}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{in}}"
             },
             {
-              "p": "Pero, {{at}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{at}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{at}}"
             }
           ],
@@ -20207,15 +20227,15 @@
           "clave": "{{“Almost 90%” expresses a proportion close to ninety percent and fits the sentence.}}",
           "no": [
             {
-              "p": "Pero, {{only}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{only}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{only}}"
             },
             {
-              "p": "Pero, {{hardly}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{hardly}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{hardly}}"
             },
             {
-              "p": "Pero, {{just}} no corresponde con la información o construcción gramatical del texto.",
+              "p": "{{just}} no corresponde con la información o construcción gramatical del texto.",
               "t": "{{just}}"
             }
           ],
