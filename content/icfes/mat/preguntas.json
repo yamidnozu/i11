@@ -1444,11 +1444,11 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 2,
+      "correcta": 0,
       "distractores": [
-        "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir.",
-        "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta.",
         "",
+        "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta.",
+        "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir.",
         "Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
       ],
       "enunciado": "Un grupo de montañistas sabe que cada vez que aumenta la altitud en 100 m, la temperatura disminuye en 1 °C. Si el grupo se encuentra a una altitud de 1.000 m, donde la temperatura es de 20 °C, ¿cuál de las siguientes expresiones les permite determinar la temperatura que habrá cuando se encuentren a 4.000 m de altitud?\n Altitud A. Temperatura = + 10 100\n B. Temperatura = − Altitud × 100 + 30\n Altitud C. Temperatura = − + 30 100\n D. Temperatura = Altitud × 100 + 10\n 9\n Cuadernillo de preguntas . Prueba Matemáticas\n\n\n RESPONDE LAS PREGUNTAS 9 A 13 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN\n Para transportar mango y banano desde un pueblo cercano a dos ciudades, W y Z, un comerciante utiliza tres (3) camiones con capacidad de 5 toneladas cada uno; por cada camión contrata dos trabajadores en cada viaje. El comerciante compra a $ 400.000 la tonelada de banano y a $ 500.000, la de mango. En la tabla se muestra el precio de venta por tonelada de cada producto y los gastos de transporte y de trabajadores para cada ciudad.\n Precio de venta Precio de venta Pago por Costo transporte Ciudad tonelada de tonelada de trabajador por por camión banano mango viaje W $ 1.000.000 $ 1.300.000 $ 150.000 $ 180.000 Z $ 1.200.000 $ 1.350.000 $ 180.000 $ 200.000",
@@ -1462,12 +1462,12 @@
           "clave": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
           "no": [
             {
-              "t": "Opción A",
-              "p": "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
-            },
-            {
               "t": "Opción B",
               "p": "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
+            },
+            {
+              "t": "Opción C",
+              "p": "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
             },
             {
               "t": "Opción D",
@@ -1510,8 +1510,8 @@
               "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -1524,9 +1524,9 @@
               "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
             },
             {
-              "a": "o:A:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:B:no",
@@ -1539,8 +1539,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -1559,9 +1559,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:B:no",
@@ -1574,8 +1574,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -1611,9 +1611,9 @@
       "id": "mat-i008",
       "nivel": 2,
       "opciones": [
-        "$T=(\\text{Altitud}/100)+10$",
-        "$T=-100\\,\\text{Altitud}+30$",
         "$T=-(\\text{Altitud}/100)+30$",
+        "$T=-100\\,\\text{Altitud}+30$",
+        "$T=(\\text{Altitud}/100)+10$",
         "$T=100\\,\\text{Altitud}+10$"
       ],
       "origen": "icfes",
@@ -2755,12 +2755,12 @@
       "area": "matematicas",
       "competencia": "Interpretación y representación",
       "competenciaId": "interpretacion_representacion",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "Divide el ángulo entre la longitud de los postes sin base trigonométrica.",
         "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad.",
-        "",
-        "Confunde el ángulo de elevación con su complemento respecto a la vertical."
+        "Confunde el ángulo de elevación con su complemento respecto a la vertical.",
+        ""
       ],
       "enunciado": "Las sombras proyectadas por dos postes paralelos de 10 metros y 5 metros se muestran en la figura. Poste 1\n\n 10 metros Poste 2 5 metros\n\n\n = 30¼°\n\n Figura\n El ángulo entre la acera horizontal y la sombra del poste 1 es α = 30º.\n De acuerdo con esto, se puede afirmar que el ángulo entre la acera horizontal y la sombra del poste 2 es",
       "estadoHoja": "revisada",
@@ -2797,7 +2797,7 @@
               "p": "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
             },
             {
-              "t": "Opción D",
+              "t": "Opción C",
               "p": "Confunde el ángulo de elevación con su complemento respecto a la vertical."
             }
           ],
@@ -2837,8 +2837,8 @@
               "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "2": [
@@ -2861,13 +2861,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "3": [
@@ -2896,13 +2896,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ]
         },
@@ -2940,8 +2940,8 @@
       "opciones": [
         "β = 5°.",
         "β = 15°.",
-        "β = 30°.",
-        "β = 60°."
+        "β = 60°.",
+        "β = 30°."
       ],
       "origen": "icfes",
       "parte": "Pregunta 15",
@@ -4276,10 +4276,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto.",
         "",
+        "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto.",
         "Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°.",
         "Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
       ],
@@ -4310,7 +4310,7 @@
           "clave": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
             },
             {
@@ -4358,8 +4358,8 @@
               "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -4372,9 +4372,9 @@
               "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -4387,8 +4387,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -4407,9 +4407,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -4422,8 +4422,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -4459,8 +4459,8 @@
       "id": "mat-i023",
       "nivel": 2,
       "opciones": [
-        "$16$ cm",
         "$32/\\sqrt3$ cm",
+        "$16$ cm",
         "$27$ cm",
         "$64/\\sqrt3$ cm"
       ],
@@ -5966,10 +5966,10 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3.",
         "",
+        "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3.",
         "Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática.",
         "Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
       ],
@@ -6000,7 +6000,7 @@
           "clave": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
             },
             {
@@ -6048,8 +6048,8 @@
               "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -6062,9 +6062,9 @@
               "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6077,8 +6077,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -6097,9 +6097,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6112,8 +6112,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -6149,8 +6149,8 @@
       "id": "mat-i031",
       "nivel": 3,
       "opciones": [
-        "Solo Nelson y Óscar.",
         "Solo María y Nelson.",
+        "Solo Nelson y Óscar.",
         "Solamente Óscar.",
         "Solamente María."
       ],
@@ -6164,10 +6164,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos.",
         "",
+        "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos.",
         "Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x.",
         "Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
       ],
@@ -6175,14 +6175,14 @@
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+      "explicacion": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
       "fuente": "Icfes (2026). 01 Matematicas Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 32.",
       "hoja": {
         "enfoque": {
-          "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+          "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
             },
             {
@@ -6212,7 +6212,7 @@
               "t": "Comparo el resultado con las opciones y verifico su sentido."
             }
           ],
-          "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+          "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
           "tema": "Matemáticas: otros dos vértices"
         },
         "guion": {
@@ -6227,11 +6227,11 @@
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -6241,12 +6241,12 @@
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6259,19 +6259,19 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
             {
               "a": "p:0",
               "k": "ana",
-              "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
+              "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
             },
             {
               "a": "p:2",
@@ -6279,9 +6279,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6294,8 +6294,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -6319,20 +6319,20 @@
             "lineas": [
               "(x,y)\\mapsto(-x,y)"
             ],
-            "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+            "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
             "titulo": "Resolvemos con los datos"
           },
           {
             "k": "check",
-            "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
+            "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
           }
         ]
       },
       "id": "mat-i032",
       "nivel": 2,
       "opciones": [
-        "(8, 2) y (2, 4).",
         "(2, 8) y (4, 2).",
+        "(8, 2) y (2, 4).",
         "(−2, –4) y (−8, −2).",
         "(−4, −2) y (−2, −8)."
       ],
@@ -6592,12 +6592,12 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada.",
         "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física.",
-        "",
-        "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
+        "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100).",
+        ""
       ],
       "enunciado": "Una regla usada en física indica que, para aumentar el nivel de intensidad del sonido en 10 dB (dB es decibelios, la unidad de medida del nivel de intensidad del sonido), es necesario que la intensidad medida se multiplique por 10. Ramiro es el encargado de aumentar en 20 dB la medida del nivel de intensidad del sistema de sonido de un evento y, según su interpretación de la regla, multiplica por 20 la intensidad actual del sistema. ¿Es correcta su interpretación?",
       "estadoHoja": "revisada",
@@ -6618,7 +6618,7 @@
               "p": "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
             },
             {
-              "t": "Opción D",
+              "t": "Opción C",
               "p": "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
             }
           ],
@@ -6658,8 +6658,8 @@
               "t": "Cada aumento de diez decibelios multiplica la intensidad por diez. Dos aumentos de diez decibelios multiplican por $10\\cdot10=100$, no por veinte."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "2": [
@@ -6682,13 +6682,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "3": [
@@ -6717,13 +6717,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ]
         },
@@ -6761,8 +6761,8 @@
       "opciones": [
         "No, porque la regla no considera aumentos de 20 dB, solamente de 10 dB; no hay consideraciones para aumentos mayores.",
         "Sí, porque la regla presentada indica que para aumentar en x unidades el nivel de la medida de intensidad se agrega x a la intensidad.",
-        "No, porque aumentar 20 dB equivale a aumentar 10 dB dos veces, es decir, multiplicar por 10 la intensidad dos veces; en total, multiplicar por 100.",
-        "Sí, porque el resultado de multiplicar dos veces por 10 la intensidad es multiplicarla por 20; así, se ahorra un paso y obtiene el resultado correcto."
+        "Sí, porque el resultado de multiplicar dos veces por 10 la intensidad es multiplicarla por 20; así, se ahorra un paso y obtiene el resultado correcto.",
+        "No, porque aumentar 20 dB equivale a aumentar 10 dB dos veces, es decir, multiplicar por 10 la intensidad dos veces; en total, multiplicar por 100."
       ],
       "origen": "icfes",
       "parte": "Pregunta 34",
@@ -7884,10 +7884,10 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano.",
         "",
+        "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano.",
         "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°.",
         "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
       ],
@@ -7902,7 +7902,7 @@
           "clave": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
             },
             {
@@ -7950,8 +7950,8 @@
               "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -7964,9 +7964,9 @@
               "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -7979,8 +7979,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -7999,9 +7999,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8014,8 +8014,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -8051,8 +8051,8 @@
       "id": "mat-i041",
       "nivel": 3,
       "opciones": [
-        "Requerimiento 1.",
         "Requerimiento 2.",
+        "Requerimiento 1.",
         "Requerimiento 3.",
         "Requerimiento 4."
       ],
@@ -8563,10 +8563,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2).",
         "",
+        "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2).",
         "Calcula el área del círculo completo sin dividir entre los 10 sectores iguales.",
         "Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
       ],
@@ -8597,7 +8597,7 @@
           "clave": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2)."
             },
             {
@@ -8645,8 +8645,8 @@
               "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -8659,9 +8659,9 @@
               "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8674,8 +8674,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -8694,9 +8694,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8709,8 +8709,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ]
         },
@@ -8746,8 +8746,8 @@
       "id": "mat-i044",
       "nivel": 2,
       "opciones": [
-        "3,6 m2",
         "2,7 m2",
+        "3,6 m2",
         "9,0 m2",
         "1,8 m2"
       ],

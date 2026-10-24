@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cantidad relativa de muertes por accidentes de tránsito en función de la región",
-        "rol": "dato",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "se puede inferir",
-        "rol": "pide",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
-      },
-      {
-        "k": "idea",
-        "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
-      },
-      {
-        "k": "check",
-        "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la infografía de seguridad vial",
-      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "clave": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región.",
+      "no": [
+        {
+          "p": "El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país.",
+          "t": "Opción A"
+        },
+        {
+          "p": "Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad.",
+          "t": "Opción B"
+        },
+        {
+          "p": "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región.",
+          "t": "Opción C"
+        }
+      ],
+      "pistas": [
+        "Distingue las tasas y proporciones mostradas.",
+        "Revisa si la afirmación está respaldada por la infografía."
+      ],
       "plan": [
         {
           "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
@@ -41,28 +29,11 @@
           "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
         },
         {
-          "t": "Comprueba la opción C con el dato citado."
+          "t": "Comprueba la opción D con el dato citado."
         }
       ],
-      "pistas": [
-        "Distingue las tasas y proporciones mostradas.",
-        "Revisa si la afirmación está respaldada por la infografía."
-      ],
-      "clave": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país."
-        },
-        {
-          "t": "Opción B",
-          "p": "Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
-        },
-        {
-          "t": "Opción D",
-          "p": "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
-        }
-      ]
+      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "tema": "Interpretar la infografía de seguridad vial"
     },
     "guion": {
       "1": [
@@ -75,8 +46,8 @@
           "t": "Busca esa información en la infografía."
         },
         {
-          "a": "o:C:ok",
-          "t": "La respuesta es la opción C: El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D: El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
         }
       ],
       "2": [
@@ -91,13 +62,13 @@
           "t": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
         },
         {
-          "a": "o:D:no",
+          "a": "o:C:no",
           "k": "err",
           "t": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
         },
         {
-          "a": "o:C:ok",
-          "t": "La opción C concuerda con la información de la infografía."
+          "a": "o:D:ok",
+          "t": "La opción D concuerda con la información de la infografía."
         }
       ],
       "3": [
@@ -114,10 +85,39 @@
           "t": "Descarta las opciones que añaden datos que no están representados."
         },
         {
-          "a": "o:C:ok",
-          "t": "La respuesta es la opción C."
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "cantidad relativa de muertes por accidentes de tránsito en función de la región",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "se puede inferir",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
+      },
+      {
+        "k": "idea",
+        "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción D responde al enunciado y que las demás no lo hacen."
+      }
+    ]
   }
 }

@@ -1,112 +1,137 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "expresa un juicio de valor",
-        "rol": "pide",
-        "nota": "La pregunta pide reconocer una valoración.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
-      },
-      {
-        "k": "idea",
-        "texto": "Distingue entre describir hechos y calificar una obra o sus personajes."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción B responde al texto completo y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje.",
-      "que": "Distingue entre describir hechos y calificar una obra o sus personajes.",
-      "plan": [
+      "clave": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo.",
+      "no": [
         {
-          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
+          "p": "Contrasta los temas de dos pintores, sin valorarlos.",
+          "t": "Opción B"
         },
         {
-          "t": "Distingue entre describir hechos y calificar una obra o sus personajes."
+          "p": "Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador.",
+          "t": "Opción C"
         },
         {
-          "t": "Elige la opción B y verifica que se sostenga con el pasaje."
+          "p": "Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento.",
+          "t": "Opción D"
         }
       ],
       "pistas": [
-        "¿Cuál de los siguientes enunciados expresa un juicio de valor presente en el texto?",
-        "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
+        "Busca una expresión que valore algo como bueno, bello o deseable.",
+        "Distingue una valoración de una descripción verificable."
       ],
-      "clave": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor.",
-      "no": [
+      "plan": [
         {
-          "t": "Opción A",
-          "p": "La alternativa describe los temas de dos artistas, sin valorarlos."
+          "t": "Busca una expresión que valore algo como bueno, bello o deseable."
         },
         {
-          "t": "Opción C",
-          "p": "La alternativa informa sobre el orgullo y la intención atribuidos a Rubens; no formula un juicio estético."
+          "t": "Distingue una valoración de una descripción verificable."
         },
         {
-          "t": "Opción D",
-          "p": "El autor cuestiona que la belleza de un cuadro dependa de la belleza de su tema."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor.",
+      "tema": "Distinguir un juicio de valor de un dato"
     },
     "guion": {
       "1": [
         {
-          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
+          "a": "m:expresa un juicio de valor",
+          "t": "La expresión «expresa un juicio de valor» orienta la lectura."
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B responde a la pregunta."
+          "a": "p:0",
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "a": "o:A:no",
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
+        },
+        {
+          "a": "o:B:no",
           "k": "err",
-          "t": "La alternativa describe los temas de dos artistas, sin valorarlos."
+          "t": "Opción B: Contrasta los temas de dos pintores, sin valorarlos. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La alternativa informa sobre el orgullo y la intención atribuidos a Rubens; no formula un juicio estético."
+          "t": "Opción C: Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "El autor cuestiona que la belleza de un cuadro dependa de la belleza de su tema."
+          "t": "Opción D: Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento. La descartamos."
         },
         {
-          "a": "o:B:ok",
-          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Reconocer cuál alternativa expresa una valoración estética y no solo un dato del pasaje."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Distingue entre describir hechos y calificar una obra o sus personajes."
+          "a": "p:0",
+          "t": "Busca una expresión que valore algo como bueno, bello o deseable."
         },
         {
-          "t": "Decir que los golfillos de Murillo tienen gran encanto expresa una valoración estética del autor."
+          "a": "p:1",
+          "t": "Distingue una valoración de una descripción verificable."
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B queda respaldada por el texto."
+          "a": "p:2",
+          "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "expresa un juicio de valor",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Busca una expresión que valore algo como bueno, bello o deseable.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue una valoración de una descripción verificable.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

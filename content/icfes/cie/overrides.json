@@ -369,19 +369,19 @@
   "cie-i015": {
     "afirmacion": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
     "competencia": "Explicación de fenómenos",
-    "correcta": 1,
+    "correcta": 2,
     "distractores": [
-      "El volumen de ácido aislado no permite comparar concentraciones sin considerar el volumen total de solución.",
+      "El volumen aislado de ácido no permite comparar sin relacionarlo con el volumen total.",
+      "112 de 200 equivalen a 56 %, menos que 78 %.",
       "",
-      "112 mL de 200 mL equivalen al 56 %, no al 112 %.",
-      "La comparación correcta es entre porcentajes de concentración, no entre volúmenes totales."
+      "Comparar solo volúmenes no indica cuál solución está más concentrada."
     ],
-    "explicacion": "La concentración del ácido nítrico es 112/200 = 56 %. Es menor que el 78 % del ácido sulfúrico, así que el de mayor concentración es H2SO4.",
+    "explicacion": "Para determinar qué solución está más concentrada calculamos el porcentaje volumen-volumen. En el HNO3, 112 mL de soluto en 200 mL de solución representan (112/200)*100 = 56% v/v. Dado que el H2SO4 tiene 78% v/v, este último está más concentrado.",
     "fuente": "Icfes (2026). 03 Ciencias Naturales Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 15. Clave y afirmación cotejadas en la tabla oficial de respuestas del Icfes (2026), pp. 36–41. https://www.icfes.gov.co/wp-content/uploads/2026/03/24-feb-cuadernillo-preguntas-ciencias-naturales-saber-11-2026.pdf",
     "opciones": [
       "HNO3, porque como su volumen es mayor que el de la solución de H2SO4 tiene una mayor concentración.",
-      "H2SO4, porque la concentración volumen-volumen del HNO3 es del 56 %.",
       "HNO3, porque su concentración volumen-volumen es del 112 %.",
+      "H2SO4, porque la concentración volumen-volumen del HNO3 es del 56 %.",
       "H2SO4, porque como su volumen es menor que el de la solución de HNO3 se encuentra más concentrado."
     ],
     "revisar": [],
@@ -453,14 +453,14 @@
   "cie-i023": {
     "afirmacion": "Asociar fenómenos naturales con conceptos propios del conocimiento científico.",
     "competencia": "Uso comprensivo del conocimiento científico",
-    "correcta": 1,
+    "correcta": 3,
     "distractores": [
-      "El nivel de energía ocupado no determina la carga del ion.",
-      "",
-      "El ion tiene menos electrones que el átomo neutro, no más.",
-      "El ion conserva 10 electrones; no tiene solo 3."
+      "El último nivel ocupado no determina por sí solo la carga del ion.",
+      "El ion conserva diez electrones, no solo tres.",
+      "El ion tiene menos electrones que el átomo neutro; esa diferencia es la clave.",
+      ""
     ],
-    "explicacion": "El aluminio neutro tiene 13 electrones y el ion mostrado tiene 10. Al perder tres electrones queda con carga 3+, por eso corresponde la opción B.",
+    "explicacion": "El átomo neutro de aluminio tiene 13 electrones (1s2 2s2 2p6 3s2 3p1), mientras que el ion Al3+ tiene 10 electrones (1s2 2s2 2p6). La carga positiva +3 se debe a que tiene 3 electrones menos que el átomo neutro tras perder los del nivel 3.",
     "figuras": [
       {
         "alt": "Recorte del cuadernillo fuente con el apoyo visual de cie-i023.",
@@ -471,9 +471,9 @@
     "fuente": "Icfes (2026). 03 Ciencias Naturales Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 23. Clave y afirmación cotejadas en la tabla oficial de respuestas del Icfes (2026), pp. 36–41. https://www.icfes.gov.co/wp-content/uploads/2026/03/24-feb-cuadernillo-preguntas-ciencias-naturales-saber-11-2026.pdf",
     "opciones": [
       "Porque el último nivel de energía de su configuración electrónica es 3.",
-      "Porque tiene 3 electrones menos en su configuración electrónica que el aluminio neutro.",
+      "Porque el número total de electrones en su configuración electrónica es 3.",
       "Porque tiene 3 electrones más en su configuración electrónica que el aluminio neutro.",
-      "Porque el número total de electrones en su configuración electrónica es 3."
+      "Porque tiene 3 electrones menos en su configuración electrónica que el aluminio neutro."
     ],
     "revisar": [],
     "evidencia": "Establece relaciones entre las propiedades y estructura de la materia con la formación de iones y moléculas.",
@@ -1388,11 +1388,19 @@
     "evidenciaId": "2.3",
     "nivel": 2,
     "distractores": [
-      "",
-      "Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor.",
       "Menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en 25 km es muy baja.",
+      "Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor.",
+      "",
       "La baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor."
-    ]
+    ],
+    "opciones": [
+      "Nunca hierve, porque en esta altura hay muy poca cantidad de aire.",
+      "Hierve a una temperatura mayor que 100 °C, porque la presión es menor en esta altura.",
+      "Hierve a una temperatura menor que 100 °C, porque la presión es menor en esta altura.",
+      "Se congela, porque al no haber aire el agua pasará a estado sólido."
+    ],
+    "explicacion": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+    "correcta": 2
   },
   "cie-i038": {
     "competencia": "Explicación de fenómenos",

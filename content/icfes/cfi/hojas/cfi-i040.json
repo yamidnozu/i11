@@ -1,21 +1,105 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
+    "enfoque": {
+      "clave": "La opción A permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero, afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero, el pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero, el pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
+        }
+      ],
+      "pistas": [
+        "Algunas mujeres niegan apego hacia el marido.",
+        "Otras aceptan el amor después de que el matrimonio cumple su objetivo."
+      ],
+      "plan": [
+        {
+          "t": "Identifica las dos actitudes descritas entre las mujeres fulbes."
+        },
+        {
+          "t": "Separa el matrimonio de la presencia necesaria del amor."
+        },
+        {
+          "t": "Elige la opción que no generalice más allá del pasaje."
+        }
+      ],
+      "que": "Inferir si el amor es una condición necesaria para el matrimonio en el ejemplo descrito.",
+      "tema": "Inferencia a partir de una descripción cultural"
+    },
+    "guion": {
+      "1": [
+        {
+          "t": "El pasaje describe mujeres que niegan apego y otras que aceptan el amor después de cumplir una finalidad del matrimonio."
+        },
+        {
+          "t": "Eso permite concluir que el amor no es requisito para casarse."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La opción A expresa esa inferencia."
+        }
+      ],
+      "2": [
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no corresponde: Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no corresponde: El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no corresponde: El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La opción A permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad."
+        }
+      ],
+      "3": [
+        {
+          "t": "Compara las actitudes descritas sin convertirlas en una regla para todas las personas."
+        },
+        {
+          "t": "El ejemplo muestra que el matrimonio puede existir sin que el amor sea su condición previa."
+        },
+        {
+          "t": "Por eso, la respuesta es A."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "Las otras alternativas agregan afirmaciones no sustentadas."
+        }
+      ]
+    },
     "marcas": [
       {
+        "campo": "Pregunta",
         "frag": "¿Qué implicación sobre el matrimonio entre los fulbes africanos",
-        "rol": "pide",
         "nota": "Debes inferir qué indica el ejemplo sobre la relación entre amor y matrimonio.",
-        "campo": "Pregunta"
+        "rol": "pide"
       },
       {
+        "campo": "Instrucción",
         "frag": "puede derivarse a partir de lo dicho por el autor?",
-        "rol": "dato",
         "nota": "La respuesta debe apoyarse en la información del texto.",
-        "campo": "Instrucción"
+        "rol": "dato"
       }
     ],
+    "modo": "lectura",
     "pasos": [
       {
         "k": "idea",
@@ -29,90 +113,6 @@
         "k": "check",
         "texto": "Elige una inferencia limitada al texto y no una afirmación absoluta sobre todas las parejas."
       }
-    ],
-    "enfoque": {
-      "tema": "Inferencia a partir de una descripción cultural",
-      "que": "Inferir si el amor es una condición necesaria para el matrimonio en el ejemplo descrito.",
-      "plan": [
-        {
-          "t": "Identifica las dos actitudes descritas entre las mujeres fulbes."
-        },
-        {
-          "t": "Separa el matrimonio de la presencia necesaria del amor."
-        },
-        {
-          "t": "Elige la opción que no generalice más allá del pasaje."
-        }
-      ],
-      "pistas": [
-        "Algunas mujeres niegan apego hacia el marido.",
-        "Otras aceptan el amor después de que el matrimonio cumple su objetivo."
-      ],
-      "clave": "La opción B permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Pero, afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
-        },
-        {
-          "t": "Opción C",
-          "p": "Pero, el pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
-        },
-        {
-          "t": "Opción D",
-          "p": "Pero, el pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
-        }
-      ]
-    },
-    "guion": {
-      "1": [
-        {
-          "t": "El pasaje describe mujeres que niegan apego y otras que aceptan el amor después de cumplir una finalidad del matrimonio."
-        },
-        {
-          "t": "Eso permite concluir que el amor no es requisito para casarse."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La opción B expresa esa inferencia."
-        }
-      ],
-      "2": [
-        {
-          "a": "o:A:no",
-          "k": "err",
-          "t": "La opción A no corresponde: Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
-        },
-        {
-          "a": "o:C:no",
-          "k": "err",
-          "t": "La opción C no corresponde: El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo."
-        },
-        {
-          "a": "o:D:no",
-          "k": "err",
-          "t": "La opción D no corresponde: El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "La opción B permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad."
-        }
-      ],
-      "3": [
-        {
-          "t": "Compara las actitudes descritas sin convertirlas en una regla para todas las personas."
-        },
-        {
-          "t": "El ejemplo muestra que el matrimonio puede existir sin que el amor sea su condición previa."
-        },
-        {
-          "t": "Por eso, la respuesta es B."
-        },
-        {
-          "a": "o:B:ok",
-          "t": "Las otras alternativas agregan afirmaciones no sustentadas."
-        }
-      ]
-    }
+    ]
   }
 }

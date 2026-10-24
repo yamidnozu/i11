@@ -1,44 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "radio 2",
-        "rol": "dato",
-        "nota": "El radio de la circunferencia se da como longitud conocida.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "expresión $x=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$",
-        "rol": "dato",
-        "nota": "La expresión usa la ley de senos en el triángulo OPQ.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "medida del",
-        "rol": "pide",
-        "nota": "Se pregunta qué elemento geométrico representa el resultado.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Observa el triángulo formado por el centro O y los vértices P y Q."
-      },
-      {
-        "k": "idea",
-        "texto": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
-      },
-      {
-        "k": "check",
-        "texto": "La expresión calcula el segmento PQ, opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar la ley de senos en un polígono regular",
-      "que": "Interpreta una expresión trigonométrica para identificar la longitud que calcula dentro de un triángulo.",
+      "clave": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$.",
+      "no": [
+        {
+          "p": "La expresión calcula una longitud, no una medida angular.",
+          "t": "Opción B"
+        },
+        {
+          "p": "El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo.",
+          "t": "Opción C"
+        },
+        {
+          "p": "El radio ya mide $2$; la expresión calcula la cuerda PQ.",
+          "t": "Opción D"
+        }
+      ],
+      "pistas": [
+        "El radio mide $2$ y los vértices P y Q son contiguos.",
+        "La expresión da una longitud opuesta al ángulo central de $45°$."
+      ],
       "plan": [
         {
           "t": "Observa el triángulo formado por el centro O y los vértices P y Q."
@@ -47,28 +29,11 @@
           "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
         },
         {
-          "t": "La expresión calcula el segmento PQ, opción B."
+          "t": "La expresión calcula el segmento PQ, opción A."
         }
       ],
-      "pistas": [
-        "El radio mide $2$ y los vértices P y Q son contiguos.",
-        "La expresión da una longitud opuesta al ángulo central de $45°$."
-      ],
-      "clave": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "La expresión calcula una longitud, no una medida angular."
-        },
-        {
-          "t": "Opción C",
-          "p": "El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo."
-        },
-        {
-          "t": "Opción D",
-          "p": "El radio ya mide $2$; la expresión calcula la cuerda PQ."
-        }
-      ]
+      "que": "Interpreta una expresión trigonométrica para identificar la longitud que calcula dentro de un triángulo.",
+      "tema": "Aplicar la ley de senos en un polígono regular"
     },
     "guion": {
       "1": [
@@ -79,13 +44,13 @@
           "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
         },
         {
-          "a": "o:B:ok",
-          "t": "La respuesta es la opción B: En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A: En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
         }
       ],
       "2": [
         {
-          "a": "o:A:no",
+          "a": "o:B:no",
           "k": "err",
           "t": "Pero, La expresión calcula una longitud, no una medida angular."
         },
@@ -100,7 +65,7 @@
           "t": "Pero, El radio ya mide $2$; la expresión calcula la cuerda PQ."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:A:ok",
           "t": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
         }
       ],
@@ -112,13 +77,48 @@
           "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
         },
         {
-          "t": "La expresión calcula el segmento PQ, opción B."
+          "t": "La expresión calcula el segmento PQ, opción A."
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B queda respaldada por los datos y el procedimiento."
+          "a": "o:A:ok",
+          "t": "La opción A queda respaldada por los datos y el procedimiento."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "radio 2",
+        "nota": "El radio de la circunferencia se da como longitud conocida.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "expresión $x=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$",
+        "nota": "La expresión usa la ley de senos en el triángulo OPQ.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "medida del",
+        "nota": "Se pregunta qué elemento geométrico representa el resultado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa el triángulo formado por el centro O y los vértices P y Q."
+      },
+      {
+        "k": "idea",
+        "texto": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
+      },
+      {
+        "k": "check",
+        "texto": "La expresión calcula el segmento PQ, opción A."
+      }
+    ]
   }
 }

@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "It can be inferred from the text that Mark",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{It can be inferred from the text that Mark}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes.",
       "clave": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes.",
+      "no": [
+        {
+          "p": "El pasaje dice que ese día estaba demasiado cansado para cocinar; no que en general no le guste cocinar.",
+          "t": "Opción A"
+        },
+        {
+          "p": "El texto cuenta una ocasión en la que pidió una hamburguesa, no que casi siempre las coma.",
+          "t": "Opción B"
+        },
+        {
+          "p": "Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes.",
+          "t": "Opción C"
+        }
+      ],
       "pistas": [
         "Fíjate en {{It can be inferred from the text that Mark}}.",
         "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El pasaje dice que ese día estaba demasiado cansado para cocinar; no que en general no le guste cocinar."
-        },
-        {
-          "t": "Opción B",
-          "p": "El texto cuenta una ocasión en la que pidió una hamburguesa, no que casi siempre las coma."
-        },
-        {
-          "t": "Opción D",
-          "p": "Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes."
-        }
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -75,7 +50,7 @@
           "t": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes."
         },
         {
-          "a": "o:C:ok",
+          "a": "o:D:ok",
           "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
@@ -99,12 +74,12 @@
           "t": "La opción B no encaja: El texto cuenta una ocasión en la que pidió una hamburguesa, no que casi siempre las coma."
         },
         {
-          "a": "o:D:no",
+          "a": "o:C:no",
           "k": "err",
-          "t": "La opción D no encaja: Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes."
+          "t": "La opción C no encaja: Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes."
         },
         {
-          "a": "o:C:ok",
+          "a": "o:D:ok",
           "t": "La respuesta es la opción correcta."
         }
       ],
@@ -130,15 +105,40 @@
           "t": "La opción B no encaja: El texto cuenta una ocasión en la que pidió una hamburguesa, no que casi siempre las coma."
         },
         {
-          "a": "o:D:no",
+          "a": "o:C:no",
           "k": "err",
-          "t": "La opción D no encaja: Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes."
+          "t": "La opción C no encaja: Mark cambió su restaurante habitual tras una mala experiencia; no dice que esté cansado de ir a restaurantes."
         },
         {
-          "a": "o:C:ok",
+          "a": "o:D:ok",
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "It can be inferred from the text that Mark",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{It can be inferred from the text that Mark}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "Mark cuenta que, cuando estaba cansado y no quería cocinar, pidió comida preparada y quedó satisfecho. Esto permite inferir que a veces disfruta pedir comida rápida; el texto no afirma que no le guste cocinar, que casi siempre coma hamburguesas ni que esté cansado de ir a restaurantes.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
   }
 }

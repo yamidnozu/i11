@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "otros dos vértices",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «otros dos vértices» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "(x,y)\\mapsto(-x,y)"
-        ],
-        "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: otros dos vértices",
-      "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
-      "pistas": [
-        "Fíjate en «otros dos vértices».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+      "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x."
+        },
+        {
+          "t": "Opción D",
+          "p": "Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
         }
+      ],
+      "pistas": [
+        "Fíjate en «otros dos vértices».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "(x,y)\\mapsto(-x,y)"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+      "tema": "Matemáticas: otros dos vértices"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «otros dos vértices» orienta la estrategia.",
-          "a": "m:otros dos vértices"
+          "a": "m:otros dos vértices",
+          "t": "La frase «otros dos vértices» orienta la estrategia."
         },
         {
-          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
         },
         {
-          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "otros dos vértices",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «otros dos vértices» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "(x,y)\\mapsto(-x,y)"
+        ],
+        "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+      }
+    ]
   }
 }

@@ -1435,10 +1435,10 @@
     },
     {
       "area": "matematicas",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "La expresión calcula una longitud, no una medida angular.",
         "",
+        "La expresión calcula una longitud, no una medida angular.",
         "El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo.",
         "El radio ya mide $2$; la expresión calcula la cuerda PQ."
       ],
@@ -1461,7 +1461,7 @@
           "no": [
             {
               "p": "La expresión calcula una longitud, no una medida angular.",
-              "t": "Opción A"
+              "t": "Opción B"
             },
             {
               "p": "El ángulo central entre vértices contiguos es $45°$; la expresión no calcula ese ángulo.",
@@ -1484,7 +1484,7 @@
               "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
             },
             {
-              "t": "La expresión calcula el segmento PQ, opción B."
+              "t": "La expresión calcula el segmento PQ, opción A."
             }
           ],
           "que": "Interpreta una expresión trigonométrica para identificar la longitud que calcula dentro de un triángulo.",
@@ -1499,13 +1499,13 @@
               "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B: En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A: En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
             }
           ],
           "2": [
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
               "t": "Pero, La expresión calcula una longitud, no una medida angular."
             },
@@ -1520,7 +1520,7 @@
               "t": "Pero, El radio ya mide $2$; la expresión calcula la cuerda PQ."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "t": "En el triángulo OPQ, el radio OQ, de longitud $2$, está opuesto al ángulo de $67,5°$ y la cuerda PQ al ángulo central de $45°$. La ley de senos da $PQ=2\\,\\mathrm{sen}(45°)/\\mathrm{sen}(67,5°)$."
             }
           ],
@@ -1532,11 +1532,11 @@
               "t": "La ley de senos relaciona la cuerda PQ con el radio $2$ y los ángulos $45°$ y $67,5°$."
             },
             {
-              "t": "La expresión calcula el segmento PQ, opción B."
+              "t": "La expresión calcula el segmento PQ, opción A."
             },
             {
-              "a": "o:B:ok",
-              "t": "La opción B queda respaldada por los datos y el procedimiento."
+              "a": "o:A:ok",
+              "t": "La opción A queda respaldada por los datos y el procedimiento."
             }
           ]
         },
@@ -1572,15 +1572,15 @@
           },
           {
             "k": "check",
-            "texto": "La expresión calcula el segmento PQ, opción B."
+            "texto": "La expresión calcula el segmento PQ, opción A."
           }
         ]
       },
       "id": "cfi-i006",
       "nivel": 2,
       "opciones": [
-        "ángulo OPQ.",
         "segmento PQ.",
+        "ángulo OPQ.",
         "ángulo QOP.",
         "segmento OQ."
       ],
@@ -3049,24 +3049,24 @@
     },
     {
       "area": "matematicas",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos.",
         "",
+        "Confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos.",
         "j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11.",
         "j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
       ],
       "enunciado": "Se puede encontrar números racionales mayores que $k$, de manera que sean cada vez más cercanos a él, calculando $k + \\frac{1}{j}$ (con $j$ entero positivo). Cuanto más grande sea $j$, más cercano a $k$ será el racional construido. ¿Cuántos números racionales se pueden construir cercanos a $k$ y menores que $k + \\frac{1}{11}$?",
       "estadoHoja": "revisada",
       "evidencia": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
-      "explicacion": "La condición $k + 1/j < k + 1/11$ se reduce a $1/j < 1/11$, que se cumple para todo entero positivo $j > 11$. Hay infinitos valores de $j$ que cumplen la condición, así que la respuesta es B.",
+      "explicacion": "La condición $k + 1/j < k + 1/11$ se reduce a $1/j < 1/11$, que se cumple para todo entero positivo $j > 11$. Hay infinitos valores de $j$ que cumplen la condición, así que la respuesta es A.",
       "fuente": "Icfes (2014). 15 Cuadernillo Saber11 2014, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 15.",
       "hoja": {
         "enfoque": {
-          "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta.",
+          "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción A es correcta.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Pero, confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
             },
             {
@@ -3105,15 +3105,15 @@
               "t": "Hay infinitos enteros positivos mayores que $11$."
             },
             {
-              "a": "o:B:ok",
-              "t": "Por eso se pueden construir infinitos racionales; la respuesta es B."
+              "a": "o:A:ok",
+              "t": "Por eso se pueden construir infinitos racionales; la respuesta es A."
             }
           ],
           "2": [
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A no corresponde: Confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
+              "t": "La opción B no corresponde: Confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
             },
             {
               "a": "o:C:no",
@@ -3126,8 +3126,8 @@
               "t": "La opción D no corresponde: j = {{10}} da k + {{0,1}}, que es mayor que k + {{1}}/{{11}}, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
             },
             {
-              "a": "o:B:ok",
-              "t": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta."
+              "a": "o:A:ok",
+              "t": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción A es correcta."
             }
           ],
           "3": [
@@ -3141,8 +3141,8 @@
               "t": "Como hay infinitos enteros positivos que cumplen esa desigualdad, hay infinitos racionales."
             },
             {
-              "a": "o:B:ok",
-              "t": "La opción B expresa el resultado."
+              "a": "o:A:ok",
+              "t": "La opción A expresa el resultado."
             }
           ]
         },
@@ -3183,8 +3183,8 @@
       "id": "cfi-i015",
       "nivel": 2,
       "opciones": [
-        "$10$, que es la cantidad de racionales menores que $11$.",
         "Una cantidad infinita, pues existen infinitos números enteros mayores que $11$.",
+        "$10$, que es la cantidad de racionales menores que $11$.",
         "$11$, que es el número que equivale en este caso a $j$.",
         "Uno, pues el racional más cercano a $k$ se halla con $j = 10$, es decir, con $k + 0,1$."
       ],
@@ -3624,10 +3624,10 @@
     {
       "area": "matematicas",
       "bloque": "cfi-sfv-2014",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
         "",
+        "los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
         "suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo.",
         "sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda."
       ],
@@ -3642,7 +3642,7 @@
           "no": [
             {
               "p": "Los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
-              "t": "Opción A"
+              "t": "Opción B"
             },
             {
               "p": "Suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo.",
@@ -3665,7 +3665,7 @@
               "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
             },
             {
-              "t": "La expresión coincide con la opción B."
+              "t": "La expresión coincide con la opción A."
             }
           ],
           "que": "Determina el crédito que hace falta después de tener en cuenta el ahorro y el subsidio.",
@@ -3680,13 +3680,13 @@
               "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B: El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A: El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
             }
           ],
           "2": [
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
               "t": "Pero, los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse."
             },
@@ -3701,7 +3701,7 @@
               "t": "Pero, sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "t": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
             }
           ],
@@ -3713,10 +3713,10 @@
               "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
             },
             {
-              "t": "La expresión coincide con la opción B."
+              "t": "La expresión coincide con la opción A."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "t": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
             }
           ]
@@ -3747,15 +3747,15 @@
           },
           {
             "k": "check",
-            "texto": "La expresión coincide con la opción B."
+            "texto": "La expresión coincide con la opción A."
           }
         ]
       },
       "id": "cfi-i018",
       "nivel": 2,
       "opciones": [
-        "Valor del crédito = ingresos + ahorros + subsidio + valor de la vivienda.",
         "Valor del crédito = valor de la vivienda − ahorros − subsidio.",
+        "Valor del crédito = ingresos + ahorros + subsidio + valor de la vivienda.",
         "Valor del crédito = ingresos + ahorros − subsidio + valor de la vivienda.",
         "Valor del crédito = valor de la vivienda + subsidio − ahorros."
       ],
@@ -4960,10 +4960,10 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-gombrich-belleza",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Contrasta los temas de dos pintores, sin valorarlos.",
         "",
+        "Contrasta los temas de dos pintores, sin valorarlos.",
         "Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador.",
         "Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento."
       ],
@@ -4978,7 +4978,7 @@
           "no": [
             {
               "p": "Contrasta los temas de dos pintores, sin valorarlos.",
-              "t": "Opción A"
+              "t": "Opción B"
             },
             {
               "p": "Atribuye a Rubens orgullo e intención, pero no es una valoración estética del enunciador.",
@@ -5022,8 +5022,8 @@
               "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "2": [
@@ -5036,9 +5036,9 @@
               "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "Opción A: Contrasta los temas de dos pintores, sin valorarlos. La descartamos."
+              "t": "Opción B: Contrasta los temas de dos pintores, sin valorarlos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -5051,8 +5051,8 @@
               "t": "Opción D: Presenta la creencia del público que el texto cuestiona, no un juicio de valor formulado como tal en el fragmento. La descartamos."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta es la opción B."
+              "a": "o:A:ok",
+              "t": "La respuesta es la opción A."
             }
           ],
           "3": [
@@ -5074,7 +5074,7 @@
               "t": "Decir que los golfillos de Murillo tienen «gran encanto» es una valoración estética. Las demás opciones describen hechos o atribuyen una intención sin juzgar su valor."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "t": "«Tienen gran encanto» expresa una valoración sobre las figuras pintadas por Murillo."
             }
           ]
@@ -5109,8 +5109,8 @@
       "id": "cfi-i027",
       "nivel": 2,
       "opciones": [
-        "Mientras Rubens dibujó la juventud, Durero dibujó la vejez.",
         "Los golfillos del pintor español Murillo tienen gran encanto.",
+        "Mientras Rubens dibujó la juventud, Durero dibujó la vejez.",
         "Rubens estaba orgulloso de su hijo y deseaba que lo admiráramos.",
         "Para el público la hermosura de un cuadro reside en la belleza de su tema."
       ],
@@ -6096,12 +6096,12 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-matrimonio-historia",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas.",
         "La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor.",
-        "",
-        "Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio."
+        "Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio.",
+        ""
       ],
       "enunciado": "Para el autor, el amor o el enamoramiento son",
       "estadoHoja": "revisada",
@@ -6122,7 +6122,7 @@
             },
             {
               "p": "Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio.",
-              "t": "Opción D"
+              "t": "Opción C"
             }
           ],
           "pistas": [
@@ -6158,8 +6158,8 @@
               "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "2": [
@@ -6182,13 +6182,13 @@
               "t": "Opción B: La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "Opción D: Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio. La descartamos."
+              "t": "Opción C: Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "3": [
@@ -6210,7 +6210,7 @@
               "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
             },
             {
-              "a": "o:C:ok",
+              "a": "o:D:ok",
               "t": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución."
             }
           ]
@@ -6247,8 +6247,8 @@
       "opciones": [
         "las bases fundamentales del matrimonio y de la familia.",
         "amenazas al respeto y la solidaridad debida a la familia.",
-        "ideas solo recientemente vinculadas al matrimonio y a la familia.",
-        "sentimientos irracionales que contradicen el deber ser del matrimonio."
+        "sentimientos irracionales que contradicen el deber ser del matrimonio.",
+        "ideas solo recientemente vinculadas al matrimonio y a la familia."
       ],
       "origen": "icfes",
       "parte": "Prueba Lectura Crítica, pregunta 34",
@@ -6980,24 +6980,24 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-matrimonio-historia",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse.",
         "",
+        "Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse.",
         "El pasaje no menciona temor a enamorarse; habla de negar el apego, y negarlo no es lo mismo que tenerle miedo.",
         "El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
       ],
       "enunciado": "¿Qué implicación sobre el matrimonio entre los fulbes africanos puede derivarse a partir de lo dicho por el autor?",
       "estadoHoja": "revisada",
       "evidencia": "Comprende cómo se articulan las partes de un texto para darle un sentido global.",
-      "explicacion": "El autor dice que algunas mujeres niegan el apego hacia sus maridos y que otras aceptan el amor solo después de que el matrimonio cumple su objetivo. Esto permite inferir que el amor no es una condición necesaria para casarse, opción B.",
+      "explicacion": "El autor dice que algunas mujeres niegan el apego hacia sus maridos y que otras aceptan el amor solo después de que el matrimonio cumple su objetivo. Esto permite inferir que el amor no es una condición necesaria para casarse, opción A.",
       "fuente": "Icfes (2014). 15 Cuadernillo Saber11 2014, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 40.",
       "hoja": {
         "enfoque": {
-          "clave": "La opción B permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
+          "clave": "La opción A permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
           "no": [
             {
-              "t": "Opción A",
+              "t": "Opción B",
               "p": "Pero, afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
             },
             {
@@ -7036,15 +7036,15 @@
               "t": "Eso permite concluir que el amor no es requisito para casarse."
             },
             {
-              "a": "o:B:ok",
-              "t": "La opción B expresa esa inferencia."
+              "a": "o:A:ok",
+              "t": "La opción A expresa esa inferencia."
             }
           ],
           "2": [
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A no corresponde: Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
+              "t": "La opción B no corresponde: Afirma que nunca hay amor entre esposos, pero el texto muestra actitudes distintas: algunas aceptan el amor después de casarse."
             },
             {
               "a": "o:C:no",
@@ -7057,8 +7057,8 @@
               "t": "La opción D no corresponde: El pasaje no dice que el amor de las mujeres quede sin correspondencia; habla de si el amor es condición del matrimonio."
             },
             {
-              "a": "o:B:ok",
-              "t": "La opción B permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad."
+              "a": "o:A:ok",
+              "t": "La opción A permite inferir que el amor no es una condición necesaria para el matrimonio en esa comunidad."
             }
           ],
           "3": [
@@ -7069,10 +7069,10 @@
               "t": "El ejemplo muestra que el matrimonio puede existir sin que el amor sea su condición previa."
             },
             {
-              "t": "Por eso, la respuesta es B."
+              "t": "Por eso, la respuesta es A."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "t": "Las otras alternativas agregan afirmaciones no sustentadas."
             }
           ]
@@ -7110,8 +7110,8 @@
       "id": "cfi-i040",
       "nivel": 2,
       "opciones": [
-        "Que en esa comunidad nunca llega a existir amor entre los esposos, ni antes ni después de casarse.",
         "Que en esa comunidad el amor no es una condición necesaria para el matrimonio.",
+        "Que en esa comunidad nunca llega a existir amor entre los esposos, ni antes ni después de casarse.",
         "Que las mujeres de esa comunidad sienten temor a enamorarse de sus esposos y por eso lo ocultan.",
         "Que las mujeres de esa comunidad no ven su amor correspondido por sus esposos."
       ],
@@ -7126,12 +7126,12 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-matrimonio-historia",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "El texto explica que sus propósitos no han sido únicamente económicos y políticos.",
         "No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera.",
-        "",
-        "El texto presenta esa idea como una concepción reciente, no como una regla universal."
+        "El texto presenta esa idea como una concepción reciente, no como una regla universal.",
+        ""
       ],
       "enunciado": "De acuerdo con el texto, ¿qué se puede concluir acerca del matrimonio?",
       "estadoHoja": "revisada",
@@ -7140,7 +7140,7 @@
       "fuente": "Icfes (2014). 15 Cuadernillo Saber11 2014, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 41.",
       "hoja": {
         "enfoque": {
-          "clave": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
+          "clave": "La opción D recoge que el matrimonio cambia según el contexto histórico y social.",
           "no": [
             {
               "p": "El texto explica que sus propósitos no han sido únicamente económicos y políticos.",
@@ -7152,7 +7152,7 @@
             },
             {
               "p": "El texto presenta esa idea como una concepción reciente, no como una regla universal.",
-              "t": "Opción D"
+              "t": "Opción C"
             }
           ],
           "pistas": [
@@ -7188,8 +7188,8 @@
               "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "2": [
@@ -7212,13 +7212,13 @@
               "t": "Opción B: No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera. La descartamos."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
-              "t": "Opción D: El texto presenta esa idea como una concepción reciente, no como una regla universal. La descartamos."
+              "t": "Opción C: El texto presenta esa idea como una concepción reciente, no como una regla universal. La descartamos."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ],
           "3": [
@@ -7240,8 +7240,8 @@
               "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social."
             },
             {
-              "a": "o:C:ok",
-              "t": "La opción C recoge que el matrimonio cambia según el contexto histórico y social."
+              "a": "o:D:ok",
+              "t": "La opción D recoge que el matrimonio cambia según el contexto histórico y social."
             }
           ]
         },
@@ -7267,7 +7267,7 @@
           },
           {
             "k": "check",
-            "texto": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
+            "texto": "La opción D recoge que el matrimonio cambia según el contexto histórico y social.",
             "titulo": "Comprueba la respuesta"
           }
         ]
@@ -7277,8 +7277,8 @@
       "opciones": [
         "Que es una institución que tiene únicamente propósitos económicos y políticos.",
         "Que es la base de la familia en culturas tan diversas y complejas como las nuestras.",
-        "Que es una institución que varía dependiendo del contexto histórico y social.",
-        "Que es un pacto entre dos individuos que debe basarse en el amor y la confianza."
+        "Que es un pacto entre dos individuos que debe basarse en el amor y la confianza.",
+        "Que es una institución que varía dependiendo del contexto histórico y social."
       ],
       "origen": "icfes",
       "parte": "Prueba Lectura Crítica, pregunta 41",
@@ -7458,12 +7458,12 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-seguridad-vial-oms-2014",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "La descripción menciona varios de los ejes que sí aparecen; el problema es que agrega un dato inexistente.",
         "El orden de enumeración no cambia la validez de la descripción.",
-        "",
-        "No se trata de que falten evidencias para datos que sí estén presentados."
+        "No se trata de que falten evidencias para datos que sí estén presentados.",
+        ""
       ],
       "enunciado": "Una persona describe así la infografía: «Muestra la frecuencia de los accidentes de tránsito en el mundo y la mortalidad por género, ingresos, número de vehículos, tipo de vehículo y ubicación regional». Esta descripción es insatisfactoria porque",
       "estadoHoja": "revisada",
@@ -7484,7 +7484,7 @@
             },
             {
               "p": "No se trata de que falten evidencias para datos que sí estén presentados.",
-              "t": "Opción D"
+              "t": "Opción C"
             }
           ],
           "pistas": [
@@ -7499,7 +7499,7 @@
               "t": "La infografía compara muertes por accidentes según distintos grupos y regiones, pero no presenta la frecuencia de los accidentes. Por eso la descripción incluye información ausente."
             },
             {
-              "t": "Comprueba la opción C con el dato citado."
+              "t": "Comprueba la opción D con el dato citado."
             }
           ],
           "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
@@ -7516,8 +7516,8 @@
               "t": "Busca esa información en la infografía."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C: La infografía compara muertes por accidentes según distintos grupos y regiones, pero no presenta la frecuencia de los accidentes. Por eso la descripción incluye información ausente."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D: La infografía compara muertes por accidentes según distintos grupos y regiones, pero no presenta la frecuencia de los accidentes. Por eso la descripción incluye información ausente."
             }
           ],
           "2": [
@@ -7532,13 +7532,13 @@
               "t": "Pero, El orden de enumeración no cambia la validez de la descripción."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
               "t": "Pero, No se trata de que falten evidencias para datos que sí estén presentados."
             },
             {
-              "a": "o:C:ok",
-              "t": "La opción C concuerda con la información de la infografía."
+              "a": "o:D:ok",
+              "t": "La opción D concuerda con la información de la infografía."
             }
           ],
           "3": [
@@ -7555,8 +7555,8 @@
               "t": "Descarta las opciones que añaden datos que no están representados."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ]
         },
@@ -7586,7 +7586,7 @@
           },
           {
             "k": "check",
-            "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
+            "t": "Comprueba que la opción D responde al enunciado y que las demás no lo hacen."
           }
         ]
       },
@@ -7595,8 +7595,8 @@
       "opciones": [
         "pasa por alto información esencial de la infografía.",
         "el orden de la información no corresponde al que presenta la infografía.",
-        "menciona información que no está presente en la infografía.",
-        "omite evidencias que apoyan los datos presentados en la infografía."
+        "omite evidencias que apoyan los datos presentados en la infografía.",
+        "menciona información que no está presente en la infografía."
       ],
       "origen": "icfes",
       "parte": "Prueba Lectura Crítica, pregunta 43",
@@ -7760,12 +7760,12 @@
     {
       "area": "lectura_critica",
       "bloque": "cfi-seguridad-vial-oms-2014",
-      "correcta": 2,
+      "correcta": 3,
       "distractores": [
         "El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país.",
         "Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad.",
-        "",
-        "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
+        "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región.",
+        ""
       ],
       "enunciado": "A partir de la información sobre la cantidad relativa de muertes por accidentes de tránsito en función de la región, se puede inferir",
       "estadoHoja": "revisada",
@@ -7786,7 +7786,7 @@
             },
             {
               "p": "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región.",
-              "t": "Opción D"
+              "t": "Opción C"
             }
           ],
           "pistas": [
@@ -7801,7 +7801,7 @@
               "t": "El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
             },
             {
-              "t": "Comprueba la opción C con el dato citado."
+              "t": "Comprueba la opción D con el dato citado."
             }
           ],
           "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
@@ -7818,8 +7818,8 @@
               "t": "Busca esa información en la infografía."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C: El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D: El gráfico compara tasas de muertes por cada cien mil habitantes entre regiones. Esa medida permite comparar el riesgo relativo de morir en un accidente de tránsito según la región."
             }
           ],
           "2": [
@@ -7834,13 +7834,13 @@
               "t": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
             },
             {
-              "a": "o:D:no",
+              "a": "o:C:no",
               "k": "err",
               "t": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
             },
             {
-              "a": "o:C:ok",
-              "t": "La opción C concuerda con la información de la infografía."
+              "a": "o:D:ok",
+              "t": "La opción D concuerda con la información de la infografía."
             }
           ],
           "3": [
@@ -7857,8 +7857,8 @@
               "t": "Descarta las opciones que añaden datos que no están representados."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta es la opción C."
+              "a": "o:D:ok",
+              "t": "La respuesta es la opción D."
             }
           ]
         },
@@ -7888,7 +7888,7 @@
           },
           {
             "k": "check",
-            "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
+            "t": "Comprueba que la opción D responde al enunciado y que las demás no lo hacen."
           }
         ]
       },
@@ -7897,8 +7897,8 @@
       "opciones": [
         "qué países usan menos vehículos automotores.",
         "que Asia y el Pacífico tienen el mismo número de muertes.",
-        "el riesgo de morir en un accidente de tránsito según la región geográfica.",
-        "qué regiones requieren mejorar sus vías."
+        "qué regiones requieren mejorar sus vías.",
+        "el riesgo de morir en un accidente de tránsito según la región geográfica."
       ],
       "origen": "icfes",
       "parte": "Prueba Lectura Crítica, pregunta 45",
@@ -8707,25 +8707,25 @@
     },
     {
       "area": "sociales",
-      "correcta": 1,
+      "correcta": 0,
       "distractores": [
-        "Es incorrecta porque en las urbes modernas el centro concentra actividades terciarias (servicios y oficinas) y no industrias pesadas contaminantes.",
         "",
+        "Es incorrecta porque en las urbes modernas el centro concentra actividades terciarias (servicios y oficinas) y no industrias pesadas contaminantes.",
         "Es incorrecta porque el centro urbano es precisamente el sector con mayor concentración de servicios financieros, comerciales y de transporte.",
         "Es incorrecta porque las afueras residenciales suburbanas suelen albergar condominios de costo medio-alto y no exclusivamente vivienda de bajo precio."
       ],
       "enunciado": "En las principales ciudades del mundo moderno está produciéndose un paulatino abandono de las zonas residenciales del centro urbano, al tiempo que las zonas periféricas tienden a un mayor poblamiento. Estas migraciones las realizan personas o familias que tienen ingresos medios y altos. La principal causa de este fenómeno se atribuye",
       "estadoHoja": "revisada",
       "evidencia": "Relaciona problemáticas o prácticas sociales con características del espacio geográfico.",
-      "explicacion": "La suburbanización o migración de residentes hacia las periferias metropolitanas obedece a la búsqueda de entornos más tranquilos, con menor congestión vehicular y mayor contacto con áreas verdes (opción B).",
+      "explicacion": "La suburbanización o migración de residentes hacia las periferias metropolitanas obedece a la búsqueda de entornos más tranquilos, con menor congestión vehicular y mayor contacto con áreas verdes (opción A).",
       "fuente": "Icfes (2014). 15 Cuadernillo Saber11 2014, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 52.",
       "hoja": {
         "enfoque": {
           "clave": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
           "no": [
             {
-              "p": "La opción A plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
-              "t": "Opción A"
+              "p": "La opción B plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
+              "t": "Opción B"
             },
             {
               "p": "La opción C plantea «a la escasa oferta de servicios en los barrios del centro de la…», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
@@ -8748,7 +8748,7 @@
               "t": "Contrasta cada opción con la información de la fuente."
             },
             {
-              "t": "Concluye por qué la opción B satisface ese criterio."
+              "t": "Concluye por qué la opción A satisface ese criterio."
             }
           ],
           "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
@@ -8763,8 +8763,8 @@
               "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
             },
             {
-              "a": "o:B:ok",
-              "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es B."
+              "a": "o:A:ok",
+              "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es A."
             }
           ],
           "2": [
@@ -8775,9 +8775,9 @@
               "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
             },
             {
-              "a": "o:A:no",
+              "a": "o:B:no",
               "k": "err",
-              "t": "La opción A plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
+              "t": "La opción B plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
             },
             {
               "a": "o:C:no",
@@ -8790,8 +8790,8 @@
               "t": "La opción D plantea «a la creciente oferta de vivienda barata en las afueras de la ciudad.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
             },
             {
-              "a": "o:B:ok",
-              "t": "La opción B es la que sí responde a la pregunta."
+              "a": "o:A:ok",
+              "t": "La opción A es la que sí responde a la pregunta."
             }
           ],
           "3": [
@@ -8805,18 +8805,18 @@
               "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
             },
             {
-              "a": "o:B:ok",
+              "a": "o:A:ok",
               "k": "contra",
-              "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
+              "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
             },
             {
-              "a": "o:A:no|o:C:no|o:D:no",
+              "a": "o:B:no|o:C:no|o:D:no",
               "k": "err",
               "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
             },
             {
-              "a": "o:B:ok",
-              "t": "La respuesta correcta es B."
+              "a": "o:A:ok",
+              "t": "La respuesta correcta es A."
             }
           ]
         },
@@ -8846,7 +8846,7 @@
           },
           {
             "k": "check",
-            "texto": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es B.",
+            "texto": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es A.",
             "titulo": "Verifica la respuesta"
           }
         ]
@@ -8854,8 +8854,8 @@
       "id": "cfi-i052",
       "nivel": 2,
       "opciones": [
-        "al creciente desarrollo de la industria en el centro de las ciudades.",
         "a la búsqueda de mejor calidad de vida en barrios tranquilos.",
+        "al creciente desarrollo de la industria en el centro de las ciudades.",
         "a la escasa oferta de servicios en los barrios del centro de la ciudad.",
         "a la creciente oferta de vivienda barata en las afueras de la ciudad."
       ],

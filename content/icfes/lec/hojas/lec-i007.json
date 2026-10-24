@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "no respire",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Ubica la rama que parte de «si no respira»."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Sigue el paso inmediato antes de revisar el pulso."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La instrucción asociada a no respirar es realizar respiración boca a boca."
-      }
-    ],
     "enfoque": {
-      "tema": "Localizar una instrucción en una infografía",
-      "que": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco.",
-      "pistas": [
-        "Ubica la rama que parte de «si no respira».",
-        "Sigue el paso inmediato antes de revisar el pulso."
-      ],
       "clave": "La instrucción asociada a no respirar es realizar respiración boca a boca.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Saltar al paso de tomar el pulso aparece en la ruta de quien sí respira."
+          "p": "Llamar a emergencias es un paso inicial general, no el procedimiento específico que pregunta el enunciado.",
+          "t": "Opción B"
         },
         {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Llamar a emergencias es un paso inicial general, no el procedimiento específico que pregunta el enunciado."
+          "p": "Saltar al paso de tomar el pulso aparece en la ruta de quien sí respira.",
+          "t": "Opción C"
         },
         {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero La reanimación cardiopulmonar incluye comprobar el pulso y, si falta, sumar compresiones; no es el paso inmediato indicado aquí."
+          "p": "La reanimación cardiopulmonar incluye comprobar el pulso y, si falta, sumar compresiones; no es el paso inmediato indicado aquí.",
+          "t": "Opción D"
         }
+      ],
+      "pistas": [
+        "Ubica la rama que parte de «si no respira».",
+        "Sigue el paso inmediato antes de revisar el pulso."
       ],
       "plan": [
         {
@@ -59,79 +31,107 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco.",
+      "tema": "Localizar una instrucción en una infografía"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «no respire» orienta la lectura.",
-          "a": "m:no respire"
+          "a": "m:no respire",
+          "t": "La expresión «no respire» orienta la lectura."
         },
         {
-          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco."
         },
         {
-          "t": "Opción A: Saltar al paso de tomar el pulso aparece en la ruta de quien sí respira. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Saltar al paso de tomar el pulso aparece en la ruta de quien sí respira. La descartamos."
         },
         {
-          "t": "Opción B: Llamar a emergencias es un paso inicial general, no el procedimiento específico que pregunta el enunciado. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Llamar a emergencias es un paso inicial general, no el procedimiento específico que pregunta el enunciado. La descartamos."
         },
         {
-          "t": "Opción D: La reanimación cardiopulmonar incluye comprobar el pulso y, si falta, sumar compresiones; no es el paso inmediato indicado aquí. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La reanimación cardiopulmonar incluye comprobar el pulso y, si falta, sumar compresiones; no es el paso inmediato indicado aquí. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Ubica la rama que parte de «si no respira».",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Ubica la rama que parte de «si no respira»."
         },
         {
-          "t": "Sigue el paso inmediato antes de revisar el pulso.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Sigue el paso inmediato antes de revisar el pulso."
         },
         {
-          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "Cuando la víctima no respira, la infografía indica realizar respiración boca a boca. Después se revisa el pulso para decidir si también se requiere masaje cardíaco."
         },
         {
-          "t": "La instrucción asociada a no respirar es realizar respiración boca a boca.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La instrucción asociada a no respirar es realizar respiración boca a boca."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "no respire",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica la rama que parte de «si no respira».",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Sigue el paso inmediato antes de revisar el pulso.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La instrucción asociada a no respirar es realizar respiración boca a boca.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "En una región de Colombia, una organización",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "De lo que busca cada una de las organizaciones mencionadas se puede afirmar que",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "La opción A plantea «es semejante, porque las dos buscan el aprovechamiento económico…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
+          "p": "La opción B plantea «es semejante, porque las dos buscan defender a toda costa las…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
+          "t": "Opción B"
         },
         {
-          "t": "Opción B",
-          "p": "La opción B plantea «es semejante, porque las dos buscan defender a toda costa las…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
+          "p": "La opción C plantea «es semejante, porque las dos buscan el aprovechamiento económico…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
+          "t": "Opción C"
         },
         {
-          "t": "Opción D",
-          "p": "La opción D plantea «es diferente, porque una busca que los campesinos se asienten y…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
+          "p": "La opción D plantea «es diferente, porque una busca que los campesinos se asienten y…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
+          "t": "Opción D"
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
@@ -61,9 +29,11 @@
           "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Concluye por qué la opción C satisface ese criterio."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es A."
         }
       ],
       "2": [
@@ -86,50 +56,80 @@
           "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
-          "t": "La opción A plantea «es semejante, porque las dos buscan el aprovechamiento económico…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C plantea «es semejante, porque las dos buscan el aprovechamiento económico…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
-          "t": "La opción B plantea «es semejante, porque las dos buscan defender a toda costa las…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «es semejante, porque las dos buscan defender a toda costa las…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
-          "t": "La opción D plantea «es diferente, porque una busca que los campesinos se asienten y…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «es diferente, porque una busca que los campesinos se asienten y…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
-          "a": "o:C:ok",
-          "k": "contra"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
-          "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "a": "o:C:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "En una región de Colombia, una organización",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De lo que busca cada una de las organizaciones mencionadas se puede afirmar que",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

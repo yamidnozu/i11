@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "pensamiento racional",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Identifica qué conducta se presenta como no racional."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Busca una cita que muestre repetición sin aprendizaje ni cambio."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar una cita con la idea central de un texto",
-      "que": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción B respalda que la avispa no ajusta su acción mediante un razonamiento consciente.",
+      "clave": "La opción D muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera.",
+      "no": [
+        {
+          "p": "Resume el ciclo de vida, pero no muestra por sí solo una repetición irracional.",
+          "t": "Opción A"
+        },
+        {
+          "p": "Enumera la secuencia habitual, pero omite la repetición fallida que sustenta la idea.",
+          "t": "Opción B"
+        },
+        {
+          "p": "Describe la impresión inicial de que la rutina parece lógica; no la evidencia que la desmiente.",
+          "t": "Opción C"
+        }
+      ],
       "pistas": [
         "Identifica qué conducta se presenta como no racional.",
         "Busca una cita que muestre repetición sin aprendizaje ni cambio."
-      ],
-      "clave": "La opción B muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Resume el ciclo de vida, pero no muestra por sí solo una repetición irracional."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Describe la impresión inicial de que la rutina parece lógica; no la evidencia que la desmiente."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Enumera la secuencia habitual, pero omite la repetición fallida que sustenta la idea."
-        }
       ],
       "plan": [
         {
@@ -59,79 +31,107 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción D respalda que la avispa no ajusta su acción mediante un razonamiento consciente.",
+      "tema": "Relacionar una cita con la idea central de un texto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «pensamiento racional» orienta la lectura.",
-          "a": "m:pensamiento racional"
+          "a": "m:pensamiento racional",
+          "t": "La expresión «pensamiento racional» orienta la lectura."
         },
         {
-          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción B respalda que la avispa no ajusta su acción mediante un razonamiento consciente.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción D respalda que la avispa no ajusta su acción mediante un razonamiento consciente."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción B respalda que la avispa no ajusta su acción mediante un razonamiento consciente.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción D respalda que la avispa no ajusta su acción mediante un razonamiento consciente."
         },
         {
-          "t": "Opción A: Resume el ciclo de vida, pero no muestra por sí solo una repetición irracional. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Resume el ciclo de vida, pero no muestra por sí solo una repetición irracional. La descartamos."
         },
         {
-          "t": "Opción C: Describe la impresión inicial de que la rutina parece lógica; no la evidencia que la desmiente. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Describe la impresión inicial de que la rutina parece lógica; no la evidencia que la desmiente. La descartamos."
         },
         {
-          "t": "Opción D: Enumera la secuencia habitual, pero omite la repetición fallida que sustenta la idea. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Enumera la secuencia habitual, pero omite la repetición fallida que sustenta la idea. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Identifica qué conducta se presenta como no racional.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Identifica qué conducta se presenta como no racional."
         },
         {
-          "t": "Busca una cita que muestre repetición sin aprendizaje ni cambio.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Busca una cita que muestre repetición sin aprendizaje ni cambio."
         },
         {
-          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción B respalda que la avispa no ajusta su acción mediante un razonamiento consciente.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La repetición del mismo procedimiento muchas veces, incluso cuando no funciona, muestra una conducta rígida. La cita de la opción D respalda que la avispa no ajusta su acción mediante un razonamiento consciente."
         },
         {
-          "t": "La opción B muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La opción D muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "pensamiento racional",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué conducta se presenta como no racional.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca una cita que muestre repetición sin aprendizaje ni cambio.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La opción D muestra que la avispa repite el mismo procedimiento aunque el grillo vuelva a quedar fuera.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

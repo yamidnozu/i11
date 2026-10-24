@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "presión de vapor del líquido iguala a la presión atmosférica",
-        "rol": "pide",
-        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la relación",
-        "texto": "Identifica qué condición debe cumplirse para hervir."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Relaciona la altura con la presión atmosférica."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Deduce si hace falta más o menos temperatura para igualar la presión."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar presión atmosférica con punto de ebullición",
-      "que": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
-      "pistas": [
-        "Usa la definición de ebullición incluida en el enunciado.",
-        "A mayor altura, la presión atmosférica disminuye."
-      ],
       "clave": "El agua hierve a una temperatura menor porque la presión atmosférica es más baja.",
       "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero, menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja."
+        },
         {
           "t": "Opción B",
           "p": "Pero, reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor."
         },
         {
-          "t": "Opción C",
-          "p": "Pero, menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja."
-        },
-        {
           "t": "Opción D",
           "p": "Pero, la baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor."
         }
+      ],
+      "pistas": [
+        "Usa la definición de ebullición incluida en el enunciado.",
+        "A mayor altura, la presión atmosférica disminuye."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Deduce si hace falta más o menos temperatura para igualar la presión."
         }
-      ]
+      ],
+      "que": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
+      "tema": "Relacionar presión atmosférica con punto de ebullición"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "La frase «presión de vapor del líquido iguala a la presión atmosférica» da una pista sobre qué debemos observar.",
-          "a": "m:presión de vapor del líquido iguala a la presión atmosférica"
+          "a": "m:presión de vapor del líquido iguala a la presión atmosférica",
+          "t": "La frase «presión de vapor del líquido iguala a la presión atmosférica» da una pista sobre qué debemos observar."
         },
         {
-          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar."
         },
         {
-          "t": "La opción B no corresponde: Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no corresponde: Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor."
         },
         {
-          "t": "La opción C no corresponde: Menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja.",
-          "a": "o:C:no",
-          "k": "err"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no corresponde: Menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja."
         },
         {
-          "t": "La opción D no corresponde: La baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no corresponde: La baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "Primero identifico qué relación científica explica la pregunta.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué relación científica explica la pregunta."
         },
         {
-          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "A mayor altura hay menos aire encima y la presión atmosférica es menor. El agua alcanza esa presión con una temperatura de ebullición inferior a la que tendría al nivel del mar."
         },
         {
-          "t": "Deduce si hace falta más o menos temperatura para igualar la presión.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Deduce si hace falta más o menos temperatura para igualar la presión."
         },
         {
-          "t": "La opción B no corresponde: Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no corresponde: Reconoce que la presión baja, pero saca la conclusión inversa: con menos presión atmosférica el vapor la iguala antes, así que hierve a menor temperatura, no mayor."
         },
         {
-          "t": "La opción C no corresponde: Menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja.",
-          "a": "o:C:no",
-          "k": "err"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no corresponde: Menos aire cambia la temperatura de ebullición, no impide hervir: el agua sigue hirviendo cuando su presión de vapor iguala la atmosférica, que en {{25}} km es muy baja."
         },
         {
-          "t": "La opción D no corresponde: La baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no corresponde: La baja presión no congela el agua: la congelación depende de la temperatura; el enunciado relaciona la ebullición con la presión de vapor."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "presión de vapor del líquido iguala a la presión atmosférica",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué condición debe cumplirse para hervir.",
+        "titulo": "Identifica la relación"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la altura con la presión atmosférica.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Deduce si hace falta más o menos temperatura para igualar la presión.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

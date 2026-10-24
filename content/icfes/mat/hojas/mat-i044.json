@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "área aproximada",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «área aproximada» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "9(3)/10=2,7"
-        ],
-        "nota": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: área aproximada",
-      "que": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
-      "pistas": [
-        "Fíjate en «área aproximada».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2)."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Calcula el área del círculo completo sin dividir entre los 10 sectores iguales."
+        },
+        {
+          "t": "Opción D",
+          "p": "Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
         }
+      ],
+      "pistas": [
+        "Fíjate en «área aproximada».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "9(3)/10=2,7"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+      "tema": "Matemáticas: área aproximada"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «área aproximada» orienta la estrategia.",
-          "a": "m:área aproximada"
+          "a": "m:área aproximada",
+          "t": "La frase «área aproximada» orienta la estrategia."
         },
         {
-          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
         },
         {
-          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "área aproximada",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «área aproximada» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "9(3)/10=2,7"
+        ],
+        "nota": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
+      }
+    ]
   }
 }

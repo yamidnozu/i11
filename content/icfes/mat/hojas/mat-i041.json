@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "terreno",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «requerimiento es imposible» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "7+7<18"
-        ],
-        "nota": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: requerimiento es imposible",
-      "que": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
-      "pistas": [
-        "Fíjate en «requerimiento es imposible».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
+        },
+        {
+          "t": "Opción D",
+          "p": "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
         }
+      ],
+      "pistas": [
+        "Fíjate en «requerimiento es imposible».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "7+7<18"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
+      "tema": "Matemáticas: requerimiento es imposible"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «requerimiento es imposible» orienta la estrategia.",
-          "a": "m:terreno"
+          "a": "m:terreno",
+          "t": "La frase «requerimiento es imposible» orienta la estrategia."
         },
         {
-          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "terreno",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «requerimiento es imposible» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "7+7<18"
+        ],
+        "nota": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
+      }
+    ]
   }
 }

@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "ángulo entre la acera",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «ángulo entre la acera» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "30^\\circ"
-        ],
-        "nota": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: ángulo entre la acera",
-      "que": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
-      "pistas": [
-        "Fíjate en «ángulo entre la acera».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Divide el ángulo entre la longitud de los postes sin base trigonométrica."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
+        },
+        {
+          "t": "Opción C",
+          "p": "Confunde el ángulo de elevación con su complemento respecto a la vertical."
         }
+      ],
+      "pistas": [
+        "Fíjate en «ángulo entre la acera».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "30^\\circ"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
+      "tema": "Matemáticas: ángulo entre la acera"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «ángulo entre la acera» orienta la estrategia.",
-          "a": "m:ángulo entre la acera"
+          "a": "m:ángulo entre la acera",
+          "t": "La frase «ángulo entre la acera» orienta la estrategia."
         },
         {
-          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
         },
         {
-          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "ángulo entre la acera",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «ángulo entre la acera» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "30^\\circ"
+        ],
+        "nota": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
+      }
+    ]
   }
 }

@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "cateto menor",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «cateto menor» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "32/raiz(3)"
-        ],
-        "nota": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: cateto menor",
-      "que": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
-      "pistas": [
-        "Fíjate en «cateto menor».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°."
+        },
+        {
+          "t": "Opción D",
+          "p": "Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
         }
+      ],
+      "pistas": [
+        "Fíjate en «cateto menor».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "32/raiz(3)"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
+      "tema": "Matemáticas: cateto menor"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «cateto menor» orienta la estrategia.",
-          "a": "m:cateto menor"
+          "a": "m:cateto menor",
+          "t": "La frase «cateto menor» orienta la estrategia."
         },
         {
-          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
         },
         {
-          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "cateto menor",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «cateto menor» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "32/raiz(3)"
+        ],
+        "nota": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
+      }
+    ]
   }
 }

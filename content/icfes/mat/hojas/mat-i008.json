@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "determinar la temperatura",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «determinar la temperatura» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "20-3.000/100=-10"
-        ],
-        "nota": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: determinar la temperatura",
-      "que": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
-      "pistas": [
-        "Fíjate en «determinar la temperatura».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
         },
         {
-          "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción C",
+          "p": "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
+        },
+        {
+          "t": "Opción D",
+          "p": "Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
         }
+      ],
+      "pistas": [
+        "Fíjate en «determinar la temperatura».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "20-3.000/100=-10"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
+      "tema": "Matemáticas: determinar la temperatura"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «determinar la temperatura» orienta la estrategia.",
-          "a": "m:determinar la temperatura"
+          "a": "m:determinar la temperatura",
+          "t": "La frase «determinar la temperatura» orienta la estrategia."
         },
         {
-          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
         },
         {
-          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "determinar la temperatura",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «determinar la temperatura» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "20-3.000/100=-10"
+        ],
+        "nota": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
+      }
+    ]
   }
 }

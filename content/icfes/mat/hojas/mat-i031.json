@@ -1,150 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "procedimiento correcto",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «procedimiento correcto» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "(x+3)(x-3)=0"
-        ],
-        "nota": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: procedimiento correcto",
-      "que": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
-      "pistas": [
-        "Fíjate en «procedimiento correcto».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "t": "Opción B",
+          "p": "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática."
+        },
+        {
+          "t": "Opción D",
+          "p": "Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
         }
+      ],
+      "pistas": [
+        "Fíjate en «procedimiento correcto».",
+        "Usa los datos del enunciado y comprueba la unidad del resultado."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "(x+3)(x-3)=0"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
+      "tema": "Matemáticas: procedimiento correcto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «procedimiento correcto» orienta la estrategia.",
-          "a": "m:procedimiento correcto"
+          "a": "m:procedimiento correcto",
+          "t": "La frase «procedimiento correcto» orienta la estrategia."
         },
         {
-          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
         },
         {
-          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "procedimiento correcto",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «procedimiento correcto» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "(x+3)(x-3)=0"
+        ],
+        "nota": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
+      }
+    ]
   }
 }

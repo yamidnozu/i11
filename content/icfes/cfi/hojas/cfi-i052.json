@@ -1,118 +1,135 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "abandono de las zonas residenciales del centro urbano",
-        "rol": "dato",
-        "nota": "Describe el movimiento de población que se quiere explicar.",
-        "campo": "Fenómeno"
-      },
-      {
-        "frag": "La principal causa de este fenómeno se atribuye",
-        "rol": "pide",
-        "nota": "Debes identificar una causa para el traslado hacia la periferia.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica la dirección del movimiento: del centro hacia la periferia."
-      },
-      {
-        "k": "idea",
-        "texto": "Ten en cuenta que se trata de familias con ingresos medios y altos."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la causa que explica por qué buscarían vivir en zonas periféricas tranquilas."
-      }
-    ],
     "enfoque": {
-      "tema": "Migración residencial dentro de las ciudades",
-      "que": "Inferir una causa del traslado de familias desde el centro urbano hacia la periferia.",
-      "plan": [
+      "clave": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
+      "no": [
         {
-          "t": "Ubica las zonas que pierden y ganan población."
+          "p": "La opción B plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
+          "t": "Opción B"
         },
         {
-          "t": "Relaciona el perfil de las familias con sus posibles preferencias residenciales."
+          "p": "La opción C plantea «a la escasa oferta de servicios en los barrios del centro de la…», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
+          "t": "Opción C"
         },
         {
-          "t": "Contrasta cada causa con el fenómeno descrito."
+          "p": "La opción D plantea «a la creciente oferta de vivienda barata en las afueras de la ciudad.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
+          "t": "Opción D"
         }
       ],
       "pistas": [
-        "Las zonas periféricas se están poblando más.",
-        "Las familias tienen ingresos medios y altos."
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
-      "clave": "La opción B atribuye el traslado a la búsqueda de mejor calidad de vida en barrios tranquilos.",
-      "no": [
+      "plan": [
         {
-          "t": "Opción A",
-          "p": "Pero, Un mayor desarrollo industrial en el centro no explica el abandono residencial descrito."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Opción C",
-          "p": "Pero, La escasa oferta de servicios del centro no aparece en el texto como causa y no explica por sí sola el destino periférico."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Opción D",
-          "p": "Pero, La vivienda barata no encaja con el énfasis en familias de ingresos medios y altos ni es la causa presentada como principal."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Las familias se están trasladando del centro hacia la periferia."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "El texto habla de personas con ingresos medios y altos que pueden buscar zonas más tranquilas."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B explica esa búsqueda de calidad de vida."
+          "a": "o:A:ok",
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es A."
         }
       ],
       "2": [
         {
-          "a": "o:A:no",
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
+        },
+        {
+          "a": "o:B:no",
           "k": "err",
-          "t": "Un mayor desarrollo industrial en el centro no explica el abandono residencial descrito."
+          "t": "La opción B plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La escasa oferta de servicios del centro no aparece en el texto como causa y no explica por sí sola el destino periférico."
+          "t": "La opción C plantea «a la escasa oferta de servicios en los barrios del centro de la…», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La vivienda barata no encaja con el énfasis en familias de ingresos medios y altos ni es la causa presentada como principal."
+          "t": "La opción D plantea «a la creciente oferta de vivienda barata en las afueras de la ciudad.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B atribuye el traslado a la búsqueda de mejor calidad de vida en barrios tranquilos."
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "El fenómeno combina salida del centro y crecimiento residencial periférico."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El perfil de ingresos sugiere una decisión de búsqueda de mejores condiciones residenciales."
+          "a": "p:1",
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "La opción B expresa esa motivación; las otras no se ajustan al perfil y al desplazamiento descritos."
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "a": "o:B:ok",
-          "t": "Por eso, la respuesta es B."
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "En las principales ciudades del mundo modern",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ste fenómeno se atribuye",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

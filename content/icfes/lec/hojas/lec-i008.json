@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "NO presenta una buena razón",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Atiende a la palabra «NO»: debes elegir la razón que no corresponde."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Compara cada opción con las acciones que explica la infografía."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir el propósito de las imágenes en una infografía",
-      "que": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia.",
+      "clave": "La opción D habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas.",
+      "no": [
+        {
+          "p": "Un dibujo puede acompañar la descripción y hacerla más comprensible.",
+          "t": "Opción A"
+        },
+        {
+          "p": "Representar los pasos es precisamente una función útil de las imágenes en esta infografía.",
+          "t": "Opción B"
+        },
+        {
+          "p": "Las imágenes aclaran qué hacer en cada etapa.",
+          "t": "Opción C"
+        }
+      ],
       "pistas": [
         "Atiende a la palabra «NO»: debes elegir la razón que no corresponde.",
         "Compara cada opción con las acciones que explica la infografía."
-      ],
-      "clave": "La opción B habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Un dibujo puede acompañar la descripción y hacerla más comprensible."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Las imágenes aclaran qué hacer en cada etapa."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Representar los pasos es precisamente una función útil de las imágenes en esta infografía."
-        }
       ],
       "plan": [
         {
@@ -59,79 +31,107 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia.",
+      "tema": "Inferir el propósito de las imágenes en una infografía"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «NO presenta una buena razón» orienta la lectura.",
-          "a": "m:NO presenta una buena razón"
+          "a": "m:NO presenta una buena razón",
+          "t": "La expresión «NO presenta una buena razón» orienta la lectura."
         },
         {
-          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia."
         },
         {
-          "t": "Opción A: Un dibujo puede acompañar la descripción y hacerla más comprensible. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Un dibujo puede acompañar la descripción y hacerla más comprensible. La descartamos."
         },
         {
-          "t": "Opción C: Las imágenes aclaran qué hacer en cada etapa. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Las imágenes aclaran qué hacer en cada etapa. La descartamos."
         },
         {
-          "t": "Opción D: Representar los pasos es precisamente una función útil de las imágenes en esta infografía. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Representar los pasos es precisamente una función útil de las imágenes en esta infografía. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Atiende a la palabra «NO»: debes elegir la razón que no corresponde.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Atiende a la palabra «NO»: debes elegir la razón que no corresponde."
         },
         {
-          "t": "Compara cada opción con las acciones que explica la infografía.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Compara cada opción con las acciones que explica la infografía."
         },
         {
-          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "Las imágenes ayudan a entender posiciones y acciones que serían difíciles de seguir solo con palabras. La infografía no pretende mostrar lugares donde se puede reanimar; se centra en los pasos que debe seguir quien auxilia."
         },
         {
-          "t": "La opción B habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La opción D habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "NO presenta una buena razón",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Atiende a la palabra «NO»: debes elegir la razón que no corresponde.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Compara cada opción con las acciones que explica la infografía.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La opción D habla de lugares para realizar la reanimación, un propósito ajeno a las instrucciones mostradas.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

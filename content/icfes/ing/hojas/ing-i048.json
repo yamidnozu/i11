@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "One of the ______ says that the original Valentine was a priest.",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{One of the ______ says that the original Valentine was a priest.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín.",
       "clave": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín.",
+      "no": [
+        {
+          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen.",
+          "t": "Opción A"
+        },
+        {
+          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen.",
+          "t": "Opción B"
+        },
+        {
+          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen.",
+          "t": "Opción C"
+        }
+      ],
       "pistas": [
         "Localiza {{One of the ______ says that the original Valentine was a priest.}} en el pasaje.",
         "Relaciona esa pista con la información que el autor presenta."
-      ],
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
-        },
-        {
-          "t": "Opción C",
-          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
-        },
-        {
-          "t": "Opción D",
-          "p": "{{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
-        }
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -75,7 +50,7 @@
           "t": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "La respuesta es {{stories}}."
         }
       ],
@@ -99,12 +74,12 @@
           "t": "La opción C no corresponde: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
         },
         {
-          "a": "o:D:no",
+          "a": "o:B:no",
           "k": "err",
-          "t": "La opción D no corresponde: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
+          "t": "La opción B no corresponde: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "{{stories}} responde a la pregunta."
         }
       ],
@@ -130,15 +105,40 @@
           "t": "La opción C no encaja: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
         },
         {
-          "a": "o:D:no",
+          "a": "o:B:no",
           "k": "err",
-          "t": "La opción D no encaja: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
+          "t": "La opción B no encaja: {{essays}} son textos argumentativos, {{reports}} informes y {{letters}} correspondencia; la oración alude a una historia sobre el origen."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "La evidencia respalda {{stories}}."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "One of the ______ says that the original Valentine was a priest.",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{One of the ______ says that the original Valentine was a priest.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{stories}} encaja porque se presenta una de las versiones sobre el origen de San Valentín.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
   }
 }

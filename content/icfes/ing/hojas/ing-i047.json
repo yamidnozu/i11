@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "It's always a lot of fun to get a card or some chocolates, but ______ do we do this?",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{It's always a lot of fun to get a card or some chocolates, but ______ do we do this?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas.",
       "clave": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas.",
+      "no": [
+        {
+          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón.",
+          "t": "Opción A"
+        },
+        {
+          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón.",
+          "t": "Opción B"
+        },
+        {
+          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón.",
+          "t": "Opción C"
+        }
+      ],
       "pistas": [
         "Localiza {{It's always a lot of fun to get a card or some chocolates, but ______ do we do this?}} en el pasaje.",
         "Relaciona esa pista con la información que el autor presenta."
-      ],
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
-        },
-        {
-          "t": "Opción C",
-          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
-        },
-        {
-          "t": "Opción D",
-          "p": "{{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
-        }
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -75,7 +50,7 @@
           "t": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "La respuesta es {{why}}."
         }
       ],
@@ -99,12 +74,12 @@
           "t": "La opción C no corresponde: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
         },
         {
-          "a": "o:D:no",
+          "a": "o:B:no",
           "k": "err",
-          "t": "La opción D no corresponde: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
+          "t": "La opción B no corresponde: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "{{why}} responde a la pregunta."
         }
       ],
@@ -130,15 +105,40 @@
           "t": "La opción C no encaja: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
         },
         {
-          "a": "o:D:no",
+          "a": "o:B:no",
           "k": "err",
-          "t": "La opción D no encaja: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
+          "t": "La opción B no encaja: {{where}} pregunta por un lugar, {{when}} por un momento y {{what}} por una cosa; aquí se busca la razón."
         },
         {
-          "a": "o:B:ok",
+          "a": "o:D:ok",
           "t": "La evidencia respalda {{why}}."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "It's always a lot of fun to get a card or some chocolates, but ______ do we do this?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{It's always a lot of fun to get a card or some chocolates, but ______ do we do this?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{why}} pregunta la razón por la que la gente intercambia regalos y tarjetas.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
   }
 }

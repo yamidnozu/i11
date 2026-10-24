@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "reanimación cardíaca",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Sigue las flechas y condiciones de la infografía."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Distingue la falta de respiración de la falta de pulso."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso."
-      }
-    ],
     "enfoque": {
-      "tema": "Seguir una condición en una infografía de primeros auxilios",
-      "que": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
-      "pistas": [
-        "Sigue las flechas y condiciones de la infografía.",
-        "Distingue la falta de respiración de la falta de pulso."
-      ],
       "clave": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación."
+          "p": "Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación.",
+          "t": "Opción A"
         },
         {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso."
+          "p": "La posición de recuperación corresponde a una víctima que sí reacciona.",
+          "t": "Opción B"
         },
         {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero La posición de recuperación corresponde a una víctima que sí reacciona."
+          "p": "La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso.",
+          "t": "Opción C"
         }
+      ],
+      "pistas": [
+        "Sigue las flechas y condiciones de la infografía.",
+        "Distingue la falta de respiración de la falta de pulso."
       ],
       "plan": [
         {
@@ -59,79 +31,107 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
+      "tema": "Seguir una condición en una infografía de primeros auxilios"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «reanimación cardíaca» orienta la lectura.",
-          "a": "m:reanimación cardíaca"
+          "a": "m:reanimación cardíaca",
+          "t": "La expresión «reanimación cardíaca» orienta la lectura."
         },
         {
-          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso."
         },
         {
-          "t": "Opción A: Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación. La descartamos."
         },
         {
-          "t": "Opción C: La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso. La descartamos."
         },
         {
-          "t": "Opción D: La posición de recuperación corresponde a una víctima que sí reacciona. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: La posición de recuperación corresponde a una víctima que sí reacciona. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Sigue las flechas y condiciones de la infografía.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Sigue las flechas y condiciones de la infografía."
         },
         {
-          "t": "Distingue la falta de respiración de la falta de pulso.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Distingue la falta de respiración de la falta de pulso."
         },
         {
-          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso."
         },
         {
-          "t": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
-          "a": "o:B:ok"
+          "a": "o:D:ok",
+          "t": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "reanimación cardíaca",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Sigue las flechas y condiciones de la infografía.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue la falta de respiración de la falta de pulso.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

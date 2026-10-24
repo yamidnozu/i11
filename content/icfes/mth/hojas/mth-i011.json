@@ -1,53 +1,151 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "47 toneladas de mango", "rol": "dato", "nota": "La regla solo cuenta los grupos completos de cinco toneladas.", "campo": "Cantidad vendida" },
-      { "frag": "bono recibido por cada uno", "rol": "pide", "nota": "Calcula el porcentaje sobre el ingreso de los grupos elegibles.", "campo": "Bono individual" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Separa grupos completos y sobrante", "texto": "De las toneladas vendidas, solo cuentan los grupos completos de cinco; el sobrante no genera bono." },
-      { "k": "calc", "titulo": "Calcula la venta elegible y el bono", "lineas": ["$47 - 2 = 45$ toneladas", "$45 × 1.300.000 = 58.500.000$", "$0,3\\% × 58.500.000 = 175.500$"], "nota": "El valor aproximado por empleado es $175.000$ pesos." },
-      { "k": "check", "texto": "El bono calculado se aproxima a $175.000$ pesos por trabajador. La respuesta es B." }
-    ],
     "enfoque": {
-      "tema": "Porcentaje sobre grupos completos de venta",
-      "que": "Determina cuántas toneladas generan bono, calcula su valor de venta y aplica el porcentaje establecido.",
-      "pistas": ["Primero separa los grupos completos del sobrante.", "Usa el precio de venta del mango en W y el porcentaje del bono."],
       "clave": "Las $47$ toneladas dejan dos fuera de los grupos completos; las $45$ elegibles generan $58.500.000$ en ventas y un bono de aproximadamente $175.000$ por persona.",
       "no": [
-        { "t": "Opción A", "p": "Calcula el bono con una base mayor que las toneladas elegibles. Pero el sobrante no completa otro grupo de cinco." },
-        { "t": "Opción C", "p": "No aplica el porcentaje a la venta de las toneladas elegibles. Pero el cálculo debe usar el precio del mango en W." },
-        { "t": "Opción D", "p": "No corresponde al porcentaje sobre los grupos completos. Pero el valor de venta elegible es $58.500.000$." }
+        {
+          "p": "Calcula el bono con una base mayor que las toneladas elegibles. Pero el sobrante no completa otro grupo de cinco.",
+          "t": "Opción B"
+        },
+        {
+          "p": "No aplica el porcentaje a la venta de las toneladas elegibles. Pero el cálculo debe usar el precio del mango en W.",
+          "t": "Opción C"
+        },
+        {
+          "p": "No corresponde al porcentaje sobre los grupos completos. Pero el valor de venta elegible es $58.500.000$.",
+          "t": "Opción D"
+        }
+      ],
+      "pistas": [
+        "Primero separa los grupos completos del sobrante.",
+        "Usa el precio de venta del mango en W y el porcentaje del bono."
       ],
       "plan": [
-        { "t": "Calcula el sobrante al agrupar las toneladas de cinco en cinco.", "eq": ["$47 - 2 = 45$"] },
-        { "t": "Calcula el valor de venta de las toneladas elegibles.", "eq": ["$45 × 1.300.000 = 58.500.000$"] },
-        { "t": "Aplica el porcentaje y aproxima al valor de las opciones.", "eq": ["$0,3\\% × 58.500.000 = 175.500$"] }
-      ]
+        {
+          "eq": [
+            "$47 - 2 = 45$"
+          ],
+          "t": "Calcula el sobrante al agrupar las toneladas de cinco en cinco."
+        },
+        {
+          "eq": [
+            "$45 × 1.300.000 = 58.500.000$"
+          ],
+          "t": "Calcula el valor de venta de las toneladas elegibles."
+        },
+        {
+          "eq": [
+            "$0,3\\% × 58.500.000 = 175.500$"
+          ],
+          "t": "Aplica el porcentaje y aproxima al valor de las opciones."
+        }
+      ],
+      "que": "Determina cuántas toneladas generan bono, calcula su valor de venta y aplica el porcentaje establecido.",
+      "tema": "Porcentaje sobre grupos completos de venta"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuántos grupos completos de cinco toneladas hay en la venta?", "a": "m:47 toneladas de mango" },
-        { "t": "Cuentan cuarenta y cinco toneladas. Su venta suma $58.500.000$." },
-        { "t": "El cero coma tres por ciento da aproximadamente $175.000$ pesos. La respuesta es B.", "a": "o:B:ok" }
+        {
+          "a": "m:47 toneladas de mango",
+          "t": "¿Cuántos grupos completos de cinco toneladas hay en la venta?"
+        },
+        {
+          "t": "Cuentan cuarenta y cinco toneladas. Su venta suma $58.500.000$."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "El cero coma tres por ciento da aproximadamente $175.000$ pesos. La respuesta es A."
+        }
       ],
       "2": [
-        { "t": "Retira primero las toneladas que no completan otro grupo y calcula el bono sobre lo restante." },
-        { "t": "La venta elegible es $45 × 1.300.000 = 58.500.000$. El bono es $0,3\\% × 58.500.000 = 175.500$, cerca de $175.000$ pesos." },
-        { "t": "La opción A parte de una base mayor que la venta elegible.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción C no representa el porcentaje aplicado al ingreso de las toneladas elegibles.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D no corresponde al tres por mil de $58.500.000$.", "a": "o:D:no", "k": "err" },
-        { "t": "El valor aproximado es $175.000$ pesos por persona. La respuesta es B.", "a": "o:B:ok" }
+        {
+          "t": "Retira primero las toneladas que no completan otro grupo y calcula el bono sobre lo restante."
+        },
+        {
+          "t": "La venta elegible es $45 × 1.300.000 = 58.500.000$. El bono es $0,3\\% × 58.500.000 = 175.500$, cerca de $175.000$ pesos."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B parte de una base mayor que la venta elegible."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no representa el porcentaje aplicado al ingreso de las toneladas elegibles."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no corresponde al tres por mil de $58.500.000$."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "El valor aproximado es $175.000$ pesos por persona. La respuesta es A."
+        }
       ],
       "3": [
-        { "t": "Al dividir $47$ entre cinco, sobran dos toneladas y quedan $45$ elegibles.", "a": "p:0", "k": "ana" },
-        { "t": "Las ventas elegibles suman $45 × 1.300.000 = 58.500.000$. El bono individual es $0,003 × 58.500.000 = 175.500$.", "a": "p:1" },
-        { "t": "Al aproximar al millar, se obtienen $175.000$ pesos.", "a": "p:2", "k": "contra" },
-        { "t": "A usa una base demasiado alta; C y D no equivalen al porcentaje indicado sobre el ingreso elegible.", "a": "o:A:no|o:C:no|o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Al dividir $47$ entre cinco, sobran dos toneladas y quedan $45$ elegibles."
+        },
+        {
+          "a": "p:1",
+          "t": "Las ventas elegibles suman $45 × 1.300.000 = 58.500.000$. El bono individual es $0,003 × 58.500.000 = 175.500$."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Al aproximar al millar, se obtienen $175.000$ pesos."
+        },
+        {
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A usa una base demasiado alta; C y D no equivalen al porcentaje indicado sobre el ingreso elegible."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
+        }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Cantidad vendida",
+        "frag": "47 toneladas de mango",
+        "nota": "La regla solo cuenta los grupos completos de cinco toneladas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Bono individual",
+        "frag": "bono recibido por cada uno",
+        "nota": "Calcula el porcentaje sobre el ingreso de los grupos elegibles.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "De las toneladas vendidas, solo cuentan los grupos completos de cinco; el sobrante no genera bono.",
+        "titulo": "Separa grupos completos y sobrante"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$47 - 2 = 45$ toneladas",
+          "$45 × 1.300.000 = 58.500.000$",
+          "$0,3\\% × 58.500.000 = 175.500$"
+        ],
+        "nota": "El valor aproximado por empleado es $175.000$ pesos.",
+        "titulo": "Calcula la venta elegible y el bono"
+      },
+      {
+        "k": "check",
+        "texto": "El bono calculado se aproxima a $175.000$ pesos por trabajador. La respuesta es A."
+      }
+    ]
   }
 }

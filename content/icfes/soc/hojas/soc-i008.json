@@ -1,137 +1,135 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "Constitución Política de Colombia se puede modificar",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Distingue una votación sobre una reforma de otros mecanismos de participación."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Busca el mecanismo que somete un texto normativo a decisión ciudadana."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "El referendo es el mecanismo que permite votar una reforma a la Constitución."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer un mecanismo de participación constitucional",
-      "que": "Entre las opciones, el referendo permite que la ciudadanía vote una reforma constitucional. La consulta popular, el plebiscito y el cabildo abierto tienen otros propósitos y no son el mecanismo señalado para reformar la Constitución.",
-      "pistas": [
-        "Distingue una votación sobre una reforma de otros mecanismos de participación.",
-        "Busca el mecanismo que somete un texto normativo a decisión ciudadana."
-      ],
-      "clave": "El referendo es el mecanismo que permite votar una reforma a la Constitución.",
+      "clave": "El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero La consulta popular somete una pregunta de importancia general, pero no es el mecanismo de reforma constitucional aquí descrito."
+          "p": "La opción B plantea «Un plebiscito.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación.",
+          "t": "Opción B"
         },
         {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El plebiscito consulta una decisión política del Ejecutivo; no reforma por sí mismo el texto constitucional."
+          "p": "La opción C plantea «Una consulta popular.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación.",
+          "t": "Opción C"
         },
         {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero El cabildo abierto es una reunión pública de deliberación local, no una reforma de la Constitución."
+          "p": "La opción D plantea «Un cabildo abierto.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación.",
+          "t": "Opción D"
         }
+      ],
+      "pistas": [
+        "Ubica quién sostiene cada argumento y qué interés expresa.",
+        "Distingue los datos explícitos de las suposiciones."
       ],
       "plan": [
         {
-          "t": "Distingue una votación sobre una reforma de otros mecanismos de participación."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca el mecanismo que somete un texto normativo a decisión ciudadana."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «Constitución Política de Colombia se puede modificar» orienta el análisis.",
-          "a": "m:Constitución Política de Colombia se puede modificar"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Entre las opciones, el referendo permite que la ciudadanía vote una reforma constitucional. La consulta popular, el plebiscito y el cabildo abierto tienen otros propósitos y no son el mecanismo señalado para reformar la Constitución.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Entre las opciones, el referendo permite que la ciudadanía vote una reforma constitucional. La consulta popular, el plebiscito y el cabildo abierto tienen otros propósitos y no son el mecanismo señalado para reformar la Constitución.",
-          "a": "p:0"
+          "t": "El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación."
         },
         {
-          "t": "Opción A: La consulta popular somete una pregunta de importancia general, pero no es el mecanismo de reforma constitucional aquí descrito. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C plantea «Una consulta popular.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación."
         },
         {
-          "t": "Opción B: El plebiscito consulta una decisión política del Ejecutivo; no reforma por sí mismo el texto constitucional. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Un plebiscito.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación."
         },
         {
-          "t": "Opción D: El cabildo abierto es una reunión pública de deliberación local, no una reforma de la Constitución. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Un cabildo abierto.», Pero no responde al criterio central: El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Distingue una votación sobre una reforma de otros mecanismos de participación.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación."
         },
         {
-          "t": "Busca el mecanismo que somete un texto normativo a decisión ciudadana.",
-          "a": "p:1"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Entre las opciones, el referendo permite que la ciudadanía vote una reforma constitucional. La consulta popular, el plebiscito y el cabildo abierto tienen otros propósitos y no son el mecanismo señalado para reformar la Constitución.",
-          "a": "p:2"
+          "a": "o:C:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "El referendo es el mecanismo que permite votar una reforma a la Constitución.",
-          "a": "o:C:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "frag": "La Constitución polít",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "puede modificar mediante",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El referendo permite que la ciudadanía apruebe o rechace una reforma constitucional sometida a votación. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
   }
 }

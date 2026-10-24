@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "sentido contrario",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Lee «famélico» dentro de la comparación con un pajarito."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Busca el adjetivo que expresa una condición opuesta."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Relleno expresa lo contrario de famélico."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer una palabra por su opuesto en el contexto",
-      "que": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso.",
-      "pistas": [
-        "Lee «famélico» dentro de la comparación con un pajarito.",
-        "Busca el adjetivo que expresa una condición opuesta."
-      ],
       "clave": "Relleno expresa lo contrario de famélico.",
       "no": [
         {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Magro significa delgado, así que conserva una idea cercana a famélico."
+          "p": "Magro significa delgado, así que conserva una idea cercana a famélico.",
+          "t": "Opción A"
         },
         {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Enjuto también describe a alguien muy delgado."
+          "p": "Enjuto también describe a alguien muy delgado.",
+          "t": "Opción B"
         },
         {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Esquelético intensifica la idea de extrema delgadez."
+          "p": "Esquelético intensifica la idea de extrema delgadez.",
+          "t": "Opción C"
         }
+      ],
+      "pistas": [
+        "Lee «famélico» dentro de la comparación con un pajarito.",
+        "Busca el adjetivo que expresa una condición opuesta."
       ],
       "plan": [
         {
@@ -59,79 +31,107 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso.",
+      "tema": "Reconocer una palabra por su opuesto en el contexto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «sentido contrario» orienta la lectura.",
-          "a": "m:sentido contrario"
+          "a": "m:sentido contrario",
+          "t": "La expresión «sentido contrario» orienta la lectura."
         },
         {
-          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso."
         },
         {
-          "t": "Opción A: Magro significa delgado, así que conserva una idea cercana a famélico. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Magro significa delgado, así que conserva una idea cercana a famélico. La descartamos."
         },
         {
-          "t": "Opción B: Enjuto también describe a alguien muy delgado. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Enjuto también describe a alguien muy delgado. La descartamos."
         },
         {
-          "t": "Opción D: Esquelético intensifica la idea de extrema delgadez. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Esquelético intensifica la idea de extrema delgadez. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Lee «famélico» dentro de la comparación con un pajarito.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Lee «famélico» dentro de la comparación con un pajarito."
         },
         {
-          "t": "Busca el adjetivo que expresa una condición opuesta.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Busca el adjetivo que expresa una condición opuesta."
         },
         {
-          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "Famélico significa muy hambriento o extremadamente delgado. El adjetivo que expresa lo contrario es «relleno», pues indica que alguien tiene el cuerpo más bien grueso."
         },
         {
-          "t": "Relleno expresa lo contrario de famélico.",
-          "a": "o:C:ok"
+          "a": "o:D:ok",
+          "t": "Relleno expresa lo contrario de famélico."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "sentido contrario",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee «famélico» dentro de la comparación con un pajarito.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca el adjetivo que expresa una condición opuesta.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Relleno expresa lo contrario de famélico.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }

@@ -1,118 +1,137 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "el amor o el enamoramiento",
-        "rol": "dato",
-        "nota": "El enunciado pregunta por la relación de estos sentimientos con el matrimonio según el autor.",
-        "campo": "Tema"
-      },
-      {
-        "frag": "Para el autor",
-        "rol": "pide",
-        "nota": "Responde según la perspectiva desarrollada en el texto.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Ubica cuándo comenzó a considerarse el amor como razón central para casarse."
-      },
-      {
-        "k": "idea",
-        "texto": "Contrasta esa idea con la función económica y política que tuvo el matrimonio antes."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción que exprese que la asociación entre amor y matrimonio surgió recientemente."
-      }
-    ],
     "enfoque": {
-      "tema": "Historia de la relación entre amor y matrimonio",
-      "que": "Reconocer cómo describe el autor el vínculo histórico entre el amor y el matrimonio.",
-      "plan": [
+      "clave": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
+      "no": [
         {
-          "t": "Identifica la época en que el amor empezó a considerarse la razón principal del matrimonio."
+          "p": "El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas.",
+          "t": "Opción A"
         },
         {
-          "t": "Compara esa época con el uso económico y político anterior."
+          "p": "La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor.",
+          "t": "Opción B"
         },
         {
-          "t": "Selecciona la opción que resuma el cambio histórico."
+          "p": "Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio.",
+          "t": "Opción C"
         }
       ],
       "pistas": [
-        "El texto sitúa el cambio en los siglos XVIII y XIX.",
-        "Antes el matrimonio era ante todo una institución económica y política."
+        "Compara la idea actual con la historia que presenta el autor.",
+        "No confundas una descripción de una cultura particular con la tesis general."
       ],
-      "clave": "La opción C indica que el amor se vinculó recientemente con el matrimonio y la familia.",
-      "no": [
+      "plan": [
         {
-          "t": "Opción A",
-          "p": "El texto dice que esa asociación no fue la base fundamental del matrimonio en todas las épocas."
+          "t": "Compara la idea actual con la historia que presenta el autor."
         },
         {
-          "t": "Opción B",
-          "p": "La amenaza al respeto familiar se atribuye a algunas concepciones culturales, no es la idea general del autor."
+          "t": "No confundas una descripción de una cultura particular con la tesis general."
         },
         {
-          "t": "Opción D",
-          "p": "El autor no concluye que el enamoramiento contradiga el deber ser del matrimonio."
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
+      "tema": "Distinguir una idea general de sus ejemplos"
     },
     "guion": {
       "1": [
         {
-          "t": "El texto explica que la idea de casarse por amor surgió en una época relativamente reciente."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "Antes el matrimonio cumplía funciones económicas y políticas."
+          "a": "m:amor o el enamoramiento",
+          "t": "La expresión «amor o el enamoramiento» orienta la lectura."
         },
         {
-          "a": "o:C:ok",
-          "t": "La opción C recoge ese cambio histórico."
+          "a": "p:0",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "El texto dice que esa asociación no fue la base fundamental del matrimonio en todas las épocas."
+          "t": "Opción A: El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La amenaza al respeto familiar se atribuye a algunas concepciones culturales, no es la idea general del autor."
+          "t": "Opción B: La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor. La descartamos."
         },
         {
-          "a": "o:D:no",
+          "a": "o:C:no",
           "k": "err",
-          "t": "El autor no concluye que el enamoramiento contradiga el deber ser del matrimonio."
+          "t": "Opción C: Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio. La descartamos."
         },
         {
-          "a": "o:C:ok",
-          "t": "La opción C indica que el amor se vinculó recientemente con el matrimonio y la familia."
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Distingue el matrimonio como alianza familiar y política de la idea moderna de elegirlo por amor."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "El autor sitúa esa asociación en una época concreta, después de otras funciones sociales."
+          "a": "p:0",
+          "t": "Compara la idea actual con la historia que presenta el autor."
         },
         {
-          "t": "Por eso, la respuesta es C."
+          "a": "p:1",
+          "t": "No confundas una descripción de una cultura particular con la tesis general."
         },
         {
-          "a": "o:C:ok",
-          "t": "Las otras alternativas generalizan o cambian la perspectiva del texto."
+          "a": "p:2",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "amor o el enamoramiento",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara la idea actual con la historia que presenta el autor.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "No confundas una descripción de una cultura particular con la tesis general.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
   }
 }
