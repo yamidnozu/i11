@@ -1,0 +1,59 @@
+name: Desplegar sitio de pruebas (icfes.edevcore.com)
+
+on:
+  push:
+    branches: [antigravity/v1]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-pruebas
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Modo pruebas gratuito: pagos apagados y SIN contenido oficial ICFES (VITE_ICFES no se define).
+      - name: Build (modo libre, sin ICFES)
+        run: npm run build
+        env:
+          VITE_FREE_MODE: '1'
+
+      - name: Verificar que no se publique contenido ICFES
+        run: |
+          test ! -e dist/icfes
+          if grep -lE '"[a-z0-9]{3}-i[0-9]{3}"' dist/assets/*.js; then echo "Contenido ICFES detectado en dist"; exit 1; fi
+
+      # Solo el sitio estatico: sin Functions (pagos/D1) ni wrangler.toml del repo.
+      - name: Preparar carpeta de despliegue
+        run: |
+          mkdir -p _deploy
+          cp -r dist _deploy/dist
+
+      - name: Aviso si falta el token
+        if: env.HAS_CF_TOKEN != 'true'
+        run: echo "::warning::Falta el secreto CLOUDFLARE_API_TOKEN; se compila pero no se despliega."
+
+      - name: Desplegar a Cloudflare Pages (i11-pruebas)
+        if: env.HAS_CF_TOKEN == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '3.114.17'
+          workingDirectory: _deploy
+          command: pages deploy dist --project-name i11-pruebas --branch main --commit-dirty=true
