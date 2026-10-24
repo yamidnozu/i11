@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "número entero $k$",
-        "rol": "dato",
-        "nota": "Es el extremo al que se acercan los racionales.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "$j$ entero positivo",
-        "rol": "dato",
-        "nota": "Cada entero positivo define un racional de la forma indicada.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "menores que $k+1/11$",
-        "rol": "pide",
-        "nota": "Determina qué valores de $j$ quedan dentro del intervalo.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Compara los recíprocos porque el término $k$ aparece en ambos límites.",
-        "texto": "Compara los recíprocos porque el término $k$ aparece en ambos límites."
-      },
-      {
-        "k": "calc",
-        "titulo": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once.",
-        "lineas": [
-          "$1/j<1/11$",
-          "$j>11$"
-        ],
-        "nota": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Hay infinitos enteros positivos mayores que once; la respuesta es B."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparación de fracciones unitarias y conjuntos infinitos",
-      "que": "Cuenta los valores de $j$ que producen racionales entre $k$ y $k+1/11$.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Cualquier entero positivo $j>11$ sirve; existen infinitos valores de $j$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once."
+          "p": "Pero no se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once."
         },
         {
           "t": "Opción C",
-          "p": "Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan."
+          "p": "Pero once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan."
         },
         {
           "t": "Opción D",
-          "p": "El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
+          "p": "Pero el valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
         }
+      ],
+      "pistas": [
+        "Recuerda la propiedad de densidad de los números racionales: entre dos racionales siempre existe otro número racional.",
+        "Prueba fracciones con denominador mayor a 11 (como $22$ o $33$) que queden estrictamente entre $k$ y $k + 1/11$."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "Hay infinitos enteros positivos mayores que once; la respuesta es B."
         }
-      ]
+      ],
+      "que": "Cuenta los valores de $j$ que producen racionales entre $k$ y $k+1/11$.",
+      "tema": "Comparación de fracciones unitarias y conjuntos infinitos"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Debe ser mayor que once. No hay un mayor entero final."
         },
         {
-          "t": "Hay una cantidad infinita de valores; la respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Hay una cantidad infinita de valores; la respuesta es B."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Al ser fracciones unitarias, la desigualdad se cumple para todo entero $j$ mayor que once."
         },
         {
-          "t": "La opción A: No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once."
         },
         {
-          "t": "La opción C: Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan."
         },
         {
-          "t": "La opción D: El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
         },
         {
-          "t": "A y C suponen una cantidad finita; D usa diez, que no supera once. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A y C suponen una cantidad finita; D usa diez, que no supera once. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "La condición equivale a $1/j<1/11$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La condición equivale a $1/j<1/11$."
         },
         {
-          "t": "Para enteros positivos esto requiere $j>11$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para enteros positivos esto requiere $j>11$."
         },
         {
-          "t": "Todos los enteros desde doce en adelante generan un racional válido.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Todos los enteros desde doce en adelante generan un racional válido."
         },
         {
-          "t": "A, C y D no cuentan todos los valores posibles.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D no cuentan todos los valores posibles."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "número entero $k$",
+        "nota": "Es el extremo al que se acercan los racionales.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "$j$ entero positivo",
+        "nota": "Cada entero positivo define un racional de la forma indicada.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "menores que $k+1/11$",
+        "nota": "Determina qué valores de $j$ quedan dentro del intervalo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara los recíprocos porque el término $k$ aparece en ambos límites.",
+        "titulo": "Compara los recíprocos porque el término $k$ aparece en ambos límites."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$1/j<1/11$",
+          "$j>11$"
+        ],
+        "nota": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once.",
+        "titulo": "La fracción $1/j$ es menor que $1/11$ cuando $j$ supera once."
+      },
+      {
+        "k": "check",
+        "texto": "Hay infinitos enteros positivos mayores que once; la respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

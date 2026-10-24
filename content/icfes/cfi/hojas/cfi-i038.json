@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "apoya la idea",
-        "rol": "pide",
-        "nota": "Debes seleccionar la evidencia que respalde la afirmación del enunciado.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "el amor maduro y sincero no siempre ha sido considerado como la base de la familia",
-        "rol": "dato",
-        "nota": "Esta es la idea que la alternativa correcta debe apoyar.",
-        "campo": "Afirmación"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Ubica en el pasaje cuándo surgió la idea del amor como razón para casarse."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara esa evidencia con las cuatro alternativas."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la evidencia que muestre que la asociación entre amor y matrimonio no existió siempre."
-      }
-    ],
     "enfoque": {
-      "tema": "Evidencia histórica sobre el matrimonio",
-      "que": "Seleccionar una afirmación del pasaje que respalde que el amor no siempre fue la base del matrimonio.",
+      "clave": "La opción B afirma que la idea del amor como razón para casarse surgió con el movimiento romántico en el siglo XVIII; esto demuestra que no siempre fue la base del matrimonio.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero habla de los roles familiares en los años cincuenta, no de cuándo el amor pasó a ser la base del matrimonio."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero describe cómo una pareja sostiene su relación, pero no aporta evidencia histórica."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero afirma que el matrimonio se consolidó como institucionalización del amor, lo cual no apoya que esa asociación sea reciente."
+        }
+      ],
+      "pistas": [
+        "El texto ubica el cambio con el movimiento romántico.",
+        "Antes el matrimonio tenía funciones económicas y políticas."
+      ],
       "plan": [
         {
           "t": "Busca cuándo el amor pasó a considerarse la razón principal del enlace."
@@ -44,25 +32,8 @@
           "t": "Descarta afirmaciones que traten otros cambios o describan la práctica actual."
         }
       ],
-      "pistas": [
-        "El texto ubica el cambio con el movimiento romántico.",
-        "Antes el matrimonio tenía funciones económicas y políticas."
-      ],
-      "clave": "La opción B afirma que la idea del amor como razón para casarse surgió con el movimiento romántico en el siglo XVIII; esto demuestra que no siempre fue la base del matrimonio.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Habla de los roles familiares en los años cincuenta, no de cuándo el amor pasó a ser la base del matrimonio."
-        },
-        {
-          "t": "Opción C",
-          "p": "Describe cómo una pareja sostiene su relación, pero no aporta evidencia histórica."
-        },
-        {
-          "t": "Opción D",
-          "p": "Afirma que el matrimonio se consolidó como institucionalización del amor, lo cual no apoya que esa asociación sea reciente."
-        }
-      ]
+      "que": "Seleccionar una afirmación del pasaje que respalde que el amor no siempre fue la base del matrimonio.",
+      "tema": "Evidencia histórica sobre el matrimonio"
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "Las otras opciones no respaldan la afirmación planteada."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "apoya la idea",
+        "nota": "Debes seleccionar la evidencia que respalde la afirmación del enunciado.",
+        "rol": "pide"
+      },
+      {
+        "campo": "Afirmación",
+        "frag": "el amor maduro y sincero no siempre ha sido considerado como la base de la familia",
+        "nota": "Esta es la idea que la alternativa correcta debe apoyar.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica en el pasaje cuándo surgió la idea del amor como razón para casarse."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara esa evidencia con las cuatro alternativas."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la evidencia que muestre que la asociación entre amor y matrimonio no existió siempre."
+      }
+    ]
+  },
+  "revisar": []
 }

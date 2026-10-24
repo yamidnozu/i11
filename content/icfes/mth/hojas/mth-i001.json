@@ -1,55 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "Este procedimiento es incorrecto", "rol": "pide", "nota": "La tarea es ubicar qué paso falla, no escoger la ruta más rápida.", "campo": "Qué se debe evaluar" },
-      { "frag": "30 segundos", "rol": "dato", "nota": "Es el tiempo de la parada intermedia en E6.", "campo": "Tiempo por parada" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Cuenta los tramos entre estaciones", "texto": "De $E_1$ a $E_{10}$ hay nueve tramos, porque diez estaciones consecutivas forman nueve espacios entre ellas. La ruta R2 hace una parada intermedia en E6." },
-      { "k": "calc", "titulo": "Comprueba la estimación", "lineas": ["$9 × 4 = 36$", "$36 + 0,5 = 36,5$"], "nota": "El conteo del paso I es el error: escribió diez tramos en vez de nueve. Multiplicar el dato recibido por cuatro minutos es la operación indicada en el paso II, aunque hereda el conteo equivocado. Sumar treinta segundos por la parada en E6 también es correcto." },
-      { "k": "check", "texto": "La respuesta esperada es A: el único paso señalado como incorrecto es I. El tiempo que resultaría al usar la ruta y los datos del enunciado sería $36,5$ minutos." }
-    ],
     "enfoque": {
-      "tema": "Conteo de tramos y revisión de procedimientos",
-      "que": "Distingue el conteo de estaciones del cálculo del tiempo. Entre diez estaciones hay nueve tramos; la parada intermedia agrega medio minuto.",
-      "pistas": ["Fíjate en el recorrido desde $E_1$ hasta $E_{10}$.", "Diferencia un tramo entre estaciones de una parada del bus."],
       "clave": "El conteo del primer paso falla. Los pasos siguientes aplican las operaciones indicadas al número que recibieron.",
       "no": [
-        { "t": "Opción B", "p": "Marca también el paso II. Pero la multiplicación por cuatro minutos es la operación correcta para el dato usado en ese paso." },
-        { "t": "Opción C", "p": "Acepta el conteo de diez tramos. Pero de $E_1$ a $E_{10}$ solo hay nueve espacios." },
-        { "t": "Opción D", "p": "Señala los pasos II y III. Pero el error está en el conteo inicial; la parada intermedia sí suma treinta segundos." }
+        {
+          "t": "Opción B",
+          "p": "Pero también marca la multiplicación, aunque la operación indicada es válida para el dato recibido."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero acepta el conteo de 10 tramos, pero hay 9."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero marca la parada intermedia, que sí suma 30 segundos."
+        }
+      ],
+      "pistas": [
+        "Fíjate en el recorrido desde $E_1$ hasta $E_{10}$.",
+        "Diferencia un tramo entre estaciones de una parada del bus."
       ],
       "plan": [
-        { "t": "Cuenta los espacios entre la estación inicial y la final." },
-        { "t": "Revisa por separado la multiplicación y el tiempo de la parada.", "eq": ["$9 × 4 = 36$", "$36 + 0,5 = 36,5$"] },
-        { "t": "Compara cada paso con la tarea y elige el único que contiene el error." }
-      ]
+        {
+          "t": "Cuenta los espacios entre la estación inicial y la final."
+        },
+        {
+          "eq": [
+            "$9 × 4 = 36$",
+            "$36 + 0,5 = 36,5$"
+          ],
+          "t": "Revisa por separado la multiplicación y el tiempo de la parada."
+        },
+        {
+          "t": "Compara cada paso con la tarea y elige el único que contiene el error."
+        }
+      ],
+      "que": "Distingue el conteo de estaciones del cálculo del tiempo. Entre diez estaciones hay nueve tramos; la parada intermedia agrega medio minuto.",
+      "tema": "Conteo de tramos y revisión de procedimientos"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuántos tramos hay desde $E_1$ hasta $E_{10}$? Cuenta los espacios entre estaciones." },
-        { "t": "Hay nueve tramos. La parada de $E_6$ agrega treinta segundos al recorrido." },
-        { "t": "El error está en el primer conteo. La respuesta es A.", "a": "o:A:ok" }
+        {
+          "t": "¿Cuántos tramos hay desde $E_1$ hasta $E_{10}$? Cuenta los espacios entre estaciones."
+        },
+        {
+          "t": "Hay nueve tramos. La parada de $E_6$ agrega treinta segundos al recorrido."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "El error está en el primer conteo. La respuesta es A."
+        }
       ],
       "2": [
-        { "t": "Separa el conteo, la multiplicación y la parada para revisar cada paso." },
-        { "t": "De $E_1$ a $E_{10}$ hay nueve tramos; por eso el paso I, que cuenta diez, es incorrecto." },
-        { "t": "La opción B también marca el paso II. Pero la multiplicación por cuatro minutos es válida para el número que recibió; el problema se originó en el conteo.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción C acepta diez tramos, aunque el recorrido tiene nueve.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D marca la parada como error, pero $E_6$ es una parada intermedia y sí suma treinta segundos.", "a": "o:D:no", "k": "err" },
-        { "t": "Por eso, la respuesta es A: solo el paso I es incorrecto.", "a": "o:A:ok" }
+        {
+          "t": "Separa el conteo, la multiplicación y la parada para revisar cada paso."
+        },
+        {
+          "t": "De $E_1$ a $E_{10}$ hay nueve tramos; por eso el paso I, que cuenta diez, es incorrecto."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B también marca el paso II. Pero la multiplicación por cuatro minutos es válida para el número que recibió; el problema se originó en el conteo."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C acepta diez tramos, aunque el recorrido tiene nueve."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D marca la parada como error, pero $E_6$ es una parada intermedia y sí suma treinta segundos."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "Por eso, la respuesta es A: solo el paso I es incorrecto."
+        }
       ],
       "3": [
-        { "t": "Primero verifico el conteo: entre diez estaciones consecutivas hay nueve tramos.", "a": "p:0", "k": "ana" },
-        { "t": "La multiplicación indicada es $10 × 4 = 40$, así que el paso II ejecuta bien la operación descrita, aunque parte del conteo equivocado. La parada de $E_6$ agrega $0,5$ minutos. Con el conteo correcto, el recorrido estimado es $9 × 4 + 0,5 = 36,5$ minutos.", "a": "p:1" },
-        { "t": "Comprueba que la pregunta pide identificar el paso incorrecto y que el fallo se origina en I, no en la multiplicación ni en la parada.", "a": "p:2", "k": "contra" },
-        { "t": "La opción B confunde el efecto del error inicial con la validez de la operación del paso II.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción C pasa por alto que diez estaciones dejan nueve tramos.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D rechaza la parada de $E_6$, que sí debe sumarse al tiempo.", "a": "o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es A.", "a": "o:A:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero verifico el conteo: entre diez estaciones consecutivas hay nueve tramos."
+        },
+        {
+          "a": "p:1",
+          "t": "La multiplicación indicada es $10 × 4 = 40$, así que el paso II ejecuta bien la operación descrita, aunque parte del conteo equivocado. La parada de $E_6$ agrega $0,5$ minutos. Con el conteo correcto, el recorrido estimado es $9 × 4 + 0,5 = 36,5$ minutos."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Comprueba que la pregunta pide identificar el paso incorrecto y que el fallo se origina en I, no en la multiplicación ni en la parada."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B confunde el efecto del error inicial con la validez de la operación del paso II."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C pasa por alto que diez estaciones dejan nueve tramos."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D rechaza la parada de $E_6$, que sí debe sumarse al tiempo."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Qué se debe evaluar",
+        "frag": "Este procedimiento es incorrecto",
+        "nota": "La tarea es ubicar qué paso falla, no escoger la ruta más rápida.",
+        "rol": "pide"
+      },
+      {
+        "campo": "Tiempo por parada",
+        "frag": "30 segundos",
+        "nota": "Es el tiempo de la parada intermedia en E6.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "De $E_1$ a $E_{10}$ hay nueve tramos, porque diez estaciones consecutivas forman nueve espacios entre ellas. La ruta R2 hace una parada intermedia en E6.",
+        "titulo": "Cuenta los tramos entre estaciones"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$9 × 4 = 36$",
+          "$36 + 0,5 = 36,5$"
+        ],
+        "nota": "El conteo del paso I es el error: escribió diez tramos en vez de nueve. Multiplicar el dato recibido por cuatro minutos es la operación indicada en el paso II, aunque hereda el conteo equivocado. Sumar treinta segundos por la parada en E6 también es correcto.",
+        "titulo": "Comprueba la estimación"
+      },
+      {
+        "k": "check",
+        "texto": "La respuesta esperada es A: el único paso señalado como incorrecto es I. El tiempo que resultaría al usar la ruta y los datos del enunciado sería $36,5$ minutos."
+      }
+    ]
+  },
+  "revisar": []
 }

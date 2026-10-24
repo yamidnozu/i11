@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "reducir el número de lugares donde el agua se estanca",
-        "rol": "pide",
-        "nota": "Señala la tarea o pista que organiza el razonamiento.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Reconoce la situación",
-        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica la relación",
-        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Verifica que la opción elegida responda lo que pregunta el enunciado y concuerde con los datos."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar los criaderos del mosquito con la prevención del dengue",
-      "que": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
-      "pistas": [
-        "Identifica qué relación o fenómeno describe la pregunta.",
-        "Contrasta la alternativa con los datos y el concepto científico."
-      ],
       "clave": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
       "no": [
         {
           "t": "Opción A",
-          "p": "El dengue se transmite por la picadura del mosquito, no por beber agua estancada."
+          "p": "Pero el dengue se transmite por la picadura del mosquito, no por beber agua estancada."
         },
         {
           "t": "Opción C",
-          "p": "La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción."
+          "p": "Pero la opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción."
         },
         {
           "t": "Opción D",
-          "p": "El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector."
+          "p": "Pero el virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector."
         }
+      ],
+      "pistas": [
+        "Identifica que las hembras del mosquito Aedes aegypti depositan sus huevos exclusivamente en recipientes con agua estancada.",
+        "Deduce cómo la eliminación de criaderos interrumpe el ciclo biológico del vector antes de que emerjan mosquitos adultos."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Comprueba que la alternativa corresponda con el sentido del proceso."
         }
-      ]
+      ],
+      "que": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+      "tema": "Relacionar los criaderos del mosquito con la prevención del dengue"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer."
         },
         {
-          "t": "La frase «reducir el número de lugares donde el agua se estanca» orienta la estrategia.",
-          "a": "m:reducir el número de lugares donde el agua se estanca"
+          "a": "m:reducir el número de lugares donde el agua se estanca",
+          "t": "La frase «reducir el número de lugares donde el agua se estanca» orienta la estrategia."
         },
         {
-          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer."
         },
         {
-          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
         },
         {
-          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descartamos."
         },
         {
-          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descartamos."
         },
         {
-          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué relación tenemos que reconocer."
         },
         {
-          "t": "Primero identifico qué pide: El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
         },
         {
-          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión."
         },
         {
-          "t": "Compruebo que la explicación concuerde con el proceso descrito.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que la explicación concuerde con el proceso descrito."
         },
         {
-          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El dengue se transmite por la picadura del mosquito, no por beber agua estancada. La descarto."
         },
         {
-          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La opción no explica la prevención: retirar agua estancada reduce los criaderos, no favorece la reproducción. La descarto."
         },
         {
-          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El virus no crea hábitats ni se transmite directamente por retirar agua; el mosquito es el vector. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "reducir el número de lugares donde el agua se estanca",
+        "nota": "Señala la tarea o pista que organiza el razonamiento.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+        "titulo": "Reconoce la situación"
+      },
+      {
+        "k": "idea",
+        "texto": "El agua estancada ofrece sitios donde se desarrolla el mosquito transmisor. Al reducir esos lugares, disminuyen sus hábitats y las oportunidades de picadura y transmisión.",
+        "titulo": "Aplica la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción elegida responda lo que pregunta el enunciado y concuerde con los datos.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

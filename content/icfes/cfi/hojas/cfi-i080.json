@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Una proteína con peso molecular de 120 kDa podrá separarse en un tiempo",
-        "rol": "dato",
-        "nota": "El enunciado presenta la variable o el dato que debes interpretar.",
-        "campo": "Datos"
-      },
-      {
-        "frag": "cada pico representa una proteína diferente",
-        "rol": "pide",
-        "nota": "La frase indica la conclusión solicitada.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
-      },
-      {
-        "k": "idea",
-        "texto": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción A se ajuste a las gráficas descritas y a la pregunta."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica.",
-      "que": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente.",
-      "plan": [
-        {
-          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
-        },
-        {
-          "t": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
-        },
-        {
-          "t": "Selecciona la opción A y confirma que corresponde a la evidencia gráfica."
-        }
-      ],
-      "pistas": [
-        "La pregunta pide estimar el intervalo de separación según el peso molecular.",
-        "La gráfica asigna tiempos a picos con pesos moleculares distintos."
-      ],
-      "clave": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos.",
+      "clave": "El pico de $120\\,\\mathrm{kDa}$ se ubica entre veinticinco y treinta y cinco minutos.",
       "no": [
         {
           "t": "Opción B",
-          "p": "B no cubre el intervalo entre los picos que encierran el peso solicitado."
+          "p": "Pero el intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$."
         },
         {
           "t": "Opción C",
-          "p": "C corresponde a un tiempo posterior a esos picos."
+          "p": "Pero este intervalo ocurre después del pico señalado en la gráfica."
         },
         {
           "t": "Opción D",
-          "p": "D ubica la separación después del último pico representado."
+          "p": "Pero la proteína se detecta antes de los cuarenta y cinco minutos, no después."
         }
-      ]
+      ],
+      "pistas": [
+        "Ubica el pico con la masa molecular indicada.",
+        "Lee su posición en el eje del tiempo."
+      ],
+      "plan": [
+        {
+          "t": "Ubica el pico con la masa molecular indicada."
+        },
+        {
+          "t": "Lee su posición en el eje del tiempo."
+        },
+        {
+          "t": "Selecciona el intervalo que contiene ese tiempo."
+        }
+      ],
+      "que": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+      "tema": "Leer el tiempo de detección de una proteína en una gráfica"
     },
     "guion": {
       "1": [
         {
-          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
+          "a": "m:cada pico representa una proteína diferente",
+          "t": "La frase «cada pico representa una proteína diferente» orienta lo que debemos observar."
+        },
+        {
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A concuerda con la evidencia."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
+        },
+        {
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "B no cubre el intervalo entre los picos que encierran el peso solicitado."
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C corresponde a un tiempo posterior a esos picos."
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D ubica la separación después del último pico representado."
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descartamos."
         },
         {
           "a": "o:A:ok",
-          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Relacionar el peso molecular de una proteína con el tiempo de detección en la gráfica."
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Ubica el peso solicitado entre los picos etiquetados y determina el intervalo correspondiente."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "En la gráfica, los picos de ciento treinta kDa y cien kDa aparecen entre los minutos veinticinco y treinta y cinco. El peso de ciento veinte kDa queda entre ambos."
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Selecciona el intervalo que contiene ese tiempo."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descarto."
         },
         {
           "a": "o:A:ok",
-          "t": "La conclusión queda respaldada por las gráficas."
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "cada pico representa una proteína diferente",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el pico con la masa molecular indicada.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Lee su posición en el eje del tiempo.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Selecciona el intervalo que contiene ese tiempo.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

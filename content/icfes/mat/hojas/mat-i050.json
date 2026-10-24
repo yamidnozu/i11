@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "volumen de los tres empaques",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «volumen de los tres empaques» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "V_c=4,5\\pi;V_b=4,5;V_e=4,5\\pi"
-        ],
-        "nota": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: volumen de los tres empaques",
-      "que": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
-      "pistas": [
-        "Fíjate en «volumen de los tres empaques».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
       "no": [
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero afirma que el cilindro (4,5*pi) y la caja (4,5) tienen igual volumen, olvidando multiplicar por pi."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero sostiene que el volumen del cilindro es menor que el de la caja, cuando 4,5*pi > 4,5."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero afirma que la esfera tiene mayor volumen que el cilindro, cuando ambos volúmenes son exactamente iguales a 4,5*pi."
         }
+      ],
+      "pistas": [
+        "Calcula el volumen del cilindro (cuatro coma cinco pi), de la esfera (cuatro coma cinco pi) y de la caja prisma (cuatro coma cinco).",
+        "Compara los volúmenes: dado que pi es mayor que uno, el volumen del cilindro supera al de la caja, y el volumen de la esfera es idéntico al del cilindro."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "V_c=4,5\\pi;V_b=4,5;V_e=4,5\\pi"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
+      "tema": "Matemáticas: volumen de los tres empaques"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «volumen de los tres empaques» orienta la estrategia.",
-          "a": "m:volumen de los tres empaques"
+          "a": "m:volumen de los tres empaques",
+          "t": "La frase «volumen de los tres empaques» orienta la estrategia."
         },
         {
-          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
         },
         {
-          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "volumen de los tres empaques",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «volumen de los tres empaques» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "V_c=4,5\\pi;V_b=4,5;V_e=4,5\\pi"
+        ],
+        "nota": "El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: El cilindro y la esfera tienen volumen $4,5\\pi$ unidades cúbicas: para el cilindro, $\\pi(1,5)^2(2)$; para la esfera, $(4/3)\\pi(1,5)^3$. La caja mide $(1,5)^2(2)=4,5$, menor que $4,5\\pi$. La afirmación A es verdadera."
+      }
+    ]
+  },
+  "revisar": []
 }

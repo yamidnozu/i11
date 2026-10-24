@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "finge enojarse",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Distingue el gusto personal de la obligación social."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir la postura de una narradora ante un rol social",
-      "que": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
-      "pistas": [
-        "Distingue el gusto personal de la obligación social.",
-        "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
-      ],
       "clave": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena."
+          "p": "Pero no se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero Menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo."
+          "p": "Pero menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo."
+          "p": "Pero no expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo."
         }
+      ],
+      "pistas": [
+        "Distingue el gusto personal de la obligación social.",
+        "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
+      "tema": "Inferir la postura de una narradora ante un rol social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «finge enojarse» orienta la lectura.",
-          "a": "m:finge enojarse"
+          "a": "m:finge enojarse",
+          "t": "La expresión «finge enojarse» orienta la lectura."
         },
         {
-          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel."
         },
         {
-          "t": "Opción B: No se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No se enoja porque sea falso que sepa cuidar la casa; cuenta que cocina y ordena. La descartamos."
         },
         {
-          "t": "Opción C: Menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Menciona a su madre como influencia, pero no dice que la comparación sea el motivo de fingir enojo. La descartamos."
         },
         {
-          "t": "Opción D: No expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No expresa rechazo hacia las mujeres que son amas de casa; critica que ese papel sea obligatorio y exclusivo. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Distingue el gusto personal de la obligación social.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Distingue el gusto personal de la obligación social."
         },
         {
-          "t": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas."
         },
         {
-          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La narradora disfruta cocinar, pero rechaza que las tareas del hogar sean una obligación femenina exclusiva. Por eso finge molestarse cuando Diego la llama buena ama de casa: no quiere quedar reducida a ese papel."
         },
         {
-          "t": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "finge enojarse",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue el gusto personal de la obligación social.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona su reacción con lo que dice sobre la igualdad en las tareas.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La narradora no quiere que la cataloguen por un rol doméstico que cuestiona.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

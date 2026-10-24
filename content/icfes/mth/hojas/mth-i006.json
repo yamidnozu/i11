@@ -1,53 +1,158 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "$900.000 por la capacitación", "rol": "dato", "nota": "Es el costo conjunto para los funcionarios.", "campo": "Pago total" },
-      { "frag": "corresponde al módulo", "rol": "pide", "nota": "Compara el costo de dos cursos de cada módulo.", "campo": "Identificación del módulo" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Considera los dos cursos necesarios", "texto": "Cuarenta funcionarios no caben en un curso con máximo treinta personas; se requieren dos cursos del mismo módulo." },
-      { "k": "tabla", "titulo": "Compara el costo de cada módulo", "cols": ["Módulo", "Costo de dos cursos"], "filas": [["I", "$2.800.000"], ["II", "$1.800.000"], ["III", "$3.200.000"], ["IV", "$900.000"]] },
-      { "k": "check", "texto": "El pago coincide con dos cursos del módulo IV. La respuesta es D." }
-    ],
     "enfoque": {
-      "tema": "Comparación de costos por módulo",
-      "que": "Calcula el costo de dos cursos para cada módulo, porque los cuarenta funcionarios superan el máximo permitido en un curso.",
-      "pistas": ["Usa intensidad horaria y valor por hora de la tabla compartida.", "Compara el costo de dos cursos con el pago informado."],
       "clave": "El módulo IV cuesta $450.000$ por curso y $900.000$ por dos cursos.",
       "no": [
-        { "t": "Opción A", "p": "Dos cursos del módulo I cuestan $2.800.000$. Pero el pago informado fue $900.000$." },
-        { "t": "Opción B", "p": "Dos cursos del módulo II cuestan $1.800.000$. Pero el pago informado fue $900.000$." },
-        { "t": "Opción C", "p": "Dos cursos del módulo III cuestan $3.200.000$. Pero el pago informado fue $900.000$." }
+        {
+          "t": "Opción A",
+          "p": "Pero dos cursos del módulo I cuestan $2.800.000."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero dos cursos del módulo II cuestan $1.800.000."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero dos cursos del módulo III cuestan $3.200.000."
+        }
+      ],
+      "pistas": [
+        "Usa intensidad horaria y valor por hora de la tabla compartida.",
+        "Compara el costo de dos cursos con el pago informado."
       ],
       "plan": [
-        { "t": "Confirma cuántos cursos se requieren para cuarenta personas." },
-        { "t": "Multiplica las horas por el valor por hora de cada módulo y luego por dos." },
-        { "t": "Selecciona el módulo cuyo costo coincide con el pago informado." }
-      ]
+        {
+          "t": "Confirma cuántos cursos se requieren para cuarenta personas."
+        },
+        {
+          "t": "Multiplica las horas por el valor por hora de cada módulo y luego por dos."
+        },
+        {
+          "t": "Selecciona el módulo cuyo costo coincide con el pago informado."
+        }
+      ],
+      "que": "Calcula el costo de dos cursos para cada módulo, porque los cuarenta funcionarios superan el máximo permitido en un curso.",
+      "tema": "Comparación de costos por módulo"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuántos cursos se necesitan para cuarenta funcionarios si caben máximo treinta en cada uno?" },
-        { "t": "Se necesitan dos. El módulo IV cuesta $10 × 45.000 = 450.000$ por curso; los dos cuestan $900.000$." },
-        { "t": "La respuesta es D.", "a": "o:D:ok" }
+        {
+          "t": "¿Cuántos cursos se necesitan para cuarenta funcionarios si caben máximo treinta en cada uno?"
+        },
+        {
+          "t": "Se necesitan dos. El módulo IV cuesta $10 × 45.000 = 450.000$ por curso; los dos cuestan $900.000$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta es D."
+        }
       ],
       "2": [
-        { "t": "Calcula el costo por hora de cada módulo y recuerda que hay que pagar dos cursos." },
-        { "t": "Para el módulo IV, dos cursos cuestan $2 × 10 × 45.000 = 900.000$, que coincide con el pago." },
-        { "t": "La opción A implicaría un pago de $2.800.000$.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción B implicaría un pago de $1.800.000$.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción C implicaría un pago de $3.200.000$.", "a": "o:C:no", "k": "err" },
-        { "t": "Solo el módulo IV coincide con $900.000$. La respuesta es D.", "a": "o:D:ok" }
+        {
+          "t": "Calcula el costo por hora de cada módulo y recuerda que hay que pagar dos cursos."
+        },
+        {
+          "t": "Para el módulo IV, dos cursos cuestan $2 × 10 × 45.000 = 900.000$, que coincide con el pago."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A implicaría un pago de $2.800.000$."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B implicaría un pago de $1.800.000$."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C implicaría un pago de $3.200.000$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "Solo el módulo IV coincide con $900.000$. La respuesta es D."
+        }
       ],
       "3": [
-        { "t": "Por el límite de treinta personas por curso, los cuarenta funcionarios requieren dos cursos.", "a": "p:0", "k": "ana" },
-        { "t": "Calculo el costo total para cada opción: I, $2.800.000$; II, $1.800.000$; III, $3.200.000$; IV, $900.000$.", "a": "p:1" },
-        { "t": "El valor informado solo coincide con el módulo IV.", "a": "p:2", "k": "contra" },
-        { "t": "Las opciones A, B y C dan costos distintos de $900.000$.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
-        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Por el límite de treinta personas por curso, los cuarenta funcionarios requieren dos cursos."
+        },
+        {
+          "a": "p:1",
+          "t": "Calculo el costo total para cada opción: I, $2.800.000$; II, $1.800.000$; III, $3.200.000$; IV, $900.000$."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "El valor informado solo coincide con el módulo IV."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Las opciones A, B y C dan costos distintos de $900.000$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pago total",
+        "frag": "$900.000 por la capacitación",
+        "nota": "Es el costo conjunto para los funcionarios.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Identificación del módulo",
+        "frag": "corresponde al módulo",
+        "nota": "Compara el costo de dos cursos de cada módulo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Cuarenta funcionarios no caben en un curso con máximo treinta personas; se requieren dos cursos del mismo módulo.",
+        "titulo": "Considera los dos cursos necesarios"
+      },
+      {
+        "cols": [
+          "Módulo",
+          "Costo de dos cursos"
+        ],
+        "filas": [
+          [
+            "I",
+            "$2.800.000"
+          ],
+          [
+            "II",
+            "$1.800.000"
+          ],
+          [
+            "III",
+            "$3.200.000"
+          ],
+          [
+            "IV",
+            "$900.000"
+          ]
+        ],
+        "k": "tabla",
+        "titulo": "Compara el costo de cada módulo"
+      },
+      {
+        "k": "check",
+        "texto": "El pago coincide con dos cursos del módulo IV. La respuesta es D."
+      }
+    ]
+  },
+  "revisar": []
 }

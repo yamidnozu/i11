@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "A partir de las cadenas de ARN mensajero",
-        "rol": "pide",
-        "nota": "Fragmento que orienta el criterio o el dato central.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la información",
-        "texto": "Separa el ARN en tripletes desde $AUG$."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba",
-        "texto": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
-      }
-    ],
     "enfoque": {
-      "tema": "Contar aminoácidos a partir de una secuencia de ARN",
-      "que": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
-      "pistas": [
-        "Divide la secuencia en grupos de tres nucleótidos.",
-        "Detén el conteo al encontrar el codón $UAG$."
-      ],
       "clave": "Antes del codón de terminación hay seis tripletes que codifican aminoácidos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$."
+          "p": "Pero cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido."
+          "p": "Pero confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal."
+          "p": "Pero cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal."
         }
+      ],
+      "pistas": [
+        "Divide la secuencia en grupos de tres nucleótidos.",
+        "Detén el conteo al encontrar el codón $UAG$."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
         }
-      ]
+      ],
+      "que": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+      "tema": "Contar aminoácidos a partir de una secuencia de ARN"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "La frase «A partir de las cadenas de ARN mensajero» indica el proceso que debemos seguir.",
-          "a": "m:A partir de las cadenas de ARN mensajero"
+          "a": "m:A partir de las cadenas de ARN mensajero",
+          "t": "La frase «A partir de las cadenas de ARN mensajero» indica el proceso que debemos seguir."
         },
         {
-          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
         },
         {
-          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descartamos."
         },
         {
-          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descartamos."
         },
         {
-          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece."
         },
         {
-          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
         },
         {
-          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
         },
         {
-          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descarto."
         },
         {
-          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descarto."
         },
         {
-          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descarto."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "A partir de las cadenas de ARN mensajero",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el ARN en tripletes desde $AUG$.",
+        "titulo": "Identifica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "idea",
+        "texto": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "el socialismo propone",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Relaciona el propósito de igualdad con quién controla los medios de producción."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca la opción que combina propiedad colectiva y poder de los trabajadores."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D describe la tenencia colectiva de los medios de producción y el poder político de las clases trabajadoras."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer un principio económico del socialismo",
-      "que": "Para promover igualdad, el socialismo propone que los medios de producción sean de propiedad colectiva y que las clases trabajadoras tengan poder político. Esa idea coincide con la opción D.",
+      "clave": "El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque desmantelar sindicatos y privatizar empresas del Estado son políticas características del capitalismo neoliberal desregulado."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque promover el consumo mediante crédito bancario y endeudamiento privado es un mecanismo del modelo financiero capitalista."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque la apertura de mercados y los tratados de libre comercio responden al libre cambio mercantilista internacional."
+        }
+      ],
       "pistas": [
         "Relaciona el propósito de igualdad con quién controla los medios de producción.",
         "Busca la opción que combina propiedad colectiva y poder de los trabajadores."
       ],
-      "clave": "La opción D describe la tenencia colectiva de los medios de producción y el poder político de las clases trabajadoras.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Privatizar medios de producción y desmontar sindicatos contradice la propiedad colectiva y los derechos laborales."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El consumo y el endeudamiento no son el principio de propiedad que define el socialismo en la pregunta."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero El libre comercio y la apertura no describen la propuesta socialista planteada."
-        }
-      ],
       "plan": [
         {
-          "t": "Relaciona el propósito de igualdad con quién controla los medios de producción."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca la opción que combina propiedad colectiva y poder de los trabajadores."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «el socialismo propone» orienta el análisis.",
-          "a": "m:el socialismo propone"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Para promover igualdad, el socialismo propone que los medios de producción sean de propiedad colectiva y que las clases trabajadoras tengan poder político. Esa idea coincide con la opción D.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Para promover igualdad, el socialismo propone que los medios de producción sean de propiedad colectiva y que las clases trabajadoras tengan poder político. Esa idea coincide con la opción D.",
-          "a": "p:0"
+          "t": "El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras."
         },
         {
-          "t": "Opción A: Privatizar medios de producción y desmontar sindicatos contradice la propiedad colectiva y los derechos laborales. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Privatizar los medios de producción y desmontar los sindicatos de…», Pero no responde al criterio central: El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras."
         },
         {
-          "t": "Opción B: El consumo y el endeudamiento no son el principio de propiedad que define el socialismo en la pregunta. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Impulsar el consumo y la capacidad de endeudamiento de los…», Pero no responde al criterio central: El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras."
         },
         {
-          "t": "Opción C: El libre comercio y la apertura no describen la propuesta socialista planteada. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Ofrecer bienes y servicios según el esquema de los tratados de…», Pero no responde al criterio central: El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Relaciona el propósito de igualdad con quién controla los medios de producción.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras."
         },
         {
-          "t": "Busca la opción que combina propiedad colectiva y poder de los trabajadores.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Para promover igualdad, el socialismo propone que los medios de producción sean de propiedad colectiva y que las clases trabajadoras tengan poder político. Esa idea coincide con la opción D.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción D describe la tenencia colectiva de los medios de producción y el poder político de las clases trabajadoras.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El socialismo busca la igualdad socia",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "to el socialismo propone",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El socialismo propone propiedad colectiva de los medios de producción y poder político de las clases trabajadoras. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

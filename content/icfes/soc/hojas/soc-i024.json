@@ -6,20 +6,20 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX."
+          "p": "Pero es incorrecta porque antepone la Revolución nicaragüense de 1979 a procesos que ocurrieron a comienzos del siglo XX."
         },
         {
           "t": "Opción C",
-          "p": "Pero, es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}."
+          "p": "Pero es incorrecta porque sitúa la Revolución bolchevique rusa (1917) antes del estallido de la Revolución mexicana de 1910."
         },
         {
           "t": "Opción D",
-          "p": "Pero, es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia."
+          "p": "Pero es incorrecta porque ubica la Revolución cubana (1959) en primer lugar, décadas después de las revoluciones de México y Rusia."
         }
       ],
       "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
+        "Analiza el tono del discurso: justifica la creación de grupos de autodefensa armados frente a los abusos guerrilleros.",
+        "Deduce desde qué actor del conflicto armado (un vocero o miembro paramilitar) se emite esa perspectiva."
       ],
       "plan": [
         {
@@ -29,7 +29,7 @@
           "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Concluye por qué la opción B satisface ese criterio."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
       ],
       "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
@@ -44,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:B:ok",
-          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es B."
+          "a": "o:D:ok",
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D."
         }
       ],
       "2": [
@@ -56,23 +56,23 @@
           "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "La opción A no corresponde: Es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX.",
+          "t": "La opción A es incorrecta: Es incorrecta porque antepone la Revolución nicaragüense de 1979 a procesos que ocurrieron a comienzos del siglo XX.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: Es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}.",
+          "t": "La opción C es incorrecta: Es incorrecta porque sitúa la Revolución bolchevique rusa (1917) antes del estallido de la Revolución mexicana de 1910.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D no corresponde: Es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia.",
+          "t": "La opción D es incorrecta: Es incorrecta porque ubica la Revolución cubana (1959) en primer lugar, décadas después de las revoluciones de México y Rusia.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "a": "o:B:ok",
-          "t": "La opción B es la que sí responde a la pregunta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción B.",
+          "a": "o:B:ok"
         }
       ],
       "3": [
@@ -88,26 +88,16 @@
         {
           "a": "o:B:ok",
           "k": "contra",
-          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La opción A no encaja: Es incorrecta porque antepone la Revolución nicaragüense de {{1979}} a procesos que ocurrieron a comienzos del siglo XX.",
-          "a": "o:A:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C no encaja: Es incorrecta porque sitúa la Revolución bolchevique rusa ({{1917}}) antes del estallido de la Revolución mexicana de {{1910}}.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D no encaja: Es incorrecta porque ubica la Revolución cubana ({{1959}}) en primer lugar, décadas después de las revoluciones de México y Rusia.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta correcta es B."
+          "t": "La respuesta correcta es D."
         }
       ]
     },
@@ -137,9 +127,10 @@
       },
       {
         "k": "check",
-        "texto": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es B.",
+        "texto": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D.",
         "titulo": "Verifica la respuesta"
       }
     ]
-  }
+  },
+  "revisar": []
 }

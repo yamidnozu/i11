@@ -1,112 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "What can a reader find out from this text?",
-        "rol": "dato",
-        "nota": "El cierre comunica el efecto que el autor espera en quienes leen.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "{{What can a reader find out from this text?}}"
-      },
-      {
-        "k": "idea",
-        "texto": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C complete la idea o estructura del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de un texto en inglés",
-      "que": "Relaciona las pistas del texto con el propósito o la forma que exige el enunciado.",
-      "plan": [
+      "clave": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+      "no": [
         {
-          "t": "Lee la pregunta y ubica la pista pertinente."
+          "t": "Opción A",
+          "p": "Pero el artículo no explica cómo cultivar café."
         },
         {
-          "t": "Contrasta las opciones con el sentido y la gramática del texto."
+          "t": "Opción B",
+          "p": "Pero no se indica cuál es la mejor época para visitar la finca."
         },
         {
-          "t": "Elige la opción C y verifica la concordancia."
+          "t": "Opción D",
+          "p": "Pero el texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         }
       ],
       "pistas": [
-        "{{What can a reader find out from this text?}}",
-        "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
+        "Check the practical travel details provided at the end of the article.",
+        "Notice the breakdown of room rates, guided tours, and breakfast inclusions."
       ],
-      "clave": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}",
-      "no": [
+      "plan": [
         {
-          "t": "{{which activities tourists prefer to do at the farm}}",
-          "p": "{{which activities tourists prefer to do at the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "{{when the best time is to visit the farm}}",
-          "p": "{{when the best time is to visit the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "{{how to grow coffee on the farm}}",
-          "p": "{{how to grow coffee on the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "{{What can a reader find out from this text?}}"
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
+          "a": "m:What can a reader find out from this text?",
+          "t": "Fíjate en {{What can a reader find out from this text?}}."
+        },
+        {
+          "a": "p:1",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
         },
         {
           "a": "o:C:ok",
-          "t": "La respuesta es la opción C."
+          "t": "La respuesta es {{what the accommodation price includes.}}."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
+        },
+        {
+          "a": "p:1",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "{{which activities tourists prefer to do at the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "La opción A no corresponde: El artículo no explica cómo cultivar café."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "{{when the best time is to visit the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "La opción B no corresponde: No se indica cuál es la mejor época para visitar la finca."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "{{how to grow coffee on the farm}} no corresponde con la información o construcción gramatical del texto."
+          "t": "La opción D no corresponde: El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         },
         {
           "a": "o:C:ok",
-          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
+          "t": "{{what the accommodation price includes.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "{{What can a reader find out from this text?}}"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "Ubica la pista del texto y revisa qué sentido o forma requiere."
+          "a": "p:1",
+          "k": "por",
+          "t": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
         },
         {
-          "t": "{{The passage says the nightly price includes three home-cooked meals a day, access to a swimming pool, and as much coffee as guests can drink.}}"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El artículo no explica cómo cultivar café."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: No se indica cuál es la mejor época para visitar la finca."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no encaja: El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C queda respaldada por el texto."
+          "t": "La evidencia respalda {{what the accommodation price includes.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What can a reader find out from this text?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{What can a reader find out from this text?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

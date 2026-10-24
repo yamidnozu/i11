@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "describe mejor a Johnny",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Relaciona sus gastos con la fuente del dinero."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Elige el rasgo que resume esa conducta, no uno que la contradiga."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Vividor resume que Johnny mantiene una vida cómoda a expensas de otras personas."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir un rasgo a partir de las acciones del personaje",
-      "que": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda.",
-      "pistas": [
-        "Relaciona sus gastos con la fuente del dinero.",
-        "Elige el rasgo que resume esa conducta, no uno que la contradiga."
-      ],
       "clave": "Vividor resume que Johnny mantiene una vida cómoda a expensas de otras personas.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No se destaca que comparta sus recursos o ayude a otras personas."
+          "p": "Pero no se destaca que comparta sus recursos o ayude a otras personas."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El texto no lo presenta trabajando para sostener esos gastos; menciona el subsidio y el dinero de su esposa."
+          "p": "Pero el texto no lo presenta trabajando para sostener esos gastos; menciona el subsidio y el dinero de su esposa."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Mezquino alude a ser tacaño; el fragmento destaca el consumo y el gasto de Johnny."
+          "p": "Pero mezquino alude a ser tacaño; el fragmento destaca el consumo y el gasto de Johnny."
         }
+      ],
+      "pistas": [
+        "Relaciona sus gastos con la fuente del dinero.",
+        "Elige el rasgo que resume esa conducta, no uno que la contradiga."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda.",
+      "tema": "Inferir un rasgo a partir de las acciones del personaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «describe mejor a Johnny» orienta la lectura.",
-          "a": "m:describe mejor a Johnny"
+          "a": "m:describe mejor a Johnny",
+          "t": "La expresión «describe mejor a Johnny» orienta la lectura."
         },
         {
-          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda."
         },
         {
-          "t": "Opción B: No se destaca que comparta sus recursos o ayude a otras personas. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No se destaca que comparta sus recursos o ayude a otras personas. La descartamos."
         },
         {
-          "t": "Opción C: El texto no lo presenta trabajando para sostener esos gastos; menciona el subsidio y el dinero de su esposa. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El texto no lo presenta trabajando para sostener esos gastos; menciona el subsidio y el dinero de su esposa. La descartamos."
         },
         {
-          "t": "Opción D: Mezquino alude a ser tacaño; el fragmento destaca el consumo y el gasto de Johnny. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Mezquino alude a ser tacaño; el fragmento destaca el consumo y el gasto de Johnny. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Relaciona sus gastos con la fuente del dinero.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Relaciona sus gastos con la fuente del dinero."
         },
         {
-          "t": "Elige el rasgo que resume esa conducta, no uno que la contradiga.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige el rasgo que resume esa conducta, no uno que la contradiga."
         },
         {
-          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "Johnny vive con gastos altos mientras depende del dinero de su esposa y de un subsidio. Esa conducta permite describirlo como vividor: se sostiene con recursos ajenos y mantiene una vida cómoda."
         },
         {
-          "t": "Vividor resume que Johnny mantiene una vida cómoda a expensas de otras personas.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Vividor resume que Johnny mantiene una vida cómoda a expensas de otras personas."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "describe mejor a Johnny",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona sus gastos con la fuente del dinero.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige el rasgo que resume esa conducta, no uno que la contradiga.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Vividor resume que Johnny mantiene una vida cómoda a expensas de otras personas.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

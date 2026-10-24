@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "A la hora de evaluar la propuesta",
-        "rol": "dato",
-        "nota": "El cerramiento restringiría el paso de personas a sectores con espacios públicos.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "¿qué intereses en conflicto deben ser tenidos en cuenta?",
-        "rol": "pide",
-        "nota": "La pregunta pide identificar dos intereses que chocan en la propuesta.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué buscan proteger los residentes."
-      },
-      {
-        "k": "idea",
-        "texto": "Considera qué perderían otros habitantes si se restringe el acceso a las vías y espacios públicos."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción que presenta ambos intereses reales sin confundirlos con los intereses de ladrones o empresas."
-      }
-    ],
     "enfoque": {
-      "tema": "Seguridad y uso de espacios públicos",
-      "que": "Reconocer intereses ciudadanos en tensión ante una propuesta de cerramiento residencial.",
-      "plan": [
-        {
-          "t": "Nombra el interés de quienes viven en los sectores afectados."
-        },
-        {
-          "t": "Identifica el efecto sobre quienes transitan por vías y espacios públicos."
-        },
-        {
-          "t": "Compara las alternativas y conserva la que incluye los dos grupos involucrados."
-        }
-      ],
-      "pistas": [
-        "Los residentes buscan seguridad ante robos.",
-        "El cerramiento limitaría el acceso de otros habitantes."
-      ],
-      "clave": "La opción B contrapone la seguridad de los residentes con el acceso de los demás habitantes a vías y espacios públicos.",
+      "clave": "El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, Los ladrones no tienen un interés legítimo que deba orientar la evaluación pública de la propuesta."
+          "p": "Pero es incorrecta porque no se trata de una pugna entre guardias privados y delincuentes, sino del uso equitativo de los uniformados de la policía estatal."
         },
         {
           "t": "Opción C",
-          "p": "Pero, No presenta el impacto sobre el acceso a espacios y vías públicas, que es central en el cerramiento."
+          "p": "Pero es incorrecta porque el gobierno local no tiene un interés particular contrapuesto, sino el deber constitucional de garantizar seguridad a todos."
         },
         {
           "t": "Opción D",
-          "p": "Pero, Contrapone dos instituciones de seguridad y deja por fuera a los demás habitantes afectados."
+          "p": "Pero es incorrecta porque el dilema central no reside en el beneficio comercial de agencias de vigilancia, sino en la asignación del pie de fuerza público."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica quiénes ganarían seguridad con el cerramiento.",
+        "Considera quiénes perderían acceso a las vías y espacios comunes."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción B satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Los residentes quieren reducir los robos y sentirse seguros."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "El cerramiento también puede impedir que otros habitantes usen vías y espacios públicos."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B reúne esos dos intereses."
+          "t": "El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto. La respuesta es B."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Los ladrones no tienen un interés legítimo que deba orientar la evaluación pública de la propuesta."
+          "t": "La opción A plantea «Los de las empresas de seguridad privada que buscan expandir su…», Pero no responde al criterio central: El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "No presenta el impacto sobre el acceso a espacios y vías públicas, que es central en el cerramiento."
+          "t": "La opción C plantea «Los de los residentes que buscan su beneficio particular y los…», Pero no responde al criterio central: El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Contrapone dos instituciones de seguridad y deja por fuera a los demás habitantes afectados."
+          "t": "La opción D plantea «Los de las empresas de seguridad privada que serían contratadas…», Pero no responde al criterio central: El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B contrapone la seguridad de los residentes con el acceso de los demás habitantes a vías y espacios públicos."
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "La decisión pública debe considerar tanto la seguridad de los residentes como los derechos de circulación y uso público."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La propuesta restringe el acceso de personas que no viven allí."
-        },
-        {
-          "t": "Por eso, el conflicto relevante es el que presenta la opción B."
+          "a": "p:1",
+          "t": "El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto."
         },
         {
           "a": "o:B:ok",
-          "t": "Las demás alternativas omiten a uno de los grupos afectados o presentan un interés improcedente."
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Ante los crecientes robos a residencias en a",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "n ser tenidos en cuenta?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El cerramiento protege a residentes, pero restringe el acceso público a vías y espacios de los demás habitantes; esos intereses están en conflicto. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

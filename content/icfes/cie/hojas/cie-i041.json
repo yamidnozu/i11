@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "mezcla que se espera se haya formado",
-        "rol": "pide",
-        "nota": "Expresión que señala el objeto de análisis.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la evidencia",
-        "texto": "Relaciona cada resultado de laboratorio con el grupo funcional detectado."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta la relación",
-        "texto": "Usa el esquema para asociar un alcohol primario con sus productos de oxidación."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Comprueba que las dos estructuras de la mezcla coincidan con las pruebas."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir productos de oxidación con pruebas químicas",
-      "que": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos.",
-      "pistas": [
-        "Relaciona cada resultado de laboratorio con el grupo funcional detectado.",
-        "Usa el esquema para asociar un alcohol primario con sus productos de oxidación."
-      ],
       "clave": "Los resultados indican una mezcla de aldehído y ácido carboxílico derivados del alcohol primario.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido."
+          "p": "Pero incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido."
         },
         {
           "t": "Opción C",
-          "p": "Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens."
+          "p": "Pero incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens."
         },
         {
           "t": "Opción D",
-          "p": "Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido."
+          "p": "Pero presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido."
         }
+      ],
+      "pistas": [
+        "Relaciona cada resultado de laboratorio con el grupo funcional detectado.",
+        "Usa el esquema para asociar un alcohol primario con sus productos de oxidación."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Comprueba que las dos estructuras de la mezcla coincidan con las pruebas."
         }
-      ]
+      ],
+      "que": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos.",
+      "tema": "Inferir productos de oxidación con pruebas químicas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "La frase «mezcla que se espera se haya formado» nos ayuda a ubicar la tarea.",
-          "a": "m:mezcla que se espera se haya formado"
+          "a": "m:mezcla que se espera se haya formado",
+          "t": "La frase «mezcla que se espera se haya formado» nos ayuda a ubicar la tarea."
         },
         {
-          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos."
         },
         {
-          "t": "Opción A: Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido. La descartamos."
         },
         {
-          "t": "Opción C: Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens. La descartamos."
         },
         {
-          "t": "Opción D: Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Primero identifico qué evidencia o relación debo usar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué evidencia o relación debo usar."
         },
         {
-          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El espejo de plata de Tollens indica un aldehído y la coloración morada con almidón indica un ácido carboxílico. El esquema muestra que un alcohol primario puede oxidarse a ambos productos; por eso la mezcla debe contener un aldehído y el ácido correspondiente, ambos con seis carbonos."
         },
         {
-          "t": "Comprueba que las dos estructuras de la mezcla coincidan con las pruebas.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que las dos estructuras de la mezcla coincidan con las pruebas."
         },
         {
-          "t": "Opción A: Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Incluye un aldehído, pero el segundo producto es una cetona; la prueba observada con almidón señala un ácido. La descarto."
         },
         {
-          "t": "Opción C: Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Incluye un ácido, pero conserva un alcohol en vez del aldehído que revela la prueba de Tollens. La descarto."
         },
         {
-          "t": "Opción D: Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Presenta una cetona y un alcohol; no corresponde a las pruebas positivas de aldehído y ácido. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "mezcla que se espera se haya formado",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona cada resultado de laboratorio con el grupo funcional detectado.",
+        "titulo": "Identifica la evidencia"
+      },
+      {
+        "k": "idea",
+        "texto": "Usa el esquema para asociar un alcohol primario con sus productos de oxidación.",
+        "titulo": "Interpreta la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que las dos estructuras de la mezcla coincidan con las pruebas.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

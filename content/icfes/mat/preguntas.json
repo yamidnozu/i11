@@ -142,20 +142,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Cuenta solo la cantidad de cursos que subieron de puntaje (3 de 4), ignorando que la drástica caída de 16 puntos en el curso II hace disminuir el promedio global."
+              "p": "Pero cuenta solo la cantidad de cursos que subieron de puntaje (3 de 4), ignorando que la drástica caída de 16 puntos en el curso II hace disminuir el promedio global."
             },
             {
               "t": "Opción C",
-              "p": "Se fija únicamente en el puntaje más alto aislado (65 en el curso I), confundiendo el valor máximo individual con el promedio general."
+              "p": "Pero se fija únicamente en el puntaje más alto aislado (65 en el curso I), confundiendo el valor máximo individual con el promedio general."
             },
             {
               "t": "Opción D",
-              "p": "Afirma erróneamente que se requieren los datos individuales de los alumnos, cuando al tener igual número de estudiantes por curso el promedio total es simplemente la media de los cuatro promedios."
+              "p": "Pero afirma erróneamente que se requieren los datos individuales de los alumnos, cuando al tener igual número de estudiantes por curso el promedio total es simplemente la media de los cuatro promedios."
             }
           ],
           "pistas": [
-            "Fíjate en «promedios iguales».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Suma los promedios de los cuatro cursos: $227$ en el año anterior frente a $217$ en el año actual.",
+            "Como los cuatro cursos tienen igual número de estudiantes, compara directamente las sumas para evaluar si el promedio total aumentó o disminuyó."
           ],
           "plan": [
             {
@@ -327,20 +327,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero, solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
+              "p": "Pero solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
             },
             {
               "t": "Opción B",
-              "p": "Pero, no hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
+              "p": "Pero no hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
             },
             {
               "t": "Opción D",
-              "p": "Pero, el factor de {{4.000}} vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo {{3 %}}."
+              "p": "Pero el factor de 4.000 vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo 3 %."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Analiza qué ocurre con el rendimiento en pesos cuando la tasa de cambio entre dólar y peso se mantiene fija.",
+            "Comprueba que la ganancia porcentual en pesos es idéntica al 3 % en dólares si no hay variación cambiaria."
           ],
           "plan": [
             {
@@ -431,13 +431,13 @@
           },
           {
             "campo": "Dato relevante",
-            "frag": "$3\\%$ en el mismo periodo",
+            "frag": "en el mismo periodo",
             "nota": "Es la proporción de crecimiento en dólares.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "en pesos sus ganancias también serán del $3\\%$",
+            "frag": "en pesos sus ganancias también serán del",
             "nota": "Evalúa si la proporción se conserva al convertir la inversión.",
             "rol": "pide"
           }
@@ -539,16 +539,16 @@
           "clave": "Las franjas uno, tres y cuatro cuestan $5.950.000. Con las franjas uno, dos y cuatro caben todos y el costo baja a $5.650.000.",
           "no": [
             {
-              "p": "Suma los cupos y confirma que alcanzan. Pero esa suma no compara el precio con otra combinación viable.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero la suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo."
             },
             {
-              "p": "Observa que la franja uno es la más económica. Pero el grupo también necesita otras franjas y debe compararse el costo total.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable."
             },
             {
-              "p": "Se fija en que la franja tres es más costosa. Pero hay que mostrar una combinación alternativa que admita al grupo; las franjas uno, dos y cuatro sí lo hacen.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
             }
           ],
           "pistas": [
@@ -726,16 +726,16 @@
           "clave": "El módulo I cuesta $1.400.000$ por curso. El total pagado cubre tres cursos, para un grupo de entre sesenta y una y noventa personas.",
           "no": [
             {
-              "p": "Supone que basta un curso. Pero el grupo máximo por curso es de treinta personas y el costo de uno es $1.400.000$.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero un curso no puede atender más de 30 personas y costaría $1.400.000."
             },
             {
-              "p": "Corresponde a dos cursos, cuyo costo sería $2.800.000$. Pero la empresa pagó para tres cursos.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero dos cursos cuestan $2.800.000, no $4.200.000."
             },
             {
-              "p": "Supone cuatro cursos, que costarían $5.600.000$. Pero la empresa pagó menos que ese valor.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero cuatro cursos costarían $5.600.000, más de lo pagado."
             }
           ],
           "pistas": [
@@ -837,7 +837,7 @@
           },
           {
             "campo": "Cantidad de trabajadores",
-            "frag": "tiene entre",
+            "frag": "tiene",
             "nota": "Busca el intervalo de trabajadores que corresponde a ese costo.",
             "rol": "pide"
           }
@@ -901,16 +901,16 @@
           "clave": "Se requieren dos cursos del módulo II. El total de $1.800.000$ dividido entre cincuenta trabajadores da $36.000$ por persona.",
           "no": [
             {
-              "p": "Divide el costo de un curso entre las cincuenta personas. Pero se requieren dos cursos.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero $18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos."
             },
             {
-              "p": "Toma la mitad del costo de un curso como pago individual. Pero primero hay que sumar el costo de ambos y dividir entre las personas.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero $450.000 es la mitad del costo de un curso y no cubre dos grupos."
             },
             {
-              "p": "Es el precio de un solo curso. Pero se pregunta por el valor individual de los cursos necesarios.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero $900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
             }
           ],
           "pistas": [
@@ -1079,21 +1079,21 @@
           "clave": "El módulo IV cuesta $450.000$ por curso y $900.000$ por dos cursos.",
           "no": [
             {
-              "p": "Dos cursos del módulo I cuestan $2.800.000$. Pero el pago informado fue $900.000$.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero dos cursos del módulo I cuestan $2.800.000."
             },
             {
-              "p": "Dos cursos del módulo II cuestan $1.800.000$. Pero el pago informado fue $900.000$.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero dos cursos del módulo II cuestan $1.800.000."
             },
             {
-              "p": "Dos cursos del módulo III cuestan $3.200.000$. Pero el pago informado fue $900.000$.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero dos cursos del módulo III cuestan $3.200.000."
             }
           ],
           "pistas": [
-            "Usa intensidad horaria y valor por hora de la tabla compartida.",
-            "Compara el costo de dos cursos con el pago informado."
+            "Ten en cuenta que 40 funcionarios requieren dos grupos de capacitación porque el cupo máximo por curso es de 30 personas.",
+            "Multiplica el valor por hora de cada módulo por la intensidad horaria y por dos cursos para hallar cuál cuesta exactamente novecientos mil pesos (módulo IV)."
           ],
           "plan": [
             {
@@ -1178,13 +1178,13 @@
         "marcas": [
           {
             "campo": "Pago total",
-            "frag": "$900.000 por la capacitación",
+            "frag": "900.000 por la capacitación",
             "nota": "Es el costo conjunto para los funcionarios.",
             "rol": "dato"
           },
           {
             "campo": "Identificación del módulo",
-            "frag": "corresponde al módulo",
+            "frag": "corresponde al",
             "nota": "Compara el costo de dos cursos de cada módulo.",
             "rol": "pide"
           }
@@ -1281,20 +1281,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Supone erróneamente que usar el mismo caucho implica que las áreas de la base y la boca son iguales, a pesar de que el caucho se estira."
+              "p": "Pero supone erróneamente que usar el mismo caucho implica que las áreas de la base y la boca son iguales, a pesar de que el caucho se estira."
             },
             {
               "t": "Opción B",
-              "p": "Confunde la proporcionalidad lineal de los perímetros con la de las áreas; en figuras semejantes, el área varía con el cuadrado de la razón lineal."
+              "p": "Pero confunde la proporcionalidad lineal de los perímetros con la de las áreas; en figuras semejantes, el área varía con el cuadrado de la razón lineal."
             },
             {
               "t": "Opción D",
-              "p": "Afirma que todas las medidas varían en la misma razón lineal, ignorando que las áreas son magnitudes bidimensionales que se escalan con el factor al cuadrado."
+              "p": "Pero afirma que todas las medidas varían en la misma razón lineal, ignorando que las áreas son magnitudes bidimensionales que se escalan con el factor al cuadrado."
             }
           ],
           "pistas": [
-            "Fíjate en «relación».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Relaciona la razón de perímetros con la razón de semejanza lineal entre las bases cuadradas: razón lineal igual a $18/24 = 3/4$.",
+            "Recuerda que la razón entre áreas de figuras semejantes es igual al cuadrado de la razón lineal: $(3/4)^2 = 9/16$."
           ],
           "plan": [
             {
@@ -1444,11 +1444,11 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 0,
+      "correcta": 2,
       "distractores": [
-        "",
-        "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta.",
         "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir.",
+        "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta.",
+        "",
         "Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
       ],
       "enunciado": "Un grupo de montañistas sabe que cada vez que aumenta la altitud en 100 m, la temperatura disminuye en 1 °C. Si el grupo se encuentra a una altitud de 1.000 m, donde la temperatura es de 20 °C, ¿cuál de las siguientes expresiones les permite determinar la temperatura que habrá cuando se encuentren a 4.000 m de altitud?\n Altitud A. Temperatura = + 10 100\n B. Temperatura = − Altitud × 100 + 30\n Altitud C. Temperatura = − + 30 100\n D. Temperatura = Altitud × 100 + 10\n 9\n Cuadernillo de preguntas . Prueba Matemáticas\n\n\n RESPONDE LAS PREGUNTAS 9 A 13 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN\n Para transportar mango y banano desde un pueblo cercano a dos ciudades, W y Z, un comerciante utiliza tres (3) camiones con capacidad de 5 toneladas cada uno; por cada camión contrata dos trabajadores en cada viaje. El comerciante compra a $ 400.000 la tonelada de banano y a $ 500.000, la de mango. En la tabla se muestra el precio de venta por tonelada de cada producto y los gastos de transporte y de trabajadores para cada ciudad.\n Precio de venta Precio de venta Pago por Costo transporte Ciudad tonelada de tonelada de trabajador por por camión banano mango viaje W $ 1.000.000 $ 1.300.000 $ 150.000 $ 180.000 Z $ 1.200.000 $ 1.350.000 $ 180.000 $ 200.000",
@@ -1462,21 +1462,21 @@
           "clave": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
+              "t": "Opción A",
+              "p": "Pero plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
             },
             {
-              "t": "Opción C",
-              "p": "Plantea una relación creciente donde la temperatura aumentaría con la altitud, en lugar de disminuir."
+              "t": "Opción B",
+              "p": "Pero multiplica la altitud directamente por 100 en vez de dividirla entre 100, generando una pendiente incorrecta."
             },
             {
               "t": "Opción D",
-              "p": "Presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
+              "p": "Pero presenta una función donde la temperatura aumenta linealmente con la altitud con una pendiente invertida."
             }
           ],
           "pistas": [
-            "Fíjate en «determinar la temperatura».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Identifica la temperatura inicial al nivel de referencia ($30\\,^\\circ\\text{C}$) y la tasa de enfriamiento de un grado Celsius por cada cien metros de ascenso.",
+            "Modela la relación lineal restando del valor base la variación debida a la altura: $T = -(\\text{Altitud}/100) + 30$."
           ],
           "plan": [
             {
@@ -1510,8 +1510,8 @@
               "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "2": [
@@ -1524,9 +1524,9 @@
               "t": "La altitud aumenta $3.000$ metros, es decir, treinta tramos de cien metros. La temperatura baja treinta grados desde veinte y queda en menos diez. La expresión que lo modela es $T=30-\\text{Altitud}/100$."
             },
             {
-              "a": "o:C:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:B:no",
@@ -1539,8 +1539,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "3": [
@@ -1559,9 +1559,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:C:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:B:no",
@@ -1574,8 +1574,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ]
         },
@@ -1611,9 +1611,9 @@
       "id": "mat-i008",
       "nivel": 2,
       "opciones": [
-        "$T=-(\\text{Altitud}/100)+30$",
-        "$T=-100\\,\\text{Altitud}+30$",
         "$T=(\\text{Altitud}/100)+10$",
+        "$T=-100\\,\\text{Altitud}+30$",
+        "$T=-(\\text{Altitud}/100)+30$",
         "$T=100\\,\\text{Altitud}+10$"
       ],
       "origen": "icfes",
@@ -1645,16 +1645,16 @@
           "clave": "La venta genera $300.000$ adicionales en Z; los gastos aumentan $140.000$. La diferencia favorece la rentabilidad en Z.",
           "no": [
             {
-              "p": "Compara solo el ingreso de venta. Pero la rentabilidad también descuenta transporte y pago de trabajadores.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero el ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos."
             },
             {
-              "p": "Compara el aumento por tonelada con el costo de un camión. Pero hay que multiplicar por seis toneladas y considerar dos camiones.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero la diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones."
             },
             {
-              "p": "Afirma que W tiene mayores gastos. Pero el transporte y el pago por trabajador son mayores en Z.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero los gastos de transporte y trabajadores son mayores en Z, no en W."
             }
           ],
           "pistas": [
@@ -1821,16 +1821,16 @@
           "clave": "El margen de venta es $9.000.000$ y los gastos de operación suman $1.530.000$; la ganancia es $7.470.000$.",
           "no": [
             {
-              "p": "El valor no resulta de restar al margen todos los gastos indicados. Pero deben descontarse transporte y salarios.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero $5.670.000$ resta costos que no corresponden a los datos del procedimiento."
             },
             {
-              "p": "El valor deja por fuera parte de los costos del negocio. Pero hay que incluir los tres transportes y los seis pagos.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero $5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores."
             },
             {
-              "p": "El valor supera el margen después de costos. Pero la ganancia debe ser menor que los $9.000.000$ de margen.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero $8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
             }
           ],
           "pistas": [
@@ -2000,16 +2000,16 @@
           "clave": "Las $47$ toneladas dejan dos fuera de los grupos completos; las $45$ elegibles generan $58.500.000$ en ventas y un bono de aproximadamente $175.000$ por persona.",
           "no": [
             {
-              "p": "Calcula el bono con una base mayor que las toneladas elegibles. Pero el sobrante no completa otro grupo de cinco.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero $526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas."
             },
             {
-              "p": "No aplica el porcentaje a la venta de las toneladas elegibles. Pero el cálculo debe usar el precio del mango en W.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero $148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles."
             },
             {
-              "p": "No corresponde al porcentaje sobre los grupos completos. Pero el valor de venta elegible es $58.500.000$.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero $87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
             }
           ],
           "pistas": [
@@ -2180,16 +2180,16 @@
           "clave": "En W, transporte y salarios cuestan $300.000$ y $720.000$. En Z, cuestan $360.000$ y $800.000$; la gráfica correcta es B.",
           "no": [
             {
-              "p": "Muestra el pago de trabajadores para un solo camión. Pero cada ciudad necesita dos camiones.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero la opción A muestra costos de trabajadores de un solo camión por ciudad, aunque en cada destino se necesitan dos."
             },
             {
-              "p": "Muestra el transporte de dos camiones, pero el pago de un solo camión. Pero se requieren dos equipos de trabajadores.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero la opción C muestra transporte para dos camiones, pero pago de trabajadores como si se usara uno solo."
             },
             {
-              "p": "Intercambia los costos de transporte y trabajadores entre las ciudades. Pero los valores mayores corresponden a Z.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero la opción D intercambia los costos de las ciudades y no corresponde a la tabla."
             }
           ],
           "pistas": [
@@ -2426,16 +2426,16 @@
           "clave": "La carga suma $150$ toneladas. Los tres camiones pueden llevar $15$ toneladas por salida conjunta; se requieren como mínimo $10$ salidas.",
           "no": [
             {
-              "p": "La ganancia depende de las ciudades en que se vendió cada producto. Pero esa distribución no aparece.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero no se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia."
             },
             {
-              "p": "El pago depende de la asignación de trabajadores a viajes y ventas. Pero esos detalles no están dados.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero no se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago."
             },
             {
-              "p": "Los costos dependen de las ciudades de destino y de los viajes. Pero la información no indica esa distribución.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores."
             }
           ],
           "pistas": [
@@ -2538,12 +2538,6 @@
             "frag": "100 toneladas de mango y 50 de banano",
             "nota": "Suma la carga total para calcular la cantidad mínima de salidas.",
             "rol": "dato"
-          },
-          {
-            "campo": "Alcance de la información",
-            "frag": "es posible conocer",
-            "nota": "Distingue qué se determina con los datos disponibles.",
-            "rol": "pide"
           }
         ],
         "modo": "concepto",
@@ -2605,21 +2599,21 @@
           "clave": "Al duplicar un lado y conservar el otro, el producto que representa el área también se duplica.",
           "no": [
             {
-              "p": "Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero aumentar un lado al doble no aumenta el área solo en la mitad; el otro lado conserva su longitud."
             },
             {
-              "p": "Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero el área sí cambia porque uno de los factores se duplica."
             },
             {
-              "p": "Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero el porcentaje modifica una longitud relativa, no agrega cien unidades de área."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Multiplica el largo nuevo ($2L$) por el ancho nuevo ($0,5A$) para hallar la nueva área del rectángulo.",
+            "Compara el producto $2L \\cdot 0,5A = L \\cdot A$ con el área original para determinar que permanece constante."
           ],
           "plan": [
             {
@@ -2755,12 +2749,12 @@
       "area": "matematicas",
       "competencia": "Interpretación y representación",
       "competenciaId": "interpretacion_representacion",
-      "correcta": 3,
+      "correcta": 2,
       "distractores": [
         "Divide el ángulo entre la longitud de los postes sin base trigonométrica.",
         "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad.",
-        "Confunde el ángulo de elevación con su complemento respecto a la vertical.",
-        ""
+        "",
+        "Confunde el ángulo de elevación con su complemento respecto a la vertical."
       ],
       "enunciado": "Las sombras proyectadas por dos postes paralelos de 10 metros y 5 metros se muestran en la figura. Poste 1\n\n 10 metros Poste 2 5 metros\n\n\n = 30¼°\n\n Figura\n El ángulo entre la acera horizontal y la sombra del poste 1 es α = 30º.\n De acuerdo con esto, se puede afirmar que el ángulo entre la acera horizontal y la sombra del poste 2 es",
       "estadoHoja": "revisada",
@@ -2790,20 +2784,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Divide el ángulo entre la longitud de los postes sin base trigonométrica."
+              "p": "Pero divide el ángulo entre la longitud de los postes sin base trigonométrica."
             },
             {
               "t": "Opción B",
-              "p": "Asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
+              "p": "Pero asume que por medir la mitad de la altura, el ángulo de elevación solar también se reduce a la mitad."
             },
             {
-              "t": "Opción C",
-              "p": "Confunde el ángulo de elevación con su complemento respecto a la vertical."
+              "t": "Opción D",
+              "p": "Pero confunde el ángulo de elevación con su complemento respecto a la vertical."
             }
           ],
           "pistas": [
-            "Fíjate en «ángulo entre la acera».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Observa que los rayos solares inciden con el mismo ángulo de inclinación sobre ambos postes verticales paralelos.",
+            "Aplica semejanza de triángulos rectángulos para deducir que el ángulo beta del segundo poste es idéntico al ángulo de treinta grados del primer poste."
           ],
           "plan": [
             {
@@ -2837,8 +2831,8 @@
               "t": "Los postes son paralelos y sus sombras se forman con la misma dirección de luz. Los triángulos rectángulos son semejantes, así que el ángulo con la acera es igual para ambos: treinta grados."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "2": [
@@ -2861,13 +2855,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:no",
+              "a": "o:D:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "3": [
@@ -2896,13 +2890,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:no",
+              "a": "o:D:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ]
         },
@@ -2940,8 +2934,8 @@
       "opciones": [
         "β = 5°.",
         "β = 15°.",
-        "β = 60°.",
-        "β = 30°."
+        "β = 30°.",
+        "β = 60°."
       ],
       "origen": "icfes",
       "parte": "Pregunta 15",
@@ -2971,21 +2965,21 @@
           "clave": "Un mismo promedio puede corresponder a distribuciones distintas alrededor del umbral de $1,80$ m.",
           "no": [
             {
-              "p": "El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero el promedio no permite afirmar que todas las personas estén por debajo de $1,80$ m ni que deban aceptarse exactamente otras dieciséis."
             },
             {
-              "p": "Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero aunque el promedio no determina los grupos, no es necesario reemplazarlo por el máximo o el mínimo: se requiere conocer cada estatura."
             },
             {
-              "p": "Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero agregar estudiantes de $1,80$ m no garantiza igualar los grupos; además, esa estatura pertenece a la piscina profunda."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Recuerda que el promedio aritmético solo mide la suma total de las estaturas dividida entre dieciséis, no la distribución individual de los alumnos.",
+            "Deduce por qué un promedio de un metro con setenta centímetros no impide que la mitad de los nadadores supere un metro con ochenta si las estaturas restantes son bajas."
           ],
           "plan": [
             {
@@ -3126,7 +3120,7 @@
       "correcta": 3,
       "distractores": [
         "lah calcula el volumen del prisma rectangular, no la longitud de sus aristas.",
-        "4lah multiplica cuatro veces el volumen, lo cual no representa una medida de longitud.",
+        "{{4lah}} multiplica cuatro veces el volumen, lo cual no representa una medida de longitud.",
         "l+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo.",
         ""
       ],
@@ -3158,20 +3152,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Lah calcula el volumen del prisma rectangular, no la longitud de sus aristas."
+              "p": "Pero lah calcula el volumen del prisma rectangular, no la longitud de sus aristas."
             },
             {
               "t": "Opción B",
-              "p": "4lah multiplica cuatro veces el volumen, lo cual no representa una medida de longitud."
+              "p": "Pero {{4lah}} multiplica cuatro veces el volumen, lo cual no representa una medida de longitud."
             },
             {
               "t": "Opción C",
-              "p": "L+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo."
+              "p": "Pero l+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo."
             }
           ],
           "pistas": [
-            "Fíjate en «longitud total de las aristas».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Recuerda que un paralelepípedo o prisma rectangular tiene doce aristas en total: cuatro de longitud ele, cuatro de ancho y cuatro de altura.",
+            "Suma la longitud de todas las aristas de la caja metálica para obtener la expresión simplificada $4l + 4a + 4h$."
           ],
           "plan": [
             {
@@ -3307,7 +3301,7 @@
       "nivel": 1,
       "opciones": [
         "lah",
-        "4lah",
+        "{{4lah}}",
         "l + a + h",
         "4l + 4a + 4h"
       ],
@@ -3356,20 +3350,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Usa el ángulo de 45° que no pertenece al triángulo que relaciona directamente a x con el faro inferior."
+              "p": "Pero usa el ángulo de 45° que no pertenece al triángulo que relaciona directamente a x con el faro inferior."
             },
             {
               "t": "Opción B",
-              "p": "Aplica una razón trigonométrica con medidas angulares no opuestas al lado buscado en la figura."
+              "p": "Pero aplica una razón trigonométrica con medidas angulares no opuestas al lado buscado en la figura."
             },
             {
               "t": "Opción D",
-              "p": "Invierte los catetos y ángulos en la aplicación de la ley de senos."
+              "p": "Pero invierte los catetos y ángulos en la aplicación de la ley de senos."
             }
           ],
           "pistas": [
-            "Fíjate en «distancia x».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "En el triángulo oblicuángulo, identifica los ángulos interiores de setenta y cinco grados y sesenta grados junto con sus respectivos lados opuestos uno y equis.",
+            "Aplica la ley de senos: equis sobre seno de sesenta grados es igual a uno sobre seno de setenta y cinco grados."
           ],
           "plan": [
             {
@@ -3530,28 +3524,28 @@
       "estadoHoja": "revisada",
       "evidencia": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
       "evidenciaId": "2.1",
-      "explicacion": "P lleva siete puntos y Q lleva dos. Si P anota $ puntos más, por cada dos de P, Q anota tres: Q suma $\\frac{3}{2}x$. La igualdad se expresa como +x=2+\\frac{3}{2}x$, equivalente a la opción B.",
+      "explicacion": "P lleva siete puntos y Q lleva dos. Si P anota $x$ puntos más, por cada dos de P, Q anota tres: Q suma $\\frac{3}{2}x$. La igualdad se expresa como $7+x=2+\\frac{3}{2}x$, equivalente a la opción B.",
       "fuente": "Icfes (2026). 01 Matematicas Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 19.",
       "hoja": {
         "enfoque": {
           "clave": "Si P suma $x$, Q suma $3x/2$; los puntajes se igualan con $7+x=2+3x/2$.",
           "no": [
             {
-              "p": "Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero no iguala los puntajes iniciales y omite el marcador de ambos jugadores."
             },
             {
-              "p": "Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero usa $3x$ y $2y$ en lugar de la relación correcta entre los puntos adicionales; además introduce dos incógnitas."
             },
             {
-              "p": "No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero suma los puntos iniciales sin representar la proporción entre los puntos que anota cada robot."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Plantea la ecuación de puntajes acumulados: P inicia con siete puntos y suma equis, mientras Q inicia con dos puntos y suma tres medios de equis.",
+            "Iguala ambas cantidades para expresar la condición de empate: $7 + x = \\frac{3}{2}x + 2$."
           ],
           "plan": [
             {
@@ -3680,7 +3674,7 @@
       "nivel": 3,
       "opciones": [
         "$\\frac{3}{2}x=0$",
-        "+x=\\frac{3}{2}x+2$",
+        "$7+x=\\frac{3}{2}x+2$",
         "$7+3x=2+2y$",
         "$x+y=7+2$"
       ],
@@ -3741,20 +3735,20 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Plantea una relación de proporcionalidad directa simple sin término independiente que no se ajusta a la ganancia base."
+              "p": "Pero plantea una relación de proporcionalidad directa simple sin término independiente que no se ajusta a la ganancia base."
             },
             {
               "t": "Opción C",
-              "p": "Asume una tasa constante de 40 que sobreestima el crecimiento a partir del segundo punto de la tabla."
+              "p": "Pero asume una tasa constante de 40 que sobreestima el crecimiento a partir del segundo punto de la tabla."
             },
             {
               "t": "Opción D",
-              "p": "Usa una pendiente de 40 y un intercepto negativo que no coincide con las ganancias registradas para p = 200."
+              "p": "Pero usa una pendiente de 40 y un intercepto negativo que no coincide con las ganancias registradas para p = 200."
             }
           ],
           "pistas": [
-            "Fíjate en «función que representa».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Calcula la pendiente de la recta con dos puntos de la tabla: $(0, 2.000)$ y $(10, 2.300)$, obteniendo treinta millones por unidad de gasto publicitario.",
+            "Verifica que el intercepto con el eje de ganancias corresponde a dos mil millones cuando el gasto en publicidad es cero: $G(p) = 30p + 2.000$."
           ],
           "plan": [
             {
@@ -3923,20 +3917,20 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "No nota que la ecuación m = 3s expresa que la cantidad de mesas es el triple de sillas, lo opuesto a lo indicado por el dueño."
+              "p": "Pero no nota que la ecuación m = 3s expresa que la cantidad de mesas es el triple de sillas, lo opuesto a lo indicado por el dueño."
             },
             {
               "t": "Opción C",
-              "p": "Afirma erróneamente que los precios deberían dividir a las variables, lo cual contradice el cálculo de ingresos."
+              "p": "Pero afirma erróneamente que los precios deberían dividir a las variables, lo cual contradice el cálculo de ingresos."
             },
             {
               "t": "Opción D",
-              "p": "Justifica la validez solo porque la solución arroja números enteros, sin verificar si las ecuaciones modelan el enunciado."
+              "p": "Pero justifica la validez solo porque la solución arroja números enteros, sin verificar si las ecuaciones modelan el enunciado."
             }
           ],
           "pistas": [
-            "Fíjate en «representan correctamente».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Analiza la ecuación dos propuesta ($m = 3s$): si el número de sillas es el triple de mesas, la relación correcta debe ser $s = 3m$.",
+            "Deduce por qué el sistema es incorrecto: la segunda ecuación invierte la proporción y afirma que se venden el triple de mesas que de sillas."
           ],
           "plan": [
             {
@@ -4120,21 +4114,21 @@
           "clave": "La altura mide cerca de $85$ cm y la mitad es aproximadamente $42$ cm.",
           "no": [
             {
-              "p": "Se acerca a la altura completa, no a la mitad. Pero el corte está a media altura.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero es aproximadamente la altura completa y no la mitad donde está el corte."
             },
             {
-              "p": "Toma la mitad de $120$ cm. Pero ese lado no es la altura perpendicular.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero es la mitad del lado de $120$ cm, no la mitad de la altura perpendicular."
             },
             {
-              "p": "No corresponde a la mitad de la altura calculada. Pero la altura es cercana a $85$ cm.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero aproxima la mitad de una altura incorrectamente calculada; la altura es cerca de $85$ cm."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Calcula la altura total $h$ despejando de $\\operatorname{sen}(45^\\circ) = h/120$ con $\\operatorname{sen}(45^\\circ) \\approx 0,71$.",
+            "Divide la altura total entre 2 para determinar la distancia exacta a la que se realizó el corte paralelo a la base."
           ],
           "plan": [
             {
@@ -4219,19 +4213,13 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "sen(45°)=h/120",
-            "nota": "Permite calcular la altura perpendicular.",
-            "rol": "dato"
-          },
-          {
-            "campo": "Dato relevante",
             "frag": "se dividió h entre dos",
             "nota": "El corte está a mitad de la altura.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "la distancia desde la base hasta el corte",
+            "frag": "la distancia",
             "nota": "Busca la mitad de la altura, no la longitud del lado.",
             "rol": "pide"
           }
@@ -4276,10 +4264,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 0,
+      "correcta": 1,
       "distractores": [
-        "",
         "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto.",
+        "",
         "Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°.",
         "Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
       ],
@@ -4310,21 +4298,21 @@
           "clave": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
+              "t": "Opción A",
+              "p": "Pero divide entre 2 el cateto mayor pensando que la razón es de 1 a 2, confundiendo la hipotenusa con el cateto."
             },
             {
               "t": "Opción C",
-              "p": "Aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°."
+              "p": "Pero aproxima el cateto con una resta arbitraria sin usar las razones trigonométricas del triángulo 30°-60°-90°."
             },
             {
               "t": "Opción D",
-              "p": "Multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
+              "p": "Pero multiplica la hipotenusa por raíz de 3 en vez de despejar el cateto menor dividiendo entre raíz de 3."
             }
           ],
           "pistas": [
-            "Fíjate en «cateto menor».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "En un triángulo rectángulo de treinta y sesenta grados, el cateto adyacente a treinta grados mide el cateto menor multiplicado por raíz de tres.",
+            "Sustituye el cateto de treinta y dos centímetros para despejar el cateto menor opuesto: $32 / \\sqrt{3}\\text{ cm}$."
           ],
           "plan": [
             {
@@ -4358,8 +4346,8 @@
               "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "2": [
@@ -4372,9 +4360,9 @@
               "t": "En un triángulo de treinta, sesenta y noventa grados, el cateto mayor mide el cateto menor por $\\sqrt3$. Si el mayor mide treinta y dos, el menor mide $32/\\sqrt3$ centímetros."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -4387,8 +4375,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "3": [
@@ -4407,9 +4395,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -4422,8 +4410,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ]
         },
@@ -4459,8 +4447,8 @@
       "id": "mat-i023",
       "nivel": 2,
       "opciones": [
-        "$32/\\sqrt3$ cm",
         "$16$ cm",
+        "$32/\\sqrt3$ cm",
         "$27$ cm",
         "$64/\\sqrt3$ cm"
       ],
@@ -4476,7 +4464,7 @@
       "competenciaId": "formulacion_ejecucion",
       "correcta": 3,
       "distractores": [
-        "Calcula el área como una novena parte asumiendo una cuadrícula regular de 3x3 que no corresponde a la inclinación de las líneas.",
+        "Calcula el área como una novena parte asumiendo una cuadrícula regular de {{3x3}} que no corresponde a la inclinación de las líneas.",
         "Estima visualmente que el cuadrado sombreado es un octavo del área total.",
         "Asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales.",
         ""
@@ -4537,20 +4525,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Calcula el área como una novena parte asumiendo una cuadrícula regular de 3x3 que no corresponde a la inclinación de las líneas."
+              "p": "Pero calcula el área como una novena parte asumiendo una cuadrícula regular de {{3x3}} que no corresponde a la inclinación de las líneas."
             },
             {
               "t": "Opción B",
-              "p": "Estima visualmente que el cuadrado sombreado es un octavo del área total."
+              "p": "Pero estima visualmente que el cuadrado sombreado es un octavo del área total."
             },
             {
               "t": "Opción C",
-              "p": "Asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales."
+              "p": "Pero asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales."
             }
           ],
           "pistas": [
-            "Fíjate en «área del cuadrado sombreado».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Analiza las áreas de los triángulos y trapecios formados al unir vértices con puntos medios de los lados opuestos en el cuadrado unitario.",
+            "Aplica disección geométrica para demostrar que el cuadrado central inclinado ocupa exactamente un quinto del área total ($1/5\\text{ dm}^2$)."
           ],
           "plan": [
             {
@@ -4718,21 +4706,21 @@
           "clave": "Hay $4! = 24$ órdenes posibles para los cuatro dígitos.",
           "no": [
             {
-              "p": "No corresponde al producto de las cuatro elecciones sucesivas. Pero no se pueden repetir dígitos.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero 56 no es el producto de las opciones disponibles al ordenar los cuatro dígitos sin repetir."
             },
             {
-              "p": "Excede las permutaciones posibles de cuatro elementos. Pero cada extensión ordena solo esos cuatro dígitos.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero 120 excede el número de permutaciones de cuatro dígitos distintos."
             },
             {
-              "p": "Cuenta combinaciones con repetición. Pero el enunciado exige dígitos diferentes.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero 256 cuenta cadenas con repetición, aunque las extensiones deben usar dígitos diferentes."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Aplica el principio fundamental de la multiplicación para calcular las extensiones posibles con los dígitos permitidos.",
+            "Diferencia las combinaciones válidas de aquellas que repiten dígitos o violan la longitud exigida por el conmutador."
           ],
           "plan": [
             {
@@ -4946,20 +4934,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Estos tres tipos suman 34%, menos de la mitad."
+              "p": "Pero automóviles, camionetas y camperos representan 18% + 9% + 7% = 34%, que no alcanza la mitad (50%) del parque automotor."
             },
             {
               "t": "Opción B",
-              "p": "Suman exactamente 50%, no más de la mitad."
+              "p": "Pero automóviles, camionetas y microbuses suman 18% + 9% + 23% = 50%, exactamente la mitad y no más de la mitad."
             },
             {
               "t": "Opción D",
-              "p": "La suma de buses, microbuses y busetas es 65%."
+              "p": "Pero buses, busetas y camionetas suman 24% + 18% + 9% = 51%, pero la agrupación mayoritaria de transporte público supera con claridad el 65%."
             }
           ],
           "pistas": [
-            "Fíjate en «afirmación es verdadera».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Suma los porcentajes correspondientes al transporte público de pasajeros: $24\\% + 23\\% + 18\\% = 65\\%$.",
+            "Compara el sesenta y cinco por ciento obtenido con el treinta y cinco por ciento de automóviles para concluir que la mayor parte son buses, microbuses y busetas."
           ],
           "plan": [
             {
@@ -5127,21 +5115,21 @@
           "clave": "El valor $10,497$ es menor que $10,50$ y mayor que $10,49$.",
           "no": [
             {
-              "p": "Un tiempo menor que diez coma cuatro también mejora el récord mundial. Pero la pregunta exige no romperlo.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero un tiempo menor que $10,4$ también sería menor que el récord mundial, por lo que rompería ambos."
             },
             {
-              "p": "Sí existen decimales entre ambos valores, como el ejemplo de A. Pero C niega ese intervalo.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero sí hay tiempos entre $10,49$ y $10,50$, como $10,497$."
             },
             {
-              "p": "Un tiempo menor que el olímpico no necesariamente es menor que el mundial. Pero puede quedar entre ambos.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero el intervalo entre ambos récords permite mejorar el olímpico sin mejorar el mundial."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Calcula la diferencia restando el récord mundial del olímpico: $10,62 - 10,49 = 0,13$ segundos.",
+            "Interpreta que un menor tiempo en una carrera de atletismo representa una marca más rápida y un mejor rendimiento."
           ],
           "plan": [
             {
@@ -5332,21 +5320,21 @@
           "clave": "Hay $45$ mujeres de $75$ estudiantes; el total posible es todo el grado undécimo.",
           "no": [
             {
-              "p": "Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
             },
             {
-              "p": "Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
             },
             {
-              "p": "Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Identifica en la tabla el total de mujeres (45) y el total general de estudiantes de undécimo grado (75).",
+            "Simplifica la fracción $45/75$ dividiendo numerador y denominador entre 15 para obtener tres quintos ($3/5$)."
           ],
           "plan": [
             {
@@ -5436,14 +5424,8 @@
             "rol": "dato"
           },
           {
-            "campo": "Dato relevante",
-            "frag": "3/5",
-            "nota": "La probabilidad compara mujeres con el total de estudiantes.",
-            "rol": "dato"
-          },
-          {
             "campo": "Lo que se pregunta",
-            "frag": "corresponde a la razón entre el número total de mujeres y",
+            "frag": "el número total de mujeres",
             "nota": "Busca el denominador que convierte $45$ en $3/5$.",
             "rol": "pide"
           }
@@ -5526,21 +5508,21 @@
           "clave": "Respecto al ángulo del suelo, el cateto adyacente mide cinco y la hipotenusa trece.",
           "no": [
             {
-              "p": "Doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "Doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "Trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Identifica el cateto adyacente (5 m) y la hipotenusa (13 m) respecto al ángulo $\\theta$ que forma la escalera con el suelo.",
+            "Aplica la definición del coseno: $\\cos(\\theta) = \\text{cateto adyacente} / \\text{hipotenusa} = 5/13$."
           ],
           "plan": [
             {
@@ -5625,19 +5607,13 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "escalera a $12$ metros del suelo",
+            "frag": "escalera a 12 metros del suelo",
             "nota": "La altura es el cateto opuesto al ángulo del suelo.",
             "rol": "dato"
           },
           {
-            "campo": "Dato relevante",
-            "frag": "las medidas involucradas",
-            "nota": "La figura establece la base de cinco y la hipotenusa de trece.",
-            "rol": "dato"
-          },
-          {
             "campo": "Lo que se pregunta",
-            "frag": "coseno del ángulo $θ$ que forman el suelo y la escalera",
+            "frag": "coseno del ángulo θ que forman el suelo y la escalera",
             "nota": "Relaciona el cateto adyacente con la hipotenusa.",
             "rol": "pide"
           }
@@ -5806,21 +5782,21 @@
           "clave": "Las cartas de picas son negras, así que ninguna puede ser roja.",
           "no": [
             {
-              "p": "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero el rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Verifica si una carta de póquer puede pertenecer simultáneamente a dos palos distintos o si son eventos disyuntos.",
+            "Deduce por qué la probabilidad de la intersección de dos eventos mutuamente excluyentes es exactamente cero."
           ],
           "plan": [
             {
@@ -5917,7 +5893,7 @@
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "estas características podrían ser",
+            "frag": "características podrían ser",
             "nota": "Elige dos condiciones incompatibles.",
             "rol": "pide"
           }
@@ -5966,10 +5942,10 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 0,
+      "correcta": 1,
       "distractores": [
-        "",
         "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3.",
+        "",
         "Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática.",
         "Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
       ],
@@ -6000,21 +5976,21 @@
           "clave": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
+              "t": "Opción A",
+              "p": "Pero incluye a Óscar, quien dividió ambos lados entre (x+3) y canceló indebidamente la solución x = -3."
             },
             {
               "t": "Opción C",
-              "p": "Considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática."
+              "p": "Pero considera únicamente a Óscar, cuyo método omite una de las dos raíces de la ecuación cuadrática."
             },
             {
               "t": "Opción D",
-              "p": "Ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
+              "p": "Pero ignora que el procedimiento de factorización aplicado por Nelson también es completamente correcto y riguroso."
             }
           ],
           "pistas": [
-            "Fíjate en «procedimiento correcto».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Desarrolla el producto o factoriza la expresión para simplificar términos cuadráticos y lineales en ambos miembros de la ecuación.",
+            "Evalúa los procedimientos algebraicos de María y Nelson para verificar que ambos métodos llegan a las soluciones correctas."
           ],
           "plan": [
             {
@@ -6048,8 +6024,8 @@
               "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "2": [
@@ -6062,9 +6038,9 @@
               "t": "María desarrolla la ecuación y obtiene $x^2=9$, de donde salen $x=3$ y $x=-3$. Nelson factoriza $(x+3)(x-3)=0$ y obtiene las dos soluciones. Óscar divide entre $x+3$ y pierde la solución $x=-3$. Son correctos María y Nelson."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6077,8 +6053,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "3": [
@@ -6097,9 +6073,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6112,8 +6088,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ]
         },
@@ -6149,8 +6125,8 @@
       "id": "mat-i031",
       "nivel": 3,
       "opciones": [
-        "Solo María y Nelson.",
         "Solo Nelson y Óscar.",
+        "Solo María y Nelson.",
         "Solamente Óscar.",
         "Solamente María."
       ],
@@ -6164,10 +6140,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 0,
+      "correcta": 1,
       "distractores": [
-        "",
         "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos.",
+        "",
         "Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x.",
         "Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
       ],
@@ -6175,28 +6151,28 @@
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+      "explicacion": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
       "fuente": "Icfes (2026). 01 Matematicas Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 32.",
       "hoja": {
         "enfoque": {
-          "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+          "clave": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
+              "t": "Opción A",
+              "p": "Pero intercambia erróneamente los valores de las coordenadas x e y en los puntos simétricos."
             },
             {
               "t": "Opción C",
-              "p": "Aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x."
+              "p": "Pero aplica una reflexión respecto al origen invirtiendo los signos de ambas coordenadas en vez de solo la coordenada x."
             },
             {
               "t": "Opción D",
-              "p": "Invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
+              "p": "Pero invierte los signos de ambas coordenadas y además permuta las posiciones de x e y."
             }
           ],
           "pistas": [
-            "Fíjate en «otros dos vértices».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Aplica la regla de reflexión axial respecto al eje vertical: la coordenada horizontal cambia de signo mientras la vertical permanece constante.",
+            "Transforma los vértices $(-2, 8)$ y $(-4, 2)$ para obtener los puntos correspondientes reflejados $(2, 8)$ y $(4, 2)$."
           ],
           "plan": [
             {
@@ -6212,7 +6188,7 @@
               "t": "Comparo el resultado con las opciones y verifico su sentido."
             }
           ],
-          "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+          "que": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
           "tema": "Matemáticas: otros dos vértices"
         },
         "guion": {
@@ -6227,11 +6203,11 @@
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "2": [
@@ -6241,12 +6217,12 @@
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6259,19 +6235,19 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "3": [
             {
               "a": "p:0",
               "k": "ana",
-              "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+              "t": "Primero identifico qué pide: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
             },
             {
               "a": "p:1",
-              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+              "t": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
             },
             {
               "a": "p:2",
@@ -6279,9 +6255,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -6294,8 +6270,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ]
         },
@@ -6319,20 +6295,20 @@
             "lineas": [
               "(x,y)\\mapsto(-x,y)"
             ],
-            "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A.",
+            "nota": "El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
             "titulo": "Resolvemos con los datos"
           },
           {
             "k": "check",
-            "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción A."
+            "texto": "Comprueba el resultado: El eje y refleja cada punto cambiando el signo de su coordenada x y conservando y. Los reflejos de $(-4,2)$ y $(-2,8)$ son $(4,2)$ y $(2,8)$, que aparecen en la opción B."
           }
         ]
       },
       "id": "mat-i032",
       "nivel": 2,
       "opciones": [
-        "(2, 8) y (4, 2).",
         "(8, 2) y (2, 4).",
+        "(2, 8) y (4, 2).",
         "(−2, –4) y (−8, −2).",
         "(−4, −2) y (−2, −8)."
       ],
@@ -6364,21 +6340,21 @@
           "clave": "Mujeres: $12$ en bus y $48$ a pie; hombres: $24$ en bus y $16$ a pie.",
           "no": [
             {
-              "p": "Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado."
             },
             {
-              "p": "Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Calcula el número de mujeres ($60$) y hombres ($40$); luego halla el $20\\%$ de $60$ y el $40\\%$ de $40$.",
+            "Suma los empleados de ambos sexos que usan cada medio para comparar los totales que se desplazan en bus o a pie."
           ],
           "plan": [
             {
@@ -6463,25 +6439,25 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "grupo de $100$ empleados",
+            "frag": "grupo de 100 empleados",
             "nota": "Es el total de personas encuestadas.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "$60\\%$ del grupo son mujeres",
+            "frag": "del grupo son mujeres",
             "nota": "Quedan sesenta mujeres y cuarenta hombres.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "$20\\%$ de las mujeres se desplazan en bus",
+            "frag": "de las mujeres se desplazan en bus",
             "nota": "Calcula primero el veinte por ciento de sesenta.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "$40\\%$ de los hombres se desplazan caminando",
+            "frag": "de los hombres se desplazan caminando",
             "nota": "Calcula el cuarenta por ciento de cuarenta.",
             "rol": "dato"
           },
@@ -6592,12 +6568,12 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 3,
+      "correcta": 2,
       "distractores": [
         "Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada.",
         "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física.",
-        "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100).",
-        ""
+        "",
+        "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
       ],
       "enunciado": "Una regla usada en física indica que, para aumentar el nivel de intensidad del sonido en 10 dB (dB es decibelios, la unidad de medida del nivel de intensidad del sonido), es necesario que la intensidad medida se multiplique por 10. Ramiro es el encargado de aumentar en 20 dB la medida del nivel de intensidad del sistema de sonido de un evento y, según su interpretación de la regla, multiplica por 20 la intensidad actual del sistema. ¿Es correcta su interpretación?",
       "estadoHoja": "revisada",
@@ -6611,20 +6587,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
+              "p": "Pero afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
             },
             {
               "t": "Opción B",
-              "p": "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
+              "p": "Pero confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
             },
             {
-              "t": "Opción C",
-              "p": "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
+              "t": "Opción D",
+              "p": "Pero suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
             }
           ],
           "pistas": [
-            "Fíjate en «aumentar en 20 dB».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Ten en cuenta que cada incremento de diez decibelios en la escala logarítmica multiplica la intensidad física por un factor de diez.",
+            "Deduce que un aumento de veinte decibelios corresponde a dos pasos consecutivos de diez: multiplicar dos veces por diez equivale a multiplicar la intensidad por cien."
           ],
           "plan": [
             {
@@ -6658,8 +6634,8 @@
               "t": "Cada aumento de diez decibelios multiplica la intensidad por diez. Dos aumentos de diez decibelios multiplican por $10\\cdot10=100$, no por veinte."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "2": [
@@ -6682,13 +6658,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:no",
+              "a": "o:D:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ],
           "3": [
@@ -6717,13 +6693,13 @@
               "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:C:no",
+              "a": "o:D:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "a": "o:C:ok",
+              "t": "La respuesta es la opción C."
             }
           ]
         },
@@ -6761,8 +6737,8 @@
       "opciones": [
         "No, porque la regla no considera aumentos de 20 dB, solamente de 10 dB; no hay consideraciones para aumentos mayores.",
         "Sí, porque la regla presentada indica que para aumentar en x unidades el nivel de la medida de intensidad se agrega x a la intensidad.",
-        "Sí, porque el resultado de multiplicar dos veces por 10 la intensidad es multiplicarla por 20; así, se ahorra un paso y obtiene el resultado correcto.",
-        "No, porque aumentar 20 dB equivale a aumentar 10 dB dos veces, es decir, multiplicar por 10 la intensidad dos veces; en total, multiplicar por 100."
+        "No, porque aumentar 20 dB equivale a aumentar 10 dB dos veces, es decir, multiplicar por 10 la intensidad dos veces; en total, multiplicar por 100.",
+        "Sí, porque el resultado de multiplicar dos veces por 10 la intensidad es multiplicarla por 20; así, se ahorra un paso y obtiene el resultado correcto."
       ],
       "origen": "icfes",
       "parte": "Pregunta 34",
@@ -6793,20 +6769,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "El paso 1 calcula el 10% del precio original correctamente."
+              "p": "Pero el paso 1 calcula el 10% del precio original correctamente."
             },
             {
               "t": "Opción C",
-              "p": "En el paso 2 la división entre 10 equivale al cálculo simplificado y no introduce un error en el valor numérico."
+              "p": "Pero en el paso 2 la división entre 10 equivale al cálculo simplificado y no introduce un error en el valor numérico."
             },
             {
               "t": "Opción D",
-              "p": "El paso 4 no es redundante; el error ocurrió al multiplicar por 10 en lugar de descontar el porcentaje sobre el saldo."
+              "p": "Pero el paso 4 no es redundante; el error ocurrió al multiplicar por 10 en lugar de descontar el porcentaje sobre el saldo."
             }
           ],
           "pistas": [
-            "Fíjate en «hay un error».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Revisa el cálculo del segundo descuento en el paso tres: el cupón adicional del diez por ciento se aplica sobre el precio ya rebajado, no sobre el original.",
+            "Identifica el error en el paso tres: para hallar el precio final tras un diez por ciento de descuento se debe multiplicar por noventa y no por diez."
           ],
           "plan": [
             {
@@ -6958,7 +6934,7 @@
       "competenciaId": "argumentacion",
       "correcta": 2,
       "distractores": [
-        "Ignora la definición clásica de probabilidad (casos favorables / casos totales), donde la cantidad de cada color es determinante.",
+        "Ignora la definición clásica de probabilidad (éxitos entre casos totales), donde la cantidad de cada color es determinante.",
         "El número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas.",
         "",
         "Afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
@@ -6975,20 +6951,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Ignora la definición clásica de probabilidad (casos favorables / casos totales), donde la cantidad de cada color es determinante."
+              "p": "Pero ignora la definición clásica de probabilidad (éxitos entre casos totales), donde la cantidad de cada color es determinante."
             },
             {
               "t": "Opción B",
-              "p": "El número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas."
+              "p": "Pero el número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas."
             },
             {
               "t": "Opción D",
-              "p": "Afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
+              "p": "Pero afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
             }
           ],
           "pistas": [
-            "Fíjate en «misma probabilidad».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Calcula el número total de bolas en la bolsa: tres rojas, tres negras y doce blancas suman dieciocho bolas en total.",
+            "Compara la probabilidad de extraer una bola blanca (doce de dieciocho) con la de una roja o negra (tres de dieciocho) para descartar que los tres colores tengan igual probabilidad."
           ],
           "plan": [
             {
@@ -7159,21 +7135,21 @@
           "clave": "Los tres puntos forman un triángulo o un diámetro; nunca queda solo un radio.",
           "no": [
             {
-              "p": "Los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero."
             },
             {
-              "p": "Si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir."
             },
             {
-              "p": "Si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Aplica las propiedades geométricas del ángulo central y del ángulo inscrito que abarcan el mismo arco de circunferencia.",
+            "Recuerda que todos los radios trazados desde el centro O a cualquier punto de la circunferencia son de igual longitud ($r$)."
           ],
           "plan": [
             {
@@ -7258,13 +7234,13 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "circunferencia de centro $O$",
+            "frag": "circunferencia de centro O",
             "nota": "Los segmentos desde el centro hasta $P$ y $P′$ son radios.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "dos puntos $P$ y $P′$ diferentes",
+            "frag": "dos puntos P y",
             "nota": "Ambos están sobre la circunferencia.",
             "rol": "dato"
           },
@@ -7326,7 +7302,7 @@
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "Cada uno de los 110 clientes realizó un pedido (la unión de pizza, bebida caliente y bebida fría es 110). Como las bebidas caliente ($) y fría ($) son mutuamente excluyentes ( \\cap F = \\emptyset$), la suma simple de pedidos es $|P| + |C| + |F| = 100 + 20 + 40 = 160$. El exceso sobre el total de clientes (60 - 110 = 50$) corresponde exactamente al número de clientes que combinaron pizza con alguna bebida: $|P \\cap (C \\cup F)| = 50$. Aunque no es posible determinar cuántos eligieron específicamente bebida caliente o fría, la suma de ambos solapamientos es 50. En consecuencia, el número de clientes que solo eligieron pizza es unívocamente $|P| - 50 = 100 - 50 = 50$ (opción C).",
+      "explicacion": "Cada uno de los 110 clientes realizó un pedido (la unión de pizza, bebida caliente y bebida fría es 110). Como las bebidas caliente ($C$) y fría ($F$) son mutuamente excluyentes ($C \\cap F = \\emptyset$), la suma simple de pedidos es $|P| + |C| + |F| = 100 + 20 + 40 = 160$. El exceso sobre el total de clientes ($160 - 110 = 50$) corresponde exactamente al número de clientes que combinaron pizza con alguna bebida: $|P \\cap (C \\cup F)| = 50$. Aunque no es posible determinar cuántos eligieron específicamente bebida caliente o fría, la suma de ambos solapamientos es 50. En consecuencia, el número de clientes que solo eligieron pizza es unívocamente $|P| - 50 = 100 - 50 = 50$ (opción C).",
       "figuras": [
         {
           "alt": "Cantidad de clientes que eligieron cada producto o bebida.",
@@ -7362,20 +7338,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "La tabla no proporciona la intersección específica de quienes eligieron pizza y además bebida caliente."
+              "p": "Pero es incorrecta porque la tabla no discrimina cuántos de los 20 compradores de bebida caliente pidieron pizza y cuántos no."
             },
             {
               "t": "Opción B",
-              "p": "Para calcular la unión de pizza o bebida caliente es necesario conocer cuántos eligieron ambas opciones a la vez."
+              "p": "Pero es incorrecta porque no se conoce la intersección exacta entre pizza y bebida caliente para aplicar la fórmula de unión de dos conjuntos."
             },
             {
               "t": "Opción D",
-              "p": "No se puede aislar cuántos eligieron únicamente bebida fría sin conocer el solapamiento específico con pizza."
+              "p": "Pero es incorrecta porque no es posible saber cuántos de los 40 clientes que tomaron bebida fría prescindieron por completo de la pizza."
             }
           ],
           "pistas": [
-            "Comprueba qué categorías cubren a los 110 clientes.",
-            "Usa que nadie eligió bebida caliente y fría a la vez."
+            "Determina qué categorías de la tabla representan conjuntos disjuntos y cuáles corresponden a intersecciones entre pizza y bebidas.",
+            "Usa el principio de inclusión y exclusión con el total de 110 clientes para verificar qué conjunto representa la diferencia entre los totales."
           ],
           "plan": [
             {
@@ -7519,7 +7495,9 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 38",
-      "revisar": []
+      "revisar": [
+        "La clave C se puede justificar si los 110 clientes pertenecen a pizza o a alguna bebida registrada; el enunciado no explicita que esas categorías cubran a todos."
+      ]
     },
     {
       "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
@@ -7529,10 +7507,10 @@
       "competenciaId": "interpretacion_representacion",
       "correcta": 2,
       "distractores": [
-        "Ubica a R1 (10^3 = 1.000) antes de R2 (10*9*8 = 720), ordenando de forma incorrecta los dos menores.",
-        "Ordena R3 (26*26*10 = 6.760) antes de R4 (52*10*10 = 5.200), cuando 5.200 < 6.760.",
+        "Ubica a la regla uno (mil) antes de la regla dos (setecientos veinte), ordenando de forma incorrecta los dos menores.",
+        "Ordena la regla tres (seis mil setecientos sesenta) antes de la regla cuatro (cinco mil doscientos), cuando cinco mil doscientos es menor.",
         "",
-        "Coloca a R3 antes de R1, cuando 6.760 es mayor que 1.000."
+        "Coloca la regla tres antes de la regla uno, cuando seis mil setecientos sesenta es mayor que mil."
       ],
       "enunciado": "Un sistema de información requiere que los usuarios ingresen una contraseña de solo tres caracteres de entre las 26 letras posibles, en minúscula o mayúscula y los 10 dígitos del 0 al 9. Un ingeniero propone las siguientes posibles restricciones para la contraseña:\n Restricción R1: utilizar tres dígitos cualesquiera. Restricción R2: utilizar tres dígitos distintos. Restricción R3: utilizar una letra mayúscula, luego una minúscula y al final un dígito. Restricción R4: utilizar una letra cualquiera, mayúscula o minúscula, y luego dos dígitos.\n Si se calcula el número de posibles contraseñas de acuerdo con cada una de las restricciones, ¿cuál es el orden de las restricciones, de menor a mayor, según el número de posibles contraseñas?",
       "estadoHoja": "revisada",
@@ -7546,20 +7524,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Ubica a R1 (10^3 = 1.000) antes de R2 (10*9*8 = 720), ordenando de forma incorrecta los dos menores."
+              "p": "Pero ubica a la regla uno (mil) antes de la regla dos (setecientos veinte), ordenando de forma incorrecta los dos menores."
             },
             {
               "t": "Opción B",
-              "p": "Ordena R3 (26*26*10 = 6.760) antes de R4 (52*10*10 = 5.200), cuando 5.200 < 6.760."
+              "p": "Pero ordena la regla tres (seis mil setecientos sesenta) antes de la regla cuatro (cinco mil doscientos), cuando cinco mil doscientos es menor."
             },
             {
               "t": "Opción D",
-              "p": "Coloca a R3 antes de R1, cuando 6.760 es mayor que 1.000."
+              "p": "Pero coloca la regla tres antes de la regla uno, cuando seis mil setecientos sesenta es mayor que mil."
             }
           ],
           "pistas": [
-            "Fíjate en «menor a mayor».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Calcula la cantidad de contraseñas permitidas por cada regla: mil en la primera, setecientos veinte en la segunda, seis mil setecientos sesenta en la tercera y cinco mil doscientos en la cuarta.",
+            "Ordena los resultados de menor a mayor cantidad de opciones: regla dos menor que regla uno, menor que regla cuatro, menor que regla tres."
           ],
           "plan": [
             {
@@ -7727,21 +7705,21 @@
           "clave": "Cualquier entero positivo $j>11$ sirve; existen infinitos valores de $j$.",
           "no": [
             {
-              "p": "No se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero no se cuentan racionales menores que once; el límite depende del entero $k$. Pero se deben elegir valores de $j$ mayores que once."
             },
             {
-              "p": "Once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero once es el límite que debe superar $j$, no un único valor posible. Pero hay infinitos enteros que lo superan."
             },
             {
-              "p": "El valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero el valor diez produce una fracción mayor que $1/11$ y queda al otro lado del límite. Pero para acercarse desde abajo se requiere $j>11$."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Recuerda la propiedad de densidad de los números racionales: entre dos racionales siempre existe otro número racional.",
+            "Prueba fracciones con denominador mayor a 11 (como $22$ o $33$) que queden estrictamente entre $k$ y $k + 1/11$."
           ],
           "plan": [
             {
@@ -7826,19 +7804,19 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "número entero $k$",
+            "frag": "número entero k",
             "nota": "Es el extremo al que se acercan los racionales.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "$j$ entero positivo",
+            "frag": "j entero positivo",
             "nota": "Cada entero positivo define un racional de la forma indicada.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "menores que $k+1/11$",
+            "frag": "menores que",
             "nota": "Determina qué valores de $j$ quedan dentro del intervalo.",
             "rol": "pide"
           }
@@ -7884,10 +7862,10 @@
       "area": "matematicas",
       "competencia": "Argumentación",
       "competenciaId": "argumentacion",
-      "correcta": 0,
+      "correcta": 1,
       "distractores": [
-        "",
         "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano.",
+        "",
         "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°.",
         "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
       ],
@@ -7902,21 +7880,21 @@
           "clave": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
+              "t": "Opción A",
+              "p": "Pero un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
             },
             {
               "t": "Opción C",
-              "p": "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
+              "p": "Pero un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
             },
             {
               "t": "Opción D",
-              "p": "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
+              "p": "Pero la suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
             }
           ],
           "pistas": [
-            "Fíjate en «requerimiento es imposible».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Aplica el teorema de la desigualdad triangular: en todo triángulo, la suma de las longitudes de cualesquiera dos lados debe ser estrictamente mayor que el tercer lado.",
+            "Verifica que en el requerimiento dos la suma de los dos lados iguales ($7 + 7 = 14\\text{ m}$) es menor que el lado mayor ($18\\text{ m}$), haciendo imposible construir el triángulo."
           ],
           "plan": [
             {
@@ -7950,8 +7928,8 @@
               "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "2": [
@@ -7964,9 +7942,9 @@
               "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -7979,8 +7957,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "3": [
@@ -7999,9 +7977,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8014,8 +7992,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ]
         },
@@ -8051,8 +8029,8 @@
       "id": "mat-i041",
       "nivel": 3,
       "opciones": [
-        "Requerimiento 2.",
         "Requerimiento 1.",
+        "Requerimiento 2.",
         "Requerimiento 3.",
         "Requerimiento 4."
       ],
@@ -8100,21 +8078,21 @@
           "clave": "La maqueta mide $0,6$ m por $1$ m, equivalentes a $60$ cm por $100$ cm.",
           "no": [
             {
-              "p": "Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
             },
             {
-              "p": "La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero la conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
             },
             {
-              "p": "Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Establece la escala entre las dimensiones reales de la cancha (100 m por 70 m) y las medidas de la maqueta.",
+            "Comprueba que la razón entre largo y ancho ($100/70 = 10/7$) se conserve exactamente en la maqueta proporcional."
           ],
           "plan": [
             {
@@ -8211,7 +8189,7 @@
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "diseño de la maqueta medirá",
+            "frag": "diseño de la",
             "nota": "Expresa las dos dimensiones después de aplicar la escala.",
             "rol": "pide"
           }
@@ -8349,21 +8327,21 @@
           "clave": "El producto $x(5/x)$ es constante e igual a cinco.",
           "no": [
             {
-              "p": "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero la expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
             },
             {
-              "p": "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
             },
             {
-              "p": "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero la función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Calcula el área de cada rectángulo multiplicando la base $x$ por la altura dada por la curva $f(x) = 5/x$.",
+            "Observa que $A(x) = x \\cdot (5/x) = 5$, lo que demuestra que el área es constante e independiente de $x$."
           ],
           "plan": [
             {
@@ -8448,19 +8426,19 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "gráfica de la función $f(x)=5/x$",
+            "frag": "gráfica de la función",
             "nota": "La altura del rectángulo corresponde a esta función.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "expresión $A_x=x f(x)$",
+            "frag": "expresión",
             "nota": "El área es el producto de la base y la altura.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "gráficas corresponde a $A_x$",
+            "frag": "gráficas corresponde a",
             "nota": "Busca la gráfica de una función constante.",
             "rol": "pide"
           }
@@ -8563,10 +8541,10 @@
       "area": "matematicas",
       "competencia": "Formulación y ejecución",
       "competenciaId": "formulacion_ejecucion",
-      "correcta": 0,
+      "correcta": 1,
       "distractores": [
+        "Omite dividir entre 2 al aplicar la fórmula del sector circular (r al cuadrado por theta sobre dos).",
         "",
-        "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2).",
         "Calcula el área del círculo completo sin dividir entre los 10 sectores iguales.",
         "Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
       ],
@@ -8597,21 +8575,21 @@
           "clave": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados.",
           "no": [
             {
-              "t": "Opción B",
-              "p": "Omite dividir entre 2 al aplicar la fórmula del sector circular (r^2 * theta / 2)."
+              "t": "Opción A",
+              "p": "Pero omite dividir entre 2 al aplicar la fórmula del sector circular (r al cuadrado por theta sobre dos)."
             },
             {
               "t": "Opción C",
-              "p": "Calcula el área del círculo completo sin dividir entre los 10 sectores iguales."
+              "p": "Pero calcula el área del círculo completo sin dividir entre los 10 sectores iguales."
             },
             {
               "t": "Opción D",
-              "p": "Usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
+              "p": "Pero usa el radio lineal sin elevarlo al cuadrado en la fórmula del área circular."
             }
           ],
           "pistas": [
-            "Fíjate en «área aproximada».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Divide el área total del círculo entre los diez sectores iguales de la rueda giratoria para obtener nueve pi décimos de metro cuadrado.",
+            "Aproxima el valor numérico tomando pi cercano a tres para obtener un área por sector cercana a dos coma siete metros cuadrados."
           ],
           "plan": [
             {
@@ -8645,8 +8623,8 @@
               "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "2": [
@@ -8659,9 +8637,9 @@
               "t": "El ángulo de cada sector es $2\\pi/10$. Con radio tres, el área de un sector es $r^2\\theta/2=9(2\\pi/10)/2=9\\pi/10$. Si $\\pi=3$, da $2,7$ metros cuadrados."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8674,8 +8652,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ],
           "3": [
@@ -8694,9 +8672,9 @@
               "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
             },
             {
-              "a": "o:B:no",
+              "a": "o:A:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
               "a": "o:C:no",
@@ -8709,8 +8687,8 @@
               "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
             },
             {
-              "a": "o:A:ok",
-              "t": "La respuesta es la opción A."
+              "a": "o:B:ok",
+              "t": "La respuesta es la opción B."
             }
           ]
         },
@@ -8746,8 +8724,8 @@
       "id": "mat-i044",
       "nivel": 2,
       "opciones": [
-        "2,7 m2",
         "3,6 m2",
+        "2,7 m2",
         "9,0 m2",
         "1,8 m2"
       ],
@@ -8779,21 +8757,21 @@
           "clave": "Hay diez maneras de elegir dos de décimo y cuatro de elegir tres de undécimo; el producto es cuarenta.",
           "no": [
             {
-              "p": "Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo."
             },
             {
-              "p": "No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero no combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo."
             },
             {
-              "p": "Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Calcula las combinaciones sin repetición para elegir dos estudiantes de décimo (diez opciones) y tres de undécimo (cuatro opciones).",
+            "Multiplica las posibilidades de ambos grados por el principio fundamental del conteo: diez por cuatro igual a cuarenta delegaciones diferentes."
           ],
           "plan": [
             {
@@ -8878,19 +8856,19 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "$2$ estudiantes sean de grado décimo y $3$ de grado undécimo",
+            "frag": "2 estudiantes sean de grado décimo y 3 de grado undécimo",
             "nota": "La composición de cada grupo está fijada.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "En décimo hay $5$ estudiantes",
+            "frag": "En décimo hay 5 estudiantes",
             "nota": "Se eligen dos entre cinco.",
             "rol": "dato"
           },
           {
             "campo": "Dato relevante",
-            "frag": "en undécimo hay $4$",
+            "frag": "en undécimo hay 4",
             "nota": "Se eligen tres entre cuatro.",
             "rol": "dato"
           },
@@ -8962,20 +8940,20 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "El procedimiento 1 suma probabilidades, lo cual sobreestimaría la probabilidad de la intersección de dos eventos independientes."
+              "p": "Pero el procedimiento 1 suma probabilidades, lo cual sobreestimaría la probabilidad de la intersección de dos eventos independientes."
             },
             {
               "t": "Opción B",
-              "p": "Los procedimientos 1 y 4 son incorrectos; el procedimiento 4 ignora el caso en que se pierde en ambos juegos."
+              "p": "Pero los procedimientos 1 y 4 son incorrectos; el procedimiento 4 ignora el caso en que se pierde en ambos juegos."
             },
             {
               "t": "Opción D",
-              "p": "El procedimiento 4 resta únicamente la probabilidad de perder en exactamente un juego, omitiendo el evento de perder en ambos."
+              "p": "Pero el procedimiento 4 resta únicamente la probabilidad de perder en exactamente un juego, omitiendo el evento de perder en ambos."
             }
           ],
           "pistas": [
-            "Fíjate en «permiten hallar la probabilidad».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Identifica que para ganar la consola se deben ganar ambos juegos independientes: la probabilidad conjunta es el producto de un medio por un sexto igual a un doceavo.",
+            "Aplica la regla del complemento: el suceso contrario de ganar ambos juegos es perder en al menos uno, por lo que uno menos la probabilidad de perder al menos uno también es válido."
           ],
           "plan": [
             {
@@ -9130,37 +9108,37 @@
       "competenciaId": "interpretacion_representacion",
       "correcta": 3,
       "distractores": [
-        "Una milésima representaría que I es menor que I_0, lo opuesto a la razón 10^3 = 1.000.",
+        "Una milésima representaría que I es menor que {{I_0}}, lo opuesto a la razón mil.",
         "Un tercio confunde una potencia de diez con una fracción aritmética.",
-        "Tres veces confunde el exponente 3 con el valor de la potencia 10^3 = 1.000.",
+        "Tres veces confunde el exponente 3 con el valor de la potencia mil.",
         ""
       ],
       "enunciado": "I La expresión 103 = relaciona la sonoridad de un sonido de 30 decibeles con su intensidad (I) y la IO menor intensidad (IO) que percibe el oído humano. ¿Cuántas veces es el valor de I respecto a IO?",
       "estadoHoja": "revisada",
       "evidencia": "Da cuenta de las características básicas de la información presentada en diferentes formatos, como series, gráficas, tablas y esquemas.",
       "evidenciaId": "1.1",
-      "explicacion": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
+      "explicacion": "La igualdad indica que el cociente $I/I_0$ es $10^3$, es decir, mil. Por tanto, la intensidad $I$ equivale a mil veces la intensidad mínima $I_0$. La respuesta es D.",
       "fuente": "Icfes (2026). 01 Matematicas Saber11 2026 ICFES, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 47.",
       "hoja": {
         "enfoque": {
-          "clave": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
+          "clave": "La igualdad indica que el cociente es diez al cubo, es decir, mil. Por tanto, la intensidad física equivale a mil veces la intensidad mínima.",
           "no": [
             {
               "t": "Opción A",
-              "p": "Una milésima representaría que I es menor que I_0, lo opuesto a la razón 10^3 = 1.000."
+              "p": "Pero una milésima representaría que I es menor que {{I_0}}, lo opuesto a la razón mil."
             },
             {
               "t": "Opción B",
-              "p": "Un tercio confunde una potencia de diez con una fracción aritmética."
+              "p": "Pero un tercio confunde una potencia de diez con una fracción aritmética."
             },
             {
               "t": "Opción C",
-              "p": "Tres veces confunde el exponente 3 con el valor de la potencia 10^3 = 1.000."
+              "p": "Pero tres veces confunde el exponente 3 con el valor de la potencia mil."
             }
           ],
           "pistas": [
-            "Fíjate en «cuántas veces».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Interpreta la ecuación logarítmica de sonoridad: la razón entre la intensidad sonora y el umbral de audición equivale a diez elevado al cubo.",
+            "Calcula el valor numérico de diez al cubo igual a mil: la intensidad física del sonido es mil veces la intensidad mínima perceptible."
           ],
           "plan": [
             {
@@ -9176,90 +9154,76 @@
               "t": "Comparo el resultado con las opciones y verifico su sentido."
             }
           ],
-          "que": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-          "tema": "Matemáticas: cuántas veces"
+          "que": "La igualdad indica que el cociente entre intensidades es diez al cubo, es decir, mil veces la intensidad mínima.",
+          "tema": "Matemáticas: escala logarítmica de sonoridad"
         },
         "guion": {
           "1": [
             {
-              "a": "leer",
-              "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
+              "t": "¿Qué número representa diez elevado a la tercera potencia?",
+              "a": "leer"
             },
             {
-              "a": "m:expresión",
-              "t": "La frase «cuántas veces» orienta la estrategia."
-            },
-            {
-              "a": "p:1",
-              "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
+              "t": "Diez por diez por diez da mil.",
+              "a": "p:0"
             },
             {
               "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "t": "La intensidad es mil veces la mínima. La respuesta es D."
             }
           ],
           "2": [
             {
-              "a": "leer",
-              "t": "Leamos la pregunta con calma."
+              "t": "La expresión ya presenta el cociente entre las dos intensidades.",
+              "a": "leer"
             },
             {
-              "a": "p:1",
-              "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
+              "t": "Evalúa diez al cubo: el resultado es mil.",
+              "a": "p:0"
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción A propone una milésima, el recíproco de la razón. La descartamos."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción B propone un tercio, confundiendo la potencia con una fracción. La descartamos."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "La opción C confunde el exponente tres con el valor total de la potencia. La descartamos."
             },
             {
               "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "t": "Confirmamos que la intensidad es mil veces la mínima: opción D."
             }
           ],
           "3": [
             {
               "a": "p:0",
               "k": "ana",
-              "t": "Primero identifico qué pide: La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
+              "t": "La razón buscada es el cociente de intensidades."
             },
             {
               "a": "p:1",
-              "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
+              "t": "La igualdad indica que vale diez al cubo, que es mil."
             },
             {
               "a": "p:2",
               "k": "contra",
-              "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
+              "t": "Por eso la intensidad es mil veces el umbral mínimo."
             },
             {
-              "a": "o:A:no",
+              "a": "o:A:no|o:B:no|o:C:no",
               "k": "err",
-              "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
-            },
-            {
-              "a": "o:B:no",
-              "k": "err",
-              "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
-            },
-            {
-              "a": "o:C:no",
-              "k": "err",
-              "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+              "t": "A, B y C no evalúan correctamente la potencia."
             },
             {
               "a": "o:D:ok",
-              "t": "La respuesta es la opción D."
+              "t": "La respuesta correcta es D."
             }
           ]
         },
@@ -9275,20 +9239,21 @@
         "pasos": [
           {
             "k": "idea",
-            "texto": "La pista «cuántas veces» indica qué información usar y qué resultado comparar.",
-            "titulo": "Qué hay que averiguar"
+            "texto": "Interpretar la relación de sonoridad dada en la ecuación.",
+            "titulo": "Relación de intensidades"
           },
           {
             "k": "calc",
             "lineas": [
-              "10^3=1.000"
+              "$10^3 = 1.000$"
             ],
-            "nota": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-            "titulo": "Resolvemos con los datos"
+            "nota": "Diez al cubo equivale a mil.",
+            "titulo": "Cálculo de la potencia"
           },
           {
             "k": "check",
-            "texto": "Comprueba el resultado: La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
+            "texto": "La intensidad física es mil veces la intensidad mínima percibida.",
+            "titulo": "Comprobación"
           }
         ]
       },
@@ -9328,21 +9293,21 @@
           "clave": "Para llegar a diez hay cinco parejas ordenadas; para llegar a siete hay cuatro.",
           "no": [
             {
-              "p": "El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero el tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas."
             },
             {
-              "p": "No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero no es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma."
             },
             {
-              "p": "La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones.",
-              "t": "Opción D"
+              "t": "Opción D",
+              "p": "Pero la distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Tras extraer la primera balota con el número dos, cuenta cuántas parejas de las quince balotas restantes completan una suma de diez (sumar ocho) frente a siete (sumar cinco).",
+            "Comprueba que hay cinco combinaciones para sumar ocho frente a cuatro para sumar cinco, por lo que el primer estudiante tiene una posibilidad más de ganar."
           ],
           "plan": [
             {
@@ -9433,13 +9398,13 @@
           },
           {
             "campo": "Dato relevante",
-            "frag": "en la primera extracción se obtuvo $2$",
+            "frag": "en la primera extracción",
             "nota": "Quedan dos puntajes por sumar.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "es más probable que gane quien escogió el número $10$ que quien escogió el número $7$, porque",
+            "frag": "es más probable que",
             "nota": "Compara las parejas de resultados que completan cada total.",
             "rol": "pide"
           }
@@ -9503,21 +9468,21 @@
           "clave": "El factor anual es $1,05$ y se repite durante $n$ años.",
           "no": [
             {
-              "p": "Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta.",
-              "t": "Opción A"
+              "t": "Opción A",
+              "p": "Pero suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta."
             },
             {
-              "p": "Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco.",
-              "t": "Opción B"
+              "t": "Opción B",
+              "p": "Pero multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco."
             },
             {
-              "p": "Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa.",
-              "t": "Opción C"
+              "t": "Opción C",
+              "p": "Pero usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa."
             }
           ],
           "pistas": [
-            "Identifica los datos y la relación matemática que pide el enunciado.",
-            "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+            "Aplica la fórmula de valorización geométrica anual: $C_n = C_0 \\cdot (1 + r)^n$ con una tasa del $5\\%$ ($r = 0,05$).",
+            "Verifica que transcurridos $n$ años el costo por metro cuadrado corresponde a la expresión $800.000 \\cdot (1,05)^n$."
           ],
           "plan": [
             {
@@ -9602,7 +9567,7 @@
         "marcas": [
           {
             "campo": "Dato relevante",
-            "frag": "cada metro cuadrado tiene un costo de $800.000$",
+            "frag": "cada metro cuadrado tiene un costo de",
             "nota": "Es el costo inicial.",
             "rol": "dato"
           },
@@ -9614,13 +9579,13 @@
           },
           {
             "campo": "Dato relevante",
-            "frag": "se valoriza un $5\\%$ respecto al costo del año anterior",
+            "frag": "respecto al costo del año anterior",
             "nota": "El porcentaje se calcula sobre el valor actualizado.",
             "rol": "dato"
           },
           {
             "campo": "Lo que se pregunta",
-            "frag": "transcurridos $n$ años",
+            "frag": "transcurridos n años",
             "nota": "Aplica el factor anual $n$ veces.",
             "rol": "pide"
           }
@@ -9701,20 +9666,20 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Afirma que el cilindro (4,5*pi) y la caja (4,5) tienen igual volumen, olvidando multiplicar por pi."
+              "p": "Pero afirma que el cilindro (4,5*pi) y la caja (4,5) tienen igual volumen, olvidando multiplicar por pi."
             },
             {
               "t": "Opción C",
-              "p": "Sostiene que el volumen del cilindro es menor que el de la caja, cuando 4,5*pi > 4,5."
+              "p": "Pero sostiene que el volumen del cilindro es menor que el de la caja, cuando 4,5*pi > 4,5."
             },
             {
               "t": "Opción D",
-              "p": "Afirma que la esfera tiene mayor volumen que el cilindro, cuando ambos volúmenes son exactamente iguales a 4,5*pi."
+              "p": "Pero afirma que la esfera tiene mayor volumen que el cilindro, cuando ambos volúmenes son exactamente iguales a 4,5*pi."
             }
           ],
           "pistas": [
-            "Fíjate en «volumen de los tres empaques».",
-            "Usa los datos del enunciado y comprueba la unidad del resultado."
+            "Calcula el volumen del cilindro (cuatro coma cinco pi), de la esfera (cuatro coma cinco pi) y de la caja prisma (cuatro coma cinco).",
+            "Compara los volúmenes: dado que pi es mayor que uno, el volumen del cilindro supera al de la caja, y el volumen de la esfera es idéntico al del cilindro."
           ],
           "plan": [
             {

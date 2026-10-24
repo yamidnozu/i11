@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "contextos se adecuaría mejor la infografía",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Relaciona el tema y los datos con el propósito de cada contexto propuesto."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar una infografía con su contexto de uso",
-      "que": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte.",
-      "pistas": [
-        "Relaciona el tema y los datos con el propósito de cada contexto propuesto.",
-        "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos."
-      ],
       "clave": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La infografía no plantea una protesta contra los vehículos ni argumentos ecológicos."
+          "p": "Pero la infografía no plantea una protesta contra los vehículos ni argumentos ecológicos."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No compara opciones de transporte público o movilidad alterna."
+          "p": "Pero no compara opciones de transporte público o movilidad alterna."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No estudia asesinatos; trata de muertes causadas por accidentes de tránsito."
+          "p": "Pero no estudia asesinatos; trata de muertes causadas por accidentes de tránsito."
         }
+      ],
+      "pistas": [
+        "Relaciona el tema y los datos con el propósito de cada contexto propuesto.",
+        "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte.",
+      "tema": "Relacionar una infografía con su contexto de uso"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «contextos se adecuaría mejor la infografía» orienta la lectura.",
-          "a": "m:contextos se adecuaría mejor la infografía"
+          "a": "m:contextos se adecuaría mejor la infografía",
+          "t": "La expresión «contextos se adecuaría mejor la infografía» orienta la lectura."
         },
         {
-          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte."
         },
         {
-          "t": "Opción A: La infografía no plantea una protesta contra los vehículos ni argumentos ecológicos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La infografía no plantea una protesta contra los vehículos ni argumentos ecológicos. La descartamos."
         },
         {
-          "t": "Opción B: No compara opciones de transporte público o movilidad alterna. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No compara opciones de transporte público o movilidad alterna. La descartamos."
         },
         {
-          "t": "Opción D: No estudia asesinatos; trata de muertes causadas por accidentes de tránsito. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No estudia asesinatos; trata de muertes causadas por accidentes de tránsito. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Relaciona el tema y los datos con el propósito de cada contexto propuesto.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Relaciona el tema y los datos con el propósito de cada contexto propuesto."
         },
         {
-          "t": "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos."
         },
         {
-          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La infografía presenta cifras de mortalidad vial y las distribuye por ingresos, regiones y tipo de usuario. Entre las opciones, estos datos pueden usarse en una campaña relacionada con seguros de vida, pues muestran el riesgo de muerte por tránsito; no promueven directamente otro medio de transporte."
         },
         {
-          "t": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "contextos se adecuaría mejor la infografía",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona el tema y los datos con el propósito de cada contexto propuesto.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Descarta los contextos que exigen información sobre ecología, transporte público o asesinatos.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción C es el contexto más cercano entre los propuestos: una campaña sobre seguros de vida puede usar datos de mortalidad vial para presentar el riesgo.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

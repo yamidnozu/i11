@@ -1,150 +1,147 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "NO puede resultar",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «NO puede resultar» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "OP=OP\\prime"
-        ],
-        "nota": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: no puede resultar",
-      "que": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
-      "pistas": [
-        "Fíjate en «NO puede resultar».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
+      "clave": "Los tres puntos forman un triángulo o un diámetro; nunca queda solo un radio.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado."
         }
+      ],
+      "pistas": [
+        "Aplica las propiedades geométricas del ángulo central y del ángulo inscrito que abarcan el mismo arco de circunferencia.",
+        "Recuerda que todos los radios trazados desde el centro O a cualquier punto de la circunferencia son de igual longitud ($r$)."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Considera si los puntos de la circunferencia están alineados con el centro."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "OP=OP\\prime"
-          ]
+          "t": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "Un solo radio no une los tres puntos; la respuesta es B."
         }
-      ]
+      ],
+      "que": "Determina qué figura no puede formarse al unir el centro con dos puntos distintos de una circunferencia.",
+      "tema": "Radios, cuerdas y triángulos inscritos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Qué figuras forman los tres puntos si están alineados o si no lo están?"
         },
         {
-          "t": "La frase «NO puede resultar» orienta la estrategia.",
-          "a": "m:NO puede resultar"
+          "t": "Alineados forman un diámetro; si no, forman un triángulo con dos lados iguales."
         },
         {
-          "t": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Un solo radio no puede resultar. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Los segmentos desde $O$ hasta cada punto de la circunferencia tienen la misma longitud."
         },
         {
-          "t": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
-          "a": "p:1"
+          "t": "Con los tres lados se forma un triángulo; si los puntos quedan alineados, el tramo entre ellos es un diámetro."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Los dos lados desde el centro son radios iguales, así que puede formarse un triángulo isósceles. Pero no en todos los casos será equilátero."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Si el ángulo central es de sesenta grados, los tres lados pueden ser iguales. Pero la opción sí puede ocurrir."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Si los puntos de la circunferencia son extremos opuestos, al unirlos se forma un diámetro. Pero no un radio aislado."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A, C y D sí pueden ocurrir; B deja sin unir uno de los puntos. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Los puntos $P$ y $P′$ están en la circunferencia, así que $OP$ y $OP′$ son radios iguales."
         },
         {
-          "t": "Al unir el centro con dos puntos distintos de la circunferencia siempre aparecen dos radios y la cuerda entre los puntos. No puede resultar únicamente un radio; sí puede aparecer un triángulo isósceles o equilátero, o un diámetro si los puntos son opuestos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si los tres puntos no están alineados, los segmentos forman un triángulo isósceles; una ubicación particular produce uno equilátero."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Si quedan alineados, $PP′$ es un diámetro."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "La opción B no une los tres puntos y no puede ser la figura resultante."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "circunferencia de centro O",
+        "nota": "Los segmentos desde el centro hasta $P$ y $P′$ son radios.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "dos puntos P y",
+        "nota": "Ambos están sobre la circunferencia.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "NO puede resultar",
+        "nota": "Busca una figura incompatible con unir los tres puntos.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Considera si los puntos de la circunferencia están alineados con el centro.",
+        "titulo": "Considera si los puntos de la circunferencia están alineados con el centro."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$OP=OP′$ por ser radios"
+        ],
+        "nota": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro.",
+        "titulo": "Si no están alineados se forma un triángulo; si lo están, se forma un diámetro."
+      },
+      {
+        "k": "check",
+        "texto": "Un solo radio no une los tres puntos; la respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

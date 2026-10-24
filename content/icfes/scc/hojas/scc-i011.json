@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Un presidente de Colombia está finalizando s",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "idente puede hacer esto?",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia. La respuesta es A."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia.",
       "no": [
         {
           "t": "Opción B",
-          "p": "La opción B plantea «No, porque la Constitución no puede reformarla el Ejecutivo; solo…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
+          "p": "Pero es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo."
         },
         {
           "t": "Opción C",
-          "p": "La opción C plantea «Sí, porque el presidente puede modificar la Constitución por su…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
+          "p": "Pero es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «No, porque los referendos no permiten reformar la Constitución.», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
+          "p": "Pero es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana."
         }
+      ],
+      "pistas": [
+        "Determina si el referendo permite reformar la Constitución para habilitar la reelección presidencial según el artículo 378.",
+        "Evalúa la viabilidad institucional de tramitar una reforma constitucional ante el Congreso y someterla a votación popular."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia. La respuesta es A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia. La respuesta es A."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
         },
         {
-          "t": "La opción B plantea «No, porque la Constitución no puede reformarla el Ejecutivo; solo…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «No, porque la Constitución no puede reformarla el Ejecutivo; solo…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
         },
         {
-          "t": "La opción C plantea «Sí, porque el presidente puede modificar la Constitución por su…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Sí, porque el presidente puede modificar la Constitución por su…», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
         },
         {
-          "t": "La opción D plantea «No, porque los referendos no permiten reformar la Constitución.», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «No, porque los referendos no permiten reformar la Constitución.», Pero no responde al criterio central: La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
         },
         {
-          "t": "La opción A es la que sí responde a la pregunta.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia."
         },
         {
-          "t": "Por eso la opción A se sostiene con la evidencia del enunciado.",
           "a": "o:A:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:B:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un presidente de Colombia está finalizando s",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "idente puede hacer esto?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La Constitución puede reformarse mediante referendo; este mecanismo requiere los trámites constitucionales correspondientes y no equivale a que el presidente cambie la Carta por cuenta propia. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

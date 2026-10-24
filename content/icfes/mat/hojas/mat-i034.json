@@ -6,20 +6,20 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
+          "p": "Pero afirma falsamente que la regla física solo sirve para incrementos exactos de 10 dB y no se puede aplicar de forma iterada."
         },
         {
           "t": "Opción B",
-          "p": "Confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
+          "p": "Pero confunde la escala logarítmica de decibeles con una variación aditiva lineal de la intensidad física."
         },
         {
-          "t": "Opción C",
-          "p": "Suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
+          "t": "Opción D",
+          "p": "Pero suma los factores multiplicativos (10 + 10 = 20) en lugar de multiplicarlos (10 * 10 = 100)."
         }
       ],
       "pistas": [
-        "Fíjate en «aumentar en 20 dB».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
+        "Ten en cuenta que cada incremento de diez decibelios en la escala logarítmica multiplica la intensidad física por un factor de diez.",
+        "Deduce que un aumento de veinte decibelios corresponde a dos pasos consecutivos de diez: multiplicar dos veces por diez equivale a multiplicar la intensidad por cien."
       ],
       "plan": [
         {
@@ -53,8 +53,8 @@
           "t": "Cada aumento de diez decibelios multiplica la intensidad por diez. Dos aumentos de diez decibelios multiplican por $10\\cdot10=100$, no por veinte."
         },
         {
-          "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
@@ -77,13 +77,13 @@
           "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:C:no",
+          "a": "o:D:no",
           "k": "err",
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
@@ -112,13 +112,13 @@
           "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:C:no",
+          "a": "o:D:no",
           "k": "err",
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
     },
@@ -150,5 +150,6 @@
         "texto": "Comprueba el resultado: Cada aumento de diez decibelios multiplica la intensidad por diez. Dos aumentos de diez decibelios multiplican por $10\\cdot10=100$, no por veinte."
       }
     ]
-  }
+  },
+  "revisar": []
 }

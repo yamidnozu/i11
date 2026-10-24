@@ -1,123 +1,142 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "mayor porcentaje de victorias en las finales del Grand Slam",
-        "rol": "dato",
-        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "Esta conclusión es incorrecta porque",
-        "rol": "pide",
-        "nota": "Usa esta parte del enunciado para identificar qué comparar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Identifica qué pide la pregunta y qué datos o puntos participan."
-      },
-      {
-        "k": "idea",
-        "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
-      },
-      {
-        "k": "check",
-        "t": "Verifica que la opción C responde a la pregunta."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar porcentajes de victorias",
-      "que": "Compara los títulos ganados con el número de finales disputadas.",
-      "plan": [
-        {
-          "t": "Identifica los puntos o las cantidades que debes comparar."
-        },
-        {
-          "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
-        },
-        {
-          "t": "Contrasta la conclusión con la opción C."
-        }
-      ],
-      "pistas": [
-        "Compara los títulos ganados con el total de finales.",
-        "Verifica la opción elegida con la figura o los datos de la fuente."
-      ],
-      "clave": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales.",
+      "clave": "D ganó $14$ de $18$ finales, cerca de $77,8\\%$, por encima de C con $16/23≈69,6\\%$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, El número de títulos en un torneo no determina por sí solo el porcentaje de victorias en todas las finales."
+          "p": "Pero el dato sobre Roland Garros no compara la efectividad total en finales. Pero la pregunta pide la mayor proporción de victorias."
         },
         {
           "t": "Opción B",
-          "p": "Pero, El porcentaje de títulos obtenidos antes de los veinticuatro años no es el porcentaje de victorias en finales."
+          "p": "Pero el jugador A ganó cinco de siete finales antes de los veinticuatro, no todas. Pero su porcentaje no es cien."
         },
         {
           "t": "Opción D",
-          "p": "Pero, La cantidad de títulos en cancha dura no basta para comparar el porcentaje de victorias en todas las finales."
+          "p": "Pero la cantidad en cancha dura no mide la proporción de finales ganadas en los cuatro torneos. Pero la afirmación trata de efectividad global."
         }
-      ]
+      ],
+      "pistas": [
+        "Calcula la efectividad de cada tenista dividiendo partidos ganados entre partidos jugados según la gráfica de barras.",
+        "Compara los porcentajes relativos para determinar qué deportista obtuvo el mayor rendimiento en el torneo."
+      ],
+      "plan": [
+        {
+          "t": "Divide los títulos ganados entre las finales jugadas por cada jugador."
+        },
+        {
+          "t": "Compara las proporciones de C y D."
+        },
+        {
+          "t": "D tiene mayor porcentaje que C; la conclusión es incorrecta por la opción C."
+        }
+      ],
+      "que": "Compara títulos ganados con finales disputadas para identificar la mayor efectividad.",
+      "tema": "Porcentaje de victorias en finales"
     },
     "guion": {
       "1": [
         {
-          "k": "idea",
-          "t": "Lee qué figura o comparación pide la pregunta."
+          "t": "¿Quién ganó catorce títulos en dieciocho finales?"
         },
         {
-          "k": "idea",
-          "t": "Aplica la propiedad geométrica o calcula cada razón."
+          "t": "El jugador D; esa razón es cerca de setenta y siete coma ocho por ciento."
         },
         {
           "a": "o:C:ok",
-          "t": "La respuesta es la opción C."
+          "t": "Supera el porcentaje de C. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Calcula las victorias sobre finales de C y D."
+        },
+        {
+          "t": "C logra cerca de sesenta y nueve coma seis por ciento; D, cerca de setenta y siete coma ocho."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, El número de títulos en un torneo no determina por sí solo el porcentaje de victorias en todas las finales."
+          "t": "La opción A: El dato sobre Roland Garros no compara la efectividad total en finales. Pero la pregunta pide la mayor proporción de victorias."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, El porcentaje de títulos obtenidos antes de los veinticuatro años no es el porcentaje de victorias en finales."
+          "t": "La opción B: El jugador A ganó cinco de siete finales antes de los veinticuatro, no todas. Pero su porcentaje no es cien."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, La cantidad de títulos en cancha dura no basta para comparar el porcentaje de victorias en todas las finales."
+          "t": "La opción D: La cantidad en cancha dura no mide la proporción de finales ganadas en los cuatro torneos. Pero la afirmación trata de efectividad global."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C sí responde a la pregunta."
+          "t": "A y B interpretan solo una etapa; D de las alternativas compara otra medida. La respuesta es C."
         }
       ],
       "3": [
         {
-          "k": "idea",
-          "t": "Organiza las condiciones o los datos necesarios."
+          "a": "p:0",
+          "k": "ana",
+          "t": "El jugador C ganó dieciséis de veintitrés finales, cerca de sesenta y nueve coma seis por ciento."
         },
         {
-          "k": "idea",
-          "t": "La gráfica indica que el jugador C ganó dieciséis de veintitrés finales, cerca del sesenta y nueve coma seis por ciento. El jugador D ganó catorce de dieciocho, equivalente al setenta y siete coma ocho por ciento. Por eso D tiene mayor porcentaje de victorias en finales."
+          "a": "p:1",
+          "t": "El jugador D ganó catorce de dieciocho, cerca de setenta y siete coma ocho por ciento."
         },
         {
-          "k": "idea",
-          "t": "Comprueba el resultado y descarta las opciones incompatibles."
+          "a": "p:2",
+          "k": "contra",
+          "t": "D es más efectivo en la proporción de finales ganadas."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "A, B y D no justifican la comparación global de efectividad."
         },
         {
           "a": "o:C:ok",
-          "t": "La respuesta es la opción C."
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "mayor porcentaje de victorias en las finales del Grand Slam",
+        "nota": "Calcula títulos sobre finales para cada jugador.",
+        "rol": "pide"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "se concluyó que fue el jugador C",
+        "nota": "La gráfica da dieciséis títulos en veintitrés finales para C.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Divide los títulos ganados entre las finales jugadas por cada jugador.",
+        "titulo": "Divide los títulos ganados entre las finales jugadas por cada jugador."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$16/23≈69,6\\%$",
+          "$14/18≈77,8\\%$"
+        ],
+        "nota": "Compara las proporciones de C y D.",
+        "titulo": "Compara las proporciones de C y D."
+      },
+      {
+        "k": "check",
+        "texto": "D tiene mayor porcentaje que C; la conclusión es incorrecta por la opción C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

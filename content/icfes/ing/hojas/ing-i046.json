@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "What can a reader find out from this text?",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{What can a reader find out from this text?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
       "clave": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
-      "pistas": [
-        "Localiza {{What can a reader find out from this text?}} en el pasaje.",
-        "Relaciona esa pista con la información que el autor presenta."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "El artículo no explica cómo cultivar café."
+          "p": "Pero el artículo no explica cómo cultivar café."
         },
         {
           "t": "Opción B",
-          "p": "No se indica cuál es la mejor época para visitar la finca."
+          "p": "Pero no se indica cuál es la mejor época para visitar la finca."
         },
         {
           "t": "Opción D",
-          "p": "El texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
+          "p": "Pero el texto enumera lo que ofrece el alojamiento, no las preferencias de los turistas."
         }
+      ],
+      "pistas": [
+        "Check the practical travel details provided at the end of the article.",
+        "Notice the breakdown of room rates, guided tours, and breakfast inclusions."
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -139,6 +114,32 @@
           "t": "La evidencia respalda {{what the accommodation price includes.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What can a reader find out from this text?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{What can a reader find out from this text?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El pasaje especifica qué incluye el precio de alojamiento: comidas, piscina y café. No informa cuándo es la mejor temporada, cómo se cultiva el café ni qué actividades prefieren los turistas.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

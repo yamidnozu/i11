@@ -1,150 +1,141 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "aumenta la longitud",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «aumenta la longitud» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "2ab"
-        ],
-        "nota": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: aumenta la longitud",
-      "que": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
-      "pistas": [
-        "Fíjate en «aumenta la longitud».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
+      "clave": "Al duplicar un lado y conservar el otro, el producto que representa el área también se duplica.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero aumentar un lado al doble no aumenta el área solo en la mitad; el otro lado conserva su longitud."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero el área sí cambia porque uno de los factores se duplica."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero el porcentaje modifica una longitud relativa, no agrega cien unidades de área."
         }
+      ],
+      "pistas": [
+        "Multiplica el largo nuevo ($2L$) por el ancho nuevo ($0,5A$) para hallar la nueva área del rectángulo.",
+        "Compara el producto $2L \\cdot 0,5A = L \\cdot A$ con el área original para determinar que permanece constante."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Expresa el área inicial como el producto de sus dos lados."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "2ab"
-          ]
+          "t": "Duplica uno de los factores y compara los productos."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "El área nueva es dos veces la inicial; corresponde a la opción B."
         }
-      ]
+      ],
+      "que": "Relaciona el cambio en un lado del rectángulo con el cambio de su área.",
+      "tema": "Efecto de una escala lineal sobre el área"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Qué operación representa el área del rectángulo antes del cambio?"
         },
         {
-          "t": "La frase «aumenta la longitud» orienta la estrategia.",
-          "a": "m:aumenta la longitud"
+          "t": "Al duplicar uno de los factores, el producto queda duplicado."
         },
         {
-          "t": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es B: el área se duplica."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Representa los lados con letras y escribe el producto inicial."
         },
         {
-          "t": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
-          "a": "p:1"
+          "t": "Al sustituir un lado por su doble, queda $2ab$, el doble de $ab$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A no es un aumento de cincuenta por ciento; C ignora el cambio; D confunde porcentaje con unidades. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El área inicial es $ab$ y la nueva es $2a·b=2ab$."
         },
         {
-          "t": "Aumentar un lado del rectángulo en $100\\%$ significa duplicarlo. Si el otro lado no cambia, el producto de ambos lados también se duplica.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cociente entre áreas es $2ab/ab=2$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La nueva área equivale al doble de la original."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D no describen ese cociente."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "uno de sus lados en 100 %",
+        "nota": "Ese lado queda con el doble de su longitud.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "su área",
+        "nota": "Compara el área nueva con la inicial.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Expresa el área inicial como el producto de sus dos lados.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$A=ab$",
+          "$A_{nueva}=2a·b=2ab$"
+        ],
+        "titulo": "Duplica uno de los factores y compara los productos."
+      },
+      {
+        "k": "check",
+        "texto": "El área nueva es dos veces la inicial; corresponde a la opción B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

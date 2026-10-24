@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "argumento más afín con la propuesta de legalización",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca una evaluación de los efectos de la prohibición."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar una razón que respalda una política",
-      "que": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
+      "clave": "La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque apela a un enfoque de libre desarrollo de la personalidad individual, no a las repercusiones estructurales en naciones de origen."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque es un argumento insostenible que niega la corresponsabilidad compartida de productores y consumidores en la cadena ilícita."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque la visión sanitaria del tratamiento a adictos es una política de salud pública en naciones de destino, no el costo de la guerra."
+        }
+      ],
       "pistas": [
         "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites.",
         "Busca una evaluación de los efectos de la prohibición."
       ],
-      "clave": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero La propuesta no exige que el comercio quede sin ningún control."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Culpar exclusivamente a los países consumidores no es un argumento a favor de legalizar."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Plantea tratar a consumidores con atención médica, pero no explica por qué se debe legalizar."
-        }
-      ],
       "plan": [
         {
-          "t": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca una evaluación de los efectos de la prohibición."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «argumento más afín con la propuesta de legalización» orienta el análisis.",
-          "a": "m:argumento más afín con la propuesta de legalización"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
-          "a": "p:0"
+          "t": "La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización."
         },
         {
-          "t": "Opción A: La propuesta no exige que el comercio quede sin ningún control. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Cada persona debe tener la libertad de decidir si consume o no…», Pero no responde al criterio central: La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización."
         },
         {
-          "t": "Opción B: Culpar exclusivamente a los países consumidores no es un argumento a favor de legalizar. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Los países productores no tienen ninguna responsabilidad en el…», Pero no responde al criterio central: La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización."
         },
         {
-          "t": "Opción C: Plantea tratar a consumidores con atención médica, pero no explica por qué se debe legalizar. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Quienes consumen drogas no deben ser tratados como delincuentes,…», Pero no responde al criterio central: La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Distingue una razón a favor de legalizar de una afirmación sobre libertad sin límites.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización."
         },
         {
-          "t": "Busca una evaluación de los efectos de la prohibición.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La opción D apoya la legalización desde una evaluación de consecuencias: la prohibición habría causado problemas sociales más graves que los que buscaba evitar. Es un argumento a favor de cambiar esa política, no una defensa de la ausencia total de regulación.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción D sostiene que la prohibición produjo daños sociales mayores que los que pretendía prevenir.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El problema del tráfico de drogas ilícitas h",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "opuesta de legalización?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La propuesta se apoya en que la prohibición ha producido daños sociales mayores que los que pretendía evitar; ese argumento justifica reconsiderar la legalización. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

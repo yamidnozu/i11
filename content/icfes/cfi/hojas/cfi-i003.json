@@ -1,124 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "número de hombres y mujeres de cada curso",
-        "rol": "dato",
-        "nota": "La tabla desglosa la población por curso y género.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "probabilidad de escoger un estudiante de grado undécimo",
-        "rol": "dato",
-        "nota": "La probabilidad se calcula sobre el total del grupo.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "Este valor corresponde a la razón",
-        "rol": "pide",
-        "nota": "Se pregunta qué cantidad ocupa el denominador.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Ubica el total de mujeres y el total de estudiantes en la tabla."
-      },
-      {
-        "k": "idea",
-        "texto": "Comprueba que $45/75=3/5$; el denominador cuenta a todos los estudiantes."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción A y confirma que se refiere al total de grado undécimo."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar una razón como probabilidad",
-      "que": "Identifica qué cantidad funciona como denominador en una probabilidad calculada para todo un grupo.",
-      "plan": [
-        {
-          "t": "Ubica el total de mujeres y el total de estudiantes en la tabla."
-        },
-        {
-          "t": "Comprueba que $45/75=3/5$; el denominador cuenta a todos los estudiantes."
-        },
-        {
-          "t": "Elige la opción A y confirma que se refiere al total de grado undécimo."
-        }
-      ],
-      "pistas": [
-        "La tabla suma $45$ mujeres y $75$ estudiantes.",
-        "La fracción $3/5$ corresponde a $45/75$."
-      ],
-      "clave": "La tabla registra $45$ mujeres y $75$ estudiantes en total, y $45/75=3/5$. Por eso el denominador es el total de estudiantes de grado undécimo.",
+      "clave": "Hay $45$ mujeres de $75$ estudiantes; el total posible es todo el grado undécimo.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, "
+          "p": "Pero los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
         },
         {
           "t": "Opción C",
-          "p": "Pero, La razón usa las mujeres de ambos cursos, no solo las del curso once B."
+          "p": "Pero las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
         },
         {
           "t": "Opción D",
-          "p": "Pero, El denominador debe ser el total del grupo, no los hombres de un solo curso."
+          "p": "Pero los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica en la tabla el total de mujeres (45) y el total general de estudiantes de undécimo grado (75).",
+        "Simplifica la fracción $45/75$ dividiendo numerador y denominador entre 15 para obtener tres quintos ($3/5$)."
+      ],
+      "plan": [
+        {
+          "t": "Compara los totales de mujeres y estudiantes que muestra la tabla."
+        },
+        {
+          "t": "Verifica la razón y su denominador."
+        },
+        {
+          "t": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A."
+        }
+      ],
+      "que": "Identifica qué cantidad corresponde al denominador de la probabilidad.",
+      "tema": "Probabilidad como razón entre mujeres y total de estudiantes"
     },
     "guion": {
       "1": [
         {
-          "t": "Ubica el total de mujeres y el total de estudiantes en la tabla."
+          "t": "¿Cuántas mujeres hay y cuántos estudiantes hay en total?"
         },
         {
-          "t": "Comprueba que $45/75=3/5$; el denominador cuenta a todos los estudiantes."
+          "t": "Hay cuarenta y cinco mujeres entre setenta y cinco estudiantes."
         },
         {
           "a": "o:A:ok",
-          "t": "La respuesta es la opción A: La tabla registra $45$ mujeres y $75$ estudiantes en total, y $45/75=3/5$. Por eso el denominador es el total de estudiantes de grado undécimo."
+          "t": "La razón es tres quintos; el denominador es todo el grado. La respuesta es A."
         }
       ],
       "2": [
         {
+          "t": "En una probabilidad, divide los casos favorables entre todos los casos posibles."
+        },
+        {
+          "t": "La tabla da $45$ mujeres y $75$ estudiantes: $45/75=3/5$."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, "
+          "t": "La opción B: Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, La razón usa las mujeres de ambos cursos, no solo las del curso once B."
+          "t": "La opción C: Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, El denominador debe ser el total del grupo, no los hombres de un solo curso."
+          "t": "La opción D: Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
         },
         {
           "a": "o:A:ok",
-          "t": "La tabla registra $45$ mujeres y $75$ estudiantes en total, y $45/75=3/5$. Por eso el denominador es el total de estudiantes de grado undécimo."
+          "t": "B, C y D son subconjuntos del grupo y no el total de casos posibles. La respuesta es A."
         }
       ],
       "3": [
         {
-          "t": "Ubica el total de mujeres y el total de estudiantes en la tabla."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La cantidad de mujeres es cuarenta y cinco y el total de estudiantes es setenta y cinco."
         },
         {
-          "t": "Comprueba que $45/75=3/5$; el denominador cuenta a todos los estudiantes."
+          "a": "p:1",
+          "t": "Al simplificar $45/75$ se obtiene $3/5$."
         },
         {
-          "t": "Elige la opción A y confirma que se refiere al total de grado undécimo."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Por tanto, el denominador es el total de estudiantes de ambos cursos."
+        },
+        {
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "B, C y D reemplazan el total por subconjuntos."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A queda respaldada por los datos y el procedimiento."
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "dos cursos en grado undécimo",
+        "nota": "El grupo posible reúne a los estudiantes de ambos cursos.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "3/5",
+        "nota": "La probabilidad compara mujeres con el total de estudiantes.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "corresponde a la razón entre el número total de mujeres y",
+        "nota": "Busca el denominador que convierte $45$ en $3/5$.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara los totales de mujeres y estudiantes que muestra la tabla.",
+        "titulo": "Compara los totales de mujeres y estudiantes que muestra la tabla."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$45/75=3/5$",
+          "El total de estudiantes es $75$."
+        ],
+        "nota": "Verifica la razón y su denominador.",
+        "titulo": "Verifica la razón y su denominador."
+      },
+      {
+        "k": "check",
+        "texto": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

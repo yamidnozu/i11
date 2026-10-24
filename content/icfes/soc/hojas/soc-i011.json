@@ -6,20 +6,20 @@
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo."
+          "p": "Pero es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo."
         },
         {
           "t": "Opción C",
-          "p": "Pero, es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular."
+          "p": "Pero es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular."
         },
         {
           "t": "Opción D",
-          "p": "Pero, es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana."
+          "p": "Pero es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana."
         }
       ],
       "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
+        "Revisa los requisitos de la iniciativa popular normativa según el artículo 155 de la Constitución (respaldo del 5 % del censo electoral).",
+        "Comprueba si la firma individual de un ciudadano basta para radicar formalmente un proyecto de ley en el Congreso."
       ],
       "plan": [
         {
@@ -29,7 +29,7 @@
           "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Concluye por qué la opción A satisface ese criterio."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
       ],
       "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
@@ -44,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:A:ok",
-          "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es A."
+          "a": "o:C:ok",
+          "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es C."
         }
       ],
       "2": [
@@ -56,23 +56,23 @@
           "t": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito."
         },
         {
-          "t": "La opción B no corresponde: Es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo.",
+          "t": "La opción B es incorrecta: Es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: Es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular.",
+          "t": "La opción C es incorrecta: Es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D no corresponde: Es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana.",
+          "t": "La opción D es incorrecta: Es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "a": "o:A:ok",
-          "t": "La opción A es la que sí responde a la pregunta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción A.",
+          "a": "o:A:ok"
         }
       ],
       "3": [
@@ -88,26 +88,16 @@
         {
           "a": "o:A:ok",
           "k": "contra",
-          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La opción B no encaja: Es incorrecta porque la Asamblea Constituyente no es el único mecanismo de reforma; también proceden el acto legislativo en el Congreso y el referendo.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C no encaja: Es incorrecta porque el presidente no puede expedir reformas constitucionales por decreto unilateral sin aprobación del Congreso y votación popular.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D no encaja: Es incorrecta porque niega la existencia misma del referendo aprobatorio constitucional, consagrado en la legislación electoral colombiana.",
-          "a": "o:D:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
           "a": "o:A:ok",
-          "t": "La respuesta correcta es A."
+          "t": "La respuesta correcta es C."
         }
       ]
     },
@@ -137,9 +127,10 @@
       },
       {
         "k": "check",
-        "texto": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es A.",
+        "texto": "La iniciativa popular legislativa puede presentarse con el respaldo exigido de firmas, equivalente al cinco por ciento del censo electoral; una persona por sí sola no reúne ese requisito. La respuesta es C.",
         "titulo": "Verifica la respuesta"
       }
     ]
-  }
+  },
+  "revisar": []
 }

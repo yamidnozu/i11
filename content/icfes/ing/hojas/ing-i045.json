@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "What is the writer trying to do in this article?",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{What is the writer trying to do in this article?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
       "clave": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
-      "pistas": [
-        "Localiza {{What is the writer trying to do in this article?}} en el pasaje.",
-        "Relaciona esa pista con la información que el autor presenta."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
+          "p": "Pero el artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
         },
         {
           "t": "Opción C",
-          "p": "El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+          "p": "Pero el artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
         },
         {
           "t": "Opción D",
-          "p": "El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
+          "p": "Pero el texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
         }
+      ],
+      "pistas": [
+        "Determine the overall communicative purpose of the travel article.",
+        "Recognize the persuasive promotion of Colombian coffee destinations for international visitors."
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -139,6 +114,32 @@
           "t": "La evidencia respalda {{encouraging tourists to visit Colombia.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "What is the writer trying to do in this article?",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{What is the writer trying to do in this article?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,151 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "5 toneladas de banano", "rol": "dato", "nota": "Es la carga de cada uno de los tres camiones.", "campo": "Carga por camión" },
-      { "frag": "¿Cuál es la ganancia", "rol": "pide", "nota": "Resta del margen de venta los costos de transporte y de los trabajadores.", "campo": "Ganancia" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Calcula el margen de venta y los gastos", "texto": "Cada camión lleva cinco toneladas y se pagan dos trabajadores por viaje. Compara el precio de venta con el precio de compra del banano." },
-      { "k": "calc", "titulo": "Resta todos los costos", "lineas": ["$3 × 5 = 15$ toneladas", "$15 × (1.000.000 - 400.000) = 9.000.000$", "$3 × 150.000 + 3 × 2 × 180.000 = 1.530.000$", "$9.000.000 - 1.530.000 = 7.470.000$"], "nota": "El tercer renglón suma transporte de los tres camiones y pagos de los seis trabajadores." },
-      { "k": "check", "texto": "La ganancia es $7.470.000$. La respuesta es C." }
-    ],
     "enfoque": {
-      "tema": "Ganancia con costos de transporte y personal",
-      "que": "Halla el margen de venta para toda la carga y descuenta el costo de compra, el transporte y los pagos de los trabajadores.",
-      "pistas": ["Calcula primero la cantidad total de toneladas.", "Cuenta dos trabajadores por camión y un viaje por cada uno."],
       "clave": "El margen de venta es $9.000.000$ y los gastos de operación suman $1.530.000$; la ganancia es $7.470.000$.",
       "no": [
-        { "t": "Opción A", "p": "El valor no resulta de restar al margen todos los gastos indicados. Pero deben descontarse transporte y salarios." },
-        { "t": "Opción B", "p": "El valor deja por fuera parte de los costos del negocio. Pero hay que incluir los tres transportes y los seis pagos." },
-        { "t": "Opción D", "p": "El valor supera el margen después de costos. Pero la ganancia debe ser menor que los $9.000.000$ de margen." }
+        {
+          "t": "Opción A",
+          "p": "Pero $5.670.000$ resta costos que no corresponden a los datos del procedimiento."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero $5.970.000$ no descuenta del margen todos los costos de transporte y trabajadores."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero $8.010.000$ no descuenta correctamente el costo de compra y los gastos de operación."
+        }
+      ],
+      "pistas": [
+        "Calcula primero la cantidad total de toneladas.",
+        "Cuenta dos trabajadores por camión y un viaje por cada uno."
       ],
       "plan": [
-        { "t": "Calcula las toneladas de los tres camiones.", "eq": ["$3 × 5 = 15$"] },
-        { "t": "Calcula el margen de venta y suma transporte y salarios.", "eq": ["$15 × (1.000.000 - 400.000) = 9.000.000$", "$450.000 + 1.080.000 = 1.530.000$"] },
-        { "t": "Resta los gastos al margen para obtener la ganancia." }
-      ]
+        {
+          "eq": [
+            "$3 × 5 = 15$"
+          ],
+          "t": "Calcula las toneladas de los tres camiones."
+        },
+        {
+          "eq": [
+            "$15 × (1.000.000 - 400.000) = 9.000.000$",
+            "$450.000 + 1.080.000 = 1.530.000$"
+          ],
+          "t": "Calcula el margen de venta y suma transporte y salarios."
+        },
+        {
+          "t": "Resta los gastos al margen para obtener la ganancia."
+        }
+      ],
+      "que": "Halla el margen de venta para toda la carga y descuenta el costo de compra, el transporte y los pagos de los trabajadores.",
+      "tema": "Ganancia con costos de transporte y personal"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuántas toneladas llevan los tres camiones?", "a": "m:5 toneladas de banano" },
-        { "t": "Son quince toneladas. El margen es $9.000.000$ y los gastos suman $1.530.000$." },
-        { "t": "La ganancia es $7.470.000$. La respuesta es C.", "a": "o:C:ok" }
+        {
+          "a": "m:5 toneladas de banano",
+          "t": "¿Cuántas toneladas llevan los tres camiones?"
+        },
+        {
+          "t": "Son quince toneladas. El margen es $9.000.000$ y los gastos suman $1.530.000$."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La ganancia es $7.470.000$. La respuesta es C."
+        }
       ],
       "2": [
-        { "t": "Separa el margen de venta de los costos que debes restar." },
-        { "t": "La carga total es $3 × 5 = 15$ toneladas y el margen es $15 × 600.000 = 9.000.000$. Transporte y salarios suman $1.530.000$." },
-        { "t": "La opción A no corresponde a restar los costos completos.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción B omite parte de transporte o salarios.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción D supera la ganancia después de los gastos.", "a": "o:D:no", "k": "err" },
-        { "t": "Al restar queda $7.470.000$. La respuesta es C.", "a": "o:C:ok" }
+        {
+          "t": "Separa el margen de venta de los costos que debes restar."
+        },
+        {
+          "t": "La carga total es $3 × 5 = 15$ toneladas y el margen es $15 × 600.000 = 9.000.000$. Transporte y salarios suman $1.530.000$."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no corresponde a restar los costos completos."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B omite parte de transporte o salarios."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D supera la ganancia después de los gastos."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "Al restar queda $7.470.000$. La respuesta es C."
+        }
       ],
       "3": [
-        { "t": "El volumen total es $3 × 5 = 15$ toneladas y el margen unitario es $1.000.000 - 400.000 = 600.000$.", "a": "p:0", "k": "ana" },
-        { "t": "El margen completo da $9.000.000$. Los gastos son $3 × 150.000 + 6 × 180.000 = 1.530.000$.", "a": "p:1" },
-        { "t": "La ganancia neta es $9.000.000 - 1.530.000 = 7.470.000$.", "a": "p:2", "k": "contra" },
-        { "t": "A y B no descuentan todos los gastos; D es mayor que el margen neto obtenido.", "a": "o:A:no|o:B:no|o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es C.", "a": "o:C:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "El volumen total es $3 × 5 = 15$ toneladas y el margen unitario es $1.000.000 - 400.000 = 600.000$."
+        },
+        {
+          "a": "p:1",
+          "t": "El margen completo da $9.000.000$. Los gastos son $3 × 150.000 + 6 × 180.000 = 1.530.000$."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "La ganancia neta es $9.000.000 - 1.530.000 = 7.470.000$."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "A y B no descuentan todos los gastos; D es mayor que el margen neto obtenido."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Carga por camión",
+        "frag": "5 toneladas de banano",
+        "nota": "Es la carga de cada uno de los tres camiones.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Ganancia",
+        "frag": "¿Cuál es la ganancia",
+        "nota": "Resta del margen de venta los costos de transporte y de los trabajadores.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Cada camión lleva cinco toneladas y se pagan dos trabajadores por viaje. Compara el precio de venta con el precio de compra del banano.",
+        "titulo": "Calcula el margen de venta y los gastos"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$3 × 5 = 15$ toneladas",
+          "$15 × (1.000.000 - 400.000) = 9.000.000$",
+          "$3 × 150.000 + 3 × 2 × 180.000 = 1.530.000$",
+          "$9.000.000 - 1.530.000 = 7.470.000$"
+        ],
+        "nota": "El tercer renglón suma transporte de los tres camiones y pagos de los seis trabajadores.",
+        "titulo": "Resta todos los costos"
+      },
+      {
+        "k": "check",
+        "texto": "La ganancia es $7.470.000$. La respuesta es C."
+      }
+    ]
+  },
+  "revisar": []
 }

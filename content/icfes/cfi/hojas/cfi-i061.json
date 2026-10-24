@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Un programa impulsado por países europeos lleva varios años apoyando a jóvenes bogotanos",
-        "rol": "dato",
-        "nota": "El enunciado presenta el contexto del problema.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "Probablemente implementar este mismo modelo en estas ciudades, no resulte pertinente porque en ellas",
-        "rol": "pide",
-        "nota": "Esta frase precisa qué debes valorar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Evaluar si la oferta de negocios observada en Bogotá puede trasladarse sin ajustes a otras ciudades."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara las necesidades y la demanda de cada ciudad con las tipologías y porcentajes propuestos."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C responde al enunciado y descarta las otras alternativas."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar si la oferta de negocios observada en Bogotá puede trasladarse sin ajustes a otras ciudades.",
-      "que": "Compara las necesidades y la demanda de cada ciudad con las tipologías y porcentajes propuestos.",
-      "plan": [
-        {
-          "t": "Evaluar si la oferta de negocios observada en Bogotá puede trasladarse sin ajustes a otras ciudades."
-        },
-        {
-          "t": "Compara las necesidades y la demanda de cada ciudad con las tipologías y porcentajes propuestos."
-        },
-        {
-          "t": "Elige la opción C y verifica que concuerda con la situación descrita."
-        }
-      ],
-      "pistas": [
-        "Probablemente implementar este mismo modelo en estas ciudades, no resulte pertinente porque en ellas",
-        "C"
-      ],
-      "clave": "La opción C reconoce que las necesidades y la demanda pueden variar entre ciudades; no se puede asumir que el modelo bogotano funcionará igual en todas.",
+      "clave": "Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, A atribuye a los jóvenes una preferencia que el enunciado no menciona."
+          "p": "Pero es incorrecta porque descalifica a los jóvenes suponiendo falsamente que carecen de aspiraciones de autonomía laboral y emprendimiento."
         },
         {
           "t": "Opción B",
-          "p": "Pero, B se enfoca en la duración del programa y no en la pertinencia de replicar la oferta."
+          "p": "Pero es incorrecta porque la duración temporal de un proyecto de cooperación no es la razón fundamental por la que fallan sus resultados en territorio."
         },
         {
           "t": "Opción D",
-          "p": "Pero, D atribuye a otros jóvenes una dificultad de dominio del inglés que no se sustenta en el texto."
+          "p": "Pero es incorrecta porque el manejo de una segunda lengua no es un obstáculo insalvable para liderar negocios locales en barrios vulnerables."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica el impacto de la cooperación internacional europea sobre el acceso a la educación superior de jóvenes de estratos 1 y 2 en Bogotá.",
+        "Evalúa cómo la formación técnica y profesional promueve la movilidad social y reduce las brechas de desigualdad urbana."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Evaluar si la oferta de negocios observada en Bogotá puede trasladarse sin ajustes a otras ciudades."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La opción C reconoce que las necesidades y la demanda pueden variar entre ciudades; no se puede asumir que el modelo bogotano funcionará igual en todas."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C responde a lo que pide el enunciado."
+          "t": "Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A atribuye a los jóvenes una preferencia que el enunciado no menciona."
+          "t": "La opción A plantea «los jóvenes no están interesados en hacer negocios sino en estudiar.», Pero no responde al criterio central: Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B se enfoca en la duración del programa y no en la pertinencia de replicar la oferta."
+          "t": "La opción B plantea «no es viable mantener un programa por tan largo tiempo.», Pero no responde al criterio central: Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D atribuye a otros jóvenes una dificultad de dominio del inglés que no se sustenta en el texto."
+          "t": "La opción D plantea «los jóvenes no tienen buen dominio del inglés.», Pero no responde al criterio central: Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C reconoce que las necesidades y la demanda pueden variar entre ciudades; no se puede asumir que el modelo bogotano funcionará igual en todas."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Evaluar si la oferta de negocios observada en Bogotá puede trasladarse sin ajustes a otras ciudades."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Compara las necesidades y la demanda de cada ciudad con las tipologías y porcentajes propuestos."
-        },
-        {
-          "t": "La opción C reconoce que las necesidades y la demanda pueden variar entre ciudades; no se puede asumir que el modelo bogotano funcionará igual en todas."
+          "a": "p:1",
+          "t": "Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C queda respaldada por el enunciado."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un programa impulsado por países europeos ll",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "rtinente porque en ellas",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Las demandas y condiciones locales pueden diferir de Bogotá; copiar allí los mismos tipos y porcentajes de negocio puede no responder a necesidades de cada ciudad. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

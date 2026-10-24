@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "How often did she watch the show?",
-        "rol": "pide",
-        "nota": "La pregunta delimita el dato que debe localizarse en el relato.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Localiza el dato",
-        "texto": "Encuentra en el pasaje la oración que se refiere directamente a la pregunta."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las opciones",
-        "texto": "El relato dice que intentaba pintar cada domingo por la mañana; eso corresponde a una vez por semana."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en el relato",
-        "texto": "Comprueba que la respuesta elegida aparece en el pasaje y que las otras alternativas se refieren a detalles diferentes."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprender detalles explícitos de un relato",
-      "que": "Ubica en el relato la información que responde la pregunta y separa ese dato de los detalles cercanos.",
-      "pistas": [
-        "Busca la oración que contiene el dato solicitado.",
-        "Comprueba quién realiza cada acción y a quién se refiere el detalle."
-      ],
-      "clave": "El relato dice que intentaba pintar cada domingo por la mañana; eso corresponde a una vez por semana.",
+      "clave": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero Tres veces por semana no coincide con la frecuencia que indica el relato."
+          "p": "Pero el programa se transmitía Every Sunday morning (cada domingo), lo que equivale a una sola vez por semana."
         },
         {
           "t": "Opción C",
-          "p": "Pero Dos veces por semana tampoco coincide: se menciona cada domingo."
+          "p": "Pero ocurre únicamente los domingos en la mañana, no dos veces a la semana."
         }
+      ],
+      "pistas": [
+        "Look for the frequency expression describing the broadcast schedule of the program.",
+        "Confirm that the show aired weekly ({{once a week}})."
       ],
       "plan": [
         {
-          "t": "Lee la pregunta y reconoce qué dato busca."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Ubica la información correspondiente en el relato."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Compara cada alternativa con el pasaje y elige la que coincide."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee qué dato busca la pregunta."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Busca en el relato la oración que habla de ese detalle."
+          "a": "m:How often did she watch the show?",
+          "t": "Fíjate en {{How often did she watch the show?}}."
         },
         {
-          "t": "La respuesta es {{once a week}}.",
-          "a": "o:B:ok"
+          "a": "p:1",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es {{once a week}}."
         }
       ],
       "2": [
         {
-          "t": "Ubica la información explícita que responde la pregunta."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "Opción A no coincide: Tres veces por semana no coincide con la frecuencia que indica el relato.",
+          "a": "p:1",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
+        },
+        {
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no corresponde: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
-          "t": "Opción C no coincide: Dos veces por semana tampoco coincide: se menciona cada domingo.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no corresponde: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
-          "t": "La opción B coincide con el relato.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción {{once a week}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Identifica el detalle preciso que pregunta el ejercicio.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "El relato dice que intentaba pintar cada domingo por la mañana; eso corresponde a una vez por semana.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
         },
         {
-          "t": "Descarta las opciones que mezclan ese detalle con información distinta del relato.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
         },
         {
-          "t": "Vuelve al texto y confirma la opción B.",
-          "a": "o:B:ok"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La evidencia respalda {{once a week}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "How often did she watch the show?",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{How often did she watch the show?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

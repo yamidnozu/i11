@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "relación entre el contenido del texto y el título",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Identifica qué idea cuestiona el autor sobre el conocimiento."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Relaciona esa postura con el sentido de «contra el método»."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción C conecta la crítica al conocimiento entendido como producto de un método con el título."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar un título con la postura de un ensayo",
-      "que": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo.",
-      "pistas": [
-        "Identifica qué idea cuestiona el autor sobre el conocimiento.",
-        "Relaciona esa postura con el sentido de «contra el método»."
-      ],
       "clave": "La opción C conecta la crítica al conocimiento entendido como producto de un método con el título.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto no propone un método nuevo para reemplazar el tradicional."
+          "p": "Pero el texto no propone un método nuevo para reemplazar el tradicional."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No se limita a atacar ideas sobre el método científico; cuestiona el papel de un método único en la producción del conocimiento."
+          "p": "Pero no se limita a atacar ideas sobre el método científico; cuestiona el papel de un método único en la producción del conocimiento."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El autor defiende alternativas plurales, pero la opción agrega que cada ciencia alcanza sus verdades, idea que el texto no sostiene."
+          "p": "Pero el autor defiende alternativas plurales, pero la opción agrega que cada ciencia alcanza sus verdades, idea que el texto no sostiene."
         }
+      ],
+      "pistas": [
+        "Identifica qué idea cuestiona el autor sobre el conocimiento.",
+        "Relaciona esa postura con el sentido de «contra el método»."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo.",
+      "tema": "Relacionar un título con la postura de un ensayo"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «relación entre el contenido del texto y el título» orienta la lectura.",
-          "a": "m:relación entre el contenido del texto y el título"
+          "a": "m:relación entre el contenido del texto y el título",
+          "t": "La expresión «relación entre el contenido del texto y el título» orienta la lectura."
         },
         {
-          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo."
         },
         {
-          "t": "Opción A: El texto no propone un método nuevo para reemplazar el tradicional. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El texto no propone un método nuevo para reemplazar el tradicional. La descartamos."
         },
         {
-          "t": "Opción B: No se limita a atacar ideas sobre el método científico; cuestiona el papel de un método único en la producción del conocimiento. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No se limita a atacar ideas sobre el método científico; cuestiona el papel de un método único en la producción del conocimiento. La descartamos."
         },
         {
-          "t": "Opción D: El autor defiende alternativas plurales, pero la opción agrega que cada ciencia alcanza sus verdades, idea que el texto no sostiene. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El autor defiende alternativas plurales, pero la opción agrega que cada ciencia alcanza sus verdades, idea que el texto no sostiene. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Identifica qué idea cuestiona el autor sobre el conocimiento.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Identifica qué idea cuestiona el autor sobre el conocimiento."
         },
         {
-          "t": "Relaciona esa postura con el sentido de «contra el método».",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Relaciona esa postura con el sentido de «contra el método»."
         },
         {
-          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto cuestiona la idea de que el conocimiento científico avance mediante un método único y ordenado hacia una verdad final. Defiende la competencia entre perspectivas distintas; por eso critica concebir el conocimiento como resultado de un método fijo."
         },
         {
-          "t": "La opción C conecta la crítica al conocimiento entendido como producto de un método con el título.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C conecta la crítica al conocimiento entendido como producto de un método con el título."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "relación entre el contenido del texto y el título",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué idea cuestiona el autor sobre el conocimiento.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona esa postura con el sentido de «contra el método».",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción C conecta la crítica al conocimiento entendido como producto de un método con el título.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

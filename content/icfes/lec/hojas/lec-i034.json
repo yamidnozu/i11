@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "amor o el enamoramiento",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Compara la idea actual con la historia que presenta el autor."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "No confundas una descripción de una cultura particular con la tesis general."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución."
-      }
-    ],
     "enfoque": {
-      "tema": "Distinguir una idea general de sus ejemplos",
-      "que": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
-      "pistas": [
-        "Compara la idea actual con la historia que presenta el autor.",
-        "No confundas una descripción de una cultura particular con la tesis general."
-      ],
       "clave": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas."
+          "p": "Pero el texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor."
+          "p": "Pero la amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio."
+          "p": "Pero aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio."
         }
+      ],
+      "pistas": [
+        "Compara la idea actual con la historia que presenta el autor.",
+        "No confundas una descripción de una cultura particular con la tesis general."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
+      "tema": "Distinguir una idea general de sus ejemplos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «amor o el enamoramiento» orienta la lectura.",
-          "a": "m:amor o el enamoramiento"
+          "a": "m:amor o el enamoramiento",
+          "t": "La expresión «amor o el enamoramiento» orienta la lectura."
         },
         {
-          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
         },
         {
-          "t": "Opción A: El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El texto comienza presentando una creencia actual, pero explica que no ha sido la base en todas las épocas. La descartamos."
         },
         {
-          "t": "Opción B: La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La amenaza al respeto y la solidaridad es un ejemplo de la China tradicional, no una definición general del amor. La descartamos."
         },
         {
-          "t": "Opción D: Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Aunque el enamoramiento se consideraba irracional en algunos contextos, el texto no dice que contradiga el deber ser del matrimonio. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Compara la idea actual con la historia que presenta el autor.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Compara la idea actual con la historia que presenta el autor."
         },
         {
-          "t": "No confundas una descripción de una cultura particular con la tesis general.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "No confundas una descripción de una cultura particular con la tesis general."
         },
         {
-          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto señala que asociar el amor con la razón principal para casarse es una idea relativamente reciente. Antes, el matrimonio se entendía sobre todo como una institución política y económica; por eso el amor no siempre fue su fundamento."
         },
         {
-          "t": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "amor o el enamoramiento",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara la idea actual con la historia que presenta el autor.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "No confundas una descripción de una cultura particular con la tesis general.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "El amor como fundamento del matrimonio es una idea vinculada recientemente a esa institución.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

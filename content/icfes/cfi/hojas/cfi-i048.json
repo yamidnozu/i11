@@ -1,78 +1,53 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "A partir de la información presentada",
-        "rol": "dato",
-        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "tiene como propósito",
-        "rol": "pide",
-        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Identifica qué información aporta la infografía y qué pide la pregunta."
-      },
-      {
-        "k": "idea",
-        "t": "La infografía reúne datos sobre las muertes en accidentes de tránsito y sus factores asociados. Esa información busca sensibilizar sobre el riesgo de morir en un accidente, sin limitarse a promover una forma de transporte o una conducta específica."
-      },
-      {
-        "k": "check",
-        "t": "Comprueba que la opción A se apoya en el contenido y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar el propósito de una infografía",
-      "que": "Relaciona los datos visuales con la afirmación o el contexto que propone la pregunta.",
-      "plan": [
-        {
-          "t": "Identifica qué información aporta la infografía."
-        },
-        {
-          "t": "Relaciona esos datos con la pregunta."
-        },
-        {
-          "t": "Verifica la opción A y descarta las alternativas que exceden la evidencia."
-        }
-      ],
-      "pistas": [
-        "La infografía trata de muertes en accidentes de tránsito.",
-        "Distingue el contenido explícito de las inferencias sobre su propósito."
-      ],
-      "clave": "La infografía reúne datos sobre las muertes en accidentes de tránsito y sus factores asociados. Esa información busca sensibilizar sobre el riesgo de morir en un accidente, sin limitarse a promover una forma de transporte o una conducta específica.",
+      "clave": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
       "no": [
         {
           "t": "Opción B",
-          "p": "No recomienda reemplazar el automóvil por otro medio de transporte."
+          "p": "Pero la infografía no recomienda una modalidad específica de transporte."
         },
         {
           "t": "Opción C",
-          "p": "La infografía presenta muertes y proporciones, no el número total de accidentes."
+          "p": "Pero no busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar."
         },
         {
           "t": "Opción D",
-          "p": "No desarrolla una recomendación concreta sobre sobriedad o velocidad."
+          "p": "Pero no se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia."
         }
-      ]
+      ],
+      "pistas": [
+        "Observa qué problema se destaca con cifras y comparaciones.",
+        "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
+      ],
+      "plan": [
+        {
+          "t": "Observa qué problema se destaca con cifras y comparaciones."
+        },
+        {
+          "t": "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
+      "tema": "Inferir el propósito de una infografía informativa"
     },
     "guion": {
       "1": [
         {
-          "k": "idea",
-          "t": "Lee la pregunta y reconoce si pide función, propósito o contexto."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "k": "idea",
-          "t": "Contrasta las opciones con los datos de la infografía."
+          "a": "m:autor de la infografía tiene como propósito",
+          "t": "La expresión «autor de la infografía tiene como propósito» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
         },
         {
           "a": "o:A:ok",
@@ -81,43 +56,83 @@
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
+        },
+        {
+          "a": "p:0",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, No recomienda reemplazar el automóvil por otro medio de transporte."
+          "t": "Opción B: La infografía no recomienda una modalidad específica de transporte. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, La infografía presenta muertes y proporciones, no el número total de accidentes."
+          "t": "Opción C: No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, No desarrolla una recomendación concreta sobre sobriedad o velocidad."
-        },
-        {
-          "a": "o:A:ok",
-          "t": "La opción A concuerda con el contenido de la infografía."
-        }
-      ],
-      "3": [
-        {
-          "k": "idea",
-          "t": "Ubica el dato o la función visual señalada en la pregunta."
-        },
-        {
-          "k": "idea",
-          "t": "La infografía reúne datos sobre las muertes en accidentes de tránsito y sus factores asociados. Esa información busca sensibilizar sobre el riesgo de morir en un accidente, sin limitarse a promover una forma de transporte o una conducta específica."
-        },
-        {
-          "k": "idea",
-          "t": "Descarta las opciones que atribuyen a la infografía información o recomendaciones que no presenta."
+          "t": "Opción D: No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia. La descartamos."
         },
         {
           "a": "o:A:ok",
           "t": "La respuesta es la opción A."
         }
+      ],
+      "3": [
+        {
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
+        },
+        {
+          "a": "p:0",
+          "t": "Observa qué problema se destaca con cifras y comparaciones."
+        },
+        {
+          "a": "p:1",
+          "t": "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
+        },
+        {
+          "a": "p:2",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "autor de la infografía tiene como propósito",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa qué problema se destaca con cifras y comparaciones.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige el propósito que abarca la información sin añadir consejos que no aparecen.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

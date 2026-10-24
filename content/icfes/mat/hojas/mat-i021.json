@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "representan correctamente",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «representan correctamente» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "S=3M"
-        ],
-        "nota": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La primera ecuación suma ingresos: precio por cantidad para mesas y sillas. La segunda debe expresar que las sillas son el triple de las mesas: $S=3M$. La escrita, $M=3S$, invierte la relación; por eso el sistema no representa la situación."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: representan correctamente",
-      "que": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
-      "pistas": [
-        "Fíjate en «representan correctamente».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
       "no": [
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero no nota que la ecuación m = 3s expresa que la cantidad de mesas es el triple de sillas, lo opuesto a lo indicado por el dueño."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero afirma erróneamente que los precios deberían dividir a las variables, lo cual contradice el cálculo de ingresos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero justifica la validez solo porque la solución arroja números enteros, sin verificar si las ecuaciones modelan el enunciado."
         }
+      ],
+      "pistas": [
+        "Analiza la ecuación dos propuesta ($m = 3s$): si el número de sillas es el triple de mesas, la relación correcta debe ser $s = 3m$.",
+        "Deduce por qué el sistema es incorrecto: la segunda ecuación invierte la proporción y afirma que se venden el triple de mesas que de sillas."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "S=3M"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
+      "tema": "Matemáticas: representan correctamente"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «representan correctamente» orienta la estrategia.",
-          "a": "m:representan correctamente"
+          "a": "m:representan correctamente",
+          "t": "La frase «representan correctamente» orienta la estrategia."
         },
         {
-          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico la relación entre las cantidades y verifico si las ecuaciones la representan.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico la relación entre las cantidades y verifico si las ecuaciones la representan."
         },
         {
-          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "representan correctamente",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «representan correctamente» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "S=3M"
+        ],
+        "nota": "La primera ecuación suma los ingresos de mesas y sillas. La segunda debe expresar que las sillas son tres veces las mesas; la ecuación anotada invierte esa relación, así que el sistema no representa la situación.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La primera ecuación suma ingresos: precio por cantidad para mesas y sillas. La segunda debe expresar que las sillas son el triple de las mesas: $S=3M$. La escrita, $M=3S$, invierte la relación; por eso el sistema no representa la situación."
+      }
+    ]
+  },
+  "revisar": []
 }

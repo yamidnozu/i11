@@ -1,150 +1,146 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "4 dígitos diferentes",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «4 dígitos diferentes» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "4!=24"
-        ],
-        "nota": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: 4 dígitos diferentes",
-      "que": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
-      "pistas": [
-        "Fíjate en «4 dígitos diferentes».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
+      "clave": "Hay $4! = 24$ órdenes posibles para los cuatro dígitos.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero 56 no es el producto de las opciones disponibles al ordenar los cuatro dígitos sin repetir."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero 120 excede el número de permutaciones de cuatro dígitos distintos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero 256 cuenta cadenas con repetición, aunque las extensiones deben usar dígitos diferentes."
         }
+      ],
+      "pistas": [
+        "Aplica el principio fundamental de la multiplicación para calcular las extensiones posibles con los dígitos permitidos.",
+        "Diferencia las combinaciones válidas de aquellas que repiten dígitos o violan la longitud exigida por el conmutador."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Cuenta cuántos dígitos quedan disponibles en cada posición."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "4!=24"
-          ]
+          "t": "Multiplica las elecciones sucesivas."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "Se obtienen veinticuatro extensiones distintas; corresponde a A."
         }
-      ]
+      ],
+      "que": "Cuenta las extensiones que se forman al ordenar los cuatro dígitos sin repetición.",
+      "tema": "Permutaciones de dígitos distintos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Cuántas opciones quedan para cada posición?"
         },
         {
-          "t": "La frase «4 dígitos diferentes» orienta la estrategia.",
-          "a": "m:4 dígitos diferentes"
+          "t": "Quedan cuatro, luego tres, luego dos y finalmente una."
         },
         {
-          "t": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "El producto es veinticuatro. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Aplica el principio multiplicativo: cuatro opciones para el primer lugar, tres para el siguiente, dos y una."
         },
         {
-          "t": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
-          "a": "p:1"
+          "t": "El total es $4×3×2×1=24$."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: No corresponde al producto de las cuatro elecciones sucesivas. Pero no se pueden repetir dígitos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Excede las permutaciones posibles de cuatro elementos. Pero cada extensión ordena solo esos cuatro dígitos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Cuenta combinaciones con repetición. Pero el enunciado exige dígitos diferentes."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "B y C no son ese producto; D permite repeticiones. La respuesta es A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Las extensiones son permutaciones de los cuatro dígitos."
         },
         {
-          "t": "Los cuatro dígitos son distintos y se usan todos. Hay $4\\cdot3\\cdot2\\cdot1=24$ órdenes posibles.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El conteo es $4!=4×3×2×1=24$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Cada orden usa todos los dígitos una sola vez."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "B y C no dan el total; D admite repeticiones prohibidas."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "dígitos 2, 3, 4 y 5",
+        "nota": "Son los cuatro símbolos disponibles.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "4 dígitos diferentes",
+        "nota": "Cada uno se usa una vez.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "Cuántas habitaciones",
+        "nota": "Cuenta las extensiones posibles.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Cuenta cuántos dígitos quedan disponibles en cada posición.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$4×3×2×1=24$"
+        ],
+        "titulo": "Multiplica las elecciones sucesivas."
+      },
+      {
+        "k": "check",
+        "texto": "Se obtienen veinticuatro extensiones distintas; corresponde a A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

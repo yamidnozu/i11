@@ -1,124 +1,147 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "f(x)=\\frac{5}{x}",
-        "rol": "dato",
-        "nota": "Define la función evaluada en un valor positivo de x.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "A_x=x f(x)",
-        "rol": "dato",
-        "nota": "El área se obtiene multiplicando x por su imagen.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "¿Cuál de las siguientes gráficas corresponde a $A_x$?",
-        "rol": "pide",
-        "nota": "Se identifica la gráfica de la función área.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
-      },
-      {
-        "k": "idea",
-        "texto": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
-      },
-      {
-        "k": "check",
-        "texto": "La gráfica horizontal en y igual a cinco es la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Producto de una variable por una función inversa",
-      "que": "Simplifica el producto que representa el área y reconoce su gráfica para valores positivos.",
-      "plan": [
-        {
-          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
-        },
-        {
-          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
-        },
-        {
-          "t": "La gráfica horizontal en y igual a cinco es la opción B."
-        }
-      ],
-      "pistas": [
-        "La función asigna a x el valor cinco dividido entre x.",
-        "El rectángulo tiene base x y altura f(x)."
-      ],
-      "clave": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x.",
+      "clave": "El producto $x(5/x)$ es constante e igual a cinco.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, el área no crece con x; el producto x por cinco dividido entre x es constante."
+          "p": "Pero la expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
           "t": "Opción C",
-          "p": "Pero, una curva creciente no representa el valor constante del producto."
+          "p": "Pero una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
         },
         {
           "t": "Opción D",
-          "p": "Pero, el área no disminuye con x; el producto permanece constante."
+          "p": "Pero la función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         }
-      ]
+      ],
+      "pistas": [
+        "Calcula el área de cada rectángulo multiplicando la base $x$ por la altura dada por la curva $f(x) = 5/x$.",
+        "Observa que $A(x) = x \\cdot (5/x) = 5$, lo que demuestra que el área es constante e independiente de $x$."
+      ],
+      "plan": [
+        {
+          "t": "Sustituye la función que da la altura en la fórmula del área."
+        },
+        {
+          "t": "Cancela los factores $x$ y $1/x$."
+        },
+        {
+          "t": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
+        }
+      ],
+      "que": "Determina cómo varía el área del rectángulo al cambiar la abscisa del punto.",
+      "tema": "Producto de funciones y gráfica de área"
     },
     "guion": {
       "1": [
         {
-          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
+          "t": "¿Qué ocurre con el producto de la base $x$ y la altura $5/x$?"
         },
         {
-          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
+          "t": "La $x$ se cancela con el denominador; queda cinco."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta es la opción B: Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
+          "t": "La gráfica es horizontal en cinco. La respuesta es B."
         }
       ],
       "2": [
         {
+          "t": "Sustituye $f(x)=5/x$ en la expresión del área."
+        },
+        {
+          "t": "El resultado es $A_x=5$ para todo valor positivo de $x$."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, el área no crece con x; el producto x por cinco dividido entre x es constante."
+          "t": "La opción A: La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, una curva creciente no representa el valor constante del producto."
+          "t": "La opción C: Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, el área no disminuye con x; el producto permanece constante."
+          "t": "La opción D: La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         },
         {
           "a": "o:B:ok",
-          "t": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
+          "t": "A y C crecen; D decrece. La opción B conserva el área."
         }
       ],
       "3": [
         {
-          "t": "Sustituye la función dada en la expresión del área: multiplica x por cinco dividido entre x."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La base del rectángulo es $x$ y su altura es $5/x$."
         },
         {
-          "t": "Para todo valor positivo de x, se cancela x con el denominador y el área queda constante, igual a cinco."
+          "a": "p:1",
+          "t": "Su producto es $x(5/x)=5$, independiente de la posición del punto."
         },
         {
-          "t": "La gráfica horizontal en y igual a cinco es la opción B."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Una función constante se representa con una recta horizontal en $y=5$."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A y C aumentan y D disminuye; no representan el área constante."
         },
         {
           "a": "o:B:ok",
-          "t": "Al sustituir, el área es x por cinco dividido entre x. Para cualquier x positivo, se cancela x y queda cinco. Por eso la gráfica del área es una recta horizontal en cinco, para valores positivos de x."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "gráfica de la función",
+        "nota": "La altura del rectángulo corresponde a esta función.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "expresión $A_x=x f(x)$",
+        "nota": "El área es el producto de la base y la altura.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "gráficas corresponde a $A_x$",
+        "nota": "Busca la gráfica de una función constante.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Sustituye la función que da la altura en la fórmula del área.",
+        "titulo": "Sustituye la función que da la altura en la fórmula del área."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$A_x=x(5/x)=5$"
+        ],
+        "nota": "Cancela los factores $x$ y $1/x$.",
+        "titulo": "Cancela los factores $x$ y $1/x$."
+      },
+      {
+        "k": "check",
+        "texto": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

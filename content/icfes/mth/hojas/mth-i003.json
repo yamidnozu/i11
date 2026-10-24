@@ -1,55 +1,159 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "140 estudiantes", "rol": "dato", "nota": "Es la cantidad total que debe poder asistir.", "campo": "Cantidad de estudiantes" },
-      { "frag": "menor precio posible", "rol": "pide", "nota": "Hay que comparar el costo total de combinaciones que admitan a todos.", "campo": "Criterio de elección" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Compara combinaciones que sí admitan al grupo", "texto": "Las franjas elegidas tienen cupos suficientes, pero eso no demuestra que su costo total sea el menor." },
-      { "k": "calc", "titulo": "Calcula y compara el costo", "lineas": ["$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$", "$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"], "nota": "La segunda combinación usa las franjas uno, dos y cuatro. Sus cupos permiten ubicar a todo el grupo y el total es menor." },
-      { "k": "check", "texto": "La respuesta es B: reemplazar la franja tres por la dos reduce el costo total y todavía permite asistir a todos." }
-    ],
     "enfoque": {
-      "tema": "Optimización con cupos y precios",
-      "que": "Compara el costo total de dos combinaciones que permiten ubicar a todo el grupo; tener cupos suficientes no garantiza pagar lo mínimo.",
-      "pistas": ["Revisa los cupos y precios de cada franja en la tabla.", "Comprueba el costo total de una combinación alternativa viable."],
       "clave": "Las franjas uno, tres y cuatro cuestan $5.950.000. Con las franjas uno, dos y cuatro caben todos y el costo baja a $5.650.000.",
       "no": [
-        { "t": "Opción A", "p": "Suma los cupos y confirma que alcanzan. Pero esa suma no compara el precio con otra combinación viable." },
-        { "t": "Opción C", "p": "Observa que la franja uno es la más económica. Pero el grupo también necesita otras franjas y debe compararse el costo total." },
-        { "t": "Opción D", "p": "Se fija en que la franja tres es más costosa. Pero hay que mostrar una combinación alternativa que admita al grupo; las franjas uno, dos y cuatro sí lo hacen." }
+        {
+          "t": "Opción A",
+          "p": "Pero la suma de cupos es 140, pero eso solo prueba que todos caben; no que el costo sea mínimo."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero incluir la franja de menor precio no basta: hay que comparar el costo total de una combinación viable."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero que una franja tenga un precio mayor no explica por sí solo si la elección total es óptima; al cambiar la franja 3 por la 2 se reduce el costo y aún caben todos."
+        }
+      ],
+      "pistas": [
+        "Revisa los cupos y precios de cada franja en la tabla.",
+        "Comprueba el costo total de una combinación alternativa viable."
       ],
       "plan": [
-        { "t": "Verifica que la combinación elegida tenga cupos suficientes." },
-        { "t": "Calcula el costo total de esa combinación.", "eq": ["$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$"] },
-        { "t": "Prueba otra combinación viable y compara los totales.", "eq": ["$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"] }
-      ]
+        {
+          "t": "Verifica que la combinación elegida tenga cupos suficientes."
+        },
+        {
+          "eq": [
+            "$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$"
+          ],
+          "t": "Calcula el costo total de esa combinación."
+        },
+        {
+          "eq": [
+            "$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"
+          ],
+          "t": "Prueba otra combinación viable y compara los totales."
+        }
+      ],
+      "que": "Compara el costo total de dos combinaciones que permiten ubicar a todo el grupo; tener cupos suficientes no garantiza pagar lo mínimo.",
+      "tema": "Optimización con cupos y precios"
     },
     "guion": {
       "1": [
-        { "t": "¿Qué debe cumplir una combinación de franjas para que el grupo pueda asistir?", "a": "m:140 estudiantes" },
-        { "t": "Además de tener cupos suficientes, comparemos cuánto cuesta cada combinación." },
-        { "t": "Las franjas uno, dos y cuatro admiten al grupo y cuestan menos. La respuesta es B.", "a": "o:B:ok" }
+        {
+          "a": "m:140 estudiantes",
+          "t": "¿Qué debe cumplir una combinación de franjas para que el grupo pueda asistir?"
+        },
+        {
+          "t": "Además de tener cupos suficientes, comparemos cuánto cuesta cada combinación."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "Las franjas uno, dos y cuatro admiten al grupo y cuestan menos. La respuesta es B."
+        }
       ],
       "2": [
-        { "t": "Primero verifica los cupos y después compara el costo total.", "a": "m:menor precio posible" },
-        { "t": "Las franjas uno, tres y cuatro cuestan $5.950.000. Al usar las franjas uno, dos y cuatro, los cupos permiten ubicar a todo el grupo y el costo baja a $5.650.000." },
-        { "t": "La opción A solo comprueba la cantidad de cupos; no demuestra que el precio sea mínimo.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción C menciona la franja más económica, pero no compara el costo total de combinaciones viables.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D señala el precio de una franja, pero no compara una combinación completa; las franjas uno, dos y cuatro sí admiten al grupo y cuestan menos.", "a": "o:D:no", "k": "err" },
-        { "t": "Por eso la respuesta es B: cambiar la franja tres por la dos permite pagar menos.", "a": "o:B:ok" }
+        {
+          "a": "m:menor precio posible",
+          "t": "Primero verifica los cupos y después compara el costo total."
+        },
+        {
+          "t": "Las franjas uno, tres y cuatro cuestan $5.950.000. Al usar las franjas uno, dos y cuatro, los cupos permiten ubicar a todo el grupo y el costo baja a $5.650.000."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A solo comprueba la cantidad de cupos; no demuestra que el precio sea mínimo."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C menciona la franja más económica, pero no compara el costo total de combinaciones viables."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D señala el precio de una franja, pero no compara una combinación completa; las franjas uno, dos y cuatro sí admiten al grupo y cuestan menos."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "Por eso la respuesta es B: cambiar la franja tres por la dos permite pagar menos."
+        }
       ],
       "3": [
-        { "t": "Compruebo que la combinación alternativa tenga cupos para el grupo: $50 + 40 + 50 = 140$.", "a": "p:0", "k": "ana" },
-        { "t": "Calculo el costo de la elección inicial: $50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$. Para la alternativa, asigno cincuenta personas a la franja uno, cuarenta a la dos y cincuenta a la cuatro: $50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$.", "a": "p:1" },
-        { "t": "La alternativa cumple los cupos y reduce el total en $300.000$. Entonces la elección inicial no garantiza el menor precio.", "a": "p:2", "k": "contra" },
-        { "t": "La opción A confunde cupos suficientes con costo mínimo.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción C no compara una combinación completa.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D señala un precio alto, pero la prueba decisiva es comparar una alternativa que sí cumpla los cupos.", "a": "o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Compruebo que la combinación alternativa tenga cupos para el grupo: $50 + 40 + 50 = 140$."
+        },
+        {
+          "a": "p:1",
+          "t": "Calculo el costo de la elección inicial: $50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$. Para la alternativa, asigno cincuenta personas a la franja uno, cuarenta a la dos y cincuenta a la cuatro: $50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "La alternativa cumple los cupos y reduce el total en $300.000$. Entonces la elección inicial no garantiza el menor precio."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A confunde cupos suficientes con costo mínimo."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no compara una combinación completa."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D señala un precio alto, pero la prueba decisiva es comparar una alternativa que sí cumpla los cupos."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Cantidad de estudiantes",
+        "frag": "140 estudiantes",
+        "nota": "Es la cantidad total que debe poder asistir.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Criterio de elección",
+        "frag": "menor precio posible",
+        "nota": "Hay que comparar el costo total de combinaciones que admitan a todos.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Las franjas elegidas tienen cupos suficientes, pero eso no demuestra que su costo total sea el menor.",
+        "titulo": "Compara combinaciones que sí admitan al grupo"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$50 × 35.000 + 30 × 50.000 + 60 × 45.000 = 5.950.000$",
+          "$50 × 35.000 + 40 × 40.000 + 50 × 45.000 = 5.650.000$"
+        ],
+        "nota": "La segunda combinación usa las franjas uno, dos y cuatro. Sus cupos permiten ubicar a todo el grupo y el total es menor.",
+        "titulo": "Calcula y compara el costo"
+      },
+      {
+        "k": "check",
+        "texto": "La respuesta es B: reemplazar la franja tres por la dos reduce el costo total y todavía permite asistir a todos."
+      }
+    ]
+  },
+  "revisar": []
 }

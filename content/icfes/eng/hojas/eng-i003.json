@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Many girls wear this when they don't want to wear trousers.",
-        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la descripción",
-        "texto": "Fíjate en {{Many girls wear this when they don't want to wear trousers.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la palabra",
-        "texto": "{{skirt}} significa falda y coincide con la descripción: esta pista indica la prenda que se usa en lugar de los pantalones."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que {{skirt}} nombra la prenda o el accesorio que corresponde a la característica descrita."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{skirt}} significa falda y coincide con la descripción: esta pista indica la prenda que se usa en lugar de los pantalones.",
       "clave": "{{skirt}} significa falda y coincide con la descripción: esta pista indica la prenda que se usa en lugar de los pantalones.",
-      "pistas": [
-        "Fíjate en {{Many girls wear this when they don't want to wear trousers.}}.",
-        "Compara la característica con el significado de cada palabra."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         },
         {
           "t": "Opción B",
-          "p": "{{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         },
         {
           "t": "Opción C",
-          "p": "{{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         },
         {
           "t": "Opción D",
-          "p": "{{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         },
         {
           "t": "Opción F",
-          "p": "{{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         },
         {
           "t": "Opción G",
-          "p": "{{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+          "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
         }
+      ],
+      "pistas": [
+        "Look for the female clothing item worn on the lower body instead of trousers.",
+        "Choose {{skirt}} among the clothing choices."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ]
+      ],
+      "que": "{{skirt}} significa falda y coincide con la descripción: esta pista indica la prenda que se usa en lugar de los pantalones.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es {{skirt}}; vuelve a comprobarla con la descripción."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Many girls wear this when they don't want to wear trousers.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Many girls wear this when they don't want to wear trousers.}}.",
+        "titulo": "Lee la descripción"
+      },
+      {
+        "k": "idea",
+        "texto": "{{skirt}} significa falda y coincide con la descripción: esta pista indica la prenda que se usa en lugar de los pantalones.",
+        "titulo": "Relaciona la palabra"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{skirt}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ]
+  },
+  "revisar": []
 }

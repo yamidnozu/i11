@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "She could not get oil paints because she",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{She could not get oil paints because she}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
       "clave": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
-      "pistas": [
-        "Localiza {{She could not get oil paints because she}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
+          "p": "Pero el motivo no fue el idioma, sino que a sus siete años sus padres consideraban que era muy pequeña para pinturas al óleo."
         },
         {
           "t": "Opción C",
-          "p": "El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
+          "p": "Pero ver televisión no era la causa por la que no le permitieran tener pinturas al óleo."
         }
+      ],
+      "pistas": [
+        "Find the reason why the art store or parents refused oil paints to the child.",
+        "Identify that her age was considered too young for using toxic oil solvents."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{was too young.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "She could not get oil paints because she",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{She could not get oil paints because she}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

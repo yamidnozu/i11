@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "títulos podría ser el más adecuado",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Elige el título que abarque la tesis, no solo un artista o una postura extrema."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción C recoge el tema general: cómo se representa la belleza en el arte."
-      }
-    ],
     "enfoque": {
-      "tema": "Elegir un título que sintetice una tesis",
-      "que": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte».",
-      "pistas": [
-        "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo.",
-        "Elige el título que abarque la tesis, no solo un artista o una postura extrema."
-      ],
       "clave": "La opción C recoge el tema general: cómo se representa la belleza en el arte.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El autor no defiende el mal gusto; cuestiona que se rechacen obras por sus temas poco agradables."
+          "p": "Pero el autor no defiende el mal gusto; cuestiona que se rechacen obras por sus temas poco agradables."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero El texto no propone que el arte sea un modelo para la realidad; analiza cómo representa temas bellos y no bellos."
+          "p": "Pero el texto no propone que el arte sea un modelo para la realidad; analiza cómo representa temas bellos y no bellos."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Menciona a tres pintores como ejemplos, pero no presenta sus nombres como el tema central."
+          "p": "Pero menciona a tres pintores como ejemplos, pero no presenta sus nombres como el tema central."
         }
+      ],
+      "pistas": [
+        "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo.",
+        "Elige el título que abarque la tesis, no solo un artista o una postura extrema."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte».",
+      "tema": "Elegir un título que sintetice una tesis"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «títulos podría ser el más adecuado» orienta la lectura.",
-          "a": "m:títulos podría ser el más adecuado"
+          "a": "m:títulos podría ser el más adecuado",
+          "t": "La expresión «títulos podría ser el más adecuado» orienta la lectura."
         },
         {
-          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte».",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte»."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte».",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte»."
         },
         {
-          "t": "Opción A: El autor no defiende el mal gusto; cuestiona que se rechacen obras por sus temas poco agradables. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El autor no defiende el mal gusto; cuestiona que se rechacen obras por sus temas poco agradables. La descartamos."
         },
         {
-          "t": "Opción B: El texto no propone que el arte sea un modelo para la realidad; analiza cómo representa temas bellos y no bellos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El texto no propone que el arte sea un modelo para la realidad; analiza cómo representa temas bellos y no bellos. La descartamos."
         },
         {
-          "t": "Opción D: Menciona a tres pintores como ejemplos, pero no presenta sus nombres como el tema central. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Menciona a tres pintores como ejemplos, pero no presenta sus nombres como el tema central. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo."
         },
         {
-          "t": "Elige el título que abarque la tesis, no solo un artista o una postura extrema.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige el título que abarque la tesis, no solo un artista o una postura extrema."
         },
         {
-          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte».",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto sostiene que la belleza de una obra no depende únicamente de que su tema sea bonito. Compara artistas y temas para explicar distintas formas de representar la belleza. El título más amplio es «La representación de la belleza en el arte»."
         },
         {
-          "t": "La opción C recoge el tema general: cómo se representa la belleza en el arte.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C recoge el tema general: cómo se representa la belleza en el arte."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "títulos podría ser el más adecuado",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume la idea que conecta los ejemplos de Rubens, Durero y Murillo.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige el título que abarque la tesis, no solo un artista o una postura extrema.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción C recoge el tema general: cómo se representa la belleza en el arte.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

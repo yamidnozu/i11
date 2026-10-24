@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "propósito general tiene el autor",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Elige la opción que conecte el ejemplo con esa conclusión."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer la función de un relato en un argumento",
-      "que": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
-      "pistas": [
-        "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
-        "Elige la opción que conecte el ejemplo con esa conclusión."
-      ],
       "clave": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias."
+          "p": "Pero el autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente."
+          "p": "Pero el relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general."
+          "p": "Pero la conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general."
         }
+      ],
+      "pistas": [
+        "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+        "Elige la opción que conecte el ejemplo con esa conclusión."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+      "tema": "Reconocer la función de un relato en un argumento"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «propósito general tiene el autor» orienta la lectura.",
-          "a": "m:propósito general tiene el autor"
+          "a": "m:propósito general tiene el autor",
+          "t": "La expresión «propósito general tiene el autor» orienta la lectura."
         },
         {
-          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
         },
         {
-          "t": "Opción A: El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias. La descartamos."
         },
         {
-          "t": "Opción C: El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente. La descartamos."
         },
         {
-          "t": "Opción D: La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
         },
         {
-          "t": "Elige la opción que conecte el ejemplo con esa conclusión.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige la opción que conecte el ejemplo con esa conclusión."
         },
         {
-          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
         },
         {
-          "t": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "propósito general tiene el autor",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige la opción que conecte el ejemplo con esa conclusión.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

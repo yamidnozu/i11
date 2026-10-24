@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La gráfica representa los datos obtenidos por el estudiante.",
-        "rol": "dato",
-        "nota": "El texto o la figura aporta la evidencia necesaria.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿cuál explica la gráfica obtenida por el estudiante?",
-        "rol": "pide",
-        "nota": "La pregunta indica la conclusión que debes seleccionar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción D respete la evidencia y el principio científico del enunciado."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar la energía potencial con la altura del vagón en distintos momentos.",
-      "que": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo.",
+      "clave": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero a pone el vagón alto en {{1}} y bajo en {{2}}: invierte la secuencia; la gráfica muestra energía baja en {{1}} y la mayor altura en {{2}}."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero b mantiene el vagón abajo hasta {{3}} y solo sube en {{4}}; la gráfica ya alcanza su valor máximo en {{2}}, no al final."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero c asciende hasta la cima en {{2}}, pero luego sigue descendiendo en {{3}} y {{4}}: no repite un nivel bajo en {{3}} ni termina en una plataforma intermedia en {{4}}."
+        }
+      ],
+      "pistas": [
+        "La gráfica representa los datos obtenidos por el estudiante.",
+        "La gráfica indica una posición baja en el primer instante, una altura alta en el segundo instante, otra posición baja en el tercer instante y una altura intermedia en el cuarto instante. El modelo D reproduce esa secuencia."
+      ],
       "plan": [
         {
           "t": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
@@ -44,25 +32,8 @@
           "t": "Selecciona la opción D y comprueba la relación descrita."
         }
       ],
-      "pistas": [
-        "La gráfica representa los datos obtenidos por el estudiante.",
-        "La gráfica indica una posición baja en el primer instante, una altura alta en el segundo instante, otra posición baja en el tercer instante y una altura intermedia en el cuarto instante. El modelo D reproduce esa secuencia."
-      ],
-      "clave": "La gráfica indica una posición baja en primer instante, una altura alta en segundo instante, otra posición baja en tercer instante y una altura intermedia en cuarto instante. El modelo D reproduce esa secuencia.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Pero, a pone el vagón alto en t{{1}} y bajo en t{{2}}: invierte la secuencia; la gráfica muestra energía baja en t{{1}} y la mayor altura en t{{2}}."
-        },
-        {
-          "t": "Opción B",
-          "p": "Pero, b mantiene el vagón abajo hasta t{{3}} y solo sube en t{{4}}; la gráfica ya alcanza su valor máximo en t{{2}}, no al final."
-        },
-        {
-          "t": "Opción C",
-          "p": "Pero, c asciende hasta la cima en t{{2}}, pero luego sigue descendiendo en t{{3}} y t{{4}}: no repite un nivel bajo en t{{3}} ni termina en una plataforma intermedia en t{{4}}."
-        }
-      ]
+      "que": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo.",
+      "tema": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta queda sustentada en los datos del problema."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "La gráfica representa los datos obtenidos por el estudiante.",
+        "nota": "El texto o la figura aporta la evidencia necesaria.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿cuál explica la gráfica obtenida por el estudiante?",
+        "nota": "La pregunta indica la conclusión que debes seleccionar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la energía potencial con la altura del vagón en distintos momentos."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara la secuencia de alturas del gráfico con las posiciones del vagón en cada modelo."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D respete la evidencia y el principio científico del enunciado."
+      }
+    ]
+  },
+  "revisar": []
 }

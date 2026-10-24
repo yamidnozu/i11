@@ -1,150 +1,140 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "escuela",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «por qué es errónea» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "1,70;1,80"
-        ],
-        "nota": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: por qué es errónea",
-      "que": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
-      "pistas": [
-        "Fíjate en «por qué es errónea».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
+      "clave": "Un mismo promedio puede corresponder a distribuciones distintas alrededor del umbral de $1,80$ m.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero el promedio no permite afirmar que todas las personas estén por debajo de $1,80$ m ni que deban aceptarse exactamente otras dieciséis."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero aunque el promedio no determina los grupos, no es necesario reemplazarlo por el máximo o el mínimo: se requiere conocer cada estatura."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero agregar estudiantes de $1,80$ m no garantiza igualar los grupos; además, esa estatura pertenece a la piscina profunda."
         }
+      ],
+      "pistas": [
+        "Recuerda que el promedio aritmético solo mide la suma total de las estaturas dividida entre dieciséis, no la distribución individual de los alumnos.",
+        "Deduce por qué un promedio de un metro con setenta centímetros no impide que la mitad de los nadadores supere un metro con ochenta si las estaturas restantes son bajas."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Distingue el promedio del conteo de estudiantes a cada lado del umbral."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "1,70;1,80"
-          ]
+          "t": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D."
         }
-      ]
+      ],
+      "que": "Explica por qué el promedio de estaturas no determina cuántas personas quedan en cada piscina.",
+      "tema": "Límite de la información que aporta un promedio"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿El promedio dice cuántas estaturas individuales superan el umbral?"
         },
         {
-          "t": "La frase «por qué es errónea» orienta la estrategia.",
-          "a": "m:escuela"
+          "t": "No; solo resume la suma dividida por el número de estudiantes."
         },
         {
-          "t": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Por eso no permite asegurar que las piscinas tengan cantidades distintas. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "El umbral clasifica a cada persona; el promedio no reemplaza esa clasificación."
         },
         {
-          "t": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
-          "a": "p:1"
+          "t": "Distintas listas de estaturas pueden tener el mismo promedio y diferentes conteos por grupo."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A y C afirman conteos sin datos; B propone una medida que no basta. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El promedio $1,70$ m fija una suma total, pero no cada estatura."
         },
         {
-          "t": "El promedio solo informa la suma total dividida entre el número de estudiantes. No indica cuántos están por debajo o por encima de $1,80$ metros; distribuciones distintas pueden tener el mismo promedio.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Sin las estaturas individuales, no se conoce cuántas están por debajo o desde $1,80$ m."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Así, la conclusión del director no se sigue del promedio."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C no resuelven esa falta de información."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "promedio de estatura de las 16 personas es 1,70 m",
+        "nota": "El promedio no muestra la distribución individual.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "igualar la cantidad de personas en las dos piscinas",
+        "nota": "Evalúa si el promedio basta para garantizar grupos iguales.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue el promedio del conteo de estudiantes a cada lado del umbral.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Un promedio de $1,70$ m puede surgir con distintos conteos"
+        ],
+        "titulo": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m."
+      },
+      {
+        "k": "check",
+        "texto": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

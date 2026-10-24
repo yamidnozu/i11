@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "These are for your feet.",
-        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la descripción",
-        "texto": "Fíjate en {{These are for your feet.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la palabra",
-        "texto": "{{socks}} significa medias y coincide con la descripción: esta pista indica cubrir los pies."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que {{socks}} nombra la prenda o el accesorio que corresponde a la característica descrita."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{socks}} significa medias y coincide con la descripción: esta pista indica cubrir los pies.",
       "clave": "{{socks}} significa medias y coincide con la descripción: esta pista indica cubrir los pies.",
-      "pistas": [
-        "Fíjate en {{These are for your feet.}}.",
-        "Compara la característica con el significado de cada palabra."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies."
         },
         {
           "t": "Opción B",
-          "p": "{{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies."
         },
         {
           "t": "Opción C",
-          "p": "{{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies."
         },
         {
           "t": "Opción D",
-          "p": "{{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies."
         },
         {
           "t": "Opción E",
-          "p": "{{skirt}} significa falda; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a cubrir los pies."
         },
         {
           "t": "Opción G",
-          "p": "{{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
+          "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
         }
+      ],
+      "pistas": [
+        "Identify the garment worn directly on the {{feet}} inside shoes.",
+        "Select {{socks}} from the footwear and accessory options."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ]
+      ],
+      "que": "{{socks}} significa medias y coincide con la descripción: esta pista indica cubrir los pies.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es {{socks}}; vuelve a comprobarla con la descripción."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "These are for your feet.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{These are for your feet.}}.",
+        "titulo": "Lee la descripción"
+      },
+      {
+        "k": "idea",
+        "texto": "{{socks}} significa medias y coincide con la descripción: esta pista indica cubrir los pies.",
+        "titulo": "Relaciona la palabra"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{socks}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ]
+  },
+  "revisar": []
 }

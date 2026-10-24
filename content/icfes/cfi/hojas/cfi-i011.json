@@ -1,130 +1,149 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "muestra de 100 lápices",
-        "rol": "dato",
-        "nota": "La frecuencia observada se convierte en porcentaje sobre cien.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "longitud de los mismos",
-        "rol": "dato",
-        "nota": "La tabla organiza las frecuencias por longitud.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "margen de error del control de calidad es del 3%",
-        "rol": "dato",
-        "nota": "El margen se suma y se resta a la estimación de la muestra.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "porcentaje correspondiente a los lápices producidos que miden 150 mm",
-        "rol": "pide",
-        "nota": "Se solicita el intervalo compatible con la muestra.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
-      },
-      {
-        "k": "idea",
-        "texto": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
-      },
-      {
-        "k": "check",
-        "texto": "El intervalo es $13\\%$ a $19\\%$, opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar un margen de error",
-      "que": "Convierte una frecuencia muestral en porcentaje y construye el intervalo sumando y restando el margen de error.",
-      "plan": [
-        {
-          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
-        },
-        {
-          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
-        },
-        {
-          "t": "El intervalo es $13\\%$ a $19\\%$, opción B."
-        }
-      ],
-      "pistas": [
-        "La muestra contiene $16$ lápices de $150$ mm entre $100$.",
-        "El margen de error es de $3$ puntos porcentuales."
-      ],
-      "clave": "La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B.",
+      "clave": "La muestra da $16\\%$; al sumar y restar tres puntos se obtiene de $13\\%$ a $19\\%$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, Los extremos no están a tres puntos del porcentaje estimado."
+          "p": "Pero el intervalo no está centrado en dieciséis por ciento y no aplica el margen de tres puntos. Pero la muestra registra dieciséis por ciento."
         },
         {
           "t": "Opción C",
-          "p": "Pero, La opción no representa el intervalo completo de $16\\%\\pm3$ puntos porcentuales."
+          "p": "Pero su intervalo no incluye todos los valores dentro de tres puntos de dieciséis. Pero el límite inferior es trece por ciento."
         },
         {
           "t": "Opción D",
-          "p": "Pero, Los extremos no se centran en $16\\%$ ni aplican el margen indicado."
+          "p": "Pero mezcla el porcentaje observado con el conteo de lápices de longitud ciento cincuenta y uno. Pero solo se pide la longitud de ciento cincuenta milímetros."
         }
-      ]
+      ],
+      "pistas": [
+        "Aplica el margen de error del $\\pm 3\\%$ a la proporción muestral de lápices que cumplen con la medida estándar de 150 mm.",
+        "Determina el intervalo de tolerancia dentro del cual se ubica con certeza la proporción de lápices conformes."
+      ],
+      "plan": [
+        {
+          "t": "Lee cuántos lápices de la muestra miden ciento cincuenta milímetros."
+        },
+        {
+          "t": "Convierte el conteo en porcentaje y aplica el margen."
+        },
+        {
+          "t": "El intervalo va de trece a diecinueve por ciento; corresponde a B."
+        }
+      ],
+      "que": "Calcula el intervalo de porcentajes compatible con la muestra y su margen de error.",
+      "tema": "Porcentaje y margen de error"
     },
     "guion": {
       "1": [
         {
-          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
+          "t": "¿Cuántos de los cien lápices miden ciento cincuenta milímetros?"
         },
         {
-          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
+          "t": "Dieciséis; eso representa dieciséis por ciento. Con el margen, el intervalo se extiende tres puntos a cada lado."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta es la opción B: La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B."
+          "t": "De trece a diecinueve por ciento: B."
         }
       ],
       "2": [
         {
+          "t": "La fila de ciento cincuenta milímetros contiene dieciséis lápices de cien."
+        },
+        {
+          "t": "El porcentaje observado es dieciséis. Resta y suma tres puntos: trece y diecinueve."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, Los extremos no están a tres puntos del porcentaje estimado."
+          "t": "La opción A: El intervalo no está centrado en dieciséis por ciento y no aplica el margen de tres puntos. Pero la muestra registra dieciséis por ciento."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, La opción no representa el intervalo completo de $16\\%\\pm3$ puntos porcentuales."
+          "t": "La opción C: Su intervalo no incluye todos los valores dentro de tres puntos de dieciséis. Pero el límite inferior es trece por ciento."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, Los extremos no se centran en $16\\%$ ni aplican el margen indicado."
+          "t": "La opción D: Mezcla el porcentaje observado con el conteo de lápices de longitud ciento cincuenta y uno. Pero solo se pide la longitud de ciento cincuenta milímetros."
         },
         {
           "a": "o:B:ok",
-          "t": "La muestra tiene $16$ lápices de $150$ mm, es decir, $16\\%$. Con un margen de error de $3$ puntos porcentuales, el intervalo va de $13\\%$ a $19\\%$, opción B."
+          "t": "A no queda centrada en dieciséis; C y D no aplican el margen indicado. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Ubica en la tabla los lápices de $150$ mm: son $16$ de la muestra."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Dieciséis de cien lápices miden ciento cincuenta milímetros, así que la muestra representa dieciséis por ciento."
         },
         {
-          "t": "La muestra estima $16\\%$; aplica el margen de error de $3$ puntos por arriba y por abajo."
+          "a": "p:1",
+          "t": "El margen de tres puntos produce un límite inferior de trece y uno superior de diecinueve por ciento."
         },
         {
-          "t": "El intervalo es $13\\%$ a $19\\%$, opción B."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Ese intervalo incluye los porcentajes compatibles con el control."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D dan límites incorrectos o confunden la fila de longitud."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B queda respaldada por los datos y el procedimiento."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "muestra de 100 lápices",
+        "nota": "El conteo de la muestra equivale directamente a porcentaje.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "margen de error del control de calidad es del",
+        "nota": "Se suma y se resta al porcentaje observado.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "miden 150 mm está entre",
+        "nota": "Busca el intervalo para esa longitud específica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee cuántos lápices de la muestra miden ciento cincuenta milímetros.",
+        "titulo": "Lee cuántos lápices de la muestra miden ciento cincuenta milímetros."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$16/100=16\\%$",
+          "$16\\%-3\\%=13\\%$",
+          "$16\\%+3\\%=19\\%$"
+        ],
+        "nota": "Convierte el conteo en porcentaje y aplica el margen.",
+        "titulo": "Convierte el conteo en porcentaje y aplica el margen."
+      },
+      {
+        "k": "check",
+        "texto": "El intervalo va de trece a diecinueve por ciento; corresponde a B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

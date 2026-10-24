@@ -1,128 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "calcular el interés total del crédito de Ángela",
-        "rol": "pide",
-        "nota": "Se identifica qué procesos obtienen el costo adicional total.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "si se pagara con la modalidad II",
-        "rol": "dato",
-        "nota": "La modalidad fija doce cuotas con un recargo total del veinte por ciento.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
-      },
-      {
-        "k": "idea",
-        "texto": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
-      },
-      {
-        "k": "idea",
-        "texto": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
-      },
-      {
-        "k": "check",
-        "texto": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
-      }
-    ],
     "enfoque": {
-      "tema": "Calcular el interés total de un crédito",
-      "que": "Determina qué procedimientos calculan el pago adicional total de una modalidad de crédito.",
-      "plan": [
-        {
-          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
-        },
-        {
-          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
-        },
-        {
-          "t": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
-        },
-        {
-          "t": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
-        }
-      ],
-      "pistas": [
-        "El recargo total de la modalidad dos es el veinte por ciento del capital.",
-        "El interés total también se calcula restando el capital al total de cuotas."
-      ],
-      "clave": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres.",
+      "clave": "El interés es el veinte por ciento del capital; también se obtiene restando el capital a la suma de las doce cuotas.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, el proceso uno sí calcula el recargo total, y también lo obtiene el proceso tres."
+          "p": "Pero el proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
         },
         {
           "t": "Opción B",
-          "p": "Pero, el proceso dos multiplica por doce el recargo total en vez de sumarlo una sola vez."
+          "p": "Pero multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
         },
         {
           "t": "Opción D",
-          "p": "Pero, incluye el proceso dos, que repite el recargo total doce veces; el proceso uno sí es válido."
+          "p": "Pero el proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
         }
-      ]
+      ],
+      "pistas": [
+        "Observa que al disminuir el saldo del crédito en $50.000$ cada mes, los intereses bajan progresivamente.",
+        "Suma los intereses decrecientes mes a mes para calcular el costo financiero total del préstamo bancario."
+      ],
+      "plan": [
+        {
+          "t": "Compara cada proceso con la definición de interés total."
+        },
+        {
+          "t": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
+        },
+        {
+          "t": "Los procesos uno y tres son válidos; la respuesta es C."
+        }
+      ],
+      "que": "Identifica los procesos que calculan el valor pagado por encima del capital.",
+      "tema": "Interés total a partir de cuotas"
     },
     "guion": {
       "1": [
         {
-          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
+          "t": "¿Qué cantidad se paga por encima de los seis millones?"
         },
         {
-          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
+          "t": "La modalidad II agrega el veinte por ciento del capital. También se puede restar el capital al total de las cuotas."
         },
         {
           "a": "o:C:ok",
-          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
+          "t": "Son los procesos uno y tres; la respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "El veinte por ciento de seis millones es el interés total, no el interés de cada cuota."
+        },
+        {
+          "t": "Al sumar las doce cuotas y restar el capital también queda ese interés."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, "
+          "t": "La opción A: El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, El proceso dos multiplica el recargo por doce, aunque ese veinte por ciento ya corresponde al total de intereses."
+          "t": "La opción B: Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, El proceso dos cuenta doce veces el recargo; el proceso tres sí calcula el interés total."
+          "t": "La opción D: El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
         },
         {
           "a": "o:C:ok",
-          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
+          "t": "El proceso dos lo multiplica por doce otra vez; A y B omiten un proceso correcto. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Calcula el recargo total de la modalidad dos: veinte por ciento de seis millones equivale a un millón doscientos mil."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La modalidad II suma al capital un veinte por ciento y divide el total en doce cuotas iguales."
         },
         {
-          "t": "La cuota es siete millones doscientos mil divididos entre doce, es decir, seiscientos mil."
+          "a": "p:1",
+          "t": "El proceso uno calcula directamente el excedente; el proceso tres lo recupera desde el pago total."
         },
         {
-          "t": "El proceso tres resta el capital al total pagado: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. El proceso dos repite doce veces el recargo y no sirve."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Ambos procesos dan el mismo interés total."
         },
         {
-          "t": "Los procesos uno y tres calculan el interés total; corresponde a la opción C."
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "El proceso dos multiplica un interés global por doce y por eso no es válido."
         },
         {
           "a": "o:C:ok",
-          "t": "En la modalidad dos, el recargo total es el veinte por ciento de seis millones, es decir, un millón doscientos mil. También se obtiene al sumar las doce cuotas y restar el capital: doce cuotas de seiscientos mil menos seis millones equivalen a un millón doscientos mil. Por eso sirven los procesos uno y tres."
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "El interés total de un crédito",
+        "nota": "Es el valor pagado adicional al capital.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "Proceso 1",
+        "nota": "Calcula directamente el veinte por ciento del capital.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "Proceso 3",
+        "nota": "Resta el capital de la suma de las cuotas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "Cuál(es) de los siguientes procesos",
+        "nota": "Selecciona todos los procedimientos válidos.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara cada proceso con la definición de interés total.",
+        "titulo": "Compara cada proceso con la definición de interés total."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Interés total: $0,20×6.000.000$",
+          "Total pagado menos capital: $12×cuota-6.000.000$"
+        ],
+        "nota": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas.",
+        "titulo": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
+      },
+      {
+        "k": "check",
+        "texto": "Los procesos uno y tres son válidos; la respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

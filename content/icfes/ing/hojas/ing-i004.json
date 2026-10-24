@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Some people need them to see well.",
-        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la descripción",
-        "texto": "Fíjate en {{Some people need them to see well.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la palabra",
-        "texto": "{{glasses}} significa gafas y coincide con la descripción: esta pista indica ayudar a ver mejor."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que {{glasses}} nombra la prenda o el accesorio que corresponde a la característica descrita."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{glasses}} significa gafas y coincide con la descripción: esta pista indica ayudar a ver mejor.",
       "clave": "{{glasses}} significa gafas y coincide con la descripción: esta pista indica ayudar a ver mejor.",
-      "pistas": [
-        "Fíjate en {{Some people need them to see well.}}.",
-        "Compara la característica con el significado de cada palabra."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "{{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor."
         },
         {
           "t": "Opción C",
-          "p": "{{hat}} significa sombrero; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{hat}} significa sombrero; esa palabra no corresponde a ayudar a ver mejor."
         },
         {
           "t": "Opción D",
-          "p": "{{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor."
         },
         {
           "t": "Opción E",
-          "p": "{{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor."
         },
         {
           "t": "Opción F",
-          "p": "{{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor."
         },
         {
           "t": "Opción G",
-          "p": "{{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor."
+          "p": "Pero {{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor."
         }
+      ],
+      "pistas": [
+        "Notice the plural pronoun {{them}} and the phrase {{to see well}}.",
+        "Select {{glasses}} as the optical lenses worn on the face to correct eyesight."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ]
+      ],
+      "que": "{{glasses}} significa gafas y coincide con la descripción: esta pista indica ayudar a ver mejor.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es {{glasses}}; vuelve a comprobarla con la descripción."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Some people need them to see well.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Some people need them to see well.}}.",
+        "titulo": "Lee la descripción"
+      },
+      {
+        "k": "idea",
+        "texto": "{{glasses}} significa gafas y coincide con la descripción: esta pista indica ayudar a ver mejor.",
+        "titulo": "Relaciona la palabra"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{glasses}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ]
+  },
+  "revisar": []
 }

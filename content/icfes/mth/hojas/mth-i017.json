@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "un cuadrado de lado $k$",
-        "rol": "dato",
-        "nota": "El área del cuadrado es $k^2$.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "un semicírculo",
-        "rol": "dato",
-        "nota": "Su diámetro coincide con el lado del cuadrado.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "procedimiento es",
-        "rol": "pide",
-        "nota": "Verifica las operaciones y la justificación.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Identifica el diámetro del semicírculo en la figura."
-      },
-      {
-        "k": "calc",
-        "titulo": "Calcula el radio, el área semicircular y la suma con el cuadrado.",
-        "lineas": [
-          "$r=k/2$",
-          "$A_s=π(k/2)^2/2=πk^2/8$",
-          "$A_f=k^2+πk^2/8$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El procedimiento usa el radio $k/2$ y obtiene el área total correcta; la respuesta es B."
-      }
-    ],
     "enfoque": {
-      "tema": "Área de un semicírculo unido a un cuadrado",
-      "que": "Verifica el radio del semicírculo y la fórmula de su área.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El radio es $k/2$; al tomar la mitad del área circular se obtiene $πk^2/8$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Omite el factor de mitad del semicírculo y no eleva correctamente el radio al cuadrado. Pero A omite el cuadrado del radio y la mitad."
+          "p": "Pero el área del semicírculo lleva el factor de mitad y el cuadrado del radio; no es $πk^2/2$."
         },
         {
           "t": "Opción C",
-          "p": "El procedimiento suma el área completa del semicírculo, no una cuarta parte. Pero C no coincide con el paso mostrado."
+          "p": "Pero la fórmula final suma el área completa del semicírculo, no una cuarta parte de ella."
         },
         {
           "t": "Opción D",
-          "p": "Esa expresión corresponde al círculo completo de radio $k/2$, antes de dividir por dos. Pero D la atribuye al semicírculo."
+          "p": "Pero la expresión $πk^2/4$ es el área del círculo de radio $k/2$, antes de tomar la mitad."
         }
+      ],
+      "pistas": [
+        "Descompón la figura sombreada en figuras geométricas simples: el cuadrado central de lado $k$ y los triángulos adosados.",
+        "Suma las áreas de los componentes para obtener la expresión algebraica simplificada del área total."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "El procedimiento usa el radio $k/2$ y obtiene el área total correcta; la respuesta es B."
         }
-      ]
+      ],
+      "que": "Verifica el radio del semicírculo y la fórmula de su área.",
+      "tema": "Área de un semicírculo unido a un cuadrado"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "El radio es la mitad del diámetro, es decir, $k/2$."
         },
         {
-          "t": "La opción B reconoce ese radio y el procedimiento es correcto.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B reconoce ese radio y el procedimiento es correcto."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "El semicírculo tiene área $π(k/2)^2/2=πk^2/8$; al sumarla a $k^2$ se obtiene el área total."
         },
         {
-          "t": "La opción A: Omite el factor de mitad del semicírculo y no eleva correctamente el radio al cuadrado. Pero A omite el cuadrado del radio y la mitad.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Omite el factor de mitad del semicírculo y no eleva correctamente el radio al cuadrado. Pero A omite el cuadrado del radio y la mitad."
         },
         {
-          "t": "La opción C: El procedimiento suma el área completa del semicírculo, no una cuarta parte. Pero C no coincide con el paso mostrado.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: El procedimiento suma el área completa del semicírculo, no una cuarta parte. Pero C no coincide con el paso mostrado."
         },
         {
-          "t": "La opción D: Esa expresión corresponde al círculo completo de radio $k/2$, antes de dividir por dos. Pero D la atribuye al semicírculo.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Esa expresión corresponde al círculo completo de radio $k/2$, antes de dividir por dos. Pero D la atribuye al semicírculo."
         },
         {
-          "t": "A y D usan fórmulas equivocadas; C cambia la suma indicada. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A y D usan fórmulas equivocadas; C cambia la suma indicada. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "El cuadrado aporta $k^2$ y el semicírculo tiene radio $k/2$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El cuadrado aporta $k^2$ y el semicírculo tiene radio $k/2$."
         },
         {
-          "t": "Su área es $πk^2/8$, por lo que $A_f=k^2+πk^2/8$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Su área es $πk^2/8$, por lo que $A_f=k^2+πk^2/8$."
         },
         {
-          "t": "Los pasos del procedimiento coinciden con el cálculo; B es la justificación correcta.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Los pasos del procedimiento coinciden con el cálculo; B es la justificación correcta."
         },
         {
-          "t": "A, C y D contradicen el radio o la operación aplicada.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D contradicen el radio o la operación aplicada."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "un cuadrado de lado $k$",
+        "nota": "El área del cuadrado es $k^2$.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "un semicírculo",
+        "nota": "Su diámetro coincide con el lado del cuadrado.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "procedimiento es",
+        "nota": "Verifica las operaciones y la justificación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica el diámetro del semicírculo en la figura.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$r=k/2$",
+          "$A_s=π(k/2)^2/2=πk^2/8$",
+          "$A_f=k^2+πk^2/8$"
+        ],
+        "titulo": "Calcula el radio, el área semicircular y la suma con el cuadrado."
+      },
+      {
+        "k": "check",
+        "texto": "El procedimiento usa el radio $k/2$ y obtiene el área total correcta; la respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

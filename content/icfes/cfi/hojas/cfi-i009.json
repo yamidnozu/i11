@@ -1,128 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "el valor de la cuota disminuirá $50.000 en cada mes",
-        "rol": "afirmación",
-        "nota": "Se verifica el cambio mensual de la cuota.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "La afirmación es correcta porque",
-        "rol": "pide",
-        "nota": "Hay que justificar el cambio usando la modalidad uno.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
-      },
-      {
-        "k": "idea",
-        "texto": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
-      },
-      {
-        "k": "idea",
-        "texto": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
-      },
-      {
-        "k": "check",
-        "texto": "La explicación corresponde a la opción B y a la afirmación del enunciado."
-      }
-    ],
     "enfoque": {
-      "tema": "Cambio de cuota con abonos e intereses",
-      "que": "Explica por qué disminuye el valor de una cuota cuando el abono al capital es fijo y el interés depende del saldo.",
-      "plan": [
-        {
-          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
-        },
-        {
-          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
-        },
-        {
-          "t": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
-        },
-        {
-          "t": "La explicación corresponde a la opción B y a la afirmación del enunciado."
-        }
-      ],
-      "pistas": [
-        "El abono mensual al capital se obtiene al dividir el crédito entre seis.",
-        "El interés mensual corresponde al cinco por ciento del saldo."
-      ],
-      "clave": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad.",
+      "clave": "El abono al capital es un millón por mes; el cinco por ciento de ese saldo reducido es cincuenta mil.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, el interés baja cincuenta mil cada mes; ese cambio no hace que el interés total sea trescientos mil ni explica por sí solo el cambio mensual de la cuota."
+          "p": "Pero el interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción C",
-          "p": "Pero, el abono al capital se mantiene en un millón; no aumenta cincuenta mil."
+          "p": "Pero el abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción D",
-          "p": "Pero, el abono al capital es fijo, pero el interés baja; la cuota no disminuye por ambos componentes."
+          "p": "Pero el abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado."
         }
-      ]
+      ],
+      "pistas": [
+        "Calcula el costo financiero total sumando el capital prestado más los intereses acumulados en cada modalidad de crédito.",
+        "Compara si abonar a capital en cuotas fijas reduce el saldo sobre el cual se liquidan los intereses mensuales."
+      ],
+      "plan": [
+        {
+          "t": "Separa el abono fijo al capital del interés calculado sobre el saldo."
+        },
+        {
+          "t": "Halla el abono mensual y el cambio del interés."
+        },
+        {
+          "t": "El abono es fijo y el interés cae cincuenta mil por mes; la cuota baja esa misma cantidad. La respuesta es B."
+        }
+      ],
+      "que": "Explica por qué el valor total de la cuota disminuye cincuenta mil pesos por mes.",
+      "tema": "Cuota de crédito con abonos constantes e interés sobre saldo"
     },
     "guion": {
       "1": [
         {
-          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
+          "t": "¿Cuánto capital se abona cada mes si seis pagos iguales cubren seis millones?"
         },
         {
-          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
+          "t": "Un millón. El cinco por ciento de ese valor son cincuenta mil pesos."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta es la opción B: En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
+          "t": "El interés baja esa cantidad en cada periodo; por eso la cuota B disminuye así."
         }
       ],
       "2": [
         {
+          "t": "Divide los seis millones entre seis: cada mes se abona un millón al capital."
+        },
+        {
+          "t": "Al bajar el saldo en un millón, el interés, que es cinco por ciento del saldo, cae cincuenta mil."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, el interés baja cincuenta mil cada mes; ese cambio no hace que el interés total sea trescientos mil ni explica por sí solo el cambio mensual de la cuota."
+          "t": "La opción A: El interés total no explica por sí solo el cambio de cada cuota; se calcula sobre saldos que disminuyen. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, el abono al capital se mantiene en un millón; no aumenta cincuenta mil."
+          "t": "La opción C: El abono al capital permanece fijo en un millón mensual; no aumenta. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, el abono al capital es fijo, pero el interés baja; la cuota no disminuye por ambos componentes."
+          "t": "La opción D: El abono al capital es constante, así que no baja cincuenta mil. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:B:ok",
-          "t": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
+          "t": "A no calcula el cambio por periodo; C y D dicen que cambia el abono, que es fijo. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "En la modalidad uno, calcula el abono fijo al capital: seis millones divididos entre seis equivalen a un millón por mes."
+          "a": "p:0",
+          "k": "ana",
+          "t": "El capital se reduce en un millón con cada abono mensual."
         },
         {
-          "t": "Como el saldo baja un millón cada mes, el interés del cinco por ciento baja en cincuenta mil."
+          "a": "p:1",
+          "t": "El interés del cinco por ciento sobre el saldo disminuye en cincuenta mil por cada millón que baja."
         },
         {
-          "t": "El abono al capital queda igual y el interés baja; por eso la cuota disminuye cincuenta mil cada mes."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Como el abono al capital no cambia, la cuota total baja cincuenta mil."
         },
         {
-          "t": "La explicación corresponde a la opción B y a la afirmación del enunciado."
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D confunden el interés total o variable con el abono fijo."
         },
         {
           "a": "o:B:ok",
-          "t": "En la modalidad uno, el abono mensual al capital es constante: seis millones divididos entre seis equivalen a un millón. Al bajar el saldo en esa cantidad cada mes, el interés del cinco por ciento baja en cincuenta mil. Así disminuye el valor de la cuota en esa misma cantidad."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "el valor de la cuota disminuirá",
+        "nota": "El cambio mensual de la cuota depende del interés sobre el saldo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "modalidad I",
+        "nota": "Se abona el capital en seis cuotas iguales y se cobra interés sobre el saldo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "La afirmación es correcta porque",
+        "nota": "Explica el cambio en el valor de la cuota.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el abono fijo al capital del interés calculado sobre el saldo.",
+        "titulo": "Separa el abono fijo al capital del interés calculado sobre el saldo."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$6.000.000/6=1.000.000$",
+          "$5\\%×1.000.000=50.000$"
+        ],
+        "nota": "Halla el abono mensual y el cambio del interés.",
+        "titulo": "Halla el abono mensual y el cambio del interés."
+      },
+      {
+        "k": "check",
+        "texto": "El abono es fijo y el interés cae cincuenta mil por mes; la cuota baja esa misma cantidad. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

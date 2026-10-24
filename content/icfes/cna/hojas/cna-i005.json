@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "síntesis de proteínas",
-        "rol": "pide",
-        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la relación",
-        "texto": "Ubica el error en la transcripción del ADN al ARN mensajero."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Relaciona la secuencia del mensaje con los codones y los aminoácidos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Comprueba qué consecuencia afecta la secuencia de la proteína."
-      }
-    ],
     "enfoque": {
-      "tema": "Cómo un error de transcripción afecta la síntesis de proteínas",
-      "que": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
-      "pistas": [
-        "Sigue el recorrido de la información desde el ADN hasta la proteína.",
-        "Un error en el mensaje puede cambiar los codones que se traducen."
-      ],
       "clave": "Una copia alterada puede hacer que se unan aminoácidos que no corresponden a la secuencia original.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al considerar solo un dato. Pero La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN."
+          "p": "Pero la transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible al considerar solo un dato. Pero El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN."
+          "p": "Pero el ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al considerar solo un dato. Pero Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada."
+          "p": "Pero los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada."
         }
+      ],
+      "pistas": [
+        "Sigue el recorrido de la información desde el ADN hasta la proteína.",
+        "Un error en el mensaje puede cambiar los codones que se traducen."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Comprueba qué consecuencia afecta la secuencia de la proteína."
         }
-      ]
+      ],
+      "que": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
+      "tema": "Cómo un error de transcripción afecta la síntesis de proteínas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "La frase «síntesis de proteínas» da una pista sobre qué debemos observar.",
-          "a": "m:síntesis de proteínas"
+          "a": "m:síntesis de proteínas",
+          "t": "La frase «síntesis de proteínas» da una pista sobre qué debemos observar."
         },
         {
-          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original."
         },
         {
-          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descartamos."
         },
         {
-          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descartamos."
         },
         {
-          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "Primero identifico qué relación científica explica la pregunta.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué relación científica explica la pregunta."
         },
         {
-          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si la información del ADN se copia de manera incorrecta al ARN mensajero, pueden cambiar sus codones. Durante la traducción, esto puede incorporar aminoácidos distintos a los que correspondían a la secuencia original."
         },
         {
-          "t": "Comprueba qué consecuencia afecta la secuencia de la proteína.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba qué consecuencia afecta la secuencia de la proteína."
         },
         {
-          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La transcripción no convierte el ARN mensajero en una molécula doble; el ADN sirve de molde para producir una cadena de ARN. La descarto."
         },
         {
-          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El ribosoma realiza la traducción en el citoplasma; no necesita entrar al núcleo para leer el ADN. La descarto."
         },
         {
-          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Los aminoácidos pueden unirse a sus ARN de transferencia aunque la copia del mensaje tenga un error; el problema es qué aminoácidos especifica la secuencia alterada. La descarto."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "síntesis de proteínas",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el error en la transcripción del ADN al ARN mensajero.",
+        "titulo": "Identifica la relación"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la secuencia del mensaje con los codones y los aminoácidos.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba qué consecuencia afecta la secuencia de la proteína.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

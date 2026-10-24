@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Where was the painter from?",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{Where was the painter from?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa.",
       "clave": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa.",
-      "pistas": [
-        "Localiza {{Where was the painter from?}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "La pista del pasaje identifica al pintor como {{French}}."
+          "p": "Pero el texto no menciona Irlanda como país de origen del pintor."
         },
         {
           "t": "Opción B",
-          "p": "La pista del pasaje identifica al pintor como {{French}}."
+          "p": "Pero el pasaje no señala que el pintor proviniera de España."
         }
+      ],
+      "pistas": [
+        "Scan the biographical passage for the painter's nationality or country of origin.",
+        "Identify {{France}} as the native country stated in the opening paragraph."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{France}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Where was the painter from?",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Where was the painter from?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "El pasaje dice que el hombre era {{French}}; {{Ireland}} es el lugar de origen de la narradora y {{Spain}} es el país del programa.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

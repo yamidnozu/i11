@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "autor de la infografía tiene como propósito",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa qué problema se destaca con cifras y comparaciones."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir el propósito de una infografía informativa",
-      "que": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
-      "pistas": [
-        "Observa qué problema se destaca con cifras y comparaciones.",
-        "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
-      ],
       "clave": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La infografía no recomienda una modalidad específica de transporte."
+          "p": "Pero la infografía no recomienda una modalidad específica de transporte."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar."
+          "p": "Pero no busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia."
+          "p": "Pero no se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia."
         }
+      ],
+      "pistas": [
+        "Observa qué problema se destaca con cifras y comparaciones.",
+        "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
+      "tema": "Inferir el propósito de una infografía informativa"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «autor de la infografía tiene como propósito» orienta la lectura.",
-          "a": "m:autor de la infografía tiene como propósito"
+          "a": "m:autor de la infografía tiene como propósito",
+          "t": "La expresión «autor de la infografía tiene como propósito» orienta la lectura."
         },
         {
-          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
         },
         {
-          "t": "Opción B: La infografía no recomienda una modalidad específica de transporte. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La infografía no recomienda una modalidad específica de transporte. La descartamos."
         },
         {
-          "t": "Opción C: No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: No busca conmover mediante relatos de accidentes; presenta datos para informar y sensibilizar. La descartamos."
         },
         {
-          "t": "Opción D: No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No se limita a conducir sobrio y despacio; aborda la mortalidad vial de forma más amplia. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa qué problema se destaca con cifras y comparaciones.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa qué problema se destaca con cifras y comparaciones."
         },
         {
-          "t": "Elige el propósito que abarca la información sin añadir consejos que no aparecen.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige el propósito que abarca la información sin añadir consejos que no aparecen."
         },
         {
-          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La infografía presenta el número de muertes, las tasas por región e ingresos y la proporción de usuarios vulnerables de la vía. La selección de esos datos busca hacer visible la gravedad de los traumatismos causados por el tránsito y sensibilizar al público sobre sus riesgos."
         },
         {
-          "t": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "autor de la infografía tiene como propósito",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa qué problema se destaca con cifras y comparaciones.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige el propósito que abarca la información sin añadir consejos que no aparecen.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción A resume el propósito de sensibilizar sobre los riesgos de morir en un accidente de tránsito.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

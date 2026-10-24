@@ -1,150 +1,142 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "expresión",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «cuántas veces» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "10^3=1.000"
-        ],
-        "nota": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: cuántas veces",
-      "que": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-      "pistas": [
-        "Fíjate en «cuántas veces».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
+      "clave": "La igualdad indica que el cociente es diez al cubo, es decir, mil. Por tanto, la intensidad física equivale a mil veces la intensidad mínima.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero una milésima representaría que I es menor que {{I_0}}, lo opuesto a la razón mil."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero un tercio confunde una potencia de diez con una fracción aritmética."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero tres veces confunde el exponente 3 con el valor de la potencia mil."
         }
+      ],
+      "pistas": [
+        "Interpreta la ecuación logarítmica de sonoridad: la razón entre la intensidad sonora y el umbral de audición equivale a diez elevado al cubo.",
+        "Calcula el valor numérico de diez al cubo igual a mil: la intensidad física del sonido es mil veces la intensidad mínima perceptible."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "10^3=1.000"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "La igualdad indica que el cociente entre intensidades es diez al cubo, es decir, mil veces la intensidad mínima.",
+      "tema": "Matemáticas: escala logarítmica de sonoridad"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
+          "t": "¿Qué número representa diez elevado a la tercera potencia?",
           "a": "leer"
         },
         {
-          "t": "La frase «cuántas veces» orienta la estrategia.",
-          "a": "m:expresión"
+          "t": "Diez por diez por diez da mil.",
+          "a": "p:0"
         },
         {
-          "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La intensidad es mil veces la mínima. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
+          "t": "La expresión ya presenta el cociente entre las dos intensidades.",
           "a": "leer"
         },
         {
-          "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-          "a": "p:1"
+          "t": "Evalúa diez al cubo: el resultado es mil.",
+          "a": "p:0"
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone una milésima, el recíproco de la razón. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone un tercio, confundiendo la potencia con una fracción. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C confunde el exponente tres con el valor total de la potencia. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Confirmamos que la intensidad es mil veces la mínima: opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La razón buscada es el cociente de intensidades."
         },
         {
-          "t": "La ecuación establece directamente que $I/I_0=10^3=1.000$. La intensidad es mil veces la intensidad mínima percibida.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La igualdad indica que vale diez al cubo, que es mil."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la intensidad es mil veces el umbral mínimo."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C no evalúan correctamente la potencia."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "expresión",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Interpretar la relación de sonoridad dada en la ecuación.",
+        "titulo": "Relación de intensidades"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$10^3 = 1.000$"
+        ],
+        "nota": "Diez al cubo equivale a mil.",
+        "titulo": "Cálculo de la potencia"
+      },
+      {
+        "k": "check",
+        "texto": "La intensidad física es mil veces la intensidad mínima percibida.",
+        "titulo": "Comprobación"
+      }
+    ]
+  },
+  "revisar": []
 }

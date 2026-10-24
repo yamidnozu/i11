@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "descripción de los indios de Ibagué hecha por Aguado",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Busca el marco narrativo en que se inserta la descripción."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Diferencia la campaña de conquista de la fundación posterior de una ciudad."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La mención de las campañas de Galarza ubica la descripción en la etapa de conquista."
-      }
-    ],
     "enfoque": {
-      "tema": "Ubicar un episodio histórico con pistas explícitas",
-      "que": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización.",
-      "pistas": [
-        "Busca el marco narrativo en que se inserta la descripción.",
-        "Diferencia la campaña de conquista de la fundación posterior de una ciudad."
-      ],
       "clave": "La mención de las campañas de Galarza ubica la descripción en la etapa de conquista.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero No corresponde a un periodo anterior a la llegada española; el texto habla de soldados y colonizadores."
+          "p": "Pero no corresponde a un periodo anterior a la llegada española; el texto habla de soldados y colonizadores."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La descripción aparece en un relato de campaña, no durante el proceso posterior de fundación de Ibagué."
+          "p": "Pero la descripción aparece en un relato de campaña, no durante el proceso posterior de fundación de Ibagué."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Sí hay referencias cronológicas y narrativas: el texto ubica a Aguado entre los siglos de la colonización y menciona una campaña."
+          "p": "Pero sí hay referencias cronológicas y narrativas: el texto ubica a Aguado entre los siglos de la colonización y menciona una campaña."
         }
+      ],
+      "pistas": [
+        "Busca el marco narrativo en que se inserta la descripción.",
+        "Diferencia la campaña de conquista de la fundación posterior de una ciudad."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización.",
+      "tema": "Ubicar un episodio histórico con pistas explícitas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «descripción de los indios de Ibagué hecha por Aguado» orienta la lectura.",
-          "a": "m:descripción de los indios de Ibagué hecha por Aguado"
+          "a": "m:descripción de los indios de Ibagué hecha por Aguado",
+          "t": "La expresión «descripción de los indios de Ibagué hecha por Aguado» orienta la lectura."
         },
         {
-          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización."
         },
         {
-          "t": "Opción A: No corresponde a un periodo anterior a la llegada española; el texto habla de soldados y colonizadores. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: No corresponde a un periodo anterior a la llegada española; el texto habla de soldados y colonizadores. La descartamos."
         },
         {
-          "t": "Opción B: La descripción aparece en un relato de campaña, no durante el proceso posterior de fundación de Ibagué. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La descripción aparece en un relato de campaña, no durante el proceso posterior de fundación de Ibagué. La descartamos."
         },
         {
-          "t": "Opción D: Sí hay referencias cronológicas y narrativas: el texto ubica a Aguado entre los siglos de la colonización y menciona una campaña. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Sí hay referencias cronológicas y narrativas: el texto ubica a Aguado entre los siglos de la colonización y menciona una campaña. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Busca el marco narrativo en que se inserta la descripción.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Busca el marco narrativo en que se inserta la descripción."
         },
         {
-          "t": "Diferencia la campaña de conquista de la fundación posterior de una ciudad.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Diferencia la campaña de conquista de la fundación posterior de una ciudad."
         },
         {
-          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto sitúa la descripción dentro del relato de las campañas del capitán Galarza y sus soldados. Por eso corresponde a la etapa de conquista, durante las campañas militares de colonización."
         },
         {
-          "t": "La mención de las campañas de Galarza ubica la descripción en la etapa de conquista.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La mención de las campañas de Galarza ubica la descripción en la etapa de conquista."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "descripción de los indios de Ibagué hecha por Aguado",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Busca el marco narrativo en que se inserta la descripción.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Diferencia la campaña de conquista de la fundación posterior de una ciudad.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La mención de las campañas de Galarza ubica la descripción en la etapa de conquista.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

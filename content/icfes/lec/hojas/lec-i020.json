@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "otro título podría ajustarse al texto",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Identifica qué problema analiza el texto más allá de la cita histórica."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Elige un título que incluya al autor y la representación construida del indígena."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena."
-      }
-    ],
     "enfoque": {
-      "tema": "Proponer un título que abarque la tesis del texto",
-      "que": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
-      "pistas": [
-        "Identifica qué problema analiza el texto más allá de la cita histórica.",
-        "Elige un título que incluya al autor y la representación construida del indígena."
-      ],
       "clave": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis."
+          "p": "Pero la oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual."
+          "p": "Pero el canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena."
+          "p": "Pero no se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena."
         }
+      ],
+      "pistas": [
+        "Identifica qué problema analiza el texto más allá de la cita histórica.",
+        "Elige un título que incluya al autor y la representación construida del indígena."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
+      "tema": "Proponer un título que abarque la tesis del texto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «otro título podría ajustarse al texto» orienta la lectura.",
-          "a": "m:otro título podría ajustarse al texto"
+          "a": "m:otro título podría ajustarse al texto",
+          "t": "La expresión «otro título podría ajustarse al texto» orienta la lectura."
         },
         {
-          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas."
         },
         {
-          "t": "Opción A: La oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La oposición entre civilización y barbarie aparece como parte de la discusión, pero no nombra el eje específico del análisis. La descartamos."
         },
         {
-          "t": "Opción C: El canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El canibalismo es una característica atribuida en una cita; el texto no trata principalmente de un ritual. La descartamos."
         },
         {
-          "t": "Opción D: No se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No se desarrolla la influencia de autores clásicos, sino la construcción textual e ideológica del indígena. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Identifica qué problema analiza el texto más allá de la cita histórica.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Identifica qué problema analiza el texto más allá de la cita histórica."
         },
         {
-          "t": "Elige un título que incluya al autor y la representación construida del indígena.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige un título que incluya al autor y la representación construida del indígena."
         },
         {
-          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto explica que Aguado construye una imagen retórica e ideológica del indígena, no una descripción neutral que sirva como registro fiable. El estudio de Borja permite entender cómo esa representación responde a tradiciones europeas."
         },
         {
-          "t": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "otro título podría ajustarse al texto",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué problema analiza el texto más allá de la cita histórica.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige un título que incluya al autor y la representación construida del indígena.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B recoge el análisis central: Aguado y la construcción retórica del indígena.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

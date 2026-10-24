@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "continuación,",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «afirmación es verdadera» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "24+23+18=65\\%"
-        ],
-        "nota": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: afirmación es verdadera",
-      "que": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
-      "pistas": [
-        "Fíjate en «afirmación es verdadera».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero automóviles, camionetas y camperos representan 18% + 9% + 7% = 34%, que no alcanza la mitad (50%) del parque automotor."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero automóviles, camionetas y microbuses suman 18% + 9% + 23% = 50%, exactamente la mitad y no más de la mitad."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero buses, busetas y camionetas suman 24% + 18% + 9% = 51%, pero la agrupación mayoritaria de transporte público supera con claridad el 65%."
         }
+      ],
+      "pistas": [
+        "Suma los porcentajes correspondientes al transporte público de pasajeros: $24\\% + 23\\% + 18\\% = 65\\%$.",
+        "Compara el sesenta y cinco por ciento obtenido con el treinta y cinco por ciento de automóviles para concluir que la mayor parte son buses, microbuses y busetas."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "24+23+18=65\\%"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
+      "tema": "Matemáticas: afirmación es verdadera"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «afirmación es verdadera» orienta la estrategia.",
-          "a": "m:continuación,"
+          "a": "m:continuación,",
+          "t": "La frase «afirmación es verdadera» orienta la estrategia."
         },
         {
-          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "continuación,",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «afirmación es verdadera» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "24+23+18=65\\%"
+        ],
+        "nota": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
+      }
+    ]
+  },
+  "revisar": []
 }

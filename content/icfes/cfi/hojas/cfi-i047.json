@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "tres de cada cuatro de los fallecidos en accidentes de tránsito son del sexo masculino",
-        "rol": "dato",
-        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "las figuras que acompañan el texto",
-        "rol": "pide",
-        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Identifica qué información aporta la infografía y qué pide la pregunta."
-      },
-      {
-        "k": "idea",
-        "t": "Las figuras muestran de forma visual datos descritos en la infografía, como la proporción de fallecidos por sexo. Su función es ilustrar la información presentada."
-      },
-      {
-        "k": "check",
-        "t": "Comprueba que la opción A se apoya en el contenido y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar el propósito de una infografía",
-      "que": "Relaciona los datos visuales con la afirmación o el contexto que propone la pregunta.",
+      "clave": "Las figuras muestran de forma visual datos descritos en la infografía, como la proporción de fallecidos por sexo. Su función es ilustrar la información presentada.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero las figuras no amplían el análisis ni desarrollan nuevos datos; representan visualmente la información existente."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero no añaden un tema ajeno; se relacionan con los datos que ya se presentan."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero no cuentan casos particulares como ejemplos, sino que representan datos generales."
+        }
+      ],
+      "pistas": [
+        "La infografía trata de muertes en accidentes de tránsito.",
+        "Distingue el contenido explícito de las inferencias sobre su propósito."
+      ],
       "plan": [
         {
           "t": "Identifica qué información aporta la infografía."
@@ -44,25 +32,8 @@
           "t": "Verifica la opción A y descarta las alternativas que exceden la evidencia."
         }
       ],
-      "pistas": [
-        "La infografía trata de muertes en accidentes de tránsito.",
-        "Distingue el contenido explícito de las inferencias sobre su propósito."
-      ],
-      "clave": "Las figuras muestran de forma visual datos descritos en la infografía, como la proporción de fallecidos por sexo. Su función es ilustrar la información presentada.",
-      "no": [
-        {
-          "t": "Opción B",
-          "p": "Las figuras no amplían el análisis ni desarrollan nuevos datos; representan visualmente la información existente."
-        },
-        {
-          "t": "Opción C",
-          "p": "No añaden un tema ajeno; se relacionan con los datos que ya se presentan."
-        },
-        {
-          "t": "Opción D",
-          "p": "No cuentan casos particulares como ejemplos, sino que representan datos generales."
-        }
-      ]
+      "que": "Relaciona los datos visuales con la afirmación o el contexto que propone la pregunta.",
+      "tema": "Interpretar el propósito de una infografía"
     },
     "guion": {
       "1": [
@@ -118,6 +89,36 @@
           "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "tres de cada cuatro de los fallecidos en accidentes de tránsito son del sexo masculino",
+        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "las figuras que acompañan el texto",
+        "nota": "Relaciona esta expresión con el propósito y el contenido visual de la infografía.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Identifica qué información aporta la infografía y qué pide la pregunta."
+      },
+      {
+        "k": "idea",
+        "t": "Las figuras muestran de forma visual datos descritos en la infografía, como la proporción de fallecidos por sexo. Su función es ilustrar la información presentada."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción A se apoya en el contenido y descarta las demás."
+      }
+    ]
+  },
+  "revisar": []
 }

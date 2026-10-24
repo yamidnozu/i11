@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "De esta decisión se puede afirmar",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Compara el nombramiento con las elecciones ordinarias."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Identifica qué derecho pierde el estudiantado si no puede elegir."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C señala la vulneración del derecho estudiantil a participar mediante elecciones."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer una vulneración del derecho a participar",
-      "que": "Nombrar representantes por sus calificaciones elimina la elección ordinaria y deja a los estudiantes sin usar un mecanismo de participación para escoger a quienes los representan. Por eso la decisión vulnera ese derecho.",
+      "clave": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque premiar las calificaciones altas no puede justificar la supresión de los derechos de participación política escolar."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque el impedimento no es la carga horaria académica de las reuniones, sino la vulneración del derecho al sufragio estudiantil."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque imponer representantes a dedo enseña una práctica autoritaria que desvirtúa el aprendizaje de la democracia participativa."
+        }
+      ],
       "pistas": [
         "Compara el nombramiento con las elecciones ordinarias.",
         "Identifica qué derecho pierde el estudiantado si no puede elegir."
       ],
-      "clave": "La opción C señala la vulneración del derecho estudiantil a participar mediante elecciones.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Estimular el rendimiento no reemplaza el derecho de elegir representantes."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El texto no dice que la decisión quite tiempo a las actividades académicas."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Un nombramiento impuesto no promueve la comprensión de la participación democrática."
-        }
-      ],
       "plan": [
         {
-          "t": "Compara el nombramiento con las elecciones ordinarias."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Identifica qué derecho pierde el estudiantado si no puede elegir."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «De esta decisión se puede afirmar» orienta el análisis.",
-          "a": "m:De esta decisión se puede afirmar"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Nombrar representantes por sus calificaciones elimina la elección ordinaria y deja a los estudiantes sin usar un mecanismo de participación para escoger a quienes los representan. Por eso la decisión vulnera ese derecho.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Nombrar representantes por sus calificaciones elimina la elección ordinaria y deja a los estudiantes sin usar un mecanismo de participación para escoger a quienes los representan. Por eso la decisión vulnera ese derecho.",
-          "a": "p:0"
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "Opción A: Estimular el rendimiento no reemplaza el derecho de elegir representantes. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «es importante porque estimula a los estudiantes a que estudien y…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "Opción B: El texto no dice que la decisión quite tiempo a las actividades académicas. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «dificulta la disponibilidad de tiempo para el desarrollo normal de…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "Opción D: Un nombramiento impuesto no promueve la comprensión de la participación democrática. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «promueve en los estudiantes la comprensión de la importancia del…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Compara el nombramiento con las elecciones ordinarias.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "Identifica qué derecho pierde el estudiantado si no puede elegir.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Nombrar representantes por sus calificaciones elimina la elección ordinaria y deja a los estudiantes sin usar un mecanismo de participación para escoger a quienes los representan. Por eso la decisión vulnera ese derecho.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C señala la vulneración del derecho estudiantil a participar mediante elecciones.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El Consejo Académico de un colegio decidió n",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ión se puede afirmar que",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

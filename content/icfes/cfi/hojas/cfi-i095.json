@@ -1,118 +1,119 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "causa grandes pérdidas económicas a los apicultores de todo el mundo",
-        "rol": "dato",
-        "nota": "El enunciado ofrece el contexto científico para resolver el ítem.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "puede resolverse mediante una investigación en el campo de las ciencias naturales?",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes seleccionar o concluir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Distinguir preguntas de ciencias naturales de preguntas económicas."
-      },
-      {
-        "k": "idea",
-        "texto": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción A cumpla el criterio científico planteado."
-      }
-    ],
     "enfoque": {
-      "tema": "Distinguir preguntas de ciencias naturales de preguntas económicas.",
-      "que": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa.",
-      "plan": [
-        {
-          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
-        },
-        {
-          "t": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
-        },
-        {
-          "t": "Selecciona la opción A y comprueba que responda al criterio."
-        }
-      ],
-      "pistas": [
-        "causa grandes pérdidas económicas a los apicultores de todo el mundo",
-        "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
-      ],
-      "clave": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema.",
+      "clave": "La investigación natural puede observar el ciclo de la polilla y su efecto sobre las larvas.",
       "no": [
         {
           "t": "Opción B",
-          "p": "B pregunta por efectos económicos."
+          "p": "Pero es incorrecta porque indaga por el impacto en los ingresos económicos de los apicultores, temática propia de la economía."
         },
         {
           "t": "Opción C",
-          "p": "C se centra en la morfología de las abejas y no en el daño de la polilla."
+          "p": "Pero es incorrecta porque se centra en rasgos anatómicos de las abejas sin abordar la dinámica de infestación de la plaga."
         },
         {
           "t": "Opción D",
-          "p": "D pregunta por el gasto de los apicultores."
+          "p": "Pero es incorrecta porque cuantificar el costo del insecticida es una pregunta de presupuesto financiero y no de biología."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica qué alternativa pregunta por el organismo y su ciclo de vida.",
+        "Separa una pregunta biológica de una económica."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Identifica qué alternativa pregunta por el organismo y su ciclo de vida."
+        },
+        {
+          "t": "Verifica por qué la opción A resuelve la tarea."
+        }
+      ],
+      "que": "Explica comprender que a partir de la investigación científica se construyen explicaciones sobre el mundo natural.",
+      "tema": "Comprender que a partir de la investigación científica se construyen explicaciones sobre el mundo natural."
     },
     "guion": {
       "1": [
         {
-          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
         },
         {
-          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
+          "t": "La etapa del ciclo biológico en que la polilla afecta los panales es una pregunta biológica que puede investigarse. Las otras opciones se centran en costos o economía, o no responden a la problemática."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A se ajusta al criterio."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "La etapa del ciclo biológico en que la polilla afecta los panales es una pregunta biológica que puede investigarse. Las otras opciones se centran en costos o economía, o no responden a la problemática."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "B pregunta por efectos económicos."
+          "t": "La opción B no responde a la relación que solicita el enunciado. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C se centra en la morfología de las abejas y no en el daño de la polilla."
+          "t": "La opción C la economía de los apicultores corresponde a una pregunta económica. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D pregunta por el gasto de los apicultores."
+          "t": "La opción D la morfología de las abejas no identifica cuándo las afecta la polilla. La descartamos."
         },
         {
           "a": "o:A:ok",
-          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
+          "t": "La opción A es la respuesta."
         }
       ],
       "3": [
         {
-          "t": "Distinguir preguntas de ciencias naturales de preguntas económicas."
+          "t": "Identifica qué alternativa pregunta por el organismo y su ciclo de vida."
         },
         {
-          "t": "Elige una pregunta investigable sobre la polilla y el daño biológico que causa."
+          "t": "Separa una pregunta biológica de una económica."
         },
         {
-          "t": "Investigar en qué etapa del ciclo biológico la polilla afecta los panales estudia un proceso natural relacionado directamente con el problema."
+          "t": "La investigación natural puede observar el ciclo de la polilla y su efecto sobre las larvas."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
         },
         {
           "a": "o:A:ok",
-          "t": "La conclusión queda respaldada por la información."
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "económicas",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La etapa del ciclo biológico en que la polilla afecta los panales es una pregunta biológica que puede investigarse. Las otras opciones se centran en costos o economía, o no responden a la problemática.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  },
+  "revisar": []
 }

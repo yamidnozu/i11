@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "velocidad de formación de Z",
-        "rol": "pide",
-        "nota": "Expresión que señala el objeto de análisis.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la evidencia",
-        "texto": "Compara qué reactivo varía en cada ensayo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta la relación",
-        "texto": "Lee cómo cambia la velocidad en cada gráfica."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Distingue el reactivo cuya concentración sí modifica la velocidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar dos gráficas de velocidad de reacción",
-      "que": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
-      "pistas": [
-        "Compara qué reactivo varía en cada ensayo.",
-        "Lee cómo cambia la velocidad en cada gráfica."
-      ],
       "clave": "La velocidad de formación de $Z$ depende de la concentración de $X$, pero no cambia al variar $Y$ en el ensayo.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración."
+          "p": "Pero la gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración."
         },
         {
           "t": "Opción B",
-          "p": "La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos."
+          "p": "Pero la gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos."
         },
         {
           "t": "Opción D",
-          "p": "La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$."
+          "p": "Pero la velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$."
         }
+      ],
+      "pistas": [
+        "Compara qué reactivo varía en cada ensayo.",
+        "Lee cómo cambia la velocidad en cada gráfica."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Distingue el reactivo cuya concentración sí modifica la velocidad."
         }
-      ]
+      ],
+      "que": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
+      "tema": "Interpretar dos gráficas de velocidad de reacción"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "La pregunta se centra en la «velocidad de formación de Z».",
-          "a": "m:velocidad de formación de Z"
+          "a": "m:velocidad de formación de Z",
+          "t": "La pregunta se centra en la «velocidad de formación de Z»."
         },
         {
-          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente."
         },
         {
-          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descartamos."
         },
         {
-          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descartamos."
         },
         {
-          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Primero identifico qué evidencia o relación debo usar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué evidencia o relación debo usar."
         },
         {
-          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al aumentar la concentración de $X$ mientras $Y$ se mantiene constante, aumenta la velocidad de formación de $Z$. En cambio, variar $Y$ con $X$ constante no cambia la velocidad. La evidencia muestra dependencia de $X$ solamente."
         },
         {
-          "t": "Distingue el reactivo cuya concentración sí modifica la velocidad.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Distingue el reactivo cuya concentración sí modifica la velocidad."
         },
         {
-          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La gráfica de $X$ sí muestra que la velocidad cambia cuando cambia su concentración. La descarto."
         },
         {
-          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La gráfica de $Y$ es horizontal, así que los datos no muestran dependencia de ambos reactivos. La descarto."
         },
         {
-          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La velocidad permanece constante al variar $Y$; el cambio se observa al variar $X$. La descarto."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "velocidad de formación de Z",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara qué reactivo varía en cada ensayo.",
+        "titulo": "Identifica la evidencia"
+      },
+      {
+        "k": "idea",
+        "texto": "Lee cómo cambia la velocidad en cada gráfica.",
+        "titulo": "Interpreta la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Distingue el reactivo cuya concentración sí modifica la velocidad.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

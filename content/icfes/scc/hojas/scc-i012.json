@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El alcalde de un municipio, su abogado aseso",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "De acuerdo con el texto anterior, los señalamientos en contra del alcalde obedecen a que los denunciantes",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
+          "p": "Pero es incorrecta porque presupone que la denuncia obedece a envidia o falta de beneficio de los vecinos, ignorando el presunto delito contra la administración."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
+          "p": "Pero es incorrecta porque los habitantes no critican la ausencia de infraestructura, sino la desviación interesada de recursos hacia terrenos del alcalde."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
+          "p": "Pero es incorrecta porque falsea la motivación de los denunciantes presentándolos como opositores a la inversión rural, cuando reprochan el enriquecimiento indebido."
         }
+      ],
+      "pistas": [
+        "Relaciona la compra de los predios con la decisión posterior sobre las obras.",
+        "Distingue una denuncia de interés personal de una crítica general a la inversión rural."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El alcalde de un municipio, su abogado aseso",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De acuerdo con el texto anterior, los señalamientos en contra del alcalde obedecen a que los denunciantes",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

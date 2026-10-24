@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El gobierno decidió construir una represa qu",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "ta situación el gobierno",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «actuó en contra de los derechos de las comunidades indígenas.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
+          "p": "Pero es incorrecta porque el gobierno precisamente evitó vulnerar los derechos indígenas al acoger sus peticiones y rediseñar el trazado de la obra."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «favoreció a la comunidad indígena en contra del interés general.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
+          "p": "Pero es incorrecta porque no se sacrificó el bienestar colectivo: la central hidroeléctrica se construyó y generará energía para toda la nación."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «debió hacer una consulta popular para resolver este problema.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
+          "p": "Pero es incorrecta porque el mecanismo adecuado y constitucionalmente preceptivo en territorios ancestrales es la consulta previa informada, no una consulta popular amplia."
         }
+      ],
+      "pistas": [
+        "Observa si la comunidad fue consultada y participó en el acuerdo.",
+        "Compara el interés general de la represa con el trato dado a la comunidad."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "La opción A plantea «actuó en contra de los derechos de las comunidades indígenas.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «actuó en contra de los derechos de las comunidades indígenas.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "La opción B plantea «favoreció a la comunidad indígena en contra del interés general.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «favoreció a la comunidad indígena en contra del interés general.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "La opción D plantea «debió hacer una consulta popular para resolver este problema.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «debió hacer una consulta popular para resolver este problema.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El gobierno decidió construir una represa qu",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ta situación el gobierno",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

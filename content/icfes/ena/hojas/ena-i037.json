@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "________ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{________ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "{{These}} acompaña al sustantivo plural {{Ethiopian wolves}}."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{These}} acompaña al sustantivo plural {{Ethiopian wolves}}.",
       "clave": "{{These}} acompaña al sustantivo plural {{Ethiopian wolves}}.",
-      "pistas": [
-        "Localiza {{________ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{This}} y {{That}} son determinantes singulares; el sustantivo está en plural."
+          "p": "Pero {{This}} es singular (este), mientras que el sustantivo que sigue está en plural."
         },
         {
           "t": "Opción B",
-          "p": "{{This}} y {{That}} son determinantes singulares; el sustantivo está en plural."
+          "p": "Pero {{That}} es singular (aquel), por lo que no concuerda en número con el sustantivo plural."
         }
+      ],
+      "pistas": [
+        "Select the plural demonstrative determiner {{These}} referring to the wolves discussed.",
+        "Ensure agreement with the plural noun {{Ethiopian wolves}}."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{These}} acompaña al sustantivo plural {{Ethiopian wolves}}.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{These}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "________ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{________ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{These}} acompaña al sustantivo plural {{Ethiopian wolves}}.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

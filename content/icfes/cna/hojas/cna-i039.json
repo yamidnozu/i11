@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cada pico representa una proteína diferente",
-        "rol": "pide",
-        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la información",
-        "texto": "Ubica el pico con la masa molecular indicada."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta el apoyo",
-        "texto": "Lee su posición en el eje del tiempo."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Selecciona el intervalo que contiene ese tiempo."
-      }
-    ],
     "enfoque": {
-      "tema": "Leer el tiempo de detección de una proteína en una gráfica",
-      "que": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
-      "pistas": [
-        "Ubica el pico con la masa molecular indicada.",
-        "Lee su posición en el eje del tiempo."
-      ],
       "clave": "El pico de $120\\,\\mathrm{kDa}$ se ubica entre veinticinco y treinta y cinco minutos.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$."
+          "p": "Pero el intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$."
         },
         {
           "t": "Opción C",
-          "p": "Puede sonar razonable si se ignora una pista. Pero Este intervalo ocurre después del pico señalado en la gráfica."
+          "p": "Pero este intervalo ocurre después del pico señalado en la gráfica."
         },
         {
           "t": "Opción D",
-          "p": "Puede sonar razonable si se ignora una pista. Pero La proteína se detecta antes de los cuarenta y cinco minutos, no después."
+          "p": "Pero la proteína se detecta antes de los cuarenta y cinco minutos, no después."
         }
+      ],
+      "pistas": [
+        "Ubica el pico con la masa molecular indicada.",
+        "Lee su posición en el eje del tiempo."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Selecciona el intervalo que contiene ese tiempo."
         }
-      ]
+      ],
+      "que": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
+      "tema": "Leer el tiempo de detección de una proteína en una gráfica"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La frase «cada pico representa una proteína diferente» orienta lo que debemos observar.",
-          "a": "m:cada pico representa una proteína diferente"
+          "a": "m:cada pico representa una proteína diferente",
+          "t": "La frase «cada pico representa una proteína diferente» orienta lo que debemos observar."
         },
         {
-          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
         },
         {
-          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descartamos."
         },
         {
-          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descartamos."
         },
         {
-          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Primero identifico qué dato o tendencia debo leer.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En la gráfica, el pico etiquetado como proteína de $120\\,\\mathrm{kDa}$ aparece alrededor de los treinta minutos. Ese valor queda en el intervalo de veinticinco a treinta y cinco minutos."
         },
         {
-          "t": "Selecciona el intervalo que contiene ese tiempo.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Selecciona el intervalo que contiene ese tiempo."
         },
         {
-          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El intervalo termina antes del pico correspondiente a $120\\,\\mathrm{kDa}$. La descarto."
         },
         {
-          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Este intervalo ocurre después del pico señalado en la gráfica. La descarto."
         },
         {
-          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La proteína se detecta antes de los cuarenta y cinco minutos, no después. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "cada pico representa una proteína diferente",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el pico con la masa molecular indicada.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Lee su posición en el eje del tiempo.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Selecciona el intervalo que contiene ese tiempo.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

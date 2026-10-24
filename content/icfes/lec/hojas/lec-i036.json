@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "palabra “dote”",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Lee qué elementos se mencionan junto a la palabra."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Elige una expresión que incluya dinero, bienes o tierras."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "«Aporte patrimonial» conserva el sentido de una contribución de dinero, bienes o tierras."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir el significado de una palabra en contexto",
-      "que": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero.",
-      "pistas": [
-        "Lee qué elementos se mencionan junto a la palabra.",
-        "Elige una expresión que incluya dinero, bienes o tierras."
-      ],
       "clave": "«Aporte patrimonial» conserva el sentido de una contribución de dinero, bienes o tierras.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La dote no se limita a los ahorros de la futura esposa."
+          "p": "Pero la dote no se limita a los ahorros de la futura esposa."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero El texto no la define solo como dinero de los familiares."
+          "p": "Pero el texto no la define solo como dinero de los familiares."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Una ceremonia es un evento, no el conjunto de bienes que se aporta."
+          "p": "Pero una ceremonia es un evento, no el conjunto de bienes que se aporta."
         }
+      ],
+      "pistas": [
+        "Lee qué elementos se mencionan junto a la palabra.",
+        "Elige una expresión que incluya dinero, bienes o tierras."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero.",
+      "tema": "Inferir el significado de una palabra en contexto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «palabra “dote”» orienta la lectura.",
-          "a": "m:palabra “dote”"
+          "a": "m:palabra “dote”",
+          "t": "La expresión «palabra “dote”» orienta la lectura."
         },
         {
-          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero."
         },
         {
-          "t": "Opción A: La dote no se limita a los ahorros de la futura esposa. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La dote no se limita a los ahorros de la futura esposa. La descartamos."
         },
         {
-          "t": "Opción B: El texto no la define solo como dinero de los familiares. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El texto no la define solo como dinero de los familiares. La descartamos."
         },
         {
-          "t": "Opción D: Una ceremonia es un evento, no el conjunto de bienes que se aporta. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Una ceremonia es un evento, no el conjunto de bienes que se aporta. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Lee qué elementos se mencionan junto a la palabra.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Lee qué elementos se mencionan junto a la palabra."
         },
         {
-          "t": "Elige una expresión que incluya dinero, bienes o tierras.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige una expresión que incluya dinero, bienes o tierras."
         },
         {
-          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto explica que la dote incluía dinero, bienes o tierras aportados al casarse. En este contexto, «aporte patrimonial» reúne ese sentido sin reducirlo solo a dinero."
         },
         {
-          "t": "«Aporte patrimonial» conserva el sentido de una contribución de dinero, bienes o tierras.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "«Aporte patrimonial» conserva el sentido de una contribución de dinero, bienes o tierras."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "palabra “dote”",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee qué elementos se mencionan junto a la palabra.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige una expresión que incluya dinero, bienes o tierras.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "«Aporte patrimonial» conserva el sentido de una contribución de dinero, bienes o tierras.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

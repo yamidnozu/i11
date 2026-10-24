@@ -1,75 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "El interés total de un crédito",
-        "rol": "dato",
-        "nota": "Es el valor pagado adicional al capital.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "Proceso 1.",
-        "rol": "dato",
-        "nota": "Calcula directamente el veinte por ciento del capital.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "Proceso 3.",
-        "rol": "dato",
-        "nota": "Resta el capital de la suma de las cuotas.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "Cuál(es) de los siguientes procesos",
-        "rol": "pide",
-        "nota": "Selecciona todos los procedimientos válidos.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Compara cada proceso con la definición de interés total.",
-        "texto": "Compara cada proceso con la definición de interés total."
-      },
-      {
-        "k": "calc",
-        "titulo": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas.",
-        "lineas": [
-          "Interés total: $0,20×6.000.000$",
-          "Total pagado menos capital: $12×cuota-6.000.000$"
-        ],
-        "nota": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Los procesos uno y tres son válidos; la respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interés total a partir de cuotas",
-      "que": "Identifica los procesos que calculan el valor pagado por encima del capital.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El interés es el veinte por ciento del capital; también se obtiene restando el capital a la suma de las doce cuotas.",
       "no": [
         {
           "t": "Opción A",
-          "p": "El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
+          "p": "Pero el proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
         },
         {
           "t": "Opción B",
-          "p": "Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
+          "p": "Pero multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
         },
         {
           "t": "Opción D",
-          "p": "El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
+          "p": "Pero el proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
         }
+      ],
+      "pistas": [
+        "Observa que al disminuir el saldo del crédito en $50.000$ cada mes, los intereses bajan progresivamente.",
+        "Suma los intereses decrecientes mes a mes para calcular el costo financiero total del préstamo bancario."
       ],
       "plan": [
         {
@@ -81,7 +31,9 @@
         {
           "t": "Los procesos uno y tres son válidos; la respuesta es C."
         }
-      ]
+      ],
+      "que": "Identifica los procesos que calculan el valor pagado por encima del capital.",
+      "tema": "Interés total a partir de cuotas"
     },
     "guion": {
       "1": [
@@ -92,8 +44,8 @@
           "t": "La modalidad II agrega el veinte por ciento del capital. También se puede restar el capital al total de las cuotas."
         },
         {
-          "t": "Son los procesos uno y tres; la respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Son los procesos uno y tres; la respuesta es C."
         }
       ],
       "2": [
@@ -104,50 +56,99 @@
           "t": "Al sumar las doce cuotas y restar el capital también queda ese interés."
         },
         {
-          "t": "La opción A: El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: El proceso 1 sí calcula el interés, pero el proceso 3 también lo obtiene al restar el capital del total pagado. Pero la pregunta admite ambas formas."
         },
         {
-          "t": "La opción B: Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Multiplicar el veinte por ciento del capital por doce repite el interés total en cada cuota. Pero el interés ya se distribuyó entre las doce cuotas."
         },
         {
-          "t": "La opción D: El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: El proceso 2 cuenta varias veces el interés; el proceso 1 lo calcula correctamente. Pero deben seleccionarse los procesos válidos."
         },
         {
-          "t": "El proceso dos lo multiplica por doce otra vez; A y B omiten un proceso correcto. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El proceso dos lo multiplica por doce otra vez; A y B omiten un proceso correcto. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "La modalidad II suma al capital un veinte por ciento y divide el total en doce cuotas iguales.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La modalidad II suma al capital un veinte por ciento y divide el total en doce cuotas iguales."
         },
         {
-          "t": "El proceso uno calcula directamente el excedente; el proceso tres lo recupera desde el pago total.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El proceso uno calcula directamente el excedente; el proceso tres lo recupera desde el pago total."
         },
         {
-          "t": "Ambos procesos dan el mismo interés total.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Ambos procesos dan el mismo interés total."
         },
         {
-          "t": "El proceso dos multiplica un interés global por doce y por eso no es válido.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "El proceso dos multiplica un interés global por doce y por eso no es válido."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "El interés total de un crédito",
+        "nota": "Es el valor pagado adicional al capital.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "Proceso 1.",
+        "nota": "Calcula directamente el veinte por ciento del capital.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "Proceso 3.",
+        "nota": "Resta el capital de la suma de las cuotas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "Cuál(es) de los siguientes procesos",
+        "nota": "Selecciona todos los procedimientos válidos.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara cada proceso con la definición de interés total.",
+        "titulo": "Compara cada proceso con la definición de interés total."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Interés total: $0,20×6.000.000$",
+          "Total pagado menos capital: $12×cuota-6.000.000$"
+        ],
+        "nota": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas.",
+        "titulo": "La modalidad II distribuye el veinte por ciento adicional entre doce cuotas."
+      },
+      {
+        "k": "check",
+        "texto": "Los procesos uno y tres son válidos; la respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

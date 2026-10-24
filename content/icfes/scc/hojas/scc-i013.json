@@ -6,20 +6,20 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional."
+          "p": "Pero es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional."
         },
         {
           "t": "Opción B",
-          "p": "Pero, es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas."
+          "p": "Pero es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas."
         },
         {
           "t": "Opción C",
-          "p": "Pero, es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa."
+          "p": "Pero es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa."
         }
       ],
       "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
+        "Identifica el propósito de los estados de excepción (guerra exterior, conmoción interior, emergencia económica y ecológica).",
+        "Verifica qué facultades extraordinarias y decretos con fuerza de ley asume temporalmente el presidente para conjurar la crisis."
       ],
       "plan": [
         {
@@ -29,7 +29,7 @@
           "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Concluye por qué la opción D satisface ese criterio."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
       ],
       "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
@@ -44,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "a": "o:D:ok",
-          "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es D."
+          "a": "o:C:ok",
+          "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es C."
         }
       ],
       "2": [
@@ -56,23 +56,23 @@
           "t": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo."
         },
         {
-          "t": "La opción A no corresponde: Es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional.",
+          "t": "La opción A es incorrecta: Es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción B no corresponde: Es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas.",
+          "t": "La opción B es incorrecta: Es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: Es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa.",
+          "t": "La opción C es incorrecta: Es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "La opción D es la que sí responde a la pregunta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
@@ -88,26 +88,16 @@
         {
           "a": "o:D:ok",
           "k": "contra",
-          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La opción A no encaja: Es incorrecta porque el propio fragmento menciona que el presidente queda facultado para modificar partidas del presupuesto nacional.",
-          "a": "o:A:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción B no encaja: Es incorrecta porque la facultad de restringir protestas es un acto de policía y orden público, no la causa estructural de alteración entre ramas.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C no encaja: Es incorrecta porque la captura preventiva administrativa es excepcional, pero la mayor concentración institucional radica en la usurpación de la función legislativa.",
-          "a": "o:C:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
           "a": "o:D:ok",
-          "t": "La respuesta correcta es D."
+          "t": "La respuesta correcta es C."
         }
       ]
     },
@@ -137,9 +127,10 @@
       },
       {
         "k": "check",
-        "texto": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es D.",
+        "texto": "El estado de excepción concentra facultades en el Ejecutivo: el presidente puede expedir decretos con fuerza de ley, función que ordinariamente corresponde al Legislativo. La respuesta es C.",
         "titulo": "Verifica la respuesta"
       }
     ]
-  }
+  },
+  "revisar": []
 }

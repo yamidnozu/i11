@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Women buy ______ 90% of the cards.",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Identifica qué proporción del total de tarjetas se menciona en el pasaje."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "{{almost}} significa casi, así que la frase indica una proporción cercana al noventa por ciento."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{almost}} significa casi, así que la frase indica una proporción cercana al noventa por ciento.",
       "clave": "{{almost}} significa casi, así que la frase indica una proporción cercana al noventa por ciento.",
-      "pistas": [
-        "Localiza la oración que informa qué proporción de tarjetas compran las mujeres.",
-        "Relaciona esa pista con la información que el autor presenta."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "{{only}} significa solamente, {{hardly}} casi no y {{just}} simplemente; no expresan que la proporción sea cercana al noventa por ciento."
+          "p": "Pero {{only}} significa solamente, pero el contexto expresa aproximación cuantitativa (casi todos)."
         },
         {
           "t": "Opción C",
-          "p": "{{only}} significa solamente, {{hardly}} casi no y {{just}} simplemente; no expresan que la proporción sea cercana al noventa por ciento."
+          "p": "Pero {{hardly}} significa difícilmente o casi no, lo cual invertiría el sentido positivo del pasaje."
         },
         {
           "t": "Opción D",
-          "p": "{{only}} significa solamente, {{hardly}} casi no y {{just}} simplemente; no expresan que la proporción sea cercana al noventa por ciento."
+          "p": "Pero {{just}} significa justamente o apenas, y no se combina de este modo para indicar casi todos."
         }
+      ],
+      "pistas": [
+        "Select the approximating adverb {{almost}} modifying the percentage {{90%}}.",
+        "Complete the consumer statistic regarding greeting card purchases."
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{almost}} significa casi, así que la frase indica una proporción cercana al noventa por ciento.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -139,6 +114,32 @@
           "t": "La evidencia respalda {{almost}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Women buy ______ 90% of the cards.",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué proporción del total de tarjetas se menciona en el pasaje.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{almost}} significa casi, así que la frase indica una proporción cercana al noventa por ciento.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

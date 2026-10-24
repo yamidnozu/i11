@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "dimensiones están en conflicto",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Identifica qué actividad genera el problema ambiental."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La situación enfrenta las dimensiones económica y ambiental."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar dimensiones en una situación ambiental",
-      "que": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
+      "clave": "La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque, si bien se suspenden clases, la restricción obedece al impacto directo en la producción de fábricas y vehículos."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque la dimensión cultural no es la variable que motiva las restricciones de emergencia frente a la contaminación."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque la pugna no radica en costumbres o tradiciones sociales, sino en el balance entre rentabilidad industrial y ecología urbana."
+        }
+      ],
       "pistas": [
         "Identifica qué actividad genera el problema ambiental.",
         "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
       ],
-      "clave": "La situación enfrenta las dimensiones económica y ambiental.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Las restricciones escolares son una consecuencia, pero no la tensión principal que explica el texto."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero No se describe un conflicto cultural."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero El texto no enfrenta prácticas culturales con la producción económica."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué actividad genera el problema ambiental."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Relaciona el peso económico de las industrias con la propuesta de reducirlas."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «dimensiones están en conflicto» orienta el análisis.",
-          "a": "m:dimensiones están en conflicto"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
-          "a": "p:0"
+          "t": "La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental."
         },
         {
-          "t": "Opción A: Las restricciones escolares son una consecuencia, pero no la tensión principal que explica el texto. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «La educativa y la ambiental.», Pero no responde al criterio central: La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental."
         },
         {
-          "t": "Opción B: No se describe un conflicto cultural. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «La cultural y la educativa.», Pero no responde al criterio central: La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental."
         },
         {
-          "t": "Opción D: El texto no enfrenta prácticas culturales con la producción económica. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «La cultural y la económica.», Pero no responde al criterio central: La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué actividad genera el problema ambiental.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental."
         },
         {
-          "t": "Relaciona el peso económico de las industrias con la propuesta de reducirlas.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La contaminación afecta la salud y el ambiente, mientras las industrias pesadas aportan una parte importante de la actividad económica. El conflicto descrito enfrenta la continuidad de ese modelo productivo con la reducción de la contaminación.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La situación enfrenta las dimensiones económica y ambiental.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Pekín y otras partes de China sufren de elev",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "En esta situación, ¿cuáles dimensiones están en conflicto?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La reducción de industrias pesadas busca disminuir contaminación, pero afecta la actividad económica; el conflicto enfrenta dimensiones económica y ambiental. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

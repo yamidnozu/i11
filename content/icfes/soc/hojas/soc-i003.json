@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "contiene un prejuicio cuestionable",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Distingue una afirmación respetuosa de una condición que limita derechos."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Pregunta qué idea no demostrada presupone esa condición."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D contiene el prejuicio cuestionable sobre la influencia de la orientación sexual del docente en la de sus estudiantes."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer una suposición prejuiciosa en un argumento",
-      "que": "El rector dice que los profesores homosexuales pueden enseñar solo si controlan su conducta para no afectar la orientación sexual de sus estudiantes. Esa condición presupone, sin justificación, que la orientación de un docente puede cambiar la de sus estudiantes.",
+      "clave": "La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque es una observación demográfica sobre la población mundial que no responde a la acusación discriminatoria de adoctrinamiento."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque formula un llamado ético a la empatía y al amor, pero no desarticula la falsa creencia de que la orientación sexual se contagia."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque expone explicaciones biopsicosociales sobre la sexualidad humana sin abordar el prejuicio educativo concreto del rector."
+        }
+      ],
       "pistas": [
         "Distingue una afirmación respetuosa de una condición que limita derechos.",
         "Pregunta qué idea no demostrada presupone esa condición."
       ],
-      "clave": "La opción D contiene el prejuicio cuestionable sobre la influencia de la orientación sexual del docente en la de sus estudiantes.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Es una afirmación sobre la frecuencia de la homosexualidad en distintos países, no el prejuicio señalado."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Reconoce la dignidad y el respeto que merecen todas las personas."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Describe una explicación sobre el origen de las preferencias, sin condicionar el derecho a enseñar."
-        }
-      ],
       "plan": [
         {
-          "t": "Distingue una afirmación respetuosa de una condición que limita derechos."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Pregunta qué idea no demostrada presupone esa condición."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «contiene un prejuicio cuestionable» orienta el análisis.",
-          "a": "m:contiene un prejuicio cuestionable"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El rector dice que los profesores homosexuales pueden enseñar solo si controlan su conducta para no afectar la orientación sexual de sus estudiantes. Esa condición presupone, sin justificación, que la orientación de un docente puede cambiar la de sus estudiantes.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El rector dice que los profesores homosexuales pueden enseñar solo si controlan su conducta para no afectar la orientación sexual de sus estudiantes. Esa condición presupone, sin justificación, que la orientación de un docente puede cambiar la de sus estudiantes.",
-          "a": "p:0"
+          "t": "La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar."
         },
         {
-          "t": "Opción A: Es una afirmación sobre la frecuencia de la homosexualidad en distintos países, no el prejuicio señalado. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «En muchos países, gran parte de la población masculina y femenina…», Pero no responde al criterio central: La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar."
         },
         {
-          "t": "Opción B: Reconoce la dignidad y el respeto que merecen todas las personas. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Las personas con inclinaciones homosexuales, como todas las…», Pero no responde al criterio central: La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar."
         },
         {
-          "t": "Opción C: Describe una explicación sobre el origen de las preferencias, sin condicionar el derecho a enseñar. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Las preferencias sexuales son el resultado de una compleja…», Pero no responde al criterio central: La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Distingue una afirmación respetuosa de una condición que limita derechos.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar."
         },
         {
-          "t": "Pregunta qué idea no demostrada presupone esa condición.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El rector dice que los profesores homosexuales pueden enseñar solo si controlan su conducta para no afectar la orientación sexual de sus estudiantes. Esa condición presupone, sin justificación, que la orientación de un docente puede cambiar la de sus estudiantes.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción D contiene el prejuicio cuestionable sobre la influencia de la orientación sexual del docente en la de sus estudiantes.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un padre de familia no está de acuerdo con l",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Cuál de los siguientes enunciados del rector contiene un prejuicio cuestionable?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La condición de que los docentes homosexuales deban controlar su conducta para no cambiar la orientación de sus estudiantes presupone, sin fundamento, que la orientación se transmite o modifica por enseñar. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

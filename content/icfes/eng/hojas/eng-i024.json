@@ -1,52 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "According to the text, the customer",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{According to the text, the customer}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "Mark escribió la carta que el texto presenta como una excelente opinión de cliente. El pasaje no dice que dejara una propina, celebrara esas fechas en el restaurante ni encontrara el lugar tras varios intentos."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "Mark escribió la carta que el texto presenta como una excelente opinión de cliente. El pasaje no dice que dejara una propina, celebrara esas fechas en el restaurante ni encontrara el lugar tras varios intentos.",
       "clave": "Mark escribió la carta que el texto presenta como una excelente opinión de cliente. El pasaje no dice que dejara una propina, celebrara esas fechas en el restaurante ni encontrara el lugar tras varios intentos.",
-      "pistas": [
-        "Fíjate en {{According to the text, the customer}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "El texto dice que Mark recibió un premio por escribir la carta; no que dejara esa suma como propina."
+          "p": "Pero el texto dice que Mark recibió un premio por escribir la carta; no que dejara esa suma como propina."
         },
         {
           "t": "Opción B",
-          "p": "El saludo festivo es un juego de palabras; el pasaje no afirma que Mark celebrara esas fechas en el restaurante."
+          "p": "Pero el saludo festivo es un juego de palabras; el pasaje no afirma que Mark celebrara esas fechas en el restaurante."
         },
         {
           "t": "Opción C",
-          "p": "Mark cuenta que cambió de restaurante y obtuvo lo que quería en el primer intento, no después de muchos intentos."
+          "p": "Pero mark cuenta que cambió de restaurante y obtuvo lo que quería en el primer intento, no después de muchos intentos."
         }
+      ],
+      "pistas": [
+        "Scan the restaurant story for the customer's reaction after the meal.",
+        "Identify the positive online feedback and five-star rating left by the customer."
       ],
       "plan": [
         {
@@ -58,7 +31,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "Mark escribió la carta que el texto presenta como una excelente opinión de cliente. El pasaje no dice que dejara una propina, celebrara esas fechas en el restaurante ni encontrara el lugar tras varios intentos.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -139,6 +114,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "According to the text, the customer",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{According to the text, the customer}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "Mark escribió la carta que el texto presenta como una excelente opinión de cliente. El pasaje no dice que dejara una propina, celebrara esas fechas en el restaurante ni encontrara el lugar tras varios intentos.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

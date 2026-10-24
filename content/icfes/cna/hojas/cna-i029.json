@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "línea de tendencia",
-        "rol": "pide",
-        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la información",
-        "texto": "Observa la dirección y la intersección de la línea de tendencia."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta el apoyo",
-        "texto": "Distingue una interpolación dentro de los datos de una extrapolación."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Relaciona la predicción con la continuación de la tendencia, con cautela."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar una predicción a partir de una línea de tendencia",
-      "que": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación.",
-      "pistas": [
-        "Observa la dirección y la intersección de la línea de tendencia.",
-        "Distingue una interpolación dentro de los datos de una extrapolación."
-      ],
       "clave": "La afirmación se apoya en la línea de tendencia, que al prolongarse indica una masa distinta de cero.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede sonar razonable si se ignora una pista. Pero Sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia."
+          "p": "Pero sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia."
         },
         {
           "t": "Opción C",
-          "p": "Puede sonar razonable si se ignora una pista. Pero La ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela."
+          "p": "Pero la ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela."
         },
         {
           "t": "Opción D",
-          "p": "Puede sonar razonable si se ignora una pista. Pero Que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia."
+          "p": "Pero que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia."
         }
+      ],
+      "pistas": [
+        "Observa la dirección y la intersección de la línea de tendencia.",
+        "Distingue una interpolación dentro de los datos de una extrapolación."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Relaciona la predicción con la continuación de la tendencia, con cautela."
         }
-      ]
+      ],
+      "que": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación.",
+      "tema": "Interpretar una predicción a partir de una línea de tendencia"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La frase «línea de tendencia» orienta lo que debemos observar.",
-          "a": "m:línea de tendencia"
+          "a": "m:línea de tendencia",
+          "t": "La frase «línea de tendencia» orienta lo que debemos observar."
         },
         {
-          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación."
         },
         {
-          "t": "Opción B: Sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia. La descartamos."
         },
         {
-          "t": "Opción C: La ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela. La descartamos."
         },
         {
-          "t": "Opción D: Que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Primero identifico qué dato o tendencia debo leer.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La recta de tendencia se prolonga hasta densidades muy bajas y corta el eje de masa en un valor distinto de cero. Según esa tendencia, la predicción de una masa diferente de cero se apoya en el modelo ajustado, aunque se refiere a una extrapolación."
         },
         {
-          "t": "Relaciona la predicción con la continuación de la tendencia, con cautela.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Relaciona la predicción con la continuación de la tendencia, con cautela."
         },
         {
-          "t": "Opción B: Sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Sí se observa un patrón creciente entre densidad y masa, representado por los puntos y la línea de tendencia. La descarto."
         },
         {
-          "t": "Opción C: La ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La ausencia de mediciones exactamente en densidades muy bajas no impide hacer una predicción a partir de la extrapolación; sí exige cautela. La descarto."
         },
         {
-          "t": "Opción D: Que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Que todos los datos medidos tengan masa distinta de cero no basta para predecir el caso extremo; la justificación de la pregunta usa la tendencia. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "línea de tendencia",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa la dirección y la intersección de la línea de tendencia.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue una interpolación dentro de los datos de una extrapolación.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Relaciona la predicción con la continuación de la tendencia, con cautela.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

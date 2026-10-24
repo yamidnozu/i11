@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "sustitución de importaciones",
-        "rol": "dato",
-        "nota": "El enunciado nombra la medida económica que debes definir.",
-        "campo": "Concepto"
-      },
-      {
-        "frag": "que consistió en",
-        "rol": "pide",
-        "nota": "Debes identificar en qué consiste la sustitución de importaciones.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relaciona la reducción de importaciones con la respuesta económica de los países latinoamericanos."
-      },
-      {
-        "k": "idea",
-        "texto": "Busca la opción que propone fabricar localmente los productos que antes se traían de otros países."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la alternativa describa reemplazar importaciones y no prohibir todo comercio exterior."
-      }
-    ],
     "enfoque": {
-      "tema": "Sustitución de importaciones",
-      "que": "Reconocer una política económica adoptada para responder a la caída del comercio exterior.",
-      "plan": [
-        {
-          "t": "Ubica el problema: se redujeron exportaciones e importaciones."
-        },
-        {
-          "t": "Recuerda que sustituir importaciones implica producir internamente bienes antes importados."
-        },
-        {
-          "t": "Compara esa definición con las opciones."
-        }
-      ],
-      "pistas": [
-        "La pregunta menciona que disminuyeron las importaciones.",
-        "La palabra sustituir indica producir un bien en reemplazo del que se compraba fuera."
-      ],
-      "clave": "La opción C define la sustitución de importaciones como producir los bienes que tradicionalmente se traían del exterior.",
+      "clave": "La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, La medida no consistía en prohibir todos los productos extranjeros."
+          "p": "Pero es incorrecta porque vetar la entrada de toda clase de bienes externos paralizaría industrias que dependen de maquinaria e insumos no producidos localmente."
         },
         {
           "t": "Opción B",
-          "p": "Pero, La libertad total de producción y consumo no reemplaza los bienes importados por producción nacional."
+          "p": "Pero es incorrecta porque abrir indiscriminadamente las aduanas corresponde a la apertura y al libre comercio, lo contrario del proteccionismo."
         },
         {
           "t": "Opción D",
-          "p": "Pero, Dejar actuar libremente la oferta y la demanda no describe la producción local de bienes importados."
+          "p": "Pero es incorrecta porque subvencionar a corporaciones foráneas para importar productos importaría competencia desleal contra la industria nacional."
         }
-      ]
+      ],
+      "pistas": [
+        "Observa la drástica caída de las exportaciones de café y materias primas hacia Estados Unidos tras el colapso financiero de 1929.",
+        "Deduce cómo la reducción del comercio exterior obligó a los países latinoamericanos a industrializarse por sustitución de importaciones."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "La crisis redujo las compras de productos al exterior."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Sustituir importaciones significa producir esos bienes dentro del país."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C presenta esa definición."
+          "t": "La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La medida no consistía en prohibir todos los productos extranjeros."
+          "t": "La opción A plantea «prohibir el ingreso de toda clase de productos extranjeros.», Pero no responde al criterio central: La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La libertad total de producción y consumo no reemplaza los bienes importados por producción nacional."
+          "t": "La opción B plantea «otorgar total libertad de producción, de cambio y de consumo.», Pero no responde al criterio central: La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Dejar actuar libremente la oferta y la demanda no describe la producción local de bienes importados."
+          "t": "La opción D plantea «dejar actuar libremente las leyes de la oferta y la demanda.», Pero no responde al criterio central: La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C define la sustitución de importaciones como producir los bienes que tradicionalmente se traían del exterior."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Vincula la caída de importaciones con la respuesta de los gobiernos."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La política buscaba que el país produjera los bienes que antes compraba afuera."
-        },
-        {
-          "t": "Por eso, la respuesta es C."
+          "a": "p:1",
+          "t": "La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior."
         },
         {
           "a": "o:C:ok",
-          "t": "Las demás alternativas no expresan la sustitución descrita."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La crisis económica que se desató en 1929, e",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ciones, que consistió en",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La sustitución de importaciones consiste en producir internamente bienes que antes se compraban en el exterior. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

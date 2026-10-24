@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "función que representa",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «función que representa» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "G(p)=30p+2.000"
-        ],
-        "nota": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La pendiente entre los dos primeros datos es $(10.400-8.000)/(280-200)=30$. Con el punto $(200,8.000)$, el intercepto es $2.000$. La función $G(p)=30p+2.000$ también produce $9.500$ cuando $p=250$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: función que representa",
-      "que": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
-      "pistas": [
-        "Fíjate en «función que representa».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
       "no": [
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero plantea una relación de proporcionalidad directa simple sin término independiente que no se ajusta a la ganancia base."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero asume una tasa constante de 40 que sobreestima el crecimiento a partir del segundo punto de la tabla."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero usa una pendiente de 40 y un intercepto negativo que no coincide con las ganancias registradas para p = 200."
         }
+      ],
+      "pistas": [
+        "Calcula la pendiente de la recta con dos puntos de la tabla: $(0, 2.000)$ y $(10, 2.300)$, obteniendo treinta millones por unidad de gasto publicitario.",
+        "Verifica que el intercepto con el eje de ganancias corresponde a dos mil millones cuando el gasto en publicidad es cero: $G(p) = 30p + 2.000$."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "G(p)=30p+2.000"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
+      "tema": "Matemáticas: función que representa"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «función que representa» orienta la estrategia.",
-          "a": "m:función que representa"
+          "a": "m:función que representa",
+          "t": "La frase «función que representa» orienta la estrategia."
         },
         {
-          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico la relación entre gasto y ganancia, y verifico la regularidad entre los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico la relación entre gasto y ganancia, y verifico la regularidad entre los datos."
         },
         {
-          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "función que representa",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «función que representa» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "G(p)=30p+2.000"
+        ],
+        "nota": "Los datos confirman que la ganancia aumenta en treinta millones por cada millón adicional de gasto en publicidad. El valor inicial es de dos mil millones, y la tercera pareja también satisface esa función.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La pendiente entre los dos primeros datos es $(10.400-8.000)/(280-200)=30$. Con el punto $(200,8.000)$, el intercepto es $2.000$. La función $G(p)=30p+2.000$ también produce $9.500$ cuando $p=250$."
+      }
+    ]
+  },
+  "revisar": []
 }

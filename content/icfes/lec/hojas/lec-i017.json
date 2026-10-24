@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "irrecusable",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Reemplaza «irrecusable» por una palabra que encaje con «prueba»."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Contrasta la fuerza de esa prueba con las otras opciones."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Concluyente significa que aporta una prueba decisiva."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir el significado de una palabra por contexto",
-      "que": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad.",
-      "pistas": [
-        "Reemplaza «irrecusable» por una palabra que encaje con «prueba».",
-        "Contrasta la fuerza de esa prueba con las otras opciones."
-      ],
       "clave": "Concluyente significa que aporta una prueba decisiva.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Inminente significa que algo está próximo a ocurrir, no que sea imposible de refutar."
+          "p": "Pero inminente significa que algo está próximo a ocurrir, no que sea imposible de refutar."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero Irremplazable significa que algo no puede sustituirse; no equivale a una prueba decisiva."
+          "p": "Pero irremplazable significa que algo no puede sustituirse; no equivale a una prueba decisiva."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Cuestionable expresa lo contrario: algo que puede ponerse en duda."
+          "p": "Pero cuestionable expresa lo contrario: algo que puede ponerse en duda."
         }
+      ],
+      "pistas": [
+        "Reemplaza «irrecusable» por una palabra que encaje con «prueba».",
+        "Contrasta la fuerza de esa prueba con las otras opciones."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad.",
+      "tema": "Inferir el significado de una palabra por contexto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «irrecusable» orienta la lectura.",
-          "a": "m:irrecusable"
+          "a": "m:irrecusable",
+          "t": "La expresión «irrecusable» orienta la lectura."
         },
         {
-          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad."
         },
         {
-          "t": "Opción A: Inminente significa que algo está próximo a ocurrir, no que sea imposible de refutar. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Inminente significa que algo está próximo a ocurrir, no que sea imposible de refutar. La descartamos."
         },
         {
-          "t": "Opción C: Irremplazable significa que algo no puede sustituirse; no equivale a una prueba decisiva. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Irremplazable significa que algo no puede sustituirse; no equivale a una prueba decisiva. La descartamos."
         },
         {
-          "t": "Opción D: Cuestionable expresa lo contrario: algo que puede ponerse en duda. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Cuestionable expresa lo contrario: algo que puede ponerse en duda. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Reemplaza «irrecusable» por una palabra que encaje con «prueba».",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Reemplaza «irrecusable» por una palabra que encaje con «prueba»."
         },
         {
-          "t": "Contrasta la fuerza de esa prueba con las otras opciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Contrasta la fuerza de esa prueba con las otras opciones."
         },
         {
-          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "En el fragmento, las fotografías sirven como prueba de que el viaje ocurrió. Una prueba irrecusable es concluyente: no se puede refutar con facilidad."
         },
         {
-          "t": "Concluyente significa que aporta una prueba decisiva.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Concluyente significa que aporta una prueba decisiva."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "irrecusable",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Reemplaza «irrecusable» por una palabra que encaje con «prueba».",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Contrasta la fuerza de esa prueba con las otras opciones.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "Concluyente significa que aporta una prueba decisiva.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

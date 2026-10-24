@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "La principal causa de este fenómeno se atribuye",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Identifica quiénes se trasladan y hacia dónde."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir una causa de migración urbana",
-      "que": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
-      "pistas": [
-        "Identifica quiénes se trasladan y hacia dónde.",
-        "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
-      ],
-      "clave": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida.",
+      "clave": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El crecimiento industrial central no explica que las familias dejen esas zonas."
+          "p": "Pero es incorrecta porque en las urbes modernas el centro concentra actividades terciarias (servicios y oficinas) y no industrias pesadas contaminantes."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El texto no dice que el centro carezca de servicios."
+          "p": "Pero es incorrecta porque el centro urbano es precisamente el sector con mayor concentración de servicios financieros, comerciales y de transporte."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La oferta barata podría influir, pero el enunciado destaca una búsqueda de calidad de vida."
+          "p": "Pero es incorrecta porque las afueras residenciales suburbanas suelen albergar condominios de costo medio-alto y no exclusivamente vivienda de bajo precio."
         }
+      ],
+      "pistas": [
+        "Identifica los factores de expulsión del centro urbano (congestión, ruido, contaminación) frente a los atractivos de la periferia.",
+        "Relaciona la suburbanización con la búsqueda de mayor espacio verde y mejor calidad de vida en sectores residenciales tranquilos."
       ],
       "plan": [
         {
-          "t": "Identifica quiénes se trasladan y hacia dónde."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «La principal causa de este fenómeno se atribuye» orienta el análisis.",
-          "a": "m:La principal causa de este fenómeno se atribuye"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
-          "a": "p:0"
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "Opción A: El crecimiento industrial central no explica que las familias dejen esas zonas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «al creciente desarrollo de la industria en el centro de las ciudades.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "Opción C: El texto no dice que el centro carezca de servicios. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «a la escasa oferta de servicios en los barrios del centro de la…», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "Opción D: La oferta barata podría influir, pero el enunciado destaca una búsqueda de calidad de vida. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «a la creciente oferta de vivienda barata en las afueras de la ciudad.», Pero no responde al criterio central: El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica quiénes se trasladan y hacia dónde.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida."
         },
         {
-          "t": "Elige la causa que corresponde a una decisión residencial de hogares con ingresos medios y altos.",
-          "a": "p:1"
+          "a": "o:B:ok",
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El enunciado describe familias de ingresos medios y altos que dejan el centro y se trasladan a zonas periféricas. Entre las opciones, la búsqueda de tranquilidad y mejor calidad de vida explica mejor esa migración residencial.",
-          "a": "p:2"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción B relaciona el traslado a la periferia con buscar barrios más tranquilos y una mejor calidad de vida.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En las principales ciudades del mundo modern",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ste fenómeno se atribuye",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El traslado de familias de ingresos medios y altos hacia la periferia suele responder a la búsqueda de más tranquilidad y calidad de vida. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

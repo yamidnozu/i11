@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "acciones es coherente con este fallo",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Identifica qué práctica prohíbe la convicción religiosa del soldado."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Descarta las opciones que mantienen su participación en la institución militar."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar la libertad de conciencia a una decisión",
-      "que": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
+      "clave": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque obligar al soldado a empuñar fusiles violaría directamente su derecho fundamental a la libertad de conciencia y culto."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque asignarle tareas administrativas dentro de una guarnición armada mantiene la subordinación castrense en pugna con su fe."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque forzarlo a desfilar en actos marciales no respeta su convicción íntima de no participar en actividades de las fuerzas armadas."
+        }
+      ],
       "pistas": [
         "Identifica qué práctica prohíbe la convicción religiosa del soldado.",
         "Descarta las opciones que mantienen su participación en la institución militar."
       ],
-      "clave": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado.",
-      "no": [
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Obligarlo a cumplir todas las tareas contradice la libertad de conciencia que protege el fallo."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Los entrenamientos siguen siendo una práctica militar que el soldado objeta."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Participar en paradas y portar la dotación tampoco respeta su objeción."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué práctica prohíbe la convicción religiosa del soldado."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Descarta las opciones que mantienen su participación en la institución militar."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «acciones es coherente con este fallo» orienta el análisis.",
-          "a": "m:acciones es coherente con este fallo"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
-          "a": "p:0"
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
-          "t": "Opción B: Obligarlo a cumplir todas las tareas contradice la libertad de conciencia que protege el fallo. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Ordenarle al soldado cumplir su servicio militar obligatorio con…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
-          "t": "Opción C: Los entrenamientos siguen siendo una práctica militar que el soldado objeta. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Ordenarle al Ejército que el soldado participe de los…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
-          "t": "Opción D: Participar en paradas y portar la dotación tampoco respeta su objeción. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Ordenarle al soldado participar únicamente en paradas militares,…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué práctica prohíbe la convicción religiosa del soldado.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
-          "t": "Descarta las opciones que mantienen su participación en la institución militar.",
-          "a": "p:1"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El fallo protege a un soldado cuya convicción religiosa le impide usar armas y realizar prácticas militares. La acción coherente es desvincularlo del servicio, no exigirle que participe en actividades que contradicen su conciencia.",
-          "a": "p:2"
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción A respeta la objeción de conciencia al ordenar la desvinculación del soldado.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La Corte Constitucional falló a favor de un",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "oherente con este fallo?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "relación entre las opiniones presentadas",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Identifica la razón que ofrece cada persona."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales."
-      }
-    ],
     "enfoque": {
-      "tema": "Distinguir razones distintas a favor de una postura",
-      "que": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
+      "clave": "La segunda opinión atribuye el vegetarianismo a una obligación moral de respeto animal; no sostiene que proteger a los animales sea el argumento común a ambas opiniones. La primera habla de un supuesto efecto sobre la salud humana.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque clasifica como similares dos posturas con premisas dispares: una apela a la salud humana egoísta y la otra al bienestar y dignidad animal."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque no se limita a contrastar salud humana con bienestar animal, sino que omite si ambas comparten el principio común de protección animal."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque desvía la comparación hacia la dirección física del daño en lugar de confrontar la fundamentación ética de los argumentos."
+        }
+      ],
       "pistas": [
         "Identifica la razón que ofrece cada persona.",
         "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
       ],
-      "clave": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Ambas posturas rechazan consumir carne, aunque llegan a esa conclusión por razones distintas."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Distingue correctamente entre una razón centrada en la salud humana y otra en el bienestar animal."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero También distingue correctamente el efecto del animal sobre la persona y el trato de la persona hacia el animal."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica la razón que ofrece cada persona."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Atiende a «NO»: busca la descripción que no corresponde a esas razones."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «relación entre las opiniones presentadas» orienta el análisis.",
-          "a": "m:relación entre las opiniones presentadas"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La segunda opinión atribuye el vegetarianismo a una obligación moral de respeto animal; no sostiene que proteger a los animales sea el argumento común a ambas opiniones. La primera habla de un supuesto efecto sobre la salud humana. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
-          "a": "p:0"
+          "t": "La segunda opinión atribuye el vegetarianismo a una obligación moral de respeto animal; no sostiene que proteger a los animales sea el argumento común a ambas opiniones. La primera habla de un supuesto efecto sobre la salud humana."
         },
         {
-          "t": "Opción A: Ambas posturas rechazan consumir carne, aunque llegan a esa conclusión por razones distintas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Ambas posturas rechazan consumir carne, así que la semejanza es válida. Pero se pregunta cuál afirmación no es correcta."
         },
         {
-          "t": "Opción C: Distingue correctamente entre una razón centrada en la salud humana y otra en el bienestar animal. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La primera postura apela a la salud y la segunda al bienestar animal; esa diferencia sí es correcta. Pero se pregunta cuál afirmación no es correcta."
         },
         {
-          "t": "Opción D: También distingue correctamente el efecto del animal sobre la persona y el trato de la persona hacia el animal. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La primera describe un supuesto efecto del animal sobre la persona y la segunda el efecto moral de la conducta humana sobre otros seres vivos. Pero se pregunta cuál afirmación no es correcta."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica la razón que ofrece cada persona.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La segunda opinión atribuye el vegetarianismo a una obligación moral de respeto animal; no sostiene que proteger a los animales sea el argumento común a ambas opiniones. La primera habla de un supuesto efecto sobre la salud humana."
         },
         {
-          "t": "Atiende a «NO»: busca la descripción que no corresponde a esas razones.",
-          "a": "p:1"
+          "a": "o:B:ok",
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La primera persona se opone al consumo de carne porque cree que perjudica la salud humana. La segunda lo considera moralmente incorrecto por el daño que causa a otros seres vivos. La opción B es la afirmación NO correcta: atribuye a las dos la misma obligación de proteger animales, aunque sus razones son diferentes.",
-          "a": "p:2"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción B es la que no es correcta, porque las opiniones no son complementarias por una misma obligación de proteger animales.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Como argumento a favor del vegetarianismo, u",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Cuál de las siguientes afirmaciones sobre la relación entre las opiniones presentadas NO es correcta?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La segunda opinión atribuye el vegetarianismo a una obligación moral de respeto animal; no sostiene que proteger a los animales sea el argumento común a ambas opiniones. La primera habla de un supuesto efecto sobre la salud humana. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

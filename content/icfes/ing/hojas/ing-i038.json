@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "The ______ group of Ethiopian wolves lives in the Bale Mountains National Park.",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{The ______ group of Ethiopian wolves lives in the Bale Mountains National Park.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "{{largest}} expresa que es el grupo de mayor tamaño."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{largest}} expresa que es el grupo de mayor tamaño.",
       "clave": "{{largest}} expresa que es el grupo de mayor tamaño.",
-      "pistas": [
-        "Fíjate en {{The ______ group of Ethiopian wolves lives in the Bale Mountains National Park.}}.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, {{larger}} es comparativo: sirve para contrastar dos grupos («larger than…»). Aquí nadie se compara con otro y, tras «The», la frase pide señalar el grupo mayor de todos."
+          "p": "Pero {{larger}} es comparativo: sirve para contrastar dos grupos («larger than…»). Aquí nadie se compara con otro y, tras «The», la frase pide señalar el grupo mayor de todos."
         },
         {
           "t": "Opción C",
-          "p": "Pero, {{large}} es grado positivo (grande, sin comparar). Después de «The» y con el sentido de «el de mayor tamaño» hace falta el superlativo con -est."
+          "p": "Pero {{large}} es grado positivo (grande, sin comparar). Después de «The» y con el sentido de «el de mayor tamaño» hace falta el superlativo con -est."
         }
+      ],
+      "pistas": [
+        "Select the superlative adjective {{largest}} describing the greatest population group.",
+        "Identify {{the largest group}} as the primary remaining wolf population in Ethiopia."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{largest}} expresa que es el grupo de mayor tamaño.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{largest}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "The ______ group of Ethiopian wolves lives in the Bale Mountains National Park.",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{The ______ group of Ethiopian wolves lives in the Bale Mountains National Park.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{largest}} expresa que es el grupo de mayor tamaño.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

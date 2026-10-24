@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "People pay to take this public transport by road.",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{People pay to take this public transport by road.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
       "clave": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
-      "pistas": [
-        "Fíjate en {{People pay to take this public transport by road.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero an ambulance is an emergency medical service, not standard fare-paying public transit."
         },
         {
           "t": "Opción B",
-          "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero a boat travels on water, not by road."
         },
         {
           "t": "Opción D",
-          "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero a motorbike is private transport, not a collective public transit vehicle."
         },
         {
           "t": "Opción E",
-          "p": "{{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero a plane travels by air, not by road."
         },
         {
           "t": "Opción F",
-          "p": "{{truck}} transporta cargas grandes, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero a truck is used for freight or cargo, not public passenger transport."
         },
         {
           "t": "Opción G",
-          "p": "{{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
+          "p": "Pero a train runs on rails, not by road."
         }
+      ],
+      "pistas": [
+        "Identify the public road transport vehicle where passengers pay a fare.",
+        "Select {{bus}} among the public transit options."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "People pay to take this public transport by road.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{People pay to take this public transport by road.}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "{{bus}} transporta pasajeros por carretera y corresponde a la característica descrita.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

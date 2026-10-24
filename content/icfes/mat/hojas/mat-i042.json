@@ -1,150 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cien veces menor",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «cien veces menor» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "60m/100=0,6m=60cm;100m/100=1m=100cm"
-        ],
-        "nota": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: cien veces menor",
-      "que": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
-      "pistas": [
-        "Fíjate en «cien veces menor».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
+      "clave": "La maqueta mide $0,6$ m por $1$ m, equivalentes a $60$ cm por $100$ cm.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero la conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
         }
+      ],
+      "pistas": [
+        "Establece la escala entre las dimensiones reales de la cancha (100 m por 70 m) y las medidas de la maqueta.",
+        "Comprueba que la razón entre largo y ancho ($100/70 = 10/7$) se conserve exactamente en la maqueta proporcional."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Aplica la misma escala a cada lado de la cancha."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "60m/100=0,6m=60cm;100m/100=1m=100cm"
-          ]
+          "t": "Divide entre cien y expresa las medidas en centímetros."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "Sesenta por cien centímetros corresponde a la opción D."
         }
-      ]
+      ],
+      "que": "Reduce las medidas de la cancha en una razón de cien a uno y expresa el resultado en centímetros.",
+      "tema": "Escala y conversión de unidades"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Cuáles son las dos medidas originales de la cancha?"
         },
         {
-          "t": "La frase «cien veces menor» orienta la estrategia.",
-          "a": "m:cien veces menor"
+          "t": "Sesenta y cien metros; al reducirlas cien veces quedan cero coma seis y un metro."
         },
         {
-          "t": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "En centímetros son sesenta por cien; la respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Divide sesenta y cien metros entre cien."
         },
         {
-          "t": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
-          "a": "p:1"
+          "t": "Obtienes cero coma seis y un metro; conviértelos en sesenta y cien centímetros."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A y B usan potencias negativas; C conserva la medida original. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La escala divide por cien los lados de sesenta y cien metros."
         },
         {
-          "t": "La maqueta reduce cada longitud por cien. Sesenta metros se convierten en sesenta centímetros y cien metros en cien centímetros. La opción D expresa esas dos medidas.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La maqueta mide cero coma seis metros por un metro."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "En centímetros equivale a sesenta por cien centímetros, como indica D."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A y B cambian el exponente; C no aplica la escala."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "medidas de sus lados",
+        "nota": "La cancha mide sesenta por cien metros.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "cien veces menor que las medidas originales",
+        "nota": "Cada dimensión se divide entre cien.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "diseño de la",
+        "nota": "Expresa las dos dimensiones después de aplicar la escala.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Aplica la misma escala a cada lado de la cancha.",
+        "titulo": "Aplica la misma escala a cada lado de la cancha."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$60/100=0,6$ m, que son $60$ cm",
+          "$100/100=1$ m, que son $100$ cm"
+        ],
+        "nota": "Divide entre cien y expresa las medidas en centímetros.",
+        "titulo": "Divide entre cien y expresa las medidas en centímetros."
+      },
+      {
+        "k": "check",
+        "texto": "Sesenta por cien centímetros corresponde a la opción D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

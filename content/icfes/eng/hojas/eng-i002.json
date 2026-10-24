@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "A woman carries her things in one of these.",
-        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la descripción",
-        "texto": "Fíjate en {{A woman carries her things in one of these.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la palabra",
-        "texto": "{{handbags}} significa bolsos y coincide con la descripción: esta pista indica llevar cosas."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que {{handbags}} nombra la prenda o el accesorio que corresponde a la característica descrita."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{handbags}} significa bolsos y coincide con la descripción: esta pista indica llevar cosas.",
       "clave": "{{handbags}} significa bolsos y coincide con la descripción: esta pista indica llevar cosas.",
-      "pistas": [
-        "Fíjate en {{A woman carries her things in one of these.}}.",
-        "Compara la característica con el significado de cada palabra."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas."
         },
         {
           "t": "Opción B",
-          "p": "{{glasses}} significa gafas; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a llevar cosas."
         },
         {
           "t": "Opción D",
-          "p": "{{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas."
         },
         {
           "t": "Opción E",
-          "p": "{{skirt}} significa falda; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a llevar cosas."
         },
         {
           "t": "Opción F",
-          "p": "{{socks}} significa medias; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{socks}} significa medias; esa palabra no corresponde a llevar cosas."
         },
         {
           "t": "Opción G",
-          "p": "{{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
+          "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
         }
+      ],
+      "pistas": [
+        "Focus on the phrase {{carries her things}} and identify what accessory women use for personal items.",
+        "Select {{handbags}} from the clothing accessories list."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ]
+      ],
+      "que": "{{handbags}} significa bolsos y coincide con la descripción: esta pista indica llevar cosas.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es {{handbags}}; vuelve a comprobarla con la descripción."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "A woman carries her things in one of these.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{A woman carries her things in one of these.}}.",
+        "titulo": "Lee la descripción"
+      },
+      {
+        "k": "idea",
+        "texto": "{{handbags}} significa bolsos y coincide con la descripción: esta pista indica llevar cosas.",
+        "titulo": "Relaciona la palabra"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{handbags}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ]
+  },
+  "revisar": []
 }

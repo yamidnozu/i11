@@ -1,56 +1,28 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Some scientists have ___ it is not a real wolf.",
-        "rol": "pide",
-        "nota": "Este es el fragmento que contiene el espacio evaluado.",
-        "campo": "Fragmento"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee el fragmento",
-        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba la forma",
-        "texto": "Después de have se necesita el participio pasado del verbo. Said completa correctamente la idea."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en contexto",
-        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
-      }
-    ],
     "enfoque": {
-      "tema": "Completar una lectura en inglés con la forma adecuada",
-      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
-      "pistas": [
-        "Lee la oración completa alrededor del espacio.",
-        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
-      ],
       "clave": "Después de have se necesita el participio pasado del verbo. Said completa correctamente la idea.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero Saying no es el participio que se requiere después de have."
+          "p": "Pero saying no es el participio que se requiere después de have."
         },
         {
           "t": "Opción C",
-          "p": "Pero Say es la forma base y la estructura exige el participio pasado."
+          "p": "Pero say es la forma base y la estructura exige el participio pasado."
         }
+      ],
+      "pistas": [
+        "Complete the present perfect reporting structure {{have said}}.",
+        "Select the past participle {{said}} used to report scientific claims."
       ],
       "plan": [
         {
-          "t": "Lee el fragmento con el espacio.",
           "eq": [
             "{{Some scientists have ... it is not a real wolf.}}"
-          ]
+          ],
+          "t": "Lee el fragmento con el espacio."
         },
         {
           "t": "Identifica qué clase de palabra exige la estructura."
@@ -58,7 +30,9 @@
         {
           "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ]
+      ],
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "tema": "Completar una lectura en inglés con la forma adecuada"
     },
     "guion": {
       "1": [
@@ -69,8 +43,8 @@
           "t": "Fíjate en {{Some scientists have ... it is not a real wolf.}} y en las palabras que lo rodean."
         },
         {
-          "t": "La opción correcta es {{said}}.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción correcta es {{said}}."
         }
       ],
       "2": [
@@ -78,42 +52,69 @@
           "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "La opción A no encaja: Saying no es el participio que se requiere después de have.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: Saying no es el participio que se requiere después de have."
         },
         {
-          "t": "La opción B no encaja: La clave la confirma en el pasaje.",
           "a": "p:0",
-          "k": "por"
+          "k": "por",
+          "t": "La opción B no encaja: La clave la confirma en el pasaje."
         },
         {
-          "t": "La opción C no encaja: Say es la forma base y la estructura exige el participio pasado.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: Say es la forma base y la estructura exige el participio pasado."
         }
       ],
       "3": [
         {
-          "t": "Analiza la estructura que acompaña el espacio: {{Some scientists have ... it is not a real wolf.}}.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Analiza la estructura que acompaña el espacio: {{Some scientists have ... it is not a real wolf.}}."
         },
         {
-          "t": "Después de have se necesita el participio pasado del verbo. Said completa correctamente la idea.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Después de have se necesita el participio pasado del verbo. Said completa correctamente la idea."
         },
         {
-          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje."
         },
         {
-          "t": "Comprueba que la opción B deja la oración completa y coherente.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Comprueba que la opción B deja la oración completa y coherente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Fragmento",
+        "frag": "Some scientists have ___ it is not a real wolf.",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita.",
+        "titulo": "Lee el fragmento"
+      },
+      {
+        "k": "idea",
+        "texto": "Después de have se necesita el participio pasado del verbo. Said completa correctamente la idea.",
+        "titulo": "Comprueba la forma"
+      },
+      {
+        "k": "check",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido.",
+        "titulo": "Verifica en contexto"
+      }
+    ]
+  },
+  "revisar": []
 }

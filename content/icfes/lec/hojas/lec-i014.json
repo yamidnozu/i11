@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "describe mejor la caricatura",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa qué le ocurre al personaje que está en el suelo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Integra la escena con el comentario sobre bondad, amor y tolerancia."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B resume la escena violenta y la ironía del pie de imagen: el linchamiento de un ángel."
-      }
-    ],
     "enfoque": {
-      "tema": "Sintetizar una caricatura a partir de imagen y texto",
-      "que": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel.",
-      "pistas": [
-        "Observa qué le ocurre al personaje que está en el suelo.",
-        "Integra la escena con el comentario sobre bondad, amor y tolerancia."
-      ],
       "clave": "La opción B resume la escena violenta y la ironía del pie de imagen: el linchamiento de un ángel.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La caricatura muestra violencia colectiva, pero no plantea que la multitud haya hecho justicia."
+          "p": "Pero la caricatura muestra violencia colectiva, pero no plantea que la multitud haya hecho justicia."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero Hay periodistas y micrófonos, pero la escena no es una entrevista con un asesino."
+          "p": "Pero hay periodistas y micrófonos, pero la escena no es una entrevista con un asesino."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El personaje no aparece descendiendo del cielo; la imagen se centra en la agresión que recibe."
+          "p": "Pero el personaje no aparece descendiendo del cielo; la imagen se centra en la agresión que recibe."
         }
+      ],
+      "pistas": [
+        "Observa qué le ocurre al personaje que está en el suelo.",
+        "Integra la escena con el comentario sobre bondad, amor y tolerancia."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel.",
+      "tema": "Sintetizar una caricatura a partir de imagen y texto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «describe mejor la caricatura» orienta la lectura.",
-          "a": "m:describe mejor la caricatura"
+          "a": "m:describe mejor la caricatura",
+          "t": "La expresión «describe mejor la caricatura» orienta la lectura."
         },
         {
-          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel."
         },
         {
-          "t": "Opción A: La caricatura muestra violencia colectiva, pero no plantea que la multitud haya hecho justicia. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La caricatura muestra violencia colectiva, pero no plantea que la multitud haya hecho justicia. La descartamos."
         },
         {
-          "t": "Opción C: Hay periodistas y micrófonos, pero la escena no es una entrevista con un asesino. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Hay periodistas y micrófonos, pero la escena no es una entrevista con un asesino. La descartamos."
         },
         {
-          "t": "Opción D: El personaje no aparece descendiendo del cielo; la imagen se centra en la agresión que recibe. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El personaje no aparece descendiendo del cielo; la imagen se centra en la agresión que recibe. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa qué le ocurre al personaje que está en el suelo.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa qué le ocurre al personaje que está en el suelo."
         },
         {
-          "t": "Integra la escena con el comentario sobre bondad, amor y tolerancia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Integra la escena con el comentario sobre bondad, amor y tolerancia."
         },
         {
-          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La multitud rodea y golpea a un hombre tendido en el suelo, mientras otras personas lo observan y lo entrevistan. El pie de imagen lo presenta como alguien que hablaba de bondad y amor, por lo que la caricatura alude al linchamiento de un ángel."
         },
         {
-          "t": "La opción B resume la escena violenta y la ironía del pie de imagen: el linchamiento de un ángel.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B resume la escena violenta y la ironía del pie de imagen: el linchamiento de un ángel."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "describe mejor la caricatura",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa qué le ocurre al personaje que está en el suelo.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Integra la escena con el comentario sobre bondad, amor y tolerancia.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B resume la escena violenta y la ironía del pie de imagen: el linchamiento de un ángel.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "propuestas de solución al problema de la urbanización en América Latina",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Identifica qué problema intenta atender cada propuesta."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Busca el objetivo común que puede reunir las tres medidas."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar varias medidas frente a un problema urbano",
-      "que": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
+      "clave": "Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque la consulta popular sirve para decidir sobre asuntos de conveniencia política general, pero no tiene competencia reformatoria de la Constitución."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque el plebiscito es convocado por el presidente para apoyar o rechazar una política ejecutiva, no para alterar el articulado constitucional."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque el cabildo abierto es una reunión deliberativa local ante concejos municipales o juntas administradoras, sin facultades constituyentes."
+        }
+      ],
       "pistas": [
         "Identifica qué problema intenta atender cada propuesta.",
         "Busca el objetivo común que puede reunir las tres medidas."
       ],
-      "clave": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero No todas priorizan el desarrollo económico de los centros urbanos; también buscan reducir desigualdad y expansión."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero La legalización de barrios y el transporte no se enfocan únicamente en recuperar zonas rurales."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Las medidas no priorizan solo a quienes vienen de zonas rurales; cubren varios efectos urbanos."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué problema intenta atender cada propuesta."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca el objetivo común que puede reunir las tres medidas."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «propuestas de solución al problema de la urbanización en América Latina» orienta el análisis.",
-          "a": "m:propuestas de solución al problema de la urbanización en América Latina"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
-          "a": "p:0"
+          "t": "Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana."
         },
         {
-          "t": "Opción A: No todas priorizan el desarrollo económico de los centros urbanos; también buscan reducir desigualdad y expansión. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Complementariedad, pues todas las soluciones priorizan el…», Pero no responde al criterio central: Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana."
         },
         {
-          "t": "Opción B: La legalización de barrios y el transporte no se enfocan únicamente en recuperar zonas rurales. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Compatibilidad, pues todas las soluciones se enfocan hacia la…», Pero no responde al criterio central: Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana."
         },
         {
-          "t": "Opción D: Las medidas no priorizan solo a quienes vienen de zonas rurales; cubren varios efectos urbanos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Compatibilidad, pues todas las soluciones priorizan el…», Pero no responde al criterio central: Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué problema intenta atender cada propuesta.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana."
         },
         {
-          "t": "Busca el objetivo común que puede reunir las tres medidas.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Las tres propuestas actúan sobre distintos costos de la expansión urbana: densificar limita la ocupación rural, legalizar barrios mejora condiciones y títulos, y ampliar el transporte facilita la movilidad. Son medidas complementarias para mitigar costos sociales y económicos.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C recoge que las medidas se complementan para mitigar costos de la expansión urbana.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un estudio realizado por la Organización de",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Qué tipo de relación se puede establecer entre las propuestas de solución al problema de la urbanización en América Latina?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Densificar, legalizar barrios y ampliar transporte son medidas que se complementan para mitigar costos sociales y económicos de la expansión urbana. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

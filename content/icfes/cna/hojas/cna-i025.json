@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "aceleración de la piedra",
-        "rol": "pide",
-        "nota": "Expresión que señala el objeto de análisis.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la evidencia",
-        "texto": "Compara las magnitudes de las dos fuerzas en el tercer instante."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta la relación",
-        "texto": "Calcula cualitativamente la fuerza neta."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Relaciona fuerza neta nula con aceleración nula."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar fuerzas con aceleración",
-      "que": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
-      "pistas": [
-        "Compara las magnitudes de las dos fuerzas en el tercer instante.",
-        "Calcula cualitativamente la fuerza neta."
-      ],
       "clave": "El equilibrio entre peso y resistencia produce fuerza neta y aceleración nulas.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo."
+          "p": "Pero las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo."
         },
         {
           "t": "Opción B",
-          "p": "El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual."
+          "p": "Pero el peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual."
         },
         {
           "t": "Opción C",
-          "p": "La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua."
+          "p": "Pero la aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua."
         }
+      ],
+      "pistas": [
+        "Compara las magnitudes de las dos fuerzas en el tercer instante.",
+        "Calcula cualitativamente la fuerza neta."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Relaciona fuerza neta nula con aceleración nula."
         }
-      ]
+      ],
+      "que": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
+      "tema": "Relacionar fuerzas con aceleración"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "La frase «aceleración de la piedra» nos ayuda a ubicar la tarea.",
-          "a": "m:aceleración de la piedra"
+          "a": "m:aceleración de la piedra",
+          "t": "La frase «aceleración de la piedra» nos ayuda a ubicar la tarea."
         },
         {
-          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula."
         },
         {
-          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descartamos."
         },
         {
-          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descartamos."
         },
         {
-          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Primero identifico qué evidencia o relación debo usar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué evidencia o relación debo usar."
         },
         {
-          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el tercer instante, el diagrama muestra que el peso hacia abajo y la fuerza de resistencia hacia arriba tienen la misma magnitud. La fuerza neta es nula, así que la aceleración después de ese instante es nula."
         },
         {
-          "t": "Relaciona fuerza neta nula con aceleración nula.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Relaciona fuerza neta nula con aceleración nula."
         },
         {
-          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Las fuerzas se cancelan en el tercer instante, de modo que el peso no produce una aceleración neta hacia abajo. La descarto."
         },
         {
-          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El peso no disminuye cuando aumenta la resistencia; la fuerza gravitacional permanece igual. La descarto."
         },
         {
-          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La aceleración no es siempre igual a la gravedad cuando actúa una fuerza de resistencia del agua. La descarto."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "aceleración de la piedra",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara las magnitudes de las dos fuerzas en el tercer instante.",
+        "titulo": "Identifica la evidencia"
+      },
+      {
+        "k": "idea",
+        "texto": "Calcula cualitativamente la fuerza neta.",
+        "titulo": "Interpreta la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Relaciona fuerza neta nula con aceleración nula.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "posiciones frente a la legalización",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Identifica qué propone cada sector para enfrentar el problema."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Compara si sus medidas son preventivas o sancionatorias."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C distingue la prevención del consumo de la represión mediante sanciones."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar dos propuestas de política pública",
-      "que": "La primera postura rechaza legalizar y propone prevenir daños mediante sensibilización sobre riesgos para la salud. La segunda también rechaza legalizar, pero propone reprimir con sanciones más fuertes. La diferencia está en prevención frente a represión.",
+      "clave": "Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque ninguna de las dos posturas respalda legalizar el narcotráfico; ambas lo rechazan pero debaten el enfoque de intervención."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque afirma equivocadamente que las dos posturas son semejantes y que ambas apoyan la regulación legal del mercado de estupefacientes."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque pasa por alto que la segunda postura no se enfoca en proteger a los consumidores sino en encarcelar y castigar penalmente."
+        }
+      ],
       "pistas": [
         "Identifica qué propone cada sector para enfrentar el problema.",
         "Compara si sus medidas son preventivas o sancionatorias."
       ],
-      "clave": "La opción C distingue la prevención del consumo de la represión mediante sanciones.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero La primera postura descrita no apoya la legalización; ambas la rechazan."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El texto no afirma que las dos posiciones vean un efecto directo de regular el consumo sobre el narcotráfico."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Las dos se oponen a legalizar, pero no las dos se enfocan en proteger a consumidores; la segunda se centra en sancionar."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué propone cada sector para enfrentar el problema."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Compara si sus medidas son preventivas o sancionatorias."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «posiciones frente a la legalización» orienta el análisis.",
-          "a": "m:posiciones frente a la legalización"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La primera postura rechaza legalizar y propone prevenir daños mediante sensibilización sobre riesgos para la salud. La segunda también rechaza legalizar, pero propone reprimir con sanciones más fuertes. La diferencia está en prevención frente a represión.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La primera postura rechaza legalizar y propone prevenir daños mediante sensibilización sobre riesgos para la salud. La segunda también rechaza legalizar, pero propone reprimir con sanciones más fuertes. La diferencia está en prevención frente a represión.",
-          "a": "p:0"
+          "t": "Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema."
         },
         {
-          "t": "Opción A: La primera postura descrita no apoya la legalización; ambas la rechazan. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «diferentes, porque una está a favor de la legalización y la otra a…», Pero no responde al criterio central: Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema."
         },
         {
-          "t": "Opción B: El texto no afirma que las dos posiciones vean un efecto directo de regular el consumo sobre el narcotráfico. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «similares, porque ambas consideran que la regulación legal del…», Pero no responde al criterio central: Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema."
         },
         {
-          "t": "Opción D: Las dos se oponen a legalizar, pero no las dos se enfocan en proteger a consumidores; la segunda se centra en sancionar. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «similares, porque ambas están en contra de la legalización y se…», Pero no responde al criterio central: Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué propone cada sector para enfrentar el problema.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema."
         },
         {
-          "t": "Compara si sus medidas son preventivas o sancionatorias.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La primera postura rechaza legalizar y propone prevenir daños mediante sensibilización sobre riesgos para la salud. La segunda también rechaza legalizar, pero propone reprimir con sanciones más fuertes. La diferencia está en prevención frente a represión.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C distingue la prevención del consumo de la represión mediante sanciones.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En Colombia se debate sobre la posibilidad d",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "Las dos posiciones frente a la legalización de las drogas descritas en el texto son",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Una postura propone prevención mediante sensibilización sobre riesgos de salud; la otra propone represión mediante sanciones. Se diferencian por la vía para enfrentar el problema. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

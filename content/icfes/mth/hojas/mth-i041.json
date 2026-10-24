@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "medidas de sus lados",
-        "rol": "dato",
-        "nota": "La cancha mide sesenta por cien metros.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "cien veces menor que las medidas originales",
-        "rol": "dato",
-        "nota": "Cada dimensión se divide entre cien.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "diseño de la maqueta medirá",
-        "rol": "pide",
-        "nota": "Expresa las dos dimensiones después de aplicar la escala.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Aplica la misma escala a cada lado de la cancha.",
-        "texto": "Aplica la misma escala a cada lado de la cancha."
-      },
-      {
-        "k": "calc",
-        "titulo": "Divide entre cien y expresa las medidas en centímetros.",
-        "lineas": [
-          "$60/100=0,6$ m, que son $60$ cm",
-          "$100/100=1$ m, que son $100$ cm"
-        ],
-        "nota": "Divide entre cien y expresa las medidas en centímetros."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Sesenta por cien centímetros corresponde a la opción D."
-      }
-    ],
     "enfoque": {
-      "tema": "Escala y conversión de unidades",
-      "que": "Reduce las medidas de la cancha en una razón de cien a uno y expresa el resultado en centímetros.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "La maqueta mide $0,6$ m por $1$ m, equivalentes a $60$ cm por $100$ cm.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
+          "p": "Pero las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
         },
         {
           "t": "Opción B",
-          "p": "La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
+          "p": "Pero la conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
         },
         {
           "t": "Opción C",
-          "p": "Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
+          "p": "Pero mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
         }
+      ],
+      "pistas": [
+        "Establece la escala entre las dimensiones reales de la cancha (100 m por 70 m) y las medidas de la maqueta.",
+        "Comprueba que la razón entre largo y ancho ($100/70 = 10/7$) se conserve exactamente en la maqueta proporcional."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "Sesenta por cien centímetros corresponde a la opción D."
         }
-      ]
+      ],
+      "que": "Reduce las medidas de la cancha en una razón de cien a uno y expresa el resultado en centímetros.",
+      "tema": "Escala y conversión de unidades"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Sesenta y cien metros; al reducirlas cien veces quedan cero coma seis y un metro."
         },
         {
-          "t": "En centímetros son sesenta por cien; la respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "En centímetros son sesenta por cien; la respuesta es D."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Obtienes cero coma seis y un metro; conviértelos en sesenta y cien centímetros."
         },
         {
-          "t": "La opción A: Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Las potencias de diez dejan dimensiones cien veces menores que un metro y no coinciden con la cancha. Pero la maqueta mide cero coma seis y un metro."
         },
         {
-          "t": "La opción B: La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: La conversión a centímetros conserva el factor de escala, pero las potencias tienen exponentes negativos. Pero las longitudes son sesenta y cien centímetros."
         },
         {
-          "t": "La opción C: Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Mantiene los lados originales en metros, sin reducirlos cien veces. Pero la maqueta debe ser más pequeña."
         },
         {
-          "t": "A y B usan potencias negativas; C conserva la medida original. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A y B usan potencias negativas; C conserva la medida original. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "La escala divide por cien los lados de sesenta y cien metros.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La escala divide por cien los lados de sesenta y cien metros."
         },
         {
-          "t": "La maqueta mide cero coma seis metros por un metro.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La maqueta mide cero coma seis metros por un metro."
         },
         {
-          "t": "En centímetros equivale a sesenta por cien centímetros, como indica D.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "En centímetros equivale a sesenta por cien centímetros, como indica D."
         },
         {
-          "t": "A y B cambian el exponente; C no aplica la escala.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "A y B cambian el exponente; C no aplica la escala."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "medidas de sus lados",
+        "nota": "La cancha mide sesenta por cien metros.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "cien veces menor que las medidas originales",
+        "nota": "Cada dimensión se divide entre cien.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "diseño de la maqueta medirá",
+        "nota": "Expresa las dos dimensiones después de aplicar la escala.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Aplica la misma escala a cada lado de la cancha.",
+        "titulo": "Aplica la misma escala a cada lado de la cancha."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$60/100=0,6$ m, que son $60$ cm",
+          "$100/100=1$ m, que son $100$ cm"
+        ],
+        "nota": "Divide entre cien y expresa las medidas en centímetros.",
+        "titulo": "Divide entre cien y expresa las medidas en centímetros."
+      },
+      {
+        "k": "check",
+        "texto": "Sesenta por cien centímetros corresponde a la opción D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

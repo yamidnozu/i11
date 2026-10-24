@@ -1,61 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "resultados de una encuesta",
-        "rol": "dato",
-        "nota": "El gráfico reporta proporciones del parque automotor.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "es correcto afirmar que",
-        "rol": "pide",
-        "nota": "Busca un grupo que supere la mitad.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Identifica en la leyenda las categorías y sus porcentajes."
-      },
-      {
-        "k": "calc",
-        "titulo": "Suma los sectores de buses, microbuses y busetas.",
-        "lineas": [
-          "$24\\%+23\\%+18\\%=65\\%$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El total supera el cincuenta por ciento; la afirmación correcta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación y suma de sectores de un gráfico circular",
-      "que": "Compara la proporción de vehículos de varias categorías.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Buses, microbuses y busetas suman $24\\%+23\\%+18\\%=65\\%$, que es la mayoría.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Ese grupo no es mayoría según los sectores. Pero las categorías deben sumarse antes de afirmarlo."
+          "p": "Pero automóviles, camionetas y camperos suman menos de la mitad según sus sectores."
         },
         {
           "t": "Opción B",
-          "p": "El porcentaje de automóviles, camionetas y camperos no es la mitad. Pero el gráfico muestra una suma inferior."
+          "p": "Pero ese grupo no llega al cincuenta por ciento del gráfico."
         },
         {
           "t": "Opción D",
-          "p": "El grupo de buses, microbuses y busetas suma más de la mitad. Pero no exactamente cincuenta por ciento."
+          "p": "Pero los buses, microbuses y busetas sí son mayoría, no exactamente la mitad."
         }
+      ],
+      "pistas": [
+        "Suma los porcentajes de los diferentes tipos de vehículos representados en el gráfico circular del parque automotor.",
+        "Contrasta la opción correcta con el porcentaje mayoritario de buses y busetas en el transporte intermunicipal."
       ],
       "plan": [
         {
@@ -67,7 +31,9 @@
         {
           "t": "El total supera el cincuenta por ciento; la afirmación correcta es C."
         }
-      ]
+      ],
+      "que": "Compara la proporción de vehículos de varias categorías.",
+      "tema": "Interpretación y suma de sectores de un gráfico circular"
     },
     "guion": {
       "1": [
@@ -78,8 +44,8 @@
           "t": "Son veinticuatro, veintitrés y dieciocho por ciento. Juntos superan la mitad."
         },
         {
-          "t": "La opción C afirma que son la mayoría.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C afirma que son la mayoría."
         }
       ],
       "2": [
@@ -90,50 +56,85 @@
           "t": "La suma es sesenta y cinco por ciento."
         },
         {
-          "t": "La opción A: Ese grupo no es mayoría según los sectores. Pero las categorías deben sumarse antes de afirmarlo.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Ese grupo no es mayoría según los sectores. Pero las categorías deben sumarse antes de afirmarlo."
         },
         {
-          "t": "La opción B: El porcentaje de automóviles, camionetas y camperos no es la mitad. Pero el gráfico muestra una suma inferior.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: El porcentaje de automóviles, camionetas y camperos no es la mitad. Pero el gráfico muestra una suma inferior."
         },
         {
-          "t": "La opción D: El grupo de buses, microbuses y busetas suma más de la mitad. Pero no exactamente cincuenta por ciento.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: El grupo de buses, microbuses y busetas suma más de la mitad. Pero no exactamente cincuenta por ciento."
         },
         {
-          "t": "A y B no representan mayoría; D dice mitad, aunque el grupo supera ese valor. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "A y B no representan mayoría; D dice mitad, aunque el grupo supera ese valor. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Bus, microbús y buseta representan $24\\%+23\\%+18\\%=65\\%$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Bus, microbús y buseta representan $24\\%+23\\%+18\\%=65\\%$."
         },
         {
-          "t": "Sesenta y cinco por ciento es mayor que la mitad del total.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Sesenta y cinco por ciento es mayor que la mitad del total."
         },
         {
-          "t": "Por eso la mayor parte corresponde a esas tres categorías.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la mayor parte corresponde a esas tres categorías."
         },
         {
-          "t": "A, B y D describen otro grupo o afirman que la proporción es exactamente la mitad.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y D describen otro grupo o afirman que la proporción es exactamente la mitad."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "resultados de una encuesta",
+        "nota": "El gráfico reporta proporciones del parque automotor.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "es correcto afirmar que",
+        "nota": "Busca un grupo que supere la mitad.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica en la leyenda las categorías y sus porcentajes.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$24\\%+23\\%+18\\%=65\\%$"
+        ],
+        "titulo": "Suma los sectores de buses, microbuses y busetas."
+      },
+      {
+        "k": "check",
+        "texto": "El total supera el cincuenta por ciento; la afirmación correcta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

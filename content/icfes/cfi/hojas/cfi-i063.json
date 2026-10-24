@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El Consejo Académico de un colegio decidió nombrar como representantes al Consejo Estudiantil",
-        "rol": "dato",
-        "nota": "El enunciado presenta el contexto del problema.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "De esta decisión se puede afirmar que",
-        "rol": "pide",
-        "nota": "Esta frase precisa qué debes valorar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Valorar el efecto de reemplazar las elecciones ordinarias por el nombramiento de representantes."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara el nombramiento por rendimiento con el derecho del estudiantado a utilizar mecanismos de participación."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C responde al enunciado y descarta las otras alternativas."
-      }
-    ],
     "enfoque": {
-      "tema": "Valorar el efecto de reemplazar las elecciones ordinarias por el nombramiento de representantes.",
-      "que": "Compara el nombramiento por rendimiento con el derecho del estudiantado a utilizar mecanismos de participación.",
-      "plan": [
-        {
-          "t": "Valorar el efecto de reemplazar las elecciones ordinarias por el nombramiento de representantes."
-        },
-        {
-          "t": "Compara el nombramiento por rendimiento con el derecho del estudiantado a utilizar mecanismos de participación."
-        },
-        {
-          "t": "Elige la opción C y verifica que concuerda con la situación descrita."
-        }
-      ],
-      "pistas": [
-        "De esta decisión se puede afirmar que",
-        "C"
-      ],
-      "clave": "Al reemplazar las elecciones ordinarias por nombramientos, el colegio restringe mecanismos de participación estudiantil.",
+      "clave": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, A plantea un posible estímulo académico, pero no responde por el mecanismo de representación."
+          "p": "Pero es incorrecta porque premiar las calificaciones altas no puede justificar la supresión de los derechos de participación política escolar."
         },
         {
           "t": "Opción B",
-          "p": "Pero, B habla del tiempo para actividades académicas, algo que no se desprende de la decisión."
+          "p": "Pero es incorrecta porque el impedimento no es la carga horaria académica de las reuniones, sino la vulneración del derecho al sufragio estudiantil."
         },
         {
           "t": "Opción D",
-          "p": "Pero, D atribuye un efecto educativo que la situación no sustenta."
+          "p": "Pero es incorrecta porque imponer representantes a dedo enseña una práctica autoritaria que desvirtúa el aprendizaje de la democracia participativa."
         }
-      ]
+      ],
+      "pistas": [
+        "Compara el nombramiento con las elecciones ordinarias.",
+        "Identifica qué derecho pierde el estudiantado si no puede elegir."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Valorar el efecto de reemplazar las elecciones ordinarias por el nombramiento de representantes."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Al reemplazar las elecciones ordinarias por nombramientos, el colegio restringe mecanismos de participación estudiantil."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C responde a lo que pide el enunciado."
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A plantea un posible estímulo académico, pero no responde por el mecanismo de representación."
+          "t": "La opción A plantea «es importante porque estimula a los estudiantes a que estudien y…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B habla del tiempo para actividades académicas, algo que no se desprende de la decisión."
+          "t": "La opción B plantea «dificulta la disponibilidad de tiempo para el desarrollo normal de…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D atribuye un efecto educativo que la situación no sustenta."
+          "t": "La opción D plantea «promueve en los estudiantes la comprensión de la importancia del…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
           "a": "o:C:ok",
-          "t": "Al reemplazar las elecciones ordinarias por nombramientos, el colegio restringe mecanismos de participación estudiantil."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Valorar el efecto de reemplazar las elecciones ordinarias por el nombramiento de representantes."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Compara el nombramiento por rendimiento con el derecho del estudiantado a utilizar mecanismos de participación."
-        },
-        {
-          "t": "Al reemplazar las elecciones ordinarias por nombramientos, el colegio restringe mecanismos de participación estudiantil."
+          "a": "p:1",
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C queda respaldada por el enunciado."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El Consejo Académico de un colegio decidió n",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ión se puede afirmar que",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

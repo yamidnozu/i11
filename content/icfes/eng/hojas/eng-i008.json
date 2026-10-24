@@ -5,17 +5,17 @@
       "clave": "La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago.",
       "no": [
         {
-          "p": "Pregunta si se desea algo más, no indica el precio.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero pregunta si se desea algo más, no cuánto cuesta la sombrilla."
         },
         {
-          "p": "Menciona que solo se paga en efectivo, pero no responde cuánto cuesta.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero menciona que solo se acepta efectivo, pero no indica el precio."
         }
       ],
       "pistas": [
-        "Fíjate en {{How much}}.",
-        "Lee la oración completa dentro del bloque compartido antes de elegir."
+        "Notice the question phrase {{How much}}, which asks specifically for the price of the object.",
+        "Look for the option stating a monetary price: {{50 dollars}}."
       ],
       "plan": [
         {
@@ -126,5 +126,6 @@
         "texto": "Comprueba tu elección: La pregunta pide el precio de la sombrilla. «{{50 dollars.}}» responde con una cantidad; las otras opciones preguntan si se desea algo más o mencionan un medio de pago."
       }
     ]
-  }
+  },
+  "revisar": []
 }

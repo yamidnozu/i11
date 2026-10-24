@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "mezclas homogéneas son uniformes en todas sus partes",
-        "rol": "pide",
-        "nota": "Expresión del enunciado que orienta la tarea.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica los datos",
-        "texto": "Revisa cuántas fases presenta cada sustancia."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el criterio",
-        "texto": "Clasifica la primera a partir de su uniformidad."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "Clasifica la segunda según la separación visible de fases."
-      }
-    ],
     "enfoque": {
-      "tema": "Distinguir mezclas homogéneas y heterogéneas",
-      "que": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
-      "pistas": [
-        "Una fase uniforme corresponde a una mezcla homogénea.",
-        "Dos fases observables indican heterogeneidad."
-      ],
       "clave": "La sustancia uno es homogénea y la sustancia dos es heterogénea.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible si se omite una condición. Pero Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases."
+          "p": "Pero invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible si se omite una condición. Pero La sustancia dos no es homogénea porque se distinguen dos fases."
+          "p": "Pero la sustancia dos no es homogénea porque se distinguen dos fases."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se omite una condición. Pero La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea."
+          "p": "Pero la sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea."
         }
+      ],
+      "pistas": [
+        "Una fase uniforme corresponde a una mezcla homogénea.",
+        "Dos fases observables indican heterogeneidad."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Clasifica la segunda según la separación visible de fases."
         }
-      ]
+      ],
+      "que": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
+      "tema": "Distinguir mezclas homogéneas y heterogéneas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar."
         },
         {
-          "t": "La frase «mezclas homogéneas son uniformes en todas sus partes» orienta la lectura.",
-          "a": "m:mezclas homogéneas son uniformes en todas sus partes"
+          "a": "m:mezclas homogéneas son uniformes en todas sus partes",
+          "t": "La frase «mezclas homogéneas son uniformes en todas sus partes» orienta la lectura."
         },
         {
-          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar."
         },
         {
-          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea."
         },
         {
-          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descartamos."
         },
         {
-          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descartamos."
         },
         {
-          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos los datos del enunciado y aclaremos qué se quiere comparar."
         },
         {
-          "t": "Primero identifico qué condición o relación pide la pregunta.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué condición o relación pide la pregunta."
         },
         {
-          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La sustancia uno deja un sólido disuelto al evaporar el líquido y se describe como una sola fase, lo que corresponde a una mezcla homogénea. La sustancia dos se separa en dos fases visibles, así que es heterogénea."
         },
         {
-          "t": "Clasifica la segunda según la separación visible de fases.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Clasifica la segunda según la separación visible de fases."
         },
         {
-          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Invierte lo observado: la primera sustancia presenta una sola fase y la segunda muestra dos fases. La descarto."
         },
         {
-          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La sustancia dos no es homogénea porque se distinguen dos fases. La descarto."
         },
         {
-          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La sustancia uno se describe como una sola fase uniforme, por eso no es heterogénea. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "mezclas homogéneas son uniformes en todas sus partes",
+        "nota": "Expresión del enunciado que orienta la tarea.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Revisa cuántas fases presenta cada sustancia.",
+        "titulo": "Identifica los datos"
+      },
+      {
+        "k": "idea",
+        "texto": "Clasifica la primera a partir de su uniformidad.",
+        "titulo": "Aplica el criterio"
+      },
+      {
+        "k": "check",
+        "texto": "Clasifica la segunda según la separación visible de fases.",
+        "titulo": "Comprueba la conclusión"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -2,19 +2,19 @@
   "estado": "revisada",
   "hoja": {
     "enfoque": {
-      "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción A es correcta.",
+      "clave": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta.",
       "no": [
         {
-          "t": "Opción B",
-          "p": "Pero, confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
+          "t": "Opción A",
+          "p": "Pero confunde «enteros menores que 11» con los valores de j. Sirve cualquier entero j > 11 (12, 13, 100…) para obtener un racional menor que k + 1/11, y esos j son infinitos."
         },
         {
           "t": "Opción C",
-          "p": "Pero, j = {{11}} da exactamente k + {{1}}/{{11}}, que es el límite y no un número menor que él; los racionales buscados usan j mayor que {{11}}."
+          "p": "Pero j = 11 da exactamente k + 1/11, que es el límite y no un número menor que él; los racionales buscados usan j mayor que 11."
         },
         {
           "t": "Opción D",
-          "p": "Pero, j = {{10}} da k + {{0,1}}, que es mayor que k + {{1}}/{{11}}, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
+          "p": "Pero j = 10 da k + 0,1, que es mayor que k + 1/11, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
         }
       ],
       "pistas": [
@@ -44,15 +44,15 @@
           "t": "Hay infinitos enteros positivos mayores que $11$."
         },
         {
-          "a": "o:A:ok",
-          "t": "Por eso se pueden construir infinitos racionales; la respuesta es A."
+          "a": "o:B:ok",
+          "t": "Por eso se pueden construir infinitos racionales; la respuesta es B."
         }
       ],
       "2": [
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
-          "t": "La opción B no corresponde: Confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
+          "t": "La opción A no corresponde: Confunde «enteros menores que {{11}}» con los valores de j. Sirve cualquier entero j > {{11}} ({{12}}, {{13}}, {{100}}…) para obtener un racional menor que k + {{1}}/{{11}}, y esos j son infinitos."
         },
         {
           "a": "o:C:no",
@@ -65,8 +65,8 @@
           "t": "La opción D no corresponde: j = {{10}} da k + {{0,1}}, que es mayor que k + {{1}}/{{11}}, no menor. Además no existe un «más cercano»: para cualquier j siempre hay otro mayor que queda más cerca de k."
         },
         {
-          "a": "o:A:ok",
-          "t": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción A es correcta."
+          "a": "o:B:ok",
+          "t": "Todo entero positivo $j > 11$ satisface la condición; hay infinitos. La opción B es correcta."
         }
       ],
       "3": [
@@ -80,8 +80,8 @@
           "t": "Como hay infinitos enteros positivos que cumplen esa desigualdad, hay infinitos racionales."
         },
         {
-          "a": "o:A:ok",
-          "t": "La opción A expresa el resultado."
+          "a": "o:B:ok",
+          "t": "La opción B expresa el resultado."
         }
       ]
     },
@@ -118,5 +118,6 @@
         "texto": "Verifica si hay una cantidad finita o infinita de enteros mayores que $11$."
       }
     ]
-  }
+  },
+  "revisar": []
 }

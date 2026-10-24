@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "¿Con cuál de los siguientes modelos",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Identifica qué propone hacer con las normas y las trabas económicas."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Compara el rol del Estado descrito con cada modelo."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar una propuesta económica con un modelo",
-      "que": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
+      "clave": "La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque el socialismo propugna la planificación centralizada y la propiedad colectiva o estatal de los medios productivos."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque la monarquía alude a una forma dinástica de gobierno político, no a un modelo específico de política económica de mercado."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque la democracia define el sistema político de soberanía popular, mientras que el texto describe una doctrina de economía de libre mercado."
+        }
+      ],
       "pistas": [
         "Identifica qué propone hacer con las normas y las trabas económicas.",
         "Compara el rol del Estado descrito con cada modelo."
       ],
-      "clave": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto no propone que el Estado controle toda la economía."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero No concentra las decisiones económicas en un monarca ni describe una monarquía."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Invitar a sectores a impulsar productividad no equivale a que todos decidan democráticamente la economía."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué propone hacer con las normas y las trabas económicas."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Compara el rol del Estado descrito con cada modelo."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «¿Con cuál de los siguientes modelos» orienta el análisis.",
-          "a": "m:¿Con cuál de los siguientes modelos"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
-          "a": "p:0"
+          "t": "La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo."
         },
         {
-          "t": "Opción A: El texto no propone que el Estado controle toda la economía. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Con el socialismo, porque busca que el Estado tenga un control…», Pero no responde al criterio central: La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo."
         },
         {
-          "t": "Opción B: No concentra las decisiones económicas en un monarca ni describe una monarquía. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Con la monarquía, porque centraliza las decisiones económicas en…», Pero no responde al criterio central: La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo."
         },
         {
-          "t": "Opción D: Invitar a sectores a impulsar productividad no equivale a que todos decidan democráticamente la economía. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Con la democracia, porque invita a todos a tomar parte en las…», Pero no responde al criterio central: La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué propone hacer con las normas y las trabas económicas.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo."
         },
         {
-          "t": "Compara el rol del Estado descrito con cada modelo.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La propuesta busca quitar trabas, simplificar normas y facilitar el funcionamiento del mercado. Entre las opciones, esto se acerca al neoliberalismo, que limita la intervención estatal principalmente a crear reglas y proteger el funcionamiento del mercado.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C relaciona la simplificación de la regulación con un rol estatal limitado y la protección del mercado.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Considere el siguiente fragmento extraído de",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Con cuál de los siguientes modelos es afín esta propuesta para mejorar la productividad económica?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La propuesta elimina trabas, simplifica regulación y deja más espacio al mercado, rasgos asociados al neoliberalismo. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

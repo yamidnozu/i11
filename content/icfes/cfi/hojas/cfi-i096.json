@@ -1,118 +1,119 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El anabolismo es una forma de metabolismo",
-        "rol": "dato",
-        "nota": "El enunciado ofrece el contexto científico para resolver el ítem.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "se puede afirmar que",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes seleccionar o concluir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar la definición de anabolismo con la fotosíntesis."
-      },
-      {
-        "k": "idea",
-        "texto": "Observa si el proceso forma moléculas complejas a partir de moléculas simples y requiere energía."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción A cumpla el criterio científico planteado."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar la definición de anabolismo con la fotosíntesis.",
-      "que": "Observa si el proceso forma moléculas complejas a partir de moléculas simples y requiere energía.",
-      "plan": [
-        {
-          "t": "Relacionar la definición de anabolismo con la fotosíntesis."
-        },
-        {
-          "t": "Observa si el proceso forma moléculas complejas a partir de moléculas simples y requiere energía."
-        },
-        {
-          "t": "Selecciona la opción A y comprueba que responda al criterio."
-        }
-      ],
-      "pistas": [
-        "El anabolismo es una forma de metabolismo",
-        "La fotosíntesis construye glucosa, una molécula compleja, a partir de moléculas simples y con energía solar. Por eso es un proceso anabólico."
-      ],
-      "clave": "La fotosíntesis construye glucosa, una molécula compleja, a partir de moléculas simples y con energía solar. Por eso es un proceso anabólico.",
+      "clave": "La fotosíntesis sintetiza una molécula compleja; por eso es anabólica.",
       "no": [
         {
           "t": "Opción B",
-          "p": "B la clasifica como catabólica, aunque el proceso forma glucosa."
+          "p": "Pero es incorrecta porque emplear energía para elaborar glucosa es la definición de anabolismo, mientras que el catabolismo degrada compuestos."
         },
         {
           "t": "Opción C",
-          "p": "C la respiración descompone glucosa y no es anabólica."
+          "p": "Pero es incorrecta porque la degradación de nutrientes en la respiración es catabolismo, con independencia de que produzca ATP."
         },
         {
           "t": "Opción D",
-          "p": "D el dióxido de carbono y el agua son moléculas simples, no complejas."
+          "p": "Pero es incorrecta porque califica erróneamente al agua y al dióxido de carbono como moléculas complejas, cuando son precursores simples."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica qué proceso construye glucosa y cuál la descompone.",
+        "Compara el sentido de la transformación con las definiciones dadas."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Identifica qué proceso construye glucosa y cuál la descompone."
+        },
+        {
+          "t": "Verifica por qué la opción A resuelve la tarea."
+        }
+      ],
+      "que": "Explica explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
+      "tema": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico."
     },
     "guion": {
       "1": [
         {
-          "t": "Relacionar la definición de anabolismo con la fotosíntesis."
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
         },
         {
-          "t": "La fotosíntesis construye glucosa, una molécula compleja, a partir de moléculas simples y con energía solar. Por eso es un proceso anabólico."
+          "t": "La fotosíntesis usa energía de la luz para construir glucosa a partir de moléculas simples. Formar una molécula compleja es anabolismo."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A se ajusta al criterio."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "La fotosíntesis usa energía de la luz para construir glucosa a partir de moléculas simples. Formar una molécula compleja es anabolismo."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "B la clasifica como catabólica, aunque el proceso forma glucosa."
+          "t": "La opción B no responde a la relación que solicita el enunciado. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C la respiración descompone glucosa y no es anabólica."
+          "t": "La opción C necesitar energía no convierte la síntesis de glucosa en catabolismo. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D el dióxido de carbono y el agua son moléculas simples, no complejas."
+          "t": "La opción D la respiración descompone glucosa; no se clasifica como anabolismo por producir ATP. La descartamos."
         },
         {
           "a": "o:A:ok",
-          "t": "La fotosíntesis construye glucosa, una molécula compleja, a partir de moléculas simples y con energía solar. Por eso es un proceso anabólico."
+          "t": "La opción A es la respuesta."
         }
       ],
       "3": [
         {
-          "t": "Relacionar la definición de anabolismo con la fotosíntesis."
+          "t": "Identifica qué proceso construye glucosa y cuál la descompone."
         },
         {
-          "t": "Observa si el proceso forma moléculas complejas a partir de moléculas simples y requiere energía."
+          "t": "Compara el sentido de la transformación con las definiciones dadas."
         },
         {
-          "t": "La fotosíntesis construye glucosa, una molécula compleja, a partir de moléculas simples y con energía solar. Por eso es un proceso anabólico."
+          "t": "La fotosíntesis sintetiza una molécula compleja; por eso es anabólica."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
         },
         {
           "a": "o:A:ok",
-          "t": "La conclusión queda respaldada por la información."
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "anabolismo",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La fotosíntesis usa energía de la luz para construir glucosa a partir de moléculas simples. Formar una molécula compleja es anabolismo.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  },
+  "revisar": []
 }

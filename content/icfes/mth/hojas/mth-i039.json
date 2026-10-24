@@ -1,63 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "solamente los torneos jugados en cancha dura",
-        "rol": "dato",
-        "nota": "Australia y Estados Unidos son las dos superficies duras.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "promedio de torneos ganados",
-        "rol": "pide",
-        "nota": "Suma los títulos de esos torneos para los cinco jugadores y divide entre cinco.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica en la leyenda los torneos de cancha dura.",
-        "texto": "Identifica en la leyenda los torneos de cancha dura."
-      },
-      {
-        "k": "calc",
-        "titulo": "Suma los títulos de Australia y Estados Unidos para cada jugador.",
-        "lineas": [
-          "$4+2+9+7+0=22$",
-          "$22/5=4,4$"
-        ],
-        "nota": "Suma los títulos de Australia y Estados Unidos para cada jugador."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El promedio es cuatro coma cuatro títulos; corresponde a D."
-      }
-    ],
     "enfoque": {
-      "tema": "Promedio a partir de una gráfica por categorías",
-      "que": "Promedia los títulos de los cinco jugadores en los dos torneos de cancha dura.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Los conteos son cuatro, dos, nueve, siete y cero; su suma es veintidós y el promedio es $4,4$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro."
+          "p": "Pero un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro."
         },
         {
           "t": "Opción B",
-          "p": "Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco."
+          "p": "Pero dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco."
         },
         {
           "t": "Opción C",
-          "p": "Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura."
+          "p": "Pero dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura."
         }
+      ],
+      "pistas": [
+        "Filtra únicamente los registros de torneos disputados sobre superficie de cancha dura en la tabla estadística.",
+        "Divide el total de victorias conseguidas en cancha dura entre el número de torneos jugados en esa misma superficie."
       ],
       "plan": [
         {
@@ -69,7 +31,9 @@
         {
           "t": "El promedio es cuatro coma cuatro títulos; corresponde a D."
         }
-      ]
+      ],
+      "que": "Promedia los títulos de los cinco jugadores en los dos torneos de cancha dura.",
+      "tema": "Promedio a partir de una gráfica por categorías"
     },
     "guion": {
       "1": [
@@ -80,8 +44,8 @@
           "t": "Australia y Estados Unidos. Suma sus títulos para cada jugador y luego promedia."
         },
         {
-          "t": "El resultado es cuatro coma cuatro, opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "El resultado es cuatro coma cuatro, opción D."
         }
       ],
       "2": [
@@ -92,50 +56,87 @@
           "t": "Los conteos son cuatro, dos, nueve, siete y cero; en total, veintidós."
         },
         {
-          "t": "La opción A: Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Un promedio de uno coma dos subestima los títulos de cancha dura que muestra la gráfica. Pero hay varios jugadores con más de cuatro."
         },
         {
-          "t": "La opción B: Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Dos no corresponde al promedio de los cinco conteos de títulos en superficie dura. Pero debes sumar los conteos y dividir entre cinco."
         },
         {
-          "t": "La opción C: Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Dos coma seis tampoco coincide con la suma de los títulos en Australia y Estados Unidos dividida entre cinco. Pero esos son los dos torneos de cancha dura."
         },
         {
-          "t": "Al dividir entre cinco jugadores da cuatro coma cuatro; A, B y C quedan por debajo. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Al dividir entre cinco jugadores da cuatro coma cuatro; A, B y C quedan por debajo. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "La leyenda identifica Australia y Estados Unidos como torneos de cancha dura.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La leyenda identifica Australia y Estados Unidos como torneos de cancha dura."
         },
         {
-          "t": "La gráfica da cuatro, dos, nueve, siete y cero títulos en esos torneos; la suma es veintidós.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La gráfica da cuatro, dos, nueve, siete y cero títulos en esos torneos; la suma es veintidós."
         },
         {
-          "t": "El promedio es $22/5=4,4$.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "El promedio es $22/5=4,4$."
         },
         {
-          "t": "A, B y C no corresponden a la media de los cinco conteos.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y C no corresponden a la media de los cinco conteos."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "solamente los torneos jugados en cancha dura",
+        "nota": "Australia y Estados Unidos son las dos superficies duras.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "promedio de torneos ganados",
+        "nota": "Suma los títulos de esos torneos para los cinco jugadores y divide entre cinco.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica en la leyenda los torneos de cancha dura.",
+        "titulo": "Identifica en la leyenda los torneos de cancha dura."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$4+2+9+7+0=22$",
+          "$22/5=4,4$"
+        ],
+        "nota": "Suma los títulos de Australia y Estados Unidos para cada jugador.",
+        "titulo": "Suma los títulos de Australia y Estados Unidos para cada jugador."
+      },
+      {
+        "k": "check",
+        "texto": "El promedio es cuatro coma cuatro títulos; corresponde a D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

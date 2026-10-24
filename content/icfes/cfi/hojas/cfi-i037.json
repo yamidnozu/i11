@@ -1,32 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El tercer párrafo del texto",
-        "rol": "pide",
-        "nota": "Debes reconocer la función de ese párrafo dentro del texto completo.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué ejemplos culturales aparecen en el tercer párrafo."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona esos ejemplos con la idea general de que amor y matrimonio no siempre se han vinculado del mismo modo."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción que describa la función del ejemplo, no una afirmación más estrecha sobre una sola cultura."
-      }
-    ],
     "enfoque": {
-      "tema": "Función de un párrafo y ejemplos culturales",
-      "que": "Explicar cómo un ejemplo histórico y cultural apoya una idea general del texto.",
+      "clave": "La opción D presenta el párrafo como ejemplo de que la asociación entre amor y matrimonio varía entre tiempos y culturas.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero el párrafo no compara sistemáticamente China y Occidente."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero la amenaza al respeto se menciona como una creencia cultural, no como una demostración sobre todos los esposos chinos."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero el párrafo ofrece un ejemplo, pero no sintetiza todas las razones de incompatibilidad cultural."
+        }
+      ],
+      "pistas": [
+        "El párrafo presenta una concepción distinta del matrimonio en China.",
+        "La palabra para el cariño conyugal apareció mucho después."
+      ],
       "plan": [
         {
           "t": "Ubica la referencia a la China tradicional y al vocabulario para el afecto entre esposos."
@@ -38,25 +32,8 @@
           "t": "Elige la alternativa que generaliza esa variación temporal y cultural."
         }
       ],
-      "pistas": [
-        "El párrafo presenta una concepción distinta del matrimonio en China.",
-        "La palabra para el cariño conyugal apareció mucho después."
-      ],
-      "clave": "La opción D presenta el párrafo como ejemplo de que la asociación entre amor y matrimonio varía entre tiempos y culturas.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El párrafo no compara sistemáticamente China y Occidente."
-        },
-        {
-          "t": "Opción B",
-          "p": "La amenaza al respeto se menciona como una creencia cultural, no como una demostración sobre todos los esposos chinos."
-        },
-        {
-          "t": "Opción C",
-          "p": "El párrafo ofrece un ejemplo, pero no sintetiza todas las razones de incompatibilidad cultural."
-        }
-      ]
+      "que": "Explicar cómo un ejemplo histórico y cultural apoya una idea general del texto.",
+      "tema": "Función de un párrafo y ejemplos culturales"
     },
     "guion": {
       "1": [
@@ -107,6 +84,30 @@
           "t": "Las demás alternativas exageran o restringen lo que hace el párrafo."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "El tercer párrafo del texto",
+        "nota": "Debes reconocer la función de ese párrafo dentro del texto completo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué ejemplos culturales aparecen en el tercer párrafo."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona esos ejemplos con la idea general de que amor y matrimonio no siempre se han vinculado del mismo modo."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la opción que describa la función del ejemplo, no una afirmación más estrecha sobre una sola cultura."
+      }
+    ]
+  },
+  "revisar": []
 }

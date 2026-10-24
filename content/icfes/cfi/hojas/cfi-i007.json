@@ -1,130 +1,161 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "grupo de 100 empleados",
-        "rol": "dato",
-        "nota": "El total permite convertir porcentajes en cantidades.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "El 60% del grupo son mujeres",
-        "rol": "dato",
-        "nota": "De cada cien empleados, sesenta son mujeres.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "El 20% de las mujeres se desplazan en bus",
-        "rol": "dato",
-        "nota": "Este porcentaje se aplica al grupo de mujeres.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "¿Cuál de las siguientes tablas representa correctamente",
-        "rol": "pide",
-        "nota": "Se contrastan los conteos de cada tabla.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
-      },
-      {
-        "k": "idea",
-        "texto": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
-      },
-      {
-        "k": "check",
-        "texto": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
-      }
-    ],
     "enfoque": {
-      "tema": "Convertir porcentajes en frecuencias de una tabla",
-      "que": "Aplica porcentajes a subgrupos distintos y comprueba que los conteos sumen el total indicado.",
-      "plan": [
-        {
-          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
-        },
-        {
-          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
-        },
-        {
-          "t": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
-        }
-      ],
-      "pistas": [
-        "El grupo tiene $60$ mujeres y $40$ hombres.",
-        "Los porcentajes se aplican a mujeres y hombres por separado."
-      ],
-      "clave": "Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D.",
+      "clave": "Mujeres: $12$ en bus y $48$ a pie; hombres: $24$ en bus y $16$ a pie.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, Las cantidades no respetan los totales de mujeres y hombres."
+          "p": "Pero intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción B",
-          "p": "Pero, Al restar los $16$ hombres que caminan, deben quedar $24$ hombres en bus."
+          "p": "Pero los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción C",
-          "p": "Pero, La tabla no respeta que haya $60$ mujeres ni que $12$ vayan en bus."
+          "p": "Pero sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado."
         }
-      ]
+      ],
+      "pistas": [
+        "Calcula el número de mujeres ($60$) y hombres ($40$); luego halla el $20\\%$ de $60$ y el $40\\%$ de $40$.",
+        "Suma los empleados de ambos sexos que usan cada medio para comparar los totales que se desplazan en bus o a pie."
+      ],
+      "plan": [
+        {
+          "t": "Separa el grupo por género y luego aplica cada porcentaje a su grupo."
+        },
+        {
+          "t": "Calcula las cantidades que determinan las filas."
+        },
+        {
+          "t": "Los cuatro valores suman cien y cumplen los porcentajes; la tabla D es correcta."
+        }
+      ],
+      "que": "Completa los conteos por género y medio de transporte.",
+      "tema": "Porcentajes condicionados y tabla de doble entrada"
     },
     "guion": {
       "1": [
         {
-          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
+          "t": "¿Cuántas mujeres y cuántos hombres hay?"
         },
         {
-          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
+          "t": "Hay sesenta mujeres y cuarenta hombres. Calcula cada porcentaje dentro de su grupo."
         },
         {
           "a": "o:D:ok",
-          "t": "La respuesta es la opción D: Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D."
+          "t": "Doce mujeres van en bus y dieciséis hombres caminan; completa los faltantes y elige D."
         }
       ],
       "2": [
         {
+          "t": "Calcula el veinte por ciento de sesenta: doce mujeres van en bus, así que cuarenta y ocho caminan."
+        },
+        {
+          "t": "El cuarenta por ciento de cuarenta es dieciséis hombres caminando; los otros veinticuatro van en bus."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, Las cantidades no respetan los totales de mujeres y hombres."
+          "t": "La opción A: Intercambia los porcentajes del grupo y no calcula cuántas personas usan cada medio. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, Al restar los $16$ hombres que caminan, deben quedar $24$ hombres en bus."
+          "t": "La opción B: Los datos deberían dar doce mujeres en bus y dieciséis hombres caminando; la tabla muestra otros conteos. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, La tabla no respeta que haya $60$ mujeres ni que $12$ vayan en bus."
+          "t": "La opción C: Sus valores suman ochenta, no cien, y tampoco aplica los porcentajes al género correcto. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:D:ok",
-          "t": "Hay $60$ mujeres y $40$ hombres. El $20\\%$ de $60$ son $12$ mujeres en bus; el $40\\%$ de $40$ son $16$ hombres caminando. Quedan $48$ mujeres caminando y $24$ hombres en bus, como muestra la opción D."
+          "t": "A, B y C no respetan los porcentajes o no suman cien. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Calcula cuántas mujeres y cuántos hombres hay: $60$ y $40$."
+          "a": "p:0",
+          "k": "ana",
+          "t": "El grupo contiene sesenta mujeres y cuarenta hombres."
         },
         {
-          "t": "Halla los conteos de bus y a pie: $20\\%$ de $60$ son $12$; $40\\%$ de $40$ son $16$."
+          "a": "p:1",
+          "t": "Doce mujeres van en bus y cuarenta y ocho caminan; dieciséis hombres caminan y veinticuatro van en bus."
         },
         {
-          "t": "Completa los totales restantes: $48$ mujeres a pie y $24$ hombres en bus. Corresponde la opción D."
+          "a": "p:2",
+          "k": "contra",
+          "t": "La tabla D conserva los totales de género y transporte."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C no cumplen los datos de la encuesta."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D queda respaldada por los datos y el procedimiento."
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "grupo de 100 empleados",
+        "nota": "Es el total de personas encuestadas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "del grupo son mujeres",
+        "nota": "Quedan sesenta mujeres y cuarenta hombres.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "de las mujeres se desplazan en bus",
+        "nota": "Calcula primero el veinte por ciento de sesenta.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "de los hombres se",
+        "nota": "Calcula el cuarenta por ciento de cuarenta.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "tablas representa correctamente",
+        "nota": "Verifica que los cuatro conteos respeten los datos.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el grupo por género y luego aplica cada porcentaje a su grupo.",
+        "titulo": "Separa el grupo por género y luego aplica cada porcentaje a su grupo."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$0,20×60=12$ mujeres en bus",
+          "$0,40×40=16$ hombres caminando",
+          "Completa: $48$ mujeres a pie y $24$ hombres en bus"
+        ],
+        "nota": "Calcula las cantidades que determinan las filas.",
+        "titulo": "Calcula las cantidades que determinan las filas."
+      },
+      {
+        "k": "check",
+        "texto": "Los cuatro valores suman cien y cumplen los porcentajes; la tabla D es correcta.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pregunta",
-        "frag": "¿Dónde puede ver estos avisos?",
-        "nota": "La pregunta pide ubicar el aviso mostrado.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Observa el aviso",
-        "texto": "Lee la instrucción que aparece en la imagen."
-      },
-      {
-        "k": "idea",
-        "titulo": "Reconoce el contexto",
-        "texto": "Es una actividad que se completa sobre una hoja y se colorea."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida corresponde al lugar donde se puede hacer esa actividad."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "El aviso da una instrucción para completar y colorear una actividad. Entre las opciones, una hoja de prueba es el lugar que corresponde a ese ejercicio; la respuesta es «{{on a test}}».",
       "clave": "El aviso da una instrucción para completar y colorear una actividad. Entre las opciones, una hoja de prueba es el lugar que corresponde a ese ejercicio; la respuesta es «{{on a test}}».",
-      "pistas": [
-        "Observa la instrucción del aviso.",
-        "Relaciona la actividad escrita con uno de los lugares propuestos."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "Un tapete no es el soporte donde se responde una actividad escrita."
+          "p": "Pero un tapete no es el soporte donde se responde una actividad escrita."
         },
         {
           "t": "Opción C",
-          "p": "Una estantería no es una superficie para completar y colorear el ejercicio."
+          "p": "Pero una estantería no es una superficie para completar y colorear el ejercicio."
         }
+      ],
+      "pistas": [
+        "Notice the instruction asking students to draw a line to match or complete an answer.",
+        "Identify that this instruction is standard during an examination or written test."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Compara los lugares y confirma cuál permite realizarla."
         }
-      ]
+      ],
+      "que": "El aviso da una instrucción para completar y colorear una actividad. Entre las opciones, una hoja de prueba es el lugar que corresponde a ese ejercicio; la respuesta es «{{on a test}}».",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -121,6 +96,32 @@
           "t": "La respuesta es {{on a test}}; compruébala con la imagen."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "¿Dónde puede ver estos avisos?",
+        "nota": "La pregunta pide ubicar el aviso mostrado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la instrucción que aparece en la imagen.",
+        "titulo": "Observa el aviso"
+      },
+      {
+        "k": "idea",
+        "texto": "Es una actividad que se completa sobre una hoja y se colorea.",
+        "titulo": "Reconoce el contexto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida corresponde al lugar donde se puede hacer esa actividad."
+      }
+    ]
+  },
+  "revisar": []
 }

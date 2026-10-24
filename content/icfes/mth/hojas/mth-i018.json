@@ -1,75 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "R=XZ",
-        "rol": "dato",
-        "nota": "Primera relación entre los números.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "S=XW",
-        "rol": "dato",
-        "nota": "Segunda relación.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "T=ZW",
-        "rol": "dato",
-        "nota": "Esta relación permite cancelar $Z$ y $W$.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "hallar primero $X$",
-        "rol": "pide",
-        "nota": "Busca una expresión que dependa solo de $X$.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Multiplica las relaciones que contienen $X$ y usa la tercera para cancelar los otros factores."
-      },
-      {
-        "k": "calc",
-        "titulo": "Divide $RS$ entre $T$ y despeja la raíz positiva.",
-        "lineas": [
-          "$RS=(XZ)(XW)=X^2ZW$",
-          "$RS/T=X^2$",
-          "$X=\\sqrt{RS/T}$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Como $X$ es positivo, se elige la raíz positiva; la respuesta es D."
-      }
-    ],
     "enfoque": {
-      "tema": "Despeje con relaciones multiplicativas",
-      "que": "Combina las tres pistas para aislar el número $X$.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El cociente $RS/T$ es $X^2$; como $X$ es positivo, se toma la raíz positiva.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La suma no cancela los factores desconocidos. Pero se necesita cancelarlos."
+          "p": "Pero la suma de $R$ y $S$ no elimina los factores $Z$ y $W$ ni despeja $X$."
         },
         {
           "t": "Opción B",
-          "p": "El producto de las tres pistas no reduce la expresión a $X$. Pero esas variables deben desaparecer."
+          "p": "Pero el producto $RST$ introduce potencias adicionales de $Z$ y $W$ en vez de cancelarlas."
         },
         {
           "t": "Opción C",
-          "p": "La resta y división por dos no se derivan de las relaciones dadas. Pero las pistas vinculan productos."
+          "p": "Pero la combinación lineal no se deduce de las tres relaciones multiplicativas."
         }
+      ],
+      "pistas": [
+        "Analiza el orden y las desigualdades dadas en el enunciado para las variables positivas $X$, $Z$ y $W$.",
+        "Comprueba cuál de las expresiones algebraicas mantiene el sentido estricto de la desigualdad al operar con números positivos."
       ],
       "plan": [
         {
@@ -81,7 +31,9 @@
         {
           "t": "Como $X$ es positivo, se elige la raíz positiva; la respuesta es D."
         }
-      ]
+      ],
+      "que": "Combina las tres pistas para aislar el número $X$.",
+      "tema": "Despeje con relaciones multiplicativas"
     },
     "guion": {
       "1": [
@@ -92,8 +44,8 @@
           "t": "Aparece $X^2ZW$; la pista $T$ es justamente $ZW$."
         },
         {
-          "t": "Al dividir por $T$ y sacar raíz positiva se obtiene la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Al dividir por $T$ y sacar raíz positiva se obtiene la opción D."
         }
       ],
       "2": [
@@ -104,50 +56,99 @@
           "t": "Como $T=ZW$, dividir entre $T$ deja $X^2$; luego $X=\\sqrt{RS/T}$."
         },
         {
-          "t": "La opción A: La suma no cancela los factores desconocidos. Pero se necesita cancelarlos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: La suma no cancela los factores desconocidos. Pero se necesita cancelarlos."
         },
         {
-          "t": "La opción B: El producto de las tres pistas no reduce la expresión a $X$. Pero esas variables deben desaparecer.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: El producto de las tres pistas no reduce la expresión a $X$. Pero esas variables deben desaparecer."
         },
         {
-          "t": "La opción C: La resta y división por dos no se derivan de las relaciones dadas. Pero las pistas vinculan productos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: La resta y división por dos no se derivan de las relaciones dadas. Pero las pistas vinculan productos."
         },
         {
-          "t": "A, B y C no cancelan ambos factores desconocidos. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A, B y C no cancelan ambos factores desconocidos. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Las relaciones dan $RS=X^2ZW$ y $T=ZW$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Las relaciones dan $RS=X^2ZW$ y $T=ZW$."
         },
         {
-          "t": "Entonces $RS/T=X^2$; la positividad de $X$ fija la raíz positiva.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Entonces $RS/T=X^2$; la positividad de $X$ fija la raíz positiva."
         },
         {
-          "t": "La expresión buscada es $\\sqrt{RS/T}$.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La expresión buscada es $\\sqrt{RS/T}$."
         },
         {
-          "t": "Las otras operaciones no aíslan $X$.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Las otras operaciones no aíslan $X$."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "R=XZ",
+        "nota": "Primera relación entre los números.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "S=XW",
+        "nota": "Segunda relación.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "T=ZW",
+        "nota": "Esta relación permite cancelar $Z$ y $W$.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "hallar primero $X$",
+        "nota": "Busca una expresión que dependa solo de $X$.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Multiplica las relaciones que contienen $X$ y usa la tercera para cancelar los otros factores.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$RS=(XZ)(XW)=X^2ZW$",
+          "$RS/T=X^2$",
+          "$X=\\sqrt{RS/T}$"
+        ],
+        "titulo": "Divide $RS$ entre $T$ y despeja la raíz positiva."
+      },
+      {
+        "k": "check",
+        "texto": "Como $X$ es positivo, se elige la raíz positiva; la respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

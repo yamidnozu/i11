@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "longitud total de las aristas",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «longitud total de las aristas» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "4l+4a+4h"
-        ],
-        "nota": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: longitud total de las aristas",
-      "que": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
-      "pistas": [
-        "Fíjate en «longitud total de las aristas».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero lah calcula el volumen del prisma rectangular, no la longitud de sus aristas."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero {{4lah}} multiplica cuatro veces el volumen, lo cual no representa una medida de longitud."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero l+a+h suma solamente una arista de cada dimensión, olvidando que una caja tiene 4 aristas de cada tipo."
         }
+      ],
+      "pistas": [
+        "Recuerda que un paralelepípedo o prisma rectangular tiene doce aristas en total: cuatro de longitud ele, cuatro de ancho y cuatro de altura.",
+        "Suma la longitud de todas las aristas de la caja metálica para obtener la expresión simplificada $4l + 4a + 4h$."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "4l+4a+4h"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
+      "tema": "Matemáticas: longitud total de las aristas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «longitud total de las aristas» orienta la estrategia.",
-          "a": "m:longitud total de las aristas"
+          "a": "m:longitud total de las aristas",
+          "t": "La frase «longitud total de las aristas» orienta la estrategia."
         },
         {
-          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
         },
         {
-          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "longitud total de las aristas",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «longitud total de las aristas» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "4l+4a+4h"
+        ],
+        "nota": "Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Un prisma rectangular tiene cuatro aristas de cada una de sus tres longitudes. La suma total es $4l+4a+4h$."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,75 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "cada metro cuadrado tiene un costo de $800.000$",
-        "rol": "dato",
-        "nota": "Es el costo inicial.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "anualmente",
-        "rol": "dato",
-        "nota": "El aumento se aplica en cada periodo.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "se valoriza un $5\\%$ respecto al costo del año anterior",
-        "rol": "dato",
-        "nota": "El porcentaje se calcula sobre el valor actualizado.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "transcurridos $n$ años",
-        "rol": "pide",
-        "nota": "Aplica el factor anual $n$ veces.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Convierte el aumento porcentual en un factor multiplicativo.",
-        "texto": "Convierte el aumento porcentual en un factor multiplicativo."
-      },
-      {
-        "k": "calc",
-        "titulo": "Aplica el factor anual al costo inicial durante $n$ periodos.",
-        "lineas": [
-          "$1+5/100=1,05$",
-          "$C_n=800.000(1+5/100)^n$"
-        ],
-        "nota": "Aplica el factor anual al costo inicial durante $n$ periodos."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La expresión compuesta corresponde a D."
-      }
-    ],
     "enfoque": {
-      "tema": "Crecimiento porcentual compuesto",
-      "que": "Expresa el costo futuro cuando cada año aumenta cinco por ciento sobre el año anterior.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El factor anual es $1,05$ y se repite durante $n$ años.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta."
+          "p": "Pero suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta."
         },
         {
           "t": "Opción B",
-          "p": "Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco."
+          "p": "Pero multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco."
         },
         {
           "t": "Opción C",
-          "p": "Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa."
+          "p": "Pero usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa."
         }
+      ],
+      "pistas": [
+        "Aplica la fórmula de valorización geométrica anual: $C_n = C_0 \\cdot (1 + r)^n$ con una tasa del $5\\%$ ($r = 0,05$).",
+        "Verifica que transcurridos $n$ años el costo por metro cuadrado corresponde a la expresión $800.000 \\cdot (1,05)^n$."
       ],
       "plan": [
         {
@@ -81,7 +31,9 @@
         {
           "t": "La expresión compuesta corresponde a D."
         }
-      ]
+      ],
+      "que": "Expresa el costo futuro cuando cada año aumenta cinco por ciento sobre el año anterior.",
+      "tema": "Crecimiento porcentual compuesto"
     },
     "guion": {
       "1": [
@@ -92,8 +44,8 @@
           "t": "Sobre el del año anterior; cada año se multiplica por uno coma cero cinco."
         },
         {
-          "t": "Ese factor elevado a $n$ aparece en D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Ese factor elevado a $n$ aparece en D."
         }
       ],
       "2": [
@@ -104,50 +56,99 @@
           "t": "Repite la multiplicación durante $n$ años desde el costo de ochocientos mil."
         },
         {
-          "t": "La opción A: Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Suma un aumento fijo de cinco por año, aunque el cinco por ciento depende del costo vigente. Pero la valorización es compuesta."
         },
         {
-          "t": "La opción B: Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Multiplicar por cinco no aplica el aumento porcentual anual ni el costo inicial de forma adecuada. Pero cada periodo usa el factor uno coma cero cinco."
         },
         {
-          "t": "La opción C: Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Usa solo la tasa de aumento como factor y omite conservar el costo anterior. Pero el nuevo precio se multiplica por uno más la tasa."
         },
         {
-          "t": "A suma un valor fijo; B y C no usan el factor completo de crecimiento. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A suma un valor fijo; B y C no usan el factor completo de crecimiento. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "El costo inicial es ochocientos mil pesos por metro cuadrado.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El costo inicial es ochocientos mil pesos por metro cuadrado."
         },
         {
-          "t": "Cada año se multiplica por $1,05$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Cada año se multiplica por $1,05$."
         },
         {
-          "t": "Tras $n$ años, el costo es $800.000(1,05)^n$.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Tras $n$ años, el costo es $800.000(1,05)^n$."
         },
         {
-          "t": "A no compone; B usa un factor incorrecto; C omite sumar uno a la tasa.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "A no compone; B usa un factor incorrecto; C omite sumar uno a la tasa."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "cada metro cuadrado tiene un costo de $800.000$",
+        "nota": "Es el costo inicial.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "anualmente",
+        "nota": "El aumento se aplica en cada periodo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "se valoriza un $5\\%$ respecto al costo del año anterior",
+        "nota": "El porcentaje se calcula sobre el valor actualizado.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "transcurridos $n$ años",
+        "nota": "Aplica el factor anual $n$ veces.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Convierte el aumento porcentual en un factor multiplicativo.",
+        "titulo": "Convierte el aumento porcentual en un factor multiplicativo."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$1+5/100=1,05$",
+          "$C_n=800.000(1+5/100)^n$"
+        ],
+        "nota": "Aplica el factor anual al costo inicial durante $n$ periodos.",
+        "titulo": "Aplica el factor anual al costo inicial durante $n$ periodos."
+      },
+      {
+        "k": "check",
+        "texto": "La expresión compuesta corresponde a D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

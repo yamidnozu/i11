@@ -1,53 +1,147 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "$4.200.000 por capacitar", "rol": "dato", "nota": "Es el costo total que pagó la empresa.", "campo": "Costo total" },
-      { "frag": "tiene entre", "rol": "pide", "nota": "Busca el intervalo de trabajadores que corresponde a ese costo.", "campo": "Cantidad de trabajadores" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Calcula el costo de cada curso", "texto": "Usa la intensidad y el valor por hora del módulo I. Luego determina cuántos cursos se pagaron." },
-      { "k": "calc", "titulo": "Relaciona cursos y trabajadores", "lineas": ["$40 × 35.000 = 1.400.000$", "$4.200.000 ÷ 1.400.000 = 3$"], "nota": "Cada curso admite entre veinte y treinta personas; tres cursos cubren entre sesenta y una y noventa personas, porque con sesenta bastarían dos cursos." },
-      { "k": "check", "texto": "Tres cursos cuestan $4.200.000$ y corresponden a una dependencia de entre sesenta y una y noventa personas. La respuesta es C." }
-    ],
     "enfoque": {
-      "tema": "Costos por cursos y capacidad máxima",
-      "que": "Obtén el precio de un curso con la intensidad y el valor por hora; usa el costo total para inferir cuántos cursos se realizaron.",
-      "pistas": ["Multiplica las horas del módulo por el valor de cada hora.", "Recuerda el mínimo y el máximo de personas por curso."],
       "clave": "El módulo I cuesta $1.400.000$ por curso. El total pagado cubre tres cursos, para un grupo de entre sesenta y una y noventa personas.",
       "no": [
-        { "t": "Opción A", "p": "Supone que basta un curso. Pero el grupo máximo por curso es de treinta personas y el costo de uno es $1.400.000$." },
-        { "t": "Opción B", "p": "Corresponde a dos cursos, cuyo costo sería $2.800.000$. Pero la empresa pagó para tres cursos." },
-        { "t": "Opción D", "p": "Supone cuatro cursos, que costarían $5.600.000$. Pero la empresa pagó menos que ese valor." }
+        {
+          "t": "Opción A",
+          "p": "Pero un curso no puede atender más de 30 personas y costaría $1.400.000."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero dos cursos cuestan $2.800.000, no $4.200.000."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero cuatro cursos costarían $5.600.000, más de lo pagado."
+        }
+      ],
+      "pistas": [
+        "Multiplica las horas del módulo por el valor de cada hora.",
+        "Recuerda el mínimo y el máximo de personas por curso."
       ],
       "plan": [
-        { "t": "Calcula el costo de un curso del módulo I.", "eq": ["$40 × 35.000 = 1.400.000$"] },
-        { "t": "Divide el total pagado entre el costo de un curso.", "eq": ["$4.200.000 ÷ 1.400.000 = 3$"] },
-        { "t": "Convierte la cantidad de cursos en un intervalo de personas usando los límites por grupo." }
-      ]
+        {
+          "eq": [
+            "$40 × 35.000 = 1.400.000$"
+          ],
+          "t": "Calcula el costo de un curso del módulo I."
+        },
+        {
+          "eq": [
+            "$4.200.000 ÷ 1.400.000 = 3$"
+          ],
+          "t": "Divide el total pagado entre el costo de un curso."
+        },
+        {
+          "t": "Convierte la cantidad de cursos en un intervalo de personas usando los límites por grupo."
+        }
+      ],
+      "que": "Obtén el precio de un curso con la intensidad y el valor por hora; usa el costo total para inferir cuántos cursos se realizaron.",
+      "tema": "Costos por cursos y capacidad máxima"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuánto vale un curso del módulo I? Usa las horas y el valor por hora." },
-        { "t": "Cada curso cuesta $1.400.000$. El pago cubre tres cursos, es decir, entre sesenta y una y noventa personas." },
-        { "t": "La respuesta es C.", "a": "o:C:ok" }
+        {
+          "t": "¿Cuánto vale un curso del módulo I? Usa las horas y el valor por hora."
+        },
+        {
+          "t": "Cada curso cuesta $1.400.000$. El pago cubre tres cursos, es decir, entre sesenta y una y noventa personas."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta es C."
+        }
       ],
       "2": [
-        { "t": "Calcula primero el precio de un curso y después cuántos cursos cubre el pago." },
-        { "t": "El curso cuesta $40 × 35.000 = 1.400.000$. El pago de $4.200.000$ alcanza para tres cursos." },
-        { "t": "La opción A propone entre veinte y treinta personas, que caben en un solo curso de $1.400.000$.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción B corresponde a dos cursos, que cuestan $2.800.000$.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción D corresponde a cuatro cursos, que cuestan $5.600.000$.", "a": "o:D:no", "k": "err" },
-        { "t": "Tres cursos de hasta treinta personas cubren de sesenta y una a noventa personas. La respuesta es C.", "a": "o:C:ok" }
+        {
+          "t": "Calcula primero el precio de un curso y después cuántos cursos cubre el pago."
+        },
+        {
+          "t": "El curso cuesta $40 × 35.000 = 1.400.000$. El pago de $4.200.000$ alcanza para tres cursos."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A propone entre veinte y treinta personas, que caben en un solo curso de $1.400.000$."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B corresponde a dos cursos, que cuestan $2.800.000$."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D corresponde a cuatro cursos, que cuestan $5.600.000$."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "Tres cursos de hasta treinta personas cubren de sesenta y una a noventa personas. La respuesta es C."
+        }
       ],
       "3": [
-        { "t": "Cada curso del módulo I cuesta $40 × 35.000 = 1.400.000$.", "a": "p:0", "k": "ana" },
-        { "t": "El pago permite $4.200.000 ÷ 1.400.000 = 3$ cursos. Dos cursos atienden hasta sesenta personas; para requerir tres, debe haber más de sesenta y como máximo noventa.", "a": "p:1" },
-        { "t": "Ese intervalo coincide con la opción C.", "a": "p:2", "k": "contra" },
-        { "t": "La opción A requiere un curso; la B, dos; la D, cuatro, cuyo costo excede el total pagado.", "a": "o:A:no|o:B:no|o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es C.", "a": "o:C:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Cada curso del módulo I cuesta $40 × 35.000 = 1.400.000$."
+        },
+        {
+          "a": "p:1",
+          "t": "El pago permite $4.200.000 ÷ 1.400.000 = 3$ cursos. Dos cursos atienden hasta sesenta personas; para requerir tres, debe haber más de sesenta y como máximo noventa."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Ese intervalo coincide con la opción C."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "La opción A requiere un curso; la B, dos; la D, cuatro, cuyo costo excede el total pagado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Costo total",
+        "frag": "$4.200.000 por capacitar",
+        "nota": "Es el costo total que pagó la empresa.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Cantidad de trabajadores",
+        "frag": "tiene entre",
+        "nota": "Busca el intervalo de trabajadores que corresponde a ese costo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Usa la intensidad y el valor por hora del módulo I. Luego determina cuántos cursos se pagaron.",
+        "titulo": "Calcula el costo de cada curso"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$40 × 35.000 = 1.400.000$",
+          "$4.200.000 ÷ 1.400.000 = 3$"
+        ],
+        "nota": "Cada curso admite entre veinte y treinta personas; tres cursos cubren entre sesenta y una y noventa personas, porque con sesenta bastarían dos cursos.",
+        "titulo": "Relaciona cursos y trabajadores"
+      },
+      {
+        "k": "check",
+        "texto": "Tres cursos cuestan $4.200.000$ y corresponden a una dependencia de entre sesenta y una y noventa personas. La respuesta es C."
+      }
+    ]
+  },
+  "revisar": []
 }

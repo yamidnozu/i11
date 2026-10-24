@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "hace referencia a Rubens",
-        "rol": "dato",
-        "nota": "El pasaje introduce un ejemplo del argumento.",
-        "campo": "Ejemplo"
-      },
-      {
-        "frag": "para mostrar que",
-        "rol": "pide",
-        "nota": "La pregunta pide interpretar la función del ejemplo.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
-      },
-      {
-        "k": "idea",
-        "texto": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C responde al texto completo y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas.",
-      "que": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos.",
+      "clave": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero el autor considera comprensible que atraiga lo bello, pero la referencia a Rubens ilustra el gusto compartido que inspira una obra."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero el texto no afirma que el público siempre exija una representación realista."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero la nocividad se atribuye a rechazar obras por sus temas, no a que los artistas pinten asuntos atractivos."
+        }
+      ],
+      "pistas": [
+        "En el texto, el autor hace referencia a Rubens para mostrar que",
+        "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
+      ],
       "plan": [
         {
           "t": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
@@ -44,25 +32,8 @@
           "t": "Elige la opción C y verifica que se sostenga con el pasaje."
         }
       ],
-      "pistas": [
-        "En el texto, el autor hace referencia a Rubens para mostrar que",
-        "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
-      ],
-      "clave": "Rubens dibujó a su hijo y quiso que otras personas también lo admiraran. El ejemplo muestra que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "A expresa una idea general sobre lo bello, pero no precisa lo que ilustra el ejemplo de Rubens."
-        },
-        {
-          "t": "Opción B",
-          "p": "B afirma una exigencia del público que el texto no plantea."
-        },
-        {
-          "t": "Opción D",
-          "p": "D confunde el posible rechazo de ciertos temas con el gusto de los artistas por temas atractivos."
-        }
-      ]
+      "que": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos.",
+      "tema": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La opción C queda respaldada por el texto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Ejemplo",
+        "frag": "hace referencia a Rubens",
+        "nota": "El pasaje introduce un ejemplo del argumento.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "para mostrar que",
+        "nota": "La pregunta pide interpretar la función del ejemplo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Comprender la función del ejemplo de Rubens dentro del argumento sobre los temas que representan los artistas."
+      },
+      {
+        "k": "idea",
+        "texto": "Conecta el orgullo de Rubens por su hijo con la idea que el autor ilustra sobre los gustos compartidos."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C responde al texto completo y descarta las demás."
+      }
+    ]
+  },
+  "revisar": []
 }

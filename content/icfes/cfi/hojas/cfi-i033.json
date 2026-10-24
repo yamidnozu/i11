@@ -1,118 +1,138 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "qué propósito general tiene el autor al introducir el relato sobre el anillo de Giges",
-        "rol": "pide",
-        "nota": "Debes explicar para qué sirve el relato en el argumento.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "y cómo lo alcanza",
-        "rol": "dato",
-        "nota": "La pregunta también solicita explicar cómo cumple su propósito el relato.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué hace Giges cuando descubre que puede volverse invisible."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona su conducta con la idea que el autor formula después sobre justicia e impunidad."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la alternativa que conecte el propósito del ejemplo con la tesis que ilustra."
-      }
-    ],
     "enfoque": {
-      "tema": "Función de un ejemplo en un argumento",
-      "que": "Explicar cómo el relato de Giges ilustra la tesis del autor sobre la conducta bajo impunidad.",
-      "plan": [
-        {
-          "t": "Resume la conducta de Giges al obtener el anillo."
-        },
-        {
-          "t": "Identifica la tesis general que el relato prepara."
-        },
-        {
-          "t": "Busca la alternativa que vincule ambos elementos."
-        }
-      ],
-      "pistas": [
-        "Giges usa el anillo para actuar sin ser visto.",
-        "El autor generaliza que las personas cometerían injusticias si pudieran hacerlo impunemente."
-      ],
-      "clave": "La opción B indica que el relato busca convencer de que cualquiera cometería injusticias al tener la oportunidad, y muestra a Giges como ejemplo.",
+      "clave": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Presenta el relato como recomendación de la injusticia, no como ejemplo de la tesis que el autor defiende."
+          "p": "Pero el autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias."
         },
         {
           "t": "Opción C",
-          "p": "Afirma que el relato demuestra que todos ya cometemos injusticias, una idea distinta a la hipótesis de impunidad."
+          "p": "Pero el relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente."
         },
         {
           "t": "Opción D",
-          "p": "El texto no sostiene que la justicia requiera fuerza de voluntad; presenta la falta de consecuencias como motivo para la injusticia."
+          "p": "Pero la conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general."
         }
-      ]
+      ],
+      "pistas": [
+        "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+        "Elige la opción que conecte el ejemplo con esa conclusión."
+      ],
+      "plan": [
+        {
+          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
+        },
+        {
+          "t": "Elige la opción que conecte el ejemplo con esa conclusión."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente.",
+      "tema": "Reconocer la función de un relato en un argumento"
     },
     "guion": {
       "1": [
         {
-          "t": "Giges usa el anillo para volverse invisible y tomar el poder."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "El autor usa ese caso para mostrar qué haría alguien con impunidad."
+          "a": "m:propósito general tiene el autor",
+          "t": "La expresión «propósito general tiene el autor» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B conecta el ejemplo con la tesis."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Presenta el relato como recomendación de la injusticia, no como ejemplo de la tesis que el autor defiende."
+          "t": "Opción A: El autor no recomienda la injusticia; usa el caso para advertir sobre la conducta sin consecuencias. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Afirma que el relato demuestra que todos ya cometemos injusticias, una idea distinta a la hipótesis de impunidad."
+          "t": "Opción C: El relato no muestra que todos ya cometan injusticias en secreto, sino qué harían si pudieran hacerlo impunemente. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "El texto no sostiene que la justicia requiera fuerza de voluntad; presenta la falta de consecuencias como motivo para la injusticia."
+          "t": "Opción D: La conclusión no se limita a la fuerza de voluntad de Giges; el ejemplo apoya una afirmación sobre las personas en general. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B indica que el relato busca convencer de que cualquiera cometería injusticias al tener la oportunidad, y muestra a Giges como ejemplo."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "El relato concreto funciona como evidencia para una afirmación general."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Giges descubre la impunidad y la aprovecha; después, el autor extiende esa posibilidad a cualquier persona."
+          "a": "p:0",
+          "t": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender."
         },
         {
-          "t": "La opción B identifica ese propósito argumentativo."
+          "a": "p:1",
+          "t": "Elige la opción que conecte el ejemplo con esa conclusión."
+        },
+        {
+          "a": "p:2",
+          "t": "El relato de Giges muestra a un hombre que, al poder actuar sin ser visto, comete injusticias para obtener poder y beneficios. Platón lo introduce para apoyar la idea de que las personas cometerían injusticias si tuvieran la oportunidad de hacerlo impunemente."
         },
         {
           "a": "o:B:ok",
-          "t": "Las demás opciones confunden la tesis o le atribuyen al autor una recomendación que no hace."
+          "t": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "propósito general tiene el autor",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue lo que le ocurre a Giges de la conclusión general que el autor busca defender.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige la opción que conecte el ejemplo con esa conclusión.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B explica que el relato busca convencer de que se cometerían injusticias al tener la oportunidad.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

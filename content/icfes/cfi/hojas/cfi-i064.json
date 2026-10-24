@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El gobierno decidió construir una represa que es indispensable para generar electricidad para todo el país.",
-        "rol": "dato",
-        "nota": "El enunciado presenta el contexto del problema.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "Según la Constitución política de Colombia, en esta situación el gobierno",
-        "rol": "pide",
-        "nota": "Esta frase precisa qué debes valorar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Valorar la decisión descrita después de consultas y conciliación con la comunidad indígena."
-      },
-      {
-        "k": "idea",
-        "texto": "Ten presente que el enunciado describe consultas, conciliación y un acuerdo para construir la obra y reubicar el asentamiento."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C responde al enunciado y descarta las otras alternativas."
-      }
-    ],
     "enfoque": {
-      "tema": "Valorar la decisión descrita después de consultas y conciliación con la comunidad indígena.",
-      "que": "Ten presente que el enunciado describe consultas, conciliación y un acuerdo para construir la obra y reubicar el asentamiento.",
-      "plan": [
-        {
-          "t": "Valorar la decisión descrita después de consultas y conciliación con la comunidad indígena."
-        },
-        {
-          "t": "Ten presente que el enunciado describe consultas, conciliación y un acuerdo para construir la obra y reubicar el asentamiento."
-        },
-        {
-          "t": "Elige la opción C y verifica que concuerda con la situación descrita."
-        }
-      ],
-      "pistas": [
-        "Según la Constitución política de Colombia, en esta situación el gobierno",
-        "C"
-      ],
-      "clave": "El relato señala que hubo consulta, conciliación y acuerdo. La opción C recoge el respeto por la comunidad y la consideración del bien común.",
+      "clave": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, A contradice el acuerdo alcanzado tras las consultas y la conciliación descritas."
+          "p": "Pero es incorrecta porque el gobierno precisamente evitó vulnerar los derechos indígenas al acoger sus peticiones y rediseñar el trazado de la obra."
         },
         {
           "t": "Opción B",
-          "p": "Pero, B plantea una oposición que no refleja el acuerdo narrado."
+          "p": "Pero es incorrecta porque no se sacrificó el bienestar colectivo: la central hidroeléctrica se construyó y generará energía para toda la nación."
         },
         {
           "t": "Opción D",
-          "p": "Pero, D propone una consulta popular, aunque el enunciado ya describe consultas con la comunidad involucrada."
+          "p": "Pero es incorrecta porque el mecanismo adecuado y constitucionalmente preceptivo en territorios ancestrales es la consulta previa informada, no una consulta popular amplia."
         }
-      ]
+      ],
+      "pistas": [
+        "Observa si la comunidad fue consultada y participó en el acuerdo.",
+        "Compara el interés general de la represa con el trato dado a la comunidad."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Valorar la decisión descrita después de consultas y conciliación con la comunidad indígena."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "El relato señala que hubo consulta, conciliación y acuerdo. La opción C recoge el respeto por la comunidad y la consideración del bien común."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C responde a lo que pide el enunciado."
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A contradice el acuerdo alcanzado tras las consultas y la conciliación descritas."
+          "t": "La opción A plantea «actuó en contra de los derechos de las comunidades indígenas.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B plantea una oposición que no refleja el acuerdo narrado."
+          "t": "La opción B plantea «favoreció a la comunidad indígena en contra del interés general.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D propone una consulta popular, aunque el enunciado ya describe consultas con la comunidad involucrada."
+          "t": "La opción D plantea «debió hacer una consulta popular para resolver este problema.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
           "a": "o:C:ok",
-          "t": "El relato señala que hubo consulta, conciliación y acuerdo. La opción C recoge el respeto por la comunidad y la consideración del bien común."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Valorar la decisión descrita después de consultas y conciliación con la comunidad indígena."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Ten presente que el enunciado describe consultas, conciliación y un acuerdo para construir la obra y reubicar el asentamiento."
-        },
-        {
-          "t": "El relato señala que hubo consulta, conciliación y acuerdo. La opción C recoge el respeto por la comunidad y la consideración del bien común."
+          "a": "p:1",
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C queda respaldada por el enunciado."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El gobierno decidió construir una represa qu",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ta situación el gobierno",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

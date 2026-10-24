@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La temperatura final del agua fue 17 °C",
-        "rol": "dato",
-        "nota": "El texto o la figura aporta la evidencia necesaria.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "la temperatura final de los dos litros de agua sea",
-        "rol": "pide",
-        "nota": "La pregunta indica la conclusión que debes seleccionar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
-      },
-      {
-        "k": "idea",
-        "texto": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C respete la evidencia y el principio científico del enunciado."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar la cantidad de agua calentada con el aumento de temperatura.",
-      "que": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua.",
+      "clave": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero a supone que duplicar el agua duplica el aumento de temperatura."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero b mantiene el aumento observado para la mitad de agua, aunque ahora se calienta el doble de agua."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero d afirma que no habría aumento de temperatura, a pesar de que la estufa transfiere energía."
+        }
+      ],
+      "pistas": [
+        "La temperatura inicial y el tiempo de calentamiento se mantienen iguales.",
+        "Al duplicar la cantidad de agua, el aumento de temperatura se reduce a la mitad."
+      ],
       "plan": [
         {
           "t": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
@@ -44,25 +32,8 @@
           "t": "Selecciona la opción C y comprueba la relación descrita."
         }
       ],
-      "pistas": [
-        "La temperatura inicial y el tiempo de calentamiento se mantienen iguales.",
-        "Al duplicar la cantidad de agua, el aumento de temperatura se reduce a la mitad."
-      ],
-      "clave": "La misma energía calienta el doble de agua, así que el aumento de temperatura se reduce a la mitad: un grado. El agua termina a dieciséis grados Celsius.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "A duplica el aumento de temperatura, aunque también se duplicó la cantidad de agua."
-        },
-        {
-          "t": "Opción B",
-          "p": "B mantiene el aumento de dos grados observado para la mitad de agua."
-        },
-        {
-          "t": "Opción D",
-          "p": "D supone que la temperatura no cambia pese al calentamiento."
-        }
-      ]
+      "que": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua.",
+      "tema": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta queda sustentada en los datos del problema."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "La temperatura final del agua fue 17 °C",
+        "nota": "El texto o la figura aporta la evidencia necesaria.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "la temperatura final de los dos litros de agua sea",
+        "nota": "La pregunta indica la conclusión que debes seleccionar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la cantidad de agua calentada con el aumento de temperatura."
+      },
+      {
+        "k": "idea",
+        "texto": "Con la misma estufa y el mismo tiempo, compara el aumento de temperatura al duplicar el volumen de agua."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C respete la evidencia y el principio científico del enunciado."
+      }
+    ]
+  },
+  "revisar": []
 }

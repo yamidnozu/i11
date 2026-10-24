@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El Consejo Académico de un colegio decidió n",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "ión se puede afirmar que",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «es importante porque estimula a los estudiantes a que estudien y…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
+          "p": "Pero es incorrecta porque premiar las calificaciones altas no puede justificar la supresión de los derechos de participación política escolar."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «dificulta la disponibilidad de tiempo para el desarrollo normal de…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
+          "p": "Pero es incorrecta porque el impedimento no es la carga horaria académica de las reuniones, sino la vulneración del derecho al sufragio estudiantil."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «promueve en los estudiantes la comprensión de la importancia del…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
+          "p": "Pero es incorrecta porque imponer representantes a dedo enseña una práctica autoritaria que desvirtúa el aprendizaje de la democracia participativa."
         }
+      ],
+      "pistas": [
+        "Compara el nombramiento con las elecciones ordinarias.",
+        "Identifica qué derecho pierde el estudiantado si no puede elegir."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "La opción A plantea «es importante porque estimula a los estudiantes a que estudien y…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «es importante porque estimula a los estudiantes a que estudien y…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "La opción B plantea «dificulta la disponibilidad de tiempo para el desarrollo normal de…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «dificulta la disponibilidad de tiempo para el desarrollo normal de…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "La opción D plantea «promueve en los estudiantes la comprensión de la importancia del…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «promueve en los estudiantes la comprensión de la importancia del…», Pero no responde al criterio central: Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El Consejo Académico de un colegio decidió n",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ión se puede afirmar que",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Nombrar representantes sin elecciones ordinarias impide que el estudiantado use el mecanismo de participación previsto para escogerlos. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

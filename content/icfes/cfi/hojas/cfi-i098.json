@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "por cada tres nucleótidos consecutivos de ARN mensajero se codifica un aminoácido",
-        "rol": "dato",
-        "nota": "El enunciado presenta la información necesaria para razonar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿cuántos aminoácidos conformarán la proteína?",
-        "rol": "pide",
-        "nota": "La pregunta solicita valorar la propuesta o contar el resultado.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
-      },
-      {
-        "k": "idea",
-        "texto": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción C responda con evidencia al problema planteado."
-      }
-    ],
     "enfoque": {
-      "tema": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación.",
-      "que": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación.",
-      "plan": [
-        {
-          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
-        },
-        {
-          "t": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
-        },
-        {
-          "t": "Elige la opción C y comprueba que se desprenda del enunciado."
-        }
-      ],
-      "pistas": [
-        "por cada tres nucleótidos consecutivos de ARN mensajero se codifica un aminoácido",
-        "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
-      ],
-      "clave": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis.",
+      "clave": "Antes del codón de terminación hay seis tripletes que codifican aminoácidos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A cuenta más tripletes de los que hay entre las señales indicadas."
+          "p": "Pero cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$."
         },
         {
           "t": "Opción B",
-          "p": "B no corresponde al número de tripletes traducidos entre inicio y terminación."
+          "p": "Pero confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido."
         },
         {
           "t": "Opción D",
-          "p": "D incluye tripletes que aparecen después de UAG, que no se traducen."
+          "p": "Pero cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal."
         }
-      ]
+      ],
+      "pistas": [
+        "Divide la secuencia en grupos de tres nucleótidos.",
+        "Detén el conteo al encontrar el codón $UAG$."
+      ],
+      "plan": [
+        {
+          "t": "Separa el ARN en tripletes desde $AUG$."
+        },
+        {
+          "t": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$."
+        },
+        {
+          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
+        }
+      ],
+      "que": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis.",
+      "tema": "Contar aminoácidos a partir de una secuencia de ARN"
     },
     "guion": {
       "1": [
         {
-          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
+          "a": "m:A partir de las cadenas de ARN mensajero",
+          "t": "La frase «A partir de las cadenas de ARN mensajero» indica el proceso que debemos seguir."
+        },
+        {
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C responde a la pregunta."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
+        },
+        {
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A cuenta más tripletes de los que hay entre las señales indicadas."
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B no corresponde al número de tripletes traducidos entre inicio y terminación."
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D incluye tripletes que aparecen después de UAG, que no se traducen."
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descartamos."
         },
         {
           "a": "o:C:ok",
-          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Contar los codones que se traducen en aminoácidos y distinguir las señales de inicio y terminación."
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Agrupa la secuencia en tripletes, excluye el codón inicial y detente al encontrar el codón de terminación."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece."
         },
         {
-          "t": "Entre el codón de inicio AUG y el codón de terminación UAG hay seis tripletes que codifican aminoácidos. La respuesta es seis."
+          "a": "p:1",
+          "t": "Separa la secuencia en tripletes desde el codón de inicio $AUG$. El codón de terminación $UAG$ detiene la traducción y no codifica un aminoácido; los tripletes traducidos antes de él son seis."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: Cuenta ocho aminoácidos, pero incluye tripletes posteriores al codón de terminación. La traducción se detiene en $UAG$. La descarto."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Confunde el conteo de nucleótidos con el de aminoácidos. Cada aminoácido corresponde a un triplete traducido, no a un nucleótido. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: Cuenta el total de tripletes sin excluir el inicio y la terminación, que el enunciado indica que tienen funciones de señal. La descarto."
         },
         {
           "a": "o:C:ok",
-          "t": "La respuesta queda sustentada por la información disponible."
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "A partir de las cadenas de ARN mensajero",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el ARN en tripletes desde $AUG$.",
+        "titulo": "Identifica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Cuenta los tripletes que codifican aminoácidos antes de $UAG$.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "idea",
+        "texto": "Comprueba que el inicio y la terminación se tratan como señales, según el enunciado.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "función cumple la conjunción",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Compara las dos cifras que conecta la expresión."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar una relación de contraste entre datos",
-      "que": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
-      "pistas": [
-        "Compara las dos cifras que conecta la expresión.",
-        "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
-      ],
       "clave": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La infografía opone pocos vehículos con muchas muertes; no lo contrario."
+          "p": "Pero la infografía opone pocos vehículos con muchas muertes; no lo contrario."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La frase no atribuye las muertes al número de autos ni demuestra una relación causal."
+          "p": "Pero la frase no atribuye las muertes al número de autos ni demuestra una relación causal."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor."
+          "p": "Pero no cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor."
         }
+      ],
+      "pistas": [
+        "Localiza el recuadro sobre países de ingresos medios: compara el 52 % de vehículos con el 80 % de muertes por accidentes de tránsito.",
+        "Evalúa qué función cumple la conjunción «pero» para contraponer la proporción de vehículos frente a la tasa desproporcionada de mortalidad."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
+      "tema": "Interpretar una relación de contraste entre datos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «función cumple la conjunción» orienta la lectura.",
-          "a": "m:función cumple la conjunción"
+          "a": "m:función cumple la conjunción",
+          "t": "La expresión «función cumple la conjunción» orienta la lectura."
         },
         {
-          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen."
         },
         {
-          "t": "Opción B: La infografía opone pocos vehículos con muchas muertes; no lo contrario. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La infografía opone pocos vehículos con muchas muertes; no lo contrario. La descartamos."
         },
         {
-          "t": "Opción C: La frase no atribuye las muertes al número de autos ni demuestra una relación causal. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La frase no atribuye las muertes al número de autos ni demuestra una relación causal. La descartamos."
         },
         {
-          "t": "Opción D: No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No cuestiona que las cifras sean oficiales ni afirma que la mortalidad sea mayor. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Compara las dos cifras que conecta la expresión.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Compara las dos cifras que conecta la expresión."
         },
         {
-          "t": "Identifica qué relación establece entre la proporción de vehículos y la de muertes.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Identifica qué relación establece entre la proporción de vehículos y la de muertes."
         },
         {
-          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La expresión «a pesar de eso» contrapone la mitad de los vehículos a la proporción mucho mayor de muertes en los países de ingresos medios. El contraste destaca que su mortalidad es elevada frente a la cantidad de vehículos que tienen."
         },
         {
-          "t": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "función cumple la conjunción",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara las dos cifras que conecta la expresión.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Identifica qué relación establece entre la proporción de vehículos y la de muertes.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La conjunción resalta la alta proporción de muertes pese a que esos países tienen solo cerca de la mitad de los vehículos.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

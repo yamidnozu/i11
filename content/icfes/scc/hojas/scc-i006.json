@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La asamblea de propietarios de un edificio d",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "es de todos los vecinos?",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «No, porque los habitantes de los pisos más altos no pueden…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
+          "p": "Pero es incorrecta porque los propietarios de pisos superiores sí tienen acceso al salón comunal y se benefician de las fiestas sin sufrir el ruido constante."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «Sí, porque debido a que la propuesta se aprobó todos los vecinos…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
+          "p": "Pero es incorrecta porque confunde la aprobación mayoritaria de una norma con la coincidencia real de intereses y bienestar de todos los habitantes."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «Sí, porque todos los propietarios tuvieron derecho a exponer sus…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
+          "p": "Pero es incorrecta porque reduce la justicia de la decisión al procedimiento de votación, ignorando el perjuicio material insoportable para los vecinos inmediatos."
         }
+      ],
+      "pistas": [
+        "Identifica quiénes se benefician y quiénes soportan el ruido.",
+        "Evalúa el efecto de la decisión sobre los propietarios del primer piso."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales. La respuesta es C."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
         },
         {
-          "t": "La opción A plantea «No, porque los habitantes de los pisos más altos no pueden…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «No, porque los habitantes de los pisos más altos no pueden…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
         },
         {
-          "t": "La opción B plantea «Sí, porque debido a que la propuesta se aprobó todos los vecinos…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Sí, porque debido a que la propuesta se aprobó todos los vecinos…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
         },
         {
-          "t": "La opción D plantea «Sí, porque todos los propietarios tuvieron derecho a exponer sus…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Sí, porque todos los propietarios tuvieron derecho a exponer sus…», Pero no responde al criterio central: La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La asamblea de propietarios de un edificio d",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "es de todos los vecinos?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La votación fija un horario intermedio, pero no elimina el perjuicio del ruido para quienes viven junto al salón. Por eso la decisión no satisface por igual los intereses vecinales. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

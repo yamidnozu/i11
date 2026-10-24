@@ -1,53 +1,152 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "concepto",
-    "marcas": [
-      { "frag": "100 toneladas de mango y 50 de banano", "rol": "dato", "nota": "Suma la carga total para calcular la cantidad mínima de salidas.", "campo": "Carga del mes" },
-      { "frag": "es posible conocer", "rol": "pide", "nota": "Distingue qué se determina con los datos disponibles.", "campo": "Alcance de la información" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Usa la carga y la capacidad conjunta", "texto": "Se conoce cuántas toneladas se vendieron y la capacidad de los tres camiones; eso basta para hallar el mínimo de salidas." },
-      { "k": "calc", "titulo": "Calcula la carga y las salidas mínimas", "lineas": ["$100 + 50 = 150$ toneladas", "$3 × 5 = 15$ toneladas por salida", "$150 ÷ 15 = 10$ salidas"], "nota": "Si se cuenta cada camión por separado, son treinta viajes individuales." },
-      { "k": "check", "texto": "Se puede conocer el número mínimo de viajes; la respuesta es D." }
-    ],
     "enfoque": {
-      "tema": "Inferir viajes mínimos por capacidad",
-      "que": "Suma las toneladas y divide por la capacidad de carga conjunta de los camiones para hallar el mínimo de salidas.",
-      "pistas": ["La información da la carga total vendida.", "La capacidad de cada camión y la cantidad de camiones son conocidas."],
       "clave": "La carga suma $150$ toneladas. Los tres camiones pueden llevar $15$ toneladas por salida conjunta; se requieren como mínimo $10$ salidas.",
       "no": [
-        { "t": "Opción A", "p": "La ganancia depende de las ciudades en que se vendió cada producto. Pero esa distribución no aparece." },
-        { "t": "Opción B", "p": "El pago depende de la asignación de trabajadores a viajes y ventas. Pero esos detalles no están dados." },
-        { "t": "Opción C", "p": "Los costos dependen de las ciudades de destino y de los viajes. Pero la información no indica esa distribución." }
+        {
+          "t": "Opción A",
+          "p": "Pero no se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero no se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores."
+        }
+      ],
+      "pistas": [
+        "La información da la carga total vendida.",
+        "La capacidad de cada camión y la cantidad de camiones son conocidas."
       ],
       "plan": [
-        { "t": "Suma las toneladas de mango y banano.", "eq": ["$100 + 50 = 150$"] },
-        { "t": "Calcula la capacidad conjunta por salida de los tres camiones.", "eq": ["$3 × 5 = 15$"] },
-        { "t": "Divide la carga total entre esa capacidad y toma el mínimo de salidas.", "eq": ["$150 ÷ 15 = 10$"] }
-      ]
+        {
+          "eq": [
+            "$100 + 50 = 150$"
+          ],
+          "t": "Suma las toneladas de mango y banano."
+        },
+        {
+          "eq": [
+            "$3 × 5 = 15$"
+          ],
+          "t": "Calcula la capacidad conjunta por salida de los tres camiones."
+        },
+        {
+          "eq": [
+            "$150 ÷ 15 = 10$"
+          ],
+          "t": "Divide la carga total entre esa capacidad y toma el mínimo de salidas."
+        }
+      ],
+      "que": "Suma las toneladas y divide por la capacidad de carga conjunta de los camiones para hallar el mínimo de salidas.",
+      "tema": "Inferir viajes mínimos por capacidad"
     },
     "guion": {
       "1": [
-        { "t": "¿Qué cantidades sí conocemos: las ciudades de venta o el total de toneladas?", "a": "m:100 toneladas de mango y 50 de banano" },
-        { "t": "La carga suma ciento cincuenta toneladas. Los tres camiones llevan quince por salida conjunta." },
-        { "t": "Se requieren como mínimo diez salidas. La respuesta es D.", "a": "o:D:ok" }
+        {
+          "a": "m:100 toneladas de mango y 50 de banano",
+          "t": "¿Qué cantidades sí conocemos: las ciudades de venta o el total de toneladas?"
+        },
+        {
+          "t": "La carga suma ciento cincuenta toneladas. Los tres camiones llevan quince por salida conjunta."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "Se requieren como mínimo diez salidas. La respuesta es D."
+        }
       ],
       "2": [
-        { "t": "Suma la carga y compárala con la capacidad conjunta de la flota." },
-        { "t": "La carga es $100 + 50 = 150$ toneladas. Cada salida conjunta mueve $3 × 5 = 15$ toneladas, así que el mínimo es $150 ÷ 15 = 10$ salidas." },
-        { "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción C depende de destinos y costos de viaje que no se especifican.", "a": "o:C:no", "k": "err" },
-        { "t": "La capacidad y la carga sí permiten hallar las salidas mínimas. La respuesta es D.", "a": "o:D:ok" }
+        {
+          "t": "Suma la carga y compárala con la capacidad conjunta de la flota."
+        },
+        {
+          "t": "La carga es $100 + 50 = 150$ toneladas. Cada salida conjunta mueve $3 × 5 = 15$ toneladas, así que el mínimo es $150 ÷ 15 = 10$ salidas."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C depende de destinos y costos de viaje que no se especifican."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La capacidad y la carga sí permiten hallar las salidas mínimas. La respuesta es D."
+        }
       ],
       "3": [
-        { "t": "La suma vendida es $100 + 50 = 150$ toneladas.", "a": "p:0", "k": "ana" },
-        { "t": "Tres camiones de cinco toneladas mueven $15$ toneladas por salida conjunta; $150 ÷ 15 = 10$ salidas. Contadas por vehículo, equivalen a treinta viajes de camión.", "a": "p:1" },
-        { "t": "La capacidad de carga determina ese mínimo, aunque no se conozcan las ciudades de destino.", "a": "p:2", "k": "contra" },
-        { "t": "A, B y C dependen de datos de venta, pagos o destinos que no se conocen.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
-        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "La suma vendida es $100 + 50 = 150$ toneladas."
+        },
+        {
+          "a": "p:1",
+          "t": "Tres camiones de cinco toneladas mueven $15$ toneladas por salida conjunta; $150 ÷ 15 = 10$ salidas. Contadas por vehículo, equivalen a treinta viajes de camión."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "La capacidad de carga determina ese mínimo, aunque no se conozcan las ciudades de destino."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C dependen de datos de venta, pagos o destinos que no se conocen."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Carga del mes",
+        "frag": "100 toneladas de mango y 50 de banano",
+        "nota": "Suma la carga total para calcular la cantidad mínima de salidas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Alcance de la información",
+        "frag": "es posible conocer",
+        "nota": "Distingue qué se determina con los datos disponibles.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Se conoce cuántas toneladas se vendieron y la capacidad de los tres camiones; eso basta para hallar el mínimo de salidas.",
+        "titulo": "Usa la carga y la capacidad conjunta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$100 + 50 = 150$ toneladas",
+          "$3 × 5 = 15$ toneladas por salida",
+          "$150 ÷ 15 = 10$ salidas"
+        ],
+        "nota": "Si se cuenta cada camión por separado, son treinta viajes individuales.",
+        "titulo": "Calcula la carga y las salidas mínimas"
+      },
+      {
+        "k": "check",
+        "texto": "Se puede conocer el número mínimo de viajes; la respuesta es D."
+      }
+    ]
+  },
+  "revisar": []
 }

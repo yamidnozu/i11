@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "I can’t eat a cold sandwich. It is horrible!",
-        "rol": "dato",
-        "nota": "Es la intervención a la que debe responderse.",
-        "campo": "Contexto"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Reconoce la situación",
-        "texto": "Identifica qué comunica la persona y qué reacción tendría sentido."
-      },
-      {
-        "k": "idea",
-        "titulo": "Elige una respuesta pertinente",
-        "texto": "La persona expresa una opinión negativa sobre el sándwich frío. {{I agree}} responde que la otra persona comparte esa opinión."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica el intercambio",
-        "texto": "Lee las dos intervenciones seguidas y confirma que la conversación suena coherente."
-      }
-    ],
     "enfoque": {
-      "tema": "Responder de forma pertinente en una conversación",
-      "que": "Elige la intervención que responde con sentido a lo que acaba de decir la otra persona.",
-      "pistas": [
-        "Reconoce si la persona comparte una opinión, cuenta una noticia o relata un hecho.",
-        "Descarta respuestas que cambian el tema o quedan incompletas."
-      ],
-      "clave": "La persona expresa una opinión negativa sobre el sándwich frío. {{I agree}} responde que la otra persona comparte esa opinión.",
+      "clave": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero {{I hope so}} expresa una esperanza, no acuerdo con la opinión."
+          "p": "Pero no responde a la opinión; expresa esperanza."
         },
         {
           "t": "Opción C",
-          "p": "Pero {{I am not}} queda incompleta y no responde a la valoración."
+          "p": "Pero no concuerda con la opinión ni responde de forma natural a lo dicho."
         }
+      ],
+      "pistas": [
+        "Notice the speaker's negative opinion about cold sandwiches.",
+        "Choose the conversational expression of agreement: {{I agree}}."
       ],
       "plan": [
         {
-          "t": "Lee la intervención inicial."
+          "t": "Identifica qué información pide el enunciado."
         },
         {
-          "t": "Reconoce qué respuesta espera el contexto."
+          "t": "Contrasta las pistas con el pasaje, la descripción o la imagen."
         },
         {
-          "t": "Comprueba que la alternativa elegida mantiene la conversación."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee lo que dice la primera persona."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos la información disponible."
         },
         {
-          "t": "Piensa qué respuesta encaja con la situación."
+          "a": "m:I can’t eat a cold sandwich. It is horrible!",
+          "t": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}."
         },
         {
-          "t": "La opción correcta es {{I agree.}}.",
-          "a": "o:B:ok"
+          "a": "p:1",
+          "t": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
       "2": [
         {
-          "t": "Identifica la intención de la intervención."
+          "a": "leer",
+          "t": "Busca la pista que permite responder."
         },
         {
-          "t": "La opción A no responde bien: {{I hope so}} expresa una esperanza, no acuerdo con la opinión.",
+          "a": "p:1",
+          "t": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
+        },
+        {
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: No responde a la opinión; expresa esperanza."
         },
         {
-          "t": "La opción C no responde bien: {{I am not}} queda incompleta y no responde a la valoración.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: No concuerda con la opinión ni responde de forma natural a lo dicho."
         },
         {
-          "t": "La opción B mantiene una conversación coherente.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción correcta."
         }
       ],
       "3": [
         {
-          "t": "Interpreta la intención de quien habla.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Explica qué pista del contexto respalda la respuesta."
         },
         {
-          "t": "La persona expresa una opinión negativa sobre el sándwich frío. {{I agree}} responde que la otra persona comparte esa opinión.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "Las otras alternativas cambian el tema o no completan una respuesta natural.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: No responde a la opinión; expresa esperanza."
         },
         {
-          "t": "Comprueba que la opción B responde a la intervención inicial.",
-          "a": "o:B:ok"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: No concuerda con la opinión ni responde de forma natural a lo dicho."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "I can’t eat a cold sandwich. It is horrible!",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

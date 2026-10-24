@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "de sus hijos 3/4 son de cuello largo y 1/4 son de cuello corto",
-        "rol": "dato",
-        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "De los genotipos de los padres puede afirmarse que",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes explicar o inferir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Inferir genotipos a partir de una proporción de descendencia."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción A explique la evidencia y no solo repita un dato."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir genotipos a partir de una proporción de descendencia.",
-      "que": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva.",
-      "plan": [
-        {
-          "t": "Inferir genotipos a partir de una proporción de descendencia."
-        },
-        {
-          "t": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
-        },
-        {
-          "t": "Elige la opción A y comprueba que se derive de los datos."
-        }
-      ],
-      "pistas": [
-        "La descendencia muestra el rasgo recesivo en una parte de los hijos.",
-        "Un patrón de tres a uno puede surgir de un cruce entre progenitores heterocigotos."
-      ],
-      "clave": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo.",
+      "clave": "La descendencia con cuello corto requiere que cada padre heterocigoto haya aportado el alelo recesivo.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Un progenitor homocigoto recesivo produciría una proporción distinta de descendientes de cuello corto."
+          "p": "Pero un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos."
         },
         {
           "t": "Opción C",
-          "p": "Un progenitor homocigoto dominante no produciría la proporción recesiva observada."
+          "p": "Pero si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo."
         },
         {
           "t": "Opción D",
-          "p": "Dos progenitores homocigotos dominantes no tendrían hijos de cuello corto."
+          "p": "Pero dos padres homocigotos dominantes no tendrían descendencia de cuello corto."
         }
-      ]
+      ],
+      "pistas": [
+        "Relaciona el rasgo corto con el alelo recesivo.",
+        "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
+      ],
+      "plan": [
+        {
+          "t": "Relaciona el rasgo corto con el alelo recesivo."
+        },
+        {
+          "t": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
+        },
+        {
+          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
+        }
+      ],
+      "que": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+      "tema": "Inferir genotipos a partir de una proporción heredada"
     },
     "guion": {
       "1": [
         {
-          "t": "Inferir genotipos a partir de una proporción de descendencia."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
+          "a": "m:individuos con cuello largo",
+          "t": "La expresión «individuos con cuello largo» orienta lo que debemos observar."
+        },
+        {
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A explica la evidencia."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
+        },
+        {
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "Un progenitor homocigoto recesivo produciría una proporción distinta de descendientes de cuello corto."
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Un progenitor homocigoto dominante no produciría la proporción recesiva observada."
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Dos progenitores homocigotos dominantes no tendrían hijos de cuello corto."
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descartamos."
         },
         {
           "a": "o:A:ok",
-          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Inferir genotipos a partir de una proporción de descendencia."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Relaciona la presencia de descendientes de cuello corto con el patrón de herencia recesiva."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar."
         },
         {
-          "t": "La proporción de tres cuartos con cuello largo y un cuarto con cuello corto corresponde al cruce de dos progenitores heterocigotos cuando el cuello corto es recesivo."
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descarto."
         },
         {
           "a": "o:A:ok",
-          "t": "La respuesta queda respaldada por el resultado descrito."
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "individuos con cuello largo",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona el rasgo corto con el alelo recesivo.",
+        "titulo": "Identifica qué se compara"
+      },
+      {
+        "k": "idea",
+        "texto": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

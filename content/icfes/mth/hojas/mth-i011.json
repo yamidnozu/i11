@@ -5,16 +5,16 @@
       "clave": "Las $47$ toneladas dejan dos fuera de los grupos completos; las $45$ elegibles generan $58.500.000$ en ventas y un bono de aproximadamente $175.000$ por persona.",
       "no": [
         {
-          "p": "Calcula el bono con una base mayor que las toneladas elegibles. Pero el sobrante no completa otro grupo de cinco.",
-          "t": "Opción B"
+          "t": "Opción A",
+          "p": "Pero $526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas."
         },
         {
-          "p": "No aplica el porcentaje a la venta de las toneladas elegibles. Pero el cálculo debe usar el precio del mango en W.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero $148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles."
         },
         {
-          "p": "No corresponde al porcentaje sobre los grupos completos. Pero el valor de venta elegible es $58.500.000$.",
-          "t": "Opción D"
+          "t": "Opción D",
+          "p": "Pero $87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
         }
       ],
       "pistas": [
@@ -54,8 +54,8 @@
           "t": "Cuentan cuarenta y cinco toneladas. Su venta suma $58.500.000$."
         },
         {
-          "a": "o:A:ok",
-          "t": "El cero coma tres por ciento da aproximadamente $175.000$ pesos. La respuesta es A."
+          "a": "o:B:ok",
+          "t": "El cero coma tres por ciento da aproximadamente $175.000$ pesos. La respuesta es B."
         }
       ],
       "2": [
@@ -66,9 +66,9 @@
           "t": "La venta elegible es $45 × 1.300.000 = 58.500.000$. El bono es $0,3\\% × 58.500.000 = 175.500$, cerca de $175.000$ pesos."
         },
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
-          "t": "La opción B parte de una base mayor que la venta elegible."
+          "t": "La opción A parte de una base mayor que la venta elegible."
         },
         {
           "a": "o:C:no",
@@ -81,8 +81,8 @@
           "t": "La opción D no corresponde al tres por mil de $58.500.000$."
         },
         {
-          "a": "o:A:ok",
-          "t": "El valor aproximado es $175.000$ pesos por persona. La respuesta es A."
+          "a": "o:B:ok",
+          "t": "El valor aproximado es $175.000$ pesos por persona. La respuesta es B."
         }
       ],
       "3": [
@@ -106,8 +106,8 @@
           "t": "A usa una base demasiado alta; C y D no equivalen al porcentaje indicado sobre el ingreso elegible."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta correcta es A."
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
     },
@@ -144,8 +144,9 @@
       },
       {
         "k": "check",
-        "texto": "El bono calculado se aproxima a $175.000$ pesos por trabajador. La respuesta es A."
+        "texto": "El bono calculado se aproxima a $175.000$ pesos por trabajador. La respuesta es B."
       }
     ]
-  }
+  },
+  "revisar": []
 }

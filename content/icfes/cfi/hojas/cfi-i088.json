@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La pelota sube aceleradamente por el tubo.",
-        "rol": "dato",
-        "nota": "El enunciado establece la situación física que debes interpretar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "Esto ocurre porque",
-        "rol": "pide",
-        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción D sea coherente con el movimiento y las fuerzas descritas."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota.",
-      "que": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo.",
+      "clave": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero el peso no cambia porque se sople aire por el tubo."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero si la fuerza del aire igualara el peso, la fuerza neta sería cero y la pelota no aceleraría hacia arriba."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero si el peso fuera mayor que la fuerza del aire, la aceleración tendría dirección hacia abajo."
+        }
+      ],
+      "pistas": [
+        "La pelota sube aceleradamente por el tubo.",
+        "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
+      ],
       "plan": [
         {
           "t": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
@@ -44,25 +32,8 @@
           "t": "Selecciona la opción D y contrástala con el enunciado."
         }
       ],
-      "pistas": [
-        "La pelota sube aceleradamente por el tubo.",
-        "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso."
-      ],
-      "clave": "Como la pelota acelera hacia arriba, la fuerza neta apunta hacia arriba. La fuerza del aire debe ser mayor que el peso.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El peso no cambia cuando se sopla aire por el tubo."
-        },
-        {
-          "t": "Opción B",
-          "p": "Si la fuerza del aire igualara al peso, la fuerza neta sería cero."
-        },
-        {
-          "t": "Opción C",
-          "p": "Si el peso superara la fuerza del aire, la aceleración sería hacia abajo."
-        }
-      ]
+      "que": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo.",
+      "tema": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta se sostiene con el principio físico aplicado."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "La pelota sube aceleradamente por el tubo.",
+        "nota": "El enunciado establece la situación física que debes interpretar.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "Esto ocurre porque",
+        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relacionar la dirección de la aceleración con la fuerza neta sobre la pelota."
+      },
+      {
+        "k": "idea",
+        "texto": "Compara la fuerza del aire hacia arriba con el peso que actúa hacia abajo."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción D sea coherente con el movimiento y las fuerzas descritas."
+      }
+    ]
+  },
+  "revisar": []
 }

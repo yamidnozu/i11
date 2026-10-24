@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "las partículas del medio vibran en la misma dirección de propagación de la onda",
-        "rol": "dato",
-        "nota": "El enunciado establece la situación física que debes interpretar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "el movimiento que debe hacer la primera persona y que los demás deben repetir sucesivamente es",
-        "rol": "pide",
-        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Distinguir el movimiento de las partículas en una onda longitudinal."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la dirección de la fila con la dirección de propagación de la onda."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción D sea coherente con el movimiento y las fuerzas descritas."
-      }
-    ],
     "enfoque": {
-      "tema": "Distinguir el movimiento de las partículas en una onda longitudinal.",
-      "que": "Relaciona la dirección de la fila con la dirección de propagación de la onda.",
-      "plan": [
-        {
-          "t": "Distinguir el movimiento de las partículas en una onda longitudinal."
-        },
-        {
-          "t": "Relaciona la dirección de la fila con la dirección de propagación de la onda."
-        },
-        {
-          "t": "Selecciona la opción D y contrástala con el enunciado."
-        }
-      ],
-      "pistas": [
-        "las partículas del medio vibran en la misma dirección de propagación de la onda",
-        "Las personas deben moverse en la misma dirección en que se propaga la onda. En una fila horizontal, esto corresponde a moverse hacia adelante y atrás."
-      ],
-      "clave": "Las personas deben moverse en la misma dirección en que se propaga la onda. En una fila horizontal, esto corresponde a moverse hacia adelante y atrás.",
+      "clave": "Las personas deben moverse hacia adelante y atrás, en la dirección de propagación.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A mueve los brazos lateralmente, no desplaza a la persona en la dirección de la fila."
+          "p": "Pero alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal."
         },
         {
           "t": "Opción B",
-          "p": "B propone un movimiento vertical, perpendicular a la propagación."
+          "p": "Pero sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal."
         },
         {
           "t": "Opción C",
-          "p": "C también es un movimiento lateral, no longitudinal."
+          "p": "Pero balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica la dirección en que avanza la perturbación por la fila.",
+        "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección."
+      ],
+      "plan": [
+        {
+          "t": "Identifica la dirección en que avanza la perturbación por la fila."
+        },
+        {
+          "t": "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección."
+        },
+        {
+          "t": "Elige un movimiento paralelo a la fila."
+        }
+      ],
+      "que": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento.",
+      "tema": "Representar el movimiento de una onda longitudinal"
     },
     "guion": {
       "1": [
         {
-          "t": "Distinguir el movimiento de las partículas en una onda longitudinal."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Las personas deben moverse en la misma dirección en que se propaga la onda. En una fila horizontal, esto corresponde a moverse hacia adelante y atrás."
+          "a": "m:onda longitudinal",
+          "t": "La expresión «onda longitudinal» orienta lo que debemos observar."
+        },
+        {
+          "a": "p:1",
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D responde al fenómeno descrito."
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
+        },
+        {
+          "a": "p:1",
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A mueve los brazos lateralmente, no desplaza a la persona en la dirección de la fila."
+          "t": "Opción A: Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B propone un movimiento vertical, perpendicular a la propagación."
+          "t": "Opción B: Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C también es un movimiento lateral, no longitudinal."
+          "t": "Opción C: Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila. La descartamos."
         },
         {
           "a": "o:D:ok",
-          "t": "Las personas deben moverse en la misma dirección en que se propaga la onda. En una fila horizontal, esto corresponde a moverse hacia adelante y atrás."
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Distinguir el movimiento de las partículas en una onda longitudinal."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Relaciona la dirección de la fila con la dirección de propagación de la onda."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar."
         },
         {
-          "t": "Las personas deben moverse en la misma dirección en que se propaga la onda. En una fila horizontal, esto corresponde a moverse hacia adelante y atrás."
+          "a": "p:1",
+          "t": "En una onda longitudinal, las partículas del medio vibran en la misma dirección en que avanza la onda. Como las personas forman una fila, la primera debe desplazarse hacia adelante y hacia atrás a lo largo de esa fila para que las demás repitan el movimiento."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Elige un movimiento paralelo a la fila."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: Alzar y bajar los brazos produce un movimiento perpendicular a la fila, como en una onda transversal. La descarto."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Sentarse y levantarse también mueve el cuerpo perpendicularmente a la dirección en que avanza la señal. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Balancearse de lado a lado no sigue la dirección de propagación a lo largo de la fila. La descarto."
         },
         {
           "a": "o:D:ok",
-          "t": "La respuesta se sostiene con el principio físico aplicado."
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "onda longitudinal",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica la dirección en que avanza la perturbación por la fila.",
+        "titulo": "Identifica qué se compara"
+      },
+      {
+        "k": "idea",
+        "texto": "Recuerda que las partículas de una onda longitudinal vibran en esa misma dirección.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Elige un movimiento paralelo a la fila.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

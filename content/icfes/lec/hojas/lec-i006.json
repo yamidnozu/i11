@@ -5,16 +5,16 @@
       "clave": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso.",
       "no": [
         {
-          "p": "Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación.",
-          "t": "Opción A"
+          "t": "Opción A",
+          "p": "Pero si la víctima reacciona, la infografía indica ubicarla en posición de recuperación."
         },
         {
-          "p": "La posición de recuperación corresponde a una víctima que sí reacciona.",
-          "t": "Opción B"
+          "t": "Opción C",
+          "p": "Pero la falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso."
         },
         {
-          "p": "La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso.",
-          "t": "Opción C"
+          "t": "Opción D",
+          "p": "Pero la posición de recuperación corresponde a una víctima que sí reacciona."
         }
       ],
       "pistas": [
@@ -50,8 +50,8 @@
           "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso."
         },
         {
-          "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
@@ -69,18 +69,18 @@
           "t": "Opción A: Si la víctima reacciona, la infografía indica ubicarla en posición de recuperación. La descartamos."
         },
         {
-          "a": "o:B:no",
+          "a": "o:C:no",
           "k": "err",
           "t": "Opción C: La falta de respiración lleva primero a realizar respiración boca a boca y comprobar el pulso. La descartamos."
         },
         {
-          "a": "o:C:no",
+          "a": "o:D:no",
           "k": "err",
-          "t": "Opción B: La posición de recuperación corresponde a una víctima que sí reacciona. La descartamos."
+          "t": "Opción D: La posición de recuperación corresponde a una víctima que sí reacciona. La descartamos."
         },
         {
-          "a": "o:D:ok",
-          "t": "La respuesta es la opción D."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
@@ -102,7 +102,7 @@
           "t": "La infografía indica que primero se comprueba si la víctima respira y luego se busca el pulso. Si no respira y tampoco tiene pulso, se alternan respiraciones y compresiones; por eso la reanimación cardíaca se inicia tras comprobar que no hay pulso."
         },
         {
-          "a": "o:D:ok",
+          "a": "o:B:ok",
           "t": "La ruta lleva a la reanimación cardíaca cuando se comprueba que la víctima no tiene pulso."
         }
       ]
@@ -133,5 +133,6 @@
         "titulo": "Comprueba la respuesta"
       }
     ]
-  }
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "beneficiaría el crecimiento de la planta",
-        "rol": "pide",
-        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué representa",
-        "texto": "Identifica qué grupo corresponde a cada tipo de línea."
-      },
-      {
-        "k": "idea",
-        "titulo": "Lee las relaciones del modelo",
-        "texto": "Busca que ambos grupos puedan crecer bajo condiciones normales."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la opción",
-        "texto": "Comprueba que el peso del grupo con bacteria sea mayor."
-      }
-    ],
     "enfoque": {
-      "tema": "Representar una hipótesis sobre crecimiento de plantas",
-      "que": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
-      "pistas": [
-        "Identifica qué grupo corresponde a cada tipo de línea.",
-        "Busca que ambos grupos puedan crecer bajo condiciones normales."
-      ],
       "clave": "La gráfica B representa crecimiento en ambos grupos y un peso mayor para las plantas con bacteria.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales."
+          "p": "Pero el grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales."
+          "p": "Pero la línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis."
+          "p": "Pero la línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis."
         }
+      ],
+      "pistas": [
+        "Identifica qué grupo corresponde a cada tipo de línea.",
+        "Busca que ambos grupos puedan crecer bajo condiciones normales."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Comprueba que el peso del grupo con bacteria sea mayor."
         }
-      ]
+      ],
+      "que": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
+      "tema": "Representar una hipótesis sobre crecimiento de plantas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La frase «beneficiaría el crecimiento de la planta» señala la pista central.",
-          "a": "m:beneficiaría el crecimiento de la planta"
+          "a": "m:beneficiaría el crecimiento de la planta",
+          "t": "La frase «beneficiaría el crecimiento de la planta» señala la pista central."
         },
         {
-          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua."
         },
         {
-          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descartamos."
         },
         {
-          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descartamos."
         },
         {
-          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Primero identifico qué representa el dibujo o los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La hipótesis predice que las plantas con bacteria tendrán mayor crecimiento. La gráfica B muestra que el peso aumenta en ambos grupos y que el grupo con bacteria, línea continua, alcanza valores mayores que el grupo sin bacteria, línea discontinua."
         },
         {
-          "t": "Comprueba que el peso del grupo con bacteria sea mayor.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que el peso del grupo con bacteria sea mayor."
         },
         {
-          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El grupo sin bacteria pierde peso, lo cual no representa el crecimiento esperado en condiciones normales. La descarto."
         },
         {
-          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La línea del grupo sin bacteria permanece fija mientras la otra crece; no representa el crecimiento de ambos grupos en condiciones normales. La descarto."
         },
         {
-          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La línea del grupo sin bacteria supera a la del grupo con bacteria, contrario a la hipótesis. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "beneficiaría el crecimiento de la planta",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué grupo corresponde a cada tipo de línea.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca que ambos grupos puedan crecer bajo condiciones normales.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que el peso del grupo con bacteria sea mayor.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

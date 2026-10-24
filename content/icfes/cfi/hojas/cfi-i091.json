@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "a diferentes temperaturas",
-        "rol": "dato",
-        "nota": "El enunciado presenta la situación o variable que debes analizar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿Cuál de las siguientes gráficas muestra los resultados del experimento?",
-        "rol": "pide",
-        "nota": "La pregunta indica qué debes concluir o representar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
-      },
-      {
-        "k": "idea",
-        "texto": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción B respete el comportamiento descrito y las variables del problema."
-      }
-    ],
     "enfoque": {
-      "tema": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido.",
-      "que": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos.",
-      "plan": [
-        {
-          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
-        },
-        {
-          "t": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
-        },
-        {
-          "t": "Selecciona la opción B y contrástala con la evidencia."
-        }
-      ],
-      "pistas": [
-        "a diferentes temperaturas",
-        "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
-      ],
-      "clave": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla.",
+      "clave": "La gráfica B asigna correctamente los ejes y conserva la tendencia creciente de la tabla.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A intercambia las variables de los ejes."
+          "p": "Pero intercambia los ejes: pone temperatura en vertical y velocidad en horizontal."
         },
         {
           "t": "Opción C",
-          "p": "C pone las variables en los ejes equivocados y representa los valores en orden inverso."
+          "p": "Pero intercambia los ejes y además invierte el orden de los valores de velocidad."
         },
         {
           "t": "Opción D",
-          "p": "D usa los ejes correctos, pero muestra la velocidad en orden decreciente."
+          "p": "Pero invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical."
         }
-      ]
+      ],
+      "pistas": [
+        "Ubica la temperatura, que cambia, en el eje horizontal.",
+        "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
+      ],
+      "plan": [
+        {
+          "t": "Ubica la temperatura, que cambia, en el eje horizontal."
+        },
+        {
+          "t": "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
+        },
+        {
+          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
+        }
+      ],
+      "que": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+      "tema": "Elegir ejes correctos para graficar una tabla"
     },
     "guion": {
       "1": [
         {
-          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
+          "a": "m:resultados del experimento",
+          "t": "La frase «resultados del experimento» señala la pista central."
+        },
+        {
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B concuerda con los datos."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
+        },
+        {
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A intercambia las variables de los ejes."
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C pone las variables en los ejes equivocados y representa los valores en orden inverso."
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D usa los ejes correctos, pero muestra la velocidad en orden decreciente."
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Representar la relación entre temperatura del aire y velocidad de propagación del sonido."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Coloca la variable que se controla en el eje horizontal y la que se mide en el eje vertical, respetando el aumento de los datos."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "La temperatura varía y va en el eje horizontal; la velocidad del sonido se mide y va en el eje vertical. Ambas aumentan según la tabla."
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descarto."
         },
         {
           "a": "o:B:ok",
-          "t": "La conclusión queda sustentada por la evidencia."
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "resultados del experimento",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica la temperatura, que cambia, en el eje horizontal.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Ubica la velocidad medida en el eje vertical y conserva sus unidades.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la gráfica siga el aumento de los datos de la tabla.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

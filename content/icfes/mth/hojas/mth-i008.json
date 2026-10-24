@@ -1,53 +1,145 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "75 kg", "rol": "dato", "nota": "Es el peso que se usa en el cálculo del IMC.", "campo": "Peso" },
-      { "frag": "forma parte del", "rol": "pide", "nota": "Hay que identificar la categoría y el porcentaje que le corresponden.", "campo": "Clasificación" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Calcula el IMC con la estatura completa", "texto": "La estatura es tres medios de metro. El índice divide el peso por el cuadrado de esa estatura." },
-      { "k": "calc", "titulo": "Ubica el resultado en la tabla", "lineas": ["$75 ÷ (3/2)^2 = 75 ÷ 2,25 = 33,3\\overline{3}$", "$30,0 < 33,3\\overline{3} < 34,9$"], "nota": "El resultado cae en obesidad leve. La fila de hombres de la tabla indica el porcentaje correspondiente." },
-      { "k": "check", "texto": "El IMC corresponde a obesidad leve y la tabla registra el trece por ciento para los hombres del grupo de edad. La respuesta es D." }
-    ],
     "enfoque": {
-      "tema": "Índice de masa corporal y clasificación",
-      "que": "Eleva la estatura al cuadrado, divide el peso por ese resultado y relaciona el índice con la categoría y el porcentaje de la tabla.",
-      "pistas": ["La estatura es tres medios de metro, no tres metros.", "Compara el IMC con los intervalos de la tabla de clasificación."],
       "clave": "El IMC es $33,3\\overline{3}$; está en el intervalo de obesidad leve, cuyo porcentaje para hombres es trece por ciento.",
       "no": [
-        { "t": "Opción A", "p": "Un IMC de $33,3\\overline{3}$ no es inferior a $18,5$. Pero el bajo peso exige estar por debajo de ese límite." },
-        { "t": "Opción B", "p": "El IMC no está entre $25,0$ y $29,9$. Pero ese es el intervalo de sobrepeso." },
-        { "t": "Opción C", "p": "El IMC no alcanza $40,0$. Pero la obesidad alta empieza en ese valor." }
+        {
+          "t": "Opción A",
+          "p": "Pero un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta."
+        }
+      ],
+      "pistas": [
+        "La estatura es tres medios de metro, no tres metros.",
+        "Compara el IMC con los intervalos de la tabla de clasificación."
       ],
       "plan": [
-        { "t": "Escribe la estatura en metros y elévala al cuadrado." },
-        { "t": "Divide el peso entre ese cuadrado.", "eq": ["$75 ÷ (3/2)^2 = 33,3\\overline{3}$"] },
-        { "t": "Busca el intervalo que contiene el resultado y lee la fila de hombres." }
-      ]
+        {
+          "t": "Escribe la estatura en metros y elévala al cuadrado."
+        },
+        {
+          "eq": [
+            "$75 ÷ (3/2)^2 = 33,3\\overline{3}$"
+          ],
+          "t": "Divide el peso entre ese cuadrado."
+        },
+        {
+          "t": "Busca el intervalo que contiene el resultado y lee la fila de hombres."
+        }
+      ],
+      "que": "Eleva la estatura al cuadrado, divide el peso por ese resultado y relaciona el índice con la categoría y el porcentaje de la tabla.",
+      "tema": "Índice de masa corporal y clasificación"
     },
     "guion": {
       "1": [
-        { "t": "La estatura es tres medios de metro. ¿Qué operación define el IMC?", "a": "m:75 kg" },
-        { "t": "Dividimos el peso por el cuadrado de la estatura: el resultado es aproximadamente $33,3$." },
-        { "t": "Ese valor está en obesidad leve; la respuesta es D.", "a": "o:D:ok" }
+        {
+          "a": "m:75 kg",
+          "t": "La estatura es tres medios de metro. ¿Qué operación define el IMC?"
+        },
+        {
+          "t": "Dividimos el peso por el cuadrado de la estatura: el resultado es aproximadamente $33,3$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "Ese valor está en obesidad leve; la respuesta es D."
+        }
       ],
       "2": [
-        { "t": "Eleva tres medios al cuadrado y divide el peso entre ese resultado." },
-        { "t": "El IMC es $75 ÷ (3/2)^2 = 33,3\\overline{3}$. Está entre $30,0$ y $34,9$; para hombres, la tabla señala trece por ciento." },
-        { "t": "La opción A usa bajo peso, pero el IMC supera $18,5$.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción B usa sobrepeso, pero el IMC supera $29,9$.", "a": "o:B:no", "k": "err" },
-        { "t": "La opción C usa obesidad alta, pero el IMC es menor que $40,0$.", "a": "o:C:no", "k": "err" },
-        { "t": "La clasificación es obesidad leve y corresponde al trece por ciento. La respuesta es D.", "a": "o:D:ok" }
+        {
+          "t": "Eleva tres medios al cuadrado y divide el peso entre ese resultado."
+        },
+        {
+          "t": "El IMC es $75 ÷ (3/2)^2 = 33,3\\overline{3}$. Está entre $30,0$ y $34,9$; para hombres, la tabla señala trece por ciento."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A usa bajo peso, pero el IMC supera $18,5$."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B usa sobrepeso, pero el IMC supera $29,9$."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C usa obesidad alta, pero el IMC es menor que $40,0$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La clasificación es obesidad leve y corresponde al trece por ciento. La respuesta es D."
+        }
       ],
       "3": [
-        { "t": "Primero interpreto la estatura como $3/2$ metros y calculo el cuadrado: $(3/2)^2 = 2,25$.", "a": "p:0", "k": "ana" },
-        { "t": "El índice es $75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre $30,0$ y $34,9$, intervalo de obesidad leve.", "a": "p:1" },
-        { "t": "La tabla para hombres de ese rango de edad asocia a la categoría el trece por ciento.", "a": "p:2", "k": "contra" },
-        { "t": "A y B corresponden a intervalos menores; C requiere un índice de al menos $40,0$.", "a": "o:A:no|o:B:no|o:C:no", "k": "err" },
-        { "t": "La respuesta correcta es D.", "a": "o:D:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero interpreto la estatura como $3/2$ metros y calculo el cuadrado: $(3/2)^2 = 2,25$."
+        },
+        {
+          "a": "p:1",
+          "t": "El índice es $75 ÷ 2,25 = 33,3\\overline{3}$. Ese valor está entre $30,0$ y $34,9$, intervalo de obesidad leve."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "La tabla para hombres de ese rango de edad asocia a la categoría el trece por ciento."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A y B corresponden a intervalos menores; C requiere un índice de al menos $40,0$."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Peso",
+        "frag": "75 kg",
+        "nota": "Es el peso que se usa en el cálculo del IMC.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Clasificación",
+        "frag": "forma parte del",
+        "nota": "Hay que identificar la categoría y el porcentaje que le corresponden.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La estatura es tres medios de metro. El índice divide el peso por el cuadrado de esa estatura.",
+        "titulo": "Calcula el IMC con la estatura completa"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$75 ÷ (3/2)^2 = 75 ÷ 2,25 = 33,3\\overline{3}$",
+          "$30,0 < 33,3\\overline{3} < 34,9$"
+        ],
+        "nota": "El resultado cae en obesidad leve. La fila de hombres de la tabla indica el porcentaje correspondiente.",
+        "titulo": "Ubica el resultado en la tabla"
+      },
+      {
+        "k": "check",
+        "texto": "El IMC corresponde a obesidad leve y la tabla registra el trece por ciento para los hombres del grupo de edad. La respuesta es D."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "la relación entre el número de vehículos y el número de muertes",
-        "rol": "dato",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "permite inferir que en los países de ingresos altos",
-        "rol": "pide",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
-      },
-      {
-        "k": "idea",
-        "t": "La infografía muestra que los países de ingresos altos concentran una proporción mayor de vehículos y una proporción menor de muertes, mientras los de ingresos medios tienen menos vehículos y muchas más muertes. El contraste es consistente con mayor seguridad y educación vial en los países de ingresos altos."
-      },
-      {
-        "k": "check",
-        "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la infografía de seguridad vial",
-      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "clave": "La infografía muestra que los países de ingresos altos concentran una proporción mayor de vehículos y una proporción menor de muertes, mientras los de ingresos medios tienen menos vehículos y muchas más muertes. El contraste es consistente con mayor seguridad y educación vial en los países de ingresos altos.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero el gráfico compara proporciones de vehículos y muertes, pero no ofrece población para calcular vehículos por persona."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero no presenta datos sobre la frecuencia de uso de vehículos particulares."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero no presenta información sobre multas."
+        }
+      ],
+      "pistas": [
+        "Contrasta que los países de ingresos altos concentran casi la mitad de los vehículos del mundo pero solo el 8,5 % de las muertes.",
+        "Deduce que poseer más vehículos no implica mayor mortalidad vial cuando existen mejores infraestructuras y normas de seguridad."
+      ],
       "plan": [
         {
           "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
@@ -44,25 +32,8 @@
           "t": "Comprueba la opción C con el dato citado."
         }
       ],
-      "pistas": [
-        "Distingue las tasas y proporciones mostradas.",
-        "Revisa si la afirmación está respaldada por la infografía."
-      ],
-      "clave": "La infografía muestra que los países de ingresos altos concentran una proporción mayor de vehículos y una proporción menor de muertes, mientras los de ingresos medios tienen menos vehículos y muchas más muertes. El contraste es consistente con mayor seguridad y educación vial en los países de ingresos altos.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El gráfico compara proporciones de vehículos y muertes, pero no ofrece población para calcular vehículos por persona."
-        },
-        {
-          "t": "Opción B",
-          "p": "No presenta datos sobre la frecuencia de uso de vehículos particulares."
-        },
-        {
-          "t": "Opción D",
-          "p": "No presenta información sobre multas."
-        }
-      ]
+      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "tema": "Interpretar la infografía de seguridad vial"
     },
     "guion": {
       "1": [
@@ -118,6 +89,36 @@
           "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "la relación entre el número de vehículos y el número de muertes",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "permite inferir que en los países de ingresos altos",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
+      },
+      {
+        "k": "idea",
+        "t": "La infografía muestra que los países de ingresos altos concentran una proporción mayor de vehículos y una proporción menor de muertes, mientras los de ingresos medios tienen menos vehículos y muchas más muertes. El contraste es consistente con mayor seguridad y educación vial en los países de ingresos altos."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción C responde al enunciado y que las demás no lo hacen."
+      }
+    ]
+  },
+  "revisar": []
 }

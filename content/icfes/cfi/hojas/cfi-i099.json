@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "altos niveles de cadmio y plomo, que son metales tóxicos",
-        "rol": "dato",
-        "nota": "El enunciado presenta la información necesaria para razonar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "la propuesta de los estudiantes es",
-        "rol": "pide",
-        "nota": "La pregunta solicita valorar la propuesta o contar el resultado.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
-      },
-      {
-        "k": "idea",
-        "texto": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción B responda con evidencia al problema planteado."
-      }
-    ],
     "enfoque": {
-      "tema": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua.",
-      "que": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río.",
-      "plan": [
-        {
-          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
-        },
-        {
-          "t": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
-        },
-        {
-          "t": "Elige la opción B y comprueba que se desprenda del enunciado."
-        }
-      ],
-      "pistas": [
-        "altos niveles de cadmio y plomo, que son metales tóxicos",
-        "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
-      ],
-      "clave": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua.",
+      "clave": "Separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al agua.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A desarmar las pilas no evita que sus componentes tóxicos lleguen al ambiente."
+          "p": "Pero desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente."
         },
         {
           "t": "Opción C",
-          "p": "C la reutilización no aborda por sí sola la filtración que contaminó el río."
+          "p": "Pero la propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado."
         },
         {
           "t": "Opción D",
-          "p": "D quemar pilas puede liberar sustancias tóxicas y no es una solución segura."
+          "p": "Pero quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica de dónde provienen los metales del río.",
+        "Relaciona el aislamiento de las pilas con evitar filtraciones."
+      ],
+      "plan": [
+        {
+          "t": "Identifica de dónde provienen los metales del río."
+        },
+        {
+          "t": "Relaciona el aislamiento de las pilas con evitar filtraciones."
+        },
+        {
+          "t": "Comprueba que la justificación responda al riesgo identificado."
+        }
+      ],
+      "que": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua.",
+      "tema": "Prevenir contaminación por metales de pilas desechadas"
     },
     "guion": {
       "1": [
         {
-          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
+          "a": "m:metales tóxicos",
+          "t": "La expresión «metales tóxicos» orienta lo que debemos observar."
+        },
+        {
+          "a": "p:1",
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B responde a la pregunta."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
+        },
+        {
+          "a": "p:1",
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A desarmar las pilas no evita que sus componentes tóxicos lleguen al ambiente."
+          "t": "Opción A: Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C la reutilización no aborda por sí sola la filtración que contaminó el río."
+          "t": "Opción C: La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D quemar pilas puede liberar sustancias tóxicas y no es una solución segura."
+          "t": "Opción D: Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Relacionar una propuesta de manejo de residuos con la fuente de contaminación del agua."
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Evalúa si separar las pilas en contenedores aislados evita que sus metales tóxicos lleguen al río."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar."
         },
         {
-          "t": "Los metales tóxicos provienen de filtraciones de pilas descompuestas. Separarlas en contenedores aislados evita que sus componentes alcancen el agua."
+          "a": "p:1",
+          "t": "Los estudiantes identificaron que el cadmio y el plomo llegan al río por filtraciones de pilas descompuestas. Separar las pilas y guardarlas en contenedores aislados corta esa vía de contaminación del agua."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Comprueba que la justificación responda al riesgo identificado."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: Desarmar las pilas no evita la liberación de metales tóxicos y puede exponerlos más al ambiente. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: La propuesta busca evitar contaminación; reutilizar las pilas no es un resultado demostrado ni el motivo ambiental dado. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: Quemar pilas puede liberar sustancias peligrosas y no es una forma segura de evitar el contacto con el agua. La descarto."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta queda sustentada por la información disponible."
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "metales tóxicos",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica de dónde provienen los metales del río.",
+        "titulo": "Identifica qué se compara"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona el aislamiento de las pilas con evitar filtraciones.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la justificación responda al riesgo identificado.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

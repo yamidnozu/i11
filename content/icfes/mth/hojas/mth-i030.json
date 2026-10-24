@@ -5,21 +5,21 @@
       "clave": "Las cartas de picas son negras, así que ninguna puede ser roja.",
       "no": [
         {
-          "p": "Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado.",
-          "t": "Opción B"
+          "t": "Opción A",
+          "p": "Pero existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado."
         },
         {
-          "p": "El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado.",
-          "t": "Opción D"
+          "t": "Opción D",
+          "p": "Pero el rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
         }
       ],
       "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
+        "Verifica si una carta de póquer puede pertenecer simultáneamente a dos palos distintos o si son eventos disyuntos.",
+        "Deduce por qué la probabilidad de la intersección de dos eventos mutuamente excluyentes es exactamente cero."
       ],
       "plan": [
         {
@@ -29,7 +29,7 @@
           "t": "Comprueba si existe una carta que cumpla ambas condiciones."
         },
         {
-          "t": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es A."
+          "t": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B."
         }
       ],
       "que": "Reconoce qué combinación de características no puede cumplirse simultáneamente.",
@@ -44,8 +44,8 @@
           "t": "Son negras; por eso no hay picas rojas."
         },
         {
-          "a": "o:A:ok",
-          "t": "La combinación imposible es la opción A."
+          "a": "o:B:ok",
+          "t": "La combinación imposible es la opción B."
         }
       ],
       "2": [
@@ -56,9 +56,9 @@
           "t": "Picas y tréboles son negras; corazones y diamantes son rojas."
         },
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
-          "t": "La opción B: Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
+          "t": "La opción A: Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:C:no",
@@ -71,8 +71,8 @@
           "t": "La opción D: El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
         },
         {
-          "a": "o:A:ok",
-          "t": "A, C y D sí tienen cartas que cumplen ambas condiciones. La respuesta es A."
+          "a": "o:B:ok",
+          "t": "A, C y D sí tienen cartas que cumplen ambas condiciones. La respuesta es B."
         }
       ],
       "3": [
@@ -96,8 +96,8 @@
           "t": "A, C y D describen cartas que sí están en la baraja."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta correcta es A."
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
     },
@@ -139,9 +139,10 @@
       },
       {
         "k": "check",
-        "texto": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es A.",
+        "texto": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B.",
         "titulo": "Verifica la respuesta"
       }
     ]
-  }
+  },
+  "revisar": []
 }

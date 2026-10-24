@@ -1,38 +1,22 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Please, choose the one you want to read",
-        "rol": "dato",
-        "nota": "El aviso aporta la pista para identificar el lugar.",
-        "campo": "Aviso"
-      },
-      {
-        "frag": "¿Dónde puede ver este aviso?",
-        "rol": "pide",
-        "nota": "La pregunta solicita ubicar el aviso.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Inferir el lugar a partir de una instrucción para escoger algo que se va a leer."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la invitación a escoger una lectura con el soporte donde se exhiben libros."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C concuerde con el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir el lugar a partir de una instrucción para escoger algo que se va a leer.",
-      "que": "Relaciona la invitación a escoger una lectura con el soporte donde se exhiben libros.",
+      "clave": "El aviso pide elegir algo para leer. Una estantería de libros corresponde a esa situación.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero {{on a board}} puede mostrar avisos, pero no ofrece libros para escoger."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero {{on a computer}} permite leer, pero el aviso invita a elegir un ejemplar."
+        }
+      ],
+      "pistas": [
+        "{{Please, choose the one you want to read}}",
+        "El aviso pide elegir algo para leer. Una estantería de libros corresponde a esa situación."
+      ],
       "plan": [
         {
           "t": "Inferir el lugar a partir de una instrucción para escoger algo que se va a leer."
@@ -44,21 +28,8 @@
           "t": "Elige la opción C y confirma que corresponda al aviso."
         }
       ],
-      "pistas": [
-        "{{Please, choose the one you want to read}}",
-        "El aviso pide elegir algo para leer. Una estantería de libros corresponde a esa situación."
-      ],
-      "clave": "El aviso pide elegir algo para leer. Una estantería de libros corresponde a esa situación.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "{{on a board}} puede mostrar instrucciones, pero no libros para elegir."
-        },
-        {
-          "t": "Opción B",
-          "p": "{{on a computer}} permite leer, pero el aviso invita a escoger un ejemplar."
-        }
-      ]
+      "que": "Relaciona la invitación a escoger una lectura con el soporte donde se exhiben libros.",
+      "tema": "Inferir el lugar a partir de una instrucción para escoger algo que se va a leer."
     },
     "guion": {
       "1": [
@@ -104,6 +75,36 @@
           "t": "La opción C queda respaldada por el texto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Aviso",
+        "frag": "Please, choose the one you want to read",
+        "nota": "El aviso aporta la pista para identificar el lugar.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿Dónde puede ver este aviso?",
+        "nota": "La pregunta solicita ubicar el aviso.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Inferir el lugar a partir de una instrucción para escoger algo que se va a leer."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la invitación a escoger una lectura con el soporte donde se exhiben libros."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C concuerde con el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

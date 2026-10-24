@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "En la Constitución política de Colombia se e",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "De acuerdo con los mecanismos de participación directa que contempla la Constitución, ¿cuál de los siguientes es el adecuado para que el presidente pueda adelantar su iniciativa?",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional. La respuesta es B."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «El plebiscito.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
+          "p": "Pero es incorrecta porque el plebiscito es un mecanismo de participación ciudadana y no una norma de jerarquía de derechos de los menores."
         },
         {
           "t": "Opción C",
-          "p": "La opción C plantea «La consulta popular.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
+          "p": "Pero es incorrecta porque la consulta popular convoca al electorado para pronunciarse sobre una pregunta de trascendencia, sin definir derechos fundamentales de la infancia."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «El cabildo abierto.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
+          "p": "Pero es incorrecta porque el cabildo abierto es una figura de deliberación comunitaria local en concejos municipales."
         }
+      ],
+      "pistas": [
+        "Identifica que se pretende cambiar una norma de la Constitución.",
+        "Elige el mecanismo de participación que permite votar una reforma normativa."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional. La respuesta es B."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
         },
         {
-          "t": "La opción A plantea «El plebiscito.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «El plebiscito.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
         },
         {
-          "t": "La opción C plantea «La consulta popular.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «La consulta popular.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
         },
         {
-          "t": "La opción D plantea «El cabildo abierto.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «El cabildo abierto.», Pero no responde al criterio central: El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
         },
         {
-          "t": "La opción B es la que sí responde a la pregunta.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional."
         },
         {
-          "t": "Por eso la opción B se sostiene con la evidencia del enunciado.",
           "a": "o:B:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En la Constitución política de Colombia se e",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De acuerdo con los mecanismos de participación directa que contempla la Constitución, ¿cuál de los siguientes es el adecuado para que el presidente pueda adelantar su iniciativa?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El referendo es el mecanismo para someter a decisión ciudadana la aprobación o derogación de una norma, incluida una reforma constitucional. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

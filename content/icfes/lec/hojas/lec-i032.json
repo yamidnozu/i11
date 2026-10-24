@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "sintetiza adecuadamente las ideas",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Resume la explicación central, no un detalle del relato."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Relaciona los deseos individuales con el papel de las restricciones."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos."
-      }
-    ],
     "enfoque": {
-      "tema": "Sintetizar el argumento de un párrafo",
-      "que": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
-      "pistas": [
-        "Resume la explicación central, no un detalle del relato.",
-        "Relaciona los deseos individuales con el papel de las restricciones."
-      ],
       "clave": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El autor no fundamenta la justicia en una conciencia moral universal."
+          "p": "Pero el autor no fundamenta la justicia en una conciencia moral universal."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto."
+          "p": "Pero la opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias."
+          "p": "Pero el párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias."
         }
+      ],
+      "pistas": [
+        "Resume la explicación central, no un detalle del relato.",
+        "Relaciona los deseos individuales con el papel de las restricciones."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
+      "tema": "Sintetizar el argumento de un párrafo"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «sintetiza adecuadamente las ideas» orienta la lectura.",
-          "a": "m:sintetiza adecuadamente las ideas"
+          "a": "m:sintetiza adecuadamente las ideas",
+          "t": "La expresión «sintetiza adecuadamente las ideas» orienta la lectura."
         },
         {
-          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
         },
         {
-          "t": "Opción A: El autor no fundamenta la justicia en una conciencia moral universal. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El autor no fundamenta la justicia en una conciencia moral universal. La descartamos."
         },
         {
-          "t": "Opción C: La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto. La descartamos."
         },
         {
-          "t": "Opción D: El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Resume la explicación central, no un detalle del relato.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Resume la explicación central, no un detalle del relato."
         },
         {
-          "t": "Relaciona los deseos individuales con el papel de las restricciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Relaciona los deseos individuales con el papel de las restricciones."
         },
         {
-          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
         },
         {
-          "t": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "sintetiza adecuadamente las ideas",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume la explicación central, no un detalle del relato.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona los deseos individuales con el papel de las restricciones.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

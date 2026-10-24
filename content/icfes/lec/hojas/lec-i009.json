@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "¿para qué se utilizan las expresiones",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Relaciona «desierto» con la escasez de comida."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Las expresiones destacan el poco esfuerzo de Diego: deja apenas medio tomate."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar imágenes figuradas dentro de un fragmento",
-      "que": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar.",
-      "pistas": [
-        "Relaciona «desierto» con la escasez de comida.",
-        "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar."
-      ],
       "clave": "Las expresiones destacan el poco esfuerzo de Diego: deja apenas medio tomate.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La imagen no explica la causa de su conducta; muestra el resultado escaso."
+          "p": "Pero la imagen no explica la causa de su conducta; muestra el resultado escaso."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero No defiende ni justifica que cocine poco: lo presenta con ironía."
+          "p": "Pero no defiende ni justifica que cocine poco: lo presenta con ironía."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La escena no elogia el resultado; contrasta la comida mínima con lo que ella prepara."
+          "p": "Pero la escena no elogia el resultado; contrasta la comida mínima con lo que ella prepara."
         }
+      ],
+      "pistas": [
+        "Relaciona «desierto» con la escasez de comida.",
+        "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar.",
+      "tema": "Interpretar imágenes figuradas dentro de un fragmento"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «¿para qué se utilizan las expresiones» orienta la lectura.",
-          "a": "m:¿para qué se utilizan las expresiones"
+          "a": "m:¿para qué se utilizan las expresiones",
+          "t": "La expresión «¿para qué se utilizan las expresiones» orienta la lectura."
         },
         {
-          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar."
         },
         {
-          "t": "Opción B: La imagen no explica la causa de su conducta; muestra el resultado escaso. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La imagen no explica la causa de su conducta; muestra el resultado escaso. La descartamos."
         },
         {
-          "t": "Opción C: No defiende ni justifica que cocine poco: lo presenta con ironía. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: No defiende ni justifica que cocine poco: lo presenta con ironía. La descartamos."
         },
         {
-          "t": "Opción D: La escena no elogia el resultado; contrasta la comida mínima con lo que ella prepara. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La escena no elogia el resultado; contrasta la comida mínima con lo que ella prepara. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Relaciona «desierto» con la escasez de comida.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Relaciona «desierto» con la escasez de comida."
         },
         {
-          "t": "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar."
         },
         {
-          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "«Desierto» y «laguito» contrastan la mesa casi vacía con una preparación mínima: medio tomate. Esa imagen resalta que Diego hace poco cuando le corresponde cocinar."
         },
         {
-          "t": "Las expresiones destacan el poco esfuerzo de Diego: deja apenas medio tomate.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Las expresiones destacan el poco esfuerzo de Diego: deja apenas medio tomate."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "¿para qué se utilizan las expresiones",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona «desierto» con la escasez de comida.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Interpreta la imagen dentro de lo que la narradora cuenta sobre cocinar.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Las expresiones destacan el poco esfuerzo de Diego: deja apenas medio tomate.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

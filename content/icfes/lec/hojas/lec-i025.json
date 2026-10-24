@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "contradice la tesis central del texto",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Atiende a la conclusión del personaje sobre separarse."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Elige la opción que niega que esa decisión dependa de la persona."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B afirma que alejarse no depende de nosotros, en contra de la conclusión de la historieta."
-      }
-    ],
     "enfoque": {
-      "tema": "Contrastar una afirmación con la tesis de una historieta",
-      "que": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta.",
-      "pistas": [
-        "Atiende a la conclusión del personaje sobre separarse.",
-        "Elige la opción que niega que esa decisión dependa de la persona."
-      ],
       "clave": "La opción B afirma que alejarse no depende de nosotros, en contra de la conclusión de la historieta.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La historieta afirma precisamente que lo existente se divide entre lo que depende de nosotros y lo que no."
+          "p": "Pero la historieta afirma precisamente que lo existente se divide entre lo que depende de nosotros y lo que no."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El personaje distingue el cuerpo de la mente; no sostiene que funcionen del mismo modo."
+          "p": "Pero el personaje distingue el cuerpo de la mente; no sostiene que funcionen del mismo modo."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La historieta dice que el juicio y el deseo dependen de nosotros, así que la opción coincide con su tesis."
+          "p": "Pero la historieta dice que el juicio y el deseo dependen de nosotros, así que la opción coincide con su tesis."
         }
+      ],
+      "pistas": [
+        "Atiende a la conclusión del personaje sobre separarse.",
+        "Elige la opción que niega que esa decisión dependa de la persona."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta.",
+      "tema": "Contrastar una afirmación con la tesis de una historieta"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «contradice la tesis central del texto» orienta la lectura.",
-          "a": "m:contradice la tesis central del texto"
+          "a": "m:contradice la tesis central del texto",
+          "t": "La expresión «contradice la tesis central del texto» orienta la lectura."
         },
         {
-          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta."
         },
         {
-          "t": "Opción A: La historieta afirma precisamente que lo existente se divide entre lo que depende de nosotros y lo que no. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La historieta afirma precisamente que lo existente se divide entre lo que depende de nosotros y lo que no. La descartamos."
         },
         {
-          "t": "Opción C: El personaje distingue el cuerpo de la mente; no sostiene que funcionen del mismo modo. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El personaje distingue el cuerpo de la mente; no sostiene que funcionen del mismo modo. La descartamos."
         },
         {
-          "t": "Opción D: La historieta dice que el juicio y el deseo dependen de nosotros, así que la opción coincide con su tesis. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La historieta dice que el juicio y el deseo dependen de nosotros, así que la opción coincide con su tesis. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Atiende a la conclusión del personaje sobre separarse.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Atiende a la conclusión del personaje sobre separarse."
         },
         {
-          "t": "Elige la opción que niega que esa decisión dependa de la persona.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige la opción que niega que esa decisión dependa de la persona."
         },
         {
-          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "En la historieta, el filósofo concluye que separarse de Crates depende de él, porque juicio y deseo dependen de la persona. La opción B niega esa conclusión y por eso contradice la tesis que plantea la historieta."
         },
         {
-          "t": "La opción B afirma que alejarse no depende de nosotros, en contra de la conclusión de la historieta.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B afirma que alejarse no depende de nosotros, en contra de la conclusión de la historieta."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "contradice la tesis central del texto",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Atiende a la conclusión del personaje sobre separarse.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige la opción que niega que esa decisión dependa de la persona.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B afirma que alejarse no depende de nosotros, en contra de la conclusión de la historieta.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

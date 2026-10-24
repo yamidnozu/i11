@@ -1,76 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "$2$ estudiantes sean de grado décimo y $3$ de grado undécimo",
-        "rol": "dato",
-        "nota": "La composición de cada grupo está fijada.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "En décimo hay $5$ estudiantes",
-        "rol": "dato",
-        "nota": "Se eligen dos entre cinco.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "en undécimo hay $4$",
-        "rol": "dato",
-        "nota": "Se eligen tres entre cuatro.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "Cuántos grupos diferentes",
-        "rol": "pide",
-        "nota": "Multiplica las combinaciones posibles de cada grado.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Cuenta por separado las selecciones posibles en cada grado.",
-        "texto": "Cuenta por separado las selecciones posibles en cada grado."
-      },
-      {
-        "k": "calc",
-        "titulo": "Multiplica las dos cantidades de combinaciones.",
-        "lineas": [
-          "$\\binom{5}{2}=10$",
-          "$\\binom{4}{3}=4$",
-          "$10×4=40$"
-        ],
-        "nota": "Multiplica las dos cantidades de combinaciones."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Se pueden formar cuarenta grupos; corresponde a D."
-      }
-    ],
     "enfoque": {
-      "tema": "Combinaciones y principio multiplicativo",
-      "que": "Cuenta los grupos con dos estudiantes de décimo y tres de undécimo.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Hay diez maneras de elegir dos de décimo y cuatro de elegir tres de undécimo; el producto es cuarenta.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo."
+          "p": "Pero suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo."
         },
         {
           "t": "Opción B",
-          "p": "No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo."
+          "p": "Pero no combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo."
         },
         {
           "t": "Opción C",
-          "p": "Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan."
+          "p": "Pero cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan."
         }
+      ],
+      "pistas": [
+        "Aplica combinaciones sin repetición: calcula $\\binom{5}{2}$ para décimo grado y $\\binom{4}{3}$ para undécimo grado.",
+        "Multiplica ambos resultados mediante el principio fundamental del conteo: $\\binom{5}{2} \\cdot \\binom{4}{3} = 10 \\cdot 4 = 40$."
       ],
       "plan": [
         {
@@ -82,7 +31,9 @@
         {
           "t": "Se pueden formar cuarenta grupos; corresponde a D."
         }
-      ]
+      ],
+      "que": "Cuenta los grupos con dos estudiantes de décimo y tres de undécimo.",
+      "tema": "Combinaciones y principio multiplicativo"
     },
     "guion": {
       "1": [
@@ -93,8 +44,8 @@
           "t": "Diez. Para undécimo, escoger tres de cuatro deja cuatro grupos."
         },
         {
-          "t": "Diez por cuatro da cuarenta. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Diez por cuatro da cuarenta. La respuesta es D."
         }
       ],
       "2": [
@@ -105,50 +56,100 @@
           "t": "Décimo aporta diez selecciones y undécimo cuatro; combina cada par de selecciones."
         },
         {
-          "t": "La opción A: Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Suma las cantidades de estudiantes disponibles, pero no cuenta los grupos de composición fijada. Pero se escogen dos de décimo y tres de undécimo."
         },
         {
-          "t": "La opción B: No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: No combina las elecciones independientes de ambos grados. Pero cada grupo de décimo puede acompañarse con cualquiera de los grupos de undécimo."
         },
         {
-          "t": "La opción C: Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Cuenta las elecciones de un grupo, pero no todas las maneras de escoger a los estudiantes del otro grado. Pero ambos grupos se seleccionan."
         },
         {
-          "t": "A suma estudiantes; B y C no incluyen todas las combinaciones. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A suma estudiantes; B y C no incluyen todas las combinaciones. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Se eligen dos de cinco en décimo: diez combinaciones.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Se eligen dos de cinco en décimo: diez combinaciones."
         },
         {
-          "t": "Se eligen tres de cuatro en undécimo: cuatro combinaciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Se eligen tres de cuatro en undécimo: cuatro combinaciones."
         },
         {
-          "t": "El principio multiplicativo da $10×4=40$ grupos.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "El principio multiplicativo da $10×4=40$ grupos."
         },
         {
-          "t": "A, B y C no cuentan todas las selecciones compatibles con la composición pedida.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y C no cuentan todas las selecciones compatibles con la composición pedida."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "$2$ estudiantes sean de grado décimo y $3$ de grado undécimo",
+        "nota": "La composición de cada grupo está fijada.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "En décimo hay $5$ estudiantes",
+        "nota": "Se eligen dos entre cinco.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "en undécimo hay $4$",
+        "nota": "Se eligen tres entre cuatro.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "Cuántos grupos diferentes",
+        "nota": "Multiplica las combinaciones posibles de cada grado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Cuenta por separado las selecciones posibles en cada grado.",
+        "titulo": "Cuenta por separado las selecciones posibles en cada grado."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$\\binom{5}{2}=10$",
+          "$\\binom{4}{3}=4$",
+          "$10×4=40$"
+        ],
+        "nota": "Multiplica las dos cantidades de combinaciones.",
+        "titulo": "Multiplica las dos cantidades de combinaciones."
+      },
+      {
+        "k": "check",
+        "texto": "Se pueden formar cuarenta grupos; corresponde a D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

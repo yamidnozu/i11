@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "With this, your neck won't be cold.",
-        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la descripción",
-        "texto": "Fíjate en {{With this, your neck won't be cold.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la palabra",
-        "texto": "{{scarf}} significa bufanda y coincide con la descripción: esta pista indica cubrir el cuello y mantenerlo abrigado."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que {{scarf}} nombra la prenda o el accesorio que corresponde a la característica descrita."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{scarf}} significa bufanda y coincide con la descripción: esta pista indica cubrir el cuello y mantenerlo abrigado.",
       "clave": "{{scarf}} significa bufanda y coincide con la descripción: esta pista indica cubrir el cuello y mantenerlo abrigado.",
-      "pistas": [
-        "Fíjate en {{With this, your neck won't be cold.}}.",
-        "Compara la característica con el significado de cada palabra."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         },
         {
           "t": "Opción B",
-          "p": "{{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         },
         {
           "t": "Opción C",
-          "p": "{{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         },
         {
           "t": "Opción E",
-          "p": "{{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         },
         {
           "t": "Opción F",
-          "p": "{{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         },
         {
           "t": "Opción G",
-          "p": "{{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+          "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
         }
+      ],
+      "pistas": [
+        "Focus on the body part {{neck}} and keeping warm in cold weather.",
+        "Identify {{scarf}} as the winter accessory wrapped around the neck."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida corresponde a la descripción."
         }
-      ]
+      ],
+      "que": "{{scarf}} significa bufanda y coincide con la descripción: esta pista indica cubrir el cuello y mantenerlo abrigado.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es {{scarf}}; vuelve a comprobarla con la descripción."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "With this, your neck won't be cold.",
+        "nota": "La descripción contiene la característica que debe relacionarse con una palabra.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{With this, your neck won't be cold.}}.",
+        "titulo": "Lee la descripción"
+      },
+      {
+        "k": "idea",
+        "texto": "{{scarf}} significa bufanda y coincide con la descripción: esta pista indica cubrir el cuello y mantenerlo abrigado.",
+        "titulo": "Relaciona la palabra"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que {{scarf}} nombra la prenda o el accesorio que corresponde a la característica descrita."
+      }
+    ]
+  },
+  "revisar": []
 }

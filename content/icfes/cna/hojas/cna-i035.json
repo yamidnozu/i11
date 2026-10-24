@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Temperatura de",
-        "rol": "pide",
-        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la información",
-        "texto": "Lee las mesetas de la curva, que indican cambios de estado."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta el apoyo",
-        "texto": "Compara ambas temperaturas con las filas de la tabla."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Usa fusión y ebullición para confirmar la identificación."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar una sustancia por sus temperaturas de cambio de estado",
-      "que": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
-      "pistas": [
-        "Lee las mesetas de la curva, que indican cambios de estado.",
-        "Compara ambas temperaturas con las filas de la tabla."
-      ],
       "clave": "Las temperaturas de cambio de estado de la curva corresponden a las del agua.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva."
+          "p": "Pero el benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva."
         },
         {
           "t": "Opción C",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva."
+          "p": "Pero el acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva."
         },
         {
           "t": "Opción D",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada."
+          "p": "Pero el dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada."
         }
+      ],
+      "pistas": [
+        "Lee las mesetas de la curva, que indican cambios de estado.",
+        "Compara ambas temperaturas con las filas de la tabla."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Usa fusión y ebullición para confirmar la identificación."
         }
-      ]
+      ],
+      "que": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+      "tema": "Identificar una sustancia por sus temperaturas de cambio de estado"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La frase «Temperatura de» introduce los puntos de cambio de estado que debemos comparar.",
-          "a": "m:Temperatura de"
+          "a": "m:Temperatura de",
+          "t": "La frase «Temperatura de» introduce los puntos de cambio de estado que debemos comparar."
         },
         {
-          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
         },
         {
-          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descartamos."
         },
         {
-          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descartamos."
         },
         {
-          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Primero identifico qué dato o tendencia debo leer.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
         },
         {
-          "t": "Usa fusión y ebullición para confirmar la identificación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Usa fusión y ebullición para confirmar la identificación."
         },
         {
-          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descarto."
         },
         {
-          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descarto."
         },
         {
-          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "Temperatura de",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee las mesetas de la curva, que indican cambios de estado.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Compara ambas temperaturas con las filas de la tabla.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Usa fusión y ebullición para confirmar la identificación.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

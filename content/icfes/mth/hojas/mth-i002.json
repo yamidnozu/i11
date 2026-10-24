@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "tasa de cambio del dólar respecto al peso colombiano se mantendrá constante",
-        "rol": "dato",
-        "nota": "La conversión usa el mismo factor durante el periodo.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "$3\\%$ en el mismo periodo",
-        "rol": "dato",
-        "nota": "Es la proporción de crecimiento en dólares.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "en pesos sus ganancias también serán del $3\\%$",
-        "rol": "pide",
-        "nota": "Evalúa si la proporción se conserva al convertir la inversión.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia.",
-        "texto": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia."
-      },
-      {
-        "k": "calc",
-        "titulo": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor.",
-        "lineas": [
-          "$P_{COP}=2.000P_{USD}$",
-          "$1,03P_{COP}=2.000(1,03P_{USD})$"
-        ],
-        "nota": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La proporción sigue siendo tres por ciento en pesos; la respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Porcentajes y tasa de cambio constante",
-      "que": "Decide si el porcentaje de crecimiento se conserva al expresar la inversión en otra moneda.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Una conversión con tasa fija multiplica por la misma constante el capital y su ganancia.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
+          "p": "Pero solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
         },
         {
           "t": "Opción B",
-          "p": "Pero, no hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
+          "p": "Pero no hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
         },
         {
           "t": "Opción D",
-          "p": "Pero, el factor de {{2.000}} vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo {{3 %}}."
+          "p": "Pero el factor de 2.000 vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo 3 %."
         }
+      ],
+      "pistas": [
+        "Analiza qué ocurre con el rendimiento en pesos cuando la tasa de cambio entre dólar y peso se mantiene fija.",
+        "Comprueba que la ganancia porcentual en pesos es idéntica al 3 % en dólares si no hay variación cambiaria."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "La proporción sigue siendo tres por ciento en pesos; la respuesta es C."
         }
-      ]
+      ],
+      "que": "Decide si el porcentaje de crecimiento se conserva al expresar la inversión en otra moneda.",
+      "tema": "Porcentajes y tasa de cambio constante"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "No; multiplica tanto el capital como la ganancia por el mismo factor."
         },
         {
-          "t": "La ganancia en pesos conserva el tres por ciento. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La ganancia en pesos conserva el tres por ciento. La respuesta es C."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Al convertir ambos valores a pesos, se multiplican por dos mil y su proporción de aumento sigue igual."
         },
         {
-          "t": "La opción A no corresponde: Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no corresponde: Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
         },
         {
-          "t": "La opción B no corresponde: No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no corresponde: No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
         },
         {
-          "t": "La opción D no corresponde: El factor de {{2.000}} vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo {{3 %}}.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no corresponde: El factor de {{2.000}} vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo {{3 %}}."
         },
         {
-          "t": "A ignora la condición de tasa fija; B pide un monto innecesario; D confunde valor absoluto con porcentaje. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "A ignora la condición de tasa fija; B pide un monto innecesario; D confunde valor absoluto con porcentaje. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Con una tasa constante, convertir dólares a pesos equivale a multiplicar por una constante.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Con una tasa constante, convertir dólares a pesos equivale a multiplicar por una constante."
         },
         {
-          "t": "Esa constante afecta al capital y al monto con ganancia por igual, así que el cociente entre ambos sigue reflejando un aumento de tres por ciento.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Esa constante afecta al capital y al monto con ganancia por igual, así que el cociente entre ambos sigue reflejando un aumento de tres por ciento."
         },
         {
-          "t": "La afirmación del amigo es correcta bajo la condición indicada.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La afirmación del amigo es correcta bajo la condición indicada."
         },
         {
-          "t": "A, B y D no consideran que el factor de cambio permanece fijo.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y D no consideran que el factor de cambio permanece fijo."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "tasa de cambio del dólar respecto al peso colombiano se mantendrá constante",
+        "nota": "La conversión usa el mismo factor durante el periodo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "$3\\%$ en el mismo periodo",
+        "nota": "Es la proporción de crecimiento en dólares.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "en pesos sus ganancias también serán del $3\\%$",
+        "nota": "Evalúa si la proporción se conserva al convertir la inversión.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia.",
+        "titulo": "Representa la inversión inicial en dólares y conviértela con una tasa que no cambia."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$P_{COP}=2.000P_{USD}$",
+          "$1,03P_{COP}=2.000(1,03P_{USD})$"
+        ],
+        "nota": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor.",
+        "titulo": "La tasa fija multiplica el capital inicial y el monto final por el mismo factor."
+      },
+      {
+        "k": "check",
+        "texto": "La proporción sigue siendo tres por ciento en pesos; la respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

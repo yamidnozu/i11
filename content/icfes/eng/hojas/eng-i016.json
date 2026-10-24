@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista de lectura",
-        "frag": "many people believe coffee is bad",
-        "nota": "Esta frase aporta la relación de sentido que debe expresar el conector.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee las dos ideas",
-        "texto": "Fíjate en {{many people believe coffee is bad}} y en lo que muestran los estudios."
-      },
-      {
-        "k": "idea",
-        "titulo": "Reconoce la relación",
-        "texto": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que el conector expresa contraste entre las dos ideas, no condición, excepción ni causa."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
       "clave": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
-      "pistas": [
-        "Fíjate en {{many people believe coffee is bad}}.",
-        "Lee la oración completa dentro del bloque compartido antes de elegir."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios."
+          "p": "Pero introduce una condición, no el contraste entre la creencia y el resultado de los estudios."
         },
         {
           "t": "Opción C",
-          "p": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios."
+          "p": "Pero expresa una causa; la oración contrapone la creencia con el resultado de los estudios."
         }
+      ],
+      "pistas": [
+        "Identify the contrast conjunction {{while}} introducing a clause that contrasts popular myths with research.",
+        "Connect the conflicting ideas between popular belief and scientific findings."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Contrasta las opciones y confirma cuál conserva el sentido."
         }
-      ]
+      ],
+      "que": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -86,13 +61,13 @@
         },
         {
           "a": "o:B:no",
-          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios.",
-          "k": "err"
+          "k": "err",
+          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios."
         },
         {
           "a": "o:C:no",
-          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios.",
-          "k": "err"
+          "k": "err",
+          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios."
         },
         {
           "a": "o:A:ok",
@@ -112,19 +87,45 @@
         },
         {
           "a": "o:B:no",
-          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios.",
-          "k": "err"
+          "k": "err",
+          "t": "Introduce una condición, no el contraste entre la creencia y el resultado de los estudios."
         },
         {
           "a": "o:C:no",
-          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios.",
-          "k": "err"
+          "k": "err",
+          "t": "Expresa una causa; la oración contrapone la creencia con el resultado de los estudios."
         },
         {
           "a": "o:A:ok",
           "t": "La respuesta es la opción A; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "many people believe coffee is bad",
+        "nota": "Esta frase aporta la relación de sentido que debe expresar el conector.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{many people believe coffee is bad}} y en lo que muestran los estudios.",
+        "titulo": "Lee las dos ideas"
+      },
+      {
+        "k": "idea",
+        "texto": "La conjunción {{while}} presenta el contraste entre la creencia de que el café es malo y el resultado de los estudios. {{if}} expresa una condición y {{because}} introduciría una causa; esas relaciones no corresponden a la oración.",
+        "titulo": "Reconoce la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que el conector expresa contraste entre las dos ideas, no condición, excepción ni causa."
+      }
+    ]
+  },
+  "revisar": []
 }

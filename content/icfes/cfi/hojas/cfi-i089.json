@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cae en el interior del carro",
-        "rol": "dato",
-        "nota": "El enunciado establece la situación física que debes interpretar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "La rapidez del carro después de que el objeto cae dentro de él",
-        "rol": "pide",
-        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Aplicar la conservación del momento horizontal cuando un objeto cae dentro de un carro."
-      },
-      {
-        "k": "idea",
-        "texto": "Considera que el objeto cae verticalmente y queda moviéndose junto con el carro."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción A sea coherente con el movimiento y las fuerzas descritas."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar la conservación del momento horizontal cuando un objeto cae dentro de un carro.",
-      "que": "Considera que el objeto cae verticalmente y queda moviéndose junto con el carro.",
+      "clave": "El objeto no aporta momento horizontal al caer. Después del choque, la misma cantidad de movimiento horizontal corresponde al carro y al objeto, así que la rapidez disminuye al aumentar la masa que se desplaza.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero b confunde la velocidad vertical del objeto con la horizontal del carro."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero c atribuye un impulso horizontal adicional que el objeto no trae."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero d ignora que el objeto queda en el carro y aumenta la masa que se mueve horizontalmente."
+        }
+      ],
+      "pistas": [
+        "cae en el interior del carro",
+        "El objeto no aporta momento horizontal al caer. Después del choque, la misma cantidad de movimiento horizontal corresponde al carro y al objeto, así que la rapidez disminuye al aumentar la masa que se desplaza."
+      ],
       "plan": [
         {
           "t": "Aplicar la conservación del momento horizontal cuando un objeto cae dentro de un carro."
@@ -44,25 +32,8 @@
           "t": "Selecciona la opción A y contrástala con el enunciado."
         }
       ],
-      "pistas": [
-        "cae en el interior del carro",
-        "El objeto no aporta momento horizontal al caer. Después del choque, la misma cantidad de movimiento horizontal corresponde al carro y al objeto, así que la rapidez disminuye al aumentar la masa que se desplaza."
-      ],
-      "clave": "El objeto no aporta momento horizontal al caer. Después del choque, la misma cantidad de movimiento horizontal corresponde al carro y al objeto, así que la rapidez disminuye al aumentar la masa que se desplaza.",
-      "no": [
-        {
-          "t": "Opción B",
-          "p": "B atribuye al objeto una velocidad horizontal que el enunciado no indica."
-        },
-        {
-          "t": "Opción C",
-          "p": "C supone un impulso horizontal adicional que no está presente."
-        },
-        {
-          "t": "Opción D",
-          "p": "D ignora que el objeto queda dentro del carro y aumenta la masa en movimiento."
-        }
-      ]
+      "que": "Considera que el objeto cae verticalmente y queda moviéndose junto con el carro.",
+      "tema": "Aplicar la conservación del momento horizontal cuando un objeto cae dentro de un carro."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta se sostiene con el principio físico aplicado."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "cae en el interior del carro",
+        "nota": "El enunciado establece la situación física que debes interpretar.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "La rapidez del carro después de que el objeto cae dentro de él",
+        "nota": "La pregunta solicita aplicar el principio físico correspondiente.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Aplicar la conservación del momento horizontal cuando un objeto cae dentro de un carro."
+      },
+      {
+        "k": "idea",
+        "texto": "Considera que el objeto cae verticalmente y queda moviéndose junto con el carro."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A sea coherente con el movimiento y las fuerzas descritas."
+      }
+    ]
+  },
+  "revisar": []
 }

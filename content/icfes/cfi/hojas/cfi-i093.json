@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "utilizando el Lugol como colorante",
-        "rol": "dato",
-        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "el experimento 4 es importante porque",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes explicar o inferir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identificar el control que permite interpretar una prueba de almidón."
-      },
-      {
-        "k": "idea",
-        "texto": "Revisa qué sustancias incluye el cuarto experimento y qué comparación permite establecer."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción D explique la evidencia y no solo repita un dato."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar el control que permite interpretar una prueba de almidón.",
-      "que": "Revisa qué sustancias incluye el cuarto experimento y qué comparación permite establecer.",
+      "clave": "El cuarto ensayo combina Lugol con una solución conocida de almidón y no contiene papa. Así permite observar el color esperado cuando hay almidón.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero a no es el propósito del experimento de control."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero b el Lugol también está presente en otros ensayos; aquí se necesita comparar con almidón conocido."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero c la tabla no compara cantidades de almidón entre la solución y la papa."
+        }
+      ],
+      "pistas": [
+        "utilizando el Lugol como colorante",
+        "El cuarto ensayo combina Lugol con una solución conocida de almidón y no contiene papa. Así permite observar el color esperado cuando hay almidón."
+      ],
       "plan": [
         {
           "t": "Identificar el control que permite interpretar una prueba de almidón."
@@ -44,25 +32,8 @@
           "t": "Elige la opción D y comprueba que se derive de los datos."
         }
       ],
-      "pistas": [
-        "utilizando el Lugol como colorante",
-        "El cuarto ensayo combina Lugol con una solución conocida de almidón y no contiene papa. Así permite observar el color esperado cuando hay almidón."
-      ],
-      "clave": "El cuarto ensayo combina Lugol con una solución conocida de almidón y no contiene papa. Así permite observar el color esperado cuando hay almidón.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "A el ensayo busca detectar almidón, no hacerlo soluble."
-        },
-        {
-          "t": "Opción B",
-          "p": "B el colorante está en otros ensayos; el control muestra cómo se ve la reacción positiva."
-        },
-        {
-          "t": "Opción C",
-          "p": "C la tabla no plantea comparar cantidades de almidón entre la papa y la solución."
-        }
-      ]
+      "que": "Revisa qué sustancias incluye el cuarto experimento y qué comparación permite establecer.",
+      "tema": "Identificar el control que permite interpretar una prueba de almidón."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta queda respaldada por el resultado descrito."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "utilizando el Lugol como colorante",
+        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "el experimento 4 es importante porque",
+        "nota": "La pregunta señala qué debes explicar o inferir.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identificar el control que permite interpretar una prueba de almidón."
+      },
+      {
+        "k": "idea",
+        "texto": "Revisa qué sustancias incluye el cuarto experimento y qué comparación permite establecer."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción D explique la evidencia y no solo repita un dato."
+      }
+    ]
+  },
+  "revisar": []
 }

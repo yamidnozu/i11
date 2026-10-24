@@ -1,56 +1,28 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "The largest group of Ethiopian wolves exists ___ the Bale Mountains National Park.",
-        "rol": "pide",
-        "nota": "Este es el fragmento que contiene el espacio evaluado.",
-        "campo": "Fragmento"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee el fragmento",
-        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba la forma",
-        "texto": "In es la preposición que introduce el lugar en el que se encuentra el grupo."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en contexto",
-        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
-      }
-    ],
     "enfoque": {
-      "tema": "Completar una lectura en inglés con la forma adecuada",
-      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
-      "pistas": [
-        "Lee la oración completa alrededor del espacio.",
-        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
-      ],
       "clave": "In es la preposición que introduce el lugar en el que se encuentra el grupo.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero At no es la preposición usada para situar el grupo dentro del parque."
+          "p": "Pero at no es la preposición usada para situar el grupo dentro del parque."
         },
         {
           "t": "Opción C",
-          "p": "Pero On indicaría una superficie y no la ubicación dentro del parque."
+          "p": "Pero on indicaría una superficie y no la ubicación dentro del parque."
         }
+      ],
+      "pistas": [
+        "Lee la oración completa alrededor del espacio.",
+        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
       ],
       "plan": [
         {
-          "t": "Lee el fragmento con el espacio.",
           "eq": [
             "{{The largest group of Ethiopian wolves exists ... the Bale Mountains National Park.}}"
-          ]
+          ],
+          "t": "Lee el fragmento con el espacio."
         },
         {
           "t": "Identifica qué clase de palabra exige la estructura."
@@ -58,7 +30,9 @@
         {
           "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ]
+      ],
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "tema": "Completar una lectura en inglés con la forma adecuada"
     },
     "guion": {
       "1": [
@@ -69,8 +43,8 @@
           "t": "Fíjate en {{The largest group of Ethiopian wolves exists ... the Bale Mountains National Park.}} y en las palabras que lo rodean."
         },
         {
-          "t": "La opción correcta es {{in}}.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción correcta es {{in}}."
         }
       ],
       "2": [
@@ -78,42 +52,69 @@
           "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "La opción A no encaja: La clave la confirma en el pasaje.",
           "a": "p:0",
-          "k": "por"
+          "k": "por",
+          "t": "La opción A no encaja: La clave la confirma en el pasaje."
         },
         {
-          "t": "La opción B no encaja: At no es la preposición usada para situar el grupo dentro del parque.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: At no es la preposición usada para situar el grupo dentro del parque."
         },
         {
-          "t": "La opción C no encaja: On indicaría una superficie y no la ubicación dentro del parque.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: On indicaría una superficie y no la ubicación dentro del parque."
         }
       ],
       "3": [
         {
-          "t": "Analiza la estructura que acompaña el espacio: {{The largest group of Ethiopian wolves exists ... the Bale Mountains National Park.}}.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Analiza la estructura que acompaña el espacio: {{The largest group of Ethiopian wolves exists ... the Bale Mountains National Park.}}."
         },
         {
-          "t": "In es la preposición que introduce el lugar en el que se encuentra el grupo.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "In es la preposición que introduce el lugar en el que se encuentra el grupo."
         },
         {
-          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje."
         },
         {
-          "t": "Comprueba que la opción A deja la oración completa y coherente.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Comprueba que la opción A deja la oración completa y coherente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Fragmento",
+        "frag": "The largest group of Ethiopian wolves exists ___ the Bale Mountains National Park.",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita.",
+        "titulo": "Lee el fragmento"
+      },
+      {
+        "k": "idea",
+        "texto": "In es la preposición que introduce el lugar en el que se encuentra el grupo.",
+        "titulo": "Comprueba la forma"
+      },
+      {
+        "k": "check",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido.",
+        "titulo": "Verifica en contexto"
+      }
+    ]
+  },
+  "revisar": []
 }

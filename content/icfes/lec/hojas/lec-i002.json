@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "lo narra",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa si quien cuenta habla desde dentro de la historia."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Busca qué relación revela entre la narradora y Johnny."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La narradora conoce a Johnny y relata experiencias compartidas con él."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar la voz que cuenta una historia",
-      "que": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
-      "pistas": [
-        "Observa si quien cuenta habla desde dentro de la historia.",
-        "Busca qué relación revela entre la narradora y Johnny."
-      ],
       "clave": "La narradora conoce a Johnny y relata experiencias compartidas con él.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero No es una testigo distante: cuenta situaciones vividas junto a Johnny."
+          "p": "Pero no es una testigo distante: cuenta situaciones vividas junto a Johnny."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero Johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento."
+          "p": "Pero johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La narradora habla de lo que vivió, no de algo que le contaron sobre Johnny."
+          "p": "Pero la narradora habla de lo que vivió, no de algo que le contaron sobre Johnny."
         }
+      ],
+      "pistas": [
+        "Observa si quien cuenta habla desde dentro de la historia.",
+        "Busca qué relación revela entre la narradora y Johnny."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
+      "tema": "Identificar la voz que cuenta una historia"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «lo narra» orienta la lectura.",
-          "a": "m:lo narra"
+          "a": "m:lo narra",
+          "t": "La expresión «lo narra» orienta la lectura."
         },
         {
-          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce."
         },
         {
-          "t": "Opción A: No es una testigo distante: cuenta situaciones vividas junto a Johnny. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: No es una testigo distante: cuenta situaciones vividas junto a Johnny. La descartamos."
         },
         {
-          "t": "Opción B: Johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Johnny aparece como personaje y es descrito por otra voz; no está contando el fragmento. La descartamos."
         },
         {
-          "t": "Opción C: La narradora habla de lo que vivió, no de algo que le contaron sobre Johnny. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La narradora habla de lo que vivió, no de algo que le contaron sobre Johnny. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa si quien cuenta habla desde dentro de la historia.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa si quien cuenta habla desde dentro de la historia."
         },
         {
-          "t": "Busca qué relación revela entre la narradora y Johnny.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Busca qué relación revela entre la narradora y Johnny."
         },
         {
-          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La narradora participa en la historia y conoce de cerca a Johnny: cuenta que él la llevaba a distintos lugares y que ella compartía esas experiencias. Por eso es alguien que lo conoce."
         },
         {
-          "t": "La narradora conoce a Johnny y relata experiencias compartidas con él.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La narradora conoce a Johnny y relata experiencias compartidas con él."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "lo narra",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa si quien cuenta habla desde dentro de la historia.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca qué relación revela entre la narradora y Johnny.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La narradora conoce a Johnny y relata experiencias compartidas con él.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

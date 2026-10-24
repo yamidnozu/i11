@@ -1,112 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "La gráfica presenta una inconsistencia porque",
-        "rol": "pide",
-        "nota": "Se identifica qué propiedad de la gráfica no coincide con la tabla.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Compara la gráfica con la tabla: el valor del subsidio es fijo dentro de cada intervalo de ingresos."
-      },
-      {
-        "k": "idea",
-        "texto": "En la tabla, el subsidio cambia por tramos; la gráfica dibuja una recta continua que disminuye entre los ingresos."
-      },
-      {
-        "k": "check",
-        "texto": "La diferencia entre los tramos y la recta continua corresponde a la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar una tabla por intervalos con su gráfica",
-      "que": "Identifica la inconsistencia entre valores constantes por intervalos y una gráfica continua.",
-      "plan": [
-        {
-          "t": "Compara la gráfica con la tabla: el valor del subsidio es fijo dentro de cada intervalo de ingresos."
-        },
-        {
-          "t": "En la tabla, el subsidio cambia por tramos; la gráfica dibuja una recta continua que disminuye entre los ingresos."
-        },
-        {
-          "t": "La diferencia entre los tramos y la recta continua corresponde a la opción B."
-        }
-      ],
-      "pistas": [
-        "La tabla asigna un monto fijo a cada intervalo.",
-        "La línea dibujada cambia de manera continua."
-      ],
-      "clave": "La tabla asigna un subsidio constante a cada rango de ingresos y cambia el monto al pasar de un rango al siguiente. La gráfica une los valores con una línea continua; por eso representa una disminución continua que no aparece en la tabla.",
+      "clave": "El subsidio permanece fijo en cada intervalo y cambia entre tramos; no forma una recta continua.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, los ejes de la gráfica ya están en ingresos y subsidio expresados en SMMLV, como la tabla."
+          "p": "Pero la gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla."
         },
         {
           "t": "Opción C",
-          "p": "Pero, la tabla presenta los valores de subsidio para todos los rangos que incluye; el problema es la línea continua."
+          "p": "Pero la gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo."
         },
         {
           "t": "Opción D",
-          "p": "Pero, el subsidio sí disminuye al aumentar los ingresos; la inconsistencia está en representar cambios continuos."
+          "p": "Pero el subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
         }
-      ]
+      ],
+      "pistas": [
+        "Aplica la fórmula del área del sector circular: $A = \\frac{1}{2} r^2 \\theta$ con el ángulo central en radianes.",
+        "Comprueba si la gráfica ilustra la variación cuadrática respecto al radio y lineal respecto a la abertura del ángulo."
+      ],
+      "plan": [
+        {
+          "t": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada."
+        },
+        {
+          "t": "La tabla usa rangos y valores fijos por rango."
+        },
+        {
+          "t": "La inconsistencia es la continuidad de la recta; corresponde a B."
+        }
+      ],
+      "que": "Reconoce qué aspecto de la gráfica no concuerda con una tabla de subsidios por rangos.",
+      "tema": "Relación por intervalos y representación gráfica"
     },
     "guion": {
       "1": [
         {
-          "t": "Compara la gráfica con la tabla: el valor del subsidio es fijo dentro de cada intervalo de ingresos."
+          "t": "¿El subsidio cambia continuamente o por rangos de ingreso?"
         },
         {
-          "t": "En la tabla, el subsidio cambia por tramos; la gráfica dibuja una recta continua que disminuye entre los ingresos."
+          "t": "La tabla fija un valor para cada intervalo. La gráfica dibuja una recta continua."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta es la opción B: La tabla asigna un subsidio constante a cada rango de ingresos y cambia el monto al pasar de un rango al siguiente. La gráfica une los valores con una línea continua; por eso representa una disminución continua que no aparece en la tabla."
+          "t": "Ese es el problema de la opción B."
         }
       ],
       "2": [
         {
+          "t": "Observa que cada rango de ingreso tiene un valor fijo de subsidio."
+        },
+        {
+          "t": "Una línea recta sugiere que el subsidio baja de manera constante entre todos los ingresos."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, los ejes de la gráfica ya están en ingresos y subsidio expresados en SMMLV, como la tabla."
+          "t": "La opción A: La gráfica y la tabla expresan el ingreso y el subsidio en SMMLV. Pero los valores en pesos son otra columna de la tabla."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, la tabla presenta los valores de subsidio para todos los rangos que incluye; el problema es la línea continua."
+          "t": "La opción C: La gráfica usa valores representativos de los tramos, pero el problema central es unirlos como si la variación fuera continua. Pero el subsidio es fijo por intervalo."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, el subsidio sí disminuye al aumentar los ingresos; la inconsistencia está en representar cambios continuos."
+          "t": "La opción D: El subsidio sí es mayor para ingresos bajos, y la gráfica también decrece. Pero debe representarlo por tramos, no como recta continua."
         },
         {
           "a": "o:B:ok",
-          "t": "La tabla asigna un subsidio constante a cada rango de ingresos y cambia el monto al pasar de un rango al siguiente. La gráfica une los valores con una línea continua; por eso representa una disminución continua que no aparece en la tabla."
+          "t": "A confunde unidades; C no identifica la forma; D coincide con la tendencia, pero no con los tramos. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Compara la gráfica con la tabla: el valor del subsidio es fijo dentro de cada intervalo de ingresos."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La tabla organiza los ingresos en intervalos y asigna un valor de subsidio a cada uno."
         },
         {
-          "t": "En la tabla, el subsidio cambia por tramos; la gráfica dibuja una recta continua que disminuye entre los ingresos."
+          "a": "p:1",
+          "t": "La gráfica conecta los extremos con una recta continua, aunque la tabla solo respalda cambios por tramos."
         },
         {
-          "t": "La diferencia entre los tramos y la recta continua corresponde a la opción B."
+          "a": "p:2",
+          "k": "contra",
+          "t": "La inconsistencia está en asumir una disminución constante y continua."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D no describen esa diferencia entre tabla y gráfica."
         },
         {
           "a": "o:B:ok",
-          "t": "La tabla asigna un subsidio constante a cada rango de ingresos y cambia el monto al pasar de un rango al siguiente. La gráfica une los valores con una línea continua; por eso representa una disminución continua que no aparece en la tabla."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "la información de la tabla",
+        "nota": "El subsidio se asigna según intervalos de ingresos.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "gráfica que se presenta a continuación",
+        "nota": "La representación une los valores con una línea continua.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "presenta una inconsistencia porque",
+        "nota": "Identifica qué característica gráfica contradice la tabla.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada.",
+        "titulo": "Compara cómo se asigna el subsidio en la tabla con la línea dibujada."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "El subsidio cambia por intervalos",
+          "La gráfica propone una disminución continua"
+        ],
+        "nota": "La tabla usa rangos y valores fijos por rango.",
+        "titulo": "La tabla usa rangos y valores fijos por rango."
+      },
+      {
+        "k": "check",
+        "texto": "La inconsistencia es la continuidad de la recta; corresponde a B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

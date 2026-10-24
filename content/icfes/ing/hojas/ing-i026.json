@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "You often learn to ride it when you are a child.",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{You often learn to ride it when you are a child.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "{{bike}} se monta y pedalea y corresponde a la característica descrita."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{bike}} se monta y pedalea y corresponde a la característica descrita.",
       "clave": "{{bike}} se monta y pedalea y corresponde a la característica descrita.",
-      "pistas": [
-        "Fíjate en {{You often learn to ride it when you are a child.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{ambulance}} transporta pacientes, pero esa característica no corresponde a aprender a montar un vehículo."
         },
         {
           "t": "Opción B",
-          "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{boat}} viaja por el agua, pero esa característica no corresponde a aprender a montar un vehículo."
         },
         {
           "t": "Opción D",
-          "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a aprender a montar un vehículo."
         },
         {
           "t": "Opción E",
-          "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{motorbike}} se conduce por carretera, pero esa característica no corresponde a aprender a montar un vehículo."
         },
         {
           "t": "Opción F",
-          "p": "{{plane}} vuela por el aire, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{plane}} vuela por el aire, pero esa característica no corresponde a aprender a montar un vehículo."
         },
         {
           "t": "Opción G",
-          "p": "{{train}} circula por vías, pero esa característica no corresponde a aprender a montar un vehículo."
+          "p": "Pero {{train}} circula por vías, pero esa característica no corresponde a aprender a montar un vehículo."
         }
+      ],
+      "pistas": [
+        "Focus on the safety rules for passengers and public transit vehicles.",
+        "Identify that this passenger notice is posted inside a city bus."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{bike}} se monta y pedalea y corresponde a la característica descrita.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "You often learn to ride it when you are a child.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{You often learn to ride it when you are a child.}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "{{bike}} se monta y pedalea y corresponde a la característica descrita.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

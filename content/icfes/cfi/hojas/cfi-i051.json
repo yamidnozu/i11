@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "protección inmediata de los derechos fundamentales",
-        "rol": "dato",
-        "nota": "Define para qué sirve la acción de tutela.",
-        "campo": "Propósito"
-      },
-      {
-        "frag": "cuando",
-        "rol": "pide",
-        "nota": "La pregunta pide reconocer una situación en que procede este mecanismo.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Recuerda que la tutela busca proteger de manera inmediata un derecho fundamental."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara las opciones y distingue una vulneración concreta de otras situaciones jurídicas."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que el caso describa una afectación de un derecho fundamental que requiere protección."
-      }
-    ],
     "enfoque": {
-      "tema": "Acción de tutela",
-      "que": "Reconocer cuándo se puede solicitar protección judicial inmediata de un derecho fundamental.",
-      "plan": [
-        {
-          "t": "Identifica el propósito de la tutela en el enunciado."
-        },
-        {
-          "t": "Busca una vulneración concreta de un derecho fundamental."
-        },
-        {
-          "t": "Comprueba que la opción describe una necesidad inmediata de protección."
-        }
-      ],
-      "pistas": [
-        "El mecanismo protege derechos fundamentales.",
-        "La opción A menciona el derecho a la salud y un riesgo para la vida."
-      ],
-      "clave": "La opción A describe una vulneración del derecho a la salud que pone en riesgo la vida y requiere protección inmediata.",
+      "clave": "La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, La expulsión de una agremiación no se presenta aquí como una amenaza a un derecho fundamental que requiera tutela inmediata."
+          "p": "Pero es incorrecta porque la expulsión de una asociación gremial privada es un diferendo contractual que cuenta con vías judiciales ordinarias."
         },
         {
           "t": "Opción C",
-          "p": "Pero, La protección de un derecho colectivo no corresponde al propósito individual de la tutela descrito en el enunciado."
+          "p": "Pero es incorrecta porque los derechos colectivos (como juntas comunales o medio ambiente) se protegen mediante acciones populares, no tutelas individuales."
         },
         {
           "t": "Opción D",
-          "p": "Pero, Expedir leyes es una función normativa, no una situación concreta de vulneración que deba remediarse mediante tutela."
+          "p": "Pero es incorrecta porque la acción de tutela es un recurso judicial de amparo concreto, no un mecanismo para legislar o expedir normas generales."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica qué derecho se afecta en cada caso.",
+        "Busca una vulneración de un derecho fundamental que requiera protección inmediata."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción A satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "La tutela protege derechos fundamentales de forma inmediata."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La opción A describe un problema de salud que pone en riesgo la vida."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:A:ok",
-          "t": "Ese caso requiere protección inmediata."
+          "t": "La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida. La respuesta es A."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "La expulsión de una agremiación no se presenta aquí como una amenaza a un derecho fundamental que requiera tutela inmediata."
+          "t": "La opción B plantea «alguien es expulsado de una agremiación, a pesar de estar al día…», Pero no responde al criterio central: La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La protección de un derecho colectivo no corresponde al propósito individual de la tutela descrito en el enunciado."
+          "t": "La opción C plantea «se busca proteger un derecho colectivo de constituir juntas de…», Pero no responde al criterio central: La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Expedir leyes es una función normativa, no una situación concreta de vulneración que deba remediarse mediante tutela."
+          "t": "La opción D plantea «se legisla sobre el derecho a la vida y el acceso a un trabajo…», Pero no responde al criterio central: La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A describe una vulneración del derecho a la salud que pone en riesgo la vida y requiere protección inmediata."
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Usa la definición del enunciado como criterio: protección inmediata de un derecho fundamental."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La amenaza a la salud con riesgo vital es una vulneración concreta que exige respuesta oportuna."
-        },
-        {
-          "t": "Por eso, la situación que permite presentar tutela es la de la opción A."
+          "a": "p:1",
+          "t": "La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida."
         },
         {
           "a": "o:A:ok",
-          "t": "Las demás alternativas no describen esa necesidad de protección inmediata."
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La acción de tutela es un mecanismo que busc",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ntar ante un juez cuando",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La tutela protege de manera inmediata derechos fundamentales; procede cuando la vulneración de la salud pone en riesgo la vida. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

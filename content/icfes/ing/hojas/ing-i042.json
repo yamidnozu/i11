@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "How often did she watch the show?",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{How often did she watch the show?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
       "clave": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
-      "pistas": [
-        "Localiza {{How often did she watch the show?}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
+          "p": "Pero el programa se transmitía Every Sunday morning (cada domingo), lo que equivale a una sola vez por semana."
         },
         {
           "t": "Opción C",
-          "p": "La frecuencia explícita es {{Every Sunday morning}}, una vez por semana."
+          "p": "Pero ocurre únicamente los domingos en la mañana, no dos veces a la semana."
         }
+      ],
+      "pistas": [
+        "Look for the frequency expression describing the broadcast schedule of the program.",
+        "Confirm that the show aired weekly ({{once a week}})."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{once a week}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "How often did she watch the show?",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{How often did she watch the show?}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "La narradora intentaba pintar cada domingo, es decir, {{once a week}}. El texto no dice que viera el programa dos o tres veces por semana.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

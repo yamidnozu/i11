@@ -5,21 +5,21 @@
       "clave": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible.",
       "no": [
         {
-          "t": "Opción B",
-          "p": "Un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
+          "t": "Opción A",
+          "p": "Pero un triángulo rectángulo con un ángulo de 90° es perfectamente realizable en el plano."
         },
         {
           "t": "Opción C",
-          "p": "Un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
+          "p": "Pero un triángulo puede tener sin ningún inconveniente un ángulo menor que 45°."
         },
         {
           "t": "Opción D",
-          "p": "La suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
+          "p": "Pero la suma de los ángulos interiores de todo triángulo en geometría euclidiana es exactamente 180°."
         }
       ],
       "pistas": [
-        "Fíjate en «requerimiento es imposible».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
+        "Aplica el teorema de la desigualdad triangular: en todo triángulo, la suma de las longitudes de cualesquiera dos lados debe ser estrictamente mayor que el tercer lado.",
+        "Verifica que en el requerimiento dos la suma de los dos lados iguales ($7 + 7 = 14\\text{ m}$) es menor que el lado mayor ($18\\text{ m}$), haciendo imposible construir el triángulo."
       ],
       "plan": [
         {
@@ -53,8 +53,8 @@
           "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta es la opción A."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
@@ -67,9 +67,9 @@
           "t": "Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
         },
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:C:no",
@@ -82,8 +82,8 @@
           "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta es la opción A."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
@@ -102,9 +102,9 @@
           "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:C:no",
@@ -117,8 +117,8 @@
           "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta es la opción A."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
     },
@@ -150,5 +150,6 @@
         "texto": "Comprueba el resultado: Dos lados de siete metros suman catorce, menor que el tercer lado de dieciocho metros. No se cumple la desigualdad triangular, así que ese requerimiento es imposible."
       }
     ]
-  }
+  },
+  "revisar": []
 }

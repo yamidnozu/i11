@@ -1,150 +1,150 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "todos pagaran el mismo valor",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «todos pagaran el mismo valor» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "36.000"
-        ],
-        "nota": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: todos pagaran el mismo valor",
-      "que": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
-      "pistas": [
-        "Fíjate en «todos pagaran el mismo valor».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
+      "clave": "Se requieren dos cursos del módulo II. El total de $1.800.000$ dividido entre cincuenta trabajadores da $36.000$ por persona.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero $18.000 divide el costo de un solo curso entre todo el grupo; pero se necesitan dos cursos."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero $450.000 es la mitad del costo de un curso y no cubre dos grupos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero $900.000 cubre un curso, pero no los dos necesarios para 50 trabajadores."
         }
+      ],
+      "pistas": [
+        "Compara el tamaño del grupo con el máximo de personas por curso.",
+        "Divide el costo total de los cursos entre todos los trabajadores."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
-        },
-        {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
-            "36.000"
-          ]
+            "$30 × 30.000 = 900.000$"
+          ],
+          "t": "Calcula el precio de un curso del módulo II."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "Determina cuántos cursos se requieren para cincuenta personas."
+        },
+        {
+          "eq": [
+            "$1.800.000 ÷ 50 = 36.000$"
+          ],
+          "t": "Divide el costo total entre el grupo."
         }
-      ]
+      ],
+      "que": "Calcula el costo por curso, determina cuántos cursos necesita el grupo y reparte el costo total entre sus integrantes.",
+      "tema": "Reparto de costos de capacitación"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "m:50 trabajadores",
+          "t": "¿Caben cincuenta trabajadores en un solo curso si el máximo es treinta?"
         },
         {
-          "t": "La frase «todos pagaran el mismo valor» orienta la estrategia.",
-          "a": "m:todos pagaran el mismo valor"
+          "t": "Se necesitan dos cursos. Cada uno cuesta $900.000$, así que el grupo paga $1.800.000$."
         },
         {
-          "t": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Al repartirlo entre cincuenta, cada quien paga $36.000$. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "m:cuánto debería pagar cada uno",
+          "t": "Busca el costo por persona, no el costo de un curso completo."
         },
         {
-          "t": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
-          "a": "p:1"
+          "t": "Se necesitan dos cursos de $900.000$: en total, $1.800.000$. Al dividir entre cincuenta personas, da $36.000$ cada una."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A usa solo el costo de un curso; hace falta pagar dos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no corresponde al costo total dividido entre las cincuenta personas."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D es el precio de un curso, no el pago individual."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El pago individual es $36.000$. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El módulo II cuesta $30 × 30.000 = 900.000$ por curso."
         },
         {
-          "t": "El módulo dos cuesta $30\\cdot30.000=900.000$ por curso. Cincuenta personas requieren dos cursos, para un costo de $1.800.000$; al dividirlo entre cincuenta, cada una paga $36.000$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Como el máximo por curso es treinta, se necesitan dos. El costo conjunto es $2 × 900.000 = 1.800.000$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Reparto el total en partes iguales: $1.800.000 ÷ 50 = 36.000$ por trabajador."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "La opción A omite un curso; la C no es el cociente correcto; la D expresa el valor de un curso completo."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tamaño del grupo",
+        "frag": "50 trabajadores",
+        "nota": "La cantidad obliga a dividir el grupo en más de un curso.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "cuánto debería pagar cada uno",
+        "nota": "Se busca el costo individual, no el total de la capacitación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El módulo II tiene treinta horas. Cada curso acepta máximo treinta personas, así que cincuenta trabajadores necesitan dos cursos.",
+        "titulo": "Calcula el valor total de los cursos"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$30 × 30.000 = 900.000$",
+          "$2 × 900.000 = 1.800.000$",
+          "$1.800.000 ÷ 50 = 36.000$"
+        ],
+        "nota": "El valor total corresponde a los dos cursos; se reparte por igual entre las cincuenta personas.",
+        "titulo": "Divide el costo entre el grupo"
+      },
+      {
+        "k": "check",
+        "texto": "Cada trabajador paga $36.000$. La respuesta es B."
+      }
+    ]
+  },
+  "revisar": []
 }

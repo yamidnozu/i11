@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "detector de sonido",
-        "rol": "pide",
-        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la relación",
-        "texto": "Identifica qué variable depende del medio de propagación."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Compara el agua con el aire."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer cómo el medio afecta la velocidad del sonido",
-      "que": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
-      "pistas": [
-        "Compara las propiedades que dependen de la fuente con las que dependen del medio.",
-        "La velocidad de propagación varía entre agua y aire."
-      ],
       "clave": "El cambio de velocidad de propagación permite distinguir el sonido en aire del sonido en agua.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al considerar solo un dato. Pero La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia."
+          "p": "Pero la longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible al considerar solo un dato. Pero La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro."
+          "p": "Pero la frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al considerar solo un dato. Pero La forma de onda no es la variable que el detector usa para identificar el medio de propagación."
+          "p": "Pero la forma de onda no es la variable que el detector usa para identificar el medio de propagación."
         }
+      ],
+      "pistas": [
+        "Compara las propiedades que dependen de la fuente con las que dependen del medio.",
+        "La velocidad de propagación varía entre agua y aire."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad."
         }
-      ]
+      ],
+      "que": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
+      "tema": "Reconocer cómo el medio afecta la velocidad del sonido"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "La frase «detector de sonido» da una pista sobre qué debemos observar.",
-          "a": "m:detector de sonido"
+          "a": "m:detector de sonido",
+          "t": "La frase «detector de sonido» da una pista sobre qué debemos observar."
         },
         {
-          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia."
         },
         {
-          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descartamos."
         },
         {
-          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descartamos."
         },
         {
-          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos el concepto que debemos aplicar."
         },
         {
-          "t": "Primero identifico qué relación científica explica la pregunta.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué relación científica explica la pregunta."
         },
         {
-          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La velocidad de propagación del sonido depende del medio. Al pasar del agua al aire, cambia la velocidad; la frecuencia la determina la fuente y la longitud de onda se ajusta a la relación entre velocidad y frecuencia."
         },
         {
-          "t": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad."
         },
         {
-          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La longitud de onda puede cambiar, pero por sí sola no identifica el medio si no se considera la frecuencia. La descarto."
         },
         {
-          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La frecuencia la determina la fuente sonora y no cambia al pasar de un medio a otro. La descarto."
         },
         {
-          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La forma de onda no es la variable que el detector usa para identificar el medio de propagación. La descarto."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "detector de sonido",
+        "nota": "Fragmento que señala la relación científica que se debe aplicar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué variable depende del medio de propagación.",
+        "titulo": "Identifica la relación"
+      },
+      {
+        "k": "idea",
+        "texto": "Compara el agua con el aire.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la frecuencia de la fuente no se confunda con la velocidad.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

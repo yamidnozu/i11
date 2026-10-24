@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "misma probabilidad",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «misma probabilidad» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "3/18;3/18;12/18"
-        ],
-        "nota": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: misma probabilidad",
-      "que": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
-      "pistas": [
-        "Fíjate en «misma probabilidad».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero ignora la definición clásica de probabilidad (éxitos entre casos totales), donde la cantidad de cada color es determinante."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero el número total de bolas se conoce con certeza sumando 3 + 3 + 12 = 18 bolas."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero afirma que las bolas están repartidas igual cuando hay 12 blancas y solo 3 rojas y 3 negras."
         }
+      ],
+      "pistas": [
+        "Calcula el número total de bolas en la bolsa: tres rojas, tres negras y doce blancas suman dieciocho bolas en total.",
+        "Compara la probabilidad de extraer una bola blanca (doce de dieciocho) con la de una roja o negra (tres de dieciocho) para descartar que los tres colores tengan igual probabilidad."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "3/18;3/18;12/18"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
+      "tema": "Matemáticas: misma probabilidad"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «misma probabilidad» orienta la estrategia.",
-          "a": "m:misma probabilidad"
+          "a": "m:misma probabilidad",
+          "t": "La frase «misma probabilidad» orienta la estrategia."
         },
         {
-          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
         },
         {
-          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "misma probabilidad",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «misma probabilidad» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "3/18;3/18;12/18"
+        ],
+        "nota": "Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Las probabilidades dependen de cuántas bolas hay de cada color. Hay doce blancas y solo tres de cada uno de los otros colores, así que no tienen la misma probabilidad."
+      }
+    ]
+  },
+  "revisar": []
 }

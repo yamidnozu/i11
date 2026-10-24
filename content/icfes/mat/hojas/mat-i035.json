@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "hay un error",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «hay un error» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "50(0,9)(0,9)=40,5"
-        ],
-        "nota": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: hay un error",
-      "que": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
-      "pistas": [
-        "Fíjate en «hay un error».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero el paso 1 calcula el 10% del precio original correctamente."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero en el paso 2 la división entre 10 equivale al cálculo simplificado y no introduce un error en el valor numérico."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero el paso 4 no es redundante; el error ocurrió al multiplicar por 10 en lugar de descontar el porcentaje sobre el saldo."
         }
+      ],
+      "pistas": [
+        "Revisa el cálculo del segundo descuento en el paso tres: el cupón adicional del diez por ciento se aplica sobre el precio ya rebajado, no sobre el original.",
+        "Identifica el error en el paso tres: para hallar el precio final tras un diez por ciento de descuento se debe multiplicar por noventa y no por diez."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "50(0,9)(0,9)=40,5"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
+      "tema": "Matemáticas: hay un error"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «hay un error» orienta la estrategia.",
-          "a": "m:hay un error"
+          "a": "m:hay un error",
+          "t": "La frase «hay un error» orienta la estrategia."
         },
         {
-          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
         },
         {
-          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "hay un error",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «hay un error» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "50(0,9)(0,9)=40,5"
+        ],
+        "nota": "Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Los dos primeros pasos dejan el precio en el noventa por ciento del original. Para aplicar el segundo descuento, el paso tres tendría que multiplicar por noventa, no por diez, antes de dividir entre cien. El error está en el paso tres."
+      }
+    ]
+  },
+  "revisar": []
 }

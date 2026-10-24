@@ -1,38 +1,22 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "New Toys: Green monsters, angry dolls, and black helicopters",
-        "rol": "dato",
-        "nota": "El aviso aporta la pista para identificar el lugar.",
-        "campo": "Aviso"
-      },
-      {
-        "frag": "¿Dónde puede ver este aviso?",
-        "rol": "pide",
-        "nota": "La pregunta solicita ubicar el aviso.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Inferir dónde aparece un aviso que anuncia productos nuevos."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona el anuncio de juguetes con el lugar donde se venden."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción B concuerde con el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir dónde aparece un aviso que anuncia productos nuevos.",
-      "que": "Relaciona el anuncio de juguetes con el lugar donde se venden.",
+      "clave": "El aviso anuncia juguetes y enumera productos. Una tienda es el lugar que corresponde.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero {{in a house}} sería un lugar donde alguien podría tener juguetes, pero el aviso presenta productos para vender."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero {{in a zoo}} no corresponde a un anuncio de juguetes a la venta."
+        }
+      ],
+      "pistas": [
+        "{{New Toys: Green monsters, angry dolls, and black helicopters}}",
+        "El aviso anuncia juguetes y enumera productos. Una tienda es el lugar que corresponde."
+      ],
       "plan": [
         {
           "t": "Inferir dónde aparece un aviso que anuncia productos nuevos."
@@ -44,21 +28,8 @@
           "t": "Elige la opción B y confirma que corresponda al aviso."
         }
       ],
-      "pistas": [
-        "{{New Toys: Green monsters, angry dolls, and black helicopters}}",
-        "El aviso anuncia juguetes y enumera productos. Una tienda es el lugar que corresponde."
-      ],
-      "clave": "El aviso anuncia juguetes y enumera productos. Una tienda es el lugar que corresponde.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "{{in a house}} puede ser un lugar donde se usan juguetes, pero el aviso anuncia productos."
-        },
-        {
-          "t": "Opción C",
-          "p": "{{in a zoo}} no corresponde a una tienda de juguetes."
-        }
-      ]
+      "que": "Relaciona el anuncio de juguetes con el lugar donde se venden.",
+      "tema": "Inferir dónde aparece un aviso que anuncia productos nuevos."
     },
     "guion": {
       "1": [
@@ -104,6 +75,36 @@
           "t": "La opción B queda respaldada por el texto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Aviso",
+        "frag": "New Toys: Green monsters, angry dolls, and black helicopters",
+        "nota": "El aviso aporta la pista para identificar el lugar.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿Dónde puede ver este aviso?",
+        "nota": "La pregunta solicita ubicar el aviso.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Inferir dónde aparece un aviso que anuncia productos nuevos."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona el anuncio de juguetes con el lugar donde se venden."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción B concuerde con el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

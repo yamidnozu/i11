@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "sonoridad de un sonido de 30 decibeles",
-        "rol": "dato",
-        "nota": "La expresión asociada con esta sonoridad relaciona las dos intensidades.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿Cuántas veces es el valor de I respecto a I_0?",
-        "rol": "pide",
-        "nota": "Debes despejar la razón entre la intensidad y la intensidad mínima perceptible.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Lee la razón que aparece en la expresión."
-      },
-      {
-        "k": "calc",
-        "texto": "La expresión da $I/I_0 = 10^3 = 1.000$."
-      },
-      {
-        "k": "check",
-        "texto": "Expresa la razón como un múltiplo de la intensidad mínima."
-      }
-    ],
     "enfoque": {
-      "tema": "Potencias de diez y razones",
-      "que": "Interpretar una igualdad entre la razón de dos intensidades y una potencia de diez.",
+      "clave": "Como $10^3 = 1.000$, la razón $I/I_0$ es mil. La opción D es correcta.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero una milésima es menor que la unidad y no equivale a la potencia indicada."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero un tercio no corresponde a la razón que indica la ecuación."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero tres veces confunde el exponente con el valor de la potencia de diez."
+        }
+      ],
+      "pistas": [
+        "La ecuación muestra $I/I_0 = 10^3$.",
+        "La pregunta solicita cuántas veces una intensidad es la otra."
+      ],
       "plan": [
         {
           "t": "Identifica cuál cociente representa la intensidad buscada respecto a la mínima."
@@ -44,25 +32,8 @@
           "t": "Relaciona el resultado con las opciones en forma verbal."
         }
       ],
-      "pistas": [
-        "La ecuación muestra $I/I_0 = 10^3$.",
-        "La pregunta solicita cuántas veces una intensidad es la otra."
-      ],
-      "clave": "Como $10^3 = 1.000$, la razón $I/I_0$ es mil. La opción D es correcta.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Una milésima es menor que la unidad y no equivale a la potencia indicada."
-        },
-        {
-          "t": "Opción B",
-          "p": "Un tercio no corresponde a la razón que indica la ecuación."
-        },
-        {
-          "t": "Opción C",
-          "p": "Tres veces confunde el exponente con el valor de la potencia de diez."
-        }
-      ]
+      "que": "Interpretar una igualdad entre la razón de dos intensidades y una potencia de diez.",
+      "tema": "Potencias de diez y razones"
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "Las otras opciones no representan el valor de la razón."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "sonoridad de un sonido de 30 decibeles",
+        "nota": "La expresión asociada con esta sonoridad relaciona las dos intensidades.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿Cuántas veces es el valor de I respecto a I_0?",
+        "nota": "Debes despejar la razón entre la intensidad y la intensidad mínima perceptible.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la razón que aparece en la expresión."
+      },
+      {
+        "k": "calc",
+        "texto": "La expresión da $I/I_0 = 10^3 = 1.000$."
+      },
+      {
+        "k": "check",
+        "texto": "Expresa la razón como un múltiplo de la intensidad mínima."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "porcentaje de muertes por tipo de vehículo",
-        "rol": "dato",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "es más probable",
-        "rol": "pide",
-        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
-      },
-      {
-        "k": "idea",
-        "t": "La infografía atribuye veintidós por ciento a peatones, cinco por ciento a ciclistas y veintitrés por ciento a motociclistas. En conjunto suman la mitad; la otra mitad corresponde a ocupantes de otros vehículos, más que cualquiera de esos grupos por separado."
-      },
-      {
-        "k": "check",
-        "t": "Comprueba que la opción D responde al enunciado y que las demás no lo hacen."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la infografía de seguridad vial",
-      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "clave": "La infografía atribuye veintidós por ciento a peatones, cinco por ciento a ciclistas y veintitrés por ciento a motociclistas. En conjunto suman la mitad; la otra mitad corresponde a ocupantes de otros vehículos, más que cualquiera de esos grupos por separado.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero la proporción de peatones es menor que la mitad correspondiente a otros vehículos."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero la proporción de motociclistas es menor que la mitad de otros vehículos."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero la proporción de ciclistas es menor que la mitad de otros vehículos."
+        }
+      ],
+      "pistas": [
+        "Compara los porcentajes de muertes por usuario de la vía: peatones (22 %), motociclistas (23 %) y conductores de vehículos de 4 ruedas (31 %).",
+        "Identifica qué grupo de usuarios suma la mayor probabilidad relativa de fatalidad en accidentes viales."
+      ],
       "plan": [
         {
           "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
@@ -44,25 +32,8 @@
           "t": "Comprueba la opción D con el dato citado."
         }
       ],
-      "pistas": [
-        "Distingue las tasas y proporciones mostradas.",
-        "Revisa si la afirmación está respaldada por la infografía."
-      ],
-      "clave": "La infografía atribuye veintidós por ciento a peatones, cinco por ciento a ciclistas y veintitrés por ciento a motociclistas. En conjunto suman la mitad; la otra mitad corresponde a ocupantes de otros vehículos, más que cualquiera de esos grupos por separado.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "La proporción de peatones es menor que la mitad correspondiente a otros vehículos."
-        },
-        {
-          "t": "Opción B",
-          "p": "La proporción de motociclistas es menor que la mitad de otros vehículos."
-        },
-        {
-          "t": "Opción C",
-          "p": "La proporción de ciclistas es menor que la mitad de otros vehículos."
-        }
-      ]
+      "que": "Relaciona el enunciado con los datos que sí presenta la infografía.",
+      "tema": "Interpretar la infografía de seguridad vial"
     },
     "guion": {
       "1": [
@@ -118,6 +89,36 @@
           "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "porcentaje de muertes por tipo de vehículo",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "es más probable",
+        "nota": "Contrasta esta expresión con el dato pertinente de la infografía.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "t": "Ubica en la infografía el dato que el enunciado pide interpretar."
+      },
+      {
+        "k": "idea",
+        "t": "La infografía atribuye veintidós por ciento a peatones, cinco por ciento a ciclistas y veintitrés por ciento a motociclistas. En conjunto suman la mitad; la otra mitad corresponde a ocupantes de otros vehículos, más que cualquiera de esos grupos por separado."
+      },
+      {
+        "k": "check",
+        "t": "Comprueba que la opción D responde al enunciado y que las demás no lo hacen."
+      }
+    ]
+  },
+  "revisar": []
 }

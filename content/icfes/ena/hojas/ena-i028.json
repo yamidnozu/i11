@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Many people fly on it to go to a place.",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{Many people fly on it to go to a place.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "{{plane}} vuela por el aire y corresponde a la característica descrita."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
       "clave": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
-      "pistas": [
-        "Fíjate en {{Many people fly on it to go to a place.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "t": "Opción B",
-          "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "t": "Opción C",
-          "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "t": "Opción D",
-          "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "t": "Opción F",
-          "p": "{{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "t": "Opción G",
-          "p": "{{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+          "p": "Pero {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
         }
+      ],
+      "pistas": [
+        "Focus on commercial aviation and the action verb {{fly}}.",
+        "Select {{plane}} as the aircraft designed for passenger travel."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Many people fly on it to go to a place.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Many people fly on it to go to a place.}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "{{plane}} vuela por el aire y corresponde a la característica descrita.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

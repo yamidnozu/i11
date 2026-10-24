@@ -1,118 +1,138 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "constituye una razón a favor de la tesis principal",
-        "rol": "pide",
-        "nota": "Debes escoger el argumento que respalde la tesis del autor.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "lo hace por obligación y no voluntariamente",
-        "rol": "clave",
-        "nota": "Esta es la tesis que la opción correcta debe apoyar.",
-        "campo": "Tesis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica la tesis: sin restricciones, las personas elegirían actuar injustamente."
-      },
-      {
-        "k": "idea",
-        "texto": "Busca una razón que explique por qué la justicia depende de no tener libertad para cometer injusticias."
-      },
-      {
-        "k": "check",
-        "texto": "Asegúrate de que la opción apoye la tesis y no describa otra idea."
-      }
-    ],
     "enfoque": {
-      "tema": "Razones que apoyan una tesis",
-      "que": "Seleccionar el argumento que respalda que la justicia se sigue por obligación.",
-      "plan": [
-        {
-          "t": "Formula la tesis en tus palabras."
-        },
-        {
-          "t": "Busca qué ocurriría si alguien tuviera libertad para actuar injustamente."
-        },
-        {
-          "t": "Elige la afirmación que conecte esa libertad con la conducta prevista por el autor."
-        }
-      ],
-      "pistas": [
-        "El pasaje usa el anillo para representar la impunidad.",
-        "La tesis predice que la persona cometería injusticias si pudiera hacerlo libremente."
-      ],
-      "clave": "La opción D apoya la tesis: si una persona tuviera libertad para cometer injusticias, lo haría.",
+      "clave": "La opción D sostiene que quien tiene libertad para cometer injusticias lo hará, tal como plantea el autor.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Repite que existe obligación, pero no explica por qué una persona actuaría injustamente si pudiera."
+          "p": "Pero repite la idea de obligación, pero no explica por qué la persona actuaría injustamente si tuviera libertad."
         },
         {
           "t": "Opción B",
-          "p": "Introduce la igualdad y el respeto por la ley, asuntos que no fundamentan la tesis del pasaje."
+          "p": "Pero la igualdad ante la ley no aparece como garantía en este argumento."
         },
         {
           "t": "Opción C",
-          "p": "Sostiene que ambas conductas ofrecen las mismas ventajas, mientras el texto dice que la injusticia brinda más."
+          "p": "Pero el autor sostiene que la injusticia ofrece más ventajas individuales, no las mismas."
         }
-      ]
+      ],
+      "pistas": [
+        "Recuerda qué afirma el relato sobre actuar sin castigo.",
+        "Busca la opción que respalde esa afirmación general."
+      ],
+      "plan": [
+        {
+          "t": "Recuerda qué afirma el relato sobre actuar sin castigo."
+        },
+        {
+          "t": "Busca la opción que respalde esa afirmación general."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "El autor sostiene que, si las personas pudieran cometer injusticias sin castigo, lo harían para obtener ventajas. La opción D expresa esa idea y apoya la tesis de que la justicia suele imponerse por obligación.",
+      "tema": "Reconocer una razón que respalda una tesis"
     },
     "guion": {
       "1": [
         {
-          "t": "La tesis dice que la justicia se sigue porque hay restricciones."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "Si alguien pudiera cometer injusticias sin consecuencias, según el autor las cometería."
+          "a": "m:razón a favor de la tesis principal",
+          "t": "La expresión «razón a favor de la tesis principal» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "El autor sostiene que, si las personas pudieran cometer injusticias sin castigo, lo harían para obtener ventajas. La opción D expresa esa idea y apoya la tesis de que la justicia suele imponerse por obligación."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D formula esa razón."
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "El autor sostiene que, si las personas pudieran cometer injusticias sin castigo, lo harían para obtener ventajas. La opción D expresa esa idea y apoya la tesis de que la justicia suele imponerse por obligación."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Repite que existe obligación, pero no explica por qué una persona actuaría injustamente si pudiera."
+          "t": "Opción A: Repite la idea de obligación, pero no explica por qué la persona actuaría injustamente si tuviera libertad. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Introduce la igualdad y el respeto por la ley, asuntos que no fundamentan la tesis del pasaje."
+          "t": "Opción B: La igualdad ante la ley no aparece como garantía en este argumento. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Sostiene que ambas conductas ofrecen las mismas ventajas, mientras el texto dice que la injusticia brinda más."
+          "t": "Opción C: El autor sostiene que la injusticia ofrece más ventajas individuales, no las mismas. La descartamos."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D apoya la tesis: si una persona tuviera libertad para cometer injusticias, lo haría."
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Una razón a favor debe hacer más plausible la tesis, no solo mencionarla."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "La impunidad representada por el anillo permitiría actuar sin restricciones."
+          "a": "p:0",
+          "t": "Recuerda qué afirma el relato sobre actuar sin castigo."
         },
         {
-          "t": "La afirmación de que la persona aprovecharía esa libertad apoya que la justicia no se sigue voluntariamente; corresponde D."
+          "a": "p:1",
+          "t": "Busca la opción que respalde esa afirmación general."
+        },
+        {
+          "a": "p:2",
+          "t": "El autor sostiene que, si las personas pudieran cometer injusticias sin castigo, lo harían para obtener ventajas. La opción D expresa esa idea y apoya la tesis de que la justicia suele imponerse por obligación."
         },
         {
           "a": "o:D:ok",
-          "t": "Las otras alternativas no ofrecen ese apoyo argumentativo."
+          "t": "La opción D sostiene que quien tiene libertad para cometer injusticias lo hará, tal como plantea el autor."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "razón a favor de la tesis principal",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Recuerda qué afirma el relato sobre actuar sin castigo.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca la opción que respalde esa afirmación general.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción D sostiene que quien tiene libertad para cometer injusticias lo hará, tal como plantea el autor.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -6,36 +6,36 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, a bike is pedaled by one person and cannot carry big freight."
+          "p": "Pero a bike is pedaled by one person and cannot carry big freight."
         },
         {
           "t": "Opción B",
-          "p": "Pero, a boat travels on water, not on a road."
+          "p": "Pero a boat travels on water, not on a road."
         },
         {
           "t": "Opción C",
-          "p": "Pero, a bus transports passengers, not big things or cargo."
+          "p": "Pero a bus transports passengers, not big things or cargo."
         },
         {
           "t": "Opción D",
-          "p": "Pero, a helicopter flies in the air, not on a road."
+          "p": "Pero a helicopter flies in the air, not on a road."
         },
         {
           "t": "Opción E",
-          "p": "Pero, a motorbike is a light vehicle for one or two people."
+          "p": "Pero a motorbike is a light vehicle for one or two people."
         },
         {
           "t": "Opción F",
-          "p": "Pero, a plane flies in the sky, not on a road."
+          "p": "Pero a plane flies in the sky, not on a road."
         },
         {
           "t": "Opción H",
-          "p": "Pero, a train travels on rails, not on a road."
+          "p": "Pero a train travels on rails, not on a road."
         }
       ],
       "pistas": [
-        "Fíjate en {{People drive it on a road and it carries big things.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
+        "Notice the key features in English: it moves on a {{road}}, is driven by people, and {{carries big things}}.",
+        "Eliminate vehicles designed exclusively for two passengers or public mass transit like buses."
       ],
       "plan": [
         {
@@ -66,7 +66,7 @@
           "t": "{{truck}} transporta cargas grandes y corresponde a la característica descrita."
         },
         {
-          "a": "o:G:ok",
+          "a": "o:F:ok",
           "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
@@ -80,43 +80,43 @@
           "t": "{{truck}} transporta cargas grandes y corresponde a la característica descrita."
         },
         {
-          "t": "La opción A no corresponde: A bike is pedaled by one person and cannot carry big freight.",
+          "t": "La opción A es incorrecta: A bike is pedaled by one person and cannot carry big freight.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción B no corresponde: A boat travels on water, not on a road.",
+          "t": "La opción B es incorrecta: A boat travels on water, not on a road.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: A bus transports passengers, not big things or cargo.",
+          "t": "La opción C es incorrecta: A bus transports passengers, not big things or cargo.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D no corresponde: A helicopter flies in the air, not on a road.",
+          "t": "La opción D es incorrecta: A helicopter flies in the air, not on a road.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La opción E no corresponde: A motorbike is a light vehicle for one or two people.",
+          "t": "La opción E es incorrecta: A motorbike is a light vehicle for one or two people.",
           "a": "o:E:no",
           "k": "err"
         },
         {
-          "t": "La opción F no corresponde: A plane flies in the sky, not on a road.",
+          "t": "La opción F es incorrecta: A plane flies in the sky, not on a road.",
           "a": "o:F:no",
           "k": "err"
         },
         {
-          "t": "La opción H no corresponde: A train travels on rails, not on a road.",
+          "t": "La opción H es incorrecta: A train travels on rails, not on a road.",
           "a": "o:H:no",
           "k": "err"
         },
         {
-          "a": "o:G:ok",
-          "t": "La respuesta es la opción correcta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción G.",
+          "a": "o:G:ok"
         }
       ],
       "3": [
@@ -131,39 +131,34 @@
           "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "La opción A no encaja: A bike is pedaled by one person and cannot carry big freight.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
         },
         {
-          "t": "La opción B no encaja: A boat travels on water, not on a road.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
         },
         {
-          "t": "La opción C no encaja: A bus transports passengers, not big things or cargo.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
         },
         {
-          "t": "La opción D no encaja: A helicopter flies in the air, not on a road.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
         },
         {
-          "t": "La opción E no encaja: A motorbike is a light vehicle for one or two people.",
           "a": "o:E:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
         },
         {
-          "t": "La opción F no encaja: A plane flies in the sky, not on a road.",
-          "a": "o:F:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción H no encaja: A train travels on rails, not on a road.",
-          "a": "o:H:no",
-          "k": "err"
+          "a": "o:G:no",
+          "k": "err",
+          "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
         },
         {
           "a": "o:G:ok",
@@ -196,5 +191,6 @@
         "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
       }
     ]
-  }
+  },
+  "revisar": []
 }

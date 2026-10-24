@@ -1,150 +1,146 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "rompa el récord olímpico",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «rompa el récord olímpico» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "10,49<10,497<10,50"
-        ],
-        "nota": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: rompa el récord olímpico",
-      "que": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
-      "pistas": [
-        "Fíjate en «rompa el récord olímpico».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
+      "clave": "El valor $10,497$ es menor que $10,50$ y mayor que $10,49$.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero un tiempo menor que $10,4$ también sería menor que el récord mundial, por lo que rompería ambos."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero sí hay tiempos entre $10,49$ y $10,50$, como $10,497$."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero el intervalo entre ambos récords permite mejorar el olímpico sin mejorar el mundial."
         }
+      ],
+      "pistas": [
+        "Calcula la diferencia restando el récord mundial del olímpico: $10,62 - 10,49 = 0,13$ segundos.",
+        "Interpreta que un menor tiempo en una carrera de atletismo representa una marca más rápida y un mejor rendimiento."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Ordena los dos récords: para romper uno, el tiempo debe ser menor."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "10,49<10,497<10,50"
-          ]
+          "t": "Comprueba un decimal intermedio."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "El ejemplo rompe el récord olímpico, pero queda por encima del mundial; la respuesta es A."
         }
-      ]
+      ],
+      "que": "Decide si existe un tiempo entre el récord mundial y el olímpico.",
+      "tema": "Comparación de decimales en tiempos récord"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Cuál récord tiene el tiempo más alto?"
         },
         {
-          "t": "La frase «rompa el récord olímpico» orienta la estrategia.",
-          "a": "m:rompa el récord olímpico"
+          "t": "El olímpico es diez coma cincuenta segundos; el mundial es diez coma cuarenta y nueve."
         },
         {
-          "t": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Diez coma cuatrocientos noventa y siete queda entre ambos. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Para romper el olímpico, el tiempo debe ser menor que diez coma cincuenta."
         },
         {
-          "t": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
-          "a": "p:1"
+          "t": "Para conservar el mundial, debe ser mayor que diez coma cuarenta y nueve."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Un tiempo menor que diez coma cuatro también mejora el récord mundial. Pero la pregunta exige no romperlo."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Sí existen decimales entre ambos valores, como el ejemplo de A. Pero C niega ese intervalo."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Un tiempo menor que el olímpico no necesariamente es menor que el mundial. Pero puede quedar entre ambos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "A da un valor en ese intervalo; B y D rompen también el mundial, y C niega que exista intervalo."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Un tiempo menor es mejor: diez coma cuatrocientos noventa y siete es menor que diez coma cincuenta."
         },
         {
-          "t": "Un tiempo entre $10,49$ y $10,50$ supera el récord mundial de $10,49$ segundos, pero mejora el olímpico de $10,50$. Por ejemplo, $10,497$ está entre ambos valores.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "A la vez, es mayor que diez coma cuarenta y nueve, así que no supera el récord mundial."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "El ejemplo cumple las dos condiciones."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "B, C y D no representan correctamente la comparación de los decimales."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "récord mundial de 10,49 segundos",
+        "nota": "Es el menor tiempo de referencia.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "récord olímpico de 10,50 segundos",
+        "nota": "Este tiempo es ligeramente mayor.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "rompa el récord olímpico pero no el mundial",
+        "nota": "Busca un tiempo menor que el olímpico y no menor que el mundial.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ordena los dos récords: para romper uno, el tiempo debe ser menor.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$10,49<10,497<10,50$"
+        ],
+        "titulo": "Comprueba un decimal intermedio."
+      },
+      {
+        "k": "check",
+        "texto": "El ejemplo rompe el récord olímpico, pero queda por encima del mundial; la respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

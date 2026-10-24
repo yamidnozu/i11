@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "alto precio de la limonada",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa las razones que el niño va agregando para defender el precio."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Relaciona su vocabulario empresarial con la situación de un puesto de limonada."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción D resume que el niño arma su propia explicación económica para justificar el precio."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la estrategia argumentativa de una historieta",
-      "que": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística.",
-      "pistas": [
-        "Observa las razones que el niño va agregando para defender el precio.",
-        "Relaciona su vocabulario empresarial con la situación de un puesto de limonada."
-      ],
       "clave": "La opción D resume que el niño arma su propia explicación económica para justificar el precio.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero La historieta es humorística, pero la respuesta no se limita a calificar sus argumentos como absurdos o consistentes."
+          "p": "Pero la historieta es humorística, pero la respuesta no se limita a calificar sus argumentos como absurdos o consistentes."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero El niño invoca términos económicos, aunque su modelo no se presenta como fiel a la realidad."
+          "p": "Pero el niño invoca términos económicos, aunque su modelo no se presenta como fiel a la realidad."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La ley de oferta y demanda sí existe; el chiste está en cómo el niño la acomoda a su negocio."
+          "p": "Pero la ley de oferta y demanda sí existe; el chiste está en cómo el niño la acomoda a su negocio."
         }
+      ],
+      "pistas": [
+        "Observa las razones que el niño va agregando para defender el precio.",
+        "Relaciona su vocabulario empresarial con la situación de un puesto de limonada."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística.",
+      "tema": "Interpretar la estrategia argumentativa de una historieta"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «alto precio de la limonada» orienta la lectura.",
-          "a": "m:alto precio de la limonada"
+          "a": "m:alto precio de la limonada",
+          "t": "La expresión «alto precio de la limonada» orienta la lectura."
         },
         {
-          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística."
         },
         {
-          "t": "Opción A: La historieta es humorística, pero la respuesta no se limita a calificar sus argumentos como absurdos o consistentes. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La historieta es humorística, pero la respuesta no se limita a calificar sus argumentos como absurdos o consistentes. La descartamos."
         },
         {
-          "t": "Opción B: El niño invoca términos económicos, aunque su modelo no se presenta como fiel a la realidad. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El niño invoca términos económicos, aunque su modelo no se presenta como fiel a la realidad. La descartamos."
         },
         {
-          "t": "Opción C: La ley de oferta y demanda sí existe; el chiste está en cómo el niño la acomoda a su negocio. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La ley de oferta y demanda sí existe; el chiste está en cómo el niño la acomoda a su negocio. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa las razones que el niño va agregando para defender el precio.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa las razones que el niño va agregando para defender el precio."
         },
         {
-          "t": "Relaciona su vocabulario empresarial con la situación de un puesto de limonada.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Relaciona su vocabulario empresarial con la situación de un puesto de limonada."
         },
         {
-          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El niño usa conceptos de empresas, salarios, ganancias, costos y demanda para defender el precio de su limonada. Aplica esa lógica empresarial a su puesto infantil, como una explicación económica propia y humorística."
         },
         {
-          "t": "La opción D resume que el niño arma su propia explicación económica para justificar el precio.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D resume que el niño arma su propia explicación económica para justificar el precio."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "alto precio de la limonada",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa las razones que el niño va agregando para defender el precio.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona su vocabulario empresarial con la situación de un puesto de limonada.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción D resume que el niño arma su propia explicación económica para justificar el precio.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

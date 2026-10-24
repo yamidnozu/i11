@@ -1,68 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "promedio es 9 y su desviación estándar es 3",
-        "rol": "dato",
-        "nota": "Son las medidas originales.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "sumando 4 unidades",
-        "rol": "dato",
-        "nota": "La misma constante se agrega a cada elemento.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "promedio y la desviación estándar",
-        "rol": "pide",
-        "nota": "Distingue el cambio de centro del cambio de dispersión.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Separa el efecto de sumar una constante sobre el promedio y sobre la dispersión."
-      },
-      {
-        "k": "calc",
-        "titulo": "Suma cuatro al promedio; conserva la desviación estándar.",
-        "lineas": [
-          "$9+4=13$",
-          "$desviación_{T}=3$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El conjunto nuevo tiene promedio trece y desviación tres; corresponde a D."
-      }
-    ],
     "enfoque": {
-      "tema": "Transformación de promedio y desviación estándar",
-      "que": "Determina cómo cambia el centro y la dispersión al sumar una constante a todos los datos.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El promedio pasa de nueve a trece y la desviación estándar se mantiene en tres.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Deja igual el promedio. Pero todos los datos aumentan cuatro."
+          "p": "Pero el promedio no permanece en nueve porque cada dato aumenta cuatro unidades."
         },
         {
           "t": "Opción B",
-          "p": "Suma cuatro también a la desviación estándar. Pero la dispersión no cambia al trasladar todos los datos."
+          "p": "Pero no cambia la desviación estándar: sumar la misma cantidad no multiplica la dispersión."
         },
         {
           "t": "Opción D",
-          "p": "Modifica ambas medidas. Pero solo cambia el promedio."
+          "p": "Pero el promedio aumenta, pero la desviación estándar no se suma con cuatro."
         }
+      ],
+      "pistas": [
+        "Aplica las propiedades de las transformaciones lineales sobre la media y la dispersión en estadística.",
+        "Recuerda que sumar una constante traslada el promedio sin alterar la desviación estándar del conjunto de datos."
       ],
       "plan": [
         {
@@ -74,7 +31,9 @@
         {
           "t": "El conjunto nuevo tiene promedio trece y desviación tres; corresponde a D."
         }
-      ]
+      ],
+      "que": "Determina cómo cambia el centro y la dispersión al sumar una constante a todos los datos.",
+      "tema": "Transformación de promedio y desviación estándar"
     },
     "guion": {
       "1": [
@@ -85,8 +44,8 @@
           "t": "También aumenta cuatro, de nueve a trece. La distancia entre los datos se conserva."
         },
         {
-          "t": "La desviación sigue en tres; la respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La desviación sigue en tres; la respuesta es C."
         }
       ],
       "2": [
@@ -97,50 +56,92 @@
           "t": "Como todos los datos se trasladan por igual, sus distancias al promedio permanecen y la desviación estándar sigue en tres."
         },
         {
-          "t": "La opción A: Deja igual el promedio. Pero todos los datos aumentan cuatro.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Deja igual el promedio. Pero todos los datos aumentan cuatro."
         },
         {
-          "t": "La opción B: Suma cuatro también a la desviación estándar. Pero la dispersión no cambia al trasladar todos los datos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Suma cuatro también a la desviación estándar. Pero la dispersión no cambia al trasladar todos los datos."
         },
         {
-          "t": "La opción D: Modifica ambas medidas. Pero solo cambia el promedio.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Modifica ambas medidas. Pero solo cambia el promedio."
         },
         {
-          "t": "A, B y D cambian una medida que debería conservarse o dejan el promedio igual. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "A, B y D cambian una medida que debería conservarse o dejan el promedio igual. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Sumar cuatro a cada observación traslada el promedio de nueve a trece.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Sumar cuatro a cada observación traslada el promedio de nueve a trece."
         },
         {
-          "t": "Las diferencias de cada valor frente al promedio no cambian, así que la desviación estándar sigue siendo tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las diferencias de cada valor frente al promedio no cambian, así que la desviación estándar sigue siendo tres."
         },
         {
-          "t": "El par de medidas es trece y tres.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "El par de medidas es trece y tres."
         },
         {
-          "t": "A, B y D no describen simultáneamente el traslado y la dispersión.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y D no describen simultáneamente el traslado y la dispersión."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "promedio es 9 y su desviación estándar es 3",
+        "nota": "Son las medidas originales.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "sumando 4 unidades",
+        "nota": "La misma constante se agrega a cada elemento.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "promedio y la desviación estándar",
+        "nota": "Distingue el cambio de centro del cambio de dispersión.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa el efecto de sumar una constante sobre el promedio y sobre la dispersión.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$9+4=13$",
+          "$desviación_{T}=3$"
+        ],
+        "titulo": "Suma cuatro al promedio; conserva la desviación estándar."
+      },
+      {
+        "k": "check",
+        "texto": "El conjunto nuevo tiene promedio trece y desviación tres; corresponde a D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cuanto mayor es la diferencia de temperatura",
-        "rol": "pide",
-        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué representa",
-        "texto": "Compara la temperatura inicial del agua con la del entorno."
-      },
-      {
-        "k": "idea",
-        "titulo": "Lee las relaciones del modelo",
-        "texto": "Relaciona una diferencia grande con un enfriamiento rápido y una diferencia menor con uno más lento."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la opción",
-        "texto": "Elige la curva que cae rápido al inicio y luego se acerca al entorno."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la ley de enfriamiento de Newton",
-      "que": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana.",
-      "pistas": [
-        "Compara la temperatura inicial del agua con la del entorno.",
-        "Relaciona una diferencia grande con un enfriamiento rápido y una diferencia menor con uno más lento."
-      ],
       "clave": "La curva C representa un enfriamiento rápido al principio y cada vez más lento al acercarse a la temperatura ambiente.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita."
+          "p": "Pero la curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor."
+          "p": "Pero la curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo."
+          "p": "Pero una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo."
         }
+      ],
+      "pistas": [
+        "Compara la temperatura inicial del agua con la del entorno.",
+        "Relaciona una diferencia grande con un enfriamiento rápido y una diferencia menor con uno más lento."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Elige la curva que cae rápido al inicio y luego se acerca al entorno."
         }
-      ]
+      ],
+      "que": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana.",
+      "tema": "Interpretar la ley de enfriamiento de Newton"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La frase «cuanto mayor es la diferencia de temperatura» señala la pista central.",
-          "a": "m:cuanto mayor es la diferencia de temperatura"
+          "a": "m:cuanto mayor es la diferencia de temperatura",
+          "t": "La frase «cuanto mayor es la diferencia de temperatura» señala la pista central."
         },
         {
-          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana."
         },
         {
-          "t": "Opción A: La curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita. La descartamos."
         },
         {
-          "t": "Opción B: La curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor. La descartamos."
         },
         {
-          "t": "Opción D: Una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Primero identifico qué representa el dibujo o los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua empieza mucho más caliente que el entorno, así que al comienzo la diferencia de temperatura y el flujo de calor son mayores. Al enfriarse, el flujo disminuye y la temperatura se acerca gradualmente a la del entorno. La curva C muestra una caída inicial rápida que luego se aplana."
         },
         {
-          "t": "Elige la curva que cae rápido al inicio y luego se acerca al entorno.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Elige la curva que cae rápido al inicio y luego se acerca al entorno."
         },
         {
-          "t": "Opción A: La curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La curva empieza con enfriamiento lento y luego se hace más pronunciada, contrario a la ley descrita. La descarto."
         },
         {
-          "t": "Opción B: La curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La curva empieza casi plana y se enfría más rápido después, cuando la diferencia con el entorno ya es menor. La descarto."
         },
         {
-          "t": "Opción D: Una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Una caída lineal mantiene la misma rapidez de enfriamiento en todo momento, aunque la diferencia de temperatura vaya disminuyendo. La descarto."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "cuanto mayor es la diferencia de temperatura",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara la temperatura inicial del agua con la del entorno.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona una diferencia grande con un enfriamiento rápido y una diferencia menor con uno más lento.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Elige la curva que cae rápido al inicio y luego se acerca al entorno.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

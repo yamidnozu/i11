@@ -1,150 +1,146 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "Durante",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «qué se puede determinar» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "150/15=10"
-        ],
-        "nota": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: qué se puede determinar",
-      "que": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
-      "pistas": [
-        "Fíjate en «qué se puede determinar».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
+      "clave": "La carga suma $150$ toneladas. Los tres camiones pueden llevar $15$ toneladas por salida conjunta; se requieren como mínimo $10$ salidas.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero no se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero no se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores."
         }
+      ],
+      "pistas": [
+        "La información da la carga total vendida.",
+        "La capacidad de cada camión y la cantidad de camiones son conocidas."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
-        },
-        {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
-            "150/15=10"
-          ]
+            "$100 + 50 = 150$"
+          ],
+          "t": "Suma las toneladas de mango y banano."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "eq": [
+            "$3 × 5 = 15$"
+          ],
+          "t": "Calcula la capacidad conjunta por salida de los tres camiones."
+        },
+        {
+          "eq": [
+            "$150 ÷ 15 = 10$"
+          ],
+          "t": "Divide la carga total entre esa capacidad y toma el mínimo de salidas."
         }
-      ]
+      ],
+      "que": "Suma las toneladas y divide por la capacidad de carga conjunta de los camiones para hallar el mínimo de salidas.",
+      "tema": "Inferir viajes mínimos por capacidad"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "m:100 toneladas de mango y 50 de banano",
+          "t": "¿Qué cantidades sí conocemos: las ciudades de venta o el total de toneladas?"
         },
         {
-          "t": "La frase «qué se puede determinar» orienta la estrategia.",
-          "a": "m:Durante"
+          "t": "La carga suma ciento cincuenta toneladas. Los tres camiones llevan quince por salida conjunta."
         },
         {
-          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Se requieren como mínimo diez salidas. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Suma la carga y compárala con la capacidad conjunta de la flota."
         },
         {
-          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
-          "a": "p:1"
+          "t": "La carga es $100 + 50 = 150$ toneladas. Cada salida conjunta mueve $3 × 5 = 15$ toneladas, así que el mínimo es $150 ÷ 15 = 10$ salidas."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C depende de destinos y costos de viaje que no se especifican."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La capacidad y la carga sí permiten hallar las salidas mínimas. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La suma vendida es $100 + 50 = 150$ toneladas."
         },
         {
-          "t": "La capacidad total por viaje de los tres camiones es $15$ toneladas. Para transportar $150$ toneladas se necesitan como mínimo $150/15=10$ viajes de los tres camiones, equivalentes a treinta viajes de camión. La opción pregunta por el número mínimo de viajes realizados desde el pueblo y la clave oficial corresponde a esa capacidad de carga.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Tres camiones de cinco toneladas mueven $15$ toneladas por salida conjunta; $150 ÷ 15 = 10$ salidas. Contadas por vehículo, equivalen a treinta viajes de camión."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La capacidad de carga determina ese mínimo, aunque no se conozcan las ciudades de destino."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C dependen de datos de venta, pagos o destinos que no se conocen."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Carga del mes",
+        "frag": "100 toneladas de mango y 50 de banano",
+        "nota": "Suma la carga total para calcular la cantidad mínima de salidas.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Se conoce cuántas toneladas se vendieron y la capacidad de los tres camiones; eso basta para hallar el mínimo de salidas.",
+        "titulo": "Usa la carga y la capacidad conjunta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$100 + 50 = 150$ toneladas",
+          "$3 × 5 = 15$ toneladas por salida",
+          "$150 ÷ 15 = 10$ salidas"
+        ],
+        "nota": "Si se cuenta cada camión por separado, son treinta viajes individuales.",
+        "titulo": "Calcula la carga y las salidas mínimas"
+      },
+      {
+        "k": "check",
+        "texto": "Se puede conocer el número mínimo de viajes; la respuesta es D."
+      }
+    ]
+  },
+  "revisar": []
 }

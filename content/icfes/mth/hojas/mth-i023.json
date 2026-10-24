@@ -1,68 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "hipotenusa mide el doble del cateto de menor longitud",
-        "rol": "dato",
-        "nota": "Identifica la proporción del triángulo especial.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "mide 32 centímetros",
-        "rol": "dato",
-        "nota": "Es el lado que se relaciona con √3.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "cateto menor",
-        "rol": "pide",
-        "nota": "Despeja el lado corto.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Relaciona los catetos de un triángulo especial de treinta, sesenta y noventa grados."
-      },
-      {
-        "k": "calc",
-        "titulo": "Divide el cateto mayor entre √3.",
-        "lineas": [
-          "$cateto_{mayor}=cateto_{menor}×√3$",
-          "$cateto_{menor}=32/√3$ cm"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El resultado corresponde a la opción B y es menor que treinta y dos centímetros."
-      }
-    ],
     "enfoque": {
-      "tema": "Relación entre catetos en un triángulo de 30°, 60° y 90°",
-      "que": "Encuentra el cateto menor a partir del cateto mayor de un cartabón.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El cateto mayor es √3 veces el menor; por eso el menor mide $32/√3$ cm.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Toma la mitad del cateto mayor. Pero la hipotenusa, no ese cateto, es el doble del menor."
+          "p": "Pero es la mitad del cateto mayor, pero la hipotenusa —no el cateto mayor— duplica al menor."
         },
         {
           "t": "Opción C",
-          "p": "No conserva la razón de √3 entre los catetos. Pero el ángulo de sesenta grados determina esa relación."
+          "p": "Pero no satisface la razón √3 entre los dos catetos."
         },
         {
           "t": "Opción D",
-          "p": "Usa una razón incompatible con que el cateto dado sea el mayor. Pero el lado buscado debe ser más corto."
+          "p": "Pero multiplica por una razón que corresponde a un cateto mayor que el dado, no al menor."
         }
+      ],
+      "pistas": [
+        "Usa las razones trigonométricas del triángulo notable 30°-60°: la hipotenusa mide el doble del cateto menor.",
+        "Relaciona la longitud del cateto adyacente a 30° con la raíz cuadrada de tres multiplicada por el cateto menor."
       ],
       "plan": [
         {
@@ -74,7 +31,9 @@
         {
           "t": "El resultado corresponde a la opción B y es menor que treinta y dos centímetros."
         }
-      ]
+      ],
+      "que": "Encuentra el cateto menor a partir del cateto mayor de un cartabón.",
+      "tema": "Relación entre catetos en un triángulo de 30°, 60° y 90°"
     },
     "guion": {
       "1": [
@@ -85,8 +44,8 @@
           "t": "El cateto mayor equivale al menor multiplicado por raíz de tres."
         },
         {
-          "t": "Al dividir treinta y dos entre raíz de tres se obtiene B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Al dividir treinta y dos entre raíz de tres se obtiene B."
         }
       ],
       "2": [
@@ -97,50 +56,92 @@
           "t": "El cateto mayor es raíz de tres veces el menor; despeja el menor como $32/√3$."
         },
         {
-          "t": "La opción A: Toma la mitad del cateto mayor. Pero la hipotenusa, no ese cateto, es el doble del menor.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Toma la mitad del cateto mayor. Pero la hipotenusa, no ese cateto, es el doble del menor."
         },
         {
-          "t": "La opción C: No conserva la razón de √3 entre los catetos. Pero el ángulo de sesenta grados determina esa relación.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: No conserva la razón de √3 entre los catetos. Pero el ángulo de sesenta grados determina esa relación."
         },
         {
-          "t": "La opción D: Usa una razón incompatible con que el cateto dado sea el mayor. Pero el lado buscado debe ser más corto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Usa una razón incompatible con que el cateto dado sea el mayor. Pero el lado buscado debe ser más corto."
         },
         {
-          "t": "A usa la relación de la hipotenusa; C y D no respetan la razón de los catetos. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A usa la relación de la hipotenusa; C y D no respetan la razón de los catetos. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "El cateto mayor mide raíz de tres veces el cateto menor.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El cateto mayor mide raíz de tres veces el cateto menor."
         },
         {
-          "t": "Así, el menor es $32/√3$ centímetros.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Así, el menor es $32/√3$ centímetros."
         },
         {
-          "t": "La magnitud resulta menor que treinta y dos centímetros, como debe ocurrir.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La magnitud resulta menor que treinta y dos centímetros, como debe ocurrir."
         },
         {
-          "t": "A, C y D no satisfacen la proporción del triángulo.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D no satisfacen la proporción del triángulo."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "hipotenusa mide el doble del cateto de menor longitud",
+        "nota": "Identifica la proporción del triángulo especial.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "mide 32 centímetros",
+        "nota": "Es el lado que se relaciona con √3.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "cateto menor",
+        "nota": "Despeja el lado corto.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona los catetos de un triángulo especial de treinta, sesenta y noventa grados.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$cateto_{mayor}=cateto_{menor}×√3$",
+          "$cateto_{menor}=32/√3$ cm"
+        ],
+        "titulo": "Divide el cateto mayor entre √3."
+      },
+      {
+        "k": "check",
+        "texto": "El resultado corresponde a la opción B y es menor que treinta y dos centímetros.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

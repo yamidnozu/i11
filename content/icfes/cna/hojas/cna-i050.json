@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "menor acidez",
-        "rol": "pide",
-        "nota": "Fragmento del enunciado que ubica el concepto central.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué se compara",
-        "texto": "Clasifica cada estructura como primaria, secundaria o terciaria."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Usa el orden de acidez presentado en la tabla."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Elige la estructura que pertenece al grupo de menor acidez."
-      }
-    ],
     "enfoque": {
-      "tema": "Ordenar alcoholes según acidez y estructura",
-      "que": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
-      "pistas": [
-        "Clasifica cada estructura como primaria, secundaria o terciaria.",
-        "Usa el orden de acidez presentado en la tabla."
-      ],
       "clave": "El dos-metil-dos-propanol es terciario y, según la tabla, es el de menor acidez.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible si se omite un dato. Pero El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario."
+          "p": "Pero el dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible si se omite un dato. Pero El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios."
+          "p": "Pero el etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se omite un dato. Pero El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla."
+          "p": "Pero el dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla."
         }
+      ],
+      "pistas": [
+        "Clasifica cada estructura como primaria, secundaria o terciaria.",
+        "Usa el orden de acidez presentado en la tabla."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Elige la estructura que pertenece al grupo de menor acidez."
         }
-      ]
+      ],
+      "que": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
+      "tema": "Ordenar alcoholes según acidez y estructura"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "La expresión «menor acidez» orienta lo que debemos observar.",
-          "a": "m:menor acidez"
+          "a": "m:menor acidez",
+          "t": "La expresión «menor acidez» orienta lo que debemos observar."
         },
         {
-          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas."
         },
         {
-          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descartamos."
         },
         {
-          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descartamos."
         },
         {
-          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar."
         },
         {
-          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla ordena los alcoholes primarios por encima de los secundarios y a estos por encima de los terciarios en acidez. El dos-metil-dos-propanol es terciario, así que presenta la menor acidez entre las estructuras listadas."
         },
         {
-          "t": "Elige la estructura que pertenece al grupo de menor acidez.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Elige la estructura que pertenece al grupo de menor acidez."
         },
         {
-          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El dos-butanol es secundario y ocupa una posición de mayor acidez que un alcohol terciario. La descarto."
         },
         {
-          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El etanol es primario y la tabla lo ubica por encima de los secundarios y terciarios. La descarto."
         },
         {
-          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El dos-propanol es secundario; el alcohol terciario indicado tiene menor acidez según el orden de la tabla. La descarto."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "menor acidez",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Clasifica cada estructura como primaria, secundaria o terciaria.",
+        "titulo": "Identifica qué se compara"
+      },
+      {
+        "k": "idea",
+        "texto": "Usa el orden de acidez presentado en la tabla.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Elige la estructura que pertenece al grupo de menor acidez.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

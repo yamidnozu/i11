@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Cuatro",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «promedios iguales» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "227;217"
-        ],
-        "nota": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: promedios iguales",
-      "que": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
-      "pistas": [
-        "Fíjate en «promedios iguales».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero cuenta solo la cantidad de cursos que subieron de puntaje (3 de 4), ignorando que la drástica caída de 16 puntos en el curso II hace disminuir el promedio global."
         },
         {
           "t": "Opción C",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero se fija únicamente en el puntaje más alto aislado (65 en el curso I), confundiendo el valor máximo individual con el promedio general."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero afirma erróneamente que se requieren los datos individuales de los alumnos, cuando al tener igual número de estudiantes por curso el promedio total es simplemente la media de los cuatro promedios."
         }
+      ],
+      "pistas": [
+        "Suma los promedios de los cuatro cursos: $227$ en el año anterior frente a $217$ en el año actual.",
+        "Como los cuatro cursos tienen igual número de estudiantes, compara directamente las sumas para evaluar si el promedio total aumentó o disminuyó."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "227;217"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
+      "tema": "Matemáticas: promedios iguales"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «promedios iguales» orienta la estrategia.",
-          "a": "m:Cuatro"
+          "a": "m:Cuatro",
+          "t": "La frase «promedios iguales» orienta la estrategia."
         },
         {
-          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
         },
         {
-          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "Cuatro",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «promedios iguales» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "227;217"
+        ],
+        "nota": "Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Los cursos tienen el mismo número de estudiantes, así que se comparan los promedios de los cuatro cursos. La suma del año anterior es $227$ y la del actual es $217$; por tanto, el promedio actual es menor."
+      }
+    ]
+  },
+  "revisar": []
 }

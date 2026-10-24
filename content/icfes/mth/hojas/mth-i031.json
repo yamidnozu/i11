@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "octágono regular inscrito",
-        "rol": "dato",
-        "nota": "Sus ocho ángulos centrales son iguales.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "circunferencia de radio $2$",
-        "rol": "dato",
-        "nota": "El lado $OQ$ mide dos.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "Con la expresión",
-        "rol": "pide",
-        "nota": "Determina qué elemento geométrico representa $x$.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo.",
-        "texto": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo."
-      },
-      {
-        "k": "calc",
-        "titulo": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados.",
-        "lineas": [
-          "$x/sen(45°)=2/sen(67,5°)$",
-          "$x=2·sen(45°)/sen(67,5°)$"
-        ],
-        "nota": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El lado opuesto a $45°$ es $PQ$; corresponde a la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Ley de senos en un triángulo inscrito",
-      "que": "Interpreta qué lado representa una expresión obtenida con la ley de senos.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "La ley de senos iguala $x/sen(45°)$ con $2/sen(67,5°)$; $x$ es el lado $PQ$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado."
+          "p": "Pero la expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción C",
-          "p": "El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado."
+          "p": "Pero el ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción D",
-          "p": "$OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
+          "p": "Pero $OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
         }
+      ],
+      "pistas": [
+        "Aplica la fórmula de la suma de ángulos internos de un polígono de $n$ lados: $(n - 2) \\cdot 180^\\circ$ con $n=8$.",
+        "Divide la suma total ($1.080^\\circ$) entre 8 para hallar la medida de cada ángulo interno del octágono regular ($135^\\circ$)."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "El lado opuesto a $45°$ es $PQ$; corresponde a la opción B."
         }
-      ]
+      ],
+      "que": "Interpreta qué lado representa una expresión obtenida con la ley de senos.",
+      "tema": "Ley de senos en un triángulo inscrito"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Compara un lado de longitud dos con senos de ángulos; despeja otro lado."
         },
         {
-          "t": "Ese lado es $PQ$. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Ese lado es $PQ$. La respuesta es B."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "La ley de senos da $x=2·sen(45°)/sen(67,5°)$ para el lado opuesto a $45°$."
         },
         {
-          "t": "La opción A: La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: La expresión de la ley de senos produce una longitud, no un ángulo. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción C: El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: El ángulo central entre vértices consecutivos mide cuarenta y cinco grados y no depende de esa longitud. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción D: $OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: $OQ$ es el radio, que ya está dado como dos. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "A y C son ángulos; D es el radio conocido. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A y C son ángulos; D es el radio conocido. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "El triángulo formado por el centro y dos vértices tiene ángulos de cuarenta y cinco y sesenta y siete coma cinco grados.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El triángulo formado por el centro y dos vértices tiene ángulos de cuarenta y cinco y sesenta y siete coma cinco grados."
         },
         {
-          "t": "La ley de senos relaciona el radio de dos con el lado opuesto a cuarenta y cinco grados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La ley de senos relaciona el radio de dos con el lado opuesto a cuarenta y cinco grados."
         },
         {
-          "t": "Ese lado es el segmento $PQ$.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Ese lado es el segmento $PQ$."
         },
         {
-          "t": "A y C son ángulos y D es el radio conocido.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A y C son ángulos y D es el radio conocido."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "octágono regular inscrito",
+        "nota": "Sus ocho ángulos centrales son iguales.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "circunferencia de radio $2$",
+        "nota": "El lado $OQ$ mide dos.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "Con la expresión",
+        "nota": "Determina qué elemento geométrico representa $x$.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo.",
+        "titulo": "Identifica el triángulo $OPQ$ y los lados opuestos a cada ángulo."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$x/sen(45°)=2/sen(67,5°)$",
+          "$x=2·sen(45°)/sen(67,5°)$"
+        ],
+        "nota": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados.",
+        "titulo": "Relaciona la incógnita con el lado opuesto a cuarenta y cinco grados."
+      },
+      {
+        "k": "check",
+        "texto": "El lado opuesto a $45°$ es $PQ$; corresponde a la opción B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

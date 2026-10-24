@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "las dos esferas quedan con cargas iguales",
-        "rol": "pide",
-        "nota": "Fragmento que orienta el criterio o el dato central.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la información",
-        "texto": "Compara el estado inicial de las dos esferas."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Determina qué carga puede moverse dentro del metal."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba",
-        "texto": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales."
-      }
-    ],
     "enfoque": {
-      "tema": "Transferencia de electrones al poner esferas en contacto",
-      "que": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
-      "pistas": [
-        "En un metal, las cargas que se desplazan son electrones.",
-        "La esfera positiva tiene déficit de electrones y la neutra puede cederlos."
-      ],
       "clave": "Los electrones se desplazan desde la esfera neutra hacia la esfera positiva.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto."
+          "p": "Pero los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí."
+          "p": "Pero la dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones."
+          "p": "Pero además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones."
         }
+      ],
+      "pistas": [
+        "En un metal, las cargas que se desplazan son electrones.",
+        "La esfera positiva tiene déficit de electrones y la neutra puede cederlos."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales."
         }
-      ]
+      ],
+      "que": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
+      "tema": "Transferencia de electrones al poner esferas en contacto"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "La expresión «las dos esferas quedan con cargas iguales» indica qué información tomar en cuenta.",
-          "a": "m:las dos esferas quedan con cargas iguales"
+          "a": "m:las dos esferas quedan con cargas iguales",
+          "t": "La expresión «las dos esferas quedan con cargas iguales» indica qué información tomar en cuenta."
         },
         {
-          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno."
         },
         {
-          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descartamos."
         },
         {
-          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descartamos."
         },
         {
-          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece."
         },
         {
-          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La esfera uno empieza con carga positiva porque tiene déficit de electrones; la esfera dos es neutra. Para que la carga se reparta y ambas queden con $+Q/2$, electrones pasan de la esfera dos a la esfera uno."
         },
         {
-          "t": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales."
         },
         {
-          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Los protones permanecen en los núcleos metálicos; no se transfieren entre las esferas durante el contacto. La descarto."
         },
         {
-          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La dirección está invertida: electrones que salieran de la esfera uno dejarían aún mayor déficit allí. La descarto."
         },
         {
-          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Además de invertir la dirección, supone movimiento de protones; las cargas móviles en el metal son electrones. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "las dos esferas quedan con cargas iguales",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara el estado inicial de las dos esferas.",
+        "titulo": "Identifica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Determina qué carga puede moverse dentro del metal.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "idea",
+        "texto": "Comprueba que la transferencia reduzca la diferencia y produzca cargas iguales.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

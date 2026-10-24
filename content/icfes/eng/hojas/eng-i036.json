@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "But studies show that ________ close relationship to grey wolves and coyotes is evident.",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{But studies show that ________ close relationship to grey wolves and coyotes is evident.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "{{its}} concuerda con el referente plural {{Ethiopian wolves}} como posesivo de la relación que se describe."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{its}} concuerda con el referente plural {{Ethiopian wolves}} como posesivo de la relación que se describe.",
       "clave": "{{its}} concuerda con el referente plural {{Ethiopian wolves}} como posesivo de la relación que se describe.",
-      "pistas": [
-        "Localiza {{But studies show that ________ close relationship to grey wolves and coyotes is evident.}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "{{his}} atribuye la relación a un hombre y {{your}} a quien escucha; el pasaje habla de los lobos."
+          "p": "Pero {{his}} es el pronombre posesivo masculino para personas, no para objetos o temas neutros."
         },
         {
           "t": "Opción C",
-          "p": "{{his}} atribuye la relación a un hombre y {{your}} a quien escucha; el pasaje habla de los lobos."
+          "p": "Pero {{your}} es la segunda persona (tu o su de usted), no la referencia en tercera persona del objeto."
         }
+      ],
+      "pistas": [
+        "Choose the singular possessive adjective {{its}} referring back to the Ethiopian wolf.",
+        "Distinguish possessive {{its}} without apostrophe from the contraction {{it's}}."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{its}} concuerda con el referente plural {{Ethiopian wolves}} como posesivo de la relación que se describe.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{its}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "But studies show that ________ close relationship to grey wolves and coyotes is evident.",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{But studies show that ________ close relationship to grey wolves and coyotes is evident.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{its}} concuerda con el referente plural {{Ethiopian wolves}} como posesivo de la relación que se describe.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

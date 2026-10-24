@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "¿para qué el autor hace referencia a Rubens",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa qué idea aparece justo antes y después del ejemplo de Rubens."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Distingue el ejemplo particular del argumento general sobre la belleza artística."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La referencia a Rubens ejemplifica que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar la función de un ejemplo",
-      "que": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras.",
-      "pistas": [
-        "Observa qué idea aparece justo antes y después del ejemplo de Rubens.",
-        "Distingue el ejemplo particular del argumento general sobre la belleza artística."
-      ],
       "clave": "La referencia a Rubens ejemplifica que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto admite que nos atrae lo bello, pero el ejemplo específico de Rubens ilustra cómo un artista representa un tema atractivo."
+          "p": "Pero el texto admite que nos atrae lo bello, pero el ejemplo específico de Rubens ilustra cómo un artista representa un tema atractivo."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero El ejemplo no trata de una exigencia del público de que el arte refleje toda la realidad."
+          "p": "Pero el ejemplo no trata de una exigencia del público de que el arte refleje toda la realidad."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La nocividad se atribuye a convertir el gusto por lo bonito en un criterio para rechazar otras obras, no al ejemplo de Rubens por sí solo."
+          "p": "Pero la nocividad se atribuye a convertir el gusto por lo bonito en un criterio para rechazar otras obras, no al ejemplo de Rubens por sí solo."
         }
+      ],
+      "pistas": [
+        "Observa qué idea aparece justo antes y después del ejemplo de Rubens.",
+        "Distingue el ejemplo particular del argumento general sobre la belleza artística."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras.",
+      "tema": "Identificar la función de un ejemplo"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «¿para qué el autor hace referencia a Rubens» orienta la lectura.",
-          "a": "m:¿para qué el autor hace referencia a Rubens"
+          "a": "m:¿para qué el autor hace referencia a Rubens",
+          "t": "La expresión «¿para qué el autor hace referencia a Rubens» orienta la lectura."
         },
         {
-          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras."
         },
         {
-          "t": "Opción A: El texto admite que nos atrae lo bello, pero el ejemplo específico de Rubens ilustra cómo un artista representa un tema atractivo. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El texto admite que nos atrae lo bello, pero el ejemplo específico de Rubens ilustra cómo un artista representa un tema atractivo. La descartamos."
         },
         {
-          "t": "Opción B: El ejemplo no trata de una exigencia del público de que el arte refleje toda la realidad. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El ejemplo no trata de una exigencia del público de que el arte refleje toda la realidad. La descartamos."
         },
         {
-          "t": "Opción D: La nocividad se atribuye a convertir el gusto por lo bonito en un criterio para rechazar otras obras, no al ejemplo de Rubens por sí solo. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La nocividad se atribuye a convertir el gusto por lo bonito en un criterio para rechazar otras obras, no al ejemplo de Rubens por sí solo. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa qué idea aparece justo antes y después del ejemplo de Rubens.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa qué idea aparece justo antes y después del ejemplo de Rubens."
         },
         {
-          "t": "Distingue el ejemplo particular del argumento general sobre la belleza artística.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Distingue el ejemplo particular del argumento general sobre la belleza artística."
         },
         {
-          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El autor usa el retrato del hijo de Rubens para mostrar que algunos artistas representan asuntos que resultan agradables para el público. Luego contrasta ese gusto con obras de temas menos bellos que también pueden ser grandes obras."
         },
         {
-          "t": "La referencia a Rubens ejemplifica que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La referencia a Rubens ejemplifica que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "¿para qué el autor hace referencia a Rubens",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa qué idea aparece justo antes y después del ejemplo de Rubens.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue el ejemplo particular del argumento general sobre la belleza artística.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La referencia a Rubens ejemplifica que algunos artistas plasman en sus obras lo que nos gusta ver en la realidad.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

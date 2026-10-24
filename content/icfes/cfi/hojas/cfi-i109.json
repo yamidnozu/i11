@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "It rained a lot last night!",
-        "rol": "dato",
-        "nota": "Es la intervención a la que debe responderse.",
-        "campo": "Contexto"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Reconoce la situación",
-        "texto": "Identifica qué comunica la persona y qué reacción tendría sentido."
-      },
-      {
-        "k": "idea",
-        "titulo": "Elige una respuesta pertinente",
-        "texto": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica el intercambio",
-        "texto": "Lee las dos intervenciones seguidas y confirma que la conversación suena coherente."
-      }
-    ],
     "enfoque": {
-      "tema": "Responder de forma pertinente en una conversación",
-      "que": "Elige la intervención que responde con sentido a lo que acaba de decir la otra persona.",
-      "pistas": [
-        "Reconoce si la persona comparte una opinión, cuenta una noticia o relata un hecho.",
-        "Descarta respuestas que cambian el tema o quedan incompletas."
-      ],
-      "clave": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche.",
+      "clave": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero {{Did you accept}} no se refiere a la lluvia ni a sus efectos."
+          "p": "Pero {{Did you accept?}} pregunta si alguien aceptó algo; el enunciado no presenta una propuesta."
         },
         {
           "t": "Opción B",
-          "p": "Pero {{Did you understand}} no pregunta por la experiencia durante la noche."
+          "p": "Pero {{Did you understand?}} pregunta si alguien entendió algo; no responde a la información sobre la lluvia."
         }
+      ],
+      "pistas": [
+        "Notice the comment about a loud storm and heavy rainfall during the night.",
+        "Select the caring follow-up question: {{Did you sleep?}}."
       ],
       "plan": [
         {
-          "t": "Lee la intervención inicial."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Reconoce qué respuesta espera el contexto."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Comprueba que la alternativa elegida mantiene la conversación."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee lo que dice la primera persona."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Piensa qué respuesta encaja con la situación."
+          "a": "m:It rained a lot last night!",
+          "t": "Fíjate en {{It rained a lot last night!}}."
         },
         {
-          "t": "La opción correcta es {{Did you sleep?}}.",
-          "a": "o:C:ok"
+          "a": "p:1",
+          "t": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es {{Did you sleep?}}."
         }
       ],
       "2": [
         {
-          "t": "Identifica la intención de la intervención."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "La opción A no responde bien: {{Did you accept}} no se refiere a la lluvia ni a sus efectos.",
+          "a": "p:1",
+          "t": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche."
+        },
+        {
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no corresponde: {{Did you accept?}} pregunta si alguien aceptó algo; el enunciado no presenta una propuesta."
         },
         {
-          "t": "La opción B no responde bien: {{Did you understand}} no pregunta por la experiencia durante la noche.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no corresponde: {{Did you understand?}} pregunta si alguien entendió algo; no responde a la información sobre la lluvia."
         },
         {
-          "t": "La opción C mantiene una conversación coherente.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción {{Did you sleep?}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Interpreta la intención de quien habla.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "Preguntar si la persona durmió es una continuación pertinente después de saber que llovió mucho durante la noche.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche."
         },
         {
-          "t": "Las otras alternativas cambian el tema o no completan una respuesta natural.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: {{Did you accept?}} pregunta si alguien aceptó algo; el enunciado no presenta una propuesta."
         },
         {
-          "t": "Comprueba que la opción C responde a la intervención inicial.",
-          "a": "o:C:ok"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: {{Did you understand?}} pregunta si alguien entendió algo; no responde a la información sobre la lluvia."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La evidencia respalda {{Did you sleep?}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "It rained a lot last night!",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "dialogo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{It rained a lot last night!}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{Did you sleep?}} es una respuesta relacionada con que llovió mucho durante la noche.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

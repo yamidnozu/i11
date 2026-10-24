@@ -1,150 +1,141 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "coseno del ángulo",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «coseno del ángulo» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "5/13"
-        ],
-        "nota": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: coseno del ángulo",
-      "que": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
-      "pistas": [
-        "Fíjate en «coseno del ángulo».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
+      "clave": "Respecto al ángulo del suelo, el cateto adyacente mide cinco y la hipotenusa trece.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
         }
+      ],
+      "pistas": [
+        "Identifica el cateto adyacente (5 m) y la hipotenusa (13 m) respecto al ángulo $\\theta$ que forma la escalera con el suelo.",
+        "Aplica la definición del coseno: $\\cos(\\theta) = \\text{cateto adyacente} / \\text{hipotenusa} = 5/13$."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Ubica el ángulo en la base y nombra los lados del triángulo respecto a él."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "5/13"
-          ]
+          "t": "Aplica coseno: cateto adyacente sobre hipotenusa."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "La razón corresponde a la opción C y es menor que uno, como debe ser un coseno agudo."
         }
-      ]
+      ],
+      "que": "Calcula el coseno del ángulo formado por el suelo y la escalera.",
+      "tema": "Coseno como razón entre cateto adyacente e hipotenusa"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Qué lado está junto al ángulo del suelo y cuál es la hipotenusa?"
         },
         {
-          "t": "La frase «coseno del ángulo» orienta la estrategia.",
-          "a": "m:coseno del ángulo"
+          "t": "El lado junto al ángulo mide cinco; la escalera, hipotenusa, mide trece."
         },
         {
-          "t": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El coseno es cinco treceavos. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Respecto al ángulo entre suelo y escalera, cinco es el cateto adyacente y trece la hipotenusa."
         },
         {
-          "t": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
-          "a": "p:1"
+          "t": "Entonces $cos(θ)=5/13$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Doce sobre trece compara el cateto opuesto con la hipotenusa; es el seno del ángulo. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Doce sobre cinco divide los dos catetos, no el adyacente por la hipotenusa. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Trece sobre cinco invierte la razón y además da un valor mayor que uno. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "A usa el opuesto; B relaciona catetos; D invierte la razón. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "En el triángulo rectángulo, la escalera es la hipotenusa de trece metros."
         },
         {
-          "t": "En el triángulo rectángulo de la figura, el cateto adyacente al ángulo del suelo mide cinco metros y la hipotenusa mide trece. Entonces $\\cos(\\theta)=5/13$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cateto adyacente al ángulo del suelo mide cinco metros."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Así, $cos(θ)=5/13$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "A, B y D no usan la razón adyacente sobre hipotenusa."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "escalera a 12 metros del suelo",
+        "nota": "La altura es el cateto opuesto al ángulo del suelo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "coseno del ángulo θ que forman el suelo y la escalera",
+        "nota": "Relaciona el cateto adyacente con la hipotenusa.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el ángulo en la base y nombra los lados del triángulo respecto a él.",
+        "titulo": "Ubica el ángulo en la base y nombra los lados del triángulo respecto a él."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$cos(θ)=5/13$"
+        ],
+        "nota": "Aplica coseno: cateto adyacente sobre hipotenusa.",
+        "titulo": "Aplica coseno: cateto adyacente sobre hipotenusa."
+      },
+      {
+        "k": "check",
+        "texto": "La razón corresponde a la opción C y es menor que uno, como debe ser un coseno agudo.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

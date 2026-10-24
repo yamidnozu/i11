@@ -1,118 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "probabilidad de escoger una de ellas",
-        "rol": "pide",
-        "nota": "Se evalúa si existe una carta que cumpla ambas condiciones.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "es cero",
-        "rol": "dato",
-        "nota": "La probabilidad cero significa que no hay cartas con esa combinación.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Revisa los palos y su color en la tabla."
-      },
-      {
-        "k": "idea",
-        "texto": "Picas son negras; por eso no puede existir una carta roja de picas."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción B y comprueba que esa combinación es imposible."
-      }
-    ],
     "enfoque": {
-      "tema": "Probabilidad cero e intersección de condiciones",
-      "que": "Reconoce cuándo dos características no pueden cumplirse al mismo tiempo en ningún elemento del conjunto.",
-      "plan": [
-        {
-          "t": "Revisa los palos y su color en la tabla."
-        },
-        {
-          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
-        },
-        {
-          "t": "Elige la opción B y comprueba que esa combinación es imposible."
-        }
-      ],
-      "pistas": [
-        "Picas y tréboles aparecen como palos negros.",
-        "Corazones y diamantes aparecen como palos rojos."
-      ],
-      "clave": "Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B.",
+      "clave": "Las cartas de picas son negras, así que ninguna puede ser roja.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, Sí hay cartas negras con número par."
+          "p": "Pero existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción C",
-          "p": "Pero, Hay cartas de corazones con número impar."
+          "p": "Pero hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción D",
-          "p": "Pero, El rey de diamantes es una carta roja de diamantes."
+          "p": "Pero el rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
         }
-      ]
+      ],
+      "pistas": [
+        "Verifica si una carta de póquer puede pertenecer simultáneamente a dos palos distintos o si son eventos disyuntos.",
+        "Deduce por qué la probabilidad de la intersección de dos eventos mutuamente excluyentes es exactamente cero."
+      ],
+      "plan": [
+        {
+          "t": "Recuerda el color asociado a cada palo de la baraja."
+        },
+        {
+          "t": "Comprueba si existe una carta que cumpla ambas condiciones."
+        },
+        {
+          "t": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B."
+        }
+      ],
+      "que": "Reconoce qué combinación de características no puede cumplirse simultáneamente.",
+      "tema": "Evento imposible en una baraja"
     },
     "guion": {
       "1": [
         {
-          "t": "Revisa los palos y su color en la tabla."
+          "t": "¿De qué color son las cartas de picas?"
         },
         {
-          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
+          "t": "Son negras; por eso no hay picas rojas."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta es la opción B: Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B."
+          "t": "La combinación imposible es la opción B."
         }
       ],
       "2": [
         {
+          "t": "Separa las condiciones de cada opción y revisa los palos rojos y negros."
+        },
+        {
+          "t": "Picas y tréboles son negras; corazones y diamantes son rojas."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, Sí hay cartas negras con número par."
+          "t": "La opción A: Existen cartas negras con número par, así que la combinación sí ocurre. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, Hay cartas de corazones con número impar."
+          "t": "La opción C: Hay cartas de corazones con número impar; por ejemplo, el as de corazones. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, El rey de diamantes es una carta roja de diamantes."
+          "t": "La opción D: El rey de diamantes es rojo y tiene rango K, así que la combinación existe. Pero revisa el dato que exige el enunciado."
         },
         {
           "a": "o:B:ok",
-          "t": "Las picas son negras, no rojas. Por tanto, ninguna carta puede cumplir a la vez las dos condiciones de la opción B."
+          "t": "A, C y D sí tienen cartas que cumplen ambas condiciones. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Revisa los palos y su color en la tabla."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La baraja asigna un color fijo a cada palo."
         },
         {
-          "t": "Picas son negras; por eso no puede existir una carta roja de picas."
+          "a": "p:1",
+          "t": "Picas es un palo negro, así que ninguna carta de picas puede ser roja."
         },
         {
-          "t": "Elige la opción B y comprueba que esa combinación es imposible."
+          "a": "p:2",
+          "k": "contra",
+          "t": "La intersección de esas dos características está vacía."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D describen cartas que sí están en la baraja."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B queda respaldada por los datos y el procedimiento."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "baraja de póquer",
+        "nota": "Contiene cartas de cuatro palos, dos negros y dos rojos.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "que cumpla dos características determinadas es cero",
+        "nota": "La combinación debe ser imposible.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "estas características podrían ser",
+        "nota": "Elige dos condiciones incompatibles.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Recuerda el color asociado a cada palo de la baraja.",
+        "titulo": "Recuerda el color asociado a cada palo de la baraja."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Picas: negras",
+          "Corazones y diamantes: rojas"
+        ],
+        "nota": "Comprueba si existe una carta que cumpla ambas condiciones.",
+        "titulo": "Comprueba si existe una carta que cumpla ambas condiciones."
+      },
+      {
+        "k": "check",
+        "texto": "Ninguna carta puede ser roja y de picas a la vez; la respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

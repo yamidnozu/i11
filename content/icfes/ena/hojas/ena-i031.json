@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "¿Dónde puede ver estos avisos?",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{¿Dónde puede ver estos avisos?}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "El aviso anuncia o solicita algo propio del lugar indicado por {{on a bookcase}}; entre las tres opciones, esa es la que corresponde a su contexto."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "El aviso anuncia o solicita algo propio del lugar indicado por {{on a bookcase}}; entre las tres opciones, esa es la que corresponde a su contexto.",
       "clave": "El aviso anuncia o solicita algo propio del lugar indicado por {{on a bookcase}}; entre las tres opciones, esa es la que corresponde a su contexto.",
-      "pistas": [
-        "Fíjate en {{¿Dónde puede ver estos avisos?}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "El aviso pide escoger algo para leer; no corresponde a ese lugar."
+          "p": "Pero un tablero se usa para escribir o fijar anuncios breves, no para almacenar y tomar material de lectura."
         },
         {
           "t": "Opción B",
-          "p": "El aviso pide escoger algo para leer; no corresponde a ese lugar."
+          "p": "Pero en una computadora se visualiza contenido digital en pantalla, no objetos físicos que se tomen con la mano."
         }
+      ],
+      "pistas": [
+        "Notice the reading invitation: {{Please, take the one you want to read}}.",
+        "Identify a bookcase, bookshelf or library reading corner as the location for borrowing books."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "El aviso anuncia o solicita algo propio del lugar indicado por {{on a bookcase}}; entre las tres opciones, esa es la que corresponde a su contexto.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "¿Dónde puede ver estos avisos?",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{¿Dónde puede ver estos avisos?}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "El aviso anuncia o solicita algo propio del lugar indicado por {{on a bookcase}}; entre las tres opciones, esa es la que corresponde a su contexto.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "distancia x",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «distancia x» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "x=sen(60^\\circ)/sen(75^\\circ)"
-        ],
-        "nota": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: distancia x",
-      "que": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
-      "pistas": [
-        "Fíjate en «distancia x».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero usa el ángulo de 45° que no pertenece al triángulo que relaciona directamente a x con el faro inferior."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero aplica una razón trigonométrica con medidas angulares no opuestas al lado buscado en la figura."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero invierte los catetos y ángulos en la aplicación de la ley de senos."
         }
+      ],
+      "pistas": [
+        "En el triángulo oblicuángulo, identifica los ángulos interiores de setenta y cinco grados y sesenta grados junto con sus respectivos lados opuestos uno y equis.",
+        "Aplica la ley de senos: equis sobre seno de sesenta grados es igual a uno sobre seno de setenta y cinco grados."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "x=sen(60^\\circ)/sen(75^\\circ)"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
+      "tema": "Matemáticas: distancia x"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «distancia x» orienta la estrategia.",
-          "a": "m:distancia x"
+          "a": "m:distancia x",
+          "t": "La frase «distancia x» orienta la estrategia."
         },
         {
-          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
         },
         {
-          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "distancia x",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «distancia x» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "x=sen(60^\\circ)/sen(75^\\circ)"
+        ],
+        "nota": "En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: En el triángulo pequeño, el lado de longitud uno queda opuesto al ángulo de $75^\\circ$ y $x$ queda opuesto a $60^\\circ$. Por la ley de senos, $x=\\sin(60^\\circ)/\\sin(75^\\circ)$."
+      }
+    ]
+  },
+  "revisar": []
 }

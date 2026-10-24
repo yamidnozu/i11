@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Stopping painting was",
-        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{Stopping painting was}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
       "clave": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
-      "pistas": [
-        "Localiza {{Stopping painting was}} en el pasaje.",
-        "Relaciona esa pista con la información que el autor presenta."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "El texto no dice que el pintor decidiera que ella dejara de pintar."
+          "p": "Pero el texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
           "t": "Opción C",
-          "p": "La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
+          "p": "Pero la narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         }
+      ],
+      "pistas": [
+        "Locate the turning point where the girl had to put away her brushes.",
+        "Identify that stopping painting was directly commanded by her mother."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{her mother's order.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Stopping painting was",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Stopping painting was}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

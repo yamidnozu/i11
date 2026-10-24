@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "She could not get oil paints because she",
-        "rol": "pide",
-        "nota": "La pregunta delimita el dato que debe localizarse en el relato.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Localiza el dato",
-        "texto": "Encuentra en el pasaje la oración que se refiere directamente a la pregunta."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las opciones",
-        "texto": "La narradora cuenta que tenía siete años y que sus padres no le compraron las pinturas. La razón es su edad."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en el relato",
-        "texto": "Comprueba que la respuesta elegida aparece en el pasaje y que las otras alternativas se refieren a detalles diferentes."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprender detalles explícitos de un relato",
-      "que": "Ubica en el relato la información que responde la pregunta y separa ese dato de los detalles cercanos.",
-      "pistas": [
-        "Busca la oración que contiene el dato solicitado.",
-        "Comprueba quién realiza cada acción y a quién se refiere el detalle."
-      ],
-      "clave": "La narradora cuenta que tenía siete años y que sus padres no le compraron las pinturas. La razón es su edad.",
+      "clave": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero El relato no dice que tuviera una barrera con el español; encontró un programa de televisión en ese idioma."
+          "p": "Pero el motivo no fue el idioma, sino que a sus siete años sus padres consideraban que era muy pequeña para pinturas al óleo."
         },
         {
           "t": "Opción C",
-          "p": "Pero Ver el programa no le impedía comprar pinturas; el relato señala que era una niña."
+          "p": "Pero ver televisión no era la causa por la que no le permitieran tener pinturas al óleo."
         }
+      ],
+      "pistas": [
+        "Find the reason why the art store or parents refused oil paints to the child.",
+        "Identify that her age was considered too young for using toxic oil solvents."
       ],
       "plan": [
         {
-          "t": "Lee la pregunta y reconoce qué dato busca."
+          "t": "Lee la pregunta e identifica la información solicitada."
         },
         {
-          "t": "Ubica la información correspondiente en el relato."
+          "t": "Localiza la frase relacionada en el texto compartido."
         },
         {
-          "t": "Compara cada alternativa con el pasaje y elige la que coincide."
+          "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee qué dato busca la pregunta."
+          "a": "leer",
+          "t": "Leamos la pista y ubiquemos la información en el texto."
         },
         {
-          "t": "Busca en el relato la oración que habla de ese detalle."
+          "a": "m:She could not get oil paints because she",
+          "t": "Fíjate en {{She could not get oil paints because she}}."
         },
         {
-          "t": "La respuesta es {{was too young.}}.",
-          "a": "o:B:ok"
+          "a": "p:1",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es {{was too young.}}."
         }
       ],
       "2": [
         {
-          "t": "Ubica la información explícita que responde la pregunta."
+          "a": "leer",
+          "t": "Relacionemos la pista con la información del pasaje."
         },
         {
-          "t": "Opción A no coincide: El relato no dice que tuviera una barrera con el español; encontró un programa de televisión en ese idioma.",
+          "a": "p:1",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
+        },
+        {
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no corresponde: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
-          "t": "Opción C no coincide: Ver el programa no le impedía comprar pinturas; el relato señala que era una niña.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no corresponde: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
-          "t": "La opción B coincide con el relato.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción {{was too young.}} sí responde a la pista."
         }
       ],
       "3": [
         {
-          "t": "Identifica el detalle preciso que pregunta el ejercicio.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Identifica qué dato o relación pide la pregunta."
         },
         {
-          "t": "La narradora cuenta que tenía siete años y que sus padres no le compraron las pinturas. La razón es su edad.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}."
         },
         {
-          "t": "Descarta las opciones que mezclan ese detalle con información distinta del relato.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
         },
         {
-          "t": "Vuelve al texto y confirma la opción B.",
-          "a": "o:B:ok"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: El pasaje afirma que ella tenía siete años y que sus padres no comprarían las pinturas."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La evidencia respalda {{was too young.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "She could not get oil paints because she",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{She could not get oil paints because she}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "No podía comprar pinturas al óleo porque tenía siete años y sus padres no se las compraban; la razón corresponde a {{was too young}}.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

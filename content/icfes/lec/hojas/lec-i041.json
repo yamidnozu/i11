@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "qué se puede concluir acerca del matrimonio",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Compara cómo se describe el matrimonio en distintas épocas y culturas."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción C recoge que el matrimonio cambia según el contexto histórico y social."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir una conclusión a partir de ejemplos históricos",
-      "que": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social.",
-      "pistas": [
-        "Compara cómo se describe el matrimonio en distintas épocas y culturas.",
-        "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito."
-      ],
       "clave": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El texto explica que sus propósitos no han sido únicamente económicos y políticos."
+          "p": "Pero el texto explica que sus propósitos no han sido únicamente económicos y políticos."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera."
+          "p": "Pero no afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El texto presenta esa idea como una concepción reciente, no como una regla universal."
+          "p": "Pero el texto presenta esa idea como una concepción reciente, no como una regla universal."
         }
+      ],
+      "pistas": [
+        "Compara cómo se describe el matrimonio en distintas épocas y culturas.",
+        "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social.",
+      "tema": "Inferir una conclusión a partir de ejemplos históricos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «qué se puede concluir acerca del matrimonio» orienta la lectura.",
-          "a": "m:qué se puede concluir acerca del matrimonio"
+          "a": "m:qué se puede concluir acerca del matrimonio",
+          "t": "La expresión «qué se puede concluir acerca del matrimonio» orienta la lectura."
         },
         {
-          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social."
         },
         {
-          "t": "Opción A: El texto explica que sus propósitos no han sido únicamente económicos y políticos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El texto explica que sus propósitos no han sido únicamente económicos y políticos. La descartamos."
         },
         {
-          "t": "Opción B: No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No afirma que el matrimonio sea la base familiar en todas las culturas de la misma manera. La descartamos."
         },
         {
-          "t": "Opción D: El texto presenta esa idea como una concepción reciente, no como una regla universal. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El texto presenta esa idea como una concepción reciente, no como una regla universal. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Compara cómo se describe el matrimonio en distintas épocas y culturas.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Compara cómo se describe el matrimonio en distintas épocas y culturas."
         },
         {
-          "t": "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito."
         },
         {
-          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto contrasta épocas y culturas: el amor como razón principal para casarse se consolidó hace relativamente poco, mientras que otras sociedades entienden el matrimonio como una alianza familiar o económica. Por eso, el matrimonio varía según su contexto histórico y social."
         },
         {
-          "t": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C recoge que el matrimonio cambia según el contexto histórico y social."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "qué se puede concluir acerca del matrimonio",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara cómo se describe el matrimonio en distintas épocas y culturas.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Elige una conclusión que abarque esos cambios sin reducirlos a un solo propósito.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción C recoge que el matrimonio cambia según el contexto histórico y social.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

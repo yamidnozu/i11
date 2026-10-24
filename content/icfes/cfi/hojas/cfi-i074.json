@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "logró la expulsión de los vendedores ambulantes del sector",
-        "rol": "dato",
-        "nota": "Esta es la medida cuyo efecto se debe anticipar.",
-        "campo": "Decisión"
-      },
-      {
-        "frag": "¿cuál sería un efecto de la expulsión de los vendedores?",
-        "rol": "pide",
-        "nota": "Debes identificar una consecuencia probable de retirar a los vendedores.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Separa el problema inicial de intoxicación de la medida tomada por el colegio."
-      },
-      {
-        "k": "idea",
-        "texto": "Piensa quiénes dependían de vender en ese sector y cómo les afecta la expulsión."
-      },
-      {
-        "k": "check",
-        "texto": "Escoge una consecuencia directa de retirar a los vendedores, no una afirmación que contradiga esa medida."
-      }
-    ],
     "enfoque": {
-      "tema": "Efectos de una decisión escolar",
-      "que": "Predecir una consecuencia social de expulsar a vendedores ambulantes del entorno del colegio.",
-      "plan": [
-        {
-          "t": "Identifica la decisión: sacar a los vendedores del sector."
-        },
-        {
-          "t": "Reconoce que algunas familias obtenían ingresos de esas ventas."
-        },
-        {
-          "t": "Relaciona la expulsión con la pérdida de esa fuente de ingreso."
-        }
-      ],
-      "pistas": [
-        "La medida retira a los vendedores del lugar.",
-        "El enunciado menciona familias que dependían de las ventas."
-      ],
-      "clave": "La opción D es una consecuencia directa: las familias que dependían de esas ventas tendrían menos ingresos.",
+      "clave": "Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, El enunciado no relaciona la presencia de vendedores con la seguridad del sector."
+          "p": "Pero es incorrecta porque expulsar a los vendedores de comida ambulante no genera un incremento automático en los índices de delincuencia o atracos."
         },
         {
           "t": "Opción B",
-          "p": "Pero, La medida saca los puestos del entorno; no implica por sí sola que aumenten intoxicaciones en el colegio."
+          "p": "Pero es incorrecta porque erradicar la venta ambulante busca precisamente disminuir y prevenir nuevas intoxicaciones estomacales en el plantel."
         },
         {
           "t": "Opción C",
-          "p": "Pero, El apoyo de la comunidad podría variar, pero no es la consecuencia directa indicada por la dependencia económica de las familias."
+          "p": "Pero es incorrecta porque la medida disciplinaria cuenta con el respaldo de la mayoría de padres preocupados por la salubridad de sus hijos."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica quiénes obtenían ingresos de las ventas.",
+        "Busca la consecuencia económica inmediata de impedir que vendan."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción D satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "El colegio retiró a los vendedores del sector."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Algunas familias dependían de las ventas para obtener ingresos."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D describe la pérdida de esos ingresos."
+          "t": "Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos. La respuesta es D."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "El enunciado no relaciona la presencia de vendedores con la seguridad del sector."
+          "t": "La opción A plantea «El aumento de la inseguridad en las inmediaciones del colegio.», Pero no responde al criterio central: Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La medida saca los puestos del entorno; no implica por sí sola que aumenten intoxicaciones en el colegio."
+          "t": "La opción B plantea «El aumento de las intoxicaciones alimentarias de los estudiantes…», Pero no responde al criterio central: Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "El apoyo de la comunidad podría variar, pero no es la consecuencia directa indicada por la dependencia económica de las familias."
+          "t": "La opción C plantea «La disminución del apoyo de la comunidad al Consejo Directivo y a…», Pero no responde al criterio central: Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos."
         },
         {
           "a": "o:D:ok",
-          "t": "La opción D es una consecuencia directa: las familias que dependían de esas ventas tendrían menos ingresos."
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Para predecir un efecto, parte de la acción tomada y de las personas afectadas."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "La expulsión elimina el lugar de venta para familias que dependían de esa actividad."
-        },
-        {
-          "t": "La consecuencia coherente es que disminuyan sus ingresos; corresponde la opción D."
+          "a": "p:1",
+          "t": "Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos."
         },
         {
           "a": "o:D:ok",
-          "t": "Las otras opciones no se desprenden directamente de la información del caso."
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un estudiante se intoxicó con comida que com",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "sión de los vendedores?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Al expulsar a vendedores se elimina su fuente de trabajo; un efecto directo es que las familias que dependían de esas ventas pierdan ingresos. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

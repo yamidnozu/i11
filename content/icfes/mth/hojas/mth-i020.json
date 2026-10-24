@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "gasto en publicidad",
-        "rol": "dato",
-        "nota": "Es la variable independiente $p$.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "ganancia obtenida",
-        "rol": "dato",
-        "nota": "Es la salida $G$ que se modela.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "La función que representa la ganancia",
-        "rol": "pide",
-        "nota": "Busca una expresión que ajuste todos los pares de la tabla.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Compara cuánto cambia la ganancia frente al cambio en publicidad."
-      },
-      {
-        "k": "calc",
-        "titulo": "Calcula la pendiente y usa un par para hallar el intercepto.",
-        "lineas": [
-          "$(10.400-8.000)/(280-200)=30$",
-          "$8.000-30×200=2.000$",
-          "$G(p)=30p+2.000$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La expresión también produce $9.500$ cuando $p=250$; la respuesta es A."
-      }
-    ],
     "enfoque": {
-      "tema": "Función lineal a partir de una tabla",
-      "que": "Encuentra la pendiente y el término constante que relacionan publicidad y ganancia.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "La pendiente es $30$ y el intercepto $2.000$; la función es $G(p)=30p+2.000$.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Multiplicar el gasto por diez no reproduce las ganancias de la tabla. Pero tampoco coincide con los otros dos años."
+          "p": "Pero $G(p)=10p$ no produce las ganancias de la tabla."
         },
         {
           "t": "Opción C",
-          "p": "La pendiente cuarenta solo coincide accidentalmente con el primer par y falla en los demás. Pero la función debe ajustarse a toda la tabla."
+          "p": "Pero $G(p)=40p$ daría $8.000$ para $p=200$, pero no coincide con los otros pares."
         },
         {
           "t": "Opción D",
-          "p": "La pendiente y el intercepto no ajustan los valores registrados. Pero los tres pares permiten comprobar la función."
+          "p": "Pero $G(p)=40p-800$ tampoco reproduce los tres registros."
         }
+      ],
+      "pistas": [
+        "Calcula la pendiente dividiendo el incremento de ganancia entre el incremento de publicidad: $(10.400 - 8.000)/(280 - 200) = 30$.",
+        "Verifica que la función lineal $G(p) = 30p + 2.000$ reproduce exactamente las parejas de datos de la tabla."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "La expresión también produce $9.500$ cuando $p=250$; la respuesta es A."
         }
-      ]
+      ],
+      "que": "Encuentra la pendiente y el término constante que relacionan publicidad y ganancia.",
+      "tema": "Función lineal a partir de una tabla"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "La ganancia sube $2.400$ cuando el gasto sube $80$; la razón es $30$."
         },
         {
-          "t": "Con el primer par, el intercepto es $2.000$. La función de la opción A ajusta la tabla.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "Con el primer par, el intercepto es $2.000$. La función de la opción A ajusta la tabla."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Sustituye el par del primer año para hallar el término constante: dos mil."
         },
         {
-          "t": "La opción B: Multiplicar el gasto por diez no reproduce las ganancias de la tabla. Pero tampoco coincide con los otros dos años.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Multiplicar el gasto por diez no reproduce las ganancias de la tabla. Pero tampoco coincide con los otros dos años."
         },
         {
-          "t": "La opción C: La pendiente cuarenta solo coincide accidentalmente con el primer par y falla en los demás. Pero la función debe ajustarse a toda la tabla.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: La pendiente cuarenta solo coincide accidentalmente con el primer par y falla en los demás. Pero la función debe ajustarse a toda la tabla."
         },
         {
-          "t": "La opción D: La pendiente y el intercepto no ajustan los valores registrados. Pero los tres pares permiten comprobar la función.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: La pendiente y el intercepto no ajustan los valores registrados. Pero los tres pares permiten comprobar la función."
         },
         {
-          "t": "B, C y D no reproducen todos los datos. La respuesta es A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "B, C y D no reproducen todos los datos. La respuesta es A."
         }
       ],
       "3": [
         {
-          "t": "Los datos determinan pendiente treinta e intercepto dos mil.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Los datos determinan pendiente treinta e intercepto dos mil."
         },
         {
-          "t": "La función resultante es $G(p)=30p+2.000$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La función resultante es $G(p)=30p+2.000$."
         },
         {
-          "t": "Al evaluar el gasto del último año, se obtiene nueve mil quinientos, que confirma el registro.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Al evaluar el gasto del último año, se obtiene nueve mil quinientos, que confirma el registro."
         },
         {
-          "t": "Las opciones B, C y D no ajustan la tabla completa.",
           "a": "o:B:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Las opciones B, C y D no ajustan la tabla completa."
         },
         {
-          "t": "La respuesta correcta es A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "gasto en publicidad",
+        "nota": "Es la variable independiente $p$.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "ganancia obtenida",
+        "nota": "Es la salida $G$ que se modela.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "La función que representa la ganancia",
+        "nota": "Busca una expresión que ajuste todos los pares de la tabla.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara cuánto cambia la ganancia frente al cambio en publicidad.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$(10.400-8.000)/(280-200)=30$",
+          "$8.000-30×200=2.000$",
+          "$G(p)=30p+2.000$"
+        ],
+        "titulo": "Calcula la pendiente y usa un par para hallar el intercepto."
+      },
+      {
+        "k": "check",
+        "texto": "La expresión también produce $9.500$ cuando $p=250$; la respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

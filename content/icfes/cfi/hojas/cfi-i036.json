@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La palabra “dote”",
-        "rol": "pide",
-        "nota": "Se pregunta por un reemplazo que conserve el sentido de la palabra en contexto.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "puede remplazarse",
-        "rol": "dato",
-        "nota": "Debes buscar una expresión equivalente en el contexto del párrafo.",
-        "campo": "Instrucción"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Lee cómo describe el texto lo que aportaba la mujer al casarse."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la palabra con dinero, bienes o tierras que se incorporaban a la unión familiar."
-      },
-      {
-        "k": "check",
-        "texto": "Elige el sinónimo que mantenga la idea de aporte económico o de bienes."
-      }
-    ],
     "enfoque": {
-      "tema": "Vocabulario en contexto",
-      "que": "Inferir el sentido de una palabra a partir de los ejemplos que la acompañan.",
+      "clave": "La opción C, “aporte patrimonial”, conserva el sentido de la dote como aporte de bienes o recursos.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero limita la dote a ahorros y excluye bienes o tierras."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero el texto no dice que el aporte proviniera específicamente de los familiares."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio."
+        }
+      ],
+      "pistas": [
+        "El texto menciona dinero, bienes o tierras.",
+        "Se refiere a lo que la mujer aportaba al casarse."
+      ],
       "plan": [
         {
           "t": "Ubica la palabra en el párrafo sobre los arreglos matrimoniales."
@@ -44,25 +32,8 @@
           "t": "Compara las alternativas con esa descripción."
         }
       ],
-      "pistas": [
-        "El texto menciona dinero, bienes o tierras.",
-        "Se refiere a lo que la mujer aportaba al casarse."
-      ],
-      "clave": "La opción C, “aporte patrimonial”, conserva el sentido de la dote como aporte de bienes o recursos.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Limita la dote a ahorros y excluye bienes o tierras."
-        },
-        {
-          "t": "Opción B",
-          "p": "El texto no dice que el aporte proviniera específicamente de los familiares."
-        },
-        {
-          "t": "Opción D",
-          "p": "Una ceremonia no equivale a dinero, bienes o tierras aportados al matrimonio."
-        }
-      ]
+      "que": "Inferir el sentido de una palabra a partir de los ejemplos que la acompañan.",
+      "tema": "Vocabulario en contexto"
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "Las otras opciones restringen o cambian el sentido."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "La palabra “dote”",
+        "nota": "Se pregunta por un reemplazo que conserve el sentido de la palabra en contexto.",
+        "rol": "pide"
+      },
+      {
+        "campo": "Instrucción",
+        "frag": "puede remplazarse",
+        "nota": "Debes buscar una expresión equivalente en el contexto del párrafo.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee cómo describe el texto lo que aportaba la mujer al casarse."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la palabra con dinero, bienes o tierras que se incorporaban a la unión familiar."
+      },
+      {
+        "k": "check",
+        "texto": "Elige el sinónimo que mantenga la idea de aporte económico o de bienes."
+      }
+    ]
+  },
+  "revisar": []
 }

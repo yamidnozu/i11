@@ -1,32 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "el más adecuado para el texto anterior",
-        "rol": "pide",
-        "nota": "La pregunta solicita un título que sintetice el pasaje.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Elegir un título que recoja la idea central del pasaje y no solo un ejemplo."
-      },
-      {
-        "k": "idea",
-        "texto": "Resume la reflexión sobre cómo se relacionan la belleza del tema y el valor artístico de una obra."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción C responde al texto completo y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Elegir un título que recoja la idea central del pasaje y no solo un ejemplo.",
-      "que": "Resume la reflexión sobre cómo se relacionan la belleza del tema y el valor artístico de una obra.",
+      "clave": "El pasaje sostiene que la belleza de una obra no depende únicamente de que su tema sea bello. La opción C resume esa reflexión.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero el autor no defiende el mal gusto; argumenta que un tema desagradable puede aparecer en una gran obra."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero el pasaje no presenta el arte como modelo de la realidad, sino que discute cómo juzgamos sus temas."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero la enumeración de artistas es secundaria y no resume la idea central."
+        }
+      ],
+      "pistas": [
+        "¿Cuál de los siguientes títulos sería el más adecuado para el texto anterior?",
+        "El pasaje sostiene que la belleza de una obra no depende únicamente de que su tema sea bello. La opción C resume esa reflexión."
+      ],
       "plan": [
         {
           "t": "Elegir un título que recoja la idea central del pasaje y no solo un ejemplo."
@@ -38,25 +32,8 @@
           "t": "Elige la opción C y verifica que se sostenga con el pasaje."
         }
       ],
-      "pistas": [
-        "¿Cuál de los siguientes títulos sería el más adecuado para el texto anterior?",
-        "El pasaje sostiene que la belleza de una obra no depende únicamente de que su tema sea bello. La opción C resume esa reflexión."
-      ],
-      "clave": "El pasaje sostiene que la belleza de una obra no depende únicamente de que su tema sea bello. La opción C resume esa reflexión.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "El autor no defiende el mal gusto; explica que un tema desagradable también puede formar parte de una gran obra."
-        },
-        {
-          "t": "Opción B",
-          "p": "El texto no presenta el arte como modelo de la realidad, sino que discute cómo valoramos sus temas."
-        },
-        {
-          "t": "Opción D",
-          "p": "La lista de artistas es secundaria y no resume la idea central."
-        }
-      ]
+      "que": "Resume la reflexión sobre cómo se relacionan la belleza del tema y el valor artístico de una obra.",
+      "tema": "Elegir un título que recoja la idea central del pasaje y no solo un ejemplo."
     },
     "guion": {
       "1": [
@@ -107,6 +84,30 @@
           "t": "La opción C queda respaldada por el texto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "el más adecuado para el texto anterior",
+        "nota": "La pregunta solicita un título que sintetice el pasaje.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Elegir un título que recoja la idea central del pasaje y no solo un ejemplo."
+      },
+      {
+        "k": "idea",
+        "texto": "Resume la reflexión sobre cómo se relacionan la belleza del tema y el valor artístico de una obra."
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C responde al texto completo y descarta las demás."
+      }
+    ]
+  },
+  "revisar": []
 }

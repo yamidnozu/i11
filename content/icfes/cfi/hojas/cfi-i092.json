@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "la capacidad que tienen estos dos grupos de ratones de recordar un lugar",
-        "rol": "dato",
-        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿por qué los ratones del grupo 1 ubicaron tan fácilmente el recipiente?",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes explicar o inferir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Evaluar la memoria espacial al comparar ratones con y sin ejercicio previo."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la condición que cambia entre los grupos con la diferencia observada en sus trayectorias."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción D explique la evidencia y no solo repita un dato."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar la memoria espacial al comparar ratones con y sin ejercicio previo.",
-      "que": "Relaciona la condición que cambia entre los grupos con la diferencia observada en sus trayectorias.",
+      "clave": "Los grupos recibieron la misma tarea, pero el grupo que hizo ejercicio encontró el recipiente con un recorrido más directo. El resultado es compatible con una mejora de la memoria espacial.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero a no explica la diferencia entre los grupos, porque ambos podían usar el triángulo como señal."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero b atribuye el resultado a la rapidez al nadar, aunque la prueba evalúa recordar la ubicación."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero c ambos grupos siguieron el mismo procedimiento de búsqueda."
+        }
+      ],
+      "pistas": [
+        "la capacidad que tienen estos dos grupos de ratones de recordar un lugar",
+        "Los grupos recibieron la misma tarea, pero el grupo que hizo ejercicio encontró el recipiente con un recorrido más directo. El resultado es compatible con una mejora de la memoria espacial."
+      ],
       "plan": [
         {
           "t": "Evaluar la memoria espacial al comparar ratones con y sin ejercicio previo."
@@ -44,25 +32,8 @@
           "t": "Elige la opción D y comprueba que se derive de los datos."
         }
       ],
-      "pistas": [
-        "la capacidad que tienen estos dos grupos de ratones de recordar un lugar",
-        "Los grupos recibieron la misma tarea, pero el grupo que hizo ejercicio encontró el recipiente con un recorrido más directo. El resultado es compatible con una mejora de la memoria espacial."
-      ],
-      "clave": "Los grupos recibieron la misma tarea, pero el grupo que hizo ejercicio encontró el recipiente con un recorrido más directo. El resultado es compatible con una mejora de la memoria espacial.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "A no explica la diferencia, porque ambos grupos podían usar el triángulo como señal."
-        },
-        {
-          "t": "Opción B",
-          "p": "B atribuye el resultado a la rapidez al nadar, aunque se evalúa recordar una ubicación."
-        },
-        {
-          "t": "Opción C",
-          "p": "C ambos grupos hicieron la misma búsqueda durante el mismo tiempo."
-        }
-      ]
+      "que": "Relaciona la condición que cambia entre los grupos con la diferencia observada en sus trayectorias.",
+      "tema": "Evaluar la memoria espacial al comparar ratones con y sin ejercicio previo."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La respuesta queda respaldada por el resultado descrito."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "la capacidad que tienen estos dos grupos de ratones de recordar un lugar",
+        "nota": "El enunciado presenta la condición, el resultado o el control experimental relevante.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿por qué los ratones del grupo 1 ubicaron tan fácilmente el recipiente?",
+        "nota": "La pregunta señala qué debes explicar o inferir.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Evaluar la memoria espacial al comparar ratones con y sin ejercicio previo."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la condición que cambia entre los grupos con la diferencia observada en sus trayectorias."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción D explique la evidencia y no solo repita un dato."
+      }
+    ]
+  },
+  "revisar": []
 }

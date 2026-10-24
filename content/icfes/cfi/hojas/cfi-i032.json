@@ -1,112 +1,138 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "sintetiza adecuadamente las ideas contenidas en el primer párrafo",
-        "rol": "pide",
-        "nota": "Debes elegir el resumen que conserve la idea principal del párrafo.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Resume el argumento del párrafo sobre la conducta bajo impunidad."
-      },
-      {
-        "k": "idea",
-        "texto": "Contrasta ese resumen con las alternativas y descarta las que presentan un deber moral voluntario o una conclusión absoluta."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la opción que exprese que la justicia depende de restricciones y exigencias de la ley."
-      }
-    ],
     "enfoque": {
-      "tema": "Síntesis de un argumento",
-      "que": "Resumir la idea central de un párrafo argumentativo sobre justicia y restricciones.",
-      "plan": [
-        {
-          "t": "Ubica qué ocurriría si las personas pudieran actuar sin castigo."
-        },
-        {
-          "t": "Relaciona esa hipótesis con la necesidad de restricciones y ley."
-        },
-        {
-          "t": "Elige el resumen que recoja esa relación sin exagerarla."
-        }
-      ],
-      "pistas": [
-        "El autor compara la conducta de una persona justa y una injusta.",
-        "Ambas actuarían igual bajo impunidad."
-      ],
-      "clave": "La opción B resume que la justicia resulta de restricciones y exigencias legales que contienen la búsqueda de los propios deseos.",
+      "clave": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "El párrafo no atribuye la justicia a una conciencia moral que siempre guíe a las personas."
+          "p": "Pero el autor no fundamenta la justicia en una conciencia moral universal."
         },
         {
           "t": "Opción C",
-          "p": "Llama ilusión a la justicia, una conclusión más fuerte que la argumentada."
+          "p": "Pero la opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto."
         },
         {
           "t": "Opción D",
-          "p": "Afirma que la justicia es inalcanzable, aunque el texto dice que la ley puede obligar a actuar justamente."
+          "p": "Pero el párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias."
         }
-      ]
+      ],
+      "pistas": [
+        "Resume la explicación central, no un detalle del relato.",
+        "Relaciona los deseos individuales con el papel de las restricciones."
+      ],
+      "plan": [
+        {
+          "t": "Resume la explicación central, no un detalle del relato."
+        },
+        {
+          "t": "Relaciona los deseos individuales con el papel de las restricciones."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias.",
+      "tema": "Sintetizar el argumento de un párrafo"
     },
     "guion": {
       "1": [
         {
-          "t": "El autor imagina qué pasaría si una persona justa pudiera actuar sin castigo."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "Dice que buscaría satisfacer sus deseos y cometería injusticias."
+          "a": "m:sintetiza adecuadamente las ideas",
+          "t": "La expresión «sintetiza adecuadamente las ideas» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B resume que la ley y sus restricciones imponen la justicia."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "El párrafo no atribuye la justicia a una conciencia moral que siempre guíe a las personas."
+          "t": "Opción A: El autor no fundamenta la justicia en una conciencia moral universal. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Llama ilusión a la justicia, una conclusión más fuerte que la argumentada."
+          "t": "Opción C: La opción convierte la idea en que la justicia es una ilusión, afirmación más fuerte que la del texto. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Afirma que la justicia es inalcanzable, aunque el texto dice que la ley puede obligar a actuar justamente."
+          "t": "Opción D: El párrafo no sostiene que toda persona justa tenga intereses que inevitablemente la lleven a cometer injusticias. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B resume que la justicia resulta de restricciones y exigencias legales que contienen la búsqueda de los propios deseos."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Para sintetizar, conserva la relación entre impunidad, deseos y justicia obligatoria."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "El autor no dice que nadie pueda ser justo; dice que sin restricciones la persona elegiría la injusticia."
+          "a": "p:0",
+          "t": "Resume la explicación central, no un detalle del relato."
         },
         {
-          "t": "La opción B representa esa idea central sin convertirla en una afirmación absoluta."
+          "a": "p:1",
+          "t": "Relaciona los deseos individuales con el papel de las restricciones."
+        },
+        {
+          "a": "p:2",
+          "t": "El texto plantea que, sin restricciones, las personas buscarían satisfacer sus deseos e intereses y cometerían injusticias. Por ello, la justicia no surge necesariamente de la voluntad: se sostiene mediante límites y exigencias."
         },
         {
           "a": "o:B:ok",
-          "t": "Por eso, B es el resumen adecuado."
+          "t": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "sintetiza adecuadamente las ideas",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume la explicación central, no un detalle del relato.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona los deseos individuales con el papel de las restricciones.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B sintetiza que la justicia se impone porque, sin restricciones, cada persona buscaría satisfacer sus deseos.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "permiten hallar la probabilidad",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «permiten hallar la probabilidad» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "1/2\\cdot1/6=1/12"
-        ],
-        "nota": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: permiten hallar la probabilidad",
-      "que": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
-      "pistas": [
-        "Fíjate en «permiten hallar la probabilidad».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero el procedimiento 1 suma probabilidades, lo cual sobreestimaría la probabilidad de la intersección de dos eventos independientes."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero los procedimientos 1 y 4 son incorrectos; el procedimiento 4 ignora el caso en que se pierde en ambos juegos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero el procedimiento 4 resta únicamente la probabilidad de perder en exactamente un juego, omitiendo el evento de perder en ambos."
         }
+      ],
+      "pistas": [
+        "Identifica que para ganar la consola se deben ganar ambos juegos independientes: la probabilidad conjunta es el producto de un medio por un sexto igual a un doceavo.",
+        "Aplica la regla del complemento: el suceso contrario de ganar ambos juegos es perder en al menos uno, por lo que uno menos la probabilidad de perder al menos uno también es válido."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "1/2\\cdot1/6=1/12"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+      "tema": "Matemáticas: permiten hallar la probabilidad"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «permiten hallar la probabilidad» orienta la estrategia.",
-          "a": "m:permiten hallar la probabilidad"
+          "a": "m:permiten hallar la probabilidad",
+          "t": "La frase «permiten hallar la probabilidad» orienta la estrategia."
         },
         {
-          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
         },
         {
-          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "permiten hallar la probabilidad",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «permiten hallar la probabilidad» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "1/2\\cdot1/6=1/12"
+        ],
+        "nota": "Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Para ganar la consola hay que ganar ambos juegos, así que se multiplican las probabilidades: $1/2\\cdot1/6=1/12$. También sirve restar de uno la probabilidad de perder al menos uno, porque su complemento es ganar ambos. Son válidos los procedimientos dos y tres."
+      }
+    ]
+  },
+  "revisar": []
 }

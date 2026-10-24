@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "se pasó de la explotación de la tierra a la producción de bienes",
-        "rol": "dato",
-        "nota": "El texto describe el cambio desde actividades rurales hacia la producción industrial.",
-        "campo": "Transformación"
-      },
-      {
-        "frag": "una de las consecuencias de esta revolución, respecto a la población",
-        "rol": "pide",
-        "nota": "Debes seleccionar un cambio demográfico asociado con la industrialización.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Conecta la fábrica y la producción en masa con los cambios en los lugares de trabajo."
-      },
-      {
-        "k": "idea",
-        "texto": "Piensa qué movimiento de población acompaña el paso del campo a la fábrica urbana."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la alternativa describa un cambio poblacional, no una política económica no mencionada."
-      }
-    ],
     "enfoque": {
-      "tema": "Industrialización y urbanización",
-      "que": "Reconocer una consecuencia demográfica de la Revolución Industrial.",
-      "plan": [
-        {
-          "t": "Identifica el paso de la producción rural y familiar a las fábricas."
-        },
-        {
-          "t": "Relaciona las fábricas con el crecimiento de las ciudades."
-        },
-        {
-          "t": "Elige la alternativa que describe migración rural y formación de trabajadores urbanos."
-        }
-      ],
-      "pistas": [
-        "La producción en masa se concentra en fábricas.",
-        "La pregunta pide una consecuencia respecto a la población."
-      ],
-      "clave": "La opción A indica el traslado del campo a la ciudad y el surgimiento del proletariado urbano.",
+      "clave": "La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, Propone un crecimiento rural sobre el urbano, contrario al traslado hacia los centros industriales."
+          "p": "Pero es incorrecta porque la Revolución Industrial provocó el despoblamiento de los campos y el crecimiento exponencial de las ciudades."
         },
         {
           "t": "Opción C",
-          "p": "Pero, El texto no describe el nacimiento de una élite propietaria de la tierra como consecuencia poblacional."
+          "p": "Pero es incorrecta porque los terratenientes tradicionales ya existían desde el feudalismo; lo novedoso fue el surgimiento de la burguesía industrial y el proletariado."
         },
         {
           "t": "Opción D",
-          "p": "Pero, No se menciona un modelo de protección económica para el proletariado."
+          "p": "Pero es incorrecta porque en sus primeras décadas el capitalismo industrial operó bajo un régimen laboral desregulado, sin leyes de protección obrera."
         }
-      ]
+      ],
+      "pistas": [
+        "Relaciona el paso de talleres y tierra a grandes fábricas.",
+        "Busca el cambio de residencia y de posición laboral asociado a ese proceso."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción A satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Las fábricas concentran la producción y el trabajo."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Muchas personas se trasladan a las ciudades para trabajar en ellas."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A describe ese cambio y el surgimiento de trabajadores urbanos."
+          "t": "La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano. La respuesta es A."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "Propone un crecimiento rural sobre el urbano, contrario al traslado hacia los centros industriales."
+          "t": "La opción B plantea «crecimiento de la población rural sobre la urbana.», Pero no responde al criterio central: La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "El texto no describe el nacimiento de una élite propietaria de la tierra como consecuencia poblacional."
+          "t": "La opción C plantea «nacimiento de una élite propietaria de la tierra.», Pero no responde al criterio central: La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "No se menciona un modelo de protección económica para el proletariado."
+          "t": "La opción D plantea «desarrollo de un modelo económico para la protección del proletariado.», Pero no responde al criterio central: La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A indica el traslado del campo a la ciudad y el surgimiento del proletariado urbano."
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "El enunciado contrasta el trabajo en la tierra y el telar familiar con la fábrica y la producción tecnificada."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Ese cambio desplaza trabajadores hacia los centros urbanos y forma una clase obrera."
-        },
-        {
-          "t": "Por tanto, la consecuencia demográfica es la opción A."
+          "a": "p:1",
+          "t": "La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano."
         },
         {
           "a": "o:A:ok",
-          "t": "Las otras opciones no siguen el cambio poblacional descrito."
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La Revolución Industrial se debió, entre otr",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "o a la población, fue el",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La industrialización concentró fábricas y empleo en las ciudades, atrajo población desde el campo y consolidó un proletariado urbano. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "porcentaje de muertes por tipo de vehículo",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción D corresponde a «otro tipo de vehículo», que representa la mitad de las muertes, más que cada categoría individual mostrada."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar proporciones en una infografía",
-      "que": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta.",
-      "pistas": [
-        "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas.",
-        "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía."
-      ],
       "clave": "La opción D corresponde a «otro tipo de vehículo», que representa la mitad de las muertes, más que cada categoría individual mostrada.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Los peatones representan una proporción menor que la mitad indicada para los otros tipos."
+          "p": "Pero los peatones representan una proporción menor que la mitad indicada para los otros tipos."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero La proporción de motociclistas es menor que la de otros vehículos en conjunto."
+          "p": "Pero la proporción de motociclistas es menor que la de otros vehículos en conjunto."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La proporción de ciclistas es la menor de las categorías señaladas."
+          "p": "Pero la proporción de ciclistas es la menor de las categorías señaladas."
         }
+      ],
+      "pistas": [
+        "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas.",
+        "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta.",
+      "tema": "Comparar proporciones en una infografía"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «porcentaje de muertes por tipo de vehículo» orienta la lectura.",
-          "a": "m:porcentaje de muertes por tipo de vehículo"
+          "a": "m:porcentaje de muertes por tipo de vehículo",
+          "t": "La expresión «porcentaje de muertes por tipo de vehículo» orienta la lectura."
         },
         {
-          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta."
         },
         {
-          "t": "Opción A: Los peatones representan una proporción menor que la mitad indicada para los otros tipos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Los peatones representan una proporción menor que la mitad indicada para los otros tipos. La descartamos."
         },
         {
-          "t": "Opción B: La proporción de motociclistas es menor que la de otros vehículos en conjunto. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La proporción de motociclistas es menor que la de otros vehículos en conjunto. La descartamos."
         },
         {
-          "t": "Opción C: La proporción de ciclistas es la menor de las categorías señaladas. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La proporción de ciclistas es la menor de las categorías señaladas. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas."
         },
         {
-          "t": "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía."
         },
         {
-          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "La infografía indica que la mitad de las muertes corresponde a peatones, ciclistas y motociclistas. Las proporciones de peatones y motociclistas son menores que esa mitad, y las de ciclistas son aún menores; por lo tanto, el grupo de otro tipo de vehículo reúne la proporción más alta."
         },
         {
-          "t": "La opción D corresponde a «otro tipo de vehículo», que representa la mitad de las muertes, más que cada categoría individual mostrada.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D corresponde a «otro tipo de vehículo», que representa la mitad de las muertes, más que cada categoría individual mostrada."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "porcentaje de muertes por tipo de vehículo",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara las tres proporciones que aparecen junto a peatones, bicicletas y motocicletas.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Usa el porcentaje que la infografía agrupa para los otros usuarios de la vía.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción D corresponde a «otro tipo de vehículo», que representa la mitad de las muertes, más que cada categoría individual mostrada.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

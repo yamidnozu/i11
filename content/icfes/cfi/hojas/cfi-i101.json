@@ -1,38 +1,22 @@
 {
   "estado": "borrador",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "How do I drive? Phone: 0152067",
-        "rol": "dato",
-        "nota": "El aviso pregunta por conducir y ofrece un teléfono.",
-        "campo": "Aviso"
-      },
-      {
-        "frag": "¿Dónde puede ver este aviso?",
-        "rol": "pide",
-        "nota": "La pregunta solicita ubicar el aviso.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Lee el aviso y revisa las tres ubicaciones posibles."
-      },
-      {
-        "k": "idea",
-        "texto": "La clave oficial señala la opción B, pero el texto no permite explicar por qué se trataría de un bus."
-      },
-      {
-        "k": "check",
-        "texto": "Se conserva en borrador hasta contar con una pista inequívoca del contexto."
-      }
-    ],
     "enfoque": {
-      "tema": "Ubicar avisos breves en inglés",
-      "que": "Relaciona el contenido del aviso con el lugar donde podría aparecer.",
+      "clave": "La clave oficial es B, pero no hay evidencia contextual suficiente para justificarla.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero un avión se desplaza por el aire y es piloteado; no lleva letreros exteriores para que otros conductores llamen por teléfono."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero un barco navega en el agua y no comparte vías terrestres de tráfico donde otros conductores lean un aviso de reporte de conducción."
+        }
+      ],
+      "pistas": [
+        "{{How do I drive?}} pregunta por conducir.",
+        "La clave oficial señala la opción B, aunque el aviso no nombra de manera inequívoca el lugar."
+      ],
       "plan": [
         {
           "t": "Lee el aviso."
@@ -44,21 +28,8 @@
           "t": "Mantén la respuesta en revisión si la relación no es inequívoca."
         }
       ],
-      "pistas": [
-        "{{How do I drive?}} pregunta por conducir.",
-        "La clave oficial señala la opción B, aunque el aviso no nombra de manera inequívoca el lugar."
-      ],
-      "clave": "La clave oficial es B, pero no hay evidencia contextual suficiente para justificarla.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones."
-        },
-        {
-          "t": "Opción C",
-          "p": "La pista del aviso no permite descartar de manera concluyente todas las otras ubicaciones."
-        }
-      ]
+      "que": "Relaciona el contenido del aviso con el lugar donde podría aparecer.",
+      "tema": "Ubicar avisos breves en inglés"
     },
     "guion": {
       "1": [
@@ -104,6 +75,38 @@
           "t": "No se completa una explicación concluyente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Aviso",
+        "frag": "How do I drive? Phone: 0152067",
+        "nota": "El aviso pregunta por conducir y ofrece un teléfono.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿Dónde puede ver este aviso?",
+        "nota": "La pregunta solicita ubicar el aviso.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee el aviso y revisa las tres ubicaciones posibles."
+      },
+      {
+        "k": "idea",
+        "texto": "La clave oficial señala la opción B, pero el texto no permite explicar por qué se trataría de un bus."
+      },
+      {
+        "k": "check",
+        "texto": "Se conserva en borrador hasta contar con una pista inequívoca del contexto."
+      }
+    ]
+  },
+  "revisar": [
+    "La clave oficial es B, pero el aviso no permite justificar inequívocamente por qué se encuentra en un bus."
+  ]
 }

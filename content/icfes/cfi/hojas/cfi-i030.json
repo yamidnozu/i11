@@ -1,118 +1,138 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "presenta un supuesto subyacente",
-        "rol": "pide",
-        "nota": "Debes identificar una idea que la afirmación da por sentada.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "la injusticia le brinda más ventajas individuales que la justicia",
-        "rol": "dato",
-        "nota": "La comparación implica que ambas conductas se evalúan por sus ventajas individuales.",
-        "campo": "Afirmación"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Separa la afirmación explícita de lo que debe suponerse para comparar las dos conductas."
-      },
-      {
-        "k": "idea",
-        "texto": "Busca una opción que acepte que tanto la justicia como la injusticia pueden brindar ventajas, aunque en distinta medida."
-      },
-      {
-        "k": "check",
-        "texto": "Evita elegir una alternativa que contradiga la comparación o agregue una conclusión absoluta."
-      }
-    ],
     "enfoque": {
-      "tema": "Supuestos de una comparación argumentativa",
-      "que": "Reconocer la premisa implícita en una afirmación que compara las ventajas individuales de dos conductas.",
-      "plan": [
-        {
-          "t": "Identifica qué se compara: las ventajas individuales de la justicia y la injusticia."
-        },
-        {
-          "t": "Considera qué tendría que admitirse para que exista esa comparación."
-        },
-        {
-          "t": "Elige la opción que preserve la idea de que ambas pueden brindar ventajas."
-        }
-      ],
-      "pistas": [
-        "La frase compara una conducta con la otra.",
-        "El autor sostiene que la injusticia brinda más ventajas."
-      ],
-      "clave": "La opción B supone que la justicia también brinda ventajas individuales, aunque menos que la injusticia.",
+      "clave": "La opción B supone que tanto la justicia como la injusticia pueden brindar ventajas individuales.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Afirma que las ventajas son iguales, lo que contradice la comparación de que la injusticia brinda más."
+          "p": "Pero la afirmación compara ventajas distintas; no supone que ambas conductas ofrezcan lo mismo."
         },
         {
           "t": "Opción C",
-          "p": "Reduce las ventajas de la injusticia, cuando la afirmación sostiene que son mayores."
+          "p": "Pero la frase no dice que la injusticia ofrezca pocas ventajas; dice que ofrece más que la justicia."
         },
         {
           "t": "Opción D",
-          "p": "Añade que la justicia no brinda ninguna ventaja; la afirmación solo compara cantidades y no establece ese extremo."
+          "p": "Pero la comparación no implica que la justicia carezca de toda ventaja, solo que brinda menos."
         }
-      ]
+      ],
+      "pistas": [
+        "Pregunta qué debe aceptarse para que la comparación tenga sentido.",
+        "Distingue «menos ventajas» de «ninguna ventaja»."
+      ],
+      "plan": [
+        {
+          "t": "Pregunta qué debe aceptarse para que la comparación tenga sentido."
+        },
+        {
+          "t": "Distingue «menos ventajas» de «ninguna ventaja»."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "Decir que la injusticia brinda más ventajas que la justicia presupone que la justicia también brinda algunas ventajas, aunque menos. Si la justicia no ofreciera ninguna, no tendría sentido compararlas como opciones que reportan beneficios distintos.",
+      "tema": "Identificar una premisa implícita en un argumento"
     },
     "guion": {
       "1": [
         {
-          "t": "La frase compara las ventajas de la justicia y la injusticia."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "Para compararlas, se supone que ambas pueden ofrecer alguna ventaja, aunque una ofrezca más."
+          "a": "m:supuesto subyacente a la afirmación",
+          "t": "La expresión «supuesto subyacente a la afirmación» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "Decir que la injusticia brinda más ventajas que la justicia presupone que la justicia también brinda algunas ventajas, aunque menos. Si la justicia no ofreciera ninguna, no tendría sentido compararlas como opciones que reportan beneficios distintos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B expresa ese supuesto."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "Decir que la injusticia brinda más ventajas que la justicia presupone que la justicia también brinda algunas ventajas, aunque menos. Si la justicia no ofreciera ninguna, no tendría sentido compararlas como opciones que reportan beneficios distintos."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Afirma que las ventajas son iguales, lo que contradice la comparación de que la injusticia brinda más."
+          "t": "Opción A: La afirmación compara ventajas distintas; no supone que ambas conductas ofrezcan lo mismo. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Reduce las ventajas de la injusticia, cuando la afirmación sostiene que son mayores."
+          "t": "Opción C: La frase no dice que la injusticia ofrezca pocas ventajas; dice que ofrece más que la justicia. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Añade que la justicia no brinda ninguna ventaja; la afirmación solo compara cantidades y no establece ese extremo."
+          "t": "Opción D: La comparación no implica que la justicia carezca de toda ventaja, solo que brinda menos. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B supone que la justicia también brinda ventajas individuales, aunque menos que la injusticia."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Un supuesto es una idea que la comparación necesita, aunque no la formule como conclusión aparte."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "La frase no dice que la justicia carezca de todo beneficio; dice que la injusticia brinda más."
+          "a": "p:0",
+          "t": "Pregunta qué debe aceptarse para que la comparación tenga sentido."
         },
         {
-          "t": "Por ello, se supone que ambas pueden brindar ventajas individuales, como dice B."
+          "a": "p:1",
+          "t": "Distingue «menos ventajas» de «ninguna ventaja»."
+        },
+        {
+          "a": "p:2",
+          "t": "Decir que la injusticia brinda más ventajas que la justicia presupone que la justicia también brinda algunas ventajas, aunque menos. Si la justicia no ofreciera ninguna, no tendría sentido compararlas como opciones que reportan beneficios distintos."
         },
         {
           "a": "o:B:ok",
-          "t": "Las demás opciones igualan, minimizan o absolutizan la comparación."
+          "t": "La opción B supone que tanto la justicia como la injusticia pueden brindar ventajas individuales."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "supuesto subyacente a la afirmación",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Pregunta qué debe aceptarse para que la comparación tenga sentido.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue «menos ventajas» de «ninguna ventaja».",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B supone que tanto la justicia como la injusticia pueden brindar ventajas individuales.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

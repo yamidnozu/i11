@@ -1,118 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "resultados de una encuesta",
-        "rol": "dato",
-        "nota": "El contexto presenta una distribución de tipos de vehículo.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "Según la información anterior, es correcto afirmar que",
-        "rol": "pide",
-        "nota": "Se comparan porcentajes agrupados con las opciones.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué categorías reúne cada afirmación."
-      },
-      {
-        "k": "idea",
-        "texto": "Suma los porcentajes de buses, microbuses y busetas: $24\\%+23\\%+18\\%=65\\%$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que $65\\%$ es más de la mitad; corresponde la opción C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar porcentajes en una gráfica circular",
-      "que": "Agrupa categorías de una gráfica y compara su porcentaje total con una proporción de referencia.",
-      "plan": [
-        {
-          "t": "Identifica qué categorías reúne cada afirmación."
-        },
-        {
-          "t": "Suma los porcentajes de buses, microbuses y busetas: $24\\%+23\\%+18\\%=65\\%$."
-        },
-        {
-          "t": "Comprueba que $65\\%$ es más de la mitad; corresponde la opción C."
-        }
-      ],
-      "pistas": [
-        "La gráfica asigna porcentajes a cada tipo de vehículo.",
-        "Buses, microbuses y busetas suman $65\\%$."
-      ],
-      "clave": "En la gráfica, buses, microbuses y busetas representan $24\\%+23\\%+18\\%=65\\%$, que supera la mitad del parque automotor.",
+      "clave": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Automóviles, camionetas y camperos suman $18\\%+9\\%+7\\%=34\\%$, menos de la mitad."
+          "p": "Pero es incorrecta porque automóviles (18 %), camionetas (9 %) y camperos (7 %) suman apenas 34 %, cifra muy inferior a la mayoría del parque."
         },
         {
           "t": "Opción B",
-          "p": "Esos tres tipos suman $34\\%$, así que no alcanzan la mitad."
+          "p": "Pero es incorrecta porque la suma de automóviles, camionetas y camperos es 34 %, por lo que no equivale a la mitad (50 %) del parque automotor."
         },
         {
           "t": "Opción D",
-          "p": "Buses, microbuses y busetas suman $65\\%$, no exactamente la mitad."
+          "p": "Pero es incorrecta porque buses, microbuses y busetas acumulan el 65 %, por lo que representan significativamente más de la mitad y no exactamente la mitad."
         }
-      ]
+      ],
+      "pistas": [
+        "Suma los porcentajes de los diferentes tipos de vehículos representados en el gráfico circular del parque automotor.",
+        "Contrasta la opción correcta con el porcentaje mayoritario de buses y busetas en el transporte intermunicipal."
+      ],
+      "plan": [
+        {
+          "t": "Identifico qué pide el enunciado."
+        },
+        {
+          "eq": [
+            "24+23+18=65\\%"
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
+        },
+        {
+          "t": "Comparo el resultado con las opciones y verifico su sentido."
+        }
+      ],
+      "que": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
+      "tema": "Matemáticas: afirmación es verdadera"
     },
     "guion": {
       "1": [
         {
-          "t": "Identifica qué categorías reúne cada afirmación."
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "Suma los porcentajes de buses, microbuses y busetas: $24\\%+23\\%+18\\%=65\\%$."
+          "a": "m:continuación",
+          "t": "La frase «afirmación es verdadera» orienta la estrategia."
+        },
+        {
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
           "a": "o:C:ok",
-          "t": "La respuesta es la opción C: En la gráfica, buses, microbuses y busetas representan $24\\%+23\\%+18\\%=65\\%$, que supera la mitad del parque automotor."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
+        },
+        {
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, Automóviles, camionetas y camperos suman $18\\%+9\\%+7\\%=34\\%$, menos de la mitad."
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, Esos tres tipos suman $34\\%$, así que no alcanzan la mitad."
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "Pero, Buses, microbuses y busetas suman $65\\%$, no exactamente la mitad."
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:C:ok",
-          "t": "En la gráfica, buses, microbuses y busetas representan $24\\%+23\\%+18\\%=65\\%$, que supera la mitad del parque automotor."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Identifica qué categorías reúne cada afirmación."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué pide: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "Suma los porcentajes de buses, microbuses y busetas: $24\\%+23\\%+18\\%=65\\%$."
+          "a": "p:1",
+          "t": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
         },
         {
-          "t": "Comprueba que $65\\%$ es más de la mitad; corresponde la opción C."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C queda respaldada por los datos y el procedimiento."
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "continuación",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «afirmación es verdadera» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "24+23+18=65\\%"
+        ],
+        "nota": "La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: La gráfica asigna $24\\%$ a buses, $23\\%$ a microbuses y $18\\%$ a busetas. Juntos suman $65\\%$, que es más de la mitad; por eso esos vehículos constituyen la mayoría."
+      }
+    ]
+  },
+  "revisar": []
 }

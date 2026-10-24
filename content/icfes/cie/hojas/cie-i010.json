@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "no garantiza la protección contra el dengue",
-        "rol": "pide",
-        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué representa",
-        "texto": "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas."
-      },
-      {
-        "k": "idea",
-        "titulo": "Lee las relaciones del modelo",
-        "texto": "Busca resultados que comparen especies y susceptibilidad para varias marcas."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la opción",
-        "texto": "Descarta datos que no midan resistencia ni eficacia."
-      }
-    ],
     "enfoque": {
-      "tema": "Elegir evidencia para comunicar resistencia a insecticidas",
-      "que": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
-      "pistas": [
-        "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas.",
-        "Busca resultados que comparen especies y susceptibilidad para varias marcas."
-      ],
       "clave": "La opción B presenta evidencia comparativa de resistencia y susceptibilidad en las especies de mosquitos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas."
+          "p": "Pero la semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles."
+          "p": "Pero los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida."
+          "p": "Pero el número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida."
         }
+      ],
+      "pistas": [
+        "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas.",
+        "Busca resultados que comparen especies y susceptibilidad para varias marcas."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Descarta datos que no midan resistencia ni eficacia."
         }
-      ]
+      ],
+      "que": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
+      "tema": "Elegir evidencia para comunicar resistencia a insecticidas"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La frase «no garantiza la protección contra el dengue» señala la pista central.",
-          "a": "m:no garantiza la protección contra el dengue"
+          "a": "m:no garantiza la protección contra el dengue",
+          "t": "La frase «no garantiza la protección contra el dengue» señala la pista central."
         },
         {
-          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total."
         },
         {
-          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descartamos."
         },
         {
-          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descartamos."
         },
         {
-          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Primero identifico qué representa el dibujo o los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La tabla de la opción B compara la susceptibilidad de dos especies de Aedes ante varios insecticidas. En la mayoría de los productos, Aedes aegypti aparece como resistente y Aedes albopictus como susceptible; esos datos respaldan que el insecticida no garantiza protección total."
         },
         {
-          "t": "Descarta datos que no midan resistencia ni eficacia.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Descarta datos que no midan resistencia ni eficacia."
         },
         {
-          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La semejanza visual entre mosquitos no aporta resultados sobre su susceptibilidad a los insecticidas. La descarto."
         },
         {
-          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Los precios de las marcas no muestran si los mosquitos son resistentes o susceptibles. La descarto."
         },
         {
-          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El número de casos en años distintos no compara la susceptibilidad de los mosquitos ni aísla el efecto del insecticida. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "no garantiza la protección contra el dengue",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué dato debe comunicar el cartel: la resistencia a los insecticidas.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca resultados que comparen especies y susceptibilidad para varias marcas.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Descarta datos que no midan resistencia ni eficacia.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "matrimonio entre los fulbes africanos",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Distingue entre que el amor no sea requisito y que no pueda existir."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Evita atribuir miedo o falta de correspondencia que el texto no menciona."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B concluye que el amor no es una condición necesaria para el matrimonio en esa comunidad."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir una conclusión con alcance limitado",
-      "que": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor.",
-      "pistas": [
-        "Distingue entre que el amor no sea requisito y que no pueda existir.",
-        "Evita atribuir miedo o falta de correspondencia que el texto no menciona."
-      ],
       "clave": "La opción B concluye que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Negar apego no demuestra que nunca haya amor entre esposos."
+          "p": "Pero negar apego no demuestra que nunca haya amor entre esposos."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El texto no atribuye temor a las mujeres fulbes."
+          "p": "Pero el texto no atribuye temor a las mujeres fulbes."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No se habla de reciprocidad entre esposos ni se afirma que el amor no sea correspondido."
+          "p": "Pero no se habla de reciprocidad entre esposos ni se afirma que el amor no sea correspondido."
         }
+      ],
+      "pistas": [
+        "Distingue entre que el amor no sea requisito y que no pueda existir.",
+        "Evita atribuir miedo o falta de correspondencia que el texto no menciona."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor.",
+      "tema": "Inferir una conclusión con alcance limitado"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «matrimonio entre los fulbes africanos» orienta la lectura.",
-          "a": "m:matrimonio entre los fulbes africanos"
+          "a": "m:matrimonio entre los fulbes africanos",
+          "t": "La expresión «matrimonio entre los fulbes africanos» orienta la lectura."
         },
         {
-          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor."
         },
         {
-          "t": "Opción A: Negar apego no demuestra que nunca haya amor entre esposos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Negar apego no demuestra que nunca haya amor entre esposos. La descartamos."
         },
         {
-          "t": "Opción C: El texto no atribuye temor a las mujeres fulbes. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El texto no atribuye temor a las mujeres fulbes. La descartamos."
         },
         {
-          "t": "Opción D: No se habla de reciprocidad entre esposos ni se afirma que el amor no sea correspondido. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No se habla de reciprocidad entre esposos ni se afirma que el amor no sea correspondido. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Distingue entre que el amor no sea requisito y que no pueda existir.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Distingue entre que el amor no sea requisito y que no pueda existir."
         },
         {
-          "t": "Evita atribuir miedo o falta de correspondencia que el texto no menciona.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Evita atribuir miedo o falta de correspondencia que el texto no menciona."
         },
         {
-          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto dice que algunas mujeres fulbes niegan apego hacia sus maridos y que muchas sociedades desaprueban que el amor sea el centro del matrimonio. De ello se infiere que el amor no es una condición necesaria para casarse; no se concluye que no exista amor."
         },
         {
-          "t": "La opción B concluye que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B concluye que el amor no es una condición necesaria para el matrimonio en esa comunidad."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "matrimonio entre los fulbes africanos",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue entre que el amor no sea requisito y que no pueda existir.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Evita atribuir miedo o falta de correspondencia que el texto no menciona.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B concluye que el amor no es una condición necesaria para el matrimonio en esa comunidad.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

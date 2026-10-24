@@ -1,56 +1,28 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "The ___ group of Ethiopian wolves exists in the Bale Mountains National Park.",
-        "rol": "pide",
-        "nota": "Este es el fragmento que contiene el espacio evaluado.",
-        "campo": "Fragmento"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee el fragmento",
-        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba la forma",
-        "texto": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en contexto",
-        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
-      }
-    ],
     "enfoque": {
-      "tema": "Completar una lectura en inglés con la forma adecuada",
-      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
-      "pistas": [
-        "Lee la oración completa alrededor del espacio.",
-        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
-      ],
       "clave": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero Larger es comparativo y normalmente necesita indicar con qué se compara."
+          "p": "Pero larger es comparativo y normalmente necesita indicar con qué se compara."
         },
         {
           "t": "Opción C",
-          "p": "Pero Large no expresa que se trate del grupo de mayor tamaño."
+          "p": "Pero large no expresa que se trate del grupo de mayor tamaño."
         }
+      ],
+      "pistas": [
+        "Select the superlative adjective {{largest}} describing the greatest population group.",
+        "Identify {{the largest group}} as the primary remaining wolf population in Ethiopia."
       ],
       "plan": [
         {
-          "t": "Lee el fragmento con el espacio.",
           "eq": [
             "{{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}}"
-          ]
+          ],
+          "t": "Lee el fragmento con el espacio."
         },
         {
           "t": "Identifica qué clase de palabra exige la estructura."
@@ -58,7 +30,9 @@
         {
           "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ]
+      ],
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "tema": "Completar una lectura en inglés con la forma adecuada"
     },
     "guion": {
       "1": [
@@ -69,8 +43,8 @@
           "t": "Fíjate en {{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}} y en las palabras que lo rodean."
         },
         {
-          "t": "La opción correcta es {{largest}}.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción correcta es {{largest}}."
         }
       ],
       "2": [
@@ -78,42 +52,69 @@
           "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "La opción A no encaja: Larger es comparativo y normalmente necesita indicar con qué se compara.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: Larger es comparativo y normalmente necesita indicar con qué se compara."
         },
         {
-          "t": "La opción B no encaja: La clave la confirma en el pasaje.",
           "a": "p:0",
-          "k": "por"
+          "k": "por",
+          "t": "La opción B no encaja: La clave la confirma en el pasaje."
         },
         {
-          "t": "La opción C no encaja: Large no expresa que se trate del grupo de mayor tamaño.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: Large no expresa que se trate del grupo de mayor tamaño."
         }
       ],
       "3": [
         {
-          "t": "Analiza la estructura que acompaña el espacio: {{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}}.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Analiza la estructura que acompaña el espacio: {{The ... group of Ethiopian wolves exists in the Bale Mountains National Park.}}."
         },
         {
-          "t": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación."
         },
         {
-          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje."
         },
         {
-          "t": "Comprueba que la opción B deja la oración completa y coherente.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Comprueba que la opción B deja la oración completa y coherente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Fragmento",
+        "frag": "The ___ group of Ethiopian wolves exists in the Bale Mountains National Park.",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita.",
+        "titulo": "Lee el fragmento"
+      },
+      {
+        "k": "idea",
+        "texto": "El pasaje señala el grupo de mayor tamaño. Largest expresa el superlativo que aparece en esa afirmación.",
+        "titulo": "Comprueba la forma"
+      },
+      {
+        "k": "check",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido.",
+        "titulo": "Verifica en contexto"
+      }
+    ]
+  },
+  "revisar": []
 }

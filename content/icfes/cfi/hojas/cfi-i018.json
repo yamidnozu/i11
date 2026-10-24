@@ -5,16 +5,16 @@
       "clave": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio.",
       "no": [
         {
-          "p": "Los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse.",
-          "t": "Opción B"
+          "t": "Opción A",
+          "p": "Pero los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse."
         },
         {
-          "p": "Suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo.",
-          "t": "Opción C"
+          "t": "Opción C",
+          "p": "Pero suma los ingresos, que no son el monto del crédito, y resta el subsidio antes de volver a sumarlo."
         },
         {
-          "p": "Sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda.",
-          "t": "Opción D"
+          "t": "Opción D",
+          "p": "Pero sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda."
         }
       ],
       "pistas": [
@@ -29,7 +29,7 @@
           "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
         },
         {
-          "t": "La expresión coincide con la opción A."
+          "t": "La expresión coincide con la opción B."
         }
       ],
       "que": "Determina el crédito que hace falta después de tener en cuenta el ahorro y el subsidio.",
@@ -44,13 +44,13 @@
           "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
         },
         {
-          "a": "o:A:ok",
-          "t": "La respuesta es la opción A: El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B: El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
         }
       ],
       "2": [
         {
-          "a": "o:B:no",
+          "a": "o:A:no",
           "k": "err",
           "t": "Pero, los ingresos no son un aporte que se sume directamente al costo, y el subsidio y los ahorros deben restarse."
         },
@@ -65,7 +65,7 @@
           "t": "Pero, sumar el subsidio y restar los ahorros invierte cómo se usan esos aportes para cubrir la vivienda."
         },
         {
-          "a": "o:A:ok",
+          "a": "o:B:ok",
           "t": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
         }
       ],
@@ -77,10 +77,10 @@
           "t": "Despeja el crédito: parte del valor de la vivienda y resta el subsidio y los ahorros disponibles."
         },
         {
-          "t": "La expresión coincide con la opción A."
+          "t": "La expresión coincide con la opción B."
         },
         {
-          "a": "o:A:ok",
+          "a": "o:B:ok",
           "t": "El subsidio y los ahorros ya cubren una parte del valor de la vivienda. El crédito debe cubrir lo que falta: valor de la vivienda menos ahorros menos subsidio."
         }
       ]
@@ -111,8 +111,9 @@
       },
       {
         "k": "check",
-        "texto": "La expresión coincide con la opción A."
+        "texto": "La expresión coincide con la opción B."
       }
     ]
-  }
+  },
+  "revisar": []
 }

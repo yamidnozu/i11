@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "el estudio no era confiable",
-        "rol": "dato",
-        "nota": "El funcionario desacredita la evidencia sobre la violencia contra las mujeres.",
-        "campo": "Postura"
-      },
-      {
-        "frag": "podría tener como consecuencia que",
-        "rol": "pide",
-        "nota": "La pregunta solicita inferir el posible efecto de esa postura.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué información presenta el estudio y cómo responde el funcionario."
-      },
-      {
-        "k": "idea",
-        "texto": "Piensa qué pasa cuando se pone en duda la evidencia sobre la gravedad de la violencia."
-      },
-      {
-        "k": "check",
-        "texto": "Distingue una consecuencia de la postura de una medida nueva de prevención o de una decisión de las organizaciones."
-      }
-    ],
     "enfoque": {
-      "tema": "Debate público sobre violencia contra las mujeres",
-      "que": "Inferir el efecto de desacreditar un estudio que documenta violencia física.",
-      "plan": [
-        {
-          "t": "Reconoce que el estudio informa sobre la violencia física contra las mujeres."
-        },
-        {
-          "t": "Observa que el funcionario cuestiona la confiabilidad del estudio."
-        },
-        {
-          "t": "Relaciona esa postura con el riesgo de restarle importancia al problema."
-        }
-      ],
-      "pistas": [
-        "Las organizaciones piden endurecer las penas a partir del estudio.",
-        "El funcionario cuestiona el estudio y pide considerar justificaciones."
-      ],
-      "clave": "La opción C señala que la postura puede impedir que se reconozca la gravedad de la violencia documentada.",
+      "clave": "Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, El funcionario cuestiona el estudio, pero el enunciado no indica que ataque la idoneidad personal de sus investigadores."
+          "p": "Pero es incorrecta porque no prueba que las leyes sean inexistentes o defectuosas, sino que las autoridades fallan en investigar, juzgar y castigar oportunamente."
         },
         {
           "t": "Opción B",
-          "p": "Pero, La postura no propone estrategias de prevención; cuestiona la evidencia que fundamenta la solicitud."
+          "p": "Pero es incorrecta porque la falta de condenas demuestra el fracaso institucional de los juzgados y no que las mujeres denuncien falsedades."
         },
         {
           "t": "Opción D",
-          "p": "Pero, No se afirma que las organizaciones retiren sus peticiones; la consecuencia más directa es minimizar la gravedad del problema."
+          "p": "Pero es incorrecta porque responsabiliza indebidamente a las víctimas atribuyéndoles falta de educación para resolver desacuerdos en pareja."
         }
-      ]
+      ],
+      "pistas": [
+        "Contrasta la proporción de violencia contra la mujer ejercida en el ámbito de la pareja con la ocurrida en espacios públicos.",
+        "Identifica por qué la violencia intrafamiliar constituye una violación sistemática de derechos fundamentales que requiere intervención estatal."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "El estudio informa sobre violencia física y el funcionario pone en duda su confiabilidad."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "Si se desacredita la evidencia, puede restarse importancia al problema."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C expresa esa consecuencia."
+          "t": "Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "El funcionario cuestiona el estudio, pero el enunciado no indica que ataque la idoneidad personal de sus investigadores."
+          "t": "La opción A plantea «Se cuestione la idoneidad de los investigadores que realizaron el…», Pero no responde al criterio central: Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La postura no propone estrategias de prevención; cuestiona la evidencia que fundamenta la solicitud."
+          "t": "La opción B plantea «Se generen estrategias más efectivas de prevención de la violencia…», Pero no responde al criterio central: Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "No se afirma que las organizaciones retiren sus peticiones; la consecuencia más directa es minimizar la gravedad del problema."
+          "t": "La opción D plantea «Las organizaciones feministas retiren sus peticiones.», Pero no responde al criterio central: Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C señala que la postura puede impedir que se reconozca la gravedad de la violencia documentada."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "La pregunta pide una consecuencia de cuestionar un estudio, no una valoración de la petición de las organizaciones."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El cuestionamiento puede debilitar el reconocimiento público del problema que los datos describen."
-        },
-        {
-          "t": "Por eso, la consecuencia coherente es la opción C."
+          "a": "p:1",
+          "t": "Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema."
         },
         {
           "a": "o:C:ok",
-          "t": "Las otras opciones agregan resultados que el texto no permite concluir."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un estudio reveló que el 30% de las mujeres",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "r como consecuencia que:",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Desacreditar el estudio y exigir justificaciones para la violencia puede minimizar su gravedad y obstaculizar que se reconozca como problema. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

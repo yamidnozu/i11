@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "tema principal del texto",
-        "rol": "pide",
-        "nota": "Este fragmento señala qué debes interpretar.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Resume el texto completo, no un detalle aislado."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda."
-      }
-    ],
     "enfoque": {
-      "tema": "Sintetizar el tema de un texto expositivo",
-      "que": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
-      "pistas": [
-        "Resume el texto completo, no un detalle aislado.",
-        "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
-      ],
       "clave": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero Los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario."
+          "p": "Pero los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba."
+          "p": "Pero el texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero La crianza y las precauciones no resumen el propósito del texto."
+          "p": "Pero la crianza y las precauciones no resumen el propósito del texto."
         }
+      ],
+      "pistas": [
+        "Resume el texto completo, no un detalle aislado.",
+        "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
+      "tema": "Sintetizar el tema de un texto expositivo"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «tema principal del texto» orienta la lectura.",
-          "a": "m:tema principal del texto"
+          "a": "m:tema principal del texto",
+          "t": "La expresión «tema principal del texto» orienta la lectura."
         },
         {
-          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la infografía."
         },
         {
-          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex."
         },
         {
-          "t": "Opción B: Los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Los grillos aparecen como parte del ejemplo, pero el texto no se centra en su papel alimentario. La descartamos."
         },
         {
-          "t": "Opción C: El texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El texto cuestiona que el caso demuestre inteligencia animal; no lo usa como prueba. La descartamos."
         },
         {
-          "t": "Opción D: La crianza y las precauciones no resumen el propósito del texto. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La crianza y las precauciones no resumen el propósito del texto. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Resume el texto completo, no un detalle aislado.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Resume el texto completo, no un detalle aislado."
         },
         {
-          "t": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona."
         },
         {
-          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto describe una rutina que parece organizada y racional, pero luego muestra que la avispa repite acciones sin adaptar su conducta. La idea principal es el comportamiento aparentemente inteligente de la avispa Sphex."
         },
         {
-          "t": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "tema principal del texto",
+        "nota": "Este fragmento señala qué debes interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resume el texto completo, no un detalle aislado.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Incluye tanto la apariencia organizada como la evidencia que la cuestiona.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "La opción A recoge la apariencia de inteligencia que el texto examina y pone en duda.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

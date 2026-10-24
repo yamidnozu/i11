@@ -1,83 +1,60 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El acero es un material que contiene los elementos hierro y carbono.",
-        "rol": "dato",
-        "nota": "El enunciado aporta la situación experimental y el apoyo que debes interpretar.",
-        "campo": "Datos"
-      },
-      {
-        "frag": "¿cómo clasificaría al acero?",
-        "rol": "pide",
-        "nota": "La pregunta indica qué debes concluir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Clasificar materiales según uniformidad y variación de su composición."
-      },
-      {
-        "k": "idea",
-        "texto": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción A concuerde con los datos del enunciado y el apoyo."
-      }
-    ],
     "enfoque": {
-      "tema": "Clasificar materiales según uniformidad y variación de su composición.",
-      "que": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura.",
-      "plan": [
-        {
-          "t": "Clasificar materiales según uniformidad y variación de su composición."
-        },
-        {
-          "t": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
-        },
-        {
-          "t": "Selecciona la opción A y comprueba que los datos la respalden."
-        }
-      ],
-      "pistas": [
-        "El acero es un material que contiene los elementos hierro y carbono.",
-        "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
-      ],
-      "clave": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea.",
+      "clave": "El acero combina varios elementos en proporciones variables y distribuidas uniformemente.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, sustancia pura exige composición fija. El acero tiene cantidades distintas de hierro y carbono entre muestras, así que no es compuesto aunque se vea uniforme."
+          "p": "Pero sustancia pura exige composición fija. El acero tiene cantidades distintas de hierro y carbono entre muestras, así que no es compuesto aunque se vea uniforme."
         },
         {
           "t": "Opción C",
-          "p": "Pero, heterogénea significa que se distinguen fases a simple vista; el acero es uniforme, por tanto homogénea. Tener varios elementos no basta para ser heterogénea."
+          "p": "Pero heterogénea significa que se distinguen fases a simple vista; el acero es uniforme, por tanto homogénea. Tener varios elementos no basta para ser heterogénea."
         },
         {
           "t": "Opción D",
-          "p": "Pero, concluye «sustancia pura» a partir de un dato que dice lo contrario: que las muestras tengan composición diferente indica mezcla de composición variable."
+          "p": "Pero concluye «sustancia pura» a partir de un dato que dice lo contrario: que las muestras tengan composición diferente indica mezcla de composición variable."
         }
-      ]
+      ],
+      "pistas": [
+        "Diferencia entre una composición variable y una muestra uniforme.",
+        "Clasifica la mezcla según el aspecto uniforme de cada muestra."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Diferencia entre una composición variable y una muestra uniforme."
+        },
+        {
+          "t": "Verifica por qué la opción A resuelve la tarea."
+        }
+      ],
+      "que": "Explica explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
+      "tema": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico."
     },
     "guion": {
       "1": [
         {
-          "t": "Clasificar materiales según uniformidad y variación de su composición."
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
         },
         {
-          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
+          "t": "Las muestras tienen proporciones distintas de hierro y carbono, así que la composición puede variar. Cada muestra es uniforme, por lo que el acero es una mezcla homogénea."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A coincide con los datos."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
+        {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "Las muestras tienen proporciones distintas de hierro y carbono, así que la composición puede variar. Cada muestra es uniforme, por lo que el acero es una mezcla homogénea."
+        },
         {
           "a": "o:B:no",
           "k": "err",
@@ -95,24 +72,48 @@
         },
         {
           "a": "o:A:ok",
-          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
+          "t": "La opción A es la respuesta."
         }
       ],
       "3": [
         {
-          "t": "Clasificar materiales según uniformidad y variación de su composición."
+          "t": "Diferencia entre una composición variable y una muestra uniforme."
         },
         {
-          "t": "Usa el diagrama y las propiedades del acero para decidir si es mezcla o sustancia pura."
+          "t": "Clasifica la mezcla según el aspecto uniforme de cada muestra."
         },
         {
-          "t": "El acero contiene hierro y carbono y sus proporciones pueden variar entre muestras, aunque cada muestra sea uniforme. El diagrama lo clasifica como mezcla homogénea."
+          "t": "El acero combina varios elementos en proporciones variables y distribuidas uniformemente."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
         },
         {
           "a": "o:A:ok",
-          "t": "La respuesta queda sustentada por el apoyo del ítem."
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "¿cómo clasificaría al acero?",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Las muestras tienen proporciones distintas de hierro y carbono, así que la composición puede variar. Cada muestra es uniforme, por lo que el acero es una mezcla homogénea.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción A responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  },
+  "revisar": []
 }

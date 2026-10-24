@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "resumen se puede describir como inadecuado",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Identifica si el resumen conserva el alcance de la afirmación original."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar la fidelidad de un resumen",
-      "que": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
-      "pistas": [
-        "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
-        "Identifica si el resumen conserva el alcance de la afirmación original."
-      ],
       "clave": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación."
+          "p": "Pero el resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero El tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito."
+          "p": "Pero el tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero El resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea."
+          "p": "Pero el resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea."
         }
+      ],
+      "pistas": [
+        "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
+        "Identifica si el resumen conserva el alcance de la afirmación original."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
+      "tema": "Evaluar la fidelidad de un resumen"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «resumen se puede describir como inadecuado» orienta la lectura.",
-          "a": "m:resumen se puede describir como inadecuado"
+          "a": "m:resumen se puede describir como inadecuado",
+          "t": "La expresión «resumen se puede describir como inadecuado» orienta la lectura."
         },
         {
-          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento."
         },
         {
-          "t": "Opción A: El resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El resumen no presenta ideas contrarias; incluye la relación entre turismo, fotografía y desorientación. La descartamos."
         },
         {
-          "t": "Opción C: El tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El tono irónico podría matizarse, pero la pregunta apunta a la restricción del grupo de turistas descrito. La descartamos."
         },
         {
-          "t": "Opción D: El resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El resumen no se detiene en datos en extremo detallados o secundarios; su problema es reducir el alcance de la idea. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen."
         },
         {
-          "t": "Identifica si el resumen conserva el alcance de la afirmación original.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Identifica si el resumen conserva el alcance de la afirmación original."
         },
         {
-          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El resumen atribuye la práctica fotográfica a los cosmopolitas japoneses, estadounidenses y alemanes, aunque el texto la presenta como una conducta extendida entre turistas de distintos grupos. Esa restricción deja fuera el alcance general del argumento."
         },
         {
-          "t": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "resumen se puede describir como inadecuado",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara a qué grupos aplica la práctica el texto y a cuáles el resumen.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Identifica si el resumen conserva el alcance de la afirmación original.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B indica que el resumen se centra en un tipo particular de turistas y no conserva la generalidad del texto.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

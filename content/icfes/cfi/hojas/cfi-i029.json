@@ -1,118 +1,138 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "contradice las ideas que presenta el autor",
-        "rol": "pide",
-        "nota": "Debes encontrar la afirmación opuesta a la tesis del texto.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "de las siguientes afirmaciones",
-        "rol": "dato",
-        "nota": "Debes contrastar cada afirmación con la tesis del pasaje.",
-        "campo": "Alternativas"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Resume la tesis del autor sobre cómo actuarían las personas si no temieran consecuencias."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara cada afirmación con esa tesis y busca una incompatibilidad directa."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma que la opción elegida realmente contradiga la idea del texto."
-      }
-    ],
     "enfoque": {
-      "tema": "Tesis sobre justicia e impunidad",
-      "que": "Identificar una afirmación que contradice la tesis presentada en el pasaje.",
-      "plan": [
-        {
-          "t": "Ubica la idea central sobre justicia bajo impunidad."
-        },
-        {
-          "t": "Contrasta esa idea con las cuatro afirmaciones."
-        },
-        {
-          "t": "Elige la única que sostenga lo contrario."
-        }
-      ],
-      "pistas": [
-        "El relato de Giges muestra el uso del poder para actuar sin castigo.",
-        "El texto afirma que la persona justa también elegiría la injusticia en esas condiciones."
-      ],
-      "clave": "La opción A contradice la tesis porque afirma que algunas personas conservarían la justicia pese a poder actuar injustamente.",
+      "clave": "La opción A contradice al autor: sostiene que algunas personas conservarían la justicia aunque pudieran actuar injustamente.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Es compatible con la idea de que las personas actuarían injustamente si pudieran hacerlo sin consecuencias."
+          "p": "Pero el argumento presenta la inclinación a la injusticia como común cuando no hay coerción."
         },
         {
           "t": "Opción C",
-          "p": "Coincide con la afirmación del texto de que la injusticia ofrece más ventajas individuales."
+          "p": "Pero la afirmación coincide con la comparación de ventajas que el texto atribuye a la injusticia."
         },
         {
           "t": "Opción D",
-          "p": "Se ajusta al argumento de que la injusticia se elige cuando se puede obtener impunidad."
+          "p": "Pero la posibilidad de actuar injustamente sin castigo es el supuesto del relato y se presenta como una decisión voluntaria."
         }
-      ]
+      ],
+      "pistas": [
+        "Recuerda qué predice el autor sobre quien tiene libertad para actuar injustamente.",
+        "Busca la opción que afirme lo contrario."
+      ],
+      "plan": [
+        {
+          "t": "Recuerda qué predice el autor sobre quien tiene libertad para actuar injustamente."
+        },
+        {
+          "t": "Busca la opción que afirme lo contrario."
+        },
+        {
+          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+        }
+      ],
+      "que": "El relato de Giges sostiene que una persona justa, si pudiera cometer injusticias sin castigo, también las cometería para obtener ventajas. Por eso contradice la idea de que alguien actuaría justamente aun teniendo libertad para actuar de forma injusta.",
+      "tema": "Contrastar una afirmación con la tesis de un argumento"
     },
     "guion": {
       "1": [
         {
-          "t": "El autor sostiene que el poder de actuar sin castigo haría que incluso una persona justa eligiera la injusticia."
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La opción A afirma lo contrario: algunas personas seguirían actuando justamente."
+          "a": "m:afirmaciones contradice las ideas",
+          "t": "La expresión «afirmaciones contradice las ideas» orienta la lectura."
+        },
+        {
+          "a": "p:0",
+          "t": "El relato de Giges sostiene que una persona justa, si pudiera cometer injusticias sin castigo, también las cometería para obtener ventajas. Por eso contradice la idea de que alguien actuaría justamente aun teniendo libertad para actuar de forma injusta."
         },
         {
           "a": "o:A:ok",
-          "t": "Por eso, A contradice el texto."
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
+        },
+        {
+          "a": "p:0",
+          "t": "El relato de Giges sostiene que una persona justa, si pudiera cometer injusticias sin castigo, también las cometería para obtener ventajas. Por eso contradice la idea de que alguien actuaría justamente aun teniendo libertad para actuar de forma injusta."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "B coincide con la tesis de que quien puede actuar sin consecuencias tendería a hacerlo injustamente; por eso no la contradice."
+          "t": "Opción B: El argumento presenta la inclinación a la injusticia como común cuando no hay coerción. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C es compatible con la idea de que la injusticia puede ofrecer ventajas individuales."
+          "t": "Opción C: La afirmación coincide con la comparación de ventajas que el texto atribuye a la injusticia. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D apoya la explicación del texto sobre la impunidad y no expresa la postura contraria."
+          "t": "Opción D: La posibilidad de actuar injustamente sin castigo es el supuesto del relato y se presenta como una decisión voluntaria. La descartamos."
         },
         {
           "a": "o:A:ok",
-          "t": "A sí contradice la tesis: afirma que alguien conservaría la justicia aun pudiendo actuar injustamente."
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Distingue entre repetir la tesis y contradecirla."
+          "a": "leer",
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "El relato de Giges sirve para argumentar que la impunidad altera la conducta de quien parece justo."
+          "a": "p:0",
+          "t": "Recuerda qué predice el autor sobre quien tiene libertad para actuar injustamente."
         },
         {
-          "t": "La opción A niega esa conclusión y, por tanto, es la respuesta."
+          "a": "p:1",
+          "t": "Busca la opción que afirme lo contrario."
+        },
+        {
+          "a": "p:2",
+          "t": "El relato de Giges sostiene que una persona justa, si pudiera cometer injusticias sin castigo, también las cometería para obtener ventajas. Por eso contradice la idea de que alguien actuaría justamente aun teniendo libertad para actuar de forma injusta."
         },
         {
           "a": "o:A:ok",
-          "t": "Las otras opciones apoyan o son compatibles con la tesis."
+          "t": "La opción A contradice al autor: sostiene que algunas personas conservarían la justicia aunque pudieran actuar injustamente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "afirmaciones contradice las ideas",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Recuerda qué predice el autor sobre quien tiene libertad para actuar injustamente.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca la opción que afirme lo contrario.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción A contradice al autor: sostiene que algunas personas conservarían la justicia aunque pudieran actuar injustamente.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

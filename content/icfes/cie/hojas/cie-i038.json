@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "individuos con cuello largo",
-        "rol": "pide",
-        "nota": "Fragmento del enunciado que ubica el concepto central.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué se compara",
-        "texto": "Relaciona el rasgo corto con el alelo recesivo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir genotipos a partir de una proporción heredada",
-      "que": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
-      "pistas": [
-        "Relaciona el rasgo corto con el alelo recesivo.",
-        "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
-      ],
       "clave": "La descendencia con cuello corto requiere que cada padre heterocigoto haya aportado el alelo recesivo.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Puede parecer posible si se omite un dato. Pero Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos."
+          "p": "Pero un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible si se omite un dato. Pero Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo."
+          "p": "Pero si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se omite un dato. Pero Dos padres homocigotos dominantes no tendrían descendencia de cuello corto."
+          "p": "Pero dos padres homocigotos dominantes no tendrían descendencia de cuello corto."
         }
+      ],
+      "pistas": [
+        "Relaciona el rasgo corto con el alelo recesivo.",
+        "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
         }
-      ]
+      ],
+      "que": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
+      "tema": "Inferir genotipos a partir de una proporción heredada"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "La expresión «individuos con cuello largo» orienta lo que debemos observar.",
-          "a": "m:individuos con cuello largo"
+          "a": "m:individuos con cuello largo",
+          "t": "La expresión «individuos con cuello largo» orienta lo que debemos observar."
         },
         {
-          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
         },
         {
-          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descartamos."
         },
         {
-          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descartamos."
         },
         {
-          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y reconozcamos qué concepto o dato debemos usar."
         },
         {
-          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué condición debo aplicar."
         },
         {
-          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Si el cuello corto es recesivo, que aparezca en una parte de la descendencia indica que cada padre de cuello largo aportó un alelo recesivo. Por eso ambos padres tienen un alelo dominante y uno recesivo: son heterocigotos."
         },
         {
-          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos."
         },
         {
-          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: Un padre homocigoto recesivo tendría cuello corto, contrario al fenotipo descrito para ambos. La descarto."
         },
         {
-          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Si un padre fuera homocigoto dominante, toda la descendencia recibiría de él el alelo dominante y no aparecería el rasgo recesivo. La descarto."
         },
         {
-          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Dos padres homocigotos dominantes no tendrían descendencia de cuello corto. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "individuos con cuello largo",
+        "nota": "Fragmento del enunciado que ubica el concepto central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Relaciona el rasgo corto con el alelo recesivo.",
+        "titulo": "Identifica qué se compara"
+      },
+      {
+        "k": "idea",
+        "texto": "Usa la aparición de descendientes de cuello corto para inferir qué alelo aportó cada padre.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba qué combinación de padres de cuello largo puede producir ambos fenotipos.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

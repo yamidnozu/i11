@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "influencia de las ideas liberales",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Recuerda qué principio liberal presenta el enunciado."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B incluye teorías, cuentos y mitos dentro del conjunto del conocimiento."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar una idea política a una postura filosófica",
-      "que": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto.",
-      "pistas": [
-        "Recuerda qué principio liberal presenta el enunciado.",
-        "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento."
-      ],
       "clave": "La opción B incluye teorías, cuentos y mitos dentro del conjunto del conocimiento.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero Esta frase rechaza una finalidad religiosa del científico, pero no expresa igualdad entre posturas."
+          "p": "Pero esta frase rechaza una finalidad religiosa del científico, pero no expresa igualdad entre posturas."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero La frase trata de fortalecer una causa débil; no es la idea de igualdad que pregunta el enunciado."
+          "p": "Pero la frase trata de fortalecer una causa débil; no es la idea de igualdad que pregunta el enunciado."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Cuestiona la convergencia de teorías, pero no presenta tan directamente la inclusión igualitaria de perspectivas."
+          "p": "Pero cuestiona la convergencia de teorías, pero no presenta tan directamente la inclusión igualitaria de perspectivas."
         }
+      ],
+      "pistas": [
+        "Recuerda qué principio liberal presenta el enunciado.",
+        "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto.",
+      "tema": "Aplicar una idea política a una postura filosófica"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «influencia de las ideas liberales» orienta la lectura.",
-          "a": "m:influencia de las ideas liberales"
+          "a": "m:influencia de las ideas liberales",
+          "t": "La expresión «influencia de las ideas liberales» orienta la lectura."
         },
         {
-          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto."
         },
         {
-          "t": "Opción A: Esta frase rechaza una finalidad religiosa del científico, pero no expresa igualdad entre posturas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Esta frase rechaza una finalidad religiosa del científico, pero no expresa igualdad entre posturas. La descartamos."
         },
         {
-          "t": "Opción C: La frase trata de fortalecer una causa débil; no es la idea de igualdad que pregunta el enunciado. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La frase trata de fortalecer una causa débil; no es la idea de igualdad que pregunta el enunciado. La descartamos."
         },
         {
-          "t": "Opción D: Cuestiona la convergencia de teorías, pero no presenta tan directamente la inclusión igualitaria de perspectivas. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Cuestiona la convergencia de teorías, pero no presenta tan directamente la inclusión igualitaria de perspectivas. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Recuerda qué principio liberal presenta el enunciado.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Recuerda qué principio liberal presenta el enunciado."
         },
         {
-          "t": "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento."
         },
         {
-          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El principio liberal citado propone igualdad ante la ley. En el texto, la idea más cercana es que teorías, mitos y otras perspectivas pueden participar como parte del conocimiento, sin que una clase de discurso tenga privilegio absoluto."
         },
         {
-          "t": "La opción B incluye teorías, cuentos y mitos dentro del conjunto del conocimiento.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B incluye teorías, cuentos y mitos dentro del conjunto del conocimiento."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "influencia de las ideas liberales",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Recuerda qué principio liberal presenta el enunciado.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca la afirmación que extiende la igualdad a distintas formas de pensamiento.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B incluye teorías, cuentos y mitos dentro del conjunto del conocimiento.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

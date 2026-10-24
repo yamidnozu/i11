@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "el eje $Y$ divide al trapecio en dos figuras iguales",
-        "rol": "dato",
-        "nota": "La figura tiene simetría respecto al eje vertical.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "$(-4,2)$ y $(-2,8)$",
-        "rol": "dato",
-        "nota": "Son los vértices del lado izquierdo.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "coordenadas de los otros dos vértices",
-        "rol": "pide",
-        "nota": "Refleja cada punto y conserva su coordenada vertical.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Aplica la regla de reflexión respecto al eje vertical.",
-        "texto": "Aplica la regla de reflexión respecto al eje vertical."
-      },
-      {
-        "k": "calc",
-        "titulo": "Cambia el signo de cada primera coordenada y conserva la segunda.",
-        "lineas": [
-          "$(-4,2)→(4,2)$",
-          "$(-2,8)→(2,8)$"
-        ],
-        "nota": "Cambia el signo de cada primera coordenada y conserva la segunda."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Los dos puntos reflejados aparecen en la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Reflexión de puntos respecto al eje Y",
-      "que": "Encuentra los vértices simétricos de dos puntos dados.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "En la reflexión sobre el eje $Y$, $(x,y)$ pasa a $(-x,y)$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado."
+          "p": "Pero no son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción C",
-          "p": "Cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado."
+          "p": "Pero cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado."
         },
         {
           "t": "Opción D",
-          "p": "Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado."
+          "p": "Pero cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado."
         }
+      ],
+      "pistas": [
+        "Identifica la simetría del trapecio isósceles respecto al eje vertical Y y las coordenadas de sus cuatro vértices.",
+        "Verifica que el eje Y divide a las bases en segmentos iguales y es perpendicular a los lados paralelos."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "Los dos puntos reflejados aparecen en la opción B."
         }
-      ]
+      ],
+      "que": "Encuentra los vértices simétricos de dos puntos dados.",
+      "tema": "Reflexión de puntos respecto al eje Y"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Cambia la primera, la coordenada $x$; la coordenada $y$ queda igual."
         },
         {
-          "t": "Los puntos son $(4,2)$ y $(2,8)$. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Los puntos son $(4,2)$ y $(2,8)$. La respuesta es B."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Refleja $(-2,8)$: resulta $(2,8)$."
         },
         {
-          "t": "La opción A: No son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: No son los reflejos de los puntos dados; cambia el orden o el valor de las coordenadas. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción C: Cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Cambia el signo de ambas coordenadas y produce una reflexión respecto al origen. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "La opción D: Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$. Pero revisa el dato que exige el enunciado."
         },
         {
-          "t": "A altera coordenadas; C cambia ambos signos; D refleja sobre el eje $X$. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A altera coordenadas; C cambia ambos signos; D refleja sobre el eje $X$. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "La simetría respecto al eje $Y$ transforma $(x,y)$ en $(-x,y)$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La simetría respecto al eje $Y$ transforma $(x,y)$ en $(-x,y)$."
         },
         {
-          "t": "Aplicada a los vértices, produce $(4,2)$ y $(2,8)$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Aplicada a los vértices, produce $(4,2)$ y $(2,8)$."
         },
         {
-          "t": "La opción B contiene ambos puntos.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La opción B contiene ambos puntos."
         },
         {
-          "t": "A, C y D usan transformaciones distintas o alteran las coordenadas.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D usan transformaciones distintas o alteran las coordenadas."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "el eje $Y$ divide al trapecio en dos figuras iguales",
+        "nota": "La figura tiene simetría respecto al eje vertical.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "$(-4,2)$ y $(-2,8)$",
+        "nota": "Son los vértices del lado izquierdo.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "coordenadas de los otros dos vértices",
+        "nota": "Refleja cada punto y conserva su coordenada vertical.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Aplica la regla de reflexión respecto al eje vertical.",
+        "titulo": "Aplica la regla de reflexión respecto al eje vertical."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$(-4,2)→(4,2)$",
+          "$(-2,8)→(2,8)$"
+        ],
+        "nota": "Cambia el signo de cada primera coordenada y conserva la segunda.",
+        "titulo": "Cambia el signo de cada primera coordenada y conserva la segunda."
+      },
+      {
+        "k": "check",
+        "texto": "Los dos puntos reflejados aparecen en la opción B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,150 +1,141 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "distancia a la que se cortó",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «distancia a la que se cortó» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "120(0,71)/2=42,6"
-        ],
-        "nota": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: distancia a la que se cortó",
-      "que": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
-      "pistas": [
-        "Fíjate en «distancia a la que se cortó».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
+      "clave": "La altura mide cerca de $85$ cm y la mitad es aproximadamente $42$ cm.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero es aproximadamente la altura completa y no la mitad donde está el corte."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero es la mitad del lado de $120$ cm, no la mitad de la altura perpendicular."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero aproxima la mitad de una altura incorrectamente calculada; la altura es cerca de $85$ cm."
         }
+      ],
+      "pistas": [
+        "Calcula la altura total $h$ despejando de $\\operatorname{sen}(45^\\circ) = h/120$ con $\\operatorname{sen}(45^\\circ) \\approx 0,71$.",
+        "Divide la altura total entre 2 para determinar la distancia exacta a la que se realizó el corte paralelo a la base."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Calcula primero la altura perpendicular con el seno del ángulo."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "120(0,71)/2=42,6"
-          ]
+          "t": "Aproxima la altura y divídela entre dos."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "La opción más cercana a la mitad de la altura es C, cuarenta y dos centímetros."
         }
-      ]
+      ],
+      "que": "Calcula la distancia desde la base hasta un corte situado a media altura.",
+      "tema": "Razones trigonométricas y mitad de una altura"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Qué altura se obtiene al aplicar el seno de cuarenta y cinco grados a ciento veinte centímetros?"
         },
         {
-          "t": "La frase «distancia a la que se cortó» orienta la estrategia.",
-          "a": "m:distancia a la que se cortó"
+          "t": "Es cerca de ochenta y cinco centímetros. El corte está a la mitad de esa altura."
         },
         {
-          "t": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La mitad es aproximadamente cuarenta y dos centímetros. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Usa la razón indicada para calcular la altura: $120×0,71≈85,2$ cm."
         },
         {
-          "t": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
-          "a": "p:1"
+          "t": "Divide ese resultado entre dos: cerca de $42,6$ cm."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Se acerca a la altura completa, no a la mitad. Pero el corte está a media altura."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Toma la mitad de $120$ cm. Pero ese lado no es la altura perpendicular."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: No corresponde a la mitad de la altura calculada. Pero la altura es cercana a $85$ cm."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "A da la altura completa; B parte del lado; D no coincide con la mitad calculada. La respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La altura vale $120×0,71≈85,2$ cm."
         },
         {
-          "t": "De $\\sin(45^\\circ)=h/120$ se obtiene $h=120(0,71)=85,2$ centímetros. El corte queda a la mitad de la altura: $42,6$, aproximadamente cuarenta y dos centímetros.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El corte está a mitad de altura, así que su distancia a la base es aproximadamente $42,6$ cm."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La opción más cercana es cuarenta y dos centímetros."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "A, B y D usan una longitud distinta o no dividen la altura correctamente."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "se dividió h entre dos",
+        "nota": "El corte está a mitad de la altura.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "la distancia",
+        "nota": "Busca la mitad de la altura, no la longitud del lado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Calcula primero la altura perpendicular con el seno del ángulo.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$h≈120×0,71≈85,2$ cm",
+          "$h/2≈42,6$ cm"
+        ],
+        "titulo": "Aproxima la altura y divídela entre dos."
+      },
+      {
+        "k": "check",
+        "texto": "La opción más cercana a la mitad de la altura es C, cuarenta y dos centímetros.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

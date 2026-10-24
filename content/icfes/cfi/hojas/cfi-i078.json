@@ -1,118 +1,146 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "se calienta y se mide su temperatura cada minuto hasta que se evapora",
-        "rol": "dato",
-        "nota": "El enunciado aporta la situación experimental y el apoyo que debes interpretar.",
-        "campo": "Datos"
-      },
-      {
-        "frag": "¿A qué sustancia corresponde el sólido inicial?",
-        "rol": "pide",
-        "nota": "La pregunta indica qué debes concluir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara las mesetas de la curva con los valores de la tabla."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción B concuerde con los datos del enunciado y el apoyo."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición.",
-      "que": "Compara las mesetas de la curva con los valores de la tabla.",
-      "plan": [
-        {
-          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
-        },
-        {
-          "t": "Compara las mesetas de la curva con los valores de la tabla."
-        },
-        {
-          "t": "Selecciona la opción B y comprueba que los datos la respalden."
-        }
-      ],
-      "pistas": [
-        "se calienta y se mide su temperatura cada minuto hasta que se evapora",
-        "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
-      ],
-      "clave": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua.",
+      "clave": "Las temperaturas de cambio de estado de la curva corresponden a las del agua.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A tiene temperaturas de fusión y ebullición diferentes a las mesetas de la curva."
+          "p": "Pero el benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva."
         },
         {
           "t": "Opción C",
-          "p": "C tiene temperaturas de cambio distintas a las observadas."
+          "p": "Pero el acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva."
         },
         {
           "t": "Opción D",
-          "p": "D no coincide con la meseta de fusión indicada por la gráfica."
+          "p": "Pero el dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada."
         }
-      ]
+      ],
+      "pistas": [
+        "Lee las mesetas de la curva, que indican cambios de estado.",
+        "Compara ambas temperaturas con las filas de la tabla."
+      ],
+      "plan": [
+        {
+          "t": "Lee las mesetas de la curva, que indican cambios de estado."
+        },
+        {
+          "t": "Compara ambas temperaturas con las filas de la tabla."
+        },
+        {
+          "t": "Usa fusión y ebullición para confirmar la identificación."
+        }
+      ],
+      "que": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua.",
+      "tema": "Identificar una sustancia por sus temperaturas de cambio de estado"
     },
     "guion": {
       "1": [
         {
-          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
+          "t": "La frase «Temperatura de» introduce los puntos de cambio de estado que debemos comparar."
+        },
+        {
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B coincide con los datos."
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
+        },
+        {
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A tiene temperaturas de fusión y ebullición diferentes a las mesetas de la curva."
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descartamos."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C tiene temperaturas de cambio distintas a las observadas."
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D no coincide con la meseta de fusión indicada por la gráfica."
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descartamos."
         },
         {
           "a": "o:B:ok",
-          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Identificar una sustancia a partir de sus temperaturas de fusión y ebullición."
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Compara las mesetas de la curva con los valores de la tabla."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "La curva presenta cambios de estado a cero y a cien grados. La tabla muestra esos mismos valores para el agua."
+          "a": "p:1",
+          "t": "La curva de calentamiento muestra una meseta de fusión cercana a $0\\,^{\\circ}\\mathrm{C}$ y una meseta de ebullición cercana a $100\\,^{\\circ}\\mathrm{C}$. Entre las sustancias de la tabla, ambas temperaturas corresponden al agua."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Usa fusión y ebullición para confirmar la identificación."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: El benceno presenta temperaturas de fusión y ebullición distintas a las mesetas de la curva. La descarto."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "Opción C: El acetonitrilo tiene puntos de fusión y ebullición inferiores a las temperaturas observadas en la curva. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: El dos-butanol puede coincidir en ebullición, pero su temperatura de fusión no corresponde a la meseta inicial observada. La descarto."
         },
         {
           "a": "o:B:ok",
-          "t": "La respuesta queda sustentada por el apoyo del ítem."
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee las mesetas de la curva, que indican cambios de estado.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Compara ambas temperaturas con las filas de la tabla.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Usa fusión y ebullición para confirmar la identificación.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

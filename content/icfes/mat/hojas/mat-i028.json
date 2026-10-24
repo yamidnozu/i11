@@ -1,150 +1,142 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "otro valor",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «otro valor» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "45/75=3/5"
-        ],
-        "nota": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: otro valor",
-      "que": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
-      "pistas": [
-        "Fíjate en «otro valor».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
+      "clave": "Hay $45$ mujeres de $75$ estudiantes; el total posible es todo el grado undécimo.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
         }
+      ],
+      "pistas": [
+        "Identifica en la tabla el total de mujeres (45) y el total general de estudiantes de undécimo grado (75).",
+        "Simplifica la fracción $45/75$ dividiendo numerador y denominador entre 15 para obtener tres quintos ($3/5$)."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Compara los totales de mujeres y estudiantes que muestra la tabla."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "45/75=3/5"
-          ]
+          "t": "Verifica la razón y su denominador."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A."
         }
-      ]
+      ],
+      "que": "Identifica qué cantidad corresponde al denominador de la probabilidad.",
+      "tema": "Probabilidad como razón entre mujeres y total de estudiantes"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Cuántas mujeres hay y cuántos estudiantes hay en total?"
         },
         {
-          "t": "La frase «otro valor» orienta la estrategia.",
-          "a": "m:otro valor"
+          "t": "Hay cuarenta y cinco mujeres entre setenta y cinco estudiantes."
         },
         {
-          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La razón es tres quintos; el denominador es todo el grado. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "En una probabilidad, divide los casos favorables entre todos los casos posibles."
         },
         {
-          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
-          "a": "p:1"
+          "t": "La tabla da $45$ mujeres y $75$ estudiantes: $45/75=3/5$."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Los hombres son solo una parte de los resultados posibles. Pero también se puede escoger a una mujer."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Las mujeres del curso once B son solo una parte del total. Pero la razón usa a las mujeres de ambos cursos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Los hombres del curso once A corresponden a una parte del grado. Pero se escoge entre ambos cursos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "B, C y D son subconjuntos del grupo y no el total de casos posibles. La respuesta es A."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La cantidad de mujeres es cuarenta y cinco y el total de estudiantes es setenta y cinco."
         },
         {
-          "t": "La probabilidad es mujeres sobre el total: $45/75=3/5$. Si cuarenta y cinco es el número de mujeres, el otro valor es el total de estudiantes, setenta y cinco.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al simplificar $45/75$ se obtiene $3/5$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por tanto, el denominador es el total de estudiantes de ambos cursos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "B, C y D reemplazan el total por subconjuntos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "dos cursos en grado undécimo",
+        "nota": "El grupo posible reúne a los estudiantes de ambos cursos.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "el número total de mujeres",
+        "nota": "Busca el denominador que convierte $45$ en $3/5$.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara los totales de mujeres y estudiantes que muestra la tabla.",
+        "titulo": "Compara los totales de mujeres y estudiantes que muestra la tabla."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$45/75=3/5$",
+          "El total de estudiantes es $75$."
+        ],
+        "nota": "Verifica la razón y su denominador.",
+        "titulo": "Verifica la razón y su denominador."
+      },
+      {
+        "k": "check",
+        "texto": "La cantidad que completa la razón es el total de estudiantes de grado undécimo; la respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

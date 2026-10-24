@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Lea atentamente el siguiente planteamiento:",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "Este planteamiento fue realizado probablemente por",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «un empresario, porque señala las consecuencias indirectas del…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
+          "p": "Pero es incorrecta porque no se enfoca en las pérdidas mercantiles de las empresas, sino en legitimar el uso de las armas al margen del Estado."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «un congresista, porque señala las consecuencias del conflicto…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
+          "p": "Pero es incorrecta porque no propone una legislación de paz ni la intermediación del parlamento, sino una postura beligerante de justificación de autodefensa."
         },
         {
           "t": "Opción C",
-          "p": "La opción C plantea «un investigador, porque se muestra externo al conflicto y califica…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
+          "p": "Pero es incorrecta porque no adopta una perspectiva analítica neutral de un académico, sino un alegato testimonial directo de parte involucrada en las armas."
         }
+      ],
+      "pistas": [
+        "Analiza el tono del discurso: justifica la creación de grupos de autodefensa armados frente a los abusos guerrilleros.",
+        "Deduce desde qué actor del conflicto armado (un vocero o miembro paramilitar) se emite esa perspectiva."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "La opción A plantea «un empresario, porque señala las consecuencias indirectas del…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «un empresario, porque señala las consecuencias indirectas del…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "La opción B plantea «un congresista, porque señala las consecuencias del conflicto…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «un congresista, porque señala las consecuencias del conflicto…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "La opción C plantea «un investigador, porque se muestra externo al conflicto y califica…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «un investigador, porque se muestra externo al conflicto y califica…», Pero no responde al criterio central: El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "La opción D es la que sí responde a la pregunta.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar."
         },
         {
-          "t": "Por eso la opción D se sostiene con la evidencia del enunciado.",
           "a": "o:D:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Lea atentamente el siguiente planteamiento:",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "Este planteamiento fue realizado probablemente por",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El hablante afirma que la guerrilla obligó a su organización a responder y justifica su participación armada, rasgos de la perspectiva de un paramilitar. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "cantidad relativa de muertes por accidentes de tránsito en función de la región",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Observa qué mide el número asociado a cada región."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona los datos",
-        "texto": "Distingue una tasa de mortalidad de un conteo de países o de vehículos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "El mapa permite comparar el riesgo de morir en un accidente de tránsito según la región."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar tasas de mortalidad por región",
-      "que": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica.",
-      "pistas": [
-        "Observa qué mide el número asociado a cada región.",
-        "Distingue una tasa de mortalidad de un conteo de países o de vehículos."
-      ],
       "clave": "El mapa permite comparar el riesgo de morir en un accidente de tránsito según la región.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El mapa no muestra cuántos vehículos se usan en cada país."
+          "p": "Pero el mapa no muestra cuántos vehículos se usan en cada país."
         },
         {
           "t": "Opción B",
-          "p": "Puede parecer posible. Pero No compara números absolutos de muertes; presenta tasas por habitantes."
+          "p": "Pero no compara números absolutos de muertes; presenta tasas por habitantes."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero Las cifras no indican directamente el estado de las vías ni dónde deben mejorarse."
+          "p": "Pero las cifras no indican directamente el estado de las vías ni dónde deben mejorarse."
         }
+      ],
+      "pistas": [
+        "Observa qué mide el número asociado a cada región.",
+        "Distingue una tasa de mortalidad de un conteo de países o de vehículos."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica.",
+      "tema": "Interpretar tasas de mortalidad por región"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «cantidad relativa de muertes por accidentes de tránsito en función de la región» orienta la lectura.",
-          "a": "m:cantidad relativa de muertes por accidentes de tránsito en función de la región"
+          "a": "m:cantidad relativa de muertes por accidentes de tránsito en función de la región",
+          "t": "La expresión «cantidad relativa de muertes por accidentes de tránsito en función de la región» orienta la lectura."
         },
         {
-          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con los datos de la infografía.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con los datos de la infografía."
         },
         {
-          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica."
         },
         {
-          "t": "Opción A: El mapa no muestra cuántos vehículos se usan en cada país. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El mapa no muestra cuántos vehículos se usan en cada país. La descartamos."
         },
         {
-          "t": "Opción B: No compara números absolutos de muertes; presenta tasas por habitantes. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: No compara números absolutos de muertes; presenta tasas por habitantes. La descartamos."
         },
         {
-          "t": "Opción D: Las cifras no indican directamente el estado de las vías ni dónde deben mejorarse. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Las cifras no indican directamente el estado de las vías ni dónde deben mejorarse. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Observa qué mide el número asociado a cada región.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Observa qué mide el número asociado a cada región."
         },
         {
-          "t": "Distingue una tasa de mortalidad de un conteo de países o de vehículos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Distingue una tasa de mortalidad de un conteo de países o de vehículos."
         },
         {
-          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El mapa compara muertes por accidentes de tránsito por cada cien mil habitantes en distintas regiones. Esa tasa permite comparar el riesgo relativo de morir en un accidente según la zona geográfica."
         },
         {
-          "t": "El mapa permite comparar el riesgo de morir en un accidente de tránsito según la región.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El mapa permite comparar el riesgo de morir en un accidente de tránsito según la región."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "cantidad relativa de muertes por accidentes de tránsito en función de la región",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Observa qué mide el número asociado a cada región.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Distingue una tasa de mortalidad de un conteo de países o de vehículos.",
+        "titulo": "Relaciona los datos"
+      },
+      {
+        "k": "check",
+        "texto": "El mapa permite comparar el riesgo de morir en un accidente de tránsito según la región.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

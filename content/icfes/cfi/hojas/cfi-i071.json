@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "derecho a la objeción de conciencia",
-        "rol": "dato",
-        "nota": "El enunciado presenta el derecho y las circunstancias que deben considerarse.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "¿Cuál de las siguientes acciones es coherente con este fallo?",
-        "rol": "pide",
-        "nota": "La pregunta solicita evaluar una acción frente a la situación descrita.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
-      },
-      {
-        "k": "idea",
-        "texto": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción A sea coherente con el derecho mencionado y descarta las demás."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar.",
-      "que": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo.",
-      "plan": [
-        {
-          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
-        },
-        {
-          "t": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
-        },
-        {
-          "t": "Selecciona la opción A y contrástala con el derecho del enunciado."
-        }
-      ],
-      "pistas": [
-        "¿Cuál de las siguientes acciones es coherente con este fallo?",
-        "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
-      ],
-      "clave": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia.",
+      "clave": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, B obliga a cumplir el servicio militar, en contra de la objeción descrita."
+          "p": "Pero es incorrecta porque obligar al soldado a empuñar fusiles violaría directamente su derecho fundamental a la libertad de conciencia y culto."
         },
         {
           "t": "Opción C",
-          "p": "Pero, C mantiene la participación en entrenamientos militares."
+          "p": "Pero es incorrecta porque asignarle tareas administrativas dentro de una guarnición armada mantiene la subordinación castrense en pugna con su fe."
         },
         {
           "t": "Opción D",
-          "p": "Pero, D también exige participar en actividades militares."
+          "p": "Pero es incorrecta porque forzarlo a desfilar en actos marciales no respeta su convicción íntima de no participar en actividades de las fuerzas armadas."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica qué práctica prohíbe la convicción religiosa del soldado.",
+        "Descarta las opciones que mantienen su participación en la institución militar."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción A satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A coincide con lo que pide el ítem."
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas. La respuesta es A."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
+        },
+        {
           "a": "o:B:no",
           "k": "err",
-          "t": "B obliga a cumplir el servicio militar, en contra de la objeción descrita."
+          "t": "La opción B plantea «Ordenarle al soldado cumplir su servicio militar obligatorio con…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "C mantiene la participación en entrenamientos militares."
+          "t": "La opción C plantea «Ordenarle al Ejército que el soldado participe de los…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D también exige participar en actividades militares."
+          "t": "La opción D plantea «Ordenarle al soldado participar únicamente en paradas militares,…», Pero no responde al criterio central: Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Aplicar la protección de la objeción de conciencia a una decisión sobre el servicio militar."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Elige la acción que respeta la libertad de conciencia que la Corte defendió en el fallo."
-        },
-        {
-          "t": "La opción A permite que el soldado se desvincule del servicio militar y reciba la libreta, en coherencia con la protección de su objeción de conciencia."
+          "a": "p:1",
+          "t": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas."
         },
         {
           "a": "o:A:ok",
-          "t": "La opción A se sostiene con los hechos descritos."
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La Corte Constitucional falló a favor de un",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "oherente con este fallo?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Si el fallo protege la objeción de conciencia, la institución debe desvincular al soldado y entregarle la libreta militar, sin obligarlo a portar armas. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

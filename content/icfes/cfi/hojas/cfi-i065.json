@@ -1,118 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "solo les da la palabra a los hombres",
-        "rol": "dato",
-        "nota": "La decisión excluye a las estudiantes mujeres pese a que levantaron la mano.",
-        "campo": "Hecho"
-      },
-      {
-        "frag": "De acuerdo con la Constitución, el profesor",
-        "rol": "pide",
-        "nota": "La pregunta pide valorar la actuación desde la Constitución.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Compara el trato que reciben hombres y mujeres en la misma situación."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la exclusión de las estudiantes con el principio constitucional de igualdad."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida evalúe la conducta descrita, sin justificarla con una opinión sobre las mujeres."
-      }
-    ],
     "enfoque": {
-      "tema": "Igualdad y no discriminación",
-      "que": "Reconocer si una autoridad trata de manera desigual a personas que están en la misma situación.",
-      "plan": [
-        {
-          "t": "Identifica quiénes quieren responder y quiénes reciben la palabra."
-        },
-        {
-          "t": "Compara el trato dado a hombres y mujeres."
-        },
-        {
-          "t": "Contrasta la diferencia con el principio de igualdad."
-        }
-      ],
-      "pistas": [
-        "El profesor oye a estudiantes de ambos géneros.",
-        "Solo permite responder a los hombres."
-      ],
-      "clave": "La opción B es correcta: excluir a las mujeres por ser mujeres viola el principio de igualdad.",
+      "clave": "Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, La experiencia del profesor no le permite desconocer la igualdad de sus estudiantes."
+          "p": "Pero es incorrecta porque la trayectoria académica o autoridad del profesor jamás lo habilita para ejercer prácticas discriminatorias o machistas."
         },
         {
           "t": "Opción C",
-          "p": "Pero, La exclusión sí es discriminatoria, aunque alguien la considere chocante."
+          "p": "Pero es incorrecta porque no es una simple molestia de estilo, sino un trato diferenciado injustificado basado en un estereotipo de género."
         },
         {
           "t": "Opción D",
-          "p": "Pero, La generalización sobre cuánto hablan las mujeres no justifica negarles la palabra."
+          "p": "Pero es incorrecta porque ningún estudio empírico puede servir de fundamento para restringir derechos fundamentales de las alumnas en clase."
         }
-      ]
+      ],
+      "pistas": [
+        "Identifica a quiénes excluye el profesor y por qué.",
+        "Evalúa si el criterio se aplica por igual a todas las personas."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción B satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Fíjate en que hombres y mujeres levantan la mano."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "El profesor solo escucha a los hombres, así que no aplica el mismo trato."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B reconoce la vulneración de la igualdad."
+          "t": "Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad. La respuesta es B."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "La experiencia del profesor no le permite desconocer la igualdad de sus estudiantes."
+          "t": "La opción A plantea «puede hacer esto porque tiene más experiencia que sus estudiantes.», Pero no responde al criterio central: Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La exclusión sí es discriminatoria, aunque alguien la considere chocante."
+          "t": "La opción C plantea «adopta una actitud que puede ser chocante para algunos pero que no…», Pero no responde al criterio central: Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La generalización sobre cuánto hablan las mujeres no justifica negarles la palabra."
+          "t": "La opción D plantea «puede justificar lo que hace siempre y cuando pueda probar que las…», Pero no responde al criterio central: Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B es correcta: excluir a las mujeres por ser mujeres viola el principio de igualdad."
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "El criterio constitucional es la igualdad en el acceso a la participación."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El hecho decisivo es que las estudiantes también piden la palabra y el profesor las excluye."
-        },
-        {
-          "t": "Por eso, la opción B describe correctamente la conducta como una violación de la igualdad."
+          "a": "p:1",
+          "t": "Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad."
         },
         {
           "a": "o:B:ok",
-          "t": "El descarte de A, C y D confirma la respuesta."
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Un profesor universitario sostiene que cuand",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De acuerdo con la Constitución, el profesor",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Dar la palabra solo a los hombres por una generalización sobre las mujeres discrimina y vulnera el principio constitucional de igualdad. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

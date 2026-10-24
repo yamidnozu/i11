@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "El salto bungee",
-        "rol": "pide",
-        "nota": "Presenta la situación física que se debe analizar.",
-        "campo": "Contexto del problema"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Compara las distancias",
-        "texto": "El deportista cae $20$ metros y la banda mide $30$ metros sin estirarse."
-      },
-      {
-        "k": "idea",
-        "titulo": "Identifica la transformación",
-        "texto": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Como $20 < 30$, la banda aún no se estira; la energía gravitacional se convierte en cinética."
-      }
-    ],
     "enfoque": {
-      "tema": "Transformación de energía durante la caída",
-      "que": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
-      "pistas": [
-        "Compara cuánto ha descendido el deportista con la longitud natural de la banda.",
-        "Solo hay energía potencial elástica cuando la banda se estira."
-      ],
       "clave": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía."
+          "p": "Pero la opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía."
         },
         {
           "t": "Opción B",
-          "p": "La energía potencial gravitacional no aumenta mientras el deportista desciende."
+          "p": "Pero la energía potencial gravitacional no aumenta mientras el deportista desciende."
         },
         {
           "t": "Opción C",
-          "p": "La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros."
+          "p": "Pero la banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros."
         }
+      ],
+      "pistas": [
+        "Compara cuánto ha descendido el deportista con la longitud natural de la banda.",
+        "Solo hay energía potencial elástica cuando la banda se estira."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Relaciona el movimiento con las formas de energía."
         }
-      ]
+      ],
+      "que": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+      "tema": "Transformación de energía durante la caída"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso."
         },
         {
-          "t": "La frase «se lanzará desde un puente» ubica el inicio a cierta altura.",
-          "a": "m:El salto bungee"
+          "a": "m:El salto bungee",
+          "t": "La frase «se lanzará desde un puente» ubica el inicio a cierta altura."
         },
         {
-          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso."
         },
         {
-          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética."
         },
         {
-          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descartamos."
         },
         {
-          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descartamos."
         },
         {
-          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y ubiquemos qué transformación ocurre durante el descenso."
         },
         {
-          "t": "Primero comparo la distancia de caída con la longitud sin estirar de la banda.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero comparo la distancia de caída con la longitud sin estirar de la banda."
         },
         {
-          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética."
         },
         {
-          "t": "Compruebo que la banda no se estire antes de que el descenso supere su longitud natural.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que la banda no se estire antes de que el descenso supere su longitud natural."
         },
         {
-          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La opción inicia con energía cinética, aunque el deportista parte desde una altura y no se indica un impulso previo que le dé esa energía. La descarto."
         },
         {
-          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: La energía potencial gravitacional no aumenta mientras el deportista desciende. La descarto."
         },
         {
-          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La banda aún no almacena energía elástica: el deportista ha descendido $20$ metros y la longitud sin estirar es $30$ metros. La descarto."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Contexto del problema",
+        "frag": "El salto bungee",
+        "nota": "Presenta la situación física que se debe analizar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El deportista cae $20$ metros y la banda mide $30$ metros sin estirarse.",
+        "titulo": "Compara las distancias"
+      },
+      {
+        "k": "idea",
+        "texto": "El deportista desciende $20$ metros, menos que los $30$ metros de longitud sin estirar de la banda. Por eso la banda aún no se alarga; la energía potencial gravitacional se transforma en energía cinética.",
+        "titulo": "Identifica la transformación"
+      },
+      {
+        "k": "check",
+        "texto": "Como $20 < 30$, la banda aún no se estira; la energía gravitacional se convierte en cinética.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

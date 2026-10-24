@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "La función del conector",
-        "rol": "pide",
-        "nota": "Debes explicar la relación que el conector establece entre ideas.",
-        "campo": "Pregunta"
-      },
-      {
-        "frag": "sin embargo",
-        "rol": "dato",
-        "nota": "Este conector introduce un contraste en el párrafo.",
-        "campo": "Conector"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Lee la idea antes del conector y la idea que aparece después."
-      },
-      {
-        "k": "idea",
-        "texto": "Observa que el autor dice que el matrimonio no se basaba en el amor, pero aclara que las personas sí se enamoraban."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la función que exprese contraste y no eliminación de la idea anterior."
-      }
-    ],
     "enfoque": {
-      "tema": "Conectores de contraste",
-      "que": "Interpretar la función de un conector dentro del argumento de un párrafo.",
+      "clave": "La opción D es correcta: el conector contrapone las ideas sin invalidar lo dicho antes.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero no introduce un tema nuevo; relaciona dos ideas del mismo tema."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero no borra ni niega la información previa; la matiza con un contraste."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero no añade un detalle equivalente, sino que contrapone las dos ideas."
+        }
+      ],
+      "pistas": [
+        "El autor niega que el matrimonio se basara en el amor.",
+        "Luego aclara que eso no significa que las personas no se enamoraran."
+      ],
       "plan": [
         {
           "t": "Ubica la afirmación que aparece antes del conector."
@@ -44,25 +32,8 @@
           "t": "Elige la función que mantenga ambas ideas y señale su contraste."
         }
       ],
-      "pistas": [
-        "El autor niega que el matrimonio se basara en el amor.",
-        "Luego aclara que eso no significa que las personas no se enamoraran."
-      ],
-      "clave": "La opción D es correcta: el conector contrapone las ideas sin invalidar lo dicho antes.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "No introduce un tema nuevo; relaciona dos ideas del mismo tema."
-        },
-        {
-          "t": "Opción B",
-          "p": "No borra ni niega la información previa; la matiza con un contraste."
-        },
-        {
-          "t": "Opción C",
-          "p": "No añade un detalle equivalente, sino que contrapone las dos ideas."
-        }
-      ]
+      "que": "Interpretar la función de un conector dentro del argumento de un párrafo.",
+      "tema": "Conectores de contraste"
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "Las otras opciones no representan esta relación."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "La función del conector",
+        "nota": "Debes explicar la relación que el conector establece entre ideas.",
+        "rol": "pide"
+      },
+      {
+        "campo": "Conector",
+        "frag": "sin embargo",
+        "nota": "Este conector introduce un contraste en el párrafo.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la idea antes del conector y la idea que aparece después."
+      },
+      {
+        "k": "idea",
+        "texto": "Observa que el autor dice que el matrimonio no se basaba en el amor, pero aclara que las personas sí se enamoraban."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la función que exprese contraste y no eliminación de la idea anterior."
+      }
+    ]
+  },
+  "revisar": []
 }

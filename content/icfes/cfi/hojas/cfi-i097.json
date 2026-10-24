@@ -1,118 +1,154 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "el flujo de materia y energía que intercambian de manera constante con su medio externo",
-        "rol": "dato",
-        "nota": "El enunciado ofrece el contexto científico para resolver el ítem.",
-        "campo": "Contexto"
-      },
-      {
-        "frag": "representa precisamente un ecosistema abierto?",
-        "rol": "pide",
-        "nota": "La pregunta señala qué debes seleccionar o concluir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Reconocer intercambios de materia y energía entre un ecosistema y su entorno."
-      },
-      {
-        "k": "idea",
-        "texto": "Busca un modelo con materia que entra y sale, además de energía que ingresa."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción C cumpla el criterio científico planteado."
-      }
-    ],
     "enfoque": {
-      "tema": "Reconocer intercambios de materia y energía entre un ecosistema y su entorno.",
-      "que": "Busca un modelo con materia que entra y sale, además de energía que ingresa.",
-      "plan": [
-        {
-          "t": "Reconocer intercambios de materia y energía entre un ecosistema y su entorno."
-        },
-        {
-          "t": "Busca un modelo con materia que entra y sale, además de energía que ingresa."
-        },
-        {
-          "t": "Selecciona la opción C y comprueba que responda al criterio."
-        }
-      ],
-      "pistas": [
-        "el flujo de materia y energía que intercambian de manera constante con su medio externo",
-        "El modelo C muestra energía solar y materia orgánica que entran, junto con materia orgánica y peces que salen. Así representa intercambios en ambas direcciones."
-      ],
-      "clave": "El modelo C muestra energía solar y materia orgánica que entran, junto con materia orgánica y peces que salen. Así representa intercambios en ambas direcciones.",
+      "clave": "La opción C muestra entrada de energía solar, entrada de materia orgánica y salidas de materia del ecosistema.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A solo muestra energía que entra y ciclos internos de materia."
+          "p": "Pero muestra entrada de energía solar, pero no intercambios de materia con el exterior."
         },
         {
           "t": "Opción B",
-          "p": "B muestra entradas de materia, pero no salidas hacia el exterior."
+          "p": "Pero muestra entradas de energía y materia, pero no una salida de materia del lago."
         },
         {
           "t": "Opción D",
-          "p": "D muestra salidas de materia, pero no una entrada de materia externa."
+          "p": "Pero la dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C."
         }
-      ]
+      ],
+      "pistas": [
+        "Busca una entrada de energía desde el Sol.",
+        "Identifica materia que entra y materia que sale del lago."
+      ],
+      "plan": [
+        {
+          "t": "Busca una entrada de energía desde el Sol."
+        },
+        {
+          "t": "Identifica materia que entra y materia que sale del lago."
+        },
+        {
+          "t": "Elige el modelo que representa ambos tipos de intercambio."
+        }
+      ],
+      "que": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca.",
+      "tema": "Reconocer flujos de materia y energía en un ecosistema abierto"
     },
     "guion": {
       "1": [
         {
-          "t": "Reconocer intercambios de materia y energía entre un ecosistema y su entorno."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "El modelo C muestra energía solar y materia orgánica que entran, junto con materia orgánica y peces que salen. Así representa intercambios en ambas direcciones."
+          "a": "m:sistemas abiertos",
+          "t": "La frase «sistemas abiertos» señala la pista central."
+        },
+        {
+          "a": "p:1",
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C se ajusta al criterio."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
+        },
+        {
+          "a": "p:1",
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A solo muestra energía que entra y ciclos internos de materia."
+          "t": "Opción A: Muestra entrada de energía solar, pero no intercambios de materia con el exterior. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B muestra entradas de materia, pero no salidas hacia el exterior."
+          "t": "Opción B: Muestra entradas de energía y materia, pero no una salida de materia del lago. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D muestra salidas de materia, pero no una entrada de materia externa."
+          "t": "Opción D: La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C. La descartamos."
         },
         {
           "a": "o:C:ok",
-          "t": "El modelo C muestra energía solar y materia orgánica que entran, junto con materia orgánica y peces que salen. Así representa intercambios en ambas direcciones."
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Reconocer intercambios de materia y energía entre un ecosistema y su entorno."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Busca un modelo con materia que entra y sale, además de energía que ingresa."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "El modelo C muestra energía solar y materia orgánica que entran, junto con materia orgánica y peces que salen. Así representa intercambios en ambas direcciones."
+          "a": "p:1",
+          "t": "Un ecosistema abierto intercambia materia y energía con el entorno. El modelo C muestra energía solar que entra, materia orgánica que llega por los ríos y materia que sale por los ríos y la pesca."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Elige el modelo que representa ambos tipos de intercambio."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "Opción A: Muestra entrada de energía solar, pero no intercambios de materia con el exterior. La descarto."
+        },
+        {
+          "a": "o:B:no",
+          "k": "err",
+          "t": "Opción B: Muestra entradas de energía y materia, pero no una salida de materia del lago. La descarto."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "Opción D: La dirección de la materia orgánica de los ríos indica salida del lago; no representa la entrada de materia que se muestra en la opción C. La descarto."
         },
         {
           "a": "o:C:ok",
-          "t": "La conclusión queda respaldada por la información."
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "sistemas abiertos",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Busca una entrada de energía desde el Sol.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Identifica materia que entra y materia que sale del lago.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Elige el modelo que representa ambos tipos de intercambio.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

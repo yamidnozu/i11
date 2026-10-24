@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "Some scientists have ________ it is not a real wolf.",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{Some scientists have ________ it is not a real wolf.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "{{said}} funciona después de {{have}} para expresar lo que algunos científicos han afirmado."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{said}} funciona después de {{have}} para expresar lo que algunos científicos han afirmado.",
       "clave": "{{said}} funciona después de {{have}} para expresar lo que algunos científicos han afirmado.",
-      "pistas": [
-        "Localiza {{Some scientists have ________ it is not a real wolf.}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{saying}} no completa la forma verbal después de {{have}}; {{say}} tampoco forma aquí el participio que exige la oración."
+          "p": "Pero {{saying}} es el gerundio (-ing) y no forma el tiempo presente perfecto con have."
         },
         {
           "t": "Opción C",
-          "p": "{{saying}} no completa la forma verbal después de {{have}}; {{say}} tampoco forma aquí el participio que exige la oración."
+          "p": "Pero {{say}} es la forma base del verbo, pero tras have se requiere el participio pasado."
         }
+      ],
+      "pistas": [
+        "Complete the present perfect reporting structure {{have said}}.",
+        "Select the past participle {{said}} used to report scientific claims."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{said}} funciona después de {{have}} para expresar lo que algunos científicos han afirmado.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{said}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Some scientists have ________ it is not a real wolf.",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Some scientists have ________ it is not a real wolf.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{said}} funciona después de {{have}} para expresar lo que algunos científicos han afirmado.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

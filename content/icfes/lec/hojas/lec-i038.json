@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "no siempre ha sido considerado como la base de la familia",
-        "rol": "pide",
-        "nota": "Este fragmento orienta la interpretación de la pregunta.",
-        "campo": "Pista de lectura"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la pista",
-        "texto": "Busca la fecha o el movimiento que el autor relaciona con esa idea."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las ideas",
-        "texto": "Comprueba si la opción explica que el vínculo apareció históricamente."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "La opción B señala que la idea del amor como razón para casarse surgió con el movimiento romántico."
-      }
-    ],
     "enfoque": {
-      "tema": "Apoyar una afirmación con evidencia histórica",
-      "que": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia.",
-      "pistas": [
-        "Busca la fecha o el movimiento que el autor relaciona con esa idea.",
-        "Comprueba si la opción explica que el vínculo apareció históricamente."
-      ],
       "clave": "La opción B señala que la idea del amor como razón para casarse surgió con el movimiento romántico.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible. Pero El cambio de roles laborales en los años cincuenta es otro tema y no fecha el origen del amor como base matrimonial."
+          "p": "Pero el cambio de roles laborales en los años cincuenta es otro tema y no fecha el origen del amor como base matrimonial."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible. Pero Es una descripción de la creencia actual presentada al comienzo, no evidencia histórica de su surgimiento."
+          "p": "Pero es una descripción de la creencia actual presentada al comienzo, no evidencia histórica de su surgimiento."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible. Pero No corresponde a la idea central: el texto indica que esa asociación aparece antes y se afianza luego."
+          "p": "Pero no corresponde a la idea central: el texto indica que esa asociación aparece antes y se afianza luego."
         }
+      ],
+      "pistas": [
+        "Busca la fecha o el movimiento que el autor relaciona con esa idea.",
+        "Comprueba si la opción explica que el vínculo apareció históricamente."
       ],
       "plan": [
         {
@@ -59,79 +31,108 @@
         {
           "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
         }
-      ]
+      ],
+      "que": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia.",
+      "tema": "Apoyar una afirmación con evidencia histórica"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos con cuidado qué pide la pregunta.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos con cuidado qué pide la pregunta."
         },
         {
-          "t": "La expresión «no siempre ha sido considerado como la base de la familia» orienta la lectura.",
-          "a": "m:no siempre ha sido considerado como la base de la familia"
+          "a": "m:no siempre ha sido considerado como la base de la familia",
+          "t": "La expresión «no siempre ha sido considerado como la base de la familia» orienta la lectura."
         },
         {
-          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con el texto o la imagen.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Retoma la pista y relaciónala con el texto o la imagen."
         },
         {
-          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia."
         },
         {
-          "t": "Opción A: El cambio de roles laborales en los años cincuenta es otro tema y no fecha el origen del amor como base matrimonial. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El cambio de roles laborales en los años cincuenta es otro tema y no fecha el origen del amor como base matrimonial. La descartamos."
         },
         {
-          "t": "Opción C: Es una descripción de la creencia actual presentada al comienzo, no evidencia histórica de su surgimiento. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Es una descripción de la creencia actual presentada al comienzo, no evidencia histórica de su surgimiento. La descartamos."
         },
         {
-          "t": "Opción D: No corresponde a la idea central: el texto indica que esa asociación aparece antes y se afianza luego. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: No corresponde a la idea central: el texto indica que esa asociación aparece antes y se afianza luego. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué información debo localizar o interpretar.",
           "a": "leer",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué información debo localizar o interpretar."
         },
         {
-          "t": "Busca la fecha o el movimiento que el autor relaciona con esa idea.",
-          "a": "p:0"
+          "a": "p:0",
+          "t": "Busca la fecha o el movimiento que el autor relaciona con esa idea."
         },
         {
-          "t": "Comprueba si la opción explica que el vínculo apareció históricamente.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Comprueba si la opción explica que el vínculo apareció históricamente."
         },
         {
-          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia.",
-          "a": "p:2"
+          "a": "p:2",
+          "t": "El texto ubica el surgimiento de la idea de que el amor debe ser la razón del matrimonio en el siglo dieciocho, ligada al movimiento romántico. Esa referencia histórica demuestra que no fue siempre la base de la familia."
         },
         {
-          "t": "La opción B señala que la idea del amor como razón para casarse surgió con el movimiento romántico.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B señala que la idea del amor como razón para casarse surgió con el movimiento romántico."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista de lectura",
+        "frag": "no siempre ha sido considerado como la base de la familia",
+        "nota": "Este fragmento orienta la interpretación de la pregunta.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Busca la fecha o el movimiento que el autor relaciona con esa idea.",
+        "titulo": "Ubica la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Comprueba si la opción explica que el vínculo apareció históricamente.",
+        "titulo": "Relaciona las ideas"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B señala que la idea del amor como razón para casarse surgió con el movimiento romántico.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

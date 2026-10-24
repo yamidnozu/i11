@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "menor a mayor",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «menor a mayor» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "720<1.000<5.200<6.760"
-        ],
-        "nota": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Las cantidades son: R1, $10^3=1.000$; R2, $10\\cdot9\\cdot8=720$; R3, $26\\cdot26\\cdot10=6.760$; R4, $52\\cdot10\\cdot10=5.200$. De menor a mayor: R2, R1, R4 y R3."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: menor a mayor",
-      "que": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
-      "pistas": [
-        "Fíjate en «menor a mayor».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero ubica a la regla uno (mil) antes de la regla dos (setecientos veinte), ordenando de forma incorrecta los dos menores."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero ordena la regla tres (seis mil setecientos sesenta) antes de la regla cuatro (cinco mil doscientos), cuando cinco mil doscientos es menor."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero coloca la regla tres antes de la regla uno, cuando seis mil setecientos sesenta es mayor que mil."
         }
+      ],
+      "pistas": [
+        "Calcula la cantidad de contraseñas permitidas por cada regla: mil en la primera, setecientos veinte en la segunda, seis mil setecientos sesenta en la tercera y cinco mil doscientos en la cuarta.",
+        "Ordena los resultados de menor a mayor cantidad de opciones: regla dos menor que regla uno, menor que regla cuatro, menor que regla tres."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "720<1.000<5.200<6.760"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
+      "tema": "Matemáticas: menor a mayor"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «menor a mayor» orienta la estrategia.",
-          "a": "m:menor a mayor"
+          "a": "m:menor a mayor",
+          "t": "La frase «menor a mayor» orienta la estrategia."
         },
         {
-          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ],
       "3": [
         {
-          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción."
         },
         {
-          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "menor a mayor",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «menor a mayor» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "720<1.000<5.200<6.760"
+        ],
+        "nota": "Los conteos son mil, setecientos veinte, seis mil setecientos sesenta y cinco mil doscientos. En orden de menor a mayor quedan la segunda, la primera, la cuarta y la tercera restricción.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Las cantidades son: R1, $10^3=1.000$; R2, $10\\cdot9\\cdot8=720$; R3, $26\\cdot26\\cdot10=6.760$; R4, $52\\cdot10\\cdot10=5.200$. De menor a mayor: R2, R1, R4 y R3."
+      }
+    ]
+  },
+  "revisar": []
 }

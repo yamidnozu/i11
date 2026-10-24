@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "señalamientos en contra del alcalde obedecen",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Relaciona la compra de los predios con la decisión posterior sobre las obras."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Distingue una denuncia de interés personal de una crítica general a la inversión rural."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C explica que los denunciantes ven indicios de que el alcalde abusó de su poder para favorecer sus predios."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir un posible conflicto de intereses en una decisión pública",
-      "que": "El alcalde y sus allegados compraron terrenos y luego el mandatario incluyó obras públicas que aumentaron su valor. Esa secuencia ofrece indicios de que usó el cargo para beneficiar intereses propios, lo que sustenta el señalamiento de abuso de poder.",
+      "clave": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque presupone que la denuncia obedece a envidia o falta de beneficio de los vecinos, ignorando el presunto delito contra la administración."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque los habitantes no critican la ausencia de infraestructura, sino la desviación interesada de recursos hacia terrenos del alcalde."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque falsea la motivación de los denunciantes presentándolos como opositores a la inversión rural, cuando reprochan el enriquecimiento indebido."
+        }
+      ],
       "pistas": [
         "Relaciona la compra de los predios con la decisión posterior sobre las obras.",
         "Distingue una denuncia de interés personal de una crítica general a la inversión rural."
       ],
-      "clave": "La opción C explica que los denunciantes ven indicios de que el alcalde abusó de su poder para favorecer sus predios.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero El señalamiento no depende de que los denunciantes recibieran o no una ganancia."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El alcalde sí realizó obras; la denuncia cuestiona quién se beneficia y cómo se decidieron."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero El texto no dice que los denunciantes se opongan a toda inversión rural."
-        }
-      ],
       "plan": [
         {
-          "t": "Relaciona la compra de los predios con la decisión posterior sobre las obras."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Distingue una denuncia de interés personal de una crítica general a la inversión rural."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «señalamientos en contra del alcalde obedecen» orienta el análisis.",
-          "a": "m:señalamientos en contra del alcalde obedecen"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El alcalde y sus allegados compraron terrenos y luego el mandatario incluyó obras públicas que aumentaron su valor. Esa secuencia ofrece indicios de que usó el cargo para beneficiar intereses propios, lo que sustenta el señalamiento de abuso de poder.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El alcalde y sus allegados compraron terrenos y luego el mandatario incluyó obras públicas que aumentaron su valor. Esa secuencia ofrece indicios de que usó el cargo para beneficiar intereses propios, lo que sustenta el señalamiento de abuso de poder.",
-          "a": "p:0"
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "Opción A: El señalamiento no depende de que los denunciantes recibieran o no una ganancia. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «no obtuvieron beneficio de las obras desarrolladas en el PBOT.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "Opción B: El alcalde sí realizó obras; la denuncia cuestiona quién se beneficia y cómo se decidieron. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «creen que el alcalde no ha hecho obras que beneficien al municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "Opción D: El texto no dice que los denunciantes se opongan a toda inversión rural. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «no quieren que el alcalde invierta en las zonas rurales del municipio.», Pero no responde al criterio central: Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Relaciona la compra de los predios con la decisión posterior sobre las obras.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados."
         },
         {
-          "t": "Distingue una denuncia de interés personal de una crítica general a la inversión rural.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El alcalde y sus allegados compraron terrenos y luego el mandatario incluyó obras públicas que aumentaron su valor. Esa secuencia ofrece indicios de que usó el cargo para beneficiar intereses propios, lo que sustenta el señalamiento de abuso de poder.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C explica que los denunciantes ven indicios de que el alcalde abusó de su poder para favorecer sus predios.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El alcalde de un municipio, su abogado aseso",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De acuerdo con el texto anterior, los señalamientos en contra del alcalde obedecen a que los denunciantes",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Los denunciantes señalan un posible conflicto de interés: el alcalde habría destinado recursos públicos a obras que valorizaban terrenos comprados por él y sus allegados. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "situaciones está de acuerdo con lo anterior",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Identifica qué impuestos se relacionan con la capacidad económica."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca la medida que aumenta la carga sobre quienes tienen más recursos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D aumenta impuestos al patrimonio y a la renta, coherente con cobrar más a quienes tienen más recursos."
-      }
-    ],
     "enfoque": {
-      "tema": "Aplicar el principio de impuestos progresivos",
-      "que": "La idea propone que quienes tienen más recursos paguen más impuestos. Aumentar los impuestos al patrimonio y a la renta de quienes poseen bienes e ingresos corresponde a ese principio.",
+      "clave": "Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque aplicar una tasa impositiva plana para todos los ciudadanos es un esquema regresivo que desconoce la capacidad de pago."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque fijar gravámenes homogéneos independientemente del nivel socioeconómico traslada la carga a las clases medias y bajas."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque recortar subsidios a servicios públicos perjudica a los sectores desfavorecidos y contradice la equidad distributiva."
+        }
+      ],
       "pistas": [
         "Identifica qué impuestos se relacionan con la capacidad económica.",
         "Busca la medida que aumenta la carga sobre quienes tienen más recursos."
       ],
-      "clave": "La opción D aumenta impuestos al patrimonio y a la renta, coherente con cobrar más a quienes tienen más recursos.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero Una misma tasa promedio para todos no diferencia según los recursos de cada persona."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero El IVA grava el consumo y no necesariamente aumenta más para quienes poseen más patrimonio."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Quitar subsidios a servicios públicos puede perjudicar más a hogares con menos recursos."
-        }
-      ],
       "plan": [
         {
-          "t": "Identifica qué impuestos se relacionan con la capacidad económica."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca la medida que aumenta la carga sobre quienes tienen más recursos."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «situaciones está de acuerdo con lo anterior» orienta el análisis.",
-          "a": "m:situaciones está de acuerdo con lo anterior"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "La idea propone que quienes tienen más recursos paguen más impuestos. Aumentar los impuestos al patrimonio y a la renta de quienes poseen bienes e ingresos corresponde a ese principio.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "La idea propone que quienes tienen más recursos paguen más impuestos. Aumentar los impuestos al patrimonio y a la renta de quienes poseen bienes e ingresos corresponde a ese principio.",
-          "a": "p:0"
+          "t": "Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio."
         },
         {
-          "t": "Opción A: Una misma tasa promedio para todos no diferencia según los recursos de cada persona. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «En el país A, la tasa promedio de impuestos es el un dato…», Pero no responde al criterio central: Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio."
         },
         {
-          "t": "Opción B: El IVA grava el consumo y no necesariamente aumenta más para quienes poseen más patrimonio. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «En el país B, el Gobierno autoriza aumentar el impuesto del IVA.», Pero no responde al criterio central: Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio."
         },
         {
-          "t": "Opción C: Quitar subsidios a servicios públicos puede perjudicar más a hogares con menos recursos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «En el país C, el Gobierno quita los subsidios para los servicios…», Pero no responde al criterio central: Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Identifica qué impuestos se relacionan con la capacidad económica.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio."
         },
         {
-          "t": "Busca la medida que aumenta la carga sobre quienes tienen más recursos.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "La idea propone que quienes tienen más recursos paguen más impuestos. Aumentar los impuestos al patrimonio y a la renta de quienes poseen bienes e ingresos corresponde a ese principio.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción D aumenta impuestos al patrimonio y a la renta, coherente con cobrar más a quienes tienen más recursos.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Algunas tendencias del liberalismo promueven",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "acuerdo con lo anterior?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Un impuesto progresivo grava más a quienes tienen más recursos; subir los impuestos al patrimonio y a la renta se ajusta a ese principio. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Los siguientes magnicidios tuvieron incidenc",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "El orden cronológico de ocurrencia de estos hechos es",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente. La respuesta es B."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Ubica a Gaitán antes que a Uribe Uribe, aunque el asesinato de Uribe ocurrió primero. Pero la secuencia correcta inicia con el hecho numerado tres."
+          "p": "Pero es incorrecta porque ubica el magnicidio de Gaitán (1948) antes del asesinato del general Rafael Uribe Uribe en 1914."
         },
         {
           "t": "Opción C",
-          "p": "Pone el asesinato de Galán antes que el de Gaitán, aunque ocurrió décadas después. Pero el orden cronológico ubica primero a Gaitán."
+          "p": "Pero es incorrecta porque invierte el orden de Galán (1989) y Gaitán (1948), situando erróneamente a Galán antes de los sucesos de El Bogotazo."
         },
         {
           "t": "Opción D",
-          "p": "Empieza con Gómez Hurtado, cuyo asesinato fue el más reciente de la lista. Pero la secuencia debe ir del hecho más antiguo al más reciente."
+          "p": "Pero es incorrecta porque arranca con el magnicidio más reciente de la lista, el de Álvaro Gómez Hurtado acaecido en 1995."
         }
+      ],
+      "pistas": [
+        "Ubica cada magnicidio por su año, sin seguir el orden en que aparece enumerado.",
+        "Ordena los hechos desde el más antiguo hasta el más reciente."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción B satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente. La respuesta es B."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente."
         },
         {
-          "t": "Ubica a Gaitán antes que a Uribe Uribe, aunque el asesinato de Uribe ocurrió primero. Pero la secuencia correcta inicia con el hecho numerado tres.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Ubica a Gaitán antes que a Uribe Uribe, aunque el asesinato de Uribe ocurrió primero. Pero la secuencia correcta inicia con el hecho numerado tres."
         },
         {
-          "t": "Pone el asesinato de Galán antes que el de Gaitán, aunque ocurrió décadas después. Pero el orden cronológico ubica primero a Gaitán.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Pone el asesinato de Galán antes que el de Gaitán, aunque ocurrió décadas después. Pero el orden cronológico ubica primero a Gaitán."
         },
         {
-          "t": "Empieza con Gómez Hurtado, cuyo asesinato fue el más reciente de la lista. Pero la secuencia debe ir del hecho más antiguo al más reciente.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Empieza con Gómez Hurtado, cuyo asesinato fue el más reciente de la lista. Pero la secuencia debe ir del hecho más antiguo al más reciente."
         },
         {
-          "t": "La opción B es la que sí responde a la pregunta.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La opción B es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente."
         },
         {
-          "t": "Por eso la opción B se sostiene con la evidencia del enunciado.",
           "a": "o:B:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción B se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Los siguientes magnicidios tuvieron incidenc",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "El orden cronológico de ocurrencia de estos hechos es",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El orden temporal es Rafael Uribe Uribe, Jorge Eliécer Gaitán, Luis Carlos Galán y Álvaro Gómez Hurtado. Sus asesinatos ocurrieron en 1914, 1948, 1989 y 1995, respectivamente. La respuesta es B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

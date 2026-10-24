@@ -1,57 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "En un periódico de la ciudad han aparecido c",
-        "rol": "dato",
-        "nota": "Contexto que orienta la interpretación."
-      },
-      {
-        "frag": "Antes de creer que el alcalde está haciendo mal su trabajo en materia de seguridad, ¿qué deberían revisar los ciudadanos principalmente?",
-        "rol": "pide",
-        "nota": "Criterio que se debe resolver."
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la pregunta",
-        "texto": "Separa la información del caso de la decisión que te piden tomar."
-      },
-      {
-        "k": "vida",
-        "titulo": "Contrasta las alternativas",
-        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretación de argumentos y contexto social",
-      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
-      "pistas": [
-        "Ubica quién sostiene cada argumento y qué interés expresa.",
-        "Distingue los datos explícitos de las suposiciones."
-      ],
       "clave": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La opción A plantea «El plan de gobierno para ver si había propuestas en el tema de…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
+          "p": "Pero es incorrecta porque el plan de gobierno contiene las intenciones o promesas del candidato, no las estadísticas empíricas de delitos cometidos."
         },
         {
           "t": "Opción B",
-          "p": "La opción B plantea «Los índices de criminalidad en otras ciudades del país y de los…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
+          "p": "Pero es incorrecta porque las cifras de criminalidad foráneas obedecen a factores externos y no permiten medir la gestión policial interna de la ciudad."
         },
         {
           "t": "Opción D",
-          "p": "La opción D plantea «Las declaraciones oficiales del alcalde sobre si lo está haciendo…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
+          "p": "Pero es incorrecta porque las afirmaciones del propio alcalde son declaraciones de parte interesada que no constituyen evidencia empírica contrastable."
         }
+      ],
+      "pistas": [
+        "No tomes el titular como evidencia suficiente.",
+        "Busca datos que permitan comparar la situación antes y durante la gestión."
       ],
       "plan": [
         {
@@ -63,7 +31,9 @@
         {
           "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
@@ -74,8 +44,8 @@
           "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C."
         }
       ],
       "2": [
@@ -86,50 +56,81 @@
           "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "La opción A plantea «El plan de gobierno para ver si había propuestas en el tema de…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «El plan de gobierno para ver si había propuestas en el tema de…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "La opción B plantea «Los índices de criminalidad en otras ciudades del país y de los…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Los índices de criminalidad en otras ciudades del país y de los…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "La opción D plantea «Las declaraciones oficiales del alcalde sobre si lo está haciendo…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Las declaraciones oficiales del alcalde sobre si lo está haciendo…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "La opción C es la que sí responde a la pregunta.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "Por eso la opción C se sostiene con la evidencia del enunciado.",
           "a": "o:C:ok",
-          "k": "contra"
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado.",
           "a": "o:A:no|o:B:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La respuesta correcta es C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En un periódico de la ciudad han aparecido c",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "Antes de creer que el alcalde está haciendo mal su trabajo en materia de seguridad, ¿qué deberían revisar los ciudadanos principalmente?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

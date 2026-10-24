@@ -1,150 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "más rentable",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «más rentable» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "300.000-(60.000+80.000)=160.000"
-        ],
-        "nota": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: más rentable",
-      "que": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
-      "pistas": [
-        "Fíjate en «más rentable».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
+      "clave": "La venta genera $300.000$ adicionales en Z; los gastos aumentan $140.000$. La diferencia favorece la rentabilidad en Z.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero el ingreso de venta es mayor en Z, pero la rentabilidad requiere comparar también los gastos."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero la diferencia del precio de venta es por tonelada; debe multiplicarse por seis y compararse con los gastos de dos camiones."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero los gastos de transporte y trabajadores son mayores en Z, no en W."
         }
+      ],
+      "pistas": [
+        "Seis toneladas superan la capacidad de un camión.",
+        "En cada camión viajan dos trabajadores y se paga por trabajador y viaje."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
-        },
-        {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
-            "300.000-(60.000+80.000)=160.000"
-          ]
+            "$6 × 50.000 = 300.000$"
+          ],
+          "t": "Calcula el aumento de los ingresos de venta por seis toneladas."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "eq": [
+            "$2 × (30.000 + 2 × 20.000) = 140.000$"
+          ],
+          "t": "Calcula el gasto adicional en los dos camiones y sus trabajadores."
+        },
+        {
+          "t": "Compara las dos diferencias para decidir si la ganancia aumenta."
         }
-      ]
+      ],
+      "que": "Calcula la diferencia de ingresos por seis toneladas y compárala con los gastos de los dos camiones que se necesitan.",
+      "tema": "Comparar rentabilidad entre ciudades"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "m:6 toneladas de mango",
+          "t": "¿Cuántos camiones se necesitan para llevar seis toneladas?"
         },
         {
-          "t": "La frase «más rentable» orienta la estrategia.",
-          "a": "m:más rentable"
+          "t": "Se necesitan dos. La venta deja $300.000$ más en Z y los gastos aumentan $140.000$."
         },
         {
-          "t": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El ingreso adicional supera el gasto adicional. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Compara las diferencias de ingresos y gastos para las seis toneladas."
         },
         {
-          "t": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
-          "a": "p:1"
+          "t": "El ingreso aumenta $6 × 50.000 = 300.000$. Dos camiones generan $140.000$ más de transporte y salarios en Z."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A solo compara ventas; no resta los gastos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B compara valores unitarios sin multiplicar por la carga ni considerar ambos camiones."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D invierte el sentido: los gastos son mayores en Z."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Como el aumento de ingresos supera los gastos adicionales, la respuesta es C."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La diferencia de venta por tonelada es $1.350.000 - 1.300.000 = 50.000$; para seis toneladas son $300.000$."
         },
         {
-          "t": "La diferencia de ingresos por vender seis toneladas de mango es $6(1.350.000-1.300.000)=300.000$. La diferencia de gastos entre ciudades es menor: dos camiones implican $60.000$ más de transporte en Z y cuatro trabajadores implican $80.000$ más de pago. La ventaja neta de Z es $160.000$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Para cada camión, Z aumenta $30.000$ en transporte y $40.000$ en salarios. Dos camiones cuestan $140.000$ adicionales."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La ganancia comparativa favorece Z en $160.000$; por eso la afirmación es correcta."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "A omite los gastos; B compara unidades distintas; D afirma que W cuesta más cuando los datos muestran lo contrario."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Cantidad transportada",
+        "frag": "6 toneladas de mango",
+        "nota": "Compara los ingresos y gastos para esta cantidad, que requiere dos camiones.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Criterio de comparación",
+        "frag": "más rentable",
+        "nota": "La rentabilidad compara el ingreso adicional con los gastos adicionales.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "El precio de venta por tonelada aumenta al viajar a Z. También aumentan los costos de transporte y de los trabajadores para los dos camiones necesarios.",
+        "titulo": "Compara el cambio en ingresos y gastos"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$6 × (1.350.000 - 1.300.000) = 300.000$",
+          "$2 × (180.000 + 2 × 200.000) - 2 × (150.000 + 2 × 180.000) = 140.000$"
+        ],
+        "nota": "El aumento de ingresos supera el aumento de gastos en $160.000$. El costo de compra del mango es igual en ambas ciudades y se cancela al compararlas.",
+        "titulo": "Calcula las diferencias"
+      },
+      {
+        "k": "check",
+        "texto": "La ganancia aumenta más en Z que los gastos de transporte y trabajadores. La afirmación es correcta; la respuesta es C."
+      }
+    ]
+  },
+  "revisar": []
 }

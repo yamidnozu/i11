@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "vulnera más claramente el derecho a la educación",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Compara si cada medida mantiene o reduce la enseñanza."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca la alternativa que limita más las horas de educación."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción D reduce los días de asistencia y las horas de clase, afectando directamente el derecho a la educación."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar una medida por su efecto sobre el acceso educativo",
-      "que": "Trasladar a los niños solo dos veces por semana y reducir sus horas de clase disminuye directamente el tiempo y la continuidad de la educación que reciben. Las otras opciones buscan mantener el aprendizaje mediante ajustes o transporte.",
+      "clave": "Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque el transporte terrestre suele estar imposibilitado justamente por el colapso y bloqueo de los caminos anegados."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque cancelar las clases prolongadamente retrasa el desarrollo cognitivo y vulnera el derecho al acceso a la educación formal."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque la radio comunitaria es un complemento didáctico, pero no reemplaza la interacción directa del proceso pedagógico presencial."
+        }
+      ],
       "pistas": [
         "Compara si cada medida mantiene o reduce la enseñanza.",
         "Busca la alternativa que limita más las horas de educación."
       ],
-      "clave": "La opción D reduce los días de asistencia y las horas de clase, afectando directamente el derecho a la educación.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero El transporte permite que los estudiantes sigan asistiendo a clases en otro lugar."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Ajustar el calendario evita exponer a los estudiantes y conserva las clases en otro momento."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero La radio mantiene parte de la enseñanza durante las inundaciones."
-        }
-      ],
       "plan": [
         {
-          "t": "Compara si cada medida mantiene o reduce la enseñanza."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca la alternativa que limita más las horas de educación."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción D satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «vulnera más claramente el derecho a la educación» orienta el análisis.",
-          "a": "m:vulnera más claramente el derecho a la educación"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Trasladar a los niños solo dos veces por semana y reducir sus horas de clase disminuye directamente el tiempo y la continuidad de la educación que reciben. Las otras opciones buscan mantener el aprendizaje mediante ajustes o transporte.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa. La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Trasladar a los niños solo dos veces por semana y reducir sus horas de clase disminuye directamente el tiempo y la continuidad de la educación que reciben. Las otras opciones buscan mantener el aprendizaje mediante ajustes o transporte.",
-          "a": "p:0"
+          "t": "Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa."
         },
         {
-          "t": "Opción A: El transporte permite que los estudiantes sigan asistiendo a clases en otro lugar. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Organizar esquemas de transporte para que los estudiantes vayan a…», Pero no responde al criterio central: Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa."
         },
         {
-          "t": "Opción B: Ajustar el calendario evita exponer a los estudiantes y conserva las clases en otro momento. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Ajustar el calendario escolar para que no haya clases en las…», Pero no responde al criterio central: Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa."
         },
         {
-          "t": "Opción C: La radio mantiene parte de la enseñanza durante las inundaciones. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Dar una parte de las clases a través de la emisora de radio local,…», Pero no responde al criterio central: Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La opción D es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Compara si cada medida mantiene o reduce la enseñanza.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa."
         },
         {
-          "t": "Busca la alternativa que limita más las horas de educación.",
-          "a": "p:1"
+          "a": "o:D:ok",
+          "k": "contra",
+          "t": "Por eso la opción D se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Trasladar a los niños solo dos veces por semana y reducir sus horas de clase disminuye directamente el tiempo y la continuidad de la educación que reciben. Las otras opciones buscan mantener el aprendizaje mediante ajustes o transporte.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción D reduce los días de asistencia y las horas de clase, afectando directamente el derecho a la educación.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Durante las épocas de lluvias, en muchas zon",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "¿Cuál de las siguientes opciones vulnera más claramente el derecho a la educación?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Reducir las horas de clase y llevar a los niños a otra escuela solo dos días por semana limita más el acceso y la continuidad educativa. La respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

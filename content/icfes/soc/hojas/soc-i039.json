@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "el gobierno",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Observa si la comunidad fue consultada y participó en el acuerdo."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Compara el interés general de la represa con el trato dado a la comunidad."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción C reconoce la consulta y conciliación con la comunidad junto con la consideración del bien común."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar una decisión pública frente a derechos colectivos",
-      "que": "El gobierno consultó a la comunidad indígena, negoció una solución y acordó la reubicación mientras construía una obra de interés nacional. El proceso descrito muestra respeto por la comunidad y búsqueda del bien común.",
+      "clave": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque el gobierno precisamente evitó vulnerar los derechos indígenas al acoger sus peticiones y rediseñar el trazado de la obra."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque no se sacrificó el bienestar colectivo: la central hidroeléctrica se construyó y generará energía para toda la nación."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque el mecanismo adecuado y constitucionalmente preceptivo en territorios ancestrales es la consulta previa informada, no una consulta popular amplia."
+        }
+      ],
       "pistas": [
         "Observa si la comunidad fue consultada y participó en el acuerdo.",
         "Compara el interés general de la represa con el trato dado a la comunidad."
       ],
-      "clave": "La opción C reconoce la consulta y conciliación con la comunidad junto con la consideración del bien común.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero El caso señala que hubo un proceso de consulta y conciliación, no que se ignoraran los derechos de la comunidad."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero La decisión no se presenta como una acción contra el interés general; la represa generaría electricidad para el país."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero El caso describe una consulta con la comunidad afectada, no una consulta popular nacional."
-        }
-      ],
       "plan": [
         {
-          "t": "Observa si la comunidad fue consultada y participó en el acuerdo."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Compara el interés general de la represa con el trato dado a la comunidad."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «el gobierno» orienta el análisis.",
-          "a": "m:el gobierno"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El gobierno consultó a la comunidad indígena, negoció una solución y acordó la reubicación mientras construía una obra de interés nacional. El proceso descrito muestra respeto por la comunidad y búsqueda del bien común.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El gobierno consultó a la comunidad indígena, negoció una solución y acordó la reubicación mientras construía una obra de interés nacional. El proceso descrito muestra respeto por la comunidad y búsqueda del bien común.",
-          "a": "p:0"
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "Opción A: El caso señala que hubo un proceso de consulta y conciliación, no que se ignoraran los derechos de la comunidad. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «actuó en contra de los derechos de las comunidades indígenas.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "Opción B: La decisión no se presenta como una acción contra el interés general; la represa generaría electricidad para el país. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «favoreció a la comunidad indígena en contra del interés general.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "Opción D: El caso describe una consulta con la comunidad afectada, no una consulta popular nacional. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «debió hacer una consulta popular para resolver este problema.», Pero no responde al criterio central: El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Observa si la comunidad fue consultada y participó en el acuerdo.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común."
         },
         {
-          "t": "Compara el interés general de la represa con el trato dado a la comunidad.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El gobierno consultó a la comunidad indígena, negoció una solución y acordó la reubicación mientras construía una obra de interés nacional. El proceso descrito muestra respeto por la comunidad y búsqueda del bien común.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción C reconoce la consulta y conciliación con la comunidad junto con la consideración del bien común.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "El gobierno decidió construir una represa qu",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ta situación el gobierno",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "El Gobierno consultó a la comunidad, llegó a un acuerdo y consideró el suministro eléctrico nacional; la opción indicada presenta la conciliación como respeto y búsqueda del bien común. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

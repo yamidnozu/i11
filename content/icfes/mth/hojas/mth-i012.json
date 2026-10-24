@@ -1,53 +1,160 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      { "frag": "7 toneladas de fruta", "rol": "dato", "nota": "Esa carga requiere dos camiones por su capacidad máxima.", "campo": "Carga para W" },
-      { "frag": "relación de costos por ciudad", "rol": "pide", "nota": "Compara el gasto de transporte y los pagos a trabajadores en W y Z.", "campo": "Gráfica buscada" }
-    ],
-    "pasos": [
-      { "k": "idea", "titulo": "Cuenta los camiones y trabajadores", "texto": "Tanto siete como diez toneladas necesitan dos camiones. Cada uno lleva dos trabajadores." },
-      { "k": "tabla", "titulo": "Calcula los cuatro costos", "cols": ["Ciudad", "Transporte", "Trabajadores"], "filas": [["W", "$300.000", "$720.000"], ["Z", "$360.000", "$800.000"]] },
-      { "k": "check", "texto": "La opción B muestra dos camiones y cuatro trabajadores por ciudad, con los costos correctos." }
-    ],
     "enfoque": {
-      "tema": "Gráficas de costos por ciudad",
-      "que": "Calcula transporte y salarios con la cantidad de camiones y trabajadores requeridos; compara esos valores con las barras.",
-      "pistas": ["La capacidad máxima es cinco toneladas por camión.", "Cada camión requiere dos trabajadores por viaje."],
       "clave": "En W, transporte y salarios cuestan $300.000$ y $720.000$. En Z, cuestan $360.000$ y $800.000$; la gráfica correcta es B.",
       "no": [
-        { "t": "Opción A", "p": "Muestra el pago de trabajadores para un solo camión. Pero cada ciudad necesita dos camiones." },
-        { "t": "Opción C", "p": "Muestra el transporte de dos camiones, pero el pago de un solo camión. Pero se requieren dos equipos de trabajadores." },
-        { "t": "Opción D", "p": "Intercambia los costos de transporte y trabajadores entre las ciudades. Pero los valores mayores corresponden a Z." }
+        {
+          "t": "Opción A",
+          "p": "Pero la opción A muestra costos de trabajadores de un solo camión por ciudad, aunque en cada destino se necesitan dos."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero la opción C muestra transporte para dos camiones, pero pago de trabajadores como si se usara uno solo."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero la opción D intercambia los costos de las ciudades y no corresponde a la tabla."
+        }
+      ],
+      "pistas": [
+        "La capacidad máxima es cinco toneladas por camión.",
+        "Cada camión requiere dos trabajadores por viaje."
       ],
       "plan": [
-        { "t": "Determina cuántos camiones se requieren en cada ciudad." },
-        { "t": "Multiplica camiones por transporte y por dos trabajadores.", "eq": ["$W: 2 × 150.000 = 300.000$", "$W: 2 × 2 × 180.000 = 720.000$", "$Z: 2 × 180.000 = 360.000$", "$Z: 2 × 2 × 200.000 = 800.000$"] },
-        { "t": "Busca la opción cuyas barras representan esos cuatro costos." }
-      ]
+        {
+          "t": "Determina cuántos camiones se requieren en cada ciudad."
+        },
+        {
+          "eq": [
+            "$W: 2 × 150.000 = 300.000$",
+            "$W: 2 × 2 × 180.000 = 720.000$",
+            "$Z: 2 × 180.000 = 360.000$",
+            "$Z: 2 × 2 × 200.000 = 800.000$"
+          ],
+          "t": "Multiplica camiones por transporte y por dos trabajadores."
+        },
+        {
+          "t": "Busca la opción cuyas barras representan esos cuatro costos."
+        }
+      ],
+      "que": "Calcula transporte y salarios con la cantidad de camiones y trabajadores requeridos; compara esos valores con las barras.",
+      "tema": "Gráficas de costos por ciudad"
     },
     "guion": {
       "1": [
-        { "t": "¿Cuántos camiones hacen falta para siete toneladas si cada uno lleva máximo cinco?", "a": "m:7 toneladas de fruta" },
-        { "t": "Se necesitan dos en W y dos en Z. El transporte cuesta $300.000$ y $360.000$; los trabajadores, $720.000$ y $800.000$." },
-        { "t": "La gráfica B reúne esos valores.", "a": "o:B:ok" }
+        {
+          "a": "m:7 toneladas de fruta",
+          "t": "¿Cuántos camiones hacen falta para siete toneladas si cada uno lleva máximo cinco?"
+        },
+        {
+          "t": "Se necesitan dos en W y dos en Z. El transporte cuesta $300.000$ y $360.000$; los trabajadores, $720.000$ y $800.000$."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La gráfica B reúne esos valores."
+        }
       ],
       "2": [
-        { "t": "Calcula por separado el transporte y el pago de trabajadores en cada ciudad." },
-        { "t": "En W: $2 × 150.000 = 300.000$ y $2 × 2 × 180.000 = 720.000$. En Z: $2 × 180.000 = 360.000$ y $2 × 2 × 200.000 = 800.000$." },
-        { "t": "La opción A usa salarios para un camión, no dos.", "a": "o:A:no", "k": "err" },
-        { "t": "La opción C combina transporte de dos camiones con salarios de uno.", "a": "o:C:no", "k": "err" },
-        { "t": "La opción D intercambia los costos por ciudad.", "a": "o:D:no", "k": "err" },
-        { "t": "La opción B muestra los cuatro costos calculados.", "a": "o:B:ok" }
+        {
+          "t": "Calcula por separado el transporte y el pago de trabajadores en cada ciudad."
+        },
+        {
+          "t": "En W: $2 × 150.000 = 300.000$ y $2 × 2 × 180.000 = 720.000$. En Z: $2 × 180.000 = 360.000$ y $2 × 2 × 200.000 = 800.000$."
+        },
+        {
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A usa salarios para un camión, no dos."
+        },
+        {
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C combina transporte de dos camiones con salarios de uno."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D intercambia los costos por ciudad."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La opción B muestra los cuatro costos calculados."
+        }
       ],
       "3": [
-        { "t": "Las dos cargas superan cinco toneladas y no exceden diez; por eso cada ciudad requiere dos camiones.", "a": "p:0", "k": "ana" },
-        { "t": "Para W, los gastos son $2 × 150.000 = 300.000$ de transporte y $4 × 180.000 = 720.000$ de salarios. Para Z, son $2 × 180.000 = 360.000$ y $4 × 200.000 = 800.000$.", "a": "p:1" },
-        { "t": "Solo B representa los valores calculados y conserva la categoría de cada gasto.", "a": "p:2", "k": "contra" },
-        { "t": "A y C subestiman los salarios; D intercambia los valores entre ciudades.", "a": "o:A:no|o:C:no|o:D:no", "k": "err" },
-        { "t": "La respuesta correcta es B.", "a": "o:B:ok" }
+        {
+          "a": "p:0",
+          "k": "ana",
+          "t": "Las dos cargas superan cinco toneladas y no exceden diez; por eso cada ciudad requiere dos camiones."
+        },
+        {
+          "a": "p:1",
+          "t": "Para W, los gastos son $2 × 150.000 = 300.000$ de transporte y $4 × 180.000 = 720.000$ de salarios. Para Z, son $2 × 180.000 = 360.000$ y $4 × 200.000 = 800.000$."
+        },
+        {
+          "a": "p:2",
+          "k": "contra",
+          "t": "Solo B representa los valores calculados y conserva la categoría de cada gasto."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A y C subestiman los salarios; D intercambia los valores entre ciudades."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
+        }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Carga para W",
+        "frag": "7 toneladas de fruta",
+        "nota": "Esa carga requiere dos camiones por su capacidad máxima.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Gráfica buscada",
+        "frag": "relación de costos por ciudad",
+        "nota": "Compara el gasto de transporte y los pagos a trabajadores en W y Z.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Tanto siete como diez toneladas necesitan dos camiones. Cada uno lleva dos trabajadores.",
+        "titulo": "Cuenta los camiones y trabajadores"
+      },
+      {
+        "cols": [
+          "Ciudad",
+          "Transporte",
+          "Trabajadores"
+        ],
+        "filas": [
+          [
+            "W",
+            "$300.000",
+            "$720.000"
+          ],
+          [
+            "Z",
+            "$360.000",
+            "$800.000"
+          ]
+        ],
+        "k": "tabla",
+        "titulo": "Calcula los cuatro costos"
+      },
+      {
+        "k": "check",
+        "texto": "La opción B muestra dos camiones y cuatro trabajadores por ciudad, con los costos correctos."
+      }
+    ]
+  },
+  "revisar": []
 }

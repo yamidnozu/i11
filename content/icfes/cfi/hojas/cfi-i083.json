@@ -1,38 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "concentración volumen-volumen del 78%",
-        "rol": "dato",
-        "nota": "El enunciado aporta datos que permiten reconocer los productos o comparar las soluciones.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "¿cuál ácido debería emplearse?",
-        "rol": "pide",
-        "nota": "La frase señala qué conclusión debes elegir.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Comparar concentraciones expresadas como proporción volumen-volumen."
-      },
-      {
-        "k": "idea",
-        "texto": "Calcula la proporción del ácido nítrico en la solución y compárala con la del ácido sulfúrico."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción B responda al enunciado y a las pruebas descritas."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar concentraciones expresadas como proporción volumen-volumen.",
-      "que": "Calcula la proporción del ácido nítrico en la solución y compárala con la del ácido sulfúrico.",
+      "clave": "El ácido nítrico representa cincuenta y seis por ciento de la solución. El ácido sulfúrico está al setenta y ocho por ciento, por eso tiene la concentración mayor.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero a compara volúmenes absolutos y no calcula la proporción de ácido en la solución."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero c confunde el volumen de ácido con el porcentaje de concentración."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero d deduce la concentración por el volumen de solución, no por la proporción de ácido."
+        }
+      ],
+      "pistas": [
+        "concentración volumen-volumen del 78%",
+        "El ácido nítrico representa cincuenta y seis por ciento de la solución. El ácido sulfúrico está al setenta y ocho por ciento, por eso tiene la concentración mayor."
+      ],
       "plan": [
         {
           "t": "Comparar concentraciones expresadas como proporción volumen-volumen."
@@ -44,25 +32,8 @@
           "t": "Elige la opción B y confirma que se desprenda de los datos."
         }
       ],
-      "pistas": [
-        "concentración volumen-volumen del 78%",
-        "El ácido nítrico representa cincuenta y seis por ciento de la solución. El ácido sulfúrico está al setenta y ocho por ciento, por eso tiene la concentración mayor."
-      ],
-      "clave": "El ácido nítrico representa cincuenta y seis por ciento de la solución. El ácido sulfúrico está al setenta y ocho por ciento, por eso tiene la concentración mayor.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "A compara volúmenes absolutos y no las proporciones de ácido en cada solución."
-        },
-        {
-          "t": "Opción C",
-          "p": "C confunde el volumen de ácido con la concentración porcentual."
-        },
-        {
-          "t": "Opción D",
-          "p": "D infiere la concentración a partir del volumen total de solución, no de la proporción."
-        }
-      ]
+      "que": "Calcula la proporción del ácido nítrico en la solución y compárala con la del ácido sulfúrico.",
+      "tema": "Comparar concentraciones expresadas como proporción volumen-volumen."
     },
     "guion": {
       "1": [
@@ -113,6 +84,36 @@
           "t": "La conclusión queda justificada con los datos del reactivo."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato",
+        "frag": "concentración volumen-volumen del 78%",
+        "nota": "El enunciado aporta datos que permiten reconocer los productos o comparar las soluciones.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Pregunta",
+        "frag": "¿cuál ácido debería emplearse?",
+        "nota": "La frase señala qué conclusión debes elegir.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Comparar concentraciones expresadas como proporción volumen-volumen."
+      },
+      {
+        "k": "idea",
+        "texto": "Calcula la proporción del ácido nítrico en la solución y compárala con la del ácido sulfúrico."
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que la opción B responda al enunciado y a las pruebas descritas."
+      }
+    ]
+  },
+  "revisar": []
 }

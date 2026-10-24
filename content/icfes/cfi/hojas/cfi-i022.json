@@ -1,118 +1,148 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "Si en la primera extracción del sorteo se obtuvo 2",
-        "rol": "dato",
-        "nota": "El primer resultado ya está fijado; solo cuentan las dos extracciones que faltan.",
-        "campo": "Condición"
-      },
-      {
-        "frag": "es más probable que el estudiante que escogió el número 10 gane la rifa a que la gane el estudiante con el número 7",
-        "rol": "pide",
-        "nota": "Debes comparar cuántos resultados ordenados completan cada suma.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Resta el resultado ya obtenido de cada número que se quiere formar."
-      },
-      {
-        "k": "idea",
-        "texto": "Cuenta los pares ordenados posibles para las dos extracciones restantes."
-      },
-      {
-        "k": "check",
-        "texto": "Compara los conteos: el total de resultados posibles es el mismo para ambas sumas."
-      }
-    ],
     "enfoque": {
-      "tema": "Conteo de resultados en un experimento aleatorio",
-      "que": "Comparar la probabilidad de dos sumas después de fijar el resultado de una extracción.",
-      "plan": [
-        {
-          "t": "Determina cuánto deben sumar las dos extracciones restantes para cada número."
-        },
-        {
-          "t": "Enumera los pares posibles teniendo en cuenta que importa el orden."
-        },
-        {
-          "t": "Compara cuántos pares producen cada suma."
-        }
-      ],
-      "pistas": [
-        "La primera extracción fue $2$.",
-        "La urna se repone después de cada extracción."
-      ],
-      "clave": "Para obtener $10$, los dos resultados restantes deben sumar $8$; esto ocurre en cinco pares ordenados. Para obtener $7$, deben sumar $5$; esto ocurre en cuatro pares. La opción B indica que el primer estudiante tiene una posibilidad más.",
+      "clave": "Para llegar a diez hay cinco parejas ordenadas; para llegar a siete hay cuatro.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, Que el número sea mayor no aumenta por sí solo su probabilidad; importa cuántos pares completan la suma."
+          "p": "Pero el tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas."
         },
         {
           "t": "Opción C",
-          "p": "Pero, No se sabe que sea más probable obtener números pares, y la paridad no determina el conteo requerido."
+          "p": "Pero no es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma."
         },
         {
           "t": "Opción D",
-          "p": "Pero, La comparación de distancias no da la probabilidad; hay que contar los pares de resultados."
+          "p": "Pero la distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
         }
-      ]
+      ],
+      "pistas": [
+        "Ten en cuenta que tras extraer la primera balota con el número 2, quedan 15 balotas numeradas en la urna.",
+        "Cuenta las combinaciones de balotas que suman 10 frente a las que suman 7 para comparar las probabilidades de ganar."
+      ],
+      "plan": [
+        {
+          "t": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto."
+        },
+        {
+          "t": "Compara las sumas restantes."
+        },
+        {
+          "t": "El diez tiene una pareja posible más; corresponde a B."
+        }
+      ],
+      "que": "Compara las formas de completar dos sumas después de la primera extracción.",
+      "tema": "Probabilidad al sumar extracciones con reposición"
     },
     "guion": {
       "1": [
         {
-          "t": "La primera balota ya dio $2$, así que calculamos qué deben sumar las dos que faltan."
+          "t": "Después de sacar dos, ¿qué suma necesitan las dos balotas restantes para obtener diez y para obtener siete?"
         },
         {
-          "t": "Para llegar a $10$ necesitan sumar $8$; para llegar a $7$ necesitan sumar $5$."
+          "t": "Necesitan ocho para diez y cinco para siete. La suma ocho tiene cinco parejas ordenadas; la suma cinco tiene cuatro."
         },
         {
           "a": "o:B:ok",
-          "t": "La primera suma tiene cinco pares ordenados y la segunda cuatro."
+          "t": "El diez es más probable. La respuesta es B."
         }
       ],
       "2": [
         {
+          "t": "Cuenta las parejas ordenadas de balotas que suman ocho y las que suman cinco."
+        },
+        {
+          "t": "Hay cinco para ocho y cuatro para cinco."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Que el número sea mayor no aumenta por sí solo su probabilidad; importa cuántos pares completan la suma."
+          "t": "La opción A: El tamaño del número escogido no determina la probabilidad; importa cuántas parejas de extracciones completan la suma. Pero cada puntaje tiene posibilidades distintas."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "No se sabe que sea más probable obtener números pares, y la paridad no determina el conteo requerido."
+          "t": "La opción C: No es más probable seguir sacando números pares; todas las balotas tienen la misma probabilidad en cada extracción. Pero se deben contar las parejas ordenadas que completan cada suma."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La comparación de distancias no da la probabilidad; hay que contar los pares de resultados."
+          "t": "La opción D: La distancia entre los números no mide cuántas combinaciones de balotas producen cada resultado. Pero la suma final depende de las extracciones."
         },
         {
           "a": "o:B:ok",
-          "t": "Para obtener $10$, los dos resultados restantes deben sumar $8$; esto ocurre en cinco pares ordenados. Para obtener $7$, deben sumar $5$; esto ocurre en cuatro pares. La opción B indica que el primer estudiante tiene una posibilidad más."
+          "t": "A y C no cuentan resultados; D compara distancias que no determinan el sorteo. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Enumera los pares de resultados posibles después de la primera extracción."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Con la primera balota igual a dos, el diez requiere que las otras sumen ocho; el siete requiere que sumen cinco."
         },
         {
-          "t": "La suma $8$ tiene más combinaciones ordenadas que la suma $5$."
+          "a": "p:1",
+          "t": "Ocho tiene cinco parejas posibles y cinco tiene cuatro, con reposición y orden de extracción."
         },
         {
-          "t": "Como cada par tiene la misma probabilidad, la suma que tiene más pares es más probable."
+          "a": "p:2",
+          "k": "contra",
+          "t": "Por eso el diez tiene una posibilidad adicional."
+        },
+        {
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A, C y D no comparan los resultados posibles de las dos extracciones."
         },
         {
           "a": "o:B:ok",
-          "t": "La opción B expresa esa diferencia de una posibilidad."
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "se vuelve a depositar",
+        "nota": "Cada extracción mantiene las mismas seis opciones.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "en la primera extracción",
+        "nota": "Quedan dos puntajes por sumar.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "es más probable que",
+        "nota": "Compara las parejas de resultados que completan cada total.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto.",
+        "titulo": "Resta el primer puntaje a cada número ganador y cuenta las parejas que pueden producir el resto."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Para $10$: $8$; hay $5$ parejas ordenadas",
+          "Para $7$: $5$; hay $4$ parejas ordenadas"
+        ],
+        "nota": "Compara las sumas restantes.",
+        "titulo": "Compara las sumas restantes."
+      },
+      {
+        "k": "check",
+        "texto": "El diez tiene una pareja posible más; corresponde a B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

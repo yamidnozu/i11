@@ -1,118 +1,119 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "el nadador verá el farol",
-        "rol": "dato",
-        "nota": "El enunciado presenta la situación o variable que debes analizar.",
-        "campo": "Dato"
-      },
-      {
-        "frag": "cambia su dirección como se muestra en la figura 2",
-        "rol": "pide",
-        "nota": "La pregunta indica qué debes concluir o representar.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Interpretar la posición aparente de un objeto cuando la luz se refracta al pasar de aire a agua."
-      },
-      {
-        "k": "idea",
-        "texto": "Usa el cambio de dirección del rayo para inferir dónde verá el farol el nadador bajo el agua."
-      },
-      {
-        "k": "check",
-        "texto": "Verifica que la opción C respete el comportamiento descrito y las variables del problema."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar la posición aparente de un objeto cuando la luz se refracta al pasar de aire a agua.",
-      "que": "Usa el cambio de dirección del rayo para inferir dónde verá el farol el nadador bajo el agua.",
-      "plan": [
-        {
-          "t": "Interpretar la posición aparente de un objeto cuando la luz se refracta al pasar de aire a agua."
-        },
-        {
-          "t": "Usa el cambio de dirección del rayo para inferir dónde verá el farol el nadador bajo el agua."
-        },
-        {
-          "t": "Selecciona la opción C y contrástala con la evidencia."
-        }
-      ],
-      "pistas": [
-        "el nadador verá el farol",
-        "Al cambiar de medio, la luz se refracta. El nadador percibe el farol en una posición aparente más alta."
-      ],
-      "clave": "Al cambiar de medio, la luz se refracta. El nadador percibe el farol en una posición aparente más alta.",
+      "clave": "La refracción cambia la dirección de los rayos y desplaza la imagen aparente hacia arriba.",
       "no": [
         {
           "t": "Opción A",
-          "p": "A indica una posición aparente más baja, contraria a la que produce la refracción descrita."
+          "p": "Pero la refracción desplaza la imagen aparente hacia arriba, no hacia abajo."
         },
         {
           "t": "Opción B",
-          "p": "B supone que la trayectoria no cambia al pasar del aire al agua."
+          "p": "Pero el rayo sí cambia de dirección al entrar al agua."
         },
         {
           "t": "Opción D",
-          "p": "D atribuye a la refracción una inversión de imagen que no muestra el esquema."
+          "p": "Pero la imagen no se invierte; cambia su posición aparente."
         }
-      ]
+      ],
+      "pistas": [
+        "Sigue el rayo desde el farol hasta el agua y luego hacia el nadador.",
+        "Distingue la posición real del farol de la posición aparente que construye el ojo."
+      ],
+      "plan": [
+        {
+          "t": "Identifica qué pide el enunciado."
+        },
+        {
+          "t": "Sigue el rayo desde el farol hasta el agua y luego hacia el nadador."
+        },
+        {
+          "t": "Verifica por qué la opción C resuelve la tarea."
+        }
+      ],
+      "que": "Explica explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico.",
+      "tema": "Explicar cómo ocurren algunos fenómenos de la naturaleza con base en observaciones, patrones y conceptos propios del conocimiento científico."
     },
     "guion": {
       "1": [
         {
-          "t": "Interpretar la posición aparente de un objeto cuando la luz se refracta al pasar de aire a agua."
+          "t": "Leamos la pregunta y ubiquemos qué tenemos que averiguar."
         },
         {
-          "t": "Al cambiar de medio, la luz se refracta. El nadador percibe el farol en una posición aparente más alta."
+          "t": "Al pasar del aire al agua, la luz cambia de dirección. El nadador prolonga esos rayos en línea recta y ubica el farol en una posición aparente más alta."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C concuerda con los datos."
+          "t": "La respuesta es la opción C."
         }
       ],
       "2": [
         {
+          "t": "Identifiquemos qué pide la pregunta."
+        },
+        {
+          "t": "Al pasar del aire al agua, la luz cambia de dirección. El nadador prolonga esos rayos en línea recta y ubica el farol en una posición aparente más alta."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "A indica una posición aparente más baja, contraria a la que produce la refracción descrita."
+          "t": "La opción A la refracción desplaza la imagen aparente hacia arriba, no hacia abajo. La descartamos."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "B supone que la trayectoria no cambia al pasar del aire al agua."
+          "t": "La opción B el rayo sí cambia de dirección al entrar al agua. La descartamos."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "D atribuye a la refracción una inversión de imagen que no muestra el esquema."
+          "t": "La opción D la imagen no se invierte; cambia su posición aparente. La descartamos."
         },
         {
           "a": "o:C:ok",
-          "t": "Al cambiar de medio, la luz se refracta. El nadador percibe el farol en una posición aparente más alta."
+          "t": "La opción C es la respuesta."
         }
       ],
       "3": [
         {
-          "t": "Interpretar la posición aparente de un objeto cuando la luz se refracta al pasar de aire a agua."
+          "t": "Sigue el rayo desde el farol hasta el agua y luego hacia el nadador."
         },
         {
-          "t": "Usa el cambio de dirección del rayo para inferir dónde verá el farol el nadador bajo el agua."
+          "t": "Distingue la posición real del farol de la posición aparente que construye el ojo."
         },
         {
-          "t": "Al cambiar de medio, la luz se refracta. El nadador percibe el farol en una posición aparente más alta."
+          "t": "La refracción cambia la dirección de los rayos y desplaza la imagen aparente hacia arriba."
+        },
+        {
+          "t": "Comprueba que la explicación use los datos del contexto y no una suposición adicional."
         },
         {
           "a": "o:C:ok",
-          "t": "La conclusión queda sustentada por la evidencia."
+          "t": "La respuesta es la opción C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Qué pide",
+        "frag": "verá el",
+        "nota": "Señala la tarea que hay que resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "concepto",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Al pasar del aire al agua, la luz cambia de dirección. El nadador prolonga esos rayos en línea recta y ubica el farol en una posición aparente más alta.",
+        "titulo": "Idea clave"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción C responde a lo pedido y que cada dato coincide con el contexto."
+      }
+    ]
+  },
+  "revisar": []
 }

@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "porcentaje de supervivencia de las cepas",
-        "rol": "pide",
-        "nota": "Fragmento que orienta el criterio o el dato central.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la información",
-        "texto": "Ubica qué variable midieron los investigadores."
-      },
-      {
-        "k": "idea",
-        "titulo": "Aplica el concepto",
-        "texto": "Compara la supervivencia con cada antibiótico."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba",
-        "texto": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar supervivencia bacteriana ante antibióticos",
-      "que": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
-      "pistas": [
-        "Compara todos los porcentajes de supervivencia.",
-        "Menor supervivencia bajo un antibiótico indica mayor sensibilidad en este experimento."
-      ],
       "clave": "El antibiótico cuatro se relaciona con la mayor sensibilidad observada en la prueba.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento."
+          "p": "Pero la supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes."
+          "p": "Pero la tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible si se pasa por alto una condición. Pero El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos."
+          "p": "Pero el experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos."
         }
+      ],
+      "pistas": [
+        "Compara todos los porcentajes de supervivencia.",
+        "Menor supervivencia bajo un antibiótico indica mayor sensibilidad en este experimento."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento."
         }
-      ]
+      ],
+      "que": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
+      "tema": "Interpretar supervivencia bacteriana ante antibióticos"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "La expresión «porcentaje de supervivencia de las cepas» indica qué información tomar en cuenta.",
-          "a": "m:porcentaje de supervivencia de las cepas"
+          "a": "m:porcentaje de supervivencia de las cepas",
+          "t": "La expresión «porcentaje de supervivencia de las cepas» indica qué información tomar en cuenta."
         },
         {
-          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados."
         },
         {
-          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descartamos."
         },
         {
-          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descartamos."
         },
         {
-          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué dato necesitamos usar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué dato necesitamos usar."
         },
         {
-          "t": "Primero identifico qué pide la pregunta y qué datos ofrece.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide la pregunta y qué datos ofrece."
         },
         {
-          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Compara los porcentajes de supervivencia: el antibiótico cuatro deja el valor más bajo. En las condiciones del experimento, eso indica que las bacterias son más sensibles a ese antibiótico que a los otros probados."
         },
         {
-          "t": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento."
         },
         {
-          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: La supervivencia no es mínima: el dato de control sin antibiótico es mayor, pero con cada antibiótico aún sobreviven bacterias. La tabla no justifica prohibir el tratamiento. La descarto."
         },
         {
-          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: La tabla registra supervivencia bacteriana, no alergias ni efectos en pacientes. La descarto."
         },
         {
-          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: El experimento no mide dónde vive la bacteria ni su transmisión; compara su supervivencia con distintos antibióticos. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "porcentaje de supervivencia de las cepas",
+        "nota": "Fragmento que orienta el criterio o el dato central.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica qué variable midieron los investigadores.",
+        "titulo": "Identifica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Compara la supervivencia con cada antibiótico.",
+        "titulo": "Aplica el concepto"
+      },
+      {
+        "k": "idea",
+        "texto": "Comprueba cuál produce el porcentaje más bajo y limita la conclusión al experimento.",
+        "titulo": "Comprueba"
+      }
+    ]
+  },
+  "revisar": []
 }

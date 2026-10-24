@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "resultados del experimento",
-        "rol": "pide",
-        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué representa",
-        "texto": "Ubica la temperatura, que cambia, en el eje horizontal."
-      },
-      {
-        "k": "idea",
-        "titulo": "Lee las relaciones del modelo",
-        "texto": "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la opción",
-        "texto": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
-      }
-    ],
     "enfoque": {
-      "tema": "Elegir ejes correctos para graficar una tabla",
-      "que": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
-      "pistas": [
-        "Ubica la temperatura, que cambia, en el eje horizontal.",
-        "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
-      ],
       "clave": "La gráfica B asigna correctamente los ejes y conserva la tendencia creciente de la tabla.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal."
+          "p": "Pero intercambia los ejes: pone temperatura en vertical y velocidad en horizontal."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Intercambia los ejes y además invierte el orden de los valores de velocidad."
+          "p": "Pero intercambia los ejes y además invierte el orden de los valores de velocidad."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical."
+          "p": "Pero invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical."
         }
+      ],
+      "pistas": [
+        "Ubica la temperatura, que cambia, en el eje horizontal.",
+        "Ubica la velocidad medida en el eje vertical y conserva sus unidades."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
         }
-      ]
+      ],
+      "que": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
+      "tema": "Elegir ejes correctos para graficar una tabla"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La frase «resultados del experimento» señala la pista central.",
-          "a": "m:resultados del experimento"
+          "a": "m:resultados del experimento",
+          "t": "La frase «resultados del experimento» señala la pista central."
         },
         {
-          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
         },
         {
-          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descartamos."
         },
         {
-          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descartamos."
         },
         {
-          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Primero identifico qué representa el dibujo o los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "La variable que se modifica es la temperatura y va en el eje horizontal; la velocidad del sonido medida va en el eje vertical. Los valores aumentan juntos: al pasar de $0$ a $3\\,^{\\circ}\\mathrm{C}$, la velocidad sube de $331{,}7$ a $333{,}5\\,\\mathrm{m/s}$. La gráfica B conserva variables, unidades y tendencia."
         },
         {
-          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Comprueba que la gráfica siga el aumento de los datos de la tabla."
         },
         {
-          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Intercambia los ejes: pone temperatura en vertical y velocidad en horizontal. La descarto."
         },
         {
-          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Intercambia los ejes y además invierte el orden de los valores de velocidad. La descarto."
         },
         {
-          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Invierte el orden de la velocidad y coloca una escala distinta de la tabla en el eje vertical. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "resultados del experimento",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica la temperatura, que cambia, en el eje horizontal.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Ubica la velocidad medida en el eje vertical y conserva sus unidades.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la gráfica siga el aumento de los datos de la tabla.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

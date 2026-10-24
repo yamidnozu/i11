@@ -1,150 +1,155 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "área del cuadrado sombreado",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «área del cuadrado sombreado» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "1/5"
-        ],
-        "nota": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: área del cuadrado sombreado",
-      "que": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
-      "pistas": [
-        "Fíjate en «área del cuadrado sombreado».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
       "clave": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
       "no": [
         {
           "t": "Opción A",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero calcula el área como una novena parte asumiendo una cuadrícula regular de {{3x3}} que no corresponde a la inclinación de las líneas."
         },
         {
           "t": "Opción B",
-          "p": "No coincide con la relación que pide la pregunta."
+          "p": "Pero estima visualmente que el cuadrado sombreado es un octavo del área total."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero asume un sexto de área al promediar las áreas de los cuatro triángulos perimetrales."
         }
+      ],
+      "pistas": [
+        "Analiza las áreas de los triángulos y trapecios formados al unir vértices con puntos medios de los lados opuestos en el cuadrado unitario.",
+        "Aplica disección geométrica para demostrar que el cuadrado central inclinado ocupa exactamente un quinto del área total ($1/5\\text{ dm}^2$)."
       ],
       "plan": [
         {
           "t": "Identifico qué pide el enunciado."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
             "1/5"
-          ]
+          ],
+          "t": "Selecciono los datos y hago la operación necesaria."
         },
         {
           "t": "Comparo el resultado con las opciones y verifico su sentido."
         }
-      ]
+      ],
+      "que": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
+      "tema": "Matemáticas: área del cuadrado sombreado"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden."
         },
         {
-          "t": "La frase «área del cuadrado sombreado» orienta la estrategia.",
-          "a": "m:área del cuadrado sombreado"
+          "a": "m:área del cuadrado sombreado",
+          "t": "La frase «área del cuadrado sombreado» orienta la estrategia."
         },
         {
-          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta con calma."
         },
         {
-          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué pide: Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
         },
         {
-          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "área del cuadrado sombreado",
+        "nota": "Indica qué relación o resultado hay que determinar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "La pista «área del cuadrado sombreado» indica qué información usar y qué resultado comparar.",
+        "titulo": "Qué hay que averiguar"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "1/5"
+        ],
+        "nota": "Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado.",
+        "titulo": "Resolvemos con los datos"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba el resultado: Al dividir el cuadrado en coordenadas, las rectas que unen cada vértice con el punto medio del lado opuesto encierran un cuadrado central de área una quinta parte del área grande. Como el cuadrado grande tiene área un decímetro cuadrado, el sombreado es $1/5$ de decímetro cuadrado."
+      }
+    ]
+  },
+  "revisar": []
 }

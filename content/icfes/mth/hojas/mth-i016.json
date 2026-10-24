@@ -1,61 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "promedio de estatura de las 16 personas es 1,70 m",
-        "rol": "dato",
-        "nota": "El promedio no muestra la distribución individual.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "igualar la cantidad de personas en las dos piscinas",
-        "rol": "pide",
-        "nota": "Evalúa si el promedio basta para garantizar grupos iguales.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Distingue el promedio del conteo de estudiantes a cada lado del umbral."
-      },
-      {
-        "k": "calc",
-        "titulo": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m.",
-        "lineas": [
-          "Un promedio de $1,70$ m puede surgir con distintos conteos"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D."
-      }
-    ],
     "enfoque": {
-      "tema": "Límite de la información que aporta un promedio",
-      "que": "Explica por qué el promedio de estaturas no determina cuántas personas quedan en cada piscina.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Un mismo promedio puede corresponder a distribuciones distintas alrededor del umbral de $1,80$ m.",
       "no": [
         {
           "t": "Opción A",
-          "p": "El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición."
+          "p": "Pero el promedio no permite afirmar que todas las personas estén por debajo de $1,80$ m ni que deban aceptarse exactamente otras dieciséis."
         },
         {
           "t": "Opción B",
-          "p": "Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente."
+          "p": "Pero aunque el promedio no determina los grupos, no es necesario reemplazarlo por el máximo o el mínimo: se requiere conocer cada estatura."
         },
         {
           "t": "Opción C",
-          "p": "Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo."
+          "p": "Pero agregar estudiantes de $1,80$ m no garantiza igualar los grupos; además, esa estatura pertenece a la piscina profunda."
         }
+      ],
+      "pistas": [
+        "Recuerda que el promedio aritmético solo mide la suma total de las estaturas dividida entre dieciséis, no la distribución individual de los alumnos.",
+        "Deduce por qué un promedio de un metro con setenta centímetros no impide que la mitad de los nadadores supere un metro con ochenta si las estaturas restantes son bajas."
       ],
       "plan": [
         {
@@ -67,7 +31,9 @@
         {
           "t": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D."
         }
-      ]
+      ],
+      "que": "Explica por qué el promedio de estaturas no determina cuántas personas quedan en cada piscina.",
+      "tema": "Límite de la información que aporta un promedio"
     },
     "guion": {
       "1": [
@@ -78,8 +44,8 @@
           "t": "No; solo resume la suma dividida por el número de estudiantes."
         },
         {
-          "t": "Por eso no permite asegurar que las piscinas tengan cantidades distintas. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Por eso no permite asegurar que las piscinas tengan cantidades distintas. La respuesta es D."
         }
       ],
       "2": [
@@ -90,50 +56,85 @@
           "t": "Distintas listas de estaturas pueden tener el mismo promedio y diferentes conteos por grupo."
         },
         {
-          "t": "La opción A: El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: El promedio inferior al umbral no implica que todas las estaturas sean inferiores a él. Pero A hace esa suposición."
         },
         {
-          "t": "La opción B: Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B: Identifica una limitación, pero propone usar máximo o mínimo cuando lo necesario es conocer la distribución de estaturas. Pero B no identifica el dato suficiente."
         },
         {
-          "t": "La opción C: Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Tener promedio $1,80$ m tampoco determina los conteos por piscina. Pero C supone que el promedio fija el conteo."
         },
         {
-          "t": "A y C afirman conteos sin datos; B propone una medida que no basta. La respuesta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "A y C afirman conteos sin datos; B propone una medida que no basta. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "El promedio $1,70$ m fija una suma total, pero no cada estatura.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El promedio $1,70$ m fija una suma total, pero no cada estatura."
         },
         {
-          "t": "Sin las estaturas individuales, no se conoce cuántas están por debajo o desde $1,80$ m.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Sin las estaturas individuales, no se conoce cuántas están por debajo o desde $1,80$ m."
         },
         {
-          "t": "Así, la conclusión del director no se sigue del promedio.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Así, la conclusión del director no se sigue del promedio."
         },
         {
-          "t": "A, B y C no resuelven esa falta de información.",
           "a": "o:A:no|o:B:no|o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, B y C no resuelven esa falta de información."
         },
         {
-          "t": "La respuesta correcta es D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "promedio de estatura de las 16 personas es 1,70 m",
+        "nota": "El promedio no muestra la distribución individual.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "igualar la cantidad de personas en las dos piscinas",
+        "nota": "Evalúa si el promedio basta para garantizar grupos iguales.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Distingue el promedio del conteo de estudiantes a cada lado del umbral.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "Un promedio de $1,70$ m puede surgir con distintos conteos"
+        ],
+        "titulo": "El promedio depende de la suma total, no de cuántas estaturas superan $1,80$ m."
+      },
+      {
+        "k": "check",
+        "texto": "La información no permite afirmar que los grupos sean distintos o iguales; la respuesta es D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

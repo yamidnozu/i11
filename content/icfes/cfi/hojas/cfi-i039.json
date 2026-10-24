@@ -1,32 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "ilustra la idea de la familia como una institución política y económica",
-        "rol": "pide",
-        "nota": "Debes elegir un ejemplo concreto que muestre esas funciones del matrimonio.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Ubica el párrafo que explica las funciones económicas y políticas del matrimonio."
-      },
-      {
-        "k": "idea",
-        "texto": "Relaciona la dote con los recursos y las alianzas entre familias."
-      },
-      {
-        "k": "check",
-        "texto": "Elige el ejemplo que muestre un intercambio de recursos vinculado al matrimonio."
-      }
-    ],
     "enfoque": {
-      "tema": "El matrimonio como institución económica y política",
-      "que": "Identificar un ejemplo histórico de la función económica del matrimonio.",
+      "clave": "La opción A es el ejemplo directo: la dote aportaba recursos y ayudaba a consolidar alianzas familiares.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero describe una concepción cultural del amor, no una función económica o política."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero se refiere a un cambio histórico en la idea del amor, no a un ejemplo de intercambio económico."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero describe un cambio de vocabulario sobre el afecto conyugal, no una alianza de recursos."
+        }
+      ],
+      "pistas": [
+        "El pasaje menciona dinero, bienes y tierras.",
+        "La dote se entregaba al casarse y podía representar un ingreso importante."
+      ],
       "plan": [
         {
           "t": "Busca en el texto cómo se consolidaban recursos y alianzas familiares."
@@ -38,25 +32,8 @@
           "t": "Relaciona ese ejemplo con la función económica y política preguntada."
         }
       ],
-      "pistas": [
-        "El pasaje menciona dinero, bienes y tierras.",
-        "La dote se entregaba al casarse y podía representar un ingreso importante."
-      ],
-      "clave": "La opción A es el ejemplo directo: la dote aportaba recursos y ayudaba a consolidar alianzas familiares.",
-      "no": [
-        {
-          "t": "Opción B",
-          "p": "Describe una concepción cultural del amor, no una función económica o política."
-        },
-        {
-          "t": "Opción C",
-          "p": "Se refiere a un cambio histórico en la idea del amor, no a un ejemplo de intercambio económico."
-        },
-        {
-          "t": "Opción D",
-          "p": "Describe un cambio de vocabulario sobre el afecto conyugal, no una alianza de recursos."
-        }
-      ]
+      "que": "Identificar un ejemplo histórico de la función económica del matrimonio.",
+      "tema": "El matrimonio como institución económica y política"
     },
     "guion": {
       "1": [
@@ -107,6 +84,30 @@
           "t": "Las otras alternativas se refieren a ideas sobre el amor o al vocabulario, no a la función económica."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "ilustra la idea de la familia como una institución política y económica",
+        "nota": "Debes elegir un ejemplo concreto que muestre esas funciones del matrimonio.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Ubica el párrafo que explica las funciones económicas y políticas del matrimonio."
+      },
+      {
+        "k": "idea",
+        "texto": "Relaciona la dote con los recursos y las alianzas entre familias."
+      },
+      {
+        "k": "check",
+        "texto": "Elige el ejemplo que muestre un intercambio de recursos vinculado al matrimonio."
+      }
+    ]
+  },
+  "revisar": []
 }

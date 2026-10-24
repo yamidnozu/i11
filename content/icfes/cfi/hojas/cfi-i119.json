@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "Stopping painting was",
-        "rol": "pide",
-        "nota": "La pregunta delimita el dato que debe localizarse en el relato.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Localiza el dato",
-        "texto": "Encuentra en el pasaje la oración que se refiere directamente a la pregunta."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las opciones",
-        "texto": "La narradora dejó de pintar después de que su madre vio que había usado sus cosas y le dijo que no pintara más."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en el relato",
-        "texto": "Comprueba que la respuesta elegida aparece en el pasaje y que las otras alternativas se refieren a detalles diferentes."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprender detalles explícitos de un relato",
-      "que": "Ubica en el relato la información que responde la pregunta y separa ese dato de los detalles cercanos.",
-      "pistas": [
-        "Busca la oración que contiene el dato solicitado.",
-        "Comprueba quién realiza cada acción y a quién se refiere el detalle."
-      ],
-      "clave": "La narradora dejó de pintar después de que su madre vio que había usado sus cosas y le dijo que no pintara más.",
+      "clave": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero El pintor no le pidió que dejara de pintar; la decisión llega después de la reacción de su madre."
+          "p": "Pero el texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
           "t": "Opción C",
-          "p": "Pero La narradora quería pintar, pero le dijeron que no podía continuar."
+          "p": "Pero la narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         }
+      ],
+      "pistas": [
+        "Locate the turning point where the girl had to put away her brushes.",
+        "Identify that stopping painting was directly commanded by her mother."
       ],
       "plan": [
         {
-          "t": "Lee la pregunta y reconoce qué dato busca."
+          "t": "Lee la pregunta y ubica la información que solicita."
         },
         {
-          "t": "Ubica la información correspondiente en el relato."
+          "t": "Busca en el texto la frase relacionada."
         },
         {
-          "t": "Compara cada alternativa con el pasaje y elige la que coincide."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee qué dato busca la pregunta."
+          "a": "leer",
+          "t": "Lee el enunciado e identifica qué pide."
         },
         {
-          "t": "Busca en el relato la oración que habla de ese detalle."
+          "a": "m:Stopping painting was",
+          "t": "Fíjate en {{Stopping painting was}}."
         },
         {
-          "t": "La respuesta es {{her mother’s order.}}.",
-          "a": "o:B:ok"
+          "a": "p:1",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La respuesta es {{her mother's order.}}."
         }
       ],
       "2": [
         {
-          "t": "Ubica la información explícita que responde la pregunta."
+          "a": "leer",
+          "t": "Relaciona la pregunta con el pasaje compartido."
         },
         {
-          "t": "Opción A no coincide: El pintor no le pidió que dejara de pintar; la decisión llega después de la reacción de su madre.",
+          "a": "p:1",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
+        },
+        {
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no corresponde: El texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
-          "t": "Opción C no coincide: La narradora quería pintar, pero le dijeron que no podía continuar.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no corresponde: La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
         },
         {
-          "t": "La opción B coincide con el relato.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "{{her mother's order.}} responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Identifica el detalle preciso que pregunta el ejercicio.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Ubica qué información pide la pregunta."
         },
         {
-          "t": "La narradora dejó de pintar después de que su madre vio que había usado sus cosas y le dijo que no pintara más.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre."
         },
         {
-          "t": "Descarta las opciones que mezclan ese detalle con información distinta del relato.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:A:no",
+          "k": "err",
+          "t": "La opción A no encaja: El texto no dice que el pintor decidiera que ella dejara de pintar."
         },
         {
-          "t": "Vuelve al texto y confirma la opción B.",
-          "a": "o:B:ok"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: La narradora no cuenta que ella misma tomara esa decisión; su mamá le dijo que no podía pintar."
+        },
+        {
+          "a": "o:B:ok",
+          "t": "La evidencia respalda {{her mother's order.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "Stopping painting was",
+        "nota": "La pista ayuda a localizar el dato pertinente en el texto compartido.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{Stopping painting was}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Después de que su mamá vio lo que había hecho, le dijeron que no podía pintar otra vez; por eso fue una orden de su madre.",
+        "titulo": "Relaciona la evidencia"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
+      }
+    ]
+  },
+  "revisar": []
 }

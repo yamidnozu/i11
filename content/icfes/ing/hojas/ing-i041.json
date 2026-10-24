@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "She was mostly excited by the",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{She was mostly excited by the}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
       "clave": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
-      "pistas": [
-        "Localiza {{She was mostly excited by the}} en la información fuente.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
+          "p": "Pero la narradora no se enfoca en la voz del pintor, sino en su destreza técnica al pintar."
         },
         {
           "t": "Opción C",
-          "p": "El pasaje destaca que el pintor hacía árboles y ríos con facilidad; esa es su habilidad."
+          "p": "Pero lo que más la entusiasmaba era observar la facilidad con la que creaba imágenes, es decir, su habilidad."
         }
+      ],
+      "pistas": [
+        "Identify what aspect of the television show captivated the young viewer.",
+        "Select {{painter's ability}} to create landscapes effortlessly on canvas."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{painter's ability.}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "She was mostly excited by the",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{She was mostly excited by the}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "Lo que más la animó fue la habilidad del pintor: hacía árboles y ríos con movimientos de la mano. La voz y el programa son detalles, pero no responden qué la entusiasmó.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

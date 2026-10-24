@@ -1,115 +1,131 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "I am going on vacation to Vancouver!",
-        "rol": "dato",
-        "nota": "Es la intervención a la que debe responderse.",
-        "campo": "Contexto"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Reconoce la situación",
-        "texto": "Identifica qué comunica la persona y qué reacción tendría sentido."
-      },
-      {
-        "k": "idea",
-        "titulo": "Elige una respuesta pertinente",
-        "texto": "La persona comparte una noticia positiva sobre sus vacaciones. {{That’s great}} es una reacción natural de entusiasmo."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica el intercambio",
-        "texto": "Lee las dos intervenciones seguidas y confirma que la conversación suena coherente."
-      }
-    ],
     "enfoque": {
-      "tema": "Responder de forma pertinente en una conversación",
-      "que": "Elige la intervención que responde con sentido a lo que acaba de decir la otra persona.",
-      "pistas": [
-        "Reconoce si la persona comparte una opinión, cuenta una noticia o relata un hecho.",
-        "Descarta respuestas que cambian el tema o quedan incompletas."
-      ],
-      "clave": "La persona comparte una noticia positiva sobre sus vacaciones. {{That’s great}} es una reacción natural de entusiasmo.",
+      "clave": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero {{I like swimming}} cambia el tema y no reacciona a la noticia."
+          "p": "Pero la natación no responde a la noticia del viaje."
         },
         {
           "t": "Opción C",
-          "p": "Pero {{You are first}} no tiene relación con las vacaciones mencionadas."
+          "p": "Pero no tiene relación con el anuncio de las vacaciones."
         }
+      ],
+      "pistas": [
+        "Notice the exciting news about an upcoming trip to Vancouver.",
+        "Choose the enthusiastic conversational reply: {{That’s great!}}."
       ],
       "plan": [
         {
-          "t": "Lee la intervención inicial."
+          "t": "Identifica qué información pide el enunciado."
         },
         {
-          "t": "Reconoce qué respuesta espera el contexto."
+          "t": "Contrasta las pistas con el pasaje, la descripción o la imagen."
         },
         {
-          "t": "Comprueba que la alternativa elegida mantiene la conversación."
+          "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
         {
-          "t": "Lee lo que dice la primera persona."
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos la información disponible."
         },
         {
-          "t": "Piensa qué respuesta encaja con la situación."
+          "a": "m:I am going on vacation to Vancouver!",
+          "t": "Fíjate en {{I am going on vacation to Vancouver!}}."
         },
         {
-          "t": "La opción correcta es {{That’s great!}}.",
-          "a": "o:A:ok"
+          "a": "p:1",
+          "t": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción correcta; comprueba su sentido en el contexto."
         }
       ],
       "2": [
         {
-          "t": "Identifica la intención de la intervención."
+          "a": "leer",
+          "t": "Busca la pista que permite responder."
         },
         {
-          "t": "La opción B no responde bien: {{I like swimming}} cambia el tema y no reacciona a la noticia.",
+          "a": "p:1",
+          "t": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia."
+        },
+        {
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: La natación no responde a la noticia del viaje."
         },
         {
-          "t": "La opción C no responde bien: {{You are first}} no tiene relación con las vacaciones mencionadas.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: No tiene relación con el anuncio de las vacaciones."
         },
         {
-          "t": "La opción A mantiene una conversación coherente.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción correcta."
         }
       ],
       "3": [
         {
-          "t": "Interpreta la intención de quien habla.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Explica qué pista del contexto respalda la respuesta."
         },
         {
-          "t": "La persona comparte una noticia positiva sobre sus vacaciones. {{That’s great}} es una reacción natural de entusiasmo.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "Las otras alternativas cambian el tema o no completan una respuesta natural.",
-          "a": "p:2",
-          "k": "contra"
+          "a": "o:B:no",
+          "k": "err",
+          "t": "La opción B no encaja: La natación no responde a la noticia del viaje."
         },
         {
-          "t": "Comprueba que la opción A responde a la intervención inicial.",
-          "a": "o:A:ok"
+          "a": "o:C:no",
+          "k": "err",
+          "t": "La opción C no encaja: No tiene relación con el anuncio de las vacaciones."
+        },
+        {
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "I am going on vacation to Vancouver!",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{I am going on vacation to Vancouver!}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

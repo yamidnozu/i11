@@ -1,64 +1,37 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "People drive it on a road and it carries big things.",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{People drive it on a road and it carries big things.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "{{truck}} transporta cargas grandes y corresponde a la característica descrita."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
       "clave": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
-      "pistas": [
-        "Fíjate en {{People drive it on a road and it carries big things.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "{{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero an ambulance transports sick or injured patients to hospitals, not large cargo."
         },
         {
           "t": "Opción B",
-          "p": "{{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero a boat sails on water, not on a road."
         },
         {
           "t": "Opción C",
-          "p": "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero a bus carries passengers, not big freight or cargo."
         },
         {
           "t": "Opción D",
-          "p": "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero a motorbike is a light vehicle for one or two people, not for carrying big things."
         },
         {
           "t": "Opción E",
-          "p": "{{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero a plane flies in the air, not driven on a road."
         },
         {
           "t": "Opción G",
-          "p": "{{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+          "p": "Pero a train travels on rails, not on a road."
         }
+      ],
+      "pistas": [
+        "Focus on heavy road freight transport: {{carries big things}}.",
+        "Choose {{truck}} from the list of road vehicles."
       ],
       "plan": [
         {
@@ -70,7 +43,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -181,6 +156,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "People drive it on a road and it carries big things.",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{People drive it on a road and it carries big things.}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "{{truck}} transporta cargas grandes y corresponde a la característica descrita.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

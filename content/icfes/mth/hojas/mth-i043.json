@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "más los ahorros con los que cuente el grupo familiar",
-        "rol": "dato",
-        "nota": "Los ahorros aportan al pago de la vivienda.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "el crédito que obtenga de una entidad financiera",
-        "rol": "dato",
-        "nota": "El crédito cubre el saldo pendiente.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "valor del crédito que debe solicitarse al banco",
-        "rol": "pide",
-        "nota": "Despeja el valor faltante del precio de la vivienda.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Escribe el precio como suma de los tres aportes.",
-        "texto": "Escribe el precio como suma de los tres aportes."
-      },
-      {
-        "k": "calc",
-        "titulo": "Despeja el crédito de la igualdad.",
-        "lineas": [
-          "$vivienda=ahorros+subsidio+crédito$",
-          "$crédito=vivienda-ahorros-subsidio$"
-        ],
-        "nota": "Despeja el crédito de la igualdad."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "Se restan del precio los otros dos aportes; corresponde a B."
-      }
-    ],
     "enfoque": {
-      "tema": "Ecuación de presupuesto para una vivienda",
-      "que": "Despeja el crédito requerido a partir del precio, los ahorros y el subsidio.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Crédito = precio de la vivienda − ahorros − subsidio.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario."
+          "p": "Pero suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario."
         },
         {
           "t": "Opción C",
-          "p": "Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio."
+          "p": "Pero agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio."
         },
         {
           "t": "Opción D",
-          "p": "Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
+          "p": "Pero suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
         }
+      ],
+      "pistas": [
+        "Localiza en la tabla el monto del subsidio de vivienda asignado a familias con ingresos menores a dos salarios mínimos.",
+        "Calcula el saldo restante que la familia debe cubrir mediante ahorro programado y crédito hipotecario."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "Se restan del precio los otros dos aportes; corresponde a B."
         }
-      ]
+      ],
+      "que": "Despeja el crédito requerido a partir del precio, los ahorros y el subsidio.",
+      "tema": "Ecuación de presupuesto para una vivienda"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Los ahorros, el subsidio y el crédito. El crédito cubre lo que falta."
         },
         {
-          "t": "Resta ahorros y subsidio al precio. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "Resta ahorros y subsidio al precio. La respuesta es B."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Al despejar el crédito, resta del precio los ahorros y el subsidio."
         },
         {
-          "t": "La opción A: Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Suma todos los recursos y el precio, en vez de despejar el monto faltante. Pero ahorros y subsidio reducen el crédito necesario."
         },
         {
-          "t": "La opción C: Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Agrega ingresos al crédito y suma el valor de la vivienda. Pero el crédito cubre el costo que no cubren los ahorros y el subsidio."
         },
         {
-          "t": "La opción D: Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Suma el subsidio al costo y luego resta solo el ahorro. Pero el subsidio también es un recurso que reduce el crédito."
         },
         {
-          "t": "A suma recursos al precio; C incorpora ingresos; D suma el subsidio en vez de restarlo. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A suma recursos al precio; C incorpora ingresos; D suma el subsidio en vez de restarlo. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "El precio de la vivienda se cubre con ahorros, subsidio y crédito.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El precio de la vivienda se cubre con ahorros, subsidio y crédito."
         },
         {
-          "t": "Al aislar el crédito, queda el precio menos los ahorros y menos el subsidio.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al aislar el crédito, queda el precio menos los ahorros y menos el subsidio."
         },
         {
-          "t": "La expresión corresponde a la opción B.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La expresión corresponde a la opción B."
         },
         {
-          "t": "A, C y D no despejan el aporte faltante.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D no despejan el aporte faltante."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "más los ahorros con los que cuente el grupo familiar",
+        "nota": "Los ahorros aportan al pago de la vivienda.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "el crédito que obtenga de una entidad financiera",
+        "nota": "El crédito cubre el saldo pendiente.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "valor del crédito que debe solicitarse al banco",
+        "nota": "Despeja el valor faltante del precio de la vivienda.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Escribe el precio como suma de los tres aportes.",
+        "titulo": "Escribe el precio como suma de los tres aportes."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$vivienda=ahorros+subsidio+crédito$",
+          "$crédito=vivienda-ahorros-subsidio$"
+        ],
+        "nota": "Despeja el crédito de la igualdad.",
+        "titulo": "Despeja el crédito de la igualdad."
+      },
+      {
+        "k": "check",
+        "texto": "Se restan del precio los otros dos aportes; corresponde a B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

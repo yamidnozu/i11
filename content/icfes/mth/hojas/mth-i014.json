@@ -1,62 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "uno de sus lados en 100 %",
-        "rol": "dato",
-        "nota": "Ese lado queda con el doble de su longitud.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "su área",
-        "rol": "pide",
-        "nota": "Compara el área nueva con la inicial.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Expresa el área inicial como el producto de sus dos lados."
-      },
-      {
-        "k": "calc",
-        "titulo": "Duplica uno de los factores y compara los productos.",
-        "lineas": [
-          "$A=ab$",
-          "$A_{nueva}=2a·b=2ab$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El área nueva es dos veces la inicial; corresponde a la opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Efecto de una escala lineal sobre el área",
-      "que": "Relaciona el cambio en un lado del rectángulo con el cambio de su área.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Al duplicar un lado y conservar el otro, el producto que representa el área también se duplica.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes."
+          "p": "Pero aumentar un lado al doble no aumenta el área solo en la mitad; el otro lado conserva su longitud."
         },
         {
           "t": "Opción C",
-          "p": "Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia."
+          "p": "Pero el área sí cambia porque uno de los factores se duplica."
         },
         {
           "t": "Opción D",
-          "p": "Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa."
+          "p": "Pero el porcentaje modifica una longitud relativa, no agrega cien unidades de área."
         }
+      ],
+      "pistas": [
+        "Multiplica el largo nuevo ($2L$) por el ancho nuevo ($0,5A$) para hallar la nueva área del rectángulo.",
+        "Compara el producto $2L \\cdot 0,5A = L \\cdot A$ con el área original para determinar que permanece constante."
       ],
       "plan": [
         {
@@ -68,7 +31,9 @@
         {
           "t": "El área nueva es dos veces la inicial; corresponde a la opción B."
         }
-      ]
+      ],
+      "que": "Relaciona el cambio en un lado del rectángulo con el cambio de su área.",
+      "tema": "Efecto de una escala lineal sobre el área"
     },
     "guion": {
       "1": [
@@ -79,8 +44,8 @@
           "t": "Al duplicar uno de los factores, el producto queda duplicado."
         },
         {
-          "t": "La respuesta es B: el área se duplica.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es B: el área se duplica."
         }
       ],
       "2": [
@@ -91,50 +56,86 @@
           "t": "Al sustituir un lado por su doble, queda $2ab$, el doble de $ab$."
         },
         {
-          "t": "La opción A: Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Confunde el aumento del lado con un aumento de la mitad del área. Pero el área es un producto de longitudes."
         },
         {
-          "t": "La opción C: Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Supone que el área no cambia aunque uno de sus factores se duplica. Pero el producto sí cambia."
         },
         {
-          "t": "La opción D: Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: Interpreta el porcentaje como una cantidad fija de unidades. Pero se pide una comparación relativa."
         },
         {
-          "t": "A no es un aumento de cincuenta por ciento; C ignora el cambio; D confunde porcentaje con unidades. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A no es un aumento de cincuenta por ciento; C ignora el cambio; D confunde porcentaje con unidades. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "El área inicial es $ab$ y la nueva es $2a·b=2ab$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "El área inicial es $ab$ y la nueva es $2a·b=2ab$."
         },
         {
-          "t": "El cociente entre áreas es $2ab/ab=2$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El cociente entre áreas es $2ab/ab=2$."
         },
         {
-          "t": "La nueva área equivale al doble de la original.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La nueva área equivale al doble de la original."
         },
         {
-          "t": "A, C y D no describen ese cociente.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D no describen ese cociente."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "uno de sus lados en 100 %",
+        "nota": "Ese lado queda con el doble de su longitud.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "su área",
+        "nota": "Compara el área nueva con la inicial.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Expresa el área inicial como el producto de sus dos lados.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$A=ab$",
+          "$A_{nueva}=2a·b=2ab$"
+        ],
+        "titulo": "Duplica uno de los factores y compara los productos."
+      },
+      {
+        "k": "check",
+        "texto": "El área nueva es dos veces la inicial; corresponde a la opción B.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

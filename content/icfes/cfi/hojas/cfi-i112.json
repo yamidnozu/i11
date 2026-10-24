@@ -1,56 +1,28 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "___ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.",
-        "rol": "pide",
-        "nota": "Este es el fragmento que contiene el espacio evaluado.",
-        "campo": "Fragmento"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee el fragmento",
-        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita."
-      },
-      {
-        "k": "idea",
-        "titulo": "Comprueba la forma",
-        "texto": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica en contexto",
-        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido."
-      }
-    ],
     "enfoque": {
-      "tema": "Completar una lectura en inglés con la forma adecuada",
-      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
-      "pistas": [
-        "Lee la oración completa alrededor del espacio.",
-        "Observa la forma del sustantivo, el verbo y la relación que expresa la frase."
-      ],
       "clave": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero This acompaña a un referente singular, no a Ethiopian wolves."
+          "p": "Pero this acompaña a un referente singular, no a Ethiopian wolves."
         },
         {
           "t": "Opción B",
-          "p": "Pero That también es singular y no concuerda con el sustantivo plural."
+          "p": "Pero that también es singular y no concuerda con el sustantivo plural."
         }
+      ],
+      "pistas": [
+        "Select the plural demonstrative determiner {{These}} referring to the wolves discussed.",
+        "Ensure agreement with the plural noun {{Ethiopian wolves}}."
       ],
       "plan": [
         {
-          "t": "Lee el fragmento con el espacio.",
           "eq": [
             "{{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}"
-          ]
+          ],
+          "t": "Lee el fragmento con el espacio."
         },
         {
           "t": "Identifica qué clase de palabra exige la estructura."
@@ -58,7 +30,9 @@
         {
           "t": "Prueba la opción en la oración y conserva la que encaja en sentido y forma."
         }
-      ]
+      ],
+      "que": "Elige la palabra que completa el fragmento y comprueba que concuerde con el resto de la oración.",
+      "tema": "Completar una lectura en inglés con la forma adecuada"
     },
     "guion": {
       "1": [
@@ -69,8 +43,8 @@
           "t": "Fíjate en {{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}} y en las palabras que lo rodean."
         },
         {
-          "t": "La opción correcta es {{These}}.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción correcta es {{These}}."
         }
       ],
       "2": [
@@ -78,42 +52,69 @@
           "t": "Primero identifica la relación gramatical que pide la oración."
         },
         {
-          "t": "La opción A no encaja: This acompaña a un referente singular, no a Ethiopian wolves.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: This acompaña a un referente singular, no a Ethiopian wolves."
         },
         {
-          "t": "La opción B no encaja: That también es singular y no concuerda con el sustantivo plural.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: That también es singular y no concuerda con el sustantivo plural."
         },
         {
-          "t": "La opción C no encaja: La clave la confirma en el pasaje.",
           "a": "p:0",
-          "k": "por"
+          "k": "por",
+          "t": "La opción C no encaja: La clave la confirma en el pasaje."
         }
       ],
       "3": [
         {
-          "t": "Analiza la estructura que acompaña el espacio: {{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Analiza la estructura que acompaña el espacio: {{... Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.}}."
         },
         {
-          "t": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these.",
           "a": "p:1",
-          "k": "por"
+          "k": "por",
+          "t": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these."
         },
         {
-          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Las otras formas no concuerdan con la gramática o el significado del pasaje."
         },
         {
-          "t": "Comprueba que la opción C deja la oración completa y coherente.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Comprueba que la opción C deja la oración completa y coherente."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Fragmento",
+        "frag": "___ Ethiopian wolves are more similar to grey wolves and coyotes than any other African canines.",
+        "nota": "Este es el fragmento que contiene el espacio evaluado.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Usa las palabras cercanas al espacio para reconocer qué forma gramatical se necesita.",
+        "titulo": "Lee el fragmento"
+      },
+      {
+        "k": "idea",
+        "texto": "Ethiopian wolves está en plural, por eso el demostrativo debe estar también en plural: these.",
+        "titulo": "Comprueba la forma"
+      },
+      {
+        "k": "check",
+        "texto": "Vuelve a leer la oración completa y confirma que la palabra elegida concuerda y conserva el sentido.",
+        "titulo": "Verifica en contexto"
+      }
+    ]
+  },
+  "revisar": []
 }

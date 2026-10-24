@@ -6,20 +6,20 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, el texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia."
+          "p": "Pero el texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia."
         },
         {
           "t": "Opción B",
-          "p": "Pero, el artículo no busca enseñar cómo administrar un negocio cafetero."
+          "p": "Pero el artículo no busca enseñar cómo administrar un negocio cafetero."
         },
         {
           "t": "Opción C",
-          "p": "Pero, el texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país."
+          "p": "Pero el texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país."
         }
       ],
       "pistas": [
-        "Localiza {{What is the writer trying to do in this article?}} en el pasaje.",
-        "Relaciona esa pista con la información que el autor presenta."
+        "Identify the central purpose of the text: it highlights the landscape, traditions and visitor experience at a Colombian coffee farm.",
+        "Check if the author's primary intention is informative and promotional of ecological tourism."
       ],
       "plan": [
         {
@@ -50,7 +50,7 @@
           "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
-          "a": "o:D:ok",
+          "a": "o:A:ok",
           "t": "La respuesta es {{encouraging tourists to visit Colombia.}}."
         }
       ],
@@ -64,23 +64,23 @@
           "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
-          "t": "La opción A no corresponde: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
+          "t": "La opción A es incorrecta: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción B no corresponde: El artículo no busca enseñar cómo administrar un negocio cafetero.",
+          "t": "La opción B es incorrecta: El artículo no busca enseñar cómo administrar un negocio cafetero.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
+          "t": "La opción C es incorrecta: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "a": "o:D:ok",
-          "t": "{{encouraging tourists to visit Colombia.}} responde a la pregunta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción D.",
+          "a": "o:D:ok"
         }
       ],
       "3": [
@@ -95,19 +95,19 @@
           "t": "El artículo describe a Colombia y a Villa María como destinos atractivos, y cierra invitando al lector a hacer lo mismo. Busca animar a los turistas a visitar Colombia."
         },
         {
-          "t": "La opción A no encaja: El texto describe la finca como atractivo turístico con el propósito más amplio de motivar a los viajeros a visitar Colombia.",
-          "a": "o:A:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción B no encaja: El artículo no busca enseñar cómo administrar un negocio cafetero.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: El artículo no invita a comprar una finca ni a administrar un negocio cafetero; presenta una visita a un destino."
         },
         {
-          "t": "La opción C no encaja: El texto no le pide al lector que escriba sobre sus viajes; es una invitación a conocer el país.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: El artículo no ofrece instrucciones para manejar una finca; relata el lugar para animar una visita."
+        },
+        {
+          "a": "o:D:no",
+          "k": "err",
+          "t": "La opción D no encaja: El texto no pide que el lector escriba sobre sus viajes; es el autor quien describe una experiencia."
         },
         {
           "a": "o:D:ok",
@@ -140,5 +140,6 @@
         "texto": "Comprueba que la respuesta coincide con la evidencia del texto."
       }
     ]
-  }
+  },
+  "revisar": []
 }

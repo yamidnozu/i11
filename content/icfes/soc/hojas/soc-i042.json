@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "¿qué deberían revisar los ciudadanos principalmente?",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "No tomes el titular como evidencia suficiente."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Busca datos que permitan comparar la situación antes y durante la gestión."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar el desempeño de un gobierno con datos comparables",
-      "que": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
+      "clave": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque el plan de gobierno contiene las intenciones o promesas del candidato, no las estadísticas empíricas de delitos cometidos."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque las cifras de criminalidad foráneas obedecen a factores externos y no permiten medir la gestión policial interna de la ciudad."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque las afirmaciones del propio alcalde son declaraciones de parte interesada que no constituyen evidencia empírica contrastable."
+        }
+      ],
       "pistas": [
         "No tomes el titular como evidencia suficiente.",
         "Busca datos que permitan comparar la situación antes y durante la gestión."
       ],
-      "clave": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero El plan muestra propuestas, pero no si la criminalidad mejoró o empeoró durante el periodo."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Comparar con otras ciudades no responde directamente a cómo cambió la seguridad bajo este alcalde."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Las declaraciones del alcalde son interesadas y no sustituyen los datos sobre criminalidad."
-        }
-      ],
       "plan": [
         {
-          "t": "No tomes el titular como evidencia suficiente."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca datos que permitan comparar la situación antes y durante la gestión."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «¿qué deberían revisar los ciudadanos principalmente?» orienta el análisis.",
-          "a": "m:¿qué deberían revisar los ciudadanos principalmente?"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
-          "a": "p:0"
+          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "Opción A: El plan muestra propuestas, pero no si la criminalidad mejoró o empeoró durante el periodo. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «El plan de gobierno para ver si había propuestas en el tema de…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "Opción B: Comparar con otras ciudades no responde directamente a cómo cambió la seguridad bajo este alcalde. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Los índices de criminalidad en otras ciudades del país y de los…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "Opción D: Las declaraciones del alcalde son interesadas y no sustituyen los datos sobre criminalidad. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Las declaraciones oficiales del alcalde sobre si lo está haciendo…», Pero no responde al criterio central: Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "No tomes el titular como evidencia suficiente.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia."
         },
         {
-          "t": "Busca datos que permitan comparar la situación antes y durante la gestión.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Los titulares atribuyen al alcalde una responsabilidad por la criminalidad, pero para evaluar su gestión hay que comparar los índices antes y después de que asumiera el cargo. Así se revisa el cambio asociado a su periodo en vez de aceptar una impresión o su propia declaración.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "Los cambios en los índices desde que el alcalde asumió permiten evaluar su desempeño con evidencia.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En un periódico de la ciudad han aparecido c",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "Antes de creer que el alcalde está haciendo mal su trabajo en materia de seguridad, ¿qué deberían revisar los ciudadanos principalmente?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Para evaluar el desempeño del alcalde hay que comparar los índices de criminalidad desde que asumió; los titulares por sí solos no prueban una tendencia. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

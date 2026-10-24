@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "red trófica marina",
-        "rol": "pide",
-        "nota": "Expresión que señala el objeto de análisis.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica la evidencia",
-        "texto": "Lee la dirección de las flechas: muestran quién sirve de alimento a quién."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta la relación",
-        "texto": "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba",
-        "texto": "Deduce el efecto en cadena sobre el pez loro."
-      }
-    ],
     "enfoque": {
-      "tema": "Inferir efectos en una red trófica",
-      "que": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
-      "pistas": [
-        "Lee la dirección de las flechas: muestran quién sirve de alimento a quién.",
-        "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
-      ],
       "clave": "Al desaparecer el atún, puede aumentar el calamar y crecer la depredación del pez loro.",
       "no": [
         {
           "t": "Opción B",
-          "p": "El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos."
+          "p": "Pero el tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos."
         },
         {
           "t": "Opción C",
-          "p": "El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores."
+          "p": "Pero el zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores."
         },
         {
           "t": "Opción D",
-          "p": "La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores."
+          "p": "Pero la desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores."
         }
+      ],
+      "pistas": [
+        "Lee la dirección de las flechas: muestran quién sirve de alimento a quién.",
+        "Sigue las relaciones del atún con el calamar y del calamar con el pez loro."
       ],
       "plan": [
         {
@@ -59,95 +31,123 @@
         {
           "t": "Deduce el efecto en cadena sobre el pez loro."
         }
-      ]
+      ],
+      "que": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
+      "tema": "Inferir efectos en una red trófica"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "La frase «red trófica marina» nos ayuda a ubicar la tarea.",
-          "a": "m:red trófica marina"
+          "a": "m:red trófica marina",
+          "t": "La frase «red trófica marina» nos ayuda a ubicar la tarea."
         },
         {
-          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría."
         },
         {
-          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descartamos."
         },
         {
-          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descartamos."
         },
         {
-          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descartamos."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y definamos qué evidencia debemos interpretar."
         },
         {
-          "t": "Primero identifico qué evidencia o relación debo usar.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué evidencia o relación debo usar."
         },
         {
-          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las flechas van desde el alimento hacia quien lo consume. Si desaparece el atún, disminuye la depredación del calamar; el calamar puede aumentar y consumir más pez loro, cuya población disminuiría."
         },
         {
-          "t": "Deduce el efecto en cadena sobre el pez loro.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Deduce el efecto en cadena sobre el pez loro."
         },
         {
-          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El tiburón pierde una de sus fuentes de alimento; el modelo no muestra que pueda alimentarse de todos los niveles tróficos. La descarto."
         },
         {
-          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El zooplancton no queda sin depredadores: varias relaciones de la red lo conectan con consumidores. La descarto."
         },
         {
-          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: La desaparición del atún no aumenta a los consumidores primarios; el efecto directo de la red pasa por sus presas y depredadores. La descarto."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta es la opción A."
         }
       ]
-    }
+    },
+    "marcas": [
+      {
+        "campo": "Tarea de la pregunta",
+        "frag": "red trófica marina",
+        "nota": "Expresión que señala el objeto de análisis.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee la dirección de las flechas: muestran quién sirve de alimento a quién.",
+        "titulo": "Identifica la evidencia"
+      },
+      {
+        "k": "idea",
+        "texto": "Sigue las relaciones del atún con el calamar y del calamar con el pez loro.",
+        "titulo": "Interpreta la relación"
+      },
+      {
+        "k": "check",
+        "texto": "Deduce el efecto en cadena sobre el pez loro.",
+        "titulo": "Comprueba"
+      }
+    ]
   }
 }

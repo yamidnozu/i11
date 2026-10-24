@@ -6,36 +6,36 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, a bike moves on the ground with pedals, it does not fly."
+          "p": "Pero a bike moves on the ground with pedals, it does not fly."
         },
         {
           "t": "Opción B",
-          "p": "Pero, a boat navigates on water, it does not fly."
+          "p": "Pero a boat navigates on water, it does not fly."
         },
         {
           "t": "Opción C",
-          "p": "Pero, a bus travels on roads on the ground, it does not fly."
+          "p": "Pero a bus travels on roads on the ground, it does not fly."
         },
         {
           "t": "Opción D",
-          "p": "Pero, a helicopter typically transports few people, whereas a plane carries many people to travel."
+          "p": "Pero a helicopter typically transports few people, whereas a plane carries many people to travel."
         },
         {
           "t": "Opción E",
-          "p": "Pero, a motorbike drives on roads on the ground."
+          "p": "Pero a motorbike drives on roads on the ground."
         },
         {
           "t": "Opción G",
-          "p": "Pero, a truck is a road freight vehicle on the ground."
+          "p": "Pero a truck is a road freight vehicle on the ground."
         },
         {
           "t": "Opción H",
-          "p": "Pero, a train runs on railway tracks on the ground."
+          "p": "Pero a train runs on railway tracks on the ground."
         }
       ],
       "pistas": [
-        "Fíjate en {{Many people fly on it to go to a place.}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
+        "Focus on the action verb {{fly}} and the phrase {{many people fly on it to go to a place}}.",
+        "Select the aerial transport medium capable of transporting groups of passengers by air."
       ],
       "plan": [
         {
@@ -80,43 +80,43 @@
           "t": "{{plane}} vuela por el aire y corresponde a la característica descrita."
         },
         {
-          "t": "La opción A no corresponde: A bike moves on the ground with pedals, it does not fly.",
+          "t": "La opción A es incorrecta: A bike moves on the ground with pedals, it does not fly.",
           "a": "o:A:no",
           "k": "err"
         },
         {
-          "t": "La opción B no corresponde: A boat navigates on water, it does not fly.",
+          "t": "La opción B es incorrecta: A boat navigates on water, it does not fly.",
           "a": "o:B:no",
           "k": "err"
         },
         {
-          "t": "La opción C no corresponde: A bus travels on roads on the ground, it does not fly.",
+          "t": "La opción C es incorrecta: A bus travels on roads on the ground, it does not fly.",
           "a": "o:C:no",
           "k": "err"
         },
         {
-          "t": "La opción D no corresponde: A helicopter typically transports few people, whereas a plane carries many people to travel.",
+          "t": "La opción D es incorrecta: A helicopter typically transports few people, whereas a plane carries many people to travel.",
           "a": "o:D:no",
           "k": "err"
         },
         {
-          "t": "La opción E no corresponde: A motorbike drives on roads on the ground.",
+          "t": "La opción E es incorrecta: A motorbike drives on roads on the ground.",
           "a": "o:E:no",
           "k": "err"
         },
         {
-          "t": "La opción G no corresponde: A truck is a road freight vehicle on the ground.",
+          "t": "La opción G es incorrecta: A truck is a road freight vehicle on the ground.",
           "a": "o:G:no",
           "k": "err"
         },
         {
-          "t": "La opción H no corresponde: A train runs on railway tracks on the ground.",
+          "t": "La opción H es incorrecta: A train runs on railway tracks on the ground.",
           "a": "o:H:no",
           "k": "err"
         },
         {
-          "a": "o:F:ok",
-          "t": "La respuesta es la opción correcta."
+          "t": "Por lo tanto, confirmamos que la respuesta correcta es la opción F.",
+          "a": "o:F:ok"
         }
       ],
       "3": [
@@ -131,39 +131,34 @@
           "t": "Comprueba que la opción elegida responde al enunciado y no contradice el pasaje."
         },
         {
-          "t": "La opción A no encaja: A bike moves on the ground with pedals, it does not fly.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
         },
         {
-          "t": "La opción B no encaja: A boat navigates on water, it does not fly.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
         },
         {
-          "t": "La opción C no encaja: A bus travels on roads on the ground, it does not fly.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no encaja: {{bike}} se monta y pedalea, pero esa característica no corresponde a viajar por el aire."
         },
         {
-          "t": "La opción D no encaja: A helicopter typically transports few people, whereas a plane carries many people to travel.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
         },
         {
-          "t": "La opción E no encaja: A motorbike drives on roads on the ground.",
           "a": "o:E:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción E no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
         },
         {
-          "t": "La opción G no encaja: A truck is a road freight vehicle on the ground.",
           "a": "o:G:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción H no encaja: A train runs on railway tracks on the ground.",
-          "a": "o:H:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
         },
         {
           "a": "o:F:ok",
@@ -196,5 +191,6 @@
         "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
       }
     ]
-  }
+  },
+  "revisar": []
 }

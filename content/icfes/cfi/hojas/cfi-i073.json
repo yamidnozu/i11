@@ -1,32 +1,26 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "¿cuáles dimensiones están en conflicto?",
-        "rol": "pide",
-        "nota": "Debes identificar los dos ámbitos que entran en tensión en el pasaje.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Identifica qué problema ambiental se busca reducir."
-      },
-      {
-        "k": "idea",
-        "texto": "Ubica qué sector económico depende de las industrias pesadas y se vería afectado por la transición."
-      },
-      {
-        "k": "check",
-        "texto": "Elige la pareja de dimensiones que represente la tensión entre la actividad económica y la protección ambiental."
-      }
-    ],
     "enfoque": {
-      "tema": "Tensión entre desarrollo económico y ambiente",
-      "que": "Reconocer las dimensiones en conflicto cuando reducir la contaminación exige transformar industrias productivas.",
+      "clave": "La opción C identifica el conflicto entre la dimensión económica, vinculada a las industrias y el producto interno bruto, y la ambiental, relacionada con la contaminación.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero la educación se menciona por la cancelación de actividades escolares, pero no es el conflicto central de la propuesta económica descrita."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero la cultura no aparece como una dimensión afectada en el argumento."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero no se presenta un conflicto cultural; el pasaje relaciona producción industrial y contaminación."
+        }
+      ],
+      "pistas": [
+        "El texto propone reducir la dependencia de las industrias pesadas.",
+        "Estas industrias aportan al producto interno bruto y generan contaminación."
+      ],
       "plan": [
         {
           "t": "Señala la meta ambiental del pasaje: bajar la contaminación."
@@ -38,25 +32,8 @@
           "t": "Nombra las dos dimensiones que entran en tensión."
         }
       ],
-      "pistas": [
-        "El texto propone reducir la dependencia de las industrias pesadas.",
-        "Estas industrias aportan al producto interno bruto y generan contaminación."
-      ],
-      "clave": "La opción C identifica el conflicto entre la dimensión económica, vinculada a las industrias y el producto interno bruto, y la ambiental, relacionada con la contaminación.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "La educación se menciona por la cancelación de actividades escolares, pero no es el conflicto central de la propuesta económica descrita."
-        },
-        {
-          "t": "Opción B",
-          "p": "La cultura no aparece como una dimensión afectada en el argumento."
-        },
-        {
-          "t": "Opción D",
-          "p": "No se presenta un conflicto cultural; el pasaje relaciona producción industrial y contaminación."
-        }
-      ]
+      "que": "Reconocer las dimensiones en conflicto cuando reducir la contaminación exige transformar industrias productivas.",
+      "tema": "Tensión entre desarrollo económico y ambiente"
     },
     "guion": {
       "1": [
@@ -107,6 +84,30 @@
           "t": "Las demás opciones nombran dimensiones que no estructuran este conflicto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pregunta",
+        "frag": "¿cuáles dimensiones están en conflicto?",
+        "nota": "Debes identificar los dos ámbitos que entran en tensión en el pasaje.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Identifica qué problema ambiental se busca reducir."
+      },
+      {
+        "k": "idea",
+        "texto": "Ubica qué sector económico depende de las industrias pesadas y se vería afectado por la transición."
+      },
+      {
+        "k": "check",
+        "texto": "Elige la pareja de dimensiones que represente la tensión entre la actividad económica y la protección ambiental."
+      }
+    ]
+  },
+  "revisar": []
 }

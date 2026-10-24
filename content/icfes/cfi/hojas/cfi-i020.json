@@ -1,112 +1,141 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "ingresos entre 0 y 1 SMMLV recibe un subsidio equivalente a",
-        "rol": "dato",
-        "nota": "El rango de referencia tiene subsidio de veintidós SMMLV.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Busca en la tabla el subsidio para ingresos entre cero y un SMMLV: veintidós SMMLV."
-      },
-      {
-        "k": "idea",
-        "texto": "Compara ese valor con el subsidio del intervalo de cada opción. Solo cuatro SMMLV produce una razón de cinco coma cinco."
-      },
-      {
-        "k": "check",
-        "texto": "El intervalo de tres coma cinco a cuatro SMMLV corresponde a la opción D."
-      }
-    ],
     "enfoque": {
-      "tema": "Comparar razones entre subsidios",
-      "que": "Compara el subsidio del primer rango de ingresos con el de los rangos mencionados.",
-      "plan": [
-        {
-          "t": "Busca en la tabla el subsidio para ingresos entre cero y un SMMLV: veintidós SMMLV."
-        },
-        {
-          "t": "Compara ese valor con el subsidio del intervalo de cada opción. Solo cuatro SMMLV produce una razón de cinco coma cinco."
-        },
-        {
-          "t": "El intervalo de tres coma cinco a cuatro SMMLV corresponde a la opción D."
-        }
-      ],
-      "pistas": [
-        "El primer intervalo recibe veintidós SMMLV.",
-        "La tabla muestra cuatro SMMLV para el intervalo de tres coma cinco a cuatro."
-      ],
-      "clave": "El primer intervalo recibe veintidós SMMLV de subsidio y el intervalo de tres coma cinco a cuatro recibe cuatro. Veintidós dividido entre cuatro es cinco coma cinco, como indica la opción D.",
+      "clave": "Veintidós dividido entre cuatro es cinco coma cinco.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, veintidós dividido entre diecinueve no es uno coma cuatro."
+          "p": "Pero el subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios."
         },
         {
           "t": "Opción B",
-          "p": "Pero, veintidós dividido entre quince no es uno coma ocho."
+          "p": "Pero el segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós."
         },
         {
           "t": "Opción C",
-          "p": "Pero, veintidós dividido entre nueve no es tres coma cinco."
+          "p": "Pero el subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla."
         }
-      ]
+      ],
+      "pistas": [
+        "Compara el subsidio del primer tramo ($22$ SMMLV) con el subsidio asignado al tramo de 3,5 a 4 SMMLV ($4$ SMMLV).",
+        "Divide $22$ entre $4$ para constatar que el primer grupo recibe cinco coma cinco ($5,5$) veces más subsidio."
+      ],
+      "plan": [
+        {
+          "t": "Lee el subsidio de cada rango que aparece en las alternativas."
+        },
+        {
+          "t": "Divide veintidós entre el subsidio de cada intervalo."
+        },
+        {
+          "t": "El rango de tres coma cinco a cuatro recibe cuatro; la razón es cinco coma cinco. Respuesta D."
+        }
+      ],
+      "que": "Compara el subsidio del rango más bajo con los valores de los otros intervalos.",
+      "tema": "Razón entre subsidios de dos rangos"
     },
     "guion": {
       "1": [
         {
-          "t": "Busca en la tabla el subsidio para ingresos entre cero y un SMMLV: veintidós SMMLV."
+          "t": "¿Cuánto recibe la familia del rango de cero a un SMMLV?"
         },
         {
-          "t": "Compara ese valor con el subsidio del intervalo de cada opción. Solo cuatro SMMLV produce una razón de cinco coma cinco."
+          "t": "Veintidós. El rango de tres coma cinco a cuatro recibe cuatro."
         },
         {
           "a": "o:D:ok",
-          "t": "La respuesta es la opción D: El primer intervalo recibe veintidós SMMLV de subsidio y el intervalo de tres coma cinco a cuatro recibe cuatro. Veintidós dividido entre cuatro es cinco coma cinco, como indica la opción D."
+          "t": "Veintidós dividido entre cuatro es cinco coma cinco; D."
         }
       ],
       "2": [
         {
+          "t": "Busca en la tabla el valor del subsidio para cada rango de las opciones."
+        },
+        {
+          "t": "Solo el valor cuatro produce la razón $22/4=5,5$."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "Pero, veintidós dividido entre diecinueve no es uno coma cuatro."
+          "t": "La opción A: El subsidio del rango comparado es diecinueve SMMLV y $22/19$ no es uno coma cuatro. Pero se debe usar la razón entre ambos subsidios."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "Pero, veintidós dividido entre quince no es uno coma ocho."
+          "t": "La opción B: El segundo subsidio es quince y la razón $22/15$ no es uno coma ocho. Pero el primer rango recibe veintidós."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "Pero, veintidós dividido entre nueve no es tres coma cinco."
+          "t": "La opción C: El subsidio comparado es nueve y la razón $22/9$ no es tres coma cinco. Pero se busca una igualdad exacta con el valor de la tabla."
         },
         {
           "a": "o:D:ok",
-          "t": "El primer intervalo recibe veintidós SMMLV de subsidio y el intervalo de tres coma cinco a cuatro recibe cuatro. Veintidós dividido entre cuatro es cinco coma cinco, como indica la opción D."
+          "t": "A, B y C no coinciden con los valores de sus intervalos. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Busca en la tabla el subsidio para ingresos entre cero y un SMMLV: veintidós SMMLV."
+          "a": "p:0",
+          "k": "ana",
+          "t": "La primera familia recibe veintidós SMMLV."
         },
         {
-          "t": "Compara ese valor con el subsidio del intervalo de cada opción. Solo cuatro SMMLV produce una razón de cinco coma cinco."
+          "a": "p:1",
+          "t": "El rango de tres coma cinco a cuatro recibe cuatro SMMLV."
         },
         {
-          "t": "El intervalo de tres coma cinco a cuatro SMMLV corresponde a la opción D."
+          "a": "p:2",
+          "k": "contra",
+          "t": "La razón entre los subsidios es $22/4=5,5$."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "A, B y C proponen razones distintas a las calculadas con la tabla."
         },
         {
           "a": "o:D:ok",
-          "t": "El primer intervalo recibe veintidós SMMLV de subsidio y el intervalo de tres coma cinco a cuatro recibe cuatro. Veintidós dividido entre cuatro es cinco coma cinco, como indica la opción D."
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "ingresos entre 0 y 1 SMMLV",
+        "nota": "A ese intervalo le corresponden veintidós SMMLV de subsidio.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "subsidio equivalente a",
+        "nota": "Encuentra la razón respecto a otro rango.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Lee el subsidio de cada rango que aparece en las alternativas.",
+        "titulo": "Lee el subsidio de cada rango que aparece en las alternativas."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$22/4=5,5$"
+        ],
+        "nota": "Divide veintidós entre el subsidio de cada intervalo.",
+        "titulo": "Divide veintidós entre el subsidio de cada intervalo."
+      },
+      {
+        "k": "check",
+        "texto": "El rango de tres coma cinco a cuatro recibe cuatro; la razón es cinco coma cinco. Respuesta D.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

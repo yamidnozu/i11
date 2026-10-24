@@ -1,124 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "promueve proyectos de agricultura para la reintegración de campesinos desplazados",
-        "rol": "dato",
-        "nota": "Este es el propósito de la organización estatal.",
-        "campo": "Objetivo estatal"
-      },
-      {
-        "frag": "rechaza esta decisión porque afectará este ecosistema",
-        "rol": "dato",
-        "nota": "Este es el propósito de la organización ambientalista.",
-        "campo": "Objetivo ambiental"
-      },
-      {
-        "frag": "se puede afirmar que",
-        "rol": "pide",
-        "nota": "Debes comparar lo que busca cada organización.",
-        "campo": "Pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "texto": "Separa el objetivo de reintegrar a los campesinos del objetivo de conservar el humedal."
-      },
-      {
-        "k": "idea",
-        "texto": "Revisa si la opción describe esos dos objetivos y el conflicto entre ellos."
-      },
-      {
-        "k": "check",
-        "texto": "Confirma que no atribuyas a una organización un propósito que el enunciado asigna a la otra."
-      }
-    ],
     "enfoque": {
-      "tema": "Conflicto entre reintegración social y conservación ambiental",
-      "que": "Distinguir los objetivos de una organización estatal y una ambientalista ante el uso de un humedal.",
-      "plan": [
-        {
-          "t": "Identifica que la organización estatal busca reintegrar a campesinos desplazados mediante agricultura."
-        },
-        {
-          "t": "Identifica que la organización ambientalista busca evitar el daño al humedal."
-        },
-        {
-          "t": "Compara esos objetivos con cada alternativa y verifica cómo se reparte la defensa de cada interés."
-        }
-      ],
-      "pistas": [
-        "Una organización quiere utilizar terrenos del humedal.",
-        "La otra rechaza esa decisión por el impacto ambiental."
-      ],
-      "clave": "La opción C distingue los fines: la ambientalista protege el ecosistema aunque no se entreguen esos terrenos, mientras la estatal busca ayudar a los campesinos aun con el riesgo ambiental descrito.",
+      "clave": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero, No comparten un objetivo de aprovechamiento económico del humedal; la organización ambientalista rechaza su uso."
+          "p": "Pero es incorrecta porque no existe un choque cultural étnico en la tecnificación del cultivo, sino una discrepancia sobre el uso de químicos tóxicos."
         },
         {
           "t": "Opción B",
-          "p": "Pero, No buscan ambas conservar las riquezas naturales; la organización estatal plantea usar el humedal para agricultura."
+          "p": "Pero es incorrecta porque los campesinos defienden su derecho al trabajo e ingresos, no una preferencia doctrinal por alimentos no procesados."
         },
         {
           "t": "Opción D",
-          "p": "Pero, El enunciado no dice que la organización estatal quiera trasladar a los campesinos a otra región."
+          "p": "Pero es incorrecta porque el gobierno actúa en cumplimiento de normas sanitarias generales y no en defensa de un interés empresarial privado particular."
         }
-      ]
+      ],
+      "pistas": [
+        "Analiza el objetivo de los proyectos agrícolas productivos como garantía de no repetición y estabilización económica de excombatientes.",
+        "Identifica los factores comunitarios e institucionales necesarios para una reintegración social y laboral efectiva."
+      ],
+      "plan": [
+        {
+          "t": "Identifica el criterio que pide el enunciado."
+        },
+        {
+          "t": "Contrasta cada opción con la información de la fuente."
+        },
+        {
+          "t": "Concluye por qué la opción C satisface ese criterio."
+        }
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "La organización estatal quiere apoyar a campesinos desplazados con proyectos agrícolas."
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La organización ambientalista rechaza usar el humedal porque busca protegerlo."
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C presenta esos objetivos diferentes."
+          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es C."
         }
       ],
       "2": [
         {
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
+        },
+        {
+          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
+        },
+        {
           "a": "o:A:no",
           "k": "err",
-          "t": "No comparten un objetivo de aprovechamiento económico del humedal; la organización ambientalista rechaza su uso."
+          "t": "La opción A plantea «es semejante, porque las dos buscan el aprovechamiento económico…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "No buscan ambas conservar las riquezas naturales; la organización estatal plantea usar el humedal para agricultura."
+          "t": "La opción B plantea «es semejante, porque las dos buscan defender a toda costa las…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "El enunciado no dice que la organización estatal quiera trasladar a los campesinos a otra región."
+          "t": "La opción D plantea «es diferente, porque una busca que los campesinos se asienten y…», Pero no responde al criterio central: La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C distingue los fines: la ambientalista protege el ecosistema aunque no se entreguen esos terrenos, mientras la estatal busca ayudar a los campesinos aun con el riesgo ambiental descrito."
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Compara los propósitos explícitos, sin añadir planes que el texto no menciona."
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "El proyecto agrícola puede apoyar la reintegración, pero afectaría el ecosistema del humedal."
-        },
-        {
-          "t": "La organización ambientalista prioriza evitar ese daño; la estatal, apoyar a los campesinos mediante el proyecto."
+          "a": "p:1",
+          "t": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren."
         },
         {
           "a": "o:C:ok",
-          "t": "La opción C representa ese conflicto de objetivos."
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
+        },
+        {
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
+        },
+        {
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "En una región de Colombia, una organización",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De lo que busca cada una de las organizaciones mencionadas se puede afirmar que",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La organización estatal prioriza la reintegración y el acceso a tierras para campesinos; la ambientalista prioriza conservar el humedal, por eso sus objetivos difieren. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

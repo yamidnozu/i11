@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "¿Qué intereses está favoreciendo esta declaración?",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes analizar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica el contexto",
-        "texto": "Observa a quién atribuye la causa del acoso la declaración."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la evidencia",
-        "texto": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones."
-      }
-    ],
     "enfoque": {
-      "tema": "Identificar a quién beneficia una justificación de violencia",
-      "que": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
+      "clave": "Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden.",
+      "no": [
+        {
+          "t": "Opción A",
+          "p": "Pero es incorrecta porque aconsejar a las mujeres que alteren su vestimenta limita su libertad y valida prejuicios machistas en vez de protegerlas."
+        },
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque la policía tiene el deber legal estricto de perseguir y prevenir cualquier manifestación delictiva o acoso en la vía pública."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque la declaración del oficial no protege la seguridad ciudadana, sino que invisibiliza y tolera la violencia de género."
+        }
+      ],
       "pistas": [
         "Observa a quién atribuye la causa del acoso la declaración.",
         "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
       ],
-      "clave": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones.",
-      "no": [
-        {
-          "t": "Opción A",
-          "p": "Puede parecer posible. Pero La recomendación restringe la libertad de las mujeres y desplaza hacia ellas la responsabilidad."
-        },
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero No se refiere a las funciones de la policía ni a su carga de trabajo."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero No analiza la imagen de seguridad de la ciudad; se centra en cómo deben vestir las mujeres."
-        }
-      ],
       "plan": [
         {
-          "t": "Observa a quién atribuye la causa del acoso la declaración."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción C satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «¿Qué intereses está favoreciendo esta declaración?» orienta el análisis.",
-          "a": "m:¿Qué intereses está favoreciendo esta declaración?"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden. La respuesta es C."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
-          "a": "p:0"
+          "t": "Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden."
         },
         {
-          "t": "Opción A: La recomendación restringe la libertad de las mujeres y desplaza hacia ellas la responsabilidad. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A plantea «Los de las mujeres, porque está aconsejándoles cómo vestir para no…», Pero no responde al criterio central: Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden."
         },
         {
-          "t": "Opción B: No se refiere a las funciones de la policía ni a su carga de trabajo. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Los de los policías, porque su función no es la de manejar casos…», Pero no responde al criterio central: Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden."
         },
         {
-          "t": "Opción D: No analiza la imagen de seguridad de la ciudad; se centra en cómo deben vestir las mujeres. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Los de la ciudad, porque el acoso sexual afecta la percepción de…», Pero no responde al criterio central: Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden."
         },
         {
-          "t": "La respuesta es la opción C.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La opción C es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué hechos, posturas o mecanismos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Observa a quién atribuye la causa del acoso la declaración.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden."
         },
         {
-          "t": "Distingue entre prevenir la agresión y trasladar la responsabilidad a las víctimas.",
-          "a": "p:1"
+          "a": "o:C:ok",
+          "k": "contra",
+          "t": "Por eso la opción C se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "El jefe de policía atribuye el acoso a la forma de vestir de las mujeres en vez de responsabilizar a quienes agreden. Esa explicación puede justificar o excusar a los agresores y desplazar la atención de sus actos.",
-          "a": "p:2"
+          "a": "o:A:no|o:B:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La declaración favorece a los agresores al ofrecer una justificación para sus acciones.",
-          "a": "o:C:ok"
+          "a": "o:C:ok",
+          "t": "La respuesta correcta es C."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "La violencia sexual contra las mujeres es un",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "ciendo esta declaración?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "Atribuir la violencia a la ropa de las mujeres traslada responsabilidad desde los agresores hacia las víctimas y favorece a quienes agreden. La respuesta es C.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

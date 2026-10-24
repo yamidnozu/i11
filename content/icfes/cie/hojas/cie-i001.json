@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "moléculas de agua",
-        "rol": "pide",
-        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Identifica qué representa",
-        "texto": "Compara qué representa cada grupo de puntos en el modelo del líquido."
-      },
-      {
-        "k": "idea",
-        "titulo": "Lee las relaciones del modelo",
-        "texto": "Busca una opción donde las moléculas permanezcan completas y el gas ocupe el recipiente."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la opción",
-        "texto": "Verifica que el líquido siga agrupado en la parte baja."
-      }
-    ],
     "enfoque": {
-      "tema": "Leer modelos de moléculas en estados líquido y gaseoso",
-      "que": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones.",
-      "pistas": [
-        "Compara qué representa cada grupo de puntos en el modelo del líquido.",
-        "Busca una opción donde las moléculas permanezcan completas y el gas ocupe el recipiente."
-      ],
       "clave": "En la opción B las moléculas de agua permanecen intactas y se distribuyen por el espacio del gas.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas."
+          "p": "Pero separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas."
         },
         {
           "t": "Opción C",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente."
+          "p": "Pero agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente."
         },
         {
           "t": "Opción D",
-          "p": "Puede parecer posible al mirar solo una parte del dibujo. Pero Muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua."
+          "p": "Pero muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua."
         }
+      ],
+      "pistas": [
+        "Compara qué representa cada grupo de puntos en el modelo del líquido.",
+        "Busca una opción donde las moléculas permanezcan completas y el gas ocupe el recipiente."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Verifica que el líquido siga agrupado en la parte baja."
         }
-      ]
+      ],
+      "que": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones.",
+      "tema": "Leer modelos de moléculas en estados líquido y gaseoso"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "La frase «moléculas de agua» señala la pista central.",
-          "a": "m:moléculas de agua"
+          "a": "m:moléculas de agua",
+          "t": "La frase «moléculas de agua» señala la pista central."
         },
         {
-          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "2": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones."
         },
         {
-          "t": "Opción A: Separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas. La descartamos."
         },
         {
-          "t": "Opción C: Agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente. La descartamos."
         },
         {
-          "t": "Opción D: Muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua. La descartamos."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ],
       "3": [
         {
-          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos el enunciado y observemos qué representa cada elemento del modelo."
         },
         {
-          "t": "Primero identifico qué representa el dibujo o los datos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué representa el dibujo o los datos."
         },
         {
-          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "El agua conserva sus moléculas al cambiar de estado. En el líquido se agrupan en la parte baja; en el gas, las moléculas completas se separan y ocupan todo el recipiente. El modelo B representa ambas condiciones."
         },
         {
-          "t": "Verifica que el líquido siga agrupado en la parte baja.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Verifica que el líquido siga agrupado en la parte baja."
         },
         {
-          "t": "Opción A: Separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: Separa los átomos de la molécula de agua, aunque el cambio de estado no rompe las moléculas. La descarto."
         },
         {
-          "t": "Opción C: Agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: Agrupa el gas solo en la parte superior; un gas se distribuye por todo el recipiente. La descarto."
         },
         {
-          "t": "Opción D: Muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua. La descarto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción D: Muestra partículas de hidrógeno y oxígeno separadas, no moléculas de agua. La descarto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta es la opción B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "moléculas de agua",
+        "nota": "Fragmento que dirige la lectura del modelo o la relación científica.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara qué representa cada grupo de puntos en el modelo del líquido.",
+        "titulo": "Identifica qué representa"
+      },
+      {
+        "k": "idea",
+        "texto": "Busca una opción donde las moléculas permanezcan completas y el gas ocupe el recipiente.",
+        "titulo": "Lee las relaciones del modelo"
+      },
+      {
+        "k": "check",
+        "texto": "Verifica que el líquido siga agrupado en la parte baja.",
+        "titulo": "Comprueba la opción"
+      }
+    ]
+  },
+  "revisar": []
 }

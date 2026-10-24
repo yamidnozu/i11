@@ -1,68 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "gráfica de la función $f(x)=5/x$",
-        "rol": "dato",
-        "nota": "La altura del rectángulo corresponde a esta función.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "expresión $A_x=x f(x)$",
-        "rol": "dato",
-        "nota": "El área es el producto de la base y la altura.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "gráficas corresponde a $A_x$",
-        "rol": "pide",
-        "nota": "Busca la gráfica de una función constante.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Sustituye la función que da la altura en la fórmula del área.",
-        "texto": "Sustituye la función que da la altura en la fórmula del área."
-      },
-      {
-        "k": "calc",
-        "titulo": "Cancela los factores $x$ y $1/x$.",
-        "lineas": [
-          "$A_x=x(5/x)=5$"
-        ],
-        "nota": "Cancela los factores $x$ y $1/x$."
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
-      }
-    ],
     "enfoque": {
-      "tema": "Producto de funciones y gráfica de área",
-      "que": "Determina cómo varía el área del rectángulo al cambiar la abscisa del punto.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "El producto $x(5/x)$ es constante e igual a cinco.",
       "no": [
         {
           "t": "Opción A",
-          "p": "La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
+          "p": "Pero la expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
           "t": "Opción C",
-          "p": "Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
+          "p": "Pero una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
         },
         {
           "t": "Opción D",
-          "p": "La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
+          "p": "Pero la función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         }
+      ],
+      "pistas": [
+        "Calcula el área de cada rectángulo multiplicando la base $x$ por la altura dada por la curva $f(x) = 5/x$.",
+        "Observa que $A(x) = x \\cdot (5/x) = 5$, lo que demuestra que el área es constante e independiente de $x$."
       ],
       "plan": [
         {
@@ -74,7 +31,9 @@
         {
           "t": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
         }
-      ]
+      ],
+      "que": "Determina cómo varía el área del rectángulo al cambiar la abscisa del punto.",
+      "tema": "Producto de funciones y gráfica de área"
     },
     "guion": {
       "1": [
@@ -85,8 +44,8 @@
           "t": "La $x$ se cancela con el denominador; queda cinco."
         },
         {
-          "t": "La gráfica es horizontal en cinco. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La gráfica es horizontal en cinco. La respuesta es B."
         }
       ],
       "2": [
@@ -97,50 +56,92 @@
           "t": "El resultado es $A_x=5$ para todo valor positivo de $x$."
         },
         {
-          "t": "La opción A: La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
-          "t": "La opción C: Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
         },
         {
-          "t": "La opción D: La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         },
         {
-          "t": "A y C crecen; D decrece. La opción B conserva el área.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A y C crecen; D decrece. La opción B conserva el área."
         }
       ],
       "3": [
         {
-          "t": "La base del rectángulo es $x$ y su altura es $5/x$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La base del rectángulo es $x$ y su altura es $5/x$."
         },
         {
-          "t": "Su producto es $x(5/x)=5$, independiente de la posición del punto.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Su producto es $x(5/x)=5$, independiente de la posición del punto."
         },
         {
-          "t": "Una función constante se representa con una recta horizontal en $y=5$.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Una función constante se representa con una recta horizontal en $y=5$."
         },
         {
-          "t": "A y C aumentan y D disminuye; no representan el área constante.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A y C aumentan y D disminuye; no representan el área constante."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "gráfica de la función $f(x)=5/x$",
+        "nota": "La altura del rectángulo corresponde a esta función.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "expresión $A_x=x f(x)$",
+        "nota": "El área es el producto de la base y la altura.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "gráficas corresponde a $A_x$",
+        "nota": "Busca la gráfica de una función constante.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Sustituye la función que da la altura en la fórmula del área.",
+        "titulo": "Sustituye la función que da la altura en la fórmula del área."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$A_x=x(5/x)=5$"
+        ],
+        "nota": "Cancela los factores $x$ y $1/x$.",
+        "titulo": "Cancela los factores $x$ y $1/x$."
+      },
+      {
+        "k": "check",
+        "texto": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

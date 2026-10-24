@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "The group of Ethiopian wolves exists ______ the Bale Mountains National Park.",
-        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
-        "rol": "pide"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee la pista",
-        "texto": "Fíjate en {{The group of Ethiopian wolves exists ______ the Bale Mountains National Park.}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona la información",
-        "texto": "{{in}} expresa que el grupo existe dentro del parque."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
-      }
-    ],
     "enfoque": {
-      "tema": "Comprensión de lectura en inglés",
-      "que": "{{in}} expresa que el grupo existe dentro del parque.",
       "clave": "{{in}} expresa que el grupo existe dentro del parque.",
-      "pistas": [
-        "Fíjate en {{The group of Ethiopian wolves exists ______ the Bale Mountains National Park.}}.",
-        "Relaciona la pista con una evidencia explícita del texto."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "Pero, {{along}} significa «a lo largo de» (un río, un camino) y describe una línea; el parque es un área y la frase dice que los lobos están dentro de ella."
+          "p": "Pero {{along}} significa «a lo largo de» (un río, un camino) y describe una línea; el parque es un área y la frase dice que los lobos están dentro de ella."
         },
         {
           "t": "Opción C",
-          "p": "Pero, {{on}} es «sobre» una superficie (on the table); para estar dentro de un parque o territorio se usa {{in}}."
+          "p": "Pero {{on}} es «sobre» una superficie (on the table); para estar dentro de un parque o territorio se usa {{in}}."
         }
+      ],
+      "pistas": [
+        "Choose the spatial preposition {{in}} used with mountain ranges and geographic regions.",
+        "Complete the location phrase {{in the Bale Mountains}}."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba la respuesta y descarta las opciones que no responden."
         }
-      ]
+      ],
+      "que": "{{in}} expresa que el grupo existe dentro del parque.",
+      "tema": "Comprensión de lectura en inglés"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La evidencia respalda {{in}}."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "The group of Ethiopian wolves exists ______ the Bale Mountains National Park.",
+        "nota": "Esta frase indica qué información debes localizar en el pasaje o la conversación.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{The group of Ethiopian wolves exists ______ the Bale Mountains National Park.}}.",
+        "titulo": "Lee la pista"
+      },
+      {
+        "k": "idea",
+        "texto": "{{in}} expresa que el grupo existe dentro del parque.",
+        "titulo": "Relaciona la información"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la opción elegida responde al enunciado y coincide con el texto fuente."
+      }
+    ]
+  },
+  "revisar": []
 }

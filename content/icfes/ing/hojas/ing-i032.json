@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "I can’t eat a cold sandwich. It is horrible!",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
       "clave": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
-      "pistas": [
-        "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción A",
-          "p": "No responde a la opinión; expresa esperanza."
+          "p": "Pero no responde a la opinión; expresa esperanza."
         },
         {
           "t": "Opción C",
-          "p": "No concuerda con la opinión ni responde de forma natural a lo dicho."
+          "p": "Pero no concuerda con la opinión ni responde de forma natural a lo dicho."
         }
+      ],
+      "pistas": [
+        "Notice the speaker's negative opinion about cold sandwiches.",
+        "Choose the conversational expression of agreement: {{I agree}}."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "I can’t eat a cold sandwich. It is horrible!",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{I can’t eat a cold sandwich. It is horrible!}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "La persona dice que no puede comer un sándwich frío porque le parece horrible. «{{I agree.}}» coincide con esa opinión; las otras respuestas no reaccionan de manera adecuada.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

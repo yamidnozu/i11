@@ -1,53 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "trayectoria que recorre cada ratón",
-        "rol": "pide",
-        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
-        "campo": "Pista central"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la información",
-        "texto": "Compara la condición previa de los dos grupos."
-      },
-      {
-        "k": "idea",
-        "titulo": "Interpreta el apoyo",
-        "texto": "Observa qué trayectoria llega al recipiente señalado."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la respuesta",
-        "texto": "Limita la conclusión a la diferencia de desempeño observada."
-      }
-    ],
     "enfoque": {
-      "tema": "Interpretar el desempeño en una tarea de memoria espacial",
-      "que": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
-      "pistas": [
-        "Compara la condición previa de los dos grupos.",
-        "Observa qué trayectoria llega al recipiente señalado."
-      ],
       "clave": "La trayectoria del grupo con ejercicio es consistente con un mejor recuerdo espacial bajo las condiciones del experimento.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias."
+          "p": "Pero el triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias."
         },
         {
           "t": "Opción B",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación."
+          "p": "Pero el experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación."
         },
         {
           "t": "Opción C",
-          "p": "Puede sonar razonable si se ignora una pista. Pero El tiempo en el tanque y las sesiones fueron iguales para ambos grupos."
+          "p": "Pero el tiempo en el tanque y las sesiones fueron iguales para ambos grupos."
         }
+      ],
+      "pistas": [
+        "Compara la condición previa de los dos grupos.",
+        "Observa qué trayectoria llega al recipiente señalado."
       ],
       "plan": [
         {
@@ -59,95 +31,124 @@
         {
           "t": "Limita la conclusión a la diferencia de desempeño observada."
         }
-      ]
+      ],
+      "que": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
+      "tema": "Interpretar el desempeño en una tarea de memoria espacial"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "La frase «trayectoria que recorre cada ratón» orienta lo que debemos observar.",
-          "a": "m:trayectoria que recorre cada ratón"
+          "a": "m:trayectoria que recorre cada ratón",
+          "t": "La frase «trayectoria que recorre cada ratón» orienta lo que debemos observar."
         },
         {
-          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación."
         },
         {
-          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descartamos."
         },
         {
-          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descartamos."
         },
         {
-          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descartamos."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ],
       "3": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar.",
-          "a": "leer"
+          "a": "leer",
+          "t": "Leamos la pregunta y ubiquemos qué información debemos interpretar."
         },
         {
-          "t": "Primero identifico qué dato o tendencia debo leer.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Primero identifico qué dato o tendencia debo leer."
         },
         {
-          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Los dos grupos recibieron el mismo tiempo y las mismas sesiones en el tanque; la condición distinta fue hacer ejercicio antes. En el registro final, la trayectoria del grupo con ejercicio se dirige con mayor claridad hacia el recipiente señalizado, resultado compatible con mejor recuerdo de la ubicación."
         },
         {
-          "t": "Limita la conclusión a la diferencia de desempeño observada.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Limita la conclusión a la diferencia de desempeño observada."
         },
         {
-          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descarto.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción A: El triángulo estaba disponible para los dos grupos y por sí solo no explica la diferencia en sus trayectorias. La descarto."
         },
         {
-          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descarto.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción B: El experimento evalúa encontrar el recipiente usando la señal espacial; no presenta una medición de velocidad de nado como explicación. La descarto."
         },
         {
-          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descarto.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "Opción C: El tiempo en el tanque y las sesiones fueron iguales para ambos grupos. La descarto."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es la opción D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista central",
+        "frag": "trayectoria que recorre cada ratón",
+        "nota": "Expresión vinculada con el dato o apoyo que se debe interpretar.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Compara la condición previa de los dos grupos.",
+        "titulo": "Ubica la información"
+      },
+      {
+        "k": "idea",
+        "texto": "Observa qué trayectoria llega al recipiente señalado.",
+        "titulo": "Interpreta el apoyo"
+      },
+      {
+        "k": "check",
+        "texto": "Limita la conclusión a la diferencia de desempeño observada.",
+        "titulo": "Comprueba la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

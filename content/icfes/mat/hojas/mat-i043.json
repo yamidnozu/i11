@@ -1,150 +1,147 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "frag": "área",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «gráfica corresponde» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "A_x=x(5/x)=5"
-        ],
-        "nota": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: gráfica corresponde",
-      "que": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
-      "pistas": [
-        "Fíjate en «gráfica corresponde».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
+      "clave": "El producto $x(5/x)$ es constante e igual a cinco.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero la expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero la función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         }
+      ],
+      "pistas": [
+        "Calcula el área de cada rectángulo multiplicando la base $x$ por la altura dada por la curva $f(x) = 5/x$.",
+        "Observa que $A(x) = x \\cdot (5/x) = 5$, lo que demuestra que el área es constante e independiente de $x$."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Sustituye la función que da la altura en la fórmula del área."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "A_x=x(5/x)=5"
-          ]
+          "t": "Cancela los factores $x$ y $1/x$."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal."
         }
-      ]
+      ],
+      "que": "Determina cómo varía el área del rectángulo al cambiar la abscisa del punto.",
+      "tema": "Producto de funciones y gráfica de área"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Qué ocurre con el producto de la base $x$ y la altura $5/x$?"
         },
         {
-          "t": "La frase «gráfica corresponde» orienta la estrategia.",
-          "a": "m:área"
+          "t": "La $x$ se cancela con el denominador; queda cinco."
         },
         {
-          "t": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La gráfica es horizontal en cinco. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Sustituye $f(x)=5/x$ en la expresión del área."
         },
         {
-          "t": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
-          "a": "p:1"
+          "t": "El resultado es $A_x=5$ para todo valor positivo de $x$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: La expresión del área se mantiene constante. Pero una recta creciente cambiaría de valor con $x$."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Una curva creciente no representa el producto $x(5/x)$, que siempre vale cinco. Pero los factores se cancelan."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: La función $f(x)$ decrece, pero el área $x f(x)$ permanece constante. Pero se pregunta por el producto."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A y C crecen; D decrece. La opción B conserva el área."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La base del rectángulo es $x$ y su altura es $5/x$."
         },
         {
-          "t": "Como $f(x)=5/x$, el área es $A_x=xf(x)=x(5/x)=5$ para todo $x>0$. Su gráfica es una recta horizontal de altura cinco, opción B.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Su producto es $x(5/x)=5$, independiente de la posición del punto."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Una función constante se representa con una recta horizontal en $y=5$."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A y C aumentan y D disminuye; no representan el área constante."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "gráfica de la función",
+        "nota": "La altura del rectángulo corresponde a esta función.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "expresión",
+        "nota": "El área es el producto de la base y la altura.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "gráficas corresponde a",
+        "nota": "Busca la gráfica de una función constante.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Sustituye la función que da la altura en la fórmula del área.",
+        "titulo": "Sustituye la función que da la altura en la fórmula del área."
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$A_x=x(5/x)=5$"
+        ],
+        "nota": "Cancela los factores $x$ y $1/x$.",
+        "titulo": "Cancela los factores $x$ y $1/x$."
+      },
+      {
+        "k": "check",
+        "texto": "El área vale cinco para todo $x$ positivo; la gráfica B es horizontal.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

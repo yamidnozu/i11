@@ -1,48 +1,21 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "lectura",
-    "marcas": [
-      {
-        "campo": "Pista del enunciado",
-        "frag": "I am going on vacation to Vancouver!",
-        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
-        "rol": "dato"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Lee y observa",
-        "texto": "Fíjate en {{I am going on vacation to Vancouver!}}."
-      },
-      {
-        "k": "idea",
-        "titulo": "Relaciona las pistas",
-        "texto": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
-      }
-    ],
     "enfoque": {
-      "tema": "Inglés: lectura y uso del lenguaje",
-      "que": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
       "clave": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
-      "pistas": [
-        "Fíjate en {{I am going on vacation to Vancouver!}}.",
-        "Contrasta el sentido con el pasaje, la descripción o el aviso."
-      ],
       "no": [
         {
           "t": "Opción B",
-          "p": "La natación no responde a la noticia del viaje."
+          "p": "Pero la natación no responde a la noticia del viaje."
         },
         {
           "t": "Opción C",
-          "p": "No tiene relación con el anuncio de las vacaciones."
+          "p": "Pero no tiene relación con el anuncio de las vacaciones."
         }
+      ],
+      "pistas": [
+        "Notice the exciting news about an upcoming trip to Vancouver.",
+        "Choose the enthusiastic conversational reply: {{That’s great!}}."
       ],
       "plan": [
         {
@@ -54,7 +27,9 @@
         {
           "t": "Comprueba que la opción elegida responde a la pregunta."
         }
-      ]
+      ],
+      "que": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
+      "tema": "Inglés: lectura y uso del lenguaje"
     },
     "guion": {
       "1": [
@@ -125,6 +100,32 @@
           "t": "La respuesta es la opción correcta; vuelve a comprobarla en el contexto."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pista del enunciado",
+        "frag": "I am going on vacation to Vancouver!",
+        "nota": "Esta pista permite relacionar el reactivo con la información del pasaje, la descripción o la imagen.",
+        "rol": "dato"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Fíjate en {{I am going on vacation to Vancouver!}}.",
+        "titulo": "Lee y observa"
+      },
+      {
+        "k": "idea",
+        "texto": "La persona anuncia que se va de vacaciones a Vancouver. «{{That’s great!}}» es una reacción positiva y pertinente; las otras opciones no responden a la noticia.",
+        "titulo": "Relaciona las pistas"
+      },
+      {
+        "k": "check",
+        "texto": "Comprueba que la respuesta se sostiene en el pasaje, la descripción o el aviso."
+      }
+    ]
+  },
+  "revisar": []
 }

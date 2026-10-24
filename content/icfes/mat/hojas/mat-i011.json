@@ -1,150 +1,152 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "bono recibido",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «bono recibido» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "45(1.300.000)(0,003)=175.500"
-        ],
-        "nota": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: bono recibido",
-      "que": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
-      "pistas": [
-        "Fíjate en «bono recibido».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
+      "clave": "Las $47$ toneladas dejan dos fuera de los grupos completos; las $45$ elegibles generan $58.500.000$ en ventas y un bono de aproximadamente $175.000$ por persona.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero $526.000$ calcula el bono sobre una base mayor que las ventas correspondientes a grupos completos de cinco toneladas."
         },
         {
           "t": "Opción C",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero $148.000$ no aplica el porcentaje de bono al valor de las 45 toneladas elegibles."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero $87.000$ no corresponde al 0,3 % del valor vendido en los grupos completos."
         }
+      ],
+      "pistas": [
+        "Primero separa los grupos completos del sobrante.",
+        "Usa el precio de venta del mango en W y el porcentaje del bono."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
-        },
-        {
-          "t": "Selecciono los datos y hago la operación necesaria.",
           "eq": [
-            "45(1.300.000)(0,003)=175.500"
-          ]
+            "$47 - 2 = 45$"
+          ],
+          "t": "Calcula el sobrante al agrupar las toneladas de cinco en cinco."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "eq": [
+            "$45 × 1.300.000 = 58.500.000$"
+          ],
+          "t": "Calcula el valor de venta de las toneladas elegibles."
+        },
+        {
+          "eq": [
+            "$0,3\\% × 58.500.000 = 175.500$"
+          ],
+          "t": "Aplica el porcentaje y aproxima al valor de las opciones."
         }
-      ]
+      ],
+      "que": "Determina cuántas toneladas generan bono, calcula su valor de venta y aplica el porcentaje establecido.",
+      "tema": "Porcentaje sobre grupos completos de venta"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "a": "m:47 toneladas de mango",
+          "t": "¿Cuántos grupos completos de cinco toneladas hay en la venta?"
         },
         {
-          "t": "La frase «bono recibido» orienta la estrategia.",
-          "a": "m:bono recibido"
+          "t": "Cuentan cuarenta y cinco toneladas. Su venta suma $58.500.000$."
         },
         {
-          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El cero coma tres por ciento da aproximadamente $175.000$ pesos. La respuesta es B."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Retira primero las toneladas que no completan otro grupo y calcula el bono sobre lo restante."
         },
         {
-          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
-          "a": "p:1"
+          "t": "La venta elegible es $45 × 1.300.000 = 58.500.000$. El bono es $0,3\\% × 58.500.000 = 175.500$, cerca de $175.000$ pesos."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A parte de una base mayor que la venta elegible."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C no representa el porcentaje aplicado al ingreso de las toneladas elegibles."
         },
         {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D no corresponde al tres por mil de $58.500.000$."
         },
         {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "El valor aproximado es $175.000$ pesos por persona. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Al dividir $47$ entre cinco, sobran dos toneladas y quedan $45$ elegibles."
         },
         {
-          "t": "De las cuarenta y siete toneladas, solo cuarenta y cinco forman grupos completos de cinco. Se aplica el bono a $45(1.300.000)$ y cada trabajador recibe el $0,3\\%$ de esa venta: aproximadamente $175.500$, es decir, $175.000$ pesos.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Las ventas elegibles suman $45 × 1.300.000 = 58.500.000$. El bono individual es $0,003 × 58.500.000 = 175.500$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "Al aproximar al millar, se obtienen $175.000$ pesos."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "A usa una base demasiado alta; C y D no equivalen al porcentaje indicado sobre el ingreso elegible."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción D propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:D:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Cantidad vendida",
+        "frag": "47 toneladas de mango",
+        "nota": "La regla solo cuenta los grupos completos de cinco toneladas.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Bono individual",
+        "frag": "bono recibido por cada uno",
+        "nota": "Calcula el porcentaje sobre el ingreso de los grupos elegibles.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "De las toneladas vendidas, solo cuentan los grupos completos de cinco; el sobrante no genera bono.",
+        "titulo": "Separa grupos completos y sobrante"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "$47 - 2 = 45$ toneladas",
+          "$45 × 1.300.000 = 58.500.000$",
+          "$0,3\\% × 58.500.000 = 175.500$"
+        ],
+        "nota": "El valor aproximado por empleado es $175.000$ pesos.",
+        "titulo": "Calcula la venta elegible y el bono"
+      },
+      {
+        "k": "check",
+        "texto": "El bono calculado se aproxima a $175.000$ pesos por trabajador. La respuesta es B."
+      }
+    ]
+  },
+  "revisar": []
 }

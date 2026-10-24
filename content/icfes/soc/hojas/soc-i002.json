@@ -1,137 +1,136 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "historia",
-    "marcas": [
-      {
-        "frag": "argumento válido en contra",
-        "rol": "pide",
-        "nota": "Este fragmento indica qué debes evaluar.",
-        "campo": "Pista de análisis"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Ubica la postura",
-        "texto": "Separa la ubicación de los delitos de la identidad de quienes los cometen."
-      },
-      {
-        "k": "idea",
-        "titulo": "Contrasta las razones",
-        "texto": "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
-      },
-      {
-        "k": "check",
-        "titulo": "Comprueba la conclusión",
-        "texto": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes."
-      }
-    ],
     "enfoque": {
-      "tema": "Evaluar si una correlación respalda una conclusión",
-      "que": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
+      "clave": "La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres.",
+      "no": [
+        {
+          "t": "Opción B",
+          "p": "Pero es incorrecta porque sostiene una afirmación insostenible y falsa al asegurar que ningún delincuente proviene de sectores vulnerables."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero es incorrecta porque asume implícitamente que los habitantes pobres son delincuentes en potencia que solo cambiarían con más recursos."
+        },
+        {
+          "t": "Opción D",
+          "p": "Pero es incorrecta porque refuerza el prejuicio clasista al vincular la desesperación de la pobreza con la justificación del delito."
+        }
+      ],
       "pistas": [
         "Separa la ubicación de los delitos de la identidad de quienes los cometen.",
         "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
       ],
-      "clave": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes.",
-      "no": [
-        {
-          "t": "Opción B",
-          "p": "Puede parecer posible. Pero Afirma sin evidencia que nunca hay delincuentes pobres y que todos son ricos."
-        },
-        {
-          "t": "Opción C",
-          "p": "Puede parecer posible. Pero Generaliza sobre cómo actuarían todos los delincuentes si mejoraran sus condiciones."
-        },
-        {
-          "t": "Opción D",
-          "p": "Puede parecer posible. Pero Explica una posible causa, pero no refuta que los habitantes pobres sean quienes cometen los delitos observados."
-        }
-      ],
       "plan": [
         {
-          "t": "Separa la ubicación de los delitos de la identidad de quienes los cometen."
+          "t": "Identifica el criterio que pide el enunciado."
         },
         {
-          "t": "Busca una razón que muestre por qué la conclusión no se sigue de los datos."
+          "t": "Contrasta cada opción con la información de la fuente."
         },
         {
-          "t": "Comprueba que la opción elegida responda lo que pregunta el enunciado."
+          "t": "Concluye por qué la opción A satisface ese criterio."
         }
-      ]
+      ],
+      "que": "Responde con evidencia del caso y distingue la alternativa que sí cumple el criterio pedido.",
+      "tema": "Interpretación de argumentos y contexto social"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos qué pide y ubiquemos la información clave.",
-          "a": "leer"
+          "t": "¿Qué dato del caso ayuda a responder la pregunta?"
         },
         {
-          "t": "La expresión «argumento válido en contra» orienta el análisis.",
-          "a": "m:argumento válido en contra"
+          "t": "Compáralo con el criterio que te piden, sin añadir supuestos."
         },
         {
-          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
-          "a": "p:0"
-        },
-        {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres. La respuesta es A."
         }
       ],
       "2": [
         {
-          "t": "Retoma la pista y relaciónala con las ideas del texto.",
-          "a": "leer"
+          "t": "Primero identifica el argumento, la norma o el interés central del caso."
         },
         {
-          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
-          "a": "p:0"
+          "t": "La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres."
         },
         {
-          "t": "Opción B: Afirma sin evidencia que nunca hay delincuentes pobres y que todos son ricos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B plantea «Entre los delincuentes nunca hay personas de escasos recursos,…», Pero no responde al criterio central: La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres."
         },
         {
-          "t": "Opción C: Generaliza sobre cómo actuarían todos los delincuentes si mejoraran sus condiciones. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C plantea «Los delincuentes que habitan en las zonas más pobres de la ciudad…», Pero no responde al criterio central: La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres."
         },
         {
-          "t": "Opción D: Explica una posible causa, pero no refuta que los habitantes pobres sean quienes cometen los delitos observados. La descartamos.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D plantea «Hay casos en que la pobreza y la falta de oportunidades llevan a…», Pero no responde al criterio central: La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres."
         },
         {
-          "t": "La respuesta es la opción A.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La opción A es la que sí responde a la pregunta."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué posturas, hechos o datos intervienen.",
-          "a": "leer",
-          "k": "ana"
+          "a": "p:0",
+          "k": "ana",
+          "t": "Lee el caso distinguiendo sus datos explícitos y la pregunta final."
         },
         {
-          "t": "Separa la ubicación de los delitos de la identidad de quienes los cometen.",
-          "a": "p:0"
+          "a": "p:1",
+          "t": "La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres."
         },
         {
-          "t": "Busca una razón que muestre por qué la conclusión no se sigue de los datos.",
-          "a": "p:1"
+          "a": "o:A:ok",
+          "k": "contra",
+          "t": "Por eso la opción A se sostiene con la evidencia del enunciado."
         },
         {
-          "t": "Que una zona pobre registre más delitos no demuestra que sus habitantes sean quienes los cometen. La opción A señala una posibilidad que rompe la inferencia del barrio: quienes delinquen allí podrían venir de otros lugares.",
-          "a": "p:2"
+          "a": "o:B:no|o:C:no|o:D:no",
+          "k": "err",
+          "t": "Revisa las otras alternativas: cada una introduce una afirmación que no responde al criterio solicitado."
         },
         {
-          "t": "La opción A cuestiona que los delitos cometidos en una zona se atribuyan automáticamente a sus habitantes.",
-          "a": "o:A:ok"
+          "a": "o:A:ok",
+          "t": "La respuesta correcta es A."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "frag": "Los habitantes de un barrio de clase media s",
+        "nota": "Contexto que orienta la interpretación.",
+        "rol": "dato"
+      },
+      {
+        "frag": "De los siguientes enunciados, ¿cuál contiene un argumento válido en contra de las afirmaciones de los habitantes del barrio de clase media?",
+        "nota": "Criterio que se debe resolver.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "lectura",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Separa la información del caso de la decisión que te piden tomar.",
+        "titulo": "Identifica la pregunta"
+      },
+      {
+        "k": "vida",
+        "texto": "Usa el argumento, la norma o el interés que aparece en el caso para comprobar cada opción.",
+        "titulo": "Contrasta las alternativas"
+      },
+      {
+        "k": "check",
+        "texto": "La coincidencia entre pobreza e inseguridad en una zona no demuestra que sus habitantes cometan los delitos. Quien delinque puede venir de otro lugar, así que la correlación no permite atribuir peligrosidad a las personas pobres. La respuesta es A.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

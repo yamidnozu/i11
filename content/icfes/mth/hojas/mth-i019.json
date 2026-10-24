@@ -1,69 +1,25 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "marcador se encuentra 7 a 2",
-        "rol": "dato",
-        "nota": "Son los puntajes al iniciar el cambio.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "por cada 2 puntos que anota el robot P, el robot Q anota 3",
-        "rol": "dato",
-        "nota": "Relaciona los incrementos de ambos puntajes.",
-        "campo": "Dato relevante"
-      },
-      {
-        "frag": "cuándo igualará en puntos",
-        "rol": "pide",
-        "nota": "Iguala los puntajes finales.",
-        "campo": "Lo que se pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Verifica la respuesta",
-        "texto": "Define $x$ como los puntos adicionales de P y expresa los de Q con la razón indicada."
-      },
-      {
-        "k": "calc",
-        "titulo": "Iguala los puntajes finales.",
-        "lineas": [
-          "P: $7+x$",
-          "$Q: 2+3x/2$",
-          "$7+x=2+3x/2$"
-        ]
-      },
-      {
-        "k": "check",
-        "titulo": "Verifica la respuesta",
-        "texto": "La ecuación coincide con la opción B y busca el instante en que ambos puntajes son iguales."
-      }
-    ],
     "enfoque": {
-      "tema": "Ecuación de igualdad con razón de cambio",
-      "que": "Representa el momento en que los puntajes de los dos robots se igualan.",
-      "pistas": [
-        "Identifica los datos y la relación matemática que pide el enunciado.",
-        "Comprueba el resultado con las opciones y el apoyo visual cuando aparece."
-      ],
       "clave": "Si P suma $x$, Q suma $3x/2$; los puntajes se igualan con $7+x=2+3x/2$.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad."
+          "p": "Pero no iguala los puntajes iniciales y omite el marcador de ambos jugadores."
         },
         {
           "t": "Opción C",
-          "p": "Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P."
+          "p": "Pero usa $3x$ y $2y$ en lugar de la relación correcta entre los puntos adicionales; además introduce dos incógnitas."
         },
         {
           "t": "Opción D",
-          "p": "No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial."
+          "p": "Pero suma los puntos iniciales sin representar la proporción entre los puntos que anota cada robot."
         }
+      ],
+      "pistas": [
+        "Define $x$ como los puntos que anotará P; deduce que Q anotará tres medios de $x$ ($\\frac{3}{2}x$).",
+        "Iguala los puntajes totales de ambos robots para hallar el empate: $7 + x = 2 + \\frac{3}{2}x$."
       ],
       "plan": [
         {
@@ -75,7 +31,9 @@
         {
           "t": "La ecuación coincide con la opción B y busca el instante en que ambos puntajes son iguales."
         }
-      ]
+      ],
+      "que": "Representa el momento en que los puntajes de los dos robots se igualan.",
+      "tema": "Ecuación de igualdad con razón de cambio"
     },
     "guion": {
       "1": [
@@ -86,8 +44,8 @@
           "t": "Son siete y dos. Si P suma dos, Q suma tres; por eso Q suma tres medios de lo que suma P."
         },
         {
-          "t": "La igualdad es $7+x=2+3x/2$. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La igualdad es $7+x=2+3x/2$. La respuesta es B."
         }
       ],
       "2": [
@@ -98,50 +56,93 @@
           "t": "Iguala ambas expresiones para encontrar cuándo empatan."
         },
         {
-          "t": "La opción A: Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A: Ignora los puntajes iniciales de siete y dos. Pero ambos puntajes deben aparecer en la igualdad."
         },
         {
-          "t": "La opción C: Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C: Invierte y altera la relación de incrementos, además de agregar una variable innecesaria. Pero solo se define una cantidad de puntos para P."
         },
         {
-          "t": "La opción D: No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial.",
           "a": "o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción D: No aplica la razón de tres puntos de Q por cada dos de P. Pero la razón entre incrementos es esencial."
         },
         {
-          "t": "A omite el marcador; C altera la razón; D no la representa. La respuesta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "A omite el marcador; C altera la razón; D no la representa. La respuesta es B."
         }
       ],
       "3": [
         {
-          "t": "La razón de incrementos da $Q_{nuevo}=2+3x/2$ cuando $P_{nuevo}=7+x$.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "La razón de incrementos da $Q_{nuevo}=2+3x/2$ cuando $P_{nuevo}=7+x$."
         },
         {
-          "t": "Al igualar: $7+x=2+3x/2$.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Al igualar: $7+x=2+3x/2$."
         },
         {
-          "t": "La opción B representa exactamente los dos puntajes finales.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "La opción B representa exactamente los dos puntajes finales."
         },
         {
-          "t": "A, C y D omiten o distorsionan los datos del juego.",
           "a": "o:A:no|o:C:no|o:D:no",
-          "k": "err"
+          "k": "err",
+          "t": "A, C y D omiten o distorsionan los datos del juego."
         },
         {
-          "t": "La respuesta correcta es B.",
-          "a": "o:B:ok"
+          "a": "o:B:ok",
+          "t": "La respuesta correcta es B."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Dato relevante",
+        "frag": "marcador se encuentra 7 a 2",
+        "nota": "Son los puntajes al iniciar el cambio.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Dato relevante",
+        "frag": "por cada 2 puntos que anota el robot P, el robot Q anota 3",
+        "nota": "Relaciona los incrementos de ambos puntajes.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Lo que se pregunta",
+        "frag": "cuándo igualará en puntos",
+        "nota": "Iguala los puntajes finales.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Define $x$ como los puntos adicionales de P y expresa los de Q con la razón indicada.",
+        "titulo": "Verifica la respuesta"
+      },
+      {
+        "k": "calc",
+        "lineas": [
+          "P: $7+x$",
+          "$Q: 2+3x/2$",
+          "$7+x=2+3x/2$"
+        ],
+        "titulo": "Iguala los puntajes finales."
+      },
+      {
+        "k": "check",
+        "texto": "La ecuación coincide con la opción B y busca el instante en que ambos puntajes son iguales.",
+        "titulo": "Verifica la respuesta"
+      }
+    ]
+  },
+  "revisar": []
 }

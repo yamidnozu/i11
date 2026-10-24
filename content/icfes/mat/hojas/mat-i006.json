@@ -1,150 +1,158 @@
 {
   "estado": "revisada",
   "hoja": {
-    "modo": "calculo",
-    "marcas": [
-      {
-        "frag": "cuál de los siguientes módulos",
-        "rol": "pide",
-        "nota": "Indica qué relación o resultado hay que determinar.",
-        "campo": "Tarea de la pregunta"
-      }
-    ],
-    "pasos": [
-      {
-        "k": "idea",
-        "titulo": "Qué hay que averiguar",
-        "texto": "La pista «cuál de los siguientes módulos» indica qué información usar y qué resultado comparar."
-      },
-      {
-        "k": "calc",
-        "titulo": "Resolvemos con los datos",
-        "lineas": [
-          "450.000"
-        ],
-        "nota": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto."
-      },
-      {
-        "k": "check",
-        "texto": "Comprueba el resultado: Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto."
-      }
-    ],
     "enfoque": {
-      "tema": "Matemáticas: cuál de los siguientes módulos",
-      "que": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
-      "pistas": [
-        "Fíjate en «cuál de los siguientes módulos».",
-        "Usa los datos del enunciado y comprueba la unidad del resultado."
-      ],
-      "clave": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
+      "clave": "El módulo IV cuesta $450.000$ por curso y $900.000$ por dos cursos.",
       "no": [
         {
           "t": "Opción A",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero dos cursos del módulo I cuestan $2.800.000."
         },
         {
           "t": "Opción B",
-          "p": "Parece posible al mirar un dato aislado. Pero no coincide con la relación que pide la pregunta."
+          "p": "Pero dos cursos del módulo II cuestan $1.800.000."
+        },
+        {
+          "t": "Opción C",
+          "p": "Pero dos cursos del módulo III cuestan $3.200.000."
         }
+      ],
+      "pistas": [
+        "Ten en cuenta que 40 funcionarios requieren dos grupos de capacitación porque el cupo máximo por curso es de 30 personas.",
+        "Multiplica el valor por hora de cada módulo por la intensidad horaria y por dos cursos para hallar cuál cuesta exactamente novecientos mil pesos (módulo IV)."
       ],
       "plan": [
         {
-          "t": "Identifico qué pide el enunciado."
+          "t": "Confirma cuántos cursos se requieren para cuarenta personas."
         },
         {
-          "t": "Selecciono los datos y hago la operación necesaria.",
-          "eq": [
-            "450.000"
-          ]
+          "t": "Multiplica las horas por el valor por hora de cada módulo y luego por dos."
         },
         {
-          "t": "Comparo el resultado con las opciones y verifico su sentido."
+          "t": "Selecciona el módulo cuyo costo coincide con el pago informado."
         }
-      ]
+      ],
+      "que": "Calcula el costo de dos cursos para cada módulo, porque los cuarenta funcionarios superan el máximo permitido en un curso.",
+      "tema": "Comparación de costos por módulo"
     },
     "guion": {
       "1": [
         {
-          "t": "Leamos la pregunta y ubiquemos qué resultado nos piden.",
-          "a": "leer"
+          "t": "¿Cuántos cursos se necesitan para cuarenta funcionarios si caben máximo treinta en cada uno?"
         },
         {
-          "t": "La frase «cuál de los siguientes módulos» orienta la estrategia.",
-          "a": "m:cuál de los siguientes módulos"
+          "t": "Se necesitan dos. El módulo IV cuesta $10 × 45.000 = 450.000$ por curso; los dos cuestan $900.000$."
         },
         {
-          "t": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
-          "a": "p:1"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta es D."
         }
       ],
       "2": [
         {
-          "t": "Leamos la pregunta con calma.",
-          "a": "leer"
+          "t": "Calcula el costo por hora de cada módulo y recuerda que hay que pagar dos cursos."
         },
         {
-          "t": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
-          "a": "p:1"
+          "t": "Para el módulo IV, dos cursos cuestan $2 × 10 × 45.000 = 900.000$, que coincide con el pago."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:A:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción A implicaría un pago de $2.800.000$."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:B:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción B implicaría un pago de $1.800.000$."
         },
         {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
           "a": "o:C:no",
-          "k": "err"
+          "k": "err",
+          "t": "La opción C implicaría un pago de $3.200.000$."
         },
         {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "Solo el módulo IV coincide con $900.000$. La respuesta es D."
         }
       ],
       "3": [
         {
-          "t": "Primero identifico qué pide: Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
           "a": "p:0",
-          "k": "ana"
+          "k": "ana",
+          "t": "Por el límite de treinta personas por curso, los cuarenta funcionarios requieren dos cursos."
         },
         {
-          "t": "Cuarenta personas requieren dos cursos. El pago por curso es $900.000/2=450.000$. El único módulo cuyo costo por curso es $10\\cdot45.000=450.000$ es el cuarto.",
-          "a": "p:1"
+          "a": "p:1",
+          "t": "Calculo el costo total para cada opción: I, $2.800.000$; II, $1.800.000$; III, $3.200.000$; IV, $900.000$."
         },
         {
-          "t": "Compruebo que el procedimiento y las unidades correspondan a la situación.",
           "a": "p:2",
-          "k": "contra"
+          "k": "contra",
+          "t": "El valor informado solo coincide con el módulo IV."
         },
         {
-          "t": "La opción A propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:A:no",
-          "k": "err"
+          "a": "o:A:no|o:B:no|o:C:no",
+          "k": "err",
+          "t": "Las opciones A, B y C dan costos distintos de $900.000$."
         },
         {
-          "t": "La opción B propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:B:no",
-          "k": "err"
-        },
-        {
-          "t": "La opción C propone otra relación, pero no satisface lo que pide la pregunta al aplicar los datos. La descartamos.",
-          "a": "o:C:no",
-          "k": "err"
-        },
-        {
-          "t": "La respuesta es la opción D.",
-          "a": "o:D:ok"
+          "a": "o:D:ok",
+          "t": "La respuesta correcta es D."
         }
       ]
-    }
-  }
+    },
+    "marcas": [
+      {
+        "campo": "Pago total",
+        "frag": "900.000 por la capacitación",
+        "nota": "Es el costo conjunto para los funcionarios.",
+        "rol": "dato"
+      },
+      {
+        "campo": "Identificación del módulo",
+        "frag": "corresponde al",
+        "nota": "Compara el costo de dos cursos de cada módulo.",
+        "rol": "pide"
+      }
+    ],
+    "modo": "calculo",
+    "pasos": [
+      {
+        "k": "idea",
+        "texto": "Cuarenta funcionarios no caben en un curso con máximo treinta personas; se requieren dos cursos del mismo módulo.",
+        "titulo": "Considera los dos cursos necesarios"
+      },
+      {
+        "cols": [
+          "Módulo",
+          "Costo de dos cursos"
+        ],
+        "filas": [
+          [
+            "I",
+            "$2.800.000"
+          ],
+          [
+            "II",
+            "$1.800.000"
+          ],
+          [
+            "III",
+            "$3.200.000"
+          ],
+          [
+            "IV",
+            "$900.000"
+          ]
+        ],
+        "k": "tabla",
+        "titulo": "Compara el costo de cada módulo"
+      },
+      {
+        "k": "check",
+        "texto": "El pago coincide con dos cursos del módulo IV. La respuesta es D."
+      }
+    ]
+  },
+  "revisar": []
 }
