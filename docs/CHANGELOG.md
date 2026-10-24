@@ -1,6 +1,7 @@
 # Changelog
 
 ## Cierre de revisión masiva ICFES y reconstrucción limpia (2026-10-23)
+- Se añadió `docs/FUNCIONALIDADES_Y_PRUEBA.md` con el mapa de funciones actuales, puesta en marcha local y un recorrido manual desde diagnóstico hasta simulacro y progreso, con criterios esperados y restablecimiento de datos de prueba.
 - Inglés: 149/150 hojas revisadas; los tres paquetes pasaron validar y empaquetar. `eng-i018` queda en borrador porque el pasaje no identifica el formato de *Passionate Falsehoods*. Se corrigieron marcas de `i014` y pasajes compartidos; las 150 preguntas conservan el único vínculo de competencia respaldado por el marco.
 - Cuadernillo mixto 2014: 119/121 hojas revisadas y claves cotejadas; `cfi-i101` (vehículo del aviso) y `cfi-i105` (*bike* o *motorbike*) conservan clave y motivo de revisión. Se completaron descartes de nivel 2, bloques, referencias de simulacro/unidad y marcas literales; se corrigieron los enunciados y opciones mezclados por la lectura en columnas de `cfi-i069` e `i070`.
 - Matemáticas 2026: auditadas las 50 preguntas y 33 rutas de imagen únicas; se asociaron tablas, figuras y opciones gráficas faltantes. Se corrigió en override la fracción aplanada de `mat-i007` y se confirmó su render; también se recortó correctamente la figura manual `cfi-i004`.
