@@ -32,11 +32,36 @@ export function examenVista(def: SimulacroDef): HTMLElement {
 
   const intro = () => {
     const r = resumen(def);
-    root.replaceChildren(h('div', { class: 'pagehead' }, h('a', { class: 'crumb', href: '#/simulacro' }, '← Todos los simulacros'), h('h1', {}, def.nombre), def.descripcion ? h('p', { class: 'lede' }, def.descripcion) : null),
-      ...armarExamen({ ...def, barajar: false }).map((x) => h('table', { class: 'simtab' }, h('caption', {}, `${x.titulo} · ${x.minutos} min en un solo reloj`), h('thead', {}, h('tr', {}, h('th', {}, 'Prueba'), h('th', {}, 'Preguntas'))),
+    const sesiones = armarExamen({ ...def, barajar: false });
+    const ctaHero = () => h('div', { class: 'box sim-cta-hero' },
+      h('div', { class: 'sim-badges-row' },
+        h('span', { class: 'sim-badge' }, `📝 ${r.preguntas} preguntas`),
+        h('span', { class: 'sim-badge' }, `⏱️ ${r.minutos} minutos`),
+        h('span', { class: 'sim-badge' }, `📚 ${sesiones.length} ${sesiones.length === 1 ? 'sesión' : 'sesiones'}`)
+      ),
+      h('div', { class: 'sim-action-row' },
+        h('button', { class: 'btn primary lg', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar simulacro →'),
+        ...(st ? [h('button', { class: 'btn lg', type: 'button', onclick: run }, 'Continuar donde iba →')] : [])
+      )
+    );
+
+    root.replaceChildren(
+      h('div', { class: 'pagehead' },
+        h('a', { class: 'crumb', href: '#/simulacro' }, '← Todos los simulacros'),
+        h('h1', {}, def.nombre),
+        def.descripcion ? h('p', { class: 'lede' }, def.descripcion) : null
+      ),
+      ctaHero(),
+      ...sesiones.map((x) => h('table', { class: 'simtab' },
+        h('caption', {}, `${x.titulo} · ${x.minutos} min en un solo reloj`),
+        h('thead', {}, h('tr', {}, h('th', {}, 'Prueba'), h('th', {}, 'Preguntas'))),
         h('tbody', {}, ...x.pruebas.map((c) => h('tr', {}, h('td', {}, c.titulo), h('td', {}, String(c.ids.length))))))),
       h('p', { class: 'fine' }, `Total: ${r.preguntas} preguntas. Funciona como el cuadernillo real: dentro de cada sesión te mueves libremente entre preguntas, puedes cambiar respuestas y marcar las dudosas. Hay hoja de respuestas y hoja de operaciones. No hay ayudas ni correcciones hasta que entregues; al final tienes la revisión completa con explicación de cada pregunta. Tu avance se guarda.`),
-      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar'), ...(st ? [h('button', { class: 'btn', type: 'button', onclick: run }, 'Continuar donde iba')] : [])));
+      h('div', { class: 'row', style: 'margin-top: 16px;' },
+        h('button', { class: 'btn primary', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar simulacro →'),
+        ...(st ? [h('button', { class: 'btn', type: 'button', onclick: run }, 'Continuar donde iba →')] : [])
+      )
+    );
   };
   function empezar() { st = { id: def.id, ses: armarExamen(def), s: 0, fase: 'pausa', end: 0, resp: {}, marca: {}, cur: 0, ent: [] }; persist(); run(); }
 

@@ -295,8 +295,7 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:7px 10p
 .marks-on .anot .a[data-r],.anot .a[class*=u-]{background:color-mix(in srgb,var(--c) 28%,transparent);box-shadow:inset 0 -2px var(--c)}
 .anot .a.sel{background:var(--grid);outline:1px dashed var(--acc)}
 .anot .a.sobra{outline:2px dotted var(--bad)}
-.anot .a.rd{box-shadow:inset 0 -2px var(--acc)}
-.anot.marcando{user-select:none;-webkit-user-select:none;touch-action:none;cursor:text;outline:1px dashed var(--acc);outline-offset:6px}
+.anot.marcando{user-select:none;-webkit-user-select:none;touch-action:none;cursor:text;border-radius:var(--r1);background:color-mix(in srgb,var(--acc) 5%,transparent);box-shadow:0 0 0 2px color-mix(in srgb,var(--acc) 30%,transparent)}
 .ficha{display:none;margin:14px 0 6px;padding:10px 14px 12px;border:1px solid var(--line2);background:var(--panel);background-image:linear-gradient(var(--grid) 1px,transparent 1px);background-size:100% 26px}
 .ficha.on{display:block}
 .fh{font-size:1.4rem;color:var(--acc);line-height:1.1;margin-bottom:6px}
@@ -928,10 +927,23 @@ details.areasec>summary{flex-wrap:wrap;padding:.6rem 0 .5rem;row-gap:.45rem}
 }
 
 /* v39: lista y pantallas de simulacros */
-.simlist{display:grid;gap:12px;margin-top:.4rem}
-.simcard{display:grid;gap:4px;padding:16px 18px;border:1px solid var(--line);background:var(--panel);border-radius:var(--r2);color:var(--ink);text-decoration:none}
-.simcard:hover{border-color:var(--acc)}.simcard b{font-family:var(--serif,inherit);font-size:1.15rem}
-.simcard .sd{color:var(--mut);font-size:.92rem}.simcard .sm{font-size:.85rem;color:var(--mut)}.simcard .sb{font-size:.85rem;color:var(--acc);font-weight:600;margin-top:2px}
+.simlist{display:grid;gap:14px;margin-top:.4rem}
+.simcard{display:grid;gap:8px;padding:16px 18px;border:1px solid var(--line);background:var(--panel);border-radius:var(--r2);color:var(--ink);text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease}
+.simcard:hover{border-color:var(--acc);box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.simcard b{font-family:var(--serif,inherit);font-size:1.15rem}
+.simcard-header{display:grid;gap:4px}
+.simcard-header b{display:block}
+.simcard .sd{color:var(--mut);font-size:.92rem}
+.simcard .sm{font-size:.85rem;color:var(--mut)}
+.simcard-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:4px}
+.simcard .sb{font-size:.85rem;color:var(--acc);font-weight:600}
+.sim-cta-pill{display:inline-flex;align-items:center;gap:4px;padding:5px 12px;background:var(--acc);color:#fff;border-radius:999px;font-size:.82rem;font-weight:600}
+.sim-cta-hero{background:color-mix(in srgb,var(--acc) 10%,var(--panel));border:1.5px solid var(--acc);padding:18px 20px;margin-bottom:1.2rem;border-radius:var(--r2)}
+.sim-badges-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.sim-badge{display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-size:.84rem;font-weight:600}
+.sim-action-row{display:flex;flex-wrap:wrap;gap:10px}
+.diag-intro-box{padding:20px;border-radius:var(--r2);margin-top:12px}
+.diag-done-hero{border-radius:var(--r2);padding:24px 20px}
 .simtab{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;font-size:.95rem}.simtab th,.simtab td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}.simtab th{color:var(--mut);font-weight:600;font-size:.82rem}
 .clock.low{color:#b3261e;font-weight:700}
 

@@ -25,10 +25,19 @@ export function simulacroTarjetas(): HTMLElement {
   return h('div', { class: 'simlist' }, ...SIMULACROS.map((s) => {
     const r = resumen(s), hs = H[s.id] ?? [], mejor = hs.reduce<number | null>((m, x) => (x.g !== null && (m === null || x.g > m) ? x.g : m), null);
     const enCurso = !!lee(SKEY(s.id), null), ex = s.modo === 'examen';
+    const ctaText = enCurso ? 'Continuar →' : mejor !== null ? 'Repetir →' : 'Empezar →';
+    const statusText = enCurso ? '⏳ En curso' : mejor !== null ? `⭐ Mejor: ${mejor}/500 (${hs.length} ${hs.length === 1 ? 'intento' : 'intentos'})` : '🌱 Aún no lo has hecho';
     return h('a', { class: 'simcard', href: `#/simulacro/${s.id}` },
-      h('b', {}, s.nombre), s.descripcion ? h('span', { class: 'sd' }, s.descripcion) : null,
+      h('div', { class: 'simcard-header' },
+        h('b', {}, s.nombre),
+        s.descripcion ? h('span', { class: 'sd' }, s.descripcion) : null
+      ),
       h('span', { class: 'sm' }, ex ? `${r.preguntas} preguntas · ${s.sesiones?.length ?? 0} ${(s.sesiones?.length ?? 0) === 1 ? 'sesión' : 'sesiones'} · ${r.minutos} min` : `${r.preguntas} preguntas · ${s.secciones.length} ${s.secciones.length === 1 ? 'prueba' : 'pruebas'} · ${r.minutos} min`),
-      h('span', { class: 'sb' }, enCurso ? 'En curso: continúa donde ibas' : mejor !== null ? `Tu mejor puntaje: ${mejor} de 500 (${hs.length} ${hs.length === 1 ? 'intento' : 'intentos'})` : 'Aún no lo has hecho'));
+      h('div', { class: 'simcard-footer' },
+        h('span', { class: 'sb' }, statusText),
+        h('span', { class: 'sim-cta-pill' }, ctaText)
+      )
+    );
   }));
 }
 /** Lista de simulacros disponibles (el contenido sale de JSON: content/simulacros/ o content/packs/). */
@@ -52,11 +61,33 @@ function vista(def: SimulacroDef): HTMLElement {
 
   const intro = () => {
     const r = resumen(def);
-    root.replaceChildren(h('div', { class: 'pagehead' }, h('a', { class: 'crumb', href: '#/simulacro' }, '← Todos los simulacros'), h('h1', {}, def.nombre), def.descripcion ? h('p', { class: 'lede' }, def.descripcion) : null),
+    const ctaHero = () => h('div', { class: 'box sim-cta-hero' },
+      h('div', { class: 'sim-badges-row' },
+        h('span', { class: 'sim-badge' }, `📝 ${r.preguntas} preguntas`),
+        h('span', { class: 'sim-badge' }, `⏱️ ${r.minutos} minutos`),
+        h('span', { class: 'sim-badge' }, `📚 ${def.secciones.length} ${def.secciones.length === 1 ? 'sección' : 'secciones'}`)
+      ),
+      h('div', { class: 'sim-action-row' },
+        h('button', { class: 'btn primary lg', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar simulacro →'),
+        ...(st ? [h('button', { class: 'btn lg', type: 'button', onclick: run }, 'Continuar donde iba →')] : [])
+      )
+    );
+
+    root.replaceChildren(
+      h('div', { class: 'pagehead' },
+        h('a', { class: 'crumb', href: '#/simulacro' }, '← Todos los simulacros'),
+        h('h1', {}, def.nombre),
+        def.descripcion ? h('p', { class: 'lede' }, def.descripcion) : null
+      ),
+      ctaHero(),
       h('table', { class: 'simtab' }, h('thead', {}, h('tr', {}, h('th', {}, 'Sección'), h('th', {}, 'Preguntas'), h('th', {}, 'Tiempo'))),
         h('tbody', {}, ...def.secciones.map((c) => h('tr', {}, h('td', {}, c.titulo), h('td', {}, String(c.preguntas?.length ?? Math.min(c.auto?.n ?? 0, QUESTIONS.filter((q) => q.tipo !== 'reto' && (!c.auto?.area || q.area === c.auto.area)).length))), h('td', {}, `${c.minutos} min`))))),
       h('p', { class: 'fine' }, `En total: ${r.preguntas} preguntas y ${r.minutos} minutos. Cada sección tiene su reloj y empieza cuando tú lo decides. Si se acaba el tiempo, pasas a la siguiente y lo que quedó sin responder cuenta como incorrecto. Si cierras la página, tu avance se guarda.`),
-      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar'), ...(st ? [h('button', { class: 'btn', type: 'button', onclick: run }, 'Continuar donde iba')] : [])));
+      h('div', { class: 'row', style: 'margin-top: 16px;' },
+        h('button', { class: 'btn primary', type: 'button', onclick: empezar }, st ? 'Empezar de nuevo' : 'Empezar simulacro →'),
+        ...(st ? [h('button', { class: 'btn', type: 'button', onclick: run }, 'Continuar donde iba →')] : [])
+      )
+    );
   };
 
   function empezar() { st = { id: def.id, sec: armar(def), s: 0, i: 0, ans: {}, end: 0, ini: Date.now() }; persist(); run(); }

@@ -61,7 +61,7 @@ export function gate(content: () => HTMLElement): HTMLElement {
 export function home(): HTMLElement {
   const s = summary(), sims = listSims();
   const paths: [string, string, string, string][] = [
-    ['#/diag', 'target', 'Diagnóstico gratis', 'Quince preguntas que se adaptan a tu nivel. Dura unos 20 minutos.'],
+    ['#/diag', 'target', 'Diagnóstico gratis', '15 preguntas rápidas para conocer tu nivel (~10 min).'],
     ['#/practica', 'pencil', 'Práctica adaptativa', 'Preguntas a tu medida y repaso espaciado de lo que se te olvida.'],
     ['#/simulacro', 'clock', 'Simulacro cronometrado', 'Sin ayudas, con puntaje estimado por área.'],
     ['#/panel', 'chart', 'Mi progreso', s.global ? `Estimado actual: ${s.global} de 500.` : 'Racha, radar de áreas y recomendaciones.'],
@@ -73,7 +73,7 @@ export function home(): HTMLElement {
     h('section', { class: 'hero' },
       h('div', {}, h('h1', {}, 'Aprende el Saber 11 probando tú mismo'),
         h('p', { class: 'lede' }, 'Once laboratorios donde cambias un valor y ves por qué cambia el resultado. Cada uno explica la idea, resuelve un ejemplo contigo y te pide predecir antes de mostrarte la respuesta.'),
-        h('div', { class: 'cta' }, h('a', { class: 'btn primary', href: '#/diag' }, 'Hacer el diagnóstico gratis'), h('a', { class: 'btn', href: '#/sims' }, 'Ver los laboratorios')),
+        h('div', { class: 'cta' }, h('a', { class: 'btn primary', href: '#/diag' }, 'Hacer el diagnóstico gratis (~10 min)'), h('a', { class: 'btn', href: '#/sims' }, 'Ver los laboratorios')),
         h('p', { class: 'fine' }, DISCLAIMER)),
       hero()),
     h('ul', { class: 'method' },
