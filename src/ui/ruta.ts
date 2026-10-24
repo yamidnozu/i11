@@ -5,7 +5,7 @@ import { go, query } from './nav';
 import { head, ruler, gate, icon, mcs, rnd, DISCLAIMER } from './pages';
 import { AREAS, AREA_IDS, type AreaId } from '../adaptive/areas';
 import { pickItem } from '../adaptive/irt';
-import { QUESTIONS } from '../content';
+import { QUESTIONS, SIMULACROS_ALL } from '../content';
 import { UNIDADES, unidad, unidadesDe, preguntasDe, tieneSim, tieneLeccion, type Unidad } from '../content/unidades';
 import { simulacroTarjetas } from './simulacro';
 import { summary, load, record, itemOf, dueCards, syncSoon, hasAccess, seen, day } from '../state/store';
@@ -88,6 +88,18 @@ function tablero(): HTMLElement {
 export function aprender(): HTMLElement {
   const sel = query().get('area') as AreaId | null;
   const areas = sel && AREAS[sel] ? [sel] : AREA_IDS;
+  // Las preguntas oficiales solo llegan a QUESTIONS cuando VITE_ICFES=1;
+  // por eso esta biblioteca desaparece por completo en el build publicado normal.
+  const oficiales = QUESTIONS.filter((q) => q.origen === 'icfes');
+  const banco = oficiales.length ? h('section', { class: 'official-bank' },
+    h('div', { class: 'sectionhead' }, h('h2', {}, 'Preguntas oficiales'), h('span', { class: 'tag' }, `${oficiales.length} preguntas · ${UNIDADES.filter((u) => u.id.startsWith('u-icfes-')).length} rutas · ${SIMULACROS_ALL.filter((s) => s.id.startsWith('sim-icfes-')).length} simulacros`)),
+    h('p', { class: 'fine' }, 'Abre un área y entra a cualquier pregunta para ver su explicación pedagógica completa.'),
+    ...areas.filter((a) => oficiales.some((q) => q.area === a)).map((a) => {
+      const qs = oficiales.filter((q) => q.area === a);
+      return h('details', { class: 'official-area' }, h('summary', {}, h('b', {}, AREAS[a].nombre), h('small', {}, `${qs.length} preguntas`)),
+        h('div', { class: 'official-question-list' }, ...qs.map((q) => h('a', { class: 'path', href: `#/pregunta/${q.id}` },
+          h('b', {}, q.id.toUpperCase()), h('span', {}, q.enunciado.replace(/\s+/g, ' ').slice(0, 180) + (q.enunciado.length > 180 ? '…' : ''))))));
+    })) : null;
   const chips = h('div', { class: 'chips filters', role: 'group', 'aria-label': 'Filtrar por área' },
     h('a', { class: 'chip', href: '#/aprender', 'aria-pressed': String(!sel) }, 'Todas'), ...AREA_IDS.map((a) => h('a', { class: 'chip', href: `#/aprender?area=${a}`, 'aria-pressed': String(sel === a) }, AREAS[a].nombre)));
   const rec = recomendada();
@@ -95,6 +107,7 @@ export function aprender(): HTMLElement {
     head('Aprender', 'Elige un tema y estúdialo en tres pasos: míralo en el laboratorio, léelo y practícalo con preguntas. Si no sabes cuál, empieza por el recomendado.'),
     rec && !sel ? h('a', { class: 'startcard', href: `#/unidad/${rec.id}` }, h('small', {}, 'Tu siguiente tema'), h('b', {}, rec.titulo), h('span', {}, `${AREAS[rec.area].nombre} · unos ${rec.min} minutos`), h('i', { class: 'go' }, 'Empezar →')) : null,
     chips,
+    banco,
     ...areas.map((a) => {
       const us = unidadesDe(a), hechos = us.filter((u) => estado(u).nivel === 'dominada').length;
       return h('details', { class: 'areasec', open: !!sel || (rec ? rec.area === a : a === areas[0]) },

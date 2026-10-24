@@ -6,6 +6,8 @@
 - Matemáticas 2026: auditadas las 50 preguntas y 33 rutas de imagen únicas; se asociaron tablas, figuras y opciones gráficas faltantes. Se corrigió en override la fracción aplanada de `mat-i007` y se confirmó su render; también se recortó correctamente la figura manual `cfi-i004`.
 - Total: 614/617 hojas revisadas; tres borradores justificados. TypeScript pasó, Vitest gated 811/811 y builds estándar/gated pasaron.
 - Quedan cuatro motivos `revisar` y tres borradores justificados. La etapa de figuras ahora reutiliza PNG manuales sin receta geométrica; `tools/pipeline/README.md` documenta preservar `imagenes/` durante reconstrucción. Se borraron `work/<doc>` y los paquetes generados de cinco documentos, se reconstruyeron sus siete etapas desde los PDF y los cinco hashes de prefijo quedaron idénticos. Matemáticas y 2014 también se reconstruyeron dos veces después de sus últimos overrides y assets, con resultados idénticos.
+- Corrección visual 2014: `cfi-i001` tenía asignado como gráfica el recorte de la página inglesa del lobo etíope. Se añadió una receta `recorteFuente` para extraer la gráfica del parque automotor desde la página impresa 5 y se regeneraron `figuras` y el paquete; la vista local ya muestra la gráfica correcta.
+- Navegación del banco en Aprender: cada pregunta individual ahora ofrece Anterior, Siguiente y regreso al área. Los controles aparecen antes y después de la explicación; se respeta la secuencia de preguntas del área en el cuadernillo.
 
 ## Revisión Matemáticas 2018 — preguntas 35 a 41 (2026-10-22)
 
