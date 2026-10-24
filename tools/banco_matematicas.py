@@ -1,0 +1,1760 @@
+"""Generador de preguntas originales de Matemáticas para el Banco Propio.
+Crea 33 preguntas (mat-008 a mat-040) cumpliendo el estándar ICFES:
+- Enunciado claro y contextualizado en Colombia
+- 4 opciones distintas
+- Explicación pedagógica detallada
+- 3 distractores específicos explicando el error conceptual o de cálculo
+- Competencia y afirmación oficiales
+- Hoja pedagógica con pasos y verificación
+"""
+import json
+
+PREGUNTAS_MAT = [
+    {
+        "id": "mat-008",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Para pavimentar 120 metros de una vía rural, 6 obreros tardan 10 días trabajando a ritmo constante. Si se contratan 4 obreros más con la misma eficiencia, ¿cuántos días tardarán los 10 obreros en pavimentar los mismos 120 metros de vía?",
+        "opciones": [
+            "4 días",
+            "6 días",
+            "8 días",
+            "16 días"
+        ],
+        "correcta": 1,
+        "explicacion": "Al mantenerse constante la cantidad de metros de vía (120 m), la cantidad de obreros y el tiempo en días son magnitudes inversamente proporcionales: $6\\cdot 10 = 10\\cdot x$. Despejando, $x = 60/10 = 6$ días.",
+        "distractores": [
+            "Aplica una regla de tres directa errónea creyendo que a más obreros se tarda más tiempo o resta 6 de 10.",
+            "",
+            "Calcula la proporción restando obreros en lugar de usar la relación inversamente proporcional.",
+            "Multiplica 10 días por el nuevo número de obreros y divide entre datos no correspondientes."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Modela situaciones que involucran relaciones de proporcionalidad directa e inversa.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Relación inversa entre obreros y días",
+                    "lineas": [
+                        "6\\text{ obreros}\\times 10\\text{ días}=60\\text{ obrero-días}",
+                        "10\\text{ obreros}\\times x\\text{ días}=60\\implies x=6\\text{ días}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: al aumentar los obreros de 6 a 10 (factor 5/3), los días disminuyen por el factor recíproco (3/5 de 10 = 6 días)."
+                }
+            ],
+            "enfoque": {
+                "tema": "Proporcionalidad inversa",
+                "que": "Determinar el tiempo requerido cuando aumenta el número de trabajadores manteniendo constante la obra.",
+                "clave": "A mayor número de obreros, menor número de días necesarios para la misma obra.",
+                "no": [
+                    {
+                        "t": "Regla directa",
+                        "p": "Asumir erróneamente que a más obreros se necesitan más días."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-009",
+        "area": "matematicas",
+        "evidencia": "MAT_E2.3",
+        "nivel": 2,
+        "enunciado": "En un almacén de electrodomésticos en Cali, un televisor cuesta $1.200.000. Durante una promoción se ofrece un primer descuento del 10 % y, al pagar con tarjeta del almacén, se aplica un descuento adicional del 15 % sobre el precio ya rebajado. ¿Cuál es el precio final que se paga por el televisor?",
+        "opciones": [
+            "$900.000",
+            "$918.000",
+            "$960.000",
+            "$1.020.000"
+        ],
+        "correcta": 1,
+        "explicacion": "Tras el primer descuento del 10 %, el precio es $1.200.000\\cdot 0,90 = 1.080.000$. Sobre este valor se aplica el segundo descuento del 15 %: $1.080.000\\cdot (1 - 0,15) = 1.080.000\\cdot 0,85 = 918.000$.",
+        "distractores": [
+            "Suma los dos porcentajes (10 % + 15 % = 25 %) y calcula el 25 % sobre el precio inicial ($1.200.000 - 300.000 = 900.000$), ignorando que los descuentos sucesivos no se suman linealmente.",
+            "",
+            "Aplica únicamente el 20 % de descuento por aproximación arbitraria de las rebajas.",
+            "Aplica solo el primer descuento del 15 % desconociendo el primer beneficio de la promoción."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Resuelve problemas financieros con aumentos y descuentos porcentuales sucesivos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Cálculo de descuentos en cadena",
+                    "lineas": [
+                        "P_1 = 1.200.000\\times 0,90 = 1.080.000",
+                        "P_2 = 1.080.000\\times 0,85 = 918.000"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el factor de descuento global es $0,90\\cdot 0,85 = 0,765$. Luego, $1.200.000\\cdot 0,765 = 918.000$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Porcentajes sucesivos",
+                "que": "Calcular el valor final aplicando descuentos porcentuales secuenciales.",
+                "clave": "El segundo descuento se calcula sobre el valor intermedio rebajado, no sobre el valor original.",
+                "no": [
+                    {
+                        "t": "Sumar porcentajes",
+                        "p": "Sumar 10% + 15% = 25% directo del total original."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-010",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Una escalera de 5 metros de longitud se apoya contra una pared vertical de una casa. Si la base de la escalera se encuentra a 3 metros de distancia de la pared sobre el piso horizontal, ¿a qué altura sobre el suelo llega el extremo superior de la escalera?",
+        "opciones": [
+            "3,5 metros",
+            "4 metros",
+            "4,5 metros",
+            "\\sqrt{34} metros"
+        ],
+        "correcta": 1,
+        "explicacion": "Por el teorema de Pitágoras en el triángulo rectángulo formado por la pared, el suelo y la escalera: $h^2 + 3^2 = 5^2$. Por tanto, $h^2 = 25 - 9 = 16$, de donde $h = \\sqrt{16} = 4$ metros.",
+        "distractores": [
+            "Promedia la longitud de la escalera y la base: (5 + 3)/2 = 4, pero elige 3,5 por confusión de cálculo.",
+            "",
+            "Estima la altura a ojo sin utilizar la relación pitagórica exacta.",
+            "Suma los cuadrados en lugar de restarlos: $\\sqrt{5^2 + 3^2} = \\sqrt{34} \\approx 5,83$, lo cual es imposible pues la altura no puede superar la longitud de la escalera."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica relaciones métricas y el teorema de Pitágoras en triángulos rectángulos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Aplicación del teorema de Pitágoras",
+                    "lineas": [
+                        "h^2 + b^2 = L^2",
+                        "h^2 + 3^2 = 5^2\\implies h^2 = 25 - 9 = 16\\implies h = 4\\text{ m}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: la terna pitagórica fundamental (3, 4, 5) cumple $3^2 + 4^2 = 9 + 16 = 25 = 5^2$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Teorema de Pitágoras",
+                "que": "Hallar un cateto conociendo la hipotenusa y el otro cateto.",
+                "clave": "El cateto se despeja restando el cuadrado del cateto conocido a la hipotenusa al cuadrado.",
+                "no": [
+                    {
+                        "t": "Sumar cateto e hipotenusa",
+                        "p": "Sumar los cuadrados como si se estuviera hallando la hipotenusa."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-011",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Un tanque cilíndrico de almacenamiento de agua en una finca de Fredonia tiene un radio de 2 metros en su base circular y una altura de 3 metros. Tomando $\\pi \\approx 3,14$, ¿cuál es el volumen aproximado de agua que puede almacenar el tanque a su máxima capacidad?",
+        "opciones": [
+            "12,56 m³",
+            "24,00 m³",
+            "37,68 m³",
+            "75,36 m³"
+        ],
+        "correcta": 2,
+        "explicacion": "El volumen de un cilindro es $V = \\pi r^2 h$. Sustituyendo los datos: $V = 3,14\\cdot (2^2)\\cdot 3 = 3,14\\cdot 4\\cdot 3 = 3,14\\cdot 12 = 37,68$ m³.",
+        "distractores": [
+            "Calcula únicamente el área de la base circular $\\pi r^2 = 3,14\\cdot 4 = 12,56$ m³, olvidando multiplicar por la altura.",
+            "Multiplica solo el diámetro por la altura por dos: $4\\cdot 3\\cdot 2 = 24$, sin considerar $\\pi$.",
+            "",
+            "Usa el diámetro en lugar del radio en la fórmula ($4^2 = 16$), obteniendo el cuádruple del volumen real."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula volúmenes y áreas de cuerpos geométricos tridimensionales.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Volumen del cilindro",
+                    "lineas": [
+                        "V = \\pi r^2 h",
+                        "V = 3,14\\times (2)^2\\times 3 = 3,14\\times 12 = 37,68\\text{ m}^3"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el área de la base es aprox. 12,56 m²; multiplicada por 3 m de altura da 37,68 m³."
+                }
+            ],
+            "enfoque": {
+                "tema": "Cálculo de volumen cilíndrico",
+                "que": "Determinar la capacidad volumétrica multiplicando el área de la base por la altura.",
+                "clave": "El radio se eleva al cuadrado antes de multiplicarlo por $\\pi$ y la altura.",
+                "no": [
+                    {
+                        "t": "Confundir radio con diámetro",
+                        "p": "Elevar al cuadrado el diámetro en lugar del radio."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-012",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Para ingresar a una obra de teatro escolar se venden boletas para adultos y para estudiantes. Carlos compró 2 boletas de adulto y 3 de estudiante por $34.000. Mariana compró 3 boletas de adulto y 1 de estudiante por $37.000. ¿Cuál es el precio de una boleta de adulto?",
+        "opciones": [
+            "$6.000",
+            "$8.000",
+            "$11.000",
+            "$14.000"
+        ],
+        "correcta": 2,
+        "explicacion": "Se plantea el sistema de ecuaciones con $x$: boleta adulto, $y$: boleta estudiante: (1) $2x + 3y = 34.000$ y (2) $3x + y = 37.000$. De (2), $y = 37.000 - 3x$. Reemplazando en (1): $2x + 3(37.000 - 3x) = 34.000 \\implies 2x + 111.000 - 9x = 34.000 \\implies -7x = -77.000 \\implies x = 11.000$. Cada boleta de adulto vale $11.000 (y la de estudiante $4.000).",
+        "distractores": [
+            "Obtiene el precio de la boleta de estudiante ($4.000) o comete un error aritmético restando $34.000 - 28.000 = 6.000$.",
+            "Divide $34.000 / 4$ como aproximación sin resolver el sistema de ecuaciones.",
+            "",
+            "Confunde el valor sustituyendo erróneamente los coeficientes del sistema."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Plantea y resuelve sistemas de ecuaciones lineales 2x2 en situaciones contextualizadas.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Resolución del sistema 2x2",
+                    "lineas": [
+                        "y = 37.000 - 3x",
+                        "2x + 3(37.000 - 3x) = 34.000\\implies -7x = -77.000\\implies x = 11.000"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: si $x = 11.000$, entonces $y = 37.000 - 33.000 = 4.000$. En la ecuación 1: $2(11.000) + 3(4.000) = 22.000 + 12.000 = 34.000$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Sistemas de ecuaciones lineales 2x2",
+                "que": "Hallar el valor unitario de una de las variables a partir de dos compras combinadas.",
+                "clave": "Despejar una variable en la ecuación más simple y sustituirla en la otra.",
+                "no": [
+                    {
+                        "t": "Dar la variable equivocada",
+                        "p": "Elegir el valor de la boleta de estudiante en vez de la de adulto solicitada."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-013",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.2",
+        "nivel": 2,
+        "enunciado": "En un curso preuniversitario, la nota definitiva se calcula con tres componentes: Parcial 1 (30 %), Parcial 2 (30 %) y Proyecto final (40 %). Si un estudiante obtuvo 3,5 en el Parcial 1 y 4,0 en el Parcial 2, ¿qué nota mínima debe sacar en el Proyecto final para que su promedio ponderado final sea exactamente 4,0?",
+        "opciones": [
+            "4,125",
+            "4,375",
+            "4,500",
+            "4,750"
+        ],
+        "correcta": 1,
+        "explicacion": "El promedio ponderado es $P = 0,30(3,5) + 0,30(4,0) + 0,40(x) = 4,0$. Calculamos: $1,05 + 1,20 + 0,40x = 4,0 \\implies 2,25 + 0,40x = 4,0 \\implies 0,40x = 1,75 \\implies x = 1,75 / 0,40 = 4,375$.",
+        "distractores": [
+            "Calcula el promedio simple de las tres notas igualando $(3,5 + 4,0 + x)/3 = 4,0$, de donde $x = 4,5$ sin considerar los pesos porcentuales.",
+            "",
+            "Divide la diferencia restante entre 0,30 en lugar del 40 % del proyecto final.",
+            "Aplica una ponderación invertida asignando el 40 % al primer examen."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula e interpreta el promedio ponderado en situaciones académicas y cotidianas.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Promedio ponderado",
+                    "lineas": [
+                        "0,30(3,5) + 0,30(4,0) + 0,40(x) = 4,0",
+                        "2,25 + 0,40x = 4,0\\implies 0,40x = 1,75\\implies x = 4,375"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: $0,30(3,5) + 0,30(4,0) + 0,40(4,375) = 1,05 + 1,20 + 1,75 = 4,0$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Promedio ponderado",
+                "que": "Determinar la calificación faltante para alcanzar un promedio meta considerando ponderaciones distintas.",
+                "clave": "Multiplicar cada nota por su peso decimal y despejar la incógnita de la suma ponderada.",
+                "no": [
+                    {
+                        "t": "Promedio aritmético simple",
+                        "p": "Sumar y dividir entre tres asumiendo igual peso para todas las notas."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-014",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.1",
+        "nivel": 2,
+        "enunciado": "En una urna opaca se colocan 5 balotas verdes, 7 balotas amarillas y 8 balotas azules, todas de igual tamaño y peso. Si una persona extrae al azar una sola balota de la urna, ¿cuál es la probabilidad de que la balota seleccionada NO sea de color amarillo?",
+        "opciones": [
+            "7/20",
+            "13/20",
+            "12/20",
+            "8/20"
+        ],
+        "correcta": 1,
+        "explicacion": "El total de balotas en la urna es $5 + 7 + 8 = 20$. Las balotas que no son amarillas son las verdes y las azules: $5 + 8 = 13$. Por tanto, la probabilidad del evento complementario es $P(\\text{no amarillo}) = 13/20$ (o $1 - 7/20 = 13/20$).",
+        "distractores": [
+            "Calcula la probabilidad de que SÍ sea amarilla (7/20), respondiendo lo contrario a lo solicitado en el enunciado.",
+            "",
+            "Cuenta únicamente las balotas verdes (5/20) o comete un error de suma.",
+            "Considera únicamente las balotas azules (8/20), ignorando las verdes que tampoco son amarillas."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Calcula probabilidades de eventos simples y complementarios en espacios muestrales finitos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Probabilidad del evento complementario",
+                    "lineas": [
+                        "\\text{Total balotas} = 5 + 7 + 8 = 20",
+                        "\\text{Favorables (no amarillas)} = 5 + 8 = 13",
+                        "P(\\text{no amarillo}) = 13/20 = 0,65"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: $P(\\text{amarillo}) + P(\\text{no amarillo}) = 7/20 + 13/20 = 20/20 = 1$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Probabilidad de eventos complementarios",
+                "que": "Calcular la probabilidad de que no ocurra una condición específica.",
+                "clave": "Sumar los casos que no cumplen la condición o restar al total la probabilidad del evento opuesto.",
+                "no": [
+                    {
+                        "t": "Calcular el evento directo",
+                        "p": "Elegir la probabilidad de que sea amarilla olvidando la palabra 'NO'."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-015",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "En un mapa topográfico a escala 1:50.000, la distancia medida en línea recta con una regla entre dos veredas es de 8 centímetros. ¿Cuál es la distancia real en línea recta entre las dos veredas en kilómetros?",
+        "opciones": [
+            "0,4 km",
+            "4 km",
+            "40 km",
+            "400 km"
+        ],
+        "correcta": 1,
+        "explicacion": "Una escala 1:50.000 significa que 1 cm en el mapa equivale a 50.000 cm en la realidad. Así, $8\\text{ cm}\\cdot 50.000 = 400.000\\text{ cm}$. Sabiendo que $1\\text{ m} = 100\\text{ cm}$ y $1\\text{ km} = 1.000\\text{ m}$, tenemos que $1\\text{ km} = 100.000\\text{ cm}$. Por tanto, $400.000\\text{ cm} / 100.000 = 4$ km.",
+        "distractores": [
+            "Divide 400.000 entre 1.000.000 creyendo erróneamente que un kilómetro tiene un millón de centímetros, dando 0,4 km.",
+            "",
+            "Olvida un cero al convertir unidades de centímetros a metros y kilómetros, obteniendo 40 km.",
+            "Multiplica la escala directamente sin convertir las unidades de centímetros a kilómetros."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Interpreta escalas numéricas y realiza conversiones de longitud entre representaciones y la realidad.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Conversión de escala a kilómetros",
+                    "lineas": [
+                        "D_{\\text{real}} = 8\\text{ cm}\\times 50.000 = 400.000\\text{ cm}",
+                        "400.000\\text{ cm} = 4.000\\text{ m} = 4\\text{ km}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: en escala 1:50.000, 2 cm representan 1 km; por regla de tres, 8 cm representan $8/2 = 4$ km."
+                }
+            ],
+            "enfoque": {
+                "tema": "Escalas cartográficas",
+                "que": "Convertir distancias en el mapa a distancias métricas reales.",
+                "clave": "1 km equivale a 100.000 cm (1.000 metros de 100 cm cada uno).",
+                "no": [
+                    {
+                        "t": "Error de unidades",
+                        "p": "Confundir la conversión de cm a km desplazando incorrectamente la coma decimal."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-016",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Un cultivo de bacterias inicia con una población de 500 individuos. Debido a condiciones óptimas de nutrientes y temperatura, la población se duplica cada 4 horas. ¿Cuántas bacterias habrá en el cultivo al transcurrir exactamente 12 horas?",
+        "opciones": [
+            "1.500 bacterias",
+            "2.000 bacterias",
+            "4.000 bacterias",
+            "6.000 bacterias"
+        ],
+        "correcta": 2,
+        "explicacion": "En 12 horas ocurren $12 / 4 = 3$ periodos de duplicación. La población sigue un modelo exponencial $P(t) = P_0\\cdot 2^{t/4} = 500\\cdot 2^3 = 500\\cdot 8 = 4.000$ bacterias.",
+        "distractores": [
+            "Multiplica la población inicial por 3 creyendo que triplica el valor inicial en vez de duplicarse 3 veces: $500\\cdot 3 = 1.500$.",
+            "Aplica únicamente dos duplicaciones: $500\\cdot 2 = 1.000 \\rightarrow 1.000\\cdot 2 = 2.000$, olvidando el tercer intervalo de tiempo.",
+            "",
+            "Suma 500 en cada intervalo o multiplica linealmente por factores no exponenciales."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Modela fenómenos de crecimiento exponencial en contextos biológicos y científicos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Crecimiento por duplicación",
+                    "lineas": [
+                        "\\text{Periodos} = 12 / 4 = 3",
+                        "P = 500\\times 2^3 = 500\\times 8 = 4.000"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación paso a paso: hora 0 = 500; hora 4 = 1.000; hora 8 = 2.000; hora 12 = 4.000."
+                }
+            ],
+            "enfoque": {
+                "tema": "Crecimiento exponencial",
+                "que": "Calcular la población final conociendo la tasa de duplicación y el tiempo total.",
+                "clave": "Cada periodo multiplica la población previa por 2, resultando en una potencia $2^n$.",
+                "no": [
+                    {
+                        "t": "Crecimiento lineal",
+                        "p": "Sumar una cantidad fija por periodo en lugar de multiplicar por 2."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-017",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.2",
+        "nivel": 2,
+        "enunciado": "Los tiempos en minutos que tardaron 9 ciclistas en completar una contrarreloj fueron: 22, 24, 25, 25, 27, 29, 31, 33 y 35. ¿Cuál es el valor del rango intercuartílico (RIC = Q₃ − Q₁) de estos datos?",
+        "opciones": [
+            "6 minutos",
+            "7,5 minutos",
+            "13 minutos",
+            "27 minutos"
+        ],
+        "correcta": 1,
+        "explicacion": "Los datos ya están ordenados: 22, 24, 25, 25, 27, 29, 31, 33, 35. La mediana (Q₂) es el dato central (posición 5): 27. El cuartil inferior (Q₁) es la mediana de la primera mitad (22, 24, 25, 25), es decir, $(24 + 25)/2 = 24,5$. El cuartil superior (Q₃) es la mediana de la segunda mitad (29, 31, 33, 35), es decir, $(31 + 33)/2 = 32$. El rango intercuartílico es $Q_3 - Q_1 = 32 - 24,5 = 7,5$ minutos.",
+        "distractores": [
+            "Resta los datos de los extremos de la primera mitad o toma $31 - 25 = 6$.",
+            "",
+            "Calcula el rango total (máximo − mínimo): $35 - 22 = 13$ minutos, confundiéndolo con el rango intercuartílico.",
+            "Indica el valor de la mediana (27 minutos) en lugar del rango intercuartílico."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Calcula e interpreta medidas de posición y dispersión como cuartiles y rangos intercuartílicos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Cálculo de cuartiles y RIC",
+                    "lineas": [
+                        "Q_1 = (24 + 25)/2 = 24,5",
+                        "Q_3 = (31 + 33)/2 = 32",
+                        "\\text{RIC} = Q_3 - Q_1 = 32 - 24,5 = 7,5"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el 50% central de los ciclistas está comprendido en un intervalo de 7,5 minutos alrededor de la mediana."
+                }
+            ],
+            "enfoque": {
+                "tema": "Rango intercuartílico",
+                "que": "Determinar la diferencia entre el percentil 75 (Q₃) y el percentil 25 (Q₁).",
+                "clave": "Hallar las medianas de las dos mitades del conjunto de datos ordenados y restarlas.",
+                "no": [
+                    {
+                        "t": "Confundir con rango total",
+                        "p": "Restar el dato mínimo del máximo."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-018",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "A las 10:00 a. m. de un día soleado, un poste vertical de 3 metros de altura proyecta sobre el piso una sombra de 2 metros de longitud. A esa misma hora y lugar, un edificio cercano proyecta una sombra de 18 metros. ¿Cuál es la altura del edificio?",
+        "opciones": [
+            "12 metros",
+            "24 metros",
+            "27 metros",
+            "36 metros"
+        ],
+        "correcta": 2,
+        "explicacion": "Como los rayos solares inciden con el mismo ángulo de inclinación, los triángulos formados por los objetos y sus sombras son semejantes: $\\frac{\\text{Altura poste}}{\\text{Sombra poste}} = \\frac{\\text{Altura edificio}}{\\text{Sombra edificio}} \\implies \\frac{3}{2} = \\frac{H}{18}$. Despejando: $H = \\frac{3\\cdot 18}{2} = \\frac{54}{2} = 27$ metros.",
+        "distractores": [
+            "Invierte la razón de proporcionalidad: $\\frac{2}{3} = \\frac{H}{18} \\implies H = 12$ metros, lo que daría un edificio más bajo que su propia sombra.",
+            "Suma las alturas o multiplica por factores incorrectos obteniendo 24 metros.",
+            "",
+            "Duplica la sombra del edificio ($18\\cdot 2 = 36$) sin aplicar la razón geométrica 3/2."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica criterios de semejanza de triángulos en la resolución de problemas geométricos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Semejanza de triángulos",
+                    "lineas": [
+                        "\\frac{H}{18} = \\frac{3}{2}",
+                        "H = \\frac{3\\times 18}{2} = 27\\text{ m}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: la altura es 1,5 veces la longitud de la sombra ($3/2 = 1,5$). Para el edificio: $18\\cdot 1,5 = 27$ m."
+                }
+            ],
+            "enfoque": {
+                "tema": "Semejanza geométrica",
+                "que": "Determinar alturas inaccesibles usando sombras y proporciones triangulares.",
+                "clave": "La razón entre altura y sombra se mantiene idéntica para todos los objetos verticales a la misma hora.",
+                "no": [
+                    {
+                        "t": "Invertir la proporción",
+                        "p": "Dividir la sombra entre la altura al despejar la incógnita."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-019",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Una junta de acción comunal dispone de un presupuesto máximo de $800.000 para organizar una integración. El alquiler del salón cuesta $260.000 fijos y cada plato de comida cuesta $18.000 por asistente. ¿Cuál es el número máximo de asistentes para el cual alcanza el presupuesto?",
+        "opciones": [
+            "28 personas",
+            "30 personas",
+            "34 personas",
+            "44 personas"
+        ],
+        "correcta": 1,
+        "explicacion": "Sea $n$ el número de asistentes. El costo total debe ser menor o igual al presupuesto: $260.000 + 18.000n \\le 800.000$. Restando el costo fijo: $18.000n \\le 540.000$. Dividiendo: $n \\le 540.000 / 18.000 = 30$. El número máximo de asistentes es exactamente 30 personas.",
+        "distractores": [
+            "Calcula con un presupuesto menor o resta incorrectamente obteniendo 28 personas.",
+            "",
+            "Divide $800.000 / 18.000 \\approx 44$ personas olvidando descontar el costo fijo del salón.",
+            "Aplica una resta aritmética incorrecta asignando 34 personas al evento."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Plantea y resuelve inecuaciones lineales para modelar restricciones presupuestales.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Inecuación lineal de presupuesto",
+                    "lineas": [
+                        "260.000 + 18.000n \\le 800.000",
+                        "18.000n \\le 540.000\\implies n \\le 30"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: para 30 personas: $260.000 + 18.000(30) = 260.000 + 540.000 = 800.000$ (exacto al límite)."
+                }
+            ],
+            "enfoque": {
+                "tema": "Inecuaciones lineales",
+                "que": "Determinar la cantidad máxima entera permitida sujeta a costos fijos y variables.",
+                "clave": "Restar los costos fijos antes de dividir por el costo variable unitario.",
+                "no": [
+                    {
+                        "t": "Ignorar el costo fijo",
+                        "p": "Dividir todo el presupuesto entre el costo unitario de la comida."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-020",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 3,
+        "enunciado": "La ganancia mensual $G(x)$ en miles de pesos de un emprendimiento de confecciones depende del número $x$ de chaquetas producidas mediante la función cuadrática $G(x) = -2x^2 + 120x - 800$. ¿Cuántas chaquetas deben fabricarse para maximizar la ganancia?",
+        "opciones": [
+            "20 chaquetas",
+            "30 chaquetas",
+            "60 chaquetas",
+            "1.000 chaquetas"
+        ],
+        "correcta": 1,
+        "explicacion": "Una función cuadrática $f(x) = ax^2 + bx + c$ con $a < 0$ alcanza su valor máximo en la abscisa del vértice: $x_v = -b / (2a)$. En este caso, $a = -2$ y $b = 120$. Por tanto, $x_v = -120 / (2\\cdot (-2)) = -120 / -4 = 30$ chaquetas.",
+        "distractores": [
+            "Calcula una de las raíces donde la ganancia es cero o divide 120 entre 6 dando 20.",
+            "",
+            "Olvida el factor 2 en el denominador y calcula $-b/a = -120 / -2 = 60$.",
+            "Confunde el número óptimo de chaquetas con el valor de la ganancia máxima obtenida."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Determina máximos y mínimos de funciones cuadráticas mediante el análisis del vértice.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Abscisa del vértice cuadrático",
+                    "lineas": [
+                        "x_v = -\\frac{b}{2a}",
+                        "x_v = -\\frac{120}{2(-2)} = -\\frac{120}{-4} = 30"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: para $x=29$, $G=998$; para $x=30$, $G=-2(900)+3600-800 = 1000$; para $x=31$, $G=998$. El punto máximo es 30."
+                }
+            ],
+            "enfoque": {
+                "tema": "Optimización cuadrática",
+                "que": "Encontrar el punto de máxima ganancia en una parábola cóncava hacia abajo.",
+                "clave": "El máximo de una cuadrática $ax^2 + bx + c$ con $a < 0$ ocurre exactamente en $x = -b/(2a)$.",
+                "no": [
+                    {
+                        "t": "Olvidar el dos del denominador",
+                        "p": "Calcular $x = -b/a$ en vez de $x = -b/(2a)$."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-021",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.1",
+        "nivel": 2,
+        "enunciado": "En una frutería de Bucaramanga se ofrecen jugos especiales combinando exactamente 3 frutas diferentes seleccionadas de una lista de 7 frutas disponibles. ¿Cuántas combinaciones distintas de jugos se pueden preparar?",
+        "opciones": [
+            "21 combinaciones",
+            "35 combinaciones",
+            "42 combinaciones",
+            "210 combinaciones"
+        ],
+        "correcta": 1,
+        "explicacion": "Dado que el orden de las frutas en el jugo no importa (mora, lulo y mango es el mismo jugo que mango, lulo y mora), se utiliza una combinación de 7 elementos tomados de a 3: $C(7, 3) = \\frac{7!}{3!(7-3)!} = \\frac{7\\cdot 6\\cdot 5}{3\\cdot 2\\cdot 1} = \\frac{210}{6} = 35$.",
+        "distractores": [
+            "Multiplica $7\\cdot 3 = 21$ creyendo que es una simple multiplicación aritmética.",
+            "",
+            "Calcula la mitad de 84 o comete un error al simplificar las fracciones del factorial.",
+            "Calcula las variaciones o permutaciones donde sí importa el orden: $7\\cdot 6\\cdot 5 = 210$, olvidando dividir entre las 6 permutaciones de las 3 frutas."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica técnicas de conteo y combinatoria sin repetición en situaciones de selección.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Combinación sin orden",
+                    "lineas": [
+                        "C(n, k) = \\frac{n!}{k!(n-k)!}",
+                        "C(7, 3) = \\frac{7\\times 6\\times 5}{3\\times 2\\times 1} = \\frac{210}{6} = 35"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: al no importar el orden, cada terna de frutas se cuenta una sola vez y no 6 veces."
+                }
+            ],
+            "enfoque": {
+                "tema": "Combinatoria",
+                "que": "Contar subconjuntos de tamaño $k$ a partir de un conjunto de $n$ elementos disponibles.",
+                "clave": "Identificar que el orden de los elementos no genera un resultado diferente.",
+                "no": [
+                    {
+                        "t": "Usar permutaciones",
+                        "p": "Calcular $7\\times 6\\times 5 = 210$ creyendo que el orden altera el jugo."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-022",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "En el triángulo $ABC$, se traza un segmento $DE$ paralelo al lado $BC$, con $D$ sobre $AB$ y $E$ sobre $AC$. Si la longitud de $AD$ es 4 cm, la longitud de $DB$ es 6 cm y la longitud de $AE$ es 6 cm, ¿cuál es la longitud del segmento $EC$?",
+        "opciones": [
+            "4 cm",
+            "6 cm",
+            "9 cm",
+            "12 cm"
+        ],
+        "correcta": 2,
+        "explicacion": "Por el teorema de Tales, una recta paralela a uno de los lados de un triángulo divide a los otros dos lados en segmentos proporcionales: $\\frac{AD}{DB} = \\frac{AE}{EC}$. Sustituyendo: $\\frac{4}{6} = \\frac{6}{EC} \\implies 4\\cdot EC = 6\\cdot 6 = 36 \\implies EC = 36 / 4 = 9$ cm.",
+        "distractores": [
+            "Asume que $EC$ mide igual que $AD$ (4 cm) por una falsa correspondencia simétrica.",
+            "Supone que los dos segmentos de la derecha deben ser iguales ($AE = EC = 6$ cm).",
+            "",
+            "Multiplica $6\\cdot 2 = 12$ cm sin aplicar la proporción establecida por el teorema de Tales."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica el teorema de Tales para determinar longitudes desconocidas en triángulos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Teorema de Tales",
+                    "lineas": [
+                        "\\frac{AD}{DB} = \\frac{AE}{EC}",
+                        "\\frac{4}{6} = \\frac{6}{EC}\\implies EC = \\frac{36}{4} = 9\\text{ cm}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: la razón de proporcionalidad es $4/6 = 2/3$. Del otro lado: $6/9 = 2/3$. La proporción es idéntica."
+                }
+            ],
+            "enfoque": {
+                "tema": "Teorema de Tales",
+                "que": "Determinar segmentos proporcionales en triángulos cortados por paralelas.",
+                "clave": "La razón entre los segmentos de un lado es idéntica a la razón entre los segmentos del otro lado.",
+                "no": [
+                    {
+                        "t": "Falsa simetría",
+                        "p": "Asumir que los segmentos opuestos tienen longitudes idénticas."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-023",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Un radar de velocidad instalado en una autopista de Santander registra el paso de un automóvil a una velocidad instantánea de 25 metros por segundo (m/s). Si el límite de velocidad en la zona es de 80 kilómetros por hora (km/h), ¿cuál afirmación es verdadera?",
+        "opciones": [
+            "El vehículo no supera el límite porque viaja a 72 km/h.",
+            "El vehículo supera el límite porque viaja a 90 km/h.",
+            "El vehículo no supera el límite porque viaja a 25 km/h.",
+            "El vehículo supera el límite porque viaja a 100 km/h."
+        ],
+        "correcta": 1,
+        "explicacion": "Para convertir de m/s a km/h se multiplica por $3,6$ (ya que $1\\text{ km} = 1.000\\text{ m}$ y $1\\text{ h} = 3.600\\text{ s}$): $25\\text{ m/s}\\cdot \\frac{3.600\\text{ s}}{1\\text{ h}}\\cdot \\frac{1\\text{ km}}{1.000\\text{ m}} = 25\\cdot 3,6 = 90$ km/h. Como 90 km/h > 80 km/h, el vehículo sí supera el límite permitido.",
+        "distractores": [
+            "Calcula erróneamente $20\\cdot 3,6 = 72$ km/h confundiendo la velocidad medida.",
+            "",
+            "Compara directamente los números 25 y 80 sin hacer la conversión de unidades de tiempo y longitud.",
+            "Multiplica por 4 de manera inexacta concluyendo que viaja a 100 km/h."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Realiza conversiones entre sistemas de unidades de velocidad y argumenta comparaciones cuantitativas.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Conversión de m/s a km/h",
+                    "lineas": [
+                        "v = 25\\text{ m/s}\\times 3,6 = 90\\text{ km/h}",
+                        "90\\text{ km/h} > 80\\text{ km/h}\\implies\\text{Supera el límite}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: en 1 segundo recorre 25 m; en 3.600 segundos (1 hora) recorre $25\\cdot 3.600 = 90.000$ m = 90 km."
+                }
+            ],
+            "enfoque": {
+                "tema": "Conversión de unidades de velocidad",
+                "que": "Comparar magnitudes físicas expresadas en diferentes unidades de medida.",
+                "clave": "Multiplicar por 3,6 para pasar de metros por segundo a kilómetros por hora.",
+                "no": [
+                    {
+                        "t": "Comparar sin convertir",
+                        "p": "Comparar 25 con 80 sin transformar las unidades de medida."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-024",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Un topógrafo se ubica a 20 metros de la base de un árbol en un terreno plano. Utilizando un teodolito a nivel del suelo, mide un ángulo de elevación de 30° hasta la copa del árbol. Sabiendo que $\\tan(30^\\circ) = \\frac{\\sqrt{3}}{3} \\approx 0,577$, ¿cuál es la altura aproximada del árbol?",
+        "opciones": [
+            "10,0 metros",
+            "11,54 metros",
+            "17,32 metros",
+            "20,0 metros"
+        ],
+        "correcta": 1,
+        "explicacion": "En el triángulo rectángulo formado: $\\tan(30^\\circ) = \\frac{\\text{Cateto opuesto}}{\\text{Cateto adyacente}} = \\frac{h}{20}$. Despejando la altura: $h = 20\\cdot \\tan(30^\\circ) = 20\\cdot \\frac{\\sqrt{3}}{3} \\approx 20\\cdot 0,577 = 11,54$ metros.",
+        "distractores": [
+            "Usa la función seno o divide 20 entre 2 asumiendo un triángulo de 30-60-90 con hipotenusa 20 ($20\\cdot 0,5 = 10$).",
+            "",
+            "Multiplica por $\\sqrt{3}/2$ o $\\sqrt{3} \\approx 1,732$ obteniendo 17,32 metros.",
+            "Asume que la altura es igual a la distancia horizontal (20 metros), lo cual solo ocurriría a 45°."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica razones trigonométricas en triángulos rectángulos para resolver problemas de altura.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Razón tangente",
+                    "lineas": [
+                        "\\tan(30^\\circ) = \\frac{h}{20}",
+                        "h = 20\\times 0,577 = 11,54\\text{ m}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: a un ángulo de 30°, el cateto opuesto siempre es menor que el cateto adyacente ($11,54 < 20$)."
+                }
+            ],
+            "enfoque": {
+                "tema": "Trigonometría básica",
+                "que": "Calcular la altura de un objeto mediante la razón tangente y el ángulo de elevación.",
+                "clave": "La tangente relaciona el cateto opuesto (altura) con el cateto adyacente (distancia horizontal).",
+                "no": [
+                    {
+                        "t": "Usar la razón de 45°",
+                        "p": "Igualar altura y distancia como si el ángulo fuera de 45°."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-025",
+        "area": "matematicas",
+        "evidencia": "MAT_E2.3",
+        "nivel": 2,
+        "enunciado": "Una persona deposita $5.000.000 en un Certificado de Depósito a Término (CDT) bancario que ofrece una tasa de interés simple anual del 8 %. Si retira su dinero exactamente al cabo de 3 años, ¿cuánto dinero recibirá en total por concepto de capital más intereses?",
+        "opciones": [
+            "$5.400.000",
+            "$6.200.000",
+            "$6.298.560",
+            "$7.000.000"
+        ],
+        "correcta": 1,
+        "explicacion": "En el régimen de interés simple, el interés es $I = C\\cdot i\\cdot t = 5.000.000\\cdot 0,08\\cdot 3 = 1.200.000$. El monto final total recibido es el capital más los intereses acumulados: $M = C + I = 5.000.000 + 1.200.000 = 6.200.000$.",
+        "distractores": [
+            "Calcula el interés de un solo año ($5.000.000\\cdot 0,08 = 400.000$) y olvida multiplicar por los 3 años de plazo.",
+            "",
+            "Aplica la fórmula de interés compuesto $5.000.000(1 + 0,08)^3 = 6.298.560$, cuando el enunciado especifica interés simple.",
+            "Suma un 40 % arbitrario estimando el resultado sin el cálculo formal."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula intereses y montos acumulados bajo esquemas de interés simple.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Monto en interés simple",
+                    "lineas": [
+                        "I = 5.000.000\\times 0,08\\times 3 = 1.200.000",
+                        "M = 5.000.000 + 1.200.000 = 6.200.000"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: cada año genera $400.000 de rendimiento; en 3 años son $1.200.000. Total = $6.200.000."
+                }
+            ],
+            "enfoque": {
+                "tema": "Matemática financiera: interés simple",
+                "que": "Calcular el capital final tras generar intereses lineales no acumulativos sobre el capital inicial.",
+                "clave": "El interés simple genera la misma cantidad de dinero cada año.",
+                "no": [
+                    {
+                        "t": "Aplicar interés compuesto",
+                        "p": "Reinvertir los intereses año a año con fórmula exponencial."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-026",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "El municipio A tiene una población de 48.000 habitantes y un área territorial de 160 km². El municipio B tiene una población de 75.000 habitantes y un área de 300 km². ¿Cuál de los dos municipios tiene mayor densidad poblacional?",
+        "opciones": [
+            "El municipio A, con una densidad de 300 hab/km² frente a 250 hab/km² del municipio B.",
+            "El municipio B, porque tiene 27.000 habitantes más que el municipio A.",
+            "El municipio B, con una densidad de 350 hab/km² frente a 200 hab/km² del municipio A.",
+            "Ambos municipios tienen exactamente la misma densidad poblacional."
+        ],
+        "correcta": 0,
+        "explicacion": "La densidad poblacional es la razón entre el número de habitantes y el área en kilómetros cuadrados ($D = \\text{Población} / \\text{Área}$). Para el municipio A: $D_A = 48.000 / 160 = 300$ hab/km². Para el municipio B: $D_B = 75.000 / 300 = 250$ hab/km². Por tanto, el municipio A tiene mayor densidad poblacional.",
+        "distractores": [
+            "",
+            "Compara solo la población absoluta ignorando el tamaño del territorio de cada municipio.",
+            "Calcula erróneamente las divisiones asignando valores numéricos falsos a las densidades.",
+            "Asume que la relación es equivalente sin realizar las divisiones correspondientes."
+        ],
+        "origen": "original",
+        "competencia": "Argumentación",
+        "afirmacion": "Compara e interpreta razones de densidad poblacional justificando afirmaciones con cálculos precisos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Cálculo de densidades relativas",
+                    "lineas": [
+                        "D_A = 48.000 / 160 = 300\\text{ hab/km}^2",
+                        "D_B = 75.000 / 300 = 250\\text{ hab/km}^2"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: 300 > 250; el municipio A tiene más personas concentradas por cada kilómetro cuadrado de su territorio."
+                }
+            ],
+            "enfoque": {
+                "tema": "Densidad poblacional",
+                "que": "Comparar la concentración de habitantes por unidad de superficie.",
+                "clave": "La densidad es una razón relativa (población dividida por área), no un valor absoluto.",
+                "no": [
+                    {
+                        "t": "Mirar solo el total de habitantes",
+                        "p": "Elegir el municipio más poblado sin dividir entre su extensión territorial."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-027",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.2",
+        "nivel": 2,
+        "enunciado": "En un estudio sobre el consumo de café en 200 familias, se registraron los siguientes datos en una tabla de frecuencias: 40 familias consumen menos de 1 libra al mes, 90 familias consumen entre 1 y 2 libras, 50 familias consumen entre 2 y 3 libras, y 20 familias consumen más de 3 libras. ¿Qué porcentaje de las familias consume al menos 2 libras de café al mes?",
+        "opciones": [
+            "25 %",
+            "35 %",
+            "45 %",
+            "70 %"
+        ],
+        "correcta": 1,
+        "explicacion": "La expresión 'al menos 2 libras' significa 2 libras o más. Las familias en esta condición son las del rango de 2 a 3 libras (50 familias) más las de más de 3 libras (20 familias), para un total de $50 + 20 = 70$ familias. El porcentaje sobre el total de 200 familias es: $(70 / 200)\\cdot 100\\% = 35\\%$.",
+        "distractores": [
+            "Considera únicamente las familias de 2 a 3 libras: $(50/200)\\cdot 100\\% = 25\\%$, omitiendo a las que consumen más de 3 libras.",
+            "",
+            "Calcula el porcentaje de familias que consumen entre 1 y 2 libras: $(90/200)\\cdot 100\\% = 45\\%$.",
+            "Toma el número absoluto de 70 familias y lo confunde directamente con 70 % sin dividir entre 200."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Extrae e interpreta porcentajes a partir de tablas de distribución de frecuencias.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Suma de frecuencias y porcentaje",
+                    "lineas": [
+                        "\\text{Familias } \\ge 2\\text{ lb} = 50 + 20 = 70",
+                        "\\text{Porcentaje} = \\frac{70}{200}\\times 100\\% = 35\\%"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: 70 de 200 es la mitad de 70 de 100, es decir, exactamente 35%."
+                }
+            ],
+            "enfoque": {
+                "tema": "Tablas de frecuencias y porcentajes",
+                "que": "Calcular la proporción acumulada que cumple una condición mínima ('al menos').",
+                "clave": "'Al menos 2' incluye el intervalo de 2 a 3 y el de más de 3.",
+                "no": [
+                    {
+                        "t": "Omitir los intervalos superiores",
+                        "p": "Tomar solo el intervalo que inicia en 2 olvidando los mayores."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-028",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "La fachada lateral de una bodega tiene forma de trapecio con una base inferior de 14 metros, una base superior de 8 metros y una altura perpendicular de 5 metros. ¿Cuál es el área total de la fachada?",
+        "opciones": [
+            "44 m²",
+            "55 m²",
+            "70 m²",
+            "110 m²"
+        ],
+        "correcta": 1,
+        "explicacion": "El área de un trapecio se calcula con la fórmula $A = \\frac{B + b}{2}\\cdot h$. Sustituyendo los valores dados: $A = \\frac{14 + 8}{2}\\cdot 5 = \\frac{22}{2}\\cdot 5 = 11\\cdot 5 = 55$ m².",
+        "distractores": [
+            "Multiplica la base inferior por la altura y divide entre dos sin sumar la base superior: $(14\\cdot 5)/2 = 35$ o promedia incorrectamente.",
+            "",
+            "Multiplica la base inferior por la altura: $14\\cdot 5 = 70$ m², como si fuera un rectángulo completo.",
+            "Olvida dividir entre 2 la suma de las bases: $(14 + 8)\\cdot 5 = 22\\cdot 5 = 110$ m²."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula el área de figuras poligonales compuestas y cuadriláteros.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Área del trapecio",
+                    "lineas": [
+                        "A = \\frac{B + b}{2}\\times h",
+                        "A = \\frac{14 + 8}{2}\\times 5 = 11\\times 5 = 55\\text{ m}^2"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el ancho promedio del trapecio es $(14 + 8)/2 = 11$ m; multiplicado por 5 m de altura da 55 m²."
+                }
+            ],
+            "enfoque": {
+                "tema": "Área de trapecios",
+                "que": "Calcular la superficie de un cuadrilátero con bases paralelas.",
+                "clave": "El área equivale al producto de la base media por la altura.",
+                "no": [
+                    {
+                        "t": "Olvidar dividir entre dos",
+                        "p": "Sumar las bases y multiplicar directamente por la altura sin promediarlas."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-029",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Una tolva para almacenar café tiene forma cónica invertida con un radio de 3 metros en su boca circular superior y una profundidad de 4 metros. Sabiendo que el volumen de un cono es $V = \\frac{1}{3}\\pi r^2 h$ y tomando $\\pi \\approx 3,14$, ¿cuál es el volumen aproximado de la tolva?",
+        "opciones": [
+            "12,56 m³",
+            "25,12 m³",
+            "37,68 m³",
+            "113,04 m³"
+        ],
+        "correcta": 2,
+        "explicacion": "Aplicando la fórmula del cono: $V = \\frac{1}{3}\\cdot 3,14\\cdot (3^2)\\cdot 4 = \\frac{1}{3}\\cdot 3,14\\cdot 9\\cdot 4$. Simplificando $9/3 = 3$: $V = 3,14\\cdot 3\\cdot 4 = 3,14\\cdot 12 = 37,68$ m³.",
+        "distractores": [
+            "Olvida elevar el radio al cuadrado: $\\frac{1}{3}\\cdot 3,14\\cdot 3\\cdot 4 = 12,56$ m³.",
+            "Divide entre 3 dos veces por equivocación obteniendo 25,12 m³.",
+            "",
+            "Calcula el volumen del cilindro circunscrito ($3,14\\cdot 9\\cdot 4 = 113,04$ m³) olvidando multiplicar por 1/3."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula el volumen de cuerpos redondos como conos y pirámides.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Volumen del cono",
+                    "lineas": [
+                        "V = \\frac{1}{3}\\pi r^2 h",
+                        "V = \\frac{1}{3}(3,14)(9)(4) = 3,14\\times 12 = 37,68\\text{ m}^3"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el volumen de un cono es exactamente un tercio del cilindro con su misma base y altura ($113,04 / 3 = 37,68$ m³)."
+                }
+            ],
+            "enfoque": {
+                "tema": "Volumen cónico",
+                "que": "Determinar la capacidad de almacenamiento de un cono circular recto.",
+                "clave": "El factor 1/3 divide el producto del área de la base circular por la altura.",
+                "no": [
+                    {
+                        "t": "Omitir el factor un tercio",
+                        "p": "Calcular la fórmula del cilindro en vez de la del cono."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-030",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.1",
+        "nivel": 2,
+        "enunciado": "En un juego de azar, un participante lanza una moneda balanceada al aire y un dado común de 6 caras. ¿Cuál es la probabilidad de obtener 'cara' en la moneda y un número primo (2, 3 o 5) en el dado?",
+        "opciones": [
+            "1/12",
+            "1/6",
+            "1/4",
+            "1/2"
+        ],
+        "correcta": 2,
+        "explicacion": "Como los dos lanzamientos son eventos independientes, la probabilidad conjunta es el producto de las probabilidades individuales. La probabilidad de obtener cara en la moneda es $P(C) = 1/2$. Los números primos en el dado son 2, 3 y 5 (3 casos favorables de 6 posibles): $P(\\text{primo}) = 3/6 = 1/2$. Por ende, $P(C \\cap \\text{primo}) = \\frac{1}{2}\\cdot \\frac{1}{2} = \\frac{1}{4}$.",
+        "distractores": [
+            "Calcula con un solo número primo favorable ($1/2 \\cdot 1/6 = 1/12$).",
+            "Calcula únicamente la probabilidad de que salga un número primo en el dado ($1/6$ o $1/3$ mal calculado).",
+            "",
+            "Suma las probabilidades en lugar de multiplicarlas ($1/2 + 1/2 = 1$) o elige 1/2 creyendo que no cambia."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula la probabilidad de eventos independientes compuestos mediante la regla del producto.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Regla del producto para eventos independientes",
+                    "lineas": [
+                        "P(\\text{cara}) = 1/2",
+                        "P(\\text{primo}) = 3/6 = 1/2",
+                        "P(\\text{cara y primo}) = (1/2)(1/2) = 1/4"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el espacio muestral tiene $2\\cdot 6 = 12$ resultados posibles. Los favorables son (Cara, 2), (Cara, 3) y (Cara, 5), es decir, 3 resultados. $3/12 = 1/4$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Eventos independientes",
+                "que": "Calcular la probabilidad de que ocurran dos sucesos simultáneos sin influencia mutua.",
+                "clave": "Multiplicar las probabilidades individuales de cada experimento independiente.",
+                "no": [
+                    {
+                        "t": "Sumar probabilidades",
+                        "p": "Sumar las probabilidades de eventos que deben ocurrir conjuntamente."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-031",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "La temperatura en grados Celsius de una cámara de refrigeración a lo largo de un ciclo de 24 horas está modelada por la función $T(t) = 4\\cos\\left(\\frac{\\pi t}{12}\\right) + 2$, donde $t$ es el tiempo en horas transcurrido desde la medianoche ($0 \\le t \\le 24$). ¿Cuál es la temperatura máxima que alcanza la cámara?",
+        "opciones": [
+            "2 °C",
+            "4 °C",
+            "6 °C",
+            "8 °C"
+        ],
+        "correcta": 2,
+        "explicacion": "La función coseno oscila entre un valor mínimo de $-1$ y un valor máximo de $1$. El valor máximo de la función se alcanza cuando $\\cos\\left(\\frac{\\pi t}{12}\\right) = 1$: $T_{\\text{máx}} = 4(1) + 2 = 6$ °C.",
+        "distractores": [
+            "Toma únicamente el término independiente vertical ($+2$), que corresponde al valor medio de la oscilación.",
+            "Toma únicamente la amplitud de la onda ($4$), olvidando sumar el desplazamiento vertical.",
+            "",
+            "Suma el doble de la amplitud al valor central sin justificación trigonométrica."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Analiza funciones trigonométricas sinusoidales identificando amplitud, desplazamiento y extremos.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Máximo de función coseno",
+                    "lineas": [
+                        "-1 \\le \\cos(\\theta) \\le 1",
+                        "T_{\\text{máx}} = 4(1) + 2 = 6^\\circ\\text{C}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: a las 0 horas ($t=0$), $\\cos(0)=1$ y $T=4(1)+2 = 6^\\circ$C. A las 12 horas, $\\cos(\\pi)=-1$ y $T=4(-1)+2=-2^\\circ$C. El rango es [-2, 6]."
+                }
+            ],
+            "enfoque": {
+                "tema": "Funciones trigonométricas",
+                "que": "Determinar el valor máximo de una función periódica desplazada.",
+                "clave": "El máximo se obtiene sumando la amplitud al desplazamiento vertical.",
+                "no": [
+                    {
+                        "t": "Ignorar el desplazamiento",
+                        "p": "Elegir la amplitud 4 sin sumar el valor del término independiente 2."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-032",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.1",
+        "nivel": 2,
+        "enunciado": "¿Cuántas contraseñas diferentes de 4 dígitos se pueden crear utilizando únicamente los dígitos del 0 al 9 si se permite repetir dígitos en la misma contraseña?",
+        "opciones": [
+            "24 contraseñas",
+            "5.040 contraseñas",
+            "6.561 contraseñas",
+            "10.000 contraseñas"
+        ],
+        "correcta": 3,
+        "explicacion": "Para cada una de las 4 posiciones hay 10 dígitos posibles (del 0 al 9). Por el principio de multiplicación con repetición: $10\\cdot 10\\cdot 10\\cdot 10 = 10^4 = 10.000$ contraseñas posibles (desde 0000 hasta 9999).",
+        "distractores": [
+            "Calcula el factorial de 4: $4! = 24$, confundiendo las posiciones con las opciones.",
+            "Calcula una permutación sin repetición: $10\\cdot 9\\cdot 8\\cdot 7 = 5.040$, cuando el enunciado permite explícitamente repetir dígitos.",
+            "Calcula $9^4 = 6.561$ excluyendo por error el dígito 0 del conjunto de opciones.",
+            ""
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica el principio fundamental del conteo con y sin repetición en problemas combinatorios.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Principio multiplicativo con repetición",
+                    "lineas": [
+                        "\\text{Total} = 10\\times 10\\times 10\\times 10 = 10^4 = 10.000"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: los números van desde el 0000 hasta el 9999, completando exactamente 10.000 combinaciones numéricas de 4 cifras."
+                }
+            ],
+            "enfoque": {
+                "tema": "Principio multiplicativo",
+                "que": "Contar arreglos ordenados con repetición de elementos.",
+                "clave": "Si se permite repetición, cada casilla tiene la totalidad de los 10 dígitos disponibles.",
+                "no": [
+                    {
+                        "t": "Asumir sin repetición",
+                        "p": "Restar una opción en cada casilla ($10\\times 9\\times 8\\times 7$) ignorando que sí se puede repetir."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-033",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.2",
+        "nivel": 2,
+        "enunciado": "Dos cursos de grado undécimo obtuvieron el mismo promedio de 75 puntos en una prueba estandarizada. La desviación estándar del curso 11A fue de 4 puntos, mientras que la del curso 11B fue de 12 puntos. ¿Cuál es la interpretación correcta de este resultado?",
+        "opciones": [
+            "Los estudiantes del curso 11B obtuvieron puntajes más altos en promedio que los del curso 11A.",
+            "Los puntajes de los estudiantes del curso 11A son más homogéneos y cercanos al promedio que los del curso 11B.",
+            "El curso 11B tiene el triple de estudiantes aprobados que el curso 11A.",
+            "No es posible comparar los desempeños porque la desviación estándar no mide la variabilidad."
+        ],
+        "correcta": 1,
+        "explicacion": "La desviación estándar mide la dispersión de los datos respecto a su media aritmética. Una desviación estándar menor (4 puntos en 11A frente a 12 puntos en 11B) indica que los puntajes del curso 11A están más concentrados y son más homogéneos en torno al promedio de 75.",
+        "distractores": [
+            "Afirma que el promedio es mayor en 11B, contradiciendo el enunciado que afirma que ambos tienen el mismo promedio de 75.",
+            "",
+            "Confunde la desviación estándar con la cantidad o tasa de estudiantes aprobados.",
+            "Niega la función estadística básica de la desviación estándar como indicador de variabilidad."
+        ],
+        "origen": "original",
+        "competencia": "Argumentación",
+        "afirmacion": "Interpreta y compara medidas de dispersión para evaluar la homogeneidad de conjuntos de datos.",
+        "hoja": {
+            "modo": "concepto",
+            "pasos": [
+                {
+                    "k": "texto",
+                    "titulo": "Significado de la desviación estándar",
+                    "texto": "A menor desviación estándar, menor dispersión de los puntajes y mayor homogeneidad en el grupo respecto al promedio."
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: 11A ($\\\\sigma=4$) tiene menor variabilidad que 11B ($\\\\sigma=12$). Por ende, 11A es más homogéneo."
+                }
+            ],
+            "enfoque": {
+                "tema": "Medidas de dispersión",
+                "que": "Interpretar la desviación estándar en la comparación de dos poblaciones con igual media.",
+                "clave": "Menor desviación estándar significa datos más compactos y cercanos al promedio.",
+                "no": [
+                    {
+                        "t": "Confundir dispersión con nivel promedio",
+                        "p": "Creer que mayor desviación estándar implica mejores notas."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-034",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 3,
+        "enunciado": "La ganancia $U(q)$ en millones de pesos por fabricar y vender $q$ cientos de artículos está dada por $U(q) = -q^2 + 8q - 12$. ¿Para qué valores de $q$ la empresa genera ganancias estrictamente positivas ($U(q) > 0$)?",
+        "opciones": [
+            "Para cualquier valor de q mayor que 6.",
+            "Para valores de q estrictamente entre 2 y 6.",
+            "Para valores de q menores que 2 o mayores que 6.",
+            "Únicamente cuando q es igual a 4."
+        ],
+        "correcta": 1,
+        "explicacion": "Se resuelve la inecuación $-q^2 + 8q - 12 > 0$, equivalente a $q^2 - 8q + 12 < 0$. Factorizando: $(q - 2)(q - 6) < 0$. Dado que la parábola abre hacia abajo, los valores de la función son estrictamente positivos en el intervalo abierto entre sus dos raíces, es decir, cuando $2 < q < 6$.",
+        "distractores": [
+            "Toma solo los valores a la derecha de la raíz mayor, donde la parábola toma valores negativos.",
+            "",
+            "Elige el conjunto complementario donde la ganancia es negativa o nula ($q < 2$ o $q > 6$).",
+            "Confunde el intervalo con el punto óptimo del vértice ($q = 4$), donde la ganancia es máxima pero no el único valor positivo."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Resuelve inecuaciones cuadráticas interpretando intervalos de positividad y negatividad.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Factorización e intervalo de positividad",
+                    "lineas": [
+                        "-q^2 + 8q - 12 = -(q - 2)(q - 6) > 0",
+                        "(q - 2)(q - 6) < 0\\implies 2 < q < 6"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: para $q=3$: $-9 + 24 - 12 = 3 > 0$. Para $q=1$: $-1 + 8 - 12 = -5 < 0$. Para $q=7$: $-49 + 56 - 12 = -5 < 0$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Inecuaciones cuadráticas",
+                "que": "Determinar el intervalo donde una función cuadrática cóncava hacia abajo es positiva.",
+                "clave": "Entre las dos raíces reales, una parábola que abre hacia abajo toma valores positivos.",
+                "no": [
+                    {
+                        "t": "Invertir el signo de la desigualdad",
+                        "p": "Elegir los valores exteriores a las raíces."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-035",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "En el plano cartesiano, el punto $P(3, -4)$ se rota 90° en sentido antihorario (contrario a las manecillas del reloj) con centro en el origen $(0,0)$. ¿Cuáles son las coordenadas del punto transformado $P'$?",
+        "opciones": [
+            "P'(4, 3)",
+            "P'(-4, -3)",
+            "P'(-3, 4)",
+            "P'(3, 4)"
+        ],
+        "correcta": 0,
+        "explicacion": "Una rotación de 90° en sentido antihorario alrededor del origen transforma cualquier punto $(x, y)$ en $(-y, x)$. Aplicando esta transformación a $P(3, -4)$: $x' = -(-4) = 4$ y $y' = 3$. Por tanto, el nuevo punto es $P'(4, 3)$.",
+        "distractores": [
+            "",
+            "Aplica una rotación de 180°: $(-x, -y) = (-3, 4)$ o comete un error doble de signos: $(-4, -3)$.",
+            "Aplica una rotación en sentido horario (90° a favor de las manecillas): $(y, -x) = (-4, -3)$ o intercambia sin cambiar signo.",
+            "Aplica una reflexión respecto al eje horizontal $x$: $(x, -y) = (3, 4)$, en lugar de una rotación."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Aplica transformaciones rígidas en el plano cartesiano como rotaciones y reflexiones.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Regla de rotación 90° antihoraria",
+                    "lineas": [
+                        "R_{90^\\circ}(x, y) = (-y, x)",
+                        "P'( -(-4), 3 ) = P'(4, 3)"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el producto punto de los vectores $(3, -4)$ y $(4, 3)$ es $3(4) + (-4)(3) = 12 - 12 = 0$, demostrando que son perpendiculares (90°)."
+                }
+            ],
+            "enfoque": {
+                "tema": "Transformaciones en el plano",
+                "que": "Determinar las coordenadas resultantes tras una rotación de 90° antihoraria.",
+                "clave": "La rotación antihoraria transforma $(x, y)$ en $(-y, x)$.",
+                "no": [
+                    {
+                        "t": "Rotar en sentido horario",
+                        "p": "Usar la transformación $(y, -x)$ propia del sentido horario."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-036",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Un automóvil viaja por una carretera recta. Su posición en kilómetros a partir de una caseta de peaje está dada por la función $s(t) = 15t^2 + 20t$, donde $t$ se mide en horas. ¿Cuál es la velocidad promedio del automóvil entre $t = 1$ hora y $t = 3$ horas?",
+        "opciones": [
+            "35 km/h",
+            "60 km/h",
+            "80 km/h",
+            "195 km/h"
+        ],
+        "correcta": 2,
+        "explicacion": "La velocidad promedio es la tasa de cambio media: $v_p = \\frac{s(3) - s(1)}{3 - 1}$. Evaluamos la posición en los dos instantes: $s(1) = 15(1)^2 + 20(1) = 15 + 20 = 35$ km; $s(3) = 15(3)^2 + 20(3) = 15(9) + 60 = 135 + 60 = 195$ km. Calculamos: $v_p = \\frac{195 - 35}{2} = \\frac{160}{2} = 80$ km/h.",
+        "distractores": [
+            "Calcula únicamente la posición en el tiempo inicial $t = 1$ ($s(1) = 35$ km).",
+            "Divide la posición en $t=3$ entre 3 ($195 / 3 = 65$) o comete un error aritmético dando 60.",
+            "",
+            "Confunde la velocidad promedio con la distancia total acumulada al cabo de 3 horas ($s(3) = 195$ km)."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula e interpreta la razón de cambio promedio en funciones algebraicas.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Razón de cambio promedio",
+                    "lineas": [
+                        "s(1) = 15(1) + 20(1) = 35",
+                        "s(3) = 15(9) + 20(3) = 195",
+                        "v_p = \\frac{195 - 35}{3 - 1} = \\frac{160}{2} = 80\\text{ km/h}"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: en 2 horas avanzó 160 km ($195 - 35$). La velocidad media constante equivalente es $160 / 2 = 80$ km/h."
+                }
+            ],
+            "enfoque": {
+                "tema": "Razón de cambio promedio",
+                "que": "Calcular la velocidad media como el cociente entre el desplazamiento y el tiempo transcurrido.",
+                "clave": "Dividir la diferencia de posiciones entre la diferencia de tiempos.",
+                "no": [
+                    {
+                        "t": "Ignorar la posición inicial",
+                        "p": "Dividir la posición final directamente entre el tiempo final."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-037",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.1",
+        "nivel": 2,
+        "enunciado": "Un círculo está inscrito exactamente dentro de un cuadrado de 10 cm de lado (el círculo toca los cuatro lados del cuadrado). Tomando $\\pi \\approx 3,14$, ¿cuál es el área de la región sombreada que queda dentro del cuadrado pero por fuera del círculo?",
+        "opciones": [
+            "18,5 cm²",
+            "21,5 cm²",
+            "28,6 cm²",
+            "78,5 cm²"
+        ],
+        "correcta": 1,
+        "explicacion": "El área del cuadrado es $A_{\\text{cuadrado}} = l^2 = 10^2 = 100$ cm². Como el círculo está inscrito, su diámetro es igual al lado del cuadrado (10 cm), por lo que su radio es $r = 5$ cm. El área del círculo es $A_{\\text{círculo}} = \\pi r^2 = 3,14\\cdot (5^2) = 3,14\\cdot 25 = 78,5$ cm². El área sombreada restante es $100 - 78,5 = 21,5$ cm².",
+        "distractores": [
+            "Calcula con un radio incorrecto o comete un error en la resta decimal dando 18,5 cm².",
+            "",
+            "Usa el perímetro en lugar del área para alguna de las figuras.",
+            "Indica el área del círculo inscrito ($78,5$ cm²) en lugar del área sombreada exterior."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Calcula áreas de regiones sombreadas mediante la diferencia de áreas geométricas elementales.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Diferencia de áreas",
+                    "lineas": [
+                        "A_{\\text{cuad}} = 10\\times 10 = 100\\text{ cm}^2",
+                        "A_{\\text{circ}} = 3,14\\times (5)^2 = 78,5\\text{ cm}^2",
+                        "A_{\\text{somb}} = 100 - 78,5 = 21,5\\text{ cm}^2"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: el círculo ocupa el 78,5% del área del cuadrado ($78,5/100$), dejando el 21,5% restante en las esquinas."
+                }
+            ],
+            "enfoque": {
+                "tema": "Áreas sombreadas",
+                "que": "Determinar la superficie sobrante restando el área de la figura interna a la externa.",
+                "clave": "El radio del círculo inscrito es la mitad del lado del cuadrado.",
+                "no": [
+                    {
+                        "t": "Usar el lado como radio",
+                        "p": "Usar $r = 10$ cm en vez de $r = 5$ cm."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-038",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.2",
+        "nivel": 2,
+        "enunciado": "En una encuesta sobre el medio de transporte principal en una ciudad intermedia, los resultados se representaron en un diagrama circular. El sector correspondiente al transporte en bicicleta abarca un ángulo central de 54°. Si en la encuesta participaron 1.200 personas, ¿cuántas personas eligieron la bicicleta?",
+        "opciones": [
+            "150 personas",
+            "180 personas",
+            "200 personas",
+            "216 personas"
+        ],
+        "correcta": 1,
+        "explicacion": "Un círculo completo tiene 360°. La proporción que representa el sector de la bicicleta es $\\frac{54^\\circ}{360^\\circ} = \\frac{3}{20} = 0,15$ (es decir, el 15 %). Multiplicando por el total de encuestados: $1.200\\cdot 0,15 = 180$ personas.",
+        "distractores": [
+            "Calcula con base en 100 grados en vez de 360 grados: $(54/100)\\cdot 1.200 = 648$ o divide $1.200 / 8 = 150$.",
+            "",
+            "Divide $1.200 / 6 = 200$, como si el ángulo fuera de 60° en lugar de 54°.",
+            "Multiplica por un factor incorrecto obteniendo 216 personas (que correspondería a un 18%)."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Convierte ángulos centrales de diagramas circulares en frecuencias absolutas y porcentajes.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Proporción angular",
+                    "lineas": [
+                        "\\text{Fracción} = \\frac{54^\\circ}{360^\\circ} = 0,15 = 15\\%",
+                        "\\text{Personas} = 1.200\\times 0,15 = 180"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: 180 personas de 1.200 representa exactamente el 15%. En grados: $360^\\circ\\cdot 0,15 = 54^\\circ$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Diagramas circulares",
+                "que": "Determinar frecuencias absolutas a partir del ángulo central de un sector circular.",
+                "clave": "Dividir el ángulo del sector entre 360° para obtener la fracción del total.",
+                "no": [
+                    {
+                        "t": "Dividir entre 100",
+                        "p": "Tratar los grados como si fueran porcentajes dividiendo entre 100."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-039",
+        "area": "matematicas",
+        "evidencia": "MAT_E1.2",
+        "nivel": 2,
+        "enunciado": "Un plano arquitectónico a escala muestra una habitación rectangular con un área de 6 cm². Si la escala del plano es 1:50, ¿cuál es el área real de la habitación en metros cuadrados?",
+        "opciones": [
+            "3 m²",
+            "15 m²",
+            "30 m²",
+            "150 m²"
+        ],
+        "correcta": 1,
+        "explicacion": "Cuando las dimensiones lineales se multiplican por un factor de escala $k$, el área se multiplica por el factor al cuadrado ($k^2$). Aquí la escala lineal es $k = 50$, por lo que el área real es $6\\text{ cm}^2\\cdot (50)^2 = 6\\cdot 2.500 = 15.000\\text{ cm}^2$. Como $1\\text{ m}^2 = 10.000\\text{ cm}^2$, convertimos: $15.000 / 10.000 = 1,5$ m²... ¡un momento! Revisemos: si la habitación mide en el plano 2 cm por 3 cm (área = 6 cm²), en la realidad mide $2\\cdot 50 = 100$ cm = 1 m, y $3\\cdot 50 = 150$ cm = 1,5 m. El área real es $1\\text{ m}\\cdot 1,5\\text{ m} = 1,5$ m². Para que coincida con una habitación realista, tomemos el enunciado con escala 1:100 o con área en el plano de 15 cm².",
+        "opciones": [
+            "1,5 m²",
+            "3,0 m²",
+            "15,0 m²",
+            "150,0 m²"
+        ],
+        "correcta": 0,
+        "explicacion": "La escala lineal es 1:50, lo que significa que cada dimensión lineal real es 50 veces mayor. Por tanto, el área se incrementa por el factor al cuadrado: $50^2 = 2.500$. El área real es $6\\text{ cm}^2\\cdot 2.500 = 15.000\\text{ cm}^2$. Sabiendo que $1\\text{ m}^2 = 10.000\\text{ cm}^2$ (un cuadrado de 100 cm por 100 cm), se tiene $15.000 / 10.000 = 1,5$ m².",
+        "distractores": [
+            "",
+            "Multiplica por 50 linealmente sin elevar la escala al cuadrado: $6\\cdot 50 = 300$ cm² = 0,03 m², y confunde la conversión.",
+            "Multiplica por 250 en lugar de 2.500 cometiendo un error con los ceros.",
+            "Multiplica directamente por 100.000 sin conversión adecuada de unidades de superficie."
+        ],
+        "origen": "original",
+        "competencia": "Interpretación y representación",
+        "afirmacion": "Aplica la relación cuadrática entre escalas de longitud y escalas de superficie.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Escala de áreas cuadráticas",
+                    "lineas": [
+                        "\\text{Factor de área} = 50^2 = 2.500",
+                        "\\text{Área real} = 6\\times 2.500 = 15.000\\text{ cm}^2 = 1,5\\text{ m}^2"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: si la habitación mide 2 cm por 3 cm en el plano, en la realidad mide 1,0 m por 1,5 m. $1,0\\cdot 1,5 = 1,5$ m²."
+                }
+            ],
+            "enfoque": {
+                "tema": "Escalas de superficie",
+                "que": "Determinar el área real aplicando el cuadrado del factor de escala lineal.",
+                "clave": "El área escala con el cuadrado de la razón de semejanza ($k^2$).",
+                "no": [
+                    {
+                        "t": "Escalar linealmente",
+                        "p": "Multiplicar el área por $k$ en vez de por $k^2$."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "mat-040",
+        "area": "matematicas",
+        "evidencia": "MAT_E3.1",
+        "nivel": 2,
+        "enunciado": "En una encuesta a 100 estudiantes de último año sobre el uso de plataformas para estudiar, 65 afirmaron usar videos explicativos en internet, 45 afirmaron usar simuladores interactivos y 25 afirmaron usar ambas herramientas. ¿Cuántos estudiantes no utilizan ninguna de estas dos herramientas?",
+        "opciones": [
+            "10 estudiantes",
+            "15 estudiantes",
+            "20 estudiantes",
+            "35 estudiantes"
+        ],
+        "correcta": 1,
+        "explicacion": "Por el principio de inclusión-exclusión para dos conjuntos, el número de estudiantes que usan al menos una de las dos herramientas es: $|V \\cup S| = |V| + |S| - |V \\cap S| = 65 + 45 - 25 = 85$. Como el total de encuestados es 100, los que no usan ninguna son: $100 - 85 = 15$ estudiantes.",
+        "distractores": [
+            "Resta 25 de 35 o comete un error aritmético al calcular la unión.",
+            "",
+            "Suma 65 + 45 = 110 y resta 100 dando 10, confundiendo la intersección con el complemento.",
+            "Suma los que usan solo una herramienta olvidando restar del total de 100."
+        ],
+        "origen": "original",
+        "competencia": "Formulación y ejecución",
+        "afirmacion": "Aplica la teoría de conjuntos y el principio de inclusión-exclusión en problemas de conteo.",
+        "hoja": {
+            "modo": "calculo",
+            "pasos": [
+                {
+                    "k": "calc",
+                    "titulo": "Principio de inclusión-exclusión",
+                    "lineas": [
+                        "|V \\cup S| = 65 + 45 - 25 = 85",
+                        "\\text{Ninguna} = 100 - 85 = 15"
+                    ]
+                },
+                {
+                    "k": "check",
+                    "texto": "Comprobación: solo videos = $65 - 25 = 40$; solo simuladores = $45 - 25 = 20$; ambos = 25; ninguno = 15. Suma: $40 + 20 + 25 + 15 = 100$."
+                }
+            ],
+            "enfoque": {
+                "tema": "Conjuntos e inclusión-exclusión",
+                "que": "Determinar la cantidad de elementos en el complemento de la unión de dos conjuntos.",
+                "clave": "Restar la intersección para no contar dos veces a los estudiantes que usan ambas herramientas.",
+                "no": [
+                    {
+                        "t": "Doble conteo",
+                        "p": "Sumar $65 + 45 = 110$ sin restar los 25 que pertenecen a ambos grupos."
+                    }
+                ]
+            }
+        }
+    }
+]
+
+def actualizar_matematicas():
+    with open('content/questions/matematicas.json', 'r', encoding='utf-8') as f:
+        existentes = json.load(f)
+    
+    print(f'Preguntas existentes antes: {len(existentes)}')
+    ids_existentes = {q['id'] for q in existentes}
+    
+    nuevas = []
+    for q in PREGUNTAS_MAT:
+        if q['id'] not in ids_existentes:
+            nuevas.append(q)
+            
+    existentes.extend(nuevas)
+    print(f'Agregadas {len(nuevas)} preguntas nuevas. Total ahora: {len(existentes)}')
+    
+    with open('content/questions/matematicas.json', 'w', encoding='utf-8') as f:
+        json.dump(existentes, f, indent=2, ensure_ascii=False)
+    print('Guardado content/questions/matematicas.json exitosamente.')
+
+if __name__ == '__main__':
+    actualizar_matematicas()
