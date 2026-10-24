@@ -27,10 +27,15 @@ GENERIC_TRAP_PATTERNS = [
 def audit_question(q, area_def=None):
     issues = []
     
-    # 1. Clave correcta
+    is_reto = (q.get('tipo') == 'reto')
+    
+    # 1. Clave correcta (solo para preguntas de opción múltiple)
     correcta = q.get('correcta')
     opciones = q.get('opciones', [])
-    if correcta is None or not (0 <= correcta < len(opciones)):
+    if is_reto:
+        if not (q.get('sim') and q['sim'].get('challengeId')):
+            issues.append("Reto sin challengeId")
+    elif correcta is None or not (0 <= correcta < len(opciones)):
         issues.append("Clave correcta inválida o ausente")
         
     # 2. Explicación general
@@ -42,30 +47,31 @@ def audit_question(q, area_def=None):
     elif len(expl) < 25:
         issues.append(f"Explicación muy corta ({len(expl)} chars)")
         
-    # 3. Distractores
-    distractores = q.get('distractores', [])
-    if len(distractores) != len(opciones):
-        issues.append(f"Número de distractores ({len(distractores)}) != opciones ({len(opciones)})")
-    else:
-        d_texts = []
-        for i, d in enumerate(distractores):
-            if i == correcta:
-                continue
-            d_str = (d or '').strip()
-            if not d_str:
-                issues.append(f"Distractor opción {chr(65+i)} vacío")
-                continue
-            if re.search(r'^(pendiente|tbd|por definir)\b|\bpendiente\s+de\s+(soluci[oó]n|an[aá]lisis|redacci[oó]n|revisi[oó]n|verific)\b|\bdistractor\s+pendiente\b', d_str, re.IGNORECASE) or d_str.strip().lower() == "pendiente":
-                issues.append(f"Distractor opción {chr(65+i)} pendiente")
-            for pat in GENERIC_DISTRACTOR_PATTERNS:
-                if re.search(pat, d_str, re.IGNORECASE):
-                    issues.append(f"Distractor opción {chr(65+i)} genérico: '{d_str[:35]}...'")
-                    break
-            d_texts.append(d_str)
-            
-        # Detectar frases repetidas idénticas entre distractores de la misma pregunta
-        if len(d_texts) > 1 and len(set(d_texts)) == 1:
-            issues.append(f"Distractores idénticos repetidos en todas las opciones incorrectas")
+    # 3. Distractores (solo para preguntas de opción múltiple)
+    if not is_reto:
+        distractores = q.get('distractores', [])
+        if len(distractores) != len(opciones):
+            issues.append(f"Número de distractores ({len(distractores)}) != opciones ({len(opciones)})")
+        else:
+            d_texts = []
+            for i, d in enumerate(distractores):
+                if i == correcta:
+                    continue
+                d_str = (d or '').strip()
+                if not d_str:
+                    issues.append(f"Distractor opción {chr(65+i)} vacío")
+                    continue
+                if re.search(r'^(pendiente|tbd|por definir)\b|\bpendiente\s+de\s+(soluci[oó]n|an[aá]lisis|redacci[oó]n|revisi[oó]n|verific)\b|\bdistractor\s+pendiente\b', d_str, re.IGNORECASE) or d_str.strip().lower() == "pendiente":
+                    issues.append(f"Distractor opción {chr(65+i)} pendiente")
+                for pat in GENERIC_DISTRACTOR_PATTERNS:
+                    if re.search(pat, d_str, re.IGNORECASE):
+                        issues.append(f"Distractor opción {chr(65+i)} genérico: '{d_str[:35]}...'")
+                        break
+                d_texts.append(d_str)
+                
+            # Detectar frases repetidas idénticas entre distractores de la misma pregunta
+            if len(d_texts) > 1 and len(set(d_texts)) == 1:
+                issues.append(f"Distractores idénticos repetidos en todas las opciones incorrectas")
 
     # 4. Enfoque y trampas (si tiene hoja)
     hoja = q.get('hoja')
