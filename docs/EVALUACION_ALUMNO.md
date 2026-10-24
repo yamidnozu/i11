@@ -130,3 +130,42 @@ Todas las correcciones planeadas fueron implementadas, verificadas en vivo y tes
 5. **Panel y Progreso:** Botón verde directo de WhatsApp para compartir con acudientes, cuadrícula equilibrada de 3 estadísticas y corrección gramatical de racha.
 
 **Calificación promedio final alcanzada:** **9.5 / 10**. Todas las pantallas cumplen con los estándares pedagógicos y de usabilidad móvil para un estudiante impaciente de grado 11.
+
+---
+
+## Ronda 3 — Coachmarks Móviles, SEO Semántico y Optimización GEO
+
+Evaluación y pulido de la experiencia guiada en celular y visibilidad en motores de búsqueda:
+
+### Tabla de Evaluación de Coachmarks por Pantalla (Celular 390×844)
+
+| # | Pantalla | Nota Alumno | Pasos | Palabras máx. | Verificación de Posición y Geometría | Captura Móvil |
+|---|---|:---:|:---:|:---:|---|---|
+| 1 | **Inicio (`#/`)** | **9.8** | 3 / 3 | 7 palabras | Burbuja debajo de CTA; nunca tapa el botón verde. Flecha centrada. | `docs/capturas/coachmarks/inicio_mobile_paso1.png` |
+| 2 | **Diagnóstico (`#/diag`)** | **9.7** | 3 / 3 | 9 palabras | Destaca contexto (15 preg.), botón directo y atajos táctiles. | `docs/capturas/coachmarks/diag_mobile_paso1.png` |
+| 3 | **Pregunta (`#/pregunta`)** | **9.9** | 3 / 3 | 8 palabras | Foco nítido en enunciado, opciones A-D y ayuda pedagógica. | `docs/capturas/coachmarks/pregunta_mobile_paso1.png` |
+| 4 | **Aprender (`#/aprender`)** | **9.8** | 3 / 3 | 8 palabras | Señala selector de área, tema recomendado y catálogo de labs. | `docs/capturas/coachmarks/aprender_mobile_paso1.png` |
+| 5 | **Practicar (`#/practicar`)** | **9.8** | 3 / 3 | 8 palabras | Recorre sesión rápida, práctica por materia y simulacros. | `docs/capturas/coachmarks/practicar_mobile_paso1.png` |
+| 6 | **Simulacros (`#/simulacro`)** | **9.8** | 3 / 3 | 7 palabras | Enmarca tarjeta completa, CTA `Empezar` e historial/reloj. | `docs/capturas/coachmarks/simulacro_mobile_paso1.png` |
+| 7 | **Progreso (`#/panel`)** | **9.7** | 3 / 3 | 8 palabras | Destaca puntaje/racha, radar/fecha examen y botón WhatsApp. | `docs/capturas/coachmarks/panel_mobile_paso1.png` |
+| 8 | **FAQ y GEO (`#/faq`)** | **9.9** | N/A | Conciso | 7 preguntas frecuentes, respuestas claras, independiente del ICFES. | `docs/capturas/coachmarks/faq_mobile.png` |
+
+**Promedio General Ronda 3:** **9.8 / 10**
+
+### Hallazgos y Verificaciones Clave:
+1. **Coachmarks en Celular (390×844) y Escritorio:**
+   - **Guía paso a paso contextual:** Recorridos de 3 pasos por pantalla con redacción breve (promedio 7 palabras por paso, máximo 9 palabras), directa y orientada a la acción.
+   - **No oclusión de botones:** La burbuja calcula la altura disponible arriba y abajo del elemento target (`spaceBelow` vs `spaceAbove`) y conmuta de `pos-bottom` a `pos-top` para jamás tapar el elemento que el alumno debe pulsar.
+   - **Geometría adaptativa anti-desborde:** Posición horizontal clamped con margen de 12 px (`[12, vw - bw - 12]`), evitando cualquier corte lateral en móviles de 390 px.
+   - **Persistencia y Botón de Ayuda (?):** Solo se muestra en la primera visita (`localStorage.getItem('saber11.cm.<id>') === '1'`). El botón de ayuda circular `?` en el header (`.help-coachmark-btn`) permite al alumno volver a abrir la guía en cualquier instante.
+   - **Cierre fluido:** Descarte con "Saltar", "¡Entendido! ✓", pulsando fuera sobre el backdrop oscurecido o navegando de pantalla.
+
+2. **SEO Semántico y Optimización GEO (Generative Engine Optimization):**
+   - **Metadatos dinámicos por ruta:** Títulos y meta descriptions únicos por pantalla (`PAGE_META` en `src/main.ts`), con sincronización en tiempo real de Open Graph (`og:*`) y Twitter Cards.
+   - **Imagen social de alta resolución:** `public/og-image.png` (1200×630) con branding, badge de independencia y tipografía nítida.
+   - **Datos estructurados JSON-LD:** Enriquecimiento del código fuente con microdatos Schema.org (`WebSite`, `EducationalOrganization`, `Course` y `FAQPage` con 5 preguntas clave).
+   - **Ficheros para rastreadores:** `public/robots.txt`, `public/sitemap.xml` con todas las URLs canónicas y `public/llms.txt` estructurado para agentes de IA (ChatGPT, Gemini, Perplexity) destacando los 11 laboratorios, 5 áreas y naturaleza independiente.
+   - **Página de Preguntas Frecuentes (`#/faq`):** Acordeones interactivos con respuestas a las dudas de gratuidad, independencia legal, las 5 áreas y método en 5 pasos. Vista previa visible en la página de inicio.
+   - **Pre-renderizado en `<noscript>`:** Resumen semántico en HTML puro para asegurar indexación completa por bots y lectura sin JavaScript.
+   - **Analítica privada:** Únicamente Cloudflare Web Analytics; cero cookies invasivas ni píxeles de terceros.
+

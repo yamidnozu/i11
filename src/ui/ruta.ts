@@ -43,16 +43,36 @@ function bienvenida(): HTMLElement {
   return h('div', {},
     h('section', { class: 'hero' },
       h('div', {}, h('h1', {}, 'Tu ruta al Saber 11'),
-        h('p', { class: 'lede' }, 'Empiezas con un diagnóstico de 20 minutos. Con eso te armamos una ruta: qué temas estudiar primero, cada uno con laboratorio, explicación y preguntas guiadas.'),
-        h('div', { class: 'cta' }, h('a', { class: 'btn primary big', href: '#/diag' }, 'Empezar el diagnóstico (gratis)'), h('a', { class: 'btn', href: '#/aprender' }, 'Prefiero explorar los temas')),
+        h('p', { class: 'lede' }, 'Empiezas con un diagnóstico rápido de 15 preguntas (~10 min). Con eso te armamos una ruta personalizada: qué temas estudiar primero, cada uno con laboratorio, explicación y preguntas guiadas.'),
+        h('div', { class: 'cta' }, h('a', { class: 'btn primary big', href: '#/diag' }, 'Empezar el diagnóstico (gratis) →'), h('a', { class: 'btn', href: '#/aprender' }, 'Prefiero explorar los temas')),
         aviso()),
       hero()),
     h('h2', { class: 'secth' }, 'Así funciona'),
     h('ol', { class: 'pasos3' },
-      paso('1', 'Diagnóstico', '15 preguntas que se adaptan a ti. Sin ayudas: así sabemos dónde estás de verdad.'),
-      paso('2', 'Tu ruta', 'Ordenamos los temas desde tu área más baja. Cada tema: míralo en el laboratorio, léelo, practícalo con el profe.'),
-      paso('3', 'Práctica y simulacro', 'Sesiones cortas de 8 preguntas y simulacros cronometrados con puntaje estimado.')),
-    h('p', { class: 'fine' }, '¿Prefieres ver todo antes de empezar? Abre el ', h('a', { href: '#/mapa' }, 'mapa de la plataforma'), '.'));
+      paso('1', 'Diagnóstico rápido (~10 min)', '15 preguntas adaptativas que miden tu nivel real en las 5 áreas obligatorias sin notas de juicio.'),
+      paso('2', 'Tu ruta personalizada', 'Comienzas por tu área con mayor oportunidad de mejora: laboratorio interactivo, lección conceptual y práctica con el profe.'),
+      paso('3', 'Práctica y simulacros', 'Sesiones cortas de 8 preguntas para mantener tu racha y simulacros completos cronometrados tipo examen real.')),
+    h('h2', { class: 'secth' }, 'Preguntas frecuentes'),
+    h('div', { class: 'faq-preview', style: 'display:grid;gap:10px;margin-bottom:1rem' },
+      h('details', { class: 'box' },
+        h('summary', { style: 'cursor:pointer;font-weight:600' }, '¿Qué es Saber 11 Interactivo?'),
+        h('p', { class: 'fine', style: 'margin-top:8px' }, 'Plataforma web educativa gratuita con laboratorios de física y matemáticas, diagnóstico adaptativo de 15 preguntas y simulacros cronometrados tipo examen real.')
+      ),
+      h('details', { class: 'box' },
+        h('summary', { style: 'cursor:pointer;font-weight:600' }, '¿Es 100% gratis?'),
+        h('p', { class: 'fine', style: 'margin-top:8px' }, 'Sí. Todo el contenido pedagógico (diagnóstico, laboratorios, lecciones, práctica adaptativa y simulacros) es totalmente gratuito.')
+      ),
+      h('details', { class: 'box' },
+        h('summary', { style: 'cursor:pointer;font-weight:600' }, '¿Cuáles son las 5 áreas obligatorias evaluadas?'),
+        h('p', { class: 'fine', style: 'margin-top:8px' }, 'Matemáticas, Lectura Crítica, Sociales y Ciudadanas, Ciencias Naturales e Inglés.')
+      ),
+      h('details', { class: 'box' },
+        h('summary', { style: 'cursor:pointer;font-weight:600' }, '¿Cómo prepararse de forma efectiva?'),
+        h('p', { class: 'fine', style: 'margin-top:8px' }, 'Haz el diagnóstico de 10 min, estudia primero tus áreas más débiles en los laboratorios y entrena 15 minutos diarios.')
+      )
+    ),
+    h('p', { style: 'margin-bottom:1.5rem' }, h('a', { class: 'btn sm', href: '#/faq' }, 'Ver todas las preguntas frecuentes (FAQ) →')),
+    h('p', { class: 'fine' }, '¿Prefieres ver todo antes de empezar? Abre el ', h('a', { href: '#/mapa' }, 'mapa de la plataforma'), ' o consulta las ', h('a', { href: '#/faq' }, 'preguntas frecuentes (FAQ)'), '.'));
 }
 
 function tablero(): HTMLElement {

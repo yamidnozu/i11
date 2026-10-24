@@ -1,19 +1,155 @@
 <!doctype html>
-<html lang="es" data-theme="claro">
+<html lang="es-CO" data-theme="claro">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Saber 11</title>
-<meta name="description" content="Entiende el Saber 11 moviendo cada concepto: laboratorios con explicación, práctica adaptativa y simulacros. Plataforma independiente, no oficial del ICFES.">
-<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg"><meta name="theme-color" content="#F3F5F7">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saber 11 Interactivo — Preparación Pre-Saber 11 Gratuita e Independiente</title>
+<meta name="description" content="Aprende el Saber 11 probando tú mismo: diagnóstico adaptativo en 10 min, 11 laboratorios interactivos de física y matemáticas, práctica adaptativa y simulacros cronometrados tipo examen real. 100% gratuito. Plataforma independiente no oficial del ICFES.">
+<link rel="canonical" href="https://icfes.edevcore.com/">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Saber 11 Interactivo">
+<meta property="og:url" content="https://icfes.edevcore.com/">
+<meta property="og:title" content="Saber 11 Interactivo — Preparación Pre-Saber 11 Gratuita">
+<meta property="og:description" content="Laboratorios interactivos, diagnóstico rápido en 10 min, práctica adaptativa y simulacros cronometrados para el examen de Estado Saber 11 en Colombia. 100% gratis.">
+<meta property="og:image" content="https://icfes.edevcore.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Plataforma interactiva de estudio para el examen Saber 11 en Colombia">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://icfes.edevcore.com/">
+<meta name="twitter:title" content="Saber 11 Interactivo — Preparación Pre-Saber 11 Gratuita">
+<meta name="twitter:description" content="11 laboratorios interactivos, diagnóstico en 10 min y simulacros tipo examen real. Plataforma independiente 100% gratuita.">
+<meta name="twitter:image" content="https://icfes.edevcore.com/og-image.png">
+
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg">
+<meta name="theme-color" content="#F3F5F7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500;1,6..72,600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados JSON-LD (SEO y GEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://icfes.edevcore.com/#website",
+      "url": "https://icfes.edevcore.com/",
+      "name": "Saber 11 Interactivo",
+      "description": "Plataforma independiente y gratuita de preparación para el examen Saber 11 en Colombia",
+      "inLanguage": "es-CO"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://icfes.edevcore.com/#organization",
+      "name": "Saber 11 Interactivo",
+      "url": "https://icfes.edevcore.com/",
+      "description": "Laboratorio de estudio independiente para el examen de Estado Saber 11",
+      "logo": "https://icfes.edevcore.com/icon.svg",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://icfes.edevcore.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es Saber 11 Interactivo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una plataforma educativa web gratuita que ayuda a los estudiantes de grado 11 en Colombia a prepararse para el examen Saber 11 mediante laboratorios interactivos, diagnóstico adaptativo y simulacros cronometrados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es gratis la plataforma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, todo el contenido educativo (laboratorios, diagnóstico, lecciones, práctica adaptativa y simulacros) es 100% gratuito y de libre acceso para todos los estudiantes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son las 5 áreas que evalúa el examen Saber 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El examen Saber 11 en Colombia evalúa 5 áreas obligatorias: Matemáticas, Lectura Crítica, Sociales y Ciudadanas, Ciencias Naturales e Inglés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo prepararse de forma efectiva para el examen Saber 11?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se recomienda iniciar con el diagnóstico de 15 preguntas (~10 min) para medir el nivel de partida, estudiar los conceptos en los laboratorios interactivos, mantener una práctica diaria de 15 minutos y presentar simulacros cronometrados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Esta plataforma es oficial del ICFES?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Es una plataforma de estudio independiente creada con fines pedagógicos. No está afiliada, respaldada ni patrocinada por el ICFES. Todo el contenido es original."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <script>try{var t=localStorage.getItem('saber11.theme');t=t==='papel'?'claro':t==='plano'?'oscuro':t;if(t!=='claro'&&t!=='oscuro')t=matchMedia('(prefers-color-scheme: dark)').matches?'oscuro':'claro';document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#app">Saltar al contenido</a>
 <header class="top"><div class="top-in" id="top"></div></header>
-<main id="app" tabindex="-1"></main>
-<footer class="foot"><p>Plataforma independiente de preparación: no es oficial del ICFES ni está afiliada a él. Los puntajes son estimaciones orientativas. Contenido original.</p></footer>
+
+<main id="app" tabindex="-1">
+  <!-- Contenido semántico pre-renderizado (visible para motores de búsqueda y sin JavaScript) -->
+  <noscript>
+    <div style="max-width:860px;margin:2rem auto;padding:1.5rem;background:#fff;color:#1a202c;font-family:sans-serif;line-height:1.6;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08)">
+      <h1 style="font-size:2rem;margin-bottom:1rem;color:#0e5a6b">Saber 11 Interactivo — Preparación Pre-Saber 11 Gratuita</h1>
+      <p style="font-size:1.15rem;margin-bottom:1.5rem">Aprende el Saber 11 probando tú mismo. Laboratorios interactivos donde mueves cada valor y observas por qué cambia el resultado, diagnóstico inicial en 10 minutos, práctica adaptativa y simulacros con reloj tipo examen real.</p>
+      
+      <h2 style="font-size:1.4rem;margin:1.5rem 0 0.5rem">Las 5 áreas evaluadas en el Saber 11</h2>
+      <ul>
+        <li><strong>Matemáticas:</strong> Álgebra, cálculo, geometría, estadística y probabilidad.</li>
+        <li><strong>Lectura Crítica:</strong> Textos continuos y discontinuos, comprensión inferencial y crítica.</li>
+        <li><strong>Sociales y Ciudadanas:</strong> Constitución de 1991, derechos, historia y perspectivas ciudadanas.</li>
+        <li><strong>Ciencias Naturales:</strong> Biología, física, química y ciencia, tecnología y sociedad (CTS).</li>
+        <li><strong>Inglés:</strong> Comprensión lectora, vocabulario y estructuras gramaticales (niveles A1, A2, B1).</li>
+      </ul>
+
+      <h2 style="font-size:1.4rem;margin:1.5rem 0 0.5rem">Preguntas Frecuentes</h2>
+      <div style="margin-bottom:1rem">
+        <p><strong>¿Qué es Saber 11 Interactivo?</strong><br>Es una plataforma web educativa gratuita que permite a estudiantes de Colombia prepararse para el examen Saber 11 de forma práctica y visual.</p>
+      </div>
+      <div style="margin-bottom:1rem">
+        <p><strong>¿Es realmente gratis?</strong><br>Sí, todas las herramientas (laboratorios, diagnóstico, práctica y simulacros) son 100% gratuitas.</p>
+      </div>
+      <div style="margin-bottom:1rem">
+        <p><strong>¿Cómo prepararse para el Saber 11?</strong><br>Comienza con el diagnóstico adaptativo de 15 preguntas, repasa tus áreas débiles en los laboratorios y resuelve simulacros con tiempo real.</p>
+      </div>
+      <div style="margin-bottom:1rem">
+        <p><strong>¿Es un sitio oficial del ICFES?</strong><br>No. Es una plataforma independiente de preparación académica; no está afiliada ni avalada por el ICFES.</p>
+      </div>
+      <p style="margin-top:1.5rem;font-size:0.9rem;color:#718096">Para disfrutar de la experiencia interactiva, por favor activa JavaScript en tu navegador.</p>
+    </div>
+  </noscript>
+</main>
+
+<footer class="foot">
+  <p>Plataforma independiente de preparación: no es oficial del ICFES ni está afiliada a él. Los puntajes son estimaciones orientativas. Contenido original. <a href="#/faq" style="color:inherit;text-decoration:underline;margin-left:8px">Preguntas frecuentes (FAQ)</a></p>
+</footer>
 <nav class="dock" id="dock" aria-label="Principal (móvil)"></nav>
 <script type="module" src="/src/main.ts"></script>
-</body></html>
+</body>
+</html>
