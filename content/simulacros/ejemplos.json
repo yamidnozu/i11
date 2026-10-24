@@ -10,50 +10,50 @@
     "id": "lec",
     "titulo": "Lectura crítica",
     "area": "lectura_critica",
-    "minutos": 20,
+    "minutos": 35,
     "auto": {
      "area": "lectura_critica",
-     "n": 6
+     "n": 20
     }
    },
    {
     "id": "mat",
     "titulo": "Matemáticas",
     "area": "matematicas",
-    "minutos": 25,
+    "minutos": 40,
     "auto": {
      "area": "matematicas",
-     "n": 7
+     "n": 20
     }
    },
    {
     "id": "soc",
     "titulo": "Sociales y ciudadanas",
     "area": "sociales",
-    "minutos": 15,
+    "minutos": 30,
     "auto": {
      "area": "sociales",
-     "n": 4
+     "n": 20
     }
    },
    {
     "id": "cie",
     "titulo": "Ciencias naturales",
     "area": "ciencias",
-    "minutos": 25,
+    "minutos": 35,
     "auto": {
      "area": "ciencias",
-     "n": 8
+     "n": 20
     }
    },
    {
     "id": "ing",
     "titulo": "Inglés",
     "area": "ingles",
-    "minutos": 10,
+    "minutos": 25,
     "auto": {
      "area": "ingles",
-     "n": 4
+     "n": 20
     }
    }
   ]
@@ -61,7 +61,7 @@
  {
   "id": "matematicas-intensivo",
   "nombre": "Matemáticas intensivo",
-  "descripcion": "Solo matemáticas: todas las preguntas disponibles, de menor a mayor dificultad.",
+  "descripcion": "Solo matemáticas: todas las preguntas de matemáticas del banco disponibles.",
   "nivel": "Por área",
   "barajar": false,
   "secciones": [
@@ -69,15 +69,11 @@
     "id": "mat",
     "titulo": "Matemáticas",
     "area": "matematicas",
-    "minutos": 30,
-    "preguntas": [
-     "mat-001",
-     "mat-002",
-     "mat-003",
-     "mat-004",
-     "mat-005",
-     "mat-006"
-    ]
+    "minutos": 80,
+    "auto": {
+     "area": "matematicas",
+     "n": 999
+    }
    }
   ]
  }
