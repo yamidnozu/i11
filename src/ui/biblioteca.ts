@@ -41,10 +41,10 @@ export function preguntaSuelta(id: string): HTMLElement {
   const secuencia = QUESTIONS.filter((x) => x.origen === q.origen && x.area === q.area && (q.origen !== 'icfes' || x.id.split('-')[0] === prefijo));
   const indice = secuencia.findIndex((x) => x.id === q.id);
   const volver = q.origen === 'icfes' ? `#/aprender?area=${q.area}` : '#/contenido';
-  const paginador = () => h('nav', { class: 'question-pager', 'aria-label': 'Navegación entre preguntas' },
+  const paginador = h('nav', { class: 'question-pager', 'aria-label': 'Navegación entre preguntas' },
     indice > 0 ? h('a', { class: 'btn sm', href: `#/pregunta/${secuencia[indice - 1].id}` }, '← Anterior') : h('span', { class: 'btn sm muted', 'aria-disabled': 'true' }, '← Anterior'),
     h('a', { class: 'question-pager-back', href: volver }, q.origen === 'icfes' ? 'Volver al banco de Aprender' : 'Volver a Todo el contenido'),
     h('span', { class: 'question-pager-count' }, `Pregunta ${indice + 1} de ${secuencia.length}`),
     indice >= 0 && indice < secuencia.length - 1 ? h('a', { class: 'btn sm primary', href: `#/pregunta/${secuencia[indice + 1].id}` }, 'Siguiente →') : h('span', { class: 'btn sm muted', 'aria-disabled': 'true' }, 'Siguiente →'));
-  return h('div', {}, h('a', { class: 'crumb', href: volver }, q.origen === 'icfes' ? '← Aprender' : '← Todo el contenido'), paginador(), renderQuestion(q, () => undefined, { feedback: true, ayuda: 'siempre' }), paginador());
+  return h('div', { class: 'pregunta-suelta-wrap' }, paginador, renderQuestion(q, () => undefined, { feedback: true, ayuda: 'despues' }));
 }

@@ -137,9 +137,9 @@ export function resultView(): HTMLElement {
     return h('div', { class: 'arow' }, h('b', {}, A.nombre, h('small', {}, v === undefined ? 'sin datos todavía' : lvl)), h('div', { class: 'bar', role: 'img', 'aria-label': `${A.nombre}: ${v ?? 0} de 100` }, h('i', { style: `width:${v ?? 0}%` }), h('u', { style: `left:${A.mu}%`, title: 'Media nacional' })), h('span', { class: 'num' }, v === undefined ? '—' : `${v} ± ${Math.round(s.se[a]!)}`));
   });
   return h('div', {},
+    s.global === null ? null : h('div', { class: 'bigscore' }, h('b', {}, String(s.global)), h('span', {}, `de 500 · estimado ± ${Math.round(s.gse)}`)),
     h('div', { class: 'panelgrid' }, h('figure', { class: 'radar' }, h('div', { html: radar(s.sc) }), h('figcaption', {}, 'Relleno: tu puntaje (0–100). Línea punteada: media nacional.')),
       h('div', {}, h('h2', {}, 'Por área'), ...rows, h('p', { class: 'fine', style: 'margin-top:10px' }, 'La marca vertical de cada barra es la media nacional.'))),
-    s.global === null ? null : h('div', { class: 'bigscore' }, h('b', {}, String(s.global)), h('span', {}, `de 500 · estimado ± ${Math.round(s.gse)}`)),
     nivelesPanel(s.sc),
     h('p', { class: 'fine' }, DISCLAIMER));
 }
@@ -164,10 +164,38 @@ export function diagnostic(): HTMLElement {
       sh, renderQuestion(pick.q, (ok) => { sh.remove(); (resp[pick.q.area] ??= []).push({ item: pick.item, correct: ok }); record(pick.q, ok, 'diag'); syncSoon(); n++; root.append(h('button', { class: 'btn primary next', type: 'button', onclick: next }, n >= MAX ? 'Ver resultado' : 'Siguiente')); }));
   }
   function finish() {
-    root.replaceChildren(head('Tu diagnóstico', 'Así queda tu radar con lo que respondiste. Entre más preguntas respondas, más precisa será la estimación.'), resultView(), h('div', { class: 'row' }, h('a', { class: 'btn primary', href: '#/' }, 'Ver mi ruta de estudio'), h('a', { class: 'btn', href: '#/panel' }, 'Ver mi progreso')));
+    root.replaceChildren(
+      head('Tu diagnóstico', 'Así queda tu radar con lo que respondiste. Entre más preguntas respondas, más precisa será la estimación.'),
+      h('div', { class: 'box diag-done-hero', style: 'background:color-mix(in srgb,var(--acc) 12%,var(--panel));border:1.5px solid var(--acc);margin-bottom:1.5rem;text-align:center' },
+        h('h2', { style: 'margin:0 0 .4rem;font-size:1.35rem' }, '¡Diagnóstico completado! 🎉'),
+        h('p', { style: 'margin:0 0 1rem;color:var(--mut)' }, 'Ya identificamos tus fortalezas y tu ruta de estudio personalizada.'),
+        h('div', { class: 'row center', style: 'gap:10px' },
+          h('a', { class: 'btn primary big', href: '#/' }, 'Ir a mi ruta de estudio →'),
+          h('a', { class: 'btn', href: '#/panel' }, 'Ver mi progreso')
+        )
+      ),
+      resultView(),
+      h('div', { class: 'row', style: 'margin-top:1.5rem' },
+        h('a', { class: 'btn primary', href: '#/' }, 'Ver mi ruta de estudio'),
+        h('a', { class: 'btn', href: '#/panel' }, 'Ver mi progreso')
+      )
+    );
   }
-  root.append(head('Diagnóstico', 'Responde sin buscar nada: queremos saber dónde estás hoy. Si no sabes una, elige la que creas más probable.'),
-    h('div', { class: 'box' }, h('p', {}, h('b', {}, 'Qué vas a hacer: '), 'responder 15 preguntas, tres por cada área. Toma unos 20 minutos.'), h('p', {}, h('b', {}, 'Para qué: '), 'no es una nota. Sirve para saber en qué área vas mejor y armar tu ruta de estudio.'), h('p', {}, h('b', {}, 'Al final: '), 'ves tu nivel por área y qué estudiar primero.'), h('p', { class: 'fine' }, 'Con teclado: A, B, C o D para elegir y Enter para continuar.'), h('button', { class: 'btn primary', type: 'button', onclick: next }, 'Empezar')));
+  root.append(head('Diagnóstico inicial', 'Queremos conocer tu punto de partida. Responde con calma: si no sabes alguna, elige la que te parezca más lógica.'),
+    h('div', { class: 'box diag-intro-box' },
+      h('div', { style: 'display:flex;align-items:center;gap:12px;margin-bottom:12px' },
+        h('span', { style: 'font-size:2rem' }, '🎯'),
+        h('div', {},
+          h('b', { style: 'font-size:1.15rem' }, '15 preguntas rápidas · 3 por área'),
+          h('p', { class: 'fine', style: 'margin:0' }, 'Matemáticas, Lectura, Sociales, Ciencias e Inglés (~10 min)'))
+      ),
+      h('p', {}, 'Sin presiones: no es una nota para el colegio. Es para saber qué temas ya dominas y cuáles conviene repasar primero en tu ruta.'),
+      h('div', { style: 'margin-top:16px' },
+        h('button', { class: 'btn primary big', type: 'button', onclick: next }, '¡Comenzar diagnóstico! →')
+      ),
+      h('p', { class: 'fine', style: 'margin-top:12px' }, 'Con teclado: teclas A, B, C o D para responder y Enter para avanzar.')
+    )
+  );
   return root;
 }
 
