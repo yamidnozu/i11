@@ -154,3 +154,18 @@ Se completó al 100% el encargo de finalización de calidad pedagógica, expansi
 - **Auditoría de Calidad:** `npm run audit:quality` -> **617/617 ICFES (100%), 212/212 Banco Propio (100%)**.
 - **Producción Build:** `VITE_FREE_MODE=1 npm run build` -> **Generado con éxito en `dist/` en 1.07s**.
 - **Publicación:** Contenido ICFES estrictamente protegido y oculto en despliegues públicos (`VITE_ICFES=1` exclusivo para entornos internos autorizados).
+
+## Ronda de corrección — estado honesto (24 oct, sesión 2)
+
+**Hecho (commit 107e302 y anteriores):**
+- Razones de distractores específicas por opción en ena/eng/ing-i038 e i039 (antes eran una sola frase compartida en hoja y guion).
+- Razones realineadas a su opción y reescritas en mat-i002, mth-i002 (la opción A de mat-i002 era tan correcta como la clave: se reescribió), cfi-i015, cfi-i077, cna-i028, cie-i028 (razones rotadas), cfi-i085, cna/cie-i027, cna/cie-i032 y cfi-i105 (bike/truck).
+- cfi-i040: distractores A y C alargados.
+- Las hojas (enfoque.no y guion niveles 2 y 3) se sincronizan con las razones mediante  / ; 12 hojas perdieron la muletilla «Parece… Pero».
+- Auditoría ICFES: 617/617 completas según  (medida por frases exactas; no detecta relleno reformulado).
+
+**Pendiente / no resuelto:**
+- Con ,  falla 6 pruebas ya existentes: 90 «marca no está en el enunciado» (cfi),  sin descarte de F/H en nivel 2,  sin «Pero», cifra suelta en , y la unidad  referencia preguntas inexistentes. Sin  (modo público) pasan 264/264.
+- Banco propio: la auditoría estricta aún marca Inglés (4/40 completas, sesgo de clave B 55 %, D 0 %, clave más larga 57 %) y Matemáticas (7/40, sesgo en A). Sociales, Lectura y Ciencias están en 40/40 (trabajo de otro proceso en paralelo).
+- No se endureció aún el revisor (similitud de razones, LaTeX roto, sesgos) ni se verificaron de nuevo las 4 preguntas «por revisar».
+- Otro proceso editaba el mismo repo en paralelo; algunos de mis cambios quedaron en sus commits.
