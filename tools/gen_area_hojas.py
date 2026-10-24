@@ -1,46 +1,61 @@
 """
 Motor universal para enriquecer y generar hojas pedagógicas interactivas
 para el Banco Propio (Sociales, Lectura Crítica, Ciencias, Matemáticas, Inglés).
-Cumple 100% con tests/content.test.ts y tools/auditoria_calidad.py:
-- Claves balanceadas ~25% cada una (10 A, 10 B, 10 C, 10 D)
-- Opciones de largo parejo (sin sesgo de longitud)
-- Hojas completas con pasos (incluyendo check), enfoque (que > 40, pistas >= 2, clave, no >= 2 con Pero, plan >= 3)
-- Guion de 3 niveles con descarte explícito de cada opción incorrecta en nivel 2 (o:X:no)
-- Texto hablado sin cifras huérfanas ni código
+Cumple 100% con tests/content.test.ts y tools/auditoria_calidad.py.
 """
 import json, re, os, glob
 
-NUM_WORDS = {
-    '0': 'cero', '1': 'uno', '2': 'dos', '3': 'tres', '4': 'cuatro', '5': 'cinco',
-    '6': 'seis', '7': 'siete', '8': 'ocho', '9': 'nueve', '10': 'diez', '12': 'doce',
-    '15': 'quince', '16': 'dieciséis', '20': 'veinte', '24': 'veinticuatro', '25': 'veinticinco',
-    '30': 'treinta', '36': 'treinta y seis', '40': 'cuarenta', '48': 'cuarenta y ocho',
-    '50': 'cincuenta', '56': 'cincuenta y seis', '60': 'sesenta', '70': 'setenta',
-    '80': 'ochenta', '85': 'ochenta y cinco', '90': 'noventa', '100': 'cien',
-    '1810': 'mil ochocientos diez', '1886': 'mil ochocientos ochenta y seis',
-    '1948': 'mil novecientos cuarenta y ocho', '1958': 'mil novecientos cincuenta y ocho',
-    '1974': 'mil novecientos setenta y cuatro', '1989': 'mil novecientos ochenta y nueve',
-    '1990': 'mil novecientos noventa', '1991': 'mil novecientos noventa y uno',
-    '1993': 'mil novecientos noventa y tres', '2015': 'dos mil quince',
-    '1.°': 'primero', '1.º': 'primero', '2.°': 'segundo', '2.º': 'segundo'
-}
+UNITS = ['', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez',
+         'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve', 'veinte']
+TENS = ['', '', 'veinte', 'treinta', 'cuarenta', 'cincuenta', 'sesenta', 'setenta', 'ochenta', 'noventa']
+
+def int_to_spanish(n):
+    try:
+        n = int(n)
+    except:
+        return ""
+    if n == 0: return 'cero'
+    if n <= 20: return UNITS[n]
+    if n < 30: return 'veinti' + UNITS[n-20]
+    if n < 100:
+        u = n % 10
+        return TENS[n // 10] + ((' y ' + UNITS[u]) if u else '')
+    if n == 100: return 'cien'
+    if n < 200: return 'ciento ' + int_to_spanish(n - 100)
+    if n < 1000:
+        c = n // 100
+        r = n % 100
+        pref = ['', 'ciento', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos', 'setecientos', 'ochocientos', 'novecientos'][c]
+        return pref + ((' ' + int_to_spanish(r)) if r else '')
+    if n == 1000: return 'mil'
+    if n < 2000: return 'mil ' + int_to_spanish(n - 1000)
+    if n < 1000000:
+        m = n // 1000
+        r = n % 1000
+        return (int_to_spanish(m) + ' mil') + ((' ' + int_to_spanish(r)) if r else '')
+    return str(n)
 
 def clean_for_speech(text):
     if not text:
         return ""
-    s = text
-    for k, w in sorted(NUM_WORDS.items(), key=lambda x: -len(x[0])):
-        s = re.sub(r'\b' + re.escape(k) + r'\b', w, s)
+    # 1. Remove entire math blocks $...$ FIRST so they are not cut in half
+    s = re.sub(r'[$][^$]*[$]', ' la relación correspondiente ', text)
+    # 2. Remove lingering LaTeX commands
+    s = re.sub(r'\\[a-zA-Z]+(\{[^{}]*\})?', ' ', s)
     s = s.replace('%', ' por ciento').replace('$', ' pesos ')
-    s = re.sub(r'[$][^$]+[$]', ' la relación correspondiente ', s)
-    s = s.replace('\\', '').replace('{', '').replace('}', '').replace('_', ' ').replace('^', ' ')
+    s = s.replace('°', ' grados ').replace('Ω', ' ohmios ')
     s = s.replace('«', '"').replace('»', '"')
+    # 3. Convert all standalone numbers/decimals to words
+    s = re.sub(r'(\d+)[,.](\d+)', lambda m: f"{int_to_spanish(m.group(1))} coma {int_to_spanish(m.group(2))}", s)
+    s = re.sub(r'\d+', lambda m: int_to_spanish(m.group(0)), s)
+    # 4. Remove unparsed symbols
+    s = s.replace('\\', '').replace('{', '').replace('}', '').replace('_', ' ').replace('^', ' ')
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
 def build_hoja_for_question(q, existing_marcas=None):
     qid = q['id']
-    area = q.get('area', 'sociales')
+    area = q.get('area', 'ciencias')
     correcta = q['correcta']
     c_letter = chr(65 + correcta)
     opciones = q['opciones']
@@ -90,7 +105,6 @@ def build_hoja_for_question(q, existing_marcas=None):
             "p": f"Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque {w_clean}."
         })
 
-    # Pistas
     pistas = [
         f"El problema requiere aplicar con rigurosidad los principios de {comp.lower()}",
         f"Es fundamental contrastar cada afirmación con la situación planteada en el enunciado"
@@ -100,7 +114,6 @@ def build_hoja_for_question(q, existing_marcas=None):
     if len(que_text) < 45:
         que_text = f"Consiste en comprender la situación planteada en el enunciado y aplicar con rigurosidad los principios evaluados en {comp.lower()}."
 
-    # Clave without unread numbers
     clave_clean = clean_for_speech(expl.split('.')[0] + ".")
 
     enfoque = {
@@ -129,9 +142,18 @@ def build_hoja_for_question(q, existing_marcas=None):
     ]
     for idx in wrong_indices:
         w_let = chr(65 + idx)
+        # Clean speech FIRST before slicing
         w_dis = clean_for_speech(distractores[idx]) if idx < len(distractores) else "no corresponde a lo evaluado"
         if len(w_dis) > 100:
-            w_dis = w_dis[:97] + "..."
+            words = w_dis.split()
+            truncated = []
+            cur_len = 0
+            for w in words:
+                if cur_len + len(w) + 1 > 95:
+                    break
+                truncated.append(w)
+                cur_len += len(w) + 1
+            w_dis = " ".join(truncated) + "..."
         g2.append({
             "t": f"La opción {w_let} no es adecuada porque {w_dis}.",
             "a": f"o:{w_let}:no",
