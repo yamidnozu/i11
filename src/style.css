@@ -395,8 +395,8 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:7px 10p
 .pasos3 p{margin:.3rem 0 0;opacity:.85;font-size:.95rem}
 @media(max-width:800px){.pasos3{grid-template-columns:1fr}}
 .hoyhead{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.2rem}
-.chips3{display:flex;gap:.7rem;flex-wrap:wrap}
-.chips3 .stat{min-width:8.5rem;text-decoration:none;color:inherit}
+.chips3{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;width:100%;max-width:460px}
+.chips3 .stat{min-width:0;text-decoration:none;color:inherit;padding:10px 8px;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r1)}
 .hoycard{border:2px solid var(--acc);background:var(--panel);padding:1.1rem 1.2rem;display:grid;gap:.8rem}
 .hoycard h2{margin:0}
 .plan{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
@@ -946,6 +946,22 @@ details.areasec>summary{flex-wrap:wrap;padding:.6rem 0 .5rem;row-gap:.45rem}
 .diag-done-hero{border-radius:var(--r2);padding:24px 20px}
 .simtab{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;font-size:.95rem}.simtab th,.simtab td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}.simtab th{color:var(--mut);font-weight:600;font-size:.82rem}
 .clock.low{color:#b3261e;font-weight:700}
+
+/* Scroll horizontal moderno para filtros de materias en móvil */
+.area-chips-scroll{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch;padding-bottom:6px;scrollbar-width:none}
+.area-chips-scroll::-webkit-scrollbar{display:none}
+.area-chips-scroll .chip{flex-shrink:0;white-space:nowrap}
+
+/* Tarjetas interactivas de practicar */
+.prac-paths{display:grid;gap:12px;margin:1rem 0 1.5rem}
+.card-path{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);background:var(--panel);border-radius:var(--r2);color:var(--ink);text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease}
+.card-path:hover{border-color:var(--acc);box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.path-icon-box{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:var(--r1);background:color-mix(in srgb,var(--acc) 12%,var(--panel));color:var(--acc);flex-shrink:0}
+.path-body{min-width:0}
+.path-title-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.path-title-row b{font-size:1.02rem}
+.path-desc{display:block;font-size:.85rem;color:var(--mut);margin-top:2px}
+.path-arrow{font-size:1.2rem;color:var(--acc);font-weight:700;padding-left:4px}
 
 .escf{padding:0}.escv{width:100%;height:auto;display:block;border-radius:var(--r2);background:#121821}
 

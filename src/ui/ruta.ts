@@ -65,7 +65,7 @@ function tablero(): HTMLElement {
   const principal = items[0];
   return h('div', {},
     h('div', { class: 'hoyhead' },
-      h('div', {}, h('h1', {}, 'Hoy'), h('p', { class: 'lede' }, d.streak.count ? `Llevas ${d.streak.count} ${d.streak.count === 1 ? 'día' : 'días'} seguidos. Sigue con tu ruta.` : 'Estudia un rato hoy y empieza tu racha.')),
+      h('div', {}, h('h1', {}, 'Hoy'), h('p', { class: 'lede' }, d.streak.count ? (d.streak.count === 1 ? 'Llevas 1 día seguido. Sigue con tu ruta.' : `Llevas ${d.streak.count} días seguidos. Sigue con tu ruta.`) : 'Estudia un rato hoy y empieza tu racha.')),
       h('div', { class: 'chips3' },
         h('div', { class: 'stat' }, h('b', {}, s.global === null ? '—' : String(s.global)), h('span', {}, 'puntaje estimado de 500')),
         h('div', { class: 'stat' }, h('b', {}, String(d.streak.count)), h('span', {}, 'racha en días')),
@@ -100,7 +100,7 @@ export function aprender(): HTMLElement {
         h('div', { class: 'official-question-list' }, ...qs.map((q) => h('a', { class: 'path', href: `#/pregunta/${q.id}` },
           h('b', {}, q.id.toUpperCase()), h('span', {}, q.enunciado.replace(/\s+/g, ' ').slice(0, 180) + (q.enunciado.length > 180 ? '…' : ''))))));
     })) : null;
-  const chips = h('div', { class: 'chips filters', role: 'group', 'aria-label': 'Filtrar por área' },
+  const chips = h('div', { class: 'chips filters area-chips-scroll', role: 'group', 'aria-label': 'Filtrar por área' },
     h('a', { class: 'chip', href: '#/aprender', 'aria-pressed': String(!sel) }, 'Todas'), ...AREA_IDS.map((a) => h('a', { class: 'chip', href: `#/aprender?area=${a}`, 'aria-pressed': String(sel === a) }, AREAS[a].nombre)));
   const rec = recomendada();
   return h('div', {},
@@ -110,7 +110,7 @@ export function aprender(): HTMLElement {
     banco,
     ...areas.map((a) => {
       const us = unidadesDe(a), hechos = us.filter((u) => estado(u).nivel === 'dominada').length;
-      return h('details', { class: 'areasec', open: !!sel || (rec ? rec.area === a : a === areas[0]) },
+      return h('details', { class: 'areasec', open: !!sel || (rec ? rec.area === a : a === areas[0]) || (!sel && a === 'matematicas') },
         h('summary', {}, h('h2', {}, AREAS[a].nombre), h('small', {}, `${hechos} de ${us.length} dominados`), h('span', { class: 'areabar', 'aria-hidden': 'true' }, h('i', { style: `width:${Math.round(100 * hechos / Math.max(1, us.length))}%` }))),
         h('div', { class: 'unitgrid' }, ...us.map((u) => tarjeta(u, rec?.id === u.id))));
     }),
@@ -147,17 +147,28 @@ export function unidadPage(id: string, modo?: string): HTMLElement {
 /* ───────── Practicar (menú) ───────── */
 export function practicar(): HTMLElement {
   const due = dueCards().length;
-  const op = (href: string, ic: string, t: string, d: string, tag?: string) => h('a', { class: 'path', href }, icon(ic), h('b', {}, t, tag ? h('em', { class: 'tag2' }, tag) : null), h('span', {}, d));
+  const op = (href: string, ic: string, t: string, d: string, tag?: string) => h('a', { class: 'path card-path', href },
+    h('div', { class: 'path-icon-box' }, icon(ic, 22)),
+    h('div', { class: 'path-body' },
+      h('div', { class: 'path-title-row' },
+        h('b', {}, t),
+        tag ? h('em', { class: 'tag2' }, tag) : null
+      ),
+      h('span', { class: 'path-desc' }, d)
+    ),
+    h('span', { class: 'path-arrow' }, '→')
+  );
   return h('div', {}, head('Practicar', 'Aquí pones a prueba lo aprendido: práctica según tu nivel, simulacros cronometrados o el diagnóstico. Si apenas empiezas, hazlo primero.'),
-    h('div', { class: 'paths' },
-      op('#/sesion', 'pencil', 'Sesión de práctica', '8 preguntas adaptadas a tu nivel. Dura unos 15 minutos y termina con un resumen.', due ? `${due} repasos pendientes` : undefined),
-      op('#/simulacro', 'clock', 'Simulacros', 'Pruebas completas como el examen real: tiempo por sección, sin ayudas y con puntaje estimado.'),
-      op('#/diag', 'target', 'Repetir el diagnóstico', '15 preguntas para actualizar tu nivel en cada área.'),
+    h('div', { class: 'paths prac-paths' },
+      op('#/sesion', 'pencil', 'Sesión de práctica adaptativa', '8 preguntas adaptadas a tu nivel (~15 min) con resumen final.', due ? `${due} repasos pendientes` : 'Recomendado'),
+      op('#/simulacro', 'clock', 'Simulacros tipo examen', 'Pruebas completas como el examen real: tiempo por sección, sin ayudas y con puntaje estimado.'),
+      op('#/diag', 'target', 'Repetir el diagnóstico', '15 preguntas rápidas (~10 min) para actualizar tu nivel en cada área.'),
       op('#/contenido', 'book', 'Todo el contenido', 'Entra directo a cualquier simulacro, laboratorio, lección o pregunta, sin seguir la ruta.'),
-      op('#/extras', 'ruler', 'Actividades', 'Lectura, inglés, ciudadanía y línea de tiempo para practicar sueltos.')),
-    h('h2', {}, 'Practicar una sola materia'),
-    h('div', { class: 'chips' }, ...AREA_IDS.map((a) => h('a', { class: 'chip', href: `#/sesion?area=${a}` }, AREAS[a].nombre))),
-    h('h2', {}, 'Simulacros disponibles'), simulacroTarjetas());
+      op('#/extras', 'ruler', 'Actividades de entrenamiento', 'Lectura, inglés, ciudadanía y línea de tiempo para practicar sueltos.')),
+    h('h2', { class: 'secth' }, 'Practicar una sola materia'),
+    h('p', { class: 'fine' }, 'Elige un área para resolver preguntas enfocadas exclusivamente en esa prueba:'),
+    h('div', { class: 'chips filters area-chips-scroll' }, ...AREA_IDS.map((a) => h('a', { class: 'chip', href: `#/sesion?area=${a}` }, `🎯 ${AREAS[a].nombre}`))),
+    h('h2', { class: 'secth' }, 'Simulacros disponibles'), simulacroTarjetas());
 }
 
 /* ───────── Sesión de preguntas con resumen ───────── */

@@ -231,11 +231,25 @@ export function panel(): HTMLElement {
   const paintLeft = () => { left.textContent = d.examDay ? (d.examDay >= day() ? `Faltan ${d.examDay - day()} días para el examen.` : 'La fecha ya pasó.') : ''; };
   paintLeft();
   return h('div', {}, head('Mi progreso', 'Aquí ves cómo vas: tu puntaje estimado, qué áreas te faltan y qué repasar. Vuelve cuando termines una práctica.'),
-    d.answers.length === 0 ? h('div', { class: 'box trick' }, h('b', {}, 'Aún no tienes datos'), h('p', { style: 'margin:.4rem 0 .8rem' }, 'Haz el diagnóstico (unos 20 minutos) y aquí verás tu puntaje estimado, tus áreas más fuertes y qué repasar.'), h('a', { class: 'btn primary', href: '#/diag' }, 'Hacer el diagnóstico')) : h('div', { class: 'stats' }, h('div', { class: 'stat' }, h('b', {}, String(d.streak.count)), h('span', {}, `días de racha · ${d.streak.freezes} congeladores`)), h('div', { class: 'stat' }, h('b', {}, String(d.answers.length)), h('span', {}, 'preguntas respondidas')), h('div', { class: 'stat' }, h('b', {}, String(dueCards().length)), h('span', {}, 'repasos para hoy'))),
+    d.answers.length === 0 ? h('div', { class: 'box trick' }, h('b', {}, 'Aún no tienes datos'), h('p', { style: 'margin:.4rem 0 .8rem' }, 'Haz el diagnóstico inicial (~10 min) y aquí verás tu puntaje estimado, tus áreas más fuertes y qué repasar primero.'), h('a', { class: 'btn primary', href: '#/diag' }, 'Hacer el diagnóstico gratis (~10 min)')) : h('div', { class: 'stats' }, h('div', { class: 'stat' }, h('b', {}, String(d.streak.count)), h('span', {}, `días de racha · ${d.streak.freezes} congeladores`)), h('div', { class: 'stat' }, h('b', {}, String(d.answers.length)), h('span', {}, 'preguntas respondidas')), h('div', { class: 'stat' }, h('b', {}, String(dueCards().length)), h('span', {}, 'repasos para hoy'))),
     ...(d.answers.length === 0 ? [] : [resultView()]),
     weakest ? h('div', { class: 'box trick' }, h('span', { class: 'hand' }, 'Recomendación'), h('p', { style: 'margin:6px 0 0' }, `Practica ${AREAS[weakest].nombre}: es tu área más baja ahora.`)) : null,
     h('div', { class: 'box' }, h('label', { for: 'exam' }, h('b', {}, 'Fecha del examen (opcional)')), h('p', { class: 'fine', style: 'margin:.2rem 0' }, 'Con ella, la pantalla Hoy te cuenta cuántos días faltan.'), h('div', { style: 'max-width:260px;margin:8px 0' }, h('input', { id: 'exam', type: 'date', value: d.examDay ? new Date(d.examDay * 86400000).toISOString().slice(0, 10) : '', onchange: (e: Event) => { const v = (e.target as HTMLInputElement).value; d.examDay = v ? Math.floor(Date.parse(v) / 86400000) : undefined; save(); paintLeft(); } })), left),
-    h('div', { class: 'box' }, h('h2', { style: 'font-size:1.3rem' }, 'Para tu profe o tu familia'), h('p', {}, 'Copia este resumen y envíalo por WhatsApp o correo para que te acompañen:'), h('textarea', { readonly: true, rows: 3, class: 'share', 'aria-label': 'Resumen para compartir' }, text), h('button', { class: 'btn', type: 'button', onclick: () => navigator.clipboard?.writeText(text) }, 'Copiar resumen')));
+    h('div', { class: 'box' }, h('h2', { style: 'font-size:1.3rem' }, 'Para tu profe o tu familia'),
+      h('p', {}, 'Comparte tu avance por WhatsApp o cópialo para enviarlo por correo:'),
+      h('textarea', { readonly: true, rows: 3, class: 'share', 'aria-label': 'Resumen para compartir' }, text),
+      h('div', { class: 'row', style: 'margin-top:10px;gap:10px' },
+        h('a', {
+          class: 'btn primary',
+          style: 'background:#25d366;border-color:#25d366;color:#fff;display:inline-flex;align-items:center;gap:6px',
+          href: `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`,
+          target: '_blank',
+          rel: 'noopener'
+        }, '💬 Enviar por WhatsApp'),
+        h('button', { class: 'btn', type: 'button', onclick: () => navigator.clipboard?.writeText(text) }, 'Copiar resumen')
+      )
+    )
+  );
 }
 
 export async function payPage(): Promise<HTMLElement> {
