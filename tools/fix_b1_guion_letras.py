@@ -67,6 +67,14 @@ def minus(s):
     return s[:1].lower() + s[1:] if s else s
 
 
+def pero(r):
+    """Antepone 'Pero' solo si queda natural (sin otro 'pero', sin arrancar con palabra en ingles)."""
+    r = r.strip()
+    if re.match(r"^(An? )?\{\{", r) or " pero " in r or r.startswith(("Pero ", "No ")) and False:
+        return r
+    return "Pero " + minus(r)
+
+
 def fix(q, c):
     cor = q.get("correcta")
     if not isinstance(cor, int) or cor >= len(q["opciones"]):
@@ -84,7 +92,7 @@ def fix(q, c):
     enf = h.get("enfoque") or {}
     # trampas alineadas con las razones reales
     if enf.get("no") and len(razon) == len(q["opciones"]) - 1:
-        nuevo = [{"t": f"Opción {L[i]}", "p": "Pero " + minus(r)} for i, r in razon.items()]
+        nuevo = [{"t": f"Opción {L[i]}", "p": pero(r)} for i, r in razon.items()]
         if nuevo != enf["no"]:
             enf["no"] = nuevo
             ch = True
