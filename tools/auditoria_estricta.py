@@ -31,6 +31,10 @@ MULETILLAS = [
     "Explica comprender que",
     "No corresponde al fen",
     "Pero no responde al criterio central",
+    "Pero revisa el dato que exige",
+    "esa palabra no corresponde",
+    "esa caracter\u00edstica no corresponde",
+    "no encaja con el sentido o la estructura",
 ]
 
 
@@ -75,7 +79,7 @@ def latex_roto(s):
         f.append("latex sin escapar")
     if re.search(r"[\t\x08\x0c\r\x07\x0b]", s):
         f.append("caracter de control (escape roto)")
-    if s.count("$") % 2:
+    if s.count("$") % 2 and re.sub(r"\$\s?\d[\d.,]*", "", s).count("$") % 2:
         f.append("$ sin cerrar")
     if re.search(r"\$rac|\$\s?imes|\bheta\b", s):
         f.append("comando LaTeX mutilado")
@@ -114,7 +118,7 @@ def revisar(c, q):
     for t in textos(q):
         for m in MULETILLAS:
             if m in t:
-                fallas.append("muletilla: " + m)
+                fallas.append("muletilla: " + m); break
                 break
     razones = [norm(d) for i, d in enumerate(ds) if i != cor]
     if any(not r for r in razones):
@@ -180,6 +184,10 @@ def revisar(c, q):
         m = re.match(r"Opci[oó]n ([A-H])$", n.get("t", ""))
         if m and isinstance(cor, int) and m.group(1) == L[cor]:
             fallas.append("trampa asignada a la opcion correcta")
+            break
+    for t in list(op) + [q.get("enunciado", "")]:
+        if re.search(r"RESPOND[AE]\b", t):
+            fallas.append("texto basura del PDF")
             break
     if q.get("revisar"):
         fallas.append("marcada por revisar")

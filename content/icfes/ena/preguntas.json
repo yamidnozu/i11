@@ -96,13 +96,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 1,
       "distractores": [
-        "{{glasses}} significa gafas; esa palabra no corresponde a llevar cosas.",
+        "{{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con llevar cosas.",
         "",
-        "{{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas.",
-        "{{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas.",
-        "{{skirt}} significa falda; esa palabra no corresponde a llevar cosas.",
-        "{{socks}} significa medias; esa palabra no corresponde a llevar cosas.",
-        "{{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
+        "Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a llevar cosas.",
+        "Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a llevar cosas.",
+        "{{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con llevar cosas.",
+        "Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de llevar cosas.",
+        "Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a llevar cosas."
       ],
       "enunciado": "A woman carries her things in one of these.",
       "estadoHoja": "revisada",
@@ -115,27 +115,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a llevar cosas."
+              "p": "Pero {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con llevar cosas."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas."
+              "p": "Pero pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a llevar cosas."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas."
+              "p": "Pero confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a llevar cosas."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a llevar cosas."
+              "p": "Pero {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con llevar cosas."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{socks}} significa medias; esa palabra no corresponde a llevar cosas."
+              "p": "Pero con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de llevar cosas."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
+              "p": "Pero reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a llevar cosas."
             }
           ],
           "pistas": [
@@ -187,32 +187,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a llevar cosas."
+              "t": "La opción A es incorrecta: {glasses} significa gafas y se llevan sobre los ojos; no tiene relación con llevar cosas."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas."
+              "t": "La opción C es incorrecta: Pijama ({pajamas}) es la ropa con la que se duerme; por eso no responde a llevar cosas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas."
+              "t": "La opción D es incorrecta: Confunde la pista: {scarf} se enrolla alrededor del cuello, mientras que la descripción apunta a llevar cosas."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a llevar cosas."
+              "t": "La opción E es incorrecta: {skirt} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con llevar cosas."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a llevar cosas."
+              "t": "La opción F es incorrecta: Con {socks} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de llevar cosas."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
+              "t": "La opción G es incorrecta: Reloj ({watch}) se lleva en la muñeca para ver la hora; por eso no responde a llevar cosas."
             },
             {
               "a": "o:B:ok",
@@ -233,32 +233,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a llevar cosas."
+              "t": "La opción a no encaja: {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con llevar cosas."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a llevar cosas."
+              "t": "La opción c no encaja: Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a llevar cosas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a llevar cosas."
+              "t": "La opción d no encaja: Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a llevar cosas."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a llevar cosas."
+              "t": "La opción e no encaja: {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con llevar cosas."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a llevar cosas."
+              "t": "La opción f no encaja: Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de llevar cosas."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a llevar cosas."
+              "t": "La opción g no encaja: Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a llevar cosas."
             },
             {
               "a": "o:B:ok",
@@ -316,13 +316,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 4,
       "distractores": [
-        "{{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones.",
-        "{{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones.",
-        "{{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones.",
-        "{{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones.",
+        "{{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con la prenda que se usa en lugar de los pantalones.",
+        "Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de la prenda que se usa en lugar de los pantalones.",
+        "Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a la prenda que se usa en lugar de los pantalones.",
+        "Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a la prenda que se usa en lugar de los pantalones.",
         "",
-        "{{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones.",
-        "{{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+        "Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de la prenda que se usa en lugar de los pantalones.",
+        "Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a la prenda que se usa en lugar de los pantalones."
       ],
       "enunciado": "Many girls wear this when they don’t want to wear trousers.",
       "estadoHoja": "revisada",
@@ -335,27 +335,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con la prenda que se usa en lugar de los pantalones."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a la prenda que se usa en lugar de los pantalones."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a la prenda que se usa en lugar de los pantalones."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "p": "Pero reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a la prenda que se usa en lugar de los pantalones."
             }
           ],
           "pistas": [
@@ -407,32 +407,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción A es incorrecta: {glasses} significa gafas y se llevan sobre los ojos; no tiene relación con la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción B es incorrecta: Con {handbags} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción C es incorrecta: Pijama ({pajamas}) es la ropa con la que se duerme; por eso no responde a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción D es incorrecta: Confunde la pista: {scarf} se enrolla alrededor del cuello, mientras que la descripción apunta a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción F es incorrecta: Con {socks} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción G es incorrecta: Reloj ({watch}) se lleva en la muñeca para ver la hora; por eso no responde a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:E:ok",
@@ -453,32 +453,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción a no encaja: {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción b no encaja: Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción c no encaja: Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción d no encaja: Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción f no encaja: Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a la prenda que se usa en lugar de los pantalones."
+              "t": "La opción g no encaja: Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a la prenda que se usa en lugar de los pantalones."
             },
             {
               "a": "o:E:ok",
@@ -536,13 +536,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 3,
       "distractores": [
-        "{{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado.",
-        "{{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado.",
-        "{{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado.",
+        "{{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir el cuello y mantenerlo abrigado.",
+        "Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir el cuello y mantenerlo abrigado.",
+        "Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir el cuello y mantenerlo abrigado.",
         "",
-        "{{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado.",
-        "{{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado.",
-        "{{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+        "{{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir el cuello y mantenerlo abrigado.",
+        "Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de cubrir el cuello y mantenerlo abrigado.",
+        "Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir el cuello y mantenerlo abrigado."
       ],
       "enunciado": "With this, your neck won’t be cold.",
       "estadoHoja": "revisada",
@@ -555,27 +555,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "p": "Pero reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             }
           ],
           "pistas": [
@@ -627,32 +627,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción A es incorrecta: {glasses} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción B es incorrecta: Con {handbags} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción C es incorrecta: Pijama ({pajamas}) es la ropa con la que se duerme; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción E es incorrecta: {skirt} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción F es incorrecta: Con {socks} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción G es incorrecta: Reloj ({watch}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:D:ok",
@@ -673,32 +673,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción a no encaja: {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción b no encaja: Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción c no encaja: Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción e no encaja: {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción f no encaja: Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a cubrir el cuello y mantenerlo abrigado."
+              "t": "La opción g no encaja: Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir el cuello y mantenerlo abrigado."
             },
             {
               "a": "o:D:ok",
@@ -757,12 +757,12 @@
       "correcta": 0,
       "distractores": [
         "",
-        "{{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor.",
-        "{{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor.",
-        "{{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor.",
-        "{{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor.",
-        "{{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor.",
-        "{{watch}} significa reloj; esa palabra no corresponde a ayudar a ver mejor."
+        "Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de ayudar a ver mejor.",
+        "Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a ayudar a ver mejor.",
+        "Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a ayudar a ver mejor.",
+        "{{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con ayudar a ver mejor.",
+        "Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de ayudar a ver mejor.",
+        "Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a ayudar a ver mejor."
       ],
       "enunciado": "When people can’t see well, they need them.",
       "estadoHoja": "revisada",
@@ -775,27 +775,27 @@
           "no": [
             {
               "t": "Opción B",
-              "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de ayudar a ver mejor."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a ayudar a ver mejor."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a ayudar a ver mejor."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con ayudar a ver mejor."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de ayudar a ver mejor."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a ayudar a ver mejor."
+              "p": "Pero reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a ayudar a ver mejor."
             }
           ],
           "pistas": [
@@ -847,32 +847,32 @@
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción B es incorrecta: Con {handbags} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de ayudar a ver mejor."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción C es incorrecta: Pijama ({pajamas}) es la ropa con la que se duerme; por eso no responde a ayudar a ver mejor."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción D es incorrecta: Confunde la pista: {scarf} se enrolla alrededor del cuello, mientras que la descripción apunta a ayudar a ver mejor."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción E es incorrecta: {skirt} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con ayudar a ver mejor."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción F es incorrecta: Con {socks} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de ayudar a ver mejor."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción G es incorrecta: Reloj ({watch}) se lleva en la muñeca para ver la hora; por eso no responde a ayudar a ver mejor."
             },
             {
               "a": "o:A:ok",
@@ -893,32 +893,32 @@
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción b no encaja: Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de ayudar a ver mejor."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción c no encaja: Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a ayudar a ver mejor."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción d no encaja: Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a ayudar a ver mejor."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción e no encaja: {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con ayudar a ver mejor."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción f no encaja: {{socks}} significa medias; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción f no encaja: Con {{socks}} (medias) piensas en algo que se ponen dentro del zapato, pero la pista habla de ayudar a ver mejor."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a ayudar a ver mejor."
+              "t": "La opción g no encaja: Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a ayudar a ver mejor."
             },
             {
               "a": "o:A:ok",
@@ -976,13 +976,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 5,
       "distractores": [
-        "{{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies.",
-        "{{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies.",
-        "{{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies.",
-        "{{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies.",
-        "{{skirt}} significa falda; esa palabra no corresponde a cubrir los pies.",
+        "{{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir los pies.",
+        "Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir los pies.",
+        "Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir los pies.",
+        "Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a cubrir los pies.",
+        "{{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir los pies.",
         "",
-        "{{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
+        "Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir los pies."
       ],
       "enunciado": "These are for your feet.",
       "estadoHoja": "revisada",
@@ -995,27 +995,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir los pies."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir los pies."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir los pies."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a cubrir los pies."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{skirt}} significa falda; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir los pies."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
+              "p": "Pero reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir los pies."
             }
           ],
           "pistas": [
@@ -1067,32 +1067,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción A es incorrecta: {glasses} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir los pies."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción B es incorrecta: Con {handbags} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir los pies."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción C es incorrecta: Pijama ({pajamas}) es la ropa con la que se duerme; por eso no responde a cubrir los pies."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción D es incorrecta: Confunde la pista: {scarf} se enrolla alrededor del cuello, mientras que la descripción apunta a cubrir los pies."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción E es incorrecta: {skirt} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir los pies."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción G es incorrecta: Reloj ({watch}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir los pies."
             },
             {
               "a": "o:F:ok",
@@ -1113,32 +1113,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción a no encaja: {{glasses}} significa gafas; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción a no encaja: {{glasses}} significa gafas y se llevan sobre los ojos; no tiene relación con cubrir los pies."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción b no encaja: {{handbags}} significa bolsos; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción b no encaja: Con {{handbags}} (bolsos) piensas en algo que sirven para guardar y cargar objetos, pero la pista habla de cubrir los pies."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción c no encaja: {{pajamas}} significa pijama; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción c no encaja: Pijama ({{pajamas}}) es la ropa con la que se duerme; por eso no responde a cubrir los pies."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción d no encaja: {{scarf}} significa bufanda; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción d no encaja: Confunde la pista: {{scarf}} se enrolla alrededor del cuello, mientras que la descripción apunta a cubrir los pies."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción e no encaja: {{skirt}} significa falda; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción e no encaja: {{skirt}} significa falda y es una prenda que cubre desde la cintura hacia abajo; no tiene relación con cubrir los pies."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción g no encaja: {{watch}} significa reloj; esa palabra no corresponde a cubrir los pies."
+              "t": "La opción g no encaja: Reloj ({{watch}}) se lleva en la muñeca para ver la hora; por eso no responde a cubrir los pies."
             },
             {
               "a": "o:F:ok",
@@ -4352,13 +4352,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 5,
       "distractores": [
-        "{{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas.",
-        "{{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas.",
-        "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas.",
-        "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas.",
-        "{{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas.",
+        "{{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con llevar cosas.",
+        "Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de llevar cosas.",
+        "Bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a llevar cosas.",
+        "Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a llevar cosas.",
+        "{{plane}} significa avión y vuela por el aire; no tiene relación con llevar cosas.",
         "",
-        "{{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+        "Tren ({{train}}) circula sobre rieles; por eso no responde a llevar cosas."
       ],
       "enunciado": "People drive it on a road and it carries big things.",
       "estadoHoja": "revisada",
@@ -4371,27 +4371,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con llevar cosas."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de llevar cosas."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a llevar cosas."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a llevar cosas."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero {{plane}} significa avión y vuela por el aire; no tiene relación con llevar cosas."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+              "p": "Pero tren ({{train}}) circula sobre rieles; por eso no responde a llevar cosas."
             }
           ],
           "pistas": [
@@ -4443,32 +4443,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción A es incorrecta: {ambulance} significa ambulancia y lleva pacientes al hospital; no tiene relación con llevar cosas."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción B es incorrecta: Con {boat} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de llevar cosas."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción C es incorrecta: Bus ({bus}) lleva pasajeros por carretera; por eso no responde a llevar cosas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción D es incorrecta: Confunde la pista: {motorbike} se conduce con motor por carretera, mientras que la descripción apunta a llevar cosas."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción E es incorrecta: {plane} significa avión y vuela por el aire; no tiene relación con llevar cosas."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción G es incorrecta: Tren ({train}) circula sobre rieles; por eso no responde a llevar cosas."
             },
             {
               "a": "o:F:ok",
@@ -4489,32 +4489,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción A no encaja: {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con llevar cosas."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción B no encaja: Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de llevar cosas."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción C no encaja: Bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a llevar cosas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción D no encaja: Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a llevar cosas."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción E no encaja: {{plane}} significa avión y vuela por el aire; no tiene relación con llevar cosas."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a llevar cosas."
+              "t": "La opción G no encaja: Tren ({{train}}) circula sobre rieles; por eso no responde a llevar cosas."
             },
             {
               "a": "o:F:ok",
@@ -4572,13 +4572,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 2,
       "distractores": [
-        "{{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera.",
-        "{{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera.",
+        "{{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con un transporte público por carretera.",
+        "Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de un transporte público por carretera.",
         "",
-        "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera.",
-        "{{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera.",
-        "{{truck}} transporta cargas grandes, pero esa característica no corresponde a un transporte público por carretera.",
-        "{{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
+        "Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a un transporte público por carretera.",
+        "{{plane}} significa avión y vuela por el aire; no tiene relación con un transporte público por carretera.",
+        "Con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de un transporte público por carretera.",
+        "Tren ({{train}}) circula sobre rieles; por eso no responde a un transporte público por carretera."
       ],
       "enunciado": "People pay to take this public transport by road.",
       "estadoHoja": "revisada",
@@ -4591,27 +4591,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con un transporte público por carretera."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de un transporte público por carretera."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a un transporte público por carretera."
             },
             {
               "t": "Opción E",
-              "p": "Pero {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero {{plane}} significa avión y vuela por el aire; no tiene relación con un transporte público por carretera."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{truck}} transporta cargas grandes, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de un transporte público por carretera."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
+              "p": "Pero tren ({{train}}) circula sobre rieles; por eso no responde a un transporte público por carretera."
             }
           ],
           "pistas": [
@@ -4663,32 +4663,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción A es incorrecta: {ambulance} significa ambulancia y lleva pacientes al hospital; no tiene relación con un transporte público por carretera."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción B es incorrecta: Con {boat} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de un transporte público por carretera."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción D es incorrecta: Confunde la pista: {motorbike} se conduce con motor por carretera, mientras que la descripción apunta a un transporte público por carretera."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción E es incorrecta: {plane} significa avión y vuela por el aire; no tiene relación con un transporte público por carretera."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F no encaja: {{truck}} transporta cargas grandes, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción F es incorrecta: Con {truck} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de un transporte público por carretera."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción G es incorrecta: Tren ({train}) circula sobre rieles; por eso no responde a un transporte público por carretera."
             },
             {
               "a": "o:C:ok",
@@ -4709,32 +4709,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción A no encaja: {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con un transporte público por carretera."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción B no encaja: Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de un transporte público por carretera."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción D no encaja: Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a un transporte público por carretera."
             },
             {
               "a": "o:E:no",
               "k": "err",
-              "t": "La opción E no encaja: {{plane}} vuela por el aire, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción E no encaja: {{plane}} significa avión y vuela por el aire; no tiene relación con un transporte público por carretera."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F no encaja: {{truck}} transporta cargas grandes, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción F no encaja: Con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de un transporte público por carretera."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a un transporte público por carretera."
+              "t": "La opción G no encaja: Tren ({{train}}) circula sobre rieles; por eso no responde a un transporte público por carretera."
             },
             {
               "a": "o:C:ok",
@@ -4792,13 +4792,13 @@
       "competenciaId": "lectura_uso_lenguaje",
       "correcta": 4,
       "distractores": [
-        "{{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire.",
-        "{{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire.",
-        "{{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire.",
-        "{{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire.",
+        "{{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con viajar por el aire.",
+        "Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de viajar por el aire.",
+        "Bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a viajar por el aire.",
+        "Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a viajar por el aire.",
         "",
-        "{{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire.",
-        "{{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+        "Con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de viajar por el aire.",
+        "Tren ({{train}}) circula sobre rieles; por eso no responde a viajar por el aire."
       ],
       "enunciado": "Many people fly on it to go to a place.",
       "estadoHoja": "revisada",
@@ -4811,27 +4811,27 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con viajar por el aire."
             },
             {
               "t": "Opción B",
-              "p": "Pero {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de viajar por el aire."
             },
             {
               "t": "Opción C",
-              "p": "Pero {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a viajar por el aire."
             },
             {
               "t": "Opción D",
-              "p": "Pero {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a viajar por el aire."
             },
             {
               "t": "Opción F",
-              "p": "Pero {{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de viajar por el aire."
             },
             {
               "t": "Opción G",
-              "p": "Pero {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+              "p": "Pero tren ({{train}}) circula sobre rieles; por eso no responde a viajar por el aire."
             }
           ],
           "pistas": [
@@ -4883,32 +4883,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción A es incorrecta: {ambulance} significa ambulancia y lleva pacientes al hospital; no tiene relación con viajar por el aire."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción B es incorrecta: Con {boat} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de viajar por el aire."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción C es incorrecta: Bus ({bus}) lleva pasajeros por carretera; por eso no responde a viajar por el aire."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción D es incorrecta: Confunde la pista: {motorbike} se conduce con motor por carretera, mientras que la descripción apunta a viajar por el aire."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F no encaja: {{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción F es incorrecta: Con {truck} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de viajar por el aire."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción G es incorrecta: Tren ({train}) circula sobre rieles; por eso no responde a viajar por el aire."
             },
             {
               "a": "o:E:ok",
@@ -4929,32 +4929,32 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no encaja: {{ambulance}} transporta pacientes, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción A no encaja: {{ambulance}} significa ambulancia y lleva pacientes al hospital; no tiene relación con viajar por el aire."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no encaja: {{boat}} viaja por el agua, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción B no encaja: Con {{boat}} (bote) piensas en algo que se desplaza sobre el agua, pero la pista habla de viajar por el aire."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C no encaja: {{bus}} transporta pasajeros por carretera, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción C no encaja: Bus ({{bus}}) lleva pasajeros por carretera; por eso no responde a viajar por el aire."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no encaja: {{motorbike}} se conduce por carretera, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción D no encaja: Confunde la pista: {{motorbike}} se conduce con motor por carretera, mientras que la descripción apunta a viajar por el aire."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F no encaja: {{truck}} transporta cargas grandes, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción F no encaja: Con {{truck}} (camión) piensas en algo que carga mercancía pesada por carretera, pero la pista habla de viajar por el aire."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no encaja: {{train}} circula por vías, pero esa característica no corresponde a viajar por el aire."
+              "t": "La opción G no encaja: Tren ({{train}}) circula sobre rieles; por eso no responde a viajar por el aire."
             },
             {
               "a": "o:E:ok",
