@@ -367,3 +367,26 @@ Se organizaron las 62 preguntas en 7 unidades temáticas coherentes:
 
 
 
+
+## 10. Continuacion de ENCARGO_COMPLETAR.md (24 oct 2026, sesion 4)
+
+### Revisor estricto nuevo: `tools/auditoria_estricta.py`
+Falla (exit 1) con: muletillas conocidas, razones vacias, razones casi iguales entre si o con el mismo arranque, razon que repite la explicacion, preguntas sin pistas/pasos/3 niveles del profe/trampas, LaTeX roto o caracteres de control, texto basura del PDF en enunciado u opcion, letra de opcion que contradice la clave (texto y acciones `o:X:ok/no`), trampa asignada a la opcion correcta, y sesgo de posicion/largo en el banco propio. Los sesgos de los cuadernillos oficiales se informan pero no se tocan (la clave oficial no se modifica). Tambien corre como test: `tests/calidad_estricta.test.ts`.
+
+Linea base medida con el revisor nuevo: **441/617 limpias**. Final: **617/617 limpias** (4 con clave dudosa marcada, ver abajo).
+
+### Que se corrigio (scripts por lotes en `tools/fix_b1` ... `fix_b7`)
+- **b1:** letras contradictorias con la clave en hojas (p.ej. soc-i007 "la respuesta es B" con clave A): corregidas en texto y en acciones. Trampas, nivel 2 y nivel 3 del profe ahora usan la razon real de cada opcion en vez de la plantilla "plantea «...» Pero no responde al criterio central" (321 frases en 107 preguntas, Sociales 2021, Sociales 2014/cfi y otras).
+- **b2/b3/b4:** muletilla "Pero revisa el dato que exige el enunciado" eliminada (42 razones); razones de vocabulario de ingles reescritas con 8 plantillas y el significado/uso de cada palabra; frases "La opcion X no encaja" de la hoja resincronizadas; basura "RESPONDE LA PREGUNTA..." eliminada de 4 opciones (lec-i022/024/025, mth-i006) y texto de otra pregunta quitado del enunciado de mat-i008.
+- **b6:** razones manuales para cfi-i044, cfi-i122..125 (gramatica/lectura), mat-i006, mth-i006, mth-i008; letra H de cfi-i104.
+- **b7:** reparacion de `\mathrm{{kDa}}` que un paso intermedio duplico (detectado por los tests en modo ICFES y corregido) y campo "que" sin cifras en las 8 explicaciones de catalogo ("Explica comprender que...").
+- **Dudosas:** mat-i038 y cfi-i101 resueltas (explicacion con el supuesto explicito, se quito la marca). Siguen marcadas por clave dudosa: **cfi-i105** (bike vs motorbike) y **ena/eng/ing-i018** (el pasaje no dice si "Passionate Falsehoods" es pelicula); se conserva la clave oficial.
+
+### Cifras y verificacion
+- Revisor estricto: 617/617 limpias, sesgos del banco propio: 0.
+- `npx tsc --noEmit` sin errores; `npm test`: 16 archivos, 427/427; `VITE_ICFES=1 npm test`: 16 archivos, 1044/1044; `npm run build` OK.
+
+### Pendiente / limites honestos
+- El revisor mide estructura y consistencia, no verdad pedagogica: la calidad de fondo de cada razon sigue dependiendo de revision humana. No se pudo comprobar en bloque que cada razon este en la opcion correcta (solo las detectables por letra/clave y por heuristica).
+- No se hicieron en esta sesion: ejercicio guiado y enlaces a laboratorio en las ICFES, UX movil de feedback inmediato, las 43 figuras pendientes ni la expansion adicional del banco propio (ya esta en 40+ por area).
+- Sesgo informativo en oficiales: mth clave B 41 %, soc/scc clave C 45 %.

@@ -7302,7 +7302,7 @@
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "Cada uno de los 110 clientes realizó un pedido (la unión de pizza, bebida caliente y bebida fría es 110). Como las bebidas caliente ($C$) y fría ($F$) son mutuamente excluyentes ($C \\cap F = \\emptyset$), la suma simple de pedidos es $|P| + |C| + |F| = 100 + 20 + 40 = 160$. El exceso sobre el total de clientes ($160 - 110 = 50$) corresponde exactamente al número de clientes que combinaron pizza con alguna bebida: $|P \\cap (C \\cup F)| = 50$. Aunque no es posible determinar cuántos eligieron específicamente bebida caliente o fría, la suma de ambos solapamientos es 50. En consecuencia, el número de clientes que solo eligieron pizza es unívocamente $|P| - 50 = 100 - 50 = 50$ (opción C).",
+      "explicacion": "Cada uno de los 110 clientes realizó un pedido (la unión de pizza, bebida caliente y bebida fría es 110). Como las bebidas caliente ($C$) y fría ($F$) son mutuamente excluyentes ($C \\cap F = \\emptyset$), la suma simple de pedidos es $|P| + |C| + |F| = 100 + 20 + 40 = 160$. El exceso sobre el total de clientes ($160 - 110 = 50$) corresponde exactamente al número de clientes que combinaron pizza con alguna bebida: $|P \\cap (C \\cup F)| = 50$. Aunque no es posible determinar cuántos eligieron específicamente bebida caliente o fría, la suma de ambos solapamientos es 50. En consecuencia, el número de clientes que solo eligieron pizza es unívocamente $|P| - 50 = 100 - 50 = 50$ (opción C). Esto supone que cada cliente pidió al menos un producto, como indica el registro de pedidos de los 110 clientes. Las otras opciones dependen de cuántos clientes combinaron pizza con bebida caliente o fría, dato que la tabla no separa: por eso no se pueden calcular.",
       "figuras": [
         {
           "alt": "Cantidad de clientes que eligieron cada producto o bebida.",
@@ -7495,9 +7495,7 @@
       ],
       "origen": "icfes",
       "parte": "Pregunta 38",
-      "revisar": [
-        "La clave C se puede justificar si los 110 clientes pertenecen a pizza o a alguna bebida registrada; el enunciado no explicita que esas categorías cubran a todos."
-      ]
+      "revisar": null
     },
     {
       "afirmacion": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",

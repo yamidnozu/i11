@@ -9,7 +9,7 @@ import sys
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from icfes_io import procesar, RAIZ
 
-LLAVE = re.compile(r"(?<!\{)\{(\w+)\}(?!\})")
+LLAVE = re.compile(r"(?<![\\\w{])\{(\w+)\}(?!\})")
 COLA = re.compile(r"\s*Pero revisa el dato que exige el enunciado\.?")
 
 

@@ -6,15 +6,15 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero un IMC de aproximadamente 33,3 no está por debajo de 18,5; no corresponde a bajo peso."
+          "p": "Pero el 1 % de hombres con bajo peso corresponde a un IMC menor de 18,5; con 33,3 la persona está muy por encima de ese rango."
         },
         {
           "t": "Opción B",
-          "p": "Pero un IMC de aproximadamente 33,3 no está entre 25,0 y 29,9; no corresponde a sobrepeso."
+          "p": "Pero el 50 % de hombres está en sobrepeso (25,0 a 29,9), pero un IMC de 33,3 ya superó ese intervalo."
         },
         {
           "t": "Opción C",
-          "p": "Pero un IMC de aproximadamente 33,3 es menor que 40,0; no corresponde a obesidad alta."
+          "p": "Pero el 1 % con obesidad alta exige un IMC de 40 o más; 33,3 todavía no alcanza ese valor."
         }
       ],
       "pistas": [
@@ -62,17 +62,17 @@
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A usa bajo peso, pero el IMC supera $18,5$."
+          "t": "La opción A es incorrecta: El 1 % de hombres con bajo peso corresponde a un IMC menor de 18,5; con 33,3 la persona está muy por encima de ese rango."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B usa sobrepeso, pero el IMC supera $29,9$."
+          "t": "La opción B es incorrecta: El 50 % de hombres está en sobrepeso (25,0 a 29,9), pero un IMC de 33,3 ya superó ese intervalo."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C usa obesidad alta, pero el IMC es menor que $40,0$."
+          "t": "La opción C es incorrecta: El 1 % con obesidad alta exige un IMC de 40 o más; 33,3 todavía no alcanza ese valor."
         },
         {
           "a": "o:D:ok",

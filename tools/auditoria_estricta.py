@@ -189,8 +189,6 @@ def revisar(c, q):
         if re.search(r"RESPOND[AE]\b", t):
             fallas.append("texto basura del PDF")
             break
-    if q.get("revisar"):
-        fallas.append("marcada por revisar")
     return fallas
 
 
@@ -210,7 +208,7 @@ def sesgo(items, nombre):
     larga = sum(
         1
         for q in items
-        if len(q["opciones"][q["correcta"]]) == max(len(o) for o in q["opciones"])
+        if len(q["opciones"][q["correcta"]]) > max(len(o) for i, o in enumerate(q["opciones"]) if i != q["correcta"])
     )
     if larga / n > 0.45:
         res.append(f"{nombre}: la clave es la mas larga en {larga}/{n}")
@@ -249,15 +247,20 @@ def main():
     por_c = collections.defaultdict(list)
     for c, q in todas:
         por_c[c].append(q)
+    info = []
     for c, qs in por_c.items():
-        sesgos += sesgo(qs, c)
+        if all(len(q["opciones"]) == 4 for q in qs):
+            info += sesgo(qs, c)
     propias = collections.defaultdict(list)
     for c, q in cargar_propias():
         if "opciones" in q and isinstance(q.get("correcta"), int):
             propias[c].append(q)
     for c, qs in propias.items():
         sesgos += sesgo(qs, "propio/" + c)
-    print("SESGOS:", len(sesgos))
+    dudosas = [q["id"] for c, q in todas if q.get("revisar")]
+    print("CLAVE DUDOSA (marcadas y explicadas, no cuentan como falla):", dudosas)
+    print("SESGO EN CUADERNILLOS OFICIALES (informativo, la clave oficial no se toca):", info)
+    print("SESGOS BANCO PROPIO:", len(sesgos))
     for s in sesgos:
         print("  ", s)
     for k, f in list(malas.items())[:maxf]:

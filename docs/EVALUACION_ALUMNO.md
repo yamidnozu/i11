@@ -210,3 +210,6 @@ Evaluación exhaustiva del contenido pedagógico y la experiencia de resolución
    - **Enlace a laboratorio interactivo:** En preguntas vinculadas (gases, circuitos Ohm, probabilidad, etc.), botón directo para experimentar en el simulador.
 2. **Simulacros con Variedad Real:** Con 212 preguntas originales en el banco público distribuidas en 40 por área, los simulacros ya no repiten siempre las mismas preguntas ni generan frustración por falta de contenido.
 
+
+## Avance de calidad ICFES (24 oct 2026, sesion 4)
+Revisor estricto (`tools/auditoria_estricta.py`): de 441/617 a 617/617 preguntas limpias. Sin "Pendiente", sin razones con plantilla, sin letras que contradigan la clave. Quedan 4 preguntas con clave dudosa marcada (cfi-i105, ena/eng/ing-i018). Detalle en ANTIGRAVITY_REPORT.md seccion 10.
