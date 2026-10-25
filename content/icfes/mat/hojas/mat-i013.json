@@ -6,15 +6,15 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero no se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia."
+          "p": "Usa las toneladas vendidas para calcular ganancias de productores. Pero faltan sus costos de producción; las cantidades vendidas no determinan esa ganancia."
         },
         {
           "t": "Opción B",
-          "p": "Pero no se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago."
+          "p": "Toma el número de trabajadores como dato suficiente para hallar sus pagos. Pero se desconoce qué cantidad transportó cada uno y a qué ciudad."
         },
         {
           "t": "Opción C",
-          "p": "Pero sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores."
+          "p": "Pretende sumar todos los costos a partir del volumen vendido. Pero sin conocer el reparto de envíos entre ciudades no se determinan transporte y pagos al personal."
         }
       ],
       "pistas": [
@@ -68,17 +68,17 @@
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia."
+          "t": "Usa las toneladas vendidas para calcular ganancias de productores. Pero faltan sus costos de producción; las cantidades vendidas no determinan esa ganancia."
         },
         {
           "a": "o:B:no",
           "k": "err",
-          "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos."
+          "t": "Toma el número de trabajadores como dato suficiente para hallar sus pagos. Pero se desconoce qué cantidad transportó cada uno y a qué ciudad."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C depende de destinos y costos de viaje que no se especifican."
+          "t": "Pretende sumar todos los costos a partir del volumen vendido. Pero sin conocer el reparto de envíos entre ciudades no se determinan transporte y pagos al personal."
         },
         {
           "a": "o:D:ok",

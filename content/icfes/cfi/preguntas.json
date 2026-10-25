@@ -1784,15 +1784,15 @@
       "area": "matematicas",
       "correcta": 1,
       "distractores": [
-        "Intercambia las coordenadas de los puntos correctos: pone la altura donde va la abscisa y rompe la simetría del trapecio respecto al eje Y.",
+        "A propone $(8,2)$ y $(2,4)$. Pero el reflejo de $(-4,2)$ debe ser $(4,2)$, no $(8,2)$, y el de $(-2,8)$ debe conservar la altura ocho, no cambiarla a cuatro.",
         "",
-        "Intercambia x e y de los vértices dados y cambia el signo de x; confunde los ejes en lugar de reflejar solo la abscisa.",
-        "Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$."
+        "C da $(-2,-4)$ y $(-8,-2)$ al transformar $(x,y)$ en $(-y,x)$, una rotación de noventa grados en sentido antihorario. Pero reflejar sobre el eje vertical solo cambia el signo de la abscisa y conserva las alturas positivas.",
+        "D mantiene las abscisas negativas y cambia las alturas a $-2$ y $-8$, como en una reflexión sobre el eje horizontal. Pero la simetría pedida es respecto al eje vertical: deben cambiar los signos de las abscisas."
       ],
       "enunciado": "Un trapecio isósceles es un cuadrilátero que tiene un solo par de lados paralelos y los otros dos, de igual medida. En un plano cartesiano se dibuja un trapecio isósceles de modo que el eje Y divide al trapecio en dos figuras iguales. Si las coordenadas de dos de los vértices del trapecio son $(-4,2)$ y $(-2,8)$, ¿cuáles son las coordenadas de los otros dos vértices?",
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
-      "explicacion": "Reflejar una figura respecto al eje $Y$ cambia el signo de la coordenada $x$ y conserva la coordenada $y$. Por tanto, los puntos reflejados son $(4,2)$ y $(2,8)$, que aparecen en la opción B.",
+      "explicacion": "La simetría respecto al eje $Y$ aplica $(x,y)\\to(-x,y)$: $(-4,2)$ se refleja en $(4,2)$ y $(-2,8)$ en $(2,8)$. La opción B contiene exactamente esos dos puntos, escritos en el orden inverso; las alturas se conservan y los puntos quedan a igual distancia del eje vertical.",
       "fuente": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2014). 15 Cuadernillo Saber11 2014. Bogotá, D. C.: Icfes. Matemáticas, página impresa 6.",
       "hoja": {
         "enfoque": {
@@ -1800,15 +1800,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero intercambia las coordenadas de los puntos correctos: pone la altura donde va la abscisa y rompe la simetría del trapecio respecto al eje Y."
+              "p": "A propone $(8,2)$ y $(2,4)$. Pero el reflejo de $(-4,2)$ debe ser $(4,2)$, no $(8,2)$, y el de $(-2,8)$ debe conservar la altura ocho, no cambiarla a cuatro."
             },
             {
               "t": "Opción C",
-              "p": "Pero intercambia x e y de los vértices dados y cambia el signo de x; confunde los ejes en lugar de reflejar solo la abscisa."
+              "p": "C da $(-2,-4)$ y $(-8,-2)$ al transformar $(x,y)$ en $(-y,x)$, una rotación de noventa grados en sentido antihorario. Pero reflejar sobre el eje vertical solo cambia el signo de la abscisa y conserva las alturas positivas."
             },
             {
               "t": "Opción D",
-              "p": "Pero cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$."
+              "p": "D mantiene las abscisas negativas y cambia las alturas a $-2$ y $-8$, como en una reflexión sobre el eje horizontal. Pero la simetría pedida es respecto al eje vertical: deben cambiar los signos de las abscisas."
             }
           ],
           "pistas": [
@@ -1844,29 +1844,29 @@
           ],
           "2": [
             {
-              "t": "Refleja $(-4,2)$ y conserva su altura: resulta $(4,2)$."
+              "t": "El reflejo conserva la altura y cambia el signo de la primera coordenada."
             },
             {
-              "t": "Refleja $(-2,8)$: resulta $(2,8)$."
+              "t": "Resultan los puntos cuatro coma dos y dos coma ocho."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A es incorrecta: Intercambia las coordenadas de los puntos correctos: pone la altura donde va la abscisa y rompe la simetría del trapecio respecto al eje Y."
+              "t": "A propone $(8,2)$ y $(2,4)$. Pero el reflejo de $(-4,2)$ debe ser $(4,2)$, no $(8,2)$, y el de $(-2,8)$ debe conservar la altura ocho, no cambiarla a cuatro."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C es incorrecta: Intercambia x e y de los vértices dados y cambia el signo de x; confunde los ejes en lugar de reflejar solo la abscisa."
+              "t": "C da $(-2,-4)$ y $(-8,-2)$ al transformar $(x,y)$ en $(-y,x)$, una rotación de noventa grados en sentido antihorario. Pero reflejar sobre el eje vertical solo cambia el signo de la abscisa y conserva las alturas positivas."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D es incorrecta: Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$."
+              "t": "D mantiene las abscisas negativas y cambia las alturas a $-2$ y $-8$, como en una reflexión sobre el eje horizontal. Pero la simetría pedida es respecto al eje vertical: deben cambiar los signos de las abscisas."
             },
             {
               "a": "o:B:ok",
-              "t": "A altera coordenadas; C cambia ambos signos; D refleja sobre el eje $X$. La respuesta es B."
+              "t": "B enumera los dos reflejos en orden inverso. La respuesta es B."
             }
           ],
           "3": [
@@ -1887,7 +1887,7 @@
             {
               "a": "o:A:no|o:C:no|o:D:no",
               "k": "err",
-              "t": "A, C y D usan transformaciones distintas o alteran las coordenadas."
+              "t": "A altera la abscisa del primer reflejo y la altura del segundo; C aplica una rotación de noventa grados; D refleja sobre el eje horizontal."
             },
             {
               "a": "o:B:ok",
@@ -7762,10 +7762,10 @@
       "bloque": "cfi-seguridad-vial-oms-2014",
       "correcta": 2,
       "distractores": [
-        "El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país.",
-        "Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad.",
+        "Relaciona la mortalidad regional con el uso de automotores. Pero una tasa de muertes no informa cuántos vehículos utiliza cada país.",
+        "Confunde una tasa de mortalidad con un total de fallecidos. Pero comparar muertes por habitante no demuestra que dos regiones tengan el mismo número absoluto de muertes.",
         "",
-        "El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
+        "Propone decidir obras viales a partir de las muertes. Pero el gráfico no muestra el estado de las vías ni identifica las causas de los accidentes."
       ],
       "enunciado": "A partir de la información sobre la cantidad relativa de muertes por accidentes de tránsito en función de la región, se puede inferir",
       "estadoHoja": "revisada",
@@ -7778,15 +7778,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero el gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país."
+              "p": "Relaciona la mortalidad regional con el uso de automotores. Pero una tasa de muertes no informa cuántos vehículos utiliza cada país."
             },
             {
               "t": "Opción B",
-              "p": "Pero una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
+              "p": "Confunde una tasa de mortalidad con un total de fallecidos. Pero comparar muertes por habitante no demuestra que dos regiones tengan el mismo número absoluto de muertes."
             },
             {
               "t": "Opción D",
-              "p": "Pero el gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
+              "p": "Propone decidir obras viales a partir de las muertes. Pero el gráfico no muestra el estado de las vías ni identifica las causas de los accidentes."
             }
           ],
           "pistas": [
@@ -7826,17 +7826,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "Pero, El gráfico informa tasas de mortalidad, no la cantidad de vehículos usados en cada país."
+              "t": "Relaciona la mortalidad regional con el uso de automotores. Pero una tasa de muertes no informa cuántos vehículos utiliza cada país."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "Pero, Una tasa igual no implica el mismo número absoluto de muertes, y el gráfico no establece esa igualdad."
+              "t": "Confunde una tasa de mortalidad con un total de fallecidos. Pero comparar muertes por habitante no demuestra que dos regiones tengan el mismo número absoluto de muertes."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "Pero, El gráfico no identifica las condiciones viales ni permite decidir qué obras requiere cada región."
+              "t": "Propone decidir obras viales a partir de las muertes. Pero el gráfico no muestra el estado de las vías ni identifica las causas de los accidentes."
             },
             {
               "a": "o:C:ok",
@@ -7895,10 +7895,10 @@
       "id": "cfi-i045",
       "nivel": 2,
       "opciones": [
-        "qué países usan menos vehículos automotores.",
-        "que Asia y el Pacífico tienen el mismo número de muertes.",
+        "qué países de cada región utilizan una menor cantidad de vehículos automotores.",
+        "que Asia y el Pacífico registran el mismo número total de muertes por tránsito.",
         "el riesgo de morir en un accidente de tránsito según la región geográfica.",
-        "qué regiones requieren mejorar sus vías."
+        "qué regiones necesitan mejorar sus vías para reducir los accidentes de tránsito."
       ],
       "origen": "icfes",
       "parte": "Prueba Lectura Crítica, pregunta 45",
@@ -17048,175 +17048,172 @@
       "bloque": "cfi-vehicle-bank",
       "correcta": 4,
       "distractores": [
-        "A {{bike}} va por carretera pero se mueve a pedal; la definición pide un vehículo con motor para una o dos personas como la {{motorbike}}.",
-        "A {{boat}} navega sobre el agua, no por carretera (by road).",
-        "A {{bus}} transporta a decenas de pasajeros, no solo a una o dos personas.",
-        "A {{helicopter}} vuela por el aire, no se desplaza por carretera.",
+        "{{Bike}} puede significar bicicleta y también usarse para motocicleta; una bicicleta permite viajar por carretera y puede llevar uno o dos ocupantes. Pero la clave oficial elige {{motorbike}}: el enunciado no menciona motor y, por sí solo, no permite excluir A con certeza.",
+        "{{Boat}} significa barco o bote y permite viajar por agua. Pero {{by road}} exige desplazamiento por carretera, no navegación.",
+        "{{Bus}} es un autobús destinado al transporte colectivo por carretera. Pero {{only one or two people}} describe un transporte para uno o dos ocupantes, no la cantidad ocasional de pasajeros de un autobús.",
+        "{{Helicopter}} es un helicóptero; puede transportar pocas personas. Pero se desplaza por el aire y no cumple {{by road}}.",
         "",
-        "A {{plane}} es un medio de transporte aéreo para muchos viajeros; no va por carretera ni es para una o dos personas.",
-        "A {{truck}} sí va por carretera, pero es un vehículo pesado pensado para carga y no para uno o dos pasajeros de forma típica.",
-        "A {{train}} circula por vías férreas y lleva muchos pasajeros, no va por carretera."
+        "{{Plane}} significa avión, incluso si es pequeño y lleva solo dos personas. Pero su medio de desplazamiento es el aire, no la carretera.",
+        "{{Truck}} designa un camión destinado a transportar carga, no principalmente a llevar una o dos personas. Pero su cabina sí puede tener dos plazas: se descarta por el uso que destaca la definición, no porque sea imposible viajar dos en él.",
+        "{{Train}} es un tren que circula sobre rieles. Pero {{by road}} se refiere a carretera y no a una vía férrea, independientemente de cuántas personas viajen."
       ],
       "enunciado": "This is for only one or two people to go by road.",
       "estadoHoja": "revisada",
       "evidencia": "Comprende información explícita e infiere sentidos en textos breves en inglés.",
-      "explicacion": "La definición «This is for only one or two people to go by road» describe una motocicleta (motorbike), vehículo motorizado de dos ruedas con capacidad para conductor y pasajero (asiento trasero).",
+      "explicacion": "La clave oficial es E, motorbike (motocicleta): es un vehículo para viajar por carretera que suele admitir conductor y pasajero, de modo que cumple las dos pistas del enunciado. Sin embargo, la frase no dice que tenga motor ni dos ruedas: bike también puede ajustarse, y la cabina de un truck puede llevar dos personas. Se conserva E como respuesta oficial y se mantiene la marca de revisión; el texto disponible no demuestra una respuesta única.",
       "fuente": "Instituto Colombiano para la Evaluación de la Educación (Icfes). (2014). 15 Cuadernillo Saber11 2014. Bogotá, D. C.: Icfes. Inglés, partes 2 y 3, página impresa 35.",
       "hoja": {
         "enfoque": {
-          "clave": "La motocicleta (motorbike) es el vehículo de dos ruedas con motor para una o dos personas que va por carretera.",
+          "clave": "La clave oficial E, motorbike, cumple carretera y uno o dos ocupantes; el enunciado no menciona motor y no excluye de manera inequívoca bike.",
           "no": [
             {
               "t": "Opción A",
-              "p": "A {{bike}} va por carretera pero se mueve a pedal; la definición pide un vehículo con motor para una o dos personas como la {{motorbike}}."
+              "p": "{{Bike}} puede significar bicicleta y también usarse para motocicleta; una bicicleta permite viajar por carretera y puede llevar uno o dos ocupantes. Pero la clave oficial elige {{motorbike}}: el enunciado no menciona motor y, por sí solo, no permite excluir A con certeza."
             },
             {
               "t": "Opción B",
-              "p": "A {{boat}} navega sobre el agua, no por carretera (by road)."
+              "p": "{{Boat}} significa barco o bote y permite viajar por agua. Pero {{by road}} exige desplazamiento por carretera, no navegación."
             },
             {
               "t": "Opción C",
-              "p": "A {{bus}} transporta a decenas de pasajeros, no solo a una o dos personas."
+              "p": "{{Bus}} es un autobús destinado al transporte colectivo por carretera. Pero {{only one or two people}} describe un transporte para uno o dos ocupantes, no la cantidad ocasional de pasajeros de un autobús."
             },
             {
               "t": "Opción D",
-              "p": "A {{helicopter}} vuela por el aire, no se desplaza por carretera."
+              "p": "{{Helicopter}} es un helicóptero; puede transportar pocas personas. Pero se desplaza por el aire y no cumple {{by road}}."
             },
             {
               "t": "Opción F",
-              "p": "A {{plane}} es un medio de transporte aéreo para muchos viajeros; no va por carretera ni es para una o dos personas."
+              "p": "{{Plane}} significa avión, incluso si es pequeño y lleva solo dos personas. Pero su medio de desplazamiento es el aire, no la carretera."
             },
             {
               "t": "Opción G",
-              "p": "A {{truck}} sí va por carretera, pero es un vehículo pesado pensado para carga y no para uno o dos pasajeros de forma típica."
+              "p": "{{Truck}} designa un camión destinado a transportar carga, no principalmente a llevar una o dos personas. Pero su cabina sí puede tener dos plazas: se descarta por el uso que destaca la definición, no porque sea imposible viajar dos en él."
             },
             {
               "t": "Opción H",
-              "p": "A {{train}} circula por vías férreas y lleva muchos pasajeros, no va por carretera."
+              "p": "{{Train}} es un tren que circula sobre rieles. Pero {{by road}} se refiere a carretera y no a una vía férrea, independientemente de cuántas personas viajen."
             }
           ],
           "pistas": [
-            "Notice the key requirements: a motorized transport for {{only one or two people}} traveling {{by road}}.",
-            "Select {{motorbike}} as the two-wheeled motor vehicle designed for a single rider and optional passenger."
+            "{{By road}} identifica el desplazamiento por carretera; excluye agua, aire y rieles.",
+            "{{Only one or two people}} destaca la capacidad reducida; no añade una exigencia de motor."
           ],
           "plan": [
             {
-              "t": "Leer el enunciado y reconocer qué pide."
+              "t": "Localiza las pistas de medio de desplazamiento y número de ocupantes."
             },
             {
-              "t": "Revisar datos, opciones y figuras en la página original."
+              "t": "Compara cada palabra con esas dos pistas, sin inventar requisitos."
             },
             {
-              "t": "Escribir una solución comprobable y justificar cada descarte."
+              "t": "Reconoce motorbike como clave oficial y conserva la advertencia sobre bike."
             }
           ],
-          "que": "Identificar el vehículo motorizado terrestre diseñado para una o dos personas: la motocicleta (motorbike).",
+          "que": "Relaciona una definición breve con medios de transporte y reconoce el límite de sus pistas.",
           "tema": "English: transport definitions"
         },
         "guion": {
           "1": [
             {
-              "t": "Leamos la definición para identificar el medio de transporte.",
-              "a": "leer"
+              "a": "leer",
+              "t": "Busca transporte por carretera para una o dos personas."
             },
             {
-              "t": "La frase «only one or two people to go by road» exige transporte terrestre reducido.",
-              "a": "m:This is"
+              "a": "p:0",
+              "t": "{{Motorbike}} cumple ambas pistas, pero la frase no dice que se requiera motor."
             },
             {
-              "t": "La opción E motorbike cumple con ser terrestre y para uno o dos ocupantes.",
-              "a": "p:0"
-            },
-            {
-              "t": "La respuesta correcta es la opción E: motorbike.",
-              "a": "o:E:ok"
+              "a": "o:E:ok",
+              "t": "La respuesta oficial es E. Se mantiene la advertencia porque {{bike}} también puede ajustarse."
             }
           ],
           "2": [
             {
               "a": "leer",
-              "t": "Leamos la definición y analicemos cada vehículo descartado."
+              "t": "Analicemos cada alternativa con sus propias características."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no corresponde: {{bike}} se mueve a pedal y no con motor."
+              "t": "{{Bike}} puede significar bicicleta y también usarse para motocicleta; una bicicleta permite viajar por carretera y puede llevar uno o dos ocupantes. Pero la clave oficial elige {{motorbike}}: el enunciado no menciona motor y, por sí solo, no permite excluir A con certeza."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no corresponde: {{boat}} navega sobre el agua y no por carretera."
+              "t": "{{Boat}} significa barco o bote y permite viajar por agua. Pero {{by road}} exige desplazamiento por carretera, no navegación."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C no corresponde: {{bus}} es de transporte masivo y no para una o dos personas."
+              "t": "{{Bus}} es un autobús destinado al transporte colectivo por carretera. Pero {{only one or two people}} describe un transporte para uno o dos ocupantes, no la cantidad ocasional de pasajeros de un autobús."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no corresponde: {{helicopter}} es transporte aéreo y no terrestre."
+              "t": "{{Helicopter}} es un helicóptero; puede transportar pocas personas. Pero se desplaza por el aire y no cumple {{by road}}."
             },
             {
               "a": "o:F:no",
               "k": "err",
-              "t": "La opción F no corresponde: {{plane}} vuela por el aire para cientos de pasajeros."
+              "t": "{{Plane}} significa avión, incluso si es pequeño y lleva solo dos personas. Pero su medio de desplazamiento es el aire, no la carretera."
             },
             {
               "a": "o:G:no",
               "k": "err",
-              "t": "La opción G no corresponde: {{truck}} es un vehículo pesado de carga comercial."
+              "t": "{{Truck}} designa un camión destinado a transportar carga, no principalmente a llevar una o dos personas. Pero su cabina sí puede tener dos plazas: se descarta por el uso que destaca la definición, no porque sea imposible viajar dos en él."
             },
             {
               "a": "o:H:no",
               "k": "err",
-              "t": "La opción H no corresponde: {{train}} circula por vías férreas y no por carretera."
+              "t": "{{Train}} es un tren que circula sobre rieles. Pero {{by road}} se refiere a carretera y no a una vía férrea, independientemente de cuántas personas viajen."
             },
             {
               "a": "o:E:ok",
-              "t": "Por descarte confirmamos que la opción E {{motorbike}} es la respuesta correcta."
+              "t": "{{Motorbike}} permite viajar por carretera con conductor y pasajero. La clave oficial es E, aunque el texto no garantiza unicidad."
             }
           ],
           "3": [
             {
-              "t": "Analizo los requisitos: transporte por carretera para una o dos personas.",
               "a": "p:0",
-              "k": "ana"
+              "k": "ana",
+              "t": "Agua, aire y rieles no satisfacen {{by road}}; un autobús es de transporte colectivo."
             },
             {
-              "t": "Motorbike es el vehículo motorizado de dos ruedas con capacidad para conductor y pasajero.",
-              "a": "p:1"
-            },
-            {
-              "t": "Compruebo que ningún otro vehículo de la lista cumpla ambas condiciones.",
               "a": "p:1",
-              "k": "contra"
+              "t": "La motocicleta cumple las pistas; una bicicleta y una cabina de camión muestran por qué la definición no es inequívoca."
             },
             {
-              "t": "La respuesta correcta es la opción E.",
-              "a": "o:E:ok"
+              "a": "o:E:ok",
+              "t": "Se conserva la respuesta oficial E y la marca de revisión, sin atribuir al enunciado una exigencia de motor."
             }
           ]
         },
         "marcas": [
           {
-            "campo": "Fragmento por revisar",
-            "frag": "This is",
-            "nota": "Fragmento automático; revisar su función.",
-            "rol": "pide"
+            "campo": "Capacidad",
+            "frag": "only one or two people",
+            "nota": "Uno o dos ocupantes.",
+            "rol": "dato"
+          },
+          {
+            "campo": "Medio de desplazamiento",
+            "frag": "by road",
+            "nota": "Viaje por carretera.",
+            "rol": "dato"
           }
         ],
         "modo": "lectura",
         "pasos": [
           {
             "k": "idea",
-            "texto": "Identificar los requisitos de la definición: transporte terrestre (by road) y capacidad reducida (only one or two people).",
-            "titulo": "Requisitos clave"
+            "titulo": "Lee las dos pistas",
+            "texto": "Se describe transporte por carretera para uno o dos ocupantes. No se menciona motor."
           },
           {
             "k": "check",
-            "texto": "Descartar vehículos de agua o aire y vehículos de transporte masivo o de carga pesada.",
-            "titulo": "Comprobación de opciones"
+            "titulo": "Clave oficial y límite",
+            "texto": "La clave oficial es E, motorbike (motocicleta): es un vehículo para viajar por carretera que suele admitir conductor y pasajero, de modo que cumple las dos pistas del enunciado. Sin embargo, la frase no dice que tenga motor ni dos ruedas: bike también puede ajustarse, y la cabina de un truck puede llevar dos personas. Se conserva E como respuesta oficial y se mantiene la marca de revisión; el texto disponible no demuestra una respuesta única."
           }
         ]
       },

@@ -570,32 +570,32 @@
       "competenciaId": "formulacion_ejecucion",
       "correcta": 2,
       "distractores": [
-        "Solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso.",
-        "No hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio.",
+        "A afirma que el rendimiento se conserva sin importar las variaciones del cambio. Pero esa generalización es falsa: si el dólar bajara, la ganancia en pesos podría ser menor o convertirse en pérdida; aquí solo se conserva porque la tasa es constante.",
+        "B exige el capital exacto para hallar cuánto dinero se gana. Pero se pregunta por un porcentaje, no por una cantidad: cualquier capital y su ganancia se convierten con el mismo factor, que se cancela al dividirlos.",
         "",
-        "El factor de dos mil vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo tres por ciento."
+        "D confunde una cantidad monetaria mayor con un porcentaje mayor. Pero los dos mil multiplican tanto la ganancia como la inversión inicial: su cociente sigue siendo tres por ciento, no un rendimiento dos mil veces mayor."
       ],
       "enunciado": "Una persona que vive en Colombia tiene inversiones en dólares en Estados Unidos, y sabe que la tasa de cambio del dólar respecto al peso colombiano se mantendrá constante este mes, siendo $1$ dólar equivalente a $2.000$ pesos colombianos y que su inversión, en dólares, le dará ganancias del $3\\%$ en el mismo periodo. Un amigo le asegura que en pesos sus ganancias también serán del $3\\%$. La afirmación de su amigo es",
       "estadoHoja": "revisada",
       "evidencia": "Resuelve un problema que involucra información cuantitativa o esquemática.",
       "evidenciaId": "2.3",
-      "explicacion": "Como la tasa de cambio permanece constante, convertir a pesos tanto el valor inicial como la ganancia conserva la misma proporción. Si el monto en dólares aumenta en tres por ciento, su equivalente en pesos también aumenta en tres por ciento. La respuesta es C.",
+      "explicacion": "La opción C es correcta porque la tasa permanece constante. Si se invierten $P$ dólares, la ganancia es $0,03P$ dólares. En pesos, el capital es $2.000P$ y la ganancia es $2.000(0,03P)$; al dividir ganancia entre capital, el factor $2.000$ se cancela y queda $0,03=3\\%$. Se conserva el porcentaje, aunque cambie la cantidad expresada en cada moneda.",
       "fuente": "Icfes (2018). 11 Matematicas Saber11 2018, Cuadernillo de preguntas. Saber 11.º. Bogotá D. C.: Instituto Colombiano para la Evaluación de la Educación (Icfes). Pregunta 2.",
       "hoja": {
         "enfoque": {
-          "clave": "Una conversión con tasa fija multiplica por la misma constante el capital y su ganancia.",
+          "clave": "Con cambio constante, capital y ganancia se multiplican por dos mil; el cociente ganancia sobre capital sigue siendo tres por ciento.",
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero solo se cumple porque esta vez la tasa es fija: si cambiara durante el mes, el porcentaje en pesos sería distinto. La opción generaliza a cualquier variación y eso es falso."
+              "p": "A afirma que el rendimiento se conserva sin importar las variaciones del cambio. Pero esa generalización es falsa: si el dólar bajara, la ganancia en pesos podría ser menor o convertirse en pérdida; aquí solo se conserva porque la tasa es constante."
             },
             {
               "t": "Opción B",
-              "p": "Pero no hace falta el monto: el porcentaje se conserva sin importar cuánto dinero se invierta, porque capital y ganancia se multiplican por la misma tasa de cambio."
+              "p": "B exige el capital exacto para hallar cuánto dinero se gana. Pero se pregunta por un porcentaje, no por una cantidad: cualquier capital y su ganancia se convierten con el mismo factor, que se cancela al dividirlos."
             },
             {
               "t": "Opción D",
-              "p": "El factor de dos mil vuelve más grandes las cantidades en pesos, pero el aumento es la razón ganancia/inversión y ese factor se cancela: el porcentaje sigue siendo tres por ciento."
+              "p": "D confunde una cantidad monetaria mayor con un porcentaje mayor. Pero los dos mil multiplican tanto la ganancia como la inversión inicial: su cociente sigue siendo tres por ciento, no un rendimiento dos mil veces mayor."
             }
           ],
           "pistas": [
@@ -619,66 +619,61 @@
         "guion": {
           "1": [
             {
-              "t": "Si cada dólar siempre vale dos mil pesos, ¿la conversión cambia el porcentaje de aumento?"
+              "t": "Compara la ganancia con el capital inicial, ambos en la misma moneda."
             },
             {
-              "t": "No; multiplica tanto el capital como la ganancia por el mismo factor."
+              "t": "La tasa fija multiplica los dos valores por dos mil, por lo que su cociente no cambia."
             },
             {
               "a": "o:C:ok",
-              "t": "La ganancia en pesos conserva el tres por ciento. La respuesta es C."
+              "t": "C usa la condición de tasa constante y conserva el tres por ciento. La respuesta es C."
             }
           ],
           "2": [
             {
-              "t": "Llama $P$ al capital inicial en dólares y multiplícalo por uno coma cero tres para incluir la ganancia."
+              "t": "Con mil dólares se ganan treinta dólares. En pesos son dos millones de capital y sesenta mil de ganancia."
             },
             {
-              "t": "Al convertir ambos valores a pesos, se multiplican por dos mil y su proporción de aumento sigue igual."
+              "t": "Sesenta mil dividido entre dos millones es tres por ciento; el monto absoluto cambia, el rendimiento no."
             },
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A no corresponde: solo se cumple porque esta vez la tasa es fija; si cambiara durante el mes, el porcentaje en pesos variaría."
+              "t": "A afirma que el rendimiento se conserva sin importar las variaciones del cambio. Pero esa generalización es falsa: si el dólar bajara, la ganancia en pesos podría ser menor o convertirse en pérdida; aquí solo se conserva porque la tasa es constante."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B no corresponde: el porcentaje se conserva sin importar el capital exacto invertido."
+              "t": "B exige el capital exacto para hallar cuánto dinero se gana. Pero se pregunta por un porcentaje, no por una cantidad: cualquier capital y su ganancia se convierten con el mismo factor, que se cancela al dividirlos."
             },
             {
               "a": "o:D:no",
               "k": "err",
-              "t": "La opción D no corresponde: el factor de dos mil afecta por igual al capital y a la ganancia, por lo que el aumento porcentual sigue siendo tres por ciento."
+              "t": "D confunde una cantidad monetaria mayor con un porcentaje mayor. Pero los dos mil multiplican tanto la ganancia como la inversión inicial: su cociente sigue siendo tres por ciento, no un rendimiento dos mil veces mayor."
             },
             {
               "a": "o:C:ok",
-              "t": "A ignora la condición de tasa fija; B pide un monto innecesario; D confunde valor absoluto con porcentaje. La respuesta es C."
+              "t": "La conversión mantiene la proporción porque usa la misma tasa al principio y al final. La respuesta es C."
             }
           ],
           "3": [
             {
               "a": "p:0",
               "k": "ana",
-              "t": "Con una tasa constante, convertir dólares a pesos equivale a multiplicar por una constante."
+              "t": "Distingue rendimiento porcentual de ganancia en dinero."
             },
             {
               "a": "p:1",
-              "t": "Esa constante afecta al capital y al monto con ganancia por igual, así que el cociente entre ambos sigue reflejando un aumento de tres por ciento."
-            },
-            {
-              "a": "p:2",
-              "k": "contra",
-              "t": "La afirmación del amigo es correcta bajo la condición indicada."
+              "t": "Al convertir ganancia y capital con una tasa fija, el factor común desaparece del cociente."
             },
             {
               "a": "o:A:no|o:B:no|o:D:no",
               "k": "err",
-              "t": "A, B y D no consideran que el factor de cambio permanece fijo."
+              "t": "A extiende la conclusión a tasas variables; B pide un capital innecesario para hallar el porcentaje; D confunde pesos con rendimiento."
             },
             {
-              "a": "o:C:ok",
-              "t": "La respuesta correcta es C."
+              "a": "p:2|o:C:ok",
+              "t": "C justifica el tres por ciento con la tasa constante indicada. La respuesta correcta es C."
             }
           ]
         },
@@ -2640,9 +2635,9 @@
       "competenciaId": "interpretacion_representacion",
       "correcta": 3,
       "distractores": [
-        "No se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia.",
-        "No se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago.",
-        "Sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores.",
+        "Usa las toneladas vendidas para calcular ganancias de productores. Pero faltan sus costos de producción; las cantidades vendidas no determinan esa ganancia.",
+        "Toma el número de trabajadores como dato suficiente para hallar sus pagos. Pero se desconoce qué cantidad transportó cada uno y a qué ciudad.",
+        "Pretende sumar todos los costos a partir del volumen vendido. Pero sin conocer el reparto de envíos entre ciudades no se determinan transporte y pagos al personal.",
         ""
       ],
       "enunciado": "Durante enero, el comerciante vendió 100 toneladas de mango y 50 de banano, y contrató 10 trabajadores. Con esta información es posible conocer",
@@ -2657,15 +2652,15 @@
           "no": [
             {
               "t": "Opción A",
-              "p": "Pero no se conoce en qué ciudades se vendió cada producto, así que no se puede determinar la ganancia."
+              "p": "Usa las toneladas vendidas para calcular ganancias de productores. Pero faltan sus costos de producción; las cantidades vendidas no determinan esa ganancia."
             },
             {
               "t": "Opción B",
-              "p": "Pero no se especifica cuántas toneladas correspondieron a cada ciudad y cada trabajador; falta información para hallar su pago."
+              "p": "Toma el número de trabajadores como dato suficiente para hallar sus pagos. Pero se desconoce qué cantidad transportó cada uno y a qué ciudad."
             },
             {
               "t": "Opción C",
-              "p": "Pero sin la distribución por ciudad no se pueden calcular los costos totales de transporte y trabajadores."
+              "p": "Pretende sumar todos los costos a partir del volumen vendido. Pero sin conocer el reparto de envíos entre ciudades no se determinan transporte y pagos al personal."
             }
           ],
           "pistas": [
@@ -2719,17 +2714,17 @@
             {
               "a": "o:A:no",
               "k": "err",
-              "t": "La opción A requiere conocer las ciudades de venta para hallar la ganancia."
+              "t": "Usa las toneladas vendidas para calcular ganancias de productores. Pero faltan sus costos de producción; las cantidades vendidas no determinan esa ganancia."
             },
             {
               "a": "o:B:no",
               "k": "err",
-              "t": "La opción B requiere conocer cómo se asignaron los trabajadores y los pagos."
+              "t": "Toma el número de trabajadores como dato suficiente para hallar sus pagos. Pero se desconoce qué cantidad transportó cada uno y a qué ciudad."
             },
             {
               "a": "o:C:no",
               "k": "err",
-              "t": "La opción C depende de destinos y costos de viaje que no se especifican."
+              "t": "Pretende sumar todos los costos a partir del volumen vendido. Pero sin conocer el reparto de envíos entre ciudades no se determinan transporte y pagos al personal."
             },
             {
               "a": "o:D:ok",
@@ -2802,9 +2797,9 @@
       "id": "mth-i013",
       "nivel": 2,
       "opciones": [
-        "la ganancia de los productores.",
-        "el pago que recibirá cada trabajador en enero.",
-        "los costos totales del comerciante.",
+        "la ganancia total obtenida por los productores de mango y banano.",
+        "el pago total que recibirá cada trabajador al terminar enero.",
+        "los costos totales de transporte y personal del comerciante.",
         "el número mínimo de viajes que se realizaron desde el pueblo."
       ],
       "origen": "icfes",

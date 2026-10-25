@@ -3978,17 +3978,17 @@
     "enunciado": "Un cubo macizo de plástico flota en un vaso con agua dulce con el 80 % de su volumen sumergido. Si ese mismo cubo se coloca en un recipiente con agua de mar (la cual tiene mayor densidad que el agua dulce), ¿qué ocurrirá con el porcentaje de volumen sumergido?",
     "opciones": [
       "Disminuirá, porque al ser más denso el líquido, se requiere desalojar menor volumen para igualar el peso del cubo.",
-      "Aumentará, porque el agua de mar ejerce una fuerza de empuje menor.",
-      "Se mantendrá exactamente en 80 %, porque la densidad del cubo no ha cambiado.",
-      "El cubo se hundirá completamente hasta el fondo debido a la sal presente en el agua."
+      "Aumentará, porque un líquido más denso ejerce menos empuje y obliga al cubo a sumergir una fracción mayor para flotar.",
+      "Se mantendrá en ochenta por ciento, porque la densidad del cubo determina por sí sola qué fracción queda sumergida.",
+      "Se hundirá por completo, porque la mayor densidad del agua de mar aumenta el peso del cubo sin modificar su volumen."
     ],
     "correcta": 0,
     "explicacion": "Para que un cuerpo flote en equilibrio, la fuerza de empuje debe igualar el peso del objeto: $E = P \\implies \\rho_{\\text{líquido}} g V_{\\text{sumergido}} = m g$. Si la densidad del líquido $\\rho_{\\text{líquido}}$ aumenta (como ocurre en el agua de mar respecto al agua dulce), el volumen sumergido $V_{\\text{sumergido}}$ debe disminuir para mantener el mismo empuje que equilibra el peso del cubo.",
     "distractores": [
       "",
-      "Afirma que el empuje disminuye en agua salada, lo cual es opuesto a la física de la densidad de fluidos.",
-      "Asume erróneamente que la flotabilidad solo depende de la densidad del objeto y no de la del líquido.",
-      "Supone que la sal hace que los cuerpos se hundan, cuando en realidad incrementa la flotabilidad al aumentar la densidad del medio."
+      "Asocia mayor densidad con menor empuje para un mismo volumen. Pero al aumentar la densidad del agua basta desplazar menos volumen para equilibrar el peso.",
+      "Conserva la fracción sumergida porque el cubo no cambia. Pero esa fracción depende también de la densidad del líquido, que ahora es mayor.",
+      "Supone que cambiar de líquido aumenta el peso del plástico. Pero la masa del cubo permanece igual y el agua más densa favorece la flotación."
     ],
     "origen": "original",
     "competencia": "Explicación de fenómenos",
@@ -4019,17 +4019,17 @@
             [
               "B",
               "Incorrecta",
-              "Afirma que el empuje disminuye en agua salada, lo cual es opuesto a la física de..."
+              "Asocia mayor densidad con menor empuje para un mismo volumen. Pero al aumentar la densidad del agua basta desplazar menos volumen para equilibrar el peso."
             ],
             [
               "C",
               "Incorrecta",
-              "Asume erróneamente que la flotabilidad solo depende de la densidad del objeto y ..."
+              "Conserva la fracción sumergida porque el cubo no cambia. Pero esa fracción depende también de la densidad del líquido, que ahora es mayor."
             ],
             [
               "D",
               "Incorrecta",
-              "Supone que la sal hace que los cuerpos se hundan, cuando en realidad incrementa ..."
+              "Supone que cambiar de líquido aumenta el peso del plástico. Pero la masa del cubo permanece igual y el agua más densa favorece la flotación."
             ]
           ]
         },
@@ -4048,12 +4048,16 @@
         "clave": "Para que un cuerpo flote en equilibrio, la fuerza de empuje debe igualar el peso del objeto: la relación correspondiente .",
         "no": [
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el empuje disminuye en agua salada, lo cual es opuesto a la física de la densidad de fluidos.."
+            "t": "Opción B",
+            "p": "Asocia mayor densidad con menor empuje para un mismo volumen. Pero al aumentar la densidad del agua basta desplazar menos volumen para equilibrar el peso."
           },
           {
-            "t": "Elegir la opción C",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque erróneamente que la flotabilidad solo depende de la densidad del objeto y no de la del líquido.."
+            "t": "Opción C",
+            "p": "Conserva la fracción sumergida porque el cubo no cambia. Pero esa fracción depende también de la densidad del líquido, que ahora es mayor."
+          },
+          {
+            "t": "Opción D",
+            "p": "Supone que cambiar de líquido aumenta el peso del plástico. Pero la masa del cubo permanece igual y el agua más densa favorece la flotación."
           }
         ],
         "plan": [
@@ -4093,17 +4097,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción B no es adecuada porque Afirma que el empuje disminuye en agua salada, lo cual es opuesto a la física de la densidad....",
+            "t": "Asocia mayor densidad con menor empuje para un mismo volumen. Pero al aumentar la densidad del agua basta desplazar menos volumen para equilibrar el peso.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Asume erróneamente que la flotabilidad solo depende de la densidad del objeto y no de la del....",
+            "t": "Conserva la fracción sumergida porque el cubo no cambia. Pero esa fracción depende también de la densidad del líquido, que ahora es mayor.",
             "a": "o:C:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Supone que la sal hace que los cuerpos se hundan, cuando en realidad incrementa la....",
+            "t": "Supone que cambiar de líquido aumenta el peso del plástico. Pero la masa del cubo permanece igual y el agua más densa favorece la flotación.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -5249,18 +5253,18 @@
     "nivel": 2,
     "enunciado": "El cloruro de sodio (sal de mesa, NaCl) es un sólido blanco con alto punto de fusión (801 °C) que se disuelve en agua produciendo una solución conductora de electricidad. En contraste, el tetracloruro de carbono ($\\text{CCl}_4$) es un líquido volátil a temperatura ambiente que no conduce la corriente. ¿A qué se deben principalmente estas diferencias?",
     "opciones": [
-      "El NaCl posee enlaces metálicos mientras que el CCl₄ posee enlaces iónicos insolubles.",
+      "El NaCl forma una red de enlaces metálicos que libera electrones en agua, mientras el CCl₄ tiene enlaces iónicos que no se disocian.",
       "El NaCl posee enlaces iónicos con red cristalina fuerte, mientras que el CCl₄ posee enlaces covalentes con fuerzas intermoleculares débiles.",
-      "El NaCl está formado solo por no metales y el CCl₄ está formado por metales alcalinos.",
-      "El NaCl es una mezcla heterogénea y el CCl₄ es un elemento químico puro."
+      "El NaCl está formado por átomos no metálicos que comparten electrones, mientras el CCl₄ contiene metales alcalinos que ceden electrones.",
+      "El NaCl es una mezcla de sodio y cloro que se separa en agua, mientras el CCl₄ es un elemento puro cuyas partículas no se separan."
     ],
     "correcta": 1,
     "explicacion": "El sodio (metal) y el cloro (no metal) tienen una gran diferencia de electronegatividad, formando enlaces iónicos organizados en una red cristalina tridimensional que requiere mucha energía térmica para romperse y que libera iones libres en agua. El $\\text{CCl}_4$ está formado por moléculas unidas por enlaces covalentes con fuerzas intermoleculares débiles de dispersión de London, lo que le confiere bajo punto de ebullición y nula conductividad eléctrica.",
     "distractores": [
-      "Clasifica erróneamente al cloruro de sodio como compuesto de enlace metálico.",
+      "Interpreta la conducción en agua como liberación de electrones metálicos. Pero el NaCl libera iones y el CCl₄ es molecular covalente, no una red iónica.",
       "",
-      "Invierte la naturaleza química afirmando que el sodio es un no metal.",
-      "Confunde sustancias compuestas puras con mezclas heterogéneas o elementos simples."
+      "Invierte la clasificación de los elementos para explicar los enlaces. Pero el sodio es un metal y ni el carbono ni el cloro del CCl₄ son metales alcalinos.",
+      "Confunde una mezcla con un compuesto y una molécula con un elemento. Pero NaCl y CCl₄ son ambos compuestos puros, aunque sus estructuras y enlaces sean diferentes."
     ],
     "origen": "original",
     "competencia": "Explicación de fenómenos",
@@ -5286,7 +5290,7 @@
             [
               "A",
               "Incorrecta",
-              "Clasifica erróneamente al cloruro de sodio como compuesto de enlace metálico."
+              "Interpreta la conducción en agua como liberación de electrones metálicos. Pero el NaCl libera iones y el CCl₄ es molecular covalente, no una red iónica."
             ],
             [
               "B",
@@ -5296,12 +5300,12 @@
             [
               "C",
               "Incorrecta",
-              "Invierte la naturaleza química afirmando que el sodio es un no metal."
+              "Invierte la clasificación de los elementos para explicar los enlaces. Pero el sodio es un metal y ni el carbono ni el cloro del CCl₄ son metales alcalinos."
             ],
             [
               "D",
               "Incorrecta",
-              "Confunde sustancias compuestas puras con mezclas heterogéneas o elementos simple..."
+              "Confunde una mezcla con un compuesto y una molécula con un elemento. Pero NaCl y CCl₄ son ambos compuestos puros, aunque sus estructuras y enlaces sean diferentes."
             ]
           ]
         },
@@ -5320,12 +5324,16 @@
         "clave": "El sodio (metal) y el cloro (no metal) tienen una gran diferencia de electronegatividad, formando enlaces iónicos organizados en una red cristalina tridimensional que requiere mucha energía térmica para romperse y que libera iones libres en agua.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Clasifica erróneamente al cloruro de sodio como compuesto de enlace metálico.."
+            "t": "Opción A",
+            "p": "Interpreta la conducción en agua como liberación de electrones metálicos. Pero el NaCl libera iones y el CCl₄ es molecular covalente, no una red iónica."
           },
           {
-            "t": "Elegir la opción C",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Invierte la naturaleza química afirmando que el sodio es un no metal.."
+            "t": "Opción C",
+            "p": "Invierte la clasificación de los elementos para explicar los enlaces. Pero el sodio es un metal y ni el carbono ni el cloro del CCl₄ son metales alcalinos."
+          },
+          {
+            "t": "Opción D",
+            "p": "Confunde una mezcla con un compuesto y una molécula con un elemento. Pero NaCl y CCl₄ son ambos compuestos puros, aunque sus estructuras y enlaces sean diferentes."
           }
         ],
         "plan": [
@@ -5365,17 +5373,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Clasifica erróneamente al cloruro de sodio como compuesto de enlace metálico..",
+            "t": "Interpreta la conducción en agua como liberación de electrones metálicos. Pero el NaCl libera iones y el CCl₄ es molecular covalente, no una red iónica.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Invierte la naturaleza química afirmando que el sodio es un no metal..",
+            "t": "Invierte la clasificación de los elementos para explicar los enlaces. Pero el sodio es un metal y ni el carbono ni el cloro del CCl₄ son metales alcalinos.",
             "a": "o:C:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Confunde sustancias compuestas puras con mezclas heterogéneas o elementos simples..",
+            "t": "Confunde una mezcla con un compuesto y una molécula con un elemento. Pero NaCl y CCl₄ son ambos compuestos puros, aunque sus estructuras y enlaces sean diferentes.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -5726,18 +5734,18 @@
     "nivel": 2,
     "enunciado": "En un laboratorio se desea separar una mezcla homogénea de agua (punto de ebullición 100 °C) y etanol (alcohol etílico, punto de ebullición 78 °C). ¿Cuál es el método físico de separación más adecuado para recuperar ambos componentes en estado puro?",
     "opciones": [
-      "Filtración simple con papel de filtro.",
-      "Decantación mediante un embudo de separación.",
+      "Filtración con papel de poro fino para retener el etanol y dejar pasar el agua.",
+      "Decantación en embudo de separación aprovechando las densidades de los líquidos.",
       "Destilación fraccionada aprovechando la diferencia en los puntos de ebullición.",
-      "Centrifugación a alta velocidad."
+      "Centrifugación a alta velocidad para separar el agua del etanol por su densidad."
     ],
     "correcta": 2,
     "explicacion": "El agua y el etanol forman una mezcla homogénea (miscibles en todas las proporciones). La destilación fraccionada es el método ideal para separar líquidos miscibles con puntos de ebullición diferentes: al calentar la mezcla, el componente más volátil (etanol a 78 °C) se evapora primero, sus vapores ascienden por la columna de fraccionamiento, se condensan en el refrigerante y se recolectan por separado del agua.",
     "distractores": [
-      "Propone filtración, la cual solo sirve para mezclas heterogéneas sólido-líquido y no retiene sustancias disueltas.",
-      "Propone decantación, que solo funciona con líquidos inmiscibles con densidades distintas (como agua y aceite).",
+      "Atribuye al filtro la separación de moléculas disueltas. Pero agua y etanol atraviesan juntos el papel porque forman una disolución homogénea.",
+      "Usa la diferencia de densidades como si hubiera dos capas. Pero agua y etanol son miscibles y no forman una interfaz que permita decantarlos.",
       "",
-      "Propone centrifugación, método mecánico útil para suspender partículas coloidales o células pero inútil en disoluciones moleculares."
+      "Aplica una separación mecánica propia de fases o partículas suspendidas. Pero la centrifugación convencional no separa los componentes moleculares de esta disolución."
     ],
     "origen": "original",
     "competencia": "Indagación",
@@ -5763,12 +5771,12 @@
             [
               "A",
               "Incorrecta",
-              "Propone filtración, la cual solo sirve para mezclas heterogéneas sólido-líquido ..."
+              "Atribuye al filtro la separación de moléculas disueltas. Pero agua y etanol atraviesan juntos el papel porque forman una disolución homogénea."
             ],
             [
               "B",
               "Incorrecta",
-              "Propone decantación, que solo funciona con líquidos inmiscibles con densidades d..."
+              "Usa la diferencia de densidades como si hubiera dos capas. Pero agua y etanol son miscibles y no forman una interfaz que permita decantarlos."
             ],
             [
               "C",
@@ -5778,7 +5786,7 @@
             [
               "D",
               "Incorrecta",
-              "Propone centrifugación, método mecánico útil para suspender partículas coloidale..."
+              "Aplica una separación mecánica propia de fases o partículas suspendidas. Pero la centrifugación convencional no separa los componentes moleculares de esta disolución."
             ]
           ]
         },
@@ -5797,12 +5805,16 @@
         "clave": "El agua y el etanol forman una mezcla homogénea (miscibles en todas las proporciones).",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque filtración, la cual solo sirve para mezclas heterogéneas sólido-líquido y no retiene sustancias disueltas.."
+            "t": "Opción A",
+            "p": "Atribuye al filtro la separación de moléculas disueltas. Pero agua y etanol atraviesan juntos el papel porque forman una disolución homogénea."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque decantación, que solo funciona con líquidos inmiscibles con densidades distintas (como agua y aceite).."
+            "t": "Opción B",
+            "p": "Usa la diferencia de densidades como si hubiera dos capas. Pero agua y etanol son miscibles y no forman una interfaz que permita decantarlos."
+          },
+          {
+            "t": "Opción D",
+            "p": "Aplica una separación mecánica propia de fases o partículas suspendidas. Pero la centrifugación convencional no separa los componentes moleculares de esta disolución."
           }
         ],
         "plan": [
@@ -5842,17 +5854,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Propone filtración, la cual solo sirve para mezclas heterogéneas sólido-líquido y no retiene....",
+            "t": "Atribuye al filtro la separación de moléculas disueltas. Pero agua y etanol atraviesan juntos el papel porque forman una disolución homogénea.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Propone decantación, que solo funciona con líquidos inmiscibles con densidades distintas (como....",
+            "t": "Usa la diferencia de densidades como si hubiera dos capas. Pero agua y etanol son miscibles y no forman una interfaz que permita decantarlos.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Propone centrifugación, método mecánico útil para suspender partículas coloidales o células....",
+            "t": "Aplica una separación mecánica propia de fases o partículas suspendidas. Pero la centrifugación convencional no separa los componentes moleculares de esta disolución.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -6044,18 +6056,18 @@
     "nivel": 2,
     "enunciado": "Al calentar un bloque de hielo a 0 °C a nivel del mar mientras se suministra calor constante, se observa que la temperatura se mantiene fija en 0 °C durante todo el tiempo en que el hielo se está transformando en agua líquida. ¿A qué se debe que la temperatura no aumente durante este proceso?",
     "opciones": [
-      "El calor específico del agua es infinito a 0 °C y no absorbe energía del exterior.",
-      "El termómetro se encuentra dañado y no detecta variaciones de temperatura por debajo de 100 °C.",
+      "El calor específico del agua se vuelve infinito a cero grados, por lo que el sistema puede absorber energía sin que ocurra ningún cambio molecular.",
+      "El termómetro deja de registrar los aumentos de energía cinética mientras hay hielo, aunque la temperatura del agua suba durante toda la fusión.",
       "La energía térmica suministrada se invierte en romper los enlaces de hidrógeno entre las moléculas de agua en lugar de aumentar su energía cinética media.",
-      "El aire del entorno enfría el recipiente exactamente a la misma tasa en que el fogón lo calienta."
+      "El aire extrae todo el calor que entrega el calentador, de modo que no queda energía disponible para modificar el estado ni la temperatura del hielo."
     ],
     "correcta": 2,
     "explicacion": "Durante un cambio de fase (como la fusión del hielo), la energía térmica suministrada (calor latente de fusión) no se traduce en un aumento de la energía cinética promedio de las moléculas (la cual determina la temperatura macroscópica), sino en energía potencial para debilitar y reorganizar la estructura cristalina y los enlaces de hidrógeno del sólido a líquido.",
     "distractores": [
-      "Sostiene que el calor específico se vuelve infinito, violando la definición física de capacidad calorífica.",
-      "Atribuye el fenómeno científico real a una falla instrumental del termómetro.",
+      "Interpreta la temperatura fija como un calor específico infinito. Pero durante la fusión la energía sí cambia la estructura del material y se contabiliza como calor latente.",
+      "Atribuye la meseta a una incapacidad del instrumento. Pero un termómetro que funciona registra la temperatura constante de la mezcla en equilibrio durante el cambio de fase.",
       "",
-      "Plantea una coincidencia casual de intercambio térmico con el aire que no explica el comportamiento universal de las sustancias puras."
+      "Plantea que toda la energía suministrada se pierde hacia el aire. Pero el hielo se está fundiendo y ese cambio requiere absorber energía neta, aunque la temperatura no aumente."
     ],
     "origen": "original",
     "competencia": "Explicación de fenómenos",
@@ -6081,12 +6093,12 @@
             [
               "A",
               "Incorrecta",
-              "Sostiene que el calor específico se vuelve infinito, violando la definición físi..."
+              "Interpreta la temperatura fija como un calor específico infinito. Pero durante la fusión la energía sí cambia la estructura del material y se contabiliza como calor latente."
             ],
             [
               "B",
               "Incorrecta",
-              "Atribuye el fenómeno científico real a una falla instrumental del termómetro."
+              "Atribuye la meseta a una incapacidad del instrumento. Pero un termómetro que funciona registra la temperatura constante de la mezcla en equilibrio durante el cambio de fase."
             ],
             [
               "C",
@@ -6096,7 +6108,7 @@
             [
               "D",
               "Incorrecta",
-              "Plantea una coincidencia casual de intercambio térmico con el aire que no explic..."
+              "Plantea que toda la energía suministrada se pierde hacia el aire. Pero el hielo se está fundiendo y ese cambio requiere absorber energía neta, aunque la temperatura no aumente."
             ]
           ]
         },
@@ -6115,12 +6127,16 @@
         "clave": "Durante un cambio de fase (como la fusión del hielo), la energía térmica suministrada (calor latente de fusión) no se traduce en un aumento de la energía cinética promedio de las moléculas (la cual determina la temperatura macroscópica), sino en energía potencial para debilitar y reorganizar la estructura cristalina y los enlaces de hidrógeno del sólido a líquido.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Sostiene que el calor específico se vuelve infinito, violando la definición física de capacidad calorífica.."
+            "t": "Opción A",
+            "p": "Interpreta la temperatura fija como un calor específico infinito. Pero durante la fusión la energía sí cambia la estructura del material y se contabiliza como calor latente."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye el fenómeno científico real a una falla instrumental del termómetro.."
+            "t": "Opción B",
+            "p": "Atribuye la meseta a una incapacidad del instrumento. Pero un termómetro que funciona registra la temperatura constante de la mezcla en equilibrio durante el cambio de fase."
+          },
+          {
+            "t": "Opción D",
+            "p": "Plantea que toda la energía suministrada se pierde hacia el aire. Pero el hielo se está fundiendo y ese cambio requiere absorber energía neta, aunque la temperatura no aumente."
           }
         ],
         "plan": [
@@ -6160,17 +6176,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Sostiene que el calor específico se vuelve infinito, violando la definición física de....",
+            "t": "Interpreta la temperatura fija como un calor específico infinito. Pero durante la fusión la energía sí cambia la estructura del material y se contabiliza como calor latente.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Atribuye el fenómeno científico real a una falla instrumental del termómetro..",
+            "t": "Atribuye la meseta a una incapacidad del instrumento. Pero un termómetro que funciona registra la temperatura constante de la mezcla en equilibrio durante el cambio de fase.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Plantea una coincidencia casual de intercambio térmico con el aire que no explica el....",
+            "t": "Plantea que toda la energía suministrada se pierde hacia el aire. Pero el hielo se está fundiendo y ese cambio requiere absorber energía neta, aunque la temperatura no aumente.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -6203,18 +6219,18 @@
     "nivel": 2,
     "enunciado": "Para acelerar la descomposición del peróxido de hidrógeno ($2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O} + \\text{O}_2$), un químico agrega una pizca de dióxido de manganeso ($\\text{MnO}_2$). Se observa un burbujeo vigoroso inmediato y, al finalizar la reacción, la masa de dióxido de manganeso permanece exactamente igual a la inicial. ¿Cuál fue el papel del dióxido de manganeso?",
     "opciones": [
-      "Actuó como reactivo límite que aportó el oxígeno desprendido.",
-      "Actuó como disolvente universal que cambió el punto de ebullición del peróxido.",
+      "Actuó como reactivo límite, aportando el oxígeno del burbujeo y recuperando su masa al producirse agua.",
+      "Actuó como disolvente del peróxido, cambiando su punto de ebullición para producir el gas observado.",
       "Actuó como catalizador, disminuyendo la energía de activación de la reacción sin consumirse en ella.",
-      "Actuó como inhibidor químico retrasando la velocidad de reacción."
+      "Actuó como inhibidor de la reacción, elevando la energía de activación sin consumirse en el proceso."
     ],
     "correcta": 2,
     "explicacion": "Un catalizador es una sustancia que aumenta la velocidad de una reacción química al proporcionar una ruta de reacción alternativa con menor energía de activación. Al no formar parte de los reactivos ni de los productos estequiométricos netos, no se consume durante la transformación y su masa y composición química se recuperan intactas al finalizar.",
     "distractores": [
-      "Lo confunde con un reactivo que se consume, lo que contradice el hecho de que su masa final se mantiene inalterada.",
-      "Lo describe como un disolvente, cuando en realidad es un catalizador heterogéneo sólido insoluble.",
+      "Lo considera fuente estequiométrica del oxígeno. Pero un reactivo límite se consume y la masa del dióxido de manganeso se recupera al terminar.",
+      "Identifica el burbujeo con ebullición causada por un disolvente. Pero el gas es producto de la descomposición y el dióxido de manganeso es un catalizador sólido.",
       "",
-      "Lo confunde con un inhibidor, el cual disminuiría la velocidad de reacción en vez de aumentarla drásticamente."
+      "Reconoce que no se consume y lo clasifica como inhibidor. Pero elevar la barrera de activación retrasaría la reacción, en contra del burbujeo acelerado."
     ],
     "origen": "original",
     "competencia": "Explicación de fenómenos",
@@ -6240,12 +6256,12 @@
             [
               "A",
               "Incorrecta",
-              "Lo confunde con un reactivo que se consume, lo que contradice el hecho de que su..."
+              "Lo considera fuente estequiométrica del oxígeno. Pero un reactivo límite se consume y la masa del dióxido de manganeso se recupera al terminar."
             ],
             [
               "B",
               "Incorrecta",
-              "Lo describe como un disolvente, cuando en realidad es un catalizador heterogéneo..."
+              "Identifica el burbujeo con ebullición causada por un disolvente. Pero el gas es producto de la descomposición y el dióxido de manganeso es un catalizador sólido."
             ],
             [
               "C",
@@ -6255,7 +6271,7 @@
             [
               "D",
               "Incorrecta",
-              "Lo confunde con un inhibidor, el cual disminuiría la velocidad de reacción en ve..."
+              "Reconoce que no se consume y lo clasifica como inhibidor. Pero elevar la barrera de activación retrasaría la reacción, en contra del burbujeo acelerado."
             ]
           ]
         },
@@ -6274,12 +6290,16 @@
         "clave": "Un catalizador es una sustancia que aumenta la velocidad de una reacción química al proporcionar una ruta de reacción alternativa con menor energía de activación.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Lo confunde con un reactivo que se consume, lo que contradice el hecho de que su masa final se mantiene inalterada.."
+            "t": "Opción A",
+            "p": "Lo considera fuente estequiométrica del oxígeno. Pero un reactivo límite se consume y la masa del dióxido de manganeso se recupera al terminar."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Lo describe como un disolvente, cuando en realidad es un catalizador heterogéneo sólido insoluble.."
+            "t": "Opción B",
+            "p": "Identifica el burbujeo con ebullición causada por un disolvente. Pero el gas es producto de la descomposición y el dióxido de manganeso es un catalizador sólido."
+          },
+          {
+            "t": "Opción D",
+            "p": "Reconoce que no se consume y lo clasifica como inhibidor. Pero elevar la barrera de activación retrasaría la reacción, en contra del burbujeo acelerado."
           }
         ],
         "plan": [
@@ -6319,17 +6339,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Lo confunde con un reactivo que se consume, lo que contradice el hecho de que su masa final se....",
+            "t": "Lo considera fuente estequiométrica del oxígeno. Pero un reactivo límite se consume y la masa del dióxido de manganeso se recupera al terminar.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Lo describe como un disolvente, cuando en realidad es un catalizador heterogéneo sólido insoluble..",
+            "t": "Identifica el burbujeo con ebullición causada por un disolvente. Pero el gas es producto de la descomposición y el dióxido de manganeso es un catalizador sólido.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Lo confunde con un inhibidor, el cual disminuiría la velocidad de reacción en vez de....",
+            "t": "Reconoce que no se consume y lo clasifica como inhibidor. Pero elevar la barrera de activación retrasaría la reacción, en contra del burbujeo acelerado.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -6362,18 +6382,18 @@
     "nivel": 2,
     "enunciado": "La combustión del gas metano se describe mediante la ecuación: $\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(g) + 890\\text{ kJ}$. ¿Cómo se clasifica esta reacción química según su balance energético?",
     "opciones": [
-      "Endotérmica, porque requiere absorber 890 kJ de los alrededores para poder ocurrir.",
-      "Adiabática, porque no intercambia ninguna forma de energía con el entorno.",
+      "Endotérmica, porque necesita absorber los ochocientos noventa kilojulios indicados para transformar reactivos en productos.",
+      "Adiabática, porque la energía liberada permanece en los productos y la ecuación demuestra que no sale calor hacia el entorno.",
       "Exotérmica, porque libera 890 kJ de energía térmica al entorno al tener los productos menor entalpía que los reactivos.",
-      "Isotérmica, porque la temperatura del sistema permanece constante en todo momento."
+      "Isotérmica, porque los ochocientos noventa kilojulios liberados garantizan que la temperatura permanezca siempre constante."
     ],
     "correcta": 2,
     "explicacion": "Cuando la energía térmica aparece como producto en la ecuación química (o $\\Delta H = -890\\text{ kJ/mol} < 0$), significa que la energía liberada en la formación de los nuevos enlaces en los productos es mayor que la energía requerida para romper los enlaces de los reactivos. La reacción desprende calor a los alrededores y se clasifica como exotérmica.",
     "distractores": [
-      "La clasifica como endotérmica, lo cual requeriría que el calor apareciera en el lado de los reactivos ($\\Delta H > 0$).",
-      "La llama adiabática, ignorando la gran liberación de calor hacia el exterior típica de las combustiones.",
+      "Interpreta la energía escrita a la derecha como calor absorbido. Pero aparece entre los productos, lo que indica liberación de energía hacia el entorno.",
+      "Deduce ausencia de intercambio de calor de una ecuación química. Pero esta informa energía liberada; una condición adiabática requeriría aislamiento que no se especifica.",
       "",
-      "La clasifica como isotérmica confundiendo las condiciones termodinámicas controladas con el balance químico de entalpía."
+      "Asocia el calor liberado con temperatura necesariamente constante. Pero la ecuación da un balance energético y no impone control de temperatura."
     ],
     "origen": "original",
     "competencia": "Uso comprensivo del conocimiento científico",
@@ -6399,12 +6419,12 @@
             [
               "A",
               "Incorrecta",
-              "La clasifica como endotérmica, lo cual requeriría que el calor apareciera en el ..."
+              "Interpreta la energía escrita a la derecha como calor absorbido. Pero aparece entre los productos, lo que indica liberación de energía hacia el entorno."
             ],
             [
               "B",
               "Incorrecta",
-              "La llama adiabática, ignorando la gran liberación de calor hacia el exterior típ..."
+              "Deduce ausencia de intercambio de calor de una ecuación química. Pero esta informa energía liberada; una condición adiabática requeriría aislamiento que no se especifica."
             ],
             [
               "C",
@@ -6414,7 +6434,7 @@
             [
               "D",
               "Incorrecta",
-              "La clasifica como isotérmica confundiendo las condiciones termodinámicas control..."
+              "Asocia el calor liberado con temperatura necesariamente constante. Pero la ecuación da un balance energético y no impone control de temperatura."
             ]
           ]
         },
@@ -6433,12 +6453,16 @@
         "clave": "Cuando la energía térmica aparece como producto en la ecuación química (o la relación correspondiente ), significa que la energía liberada en la formación de los nuevos enlaces en los productos es mayor que la energía requerida para romper los enlaces de los reactivos.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque La clasifica como endotérmica, lo cual requeriría que el calor apareciera en el lado de los reactivos ( la relación correspondiente ).."
+            "t": "Opción A",
+            "p": "Interpreta la energía escrita a la derecha como calor absorbido. Pero aparece entre los productos, lo que indica liberación de energía hacia el entorno."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque La llama adiabática, ignorando la gran liberación de calor hacia el exterior típica de las combustiones.."
+            "t": "Opción B",
+            "p": "Deduce ausencia de intercambio de calor de una ecuación química. Pero esta informa energía liberada; una condición adiabática requeriría aislamiento que no se especifica."
+          },
+          {
+            "t": "Opción D",
+            "p": "Asocia el calor liberado con temperatura necesariamente constante. Pero la ecuación da un balance energético y no impone control de temperatura."
           }
         ],
         "plan": [
@@ -6478,17 +6502,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque La clasifica como endotérmica, lo cual requeriría que el calor apareciera en el lado de los....",
+            "t": "Interpreta la energía escrita a la derecha como calor absorbido. Pero aparece entre los productos, lo que indica liberación de energía hacia el entorno.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque La llama adiabática, ignorando la gran liberación de calor hacia el exterior típica de las....",
+            "t": "Deduce ausencia de intercambio de calor de una ecuación química. Pero esta informa energía liberada; una condición adiabática requeriría aislamiento que no se especifica.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque La clasifica como isotérmica confundiendo las condiciones termodinámicas controladas con el....",
+            "t": "Asocia el calor liberado con temperatura necesariamente constante. Pero la ecuación da un balance energético y no impone control de temperatura.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -6521,18 +6545,18 @@
     "nivel": 2,
     "enunciado": "Durante la fase luminosa de la fotosíntesis en las células vegetales, la clorofila de los tilacoides absorbe energía solar. ¿Cuál es el papel directo del agua ($\\text{H}_2\\text{O}$) en esta etapa del proceso?",
     "opciones": [
-      "Fijar el dióxido de carbono directamente en moléculas de glucosa.",
-      "Almacenar el exceso de calor para impedir que la hoja aumente su temperatura.",
+      "Fijar directamente el dióxido de carbono en glucosa dentro del tilacoide, utilizando la luz absorbida por la clorofila.",
+      "Absorber el exceso de calor solar como reserva térmica, sin participar en las transferencias de electrones de la fase luminosa.",
       "Descomponerse por fotólisis, liberando oxígeno molecular a la atmósfera y aportando electrones y protones para formar ATP y NADPH.",
-      "Actuar como la enzima Rubisco para catalizar el ciclo de Calvin."
+      "Actuar como la enzima Rubisco que incorpora dióxido de carbono a compuestos orgánicos durante las reacciones del ciclo de Calvin."
     ],
     "correcta": 2,
     "explicacion": "En la fase luminosa (dependiente de la luz), la fotólisis del agua rompe las moléculas de $\\text{H}_2\\text{O}$ en protones ($H^+$), electrones ($e^-$) y oxígeno gas ($O_2$). Los electrones reponen los que la clorofila pierde al ser excitada por los fotones solares en el fotosistema II, y el oxígeno liberado se desprende a la atmósfera como subproducto vital.",
     "distractores": [
-      "Le atribuye la fijación del carbono, lo cual ocurre en la fase oscura (ciclo de Calvin) usando dióxido de carbono y no agua.",
-      "Confunde el rol bioquímico del agua con una función meramente amortiguadora de temperatura.",
+      "Le asigna al agua la fijación directa del carbono en el tilacoide. Pero esa fijación corresponde al ciclo de Calvin, no al papel del agua en la fase luminosa.",
+      "Reduce la función del agua a amortiguar temperatura. Pero su fotólisis suministra electrones y protones y libera oxígeno durante las reacciones luminosas.",
       "",
-      "Confunde la molécula inorgánica del agua con la proteína enzimática Rubisco."
+      "Identifica el agua con la enzima que fija carbono. Pero Rubisco es una proteína y actúa en otro proceso; el agua aporta electrones en la fase luminosa."
     ],
     "origen": "original",
     "competencia": "Explicación de fenómenos",
@@ -6558,12 +6582,12 @@
             [
               "A",
               "Incorrecta",
-              "Le atribuye la fijación del carbono, lo cual ocurre en la fase oscura (ciclo de ..."
+              "Le asigna al agua la fijación directa del carbono en el tilacoide. Pero esa fijación corresponde al ciclo de Calvin, no al papel del agua en la fase luminosa."
             ],
             [
               "B",
               "Incorrecta",
-              "Confunde el rol bioquímico del agua con una función meramente amortiguadora de t..."
+              "Reduce la función del agua a amortiguar temperatura. Pero su fotólisis suministra electrones y protones y libera oxígeno durante las reacciones luminosas."
             ],
             [
               "C",
@@ -6573,7 +6597,7 @@
             [
               "D",
               "Incorrecta",
-              "Confunde la molécula inorgánica del agua con la proteína enzimática Rubisco."
+              "Identifica el agua con la enzima que fija carbono. Pero Rubisco es una proteína y actúa en otro proceso; el agua aporta electrones en la fase luminosa."
             ]
           ]
         },
@@ -6592,12 +6616,16 @@
         "clave": "En la fase luminosa (dependiente de la luz), la fotólisis del agua rompe las moléculas de la relación correspondiente en protones ( la relación correspondiente ), electrones ( la relación correspondiente ) y oxígeno gas ( la relación correspondiente ).",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Le atribuye la fijación del carbono, lo cual ocurre en la fase oscura (ciclo de Calvin) usando dióxido de carbono y no agua.."
+            "t": "Opción A",
+            "p": "Le asigna al agua la fijación directa del carbono en el tilacoide. Pero esa fijación corresponde al ciclo de Calvin, no al papel del agua en la fase luminosa."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el rol bioquímico del agua con una función meramente amortiguadora de temperatura.."
+            "t": "Opción B",
+            "p": "Reduce la función del agua a amortiguar temperatura. Pero su fotólisis suministra electrones y protones y libera oxígeno durante las reacciones luminosas."
+          },
+          {
+            "t": "Opción D",
+            "p": "Identifica el agua con la enzima que fija carbono. Pero Rubisco es una proteína y actúa en otro proceso; el agua aporta electrones en la fase luminosa."
           }
         ],
         "plan": [
@@ -6637,17 +6665,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Le atribuye la fijación del carbono, lo cual ocurre en la fase oscura (ciclo de Calvin) usando....",
+            "t": "Le asigna al agua la fijación directa del carbono en el tilacoide. Pero esa fijación corresponde al ciclo de Calvin, no al papel del agua en la fase luminosa.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Confunde el rol bioquímico del agua con una función meramente amortiguadora de temperatura..",
+            "t": "Reduce la función del agua a amortiguar temperatura. Pero su fotólisis suministra electrones y protones y libera oxígeno durante las reacciones luminosas.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción D no es adecuada porque Confunde la molécula inorgánica del agua con la proteína enzimática Rubisco..",
+            "t": "Identifica el agua con la enzima que fija carbono. Pero Rubisco es una proteína y actúa en otro proceso; el agua aporta electrones en la fase luminosa.",
             "a": "o:D:no",
             "k": "err"
           },
@@ -7157,17 +7185,17 @@
     "nivel": 2,
     "enunciado": "En un hospital se detecta que una cepa de bacterias patógenas ha dejado de ser eliminada por un antibiótico de uso común. Desde el punto de vista de la teoría moderna de la evolución por selección natural, ¿cuál es la explicación científica de este fenómeno?",
     "opciones": [
-      "El antibiótico enseñó a las bacterias a cambiar voluntariamente sus genes para defenderse.",
-      "El antibiótico perdió su composición química al entrar en contacto con el aire del hospital.",
-      "Las bacterias se volvieron inmunes porque el paciente tomó agua fría durante el tratamiento médico.",
+      "El antibiótico indujo en todas las bacterias la mutación precisa para resistirlo; estas cambiaron sus genes como respuesta dirigida a la necesidad de sobrevivir al tratamiento.",
+      "El antibiótico perdió su actividad al reaccionar con el aire del hospital; por ello las bacterias sensibles sobrevivieron sin que cambiara la frecuencia de variantes resistentes.",
+      "Las bacterias sensibles adquirieron resistencia temporal al reducir su metabolismo durante el tratamiento; todas sobrevivieron por igual y la siguiente generación volvió a ser sensible.",
       "En la población bacteriana existían mutaciones preexistentes al azar que conferían resistencia; el antibiótico eliminó a las sensibles y las resistentes sobrevivieron y se reprodujeron."
     ],
     "correcta": 3,
     "explicacion": "La selección natural actúa sobre la variabilidad genética preexistente en la población bacteriana generada por mutaciones espontáneas o transferencia horizontal de genes. Al aplicar el antibiótico, este actúa como una fuerte presión de selección ambiental que elimina a las bacterias susceptibles; las pocas bacterias portadoras del alelo de resistencia sobreviven, transmiten sus genes a su descendencia y aumentan su frecuencia en la población.",
     "distractores": [
-      "Plantea una explicación lamarckiana teleológica donde el organismo muta voluntariamente para adaptarse.",
-      "Atribuye el fallo terapéutico a la degradación física del fármaco en vez del proceso evolutivo de resistencia bacteriana.",
-      "Asocia el fenómeno a mitos populares sin base biológica sobre el consumo de bebidas frías.",
+      "Supone mutaciones dirigidas por la necesidad de supervivencia. Pero la selección favorece variantes resistentes existentes, sin enseñar a las bacterias a producir la mutación que necesitan.",
+      "Explica el fracaso por una degradación del fármaco no descrita. Pero la pregunta pide explicar la resistencia de la cepa por selección natural, que cambia la frecuencia de variantes.",
+      "Propone tolerancia temporal sin diferencias heredables de supervivencia. Pero eso no explica por selección natural la expansión de una cepa resistente al antibiótico.",
       ""
     ],
     "origen": "original",
@@ -7194,17 +7222,17 @@
             [
               "A",
               "Incorrecta",
-              "Plantea una explicación lamarckiana teleológica donde el organismo muta voluntar..."
+              "Supone mutaciones dirigidas por la necesidad de supervivencia. Pero la selección favorece variantes resistentes existentes, sin enseñar a las bacterias a producir la mutación que necesitan."
             ],
             [
               "B",
               "Incorrecta",
-              "Atribuye el fallo terapéutico a la degradación física del fármaco en vez del pro..."
+              "Explica el fracaso por una degradación del fármaco no descrita. Pero la pregunta pide explicar la resistencia de la cepa por selección natural, que cambia la frecuencia de variantes."
             ],
             [
               "C",
               "Incorrecta",
-              "Asocia el fenómeno a mitos populares sin base biológica sobre el consumo de bebi..."
+              "Propone tolerancia temporal sin diferencias heredables de supervivencia. Pero eso no explica por selección natural la expansión de una cepa resistente al antibiótico."
             ],
             [
               "D",
@@ -7228,12 +7256,16 @@
         "clave": "La selección natural actúa sobre la variabilidad genética preexistente en la población bacteriana generada por mutaciones espontáneas o transferencia horizontal de genes.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Plantea una explicación lamarckiana teleológica donde el organismo muta voluntariamente para adaptarse.."
+            "t": "Opción A",
+            "p": "Supone mutaciones dirigidas por la necesidad de supervivencia. Pero la selección favorece variantes resistentes existentes, sin enseñar a las bacterias a producir la mutación que necesitan."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye el fallo terapéutico a la degradación física del fármaco en vez del proceso evolutivo de resistencia bacteriana.."
+            "t": "Opción B",
+            "p": "Explica el fracaso por una degradación del fármaco no descrita. Pero la pregunta pide explicar la resistencia de la cepa por selección natural, que cambia la frecuencia de variantes."
+          },
+          {
+            "t": "Opción C",
+            "p": "Propone tolerancia temporal sin diferencias heredables de supervivencia. Pero eso no explica por selección natural la expansión de una cepa resistente al antibiótico."
           }
         ],
         "plan": [
@@ -7273,17 +7305,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Plantea una explicación lamarckiana teleológica donde el organismo muta voluntariamente para....",
+            "t": "Supone mutaciones dirigidas por la necesidad de supervivencia. Pero la selección favorece variantes resistentes existentes, sin enseñar a las bacterias a producir la mutación que necesitan.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Atribuye el fallo terapéutico a la degradación física del fármaco en vez del proceso evolutivo....",
+            "t": "Explica el fracaso por una degradación del fármaco no descrita. Pero la pregunta pide explicar la resistencia de la cepa por selección natural, que cambia la frecuencia de variantes.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Asocia el fenómeno a mitos populares sin base biológica sobre el consumo de bebidas frías..",
+            "t": "Propone tolerancia temporal sin diferencias heredables de supervivencia. Pero eso no explica por selección natural la expansión de una cepa resistente al antibiótico.",
             "a": "o:C:no",
             "k": "err"
           },
@@ -7316,17 +7348,17 @@
     "nivel": 2,
     "enunciado": "Cuando a una persona se le aplica una vacuna contra una enfermedad viral (por ejemplo, el sarampión), se le inocula una forma atenuada o inactiva del patógeno. ¿Cuál es el mecanismo fisiológico por el cual la vacuna confiere protección a largo plazo?",
     "opciones": [
-      "El patógeno atenuado destruye de inmediato todos los virus que ya estaban en el cuerpo.",
-      "Eleva la temperatura corporal a 42 °C de forma permanente para esterilizar la sangre.",
-      "Modifica permanentemente el ADN de todas las células del cuerpo haciéndolas inmunes al virus.",
+      "El patógeno atenuado elimina directamente los virus presentes y permanece circulando para destruir los de futuras infecciones.",
+      "La vacuna mantiene activada de forma permanente la respuesta inflamatoria inespecífica, que impide la entrada de cualquier virus.",
+      "La vacuna modifica de forma permanente el ADN de todas las células, de modo que el virus ya no puede reconocerlas ni infectarlas.",
       "Estimula al sistema inmune a producir anticuerpos específicos y generar linfocitos de memoria sin causar la enfermedad grave."
     ],
     "correcta": 3,
     "explicacion": "Las vacunas exponen al sistema inmunitario a antígenos inofensivos del microorganismo. Los linfocitos B y T reconocen estos antígenos, se activan y generan linfocitos de memoria inmunológica y anticuerpos específicos. Si el patógeno real ingresa en el futuro, las células de memoria desencadenan una respuesta secundaria rápida e intensa que neutraliza el virus antes de que cause la enfermedad.",
     "distractores": [
-      "Le atribuye un papel curativo o antiviral directo en vez de una inmunización profiláctica preventiva.",
-      "Propone un mecanismo letal de hipertermia permanente incompatible con la vida humana.",
-      "Afirma falsamente que las vacunas alteran el genoma de las células humanas del organismo.",
+      "Presenta la vacuna como un antiviral permanente. Pero la protección duradera depende de memoria inmunitaria, no de que el patógeno vacunal destruya otros virus.",
+      "Atribuye la protección a inflamación inespecífica constante. Pero la vacunación genera reconocimiento y memoria frente a antígenos concretos, no bloqueo universal de virus.",
+      "Explica la inmunidad por una alteración del genoma de todo el organismo. Pero la memoria surge de la respuesta de linfocitos, sin reescribir el ADN de todas las células.",
       ""
     ],
     "origen": "original",
@@ -7353,17 +7385,17 @@
             [
               "A",
               "Incorrecta",
-              "Le atribuye un papel curativo o antiviral directo en vez de una inmunización pro..."
+              "Presenta la vacuna como un antiviral permanente. Pero la protección duradera depende de memoria inmunitaria, no de que el patógeno vacunal destruya otros virus."
             ],
             [
               "B",
               "Incorrecta",
-              "Propone un mecanismo letal de hipertermia permanente incompatible con la vida hu..."
+              "Atribuye la protección a inflamación inespecífica constante. Pero la vacunación genera reconocimiento y memoria frente a antígenos concretos, no bloqueo universal de virus."
             ],
             [
               "C",
               "Incorrecta",
-              "Afirma falsamente que las vacunas alteran el genoma de las células humanas del o..."
+              "Explica la inmunidad por una alteración del genoma de todo el organismo. Pero la memoria surge de la respuesta de linfocitos, sin reescribir el ADN de todas las células."
             ],
             [
               "D",
@@ -7387,12 +7419,16 @@
         "clave": "Las vacunas exponen al sistema inmunitario a antígenos inofensivos del microorganismo.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Le atribuye un papel curativo o antiviral directo en vez de una inmunización profiláctica preventiva.."
+            "t": "Opción A",
+            "p": "Presenta la vacuna como un antiviral permanente. Pero la protección duradera depende de memoria inmunitaria, no de que el patógeno vacunal destruya otros virus."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque un mecanismo letal de hipertermia permanente incompatible con la vida humana.."
+            "t": "Opción B",
+            "p": "Atribuye la protección a inflamación inespecífica constante. Pero la vacunación genera reconocimiento y memoria frente a antígenos concretos, no bloqueo universal de virus."
+          },
+          {
+            "t": "Opción C",
+            "p": "Explica la inmunidad por una alteración del genoma de todo el organismo. Pero la memoria surge de la respuesta de linfocitos, sin reescribir el ADN de todas las células."
           }
         ],
         "plan": [
@@ -7432,17 +7468,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Le atribuye un papel curativo o antiviral directo en vez de una inmunización profiláctica....",
+            "t": "Presenta la vacuna como un antiviral permanente. Pero la protección duradera depende de memoria inmunitaria, no de que el patógeno vacunal destruya otros virus.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Propone un mecanismo letal de hipertermia permanente incompatible con la vida humana..",
+            "t": "Atribuye la protección a inflamación inespecífica constante. Pero la vacunación genera reconocimiento y memoria frente a antígenos concretos, no bloqueo universal de virus.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Afirma falsamente que las vacunas alteran el genoma de las células humanas del organismo..",
+            "t": "Explica la inmunidad por una alteración del genoma de todo el organismo. Pero la memoria surge de la respuesta de linfocitos, sin reescribir el ADN de todas las células.",
             "a": "o:C:no",
             "k": "err"
           },
@@ -7475,17 +7511,17 @@
     "nivel": 2,
     "enunciado": "Durante una jornada de ejercicio físico intenso bajo el sol de Barranquilla, una persona experimenta vasodilatación cutánea (enrojecimiento de la piel) y una abundante sudoración. ¿Cuál es el objetivo fisiológico homeostático de estas respuestas corporales?",
     "opciones": [
-      "Aumentar la temperatura corporal para quemar más tejido graso rápidamente.",
-      "Detener la circulación sanguínea hacia los músculos esqueléticos activos.",
-      "Impedir que el cuerpo pierda agua y sales minerales esenciales.",
+      "Elevar la temperatura interna para acelerar el metabolismo y aumentar el consumo de grasa durante el ejercicio realizado bajo el sol.",
+      "Interrumpir el flujo de sangre hacia los músculos activos y dirigirlo exclusivamente a la piel para evitar que se produzca más calor metabólico.",
+      "Conservar el agua y las sales del organismo mediante el cierre de los poros y la acumulación del sudor sobre la piel sin que llegue a evaporarse.",
       "Disipar el calor interno acumulado hacia el ambiente mediante evaporación del sudor y radiación para mantener la temperatura en torno a 37 °C."
     ],
     "correcta": 3,
     "explicacion": "La vasodilatación incrementa el flujo de sangre caliente hacia la superficie de la piel para favorecer la pérdida de calor por convección y radiación. Simultáneamente, las glándulas sudoríparas secretan sudor; al evaporarse el agua del sudor sobre la piel, absorbe una gran cantidad de calor latente de vaporización del cuerpo, enfriándolo eficazmente y manteniendo la temperatura interna dentro de límites compatibles con la vida (homeostasis térmica).",
     "distractores": [
-      "Sugiere que el cuerpo busca elevar la temperatura, lo que provocaría un golpe de calor peligroso.",
-      "Afirma que se detiene la circulación muscular, lo cual impediría el suministro de oxígeno durante el ejercicio.",
-      "Sostiene que la sudoración busca evitar la pérdida de agua, cuando precisamente el sudor expulsa agua para refrigerar.",
+      "Confunde la respuesta al exceso de calor con una forma de calentamiento. Pero sudoración y vasodilatación cutánea favorecen disipar calor para limitar la temperatura.",
+      "Interpreta la redistribución del flujo como interrupción del riego muscular. Pero los músculos activos siguen necesitando oxígeno y nutrientes durante el ejercicio.",
+      "Asocia la sudoración con evitar pérdidas de agua y evaporación. Pero la secreción de sudor pierde agua y su evaporación permite retirar calor del cuerpo.",
       ""
     ],
     "origen": "original",
@@ -7512,17 +7548,17 @@
             [
               "A",
               "Incorrecta",
-              "Sugiere que el cuerpo busca elevar la temperatura, lo que provocaría un golpe de..."
+              "Confunde la respuesta al exceso de calor con una forma de calentamiento. Pero sudoración y vasodilatación cutánea favorecen disipar calor para limitar la temperatura."
             ],
             [
               "B",
               "Incorrecta",
-              "Afirma que se detiene la circulación muscular, lo cual impediría el suministro d..."
+              "Interpreta la redistribución del flujo como interrupción del riego muscular. Pero los músculos activos siguen necesitando oxígeno y nutrientes durante el ejercicio."
             ],
             [
               "C",
               "Incorrecta",
-              "Sostiene que la sudoración busca evitar la pérdida de agua, cuando precisamente ..."
+              "Asocia la sudoración con evitar pérdidas de agua y evaporación. Pero la secreción de sudor pierde agua y su evaporación permite retirar calor del cuerpo."
             ],
             [
               "D",
@@ -7546,12 +7582,16 @@
         "clave": "La vasodilatación incrementa el flujo de sangre caliente hacia la superficie de la piel para favorecer la pérdida de calor por convección y radiación.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque que el cuerpo busca elevar la temperatura, lo que provocaría un golpe de calor peligroso.."
+            "t": "Opción A",
+            "p": "Confunde la respuesta al exceso de calor con una forma de calentamiento. Pero sudoración y vasodilatación cutánea favorecen disipar calor para limitar la temperatura."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque se detiene la circulación muscular, lo cual impediría el suministro de oxígeno durante el ejercicio.."
+            "t": "Opción B",
+            "p": "Interpreta la redistribución del flujo como interrupción del riego muscular. Pero los músculos activos siguen necesitando oxígeno y nutrientes durante el ejercicio."
+          },
+          {
+            "t": "Opción C",
+            "p": "Asocia la sudoración con evitar pérdidas de agua y evaporación. Pero la secreción de sudor pierde agua y su evaporación permite retirar calor del cuerpo."
           }
         ],
         "plan": [
@@ -7591,17 +7631,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Sugiere que el cuerpo busca elevar la temperatura, lo que provocaría un golpe de calor peligroso..",
+            "t": "Confunde la respuesta al exceso de calor con una forma de calentamiento. Pero sudoración y vasodilatación cutánea favorecen disipar calor para limitar la temperatura.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Afirma que se detiene la circulación muscular, lo cual impediría el suministro de oxígeno....",
+            "t": "Interpreta la redistribución del flujo como interrupción del riego muscular. Pero los músculos activos siguen necesitando oxígeno y nutrientes durante el ejercicio.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Sostiene que la sudoración busca evitar la pérdida de agua, cuando precisamente el sudor....",
+            "t": "Asocia la sudoración con evitar pérdidas de agua y evaporación. Pero la secreción de sudor pierde agua y su evaporación permite retirar calor del cuerpo.",
             "a": "o:C:no",
             "k": "err"
           },
@@ -7634,17 +7674,17 @@
     "nivel": 2,
     "enunciado": "La tala masiva e indiscriminada de bosques tropicales contribuye de forma significativa al calentamiento global del planeta. ¿Cuál es la razón biológica directa de este impacto ecológico?",
     "opciones": [
-      "La madera talada atrae magnéticamente la radiación infrarroja solar hacia la superficie terrestre.",
-      "Los árboles absorben nitrógeno del suelo y al talarlos el nitrógeno gaseoso destruye la capa de ozono.",
-      "Al cortar los árboles, la gravedad de la Tierra disminuye permitiendo que los rayos solares entren con mayor fuerza.",
+      "La madera talada retiene directamente más radiación infrarroja que el bosque vivo; esa absorción por los troncos explica el calentamiento global sin necesidad de cambios en los gases atmosféricos.",
+      "La tala libera el nitrógeno que los árboles habían absorbido del suelo; ese gas destruye la capa de ozono y permite que llegue más radiación ultravioleta, causando el aumento global de temperatura.",
+      "Al desaparecer los árboles se reduce la respiración del ecosistema y, por ello, se acumula más dióxido de carbono en la atmósfera, aunque la fotosíntesis y el carbono del suelo no cambien.",
       "Los árboles talados dejan de absorber dióxido de carbono ($\\text{CO}_2$) mediante la fotosíntesis, y su quema o descomposición libera el carbono almacenado a la atmósfera como gas de efecto invernadero."
     ],
     "correcta": 3,
     "explicacion": "Los bosques actúan como sumideros de carbono vitales: mediante la fotosíntesis, los árboles capturan toneladas de $\\text{CO}_2$ atmosférico y lo fijan en forma de biomasa vegetal (madera, hojas y raíces). Al talar y quemar los bosques, no solo se anula este sumidero natural, sino que todo el carbono secuestrado durante décadas se libera a la atmósfera en forma de $\\text{CO}_2$, incrementando el efecto invernadero que atrapa calor en la troposfera.",
     "distractores": [
-      "Atribuye un magnetismo inexistente a la madera sobre la radiación electromagnética infrarroja.",
-      "Confunde el ciclo del carbono con el nitrógeno y confunde el calentamiento global con el agujero en la capa de ozono.",
-      "Plantea una hipótesis pseudocientífica absurda sobre la alteración de la constante gravitacional terrestre.",
+      "Atribuye el efecto global a radiación retenida directamente por troncos. Pero el mecanismo biológico pedido implica menor fijación de carbono y liberación del carbono almacenado.",
+      "Mezcla nitrógeno y destrucción del ozono con el efecto invernadero. Pero el impacto descrito se relaciona directamente con el balance de dióxido de carbono, no con esa cadena causal.",
+      "Relaciona menos respiración con más dióxido de carbono y deja intacta la fotosíntesis. Pero respirar libera ese gas, mientras la tala elimina organismos que lo fijaban y puede liberar carbono almacenado.",
       ""
     ],
     "origen": "original",
@@ -7671,17 +7711,17 @@
             [
               "A",
               "Incorrecta",
-              "Atribuye un magnetismo inexistente a la madera sobre la radiación electromagnéti..."
+              "Atribuye el efecto global a radiación retenida directamente por troncos. Pero el mecanismo biológico pedido implica menor fijación de carbono y liberación del carbono almacenado."
             ],
             [
               "B",
               "Incorrecta",
-              "Confunde el ciclo del carbono con el nitrógeno y confunde el calentamiento globa..."
+              "Mezcla nitrógeno y destrucción del ozono con el efecto invernadero. Pero el impacto descrito se relaciona directamente con el balance de dióxido de carbono, no con esa cadena causal."
             ],
             [
               "C",
               "Incorrecta",
-              "Plantea una hipótesis pseudocientífica absurda sobre la alteración de la constan..."
+              "Relaciona menos respiración con más dióxido de carbono y deja intacta la fotosíntesis. Pero respirar libera ese gas, mientras la tala elimina organismos que lo fijaban y puede liberar carbono almacenado."
             ],
             [
               "D",
@@ -7705,12 +7745,16 @@
         "clave": "Los bosques actúan como sumideros de carbono vitales: mediante la fotosíntesis, los árboles capturan toneladas de la relación correspondiente atmosférico y lo fijan en forma de biomasa vegetal (madera, hojas y raíces).",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Atribuye un magnetismo inexistente a la madera sobre la radiación electromagnética infrarroja.."
+            "t": "Opción A",
+            "p": "Atribuye el efecto global a radiación retenida directamente por troncos. Pero el mecanismo biológico pedido implica menor fijación de carbono y liberación del carbono almacenado."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el ciclo del carbono con el nitrógeno y confunde el calentamiento global con el agujero en la capa de ozono.."
+            "t": "Opción B",
+            "p": "Mezcla nitrógeno y destrucción del ozono con el efecto invernadero. Pero el impacto descrito se relaciona directamente con el balance de dióxido de carbono, no con esa cadena causal."
+          },
+          {
+            "t": "Opción C",
+            "p": "Relaciona menos respiración con más dióxido de carbono y deja intacta la fotosíntesis. Pero respirar libera ese gas, mientras la tala elimina organismos que lo fijaban y puede liberar carbono almacenado."
           }
         ],
         "plan": [
@@ -7750,17 +7794,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Atribuye un magnetismo inexistente a la madera sobre la radiación electromagnética infrarroja..",
+            "t": "Atribuye el efecto global a radiación retenida directamente por troncos. Pero el mecanismo biológico pedido implica menor fijación de carbono y liberación del carbono almacenado.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Confunde el ciclo del carbono con el nitrógeno y confunde el calentamiento global con el....",
+            "t": "Mezcla nitrógeno y destrucción del ozono con el efecto invernadero. Pero el impacto descrito se relaciona directamente con el balance de dióxido de carbono, no con esa cadena causal.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Plantea una hipótesis pseudocientífica absurda sobre la alteración de la constante....",
+            "t": "Relaciona menos respiración con más dióxido de carbono y deja intacta la fotosíntesis. Pero respirar libera ese gas, mientras la tala elimina organismos que lo fijaban y puede liberar carbono almacenado.",
             "a": "o:C:no",
             "k": "err"
           },
@@ -7952,17 +7996,17 @@
     "nivel": 2,
     "enunciado": "Los ecosistemas de páramo en Colombia (como Chingaza o Sumapaz) albergan frailejones (*Espeletia*) y gruesas capas de musgo. Estos ecosistemas son reconocidos internacionalmente como 'fábricas de agua'. ¿Cuál es el mecanismo ecológico clave que explica esta función reguladora?",
     "opciones": [
-      "Los frailejones bombean agua salada desde el manto terrestre mediante raíces profundas de más de mil metros.",
-      "El clima frío congela permanentemente el agua subterránea impidiendo que baje a los ríos.",
-      "Las hojas de los frailejones producen químicamente moléculas de agua a partir de radiación ultravioleta.",
+      "Las raíces de los frailejones extraen agua de acuíferos profundos y la bombean hacia los ríos, de modo que el suelo no participa en la regulación del caudal.",
+      "El frío mantiene congelada de forma permanente el agua del suelo, evitando la infiltración y permitiendo que llegue a los ríos solo cuando sube la temperatura.",
+      "Las hojas fabrican nuevas moléculas de agua al absorber radiación ultravioleta y las entregan al suelo, que actúa solo como canal de salida hacia los ríos.",
       "La vegetación y el suelo orgánico esponjoso retienen el agua de la neblina y las lluvias, liberándola gradualmente hacia las cuencas hidrográficas."
     ],
     "correcta": 3,
     "explicacion": "Los páramos actúan como gigantescas esponjas naturales: las densas vellosidades de las hojas de los frailejones atrapan las diminutas gotas de agua de la constante niebla andina (condensación por intercepción), mientras que los suelos turbosos y los musgos retienen enormes volúmenes de agua pluvial, regulando el caudal de los ríos de manera sostenida a lo largo de todo el año, incluso en épocas de sequía.",
     "distractores": [
-      "Plantea una hipótesis geológica irreal sobre bombeo de agua salada desde profundidades abisales.",
-      "Afirma que el agua está congelada de forma permanente (permafrost), lo que no describe los páramos colombianos donde el agua fluye líquida hacia los acueductos.",
-      "Afirma una síntesis mágica de agua por radiación que viola las leyes de la química orgánica y celular.",
+      "Atribuye el suministro al bombeo desde acuíferos profundos. Pero el mecanismo descrito es retener agua de lluvia y neblina en vegetación y suelo y liberarla gradualmente.",
+      "Explica la regulación mediante congelación permanente. Pero estos páramos almacenan y liberan agua líquida; no dependen de una reserva de suelo siempre congelado.",
+      "Confunde captar gotas de neblina con fabricar agua usando radiación. Pero la vegetación intercepta agua existente y el suelo la almacena, no es solo un canal de salida.",
       ""
     ],
     "origen": "original",
@@ -7989,17 +8033,17 @@
             [
               "A",
               "Incorrecta",
-              "Plantea una hipótesis geológica irreal sobre bombeo de agua salada desde profund..."
+              "Atribuye el suministro al bombeo desde acuíferos profundos. Pero el mecanismo descrito es retener agua de lluvia y neblina en vegetación y suelo y liberarla gradualmente."
             ],
             [
               "B",
               "Incorrecta",
-              "Afirma que el agua está congelada de forma permanente (permafrost), lo que no de..."
+              "Explica la regulación mediante congelación permanente. Pero estos páramos almacenan y liberan agua líquida; no dependen de una reserva de suelo siempre congelado."
             ],
             [
               "C",
               "Incorrecta",
-              "Afirma una síntesis mágica de agua por radiación que viola las leyes de la quími..."
+              "Confunde captar gotas de neblina con fabricar agua usando radiación. Pero la vegetación intercepta agua existente y el suelo la almacena, no es solo un canal de salida."
             ],
             [
               "D",
@@ -8023,12 +8067,16 @@
         "clave": "Los páramos actúan como gigantescas esponjas naturales: las densas vellosidades de las hojas de los frailejones atrapan las diminutas gotas de agua de la constante niebla andina (condensación por intercepción), mientras que los suelos turbosos y los musgos retienen enormes volúmenes de agua pluvial, regulando el caudal de los ríos de manera sostenida a lo largo de todo el año, incluso en épocas de sequía.",
         "no": [
           {
-            "t": "Elegir la opción A",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque Plantea una hipótesis geológica irreal sobre bombeo de agua salada desde profundidades abisales.."
+            "t": "Opción A",
+            "p": "Atribuye el suministro al bombeo desde acuíferos profundos. Pero el mecanismo descrito es retener agua de lluvia y neblina en vegetación y suelo y liberarla gradualmente."
           },
           {
-            "t": "Elegir la opción B",
-            "p": "Se parece porque aborda elementos de la temática evaluada. Pero resulta errónea porque el agua está congelada de forma permanente (permafrost), lo que no describe los páramos colombianos donde el agua fluye líquida hacia los acueductos.."
+            "t": "Opción B",
+            "p": "Explica la regulación mediante congelación permanente. Pero estos páramos almacenan y liberan agua líquida; no dependen de una reserva de suelo siempre congelado."
+          },
+          {
+            "t": "Opción C",
+            "p": "Confunde captar gotas de neblina con fabricar agua usando radiación. Pero la vegetación intercepta agua existente y el suelo la almacena, no es solo un canal de salida."
           }
         ],
         "plan": [
@@ -8068,17 +8116,17 @@
             "a": "p:1"
           },
           {
-            "t": "La opción A no es adecuada porque Plantea una hipótesis geológica irreal sobre bombeo de agua salada desde profundidades abisales..",
+            "t": "Atribuye el suministro al bombeo desde acuíferos profundos. Pero el mecanismo descrito es retener agua de lluvia y neblina en vegetación y suelo y liberarla gradualmente.",
             "a": "o:A:no",
             "k": "err"
           },
           {
-            "t": "La opción B no es adecuada porque Afirma que el agua está congelada de forma permanente (permafrost), lo que no describe los....",
+            "t": "Explica la regulación mediante congelación permanente. Pero estos páramos almacenan y liberan agua líquida; no dependen de una reserva de suelo siempre congelado.",
             "a": "o:B:no",
             "k": "err"
           },
           {
-            "t": "La opción C no es adecuada porque Afirma una síntesis mágica de agua por radiación que viola las leyes de la química orgánica y....",
+            "t": "Confunde captar gotas de neblina con fabricar agua usando radiación. Pero la vegetación intercepta agua existente y el suelo la almacena, no es solo un canal de salida.",
             "a": "o:C:no",
             "k": "err"
           },

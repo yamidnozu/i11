@@ -390,3 +390,25 @@ Linea base medida con el revisor nuevo: **441/617 limpias**. Final: **617/617 li
 - El revisor mide estructura y consistencia, no verdad pedagogica: la calidad de fondo de cada razon sigue dependiendo de revision humana. No se pudo comprobar en bloque que cada razon este en la opcion correcta (solo las detectables por letra/clave y por heuristica).
 - No se hicieron en esta sesion: ejercicio guiado y enlaces a laboratorio en las ICFES, UX movil de feedback inmediato, las 43 figuras pendientes ni la expansion adicional del banco propio (ya esta en 40+ por area).
 - Sesgo informativo en oficiales: mth clave B 41 %, soc/scc clave C 45 %.
+
+## 11. Cierre acotado: razones y longitudes (25 oct 2026)
+
+- Script por lotes: `tools/fix_b10_razones_longitudes.py`, con guardia de rama `antigravity/v1` y comprobacion de que no cambian la clave, el texto correcto ni las marcas de revision.
+- `mth-i002`: cada descarte explica su propia afirmacion (A generaliza a tasas variables; B exige un capital innecesario para un porcentaje; D confunde magnitud monetaria con rendimiento). La explicacion demuestra por que C conserva el tres por ciento. Corregido tambien el resumen erroneo del nivel 3.
+- `cfi-i008`: A altera dos coordenadas concretas; C aplica la rotacion `(x,y)->(-y,x)` de noventa grados; D refleja sobre el eje horizontal. B contiene los reflejos sobre Y, en orden inverso. Razones, trampas y guiones coinciden.
+- `cfi-i105`: razones especificas para los siete distractores y explicacion de por que E, motorbike, satisface las pistas. Se elimina la exigencia inventada de motor y las generalizaciones falsas sobre capacidad de aviones, helicopteros o camiones. El enunciado sigue siendo ambiguo frente a bike y la cabina de un truck; se conserva la clave oficial y la marca de revision.
+- Revisadas las 891 preguntas del banco completo; 890 tienen opciones evaluables por longitud (un reto no tiene alternativas). Criterio de diferencia llamativa: la correcta supera al distractor mas largo en al menos 25 % y 15 caracteres. Los 24 casos detectados se equilibran reescribiendo los distractores: 7 ICFES (incluidas copias) y 17 propios. Se sincronizan todas las hojas afectadas y los mapas de enfoques/guiones del banco propio.
+
+| Medida | Antes | Despues |
+| --- | ---: | ---: |
+| Correcta unica mas larga, ICFES | 125/617 (20.3 %) | 120/617 (19.4 %) |
+| Correcta unica mas larga, propias y packs | 58/273 (21.2 %) | 48/273 (17.6 %) |
+| Diferencias llamativas de longitud | 24 | 0 |
+| Auditoria de calidad, ICFES completas | 613/617 | 613/617 |
+| Auditoria de calidad, propias y packs completas | 274/274 | 274/274 |
+
+La auditoria de calidad conserva las cuatro incidencias conocidas por clave ambigua: cfi-i105 y ena/eng/ing-i018. No se borran esas advertencias para mejorar las cifras. El revisor estricto cuenta esas marcas por separado: 617/617 sin fallas estructurales y cero sesgos en el banco propio.
+
+Validacion: `python3 tools/auditoria_calidad.py` finaliza con codigo 0; `python3 tools/auditoria_estricta.py --max-fallas 10` finaliza con codigo 0. `npm test`: 426 aprobados y 1 omitido (el test que lanza el revisor como subproceso; ese script se ejecuto directamente). `npm run build`, incluido `tsc --noEmit`, pasa. Comprobacion directa adicional de esquema, voz y formulas en las 617 ICFES: pasa. Se verifica contra HEAD que no cambia ninguna clave ni ningun texto de opcion correcta.
+
+Este cierre corresponde a las correcciones solicitadas en esta ronda. No cambia secretos, workflows, pagos ni la configuracion de publicacion ICFES.

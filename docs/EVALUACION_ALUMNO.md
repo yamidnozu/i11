@@ -213,3 +213,11 @@ Evaluación exhaustiva del contenido pedagógico y la experiencia de resolución
 
 ## Avance de calidad ICFES (24 oct 2026, sesion 4)
 Revisor estricto (`tools/auditoria_estricta.py`): de 441/617 a 617/617 preguntas limpias. Sin "Pendiente", sin razones con plantilla, sin letras que contradigan la clave. Quedan 4 preguntas con clave dudosa marcada (cfi-i105, ena/eng/ing-i018). Detalle en ANTIGRAVITY_REPORT.md seccion 10.
+
+### Cierre de razones y opciones (25 oct 2026)
+
+Corregidas las razones individuales, trampas y guiones de mth-i002, cfi-i105 y cfi-i008. En la ultima, la opcion C es una rotacion, no una reflexion sobre Y. En cfi-i105 se conserva E como clave oficial, pero se reconoce que el enunciado no exige motor y no excluye bike de forma inequivoca; la marca de revision permanece.
+
+Revision de longitud en todo el banco: 890 preguntas con alternativas, mas un reto sin opciones. Se equilibran 24 diferencias llamativas (7 ICFES y 17 propias), sin cambiar claves ni textos correctos. La correcta unica mas larga pasa de 125/617 a 120/617 en ICFES y de 58/273 a 48/273 en propias y packs. No queda ningun caso donde supere al distractor mas largo simultaneamente en 25 % y 15 caracteres. Hoja incorporada, hoja individual y mapas del banco propio quedan sincronizados.
+
+Auditoria de calidad: 613/617 ICFES y 274/274 propias completas, con las cuatro advertencias previas conservadas. Revisor estricto: 617/617 sin fallas estructurales. Tests: 426 aprobados, 1 omitido; revisor ejecutado directamente con exito. Build y comprobacion de esquema/voz/formulas ICFES: correctos. Detalles y criterio de medicion en ANTIGRAVITY_REPORT.md, seccion 11.

@@ -6,15 +6,15 @@
       "no": [
         {
           "t": "Opción A",
-          "p": "Pero intercambia las coordenadas de los puntos correctos: pone la altura donde va la abscisa y rompe la simetría del trapecio respecto al eje Y."
+          "p": "A propone $(8,2)$ y $(2,4)$. Pero el reflejo de $(-4,2)$ debe ser $(4,2)$, no $(8,2)$, y el de $(-2,8)$ debe conservar la altura ocho, no cambiarla a cuatro."
         },
         {
           "t": "Opción C",
-          "p": "Pero intercambia x e y de los vértices dados y cambia el signo de x; confunde los ejes en lugar de reflejar solo la abscisa."
+          "p": "C da $(-2,-4)$ y $(-8,-2)$ al transformar $(x,y)$ en $(-y,x)$, una rotación de noventa grados en sentido antihorario. Pero reflejar sobre el eje vertical solo cambia el signo de la abscisa y conserva las alturas positivas."
         },
         {
           "t": "Opción D",
-          "p": "Pero cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$."
+          "p": "D mantiene las abscisas negativas y cambia las alturas a $-2$ y $-8$, como en una reflexión sobre el eje horizontal. Pero la simetría pedida es respecto al eje vertical: deben cambiar los signos de las abscisas."
         }
       ],
       "pistas": [
@@ -50,29 +50,29 @@
       ],
       "2": [
         {
-          "t": "Refleja $(-4,2)$ y conserva su altura: resulta $(4,2)$."
+          "t": "El reflejo conserva la altura y cambia el signo de la primera coordenada."
         },
         {
-          "t": "Refleja $(-2,8)$: resulta $(2,8)$."
+          "t": "Resultan los puntos cuatro coma dos y dos coma ocho."
         },
         {
           "a": "o:A:no",
           "k": "err",
-          "t": "La opción A es incorrecta: Intercambia las coordenadas de los puntos correctos: pone la altura donde va la abscisa y rompe la simetría del trapecio respecto al eje Y."
+          "t": "A propone $(8,2)$ y $(2,4)$. Pero el reflejo de $(-4,2)$ debe ser $(4,2)$, no $(8,2)$, y el de $(-2,8)$ debe conservar la altura ocho, no cambiarla a cuatro."
         },
         {
           "a": "o:C:no",
           "k": "err",
-          "t": "La opción C es incorrecta: Intercambia x e y de los vértices dados y cambia el signo de x; confunde los ejes en lugar de reflejar solo la abscisa."
+          "t": "C da $(-2,-4)$ y $(-8,-2)$ al transformar $(x,y)$ en $(-y,x)$, una rotación de noventa grados en sentido antihorario. Pero reflejar sobre el eje vertical solo cambia el signo de la abscisa y conserva las alturas positivas."
         },
         {
           "a": "o:D:no",
           "k": "err",
-          "t": "La opción D es incorrecta: Cambia el signo de la coordenada vertical; esa regla refleja sobre el eje $X$."
+          "t": "D mantiene las abscisas negativas y cambia las alturas a $-2$ y $-8$, como en una reflexión sobre el eje horizontal. Pero la simetría pedida es respecto al eje vertical: deben cambiar los signos de las abscisas."
         },
         {
           "a": "o:B:ok",
-          "t": "A altera coordenadas; C cambia ambos signos; D refleja sobre el eje $X$. La respuesta es B."
+          "t": "B enumera los dos reflejos en orden inverso. La respuesta es B."
         }
       ],
       "3": [
@@ -93,7 +93,7 @@
         {
           "a": "o:A:no|o:C:no|o:D:no",
           "k": "err",
-          "t": "A, C y D usan transformaciones distintas o alteran las coordenadas."
+          "t": "A altera la abscisa del primer reflejo y la altura del segundo; C aplica una rotación de noventa grados; D refleja sobre el eje horizontal."
         },
         {
           "a": "o:B:ok",
